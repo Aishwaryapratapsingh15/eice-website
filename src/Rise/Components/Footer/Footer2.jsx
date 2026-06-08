@@ -1,0 +1,30 @@
+"use client";
+import styles from "./footer.module.css";
+import footerRoomLaptop from "../../assets/insidePages/room/roomPage/footerlaptop2.webp";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { Link } from "/src/nextNavigation";
+
+export default function Footer2() {
+  return (
+    <div className={`${styles.footerMainBoxUpper}`} style={{ marginBottom: "3rem" }}>
+      <div style={{ width: "50%" }}>
+        <div>
+          <div style={{ fontSize: "46px" }}>
+            <span className="font2 blueTextGlobalClass">"Streamline </span>
+            <span style={{ fontWeight: "700" }} className="font1">bookings</span>
+          </div>
+          <div style={{ fontSize: "46px", fontWeight: "700" }} className="font1">effortlessly"</div>
+        </div>
+        <Link style={{ color: "white" }} className="linkClass" to="/products/eice-rise/form">
+          <div className={`${styles.demoButton} font1`}>
+            <div>Request a Demo</div>
+            <div className={`${styles.demoArrowButton}`}><FaArrowRightLong /></div>
+          </div>
+        </Link>
+      </div>
+      <div className={`${styles.footerLaptopImg}`}>
+        <img style={{ width: "100%" }} src={footerRoomLaptop.src} alt="room booking" />
+      </div>
+    </div>
+  );
+}

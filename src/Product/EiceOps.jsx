@@ -1,0 +1,438 @@
+﻿"use client";
+import React from "react";
+import { useNavigate } from "/src/nextNavigation";
+import ProductCarousel from "./ProductCarousel";
+import productSlides from "./carouselData";
+import ProductFooter from "./ProductFooter";
+import arrowIcon from "../assets/arrow.svg";
+import heroImg from "../assets/EiceOps/screens.png"
+import sdIcon from "../assets/EiceOps/sd.svg";
+import ahIcon from "../assets/EiceOps/ah.svg";
+import sclIcon from "../assets/EiceOps/scl.svg";
+import tlsIcon from "../assets/EiceOps/tls.svg";
+import thIcon from "../assets/EiceOps/th.svg";
+import slaIcon from "../assets/EiceOps/sla.svg";
+import fatIcon from "../assets/EiceOps/fat.svg";
+import slarIcon from "../assets/EiceOps/slar.svg";
+import erIcon from "../assets/EiceOps/er.svg";
+import cscmIcon from "../assets/EiceOps/cscm.svg";
+import pslcIcon from "../assets/EiceOps/pslc.svg";
+import ntIcon from "../assets/EiceOps/nt.svg";
+import hbscIcon from "../assets/EiceOps/hbsc.svg";
+import mfcIcon from "../assets/EiceOps/mfc.svg";
+import clIcon from "../assets/EiceOps/cl.svg";
+import ftlIcon from "../assets/EiceOps/ftl.svg";
+import slaaccountabilityIcon from "../assets/EiceOps/SLAaccountability.svg";
+import mvIcon from "../assets/EiceOps/mv.svg";
+
+const stats = [
+  {
+    number: "3",
+    title: "Live SLA Clocks per ticket",
+  },
+  {
+    number: "L1 → L3",
+    title: "Tier handoff tracking",
+  },
+  {
+    number: "100%",
+    title: "Audit trail on every action",
+  },
+  {
+    number: "Real-time",
+    title: "Agent effectiveness reports",
+  },
+  {
+    number: "Zero",
+    title: "Missed escalations",
+  },
+];
+
+const pillars = [
+  {
+    icon: ftlIcon,
+    title: "Full Ticket Lifecycle",
+    description:
+      "From first call to closure — every step tracked, timestamped and visible to agents and managers alike.",
+  },
+  {
+    icon: slaaccountabilityIcon,
+    title: "SLA \nAccountability",
+    description:
+      "Live countdowns, automatic breach alerts and paused-clock support for blocked tickets",
+  },
+  {
+    icon: clIcon,
+    title: "Communication Log",
+    description:
+      "Every call, email and message logged against the ticket — who said what, when and how",
+  },
+  {
+    icon: mvIcon,
+    title: "Management Visibility",
+    description:
+      "Leaderboards, SLA trends and per-agent drill-downs for performance reviews and reporting",
+  },
+];
+
+const agentFeatures = [
+    {
+  heading:"Smart \ndashboard",
+  paragraph:" See all open tickets, SLA breaches,  escalation alerts and pending reporter updates at a glance",
+  icon: sdIcon
+    },
+    {
+  heading:"Actionable \nhints",
+  paragraph:'The ticket tells the agent what to do next: "First reply due in 20m", "Reporter update overdue"',
+  icon: ahIcon
+    },
+    {
+  heading:"Structured communication log with calls",
+  paragraph:"Log every call, email or  WhatsApp message with direction (sent/received), channel  and contact name",
+  icon: sclIcon
+    },
+    {
+  heading:"Three live SLA clocks",
+  paragraph:"First Reply, Fix Deadline and Reporter  Update frequency tracked simultaneously per ticket",
+  icon: tlsIcon
+    },
+    {
+  heading:"Tier \nhandoff",
+  paragraph:"Hand tickets from L1 to L2 to L3 with a single  click; all tier movements recorded in the activity timeline",
+  icon: thIcon
+    },
+    {
+  heading:"SLA \npause",
+  paragraph:"Freeze the clock when blocked by a third party or  awaiting customer response, with a full reason audit trail",
+  icon: slaIcon
+    },
+    {
+  heading:"Full activity timeline",
+  paragraph:"Every state change, communication,  tier handoff and work note in chronological order",
+  icon: fatIcon
+    }
+];
+
+const adminFeatures = [
+   {
+  heading:"SLA rules \nengine",
+  paragraph:"Define First Reply, Fix Deadline and  Update Frequency per priority level, for Business Hours and  24×7 models",
+  icon: slarIcon
+    },
+    {
+  heading:"Escalation \nrules",
+  paragraph:'Set time-based escalation triggers (e.g.  alert account manager at 75% SLA, CTO at 100%) per category and priority',
+  icon: erIcon
+    },
+    {
+  heading:"Category & sub-category management",
+  paragraph:"Configure your full  service catalogue with dedicated contacts per category",
+  icon: cscmIcon
+    },
+    {
+  heading:"Priority & support level contacts",
+  paragraph:"Assign the right people to P1/P2 and L1/L2/L3 so agents always know who to reach",
+  icon: pslcIcon
+    },
+    {
+  heading:"Notification templates",
+  paragraph:"Customise acknowledgement, status update and resolution emails with live preview",
+  icon: ntIcon
+    },
+    {
+  heading:"Mandatory field control",
+  paragraph:"Decide which ticket fields are  required before an agent can submit",
+  icon: mfcIcon
+    },
+    {
+  heading:"Holiday & business hours calendar",
+  paragraph:"SLA clocks  automatically respect working hours, weekends and public  holidays",
+  icon: hbscIcon
+    }
+];
+
+// const whyChoose = [
+//   {
+//     icon:"1.",
+//     title: "ITIL 4 Aligned",
+//     description:
+//       "Built on internationally recognised best practice for IT service management",
+//   },
+//   {
+//     icon:"2.",
+//     title: "Complete Audit Trail",
+//     description:
+//       "Every communication, decision and state change is logged",
+//   },
+//   {
+//     icon:"3.",
+//     title: "Agent Effectiveness Reports",
+//     description:
+//       "Measure first-reply SLA %, fix rate and resolution time per agent",
+//   },
+//   {
+//     icon:"4.",
+//     title: "Escalation You Can Trust",
+//     description:
+//       "Time-based escalation rules ensure the right people are alerted",
+//   },
+//   {
+//     icon:"5.",
+//     title: "Fully Configurable",
+//     description:
+//       "Categories, priorities, SLA models and escalation paths tailored to your business",
+//   },
+//   {
+//     icon:"6.",
+//     title: "Built for Accountability",
+//     description:
+//       "Customers always know the status; agents always know the next action",
+//   },
+// ];
+
+export default function EiceOps() {
+    const navigate = useNavigate();
+  return (
+    <div className="bg-white text-[#111]">
+
+      {/* HERO SECTION */}
+      <section className="relative overflow-hidden pt-32 pb-20 px-5 md:px-20 lg:px-32">
+        
+           <div className="mt-5 flex justify-center">
+                            <img
+                                     src={heroImg.src}
+                                     alt="product"
+                                     className="mx-auto mb-6 w-72 md:w-full lg:w-[480px]"
+                                   />
+                         </div>
+        <div className="max-w-6xl mx-auto text-center">
+
+          <h2 className="mt-6 text-2xl md:text-4xl font-bold text-[#111]">
+            Your <span className="text-[#01B0F1]">Help Desk</span>, Working <span className="text-[#01B0F1]">Smarter.</span>
+          </h2>
+
+          {/* <p className="mt-3 text-xl text-[#111] font-semibold">
+            Every ticket. Every SLA. Every time.
+          </p> */}
+
+          <p className="mt-6 max-w-4xl mx-auto text-gray-600 text-lg leading-relaxed">
+            EICE Ops is EICE Technology's ITIL 4-aligned help desk management platform, designed to bring complete 
+accountability to every ticket lifecycle. Built for IT service teams that take SLAs seriously, EICEOps eliminates 
+missed escalations, ensures structured communication, and gives managers full visibility into team performance 
+— all in a single, configurable platform.
+          </p>
+        </div>
+      </section>
+
+      {/* STATS */}
+      <section className="px-5 md:px-20 lg:px-32 -mt-10 relative z-10">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5">
+          {stats.map((item, index) => (
+            <div
+              key={index}
+              className="text-white py-8 px-5 text-center"
+            >
+              <h3 className="text-[#01B0F1] text-4xl font-bold mb-5">{item.number}</h3>
+              <p className="font-bold text-lg leading-relaxed text-[#334155]">{item.title}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* FOUR PILLARS */}
+     <section className="py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
+
+  <h1 className="text-4xl md:text-4xl text-[#334155] font-bold text-center leading-relaxed mb-5">
+    Enterprise Authentication Challenges
+  </h1>
+
+  <h4 className="text-lg md:text-xl text-[#64748B] text-center mb-12 max-w-2xl mx-auto">
+    Traditional MFA solutions lack enterprise control and flexibility
+  </h4>
+
+  {/* 4 CARDS ROW */}
+  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+
+    {pillars.map((item, i) => (
+      <div
+        key={i}
+        className="bg-white rounded-xl  border-2 border-gray-200 shadow-sm hover:shadow-md transition p-6 flex flex-col items-start text-start gap-4"
+      >
+
+        {/* SVG */}
+        <div className="rounded-lg flex items-start justify-center">
+          <img src={item.icon.src} alt="icon" className="w-14 h-14 object-contain" />
+        </div>
+
+        {/* TITLE */}
+        <h3 className="font-bold text-2xl">
+          {item.title}
+        </h3>
+
+        {/* SMALL TEXT */}
+        <p className="text-gray-500 text-lg leading-relaxed">
+          {item.description}
+        </p>
+
+      </div>
+    ))}
+
+  </div>
+</section>
+
+      {/* FEATURE HIGHLIGHTS */}
+<section className="py-10 px-5 md:px-20 lg:px-20 xl:px-40 bg-white">
+
+  <h1 className="text-4xl md:text-4xl text-[#334155] font-bold text-center leading-relaxed mb-10">
+    Help Desk Agent Highlights
+  </h1>
+
+  {/* <h4 className="text-lg md:text-xl text-[#64748B] text-center mb-10 max-w-2xl mx-auto">
+    Traditional monitoring tools fall short of modern enterprise observability needs
+  </h4> */}
+
+  {/* 4 CARDS ROW */}
+  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+
+    {agentFeatures.map((item, i) => (
+      <div
+        key={i}
+        className="bg-white rounded-xl  border-2 border-gray-200 shadow-sm hover:shadow-md transition p-6 flex flex-col items-start text-start gap-4"
+      >
+
+        {/* SVG */}
+        <div className="rounded-lg flex items-start justify-center">
+          <img src={item.icon.src} alt="icon" className="w-14 h-14 object-contain" />
+        </div>
+
+        {/* TITLE */}
+        <h3 className="font-bold md:text-[24px] text-[#334155] whitespace-pre-line">
+          {item.heading}
+        </h3>
+
+        {/* SMALL TEXT */}
+        <p className="text-[#64748B] md:text-[16px] leading-relaxed">
+          {item.paragraph}
+        </p>
+
+      </div>
+    ))}
+
+  </div>
+</section>
+
+<section className="py-10 px-5 md:px-20 lg:px-20 xl:px-40 bg-white">
+
+  <h1 className="text-4xl md:text-4xl text-[#334155] font-bold text-center leading-relaxed mb-10">
+    Admin Agent Highlights
+  </h1>
+
+  {/* <h4 className="text-lg md:text-xl text-[#64748B] text-center mb-10 max-w-2xl mx-auto">
+    Traditional monitoring tools fall short of modern enterprise observability needs
+  </h4> */}
+
+  {/* 4 CARDS ROW */}
+  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+
+    {adminFeatures.map((item, i) => (
+      <div
+        key={i}
+        className="bg-white rounded-xl  border-2 border-gray-200 shadow-sm hover:shadow-md transition p-6 flex flex-col items-start text-start gap-4"
+      >
+
+        {/* SVG */}
+        <div className="rounded-lg flex items-start justify-center">
+          <img src={item.icon.src} alt="icon" className="w-14 h-14 object-contain" />
+        </div>
+
+        {/* TITLE */}
+        <h3 className="font-bold md:text-[24px] text-[#334155] whitespace-pre-line">
+          {item.heading}
+        </h3>
+
+        {/* SMALL TEXT */}
+        <p className="text-[#64748B] md:text-[16px] leading-relaxed">
+          {item.paragraph}
+        </p>
+
+      </div>
+    ))}
+
+  </div>
+</section>
+
+
+      {/* WHY CHOOSE */}
+  <section className="py-10 px-4 md:px-20 lg:px-20 xl:px-40 bg-white">
+  
+  {/* Heading */}
+  <h2 className="text-4xl md:text-4xl font-bold text-center text-[#334155] mb-[14px]">
+    Why enterprises choose EICEOps?
+  </h2>
+
+  {/* Subheading */}
+  <h4 className="text-lg md:text-xl text-[#64748B] text-center mb-10 max-w-3xl mx-auto">
+    Built for organizations that require complete infrastructure <br /> control and observability
+  </h4>
+
+  {/* Content */}
+  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 text-[#334155]">
+
+    {/* LEFT COLUMN */}
+    <div className="space-y-6 text-xl leading-relaxed">
+      <p>
+        <span className="font-bold">1. ITIL 4 Aligned :</span> Built on internationally recognised best practices for modern, scalable, efficient IT service management operations.
+      </p>
+
+      <p>
+        <span className="font-bold">2. Complete Audit Trail :</span> Every communication, decision and state change is logged - nothing falls through the cracks.
+      </p>
+
+      <p>
+        <span className="font-bold">3. Agent Effectiveness Reports :</span> Measure first-reply SLA %, fix rate, avg  resolution time and reporter updates per  agent
+      </p>
+    </div>
+
+    {/* RIGHT COLUMN */}
+    <div className="space-y-6 text-xl leading-relaxed">
+      <p>
+        <span className="font-bold">4. Escalation You Can Trust :</span> Time-based escalation rules ensure the right  people are alerted before SLAs are breached
+</p>
+      <p>
+        <span className="font-bold">5. Fully Configurable :</span> Categories, priorities, SLA models, support  tiers and escalation paths all tailored to  your business
+      </p>
+
+      <p>
+        <span className="font-bold">6.  uilt for Accountability Control  :</span> Customers always know the status; agents  always know what action is needed next.
+
+      </p>
+    </div>
+
+  </div>
+</section>
+          {/* ================= FINAL CTA ================= */}
+          <section className="bg-gray-50 relative py-10 px-6 md:px-12 lg:px-24 xl:px-40 overflow-hidden mb-10">
+            <h2 className="text-4xl md:text-4xl font-bold text-[#334155] mb-[14px] leading-tight text-center">
+              Ready to Transform Your Order Management?
+            </h2>
+    
+            <p className="text-[#64748B] text-lg md:text-xl leading-relaxed mb-10 text-center">
+          Talk to our experts to see how EICE Voice fits your hospitality<br/> operations and order management strategy.
+        </p>
+    
+            <button
+              onClick={() => navigate("/products/form?embed=true&product=EiceVoice")}
+              className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto text-[18px] hover:bg-blue-800"
+            >
+              Request a Demo
+              <img src={arrowIcon.src} alt="arrow" />
+            </button>
+          </section>
+
+      <ProductCarousel slides={productSlides} />
+      <ProductFooter />
+
+
+    </div>
+  );
+}

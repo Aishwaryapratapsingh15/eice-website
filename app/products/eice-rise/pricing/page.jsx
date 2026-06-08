@@ -1,0 +1,28 @@
+import Pricing from "../../../../src/Rise/Pages/NavigationBarPages/Pricing";
+import ProductFooter from "../../../../src/Product/ProductFooter";
+import Copyright from "../../../../src/Othercomps/Copyright";
+
+export const metadata = {
+  title: "Pricing | EICE Rise Hotel & Hospitality ERP | EICE Technology",
+  description: "Explore EICE Rise pricing plans — flexible, modular hospitality ERP pricing for hotels, resorts, and clubs. Choose the right suite for your property size.",
+  openGraph: {
+    title: "Pricing | EICE Rise Hotel & Hospitality ERP",
+    description: "Explore EICE Rise pricing plans — flexible, modular hospitality ERP pricing for hotels, resorts, and clubs. Choose the right suite for your property size.",
+    url: "https://www.eicetechnology.com/products/eice-rise/pricing",
+    siteName: "EICE Technology",
+    type: "website",
+  },
+  twitter: { card: "summary_large_image", title: "Pricing | EICE Rise Hotel & Hospitality ERP", description: "Explore EICE Rise pricing plans — flexible, modular hospitality ERP pricing for hotels, resorts, and clubs. Choose the right suite for your property size." },
+  alternates: { canonical: "https://www.eicetechnology.com/products/eice-rise/pricing" },
+};
+
+
+export default function Page() {
+  return (
+    <>
+      <Pricing />
+      <ProductFooter />
+      <Copyright />
+    </>
+  );
+}

@@ -1,0 +1,28 @@
+import VendorManagement from "../../../../src/Rise/Pages/InsidePages/VendorManagement";
+import ProductFooter from "../../../../src/Product/ProductFooter";
+import Copyright from "../../../../src/Othercomps/Copyright";
+
+export const metadata = {
+  title: "Vendor Management | EICE Rise Hospitality ERP | EICE Technology",
+  description: "Manage hotel vendor relationships with EICE Rise Vendor Management — vendor onboarding, performance rating, contract management, and compliance tracking.",
+  openGraph: {
+    title: "Vendor Management | EICE Rise Hospitality ERP",
+    description: "Manage hotel vendor relationships with EICE Rise Vendor Management — vendor onboarding, performance rating, contract management, and compliance tracking.",
+    url: "https://www.eicetechnology.com/products/eice-rise/vendor-management",
+    siteName: "EICE Technology",
+    type: "website",
+  },
+  twitter: { card: "summary_large_image", title: "Vendor Management | EICE Rise Hospitality ERP", description: "Manage hotel vendor relationships with EICE Rise Vendor Management — vendor onboarding, performance rating, contract management, and compliance tracking." },
+  alternates: { canonical: "https://www.eicetechnology.com/products/eice-rise/vendor-management" },
+};
+
+
+export default function Page() {
+  return (
+    <>
+      <VendorManagement />
+      <ProductFooter />
+      <Copyright />
+    </>
+  );
+}

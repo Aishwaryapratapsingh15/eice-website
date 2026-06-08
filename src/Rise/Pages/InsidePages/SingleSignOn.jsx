@@ -1,0 +1,335 @@
+"use client";
+import style from "./Styles/singleSignOn.module.css";
+import { useState, useEffect } from "react";
+import { Link } from '/src/nextNavigation';
+import Certificate from "../../Components/Certificate/Certificate.jsx";
+import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx";
+import FooterLower from "../../Components/Footer/FooterLower.jsx";
+import Accordion from "../../Components/Accordian/Accordian.jsx";
+import malIcon from "../../assets/singleSignOn/MAL.png";
+import mpcIcon from "../../assets/singleSignOn/MPC.png";
+import nacIcon from "../../assets/singleSignOn/NAC.png";
+import rbacIcon from "../../assets/singleSignOn/RBAC.png";
+import salIcon from "../../assets/singleSignOn/SAL.png";
+import umpIcon from "../../assets/singleSignOn/UMP.png";
+import bcgIcon from "../../assets/singleSignOn/BCG.jpg";
+import bcscIcon from "../../assets/singleSignOn/BCSC.jpg";
+import besIcon from "../../assets/singleSignOn/BES.png";
+import boeIcon from "../../assets/singleSignOn/BOE.png";
+import bsIcon from "../../assets/singleSignOn/BS.png";
+import laptop from "../../assets/section3Laptop/room.webp"
+import hero from "../../assets/singleSignOn/hero-singleSignOn.png"
+import centralizedIcon from "../../assets/singleSignOn/Centralized.png"
+import configurableIcon from "../../assets/singleSignOn/COnfigrable.png"
+import controllableIcon from "../../assets/singleSignOn/Controlled.png"
+import middleImg from "../../assets/singleSignOn/singleSignOnOverview.png"
+
+
+
+
+
+
+export default function SingleSignOn() {
+  const [isEmbed, setIsEmbed] = useState(false);
+  useEffect(() => {
+    setIsEmbed(new URLSearchParams(window.location.search).get("embed") === "true");
+  }, []);
+
+  const [isPhone, setIsPhone] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsPhone(window.innerWidth <= 980);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const features = [
+  {
+    icon: umpIcon,
+    title: "User Management & Provisioning",
+    desc: "Create, modify, and deactivate user accounts with role assignments, department mapping, and property-level access in a centralised directory."
+  },
+  {
+    icon: rbacIcon,
+    title: "Role-Based Access Control (RBAC)",
+    desc: "Define granular permission sets by role — admin, manager, operator, viewer — controlling access to modules, screens, actions, and data at the field level."
+  },
+  {
+    icon: mpcIcon,
+    title: "Multi-Property Configuration",
+    desc: "Manage configurations for multiple properties from a single admin panel with property-specific settings for taxes, currencies, policies, and workflows."
+  },
+  {
+    icon: malIcon,
+    title: "Module Activation & Licensing",
+    desc: "Enable or disable EICE Rise modules per property based on requirement and utilization."
+  },
+  {
+    icon: salIcon,
+    title: "System Audit Logs",
+    desc: "Maintain detailed audit trails of every administrative action — user changes, configuration edits, permission modifications — with timestamps and actor identification."
+  },
+  {
+    icon: nacIcon,
+    title: "Notification & Alert Configuration",
+    desc: "Set up system-wide notification rules — email, SMS, in-app — for approvals, escalations, system events, and threshold alerts across all modules."
+  }
+];
+
+ const benefits = [
+  {
+    icon: bcscIcon,
+    title: "Complete System Control",
+    desc: "Provides a single command center for all administrative functions, eliminating the need to manage settings across individual modules."
+  },
+  {
+    icon: besIcon,
+    title: "Enhanced Security",
+    desc: "Granular RBAC and comprehensive audit logs ensure that every access and action is authorized, tracked, and accountable."
+  },
+  {
+    icon: boeIcon,
+    title: "Operational Efficiency",
+    desc: "Centralized user and configuration management reduces IT overhead and speeds up onboarding of new users and properties."
+  },
+  {
+    icon: bsIcon,
+    title: "Scalability",
+    desc: "Multi-property support with modular activation makes it easy to scale operations as the organization grows."
+  },
+  {
+    icon: bcgIcon,
+    title: "Compliance & Governance",
+    desc: "Audit trails, access controls, and backup configurations ensure regulatory compliance and organizational governance standards."
+  }
+];
+
+  const query = [
+    {
+      question: "Q : What is the SINGLE SIGN-ON module, and who is it designed for?",
+      answer: "A : SINGLE SIGN-ON is the central administration console for EICE Rise ERP, designed for IT administrators and super admins to manage users, roles, configurations, and system settings across all properties and modules."
+    },
+    {
+      question: "Q : How does this module enhance system security?",
+      answer: "A : It provides role-based access control levels, comprehensive audit logs for every administrative action, and configurable session and password policies to maintain strict security standards."
+    },
+    {
+      question: "Q : Can SINGLE SIGN-ON manage multiple properties from one console?",
+      answer: "A : Yes. It supports multi-property administration with property-specific configurations for module activation from a single unified dashboard."
+    },
+    {
+      question: "Q : Is the SINGLE SIGN-ON module integrated with all other EICE Rise modules?",
+      answer: "A : Absolutely. SINGLE SIGN-ON serves as the backbone for user access and configuration across every EICE Rise module — any permission, master data, or notification setting configured here applies system-wide."
+    }
+  ];
+
+  const tag = [
+    {
+      icon:centralizedIcon,
+      title:"Centralized",
+    },
+    {
+      icon:configurableIcon,
+      title: "Configurable",
+     },
+     { 
+      icon:controllableIcon,
+      title:"Controlled"
+}
+];
+
+const footerUpperText = {
+
+        text1: 'One console, ',
+        text2: " ",
+        text3: 'total control',
+        img: middleImg
+    }
+
+  return (
+    <>
+
+      {/* HERO */}
+      {isPhone ? (
+        <section className={style.heroSectionConatinerPhone}>
+          <div className={style.contentConatinerPhone}>
+
+            <div className={style.headingBoxPhone}>
+              <div className={style.mainHeadingPhone}>
+                RISE <span style={{ color: "#01B0F1" }}>SINGLE SIGN-ON</span>
+              </div>
+
+              <div className={style.mainParaPhone}>
+                Take command of your entire EICE Rise ecosystem with a powerful software administration console that manages users, roles, configurations, and system-wide settings from a single control panel.
+              </div>
+            </div>
+
+            <div className={style.herosectionImgBoxPhone}>
+              <img style={{width : "100%"}} src={hero.src} alt={"room booking"} />
+            </div>
+
+          </div>
+        </section>
+      ) : (
+        <section className={style.heroSectionConatiner}>
+          <div className={style.fadeBackgroundConatiner}>
+
+            <div className={style.contentConatiner}>
+
+              <div className={style.headingBox}>
+                <div className={style.mainHeading}>
+                  RISE <span style={{ color: "#01B0F1" }}>SINGLE SIGN-ON</span>
+                </div>
+
+                <div className={style.mainPara}>
+                  Take command of your entire EICE Rise ecosystem with a powerful software administration console that manages users, roles, configurations, and system-wide settings from a single control panel.
+                </div>
+              </div>
+
+              <div className={style.herosectionImgBox}>
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+      )}
+
+      {/* TAGWORDS */}
+      <section style={{ backgroundColor: "#f5f5f5" }}>
+        <div className={`${style.section2} globalSectionSize`}>
+
+          {tag.map((t, i) => (
+            <div key={i} className={style.section2IconAndName}>
+              <div className={style.section2Icon}>
+                <img src={t.icon?.src || t.icon}/>
+              </div>
+              <div className={style.iconName}>{t.title}</div>
+            </div>
+          ))}
+
+        </div>
+      </section>
+
+      {/* MOCKUP */}
+      <section>
+        <div className={style.section3}>
+          <div className={style.blueBoxSetion3}>
+
+          <div className={`${style.laptopImgSection3}`}>
+                                      <div className={`${style.laptopImgBox}`} >
+                                          <img style={{ width: "100%" }} src={middleImg.src} alt="" />
+                                      </div>
+                                  </div>
+
+            <div className={style.section3Para}>
+              <div className={style.paragraph}>
+                <strong>Our RISE – SINGLE SIGN-ON module</strong> is a comprehensive solution designed for centralized system administration. From user provisioning to module configuration, this feature offers a secure, intuitive interface for IT administrators, super admins, and management, ensuring complete control over the software environment, access policies, and operational configurations across all properties.
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* FEATURES */}
+<section>
+  <div className={`${style.section4} globalSectionSize`}>
+
+    <div className={style.keyFeatureHeading}>Key Features</div>
+
+    <div className={style.featureContainer}>
+      {features.map((f, i) => (
+        <div key={i} className={style.featureInnerBox}>
+
+          {/* ICON + HEADING */}
+          <div className={style.headingAndIconFeatures}>
+            <div style={{ width: "44px" }}>
+              <img src={f.icon?.src || f.icon} style={{ width: "100%" }} />
+            </div>
+
+            <div className={style.featureHeading}>
+              {f.title}
+            </div>
+          </div>
+
+          {/* DESCRIPTION */}
+          <div className={style.featureDesc}>
+            {f.desc}
+          </div>
+
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>
+
+      {/* CTA */}
+      <Link style={{ color: "white" }} className="linkClass" to={"/products/eice-rise/form?product=EiceRise(Single Sign On)"}>
+      <section className={style.requestDemoBtn}>
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <div className={style.demoButton}>
+            Request a Demo →
+          </div>
+        </div>
+      </section>
+      </Link>
+
+      {/* BENEFITS */}
+      <section style={{ background: "#f5f5f5" }}>
+        <div className={`${style.section5} globalSectionSize`}>
+
+          <div className={style.benefitSectionHeading}>Benefits</div>
+
+        {benefits.map((b, i) => (
+  <div
+    key={i}
+    className={i % 2 === 0 ? "GlobalBenefitBox1" : "GlobalBenefitBox2"}
+  >
+    
+    {/* IMAGE SIDE */}
+    <div className="GlobalBenefitImgBox">
+      <div style={{ display: "flex", gap: "10px" }}>
+        <img src={b.icon?.src || b.icon} width="350px" />
+        {/* <img src="/placeholders/benefit.jpg" width="80" />
+        <img src="/placeholders/benefit.jpg" width="80" /> */}
+      </div>
+    </div>
+
+    {/* TEXT SIDE */}
+    <div className="GlobalBenefitTextBox">
+      <div className={style.innerHeadingBenifit}>{b.title}</div>
+      <div className={style.innerDescBenifit}>{b.desc}</div>
+    </div>
+
+  </div>
+))}
+
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section>
+        <div className={`${style.FAQsection} globalSectionSize`}>
+          <div className={style.FAQHeading}>Frequently Asked Questions</div>
+
+          <div className={style.FAQContainer}>
+            {query.map((item, i) => (
+              <Accordion key={i} question={item.question} answer={item.answer} />
+            ))}
+          </div>
+
+        </div>
+      </section>
+
+      {/* ================= FOOTER ================= */}
+            <Certificate />
+            <FooterUpperPart text1={footerUpperText.text1} text2= {<> {footerUpperText.text2} <br />  </>} text3={footerUpperText.text3} img={middleImg} />
+            {!isEmbed && <FooterLower />}
+
+    </>
+  );
+}

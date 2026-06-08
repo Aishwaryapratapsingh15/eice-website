@@ -1,0 +1,103 @@
+/* CSS reset handled by EICE Technology root layout */
+
+
+/* Font classes mapped to Poppins (loaded globally in EICE Technology) */
+.font1 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.font3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.font4 {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+.linkClass {
+  text-decoration: none;
+  color: black;
+}
+
+.blueTextGlobalClass {
+  color: rgba(1, 176, 241, 1);
+}
+
+
+.linkClassWhite {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+
+.GlobalBenefitBox1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+}
+
+.GlobalBenefitBox2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  column-gap: 40px;
+
+}
+
+
+
+.GlobalBenefitTextBox {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+
+}
+
+.GlobalBenefitImgBox {
+  width: 25%;
+}
+
+
+@media (max-width : 800px) {
+  .GlobalBenefitBox1 {
+    display: flex;
+    flex-direction: column;
+    column-gap: unset;
+    margin-bottom: 3rem;
+   
+  }
+
+  .GlobalBenefitBox2 {
+    display: flex;
+    flex-direction: column;
+    column-gap: unset;
+    margin-bottom: 3rem;
+   
+  }
+
+  .GlobalBenefitImgBox {
+    width: 16rem;
+    margin: 0px auto;
+  }
+
+  .GlobalBenefitTextBox {
+    width: 100%;
+    justify-content: center;
+    align-items: unset;
+    margin-top: 1rem;
+    padding: 0px 20px;
+  }
+}

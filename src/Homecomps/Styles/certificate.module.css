@@ -1,0 +1,19 @@
+.certificateHeading
+{
+    
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.certificate
+{
+    margin-top: 4rem;
+}
+
+.certificateImgBox
+{
+    
+    margin: 0px auto;
+   
+}
+
