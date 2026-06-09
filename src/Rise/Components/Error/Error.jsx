@@ -1,5 +1,4 @@
-"use client";
-import React from 'react'
+﻿import React from 'react'
 import errorImg from "../../assets/error/error.webp"
 import styles from "./Error.module.css"
 

@@ -1,5 +1,4 @@
-﻿"use client";
-import React from "react";
+﻿import React from "react";
 import Footer from "../Othercomps/Footer";
 import ProductFooter from "/src/Product/ProductFooter";
 import Copyright from "../Othercomps/Copyright";

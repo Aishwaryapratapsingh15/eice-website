@@ -1,5 +1,4 @@
-"use client";
-import styles from "./footer.module.css";
+﻿import styles from "./footer.module.css";
 import footerPosLaptop from "../../assets/insidePages/pos/posPage/FooterPos.webp";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "/src/nextNavigation";

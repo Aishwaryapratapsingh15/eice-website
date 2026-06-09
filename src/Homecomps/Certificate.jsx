@@ -1,5 +1,4 @@
-﻿"use client";
-import React from 'react'
+﻿import React from 'react'
 import styles from "./Styles/certificate.module.css"
 import cert from "../assets/certificate1.jpg"
 // import c1 from "../assets/cert/c221.png"

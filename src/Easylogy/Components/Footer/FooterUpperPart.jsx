@@ -1,5 +1,4 @@
-"use client";
-import React from 'react'
+﻿import React from 'react'
 import styles from "./footer.module.css"
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from '/src/nextNavigation';

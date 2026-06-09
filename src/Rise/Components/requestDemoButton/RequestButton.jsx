@@ -1,5 +1,4 @@
-"use client";
-import styles from "./requestButton.module.css"
+﻿import styles from "./requestButton.module.css"
 import { Link } from '/src/nextNavigation'
 
 export default function RequestButton() {

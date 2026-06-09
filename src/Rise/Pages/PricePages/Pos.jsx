@@ -1,5 +1,4 @@
-"use client";
-import styles from "./Styles/posSuite.module.css"
+﻿import styles from "./Styles/posSuite.module.css"
 
 
 import eyeImg from "../../assets/pricing/eye/eye.webp"

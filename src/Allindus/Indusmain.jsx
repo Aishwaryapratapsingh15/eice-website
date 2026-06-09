@@ -1,5 +1,4 @@
-﻿"use client";
-import React from "react";
+﻿import React from "react";
 import Reviews from "../Homecomps/Reviews";
 import Talktous from "../Othercomps/Talktous";
 import Clients from "../Homecomps/Clients";

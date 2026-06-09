@@ -1,5 +1,4 @@
-﻿"use client";
-import styles from "./styles/Hospitality.module.css"
+﻿import styles from "./styles/Hospitality.module.css"
 
 import mainImg from "../assets/hospitalityMain/hospitalitypage/Herosection.png"
 import { Link } from "/src/nextNavigation";

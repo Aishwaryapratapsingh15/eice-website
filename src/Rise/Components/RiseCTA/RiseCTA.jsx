@@ -1,5 +1,4 @@
-"use client";
-import { Link } from '/src/nextNavigation';
+﻿import { Link } from '/src/nextNavigation';
 import { FaArrowRightLong } from 'react-icons/fa6';
 
 export default function RiseCTA({ product = "EiceRise", heading = "Ready to Transform Your Hospitality Operations?", sub = "Schedule a live demo and see EICE Rise in action." }) {

@@ -1,5 +1,4 @@
-"use client";
-import styles from "./styles/productdrop.module.css"
+﻿import styles from "./styles/productdrop.module.css"
 import { Link } from '/src/nextNavigation'
 import { FaArrowRightLong } from "react-icons/fa6";
 
@@ -112,7 +111,7 @@ export default function ProductDrop() {
         {
             key: 10,
             title: "Food & Beverage Cost Analysis",
-            description: "Boost profit accuracy",
+            description: "BoostÂ profitÂ accuracy",
             icon: food,
             path: "/products/eice-rise/food-cost",
         },

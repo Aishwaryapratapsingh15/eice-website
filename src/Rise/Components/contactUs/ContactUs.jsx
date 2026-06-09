@@ -1,5 +1,4 @@
-"use client";
-import styles from "./contactUs.module.css"
+﻿import styles from "./contactUs.module.css"
 
 export default function ContactUs() {
     return (

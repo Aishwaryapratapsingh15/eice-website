@@ -1,3 +1,2 @@
-﻿"use client";
-export default function ScrollUp() { return null; }
+﻿export default function ScrollUp() { return null; }
 

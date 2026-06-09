@@ -1,5 +1,4 @@
-﻿"use client";
-import React from "react";
+﻿import React from "react";
 import budget1 from "../assets/Compressed/budget1.jpg";
 import budget2 from "../assets/Compressed/budget2.jpg";
 import budget3 from "../assets/Compressed/budget3.jpg";

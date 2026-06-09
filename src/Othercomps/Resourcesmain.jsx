@@ -1,5 +1,4 @@
-﻿"use client";
-import React from "react";
+﻿import React from "react";
 import { Link } from "/src/nextNavigation";
 import Casestudies from "../Homecomps/Casestudies";
 import Talktous from "../Othercomps/Talktous";

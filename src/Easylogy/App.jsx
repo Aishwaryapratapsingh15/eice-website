@@ -1,5 +1,4 @@
-"use client";
-import React from 'react'
+﻿import React from 'react'
 import "./App.css"
 // TODO: createBrowserRouter, RouterProvider from react-router-dom
 

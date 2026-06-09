@@ -1,5 +1,4 @@
-"use client";
-import { Link } from "/src/nextNavigation";
+﻿import { Link } from "/src/nextNavigation";
 import { FaArrowLeftLong } from "react-icons/fa6";
 
 export default function RiseBackNav({ label = "EICE Rise" }) {

@@ -1,5 +1,4 @@
-"use client";
-import styles from "./styles/pricingDrop.module.css"
+﻿import styles from "./styles/pricingDrop.module.css"
 
 
 
@@ -78,7 +77,7 @@ export default function PricingDrop() {
         {
             key: 7,
             title: "Vanilla Suite",
-            description: "All-in-one solution for versatile operations",
+            description: "All-in-one solution for versatileÂ operations",
             icon: vanillaIcon,
             path: "/products/eice-rise/vanilla-suite",
         },

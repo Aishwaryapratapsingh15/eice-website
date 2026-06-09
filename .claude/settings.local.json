@@ -6,7 +6,8 @@
       "Bash(Get-Content *)",
       "PowerShell(Get-ChildItem \"C:\\\\eicegit\\\\eicetech_website.svn\\\\EICE RISE Hospality website\\\\src\\\\Components\" -Recurse | Where-Object { !$_.PSIsContainer } | Select-Object FullName | ForEach-Object { $_.FullName.Replace\\(\"C:\\\\eicegit\\\\eicetech_website.svn\\\\EICE RISE Hospality website\\\\src\\\\\",\"\"\\) })",
       "PowerShell(Get-ChildItem \"C:\\\\eicegit\\\\eicetech_website.svn\\\\EICE RISE Hospality website\\\\src\\\\Pages\" -Recurse | Where-Object { !$_.PSIsContainer } | Select-Object FullName | ForEach-Object { $_.FullName.Replace\\(\"C:\\\\eicegit\\\\eicetech_website.svn\\\\EICE RISE Hospality website\\\\src\\\\\",\"\"\\) })",
-      "Bash(Select-Object Name)"
+      "Bash(Select-Object Name)",
+      "Bash(powershell -Command ' *)"
     ]
   }
 }

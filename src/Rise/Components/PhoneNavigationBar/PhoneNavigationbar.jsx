@@ -1,3 +1,2 @@
-﻿"use client";
-export default function PhoneNavigationbar() { return null; }
+﻿export default function PhoneNavigationbar() { return null; }
 

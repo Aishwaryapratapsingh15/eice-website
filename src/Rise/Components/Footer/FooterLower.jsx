@@ -1,3 +1,2 @@
-﻿"use client";
-export default function FooterLower() { return null; }
+﻿export default function FooterLower() { return null; }
 

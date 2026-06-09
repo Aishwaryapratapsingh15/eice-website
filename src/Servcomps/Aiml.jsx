@@ -3,8 +3,6 @@ import React, { useState, useRef } from "react";
 import { Link } from "/src/nextNavigation";
 import laptop from "../assets/Compressed/Laptop.png";
 
-
-
 import ai from "../assets/Service_and_technology/ai.png"
 import servicebannerpattern from "../assets/Compressed/servicebannerpattern.png"
 
@@ -14,6 +12,15 @@ import logistics from "../assets/ai/logistics.jpg"
 import sentiments from "../assets/ai/sentiments.jpg"
 import voice from "../assets/ai/voice.jpg"
 import ProductFooter from "/src/Product/ProductFooter";
+import Copyright from "../Othercomps/Copyright";
+import Reviews from "../Homecomps/Reviews";
+import TalkToUs from "../Othercomps/Talktous";
+import Process from "../Homecomps/Process";
+
+import { FaLightbulb } from "react-icons/fa";
+import { LuBrainCircuit } from "react-icons/lu";
+import { GrVirtualMachine } from "react-icons/gr";
+import { FiCheckCircle } from "react-icons/fi";
 
 
 const industries = [
@@ -54,7 +61,7 @@ const CaseStudy = ({ title, description, image, link }) => (
   <Link href={link} className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 md:p-4">
     <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
       <img
-        src={image}
+        src={image?.src || image}
         alt={title}
         className="w-full h-32 sm:h-40 md:h-48 object-cover transition duration-300 filter grayscale hover:grayscale-0"
       />

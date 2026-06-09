@@ -1,5 +1,4 @@
-"use client";
-import styles from "./footer.module.css";
+﻿import styles from "./footer.module.css";
 import footer from "../../assets/footer/foot.webp";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "/src/nextNavigation";

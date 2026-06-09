@@ -1,3 +1,2 @@
-﻿"use client";
-// Not used — Next.js routing replaces React Router
+﻿// Not used — Next.js routing replaces React Router
 
