@@ -1,6 +1,6 @@
 "use client";
 import React from 'react'
-import styles from "./certificate.module.css"
+import styles from "./Certificate.module.css"
 
 import c1 from "../../assets/cert/oip.jpeg"
 import c2 from "../../assets/cert/c2.png"

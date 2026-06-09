@@ -22,7 +22,7 @@ import sidebgIcon from "../assets/infraSight/whatis.png";
 import fvIcon from "../assets/infraSight/FV.svg";
 import mcoIcon from "../assets/infraSight/MCO.svg";
 import nscIcon from "../assets/infraSight/NSC.svg";
-import nescIcon from "../assets/infraSight/nesc.svg";
+import nescIcon from "../assets/infraSight/NESC.svg";
 import { useNavigate } from "/src/nextNavigation";
 import infrabannerIcon from "../assets/infraSight/infraBanner.png";
 

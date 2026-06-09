@@ -22,8 +22,8 @@ import backupIcon from "/src/assets/isynclite/Backup.svg"
 import configureIcon from "/src/assets/isynclite/Configure.svg"
 import restoreIcon from "/src/assets/isynclite/Restore.svg"
 import storeIcon from "/src/assets/isynclite/Store.svg";
-import kbtIcon from "/src/assets/isynclite/kbt.svg";
-import cbbIcon from "/src/assets/isynclite/cbb.svg";
+import kbtIcon from "/src/assets/isynclite/KBT.svg";
+import cbbIcon from "/src/assets/isynclite/CBB.svg";
 import opbIcon from "/src/assets/isynclite/OPB.svg";
 import hdIcon from "/src/assets/isynclite/HD.svg";
 import bg_image from "/src/assets/isynclite/bg_image.png";
