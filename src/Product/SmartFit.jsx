@@ -5,7 +5,7 @@ import ProductFooter from "./ProductFooter";
 import ProductCarousel from "./ProductCarousel";
 import productSlides from "./carouselData";
 import arrowIcon from "../assets/arrow.svg";
-import kbtIcon from "/src/assets/isynclite/kbt.svg";
+import kbtIcon from "/src/assets/isynclite/KBT.svg";
 import challengeIcon from "../assets/smartfit/OIP.webp"
 import cycIcon from "../assets/smartfit/CYC.svg";
 import ecwIcon from "../assets/smartfit/ECW.svg"

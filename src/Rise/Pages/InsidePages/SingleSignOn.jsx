@@ -1,5 +1,5 @@
 "use client";
-import style from "./Styles/singleSignOn.module.css";
+import style from "./Styles/SingleSignOn.module.css";
 import { useState, useEffect } from "react";
 import { Link } from '/src/nextNavigation';
 import Certificate from "../../Components/Certificate/Certificate.jsx";

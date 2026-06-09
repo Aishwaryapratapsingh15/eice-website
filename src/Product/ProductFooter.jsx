@@ -2,14 +2,14 @@
 import React from "react";
 
 import { Link } from "/src/nextNavigation";
-import indImg from "../assets/common/india.png";
-import usImg from "../assets/common/usa.png";
+import indImg from "../assets/common/India.png";
+import usImg from "../assets/common/USA.png";
 import logo from "../assets/logo.svg"
 import cmmiIcon from "../assets/EiceAgent/CMMI.png";
 import FbIcon from "../assets/common/FB.svg";
 import linkedinIcon from "../assets/common/linkedin.svg";
 import XIcon from "../assets/common/X.svg";
-import InstaIcon from "../assets/common/insta.svg";
+import InstaIcon from "../assets/common/Insta.svg";
 import whatsappIcon from "../assets/common/Whatsapp.svg";
 import phoneIcon from "../assets/common/Phone.svg";
 const socialLinks = [

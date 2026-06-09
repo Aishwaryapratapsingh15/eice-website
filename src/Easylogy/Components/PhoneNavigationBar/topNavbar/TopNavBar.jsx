@@ -2,7 +2,7 @@
 import styles from "./topNavBar.module.css"
 import { IoCloseSharp } from "react-icons/io5";
 import { HiOutlineBars3 } from "react-icons/hi2";
-import logo from "../../../assets/hospitality/easylogy.svg"
+import logo from "../../../assets/Hospitality/easylogy.svg"
 
 
 import { useSelector , useDispatch } from "react-redux";
