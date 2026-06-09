@@ -7,6 +7,8 @@ import "slick-carousel/slick/slick-theme.css";
 import SiteShell from "./SiteShell";
 import Script from "next/script";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata = {
   metadataBase: new URL("https://www.eicetechnology.com"),
   title: {
