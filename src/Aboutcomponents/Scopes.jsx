@@ -1,11 +1,11 @@
 ﻿import React from "react";
-import budget1 from "../assets/Compressed/budget1.jpg";
-import budget2 from "../assets/Compressed/budget2.jpg";
-import budget3 from "../assets/Compressed/budget3.jpg";
+const budget1 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/budget1.jpg";
+const budget2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/budget2.jpg";
+const budget3 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/budget3.jpg";
 
-import UnclearRequirements from "../assets/Compressed/ConstrainedBudget.svg";
-import EvolvingScope from "../assets/Compressed/Evolvingscope.svg";
-import ConstrainedBudget from "../assets/Compressed/UnclearRequirements.svg";
+const UnclearRequirements = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/ConstrainedBudget.svg";
+const EvolvingScope = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/Evolvingscope.svg";
+const ConstrainedBudget = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/UnclearRequirements.svg";
 
 import { FaArrowRight } from "react-icons/fa";
 
@@ -35,7 +35,7 @@ function Scopes() {
           <div className="relative w-11/12 h-[30rem] items-center justify-center flex justify-self-start">
             <div className="flex flex-col lg:p-16 ps:p-5  absolute inset-0 justify-center">
               <div className="z-20 pb-8 justify-start flex w-full px-4">
-                <img src={ConstrainedBudget.src} alt="" className="scale-[1.2]" />
+                <img src={ConstrainedBudget} alt="" className="scale-[1.2]" />
               </div>
               <h1 className="text-white z-20 fontweight_1 text-4xl pb-4 px-2">
                 Constrained Budget
@@ -45,7 +45,7 @@ function Scopes() {
                 give you a fixed cost and timeline.
               </p>
             </div>
-            <img src={budget1.src} alt="" className="w-full h-full object-cover" />
+            <img src={budget1} alt="" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-cyan-600/80"></div>
           </div>
           <div className="flex flex-col px-8 py-4">
@@ -82,7 +82,7 @@ function Scopes() {
           <div className="relative w-11/12 h-[30rem] items-center justify-center flex justify-self-end">
             <div className="flex flex-col  lg:p-16 ps:p-5  justify-center absolute inset-0 ">
               <div className="z-20 pb-8  flex w-full">
-                <img src={EvolvingScope.src} alt="" className="scale-[1.2]" />
+                <img src={EvolvingScope} alt="" className="scale-[1.2]" />
               </div>
               <h1 className="text-white z-20 fontweight_1 text-4xl pb-4 px-2">
                 Evolving Scope
@@ -92,7 +92,7 @@ function Scopes() {
                 dynamics throughout the development lifecycle.
               </p>
             </div>
-            <img src={budget2.src} alt="" className="w-full h-full object-cover" />
+            <img src={budget2} alt="" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-slate-800/80"></div>
           </div>
           <div className="flex flex-col px-8 py-4">
@@ -160,7 +160,7 @@ function Scopes() {
           <div className="relative w-11/12 h-[30rem] items-center justify-center flex justify-self-end">
             <div className="flex flex-col p-16  justify-center absolute inset-0 ">
               <div className="z-20 pb-8 px-4 flex w-full">
-                <img src={EvolvingScope.src} alt="" className="scale-[1.2]" />
+                <img src={EvolvingScope} alt="" className="scale-[1.2]" />
               </div>
               <h1 className="text-white z-20 fontweight_1 text-4xl pb-4 px-2">
                 Evolving Scope
@@ -170,7 +170,7 @@ function Scopes() {
                 dynamics throughout the development lifecycle.
               </p>
             </div>
-            <img src={budget2.src} alt="" className="w-full h-full object-cover" />
+            <img src={budget2} alt="" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-slate-800/80"></div>
           </div>
         </div>
@@ -178,7 +178,7 @@ function Scopes() {
           <div className="relative w-11/12 h-[30rem] items-center justify-center flex justify-self-start">
             <div className="flex flex-col lg:p-16 ps:p-5  justify-center absolute inset-0">
               <div className="z-20 pb-8 px-4  flex w-full">
-                <img src={UnclearRequirements.src} alt="" className="scale-[1.2]" />
+                <img src={UnclearRequirements} alt="" className="scale-[1.2]" />
               </div>
               <h1 className="text-white z-20 px-2 fontweight_1 text-4xl pb-4">
                 Unclear Requirements
@@ -188,7 +188,7 @@ function Scopes() {
                 challenges in defining clear development objectives.
               </p>
             </div>
-            <img src={budget3.src} alt="" className="w-full h-full object-cover" />
+            <img src={budget3} alt="" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-teal-700/80"></div>
           </div>
           <div className="flex flex-col px-8 py-4">

@@ -1,7 +1,7 @@
 import React from "react";
 import ProductFooter from "/src/Product/ProductFooter";
 import Copyright from "../Othercomps/Copyright";
-import logistics from "../assets/ai/logistics.jpg";
+const logistics = "https://d3r43jacxrwsrp.cloudfront.net/ai/logistics.jpg";
 import { GiVirtualMarker } from "react-icons/gi";
 import Link from "next/link";
 
@@ -20,7 +20,7 @@ function LogisticsAi() {
             to supply chain disruptions.
           </p>
           <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4">
-            <img src={logistics.src} alt="Logistics AI Platform" className="w-full max-h-96 object-cover rounded-lg" />
+            <img src={logistics} alt="Logistics AI Platform" className="w-full max-h-96 object-cover rounded-lg" />
           </div>
         </div>
         <div className="w-full pb-6">

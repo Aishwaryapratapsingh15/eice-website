@@ -1,16 +1,16 @@
 ﻿"use client";
 import React, { useState, useRef } from "react";
 import { Link } from "/src/nextNavigation";
-import laptop from "../assets/Compressed/Laptop.png";
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/Laptop.png";
 
-import ai from "../assets/Service_and_technology/ai.png"
-import servicebannerpattern from "../assets/Compressed/servicebannerpattern.png"
+const ai = "https://d3r43jacxrwsrp.cloudfront.net/Service_and_technology/ai.png";
+const servicebannerpattern = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/servicebannerpattern.png";
 
 // images
-import inventry from "../assets/ai/inventry.jpg"
-import logistics from "../assets/ai/logistics.jpg"
-import sentiments from "../assets/ai/sentiments.jpg"
-import voice from "../assets/ai/voice.jpg"
+const inventry = "https://d3r43jacxrwsrp.cloudfront.net/ai/inventry.jpg";
+const logistics = "https://d3r43jacxrwsrp.cloudfront.net/ai/logistics.jpg";
+const sentiments = "https://d3r43jacxrwsrp.cloudfront.net/ai/sentiments.jpg";
+const voice = "https://d3r43jacxrwsrp.cloudfront.net/ai/voice.jpg";
 import ProductFooter from "/src/Product/ProductFooter";
 import Copyright from "../Othercomps/Copyright";
 import Reviews from "../Homecomps/Reviews";
@@ -140,7 +140,7 @@ function Aiml() {
       <div className="xl:-mt-8 -mt-4 bg-gradient-to-r from-transparent via-bloo/5 to-bloo/10 pt-16 md:pt-20 lg:pt-12 2xl:pt-0">
         <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen ">
           <div className="absolute -z-20 inset-0 right-[75%]">
-            <img src={servicebannerpattern.src} alt="" />
+            <img src={servicebannerpattern} alt="" />
           </div>
           <div className="flex lg:flex-row flex-col px-4 py-20 items-center">
             <div className="w-full">
@@ -155,7 +155,7 @@ function Aiml() {
             </div>
             <div className="lg:flex hidden items-center justify-end ">
               <div className=" w-1/2">
-                <img src={ai.src} alt="artifical inteligece" className="rounded-full" />
+                <img src={ai} alt="artifical inteligece" className="rounded-full" />
               </div>
             </div>
           </div>

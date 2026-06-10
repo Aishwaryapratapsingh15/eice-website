@@ -1,5 +1,5 @@
 ﻿import styles from "./footer.module.css";
-import footer from "../../assets/footer/foot.webp";
+const footer = "https://d3r43jacxrwsrp.cloudfront.net/footer/foot.webp";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "/src/nextNavigation";
 
@@ -23,7 +23,7 @@ export default function InsidePageFooterUpper() {
         </Link>
       </div>
       <div className={`${styles.footerLaptopImg}`}>
-        <img style={{ width: "100%" }} src={footer.src} alt="eice rise" />
+        <img style={{ width: "100%" }} src={footer} alt="eice rise" />
       </div>
     </div>
   );

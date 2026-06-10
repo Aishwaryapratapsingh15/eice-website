@@ -1,5 +1,5 @@
 ﻿import styles from "./footer.module.css";
-import footerRoomLaptop from "../../assets/insidePages/room/roomPage/footerlaptop2.webp";
+const footerRoomLaptop = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/footerlaptop2.webp";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "/src/nextNavigation";
 
@@ -22,7 +22,7 @@ export default function Footer2() {
         </Link>
       </div>
       <div className={`${styles.footerLaptopImg}`}>
-        <img style={{ width: "100%" }} src={footerRoomLaptop.src} alt="room booking" />
+        <img style={{ width: "100%" }} src={footerRoomLaptop} alt="room booking" />
       </div>
     </div>
   );

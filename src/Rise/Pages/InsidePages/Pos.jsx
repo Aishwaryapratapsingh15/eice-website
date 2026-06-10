@@ -1,35 +1,35 @@
 "use client";
 import style from "./Styles/pos.module.css"
 
-import heroImg from "../../assets/allHero/new/posH.webp"
-import icon1 from "../../assets/insidePages/pos/posPage/section3/icon1.png"
-import icon2 from "../../assets/insidePages/pos/posPage/section3/icon2.png"
-import icon3 from "../../assets/insidePages/pos/posPage/section3/icon3.png"
+const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/allHero/new/posH.webp";
+const icon1 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/section3/icon1.png";
+const icon2 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/section3/icon2.png";
+const icon3 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/section3/icon3.png";
 
 import { Link } from '/src/nextNavigation'
 
 // features
-import ips from "../../assets/insidePages/pos/posPage/feature/ips.png"
-import it from "../../assets/insidePages/pos/posPage/feature/it.png"
-import kds from "../../assets/insidePages/pos/posPage/feature/kds.png"
-import oc from "../../assets/insidePages/pos/posPage/feature/oc.png"
-import plp from "../../assets/insidePages/pos/posPage/feature/plp.png"
-import rtmm from "../../assets/insidePages/pos/posPage/feature/rtmm.png"
-import rtsr from "../../assets/insidePages/pos/posPage/feature/rtsr.png"
-import tm from "../../assets/insidePages/pos/posPage/feature/tm.png"
-import ufi from "../../assets/insidePages/pos/posPage/feature/ufi.png"
+const ips = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/feature/ips.png";
+const it = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/feature/it.png";
+const kds = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/feature/kds.png";
+const oc = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/feature/oc.png";
+const plp = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/feature/plp.png";
+const rtmm = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/feature/rtmm.png";
+const rtsr = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/feature/rtsr.png";
+const tm = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/feature/tm.png";
+const ufi = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/feature/ufi.png";
 
 // benifits
 
-import b1 from "../../assets/insidePages/pos/posPage/benefit/b1.webp"
-import b2 from "../../assets/insidePages/pos/posPage/benefit/b2.webp"
-import b3 from "../../assets/insidePages/pos/posPage/benefit/b3.webp"
-import b4 from "../../assets/insidePages/pos/posPage/benefit/b4.webp"
-import b5 from "../../assets/insidePages/pos/posPage/benefit/b5.webp"
+const b1 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/benefit/b1.webp";
+const b2 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/benefit/b2.webp";
+const b3 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/benefit/b3.webp";
+const b4 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/benefit/b4.webp";
+const b5 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/benefit/b5.webp";
 
 
 
-import laptop from "../../assets/section3Laptop/pos2.webp"
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/section3Laptop/pos2.webp";
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 
 
@@ -240,7 +240,7 @@ export default function Pos() {
                         </div>
 
                         <div className={`${style.herosectionImgBoxPhone}`}>
-                            <img style={{ width: "100%" }} src={heroImg.src} alt={"room booking"} />
+                            <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
                         </div>
 
 
@@ -285,7 +285,7 @@ export default function Pos() {
 
                     <div className={style.section2IconAndName}>
                         <div className={`${style.section2Icon}`}>
-                            <img style={{ width: "100%" }} src={icon1.src} alt="" />
+                            <img style={{ width: "100%" }} src={icon1} alt="" />
                         </div>
 
                         <div className={`${style.iconName} `}>
@@ -300,7 +300,7 @@ export default function Pos() {
                     <div className={style.section2IconAndName}>
 
                         <div className={`${style.section2Icon}`}>
-                            <img style={{ width: "100%" }} src={icon2.src} alt="" />
+                            <img style={{ width: "100%" }} src={icon2} alt="" />
                         </div>
 
                         <div className={`${style.iconName} `}>
@@ -318,7 +318,7 @@ export default function Pos() {
                     <div className={style.section2IconAndName}>
 
                         <div className={`${style.section2Icon}`}>
-                            <img style={{ width: "100%" }} src={icon3.src} alt="" />
+                            <img style={{ width: "100%" }} src={icon3} alt="" />
                         </div>
 
                         <div className={`${style.iconName}`}>
@@ -352,7 +352,7 @@ export default function Pos() {
 
                         <div className={`${style.laptopImgSection3}`}>
                             <div className={`${style.laptopImgBox}`} >
-                                <img style={{ width: "100%" }} src={laptop.src} alt="" />
+                                <img style={{ width: "100%" }} src={laptop} alt="" />
                             </div>
                         </div>
 

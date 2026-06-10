@@ -4,14 +4,14 @@ import Talktous from "../Othercomps/Talktous";
 import Clients from "../Homecomps/Clients";
 import Clientele from "../Homecomps/Clientele";
 
-import indus_oilandgas from "../assets/Compressed/indus-oilandgas.png";
-import indus_education from "../assets/Compressed/indus-education.png";
-import indus_law from "../assets/Compressed/indus-law.png";
-import indus_healthcare from "../assets/Compressed/indus-healthcare.png";
-import indus_digimedia from "../assets/Compressed/indus-digimedia.png";
-import indus_financial from "../assets/Compressed/indus-financial.png";
-import indus_logistics from "../assets/Compressed/indus-logistics.png";
-import indus_enterprise from "../assets/Compressed/indus-enterprise.png";
+const indus_oilandgas = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/indus-oilandgas.png";
+const indus_education = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/indus-education.png";
+const indus_law = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/indus-law.png";
+const indus_healthcare = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/indus-healthcare.png";
+const indus_digimedia = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/indus-digimedia.png";
+const indus_financial = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/indus-financial.png";
+const indus_logistics = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/indus-logistics.png";
+const indus_enterprise = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/indus-enterprise.png";
 
 import { Link } from "/src/nextNavigation";
 

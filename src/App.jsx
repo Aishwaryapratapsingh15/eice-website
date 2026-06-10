@@ -4,7 +4,7 @@
 import React, { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-import logo from "./assets/logo.svg";
+const logo = "https://d3r43jacxrwsrp.cloudfront.net/logo.svg";
 import { NavLink, Link, useNavigate } from "/src/nextNavigation";
 
 import { GoLaw } from "react-icons/go";
@@ -25,18 +25,18 @@ import { Menu as BaseMenu } from "@mui/base/Menu";
 import { MenuButton as BaseMenuButton } from "@mui/base/MenuButton";
 import { MenuItem as BaseMenuItem } from "@mui/base/MenuItem";
 import { Dropdown } from "@mui/base/Dropdown";
-import menu from "./assets/menu.svg";
+const menu = "https://d3r43jacxrwsrp.cloudfront.net/menu.svg";
 
-import easylogyIcon   from "./assets/common/Easylogy.svg";
-import eiceriseIcon   from "./assets/common/EiceRise.svg";
-import eicevoiceIcon  from "./assets/common/EiceVoice.svg";
-import infrasightIcon from "./assets/common/infrasight.svg";
-import isyncdriveIcon from "./assets/common/isyncdrive.svg";
-import isyncliteIcon  from "./assets/common/isynclite.svg";
-import verilockIcon   from "./assets/common/Verilock.svg";
-import eiceAgentIcon  from "./assets/common/EiceAiAgent.svg";
-import eiceSmartfitIcon from "./assets/smartfit/SmartFit_Icon.svg";
-import eiceopsIcon    from "./assets/EiceOps/EICEOPS.svg";
+const easylogyIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Easylogy.svg";
+const eiceriseIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/EiceRise.svg";
+const eicevoiceIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/EiceVoice.svg";
+const infrasightIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/infrasight.svg";
+const isyncdriveIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/isyncdrive.svg";
+const isyncliteIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/isynclite.svg";
+const verilockIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Verilock.svg";
+const eiceAgentIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/EiceAiAgent.svg";
+const eiceSmartfitIcon = "https://d3r43jacxrwsrp.cloudfront.net/smartfit/SmartFit_Icon.svg";
+const eiceopsIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/EICEOPS.svg";
 
 // ─── Navigation Shell ────────────────────────────────────────────────────────
 
@@ -55,7 +55,7 @@ const NavLayout = ({ children }) => {
         <nav className="overflow-visible fixed w-full top-0 left-0 z-30 shadow-md shadow-blackk/20 font-manrope bg-white font-semibold 2xl:block xl:block hidden">
           <div className="flex max-w-7xl mx-auto items-center justify-between text-lg py-3">
             <div className="cursor-pointer px-4">
-              <Link href="/"><img src={logo.src} alt="EICE Technology" className="h-8 w-auto" /></Link>
+              <Link href="/"><img src={logo} alt="EICE Technology" className="h-8 w-auto" /></Link>
             </div>
             <div className="flex items-center justify-center gap-6">
               <NavLink to="/" className="px-4 py-1">
@@ -79,13 +79,13 @@ const NavLayout = ({ children }) => {
         {/* ── Mobile Navbar ── */}
         <nav className="2xl:hidden xl:hidden flex fixed w-full top-0 left-0 z-30 shadow-md shadow-blackk/20 font-manrope bg-white font-semibold items-center overflow-hidden">
           <div className="cursor-pointer pl-3">
-            <Link href="/"><img src={logo.src} alt="EICE Technology" className="scale-[1.15]" /></Link>
+            <Link href="/"><img src={logo} alt="EICE Technology" className="scale-[1.15]" /></Link>
           </div>
           <div className="w-full">
             <div className="flex flex-row items-center justify-end">
               <Dropdown open={menuOpen} onOpenChange={setMenuOpen}>
                 <MenuButton onClick={() => setMenuOpen((p) => !p)} className="scale-[0.6] -mr-1">
-                  <span><img src={menu.src} alt="Menu" /></span>
+                  <span><img src={menu} alt="Menu" /></span>
                 </MenuButton>
                 <Menu className="font-semibold z-50">
                   <AnimatePresence mode="wait">
@@ -351,7 +351,7 @@ const OurProducts = ({ handleSetSelected = () => {} }) => (
               { href: "/products/eice-ops",   icon: eiceopsIcon,      name: "EICEOps",        desc: "Help Desk Management" },
             ].map(({ href, icon, name, desc }) => (
               <Link key={href} href={href} onClick={() => handleSetSelected(null)} className="flex items-start gap-3 group">
-                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon.src} className="w-full h-full object-contain" /></div>
+                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} className="w-full h-full object-contain" /></div>
                 <div><p className="font-semibold group-hover:text-bloo">{name}</p><p className="text-xs text-gray-500">{desc}</p></div>
               </Link>
             ))}
@@ -366,7 +366,7 @@ const OurProducts = ({ handleSetSelected = () => {} }) => (
               { href: "/products/infrasight", icon: infrasightIcon, name: "InfraSight", desc: "Infra monitoring" },
             ].map(({ href, icon, name, desc }) => (
               <Link key={href} href={href} onClick={() => handleSetSelected(null)} className="flex items-start gap-3 group">
-                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon.src} className="w-full h-full object-contain" /></div>
+                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} className="w-full h-full object-contain" /></div>
                 <div><p className="font-semibold group-hover:text-bloo">{name}</p><p className="text-xs text-gray-500">{desc}</p></div>
               </Link>
             ))}
@@ -383,7 +383,7 @@ const OurProducts = ({ handleSetSelected = () => {} }) => (
               { href: "/products/eice-voice",  icon: eicevoiceIcon,  name: "EICE Voice",    desc: "Voice-Powered Order Management" },
             ].map(({ href, icon, name, desc }) => (
               <Link key={href} href={href} onClick={() => handleSetSelected(null)} className="flex items-start gap-3 group">
-                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon.src} className="w-full h-full object-contain" /></div>
+                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} className="w-full h-full object-contain" /></div>
                 <div><p className="font-semibold group-hover:text-bloo">{name}</p><p className="text-xs text-gray-500">{desc}</p></div>
               </Link>
             ))}

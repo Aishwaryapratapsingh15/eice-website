@@ -4,8 +4,8 @@ import { Link, useLocation } from "/src/nextNavigation";
 import Offers from "../Homecomps/Offers";
 import styles from "./styles/servmain.module.css"
 // import "./Styles/Servmain.css"
-import consultancy from "../assets/Compressed/consultancy.jpg";
-import uiuxdesign from "../assets/Compressed/uiuxdesign.jpg";
+const consultancy = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/consultancy.jpg";
+const uiuxdesign = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/uiuxdesign.jpg";
 
 import { FaLaptopCode, FaPencilRuler, FaPeopleArrows } from "react-icons/fa";
 import { GiCircuitry } from "react-icons/gi";
@@ -19,7 +19,7 @@ function Servmain() {
 
 
   const appStyle = {
-    backgroundImage: `url(${consultancy.src})`,
+    backgroundImage: `url(${consultancy})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
 
@@ -32,7 +32,7 @@ function Servmain() {
 
   };
   const uiuxStyle = {
-    backgroundImage: `url(${uiuxdesign.src})`,
+    backgroundImage: `url(${uiuxdesign})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
 
@@ -344,7 +344,7 @@ function Servmain() {
         >
           <div className="">
             <img
-              src={consultancy.src}
+              src={consultancy}
               alt=""
               className="inset-0 object-cover w-full h-full rounded-xl"
             />
@@ -375,7 +375,7 @@ function Servmain() {
         </Link>
         <Link href="/services/ui-ux" className="relative">
           <img
-            src={uiuxdesign.src}
+            src={uiuxdesign}
             alt=""
             className="inset-0 object-cover w-full h-full rounded-xl"
           />

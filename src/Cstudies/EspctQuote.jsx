@@ -3,10 +3,10 @@ import Footer from "../Othercomps/Footer";
 import Copyright from "../Othercomps/Copyright";
 import ProductFooter from "/src/Product/ProductFooter";
 
-import temp from "../assets/Compressed/temp.png";
-import temp2 from "../assets/Compressed/temp2.png";
-import espctquote1 from "../assets/Compressed/espctquote1.png";
-import espctquote2 from "../assets/Compressed/espctquote2.png";
+const temp = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/temp.png";
+const temp2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/temp2.png";
+const espctquote1 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/espctquote1.png";
+const espctquote2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/espctquote2.png";
 
 import { GiVirtualMarker } from "react-icons/gi";
 
@@ -28,12 +28,12 @@ function EspctQuote() {
           </p>
           <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
             <img
-              src={espctquote1.src}
+              src={espctquote1}
               alt=""
               className="w-full h-full object-fit"
             />
             <img
-              src={espctquote2.src}
+              src={espctquote2}
               alt=""
               className="w-full h-full object-fit"
             />

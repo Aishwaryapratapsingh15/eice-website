@@ -3,42 +3,42 @@ import React from "react";
 import ProductCarousel from "./ProductCarousel";
 import productSlides from "./carouselData";
 import ProductFooter from "./ProductFooter";
-// import fileSharingIcon from "../assets/isyncdrive/File_Sharing.svg";
-// import roleBaseAccessIcon from "../assets/isyncdrive/Role-Based_Access.svg";
-// import complianceIcon from "../assets/isyncdrive/Compliance.svg";   
-// import centralizedConsoleIcon from "../assets/isyncdrive/Centralized_Admin.svg";
-// import multiPlatformIcon from "../assets/isyncdrive/Multi-platform_Access.svg";
-// import whiteLabelIcon from "../assets/isyncdrive/White-label_Flexibility.svg";
-// import encryptionIcon from "../assets/isyncdrive/End-to-End_Encryption.svg";
-// import intelligentSyncIcon from "../assets/isyncdrive/Intelligent_Sync.svg";
-// import deployIcon from "../assets/common/Deploy.svg";
-// import planIcon from "../assets/common/Plan.svg";
-// import scaleIcon from "../assets/common/Scale.svg";
-// import optimizeIcon from "../assets/common/Optimize.svg";
-import arrowIcon from "../assets/arrow.svg";
-import shieldIcon from "../assets/common/shield_02.svg";
-import codeRefreshIcon from "../assets/verilock/1.svg"
-import multilayerIcon from "../assets/verilock/2.svg"
-import appIntegrationIcon from "../assets/verilock/3.svg"
-import fasIcon from "../assets/verilock/FAS.svg";
-import gcrIcon from "../assets/verilock/GCR.svg";
-import lacIcon from "../assets/verilock/LAC.svg";
-import nmfsIcon from "../assets/verilock/NMFS.svg";
-import bannerIcon from "../assets/verilock/bannerMiddle.png";
-import ztsIcon from "../assets/verilock/ZTS.svg";
-import ztkIcon from "../assets/verilock/ZTK.svg";
-import sprIcon from "../assets/verilock/SPR.svg";
-import laaIcon from "../assets/verilock/LAA.svg";
-import verilockIcon from "../assets/verilock/verilockHero.png";
-import verilockLogoIcon from "../assets/verilock/verilockLogo.svg";
-import authenticatorLogoIcon from "../assets/verilock/authenticatorLogo.svg";
-import tickIcon from "../assets/verilock/tick.svg";
-import nilIcon from "../assets/verilock/nil.svg";
+// const fileSharingIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/File_Sharing.svg";
+// const roleBaseAccessIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/Role-Based_Access.svg";
+// const complianceIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/Compliance.svg";   
+// const centralizedConsoleIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/Centralized_Admin.svg";
+// const multiPlatformIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/Multi-platform_Access.svg";
+// const whiteLabelIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/White-label_Flexibility.svg";
+// const encryptionIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/End-to-End_Encryption.svg";
+// const intelligentSyncIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/Intelligent_Sync.svg";
+// const deployIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Deploy.svg";
+// const planIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Plan.svg";
+// const scaleIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Scale.svg";
+// const optimizeIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Optimize.svg";
+const arrowIcon = "https://d3r43jacxrwsrp.cloudfront.net/arrow.svg";
+const shieldIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/shield_02.svg";
+const codeRefreshIcon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/1.svg";
+const multilayerIcon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/2.svg";
+const appIntegrationIcon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/3.svg";
+const fasIcon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/FAS.svg";
+const gcrIcon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/GCR.svg";
+const lacIcon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/LAC.svg";
+const nmfsIcon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/NMFS.svg";
+const bannerIcon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/bannerMiddle.png";
+const ztsIcon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/ZTS.svg";
+const ztkIcon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/ZTK.svg";
+const sprIcon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/SPR.svg";
+const laaIcon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/LAA.svg";
+const verilockIcon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/verilockHero.png";
+const verilockLogoIcon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/verilockLogo.svg";
+const authenticatorLogoIcon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/authenticatorLogo.svg";
+const tickIcon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/tick.svg";
+const nilIcon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/nil.svg";
 import { useNavigate } from "/src/nextNavigation";
-import rsIcon from "../assets/verilock/Registration_Setup.svg";
-import saIcon from "../assets/verilock/Security_Architecture.svg";
-import lmIcon from "../assets/verilock/Login_Methods.svg";
-import gfIcon from "../assets/verilock/Geo-Fencing_Controls.svg";
+const rsIcon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/Registration_Setup.svg";
+const saIcon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/Security_Architecture.svg";
+const lmIcon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/Login_Methods.svg";
+const gfIcon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/Geo-Fencing_Controls.svg";
 
 
 const features = [
@@ -182,7 +182,7 @@ export default function ISyncDrivePage() {
       <section className="mt-10 text-center py-16 px-6 bg-white">
          <div className="mt-5 flex justify-center">
            <img
-                    src={verilockIcon.src}
+                    src={verilockIcon}
                     alt="product"
                     className="mx-auto mb-6 w-72 md:w-96 lg:w-[350px] h-[280px]"
                   />
@@ -194,7 +194,7 @@ export default function ISyncDrivePage() {
         <span className="inline-flex items-center gap-2 bg-blue-50 text-[#012060] px-3 py-2 rounded-full text-sm font-medium border border-blue-200 mb-4">
   
   <img 
-    src={shieldIcon.src} 
+    src={shieldIcon} 
     alt="icon" 
     className="w-5 h-5 object-contain"
   />
@@ -213,7 +213,7 @@ export default function ISyncDrivePage() {
         {/* <div className="mt-8 flex flex-wrap justify-center gap-4">
           <button className="bg-blue-900 text-white px-6 py-3 rounded-md">
             Request a Demo
-            <img src={arrowIcon.src} alt="arrow" className="w-4 h-4" />
+            <img src={arrowIcon} alt="arrow" className="w-4 h-4" />
           </button>
           <button className="border border-gray-300 px-6 py-3 rounded-md">
             Talk to an Expert
@@ -225,7 +225,7 @@ export default function ISyncDrivePage() {
       <button onClick={() => navigate("/products/form?embed=true&product=verilock")}  
       className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-[18px] w-[250px] h-[56px]">
         Request a Demo
-          <img src={arrowIcon.src} alt="arrow"/>
+          <img src={arrowIcon} alt="arrow"/>
 
       </button>
 
@@ -445,7 +445,7 @@ locations with full admin control.
 
     {/* IMAGE */}
     <img
-      src={bannerIcon.src}
+      src={bannerIcon}
       alt="platform"
       className="w-full rounded-xl"
     />
@@ -480,7 +480,7 @@ locations with full admin control.
       <div className="bg-white border border-[#E2E8F0] rounded-2xl p-8 shadow-sm">
         <div className="flex items-center gap-4 mb-6">
           <div className="w-12 h-12 rounded-xl flex items-center justify-center text-xl">
-            <img src={rsIcon.src} alt="icon" className="w-12 h-12 object-contain"/>
+            <img src={rsIcon} alt="icon" className="w-12 h-12 object-contain"/>
           </div>
           <h3 className="text-xl font-semibold text-[#1E293B]">
             Registration & setup
@@ -515,7 +515,7 @@ locations with full admin control.
       <div className="bg-white border border-[#E2E8F0] rounded-2xl p-8 shadow-sm">
         <div className="flex items-center gap-4 mb-6">
           <div className="w-12 h-12 rounded-xl flex items-center justify-center text-xl">
-            <img src={lmIcon.src} alt="icon" className="w-12 h-12 object-contain"/>
+            <img src={lmIcon} alt="icon" className="w-12 h-12 object-contain"/>
           </div>
           <h3 className="text-xl font-semibold text-[#1E293B]">
             Login methods
@@ -545,7 +545,7 @@ locations with full admin control.
       <div className="bg-white border border-[#E2E8F0] rounded-2xl p-8 shadow-sm">
         <div className="flex items-center gap-4 mb-6">
           <div className="w-12 h-12 rounded-xl flex items-center justify-center text-xl">
-            <img src={gfIcon.src} alt="icon" className="w-12 h-12 object-contain"/>
+            <img src={gfIcon} alt="icon" className="w-12 h-12 object-contain"/>
           </div>
           <h3 className="text-xl font-semibold text-[#1E293B]">
             Geo-fencing controls
@@ -576,7 +576,7 @@ locations with full admin control.
       <div className="bg-white border border-[#E2E8F0] rounded-2xl p-8 shadow-sm">
         <div className="flex items-center gap-4 mb-6">
           <div className="w-12 h-12 rounded-xl flex items-center justify-center text-xl">
-            <img src={saIcon.src} alt="icon" className="w-12 h-12 object-contain"/>
+            <img src={saIcon} alt="icon" className="w-12 h-12 object-contain"/>
           </div>
           <h3 className="text-xl font-semibold text-[#1E293B]">
             Security architecture
@@ -630,7 +630,7 @@ locations with full admin control.
       {/* Header */}
       <div className="flex-column items-start gap-4 mb-5">
         <div className="py-5 rounded-lg">
-          <img src={ztsIcon.src} alt="icon"/>
+          <img src={ztsIcon} alt="icon"/>
         </div>
         <h3 className="text-2xl font-bold text-[#334155]">
           Zero trust architecture
@@ -649,7 +649,7 @@ locations with full admin control.
       {/* Header */}
       <div className="flex-column items-start gap-4 mb-5">
         <div className="py-5 rounded-lg">
-          <img src={ztkIcon.src} alt="icon"/>
+          <img src={ztkIcon} alt="icon"/>
         </div>
         <h3 className="text-2xl font-bold text-[#334155]">
           Zero transmission key
@@ -667,7 +667,7 @@ locations with full admin control.
       {/* Header */}
       <div className="flex-column items-start gap-4 mb-5">
         <div className="py-5 rounded-lg">
-          <img src={laaIcon.src} alt="icon"/>
+          <img src={laaIcon} alt="icon"/>
         </div>
         <h3 className="text-2xl font-bold text-[#334155]">
           Location aware authentication
@@ -685,7 +685,7 @@ locations with full admin control.
       {/* Header */}
       <div className="flex-column items-start gap-4 mb-5">
         <div className="py-5 rounded-lg">
-          <img src={sprIcon.src} alt="icon"/>
+          <img src={sprIcon} alt="icon"/>
         </div>
         <h3 className="text-2xl font-bold text-[#334155]">
           Signed push responses
@@ -728,11 +728,11 @@ locations with full admin control.
         </div>
 
         <div className="p-5 text-left text-blue-400 flex items-center gap-2">
-          <img src={verilockLogoIcon.src} alt="Verilock Logo" className="w-28 h-auto"/>
+          <img src={verilockLogoIcon} alt="Verilock Logo" className="w-28 h-auto"/>
         </div>
 
         <div className="p-5 text-left text-[#94A3B8]">
-          <img src={authenticatorLogoIcon.src} alt="Google Authenticator Logo" className="w-28 h-auto scale-125"/>
+          <img src={authenticatorLogoIcon} alt="Google Authenticator Logo" className="w-28 h-auto scale-125"/>
         </div>
       </div>
 
@@ -797,7 +797,7 @@ locations with full admin control.
     {/* VERILOCK */}
     <div className="p-5 flex items-start gap-2 text-left">
       <img
-        src={row.verilock.type === "tick" ? tickIcon.src : nilIcon.src}
+        src={row.verilock.type === "tick" ? tickIcon : nilIcon}
         alt=""
         className="w-4 h-4 mt-1"
       />
@@ -809,7 +809,7 @@ locations with full admin control.
     {/* GOOGLE */}
     <div className="p-5 flex items-start gap-2 text-left">
       <img
-        src={row.google.type === "tick" ? tickIcon.src : nilIcon.src}
+        src={row.google.type === "tick" ? tickIcon : nilIcon}
         alt=""
         className="w-4 h-4 mt-1"
       />
@@ -871,7 +871,7 @@ locations with full admin control.
       <button onClick={() => navigate("/products/form?embed=true&product=verilock")} 
       className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-[18px] w-[250px] h-[56px]">
         Request a Demo
-          <img src={arrowIcon.src} alt="arrow"/>
+          <img src={arrowIcon} alt="arrow"/>
 
       </button>
     </div>

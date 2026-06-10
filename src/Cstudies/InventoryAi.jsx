@@ -5,24 +5,24 @@ import Footer from "../Othercomps/Footer";
 import Copyright from "../Othercomps/Copyright";
 import ProductFooter from "/src/Product/ProductFooter";
 
-import temp from "../assets/Compressed/temp.png";
-import temp2 from "../assets/Compressed/temp2.png";
-import espctquote1 from "../assets/Compressed/espctquote1.png";
-import espctquote2 from "../assets/Compressed/espctquote2.png";
-import petrosim1 from "../assets/Compressed/kbcchempetro1.png";
-import petrosim2 from "../assets/Compressed/kbcchempetro2.png";
-import adanigas1 from "../assets/Compressed/adanigas1.png";
-import adanigas2 from "../assets/Compressed/adanigas2.png";
-import datamgmt1 from "../assets/Compressed/datamgmt1.png";
-import datamgmt2 from "../assets/Compressed/datamgmt2.png";
-import peep1 from "../assets/Compressed/Peep1.png";
-import peep2 from "../assets/Compressed/Peep2.png";
-import voicecall1 from "../assets/Compressed/voicecall1.png";
-import voicecall2 from "../assets/Compressed/voicecall2.png";
+const temp = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/temp.png";
+const temp2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/temp2.png";
+const espctquote1 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/espctquote1.png";
+const espctquote2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/espctquote2.png";
+const petrosim1 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/kbcchempetro1.png";
+const petrosim2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/kbcchempetro2.png";
+const adanigas1 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/adanigas1.png";
+const adanigas2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/adanigas2.png";
+const datamgmt1 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/datamgmt1.png";
+const datamgmt2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/datamgmt2.png";
+const peep1 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/Peep1.png";
+const peep2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/Peep2.png";
+const voicecall1 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/voicecall1.png";
+const voicecall2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/voicecall2.png";
 
 
-import AiVoice from "../assets/ai/voice.jpg"
-import inventryAi from "../assets/ai/inventry.jpg"
+const AiVoice = "https://d3r43jacxrwsrp.cloudfront.net/ai/voice.jpg";
+const inventryAi = "https://d3r43jacxrwsrp.cloudfront.net/ai/inventry.jpg";
 
 
 function InventoryAi() {
@@ -41,14 +41,14 @@ function InventoryAi() {
                     </p>
                     <div className="w-full h-full max-w-7xl mx-auto items-center justify-center pt-12 pb-4 flex flex-row flex-wrap gap-16">
                         <img
-                            src={voicecall1.src}
+                            src={voicecall1}
                             alt=""
                             className="h-[400px] object-contain rounded-lg"
                         />
                         <div className="relative">
                             <div className="w-full h-full absolute bg-bloo/10  rounded-lg"></div>
                             <img
-                                src={inventryAi.src}
+                                src={inventryAi}
                                 alt=""
                                 className="h-[400px] z-20 object-contain"
                             />
@@ -255,7 +255,7 @@ function InventoryAi() {
                         >
                             <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
                                 <img
-                                    src={petrosim1.src}
+                                    src={petrosim1}
                                     className="  transition duration-300 filter grayscale hover:grayscale-0"
                                 />
                                 <div className="p-3 md:p-4">
@@ -276,7 +276,7 @@ function InventoryAi() {
                         >
                             <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
                                 <img
-                                    src={temp.src}
+                                    src={temp}
                                     className=" transition duration-300 filter grayscale hover:grayscale-0"
                                 />
                                 <div className="p-3 md:p-4">
@@ -297,7 +297,7 @@ function InventoryAi() {
                         >
                             <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
                                 <img
-                                    src={espctquote1.src}
+                                    src={espctquote1}
                                     className=" transition duration-300 filter grayscale hover:grayscale-0"
                                 />
                                 <div className="p-3 md:p-4">

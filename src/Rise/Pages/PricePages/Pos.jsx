@@ -1,20 +1,20 @@
 ﻿import styles from "./Styles/posSuite.module.css"
 
 
-import eyeImg from "../../assets/pricing/eye/eye.webp"
+const eyeImg = "https://d3r43jacxrwsrp.cloudfront.net/pricing/eye/eye.webp";
 import { Link } from '/src/nextNavigation'
 
 
-import account from "../../assets/Hospitality/allPageIcon/Account.png"
-import pos from "../../assets/Hospitality/allPageIcon/POS.png"
-import banquet from "../../assets/Hospitality/allPageIcon/Banquet.png"
-import emp from "../../assets/Hospitality/allPageIcon/Employee.png"
-import food from "../../assets/Hospitality/allPageIcon/Food.png"
-import inentry from "../../assets/Hospitality/allPageIcon/store.png"
-import member from "../../assets/Hospitality/allPageIcon/Member.png"
-import pay from "../../assets/Hospitality/allPageIcon/PAyscale.png"
-import room from "../../assets/Hospitality/allPageIcon/Room.png"
-import vendor from "../../assets/Hospitality/allPageIcon/purchase.png"
+const account = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Account.png";
+const pos = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/POS.png";
+const banquet = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Banquet.png";
+const emp = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Employee.png";
+const food = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Food.png";
+const inentry = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/store.png";
+const member = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Member.png";
+const pay = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/PAyscale.png";
+const room = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Room.png";
+const vendor = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/purchase.png";
 
 
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -124,7 +124,7 @@ export default function Pos() {
 
 
                     {/* <div className={`${styles.overviewEyeImgSize}`}>
-                        <img style={{ width: "100%" }} src={eyeImg.src} alt="" />
+                        <img style={{ width: "100%" }} src={eyeImg} alt="" />
                     </div> */}
 
                     <div className={`${styles.overviewPara} font1`}>

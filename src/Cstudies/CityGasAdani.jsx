@@ -2,8 +2,8 @@ import React from "react";
 import Footer from "../Othercomps/Footer";
 import ProductFooter from "/src/Product/ProductFooter";
 import Copyright from "../Othercomps/Copyright";
-import adanigas1 from "../assets/Compressed/adanigas1.png";
-import adanigas2 from "../assets/Compressed/adanigas2.png";
+const adanigas1 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/adanigas1.png";
+const adanigas2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/adanigas2.png";
 import { GiVirtualMarker } from "react-icons/gi";
 import Link from "next/link";
 
@@ -25,8 +25,8 @@ function CityGasAdani() {
             distribution network.
           </p>
           <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
-            <img src={adanigas1.src} alt="City Gas Distribution App" className="w-full h-full object-fit rounded-lg" />
-            <img src={adanigas2.src} alt="City Gas Distribution Dashboard" className="w-full h-full object-fit rounded-lg" />
+            <img src={adanigas1} alt="City Gas Distribution App" className="w-full h-full object-fit rounded-lg" />
+            <img src={adanigas2} alt="City Gas Distribution Dashboard" className="w-full h-full object-fit rounded-lg" />
           </div>
         </div>
         <div className="w-full pb-6">

@@ -11,16 +11,16 @@ import ProductFooter from "/src/Product/ProductFooter";
 
 import { FaCloud, FaDatabase } from "react-icons/fa";
 
-import Enterprise_img from "../assets/industry-images/Enterprise.png";
+const Enterprise_img = "https://d3r43jacxrwsrp.cloudfront.net/industry-images/Enterprise.png";
 
-import random1 from "../assets/Compressed/random1.jpg";
-import random2 from "../assets/Compressed/random2.jpg";
-import random3 from "../assets/Compressed/random3.jpg";
-import random4 from "../assets/Compressed/random4.jpg";
-import random5 from "../assets/Compressed/random5.jpg";
-import random6 from "../assets/Compressed/random6.jpg";
+const random1 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/random1.jpg";
+const random2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/random2.jpg";
+const random3 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/random3.jpg";
+const random4 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/random4.jpg";
+const random5 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/random5.jpg";
+const random6 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/random6.jpg";
 
-import laptop from "../assets/Compressed/Laptop.png";
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/Laptop.png";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { TiTime } from "react-icons/ti";
 import { GoWorkflow } from "react-icons/go";
@@ -29,24 +29,24 @@ import { GiCircuitry } from "react-icons/gi";
 import { PiDrone } from "react-icons/pi";
 
 // images
-import crms from "../assets/Enterprise/crms.jpg"
-import erps from "../assets/Enterprise/erps.jpg"
-import hrms from "../assets/Enterprise/hrms.jpg"
-import paao from "../assets/Enterprise/paao.jpg"
-import rtr from "../assets/Enterprise/rtr.png"
+const crms = "https://d3r43jacxrwsrp.cloudfront.net/Enterprise/crms.jpg";
+const erps = "https://d3r43jacxrwsrp.cloudfront.net/Enterprise/erps.jpg";
+const hrms = "https://d3r43jacxrwsrp.cloudfront.net/Enterprise/hrms.jpg";
+const paao = "https://d3r43jacxrwsrp.cloudfront.net/Enterprise/paao.jpg";
+const rtr = "https://d3r43jacxrwsrp.cloudfront.net/Enterprise/rtr.png";
 
 
 // cs images
 
-import opo from "../assets/Cs/opo.jpg"
-import etp from "../assets/Cs/etp.jpg"
+const opo = "https://d3r43jacxrwsrp.cloudfront.net/Cs/opo.jpg";
+const etp = "https://d3r43jacxrwsrp.cloudfront.net/Cs/etp.jpg";
 
-import adai from "../assets/Automobile/adai.jpeg"
-import ccp from "../assets/Automobile/ccp.jpg"
-import mpo from "../assets/Automobile/mpo.jpg"
+const adai = "https://d3r43jacxrwsrp.cloudfront.net/Automobile/adai.jpeg";
+const ccp = "https://d3r43jacxrwsrp.cloudfront.net/Automobile/ccp.jpg";
+const mpo = "https://d3r43jacxrwsrp.cloudfront.net/Automobile/mpo.jpg";
 
-import  aipdt from "../assets/medical/aipdt.jpeg"
-import  tmp from "../assets/medical/tmp.jpeg"
+const aipdt = "https://d3r43jacxrwsrp.cloudfront.net/medical/aipdt.jpeg";
+const tmp = "https://d3r43jacxrwsrp.cloudfront.net/medical/tmp.jpeg";
 
 
 
@@ -253,7 +253,7 @@ function Legal() {
       <div className="sm:max-w-7xl w-screen mx-auto pb-8">
         <div className="sm:max-w-7xl 2xl:pt-12 pt-32 xl:pb-12 pb-4 px-4 w-screen mx-auto grid">
           <img
-            src={Enterprise_img.src}
+            src={Enterprise_img}
             alt=""
             className="object-cover w-full px-2"
           />

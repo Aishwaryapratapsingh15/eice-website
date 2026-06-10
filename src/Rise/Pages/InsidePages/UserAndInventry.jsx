@@ -2,23 +2,23 @@
 import style from "./Styles/userAndInventry.module.css"
 
 
-import au from "../../assets/insidePages/inventry/section2icon/au.png"
-import ir from "../../assets/insidePages/inventry/section2icon/ir.png"
-import sv from "../../assets/insidePages/inventry/section2icon/sv.png"
+const au = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/inventry/section2icon/au.png";
+const ir = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/inventry/section2icon/ir.png";
+const sv = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/inventry/section2icon/sv.png";
 
 
-import heroImg from "../../assets/allHero/new/inventaryH.webp"
+const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/allHero/new/inventaryH.webp";
 
 
 import { Link } from '/src/nextNavigation'
 
 
-import ara from "../../assets/insidePages/inventry/featuresIcon/ara.png"
-import cum from "../../assets/insidePages/inventry/featuresIcon/cum.png"
-import esm from "../../assets/insidePages/inventry/featuresIcon/esm.png"
-import mls from "../../assets/insidePages/inventry/featuresIcon/mls.png"
-import rtic from "../../assets/insidePages/inventry/featuresIcon/rtic.png"
-import serpi from "../../assets/insidePages/inventry/featuresIcon/serpi.png"
+const ara = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/inventry/featuresIcon/ara.png";
+const cum = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/inventry/featuresIcon/cum.png";
+const esm = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/inventry/featuresIcon/esm.png";
+const mls = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/inventry/featuresIcon/mls.png";
+const rtic = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/inventry/featuresIcon/rtic.png";
+const serpi = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/inventry/featuresIcon/serpi.png";
 
 
 
@@ -26,15 +26,15 @@ import serpi from "../../assets/insidePages/inventry/featuresIcon/serpi.png"
 
 
 
-import co from "../../assets/insidePages/inventry/benefits/co.webp"
-import iic from "../../assets/insidePages/inventry/benefits/iic.webp"
-import oe from "../../assets/insidePages/inventry/benefits/oe.webp"
-import rti from "../../assets/insidePages/inventry/benefits/rti.webp"
-import s from "../../assets/insidePages/inventry/benefits/s.webp"
+const co = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/inventry/benefits/co.webp";
+const iic = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/inventry/benefits/iic.webp";
+const oe = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/inventry/benefits/oe.webp";
+const rti = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/inventry/benefits/rti.webp";
+const s = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/inventry/benefits/s.webp";
 
 
 
-import laptop from "../../assets/section3Laptop/store.webp"
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/section3Laptop/store.webp";
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 
@@ -226,7 +226,7 @@ export default function UserAndInventry() {
                         </div>
 
                         <div className={`${style.herosectionImgBoxPhone}`}>
-                            <img style={{ width: "100%" }} src={heroImg.src} alt={"room booking"} />
+                            <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
                         </div>
 
 
@@ -277,7 +277,7 @@ export default function UserAndInventry() {
                     <div className={style.section2IconAndName}>
 
                         <div className={`${style.section2Icon}`}>
-                            <img style={{ width: "100%" }} src={sv.src} alt="" />
+                            <img style={{ width: "100%" }} src={sv} alt="" />
                         </div>
 
                         <div className={`${style.iconName}`}>
@@ -296,7 +296,7 @@ export default function UserAndInventry() {
 
                     <div className={style.section2IconAndName}>
                         <div className={`${style.section2Icon}`}>
-                            <img style={{ width: "100%" }} src={au.src} alt="" />
+                            <img style={{ width: "100%" }} src={au} alt="" />
                         </div>
 
                         <div className={`${style.iconName} `}>
@@ -310,7 +310,7 @@ export default function UserAndInventry() {
                     <div className={style.section2IconAndName}>
 
                         <div className={`${style.section2Icon}`}>
-                            <img style={{ width: "100%" }} src={ir.src} alt="" />
+                            <img style={{ width: "100%" }} src={ir} alt="" />
                         </div>
 
                         <div className={`${style.iconName} `}>
@@ -340,7 +340,7 @@ export default function UserAndInventry() {
 
                         <div className={`${style.laptopImgSection3}`}>
                             <div className={`${style.laptopImgBox}`} >
-                                <img style={{ width: "100%" }} src={laptop.src} alt="" />
+                                <img style={{ width: "100%" }} src={laptop} alt="" />
                             </div>
                         </div>
 

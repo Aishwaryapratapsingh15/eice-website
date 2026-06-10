@@ -9,23 +9,23 @@ import Accordion from "../../Components/Accordian/Accordian.jsx";
 import Certificate from "../../Components/Certificate/Certificate.jsx";
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx";
 import FooterLower from "../../Components/Footer/FooterLower.jsx";
-import caIcon from "../../assets/feedback/CA.png"
-import dwrIcon from "../../assets/feedback/DWR.png"
-import ghpmIcon from "../../assets/feedback/GHPM.png"
-import retIcon from "../../assets/feedback/RET.png"
-import rtfaIcon from "../../assets/feedback/RTFA.png"
-import sadIcon from "../../assets/feedback/SAD.png"
-import bcmIcon from "../../assets/feedback/BCM.jpg"
-import beglIcon from "../../assets/feedback/BEGL.jpg"
-import boiIcon from "../../assets/feedback/BOI.jpg"
-import briIcon from "../../assets/feedback/BRI.jpg"
-import bsrIcon from "../../assets/feedback/BSR.jpg"
-import hero from "../../assets/feedback/hero-feedback.jpg"
-import laptop from "../../assets/section3Laptop/room.webp"
-import insightfulIcon from "../../assets/feedback/Insightful.png"
-import realtimeIcon from "../../assets/feedback/Realtime.png"
-import actionableIcon from "../../assets/feedback/Actionable.png"
-import overviewIcon from "../../assets/feedback/feedbackOverview.png"
+const caIcon = "https://d3r43jacxrwsrp.cloudfront.net/feedback/CA.png";
+const dwrIcon = "https://d3r43jacxrwsrp.cloudfront.net/feedback/DWR.png";
+const ghpmIcon = "https://d3r43jacxrwsrp.cloudfront.net/feedback/GHPM.png";
+const retIcon = "https://d3r43jacxrwsrp.cloudfront.net/feedback/RET.png";
+const rtfaIcon = "https://d3r43jacxrwsrp.cloudfront.net/feedback/RTFA.png";
+const sadIcon = "https://d3r43jacxrwsrp.cloudfront.net/feedback/SAD.png";
+const bcmIcon = "https://d3r43jacxrwsrp.cloudfront.net/feedback/BCM.jpg";
+const beglIcon = "https://d3r43jacxrwsrp.cloudfront.net/feedback/BEGL.jpg";
+const boiIcon = "https://d3r43jacxrwsrp.cloudfront.net/feedback/BOI.jpg";
+const briIcon = "https://d3r43jacxrwsrp.cloudfront.net/feedback/BRI.jpg";
+const bsrIcon = "https://d3r43jacxrwsrp.cloudfront.net/feedback/BSR.jpg";
+const hero = "https://d3r43jacxrwsrp.cloudfront.net/feedback/hero-feedback.jpg";
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/section3Laptop/room.webp";
+const insightfulIcon = "https://d3r43jacxrwsrp.cloudfront.net/feedback/Insightful.png";
+const realtimeIcon = "https://d3r43jacxrwsrp.cloudfront.net/feedback/Realtime.png";
+const actionableIcon = "https://d3r43jacxrwsrp.cloudfront.net/feedback/Actionable.png";
+const overviewIcon = "https://d3r43jacxrwsrp.cloudfront.net/feedback/feedbackOverview.png";
 
 
 
@@ -189,7 +189,7 @@ export default function Feedback() {
             </div>
 
             <div className={style.herosectionImgBoxPhone}>
-              <img style={{width : "100%"}} src={hero.src} alt={"feedback module"} />
+              <img style={{width : "100%"}} src={hero} alt={"feedback module"} />
             </div>
           </div>
         </section>
@@ -233,7 +233,7 @@ export default function Feedback() {
           <div className={style.blueBoxSetion3}>
             <div className={`${style.laptopImgSection3}`}>
                                                   <div className={`${style.laptopImgBox}`} >
-                                                      <img style={{ width: "100%" }} src={overviewIcon.src} alt="" />
+                                                      <img style={{ width: "100%" }} src={overviewIcon} alt="" />
                                                   </div>
                                               </div>
 

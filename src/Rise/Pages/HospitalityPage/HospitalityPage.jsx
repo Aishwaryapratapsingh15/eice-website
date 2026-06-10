@@ -2,84 +2,84 @@
 import styles from "./Hospitality.module.css"
 import { Link } from '/src/nextNavigation'
 import { useState, useEffect } from "react"
-import allLaptop from "../../assets/Hospitality/allLaptop.webp"
+const allLaptop = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allLaptop.webp";
 
-import account from "../../assets/Hospitality/allPageIcon/Account.png"
-import pos from "../../assets/Hospitality/allPageIcon/POS.png"
-import banquet from "../../assets/Hospitality/allPageIcon/Banquet.png"
-import emp from "../../assets/Hospitality/allPageIcon/Employee.png"
-import food from "../../assets/Hospitality/allPageIcon/Food.png"
-import inentry from "../../assets/Hospitality/allPageIcon/store.png"
-import member from "../../assets/Hospitality/allPageIcon/Member.png"
-import pay from "../../assets/Hospitality/allPageIcon/PAyscale.png"
-import room from "../../assets/Hospitality/allPageIcon/Room.png"
-import vendor from "../../assets/Hospitality/allPageIcon/purchase.png"
-import single from "../../assets/Hospitality/allPageIcon/Single.png"
-import wifi from "../../assets/Hospitality/allPageIcon/WIFI.png"
-import budget from "../../assets/Hospitality/allPageIcon/Budget.png"
-import feedbacki from "../../assets/Hospitality/allPageIcon/Feedback.png";
-import audience from "../../assets/Hospitality/allPageIcon/Audience.png"
-import compliance from "../../assets/Hospitality/allPageIcon/Compliance.png"
-import vendori from "../../assets/Hospitality/allPageIcon/Vendor.png";
+const account = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Account.png";
+const pos = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/POS.png";
+const banquet = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Banquet.png";
+const emp = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Employee.png";
+const food = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Food.png";
+const inentry = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/store.png";
+const member = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Member.png";
+const pay = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/PAyscale.png";
+const room = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Room.png";
+const vendor = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/purchase.png";
+const single = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Single.png";
+const wifi = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/WIFI.png";
+const budget = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Budget.png";
+const feedbacki = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Feedback.png";
+const audience = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Audience.png";
+const compliance = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Compliance.png";
+const vendori = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Vendor.png";
 
-import vimg from "../../assets/insidePages/vimg.webp"
+const vimg = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/vimg.webp";
 
 import FooterLower from "../../Components/Footer/FooterLower"
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart"
 
 
 
-import c3 from "../../assets/Hospitality/customer/c1.png"
-import c2 from "../../assets/Hospitality/customer/c2.png"
-import c1 from "../../assets/Hospitality/customer/c3.png"
+const c3 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/customer/c1.png";
+const c2 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/customer/c2.png";
+const c1 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/customer/c3.png";
 
 
-import and from "../../assets/caseStudy/android.webp"
-import iic from "../../assets/caseStudy/IIC.webp"
-import durga from "../../assets/caseStudy/durga.webp"
+const and = "https://d3r43jacxrwsrp.cloudfront.net/caseStudy/android.webp";
+const iic = "https://d3r43jacxrwsrp.cloudfront.net/caseStudy/IIC.webp";
+const durga = "https://d3r43jacxrwsrp.cloudfront.net/caseStudy/durga.webp";
 
-import cl1 from "../../assets/Hospitality/clients/c1.png";
-import cl2 from "../../assets/Hospitality/clients/c2.png";
-import cl3 from "../../assets/Hospitality/clients/c3.png";
-import cl4 from "../../assets/Hospitality/clients/c4.png";
-import cl5 from "../../assets/Hospitality/clients/c5.png";
-import cl6 from "../../assets/Hospitality/clients/c6.png";
-import cl7 from "../../assets/Hospitality/clients/c7.png";
-import cl8 from "../../assets/Hospitality/clients/c8.png";
-import cl9 from "../../assets/Hospitality/clients/c9.png";
-import cl10 from "../../assets/Hospitality/clients/c10.png";
-import cl11 from "../../assets/Hospitality/clients/c11.png";
-import cl12 from "../../assets/Hospitality/clients/c12.png";
-import cl13 from "../../assets/Hospitality/clients/c13.png";
-import cl14 from "../../assets/Hospitality/clients/c14.png";
-import cl15 from "../../assets/Hospitality/clients/c15.png";
-import cl16 from "../../assets/Hospitality/clients/c16.png";
-import cl17 from "../../assets/Hospitality/clients/c17.png";
-import cl18 from "../../assets/Hospitality/clients/c18.png";
-import cl19 from "../../assets/Hospitality/clients/c19.png";
-import cl20 from "../../assets/Hospitality/clients/c20.png";
-import cl21 from "../../assets/Hospitality/clients/c21.png";
-import cl22 from "../../assets/Hospitality/clients/c22.png";
-import cl23 from "../../assets/Hospitality/clients/c23.png";
-import cl24 from "../../assets/Hospitality/clients/c24.png";
-import cl25 from "../../assets/Hospitality/clients/c25.png";
-import cl26 from "../../assets/Hospitality/clients/c26.png";
-import cl27 from "../../assets/Hospitality/clients/c27.png";
-import cl28 from "../../assets/Hospitality/clients/c28.png";
-import cl29 from "../../assets/Hospitality/clients/c29.png";
-import cl30 from "../../assets/Hospitality/clients/c30.png";
-
-
+const cl1 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c1.png";
+const cl2 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c2.png";
+const cl3 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c3.png";
+const cl4 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c4.png";
+const cl5 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c5.png";
+const cl6 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c6.png";
+const cl7 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c7.png";
+const cl8 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c8.png";
+const cl9 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c9.png";
+const cl10 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c10.png";
+const cl11 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c11.png";
+const cl12 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c12.png";
+const cl13 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c13.png";
+const cl14 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c14.png";
+const cl15 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c15.png";
+const cl16 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c16.png";
+const cl17 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c17.png";
+const cl18 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c18.png";
+const cl19 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c19.png";
+const cl20 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c20.png";
+const cl21 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c21.png";
+const cl22 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c22.png";
+const cl23 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c23.png";
+const cl24 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c24.png";
+const cl25 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c25.png";
+const cl26 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c26.png";
+const cl27 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c27.png";
+const cl28 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c28.png";
+const cl29 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c29.png";
+const cl30 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c30.png";
 
 
-import clientHeadIcon from "../../assets/Hospitality/customer/subh.png"
-import h2 from "../../assets/Hospitality/headIcon/h2.png"
+
+
+const clientHeadIcon = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/customer/subh.png";
+const h2 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/headIcon/h2.png";
 
 
 import { FaArrowRightLong } from "react-icons/fa6";
 
 
-import footerlaptop from "../../assets/section3Laptop/pos2.webp"
+const footerlaptop = "https://d3r43jacxrwsrp.cloudfront.net/section3Laptop/pos2.webp";
 
 
 
@@ -443,7 +443,7 @@ export default function HospitalityPage() {
 
 
                 {!forSmallestScreen && (<div className={styles.laptopImg}>
-                    <img className={`${styles.laptopImgDimension}`} src={allLaptop.src} alt="" />
+                    <img className={`${styles.laptopImgDimension}`} src={allLaptop} alt="" />
                 </div>)}
 
 
@@ -539,7 +539,7 @@ export default function HospitalityPage() {
 
 
                 <div className={`${styles.section3Video}`} >
-                    <img style={{ width: "100%" }} loading="lazy" src={vimg.src} alt="video" />
+                    <img style={{ width: "100%" }} loading="lazy" src={vimg} alt="video" />
                 </div>
 
 
@@ -595,7 +595,7 @@ export default function HospitalityPage() {
                     <div className={`${styles.section5Heading} font1`}>
                         <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "0px 20px" }}>
                             <div style={{ width: "55px", paddingBottom: "14px" }}>
-                                <img style={{ width: "100%" }} src={clientHeadIcon.src} alt="clients" />
+                                <img style={{ width: "100%" }} src={clientHeadIcon} alt="clients" />
                             </div>
 
                             <div className="font3">
@@ -656,7 +656,7 @@ export default function HospitalityPage() {
                         <div className={`${styles.section5HeadingAndIconBox}`} >
 
                             <div style={{ width: "40px", }}>
-                                <img style={{ width: "100%" }} src={clientHeadIcon.src} alt="" />
+                                <img style={{ width: "100%" }} src={clientHeadIcon} alt="" />
                             </div>
 
                             <div style={{ textAlign: "left", paddingLeft: "20px" }} className="font3">
@@ -746,7 +746,7 @@ export default function HospitalityPage() {
 
                     <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "0px 20px" }}>
                         <div style={{ width: "50px", paddingTop: "12px" }}>
-                            <img style={{ width: "100%" }} src={h2.src} alt="" />
+                            <img style={{ width: "100%" }} src={h2} alt="" />
                         </div>
 
                         <div className="font3">
@@ -800,7 +800,7 @@ export default function HospitalityPage() {
 
                     <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "0px 20px" }}>
                         <div style={{ width: "50px", paddingTop: "12px" }}>
-                            <img style={{ width: "100%" }} src={h2.src} alt="" />
+                            <img style={{ width: "100%" }} src={h2} alt="" />
                         </div>
 
                         <div className="font3">

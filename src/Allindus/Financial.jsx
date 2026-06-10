@@ -11,15 +11,15 @@ import ProductFooter from "/src/Product/ProductFooter";
 
 import { FaCloud, FaDatabase } from "react-icons/fa";
 
-import financial_img from "../assets/industry-images/Financial Services.png";
+const financial_img = "https://d3r43jacxrwsrp.cloudfront.net/industry-images/Financial Services.png";
 
-import laptop from "../assets/Compressed/Laptop.png";
-import random1 from "../assets/Compressed/random1.jpg";
-import random2 from "../assets/Compressed/random2.jpg";
-import random3 from "../assets/Compressed/random3.jpg";
-import random4 from "../assets/Compressed/random4.jpg";
-import random5 from "../assets/Compressed/random5.jpg";
-import random6 from "../assets/Compressed/random6.jpg";
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/Laptop.png";
+const random1 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/random1.jpg";
+const random2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/random2.jpg";
+const random3 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/random3.jpg";
+const random4 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/random4.jpg";
+const random5 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/random5.jpg";
+const random6 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/random6.jpg";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { FcCollaboration } from "react-icons/fc";
 import { GiSecurityGate, GiTalk } from "react-icons/gi";
@@ -28,24 +28,24 @@ import { MdManageAccounts, MdSecurity } from "react-icons/md";
 
 // images
 
-import biaa from "../assets/Financial/biaa.jpeg"
-import carr from "../assets/Financial/carr.jpeg"
-import crms from "../assets/Financial/crms.jpg"
-import dbs from "../assets/Financial/dbs.png"
-import fms from "../assets/Financial/fms.jpg"
+const biaa = "https://d3r43jacxrwsrp.cloudfront.net/Financial/biaa.jpeg";
+const carr = "https://d3r43jacxrwsrp.cloudfront.net/Financial/carr.jpeg";
+const crms = "https://d3r43jacxrwsrp.cloudfront.net/Financial/crms.jpg";
+const dbs = "https://d3r43jacxrwsrp.cloudfront.net/Financial/dbs.png";
+const fms = "https://d3r43jacxrwsrp.cloudfront.net/Financial/fms.jpg";
 
 
 // cs images
 
-import opo from "../assets/Cs/opo.jpg"
-import etp from "../assets/Cs/etp.jpg"
+const opo = "https://d3r43jacxrwsrp.cloudfront.net/Cs/opo.jpg";
+const etp = "https://d3r43jacxrwsrp.cloudfront.net/Cs/etp.jpg";
 
-import adai from "../assets/Automobile/adai.jpeg"
-import ccp from "../assets/Automobile/ccp.jpg"
-import mpo from "../assets/Automobile/mpo.jpg"
+const adai = "https://d3r43jacxrwsrp.cloudfront.net/Automobile/adai.jpeg";
+const ccp = "https://d3r43jacxrwsrp.cloudfront.net/Automobile/ccp.jpg";
+const mpo = "https://d3r43jacxrwsrp.cloudfront.net/Automobile/mpo.jpg";
 
-import  aipdt from "../assets/medical/aipdt.jpeg"
-import  tmp from "../assets/medical/tmp.jpeg"
+const aipdt = "https://d3r43jacxrwsrp.cloudfront.net/medical/aipdt.jpeg";
+const tmp = "https://d3r43jacxrwsrp.cloudfront.net/medical/tmp.jpeg";
 
 
 
@@ -254,7 +254,7 @@ function Legal() {
       <div className="sm:max-w-7xl w-screen mx-auto pb-8">
         <div className="sm:max-w-7xl 2xl:pt-12 pt-32 xl:pb-12 pb-4 px-4 w-screen mx-auto grid">
           <img
-            src={financial_img.src}
+            src={financial_img}
             alt=""
             className="w-full object-cover px-2"
           />

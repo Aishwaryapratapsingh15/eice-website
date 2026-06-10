@@ -3,42 +3,42 @@ import style from "./Styles/roomBooking.module.css"
 
 
 
-import icon1 from "../../assets/insidePages/room/roomPage/Icons/1.png"
-import icon2 from "../../assets/insidePages/room/roomPage/Icons/2.png"
-import icon3 from "../../assets/insidePages/room/roomPage/Icons/3.png"
+const icon1 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/Icons/1.png";
+const icon2 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/Icons/2.png";
+const icon3 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/Icons/3.png";
 
 
 
-import heroImg from "../../assets/allHero/roomh.webp"
+const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/allHero/roomh.webp";
 
 
 import { Link } from '/src/nextNavigation'
 
 
 // features
-import rt from "../../assets/insidePages/room/roomPage/feature/rt.png"
-import app from "../../assets/insidePages/room/roomPage/feature/app.png"
-import cbd from "../../assets/insidePages/room/roomPage/feature/cbd.png"
-import cbo from "../../assets/insidePages/room/roomPage/feature/cbo.png"
-import frs from "../../assets/insidePages/room/roomPage/feature/frs.png"
-import ibc from "../../assets/insidePages/room/roomPage/feature/ibc.png"
-import mfi from "../../assets/insidePages/room/roomPage/feature/mfi.png"
-import wifi from "../../assets/insidePages/room/roomPage/feature/wifi.png"
-import ipg from "../../assets/insidePages/room/roomPage/feature/ipg.png"
+const rt = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/feature/rt.png";
+const app = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/feature/app.png";
+const cbd = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/feature/cbd.png";
+const cbo = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/feature/cbo.png";
+const frs = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/feature/frs.png";
+const ibc = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/feature/ibc.png";
+const mfi = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/feature/mfi.png";
+const wifi = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/feature/wifi.png";
+const ipg = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/feature/ipg.png";
 
 
 
 // benifits
 
-import b1 from "../../assets/insidePages/room/roomPage/benifit/b1.webp"
-import b2 from "../../assets/insidePages/room/roomPage/benifit/b2.webp"
-import b3 from "../../assets/insidePages/room/roomPage/benifit/b3.webp"
-import b4 from "../../assets/insidePages/room/roomPage/benifit/b4.webp"
-import b5 from "../../assets/insidePages/room/roomPage/benifit/b6.webp"
+const b1 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/benifit/b1.webp";
+const b2 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/benifit/b2.webp";
+const b3 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/benifit/b3.webp";
+const b4 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/benifit/b4.webp";
+const b5 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/benifit/b6.webp";
 
 
 // overview 
-import laptop from "../../assets/section3Laptop/room.webp"
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/section3Laptop/room.webp";
 
 
 
@@ -260,7 +260,7 @@ export default function RoomBooking() {
     </div>
 
     <div className={`${style.herosectionImgBoxPhone}`}>
-        <img style={{width : "100%"}} src={heroImg.src} alt={"room booking"} />
+        <img style={{width : "100%"}} src={heroImg} alt={"room booking"} />
     </div>
 
 
@@ -305,7 +305,7 @@ export default function RoomBooking() {
 
                     <div className={style.section2IconAndName}>
                         <div className={`${style.section2Icon}`}>
-                            <img style={{ width: "100%" }} src={icon1.src} alt="" />
+                            <img style={{ width: "100%" }} src={icon1} alt="" />
                         </div>
 
                         <div className={`${style.iconName} `}>
@@ -318,7 +318,7 @@ export default function RoomBooking() {
                     <div className={style.section2IconAndName}>
 
                         <div className={`${style.section2Icon}`}>
-                            <img style={{ width: "100%" }} src={icon2.src} alt="" />
+                            <img style={{ width: "100%" }} src={icon2} alt="" />
                         </div>
 
                         <div className={`${style.iconName} `}>Smart</div>
@@ -329,7 +329,7 @@ export default function RoomBooking() {
                     <div className={style.section2IconAndName}>
 
                         <div className={`${style.section2Icon}`}>
-                            <img style={{ width: "100%" }} src={icon3.src} alt="" />
+                            <img style={{ width: "100%" }} src={icon3} alt="" />
                         </div>
 
                         <div className={`${style.iconName}`}>
@@ -355,7 +355,7 @@ export default function RoomBooking() {
 
                         <div className={`${style.laptopImgSection3}`}>
                             <div className={`${style.laptopImgBox}`} >
-                                <img style={{ width: "100%" }} src={laptop.src} alt="" />
+                                <img style={{ width: "100%" }} src={laptop} alt="" />
                             </div>
                         </div>
 

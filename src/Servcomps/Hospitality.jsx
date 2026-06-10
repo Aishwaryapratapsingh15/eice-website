@@ -1,20 +1,20 @@
 ﻿import styles from "./styles/Hospitality.module.css"
 
-import mainImg from "../assets/hospitalityMain/hospitalitypage/Herosection.png"
+const mainImg = "https://d3r43jacxrwsrp.cloudfront.net/hospitalityMain/hospitalitypage/Herosection.png";
 import { Link } from "/src/nextNavigation";
 
 
 
-import pos from "../assets/Hospitality/hospitalityIcon/pos.png"
-import banquet from "../assets/Hospitality/hospitalityIcon/banquet.png"
-import employee from "../assets/Hospitality/hospitalityIcon/employee.png"
-import finance from "../assets/Hospitality/hospitalityIcon/finance.png"
-import foodcost from "../assets/Hospitality/hospitalityIcon/foodcost.png"
-import inventry from "../assets/Hospitality/hospitalityIcon/inventry.png"
-import member from "../assets/Hospitality/hospitalityIcon/member.png"
-import payroll from "../assets/Hospitality/hospitalityIcon/payroll.png"
-import room from "../assets/Hospitality/hospitalityIcon/room2.png"
-import vendor from "../assets/Hospitality/hospitalityIcon/vendor.png"
+const pos = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/hospitalityIcon/pos.png";
+const banquet = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/hospitalityIcon/banquet.png";
+const employee = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/hospitalityIcon/employee.png";
+const finance = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/hospitalityIcon/finance.png";
+const foodcost = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/hospitalityIcon/foodcost.png";
+const inventry = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/hospitalityIcon/inventry.png";
+const member = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/hospitalityIcon/member.png";
+const payroll = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/hospitalityIcon/payroll.png";
+const room = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/hospitalityIcon/room2.png";
+const vendor = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/hospitalityIcon/vendor.png";
 
 
 
@@ -120,7 +120,7 @@ export default function Hospitality() {
                     </div>
 
                     <div className={styles.mainImageBox}>
-                        <img className={styles.mainImage} src={mainImg.src} alt="" />
+                        <img className={styles.mainImage} src={mainImg} alt="" />
                         <div>
 
                             <img src="" alt="" />

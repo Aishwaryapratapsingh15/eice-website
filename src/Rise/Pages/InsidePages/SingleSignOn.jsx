@@ -6,23 +6,23 @@ import Certificate from "../../Components/Certificate/Certificate.jsx";
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx";
 import FooterLower from "../../Components/Footer/FooterLower.jsx";
 import Accordion from "../../Components/Accordian/Accordian.jsx";
-import malIcon from "../../assets/singleSignOn/MAL.png";
-import mpcIcon from "../../assets/singleSignOn/MPC.png";
-import nacIcon from "../../assets/singleSignOn/NAC.png";
-import rbacIcon from "../../assets/singleSignOn/RBAC.png";
-import salIcon from "../../assets/singleSignOn/SAL.png";
-import umpIcon from "../../assets/singleSignOn/UMP.png";
-import bcgIcon from "../../assets/singleSignOn/BCG.jpg";
-import bcscIcon from "../../assets/singleSignOn/BCSC.jpg";
-import besIcon from "../../assets/singleSignOn/BES.png";
-import boeIcon from "../../assets/singleSignOn/BOE.png";
-import bsIcon from "../../assets/singleSignOn/BS.png";
-import laptop from "../../assets/section3Laptop/room.webp"
-import hero from "../../assets/singleSignOn/hero-singleSignOn.png"
-import centralizedIcon from "../../assets/singleSignOn/Centralized.png"
-import configurableIcon from "../../assets/singleSignOn/COnfigrable.png"
-import controllableIcon from "../../assets/singleSignOn/Controlled.png"
-import middleImg from "../../assets/singleSignOn/singleSignOnOverview.png"
+const malIcon = "https://d3r43jacxrwsrp.cloudfront.net/singleSignOn/MAL.png";
+const mpcIcon = "https://d3r43jacxrwsrp.cloudfront.net/singleSignOn/MPC.png";
+const nacIcon = "https://d3r43jacxrwsrp.cloudfront.net/singleSignOn/NAC.png";
+const rbacIcon = "https://d3r43jacxrwsrp.cloudfront.net/singleSignOn/RBAC.png";
+const salIcon = "https://d3r43jacxrwsrp.cloudfront.net/singleSignOn/SAL.png";
+const umpIcon = "https://d3r43jacxrwsrp.cloudfront.net/singleSignOn/UMP.png";
+const bcgIcon = "https://d3r43jacxrwsrp.cloudfront.net/singleSignOn/BCG.jpg";
+const bcscIcon = "https://d3r43jacxrwsrp.cloudfront.net/singleSignOn/BCSC.jpg";
+const besIcon = "https://d3r43jacxrwsrp.cloudfront.net/singleSignOn/BES.png";
+const boeIcon = "https://d3r43jacxrwsrp.cloudfront.net/singleSignOn/BOE.png";
+const bsIcon = "https://d3r43jacxrwsrp.cloudfront.net/singleSignOn/BS.png";
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/section3Laptop/room.webp";
+const hero = "https://d3r43jacxrwsrp.cloudfront.net/singleSignOn/hero-singleSignOn.png";
+const centralizedIcon = "https://d3r43jacxrwsrp.cloudfront.net/singleSignOn/Centralized.png";
+const configurableIcon = "https://d3r43jacxrwsrp.cloudfront.net/singleSignOn/COnfigrable.png";
+const controllableIcon = "https://d3r43jacxrwsrp.cloudfront.net/singleSignOn/Controlled.png";
+const middleImg = "https://d3r43jacxrwsrp.cloudfront.net/singleSignOn/singleSignOnOverview.png";
 
 
 
@@ -167,7 +167,7 @@ const footerUpperText = {
             </div>
 
             <div className={style.herosectionImgBoxPhone}>
-              <img style={{width : "100%"}} src={hero.src} alt={"room booking"} />
+              <img style={{width : "100%"}} src={hero} alt={"room booking"} />
             </div>
 
           </div>
@@ -220,7 +220,7 @@ const footerUpperText = {
 
           <div className={`${style.laptopImgSection3}`}>
                                       <div className={`${style.laptopImgBox}`} >
-                                          <img style={{ width: "100%" }} src={middleImg.src} alt="" />
+                                          <img style={{ width: "100%" }} src={middleImg} alt="" />
                                       </div>
                                   </div>
 

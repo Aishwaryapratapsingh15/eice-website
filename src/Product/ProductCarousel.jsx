@@ -2,7 +2,7 @@
 
 /* eslint-disable react/prop-types */
 import React, { useState, useEffect } from "react";
-import productBgImage from "../assets/product-carousel/products-background.png";
+const productBgImage = "https://d3r43jacxrwsrp.cloudfront.net/product-carousel/products-background.png";
 import { useNavigate } from "/src/nextNavigation";
 
 export default function ProductCarousel({ slides = [] }) {
@@ -55,7 +55,7 @@ export default function ProductCarousel({ slides = [] }) {
   return (
     <section
       className="py-10 bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: `url(${productBgImage.src})` }}
+      style={{ backgroundImage: `url(${productBgImage})` }}
     >
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-10 lg:px-20">
 

@@ -6,10 +6,10 @@ import styles from "./Styles/posSuite.module.css"
 import { Link } from '/src/nextNavigation'
 
 
-import account from "../../assets/Hospitality/allPageIcon/Account.png"
-import pos from "../../assets/Hospitality/allPageIcon/POS.png"
+const account = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Account.png";
+const pos = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/POS.png";
 
-import heroimg from "../../assets/pricing/suitHeroSection/posP.webp"
+const heroimg = "https://d3r43jacxrwsrp.cloudfront.net/pricing/suitHeroSection/posP.webp";
 import { useEffect, useState } from "react"
 import { FaArrowRightLong } from "react-icons/fa6";
 import FooterLower from "../../Components/Footer/FooterLower"
@@ -87,11 +87,11 @@ export default function PosSuite() {
 
             {isPhone ? (<section className={`${styles.heroImgSectionPhone}`}>
                 <div className={`${styles.heroImgBoxPhone}`}>
-                    {/* <img style={{ width: "100%" }} src={heroimg.src} alt="banquet Suite" /> */}
+                    {/* <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite" /> */}
                 </div>
             </section>) : (<section className={`${styles.heroImgSection}`}>
                 <div className={`${styles.heroImgBox}`}>
-                    <img style={{ width: "100%" }} src={heroimg.src} alt="banquet Suite" />
+                    <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite" />
                 </div>
             </section>)}
 

@@ -2,7 +2,7 @@
 import styles from "./topNavBar.module.css"
 import { IoCloseSharp } from "react-icons/io5";
 import { HiOutlineBars3 } from "react-icons/hi2";
-import logo from "../../../assets/logo/logo.svg"
+const logo = "https://d3r43jacxrwsrp.cloudfront.net/logo/logo.svg";
 
 
 import { useSelector , useDispatch } from "react-redux";
@@ -29,7 +29,7 @@ export default function TopNavBar() {
             </div>
 
             <div style={{ width: "100px" }}>
-                <img style={{ width: "100%" }} src={logo.src} alt="Logo" />
+                <img style={{ width: "100%" }} src={logo} alt="Logo" />
             </div>
 
         </>

@@ -3,28 +3,28 @@ import React from "react";
 import ProductCarousel from "./ProductCarousel";
 import productSlides from "./carouselData";
 import ProductFooter from "./ProductFooter";
-import cobIcon from "../assets/infraSight/COB.svg";
-import arrowIcon from "../assets/arrow.svg";
-import infraSightHero from "../assets/infraSight/infrasight.png";
-import aemIcon from "../assets/infraSight/AEM.svg";
-import dvIcon from "../assets/infraSight/DV.svg";
-import mcIcon from "../assets/infraSight/MC.svg";
-import ttmIcon from "../assets/infraSight/TTM.svg";
-import uramIcon from "../assets/infraSight/URAM.svg";
-import hgmIcon from "../assets/infraSight/HGM.svg";
-import adbIcon from "../assets/infraSight/ADB.svg";
-import adtIcon from "../assets/infraSight/ADT.svg";
-import codIcon from "../assets/infraSight/COD.svg";
-import esIcon from "../assets/infraSight/ES.svg";
-import mpmcIcon from "../assets/infraSight/MPMC.svg";
-import aaeIcon from "../assets/infraSight/AAE.svg";
-import sidebgIcon from "../assets/infraSight/whatis.png";
-import fvIcon from "../assets/infraSight/FV.svg";
-import mcoIcon from "../assets/infraSight/MCO.svg";
-import nscIcon from "../assets/infraSight/NSC.svg";
-import nescIcon from "../assets/infraSight/NESC.svg";
+const cobIcon = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/COB.svg";
+const arrowIcon = "https://d3r43jacxrwsrp.cloudfront.net/arrow.svg";
+const infraSightHero = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/infrasight.png";
+const aemIcon = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/AEM.svg";
+const dvIcon = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/DV.svg";
+const mcIcon = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/MC.svg";
+const ttmIcon = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/TTM.svg";
+const uramIcon = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/URAM.svg";
+const hgmIcon = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/HGM.svg";
+const adbIcon = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/ADB.svg";
+const adtIcon = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/ADT.svg";
+const codIcon = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/COD.svg";
+const esIcon = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/ES.svg";
+const mpmcIcon = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/MPMC.svg";
+const aaeIcon = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/AAE.svg";
+const sidebgIcon = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/whatis.png";
+const fvIcon = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/FV.svg";
+const mcoIcon = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/MCO.svg";
+const nscIcon = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/NSC.svg";
+const nescIcon = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/NESC.svg";
 import { useNavigate } from "/src/nextNavigation";
-import infrabannerIcon from "../assets/infraSight/infraBanner.png";
+const infrabannerIcon = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/infraBanner.png";
 
 
 
@@ -228,7 +228,7 @@ export default function InfraSight() {
        <section className="bg-white pb-10 px-4 sm:px-8 md:px-20 mt-20 sm:mt-32 md:mt-40">
          <div className="mt-5 flex justify-center">
                     <img
-                             src={infraSightHero.src}
+                             src={infraSightHero}
                              alt="product"
                              className="mx-auto mb-6 w-72 md:w-full lg:w-[480px]"
                            />
@@ -259,7 +259,7 @@ export default function InfraSight() {
                           <button  onClick={() => navigate("/products/form?embed=true&product=infrasight")} 
                           className="bg-[#012060] text-white px-10 py-5 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-[18px] w-[250px] h-[56px]">
                             Request a Demo
-                              <img src={arrowIcon.src} alt="arrow"/>
+                              <img src={arrowIcon} alt="arrow"/>
                     
                           </button>
 
@@ -327,7 +327,7 @@ systems.
     <div className="hidden md:block h-full">
       {/* Placeholder for image */}
       <div className="w-full h-[350px]">
-        <img src={sidebgIcon.src} alt="What is InfraSight" className="w-full h-full object-cover rounded-xl" />
+        <img src={sidebgIcon} alt="What is InfraSight" className="w-full h-full object-cover rounded-xl" />
       </div>
     </div>
 
@@ -434,7 +434,7 @@ infrastructure </h4>
       
           {/* IMAGE */}
           <img
-            src={infrabannerIcon.src}
+            src={infrabannerIcon}
             alt="platform"
             className="w-full rounded-xl"
           />
@@ -493,7 +493,7 @@ infrastructure</h4>
       
           {/* IMAGE */}
           <img
-            src={cobIcon.src}
+            src={cobIcon}
             alt="platform"
             className="w-full rounded-xl"
           />
@@ -675,7 +675,7 @@ infrastructure</h4>
       <button onClick={() => navigate("/products/form?embed=true&product=infrasight")} 
       className="bg-[#012060] text-white px-10 py-5 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-[18px] w-[250px] h-[56px]">
         Request a Demo
-          <img src={arrowIcon.src} alt="arrow"/>
+          <img src={arrowIcon} alt="arrow"/>
 
       </button>
     </div>

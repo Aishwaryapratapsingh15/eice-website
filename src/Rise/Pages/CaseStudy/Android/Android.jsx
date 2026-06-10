@@ -2,15 +2,15 @@
 import FooterLower from "../../../Components/Footer/FooterLower"
 import styles from "./android.module.css"
 
-import laptop from "../../../assets/caseStudy/android.webp"
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/caseStudy/android.webp";
 
-import vendor from "../../../assets/Hospitality/allPageIcon/purchase.png"
-import inentry from "../../../assets/Hospitality/allPageIcon/store.png"
+const vendor = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/purchase.png";
+const inentry = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/store.png";
 import { Link } from '/src/nextNavigation'
 
 import { useEffect, useState } from "react"
 
-import family from "../../../assets/caseStudy/androidBottom.webp"
+const family = "https://d3r43jacxrwsrp.cloudfront.net/caseStudy/androidBottom.webp";
 import Certificate from "../../../Components/Certificate/Certificate"
 
 
@@ -99,7 +99,7 @@ export default function Android() {
                 <div className={`${styles.imgAndDescBox} globalSectionSize `}>
 
                     <div className={`${styles.descImg}`}>
-                        <img style={{ width: "100%" }} src={laptop.src} alt="brief description" />
+                        <img style={{ width: "100%" }} src={laptop} alt="brief description" />
                     </div>
 
                     <div className={`${styles.briefDescBox}`}>
@@ -122,7 +122,7 @@ export default function Android() {
             {isPhone && (<section className={`${styles.briefDescSectionPhone}  `}>
 
                 <div className={`${styles.descImgPhone}`}>
-                    <img style={{ width: "100%" }} src={laptop.src} alt="brief description" />
+                    <img style={{ width: "100%" }} src={laptop} alt="brief description" />
                 </div>
 
             </section>
@@ -244,7 +244,7 @@ export default function Android() {
                 <div className={`${styles.imgAndParaBox}  font1`}>
 
                     <div className={`${styles.valueClientImg}`}>
-                        <img style={{ width: "100%" }} src={family.src} alt="client" />
+                        <img style={{ width: "100%" }} src={family} alt="client" />
                     </div>
 
                     <div className={`${styles.valueToClientPara}`}>

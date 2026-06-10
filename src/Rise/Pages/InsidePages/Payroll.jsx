@@ -2,37 +2,37 @@
 import style from "./Styles/payrol.module.css"
 
 
-import icon1 from "../../assets/insidePages/pos/posPage/section3/icon1.png"
-import icon2 from "../../assets/insidePages/pos/posPage/section3/icon2.png"
-import icon3 from "../../assets/insidePages/pos/posPage/section3/icon3.png"
+const icon1 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/section3/icon1.png";
+const icon2 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/section3/icon2.png";
+const icon3 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/section3/icon3.png";
 
-import heroImg from "../../assets/allHero/payrollh.webp"
+const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/allHero/payrollh.webp";
 
 import { Link } from '/src/nextNavigation'
 
 // features
 
-import app from "../../assets/insidePages/pay/payFeatures/app.png"
-import cps from "../../assets/insidePages/pay/payFeatures/cps.png"
-import ddpp from "../../assets/insidePages/pay/payFeatures/ddpp.png"
-import edm from "../../assets/insidePages/pay/payFeatures/edm.png"
-import lam from "../../assets/insidePages/pay/payFeatures/lam.png"
-import tcr from "../../assets/insidePages/pay/payFeatures/tcr.png"
+const app = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pay/payFeatures/app.png";
+const cps = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pay/payFeatures/cps.png";
+const ddpp = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pay/payFeatures/ddpp.png";
+const edm = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pay/payFeatures/edm.png";
+const lam = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pay/payFeatures/lam.png";
+const tcr = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pay/payFeatures/tcr.png";
 
 
 
 
 
 
-import appb from "../../assets/insidePages/pay/payrollBenefit/app.webp"
-import cs from "../../assets/insidePages/pay/payrollBenefit/cs.webp"
-import es from "../../assets/insidePages/pay/payrollBenefit/es.webp"
-import ic from "../../assets/insidePages/pay/payrollBenefit/ic.webp"
-import te from "../../assets/insidePages/pay/payrollBenefit/te.webp"
+const appb = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pay/payrollBenefit/app.webp";
+const cs = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pay/payrollBenefit/cs.webp";
+const es = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pay/payrollBenefit/es.webp";
+const ic = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pay/payrollBenefit/ic.webp";
+const te = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pay/payrollBenefit/te.webp";
 
 
 
-import laptop from "../../assets/section3Laptop/pay.webp"
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/section3Laptop/pay.webp";
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 
@@ -241,7 +241,7 @@ export default function Payroll() {
                 </div>
 
                 <div className={`${style.herosectionImgBoxPhone}`}>
-                    <img style={{ width: "100%" }} src={heroImg.src} alt={"room booking"} />
+                    <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
                 </div>
 
 
@@ -286,7 +286,7 @@ export default function Payroll() {
 
           <div className={style.section2IconAndName}>
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={icon1.src} alt="" />
+              <img style={{ width: "100%" }} src={icon1} alt="" />
             </div>
 
             <div className={`${style.iconName} `}>
@@ -301,7 +301,7 @@ export default function Payroll() {
           <div className={style.section2IconAndName}>
 
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={icon2.src} alt="" />
+              <img style={{ width: "100%" }} src={icon2} alt="" />
             </div>
 
             <div className={`${style.iconName} `}>
@@ -319,7 +319,7 @@ export default function Payroll() {
           <div className={style.section2IconAndName}>
 
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={icon3.src} alt="" />
+              <img style={{ width: "100%" }} src={icon3} alt="" />
             </div>
 
             <div className={`${style.iconName}`}>
@@ -353,7 +353,7 @@ export default function Payroll() {
 
             <div className={`${style.laptopImgSection3}`}>
               <div className={`${style.laptopImgBox}`} >
-                <img style={{ width: "100%" }} src={laptop.src} alt="" />
+                <img style={{ width: "100%" }} src={laptop} alt="" />
               </div>
             </div>
 

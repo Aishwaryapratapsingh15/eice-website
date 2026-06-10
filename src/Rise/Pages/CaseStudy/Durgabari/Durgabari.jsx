@@ -1,18 +1,18 @@
 "use client";
 import styles from "./durgabari.module.css"
-import laptop from "../../../assets/caseStudy/durga.webp"
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/caseStudy/durga.webp";
 
 
 import { Link } from '/src/nextNavigation'
 
 
-import account from "../../../assets/Hospitality/allPageIcon/Account.png"
-import pos from "../../../assets/Hospitality/allPageIcon/POS.png"
-import banquet from "../../../assets/Hospitality/allPageIcon/Banquet.png"
+const account = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Account.png";
+const pos = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/POS.png";
+const banquet = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Banquet.png";
 
-import member from "../../../assets/Hospitality/allPageIcon/Member.png"
+const member = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Member.png";
 
-import room from "../../../assets/Hospitality/allPageIcon/Room.png"
+const room = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Room.png";
 
 
 import { useState, useEffect } from "react"
@@ -203,7 +203,7 @@ export default function Durgabari() {
                 <div className={`${styles.imgAndDescBox} globalSectionSize `}>
 
                     <div className={`${styles.descImg}`}>
-                        <img style={{ width: "100%" }} src={laptop.src} alt="brief description" />
+                        <img style={{ width: "100%" }} src={laptop} alt="brief description" />
                     </div>
 
                     <div className={`${styles.briefDescBox}`}>
@@ -229,7 +229,7 @@ export default function Durgabari() {
             {isPhone && (<section className={`${styles.briefDescSectionPhone}  `}>
 
                 <div className={`${styles.descImgPhone}`}>
-                    <img style={{ width: "100%" }} src={laptop.src} alt="brief description" />
+                    <img style={{ width: "100%" }} src={laptop} alt="brief description" />
                 </div>
 
             </section>)}

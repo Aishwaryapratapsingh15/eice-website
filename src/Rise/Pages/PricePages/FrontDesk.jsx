@@ -6,12 +6,12 @@ import styles from "./Styles/frontdesk.module.css"
 import { Link } from '/src/nextNavigation'
 
 
-import account from "../../assets/Hospitality/allPageIcon/Account.png"
+const account = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Account.png";
 
-import room from "../../assets/Hospitality/allPageIcon/Room.png"
+const room = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Room.png";
 
 
-import heroimg from "../../assets/pricing/suitHeroSection/frontP.webp"
+const heroimg = "https://d3r43jacxrwsrp.cloudfront.net/pricing/suitHeroSection/frontP.webp";
 
 import { useEffect, useState } from "react"
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -90,11 +90,11 @@ export default function FrontDesk() {
 
             {isPhone ? (<section className={`${styles.heroImgSectionPhone}`}>
                 <div className={`${styles.heroImgBoxPhone}`}>
-                    {/* <img style={{ width: "100%" }} src={heroimg.src} alt="banquet Suite" /> */}
+                    {/* <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite" /> */}
                 </div>
             </section>) : (<section className={`${styles.heroImgSection}`}>
                 <div className={`${styles.heroImgBox}`}>
-                    <img style={{ width: "100%" }} src={heroimg.src} alt="banquet Suite" />
+                    <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite" />
                 </div>
             </section>)}
 

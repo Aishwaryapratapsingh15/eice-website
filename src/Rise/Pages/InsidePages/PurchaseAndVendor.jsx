@@ -2,11 +2,11 @@
 import style from "./Styles/purchaseAndVendor.module.css"
 
 
-import heroImg from "../../assets/allHero/vendorh.webp"
+const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/allHero/vendorh.webp";
 
 
-import sp from "../../assets/insidePages/vendor/section2icon/sp.png"
-import vm from "../../assets/insidePages/vendor/section2icon/vm.png"
+const sp = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/vendor/section2icon/sp.png";
+const vm = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/vendor/section2icon/vm.png";
 
 
 import { Link } from '/src/nextNavigation'
@@ -15,37 +15,37 @@ import { Link } from '/src/nextNavigation'
 
 // features
 
-import rtmm from "../../assets/insidePages/pos/posPage/feature/rtmm.png"
+const rtmm = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/feature/rtmm.png";
 
-import tm from "../../assets/insidePages/pos/posPage/feature/tm.png"
-
-
+const tm = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/feature/tm.png";
 
 
-import aqc from "../../assets/insidePages/vendor/featuresIcon/aqc.png"
-import dm from "../../assets/insidePages/vendor/featuresIcon/dm.png"
-import pfb from "../../assets/insidePages/vendor/featuresIcon/pfb.png"
-import poa from "../../assets/insidePages/vendor/featuresIcon/poa.png"
-
-import spm from "../../assets/insidePages/vendor/featuresIcon/spm.png"
-import vmfeature from "../../assets/insidePages/vendor/featuresIcon/vm.png"
-import vpt from "../../assets/insidePages/vendor/featuresIcon/vpt.png"
 
 
+const aqc = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/vendor/featuresIcon/aqc.png";
+const dm = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/vendor/featuresIcon/dm.png";
+const pfb = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/vendor/featuresIcon/pfb.png";
+const poa = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/vendor/featuresIcon/poa.png";
+
+const spm = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/vendor/featuresIcon/spm.png";
+const vmfeature = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/vendor/featuresIcon/vm.png";
+const vpt = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/vendor/featuresIcon/vpt.png";
 
 
 
 
 
-import bfc from "../../assets/insidePages/vendor/vendorBenefits/bfc.webp"
-import evm from "../../assets/insidePages/vendor/vendorBenefits/evm.webp"
-import isr from "../../assets/insidePages/vendor/vendorBenefits/isr.webp"
-import ta from "../../assets/insidePages/vendor/vendorBenefits/ta.webp"
-import tcs from "../../assets/insidePages/vendor/vendorBenefits/tcs.webp"
+
+
+const bfc = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/vendor/vendorBenefits/bfc.webp";
+const evm = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/vendor/vendorBenefits/evm.webp";
+const isr = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/vendor/vendorBenefits/isr.webp";
+const ta = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/vendor/vendorBenefits/ta.webp";
+const tcs = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/vendor/vendorBenefits/tcs.webp";
 
 
 
-import laptop from "../../assets/section3Laptop/vendor.webp"
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/section3Laptop/vendor.webp";
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 
@@ -259,7 +259,7 @@ export default function PurchaseAndVendor() {
     </div>
 
     <div className={`${style.herosectionImgBoxPhone}`}>
-        <img style={{ width: "100%" }} src={heroImg.src} alt={"room booking"} />
+        <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
     </div>
 
 
@@ -302,7 +302,7 @@ export default function PurchaseAndVendor() {
 
                     <div className={style.section2IconAndName}>
                         <div className={`${style.section2Icon}`}>
-                            <img style={{ width: "100%" }} src={sp.src} alt="" />
+                            <img style={{ width: "100%" }} src={sp} alt="" />
                         </div>
 
                         <div className={`${style.iconName} `}>
@@ -317,7 +317,7 @@ export default function PurchaseAndVendor() {
                     <div className={style.section2IconAndName}>
 
                         <div className={`${style.section2Icon}`}>
-                            <img style={{ width: "100%" }} src={vm.src} alt="" />
+                            <img style={{ width: "100%" }} src={vm} alt="" />
                         </div>
 
                         <div className={`${style.iconName} `}>
@@ -369,7 +369,7 @@ export default function PurchaseAndVendor() {
 
                         <div className={`${style.laptopImgSection3}`}>
                             <div className={`${style.laptopImgBox}`} >
-                                <img style={{ width: "100%" }} src={laptop.src} alt="" />
+                                <img style={{ width: "100%" }} src={laptop} alt="" />
                             </div>
                         </div>
 

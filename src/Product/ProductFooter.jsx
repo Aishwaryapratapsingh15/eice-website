@@ -1,35 +1,35 @@
 ﻿import React from "react";
 
 import { Link } from "/src/nextNavigation";
-import indImg from "../assets/common/India.png";
-import usImg from "../assets/common/USA.png";
-import logo from "../assets/logo.svg"
-import cmmiIcon from "../assets/EiceAgent/CMMI.png";
-import FbIcon from "../assets/common/FB.svg";
-import linkedinIcon from "../assets/common/linkedin.svg";
-import XIcon from "../assets/common/X.svg";
-import InstaIcon from "../assets/common/Insta.svg";
-import whatsappIcon from "../assets/common/Whatsapp.svg";
-import phoneIcon from "../assets/common/Phone.svg";
+const indImg = "https://d3r43jacxrwsrp.cloudfront.net/common/India.png";
+const usImg = "https://d3r43jacxrwsrp.cloudfront.net/common/USA.png";
+const logo = "https://d3r43jacxrwsrp.cloudfront.net/logo.svg";
+const cmmiIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/CMMI.png";
+const FbIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/FB.svg";
+const linkedinIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/linkedin.svg";
+const XIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/X.svg";
+const InstaIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Insta.svg";
+const whatsappIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Whatsapp.svg";
+const phoneIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Phone.svg";
 const socialLinks = [
   {
     name: "X",
-    icon: XIcon.src,
+    icon: XIcon,
     url: "https://x.com/EiceTech24",
   },
   {
     name: "Facebook",
-    icon: FbIcon.src,
+    icon: FbIcon,
     url: "https://www.facebook.com/Eicetechnology/",
   },
   {
     name: "LinkedIn",
-    icon: linkedinIcon.src,
+    icon: linkedinIcon,
     url: "https://www.linkedin.com/company/eice-technology/posts/?feedView=all&viewAsMember=true",
   },
   {
     name: "Instagram",
-    icon: InstaIcon.src,
+    icon: InstaIcon,
     url: "https://www.instagram.com/eicetechnology24/?next=%2F",
   },
 ];
@@ -56,12 +56,12 @@ export default function Footer() {
 
               {/* 🔲 LOGO */}
                {/* ✅ EICE LOGO */}
-                <img src={logo.src} alt="EICE" className="h-10 object-contain brightness-0 invert" />
+                <img src={logo} alt="EICE" className="h-10 object-contain brightness-0 invert" />
               <div className="w-[1px] h-[40px] bg-white mx-4" />
 
               {/* DIVIDER */}
               <div className="w-[130px] h-[60px] border border-white/30">
-              <img src={cmmiIcon.src} alt="EICE" className="h-12 object-contain brightness-0 invert" />
+              <img src={cmmiIcon} alt="EICE" className="h-12 object-contain brightness-0 invert" />
               </div>
                
             </div>
@@ -87,10 +87,10 @@ export default function Footer() {
             </p>
 
             <p className="text-white text-lg mt-2 flex items-center justify-end gap-2">
-              Phone:  <img src={whatsappIcon.src} alt="Whatsapp" className="w-4 h-4" /> +91 987 189 5200
+              Phone:  <img src={whatsappIcon} alt="Whatsapp" className="w-4 h-4" /> +91 987 189 5200
             </p>
             <p className="text-white text-lg mt-2 flex items-center justify-end gap-4">
-              <img src={phoneIcon.src} alt="Whatsapp" className="w-4 h-4 invert" /> +1 832 280 4632
+              <img src={phoneIcon} alt="Whatsapp" className="w-4 h-4 invert" /> +1 832 280 4632
             </p>
           </div>
         </div>
@@ -188,7 +188,7 @@ export default function Footer() {
                 {/* 🔲 FLAG */}
                  <div className="w-[110px] h-[36px] flex items-center">
     <img
-      src={indImg.src}   // 🔁 your main logo
+      src={indImg}   // 🔁 your main logo
       alt="EICE"
       className="h-full object-contain"
     />
@@ -206,7 +206,7 @@ export default function Footer() {
                 {/* 🔲 FLAG */}
                  <div className="w-[110px] h-[36px] flex items-center">
     <img
-      src={usImg.src}   // 🔁 your main logo
+      src={usImg}   // 🔁 your main logo
       alt="EICE"
       className="h-full object-contain"
     />

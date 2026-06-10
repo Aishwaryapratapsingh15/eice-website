@@ -1,7 +1,7 @@
 import React from "react";
 import ProductFooter from "/src/Product/ProductFooter";
 import Copyright from "../Othercomps/Copyright";
-import sentiments from "../assets/ai/sentiments.jpg";
+const sentiments = "https://d3r43jacxrwsrp.cloudfront.net/ai/sentiments.jpg";
 import { GiVirtualMarker } from "react-icons/gi";
 import Link from "next/link";
 
@@ -20,7 +20,7 @@ function SentimentalAi() {
             marketing teams to make faster, evidence-based decisions.
           </p>
           <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4">
-            <img src={sentiments.src} alt="Sentiment Analysis Platform" className="w-full max-h-96 object-cover rounded-lg" />
+            <img src={sentiments} alt="Sentiment Analysis Platform" className="w-full max-h-96 object-cover rounded-lg" />
           </div>
         </div>
         <div className="w-full pb-6">

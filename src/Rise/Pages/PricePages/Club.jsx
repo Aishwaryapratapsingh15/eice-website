@@ -6,15 +6,15 @@ import styles from "./Styles/club.module.css"
 import { Link } from '/src/nextNavigation'
 
 
-import account from "../../assets/Hospitality/allPageIcon/Account.png"
-import pos from "../../assets/Hospitality/allPageIcon/POS.png"
-import banquet from "../../assets/Hospitality/allPageIcon/Banquet.png"
+const account = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Account.png";
+const pos = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/POS.png";
+const banquet = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Banquet.png";
 
-import member from "../../assets/Hospitality/allPageIcon/Member.png"
-import room from "../../assets/Hospitality/allPageIcon/Room.png"
+const member = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Member.png";
+const room = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Room.png";
 
 
-import heroimg from "../../assets/pricing/suitHeroSection/clubP.webp"
+const heroimg = "https://d3r43jacxrwsrp.cloudfront.net/pricing/suitHeroSection/clubP.webp";
 
 
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -118,11 +118,11 @@ export default function Club() {
 
             {isPhone ? (<section className={`${styles.heroImgSectionPhone}`}>
                 <div className={`${styles.heroImgBoxPhone}`}>
-                    {/* <img style={{ width: "100%" }} src={heroimg.src} alt="banquet Suite" /> */}
+                    {/* <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite" /> */}
                 </div>
             </section>) : (<section className={`${styles.heroImgSection}`}>
                 <div className={`${styles.heroImgBox}`}>
-                    <img style={{ width: "100%" }} src={heroimg.src} alt="banquet Suite" />
+                    <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite" />
                 </div>
             </section>)}
 

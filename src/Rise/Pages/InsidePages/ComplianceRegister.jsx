@@ -9,24 +9,24 @@ import Accordion from "../../Components/Accordian/Accordian.jsx";
 import Certificate from "../../Components/Certificate/Certificate.jsx";
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx";
 import FooterLower from "../../Components/Footer/FooterLower.jsx";
-import dwabIcon from "../../assets/compliance/DWAB.png";
-import pdaIcon from "../../assets/compliance/PDA.png";
-import pprIcon from "../../assets/compliance/PPR.png";
-import rtaIcon from "../../assets/compliance/RTA.png";
-import rtptIcon from  "../../assets/compliance/RTPT.png";
-import serIcon from "../../assets/compliance/SER.png";
-import tadIcon from  "../../assets/compliance/TAD.png";
-import bcvIcon from  "../../assets/compliance/BCV.png";
-import bdddIcon from  "../../assets/compliance/BDDD.jpg";
-import beaIcon from  "../../assets/compliance/BEA.jpg";
-import boeIcon from  "../../assets/compliance/BOE.jpg";
-import bsqIcon from  "../../assets/compliance/BSQ.jpg";
-import hero from "../../assets/compliance/hero-compliance.png"
-import laptop from "../../assets/section3Laptop/room.webp"
-import visibleIcon from  "../../assets/compliance/Visible.png";
-import accountableIcon from  "../../assets/compliance/Accountable.png";
-import connectedIcon from  "../../assets/compliance/Connected.png";
-import overviewIcon from "../../assets/compliance/complianceOverview.png"
+const dwabIcon = "https://d3r43jacxrwsrp.cloudfront.net/compliance/DWAB.png";
+const pdaIcon = "https://d3r43jacxrwsrp.cloudfront.net/compliance/PDA.png";
+const pprIcon = "https://d3r43jacxrwsrp.cloudfront.net/compliance/PPR.png";
+const rtaIcon = "https://d3r43jacxrwsrp.cloudfront.net/compliance/RTA.png";
+const rtptIcon = "https://d3r43jacxrwsrp.cloudfront.net/compliance/RTPT.png";
+const serIcon = "https://d3r43jacxrwsrp.cloudfront.net/compliance/SER.png";
+const tadIcon = "https://d3r43jacxrwsrp.cloudfront.net/compliance/TAD.png";
+const bcvIcon = "https://d3r43jacxrwsrp.cloudfront.net/compliance/BCV.png";
+const bdddIcon = "https://d3r43jacxrwsrp.cloudfront.net/compliance/BDDD.jpg";
+const beaIcon = "https://d3r43jacxrwsrp.cloudfront.net/compliance/BEA.jpg";
+const boeIcon = "https://d3r43jacxrwsrp.cloudfront.net/compliance/BOE.jpg";
+const bsqIcon = "https://d3r43jacxrwsrp.cloudfront.net/compliance/BSQ.jpg";
+const hero = "https://d3r43jacxrwsrp.cloudfront.net/compliance/hero-compliance.png";
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/section3Laptop/room.webp";
+const visibleIcon = "https://d3r43jacxrwsrp.cloudfront.net/compliance/Visible.png";
+const accountableIcon = "https://d3r43jacxrwsrp.cloudfront.net/compliance/Accountable.png";
+const connectedIcon = "https://d3r43jacxrwsrp.cloudfront.net/compliance/Connected.png";
+const overviewIcon = "https://d3r43jacxrwsrp.cloudfront.net/compliance/complianceOverview.png";
 
 
 export default function ComplianceRegister() {
@@ -195,7 +195,7 @@ export default function ComplianceRegister() {
             </div>
 
             <div className={style.herosectionImgBoxPhone}>
-              <img src={hero.src}style={{ width: "100%" }} />
+              <img src={hero}style={{ width: "100%" }} />
             </div>
           </div>
         </section>
@@ -237,7 +237,7 @@ export default function ComplianceRegister() {
           <div className={style.blueBoxSetion3}>
             <div className={`${style.laptopImgSection3}`}>
                                                   <div className={`${style.laptopImgBox}`} >
-                                                      <img style={{ width: "100%" }} src={overviewIcon.src} alt="" />
+                                                      <img style={{ width: "100%" }} src={overviewIcon} alt="" />
                                                   </div>
                                               </div>
 

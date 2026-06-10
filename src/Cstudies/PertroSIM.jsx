@@ -2,8 +2,8 @@
 import Footer from "../Othercomps/Footer";
 import ProductFooter from "/src/Product/ProductFooter";
 import Copyright from "../Othercomps/Copyright";
-import petrosim1 from "../assets/Compressed/kbcchempetro1.png";
-import petrosim2 from "../assets/Compressed/kbcchempetro2.png";
+const petrosim1 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/kbcchempetro1.png";
+const petrosim2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/kbcchempetro2.png";
 import { GiVirtualMarker } from "react-icons/gi";
 
 function PetroSIM() {
@@ -24,8 +24,8 @@ function PetroSIM() {
             optimization.
           </p>
           <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
-            <img src={petrosim1.src} alt="" className="w-full h-full object-fit rounded-lg" />
-            <img src={petrosim2.src} alt="" className="w-full h-full object-fit rounded-lg" />
+            <img src={petrosim1} alt="" className="w-full h-full object-fit rounded-lg" />
+            <img src={petrosim2} alt="" className="w-full h-full object-fit rounded-lg" />
           </div>
         </div>
         <div className="w-full pb-6">

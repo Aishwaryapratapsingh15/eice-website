@@ -4,20 +4,20 @@ import { useNavigate } from "/src/nextNavigation";
 import ProductFooter from "./ProductFooter";
 import ProductCarousel from "./ProductCarousel";
 import productSlides from "./carouselData";
-import arrowIcon from "../assets/arrow.svg";
-import kbtIcon from "/src/assets/isynclite/KBT.svg";
-import challengeIcon from "../assets/smartfit/OIP.webp"
-import cycIcon from "../assets/smartfit/CYC.svg";
-import ecwIcon from "../assets/smartfit/ECW.svg"
-import esIcon from "../assets/smartfit/ES.svg"
-import ldmIcon from "../assets/smartfit/LDM.svg"
-import mclIcon from "../assets/smartfit/MCL.svg"
-import owmIcon from "../assets/smartfit/OWM.svg"
-import rcIcon from "../assets/smartfit/RC.svg"
-import sbsIcon from "../assets/smartfit/SBS.svg"
-import sriIcon from "../assets/smartfit/SRI.svg"
-import heroImg from "../assets/smartfit/SmartFit.png"
-import eiceSmartfitIcon from "../assets/smartfit/SmartFit_Icon.svg";
+const arrowIcon = "https://d3r43jacxrwsrp.cloudfront.net/arrow.svg";
+const kbtIcon = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/KBT.svg";
+const challengeIcon = "https://d3r43jacxrwsrp.cloudfront.net/smartfit/OIP.webp";
+const cycIcon = "https://d3r43jacxrwsrp.cloudfront.net/smartfit/CYC.svg";
+const ecwIcon = "https://d3r43jacxrwsrp.cloudfront.net/smartfit/ECW.svg";
+const esIcon = "https://d3r43jacxrwsrp.cloudfront.net/smartfit/ES.svg";
+const ldmIcon = "https://d3r43jacxrwsrp.cloudfront.net/smartfit/LDM.svg";
+const mclIcon = "https://d3r43jacxrwsrp.cloudfront.net/smartfit/MCL.svg";
+const owmIcon = "https://d3r43jacxrwsrp.cloudfront.net/smartfit/OWM.svg";
+const rcIcon = "https://d3r43jacxrwsrp.cloudfront.net/smartfit/RC.svg";
+const sbsIcon = "https://d3r43jacxrwsrp.cloudfront.net/smartfit/SBS.svg";
+const sriIcon = "https://d3r43jacxrwsrp.cloudfront.net/smartfit/SRI.svg";
+const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/smartfit/SmartFit.png";
+const eiceSmartfitIcon = "https://d3r43jacxrwsrp.cloudfront.net/smartfit/SmartFit_Icon.svg";
 
 
 
@@ -77,7 +77,7 @@ export default function SmartFit() {
       <section className="py-10 px-4 sm:px-8 md:px-20 lg:px-20 xl:px-40 bg-white text-center pt-24 sm:pt-32">
         <div className="flex justify-center mb-10">
           <img
-            src={heroImg.src}
+            src={heroImg}
             alt="EICE SmartFit"
             className="w-full max-w-[650px] object-contain"
           />
@@ -85,7 +85,7 @@ export default function SmartFit() {
            <span className="inline-flex items-center gap-2 bg-blue-50 text-[#012060] px-3 py-2 rounded-full text-sm font-medium border border-blue-200 mb-4">
           
           <img 
-            src={eiceSmartfitIcon.src}
+            src={eiceSmartfitIcon}
             alt="icon" 
             className="w-5 h-5 object-contain"
           />
@@ -111,7 +111,7 @@ export default function SmartFit() {
               <button onClick={() => navigate("/products/form?embed=true&product=SmartFit")}  
               className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-[18px] w-[250px] h-[56px]">
                 Request a Demo
-                  <img src={arrowIcon.src} alt="arrow"/>
+                  <img src={arrowIcon} alt="arrow"/>
         
               </button>
         
@@ -136,7 +136,7 @@ export default function SmartFit() {
           <ul className="space-y-5">
             <li className="flex items-start gap-4 text-[#64748B] leading-relaxed font-semibold">
               <div className="min-w-6 h-6">
-                <img src={challengeIcon.src} className="w-6 h-6"/>
+                <img src={challengeIcon} className="w-6 h-6"/>
               </div>
 
               Wasted container space increases freight costs
@@ -144,7 +144,7 @@ export default function SmartFit() {
 
             <li className="flex items-start gap-4 text-[#64748B] leading-relaxed font-semibold">
               <div className="min-w-6 h-6">
-                <img src={challengeIcon.src} className="w-6 h-6"/>
+                <img src={challengeIcon} className="w-6 h-6"/>
               </div>
 
               Manual planning is slow and error-prone
@@ -152,7 +152,7 @@ export default function SmartFit() {
 
             <li className="flex items-start gap-4 text-[#64748B] leading-relaxed font-semibold">
               <div className="min-w-6 h-6">
-                 <img src={challengeIcon.src} className="w-6 h-6"/>
+                 <img src={challengeIcon} className="w-6 h-6"/>
               </div>
 
               Improper weight balance causes safety risks
@@ -160,7 +160,7 @@ export default function SmartFit() {
 
             <li className="flex items-start gap-4 text-[#64748B] leading-relaxed font-semibold">
               <div className="min-w-6 h-6">
-                 <img src={challengeIcon.src} className="w-6 h-6"/>
+                 <img src={challengeIcon} className="w-6 h-6"/>
               </div>
 
               Difficult unloading due to poor sequencing
@@ -168,7 +168,7 @@ export default function SmartFit() {
 
             <li className="flex items-start gap-4 text-[#64748B] leading-relaxed font-semibold">
               <div className="min-w-6 h-6">
-                 <img src={challengeIcon.src} className="w-6 h-6"/>
+                 <img src={challengeIcon} className="w-6 h-6"/>
               </div>
 
               No visibility into remaining container capacity
@@ -185,7 +185,7 @@ export default function SmartFit() {
           <ul className="space-y-5">
             <li className="flex items-start gap-4 text-[#64748B] leading-relaxed font-semibold">
               <div className="min-w-6 h-6">
-                <img src={kbtIcon.src}/>
+                <img src={kbtIcon}/>
               </div>
 
               Automated 3D optimized load plans
@@ -193,7 +193,7 @@ export default function SmartFit() {
 
             <li className="flex items-start gap-4 text-[#64748B] leading-relaxed font-semibold">
               <div className="min-w-6 h-6">
-                <img src={kbtIcon.src}/>
+                <img src={kbtIcon}/>
               </div>
 
               Generate plans in seconds
@@ -201,7 +201,7 @@ export default function SmartFit() {
 
             <li className="flex items-start gap-4 text-[#64748B] leading-relaxed font-semibold">
               <div className="min-w-6 h-6">
-                 <img src={kbtIcon.src}/>
+                 <img src={kbtIcon}/>
               </div>
 
               Smart weight balance analysis
@@ -209,7 +209,7 @@ export default function SmartFit() {
 
             <li className="flex items-start gap-4 text-[#64748B] leading-relaxed font-semibold">
               <div className="min-w-6 h-6">
-                <img src={kbtIcon.src}/>
+                <img src={kbtIcon}/>
               </div>
 
               Priority-based unloading system
@@ -217,7 +217,7 @@ export default function SmartFit() {
 
             <li className="flex items-start gap-4 text-[#64748B] leading-relaxed font-semibold">
               <div className="min-w-6 h-6">
-               <img src={kbtIcon.src}/>
+               <img src={kbtIcon}/>
               </div>
 
               One-click capacity estimation
@@ -276,7 +276,7 @@ seconds.
                 className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto text-[18px] hover:bg-blue-800"
               >
                 Request a Demo
-                <img src={arrowIcon.src} alt="arrow" />
+                <img src={arrowIcon} alt="arrow" />
               </button>
             </section>
 <ProductCarousel slides={productSlides} />

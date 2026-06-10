@@ -1,8 +1,8 @@
 import React from "react";
 import ProductFooter from "/src/Product/ProductFooter";
 import Copyright from "../Othercomps/Copyright";
-import peep1 from "../assets/Compressed/Peep1.png";
-import peep2 from "../assets/Compressed/Peep2.png";
+const peep1 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/Peep1.png";
+const peep2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/Peep2.png";
 import { GiVirtualMarker } from "react-icons/gi";
 
 function Peep() {
@@ -19,8 +19,8 @@ function Peep() {
             analysis of petroleum financial models to support data-driven decision-making across global operations.
           </p>
           <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
-            <img src={peep1.src} alt="Schlumberger BAA Platform" className="w-full h-full object-fit rounded-lg" />
-            <img src={peep2.src} alt="Schlumberger BAA Dashboard" className="w-full h-full object-fit rounded-lg" />
+            <img src={peep1} alt="Schlumberger BAA Platform" className="w-full h-full object-fit rounded-lg" />
+            <img src={peep2} alt="Schlumberger BAA Dashboard" className="w-full h-full object-fit rounded-lg" />
           </div>
         </div>
         <div className="w-full pb-6">

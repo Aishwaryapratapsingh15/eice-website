@@ -1,39 +1,39 @@
 ﻿"use client";
 import React, { useState, useRef } from "react";
 import { Link } from "/src/nextNavigation";
-import laptop from "../assets/Compressed/Laptop.png";
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/Laptop.png";
 
 import Cookies from "js-cookie";
 
 // petroleum
-import reli from "../assets/Petroleum/reli.jpeg"
-import petrosim from "../assets/Petroleum/petrosim.jpeg"
-import espct from "../assets/Petroleum/ESPCT.jpg"
-import cgd from "../assets/Petroleum/cgd.jpg"
-import simul from "../assets/Petroleum/simul.jpg"
-import dmg from "../assets/Petroleum/dmg.jpg"
-import scada from "../assets/Petroleum/scada.jpg"
-import femms from "../assets/Petroleum/FEMMS.jpeg"
-import bsa from "../assets/Petroleum/bsa.jpeg"
-import ogpd from "../assets/Petroleum/ogpd.png"
+const reli = "https://d3r43jacxrwsrp.cloudfront.net/Petroleum/reli.jpeg";
+const petrosim = "https://d3r43jacxrwsrp.cloudfront.net/Petroleum/petrosim.jpeg";
+const espct = "https://d3r43jacxrwsrp.cloudfront.net/Petroleum/ESPCT.jpg";
+const cgd = "https://d3r43jacxrwsrp.cloudfront.net/Petroleum/cgd.jpg";
+const simul = "https://d3r43jacxrwsrp.cloudfront.net/Petroleum/simul.jpg";
+const dmg = "https://d3r43jacxrwsrp.cloudfront.net/Petroleum/dmg.jpg";
+const scada = "https://d3r43jacxrwsrp.cloudfront.net/Petroleum/scada.jpg";
+const femms = "https://d3r43jacxrwsrp.cloudfront.net/Petroleum/FEMMS.jpeg";
+const bsa = "https://d3r43jacxrwsrp.cloudfront.net/Petroleum/bsa.jpeg";
+const ogpd = "https://d3r43jacxrwsrp.cloudfront.net/Petroleum/ogpd.png";
 
 
 // automobile
-import evbm from "../assets/Automobile/evbm.jpg"
-import adai from "../assets/Automobile/adai.jpeg"
-import ccp from "../assets/Automobile/ccp.jpg"
-import mpo from "../assets/Automobile/mpo.jpg"
+const evbm = "https://d3r43jacxrwsrp.cloudfront.net/Automobile/evbm.jpg";
+const adai = "https://d3r43jacxrwsrp.cloudfront.net/Automobile/adai.jpeg";
+const ccp = "https://d3r43jacxrwsrp.cloudfront.net/Automobile/ccp.jpg";
+const mpo = "https://d3r43jacxrwsrp.cloudfront.net/Automobile/mpo.jpg";
 
 // medical
-import aipdt from "../assets/medical/aipdt.jpeg"
-import tmp from "../assets/medical/tmp.jpeg"
+const aipdt = "https://d3r43jacxrwsrp.cloudfront.net/medical/aipdt.jpeg";
+const tmp = "https://d3r43jacxrwsrp.cloudfront.net/medical/tmp.jpeg";
 
 // ai anmd ml
 
-import AiLogistics  from "../assets/ai/logistics.jpg"
-import AiInventory  from "../assets/ai/inventry.jpg"
-import AiVoice  from "../assets/ai/voice.jpg"
-import AiSentiments  from "../assets/ai/sentiments.jpg"
+const AiLogistics = "https://d3r43jacxrwsrp.cloudfront.net/ai/logistics.jpg";
+const AiInventory = "https://d3r43jacxrwsrp.cloudfront.net/ai/inventry.jpg";
+const AiVoice = "https://d3r43jacxrwsrp.cloudfront.net/ai/voice.jpg";
+const AiSentiments = "https://d3r43jacxrwsrp.cloudfront.net/ai/sentiments.jpg";
 
 
 

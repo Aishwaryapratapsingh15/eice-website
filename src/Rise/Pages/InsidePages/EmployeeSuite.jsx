@@ -6,36 +6,36 @@ import style from "./Styles/employeeSuite.module.css"
 
 
 
-import as from "../../assets/insidePages/emp/empSection2/as.png"
-import cd from "../../assets/insidePages/emp/empSection2/cd.png"
-import tc from "../../assets/insidePages/emp/empSection2/tc.png"
+const as = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/emp/empSection2/as.png";
+const cd = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/emp/empSection2/cd.png";
+const tc = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/emp/empSection2/tc.png";
 
 
 
 import { Link } from '/src/nextNavigation'
 
 // features
-import bm from "../../assets/insidePages/emp/icon/bm.png"
-import can from "../../assets/insidePages/emp/icon/can.png"
-import da from "../../assets/insidePages/emp/icon/da.png"
-import lam from "../../assets/insidePages/emp/icon/lam.png"
-import pc from "../../assets/insidePages/emp/icon/pc.png"
-import pim from "../../assets/insidePages/emp/icon/pim.png"
-import pm from "../../assets/insidePages/emp/icon/pm.png"
-import sr from "../../assets/insidePages/emp/icon/sr.png"
-import td from "../../assets/insidePages/emp/icon/td.png"
+const bm = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/emp/icon/bm.png";
+const can = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/emp/icon/can.png";
+const da = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/emp/icon/da.png";
+const lam = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/emp/icon/lam.png";
+const pc = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/emp/icon/pc.png";
+const pim = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/emp/icon/pim.png";
+const pm = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/emp/icon/pm.png";
+const sr = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/emp/icon/sr.png";
+const td = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/emp/icon/td.png";
 
 
-import heroImg from "../../assets/allHero/new/employeeH.webp"
+const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/allHero/new/employeeH.webp";
 
 
 
 
-import ec from "../../assets/insidePages/emp/empBenefits/ec.webp"
-import ee from "../../assets/insidePages/emp/empBenefits/ee.webp"
-import ie from "../../assets/insidePages/emp/empBenefits/ie.webp"
-import ts from "../../assets/insidePages/emp/empBenefits/ts.webp"
-import tt from "../../assets/insidePages/emp/empBenefits/tt.webp"
+const ec = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/emp/empBenefits/ec.webp";
+const ee = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/emp/empBenefits/ee.webp";
+const ie = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/emp/empBenefits/ie.webp";
+const ts = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/emp/empBenefits/ts.webp";
+const tt = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/emp/empBenefits/tt.webp";
 
 
 
@@ -48,7 +48,7 @@ import { useEffect , useState } from "react"
 import { FaArrowRightLong } from "react-icons/fa6";
 
 
-import laptop from "../../assets/section3Laptop/emp.webp"
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/section3Laptop/emp.webp";
 
 
 
@@ -261,7 +261,7 @@ export default function EmployeeSuite() {
     </div>
 
     <div className={`${style.herosectionImgBoxPhone}`}>
-        <img style={{ width: "100%" }} src={heroImg.src} alt={"room booking"} />
+        <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
     </div>
 
 
@@ -306,7 +306,7 @@ export default function EmployeeSuite() {
 
           <div className={style.section2IconAndName}>
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={as.src} alt="" />
+              <img style={{ width: "100%" }} src={as} alt="" />
             </div>
 
             <div className={`${style.iconName} `}>
@@ -321,7 +321,7 @@ export default function EmployeeSuite() {
           <div className={style.section2IconAndName}>
 
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={cd.src} alt="" />
+              <img style={{ width: "100%" }} src={cd} alt="" />
             </div>
 
             <div className={`${style.iconName} `}>
@@ -339,7 +339,7 @@ export default function EmployeeSuite() {
           <div className={style.section2IconAndName}>
 
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={tc.src} alt="" />
+              <img style={{ width: "100%" }} src={tc} alt="" />
             </div>
 
             <div className={`${style.iconName}`}>
@@ -373,7 +373,7 @@ export default function EmployeeSuite() {
 
             <div className={`${style.laptopImgSection3}`}>
               <div className={`${style.laptopImgBox}`} >
-                <img style={{ width: "100%" }} src={laptop.src} alt="" />
+                <img style={{ width: "100%" }} src={laptop} alt="" />
               </div>
             </div>
 

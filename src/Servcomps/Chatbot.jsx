@@ -1,16 +1,16 @@
 ﻿"use client";
 import React, { useState, useRef } from "react";
-import laptop from "../assets/Compressed/Laptop.png";
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/Laptop.png";
 import { MdArchitecture, MdChevronLeft, MdChevronRight } from "react-icons/md";
 
-import dtransbanner from "../assets/Compressed/dtransbanner.jpg";
-import servicebannerpattern from "../assets/Compressed/servicebannerpattern.png";
+const dtransbanner = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/dtransbanner.jpg";
+const servicebannerpattern = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/servicebannerpattern.png";
 
 import { FiCheckCircle } from "react-icons/fi";
 
-import dtdigital from "../assets/Compressed/dtdigital.svg";
-import dtdesign from "../assets/Compressed/dtdesign.svg";
-import dtconsulting from "../assets/Compressed/dtconsulting.svg";
+const dtdigital = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/dtdigital.svg";
+const dtdesign = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/dtdesign.svg";
+const dtconsulting = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/dtconsulting.svg";
 
 import Footer from "../Othercomps/Footer.jsx";
 import ProductFooter from "/src/Product/ProductFooter";
@@ -28,17 +28,17 @@ import { GrIntegration, GrVmMaintenance } from "react-icons/gr";
 
 // cs images
 
-import opo from "../assets/Cs/opo.jpg"
-import etp from "../assets/Cs/etp.jpg"
+const opo = "https://d3r43jacxrwsrp.cloudfront.net/Cs/opo.jpg";
+const etp = "https://d3r43jacxrwsrp.cloudfront.net/Cs/etp.jpg";
 
-import adai from "../assets/Automobile/adai.jpeg"
-import ccp from "../assets/Automobile/ccp.jpg"
-import mpo from "../assets/Automobile/mpo.jpg"
+const adai = "https://d3r43jacxrwsrp.cloudfront.net/Automobile/adai.jpeg";
+const ccp = "https://d3r43jacxrwsrp.cloudfront.net/Automobile/ccp.jpg";
+const mpo = "https://d3r43jacxrwsrp.cloudfront.net/Automobile/mpo.jpg";
 
-import  aipdt from "../assets/medical/aipdt.jpeg"
-import  tmp from "../assets/medical/tmp.jpeg"
+const aipdt = "https://d3r43jacxrwsrp.cloudfront.net/medical/aipdt.jpeg";
+const tmp = "https://d3r43jacxrwsrp.cloudfront.net/medical/tmp.jpeg";
 
-import bot from "../assets/Service_and_technology/bot.jpg"
+const bot = "https://d3r43jacxrwsrp.cloudfront.net/Service_and_technology/bot.jpg";
 
 
 
@@ -185,7 +185,7 @@ function Chatbot() {
       <div className="xl:-mt-8 -mt-4 bg-gradient-to-r from-transparent via-bloo/5 to-bloo/10 pt-16 md:pt-20 lg:pt-12 2xl:pt-0">
         <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen ">
           <div className="absolute -z-20 inset-0 right-[75%]">
-            <img src={servicebannerpattern.src} alt="" />
+            <img src={servicebannerpattern} alt="" />
           </div>
           <div className="flex lg:flex-row flex-col px-4 py-20 items-center">
             <div className="w-full">
@@ -200,7 +200,7 @@ function Chatbot() {
             </div>
             <div className="lg:flex hidden items-center justify-end ">
               <div className=" w-1/2">
-                <img src={bot.src} alt="" className="rounded-full" />
+                <img src={bot} alt="" className="rounded-full" />
               </div>
             </div>
           </div>

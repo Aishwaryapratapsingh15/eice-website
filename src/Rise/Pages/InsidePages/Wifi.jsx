@@ -7,25 +7,25 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import Certificate from "../../Components/Certificate/Certificate.jsx";
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx";
 import FooterLower from "../../Components/Footer/FooterLower.jsx";
-import acgIcon from "../../assets/wifi/ACG.png";
-import tbacIcon from "../../assets/wifi/TBAC.png";
-import bcpIcon from "../../assets/wifi/BCP.png";
-import gsspIcon from "../../assets/wifi/GSSP.png"; 
-import rtumIcon from "../../assets/wifi/RTUM.png";
-import mdsIcon from "../../assets/wifi/MDS.png";
-import ipmsIcon from "../../assets/wifi/IPMS.png";
-import draIcon from "../../assets/wifi/DRA.png";
-import bartIcon from "../../assets/wifi/BART.png";
-import bcmIcon from "../../assets/wifi/BCM.png";
-import begeIcon from "../../assets/wifi/BEGE.png";
-import bnsIcon from "../../assets/wifi/BNS.png";
-import boeIcon from "../../assets/wifi/BOE.png";
-import broIcon from "../../assets/wifi/BRO.png";
-import hero from "../../assets/wifi/hero-wifi.png";
-import seamlessIcon from "../../assets/wifi/Seamless.png"
-import secureIcon from "../../assets/wifi/Secure.png"
-import scalableIcon from "../../assets/wifi/Scalable.png"
-import overviewIcon from "../../assets/wifi/wifiOverview.png"
+const acgIcon = "https://d3r43jacxrwsrp.cloudfront.net/wifi/ACG.png";
+const tbacIcon = "https://d3r43jacxrwsrp.cloudfront.net/wifi/TBAC.png";
+const bcpIcon = "https://d3r43jacxrwsrp.cloudfront.net/wifi/BCP.png";
+const gsspIcon = "https://d3r43jacxrwsrp.cloudfront.net/wifi/GSSP.png"; 
+const rtumIcon = "https://d3r43jacxrwsrp.cloudfront.net/wifi/RTUM.png";
+const mdsIcon = "https://d3r43jacxrwsrp.cloudfront.net/wifi/MDS.png";
+const ipmsIcon = "https://d3r43jacxrwsrp.cloudfront.net/wifi/IPMS.png";
+const draIcon = "https://d3r43jacxrwsrp.cloudfront.net/wifi/DRA.png";
+const bartIcon = "https://d3r43jacxrwsrp.cloudfront.net/wifi/BART.png";
+const bcmIcon = "https://d3r43jacxrwsrp.cloudfront.net/wifi/BCM.png";
+const begeIcon = "https://d3r43jacxrwsrp.cloudfront.net/wifi/BEGE.png";
+const bnsIcon = "https://d3r43jacxrwsrp.cloudfront.net/wifi/BNS.png";
+const boeIcon = "https://d3r43jacxrwsrp.cloudfront.net/wifi/BOE.png";
+const broIcon = "https://d3r43jacxrwsrp.cloudfront.net/wifi/BRO.png";
+const hero = "https://d3r43jacxrwsrp.cloudfront.net/wifi/hero-wifi.png";
+const seamlessIcon = "https://d3r43jacxrwsrp.cloudfront.net/wifi/Seamless.png";
+const secureIcon = "https://d3r43jacxrwsrp.cloudfront.net/wifi/Secure.png";
+const scalableIcon = "https://d3r43jacxrwsrp.cloudfront.net/wifi/Scalable.png";
+const overviewIcon = "https://d3r43jacxrwsrp.cloudfront.net/wifi/wifiOverview.png";
 
 
 
@@ -192,7 +192,7 @@ export default function WifiModule() {
             </div>
 
             <div className={style.herosectionImgBoxPhone}>
-              <img style={{width : "100%"}} src={hero.src} alt={"wifi module"} />
+              <img style={{width : "100%"}} src={hero} alt={"wifi module"} />
             </div>
 
           </div>
@@ -257,7 +257,7 @@ export default function WifiModule() {
 
            <div className={`${style.laptopImgSection3}`}>
                                      <div className={`${style.laptopImgBox}`} >
-                                         <img style={{ width: "100%" }} src={overviewIcon.src} alt="" />
+                                         <img style={{ width: "100%" }} src={overviewIcon} alt="" />
                                      </div>
                                  </div>
          

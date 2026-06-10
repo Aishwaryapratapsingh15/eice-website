@@ -9,24 +9,24 @@ import Accordion from "../../Components/Accordian/Accordian.jsx";
 import Certificate from "../../Components/Certificate/Certificate.jsx";
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx";
 import FooterLower from "../../Components/Footer/FooterLower.jsx";
-import bcmIcon from "../../assets/audience/BCM.jpg"
-import bemeIcon from "../../assets/audience/BEME.png"
-import boeIcon from "../../assets/audience/BOE.jpg"
-import briIcon from "../../assets/audience/BRI.jpg"
-import bscIcon from "../../assets/audience/BSC.jpg"
-import camIcon from "../../assets/audience/CAM.png"
-import daIcon from "../../assets/audience/DA.png"
-import eamIcon from "../../assets/audience/EAM.png"
-import gvrIcon from "../../assets/audience/GVR.png"
-import matIcon from "../../assets/audience/MAT.png"
-import rtotIcon from "../../assets/audience/RTOT.png"
-import vwurIcon from "../../assets/audience/VWUR.png"
-import hero from "../../assets/audience/hero-audience.png"
-import laptop from "../../assets/section3Laptop/room.webp"
-import trackIcon from "../../assets/audience/Tracked.png"
-import transparentIcon from "../../assets/audience/Transparent.png"
-import realtimeIcon from "../../assets/audience/Realtime.png"
-import overviewIcon from "../../assets/audience/audienceOverview.png"
+const bcmIcon = "https://d3r43jacxrwsrp.cloudfront.net/audience/BCM.jpg";
+const bemeIcon = "https://d3r43jacxrwsrp.cloudfront.net/audience/BEME.png";
+const boeIcon = "https://d3r43jacxrwsrp.cloudfront.net/audience/BOE.jpg";
+const briIcon = "https://d3r43jacxrwsrp.cloudfront.net/audience/BRI.jpg";
+const bscIcon = "https://d3r43jacxrwsrp.cloudfront.net/audience/BSC.jpg";
+const camIcon = "https://d3r43jacxrwsrp.cloudfront.net/audience/CAM.png";
+const daIcon = "https://d3r43jacxrwsrp.cloudfront.net/audience/DA.png";
+const eamIcon = "https://d3r43jacxrwsrp.cloudfront.net/audience/EAM.png";
+const gvrIcon = "https://d3r43jacxrwsrp.cloudfront.net/audience/GVR.png";
+const matIcon = "https://d3r43jacxrwsrp.cloudfront.net/audience/MAT.png";
+const rtotIcon = "https://d3r43jacxrwsrp.cloudfront.net/audience/RTOT.png";
+const vwurIcon = "https://d3r43jacxrwsrp.cloudfront.net/audience/VWUR.png";
+const hero = "https://d3r43jacxrwsrp.cloudfront.net/audience/hero-audience.png";
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/section3Laptop/room.webp";
+const trackIcon = "https://d3r43jacxrwsrp.cloudfront.net/audience/Tracked.png";
+const transparentIcon = "https://d3r43jacxrwsrp.cloudfront.net/audience/Transparent.png";
+const realtimeIcon = "https://d3r43jacxrwsrp.cloudfront.net/audience/Realtime.png";
+const overviewIcon = "https://d3r43jacxrwsrp.cloudfront.net/audience/audienceOverview.png";
 
 
 export default function AudienceAttendance() {
@@ -196,7 +196,7 @@ export default function AudienceAttendance() {
             </div>
 
             <div className={style.herosectionImgBoxPhone}>
-              <img style={{ width: "100%" }} src={hero.src} alt={"wifi module"} />
+              <img style={{ width: "100%" }} src={hero} alt={"wifi module"} />
             </div>
           </div>
         </section>
@@ -238,7 +238,7 @@ export default function AudienceAttendance() {
           <div className={style.blueBoxSetion3}>
             <div className={`${style.laptopImgSection3}`}>
               <div className={`${style.laptopImgBox}`} >
-                <img style={{ width: "100%" }} src={overviewIcon.src} alt="" />
+                <img style={{ width: "100%" }} src={overviewIcon} alt="" />
               </div>
             </div>
 

@@ -1,10 +1,10 @@
 ﻿import React from 'react'
 import styles from "./Certificate.module.css"
 
-import c1 from "../../assets/cert/oip.jpeg"
-import c2 from "../../assets/cert/c2.png"
-import c3 from "../../assets/cert/c3.png"
-import c4 from "../../assets/cert/c4.png"
+const c1 = "https://d3r43jacxrwsrp.cloudfront.net/cert/oip.jpeg";
+const c2 = "https://d3r43jacxrwsrp.cloudfront.net/cert/c2.png";
+const c3 = "https://d3r43jacxrwsrp.cloudfront.net/cert/c3.png";
+const c4 = "https://d3r43jacxrwsrp.cloudfront.net/cert/c4.png";
 export default function Certificate() {
     return (
         <div className={`${styles.certificate}`}>
@@ -20,16 +20,16 @@ export default function Certificate() {
 
             <div className={styles.container}>
                 <div className={styles.image1}>
-                    <img style={{ width: '100%' }} src={c1.src} alt="" />
+                    <img style={{ width: '100%' }} src={c1} alt="" />
                 </div>
                 <div className={styles.image2}>
-                    <img style={{ width: '100%' }} src={c2.src} alt="" />
+                    <img style={{ width: '100%' }} src={c2} alt="" />
                 </div>
                 <div className={styles.image3}>
-                    <img style={{ width: '100%' }} src={c3.src} alt="" />
+                    <img style={{ width: '100%' }} src={c3} alt="" />
                 </div>
                 <div className={styles.image4}>
-                    <img style={{ width: '100%' }} src={c4.src} alt="" />
+                    <img style={{ width: '100%' }} src={c4} alt="" />
                 </div>
             </div>
 

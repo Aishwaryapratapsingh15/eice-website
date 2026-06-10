@@ -4,26 +4,26 @@ import { useNavigate } from "/src/nextNavigation";
 import ProductCarousel from "./ProductCarousel";
 import productSlides from "./carouselData";
 import ProductFooter from "./ProductFooter";
-import arrowIcon from "../assets/arrow.svg";
-import heroImg from "../assets/EiceOps/screens.png"
-import sdIcon from "../assets/EiceOps/sd.svg";
-import ahIcon from "../assets/EiceOps/ah.svg";
-import sclIcon from "../assets/EiceOps/scl.svg";
-import tlsIcon from "../assets/EiceOps/tls.svg";
-import thIcon from "../assets/EiceOps/th.svg";
-import slaIcon from "../assets/EiceOps/sla.svg";
-import fatIcon from "../assets/EiceOps/fat.svg";
-import slarIcon from "../assets/EiceOps/slar.svg";
-import erIcon from "../assets/EiceOps/er.svg";
-import cscmIcon from "../assets/EiceOps/cscm.svg";
-import pslcIcon from "../assets/EiceOps/pslc.svg";
-import ntIcon from "../assets/EiceOps/nt.svg";
-import hbscIcon from "../assets/EiceOps/hbsc.svg";
-import mfcIcon from "../assets/EiceOps/mfc.svg";
-import clIcon from "../assets/EiceOps/cl.svg";
-import ftlIcon from "../assets/EiceOps/ftl.svg";
-import slaaccountabilityIcon from "../assets/EiceOps/SLAaccountability.svg";
-import mvIcon from "../assets/EiceOps/mv.svg";
+const arrowIcon = "https://d3r43jacxrwsrp.cloudfront.net/arrow.svg";
+const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/screens.png";
+const sdIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/sd.svg";
+const ahIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/ah.svg";
+const sclIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/scl.svg";
+const tlsIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/tls.svg";
+const thIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/th.svg";
+const slaIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/sla.svg";
+const fatIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/fat.svg";
+const slarIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/slar.svg";
+const erIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/er.svg";
+const cscmIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/cscm.svg";
+const pslcIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/pslc.svg";
+const ntIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/nt.svg";
+const hbscIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/hbsc.svg";
+const mfcIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/mfc.svg";
+const clIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/cl.svg";
+const ftlIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/ftl.svg";
+const slaaccountabilityIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/SLAaccountability.svg";
+const mvIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/mv.svg";
 
 const stats = [
   {
@@ -200,7 +200,7 @@ export default function EiceOps() {
         
            <div className="mt-5 flex justify-center">
                             <img
-                                     src={heroImg.src}
+                                     src={heroImg}
                                      alt="product"
                                      className="mx-auto mb-6 w-72 md:w-full lg:w-[480px]"
                                    />
@@ -425,7 +425,7 @@ missed escalations, ensures structured communication, and gives managers full vi
               className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto text-[18px] hover:bg-blue-800"
             >
               Request a Demo
-              <img src={arrowIcon.src} alt="arrow" />
+              <img src={arrowIcon} alt="arrow" />
             </button>
           </section>
 

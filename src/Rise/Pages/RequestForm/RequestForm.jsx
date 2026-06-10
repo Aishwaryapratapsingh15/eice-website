@@ -7,13 +7,13 @@ import styles from "./requestForm.module.css"
 
 import React, { useEffect, useState } from 'react';
 import Select from 'react-select';
-import ak from "../../assets/form/feedback/AK.png"
-import kd from "../../assets/form/feedback/KD.png"
-import pd from "../../assets/form/feedback/PD.png"
-import band from "../../assets/form/band.png"
+const ak = "https://d3r43jacxrwsrp.cloudfront.net/form/feedback/AK.png";
+const kd = "https://d3r43jacxrwsrp.cloudfront.net/form/feedback/KD.png";
+const pd = "https://d3r43jacxrwsrp.cloudfront.net/form/feedback/PD.png";
+const band = "https://d3r43jacxrwsrp.cloudfront.net/form/band.png";
 
-// import laptop from "../../assets/form/allLaptop.webp";
-import productsIcon from "../../assets/form/allProducts.png";
+// const laptop = "https://d3r43jacxrwsrp.cloudfront.net/form/allLaptop.webp";
+const productsIcon = "https://d3r43jacxrwsrp.cloudfront.net/form/allProducts.png";
 // import Accordion from "../../Components/Accordian/Accordian"
 
 import FooterLower from "../../Components/Footer/FooterLower"
@@ -24,8 +24,8 @@ import Certificate from "../../Components/Certificate/Certificate";
 import axios from "axios";
 import { useLocation } from '/src/nextNavigation';
 // import { createPortal } from "react-dom";
-import successIcon from "../../assets/common/success.svg";
-import errorIcon from "../../assets/common/error.svg";
+const successIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/success.svg";
+const errorIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/error.svg";
 
 
 export default function RequestForm() {
@@ -1110,13 +1110,13 @@ const handleSelectChange2 = (selectedOption) => {
 
 
             <section className={`${styles.centerWrapper}`} style={{
-    background: `url(${band.src}) no-repeat center`,
+    background: `url(${band}) no-repeat center`,
     backgroundSize: "100% 50%",
     backgroundPosition: "center calc(50% + 25px)",
   }}>
 
                 <div className={`${styles.LaptopImg}`}>
-                    <img src={productsIcon.src} alt="footer" />
+                    <img src={productsIcon} alt="footer" />
                 </div>
             </section>
 

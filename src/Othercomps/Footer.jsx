@@ -1,14 +1,14 @@
 ﻿"use client";
 import React, { useState } from "react";
-import x from "../assets/x.svg";
-import linkedin from "../assets/linkedin.svg";
-import fb from "../assets/fb.svg";
-import logo from "../assets/logo.svg";
-import insta from "../assets/insta.svg";
+const x = "https://d3r43jacxrwsrp.cloudfront.net/x.svg";
+const linkedin = "https://d3r43jacxrwsrp.cloudfront.net/linkedin.svg";
+const fb = "https://d3r43jacxrwsrp.cloudfront.net/fb.svg";
+const logo = "https://d3r43jacxrwsrp.cloudfront.net/logo.svg";
+const insta = "https://d3r43jacxrwsrp.cloudfront.net/insta.svg";
 
-import iso from "../assets/iso4.jpg"
-import isms from "../assets/isms.jpg"
-import cmi from "../assets/cmi3.png"
+const iso = "https://d3r43jacxrwsrp.cloudfront.net/iso4.jpg";
+const isms = "https://d3r43jacxrwsrp.cloudfront.net/isms.jpg";
+const cmi = "https://d3r43jacxrwsrp.cloudfront.net/cmi3.png";
 
 import { NavLink, Link } from "/src/nextNavigation";
 import { FaLinkedin, FaFacebookSquare } from "react-icons/fa";
@@ -52,17 +52,17 @@ function Footer() {
 
               {/* <div> */}
                 <Link href="/" className="inline-block mb-2 w-24 md:w-28 lg:w-40">
-                  <img style={{ filter: "brightness(0) invert(1)" , width : "100%" }} src={logo.src} alt="EICE Logo"  />
+                  <img style={{ filter: "brightness(0) invert(1)" , width : "100%" }} src={logo} alt="EICE Logo"  />
                 </Link>
                 <div  className="inline-block mb-2 ml-4  lg:ml-12  w-40  lg:w-60">
-                  <img style={{ filter: "brightness(0) invert(1)" , width : "100%" ,  }} src={cmi.src} alt="EICE Logo"  />
+                  <img style={{ filter: "brightness(0) invert(1)" , width : "100%" ,  }} src={cmi} alt="EICE Logo"  />
                 </div>
               {/* </div> */}
 
 
               {/* <div> */}
                
-                  {/* <img style={{ width: "13rem", filter: "brightness(0) invert(1)" }} src={cmi.src} alt="EICE Logo" className="" /> */}
+                  {/* <img style={{ width: "13rem", filter: "brightness(0) invert(1)" }} src={cmi} alt="EICE Logo" className="" /> */}
            
               {/* </div> */}
 
@@ -92,7 +92,7 @@ function Footer() {
               rel="noopener noreferrer"
             >
               <img
-                src={x.src}
+                src={x}
                 alt="Twitter"
                 className="h-6 w-6 hover:opacity-80 transition-opacity"
               />
@@ -103,7 +103,7 @@ function Footer() {
               rel="noopener noreferrer"
             >
               <img
-                src={linkedin.src}
+                src={linkedin}
                 alt="LinkedIn"
                 className="h-6 w-6 hover:opacity-80 transition-opacity"
               />
@@ -116,7 +116,7 @@ function Footer() {
               rel="noopener noreferrer"
             >
               <img
-                src={fb.src}
+                src={fb}
                 alt="Facebook"
                 className="h-6 w-6 hover:opacity-80 transition-opacity"
               />
@@ -129,7 +129,7 @@ function Footer() {
             >
 
               <img style={{ color: "blue" }}
-                src={insta.src}
+                src={insta}
                 alt="Instagram"
                 className="h-6 w-6 hover:opacity-80 transition-opacity"
               />
@@ -334,11 +334,11 @@ function Footer() {
             </div>
 
             {/* <Link style={{ marginLeft: "35rem" }} to="/" className="inline-block mb-2">
-              <img style={{ width: "8rem" }} src={isms.src} alt="EICE Logo" className="" />
+              <img style={{ width: "8rem" }} src={isms} alt="EICE Logo" className="" />
             </Link>
 
             <Link style={{ marginLeft: "3rem" }} to="/" className="inline-block mb-2">
-              <img style={{ width: "8rem"  }} src={iso.src} alt="EICE Logo" className="" />
+              <img style={{ width: "8rem"  }} src={iso} alt="EICE Logo" className="" />
             </Link> */}
 
           </div>

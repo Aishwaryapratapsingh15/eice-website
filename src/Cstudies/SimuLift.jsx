@@ -2,8 +2,8 @@ import React from "react";
 import Footer from "../Othercomps/Footer";
 import ProductFooter from "/src/Product/ProductFooter";
 import Copyright from "../Othercomps/Copyright";
-import simulift1 from "../assets/Compressed/simulift1.png";
-import simulift2 from "../assets/Compressed/simulift2.png";
+const simulift1 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/simulift1.png";
+const simulift2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/simulift2.png";
 import { GiVirtualMarker } from "react-icons/gi";
 
 function SimuLift() {
@@ -24,8 +24,8 @@ function SimuLift() {
             the optimal lift solution for any well condition.
           </p>
           <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
-            <img src={simulift1.src} alt="SimuLIFT Tool" className="w-full h-full object-fit rounded-lg" />
-            <img src={simulift2.src} alt="SimuLIFT Dashboard" className="w-full h-full object-fit rounded-lg" />
+            <img src={simulift1} alt="SimuLIFT Tool" className="w-full h-full object-fit rounded-lg" />
+            <img src={simulift2} alt="SimuLIFT Dashboard" className="w-full h-full object-fit rounded-lg" />
           </div>
         </div>
         <div className="w-full pb-6">

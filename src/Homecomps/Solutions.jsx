@@ -3,14 +3,14 @@
 // import styles from "./Styles/solutions.module.css"
 
 
-// import digital from "../assets/home_industry_images/digital1.webp"
-// import education from "../assets/home_industry_images/education1.webp"
-// import enterprise from "../assets/home_industry_images/Enterprise1.webp"
-// import financial from "../assets/home_industry_images/Financial1.webp"
-// import health from "../assets/home_industry_images/health1.webp"
-// import legal from "../assets/home_industry_images/Legal1.webp"
-// import logistics from "../assets/home_industry_images/Logistics1.webp"
-// import oil from "../assets/home_industry_images/oil1.webp"
+// const digital = "https://d3r43jacxrwsrp.cloudfront.net/home_industry_images/digital1.webp";
+// const education = "https://d3r43jacxrwsrp.cloudfront.net/home_industry_images/education1.webp";
+// const enterprise = "https://d3r43jacxrwsrp.cloudfront.net/home_industry_images/Enterprise1.webp";
+// const financial = "https://d3r43jacxrwsrp.cloudfront.net/home_industry_images/Financial1.webp";
+// const health = "https://d3r43jacxrwsrp.cloudfront.net/home_industry_images/health1.webp";
+// const legal = "https://d3r43jacxrwsrp.cloudfront.net/home_industry_images/Legal1.webp";
+// const logistics = "https://d3r43jacxrwsrp.cloudfront.net/home_industry_images/Logistics1.webp";
+// const oil = "https://d3r43jacxrwsrp.cloudfront.net/home_industry_images/oil1.webp";
 
 // import React, { useState, useEffect } from "react";
 // 
@@ -324,7 +324,7 @@
 // export default Solutions;
 
 import React from "react";
-import arrow from "../assets/arrow.svg";
+const arrow = "https://d3r43jacxrwsrp.cloudfront.net/arrow.svg";
 import { NavLink, Link } from "/src/nextNavigation";
 
 function Solutions() {
@@ -380,7 +380,7 @@ function Solutions() {
             to="/industries"
             className="inline-flex items-center justify-center py-4 px-7  border border-blue-900 bg-blue-900 text-white font-semibold rounded-md text-lg transition duration-200 hover:bg-blue-900/90 hover:shadow-md hover:shadow-bloo/30"
           >
-            View More <img src={arrow.src} alt="" className="ml-2 w-5 h-5" />
+            View More <img src={arrow} alt="" className="ml-2 w-5 h-5" />
           </Link>
         </div>
       </div>

@@ -3,44 +3,44 @@ import React from "react";
 import ProductCarousel from "./ProductCarousel";
 import productSlides from "./carouselData";
 import ProductFooter from "./ProductFooter";
-import heroImg from "../assets/isyncdrive/screen.png";
-import dataOwnershipIcon from "../assets/isyncdrive/Data_Ownnership_Risks.svg";
-import fragmentedFileIcon from "../assets/isyncdrive/Fragmented_File_Systems.svg";
-import governanceIcon from "../assets/isyncdrive/Lack_of_Governance.svg";
-import hybridSupportIcon from "../assets/isyncdrive/On-Prem_Support.svg";
-import clientAppIcon from "../assets/isyncdrive/Client_App.svg";
-import syncEngineIcon from "../assets/isyncdrive/Sync_engine.svg";
-import storageGatewayIcon from "../assets/isyncdrive/Storage_gateway.svg";
-import managementConsoleIcon from "../assets/isyncdrive/Management_console.svg";
-import bgImage from "../assets/isyncdrive/Background.png";
-import fileSharingIcon from "../assets/isyncdrive/File_sharing.svg";
-import roleBaseAccessIcon from "../assets/isyncdrive/Role-Based_Access.svg";
-import complianceIcon from "../assets/isyncdrive/Compliance.svg";
-import centralizedConsoleIcon from "../assets/isyncdrive/Centralized_Admin.svg";
-import multiPlatformIcon from "../assets/isyncdrive/Multi-Platform_Access.svg";
-import whiteLabelIcon from "../assets/isyncdrive/White-Label_Flexibility.svg";
-import encryptionIcon from "../assets/isyncdrive/End-to-End_Encryption.svg";
-import intelligentSyncIcon from "../assets/isyncdrive/Intelligent_Sync.svg";
-import deployIcon from "../assets/common/Deploy.svg";
-import planIcon from "../assets/common/Plan.svg";
-import scaleIcon from "../assets/common/Scale.svg";
-import optimizeIcon from "../assets/common/Optimize.svg";
-import adaptiveIntelligenceIcon from "../assets/isyncdrive/Adaptive_Intelligence.svg";
-import unifiedEcosystemIcon from "../assets/isyncdrive/Unified_Ecosystem.svg";
-import rbacIcon from "../assets/isyncdrive/RBAC.svg";
-import approvalIcon from "../assets/isyncdrive/Approval_Workflows.svg";
-import tenantIcon from "../assets/isyncdrive/Tenant_Governance.svg";
-import cloudIcon from "../assets/isyncdrive/Cloud_Deployment.svg";
-import onPremIcon from "../assets/isyncdrive/On-Prem_Deployment.svg";
-import hybridIcon from "../assets/isyncdrive/Hybrid_Deployment.svg";
-import arrowIcon from "../assets/arrow.svg";
-import cRoleSeparationIcon from "../assets/isyncdrive/Clear_Role_Seperation.svg";
-import enterpriseGovernanceIcon from "../assets/isyncdrive/Enterprise_Governance.svg";
-import flexibleDeploymentIcon from "../assets/isyncdrive/Flexible_Deployment.svg";
-import bgImage2 from "../assets/common/Background.png";
-import shieldIcon from "../assets/common/shield_02.svg";
-import checkIcon from "../assets/common/Check_all.svg";
-import linkingIcon from "../assets/isyncdrive/linking.svg"
+const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/screen.png";
+const dataOwnershipIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/Data_Ownnership_Risks.svg";
+const fragmentedFileIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/Fragmented_File_Systems.svg";
+const governanceIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/Lack_of_Governance.svg";
+const hybridSupportIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/On-Prem_Support.svg";
+const clientAppIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/Client_App.svg";
+const syncEngineIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/Sync_engine.svg";
+const storageGatewayIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/Storage_gateway.svg";
+const managementConsoleIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/Management_console.svg";
+const bgImage = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/Background.png";
+const fileSharingIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/File_sharing.svg";
+const roleBaseAccessIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/Role-Based_Access.svg";
+const complianceIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/Compliance.svg";
+const centralizedConsoleIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/Centralized_Admin.svg";
+const multiPlatformIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/Multi-Platform_Access.svg";
+const whiteLabelIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/White-Label_Flexibility.svg";
+const encryptionIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/End-to-End_Encryption.svg";
+const intelligentSyncIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/Intelligent_Sync.svg";
+const deployIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Deploy.svg";
+const planIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Plan.svg";
+const scaleIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Scale.svg";
+const optimizeIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Optimize.svg";
+const adaptiveIntelligenceIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/Adaptive_Intelligence.svg";
+const unifiedEcosystemIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/Unified_Ecosystem.svg";
+const rbacIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/RBAC.svg";
+const approvalIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/Approval_Workflows.svg";
+const tenantIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/Tenant_Governance.svg";
+const cloudIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/Cloud_Deployment.svg";
+const onPremIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/On-Prem_Deployment.svg";
+const hybridIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/Hybrid_Deployment.svg";
+const arrowIcon = "https://d3r43jacxrwsrp.cloudfront.net/arrow.svg";
+const cRoleSeparationIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/Clear_Role_Seperation.svg";
+const enterpriseGovernanceIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/Enterprise_Governance.svg";
+const flexibleDeploymentIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/Flexible_Deployment.svg";
+const bgImage2 = "https://d3r43jacxrwsrp.cloudfront.net/common/Background.png";
+const shieldIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/shield_02.svg";
+const checkIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Check_all.svg";
+const linkingIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/linking.svg";
 import { useNavigate } from "/src/nextNavigation";
 
 
@@ -185,7 +185,7 @@ export default function ISyncDrivePage() {
       <section className="mt-10 text-center py-16 px-6 bg-white">
          <div className="mt-5 flex justify-center">
            <img
-                    src={heroImg.src}
+                    src={heroImg}
                     alt="product"
                     className="mx-auto mb-6 w-72 md:w-96 lg:w-[480px]"
                   />
@@ -197,7 +197,7 @@ export default function ISyncDrivePage() {
         <span className="inline-flex items-center gap-2 bg-blue-50 text-[#012060] px-3 py-2 rounded-full text-sm font-medium border border-blue-200">
   
   <img 
-    src={shieldIcon.src} 
+    src={shieldIcon} 
     alt="icon" 
     className="w-5 h-5 object-contain"
   />
@@ -217,7 +217,7 @@ access, sync, and share files across devices from a single platform with full co
         {/* <div className="mt-8 flex flex-wrap justify-center gap-4">
           <button className="bg-blue-900 text-white px-6 py-3 rounded-md">
             Request a Demo
-            <img src={arrowIcon.src} alt="arrow" className="w-4 h-4" />
+            <img src={arrowIcon} alt="arrow" className="w-4 h-4" />
           </button>
           <button className="border border-gray-300 px-6 py-3 rounded-md">
             Talk to an Expert
@@ -229,7 +229,7 @@ access, sync, and share files across devices from a single platform with full co
       <button onClick={() => navigate("/products/form?embed=true&product=iSyncDrive")} 
       className="bg-[#012060] text-white px-10 py-5 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-[18px] w-[250px] h-[56px]">
         Request a Demo
-          <img src={arrowIcon.src} alt="arrow"/>
+          <img src={arrowIcon} alt="arrow"/>
 
       </button>
 
@@ -387,7 +387,7 @@ access, sync, and share files across devices from a single platform with full co
 
     {/* IMAGE */}
     <img
-      src={bgImage.src}
+      src={bgImage}
       alt="platform"
       className="w-full rounded-xl"
     />
@@ -506,7 +506,7 @@ access, sync, and share files across devices from a single platform with full co
       {/* Header */}
       <div className="flex items-center gap-4 mb-5">
         <div className="p-3 rounded-lg">
-          <img src={unifiedEcosystemIcon.src} alt="icon"/>
+          <img src={unifiedEcosystemIcon} alt="icon"/>
         </div>
         <h3 className="text-2xl font-bold text-[#334155]">
           Unified Ecosystem
@@ -538,7 +538,7 @@ access, sync, and share files across devices from a single platform with full co
       {/* Header */}
       <div className="flex items-center gap-4 mb-5">
         <div className="p-3 rounded-lg">
-          <img src={adaptiveIntelligenceIcon.src} alt="icon"/>
+          <img src={adaptiveIntelligenceIcon} alt="icon"/>
         </div>
         <h3 className="text-2xl font-bold text-[#334155]">
           Adaptive Intelligence
@@ -590,7 +590,7 @@ access, sync, and share files across devices from a single platform with full co
 
       {/* ICON */}
       <div className="py-1 rounded-lg">
-        <img src={rbacIcon.src} alt="rbac" className="w-10 h-10"/>
+        <img src={rbacIcon} alt="rbac" className="w-10 h-10"/>
       </div>
 
       {/* CONTENT */}
@@ -609,7 +609,7 @@ access, sync, and share files across devices from a single platform with full co
     <div className="bg-white border border-[#E2E8F0] rounded-xl p-6 flex items-start gap-3">
 
       <div className=" py-1 rounded-lg">
-        <img src={approvalIcon.src} alt="approval" className="w-10 h-10"/>
+        <img src={approvalIcon} alt="approval" className="w-10 h-10"/>
       </div>
 
       <div>
@@ -627,7 +627,7 @@ access, sync, and share files across devices from a single platform with full co
     <div className="bg-white border border-[#E2E8F0] rounded-xl p-6 flex items-start gap-3">
 
       <div className="py-1 rounded-lg">
-        <img src={tenantIcon.src} alt="tenant" className="w-10 h-10"/>
+        <img src={tenantIcon} alt="tenant" className="w-10 h-10"/>
       </div>
 
       <div>
@@ -667,7 +667,7 @@ access, sync, and share files across devices from a single platform with full co
 
       {/* ICON */}
       <div className="w-14 h-14 mx-auto flex items-center justify-center rounded-lg mb-6">
-        <img src={cloudIcon.src} alt="cloud"/>
+        <img src={cloudIcon} alt="cloud"/>
       </div>
 
       <h3 className="text-xl font-bold text-[#334155]">
@@ -681,7 +681,7 @@ access, sync, and share files across devices from a single platform with full co
       <ul className="text-left space-y-3 text-gray-600">
         <li className="flex items-start gap-2">
           <img
-    src={checkIcon.src}
+    src={checkIcon}
     alt="check"
     className="w-5 h-5 mt-1"
   />
@@ -689,7 +689,7 @@ access, sync, and share files across devices from a single platform with full co
         </li>
         <li className="flex items-start gap-2">
           <img
-    src={checkIcon.src}
+    src={checkIcon}
     alt="check"
     className="w-5 h-5 mt-1"
   />
@@ -697,7 +697,7 @@ access, sync, and share files across devices from a single platform with full co
         </li>
         <li className="flex items-start gap-2">
           <img
-    src={checkIcon.src}
+    src={checkIcon}
     alt="check"
     className="w-5 h-5 mt-1"
   />
@@ -711,7 +711,7 @@ access, sync, and share files across devices from a single platform with full co
     <div className="bg-[#EFFAFF] border border-[#E2E8F0] rounded-xl p-8 text-center">
 
       <div className="w-14 h-14 mx-auto flex items-center justify-center rounded-lg mb-6">
-        <img src={onPremIcon.src} alt="onprem"/>
+        <img src={onPremIcon} alt="onprem"/>
       </div>
 
       <h3 className="text-xl font-semibold text-gray-800">
@@ -725,7 +725,7 @@ access, sync, and share files across devices from a single platform with full co
       <ul className="text-left space-y-3 text-gray-600">
         <li className="flex items-start gap-2">
           <img
-    src={checkIcon.src}
+    src={checkIcon}
     alt="check"
     className="w-5 h-5 mt-1"
   />
@@ -733,7 +733,7 @@ access, sync, and share files across devices from a single platform with full co
         </li>
         <li className="flex items-start gap-2">
            <img
-    src={checkIcon.src}
+    src={checkIcon}
     alt="check"
     className="w-5 h-5 mt-1"
   />
@@ -741,7 +741,7 @@ access, sync, and share files across devices from a single platform with full co
         </li>
         <li className="flex items-start gap-2">
           <img
-    src={checkIcon.src}
+    src={checkIcon}
     alt="check"
     className="w-5 h-5 mt-1"
   />
@@ -755,7 +755,7 @@ access, sync, and share files across devices from a single platform with full co
     <div className="bg-[#EFFAFF] border border-[#E2E8F0] rounded-xl p-8 text-center">
 
       <div className="w-14 h-14 mx-auto flex items-center justify-centerrounded-lg mb-6">
-        <img src={hybridIcon.src} alt="hybrid"/>
+        <img src={hybridIcon} alt="hybrid"/>
       </div>
 
       <h3 className="text-xl font-semibold text-gray-800">
@@ -769,7 +769,7 @@ access, sync, and share files across devices from a single platform with full co
       <ul className="text-left space-y-3 text-gray-600">
         <li className="flex items-start gap-2">
           <img
-    src={checkIcon.src}
+    src={checkIcon}
     alt="check"
     className="w-5 h-5 mt-1"
   />
@@ -777,7 +777,7 @@ access, sync, and share files across devices from a single platform with full co
         </li>
         <li className="flex items-start gap-2">
           <img
-    src={checkIcon.src}
+    src={checkIcon}
     alt="check"
     className="w-5 h-5 mt-1"
   />
@@ -811,7 +811,7 @@ access, sync, and share files across devices from a single platform with full co
           <button onClick={() => navigate("/products/form?embed=true&product=iSyncDrive")} 
           className="bg-[#012060] text-white px-10 py-5 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-[18px] w-[250px] h-[56px]">
         Request a Demo
-          <img src={arrowIcon.src} alt="arrow"/>
+          <img src={arrowIcon} alt="arrow"/>
 
       </button>
 

@@ -1,8 +1,8 @@
 import React from "react";
 import ProductFooter from "/src/Product/ProductFooter";
 import Copyright from "../Othercomps/Copyright";
-import voicecall1 from "../assets/Compressed/voicecall1.png";
-import voicecall2 from "../assets/Compressed/voicecall2.png";
+const voicecall1 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/voicecall1.png";
+const voicecall2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/voicecall2.png";
 import { GiVirtualMarker } from "react-icons/gi";
 import Link from "next/link";
 
@@ -21,8 +21,8 @@ function VoiceCallAI() {
             service quality.
           </p>
           <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
-            <img src={voicecall1.src} alt="Voice Call AI Platform" className="w-full h-full object-fit rounded-lg" />
-            <img src={voicecall2.src} alt="Voice Call AI Dashboard" className="w-full h-full object-fit rounded-lg" />
+            <img src={voicecall1} alt="Voice Call AI Platform" className="w-full h-full object-fit rounded-lg" />
+            <img src={voicecall2} alt="Voice Call AI Dashboard" className="w-full h-full object-fit rounded-lg" />
           </div>
         </div>
         <div className="w-full pb-6">

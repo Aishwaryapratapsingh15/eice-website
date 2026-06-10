@@ -1,8 +1,8 @@
 import React from "react";
 import ProductFooter from "/src/Product/ProductFooter";
 import Copyright from "../Othercomps/Copyright";
-import noraltamath1 from "../assets/Compressed/noraltamath1.png";
-import noraltamath2 from "../assets/Compressed/noraltamath2.png";
+const noraltamath1 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/noraltamath1.png";
+const noraltamath2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/noraltamath2.png";
 import { GiVirtualMarker } from "react-icons/gi";
 
 function NoraltaMath() {
@@ -20,8 +20,8 @@ function NoraltaMath() {
             monitoring and reporting workflows.
           </p>
           <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
-            <img src={noraltamath1.src} alt="FEMMS Platform" className="w-full h-full object-fit rounded-lg" />
-            <img src={noraltamath2.src} alt="FEMMS Dashboard" className="w-full h-full object-fit rounded-lg" />
+            <img src={noraltamath1} alt="FEMMS Platform" className="w-full h-full object-fit rounded-lg" />
+            <img src={noraltamath2} alt="FEMMS Dashboard" className="w-full h-full object-fit rounded-lg" />
           </div>
         </div>
         <div className="w-full pb-6">

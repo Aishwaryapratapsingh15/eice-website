@@ -6,26 +6,26 @@ import Certificate from "../../Components/Certificate/Certificate.jsx";
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx";
 import FooterLower from "../../Components/Footer/FooterLower.jsx";
 import Accordion from "../../Components/Accordian/Accordian.jsx"
-import abpIcon from "../../assets/budget/ABP.png"
-import brrIcon from "../../assets/budget/BRR.png"
-import cepIcon from "../../assets/budget/CEP.png"
-import dwaIcon from "../../assets/budget/DWA.png"
-import ipIcon from "../../assets/budget/IP.png"
-import hcIcon from "../../assets/budget/HC.png"
-import mpcIcon from "../../assets/budget/MPC.png"
-import varIcon from "../../assets/budget/VAR.png"
-import mqtIcon from "../../assets/budget/MQT.png"
-import barIcon from "../../assets/budget/BAR.jpg"
-import bcoIcon from "../../assets/budget/BCO.jpg"
-import bfdIcon from "../../assets/budget/BFD.png"
-import boeIcon from "../../assets/budget/BOE.jpg"
-import bspIcon from "../../assets/budget/BSP.jpg"
-import hero from "../../assets/budget/hero-budget.png"
-import laptop from "../../assets/section3Laptop/room.webp"
-import plannedIcon from "../../assets/budget/Planned.png"
-import preciseIcon from "../../assets/budget/Precise.png"
-import predictIcon from "../../assets/budget/Predict.png"
-import overviewIcon from "../../assets/budget/budgetOverview.png"
+const abpIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/ABP.png";
+const brrIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/BRR.png";
+const cepIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/CEP.png";
+const dwaIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/DWA.png";
+const ipIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/IP.png";
+const hcIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/HC.png";
+const mpcIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/MPC.png";
+const varIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/VAR.png";
+const mqtIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/MQT.png";
+const barIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/BAR.jpg";
+const bcoIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/BCO.jpg";
+const bfdIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/BFD.png";
+const boeIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/BOE.jpg";
+const bspIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/BSP.jpg";
+const hero = "https://d3r43jacxrwsrp.cloudfront.net/budget/hero-budget.png";
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/section3Laptop/room.webp";
+const plannedIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/Planned.png";
+const preciseIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/Precise.png";
+const predictIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/Predict.png";
+const overviewIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/budgetOverview.png";
 
 
 export default function Budget() {
@@ -179,7 +179,7 @@ export default function Budget() {
             </div>
 
             <div className={style.herosectionImgBoxPhone}>
-              <img style={{width : "100%"}} src={hero.src} alt={"wifi module"} />
+              <img style={{width : "100%"}} src={hero} alt={"wifi module"} />
             </div>
           </div>
         </section>
@@ -221,7 +221,7 @@ export default function Budget() {
           <div className={style.blueBoxSetion3}>
            <div className={`${style.laptopImgSection3}`}>
                                       <div className={`${style.laptopImgBox}`} >
-                                          <img style={{ width: "100%" }} src={overviewIcon.src} alt="" />
+                                          <img style={{ width: "100%" }} src={overviewIcon} alt="" />
                                       </div>
                                   </div>
 

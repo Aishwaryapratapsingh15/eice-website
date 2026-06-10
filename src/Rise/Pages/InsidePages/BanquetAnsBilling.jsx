@@ -2,22 +2,22 @@
 import style from "./Styles/banquetAndBilling.module.css"
 
 
-import artb from "../../assets/insidePages/banquet/section2B/artb.png"
-import eem from "../../assets/insidePages/banquet/section2B/eem.png"
-import fcb from "../../assets/insidePages/banquet/section2B/fcb.png"
+const artb = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/banquet/section2B/artb.png";
+const eem = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/banquet/section2B/eem.png";
+const fcb = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/banquet/section2B/fcb.png";
 
 
 import { Link } from '/src/nextNavigation'
 
 
-import herosectionImg from "../../assets/allHero/new/banquetH.webp"
+const herosectionImg = "https://d3r43jacxrwsrp.cloudfront.net/allHero/new/banquetH.webp";
 
-import abs from "../../assets/insidePages/banquet/icon/abs.png"
-import cpa from "../../assets/insidePages/banquet/icon/cpa.png"
-import cpp from "../../assets/insidePages/banquet/icon/cpp.png"
-import cr from "../../assets/insidePages/banquet/icon/cr.png"
-import dci from "../../assets/insidePages/banquet/icon/dci.png"
-import irm from "../../assets/insidePages/banquet/icon/irm.png"
+const abs = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/banquet/icon/abs.png";
+const cpa = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/banquet/icon/cpa.png";
+const cpp = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/banquet/icon/cpp.png";
+const cr = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/banquet/icon/cr.png";
+const dci = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/banquet/icon/dci.png";
+const irm = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/banquet/icon/irm.png";
 
 
 import { useEffect , useState } from "react"
@@ -26,15 +26,15 @@ import { useEffect , useState } from "react"
 
 // benefits
 
-import bru from "../../assets/insidePages/banquet/banquetbenefits/bru.webp"
-import cm from "../../assets/insidePages/banquet/banquetbenefits/cm.webp"
-import ece from "../../assets/insidePages/banquet/banquetbenefits/ece.webp"
-import ie from "../../assets/insidePages/banquet/banquetbenefits/ie.webp"
-import ro from "../../assets/insidePages/banquet/banquetbenefits/ro.webp"
+const bru = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/banquet/banquetbenefits/bru.webp";
+const cm = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/banquet/banquetbenefits/cm.webp";
+const ece = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/banquet/banquetbenefits/ece.webp";
+const ie = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/banquet/banquetbenefits/ie.webp";
+const ro = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/banquet/banquetbenefits/ro.webp";
 
 
 
-import laptop from "../../assets/section3Laptop/banquet.webp"
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/section3Laptop/banquet.webp";
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 
@@ -221,7 +221,7 @@ export default function BanquetAnsBilling() {
     </div>
 
     <div className={`${style.herosectionImgBoxPhone}`}>
-        <img style={{ width: "100%" }} src={herosectionImg.src} alt={"room booking"} />
+        <img style={{ width: "100%" }} src={herosectionImg} alt={"room booking"} />
     </div>
 
 
@@ -264,7 +264,7 @@ export default function BanquetAnsBilling() {
 
           <div className={style.section2IconAndName}>
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={artb.src} alt="" />
+              <img style={{ width: "100%" }} src={artb} alt="" />
             </div>
 
             <div className={`${style.iconName} `}>
@@ -279,7 +279,7 @@ export default function BanquetAnsBilling() {
           <div className={style.section2IconAndName}>
 
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={eem.src} alt="" />
+              <img style={{ width: "100%" }} src={eem} alt="" />
             </div>
 
             <div className={`${style.iconName} `}>
@@ -297,7 +297,7 @@ export default function BanquetAnsBilling() {
           <div className={style.section2IconAndName}>
 
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={fcb.src} alt="" />
+              <img style={{ width: "100%" }} src={fcb} alt="" />
             </div>
 
             <div className={`${style.iconName}`}>
@@ -331,7 +331,7 @@ export default function BanquetAnsBilling() {
 
             <div className={`${style.laptopImgSection3}`}>
               <div className={`${style.laptopImgBox}`} >
-                <img style={{ width: "100%" }} src={laptop.src} alt="" />
+                <img style={{ width: "100%" }} src={laptop} alt="" />
               </div>
             </div>
 

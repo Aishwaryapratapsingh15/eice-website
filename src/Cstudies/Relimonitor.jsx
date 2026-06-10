@@ -3,8 +3,8 @@ import Footer from "../Othercomps/Footer";
 import Copyright from "../Othercomps/Copyright";
 import ProductFooter from "/src/Product/ProductFooter";
 
-import temp from "../assets/Compressed/temp.png";
-import temp2 from "../assets/Compressed/temp2.png";
+const temp = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/temp.png";
+const temp2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/temp2.png";
 import { GiVirtualMarker } from "react-icons/gi";
 
 function Relimonitor() {
@@ -26,10 +26,10 @@ function Relimonitor() {
           <div className=" w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
             <div className="relative w-full h-full rounded-lg">
               
-              <img src={temp.src} alt="" className="w-full h-full rounded-lg object-fit" />
+              <img src={temp} alt="" className="w-full h-full rounded-lg object-fit" />
             </div>
             <div className="relative w-full h-full rounded-lg">
-              <img src={temp2.src} alt="" className="w-full h-full rounded-lg object-fit" />
+              <img src={temp2} alt="" className="w-full h-full rounded-lg object-fit" />
             </div>
           </div>
         </div>

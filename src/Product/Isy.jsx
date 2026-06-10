@@ -3,30 +3,30 @@ import React from "react";
 import ProductCarousel from "./ProductCarousel";
 import productSlides from "./carouselData";
 import ProductFooter from "./ProductFooter";
-import heroImg from "/src/assets/isynclite/isynclite.png"
-import shieldIcon from "../assets/common/shield_02.svg";
-import arrowIcon from "../assets/arrow.svg";
-import wIsynclite from "/src/assets/isynclite/whatIsynclite.png"
-import checkIcon from "../assets/common/Check_all.svg";
-import capIcon from "/src/assets/isynclite/CAP.svg";
-import cbsIcon from "/src/assets/isynclite/CBS.svg";
-import ddrIcon from "/src/assets/isynclite/DDR.svg";
-import dlrIcon from "/src/assets/isynclite/DLR.svg"; 
-import absIcon from "/src/assets/isynclite/ABS.svg";
-import fdrrIcon from "/src/assets/isynclite/FDRR.svg";
-import ivbIcon from "/src/assets/isynclite/IVB.svg";
-import laaIcon from "/src/assets/isynclite/LAA.svg";
-import pbrmIcon from "/src/assets/isynclite/PBRM.svg";
-import sdeIcon from "/src/assets/isynclite/SDE.svg";
-import backupIcon from "/src/assets/isynclite/Backup.svg"
-import configureIcon from "/src/assets/isynclite/Configure.svg"
-import restoreIcon from "/src/assets/isynclite/Restore.svg"
-import storeIcon from "/src/assets/isynclite/Store.svg";
-import kbtIcon from "/src/assets/isynclite/KBT.svg";
-import cbbIcon from "/src/assets/isynclite/CBB.svg";
-import opbIcon from "/src/assets/isynclite/OPB.svg";
-import hdIcon from "/src/assets/isynclite/HD.svg";
-import bg_image from "/src/assets/isynclite/bg_image.png";
+const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/isynclite.png";
+const shieldIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/shield_02.svg";
+const arrowIcon = "https://d3r43jacxrwsrp.cloudfront.net/arrow.svg";
+const wIsynclite = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/whatIsynclite.png";
+const checkIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Check_all.svg";
+const capIcon = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/CAP.svg";
+const cbsIcon = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/CBS.svg";
+const ddrIcon = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/DDR.svg";
+const dlrIcon = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/DLR.svg"; 
+const absIcon = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/ABS.svg";
+const fdrrIcon = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/FDRR.svg";
+const ivbIcon = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/IVB.svg";
+const laaIcon = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/LAA.svg";
+const pbrmIcon = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/PBRM.svg";
+const sdeIcon = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/SDE.svg";
+const backupIcon = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/Backup.svg";
+const configureIcon = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/Configure.svg";
+const restoreIcon = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/Restore.svg";
+const storeIcon = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/Store.svg";
+const kbtIcon = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/KBT.svg";
+const cbbIcon = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/CBB.svg";
+const opbIcon = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/OPB.svg";
+const hdIcon = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/HD.svg";
+const bg_image = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/bg_image.png";
 import { useNavigate } from "/src/nextNavigation";
 
 
@@ -134,13 +134,13 @@ export default function IsyncLitePage() {
         <div className="max-w-[1200px] mx-auto">
 
           {/* IMAGE */}
-          <img src={heroImg.src} alt="Hero" className="mx-auto mb-6 w-72 md:w-96 lg:w-[480px]" />
+          <img src={heroImg} alt="Hero" className="mx-auto mb-6 w-72 md:w-96 lg:w-[480px]" />
 
           {/* BADGE */}
                   <span className="inline-flex items-center gap-2 bg-blue-50 text-[#334155] px-3 py-2 rounded-full text-sm font-medium border border-blue-200">
             
             <img 
-              src={shieldIcon.src} 
+              src={shieldIcon} 
               alt="icon" 
               className="w-5 h-5 object-contain"
             />
@@ -167,7 +167,7 @@ export default function IsyncLitePage() {
                 <button onClick={() => navigate("/products/form?embed=true&product=iSyncLite")} 
                 className="bg-[#012060] text-white px-10 py-5 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-[18px] w-[250px] h-[56px]">
                   Request a Demo
-                    <img src={arrowIcon.src} alt="arrow"/>
+                    <img src={arrowIcon} alt="arrow"/>
           
                 </button>
           
@@ -197,22 +197,22 @@ export default function IsyncLitePage() {
 
             <ul className="space-y-3 text-[#334155] font-semibold">
               <li className="flex items-start gap-2"><img
-                  src={checkIcon.src}
+                  src={checkIcon}
                   alt="check"
                   className="w-5 h-5 mt-1"
                 />Enterprise backup & restore platform</li>
               <li className="flex items-start gap-2"><img
-                  src={checkIcon.src}
+                  src={checkIcon}
                   alt="check"
                   className="w-5 h-5 mt-1"
                 />Automated, policy-driven backups</li>
               <li className="flex items-start gap-2"><img
-                  src={checkIcon.src}
+                  src={checkIcon}
                   alt="check"
                   className="w-5 h-5 mt-1"
                 />Secure, encrypted data protection</li>
               <li className="flex items-start gap-2"><img
-                  src={checkIcon.src}
+                  src={checkIcon}
                   alt="check"
                   className="w-5 h-5 mt-1"
                 />Designed for business continuity & compliance</li>
@@ -220,7 +220,7 @@ export default function IsyncLitePage() {
           </div>
 
           {/* RIGHT IMAGE */}
-          <img src={wIsynclite.src} alt="What is" className="w-full max-w-[500px] mx-auto" />
+          <img src={wIsynclite} alt="What is" className="w-full max-w-[500px] mx-auto" />
         </div>
       </section>
 
@@ -295,7 +295,7 @@ iSyncLite addresses these head-on.
       
           {/* IMAGE */}
           <img
-            src={bg_image.src}
+            src={bg_image}
             alt="platform"
             className="w-full rounded-xl"
           />
@@ -369,7 +369,7 @@ iSyncLite addresses these head-on.
       <div className="flex items-start gap-4 sm:gap-5">
         {/* ICON SPACE */}
         <div className="w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0 rounded-full flex items-center justify-center">
-         <img src={kbtIcon.src} alt="icon" className="w-14 h-14 object-contain" />
+         <img src={kbtIcon} alt="icon" className="w-14 h-14 object-contain" />
         </div>
 
         <div>
@@ -385,7 +385,7 @@ iSyncLite addresses these head-on.
       {/* ITEM */}
       <div className="flex items-start gap-4 sm:gap-5">
         <div className="w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0 rounded-full flex items-center justify-center">
-          <img src={kbtIcon.src} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={kbtIcon} alt="icon" className="w-14 h-14 object-contain" />
         </div>
         <div>
           <h3 className="text-base sm:text-lg md:text-xl font-bold text-[#334155]">
@@ -400,7 +400,7 @@ iSyncLite addresses these head-on.
       {/* ITEM */}
       <div className="flex items-start gap-4 sm:gap-5">
         <div className="w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0 rounded-full flex items-center justify-center">
-          <img src={kbtIcon.src} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={kbtIcon} alt="icon" className="w-14 h-14 object-contain" />
         </div>
         <div>
           <h3 className="text-base sm:text-lg md:text-xl font-bold text-[#334155]">
@@ -415,7 +415,7 @@ iSyncLite addresses these head-on.
       {/* ITEM */}
       <div className="flex items-start gap-4 sm:gap-5">
         <div className="w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0 rounded-full flex items-center justify-center">
-          <img src={kbtIcon.src} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={kbtIcon} alt="icon" className="w-14 h-14 object-contain" />
         </div>
         <div>
           <h3 className="text-base sm:text-lg md:text-xl font-bold text-[#334155]">
@@ -430,7 +430,7 @@ iSyncLite addresses these head-on.
       {/* ITEM */}
       <div className="flex items-start gap-4 sm:gap-5">
         <div className="w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0 rounded-full flex items-center justify-center">
-          <img src={kbtIcon.src} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={kbtIcon} alt="icon" className="w-14 h-14 object-contain" />
         </div>
         <div>
           <h3 className="text-base sm:text-lg md:text-xl font-bold text-[#334155]">
@@ -495,7 +495,7 @@ iSyncLite addresses these head-on.
                 <button onClick={() => navigate("/products/form?embed=true&product=iSyncLite")} 
                 className="bg-[#012060] text-white px-10 py-5 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-[18px] w-[250px] h-[56px]">
               Request a Demo
-                <img src={arrowIcon.src} alt="arrow"/>
+                <img src={arrowIcon} alt="arrow"/>
       
             </button>
       
@@ -543,7 +543,7 @@ iSyncLite addresses these head-on.
 
 
 // import React from "react";
-// import heroImg from "../assets/isynclite/screen.png";
+// const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/screen.png";
 
 // const features = [
 //   {
@@ -640,7 +640,7 @@ iSyncLite addresses these head-on.
 //       {/* HERO */}
 //       <section className="text-center pt-40 pb-16 px-6">
 //         <img
-//           src={heroImg.src}
+//           src={heroImg}
 //           alt="product"
 //           className="mx-auto mb-6 w-72 md:w-96 lg:w-[580px]"
 //         />

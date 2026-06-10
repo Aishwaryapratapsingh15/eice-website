@@ -7,12 +7,12 @@ import { Link } from '/src/nextNavigation'
 
 
 
-import inentry from "../../assets/Hospitality/allPageIcon/store.png"
+const inentry = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/store.png";
 
-import vendor from "../../assets/Hospitality/allPageIcon/purchase.png"
+const vendor = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/purchase.png";
 
 
-import heroimg from "../../assets/pricing/suitHeroSection/inventaryP.webp"
+const heroimg = "https://d3r43jacxrwsrp.cloudfront.net/pricing/suitHeroSection/inventaryP.webp";
 import { useEffect, useState } from "react"
 import { FaArrowRightLong } from "react-icons/fa6";
 import FooterLower from "../../Components/Footer/FooterLower"
@@ -86,11 +86,11 @@ export default function Inventary() {
 
             {isPhone ? (<section className={`${styles.heroImgSectionPhone}`}>
                 <div className={`${styles.heroImgBoxPhone}`}>
-                    {/* <img style={{ width: "100%" }} src={heroimg.src} alt="banquet Suite" /> */}
+                    {/* <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite" /> */}
                 </div>
             </section>) : (<section className={`${styles.heroImgSection}`}>
                 <div className={`${styles.heroImgBox}`}>
-                    <img style={{ width: "100%" }} src={heroimg.src} alt="banquet Suite" />
+                    <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite" />
                 </div>
             </section>)}
 

@@ -9,15 +9,15 @@ import Clientele from "../Homecomps/Clientele";
 import ProductFooter from "/src/Product/ProductFooter";
 import { FaCloud, FaDatabase, FaPencilRuler } from "react-icons/fa";
 
-import Education_img from "../assets/industry-images/Education.png";
+const Education_img = "https://d3r43jacxrwsrp.cloudfront.net/industry-images/Education.png";
 
-import laptop from "../assets/Compressed/Laptop.png";
-import random1 from "../assets/Compressed/random1.jpg";
-import random2 from "../assets/Compressed/random2.jpg";
-import random3 from "../assets/Compressed/random3.jpg";
-import random4 from "../assets/Compressed/random4.jpg";
-import random5 from "../assets/Compressed/random5.jpg";
-import random6 from "../assets/Compressed/random6.jpg";
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/Laptop.png";
+const random1 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/random1.jpg";
+const random2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/random2.jpg";
+const random3 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/random3.jpg";
+const random4 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/random4.jpg";
+const random5 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/random5.jpg";
+const random6 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/random6.jpg";
 import { FaMagnifyingGlass, FaScaleBalanced } from "react-icons/fa6";
 import { SiStudyverse, SiThunderstore } from "react-icons/si";
 import { TbPencilPause } from "react-icons/tb";
@@ -29,25 +29,25 @@ import { GrVirtualMachine } from "react-icons/gr";
 
 // images
 
-import lms from "../assets/Education/lms.png"
-import Preditive from "../assets/Education/Preditive.png"
-import rttar from "../assets/Education/rttar.png"
-import sis from "../assets/Education/sis.png"
-import vcs from "../assets/Education/vcs.jpg"
+const lms = "https://d3r43jacxrwsrp.cloudfront.net/Education/lms.png";
+const Preditive = "https://d3r43jacxrwsrp.cloudfront.net/Education/Preditive.png";
+const rttar = "https://d3r43jacxrwsrp.cloudfront.net/Education/rttar.png";
+const sis = "https://d3r43jacxrwsrp.cloudfront.net/Education/sis.png";
+const vcs = "https://d3r43jacxrwsrp.cloudfront.net/Education/vcs.jpg";
 
 
 
 // cs images
 
-import opo from "../assets/Cs/opo.jpg"
-import etp from "../assets/Cs/etp.jpg"
+const opo = "https://d3r43jacxrwsrp.cloudfront.net/Cs/opo.jpg";
+const etp = "https://d3r43jacxrwsrp.cloudfront.net/Cs/etp.jpg";
 
-import adai from "../assets/Automobile/adai.jpeg"
-import ccp from "../assets/Automobile/ccp.jpg"
-import mpo from "../assets/Automobile/mpo.jpg"
+const adai = "https://d3r43jacxrwsrp.cloudfront.net/Automobile/adai.jpeg";
+const ccp = "https://d3r43jacxrwsrp.cloudfront.net/Automobile/ccp.jpg";
+const mpo = "https://d3r43jacxrwsrp.cloudfront.net/Automobile/mpo.jpg";
 
-import  aipdt from "../assets/medical/aipdt.jpeg"
-import  tmp from "../assets/medical/tmp.jpeg"
+const aipdt = "https://d3r43jacxrwsrp.cloudfront.net/medical/aipdt.jpeg";
+const tmp = "https://d3r43jacxrwsrp.cloudfront.net/medical/tmp.jpeg";
 
 const KeyService = ({ title, description, image }) => (
   <div className="flex-shrink-0 w-80 md:w-96 p-4 pb-16">
@@ -251,11 +251,11 @@ function Logistics() {
       <div className="sm:max-w-7xl w-screen mx-auto pb-8">
         <div className="sm:max-w-7xl 2xl:pt-12 pt-32 xl:pb-12 pb-4  w-screen mx-auto grid ">
           <img
-            src={Education_img.src}
+            src={Education_img}
             alt=""
             className="w-full object-cover px-2"
           />
-          {/* <img src={Education_img.src} alt="" />
+          {/* <img src={Education_img} alt="" />
           <img src={healthrect3} alt="" /> */}
         </div>
         <div className="max-w-7xl mx-auto text-center px-8 flex flex-col gap-2">

@@ -6,35 +6,35 @@ import style from "./Styles/memberSuite.module.css"
 import { Link } from '/src/nextNavigation'
 
 
-import cag from "../../assets/insidePages/member/memberSection2/cag.png"
-import pme from "../../assets/insidePages/member/memberSection2/pme.png"
-import smo from "../../assets/insidePages/member/memberSection2/smo.png"
+const cag = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/member/memberSection2/cag.png";
+const pme = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/member/memberSection2/pme.png";
+const smo = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/member/memberSection2/smo.png";
 
 
 
 
 
-import ad from "../../assets/insidePages/member/icon/ad.png"
-import emb from "../../assets/insidePages/member/icon/emb.png"
-import ict from "../../assets/insidePages/member/icon/ict.png"
-import mrm from "../../assets/insidePages/member/icon/mrm.png"
-import sm from "../../assets/insidePages/member/icon/sm.png"
-import ssp from "../../assets/insidePages/member/icon/ssp.png"
+const ad = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/member/icon/ad.png";
+const emb = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/member/icon/emb.png";
+const ict = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/member/icon/ict.png";
+const mrm = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/member/icon/mrm.png";
+const sm = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/member/icon/sm.png";
+const ssp = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/member/icon/ssp.png";
 
 
-import heroImg from "../../assets/allHero/memberh.webp"
+const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/allHero/memberh.webp";
 
 
 // benefits
-import ddi from "../../assets/insidePages/member/memberBenefit/ddi.webp"
-import eme from "../../assets/insidePages/member/memberBenefit/eme.webp"
-import ic from "../../assets/insidePages/member/memberBenefit/ic.webp"
-import imr from "../../assets/insidePages/member/memberBenefit/imr.webp"
-import oe from "../../assets/insidePages/member/memberBenefit/oe.webp"
+const ddi = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/member/memberBenefit/ddi.webp";
+const eme = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/member/memberBenefit/eme.webp";
+const ic = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/member/memberBenefit/ic.webp";
+const imr = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/member/memberBenefit/imr.webp";
+const oe = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/member/memberBenefit/oe.webp";
 
 
 
-import laptop from "../../assets/section3Laptop/member.webp"
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/section3Laptop/member.webp";
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 
@@ -225,7 +225,7 @@ export default function MemberSuite() {
             </div>
 
             <div className={`${style.herosectionImgBoxPhone}`}>
-              <img style={{ width: "100%" }} src={heroImg.src} alt={"room booking"} />
+              <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
             </div>
 
 
@@ -269,7 +269,7 @@ export default function MemberSuite() {
 
           <div className={style.section2IconAndName}>
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={cag.src} alt="" />
+              <img style={{ width: "100%" }} src={cag} alt="" />
             </div>
 
             <div className={`${style.iconName} `}>
@@ -284,7 +284,7 @@ export default function MemberSuite() {
           <div className={style.section2IconAndName}>
 
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={smo.src} alt="" />
+              <img style={{ width: "100%" }} src={smo} alt="" />
             </div>
 
             <div className={`${style.iconName} `}>
@@ -311,7 +311,7 @@ export default function MemberSuite() {
           <div className={style.section2IconAndName}>
 
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={pme.src} alt="" />
+              <img style={{ width: "100%" }} src={pme} alt="" />
             </div>
 
             <div className={`${style.iconName}`}>
@@ -340,7 +340,7 @@ export default function MemberSuite() {
 
             <div className={`${style.laptopImgSection3}`}>
               <div className={`${style.laptopImgBox}`} >
-                <img style={{ width: "100%" }} src={laptop.src} alt="" />
+                <img style={{ width: "100%" }} src={laptop} alt="" />
               </div>
             </div>
 

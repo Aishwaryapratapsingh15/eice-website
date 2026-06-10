@@ -3,9 +3,9 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "/src/nextNavigation";
 import Cookies from "js-cookie";
-import emailIcon from "../assets/common/Email.svg"
-import whatsappIcon from "../assets/common/Whatsapp.svg"
-import phoneIcon from "../assets/common/Phone.svg"
+const emailIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Email.svg";
+const whatsappIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Whatsapp.svg";
+const phoneIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Phone.svg";
 
 function ContactForm() {
   const [formValues, setFormValues] = useState({
@@ -300,19 +300,19 @@ function ContactForm() {
 
     <a href="https://wa.me/919871895200" target="_blank" rel="noopener noreferrer"
       className="flex flex-col items-center gap-1 p-2 rounded-lg hover:bg-gray-50 transition text-center">
-      <img src={whatsappIcon.src} alt="WhatsApp" className="w-6 h-6" />
+      <img src={whatsappIcon} alt="WhatsApp" className="w-6 h-6" />
       <span className="text-xs text-blackk/70 leading-tight">+91-9871895200</span>
     </a>
 
     <a href="tel:+18322804632"
       className="flex flex-col items-center gap-1 p-2 rounded-lg hover:bg-gray-50 transition text-center">
-      <img src={phoneIcon.src} alt="Phone" className="w-6 h-6" />
+      <img src={phoneIcon} alt="Phone" className="w-6 h-6" />
       <span className="text-xs text-blackk/70 leading-tight">+1 832 280 4632</span>
     </a>
 
     <a href="mailto:info@eicetechnology.com"
       className="flex flex-col items-center gap-1 p-2 rounded-lg hover:bg-gray-50 transition text-center">
-      <img src={emailIcon.src} alt="Email" className="w-6 h-6" />
+      <img src={emailIcon} alt="Email" className="w-6 h-6" />
       <span className="text-xs text-blackk/70 leading-tight break-all">info@eicetechnology.com</span>
     </a>
 

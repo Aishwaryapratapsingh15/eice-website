@@ -2,8 +2,8 @@ import React from "react";
 import Footer from "../Othercomps/Footer";
 import ProductFooter from "/src/Product/ProductFooter";
 import Copyright from "../Othercomps/Copyright";
-import datamgmt1 from "../assets/Compressed/datamgmt1.png";
-import datamgmt2 from "../assets/Compressed/datamgmt2.png";
+const datamgmt1 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/datamgmt1.png";
+const datamgmt2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/datamgmt2.png";
 import { GiVirtualMarker } from "react-icons/gi";
 
 function DataManagement() {
@@ -24,8 +24,8 @@ function DataManagement() {
             accelerate upstream workflows.
           </p>
           <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
-            <img src={datamgmt1.src} alt="E&P Data Management Platform" className="w-full h-full object-fit rounded-lg" />
-            <img src={datamgmt2.src} alt="E&P GIS Dashboard" className="w-full h-full object-fit rounded-lg" />
+            <img src={datamgmt1} alt="E&P Data Management Platform" className="w-full h-full object-fit rounded-lg" />
+            <img src={datamgmt2} alt="E&P GIS Dashboard" className="w-full h-full object-fit rounded-lg" />
           </div>
         </div>
         <div className="w-full pb-6">

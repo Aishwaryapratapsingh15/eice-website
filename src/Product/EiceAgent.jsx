@@ -3,45 +3,45 @@ import React from "react";
 import ProductCarousel from "./ProductCarousel";
 import productSlides from "./carouselData";
 import ProductFooter from "./ProductFooter";
-import arrowIcon from "../assets/arrow.svg";
-import deployIcon from "../assets/common/Deploy.svg";
-import planIcon from "../assets/common/Plan.svg";
-import scaleIcon from "../assets/common/Scale.svg";
-import optimizeIcon from "../assets/common/Optimize.svg";
-import cognitiveIcon from "../assets/EiceAgent/Cognitive_Automation.svg";
-import continuousIcon from "../assets/EiceAgent/Continuous_Learning.svg";
-import enterpriseIcon from "../assets/EiceAgent/Enterprise_Security.svg";
-import globalIcon from "../assets/EiceAgent/Global_Scalability.svg";
-import instantIcon from "../assets/EiceAgent/Instant_Integrations.svg";
-import realIcon from "../assets/EiceAgent/Real-time_Analytics.svg";
-import adaptiveIntelligenceIcon from "../assets/isyncdrive/Adaptive_Intelligence.svg";
-import unifiedEcosystemIcon from "../assets/isyncdrive/Unified_Ecosystem.svg";
-import enterpriseRIcon from "../assets/EiceAgent/Enterprise_Reliability.svg";
-import isoIcon from "../assets/EiceAgent/ISO_Compliant.svg";
-import TwentyIcon from "../assets/EiceAgent/20.svg";
-import TwentyFiveIcon from "../assets/EiceAgent/25.svg";
-import SixtyIcon from "../assets/EiceAgent/60.svg";
-import NintyIcon from "../assets/EiceAgent/90.svg";
-import bgImage2 from "../assets/common/Background.png";
-import Frame1Icon from "../assets/EiceAgent/Frame1.png";
-import Frame2Icon from "../assets/EiceAgent/Frame2.png";
-import askLogoIcon from "../assets/EiceAgent/Ask_Eice_Logo.svg";
-import eiceAimIcon from "../assets/EiceAgent/EICE_AIM_Logo.svg";
-import actionIcon from "../assets/EiceAgent/Action_Agent.png";
-import knowledgeIcon from "../assets/EiceAgent/Knowledge_Agent.png";
-import aiIcon from "../assets/EiceAgent/agents/AI_Lead_Generation.svg";
-import aeIcon from "../assets/EiceAgent/agents/AEIAI.svg";
-import dfIcon from "../assets/EiceAgent/agents/DFLogic.svg";
-import checkIcon from "../assets/common/Check_all.svg";
-import scmIcon from "../assets/EiceAgent/agents/SCM.svg";
-import reductionIcon from "../assets/EiceAgent/agents/Reduction_Time.svg";
-import semanticIcon from "../assets/EiceAgent/agents/Semantic_Search.svg";
-import racIcon from "../assets/EiceAgent/agents/RAC.svg";
-import cmmiImg from "../assets/EiceAgent/CMMI.png";
-import isoImg  from "../assets/EiceAgent/ISO.png";
-import iecImg from "../assets/EiceAgent/IEC.png";
-import ismsImg from "../assets/EiceAgent/ISMS.png"; 
-import shieldIcon from "../assets/common/shield_02.svg";
+const arrowIcon = "https://d3r43jacxrwsrp.cloudfront.net/arrow.svg";
+const deployIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Deploy.svg";
+const planIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Plan.svg";
+const scaleIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Scale.svg";
+const optimizeIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Optimize.svg";
+const cognitiveIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/Cognitive_Automation.svg";
+const continuousIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/Continuous_Learning.svg";
+const enterpriseIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/Enterprise_Security.svg";
+const globalIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/Global_Scalability.svg";
+const instantIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/Instant_Integrations.svg";
+const realIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/Real-time_Analytics.svg";
+const adaptiveIntelligenceIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/Adaptive_Intelligence.svg";
+const unifiedEcosystemIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/Unified_Ecosystem.svg";
+const enterpriseRIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/Enterprise_Reliability.svg";
+const isoIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/ISO_Compliant.svg";
+const TwentyIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/20.svg";
+const TwentyFiveIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/25.svg";
+const SixtyIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/60.svg";
+const NintyIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/90.svg";
+const bgImage2 = "https://d3r43jacxrwsrp.cloudfront.net/common/Background.png";
+const Frame1Icon = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/Frame1.png";
+const Frame2Icon = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/Frame2.png";
+const askLogoIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/Ask_Eice_Logo.svg";
+const eiceAimIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/EICE_AIM_Logo.svg";
+const actionIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/Action_Agent.png";
+const knowledgeIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/Knowledge_Agent.png";
+const aiIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/agents/AI_Lead_Generation.svg";
+const aeIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/agents/AEIAI.svg";
+const dfIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/agents/DFLogic.svg";
+const checkIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Check_all.svg";
+const scmIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/agents/SCM.svg";
+const reductionIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/agents/Reduction_Time.svg";
+const semanticIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/agents/Semantic_Search.svg";
+const racIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/agents/RAC.svg";
+const cmmiImg = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/CMMI.png";
+const isoImg = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/ISO.png";
+const iecImg = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/IEC.png";
+const ismsImg = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/ISMS.png"; 
+const shieldIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/shield_02.svg";
 import { useNavigate } from "/src/nextNavigation";
 
 const steps = [
@@ -205,7 +205,7 @@ export default function EiceAgent() {
           {/* LOGO */}
            <div className="flex justify-center mb-1">
             <img
-              src={askLogoIcon.src}
+              src={askLogoIcon}
               alt="knowledge"
               className=" object-contain"
             />
@@ -217,7 +217,7 @@ export default function EiceAgent() {
           {/* IMAGE */}
           <div className="flex justify-center mb-4">
             <img
-              src={Frame1Icon.src}
+              src={Frame1Icon}
               alt="knowledge"
               className="w-full max-w-lg h-[80px] sm:h-[100px] object-contain"
             />
@@ -236,7 +236,7 @@ export default function EiceAgent() {
           {/* LOGO */}
            <div className="flex justify-center mb-1">
             <img
-              src={eiceAimIcon.src}
+              src={eiceAimIcon}
               alt="action"
               className="object-contain"
             />
@@ -249,7 +249,7 @@ export default function EiceAgent() {
           {/* IMAGE */}
           <div className="flex justify-center mb-4">
             <img
-              src={Frame2Icon.src}
+              src={Frame2Icon}
               alt="action"
               className="w-full max-w-lg h-[80px] sm:h-[100px] object-contain"
             />
@@ -270,7 +270,7 @@ export default function EiceAgent() {
     <button onClick={() => navigate("/products/form?embed=true&product=EiceAgent")} 
     className="bg-[#012060] text-white px-10 py-5 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-[18px] w-[250px] h-[56px]">
             Request a Demo
-              <img src={arrowIcon.src} alt="arrow"/>
+              <img src={arrowIcon} alt="arrow"/>
     
           </button>
           </section>
@@ -283,7 +283,7 @@ export default function EiceAgent() {
 
           {/* ITEM 1 */}
           <div className="flex items-center gap-3">
-            <img src={checkIcon.src} alt="check" className="w-5 h-5" />
+            <img src={checkIcon} alt="check" className="w-5 h-5" />
             <span className="text-[16px] font-medium text-[#2f3b4a]">
               AI-driven ecosystem
             </span>
@@ -291,7 +291,7 @@ export default function EiceAgent() {
 
           {/* ITEM 2 */}
           <div className="flex items-center gap-3">
-            <img src={checkIcon.src} alt="check" className="w-5 h-5" />
+            <img src={checkIcon} alt="check" className="w-5 h-5" />
             <span className="text-[16px] font-medium text-[#2f3b4a]">
               Action + Knowledge agents
             </span>
@@ -299,7 +299,7 @@ export default function EiceAgent() {
 
           {/* ITEM 3 */}
           <div className="flex items-center gap-3">
-            <img src={checkIcon.src} alt="check" className="w-5 h-5" />
+            <img src={checkIcon} alt="check" className="w-5 h-5" />
             <span className="text-[16px] font-medium text-[#2f3b4a]">
               Built for enterprise-scale
             </span>
@@ -367,7 +367,7 @@ data-driven workflows.
               {/* ITEM */}
               <div className="flex items-start gap-4">
                 <div className="rounded-lg flex items-center justify-center">
-                  <img src={aiIcon.src} alt="icon"/>
+                  <img src={aiIcon} alt="icon"/>
                 </div>
                 <div>
                   <h4 className="font-small text-[#334155] text-[17px]">
@@ -381,7 +381,7 @@ data-driven workflows.
 
               <div className="flex items-start gap-4">
                 <div className="rounded-lg flex items-center justify-center">
-                  <img src={scmIcon.src} alt="icon"/>
+                  <img src={scmIcon} alt="icon"/>
                 </div>
                 <div>
                   <h4 className="font-small text-[#334155] text-[17px]">
@@ -395,7 +395,7 @@ data-driven workflows.
 
               <div className="flex items-start gap-4">
                 <div className="rounded-lg flex items-center justify-center">
-                  <img src={dfIcon.src} alt="icon"/>
+                  <img src={dfIcon} alt="icon"/>
                 </div>
                 <div>
                   <h4 className="font-small text-[#334155] text-[17px]">
@@ -409,7 +409,7 @@ data-driven workflows.
 
               <div className="flex items-start gap-4">
                 <div className="rounded-lg flex items-center justify-center">
-                  <img src={aeIcon.src} alt="icon"/>
+                  <img src={aeIcon} alt="icon"/>
                 </div>
                 <div>
                   <h4 className="font-small text-[#334155] text-[17px]">
@@ -431,12 +431,12 @@ data-driven workflows.
             {/* IMAGE */}
             <div className="rounded-[24px] overflow-hidden shadow-sm mt-10">
               {/* <img
-                src={actionIcon.src}
+                src={actionIcon}
                 alt="ai"
                 className="w-[420px] h-[360px] object-cover"
               /> */}
               <img
-  src={actionIcon.src}
+  src={actionIcon}
   className="w-full max-w-[420px] h-auto object-cover"
 />
             </div>
@@ -504,12 +504,12 @@ data-driven workflows.
           {/* IMAGE */}
           <div className="rounded-[28px] overflow-hidden">
             {/* <img
-              src={knowledgeIcon.src}
+              src={knowledgeIcon}
               alt="knowledge"
               className="w-[440px] h-[320px] object-cover"
             /> */}
             <img
-  src={knowledgeIcon.src}
+  src={knowledgeIcon}
   className="w-full max-w-[440px] h-auto object-cover"
 />
           </div>
@@ -545,7 +545,7 @@ data-driven workflows.
             {/* ITEM */}
             {/* <div className="flex items-start gap-4">
               <div className="rounded-lg flex items-center justify-center">
-                  <img src={reductionIcon.src} alt="icon"/>
+                  <img src={reductionIcon} alt="icon"/>
                 </div>
               <div>
                 <h4 className="text-[17px] font-medium text-[#334155]">
@@ -558,7 +558,7 @@ data-driven workflows.
             </div> */}
               <div className="flex items-start gap-4">
   <div className="flex-shrink-0">
-    <img src={reductionIcon.src} alt="icon" />
+    <img src={reductionIcon} alt="icon" />
   </div>
   <div>
     <h4 className="text-base sm:text-[17px] font-medium text-[#334155]">
@@ -571,7 +571,7 @@ data-driven workflows.
 </div>
             <div className="flex items-start gap-4">
               <div className="rounded-lg flex items-center justify-center">
-                  <img src={scmIcon.src} alt="icon"/>
+                  <img src={scmIcon} alt="icon"/>
                 </div>
               <div>
                 <h4 className="text-[17px] font-medium text-[#334155]">
@@ -585,7 +585,7 @@ data-driven workflows.
 
             <div className="flex items-start gap-4">
               <div className="rounded-lg flex items-center justify-center">
-                  <img src={semanticIcon.src} alt="icon"/>
+                  <img src={semanticIcon} alt="icon"/>
                 </div>
               <div>
                 <h4 className="text-[17px] font-medium text-[#334155]">
@@ -599,7 +599,7 @@ data-driven workflows.
 
             <div className="flex items-start gap-4">
               <div className="rounded-lg flex items-center justify-center">
-                  <img src={racIcon.src} alt="icon"/>
+                  <img src={racIcon} alt="icon"/>
                 </div>
               <div>
                 <h4 className="text-[17px] font-medium text-[#334155]">
@@ -731,7 +731,7 @@ data-driven workflows.
       {/* Header */}
       <div className="flex items-center gap-4 mb-5">
         <div className="rounded-lg">
-          <img src={unifiedEcosystemIcon.src} alt="icon" className="w-[70px] h-[70px]"/>
+          <img src={unifiedEcosystemIcon} alt="icon" className="w-[70px] h-[70px]"/>
         </div>
         <h3 className="text-2xl font-bold text-[#334155]">
           Unified AI Ecosystem
@@ -756,7 +756,7 @@ enterprise intelligence.
       {/* Header */}
       <div className="flex items-center gap-4 mb-5">
         <div className="rounded-lg">
-          <img src={adaptiveIntelligenceIcon.src} alt="icon" className="w-[70px] h-[70px]"/>
+          <img src={adaptiveIntelligenceIcon} alt="icon" className="w-[70px] h-[70px]"/>
         </div>
         <h3 className="text-2xl font-bold text-[#334155]">
           Adaptive Intelligence
@@ -776,7 +776,7 @@ enterprise intelligence.
       {/* Header */}
       <div className="flex items-center gap-4 mb-5">
         <div className="rounded-lg">
-          <img src={enterpriseRIcon.src} alt="icon" className="w-[70px] h-[70px]"/>
+          <img src={enterpriseRIcon} alt="icon" className="w-[70px] h-[70px]"/>
         </div>
         <h3 className="text-2xl font-bold text-[#334155]">
           Enterprise Reliability
@@ -800,7 +800,7 @@ expert team.
       {/* Header */}
       <div className="flex items-center gap-4 mb-5">
         <div className="rounded-lg">
-          <img src={isoIcon.src} alt="icon" className="w-[70px] h-[70px]"/>
+          <img src={isoIcon} alt="icon" className="w-[70px] h-[70px]"/>
         </div>
         <h3 className="text-2xl font-bold text-[#334155]">
           ISO-Compliant
@@ -879,7 +879,7 @@ is our foundation.
 
         {/* Top Tag */}
         <div className="inline-flex border-2 border-[#228441] items-center gap-2 bg-[#F0FDF4] text-[#2e7d32] px-4 py-2 rounded-full text-sm font-medium mb-2">
-          <img src={shieldIcon.src} alt="icon" className="w-4 h-4 object-contain" /> Enterprise-Grade Security
+          <img src={shieldIcon} alt="icon" className="w-4 h-4 object-contain" /> Enterprise-Grade Security
         </div>
 
         {/* Heading */}
@@ -951,7 +951,7 @@ is our foundation.
            <button onClick={() => navigate("/products/form?embed=true&product=EiceAgent")} 
            className="bg-[#012060] text-white px-10 py-5 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-[18px] w-[250px] h-[56px]">
                Request a Demo
-                 <img src={arrowIcon.src} alt="arrow"/>
+                 <img src={arrowIcon} alt="arrow"/>
        
              </button>
   

@@ -9,26 +9,26 @@ import Accordion from "../../Components/Accordian/Accordian.jsx";
 import Certificate from "../../Components/Certificate/Certificate.jsx";
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx";
 import FooterLower from "../../Components/Footer/FooterLower.jsx";
-import bpvmIcon from "../../assets/vendor/BPVM.png";
-import camIcon from "../../assets/vendor/CAM.png";
-import cdtIcon from "../../assets/vendor/CDT.png";
-import phlIcon from "../../assets/vendor/PHL.png";
-import psrIcon from "../../assets/vendor/PSR.png";
-import vcpIcon from "../../assets/vendor/VCP.png";
-import vctIcon from "../../assets/vendor/VCT.png";
-import vmdIcon from "../../assets/vendor/VMD.png";
-import vroIcon from "../../assets/vendor/VRO.png";
-import bcmIcon from "../../assets/vendor/bcm.png";
-import bcoIcon from "../../assets/vendor/bco.jpg";
-import bcrmIcon from "../../assets/vendor/bcrm.jpg";
-import bescrIcon from "../../assets/vendor/bescr.png";
-import boeIcon from "../../assets/vendor/boe.jpg";
-import hero from "../../assets/vendor/hero-vendor.png"
-// import laptop from "../../assets/section3Laptop/room.webp"
-import ratedIcon from "../../assets/vendor/Rated.png"
-import reliableIcon from "../../assets/vendor/Reliable.png"
-import regulatedIcon from "../../assets/vendor/Regulated.png"
-import overviewIcon from "../../assets/vendor/vendorOverview.png"
+const bpvmIcon = "https://d3r43jacxrwsrp.cloudfront.net/vendor/BPVM.png";
+const camIcon = "https://d3r43jacxrwsrp.cloudfront.net/vendor/CAM.png";
+const cdtIcon = "https://d3r43jacxrwsrp.cloudfront.net/vendor/CDT.png";
+const phlIcon = "https://d3r43jacxrwsrp.cloudfront.net/vendor/PHL.png";
+const psrIcon = "https://d3r43jacxrwsrp.cloudfront.net/vendor/PSR.png";
+const vcpIcon = "https://d3r43jacxrwsrp.cloudfront.net/vendor/VCP.png";
+const vctIcon = "https://d3r43jacxrwsrp.cloudfront.net/vendor/VCT.png";
+const vmdIcon = "https://d3r43jacxrwsrp.cloudfront.net/vendor/VMD.png";
+const vroIcon = "https://d3r43jacxrwsrp.cloudfront.net/vendor/VRO.png";
+const bcmIcon = "https://d3r43jacxrwsrp.cloudfront.net/vendor/bcm.png";
+const bcoIcon = "https://d3r43jacxrwsrp.cloudfront.net/vendor/bco.jpg";
+const bcrmIcon = "https://d3r43jacxrwsrp.cloudfront.net/vendor/bcrm.jpg";
+const bescrIcon = "https://d3r43jacxrwsrp.cloudfront.net/vendor/bescr.png";
+const boeIcon = "https://d3r43jacxrwsrp.cloudfront.net/vendor/boe.jpg";
+const hero = "https://d3r43jacxrwsrp.cloudfront.net/vendor/hero-vendor.png";
+// const laptop = "https://d3r43jacxrwsrp.cloudfront.net/section3Laptop/room.webp";
+const ratedIcon = "https://d3r43jacxrwsrp.cloudfront.net/vendor/Rated.png";
+const reliableIcon = "https://d3r43jacxrwsrp.cloudfront.net/vendor/Reliable.png";
+const regulatedIcon = "https://d3r43jacxrwsrp.cloudfront.net/vendor/Regulated.png";
+const overviewIcon = "https://d3r43jacxrwsrp.cloudfront.net/vendor/vendorOverview.png";
 
 
 
@@ -218,7 +218,7 @@ export default function VendorManagement() {
             </div>
 
             <div className={style.herosectionImgBoxPhone}>
-              <img src={hero.src} style={{ width: "100%" }} />
+              <img src={hero} style={{ width: "100%" }} />
             </div>
           </div>
         </section>
@@ -260,7 +260,7 @@ export default function VendorManagement() {
           <div className={style.blueBoxSetion3}>
              <div className={`${style.laptopImgSection3}`}>
                                                  <div className={`${style.laptopImgBox}`} >
-                                                     <img style={{ width: "100%" }} src={overviewIcon.src} alt="" />
+                                                     <img style={{ width: "100%" }} src={overviewIcon} alt="" />
                                                  </div>
                                              </div>
 

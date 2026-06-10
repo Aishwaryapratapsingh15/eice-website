@@ -3,14 +3,14 @@ import { Link } from "/src/nextNavigation";
 import Casestudies from "../Homecomps/Casestudies";
 import Talktous from "../Othercomps/Talktous";
 
-import budget1 from "../assets/Compressed/budget1.jpg";
-import budget2 from "../assets/Compressed/budget2.jpg";
-import budget3 from "../assets/Compressed/budget3.jpg";
+const budget1 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/budget1.jpg";
+const budget2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/budget2.jpg";
+const budget3 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/budget3.jpg";
 
-import UnclearRequirements from "../assets/Compressed/ConstrainedBudget.svg";
-import EvolvingScope from "../assets/Compressed/Evolvingscope.svg";
-import ConstrainedBudget from "../assets/Compressed/UnclearRequirements.svg";
-import resoucres_cs from "../assets/Service_and_technology/resources_cs.jpg"
+const UnclearRequirements = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/ConstrainedBudget.svg";
+const EvolvingScope = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/Evolvingscope.svg";
+const ConstrainedBudget = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/UnclearRequirements.svg";
+const resoucres_cs = "https://d3r43jacxrwsrp.cloudfront.net/Service_and_technology/resources_cs.jpg";
 
 function Resourcesmain() {
   return (
@@ -59,7 +59,7 @@ function Resourcesmain() {
           </div>
           <div className="lg:order-last lg:block hidden order-first justify-end items-end relative w-full h-64 sm:h-80 rounded-full overflow-hidden">
             <img
-              src={resoucres_cs.src}
+              src={resoucres_cs}
               alt="Case Study"
               className="w-full h-full object-cover rounded-full"
             />

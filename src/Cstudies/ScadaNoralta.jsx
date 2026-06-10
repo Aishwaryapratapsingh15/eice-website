@@ -1,8 +1,8 @@
 import React from "react";
 import ProductFooter from "/src/Product/ProductFooter";
 import Copyright from "../Othercomps/Copyright";
-import scadanoralta1 from "../assets/Compressed/scadanoralta1.png";
-import scadanoralta2 from "../assets/Compressed/scadanoralta2.png";
+const scadanoralta1 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/scadanoralta1.png";
+const scadanoralta2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/scadanoralta2.png";
 import { GiVirtualMarker } from "react-icons/gi";
 
 function ScadaNoralta() {
@@ -19,8 +19,8 @@ function ScadaNoralta() {
             operational data workflows to deliver real-time visibility and control across field engineering assets.
           </p>
           <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
-            <img src={scadanoralta1.src} alt="SCADA Noralta System" className="w-full h-full object-fit rounded-lg" />
-            <img src={scadanoralta2.src} alt="SCADA Noralta Dashboard" className="w-full h-full object-fit rounded-lg" />
+            <img src={scadanoralta1} alt="SCADA Noralta System" className="w-full h-full object-fit rounded-lg" />
+            <img src={scadanoralta2} alt="SCADA Noralta Dashboard" className="w-full h-full object-fit rounded-lg" />
           </div>
         </div>
         <div className="w-full pb-6">

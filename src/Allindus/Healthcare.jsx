@@ -11,10 +11,10 @@ import ProductFooter from "/src/Product/ProductFooter";
 
 import { FaCloud, FaDatabase } from "react-icons/fa";
 
-import laptop from "../assets/Compressed/Laptop.png";
-import healthrect1 from "../assets/Compressed/healthrect1.png";
-import healthrect2 from "../assets/Compressed/healthrect2.png";
-import healthrect3 from "../assets/Compressed/healthrect3.png";
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/Laptop.png";
+const healthrect1 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/healthrect1.png";
+const healthrect2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/healthrect2.png";
+const healthrect3 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/healthrect3.png";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { BiAnalyse, BiCode, BiSupport } from "react-icons/bi";
 import { IoAnalytics } from "react-icons/io5";
@@ -22,24 +22,24 @@ import { MdArchitecture, MdLocalPharmacy } from "react-icons/md";
 
 // images
 
-import ehr from "../assets/HealthCare/ehr.jpeg"
-import ha from "../assets/HealthCare/ha.jpg"
-import hms from "../assets/HealthCare/hms.jpg"
-import mdi from "../assets/HealthCare/mdi.jpeg"
-import ts from "../assets/HealthCare/ts.jpeg"
+const ehr = "https://d3r43jacxrwsrp.cloudfront.net/HealthCare/ehr.jpeg";
+const ha = "https://d3r43jacxrwsrp.cloudfront.net/HealthCare/ha.jpg";
+const hms = "https://d3r43jacxrwsrp.cloudfront.net/HealthCare/hms.jpg";
+const mdi = "https://d3r43jacxrwsrp.cloudfront.net/HealthCare/mdi.jpeg";
+const ts = "https://d3r43jacxrwsrp.cloudfront.net/HealthCare/ts.jpeg";
 
 
 // cs images
 
-import opo from "../assets/Cs/opo.jpg"
-import etp from "../assets/Cs/etp.jpg"
+const opo = "https://d3r43jacxrwsrp.cloudfront.net/Cs/opo.jpg";
+const etp = "https://d3r43jacxrwsrp.cloudfront.net/Cs/etp.jpg";
 
-import adai from "../assets/Automobile/adai.jpeg"
-import ccp from "../assets/Automobile/ccp.jpg"
-import mpo from "../assets/Automobile/mpo.jpg"
+const adai = "https://d3r43jacxrwsrp.cloudfront.net/Automobile/adai.jpeg";
+const ccp = "https://d3r43jacxrwsrp.cloudfront.net/Automobile/ccp.jpg";
+const mpo = "https://d3r43jacxrwsrp.cloudfront.net/Automobile/mpo.jpg";
 
-import  aipdt from "../assets/medical/aipdt.jpeg"
-import  tmp from "../assets/medical/tmp.jpeg"
+const aipdt = "https://d3r43jacxrwsrp.cloudfront.net/medical/aipdt.jpeg";
+const tmp = "https://d3r43jacxrwsrp.cloudfront.net/medical/tmp.jpeg";
 
 
 
@@ -244,9 +244,9 @@ function Healthcare() {
     <div className="">
       <div className="sm:max-w-7xl w-screen mx-auto pb-8">
         <div className="sm:max-w-7xl 2xl:pt-12 pt-32 xl:pb-12 pb-4 px-4 w-screen mx-auto grid grid-cols-3">
-          <img src={healthrect1.src} alt="" />
-          <img src={healthrect2.src} alt="" />
-          <img src={healthrect3.src} alt="" />
+          <img src={healthrect1} alt="" />
+          <img src={healthrect2} alt="" />
+          <img src={healthrect3} alt="" />
         </div>
         <div className="max-w-7xl mx-auto text-center px-8 flex flex-col gap-2">
           <h1 className="text-blackk  fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl pb-4">

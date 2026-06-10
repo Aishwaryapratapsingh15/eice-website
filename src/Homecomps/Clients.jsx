@@ -1,11 +1,11 @@
 ﻿"use client";
 import React, { useState, useEffect } from 'react';
-import imgn from "../assets/photo/logo2n.webp";
+const imgn = "https://d3r43jacxrwsrp.cloudfront.net/photo/logo2n.webp";
 
 // Images for phone
-import set1 from "../assets/clients_phone/img1w.webp";
-import set2 from "../assets/clients_phone/img2w.webp";
-import set3 from "../assets/clients_phone/img3w.webp";
+const set1 = "https://d3r43jacxrwsrp.cloudfront.net/clients_phone/img1w.webp";
+const set2 = "https://d3r43jacxrwsrp.cloudfront.net/clients_phone/img2w.webp";
+const set3 = "https://d3r43jacxrwsrp.cloudfront.net/clients_phone/img3w.webp";
 
 export default function Clients() {
   const images = [set1, set2, set3]; 
@@ -42,7 +42,7 @@ export default function Clients() {
 
         <div style={{ display: "flex", justifyContent: "center" }}>
           {width > 1000 ? (
-            <img src={imgn.src} alt="Large screen client logo" />
+            <img src={imgn} alt="Large screen client logo" />
           ) : (
             <div style={{ width: '100%', maxWidth: '300px' }}>
               <div>

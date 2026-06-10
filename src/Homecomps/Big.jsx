@@ -2,9 +2,9 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "/src/nextNavigation";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
-import genai from "../assets/Compressed/genai.png";
-import devops from "../assets/Compressed/devops.png";
-import digitrans from "../assets/Compressed/digitrans.png";
+const genai = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/genai.png";
+const devops = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/devops.png";
+const digitrans = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/digitrans.png";
 
 
 function Big() {
@@ -42,7 +42,7 @@ function Big() {
             <div className="flex lg:order-last order-first xl:justify-end justify-center mt-8 lg:mt-0">
               <img
                 className="w-full max-w-md rounded-lg"
-                src={genai.src}
+                src={genai}
                 alt="Generative AI"
               />
             </div>
@@ -83,7 +83,7 @@ function Big() {
             <div className="flex lg:order-last order-first xl:justify-end justify-center mt-8 lg:mt-0">
               <img
                 className="w-full max-w-md rounded-lg scale-[.8]"
-                src={devops.src}
+                src={devops}
                 alt="Generative AI"
               />
             </div>
@@ -124,7 +124,7 @@ function Big() {
             <div className="flex lg:order-last order-first xl:justify-end justify-center mt-8 lg:mt-0">
               <img
                 className="w-full max-w-md rounded-lg"
-                src={digitrans.src}
+                src={digitrans}
                 alt="Generative AI"
               />
             </div>

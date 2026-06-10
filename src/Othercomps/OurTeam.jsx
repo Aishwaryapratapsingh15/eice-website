@@ -6,12 +6,12 @@ import styles from "./Styles/ourteam.module.css"
 
 import Slider from "react-slick";
 
-import temp from "../assets/Compressed/temp.png";
-import teamsbanner from "../assets/Compressed/teamsbanner.png";
-import teamsbanner2 from "../assets/Compressed/teamsbanner2.png";
-import teamsbanner11 from "../assets/Compressed/teamsbanner11.png";
-import teamsbanner12 from "../assets/Compressed/teamsbanner12.png";
-import teamsbanner13 from "../assets/Compressed/teamsbanner13.png";
+const temp = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/temp.png";
+const teamsbanner = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/teamsbanner.png";
+const teamsbanner2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/teamsbanner2.png";
+const teamsbanner11 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/teamsbanner11.png";
+const teamsbanner12 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/teamsbanner12.png";
+const teamsbanner13 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/teamsbanner13.png";
 import { Link } from "/src/nextNavigation";
 import ProductFooter from "/src/Product/ProductFooter";
 
@@ -471,7 +471,7 @@ function OurTeam() {
     <div className="-mt-6 font-manrope">
       <div className="relative w-full 2xl:pt-12 pt-32 pb-12 ">
         <img
-          src={teamsbanner.src}
+          src={teamsbanner}
           alt=""
           className="-z-20 absolute inset-0 w-full h-full object-cover"
         />
@@ -572,7 +572,7 @@ function OurTeam() {
                     This culture of innovation ensures that we stay ahead of our competition and deliver cutting edge solutions to our clients.
                   </p>
                 </div>
-                <img src={teamsbanner11.src} alt="" className="lg:order-last order-first" />
+                <img src={teamsbanner11} alt="" className="lg:order-last order-first" />
               </div>
             </div>
             <div className=" px-4">
@@ -584,7 +584,7 @@ function OurTeam() {
                     This culture of innovation ensures that we stay ahead of our competition and deliver cutting edge solutions to our clients.
                   </p>
                 </div>
-                <img src={teamsbanner12.src} alt="" className="order-first " />
+                <img src={teamsbanner12} alt="" className="order-first " />
               </div>
             </div>
             <div className=" px-4">
@@ -596,7 +596,7 @@ function OurTeam() {
                     This culture of innovation ensures that we stay ahead of our competition and deliver cutting edge solutions to our clients.
                   </p>
                 </div>
-                <img src={teamsbanner13.src} alt="" className="lg:order-last order-first" />
+                <img src={teamsbanner13} alt="" className="lg:order-last order-first" />
               </div>
             </div>
           </div>
@@ -605,7 +605,7 @@ function OurTeam() {
 
       </div>
       <div className="relative py-12 mb-10">
-        <img src={teamsbanner2.src} alt="" className="-z-20 absolute inset-0 h-full w-full object-cover" />
+        <img src={teamsbanner2} alt="" className="-z-20 absolute inset-0 h-full w-full object-cover" />
         <div className="max-w-7xl mx-auto w-full h-full px-4 py-12">
           <h2 className=" fontsize_2  text-white   mx-auto   py-1">
             Come and Work with Us

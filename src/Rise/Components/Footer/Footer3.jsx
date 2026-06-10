@@ -1,5 +1,5 @@
 ﻿import styles from "./footer.module.css";
-import footerPosLaptop from "../../assets/insidePages/pos/posPage/FooterPos.webp";
+const footerPosLaptop = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/FooterPos.webp";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "/src/nextNavigation";
 
@@ -22,7 +22,7 @@ export default function Footer3() {
         </Link>
       </div>
       <div className={`${styles.footerLaptopImg}`}>
-        <img style={{ width: "100%" }} src={footerPosLaptop.src} alt="pos dining" />
+        <img style={{ width: "100%" }} src={footerPosLaptop} alt="pos dining" />
       </div>
     </div>
   );

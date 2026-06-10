@@ -10,19 +10,19 @@ import ProductFooter from "/src/Product/ProductFooter";
 
 import { FaCloud, FaDatabase } from "react-icons/fa";
 
-import legal_img from "../assets/industry-images/Legal.png";
+const legal_img = "https://d3r43jacxrwsrp.cloudfront.net/industry-images/Legal.png";
 
-import laptop from "../assets/Compressed/Laptop.png";
-import healthrect1 from "../assets/Compressed/healthrect1.png";
-import healthrect2 from "../assets/Compressed/healthrect2.png";
-import healthrect3 from "../assets/Compressed/healthrect3.png";
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/Laptop.png";
+const healthrect1 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/healthrect1.png";
+const healthrect2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/healthrect2.png";
+const healthrect3 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/healthrect3.png";
 
-import random1 from "../assets/Compressed/random1.jpg";
-import random2 from "../assets/Compressed/random2.jpg";
-import random3 from "../assets/Compressed/random3.jpg";
-import random4 from "../assets/Compressed/random4.jpg";
-import random5 from "../assets/Compressed/random5.jpg";
-import random6 from "../assets/Compressed/random6.jpg";
+const random1 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/random1.jpg";
+const random2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/random2.jpg";
+const random3 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/random3.jpg";
+const random4 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/random4.jpg";
+const random5 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/random5.jpg";
+const random6 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/random6.jpg";
 
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { BiAnalyse, BiSupport } from "react-icons/bi";
@@ -35,25 +35,25 @@ import { AiOutlineDeploymentUnit } from "react-icons/ai";
 
 // legal
 
-import cms from "../assets/LEgal/cms.jpg"
-import cmsoft from "../assets/LEgal/cmsoft.jpg"
-import eds from "../assets/LEgal/eds.jpeg"
-import lbaas from "../assets/LEgal/lbaas.jpeg"
-import lda from "../assets/LEgal/lda.jpg"
-import lras from "../assets/LEgal/lras.jpg"
+const cms = "https://d3r43jacxrwsrp.cloudfront.net/LEgal/cms.jpg";
+const cmsoft = "https://d3r43jacxrwsrp.cloudfront.net/LEgal/cmsoft.jpg";
+const eds = "https://d3r43jacxrwsrp.cloudfront.net/LEgal/eds.jpeg";
+const lbaas = "https://d3r43jacxrwsrp.cloudfront.net/LEgal/lbaas.jpeg";
+const lda = "https://d3r43jacxrwsrp.cloudfront.net/LEgal/lda.jpg";
+const lras = "https://d3r43jacxrwsrp.cloudfront.net/LEgal/lras.jpg";
 
 
 // cs images
 
-import opo from "../assets/Cs/opo.jpg"
-import etp from "../assets/Cs/etp.jpg"
+const opo = "https://d3r43jacxrwsrp.cloudfront.net/Cs/opo.jpg";
+const etp = "https://d3r43jacxrwsrp.cloudfront.net/Cs/etp.jpg";
 
-import adai from "../assets/Automobile/adai.jpeg"
-import ccp from "../assets/Automobile/ccp.jpg"
-import mpo from "../assets/Automobile/mpo.jpg"
+const adai = "https://d3r43jacxrwsrp.cloudfront.net/Automobile/adai.jpeg";
+const ccp = "https://d3r43jacxrwsrp.cloudfront.net/Automobile/ccp.jpg";
+const mpo = "https://d3r43jacxrwsrp.cloudfront.net/Automobile/mpo.jpg";
 
-import  aipdt from "../assets/medical/aipdt.jpeg"
-import  tmp from "../assets/medical/tmp.jpeg"
+const aipdt = "https://d3r43jacxrwsrp.cloudfront.net/medical/aipdt.jpeg";
+const tmp = "https://d3r43jacxrwsrp.cloudfront.net/medical/tmp.jpeg";
 
 
 
@@ -270,9 +270,9 @@ function Legal() {
     <div className="">
       <div className="sm:max-w-7xl w-screen mx-auto pb-8">
         <div className="sm:max-w-7xl 2xl:pt-12 pt-32 xl:pb-12 pb-4 px-4 w-screen mx-auto grid">
-          <img src={legal_img.src} alt="" className="object-cover w-full px-2" />
-          {/* <img src={healthrect2.src} alt="" />
-          <img src={healthrect3.src} alt="" /> */}
+          <img src={legal_img} alt="" className="object-cover w-full px-2" />
+          {/* <img src={healthrect2} alt="" />
+          <img src={healthrect3} alt="" /> */}
         </div>
         <div className="max-w-7xl mx-auto text-center px-8 flex flex-col gap-2">
           <h1 className="text-blackk  fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl pb-4">

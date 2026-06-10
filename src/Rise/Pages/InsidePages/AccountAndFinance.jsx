@@ -4,24 +4,24 @@ import style from "./Styles/accountAndFinance.module.css"
 import { Link } from '/src/nextNavigation'
 
 
-import afw from "../../assets/insidePages/account/financeSection2/afw.png"
-import ddfi from "../../assets/insidePages/account/financeSection2/ddfi.png"
-import rtet from "../../assets/insidePages/account/financeSection2/rtet.png"
+const afw = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/account/financeSection2/afw.png";
+const ddfi = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/account/financeSection2/ddfi.png";
+const rtet = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/account/financeSection2/rtet.png";
 
 
 
 
 
 
-import ara from "../../assets/insidePages/account/icon/ara.png"
-import bf from "../../assets/insidePages/account/icon/bf.png"
+const ara = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/account/icon/ara.png";
+const bf = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/account/icon/bf.png";
 
-import cfm from "../../assets/insidePages/account/icon/cfm.png"
-import iib from "../../assets/insidePages/account/icon/iib.png"
-import pgi from "../../assets/insidePages/account/icon/pgi.png"
-import rtfd from "../../assets/insidePages/account/icon/rtfd.png"
-import tmc from "../../assets/insidePages/account/icon/tmc.png"
-import vsp from "../../assets/insidePages/account/icon/vsp.png"
+const cfm = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/account/icon/cfm.png";
+const iib = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/account/icon/iib.png";
+const pgi = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/account/icon/pgi.png";
+const rtfd = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/account/icon/rtfd.png";
+const tmc = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/account/icon/tmc.png";
+const vsp = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/account/icon/vsp.png";
 
 
 
@@ -29,15 +29,15 @@ import vsp from "../../assets/insidePages/account/icon/vsp.png"
 
 import { useState, useEffect } from "react"
 
-import ac from "../../assets/insidePages/account/financebenefit/ac.webp"
-import ca from "../../assets/insidePages/account/financebenefit/ca.webp"
-import cc from "../../assets/insidePages/account/financebenefit/cc.webp"
-import icfm from "../../assets/insidePages/account/financebenefit/icfm.webp"
-import oe from "../../assets/insidePages/account/financebenefit/oe.webp"
+const ac = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/account/financebenefit/ac.webp";
+const ca = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/account/financebenefit/ca.webp";
+const cc = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/account/financebenefit/cc.webp";
+const icfm = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/account/financebenefit/icfm.webp";
+const oe = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/account/financebenefit/oe.webp";
 
-import heroImg from "../../assets/allHero/accounth.webp"
+const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/allHero/accounth.webp";
 
-import laptop from "../../assets/section3Laptop/account.webp"
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/section3Laptop/account.webp";
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 
@@ -300,7 +300,7 @@ export default function AccountAndFinance() {
           </div>
 
           <div className={`${style.herosectionImgBoxPhone}`}>
-            <img style={{ width: "100%" }} src={heroImg.src} alt={"room booking"} />
+            <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
           </div>
 
 
@@ -314,7 +314,7 @@ export default function AccountAndFinance() {
 
           <div className={style.section2IconAndName}>
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={ddfi.src} alt="" />
+              <img style={{ width: "100%" }} src={ddfi} alt="" />
             </div>
 
             <div className={`${style.iconName} `}>
@@ -329,7 +329,7 @@ export default function AccountAndFinance() {
           <div className={style.section2IconAndName}>
 
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={afw.src} alt="" />
+              <img style={{ width: "100%" }} src={afw} alt="" />
             </div>
 
             <div className={`${style.iconName} `}>
@@ -347,7 +347,7 @@ export default function AccountAndFinance() {
           <div className={style.section2IconAndName}>
 
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={rtet.src} alt="" />
+              <img style={{ width: "100%" }} src={rtet} alt="" />
             </div>
 
             <div className={`${style.iconName}`}>
@@ -381,7 +381,7 @@ export default function AccountAndFinance() {
 
             <div className={`${style.laptopImgSection3}`}>
               <div className={`${style.laptopImgBox}`} >
-                <img style={{ width: "100%" }} src={laptop.src} alt="" />
+                <img style={{ width: "100%" }} src={laptop} alt="" />
               </div>
             </div>
 
