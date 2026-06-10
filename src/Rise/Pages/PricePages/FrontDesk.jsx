@@ -6,12 +6,12 @@ import styles from "./Styles/frontdesk.module.css"
 import { Link } from '/src/nextNavigation'
 
 
-const account = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Account.png";
+const account = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/Account.png";
 
-const room = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Room.png";
+const room = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/Room.png";
 
 
-const heroimg = "https://d3r43jacxrwsrp.cloudfront.net/pricing/suitHeroSection/frontP.webp";
+const heroimg = "https://d3r43jacxrwsrp.cloudfront.net/Rise/pricing/suitHeroSection/frontP.webp";
 
 import { useEffect, useState } from "react"
 import { FaArrowRightLong } from "react-icons/fa6";

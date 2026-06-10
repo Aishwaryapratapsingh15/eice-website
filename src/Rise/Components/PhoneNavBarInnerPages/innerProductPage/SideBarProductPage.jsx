@@ -11,23 +11,23 @@ import { Link } from '/src/nextNavigation'
 
 
 
-const account = "https://d3r43jacxrwsrp.cloudfront.net/DropDown/account.png";
-const banwuet = "https://d3r43jacxrwsrp.cloudfront.net/DropDown/banquet.png";
-const dinning = "https://d3r43jacxrwsrp.cloudfront.net/DropDown/dinning.png";
-const food = "https://d3r43jacxrwsrp.cloudfront.net/DropDown/food.png";
-const inventary = "https://d3r43jacxrwsrp.cloudfront.net/DropDown/invent.png";
-const member = "https://d3r43jacxrwsrp.cloudfront.net/DropDown/member.png";
-const pay = "https://d3r43jacxrwsrp.cloudfront.net/DropDown/pay.png";
-const room = "https://d3r43jacxrwsrp.cloudfront.net/DropDown/room.png";
-const vendor = "https://d3r43jacxrwsrp.cloudfront.net/DropDown/vendor.png";
-const emp = "https://d3r43jacxrwsrp.cloudfront.net/DropDown/emp.png";
-const sso = "https://d3r43jacxrwsrp.cloudfront.net/DropDown/SSO.svg";
-const wifi = "https://d3r43jacxrwsrp.cloudfront.net/DropDown/WIFI.svg";
-const budget = "https://d3r43jacxrwsrp.cloudfront.net/DropDown/Budget.svg";
-const attendance = "https://d3r43jacxrwsrp.cloudfront.net/DropDown/Attendance.svg";
-const compliance = "https://d3r43jacxrwsrp.cloudfront.net/DropDown/Compliance.svg";
-const vendori = "https://d3r43jacxrwsrp.cloudfront.net/DropDown/Vendor.svg";
-const feedbacki = "https://d3r43jacxrwsrp.cloudfront.net/DropDown/Feedback.svg";
+const account = "https://d3r43jacxrwsrp.cloudfront.net/Rise/DropDown/account.png";
+const banwuet = "https://d3r43jacxrwsrp.cloudfront.net/Rise/DropDown/banquet.png";
+const dinning = "https://d3r43jacxrwsrp.cloudfront.net/Rise/DropDown/dinning.png";
+const food = "https://d3r43jacxrwsrp.cloudfront.net/Rise/DropDown/food.png";
+const inventary = "https://d3r43jacxrwsrp.cloudfront.net/Rise/DropDown/invent.png";
+const member = "https://d3r43jacxrwsrp.cloudfront.net/Rise/DropDown/member.png";
+const pay = "https://d3r43jacxrwsrp.cloudfront.net/Rise/DropDown/pay.png";
+const room = "https://d3r43jacxrwsrp.cloudfront.net/Rise/DropDown/room.png";
+const vendor = "https://d3r43jacxrwsrp.cloudfront.net/Rise/DropDown/vendor.png";
+const emp = "https://d3r43jacxrwsrp.cloudfront.net/Rise/DropDown/emp.png";
+const sso = "https://d3r43jacxrwsrp.cloudfront.net/Rise/DropDown/SSO.svg";
+const wifi = "https://d3r43jacxrwsrp.cloudfront.net/Rise/DropDown/WIFI.svg";
+const budget = "https://d3r43jacxrwsrp.cloudfront.net/Rise/DropDown/Budget.svg";
+const attendance = "https://d3r43jacxrwsrp.cloudfront.net/Rise/DropDown/Attendance.svg";
+const compliance = "https://d3r43jacxrwsrp.cloudfront.net/Rise/DropDown/Compliance.svg";
+const vendori = "https://d3r43jacxrwsrp.cloudfront.net/Rise/DropDown/Vendor.svg";
+const feedbacki = "https://d3r43jacxrwsrp.cloudfront.net/Rise/DropDown/Feedback.svg";
 
 
 import { IoIosArrowForward } from "react-icons/io";

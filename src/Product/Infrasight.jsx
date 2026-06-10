@@ -357,7 +357,7 @@ systems.
 
         {/* SVG */}
         <div className="rounded-lg flex items-start justify-center">
-          <img src={item.icon.src} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" />
         </div>
 
         {/* TITLE */}
@@ -392,7 +392,7 @@ infrastructure </h4>
 
         {/* SVG */}
         <div className="rounded-lg flex items-start justify-center">
-          <img src={item.icon.src} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" />
         </div>
 
         {/* TITLE */}
@@ -519,7 +519,7 @@ infrastructure</h4>
 
         {/* SVG */}
         <div className="rounded-lg flex items-start justify-center">
-          <img src={item.icon.src} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" />
         </div>
 
         {/* TITLE */}

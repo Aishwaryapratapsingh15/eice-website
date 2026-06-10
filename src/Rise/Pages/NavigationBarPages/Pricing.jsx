@@ -3,10 +3,10 @@ import styles from "./styles/pricing.module.css"
 
 import { useEffect } from "react"
 
-const img1 = "https://d3r43jacxrwsrp.cloudfront.net/pricing/upperPart/1.webp";
-const img2 = "https://d3r43jacxrwsrp.cloudfront.net/pricing/upperPart/2.webp";
-const img3 = "https://d3r43jacxrwsrp.cloudfront.net/pricing/upperPart/3.webp";
-// const img1 = "https://d3r43jacxrwsrp.cloudfront.net/pricing/upperPart/4.webp";
+const img1 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/pricing/upperPart/1.webp";
+const img2 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/pricing/upperPart/2.webp";
+const img3 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/pricing/upperPart/3.webp";
+// const img1 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/pricing/upperPart/4.webp";
 import Club from "../PricePages/Club"
 import Enterprise from "../PricePages/Enterprise"
 import Inventary from "../PricePages/Inventary"

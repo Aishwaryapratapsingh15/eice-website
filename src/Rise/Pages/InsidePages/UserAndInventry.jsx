@@ -2,23 +2,23 @@
 import style from "./Styles/userAndInventry.module.css"
 
 
-const au = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/inventry/section2icon/au.png";
-const ir = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/inventry/section2icon/ir.png";
-const sv = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/inventry/section2icon/sv.png";
+const au = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/inventry/section2icon/au.png";
+const ir = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/inventry/section2icon/ir.png";
+const sv = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/inventry/section2icon/sv.png";
 
 
-const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/allHero/new/inventaryH.webp";
+const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/Rise/allHero/new/inventaryH.webp";
 
 
 import { Link } from '/src/nextNavigation'
 
 
-const ara = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/inventry/featuresIcon/ara.png";
-const cum = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/inventry/featuresIcon/cum.png";
-const esm = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/inventry/featuresIcon/esm.png";
-const mls = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/inventry/featuresIcon/mls.png";
-const rtic = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/inventry/featuresIcon/rtic.png";
-const serpi = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/inventry/featuresIcon/serpi.png";
+const ara = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/inventry/featuresIcon/ara.png";
+const cum = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/inventry/featuresIcon/cum.png";
+const esm = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/inventry/featuresIcon/esm.png";
+const mls = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/inventry/featuresIcon/mls.png";
+const rtic = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/inventry/featuresIcon/rtic.png";
+const serpi = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/inventry/featuresIcon/serpi.png";
 
 
 
@@ -26,15 +26,15 @@ const serpi = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/inventry/featur
 
 
 
-const co = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/inventry/benefits/co.webp";
-const iic = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/inventry/benefits/iic.webp";
-const oe = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/inventry/benefits/oe.webp";
-const rti = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/inventry/benefits/rti.webp";
-const s = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/inventry/benefits/s.webp";
+const co = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/inventry/benefits/co.webp";
+const iic = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/inventry/benefits/iic.webp";
+const oe = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/inventry/benefits/oe.webp";
+const rti = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/inventry/benefits/rti.webp";
+const s = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/inventry/benefits/s.webp";
 
 
 
-const laptop = "https://d3r43jacxrwsrp.cloudfront.net/section3Laptop/store.webp";
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Rise/section3Laptop/store.webp";
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 

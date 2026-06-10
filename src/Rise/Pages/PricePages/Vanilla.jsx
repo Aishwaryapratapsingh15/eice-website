@@ -6,14 +6,14 @@ import styles from "./Styles/vanilla.module.css"
 import { Link } from '/src/nextNavigation'
 
 
-const pos = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/POS.png";
-const banquet = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Banquet.png";
+const pos = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/POS.png";
+const banquet = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/Banquet.png";
 
-const food = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Food.png";
-const inentry = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/store.png";
+const food = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/Food.png";
+const inentry = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/store.png";
 
 
-const heroimg = "https://d3r43jacxrwsrp.cloudfront.net/pricing/suitHeroSection/vanillaP.webp";
+const heroimg = "https://d3r43jacxrwsrp.cloudfront.net/Rise/pricing/suitHeroSection/vanillaP.webp";
 
 import { useEffect, useState } from "react"
 import { FaArrowRightLong } from "react-icons/fa6";

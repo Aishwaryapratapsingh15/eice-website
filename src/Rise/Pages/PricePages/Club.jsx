@@ -6,15 +6,15 @@ import styles from "./Styles/club.module.css"
 import { Link } from '/src/nextNavigation'
 
 
-const account = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Account.png";
-const pos = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/POS.png";
-const banquet = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Banquet.png";
+const account = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/Account.png";
+const pos = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/POS.png";
+const banquet = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/Banquet.png";
 
-const member = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Member.png";
-const room = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Room.png";
+const member = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/Member.png";
+const room = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/Room.png";
 
 
-const heroimg = "https://d3r43jacxrwsrp.cloudfront.net/pricing/suitHeroSection/clubP.webp";
+const heroimg = "https://d3r43jacxrwsrp.cloudfront.net/Rise/pricing/suitHeroSection/clubP.webp";
 
 
 import { FaArrowRightLong } from "react-icons/fa6";

@@ -1,5 +1,5 @@
-.section1 {
-    background-image: url("../../assets/Hospitality/mainlatest.webp");
+﻿.section1 {
+    background-image: url("https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/mainlatest.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,7 +15,7 @@
 
 @media (min-width: 1024px) {
   .section1 {
-    background-image: url("../../assets/Hospitality/mainlatest.webp");
+    background-image: url("https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/mainlatest.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,7 +30,7 @@
 
 @media (min-width: 1120px) {
   .section1 {
-    background-image: url("../../assets/Hospitality/mainlatest.webp");
+    background-image: url("https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/mainlatest.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -288,7 +288,7 @@
     .videoImgBox {
         width: 100%;
         height: 200px;
-        background-image: url("../../assets/insidePages/vimg.webp");
+        background-image: url("https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/vimg.webp");
         background-size: cover;
         background-position: center;
         margin: 0px auto;

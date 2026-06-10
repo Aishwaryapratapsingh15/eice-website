@@ -2,15 +2,15 @@
 import FooterLower from "../../../Components/Footer/FooterLower"
 import styles from "./android.module.css"
 
-const laptop = "https://d3r43jacxrwsrp.cloudfront.net/caseStudy/android.webp";
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Rise/caseStudy/android.webp";
 
-const vendor = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/purchase.png";
-const inentry = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/store.png";
+const vendor = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/purchase.png";
+const inentry = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/store.png";
 import { Link } from '/src/nextNavigation'
 
 import { useEffect, useState } from "react"
 
-const family = "https://d3r43jacxrwsrp.cloudfront.net/caseStudy/androidBottom.webp";
+const family = "https://d3r43jacxrwsrp.cloudfront.net/Rise/caseStudy/androidBottom.webp";
 import Certificate from "../../../Components/Certificate/Certificate"
 
 

@@ -1,35 +1,35 @@
 "use client";
 import style from "./Styles/pos.module.css"
 
-const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/allHero/new/posH.webp";
-const icon1 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/section3/icon1.png";
-const icon2 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/section3/icon2.png";
-const icon3 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/section3/icon3.png";
+const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/Rise/allHero/new/posH.webp";
+const icon1 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pos/posPage/section3/icon1.png";
+const icon2 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pos/posPage/section3/icon2.png";
+const icon3 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pos/posPage/section3/icon3.png";
 
 import { Link } from '/src/nextNavigation'
 
 // features
-const ips = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/feature/ips.png";
-const it = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/feature/it.png";
-const kds = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/feature/kds.png";
-const oc = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/feature/oc.png";
-const plp = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/feature/plp.png";
-const rtmm = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/feature/rtmm.png";
-const rtsr = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/feature/rtsr.png";
-const tm = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/feature/tm.png";
-const ufi = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/feature/ufi.png";
+const ips = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pos/posPage/feature/ips.png";
+const it = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pos/posPage/feature/it.png";
+const kds = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pos/posPage/feature/kds.png";
+const oc = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pos/posPage/feature/oc.png";
+const plp = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pos/posPage/feature/plp.png";
+const rtmm = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pos/posPage/feature/rtmm.png";
+const rtsr = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pos/posPage/feature/rtsr.png";
+const tm = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pos/posPage/feature/tm.png";
+const ufi = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pos/posPage/feature/ufi.png";
 
 // benifits
 
-const b1 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/benefit/b1.webp";
-const b2 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/benefit/b2.webp";
-const b3 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/benefit/b3.webp";
-const b4 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/benefit/b4.webp";
-const b5 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/benefit/b5.webp";
+const b1 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pos/posPage/benefit/b1.webp";
+const b2 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pos/posPage/benefit/b2.webp";
+const b3 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pos/posPage/benefit/b3.webp";
+const b4 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pos/posPage/benefit/b4.webp";
+const b5 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pos/posPage/benefit/b5.webp";
 
 
 
-const laptop = "https://d3r43jacxrwsrp.cloudfront.net/section3Laptop/pos2.webp";
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Rise/section3Laptop/pos2.webp";
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 
 

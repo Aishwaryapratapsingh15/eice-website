@@ -5,12 +5,12 @@ import { Link } from '/src/nextNavigation'
 
 
 
-const account = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Account.png";
+const account = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/Account.png";
 
-const banquet = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Banquet.png";
+const banquet = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/Banquet.png";
 
 
-const heroimg = "https://d3r43jacxrwsrp.cloudfront.net/pricing/suitHeroSection/banquetP.webp";
+const heroimg = "https://d3r43jacxrwsrp.cloudfront.net/Rise/pricing/suitHeroSection/banquetP.webp";
 
 
 import { FaArrowRightLong } from "react-icons/fa6";

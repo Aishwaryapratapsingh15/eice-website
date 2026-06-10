@@ -2,22 +2,22 @@
 import style from "./Styles/banquetAndBilling.module.css"
 
 
-const artb = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/banquet/section2B/artb.png";
-const eem = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/banquet/section2B/eem.png";
-const fcb = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/banquet/section2B/fcb.png";
+const artb = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/banquet/section2B/artb.png";
+const eem = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/banquet/section2B/eem.png";
+const fcb = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/banquet/section2B/fcb.png";
 
 
 import { Link } from '/src/nextNavigation'
 
 
-const herosectionImg = "https://d3r43jacxrwsrp.cloudfront.net/allHero/new/banquetH.webp";
+const herosectionImg = "https://d3r43jacxrwsrp.cloudfront.net/Rise/allHero/new/banquetH.webp";
 
-const abs = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/banquet/icon/abs.png";
-const cpa = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/banquet/icon/cpa.png";
-const cpp = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/banquet/icon/cpp.png";
-const cr = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/banquet/icon/cr.png";
-const dci = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/banquet/icon/dci.png";
-const irm = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/banquet/icon/irm.png";
+const abs = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/banquet/icon/abs.png";
+const cpa = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/banquet/icon/cpa.png";
+const cpp = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/banquet/icon/cpp.png";
+const cr = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/banquet/icon/cr.png";
+const dci = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/banquet/icon/dci.png";
+const irm = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/banquet/icon/irm.png";
 
 
 import { useEffect , useState } from "react"
@@ -26,15 +26,15 @@ import { useEffect , useState } from "react"
 
 // benefits
 
-const bru = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/banquet/banquetbenefits/bru.webp";
-const cm = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/banquet/banquetbenefits/cm.webp";
-const ece = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/banquet/banquetbenefits/ece.webp";
-const ie = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/banquet/banquetbenefits/ie.webp";
-const ro = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/banquet/banquetbenefits/ro.webp";
+const bru = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/banquet/banquetbenefits/bru.webp";
+const cm = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/banquet/banquetbenefits/cm.webp";
+const ece = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/banquet/banquetbenefits/ece.webp";
+const ie = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/banquet/banquetbenefits/ie.webp";
+const ro = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/banquet/banquetbenefits/ro.webp";
 
 
 
-const laptop = "https://d3r43jacxrwsrp.cloudfront.net/section3Laptop/banquet.webp";
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Rise/section3Laptop/banquet.webp";
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 

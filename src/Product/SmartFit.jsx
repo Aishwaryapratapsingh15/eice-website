@@ -247,7 +247,7 @@ export default function SmartFit() {
             >
               {/* SVG */}
         <div className="rounded-lg flex items-start mb-5">
-          <img src={feature.icon.src} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={feature.icon} alt="icon" className="w-14 h-14 object-contain" />
         </div>
 
               <h3 className="font-bold md:text-2xl text-2xl text-[#334155] whitespace-pre-line mb-2">

@@ -2,84 +2,84 @@
 import styles from "./Hospitality.module.css"
 import { Link } from '/src/nextNavigation'
 import { useState, useEffect } from "react"
-const allLaptop = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allLaptop.webp";
+const allLaptop = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allLaptop.webp";
 
-const account = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Account.png";
-const pos = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/POS.png";
-const banquet = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Banquet.png";
-const emp = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Employee.png";
-const food = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Food.png";
-const inentry = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/store.png";
-const member = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Member.png";
-const pay = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/PAyscale.png";
-const room = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Room.png";
-const vendor = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/purchase.png";
-const single = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Single.png";
-const wifi = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/WIFI.png";
-const budget = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Budget.png";
-const feedbacki = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Feedback.png";
-const audience = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Audience.png";
-const compliance = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Compliance.png";
-const vendori = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Vendor.png";
+const account = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/Account.png";
+const pos = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/POS.png";
+const banquet = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/Banquet.png";
+const emp = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/Employee.png";
+const food = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/Food.png";
+const inentry = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/store.png";
+const member = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/Member.png";
+const pay = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/PAyscale.png";
+const room = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/Room.png";
+const vendor = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/purchase.png";
+const single = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/Single.png";
+const wifi = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/WIFI.png";
+const budget = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/Budget.png";
+const feedbacki = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/Feedback.png";
+const audience = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/Audience.png";
+const compliance = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/Compliance.png";
+const vendori = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/Vendor.png";
 
-const vimg = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/vimg.webp";
+const vimg = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/vimg.webp";
 
 import FooterLower from "../../Components/Footer/FooterLower"
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart"
 
 
 
-const c3 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/customer/c1.png";
-const c2 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/customer/c2.png";
-const c1 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/customer/c3.png";
+const c3 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/customer/c1.png";
+const c2 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/customer/c2.png";
+const c1 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/customer/c3.png";
 
 
-const and = "https://d3r43jacxrwsrp.cloudfront.net/caseStudy/android.webp";
-const iic = "https://d3r43jacxrwsrp.cloudfront.net/caseStudy/IIC.webp";
-const durga = "https://d3r43jacxrwsrp.cloudfront.net/caseStudy/durga.webp";
+const and = "https://d3r43jacxrwsrp.cloudfront.net/Rise/caseStudy/android.webp";
+const iic = "https://d3r43jacxrwsrp.cloudfront.net/Rise/caseStudy/IIC.webp";
+const durga = "https://d3r43jacxrwsrp.cloudfront.net/Rise/caseStudy/durga.webp";
 
-const cl1 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c1.png";
-const cl2 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c2.png";
-const cl3 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c3.png";
-const cl4 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c4.png";
-const cl5 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c5.png";
-const cl6 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c6.png";
-const cl7 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c7.png";
-const cl8 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c8.png";
-const cl9 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c9.png";
-const cl10 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c10.png";
-const cl11 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c11.png";
-const cl12 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c12.png";
-const cl13 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c13.png";
-const cl14 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c14.png";
-const cl15 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c15.png";
-const cl16 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c16.png";
-const cl17 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c17.png";
-const cl18 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c18.png";
-const cl19 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c19.png";
-const cl20 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c20.png";
-const cl21 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c21.png";
-const cl22 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c22.png";
-const cl23 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c23.png";
-const cl24 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c24.png";
-const cl25 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c25.png";
-const cl26 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c26.png";
-const cl27 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c27.png";
-const cl28 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c28.png";
-const cl29 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c29.png";
-const cl30 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/clients/c30.png";
-
-
+const cl1 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c1.png";
+const cl2 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c2.png";
+const cl3 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c3.png";
+const cl4 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c4.png";
+const cl5 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c5.png";
+const cl6 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c6.png";
+const cl7 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c7.png";
+const cl8 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c8.png";
+const cl9 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c9.png";
+const cl10 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c10.png";
+const cl11 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c11.png";
+const cl12 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c12.png";
+const cl13 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c13.png";
+const cl14 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c14.png";
+const cl15 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c15.png";
+const cl16 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c16.png";
+const cl17 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c17.png";
+const cl18 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c18.png";
+const cl19 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c19.png";
+const cl20 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c20.png";
+const cl21 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c21.png";
+const cl22 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c22.png";
+const cl23 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c23.png";
+const cl24 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c24.png";
+const cl25 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c25.png";
+const cl26 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c26.png";
+const cl27 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c27.png";
+const cl28 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c28.png";
+const cl29 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c29.png";
+const cl30 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c30.png";
 
 
-const clientHeadIcon = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/customer/subh.png";
-const h2 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/headIcon/h2.png";
+
+
+const clientHeadIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/customer/subh.png";
+const h2 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/headIcon/h2.png";
 
 
 import { FaArrowRightLong } from "react-icons/fa6";
 
 
-const footerlaptop = "https://d3r43jacxrwsrp.cloudfront.net/section3Laptop/pos2.webp";
+const footerlaptop = "https://d3r43jacxrwsrp.cloudfront.net/Rise/section3Laptop/pos2.webp";
 
 
 

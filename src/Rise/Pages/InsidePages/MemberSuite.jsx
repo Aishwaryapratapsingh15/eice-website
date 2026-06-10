@@ -6,35 +6,35 @@ import style from "./Styles/memberSuite.module.css"
 import { Link } from '/src/nextNavigation'
 
 
-const cag = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/member/memberSection2/cag.png";
-const pme = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/member/memberSection2/pme.png";
-const smo = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/member/memberSection2/smo.png";
+const cag = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/member/memberSection2/cag.png";
+const pme = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/member/memberSection2/pme.png";
+const smo = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/member/memberSection2/smo.png";
 
 
 
 
 
-const ad = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/member/icon/ad.png";
-const emb = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/member/icon/emb.png";
-const ict = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/member/icon/ict.png";
-const mrm = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/member/icon/mrm.png";
-const sm = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/member/icon/sm.png";
-const ssp = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/member/icon/ssp.png";
+const ad = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/member/icon/ad.png";
+const emb = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/member/icon/emb.png";
+const ict = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/member/icon/ict.png";
+const mrm = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/member/icon/mrm.png";
+const sm = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/member/icon/sm.png";
+const ssp = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/member/icon/ssp.png";
 
 
-const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/allHero/memberh.webp";
+const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/Rise/allHero/memberh.webp";
 
 
 // benefits
-const ddi = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/member/memberBenefit/ddi.webp";
-const eme = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/member/memberBenefit/eme.webp";
-const ic = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/member/memberBenefit/ic.webp";
-const imr = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/member/memberBenefit/imr.webp";
-const oe = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/member/memberBenefit/oe.webp";
+const ddi = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/member/memberBenefit/ddi.webp";
+const eme = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/member/memberBenefit/eme.webp";
+const ic = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/member/memberBenefit/ic.webp";
+const imr = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/member/memberBenefit/imr.webp";
+const oe = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/member/memberBenefit/oe.webp";
 
 
 
-const laptop = "https://d3r43jacxrwsrp.cloudfront.net/section3Laptop/member.webp";
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Rise/section3Laptop/member.webp";
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 

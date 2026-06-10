@@ -274,7 +274,7 @@ export default function EiceVoice() {
             <div key={i} className="bg-white rounded-xl  border-2 border-gray-200 shadow-sm hover:shadow-md transition p-6 flex flex-col items-start text-start gap-4">
                   {/* SVG */}
         <div className="rounded-lg flex items-start justify-center">
-          <img src={item.icon.src} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" />
         </div>
               <h3 className="font-bold md:text-2xl text-2xl text-[#334155] whitespace-pre-line">{item.title}</h3>
               <p className="text-[#64748B] md:text-lg text-lg leading-relaxed">{item.desc}</p>
@@ -297,7 +297,7 @@ export default function EiceVoice() {
           {capabilities.map((item, i) => (
             <div key={i} className="border rounded-xl p-6">
                <div className="rounded-lg flex items-start pb-5">
-          <img src={item.icon.src} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" />
         </div>
               <h3 className="font-bold md:text-2xl text-2xl text-[#334155] whitespace-pre-line">{item.title}</h3>
               <p className="text-[#64748B] md:text-lg text-lg leading-relaxed">{item.desc}</p>
@@ -466,7 +466,7 @@ export default function EiceVoice() {
 
         {/* ICON PLACEHOLDER */}
         <div className="w-14 h-14 mx-auto mb-4 rounded-xl flex items-center justify-center">
-         <img src={item.icon.src}/>
+         <img src={item.icon}/>
         </div>
 
         {/* TAG */}

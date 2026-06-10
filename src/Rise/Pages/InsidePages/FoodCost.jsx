@@ -4,8 +4,8 @@ import style from "./Styles/foodCost.module.css"
 
 
 
-const eh = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/food/ICONS/EH.png";
-const ep = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/food/ICONS/EP.png";
+const eh = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/food/ICONS/EH.png";
+const ep = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/food/ICONS/EP.png";
 
 
 
@@ -13,32 +13,32 @@ import { Link } from '/src/nextNavigation'
 
 
 
-const COGSc = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/food/foodFeatures/COGSc.png";
-const dpca = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/food/foodFeatures/dpca.png";
-const im = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/food/foodFeatures/im.png";
-const me = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/food/foodFeatures/me.png";
-const rc = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/food/foodFeatures/rc.png";
-const rtct = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/food/foodFeatures/rtct.png";
-const smpo = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/food/foodFeatures/smpo.png";
-const spi = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/food/foodFeatures/spi.png";
-const wlm = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/food/foodFeatures/wlm.png";
+const COGSc = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/food/foodFeatures/COGSc.png";
+const dpca = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/food/foodFeatures/dpca.png";
+const im = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/food/foodFeatures/im.png";
+const me = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/food/foodFeatures/me.png";
+const rc = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/food/foodFeatures/rc.png";
+const rtct = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/food/foodFeatures/rtct.png";
+const smpo = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/food/foodFeatures/smpo.png";
+const spi = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/food/foodFeatures/spi.png";
+const wlm = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/food/foodFeatures/wlm.png";
 
 
 
-const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/allHero/foodh.webp";
+const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/Rise/allHero/foodh.webp";
 
 
 
 
-const cc = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/food/benefits/cc.webp";
-const emm = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/food/benefits/emm.webp";
-const esn = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/food/benefits/esn.webp";
-const ioe = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/food/benefits/ioe.webp";
-const po = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/food/benefits/po.webp";
+const cc = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/food/benefits/cc.webp";
+const emm = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/food/benefits/emm.webp";
+const esn = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/food/benefits/esn.webp";
+const ioe = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/food/benefits/ioe.webp";
+const po = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/food/benefits/po.webp";
 
 
 
-const laptop = "https://d3r43jacxrwsrp.cloudfront.net/section3Laptop/food.webp";
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Rise/section3Laptop/food.webp";
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 

@@ -6,20 +6,20 @@ import styles from "./Styles/enterprise.module.css"
 import { Link } from '/src/nextNavigation'
 
 
-const account = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Account.png";
-const pos = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/POS.png";
-const banquet = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Banquet.png";
-const emp = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Employee.png";
-const food = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Food.png";
-const inentry = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/store.png";
-const member = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Member.png";
-const pay = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/PAyscale.png";
-const room = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Room.png";
-const vendor = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/purchase.png";
+const account = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/Account.png";
+const pos = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/POS.png";
+const banquet = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/Banquet.png";
+const emp = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/Employee.png";
+const food = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/Food.png";
+const inentry = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/store.png";
+const member = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/Member.png";
+const pay = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/PAyscale.png";
+const room = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/Room.png";
+const vendor = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/purchase.png";
 
 
 import { FaArrowRightLong } from "react-icons/fa6";
-const heroimg = "https://d3r43jacxrwsrp.cloudfront.net/pricing/suitHeroSection/enterpriseP.webp";
+const heroimg = "https://d3r43jacxrwsrp.cloudfront.net/Rise/pricing/suitHeroSection/enterpriseP.webp";
 import FooterLower from "../../Components/Footer/FooterLower"
 import { useEffect, useState } from "react"
 import Certificate from "../../Components/Certificate/Certificate"

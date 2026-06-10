@@ -4,24 +4,24 @@ import style from "./Styles/accountAndFinance.module.css"
 import { Link } from '/src/nextNavigation'
 
 
-const afw = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/account/financeSection2/afw.png";
-const ddfi = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/account/financeSection2/ddfi.png";
-const rtet = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/account/financeSection2/rtet.png";
+const afw = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/account/financeSection2/afw.png";
+const ddfi = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/account/financeSection2/ddfi.png";
+const rtet = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/account/financeSection2/rtet.png";
 
 
 
 
 
 
-const ara = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/account/icon/ara.png";
-const bf = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/account/icon/bf.png";
+const ara = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/account/icon/ara.png";
+const bf = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/account/icon/bf.png";
 
-const cfm = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/account/icon/cfm.png";
-const iib = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/account/icon/iib.png";
-const pgi = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/account/icon/pgi.png";
-const rtfd = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/account/icon/rtfd.png";
-const tmc = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/account/icon/tmc.png";
-const vsp = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/account/icon/vsp.png";
+const cfm = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/account/icon/cfm.png";
+const iib = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/account/icon/iib.png";
+const pgi = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/account/icon/pgi.png";
+const rtfd = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/account/icon/rtfd.png";
+const tmc = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/account/icon/tmc.png";
+const vsp = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/account/icon/vsp.png";
 
 
 
@@ -29,15 +29,15 @@ const vsp = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/account/icon/vsp.
 
 import { useState, useEffect } from "react"
 
-const ac = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/account/financebenefit/ac.webp";
-const ca = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/account/financebenefit/ca.webp";
-const cc = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/account/financebenefit/cc.webp";
-const icfm = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/account/financebenefit/icfm.webp";
-const oe = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/account/financebenefit/oe.webp";
+const ac = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/account/financebenefit/ac.webp";
+const ca = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/account/financebenefit/ca.webp";
+const cc = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/account/financebenefit/cc.webp";
+const icfm = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/account/financebenefit/icfm.webp";
+const oe = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/account/financebenefit/oe.webp";
 
-const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/allHero/accounth.webp";
+const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/Rise/allHero/accounth.webp";
 
-const laptop = "https://d3r43jacxrwsrp.cloudfront.net/section3Laptop/account.webp";
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Rise/section3Laptop/account.webp";
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 

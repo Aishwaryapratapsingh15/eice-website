@@ -2,6 +2,7 @@
 
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import { useLocation } from "/src/nextNavigation";
 import ProductFooter from "./ProductFooter";
 import Copyright from "../Othercomps/Copyright";
@@ -31,6 +32,20 @@ export default function ProductForm() {
     setTimeout(() => setPopup({ show: false, type: "", message: "" }), 3000);
   };
 
+  useEffect(() => {
+    if (popup.show) {
+      document.documentElement.style.overflow = "hidden";
+      document.body.style.overflow = "hidden";
+    } else {
+      document.documentElement.style.overflow = "";
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.documentElement.style.overflow = "";
+      document.body.style.overflow = "";
+    };
+  }, [popup.show]);
+
   const handleInputChange = (e) => {
     setFormValues((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
@@ -39,7 +54,7 @@ export default function ProductForm() {
     e.preventDefault();
     setActiveButton(true);
     try {
-      const response = await axios.post(process.env.NEXT_PUBLIC_OTP_ENDPOINT, {
+      const response = await axios.post("/api/otp", {
         email: formValues.email,
       });
       if (response.data.status == 200) {
@@ -65,7 +80,7 @@ export default function ProductForm() {
     setActiveButton(true);
     try {
       const response = await axios.post(
-        process.env.NEXT_PUBLIC_SUBMIT_ENDPOINT,
+        "/api/submit",
         {
           otp,
           name: Cookies.get("pf_name"),
@@ -92,7 +107,7 @@ export default function ProductForm() {
     e.preventDefault();
     setActiveButton(true);
     try {
-      await axios.post(process.env.NEXT_PUBLIC_CHANGE_EMAIL_ENDPOINT, {
+      await axios.post("/api/change-email", {
         email: Cookies.get("pf_email"),
       });
     } catch {}
@@ -132,19 +147,19 @@ export default function ProductForm() {
 
   return (
     <div className="w-full">
-      {popup.show && (
+      {popup.show && createPortal(
         <div
           style={{
             position: "fixed",
             top: 0,
             left: 0,
-            width: "100%",
-            height: "100%",
-            background: "rgba(0,0,0,0.4)",
+            width: "100vw",
+            height: "100vh",
+            background: "rgba(0,0,0,0.5)",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            zIndex: 9999,
+            zIndex: 99999,
           }}
         >
           <div
@@ -210,7 +225,8 @@ export default function ProductForm() {
               OK
             </button>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
 
       <div className="font-manrope max-w-3xl mx-auto px-4 pt-32 pb-20 sm:px-6">

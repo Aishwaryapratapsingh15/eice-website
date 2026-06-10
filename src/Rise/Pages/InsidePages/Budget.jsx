@@ -6,26 +6,26 @@ import Certificate from "../../Components/Certificate/Certificate.jsx";
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx";
 import FooterLower from "../../Components/Footer/FooterLower.jsx";
 import Accordion from "../../Components/Accordian/Accordian.jsx"
-const abpIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/ABP.png";
-const brrIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/BRR.png";
-const cepIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/CEP.png";
-const dwaIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/DWA.png";
-const ipIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/IP.png";
-const hcIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/HC.png";
-const mpcIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/MPC.png";
-const varIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/VAR.png";
-const mqtIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/MQT.png";
-const barIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/BAR.jpg";
-const bcoIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/BCO.jpg";
-const bfdIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/BFD.png";
-const boeIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/BOE.jpg";
-const bspIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/BSP.jpg";
-const hero = "https://d3r43jacxrwsrp.cloudfront.net/budget/hero-budget.png";
-const laptop = "https://d3r43jacxrwsrp.cloudfront.net/section3Laptop/room.webp";
-const plannedIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/Planned.png";
-const preciseIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/Precise.png";
-const predictIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/Predict.png";
-const overviewIcon = "https://d3r43jacxrwsrp.cloudfront.net/budget/budgetOverview.png";
+const abpIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/budget/ABP.png";
+const brrIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/budget/BRR.png";
+const cepIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/budget/CEP.png";
+const dwaIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/budget/DWA.png";
+const ipIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/budget/IP.png";
+const hcIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/budget/HC.png";
+const mpcIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/budget/MPC.png";
+const varIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/budget/VAR.png";
+const mqtIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/budget/MQT.png";
+const barIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/budget/BAR.jpg";
+const bcoIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/budget/BCO.jpg";
+const bfdIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/budget/BFD.png";
+const boeIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/budget/BOE.jpg";
+const bspIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/budget/BSP.jpg";
+const hero = "https://d3r43jacxrwsrp.cloudfront.net/Rise/budget/hero-budget.png";
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Rise/section3Laptop/room.webp";
+const plannedIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/budget/Planned.png";
+const preciseIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/budget/Precise.png";
+const predictIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/budget/Predict.png";
+const overviewIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/budget/budgetOverview.png";
 
 
 export default function Budget() {

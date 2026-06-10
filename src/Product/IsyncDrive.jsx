@@ -250,7 +250,7 @@ access, sync, and share files across devices from a single platform with full co
 
       {/* ICON (Rounded Rectangle) */}
       <div className=" px-6 rounded-xl">
-       <img src={item.icon.src} alt="icon"/>
+       <img src={item.icon} alt="icon"/>
       </div>
 
       {/* TITLE */}
@@ -324,7 +324,7 @@ access, sync, and share files across devices from a single platform with full co
 
         {/* SVG */}
         <div className="rounded-lg flex items-start justify-center">
-          <img src={item.icon.src} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" />
         </div>
 
         {/* TITLE */}
@@ -359,7 +359,7 @@ access, sync, and share files across devices from a single platform with full co
 
         {/* SVG */}
         <div className="rounded-lg flex items-start justify-center">
-          <img src={item.icon.src} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" />
         </div>
 
         {/* TITLE */}
@@ -417,7 +417,7 @@ access, sync, and share files across devices from a single platform with full co
 
         {/* SVG */}
         <div className="rounded-lg flex items-start justify-center">
-          <img src={item.icon.src} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" />
         </div>
 
         {/* TITLE */}
@@ -464,7 +464,7 @@ access, sync, and share files across devices from a single platform with full co
 
         {/* ICON */}
         <div className="w-12 h-12 flex items-center justify-center bg-blue-900 text-white rounded-lg text-xl">
-          <img src={item.icon.src} alt="icon"/>
+          <img src={item.icon} alt="icon"/>
         </div>
 
         {/* TITLE */}

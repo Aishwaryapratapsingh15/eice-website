@@ -6,10 +6,10 @@ import styles from "./Styles/posSuite.module.css"
 import { Link } from '/src/nextNavigation'
 
 
-const account = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/Account.png";
-const pos = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/POS.png";
+const account = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/Account.png";
+const pos = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/POS.png";
 
-const heroimg = "https://d3r43jacxrwsrp.cloudfront.net/pricing/suitHeroSection/posP.webp";
+const heroimg = "https://d3r43jacxrwsrp.cloudfront.net/Rise/pricing/suitHeroSection/posP.webp";
 import { useEffect, useState } from "react"
 import { FaArrowRightLong } from "react-icons/fa6";
 import FooterLower from "../../Components/Footer/FooterLower"

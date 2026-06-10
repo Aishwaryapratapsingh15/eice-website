@@ -3,10 +3,10 @@ import styles from "./Hospitality.module.css"
 import { Link } from '/src/nextNavigation'
 import { useState, useEffect } from "react"
 
-const b1 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/benefit/w.jpg";
-const b2 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/benefit/w2.jpg";
-const b3 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/benefit/w3.jpg";
-const b4 = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/benefit/w4.jpg";
+const b1 = "https://d3r43jacxrwsrp.cloudfront.net/Easylogy/Hospitality/benefit/w.jpg";
+const b2 = "https://d3r43jacxrwsrp.cloudfront.net/Easylogy/Hospitality/benefit/w2.jpg";
+const b3 = "https://d3r43jacxrwsrp.cloudfront.net/Easylogy/Hospitality/benefit/w3.jpg";
+const b4 = "https://d3r43jacxrwsrp.cloudfront.net/Easylogy/Hospitality/benefit/w4.jpg";
 
 import FooterLower from "../../Components/Footer/FooterLower"
 import { FaArrowRightLong } from "react-icons/fa6";

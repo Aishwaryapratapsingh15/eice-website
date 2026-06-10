@@ -3,42 +3,42 @@ import style from "./Styles/roomBooking.module.css"
 
 
 
-const icon1 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/Icons/1.png";
-const icon2 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/Icons/2.png";
-const icon3 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/Icons/3.png";
+const icon1 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/room/roomPage/Icons/1.png";
+const icon2 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/room/roomPage/Icons/2.png";
+const icon3 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/room/roomPage/Icons/3.png";
 
 
 
-const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/allHero/roomh.webp";
+const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/Rise/allHero/roomh.webp";
 
 
 import { Link } from '/src/nextNavigation'
 
 
 // features
-const rt = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/feature/rt.png";
-const app = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/feature/app.png";
-const cbd = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/feature/cbd.png";
-const cbo = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/feature/cbo.png";
-const frs = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/feature/frs.png";
-const ibc = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/feature/ibc.png";
-const mfi = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/feature/mfi.png";
-const wifi = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/feature/wifi.png";
-const ipg = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/feature/ipg.png";
+const rt = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/room/roomPage/feature/rt.png";
+const app = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/room/roomPage/feature/app.png";
+const cbd = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/room/roomPage/feature/cbd.png";
+const cbo = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/room/roomPage/feature/cbo.png";
+const frs = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/room/roomPage/feature/frs.png";
+const ibc = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/room/roomPage/feature/ibc.png";
+const mfi = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/room/roomPage/feature/mfi.png";
+const wifi = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/room/roomPage/feature/wifi.png";
+const ipg = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/room/roomPage/feature/ipg.png";
 
 
 
 // benifits
 
-const b1 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/benifit/b1.webp";
-const b2 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/benifit/b2.webp";
-const b3 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/benifit/b3.webp";
-const b4 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/benifit/b4.webp";
-const b5 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/room/roomPage/benifit/b6.webp";
+const b1 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/room/roomPage/benifit/b1.webp";
+const b2 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/room/roomPage/benifit/b2.webp";
+const b3 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/room/roomPage/benifit/b3.webp";
+const b4 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/room/roomPage/benifit/b4.webp";
+const b5 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/room/roomPage/benifit/b6.webp";
 
 
 // overview 
-const laptop = "https://d3r43jacxrwsrp.cloudfront.net/section3Laptop/room.webp";
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Rise/section3Laptop/room.webp";
 
 
 

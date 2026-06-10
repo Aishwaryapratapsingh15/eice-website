@@ -245,7 +245,7 @@ export default function ISyncDrivePage() {
 
       {/* ICON (Rounded Rectangle) */}
       <div className=" px-6 rounded-xl">
-       <img src={item.icon.src} alt="icon"/>
+       <img src={item.icon} alt="icon"/>
       </div>
 
       {/* TITLE */}
@@ -378,7 +378,7 @@ locations with full admin control.
 
         {/* SVG */}
         <div className="rounded-lg flex items-start justify-center">
-          <img src={item.icon.src} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" />
         </div>
 
         {/* TITLE */}

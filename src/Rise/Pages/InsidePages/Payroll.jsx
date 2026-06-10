@@ -2,37 +2,37 @@
 import style from "./Styles/payrol.module.css"
 
 
-const icon1 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/section3/icon1.png";
-const icon2 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/section3/icon2.png";
-const icon3 = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pos/posPage/section3/icon3.png";
+const icon1 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pos/posPage/section3/icon1.png";
+const icon2 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pos/posPage/section3/icon2.png";
+const icon3 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pos/posPage/section3/icon3.png";
 
-const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/allHero/payrollh.webp";
+const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/Rise/allHero/payrollh.webp";
 
 import { Link } from '/src/nextNavigation'
 
 // features
 
-const app = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pay/payFeatures/app.png";
-const cps = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pay/payFeatures/cps.png";
-const ddpp = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pay/payFeatures/ddpp.png";
-const edm = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pay/payFeatures/edm.png";
-const lam = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pay/payFeatures/lam.png";
-const tcr = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pay/payFeatures/tcr.png";
+const app = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pay/payFeatures/app.png";
+const cps = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pay/payFeatures/cps.png";
+const ddpp = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pay/payFeatures/ddpp.png";
+const edm = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pay/payFeatures/edm.png";
+const lam = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pay/payFeatures/lam.png";
+const tcr = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pay/payFeatures/tcr.png";
 
 
 
 
 
 
-const appb = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pay/payrollBenefit/app.webp";
-const cs = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pay/payrollBenefit/cs.webp";
-const es = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pay/payrollBenefit/es.webp";
-const ic = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pay/payrollBenefit/ic.webp";
-const te = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/pay/payrollBenefit/te.webp";
+const appb = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pay/payrollBenefit/app.webp";
+const cs = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pay/payrollBenefit/cs.webp";
+const es = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pay/payrollBenefit/es.webp";
+const ic = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pay/payrollBenefit/ic.webp";
+const te = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pay/payrollBenefit/te.webp";
 
 
 
-const laptop = "https://d3r43jacxrwsrp.cloudfront.net/section3Laptop/pay.webp";
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Rise/section3Laptop/pay.webp";
 
 import Accordion from "../../Components/Accordian/Accordian.jsx"
 

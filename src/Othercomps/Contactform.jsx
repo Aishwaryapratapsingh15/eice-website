@@ -32,11 +32,7 @@ function ContactForm() {
     e.preventDefault();
 
     try {
-
-      let host = process.env.NEXT_PUBLIC_OTP_ENDPOINT
-
-      let response = await axios.post(host, { email: formValues.email })
-      console.log(response.data)
+      let response = await axios.post("/api/otp", { email: formValues.email })
       if (response.data.status == 200) {
         Cookies.set("email", formValues.email, { expires: 1 })
         Cookies.set("contact", formValues.contact, { expires: 1 })
@@ -45,18 +41,14 @@ function ContactForm() {
         setotpbox(true)
         alert("Please enter otp for final Submission")
         setActiveButton(false)
-      }
-
-      else {
+      } else {
         alert("something went wrong , Please try again later")
         setActiveButton(false)
-
       }
     } catch (error) {
       console.log(error)
       alert("something went wrong , Please try again later")
       setActiveButton(false)
-
     }
 
   };
@@ -66,8 +58,7 @@ function ContactForm() {
     setActiveButton(true)
     e.preventDefault()
     try {
-      let host = process.env.NEXT_PUBLIC_CHANGE_EMAIL_ENDPOINT
-      const response = await axios.post(host, { email: Cookies.get("email") })
+      const response = await axios.post("/api/change-email", { email: Cookies.get("email") })
       console.log(response.data)
       Cookies.remove("email")
       Cookies.remove("contact")
@@ -107,10 +98,7 @@ function ContactForm() {
       }
 
 
-      let host = process.env.NEXT_PUBLIC_SUBMIT_ENDPOINT
-
-
-      let response = await axios.post(host, postdata)
+      let response = await axios.post("/api/submit", postdata)
       console.log(response.data)
 
       if (response.data.status != 200) {

@@ -10,13 +10,13 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 // icon drop down
 
-const clubIcon = "https://d3r43jacxrwsrp.cloudfront.net/DropDown/pricingSuites/clubIcon.png";
-const enterpriseIcon = "https://d3r43jacxrwsrp.cloudfront.net/DropDown/pricingSuites/enterIcon.png";
-const inventaryIcon = "https://d3r43jacxrwsrp.cloudfront.net/DropDown/pricingSuites/inventaryIcon.png";
-const posIcon = "https://d3r43jacxrwsrp.cloudfront.net/DropDown/pricingSuites/posIcon.png";
-const frontDeskIcon = "https://d3r43jacxrwsrp.cloudfront.net/DropDown/pricingSuites/frontIcon.png";
-const banquetIcon = "https://d3r43jacxrwsrp.cloudfront.net/DropDown/pricingSuites/banquetIcon.png";
-const vanillaIcon = "https://d3r43jacxrwsrp.cloudfront.net/DropDown/pricingSuites/vanillaIcon.png";
+const clubIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/DropDown/pricingSuites/clubIcon.png";
+const enterpriseIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/DropDown/pricingSuites/enterIcon.png";
+const inventaryIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/DropDown/pricingSuites/inventaryIcon.png";
+const posIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/DropDown/pricingSuites/posIcon.png";
+const frontDeskIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/DropDown/pricingSuites/frontIcon.png";
+const banquetIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/DropDown/pricingSuites/banquetIcon.png";
+const vanillaIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/DropDown/pricingSuites/vanillaIcon.png";
 
 
 

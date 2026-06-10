@@ -650,7 +650,7 @@ data-driven workflows.
 
         {/* ICON */}
         <div className="w-12 h-12 flex items-center justify-center text-white rounded-lg text-xl">
-          <img src={item.icon.src} alt="icon"/>
+          <img src={item.icon} alt="icon"/>
         </div>
 
         {/* TITLE */}
@@ -689,7 +689,7 @@ data-driven workflows.
 
         {/* SVG */}
         <div className="rounded-lg flex items-start justify-center">
-          <img src={item.icon.src} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" />
         </div>
 
         {/* TITLE */}
@@ -850,7 +850,7 @@ is our foundation.
               <div
                 className={`rounded-lg flex items-start justify-start text-white text-lg mb-4`}
               >
-                  <img src={item.icon.src} alt="icon" className="w-12 h-12 object-contain" />
+                  <img src={item.icon} alt="icon" className="w-12 h-12 object-contain" />
               </div>
 
               {/* Value */}
@@ -914,7 +914,7 @@ is our foundation.
               {/* Image */}
               <div className="flex justify-center">
                 <img
-                  src={item.icon.src}
+                  src={item.icon}
                   alt="badge"
                   className="h-16 object-contain"
                 />

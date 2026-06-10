@@ -1,10 +1,10 @@
 ﻿import React from 'react'
 import styles from "./Certificate.module.css"
 
-const c1 = "https://d3r43jacxrwsrp.cloudfront.net/cert/oip.jpeg";
-const c2 = "https://d3r43jacxrwsrp.cloudfront.net/cert/c2.png";
-const c3 = "https://d3r43jacxrwsrp.cloudfront.net/cert/c3.png";
-const c4 = "https://d3r43jacxrwsrp.cloudfront.net/cert/c4.png";
+const c1 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/cert/oip.jpeg";
+const c2 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/cert/c2.png";
+const c3 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/cert/c3.png";
+const c4 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/cert/c4.png";
 export default function Certificate() {
     return (
         <div className={`${styles.certificate}`}>

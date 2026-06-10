@@ -1,4 +1,4 @@
-
+﻿
 .heroImgSection
 {
     padding-top: 8rem;
@@ -333,7 +333,7 @@
         height: 16rem;
         width: 100%;
         /* border: 2px solid red; */
-        background: url("../../../assets/pricing/suitHeroSection/clubP.webp");
+        background: url("https://d3r43jacxrwsrp.cloudfront.net/Rise/pricing/suitHeroSection/clubP.webp");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;

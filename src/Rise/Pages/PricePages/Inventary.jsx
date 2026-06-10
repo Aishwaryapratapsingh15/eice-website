@@ -7,12 +7,12 @@ import { Link } from '/src/nextNavigation'
 
 
 
-const inentry = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/store.png";
+const inentry = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/store.png";
 
-const vendor = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/allPageIcon/purchase.png";
+const vendor = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/purchase.png";
 
 
-const heroimg = "https://d3r43jacxrwsrp.cloudfront.net/pricing/suitHeroSection/inventaryP.webp";
+const heroimg = "https://d3r43jacxrwsrp.cloudfront.net/Rise/pricing/suitHeroSection/inventaryP.webp";
 import { useEffect, useState } from "react"
 import { FaArrowRightLong } from "react-icons/fa6";
 import FooterLower from "../../Components/Footer/FooterLower"

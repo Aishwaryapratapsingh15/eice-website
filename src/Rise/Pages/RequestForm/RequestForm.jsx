@@ -7,13 +7,13 @@ import styles from "./requestForm.module.css"
 
 import React, { useEffect, useState } from 'react';
 import Select from 'react-select';
-const ak = "https://d3r43jacxrwsrp.cloudfront.net/form/feedback/AK.png";
-const kd = "https://d3r43jacxrwsrp.cloudfront.net/form/feedback/KD.png";
-const pd = "https://d3r43jacxrwsrp.cloudfront.net/form/feedback/PD.png";
-const band = "https://d3r43jacxrwsrp.cloudfront.net/form/band.png";
+const ak = "https://d3r43jacxrwsrp.cloudfront.net/Rise/form/feedback/AK.png";
+const kd = "https://d3r43jacxrwsrp.cloudfront.net/Rise/form/feedback/KD.png";
+const pd = "https://d3r43jacxrwsrp.cloudfront.net/Rise/form/feedback/PD.png";
+const band = "https://d3r43jacxrwsrp.cloudfront.net/Rise/form/band.png";
 
-// const laptop = "https://d3r43jacxrwsrp.cloudfront.net/form/allLaptop.webp";
-const productsIcon = "https://d3r43jacxrwsrp.cloudfront.net/form/allProducts.png";
+// const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Rise/form/allLaptop.webp";
+const productsIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/form/allProducts.png";
 // import Accordion from "../../Components/Accordian/Accordian"
 
 import FooterLower from "../../Components/Footer/FooterLower"
@@ -22,10 +22,10 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import Certificate from "../../Components/Certificate/Certificate";
 
 import axios from "axios";
+import { createPortal } from "react-dom";
 import { useLocation } from '/src/nextNavigation';
-// import { createPortal } from "react-dom";
-const successIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/success.svg";
-const errorIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/error.svg";
+const successIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/common/success.svg";
+const errorIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/common/error.svg";
 
 
 export default function RequestForm() {
@@ -92,12 +92,22 @@ useEffect(() => {
 
 
 const showLocalPopup = (type, message) => {
-  setPopup({
-    show: true,
-    type,
-    message
-  });
+  setPopup({ show: true, type, message });
 };
+
+useEffect(() => {
+  if (popup.show) {
+    document.documentElement.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
+  } else {
+    document.documentElement.style.overflow = "";
+    document.body.style.overflow = "";
+  }
+  return () => {
+    document.documentElement.style.overflow = "";
+    document.body.style.overflow = "";
+  };
+}, [popup.show]);
 
 useEffect(() => {
   const param = new URLSearchParams(location.search).get("embed");
@@ -347,7 +357,7 @@ const handleSubmit = async (e) => {
 
     if (!formData.subscribe || !formData.policyAgree) {
         alert("Please agree to the terms and conditions before submitting.");
-        setIsSubmitting(false); // Don't forget to re-enable button
+        setIsSubmitting(false);
         return;
     }
 
@@ -362,32 +372,14 @@ const handleSubmit = async (e) => {
         address: formData.address,
         requirement: formData.requirement,
         message: formData.message,
-        product: product
+        product: product,
     };
 
     try {
-        const host = "https://rise.eicetechnology.com/contact.php";
-        // const local = "http://localhost/eicerise/contact.php";
-
-        const response = await axios.post(host, dataToSend, {
-            headers: {
-                "Content-Type": "application/json",
-            },
-        });
+        const response = await axios.post("/api/contact", dataToSend);
 
         if (response.status === 200) {
-            if (isEmbed) {
-             window.parent.postMessage(
-  { type: "FORM_STATUS", status: "success", message: "Form submitted successfully!" },
-//   "*"
-"https://eicetechnology.com/"
-);
-            }
-             
- else {
-    // 👉 direct open (Website Y)
-    showLocalPopup("success", "Form submitted successfully!");
-  }
+            showLocalPopup("success", "Form submitted successfully!");
             setFormData({
                 name: "",
                 companyName: "",
@@ -399,37 +391,15 @@ const handleSubmit = async (e) => {
                 address: "",
                 requirement: "",
                 message: "",
-                product: product  
+                subscribe: false,
+                policyAgree: false,
             });
         } else {
-            if(isEmbed) {
-           window.parent.postMessage(
-  {
-    type: "FORM_STATUS",
-    status: "error",
-    message: "Something went wrong!"
-  },
-  "*"
-);
-            } else {
-                showLocalPopup("error", "Error Submitting Form");
-            }
+            showLocalPopup("error", "Something went wrong. Please try again.");
         }
-
     } catch (error) {
         console.error("Error submitting form:", error);
-        if(isEmbed) {
-        window.parent.postMessage(
-  {
-    type: "FORM_STATUS",
-    status: "error",
-    message: "Something went wrong!"
-  },
-  "*"
-);
-        } else {
-            showLocalPopup("error", "Error Submitting Form");
-        }
+        showLocalPopup("error", "Something went wrong. Please try again.");
     } finally {
         setIsSubmitting(false);
     }
@@ -598,18 +568,18 @@ const handleSelectChange2 = (selectedOption) => {
 
     return (
         <>
-{popup.show && (
+{popup.show && createPortal(
   <div style={{
     position: "fixed",
     top: 0,
     left: 0,
-    width: "100%",
-    height: "100%",
-    background: "rgba(0,0,0,0.4)",
+    width: "100vw",
+    height: "100vh",
+    background: "rgba(0,0,0,0.5)",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    zIndex: 9999
+    zIndex: 99999
   }}>
     
     <div style={{
@@ -680,7 +650,8 @@ const handleSelectChange2 = (selectedOption) => {
       </button>
 
     </div>
-  </div>
+  </div>,
+  document.body
 )}
             <div className={`${styles.formHeadingBox}`}>
                 <div className={`${styles.formHeading}`}> <span className="font2 blueTextGlobalClass">Get in touch</span> <span style={{ fontWeight: "700" }} className="font3"> with us</span></div>

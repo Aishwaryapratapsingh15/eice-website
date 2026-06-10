@@ -1,4 +1,4 @@
-
+﻿
 
 .heroSectionConatiner {
     width: 100%;
@@ -66,7 +66,7 @@
 
 .herosectionImgBox {
     width: 50%;
-    background-image: url("../../../assets/allHero/foodh.webp");
+    background-image: url("https://d3r43jacxrwsrp.cloudfront.net/Rise/allHero/foodh.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -121,7 +121,7 @@
 
 
 .blueBoxSetion3 {
-    background-image: url("../../../assets/insidePages/room/roomPage/overview.webp");
+    background-image: url("https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/room/roomPage/overview.webp");
     /* height: 700px; */
     /* height: 970px; */
     background-position: center;

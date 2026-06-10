@@ -1,5 +1,5 @@
 ﻿import styles from "./footer.module.css";
-const footer = "https://d3r43jacxrwsrp.cloudfront.net/footer/foot.webp";
+const footer = "https://d3r43jacxrwsrp.cloudfront.net/Rise/footer/foot.webp";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "/src/nextNavigation";
 

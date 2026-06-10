@@ -1,4 +1,4 @@
-.case_box {
+﻿.case_box {
     display: flex;
     margin-top: 20px;
     justify-content: center;
@@ -11,7 +11,7 @@
 }
 
 .big_img {
-    background: url("../../assets/home_case_study/bigw.webp");
+    background: url("https://d3r43jacxrwsrp.cloudfront.net/home_case_study/bigw.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,7 +42,7 @@
 }
 
 .upper1 {
-    background: url("../../assets/home_case_study/upper1w.webp");
+    background: url("https://d3r43jacxrwsrp.cloudfront.net/home_case_study/upper1w.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,7 +55,7 @@
 }
 
 .upper2 {
-    background: url("../../assets/home_case_study/upper2w.webp");
+    background: url("https://d3r43jacxrwsrp.cloudfront.net/home_case_study/upper2w.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -69,7 +69,7 @@
 
 
 .lower1 {
-    background: url("../../assets/home_case_study/lower1w.webp");
+    background: url("https://d3r43jacxrwsrp.cloudfront.net/home_case_study/lower1w.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -84,7 +84,7 @@
 }
 
 .lower2 {
-    background: url("../../assets/home_case_study/lower2w.webp");
+    background: url("https://d3r43jacxrwsrp.cloudfront.net/home_case_study/lower2w.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

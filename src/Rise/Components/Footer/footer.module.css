@@ -1,4 +1,4 @@
-.footerMainBoxUpper1 {
+﻿.footerMainBoxUpper1 {
 
     display: flex;
     justify-content: space-between;
@@ -66,7 +66,7 @@
 
 
 .footerNavigationBox {
-    background-image: url("../../assets/footer/bottomNavigation.webp");
+    background-image: url("https://d3r43jacxrwsrp.cloudfront.net/Rise/footer/bottomNavigation.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

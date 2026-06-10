@@ -47,7 +47,7 @@ export default function Clients() {
             <div style={{ width: '100%', maxWidth: '300px' }}>
               <div>
                 <img
-                  src={images[currentIndex].src}
+                  src={images[currentIndex]}
                   alt={`Client ${currentIndex + 1}`}
                   style={{ width: '100%', display: 'block' }}
                 />

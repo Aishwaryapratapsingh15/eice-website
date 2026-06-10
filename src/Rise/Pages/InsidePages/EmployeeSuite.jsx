@@ -6,36 +6,36 @@ import style from "./Styles/employeeSuite.module.css"
 
 
 
-const as = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/emp/empSection2/as.png";
-const cd = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/emp/empSection2/cd.png";
-const tc = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/emp/empSection2/tc.png";
+const as = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/emp/empSection2/as.png";
+const cd = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/emp/empSection2/cd.png";
+const tc = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/emp/empSection2/tc.png";
 
 
 
 import { Link } from '/src/nextNavigation'
 
 // features
-const bm = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/emp/icon/bm.png";
-const can = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/emp/icon/can.png";
-const da = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/emp/icon/da.png";
-const lam = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/emp/icon/lam.png";
-const pc = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/emp/icon/pc.png";
-const pim = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/emp/icon/pim.png";
-const pm = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/emp/icon/pm.png";
-const sr = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/emp/icon/sr.png";
-const td = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/emp/icon/td.png";
+const bm = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/emp/icon/bm.png";
+const can = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/emp/icon/can.png";
+const da = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/emp/icon/da.png";
+const lam = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/emp/icon/lam.png";
+const pc = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/emp/icon/pc.png";
+const pim = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/emp/icon/pim.png";
+const pm = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/emp/icon/pm.png";
+const sr = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/emp/icon/sr.png";
+const td = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/emp/icon/td.png";
 
 
-const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/allHero/new/employeeH.webp";
+const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/Rise/allHero/new/employeeH.webp";
 
 
 
 
-const ec = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/emp/empBenefits/ec.webp";
-const ee = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/emp/empBenefits/ee.webp";
-const ie = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/emp/empBenefits/ie.webp";
-const ts = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/emp/empBenefits/ts.webp";
-const tt = "https://d3r43jacxrwsrp.cloudfront.net/insidePages/emp/empBenefits/tt.webp";
+const ec = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/emp/empBenefits/ec.webp";
+const ee = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/emp/empBenefits/ee.webp";
+const ie = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/emp/empBenefits/ie.webp";
+const ts = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/emp/empBenefits/ts.webp";
+const tt = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/emp/empBenefits/tt.webp";
 
 
 
@@ -48,7 +48,7 @@ import { useEffect , useState } from "react"
 import { FaArrowRightLong } from "react-icons/fa6";
 
 
-const laptop = "https://d3r43jacxrwsrp.cloudfront.net/section3Laptop/emp.webp";
+const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Rise/section3Laptop/emp.webp";
 
 
 

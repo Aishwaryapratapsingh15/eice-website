@@ -241,7 +241,7 @@ iSyncLite addresses these head-on.
            {data.map((item, i) => (
               <div key={i} className="bg-white rounded-xl  border-1 border border-[#E2E8F0] shadow-sm hover:shadow-md transition p-6 flex flex-col items-start text-start gap-4">
                 <div className="rounded-lg flex items-start justify-center">
-                  <img src={item.icon.src} alt="" className="w-14 h-14 object-contain" />
+                  <img src={item.icon} alt="" className="w-14 h-14 object-contain" />
                 </div>
                 <h3 className="font-bold text-2xl text-[#334155] whitespace-pre-line">{item.title}</h3>
 
@@ -271,7 +271,7 @@ iSyncLite addresses these head-on.
 
         {/* SVG */}
         <div className="rounded-lg flex items-start justify-center">
-          <img src={item.icon.src} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" />
         </div>
 
         {/* TITLE */}
@@ -328,7 +328,7 @@ iSyncLite addresses these head-on.
       >
         {/* ICON */}
         <div className="w-12 h-12 flex items-center justify-center text-white rounded-lg text-xl">
-          <img src={item.icon.src} alt="icon"/>
+          <img src={item.icon} alt="icon"/>
         </div>
 
         {/* TITLE */}
@@ -462,7 +462,7 @@ iSyncLite addresses these head-on.
             {deploy.map((item, i) => (
               <div key={i} className="p-6 rounded-xl shadow-sm bg-[#EFFAFF] border border-[#E2E8F0]">
                 <div className="w-10 h-10 mb-4 mx-auto">
-                  <img src={item.icon.src} alt="icon" className="w-full h-full object-contain" />
+                  <img src={item.icon} alt="icon" className="w-full h-full object-contain" />
                   </div>
                   <h3 className="font-bold text-[#334155] text-2xl">
     {item.title}
