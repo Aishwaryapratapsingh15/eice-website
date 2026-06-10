@@ -1,90 +1,82 @@
-﻿import React from "react";
+import React from "react";
 import Footer from "../Othercomps/Footer";
-import Copyright from "../Othercomps/Copyright";
 import ProductFooter from "/src/Product/ProductFooter";
-
-import temp from "../assets/Compressed/temp.png";
-import temp2 from "../assets/Compressed/temp2.png";
-import espctquote1 from "../assets/Compressed/espctquote1.png";
-import espctquote2 from "../assets/Compressed/espctquote2.png";
-import petrosim1 from "../assets/Compressed/kbcchempetro1.png";
-import petrosim2 from "../assets/Compressed/kbcchempetro2.png";
+import Copyright from "../Othercomps/Copyright";
 import adanigas1 from "../assets/Compressed/adanigas1.png";
 import adanigas2 from "../assets/Compressed/adanigas2.png";
-
-
-import PetroSIM from "./PertroSIM";
+import { GiVirtualMarker } from "react-icons/gi";
+import Link from "next/link";
 
 function CityGasAdani() {
   return (
     <div className="">
-      <div className="max-w-7xl  mx-auto px-4 2xl:pt-12 pt-32">
+      <div className="max-w-7xl mx-auto px-4 2xl:pt-12 pt-32">
         <div className="w-full">
-          <h1 className="text-bloo fontweight_1 text-center fontsize_2  py-2">
+          <h1 className="text-bloo fontweight_1 text-center fontsize_2 py-2">
             City Gas Distribution
           </h1>
-          <h2 className="text-blackk  fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
-            Construction and Operational Management System
+          <h2 className="text-blackk fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
+            Gas Distribution Analysis App for Adani Gas
           </h2>
-          <p className="fontweight_1 max-w-4xl mx-auto  text-blackk/60 fontsize_3 pt-4 px-4">
-            Development of a GIS-based real-time construction and operational
-            management system for City Gas Distribution in Faridabad, India,
-            integrating multiple data sources for comprehensive project
-            execution and monitoring.
+          <p className="fontweight_1 max-w-4xl mx-auto text-blackk/60 fontsize_3 pt-4 px-4">
+            A comprehensive gas distribution management and analysis application
+            developed for Adani Gas, enabling real-time monitoring, safety
+            compliance, and operational efficiency across their city gas
+            distribution network.
           </p>
           <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
-            <img src={adanigas1.src} alt="" className="w-full h-full object-fit" />
-            <img src={adanigas2.src} alt="" className="w-full h-full object-fit" />
+            <img src={adanigas1.src} alt="City Gas Distribution App" className="w-full h-full object-fit rounded-lg" />
+            <img src={adanigas2.src} alt="City Gas Distribution Dashboard" className="w-full h-full object-fit rounded-lg" />
           </div>
         </div>
         <div className="w-full pb-6">
           <h2 className="text-blackk max-w-3xl pb-2 fontweight_1 text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] pt-12">
             Key Challenges
           </h2>
-          <div className="max-w-3xl  mx-auto flex flex-col py-4 gap-4">
-            <div className="flex gap-4 ">
-              <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
+          <div className="max-w-3xl mx-auto flex flex-col py-4 gap-4">
+            <div className="flex gap-4">
+              <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
                 01
               </h1>
               <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
-                {" "}
-                Implementing real-time construction data updates on a GIS
-                platform
+                Managing and monitoring a large-scale city gas distribution
+                network across multiple zones in real time
               </p>
             </div>
             <div className="flex gap-4">
-              <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
+              <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
                 02
               </h1>
               <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
-                Integrating diverse data sources (Customer data, Honeywell
-                SCADA, SAP) into a unified GIS system
+                Ensuring safety and regulatory compliance across the entire
+                distribution pipeline
               </p>
             </div>
             <div className="flex gap-4">
-              <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
+              <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
                 03
               </h1>
               <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
-                Developing a final pipe book in APDM format
+                Integrating data from multiple sensors and field devices into a
+                single unified platform
               </p>
             </div>
             <div className="flex gap-4">
-              <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
+              <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
                 04
               </h1>
               <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
-                Ensuring seamless data flow between construction, operational,
-                and financial systems
+                Providing actionable analytics and reports for operational
+                decision-making
               </p>
             </div>
             <div className="flex gap-4">
-              <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
+              <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
                 05
               </h1>
               <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
-                Creating a scalable solution that could be adapted for other
-                city gas projects, particularly in the Middle East
+                Minimizing downtime and responding rapidly to fault detection
+                across the network
               </p>
             </div>
           </div>
@@ -92,32 +84,30 @@ function CityGasAdani() {
       </div>
       <div className="bg-zinc-50 py-12 mt-12">
         <div className="max-w-7xl mx-auto px-4">
-          <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
+          <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
             About Our Client
           </h1>
-          <h2 className="text-blackk  fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
-            ESPCT : ESP Completion Technologies
+          <h2 className="text-blackk fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
+            Adani Gas
           </h2>
           <p className="fontweight_1 text-blackk/60 fontsize_3 pt-4">
-            ESPCT designs, manufactures and installs proprietary completion
-            equipment for electric submersible pump (ESP) systems to meet the
-            needs of ESP OEMs and E&P operators. ESPCT is headquartered in
-            Missouri City, Texas with three service centers located across the
-            United States. They specialize in dual parallel and dual concentric
-            installations, providing all equipment as a integrated system from
-            the wellhead to the motor base. Having hundreds of successful
-            installations, ESPCT is a leader in the submersible pump field.
+            Adani Gas Limited is one of India's leading city gas distribution
+            companies, supplying natural gas to households, commercial
+            establishments, and industries across multiple cities. As part of
+            the Adani Group, they are committed to expanding India's gas
+            infrastructure and promoting cleaner energy adoption through a
+            robust and safe distribution network.
           </p>
         </div>
       </div>
       <div className="max-w-7xl mx-auto px-4">
         <div className="pt-20 pb-6">
-          <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
+          <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
             Unlocking Success
           </h1>
         </div>
         <div className="grid lg:grid-cols-3 grid-cols-1 gap-6 pb-20">
-          <div className="group cursor-pointer p-4 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200 ">
+          <div className="group cursor-pointer p-4 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200">
             <div className="group-hover:scale-[.98] transition duration-200 grid grid-cols-1 gap-3">
               <div className="w-full h-full items-center justify-start px-2 pb-2">
                 <GiVirtualMarker size={50} className="text-bloo" />
@@ -128,46 +118,42 @@ function CityGasAdani() {
                     IDEATION:
                   </h1>
                   <p className="z-20 fontweight_1 text-blackk/60 fontsize_3">
-                    We envisioned a comprehensive GIS-based system that would
-                    integrate real-time construction data, operational
-                    information, and financial data for efficient management of
-                    city gas distribution projects. Our focus was on creating a
-                    versatile platform that could streamline project execution
-                    and provide valuable insights for decision-making.
+                    We designed a centralized gas distribution analysis
+                    platform that consolidates data from across the network,
+                    enabling operators to gain real-time visibility into flow
+                    rates, pressure levels, and safety parameters throughout
+                    Adani Gas's city distribution infrastructure.
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="group cursor-pointer p-4 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200 ">
+          <div className="group cursor-pointer p-4 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200">
             <div className="group-hover:scale-[.98] transition duration-200 grid grid-cols-1 gap-3">
               <div className="flex w-full h-full items-center justify-start px-2 pb-2">
                 <GiVirtualMarker size={50} className="text-bloo" />
               </div>
               <div>
-                <div className="flex flex-col p-2 text-start justify-end ">
+                <div className="flex flex-col p-2 text-start justify-end">
                   <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                     OUR APPROACH
                   </h1>
                   <p className="z-20 fontweight_1 text-blackk/60 fontsize_3">
-                    We prioritized the development of a Web GIS interface that
-                    could handle real-time construction data updates. By
-                    integrating multiple data sources, including customer
-                    information, SCADA systems, and SAP, we aimed to create a
-                    holistic view of the project. We also focused on producing
-                    standardized documentation like the APDM pipe book to ensure
-                    comprehensive project records.
+                    We built a robust data integration layer to connect field
+                    sensors and SCADA systems, then developed an intuitive
+                    dashboard for monitoring and analysis. The application
+                    incorporates automated alerts for anomaly detection and
+                    compliance reporting to support safe and efficient
+                    operations.
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="group cursor-pointer p-4 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200 ">
+          <div className="group cursor-pointer p-4 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200">
             <div className="group-hover:scale-[.98] transition duration-200 grid grid-cols-1 gap-3">
               <div className="flex w-full h-full items-center justify-start px-2 pb-2">
-                <div className="grid grid-cols-2 gap-0">
-                  <GiVirtualMarker size={50} className="text-bloo" />
-                </div>
+                <GiVirtualMarker size={50} className="text-bloo" />
               </div>
               <div>
                 <div className="flex flex-col p-2 text-start">
@@ -175,15 +161,11 @@ function CityGasAdani() {
                     OUTCOMES
                   </h1>
                   <p className="z-20 fontweight_1 text-blackk/60 fontsize_3">
-                    The GIS-based system for the Faridabad City Gas Distribution
-                    project has revolutionized project execution and monitoring.
-                    Its ability to provide real-time construction updates,
-                    integrated with operational and financial data, has
-                    significantly improved project management efficiency.
-                    Moreover, the potential for adapting this system into a
-                    product for city gas projects, especially in the Middle
-                    East, showcases the scalability and market relevance of our
-                    solution.
+                    The platform significantly improved operational visibility
+                    and safety compliance for Adani Gas. Real-time monitoring
+                    and automated fault detection reduced response times, while
+                    data-driven analytics empowered management to make informed
+                    decisions and optimize distribution efficiency.
                   </p>
                 </div>
               </div>
@@ -197,123 +179,42 @@ function CityGasAdani() {
         </h2>
         <div className="max-w-3xl mx-auto flex flex-col py-4 gap-4">
           <div className="flex gap-4 rounded-xl border-2 border-blue-900/60 p-4 shadow-md shadow-blue-900/20">
-            <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
+            <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
               01
             </h1>
             <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
-              Successfully developed a Web GIS-based Real-time Pipe Book system
+              Delivered a real-time gas distribution monitoring dashboard
+              covering pressure, flow, and safety metrics across the network
             </p>
           </div>
           <div className="flex gap-4 rounded-xl border-2 border-blue-900/60 p-4 shadow-md shadow-blue-900/20">
-            <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
+            <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
               02
             </h1>
             <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
-              Integrated real-time construction data with GIS for improved
-              project monitoring
+              Automated fault detection and alerting reduced incident response
+              time significantly
             </p>
           </div>
           <div className="flex gap-4 rounded-xl border-2 border-blue-900/60 p-4 shadow-md shadow-blue-900/20">
-            <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
+            <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
               03
             </h1>
             <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
-              Created a final pipe book in APDM format for comprehensive
-              documentation
+              Integrated analytics and reporting tools improved regulatory
+              compliance and operational decision-making
             </p>
           </div>
           <div className="flex gap-4 rounded-xl border-2 border-blue-900/60 p-4 shadow-md shadow-blue-900/20">
-            <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
+            <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
               04
             </h1>
             <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
-              Achieved integration of customer data, operational data (Honeywell
-              SCADA), and SAP on GIS for charge area management
-            </p>
-          </div>
-          <div className="flex gap-4 rounded-xl border-2 border-blue-900/60 p-4 shadow-md shadow-blue-900/20">
-            <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
-              05
-            </h1>
-            <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
-              Developed a potential product for city gas distribution projects,
-              applicable in other regions
+              Enhanced network-wide visibility resulting in improved safety
+              standards and distribution efficiency for Adani Gas
             </p>
           </div>
         </div>
-      </div>
-      <div className="py-12 bg-zinc-50">
-        <h1 className="text-bloo fontweight_1 text-center fontsize_2  py-2">
-          More Like This
-        </h1>
-        <h2 className="text-blackk max-w-3xl pb-2 text-center fontweight_1 text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px]">
-          Take a look at other Case Studies
-        </h2>
-        <div className="max-w-7xl mx-auto" style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-evenly" }} >
-                    <div className="other_case_study_box p-2 rounded-xl hover:scale-[.99] transition duration-300">
-                        <Link
-                            to="/case-studies/petro-sim"
-                            className="  p-2 md:p-4"
-                        >
-                            <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
-                                <img
-                                    src={petrosim1.src}
-                                    className="  transition duration-300 filter grayscale hover:grayscale-0"
-                                />
-                                <div className="p-3 md:p-4">
-                                    <h3 className="fontweight_1 text-sm sm:text-base md:text-lg mb-1 sm:mb-2">
-                                        PetroSIM
-                                    </h3>
-                                    <p className=" text-blackk/60 fontsize_3 fontweight_1 text-left">
-                                        Product Quality Assurance for Refinery Simulation Tool
-                                    </p>
-                                </div>
-                            </div>
-                        </Link>
-                    </div>
-                    <div className=" other_case_study_box  p-2 rounded-xl hover:scale-[.99] transition duration-300">
-                        <Link
-                            to="/case-studies/relimonitor"
-                            className=" p-2 md:p-4"
-                        >
-                            <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
-                                <img
-                                    src={temp.src}
-                                    className=" transition duration-300 filter grayscale hover:grayscale-0"
-                                />
-                                <div className="p-3 md:p-4">
-                                    <h3 className="fontweight_1 text-sm sm:text-base md:text-lg mb-1 sm:mb-2">
-                                        RE.LI Monitor
-                                    </h3>
-                                    <p className=" text-blackk/60 fontsize_3 fontweight_1 text-left">
-                                        Developed a Real Time Sensor monitoring tool using SCADA
-                                    </p>
-                                </div>
-                            </div>
-                        </Link>
-                    </div>
-                    <div className=" other_case_study_box p-2 rounded-xl hover:scale-[.99] transition duration-300">
-                        <Link
-                            to="/case-studies/espct-quote"
-                            className=" p-2 md:p-4"
-                        >
-                            <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
-                                <img
-                                    src={espctquote1.src}
-                                    className=" transition duration-300 filter grayscale hover:grayscale-0"
-                                />
-                                <div className="p-3 md:p-4">
-                                    <h3 className="fontweight_1 text-sm sm:text-base md:text-lg mb-1 sm:mb-2">
-                                        ESPCT Quote
-                                    </h3>
-                                    <p className=" text-blackk/60 fontsize_3 fontweight_1 text-left">
-                                        Web Based Sales and Quotation Tool
-                                    </p>
-                                </div>
-                            </div>
-                        </Link>
-                    </div>
-                </div>
       </div>
       {/* <Footer /> */}
       <ProductFooter />

@@ -1,4 +1,6 @@
 ﻿import React from "react";
+import Link from "next/link";
+import { GiVirtualMarker } from "react-icons/gi";
 import Footer from "../Othercomps/Footer";
 import Copyright from "../Othercomps/Copyright";
 import ProductFooter from "/src/Product/ProductFooter";
@@ -248,7 +250,7 @@ function InventoryAi() {
                 <div className="max-w-7xl mx-auto" style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-evenly" }} >
                     <div className="other_case_study_box p-2 rounded-xl hover:scale-[.99] transition duration-300">
                         <Link
-                            to="/case-studies/petro-sim"
+                            href="/case-studies/petro-sim"
                             className="  p-2 md:p-4"
                         >
                             <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
@@ -269,7 +271,7 @@ function InventoryAi() {
                     </div>
                     <div className=" other_case_study_box  p-2 rounded-xl hover:scale-[.99] transition duration-300">
                         <Link
-                            to="/case-studies/relimonitor"
+                            href="/case-studies/relimonitor"
                             className=" p-2 md:p-4"
                         >
                             <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
@@ -290,7 +292,7 @@ function InventoryAi() {
                     </div>
                     <div className=" other_case_study_box p-2 rounded-xl hover:scale-[.99] transition duration-300">
                         <Link
-                            to="/case-studies/espct-quote"
+                            href="/case-studies/espct-quote"
                             className=" p-2 md:p-4"
                         >
                             <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">

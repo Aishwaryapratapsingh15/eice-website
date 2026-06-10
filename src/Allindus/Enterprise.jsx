@@ -54,7 +54,7 @@ const KeyService = ({ title, description, image }) => (
   <div className="flex-shrink-0 w-80 md:w-96 p-4 pb-16">
     <div className="bg-white rounded-lg shadow-md overflow-hidden">
       <img
-        src={image}
+        src={image?.src || image}
         alt={title}
         className="w-full h-48 object-cover transition duration-300 filter grayscale hover:grayscale-0"
       />
@@ -130,7 +130,7 @@ const CaseStudy = ({ title, description, image }) => (
   <div className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 md:p-4">
     <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
       <img
-        src={image}
+        src={image?.src || image}
         alt={title}
         className="w-full h-32 sm:h-40 md:h-48 object-cover transition duration-300 filter grayscale hover:grayscale-0"
       />
@@ -315,7 +315,7 @@ function Legal() {
                       className="p-4 w-full h-full rounded-xl"
                     >
                       <img
-                        src={service.image}
+                        src={service.image?.src || service.image}
                         alt={service.name}
                         className="absolute inset-0 -z-10 w-full h-full object-cover mb-4 rounded-xl"
                       />
