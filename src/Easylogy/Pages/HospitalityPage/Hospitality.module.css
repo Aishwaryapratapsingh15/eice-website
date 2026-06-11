@@ -1,6 +1,6 @@
 ﻿.section1 {
     /* background-image: url("https://d3r43jacxrwsrp.cloudfront.net/Hospitality/m3.jpeg"); */
-    background-image: url("https://d3r43jacxrwsrp.cloudfront.net/Hospitality/herosection.webp");
+    background-image: url("https://d3r43jacxrwsrp.cloudfront.net/easylogy/Hospitality/herosection.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -144,6 +144,7 @@
     width: 100%;
     max-width: 80rem;
     column-gap: 2rem;
+    padding: 0 2rem;
 }
 
 .benefitSection {

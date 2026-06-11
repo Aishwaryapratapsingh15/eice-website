@@ -1,5 +1,5 @@
 ﻿import React from 'react'
-const errorImg = "https://d3r43jacxrwsrp.cloudfront.net/error/error.webp";
+const errorImg = "https://d3r43jacxrwsrp.cloudfront.net/easylogy/error/error.webp";
 import styles from "./Error.module.css"
 
 
