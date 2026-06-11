@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import styles from "./Hospitality.module.css"
 import { Link } from '/src/nextNavigation'
 import { useState, useEffect } from "react"

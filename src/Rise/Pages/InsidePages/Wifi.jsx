@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import style from "./Styles/wifi.module.css";
 import { useState, useEffect } from "react";
 import Accordion from "../../Components/Accordian/Accordian.jsx";

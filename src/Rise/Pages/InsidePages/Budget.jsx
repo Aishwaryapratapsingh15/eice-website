@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import { useState, useEffect } from "react";
 import style from "./Styles/budget.module.css";
 import { Link } from '/src/nextNavigation'

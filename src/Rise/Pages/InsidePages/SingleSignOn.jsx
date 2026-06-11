@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import style from "./Styles/SingleSignOn.module.css";
 import { useState, useEffect } from "react";
 import { Link } from '/src/nextNavigation';

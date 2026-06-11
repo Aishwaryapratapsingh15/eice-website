@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import FooterLower from "../../../Components/Footer/FooterLower"
 import styles from "./android.module.css"
 

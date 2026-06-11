@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import style from "./Styles/compliance.module.css";
 
 import { Link } from '/src/nextNavigation';

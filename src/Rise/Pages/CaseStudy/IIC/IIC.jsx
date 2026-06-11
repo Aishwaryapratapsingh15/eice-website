@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import styles from "./iic.module.css"
 const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Rise/caseStudy/IIC.webp";
 
