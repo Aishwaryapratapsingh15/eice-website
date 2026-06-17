@@ -256,7 +256,7 @@ function Logistics() {
           <img src={healthrect3} alt="" /> */}
           <img
             src={Logistics_img}
-            alt=""
+            alt="Logistics and supply chain technology solutions"
             className="object-cover w-full px-2"
           />
         </div>
@@ -265,7 +265,7 @@ function Logistics() {
             Transforming <span className="text-bloo">Logistics Industry</span>{" "}
             with Innovative Technology
           </h1>
-          <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+          <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
             At EICE Technology, we excel in transforming logistics operations
             through state-of-the-art technology solutions. Our mission is to
             provide innovative software that significantly boosts operational
@@ -348,7 +348,7 @@ function Logistics() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 Advanced Warehouse Management Systems (WMS)
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 Implement robust WMS platforms to streamline inventory
                 management, optimize storage utilization, and enhance order
                 processing efficiency through automation and real-time
@@ -365,7 +365,7 @@ function Logistics() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 Real-Time Transportation Management
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 Develop intelligent transportation management systems that
                 provide real-time tracking, dynamic route optimization, and
                 efficient fleet management to ensure timely and cost-effective
@@ -382,7 +382,7 @@ function Logistics() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 Supply Chain Visibility and Analytics
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 Offer comprehensive supply chain visibility solutions,
                 integrating advanced analytics for predictive insights, demand
                 forecasting, and improved decision-making across the logistics
@@ -399,7 +399,7 @@ function Logistics() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 Automated Order Processing Solutions
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 Create automated order processing systems that accelerate order
                 fulfillment, reduce manual errors, and enhance customer
                 satisfaction through seamless integration with e-commerce
@@ -416,7 +416,7 @@ function Logistics() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 IoT-Enabled Logistics Solutions
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 Deploy IoT-enabled solutions for real-time monitoring of assets,
                 predictive maintenance, and enhanced operational efficiency,
                 ensuring the integrity and security of goods throughout the
@@ -431,7 +431,7 @@ function Logistics() {
             </div>
             <div className="pt-6 h-full text-left">
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">Supply Chain Visibility and Analytics</h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">Offer comprehensive supply chain visibility solutions, integrating advanced analytics for predictive insights, demand forecasting, and improved decision-making across the logistics network.</p>
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">Offer comprehensive supply chain visibility solutions, integrating advanced analytics for predictive insights, demand forecasting, and improved decision-making across the logistics network.</p>
             </div>
           </div> */}
         </div>
@@ -447,3 +447,4 @@ function Logistics() {
 }
 
 export default Logistics;
+

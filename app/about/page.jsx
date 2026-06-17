@@ -1,4 +1,4 @@
-﻿import Company from "../../src/Aboutcomponents/Company";
+import Company from "../../src/Aboutcomponents/Company";
 import Workflow from "../../src/Aboutcomponents/Workflow";
 import Scopes from "../../src/Aboutcomponents/Scopes";
 import Certificate from "../../src/Homecomps/Certificate";
@@ -8,16 +8,34 @@ import Copyright from "../../src/Othercomps/Copyright";
 export const metadata = {
   title: "About EICE Technology | Global IT Services Company Since 2010",
   description: "Learn about EICE Technology, a global IT services company with 200+ professionals delivering 180+ projects across 10+ countries since 2010.",
+  keywords: ["EICE Technology", "IT company", "software development company", "global IT services", "about EICE", "IT firm since 2010"],
   openGraph: { title: "About EICE Technology | Global IT Services Since 2010", description: "Global IT firm with 200+ professionals, 180+ projects, 10+ countries.", url: "https://www.eicetechnology.com/about", siteName: "EICE Technology",
-    images: [{ url: "/assets/Compressed/bannerai.png", width: 1200, height: 630, alt: "EICE Technology" }], type: "website" },
+    images: [{ url: "https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png", width: 1200, height: 630, alt: "EICE Technology" }], type: "website" },
   twitter: { card: "summary_large_image", title: "About EICE Technology" ,
-    images: ["/assets/Compressed/bannerai.png"]},
-  alternates: { canonical: "https://www.eicetechnology.com/about" },
+    images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png"]},
+  alternates: { canonical: "https://www.eicetechnology.com/about/", languages: { "en-IN": "https://www.eicetechnology.com/about/", "en-US": "https://www.eicetechnology.com/about/", "x-default": "https://www.eicetechnology.com/about/" } },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About EICE Technology",
+  "url": "https://www.eicetechnology.com/about",
+  "description": "EICE Technology is a global IT services company founded in 2010 with 200+ professionals delivering 180+ projects across 10+ countries.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "EICE Technology",
+    "url": "https://www.eicetechnology.com",
+    "foundingDate": "2010",
+    "numberOfEmployees": { "@type": "QuantitativeValue", "value": 200 },
+    "logo": { "@type": "ImageObject", "url": "https://d3r43jacxrwsrp.cloudfront.net/logo.svg" }
+  }
 };
 
 export default function Page() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Company />
       <Workflow />
       <Scopes />

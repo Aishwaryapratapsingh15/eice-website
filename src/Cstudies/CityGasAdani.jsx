@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import Footer from "../Othercomps/Footer";
 import ProductFooter from "/src/Product/ProductFooter";
 import Copyright from "../Othercomps/Copyright";
@@ -18,7 +18,7 @@ function CityGasAdani() {
           <h2 className="text-blackk fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
             Gas Distribution Analysis App for Adani Gas
           </h2>
-          <p className="fontweight_1 max-w-4xl mx-auto text-blackk/60 fontsize_3 pt-4 px-4">
+          <p className="fontweight_1 max-w-4xl mx-auto text-blackk/70 fontsize_3 pt-4 px-4">
             A comprehensive gas distribution management and analysis application
             developed for Adani Gas, enabling real-time monitoring, safety
             compliance, and operational efficiency across their city gas
@@ -38,7 +38,7 @@ function CityGasAdani() {
               <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
                 01
               </h1>
-              <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                 Managing and monitoring a large-scale city gas distribution
                 network across multiple zones in real time
               </p>
@@ -47,7 +47,7 @@ function CityGasAdani() {
               <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
                 02
               </h1>
-              <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                 Ensuring safety and regulatory compliance across the entire
                 distribution pipeline
               </p>
@@ -56,7 +56,7 @@ function CityGasAdani() {
               <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
                 03
               </h1>
-              <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                 Integrating data from multiple sensors and field devices into a
                 single unified platform
               </p>
@@ -65,7 +65,7 @@ function CityGasAdani() {
               <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
                 04
               </h1>
-              <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                 Providing actionable analytics and reports for operational
                 decision-making
               </p>
@@ -74,7 +74,7 @@ function CityGasAdani() {
               <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
                 05
               </h1>
-              <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                 Minimizing downtime and responding rapidly to fault detection
                 across the network
               </p>
@@ -90,7 +90,7 @@ function CityGasAdani() {
           <h2 className="text-blackk fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
             Adani Gas
           </h2>
-          <p className="fontweight_1 text-blackk/60 fontsize_3 pt-4">
+          <p className="fontweight_1 text-blackk/70 fontsize_3 pt-4">
             Adani Gas Limited is one of India's leading city gas distribution
             companies, supplying natural gas to households, commercial
             establishments, and industries across multiple cities. As part of
@@ -117,7 +117,7 @@ function CityGasAdani() {
                   <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                     IDEATION:
                   </h1>
-                  <p className="z-20 fontweight_1 text-blackk/60 fontsize_3">
+                  <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">
                     We designed a centralized gas distribution analysis
                     platform that consolidates data from across the network,
                     enabling operators to gain real-time visibility into flow
@@ -138,7 +138,7 @@ function CityGasAdani() {
                   <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                     OUR APPROACH
                   </h1>
-                  <p className="z-20 fontweight_1 text-blackk/60 fontsize_3">
+                  <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">
                     We built a robust data integration layer to connect field
                     sensors and SCADA systems, then developed an intuitive
                     dashboard for monitoring and analysis. The application
@@ -160,7 +160,7 @@ function CityGasAdani() {
                   <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                     OUTCOMES
                   </h1>
-                  <p className="z-20 fontweight_1 text-blackk/60 fontsize_3">
+                  <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">
                     The platform significantly improved operational visibility
                     and safety compliance for Adani Gas. Real-time monitoring
                     and automated fault detection reduced response times, while
@@ -182,7 +182,7 @@ function CityGasAdani() {
             <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
               01
             </h1>
-            <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
               Delivered a real-time gas distribution monitoring dashboard
               covering pressure, flow, and safety metrics across the network
             </p>
@@ -191,7 +191,7 @@ function CityGasAdani() {
             <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
               02
             </h1>
-            <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
               Automated fault detection and alerting reduced incident response
               time significantly
             </p>
@@ -200,7 +200,7 @@ function CityGasAdani() {
             <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
               03
             </h1>
-            <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
               Integrated analytics and reporting tools improved regulatory
               compliance and operational decision-making
             </p>
@@ -209,7 +209,7 @@ function CityGasAdani() {
             <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
               04
             </h1>
-            <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
               Enhanced network-wide visibility resulting in improved safety
               standards and distribution efficiency for Adani Gas
             </p>
@@ -224,3 +224,4 @@ function CityGasAdani() {
 }
 
 export default CityGasAdani;
+

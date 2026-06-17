@@ -120,7 +120,7 @@ export default function Hospitality() {
                     </div>
 
                     <div className={styles.mainImageBox}>
-                        <img className={styles.mainImage} src={mainImg} alt="" />
+                        <img className={styles.mainImage} src={mainImg} alt="EICE hospitality management software hero" />
                         <div>
 
                             <img src="" alt="" />
@@ -159,7 +159,7 @@ export default function Hospitality() {
                                     </div>
 
                                     <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                                        <img style={{ maxWidth: "100%", width: "70%" }} src={item.img} alt="" />
+                                        <img style={{ maxWidth: "100%", width: "70%" }} src={item.img} alt={item.serviceName} />
                                     </div>
                                 </div>
                             </Link>

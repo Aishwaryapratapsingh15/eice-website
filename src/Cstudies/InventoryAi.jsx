@@ -36,20 +36,20 @@ function InventoryAi() {
                     <h2 className="text-blackk  fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-5xl py-1">
                         Revolutionizing Inventory Management with AI: Enhancing Accuracy and Efficiency
                     </h2>
-                    <p className="fontweight_1 max-w-4xl mx-auto  text-blackk/60 fontsize_3 pt-4 px-4">
+                    <p className="fontweight_1 max-w-4xl mx-auto  text-blackk/70 fontsize_3 pt-4 px-4">
                         For our client in the retail sector, we developed an AI-based inventory management system by integrating advanced machine learning algorithms, real-time data analytics, and predictive modeling. This solution ensured precise inventory tracking, optimal stock levels, and efficient supply chain operations.
                     </p>
                     <div className="w-full h-full max-w-7xl mx-auto items-center justify-center pt-12 pb-4 flex flex-row flex-wrap gap-16">
                         <img
                             src={voicecall1}
-                            alt=""
+                            alt="AI-based inventory management system dashboard"
                             className="h-[400px] object-contain rounded-lg"
                         />
                         <div className="relative">
                             <div className="w-full h-full absolute bg-bloo/10  rounded-lg"></div>
                             <img
                                 src={inventryAi}
-                                alt=""
+                                alt="AI inventory management system — stock tracking visualization"
                                 className="h-[400px] z-20 object-contain"
                             />
                         </div>
@@ -64,7 +64,7 @@ function InventoryAi() {
                             <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
                                 01
                             </h1>
-                            <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+                            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                                 {" "}
                                 Developed accurate demand forecasting to accommodate seasonal variations and unexpected changes in consumer behavior.
                             </p>
@@ -73,7 +73,7 @@ function InventoryAi() {
                             <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
                                 02
                             </h1>
-                            <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+                            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                                 Ensured accurate, real-time visibility into inventory levels across various locations and platforms.
                             </p>
                         </div>
@@ -81,7 +81,7 @@ function InventoryAi() {
                             <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
                                 03
                             </h1>
-                            <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+                            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                                 Created algorithms to balance inventory levels effectively, minimizing both excess stock and stockouts.
                             </p>
                         </div>
@@ -89,7 +89,7 @@ function InventoryAi() {
                             <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
                                 04
                             </h1>
-                            <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+                            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                                 Unified data from multiple sources, including suppliers, warehouses, and sales channels, to create a coherent inventory management system.
                             </p>
                         </div>
@@ -97,7 +97,7 @@ function InventoryAi() {
                             <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
                                 05
                             </h1>
-                            <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+                            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                                 Ensured the AI system-maintained accuracy and reliability as inventory levels and market conditions evolved.
                             </p>
                         </div>
@@ -110,7 +110,7 @@ function InventoryAi() {
                         About Our Client
                     </h1>
                     <h2 className="text-blackk  fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1"></h2>
-                    <p className="fontweight_1 text-blackk/60 fontsize_3 pt-4">
+                    <p className="fontweight_1 text-blackk/70 fontsize_3 pt-4">
                         Our client is a leading IT consulting company operating
                         internationally, renowned for delivering innovative technology
                         solutions. They specialize in digital transformation, cloud
@@ -141,7 +141,7 @@ function InventoryAi() {
                                     <h1 className="text-blackk fontweight_1 text-xl  pb-3 sm:text-2xl">
                                         IDEATION
                                     </h1>
-                                    <p className="z-20 fontweight_1 text-blackk/60 fontsize_3">
+                                    <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">
                                         Our client aimed to enhance their inventory management processes to achieve greater accuracy, efficiency, and cost-effectiveness. Recognizing the potential of AI, we envisioned a solution that could automate inventory tracking, optimize stock levels, and streamline supply chain operations. We created an AI-based inventory management system that uses machine learning for demand forecasting, real-time analytics for inventory tracking, and predictive modeling for optimized stock management. Our mission was to AUTOMATE, OPTIMIZE & GROW their inventory processes, driving operational excellence and sustainable growth
                                     </p>
                                 </div>
@@ -165,7 +165,7 @@ function InventoryAi() {
                                     <h1 className="text-blackk fontweight_1 text-xl  pb-3 sm:text-2xl">
                                         OUR APPROACH
                                     </h1>
-                                    <p className="z-20 fontweight_1 text-blackk/60 fontsize_3">
+                                    <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">
                                         We employed a multi-phase approach, beginning with research and development to create an AI framework tailored to the client’s needs. The system handles real-time inventory tracking, using predictive analytics for demand forecasting and machine learning for optimizing reorder points. We emphasized customization, scalability, and seamless integration to align with the client’s existing infrastructure. Our core mission was to AUTOMATE, OPTIMIZE & GROW their inventory management processes.
                                     </p>
                                 </div>
@@ -184,7 +184,7 @@ function InventoryAi() {
                                     <h1 className="text-blackk fontweight_1 text-xl  pb-3 sm:text-2xl">
                                         OUTCOMES
                                     </h1>
-                                    <p className="z-20 fontweight_1 text-blackk/60 fontsize_3">
+                                    <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">
                                         The AI-based inventory management system significantly improved operational efficiency and inventory accuracy. The client experienced reduced stockouts and overstock situations due to precise demand forecasting and optimized reorder points. The scalable system managed inventory across multiple locations and channels without additional manual effort. Its integration capabilities ensured smooth incorporation into existing workflows, and real-time analytics provided actionable insights for better decision-making.
                                     </p>
                                 </div>
@@ -202,7 +202,7 @@ function InventoryAi() {
                         <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
                             01
                         </h1>
-                        <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+                        <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                             Enhanced Inventory Accuracy: The AI system’s precise demand forecasting and real-time tracking reduced errors and discrepancies in inventory levels.
                         </p>
                     </div>
@@ -210,7 +210,7 @@ function InventoryAi() {
                         <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
                             02
                         </h1>
-                        <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+                        <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                             Improved Operational Efficiency: Automation of inventory management processes minimized manual effort and operational burdens, allowing staff to focus on strategic activities.
                         </p>
                     </div>
@@ -218,7 +218,7 @@ function InventoryAi() {
                         <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
                             03
                         </h1>
-                        <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+                        <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                             Cost Savings: The optimized reorder points and reduced stockouts led to significant cost savings by preventing excess inventory and lost sales.
                         </p>
                     </div>
@@ -226,7 +226,7 @@ function InventoryAi() {
                         <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
                             04
                         </h1>
-                        <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+                        <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                             Dynamic Scalability: The solution effectively managed inventory across multiple locations and sales channels, scaling seamlessly with the client’s growth and seasonal fluctuations.
                         </p>
                     </div>
@@ -234,7 +234,7 @@ function InventoryAi() {
                         <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
                             05
                         </h1>
-                        <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+                        <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                             Advanced Analytics and Insights: Comprehensive data analysis and predictive modeling provided valuable insights, driving continuous improvement and strategic decision-making.
                         </p>
                     </div>
@@ -262,7 +262,7 @@ function InventoryAi() {
                                     <h3 className="fontweight_1 text-sm sm:text-base md:text-lg mb-1 sm:mb-2">
                                         PetroSIM
                                     </h3>
-                                    <p className=" text-blackk/60 fontsize_3 fontweight_1 text-left">
+                                    <p className=" text-blackk/70 fontsize_3 fontweight_1 text-left">
                                         Product Quality Assurance for Refinery Simulation Tool
                                     </p>
                                 </div>
@@ -283,7 +283,7 @@ function InventoryAi() {
                                     <h3 className="fontweight_1 text-sm sm:text-base md:text-lg mb-1 sm:mb-2">
                                         RE.LI Monitor
                                     </h3>
-                                    <p className=" text-blackk/60 fontsize_3 fontweight_1 text-left">
+                                    <p className=" text-blackk/70 fontsize_3 fontweight_1 text-left">
                                         Developed a Real Time Sensor monitoring tool using SCADA
                                     </p>
                                 </div>
@@ -304,7 +304,7 @@ function InventoryAi() {
                                     <h3 className="fontweight_1 text-sm sm:text-base md:text-lg mb-1 sm:mb-2">
                                         ESPCT Quote
                                     </h3>
-                                    <p className=" text-blackk/60 fontsize_3 fontweight_1 text-left">
+                                    <p className=" text-blackk/70 fontsize_3 fontweight_1 text-left">
                                         Web Based Sales and Quotation Tool
                                     </p>
                                 </div>
@@ -321,3 +321,4 @@ function InventoryAi() {
 }
 
 export default InventoryAi;
+

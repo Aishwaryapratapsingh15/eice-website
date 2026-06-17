@@ -196,7 +196,7 @@ function Saas() {
               <h1 className="text-blackk  fontweight_1 fontsize_6 ">
                 SaaS Development
               </h1>
-              <h2 className="text-blackk/60 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
+              <h2 className="text-blackk/70 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
                 {
                   "Leading SaaS Development Services: Transforming Ideas into Scalable Software Solutions"
                 }
@@ -204,7 +204,7 @@ function Saas() {
             </div>
             <div className="lg:flex hidden items-center justify-end ">
               <div className=" w-3/4">
-                <img src={saas} alt="" className="rounded-full" />
+                <img src={saas} alt="SaaS product development and cloud software services" className="rounded-full" />
               </div>
             </div>
           </div>
@@ -222,7 +222,7 @@ function Saas() {
               </h1>
             </div>
             <div>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 In the ever-evolving digital landscape, Software as a Service
                 (SaaS) has emerged as a dominant model for delivering
                 applications over the internet. By offering scalable,
@@ -230,7 +230,7 @@ function Saas() {
                 businesses to innovate and grow without the complexities of
                 traditional software management.
               </p>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg pt-2">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg pt-2">
                 At EICE Technology we provide comprehensive SaaS development
                 services designed to help you create powerful, user-friendly
                 applications that meet your unique business needs and drive
@@ -256,7 +256,7 @@ function Saas() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl ">
                 CUSTOM SaaS APPLICATION DEVELOPMENT{" "}
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We specialize in custom SaaS application development, handling
                 all stages from concept to deployment. Our solutions are
                 scalable, high-performance, and tailored to your specific
@@ -272,7 +272,7 @@ function Saas() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 SaaS PRODUCT STRATEGY AND CONSULTING
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 Our SaaS product strategy services help define your market
                 position, target audience, and business model with market
                 research, competitive analysis, and growth strategies for SaaS
@@ -288,7 +288,7 @@ function Saas() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 SaaS PLATFORM DESIGN AND ARCHITECTURE
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We design scalable, secure SaaS platform architectures, defining
                 technology stacks, database schemas, and infrastructures for
                 multi-tenancy, high availability, and performance, ensuring
@@ -304,7 +304,7 @@ function Saas() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 SaaS DEVELOPMENT LIFECYCLE MANAGEMENT
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We manage the entire SaaS development lifecycle, from planning
                 and development to testing, deployment, and maintenance, using
                 Agile methods for iterative development and timely feature
@@ -320,7 +320,7 @@ function Saas() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 SaaS INTEGRATION SERVICES
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We offer SaaS integration services to connect your application
                 with APIs, payment gateways, and CRM systems, enhancing
                 functionality, streamlining processes, and creating a cohesive
@@ -336,7 +336,7 @@ function Saas() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 SaaS MIGRATION SERVICES
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We offer SaaS migration services for transitioning from
                 on-premises solutions to the cloud or between platforms,
                 including data migration, re-architecture, and testing for
@@ -358,3 +358,4 @@ function Saas() {
 }
 
 export default Saas;
+

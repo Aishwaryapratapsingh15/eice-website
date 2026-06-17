@@ -188,7 +188,7 @@ function Uiux() {
               <h1 className="text-blackk  fontweight_1 fontsize_6 ">
                 UI/UX Services
               </h1>
-              <h2 className="text-blackk/60 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
+              <h2 className="text-blackk/70 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
                 {
                   "Comprehensive UI/UX Consulting Services Enhancing User Experience and Engagement"
                 }
@@ -196,7 +196,7 @@ function Uiux() {
             </div>
             <div className="lg:flex hidden items-center justify-end ">
               <div className=" w-1/2">
-                <img src={uiux} alt="" className="rounded-full" />
+                <img src={uiux} alt="UI/UX design and consulting services" className="rounded-full" />
               </div>
             </div>
           </div>
@@ -213,7 +213,7 @@ function Uiux() {
               </h1>
             </div>
             <div>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg">
                 In today’s competitive digital landscape, delivering exceptional
                 user experiences is crucial for retaining customers, driving
                 engagement, and achieving business success. UI/UX consulting
@@ -242,7 +242,7 @@ function Uiux() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl ">
                 UI/UX STRATEGY AND CONSULTING
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We provide expert consulting services to help you develop a
                 robust UI/UX strategy. Our team works closely with you to
                 understand your business objectives, user needs, and market
@@ -258,7 +258,7 @@ function Uiux() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl ">
                 USER RESEARCH AND ANALYSIS
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We conduct extensive user research and analysis to gain deep
                 insights into user behavior, preferences, and pain points. Our
                 methods include surveys, interviews, usability testing, and
@@ -274,7 +274,7 @@ function Uiux() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 INFORMATION ARCHITECTURE
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We design clear and intuitive information architectures that
                 organize content logically, making it easy for users to find
                 information and navigate your digital products. Our approach
@@ -290,7 +290,7 @@ function Uiux() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 WIREFRAMING AND PROTOTYPING
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We create detailed wireframes and interactive prototypes to
                 visualize the structure and functionality of your digital
                 products. This allows for early testing and feedback, ensuring
@@ -307,7 +307,7 @@ function Uiux() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 UI / UX AUDITS AND REVIEWS
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We conduct detailed UI/UX audits and reviews to assess the
                 current state of your digital products. Our evaluations identify
                 areas for improvement and provide strategic recommendations to
@@ -323,7 +323,7 @@ function Uiux() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 CONTINUOUS IMPROVEMENT AND SUPPORT
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We offer ongoing support and continuous improvement services to
                 ensure that your UI/UX design evolves with user needs and market
                 trends. Our team provides regular updates, enhancements, and
@@ -345,3 +345,4 @@ function Uiux() {
 }
 
 export default Uiux;
+

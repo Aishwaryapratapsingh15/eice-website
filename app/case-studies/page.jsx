@@ -1,15 +1,16 @@
-﻿import Cstdmain from "../../src/Cstudies/Cstdmain";
+import Cstdmain from "../../src/Cstudies/Cstdmain";
 import ProductFooter from "../../src/Product/ProductFooter";
 import Copyright from "../../src/Othercomps/Copyright";
 
 export const metadata = {
   title: "Case Studies | IT Project Success Stories | EICE Technology",
   description: "Explore EICE Technology's portfolio of 180+ successful IT projects through detailed case studies across oil & gas, healthcare, finance, and more.",
+  keywords: ["IT case studies", "software project portfolio", "digital transformation success stories", "EICE Technology projects", "IT success stories"],
   openGraph: { title: "Case Studies | EICE Technology", description: "180+ successful IT project case studies from EICE Technology.", url: "https://www.eicetechnology.com/case-studies", siteName: "EICE Technology",
-    images: [{ url: "/assets/Compressed/casestudy.png", width: 1200, height: 630, alt: "EICE Technology" }], type: "website" },
+    images: [{ url: "https://d3r43jacxrwsrp.cloudfront.net/Compressed/casestudy.png", width: 1200, height: 630, alt: "EICE Technology" }], type: "website" },
   twitter: { card: "summary_large_image", title: "Case Studies | EICE Technology" ,
-    images: ["/assets/Compressed/casestudy.png"]},
-  alternates: { canonical: "https://www.eicetechnology.com/case-studies" },
+    images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/casestudy.png"]},
+  alternates: { canonical: "https://www.eicetechnology.com/case-studies/", languages: { "en-IN": "https://www.eicetechnology.com/case-studies/", "en-US": "https://www.eicetechnology.com/case-studies/", "x-default": "https://www.eicetechnology.com/case-studies/" } },
 };
 
 export default function Page() {

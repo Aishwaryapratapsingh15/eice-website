@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import Footer from "../Othercomps/Footer";
 import ProductFooter from "/src/Product/ProductFooter";
 import Copyright from "../Othercomps/Copyright";
@@ -17,7 +17,7 @@ function DataManagement() {
           <h2 className="text-blackk fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
             An Integrated Exploration &amp; Production Data Management System
           </h2>
-          <p className="fontweight_1 max-w-4xl mx-auto text-blackk/60 fontsize_3 pt-4 px-4">
+          <p className="fontweight_1 max-w-4xl mx-auto text-blackk/70 fontsize_3 pt-4 px-4">
             A comprehensive GIS-based data management platform for the
             exploration and production sector, centralizing subsurface,
             operational, and geospatial data to improve decision-making and
@@ -37,7 +37,7 @@ function DataManagement() {
               <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
                 01
               </h1>
-              <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                 Consolidating disparate exploration and production data from
                 multiple sources into a single unified system
               </p>
@@ -46,7 +46,7 @@ function DataManagement() {
               <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
                 02
               </h1>
-              <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                 Integrating GIS mapping capabilities with subsurface and
                 production datasets for spatial analysis
               </p>
@@ -55,7 +55,7 @@ function DataManagement() {
               <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
                 03
               </h1>
-              <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                 Ensuring data integrity and version control across a large
                 volume of geoscience and engineering records
               </p>
@@ -64,7 +64,7 @@ function DataManagement() {
               <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
                 04
               </h1>
-              <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                 Enabling multi-user access with role-based permissions across
                 geographically distributed teams
               </p>
@@ -73,7 +73,7 @@ function DataManagement() {
               <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
                 05
               </h1>
-              <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                 Providing fast querying and visualization of large geospatial
                 and time-series datasets
               </p>
@@ -89,7 +89,7 @@ function DataManagement() {
           <h2 className="text-blackk fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
             Integrated E&amp;P Data Platform
           </h2>
-          <p className="fontweight_1 text-blackk/60 fontsize_3 pt-4">
+          <p className="fontweight_1 text-blackk/70 fontsize_3 pt-4">
             The client operates across multiple exploration blocks and required
             a centralized system to manage well data, seismic surveys,
             production records, and field maps. The platform needed to support
@@ -116,7 +116,7 @@ function DataManagement() {
                   <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                     IDEATION:
                   </h1>
-                  <p className="z-20 fontweight_1 text-blackk/60 fontsize_3">
+                  <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">
                     We conceived a GIS-first data management architecture that
                     places spatial context at the centre of all exploration and
                     production data, making it easy to correlate well locations,
@@ -137,7 +137,7 @@ function DataManagement() {
                   <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                     OUR APPROACH
                   </h1>
-                  <p className="z-20 fontweight_1 text-blackk/60 fontsize_3">
+                  <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">
                     We built a layered data integration framework connecting
                     existing databases, field instruments, and document
                     repositories into a unified GIS platform. Role-based access
@@ -158,7 +158,7 @@ function DataManagement() {
                   <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                     OUTCOMES
                   </h1>
-                  <p className="z-20 fontweight_1 text-blackk/60 fontsize_3">
+                  <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">
                     The platform gave teams a single source of truth for all
                     E&amp;P data, reducing time spent searching and reconciling
                     records. GIS-based visualizations improved spatial
@@ -180,7 +180,7 @@ function DataManagement() {
             <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
               01
             </h1>
-            <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
               Delivered a unified GIS-integrated platform consolidating well,
               seismic, and production data across all exploration blocks
             </p>
@@ -189,7 +189,7 @@ function DataManagement() {
             <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
               02
             </h1>
-            <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
               Implemented role-based access and audit trails ensuring data
               integrity and compliance with regulatory requirements
             </p>
@@ -198,7 +198,7 @@ function DataManagement() {
             <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
               03
             </h1>
-            <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
               Reduced data retrieval and reporting time significantly through
               centralised search and spatial querying tools
             </p>
@@ -207,7 +207,7 @@ function DataManagement() {
             <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
               04
             </h1>
-            <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
               Enabled collaborative multi-user workflows across distributed
               geoscience and engineering teams
             </p>
@@ -222,3 +222,4 @@ function DataManagement() {
 }
 
 export default DataManagement;
+

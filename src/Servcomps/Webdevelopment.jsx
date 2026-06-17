@@ -198,7 +198,7 @@ function Webdevelopment() {
               <h1 className="text-blackk  fontweight_1 fontsize_6 ">
                 Web App Development
               </h1>
-              <h2 className="text-blackk/60 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
+              <h2 className="text-blackk/70 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
                 {
                   "Cutting-Edge Web App Development Services Transforming Ideas into High-Impact Digital Solutions"
                 }
@@ -206,7 +206,7 @@ function Webdevelopment() {
             </div>
             <div className="lg:flex hidden items-center justify-end ">
               <div className="lg:w-7/12 w-1/2">
-                <img src={web} alt="" className="rounded-full" />
+                <img src={web} alt="Web application development services" className="rounded-full" />
               </div>
             </div>
           </div>
@@ -224,7 +224,7 @@ function Webdevelopment() {
               </h1>
             </div>
             <div>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 In an era where digital presence is crucial for business
                 success, web applications have become a key component of a
                 company's strategy. A well-designed web app can drive user
@@ -256,7 +256,7 @@ function Webdevelopment() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl ">
                 CUSTOM WEB APP DEVELOPMENT
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We build custom web applications tailored to your needs, from
                 vision to deployment, covering design, development, and
                 integration to create unique, goal-oriented solutions for a
@@ -272,7 +272,7 @@ function Webdevelopment() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 E-COMMERCE WEB APP DEVELOPMENT
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 In the competitive e-commerce landscape, we create
                 user-friendly, feature-rich online stores with appealing
                 storefronts, secure payment gateways, and advanced management
@@ -288,7 +288,7 @@ function Webdevelopment() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 PROGRESSIVE WEB APP (PWA) DEVELOPMENT
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We develop Progressive Web Apps (PWAs) that blend web and mobile
                 features for a fast, reliable, engaging experience, with offline
                 capabilities, push notifications, and cross-platform
@@ -304,7 +304,7 @@ function Webdevelopment() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 WEB APP DESIGN AND UX
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 A great web app begins with exceptional design. Our team creates
                 intuitive, visually appealing interfaces that enhance user
                 engagement, ensuring easy navigation and a seamless experience
@@ -320,7 +320,7 @@ function Webdevelopment() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 MAINTENANCE AND SUPPORT
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 Post-launch maintenance ensures your web app's success. We offer
                 updates, bug fixes, performance optimization, and support to
                 keep your app secure, efficient, and current with industry
@@ -336,7 +336,7 @@ function Webdevelopment() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 INTEGRATION AND MIGRATION SERVICES
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We integrate web apps with APIs for payment gateways, CRM, and
                 social media, while offering expert migration services for
                 smooth transitions to new platforms, servers, or the cloud.{" "}
@@ -356,3 +356,4 @@ function Webdevelopment() {
 }
 
 export default Webdevelopment;
+

@@ -257,7 +257,7 @@ function Oilandgas() {
         <div className="sm:max-w-7xl 2xl:pt-12 pt-32 xl:pb-12 pb-4 px-4 w-screen mx-auto grid ">
           <img
             src={oilandgas_img}
-            alt=""
+            alt="Oil and gas industry digital solutions"
             className="object-cover w-full px-2"
           />
           {/* <img src={healthrect2} alt="" />
@@ -268,7 +268,7 @@ function Oilandgas() {
             Pioneering <span className="text-bloo">the Future</span> of Oil and
             Gas with State-of-the-Art Solutions
           </h1>
-          <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+          <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
             EICE Technology offers specialized software solutions for the oil
             and gas industry, addressing its unique needs. Our solutions include
             reservoir management for optimal resource recovery, drilling
@@ -349,7 +349,7 @@ function Oilandgas() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 Needs Assessment and Planning
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 We start by identifying your unique challenges and requirements
                 through a thorough analysis to design software solutions
                 tailored for operational efficiency and sustainability.
@@ -365,7 +365,7 @@ function Oilandgas() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 Solution Design and Development
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 Our experts design and develop cutting-edge software solutions
                 that integrate advanced technologies to address your
                 exploration, production, and management needs effectively.
@@ -381,7 +381,7 @@ function Oilandgas() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 Implementation and Integration
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 We handle the deployment and integration of the software into
                 your existing systems, ensuring a smooth transition and seamless
                 operations from day one. .
@@ -397,7 +397,7 @@ function Oilandgas() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 Testing and Quality Assurance
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 We conduct extensive testing to ensure our software solutions
                 meet all functional requirements, regulatory standards, and
                 industry best practices for optimal performance.
@@ -413,7 +413,7 @@ function Oilandgas() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 Training and Support
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 We provide detailed training for your team and offer continuous
                 support to address any issues, ensuring that you maximize the
                 benefits of our software solutions
@@ -430,7 +430,7 @@ function Oilandgas() {
                 {" "}
                 Monitoring and Optimization
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 We continuously monitor the software’s performance, gather
                 feedback, and implement updates to optimize efficiency, safety,
                 and sustainability in your oil and gas operations
@@ -450,3 +450,4 @@ function Oilandgas() {
 }
 
 export default Oilandgas;
+

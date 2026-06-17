@@ -255,7 +255,7 @@ function Legal() {
         <div className="sm:max-w-7xl 2xl:pt-12 pt-32 xl:pb-12 pb-4 px-4 w-screen mx-auto grid">
           <img
             src={financial_img}
-            alt=""
+            alt="Financial services technology solutions"
             className="w-full object-cover px-2"
           />
           {/* <img src={healthrect2} alt="" />
@@ -267,7 +267,7 @@ function Legal() {
             <span className="text-bloo">Financial Services </span> Through
             Advanced Technology Solutions
           </h1>
-          <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+          <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
             EICE Technology, we specialize in transforming financial services
             through innovative technology solutions. Our mission is to deliver
             cutting-edge software solutions that enhance operational efficiency,
@@ -346,7 +346,7 @@ function Legal() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 Enhanced Team Collaboration
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 We enable seamless communication among financial advisors,
                 clients, and support teams with integrated tools and shared
                 insights, fostering effective collaboration for exceptional
@@ -363,7 +363,7 @@ function Legal() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 Efficient Operations Management
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 Our software solutions automate and streamline operational tasks
                 in financial institutions, including client onboarding, KYC
                 procedures, compliance checks, and regulatory reporting for
@@ -380,7 +380,7 @@ function Legal() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 Secure and Scalable Infrastructure
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 Security and scalability are critical in finance. We ensure
                 robust measures like data encryption, strict access controls,
                 and compliance with regulations for protecting financial data
@@ -401,3 +401,4 @@ function Legal() {
 }
 
 export default Legal;
+

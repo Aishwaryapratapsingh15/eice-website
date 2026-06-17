@@ -1,5 +1,5 @@
 ﻿"use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "/src/nextNavigation";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 const genai = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/genai.png";
@@ -20,7 +20,7 @@ function Big() {
                 {/* Transforming your Business through */}
                 {/* <span className="text-bloo font-semibold block mt-2">Generative AI</span> */}
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg">
                 As a focused AI development company, we leverage models like
                 GANs and GPT-3. Our expertise transforms data into innovative
                 solutions, enhancing business capabilities and driving
@@ -61,7 +61,7 @@ function Big() {
                 Accelerate innovation with{" "}
                 <span className="text-bloo">DevOps</span>
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg">
                 As a top DevOps development firm, we specialize in optimizing
                 your business's infrastructure and operations. Our customized
                 DevOps solutions empower business owners to lead, thrive, and
@@ -84,7 +84,7 @@ function Big() {
               <img
                 className="w-full max-w-md rounded-lg scale-[.8]"
                 src={devops}
-                alt="Generative AI"
+                alt="DevOps solutions for accelerated innovation"
               />
             </div>
           </div>
@@ -102,7 +102,7 @@ function Big() {
                 Transform your Business with{" "}
                 <span className="text-bloo">Digital Solutions</span>
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg">
                 As the digital landscape evolves, businesses need effective
                 strategies. We offer tailored digital transformation services,
                 using our expertise to drive innovation, enhance efficiency, and
@@ -125,7 +125,7 @@ function Big() {
               <img
                 className="w-full max-w-md rounded-lg"
                 src={digitrans}
-                alt="Generative AI"
+                alt="Digital transformation solutions for business growth"
               />
             </div>
           </div>
@@ -136,6 +136,7 @@ function Big() {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const touchStartX = useRef(null);
 
   const prevSlide = () => {
     setCurrentIndex((prevIndex) =>
@@ -154,8 +155,22 @@ function Big() {
     return () => clearInterval(interval);
   });
 
+  const handleTouchStart = (e) => { touchStartX.current = e.touches[0].clientX; };
+  const handleTouchEnd = (e) => {
+    if (touchStartX.current === null) return;
+    const diff = touchStartX.current - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) { if (diff > 0) nextSlide(); else prevSlide(); }
+    touchStartX.current = null;
+  };
+
   return (
-    <div className="relative overflow-hidden font-manrope mt-24 text-blackk pb-4">
+    <div
+      className="relative overflow-hidden font-manrope mt-24 text-blackk pb-4"
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+      role="region"
+      aria-label="Hero carousel — swipe or use arrow keys"
+    >
       <div  className="  absolute inset-0 bg-bannerbg bg-cover bg-center bg-blend-overlay"></div>
       <div className="relative z-10 ">
         <div className=" mx-auto px-4 sm:px-2 xl:px-8">
@@ -167,8 +182,10 @@ function Big() {
           <div className="flex justify-center mt-12">
             <div className="flex space-x-4">
               {slides.map((_, index) => (
-                <button aria-label="slide button"
+                <button
                   key={index}
+                  aria-label={`Go to slide ${index + 1}`}
+                  aria-current={currentIndex === index ? "true" : undefined}
                   onClick={() => setCurrentIndex(index)}
                   className={`w-6 h-2 rounded-full ${
                     currentIndex === index ? "bg-blue-900" : "bg-bloo/20"
@@ -200,3 +217,4 @@ function Big() {
 }
 
 export default Big;
+

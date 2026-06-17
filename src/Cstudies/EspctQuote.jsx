@@ -21,7 +21,7 @@ function EspctQuote() {
           <h2 className="text-blackk  fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
             A Sales and Quotation Tool
           </h2>
-          <p className="fontweight_1 max-w-4xl mx-auto  text-blackk/60 fontsize_3 pt-4 px-4">
+          <p className="fontweight_1 max-w-4xl mx-auto  text-blackk/70 fontsize_3 pt-4 px-4">
             A web-based sales automation and quotation tool for engineering
             products, offering customizable configurations, admin-assisted
             optimization, and interactive user support.
@@ -29,12 +29,12 @@ function EspctQuote() {
           <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
             <img
               src={espctquote1}
-              alt=""
+              alt="ESPCT Quote sales quotation tool — product configuration screen"
               className="w-full h-full object-fit"
             />
             <img
               src={espctquote2}
-              alt=""
+              alt="ESPCT Quote sales quotation tool — quote generation interface"
               className="w-full h-full object-fit"
             />
           </div>
@@ -48,7 +48,7 @@ function EspctQuote() {
               <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
                 01
               </h1>
-              <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                 Developing a user-friendly web interface for complex engineering
                 product configurations
               </p>
@@ -57,7 +57,7 @@ function EspctQuote() {
               <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
                 02
               </h1>
-              <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                 Integrating admin support for optimal assembly suggestions and
                 quotations
               </p>
@@ -66,7 +66,7 @@ function EspctQuote() {
               <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
                 03
               </h1>
-              <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                 Implementing a system for real-time user-admin communication
               </p>
             </div>
@@ -74,7 +74,7 @@ function EspctQuote() {
               <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
                 04
               </h1>
-              <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                 Ensuring accurate and up-to-date product information across
                 various systems and components
               </p>
@@ -83,7 +83,7 @@ function EspctQuote() {
               <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
                 05
               </h1>
-              <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                 Balancing user customization options with admin-guided
                 recommendations
               </p>
@@ -99,7 +99,7 @@ function EspctQuote() {
           <h2 className="text-blackk  fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
             ESPCT : ESP Completion Technologies
           </h2>
-          <p className="fontweight_1 text-blackk/60 fontsize_3 pt-4">
+          <p className="fontweight_1 text-blackk/70 fontsize_3 pt-4">
             ESPCT designs, manufactures and installs proprietary completion
             equipment for electric submersible pump (ESP) systems to meet the
             needs of ESP OEMs and E&P operators. ESPCT is headquartered in
@@ -128,7 +128,7 @@ function EspctQuote() {
                   <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                     IDEATION:
                   </h1>
-                  <p className="z-20 fontweight_1 text-blackk/60 fontsize_3">
+                  <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">
                     We envisioned a comprehensive web-based tool that would
                     simplify the complex process of configuring and quoting
                     engineering products. Our focus was on creating a platform
@@ -149,7 +149,7 @@ function EspctQuote() {
                   <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                     OUR APPROACH
                   </h1>
-                  <p className="z-20 fontweight_1 text-blackk/60 fontsize_3">
+                  <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">
                     We prioritized user experience by developing an intuitive
                     interface that allows for easy product configuration. By
                     integrating admin support, we aimed to provide expert
@@ -174,7 +174,7 @@ function EspctQuote() {
                   <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                     OUTCOMES
                   </h1>
-                  <p className="z-20 fontweight_1 text-blackk/60 fontsize_3">
+                  <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">
                     The ESPCT Quote tool has revolutionized the sales process
                     for engineering products by providing a user-friendly
                     platform for configuration and quotation. Its ability to
@@ -199,7 +199,7 @@ function EspctQuote() {
             <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
               01
             </h1>
-            <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
               Successfully developed a web-based sales and quote tool for
               engineering products
             </p>
@@ -208,7 +208,7 @@ function EspctQuote() {
             <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
               02
             </h1>
-            <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
               Implemented user-configurable options for tools and assemblies
             </p>
           </div>
@@ -216,7 +216,7 @@ function EspctQuote() {
             <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
               03
             </h1>
-            <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
               Integrated admin support for suggesting optimal assemblies and
               providing best quotes
             </p>
@@ -225,7 +225,7 @@ function EspctQuote() {
             <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
               04
             </h1>
-            <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
               Created a review and Q&A system for users to interact with admins
             </p>
           </div>
@@ -233,7 +233,7 @@ function EspctQuote() {
             <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
               05
             </h1>
-            <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
               Streamlined the quotation process for complex engineering systems
             </p>
           </div>
@@ -247,3 +247,4 @@ function EspctQuote() {
 }
 
 export default EspctQuote;
+

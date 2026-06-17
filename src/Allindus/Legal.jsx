@@ -270,7 +270,7 @@ function Legal() {
     <div className="">
       <div className="sm:max-w-7xl w-screen mx-auto pb-8">
         <div className="sm:max-w-7xl 2xl:pt-12 pt-32 xl:pb-12 pb-4 px-4 w-screen mx-auto grid">
-          <img src={legal_img} alt="" className="object-cover w-full px-2" />
+          <img src={legal_img} alt="Legal technology and legaltech solutions" className="object-cover w-full px-2" />
           {/* <img src={healthrect2} alt="" />
           <img src={healthrect3} alt="" /> */}
         </div>
@@ -280,7 +280,7 @@ function Legal() {
             <span className="text-bloo">Legal Software Solutions </span> for a
             Modern Legal Practice
           </h1>
-          <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+          <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
             At EICE Technology, we recognize that the legal industry is evolving
             rapidly, and technology is at the forefront of this transformation.
             Our specialized legal software solutions are designed to streamline
@@ -358,7 +358,7 @@ function Legal() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 Comprehensive Requirements Analysis
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 We conduct detailed analysis to understand your legal practice’s
                 needs, ensuring that our software solutions are tailored to
                 address specific challenges and improve operational efficiency
@@ -374,7 +374,7 @@ function Legal() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 Innovative Design and Prototyping
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 Our team creates user-friendly interfaces and develops
                 prototypes for legal software solutions, incorporating feedback
                 to refine features and ensure they meet the demands of legal
@@ -391,7 +391,7 @@ function Legal() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 Advanced Software Development and Integration
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 We build robust, scalable legal software solutions with a focus
                 on functionality, security, and seamless integration with
                 existing systems for effective legal practice management. 
@@ -407,7 +407,7 @@ function Legal() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 Rigorous Testing and Quality Assurance
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 We perform thorough testing and quality assurance to ensure that
                 our legal software solutions meet high standards of performance,
                 security, and compliance before deployment.
@@ -423,7 +423,7 @@ function Legal() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 Seamless Deployment and Implementation
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 Our team manages the deployment of legal software solutions,
                 providing training and support for a smooth transition and
                 ensuring that users can effectively adopt and utilize the new
@@ -440,7 +440,7 @@ function Legal() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 Ongoing Maintenance and Support
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 We offer continuous maintenance and support services, including
                 updates, bug fixes, and performance improvements to keep your
                 legal software solutions up-to-date and responsive to evolving
@@ -461,3 +461,4 @@ function Legal() {
 }
 
 export default Legal;
+

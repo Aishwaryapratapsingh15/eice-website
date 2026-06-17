@@ -1,7 +1,7 @@
-﻿"use client";
+"use client";
 
 /* eslint-disable react/prop-types */
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 const productBgImage = "https://d3r43jacxrwsrp.cloudfront.net/product-carousel/products-background.png";
 import { useNavigate } from "/src/nextNavigation";
 
@@ -9,6 +9,30 @@ export default function ProductCarousel({ slides = [] }) {
   const [current, setCurrent] = useState(1);
   const [transition, setTransition] = useState(true);
   const navigate = useNavigate();
+
+  const touchStartX = useRef(null);
+
+  const goToPrev = () => setCurrent((prev) => prev - 1);
+  const goToNext = () => setCurrent((prev) => prev + 1);
+
+  const handleKeyDown = (e) => {
+    if (e.key === "ArrowLeft") goToPrev();
+    if (e.key === "ArrowRight") goToNext();
+  };
+
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = (e) => {
+    if (touchStartX.current === null) return;
+    const diff = touchStartX.current - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) goToNext();
+      else goToPrev();
+    }
+    touchStartX.current = null;
+  };
 
   //  clone slides
   const extendedSlides = [
@@ -28,13 +52,13 @@ export default function ProductCarousel({ slides = [] }) {
     return () => clearInterval(interval);
   }, [slides.length]);
 
-  // ✅ handle seamless loop
+  // handle seamless loop
   useEffect(() => {
     if (current === extendedSlides.length - 1) {
       setTimeout(() => {
         setTransition(false);
         setCurrent(1);
-      }, 1000); // match duration
+      }, 1000);
     }
 
     if (current === 0) {
@@ -44,7 +68,6 @@ export default function ProductCarousel({ slides = [] }) {
       }, 1000);
     }
 
-    // re-enable transition
     setTimeout(() => setTransition(true), 50);
   }, [current]);
 
@@ -52,11 +75,24 @@ export default function ProductCarousel({ slides = [] }) {
     return <div className="text-center py-20">No products available</div>;
   }
 
+  const liveIndex = Math.max(0, current - 1) % slides.length;
+  const liveSlide = slides[liveIndex];
+
   return (
     <section
       className="py-10 bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: `url(${productBgImage})` }}
+      onKeyDown={handleKeyDown}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+      tabIndex={0}
+      role="region"
+      aria-label="Product showcase — swipe or use arrow keys to navigate"
     >
+      <div aria-live="polite" aria-atomic="true" className="sr-only">
+        Product {liveIndex + 1} of {slides.length}: {liveSlide?.title}
+      </div>
+
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-10 lg:px-20">
 
         {/* Heading */}
@@ -87,7 +123,7 @@ export default function ProductCarousel({ slides = [] }) {
                   <div className="w-full max-w-[500px] h-[220px] sm:h-[260px] md:h-[300px] flex items-center justify-center">
                     <img
                       src={slide.image}
-                      alt="product"
+                      alt={slide.title ? `${slide.title} product screenshot` : ""}
                       className="max-w-full max-h-full object-contain"
                     />
                   </div>
@@ -104,7 +140,7 @@ export default function ProductCarousel({ slides = [] }) {
                       <span key={i} className="flex items-center gap-2">
                         {tag}
                         {i !== slide.tags.length - 1 && (
-                          <span className="text-gray-700 text-3xl">•</span>
+                          <span className="text-gray-700 text-3xl" aria-hidden="true">•</span>
                         )}
                       </span>
                     ))}
@@ -120,10 +156,13 @@ export default function ProductCarousel({ slides = [] }) {
         </div>
 
         {/* DOTS */}
-        <div className="flex justify-center mt-8 md:mt-10 gap-2 sm:gap-3">
-          {slides.map((_, i) => (
+        <div className="flex justify-center mt-8 md:mt-10 gap-2 sm:gap-3" role="tablist" aria-label="Product slides">
+          {slides.map((slide, i) => (
             <button
               key={i}
+              role="tab"
+              aria-selected={current - 1 === i}
+              aria-label={`Go to ${slide.title}`}
               onClick={() => setCurrent(i + 1)}
               className={`w-3 h-3 rounded-full ${
                 current - 1 === i ? "bg-[#1f3b82]" : "bg-gray-300"

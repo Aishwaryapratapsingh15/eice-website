@@ -216,11 +216,22 @@ export default function EiceOps() {
           </p> */}
 
           <p className="mt-6 max-w-4xl mx-auto text-gray-600 text-lg leading-relaxed">
-            EICE Ops is EICE Technology's ITIL 4-aligned help desk management platform, designed to bring complete 
-accountability to every ticket lifecycle. Built for IT service teams that take SLAs seriously, EICEOps eliminates 
-missed escalations, ensures structured communication, and gives managers full visibility into team performance 
+            EICE Ops is EICE Technology's ITIL 4-aligned help desk management platform, designed to bring complete
+accountability to every ticket lifecycle. Built for IT service teams that take SLAs seriously, EICEOps eliminates
+missed escalations, ensures structured communication, and gives managers full visibility into team performance
 — all in a single, configurable platform.
           </p>
+
+          {/* CTA */}
+          <div className="mt-10">
+            <button
+              onClick={() => navigate("/products/eice-rise/form")}
+              className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto text-[18px] hover:bg-blue-800 transition"
+            >
+              Request a Demo
+              <img src={arrowIcon} alt="arrow" />
+            </button>
+          </div>
         </div>
       </section>
 
@@ -421,7 +432,7 @@ missed escalations, ensures structured communication, and gives managers full vi
         </p>
     
             <button
-              onClick={() => navigate("/products/form?embed=true&product=EiceVoice")}
+              onClick={() => navigate("/products/eice-rise/form")}
               className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto text-[18px] hover:bg-blue-800"
             >
               Request a Demo

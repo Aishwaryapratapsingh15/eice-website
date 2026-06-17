@@ -183,7 +183,7 @@ function Android() {
               <h1 className="text-blackk  fontweight_1 fontsize_6 ">
                 App Development
               </h1>
-              <h2 className="text-blackk/60 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
+              <h2 className="text-blackk/70 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
                 {
                   "Comprehensive App Development Services Unlocking Your Digital Potential"
                 }
@@ -191,7 +191,7 @@ function Android() {
             </div>
             <div className="lg:flex hidden items-center justify-end ">
               <div className=" w-1/2">
-                <img src={app} alt="" className="rounded-full" />
+                <img src={app} alt="Mobile and desktop app development services" className="rounded-full" />
               </div>
             </div>
           </div>
@@ -208,14 +208,14 @@ function Android() {
               </h1>
             </div>
             <div>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 EICE Technology specialize in delivering comprehensive mobile
                 and desktop app development services designed to transform your
                 ideas into innovative and user-centric applications. Our team of
                 experts provides end-to-end solutions, including strategic
                 design, robust development, and ongoing maintenance and support.
               </p>
-              <p className="py-2 font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="py-2 font-medium text-blackk/70 sm:text-xl text-lg ">
                 We cater to a broad range of platforms, including iOS, Android,
                 Windows, and macOS, ensuring that your app achieves optimal
                 performance and meets your specific business objectives. Partner
@@ -242,7 +242,7 @@ function Android() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl ">
                 DIGITAL INNOVATION
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We identify and implement cutting-edge digital solutions to
                 drive innovation and create new value streams for your business.
               </p>
@@ -256,7 +256,7 @@ function Android() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 DATA-DRIVEN INSIGHTS
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We leverage advanced analytics and AI to extract actionable
                 insights, enabling data-driven decision-making across your
                 organization.
@@ -271,7 +271,7 @@ function Android() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 DIGITAL EXPERIENCE DESIGN
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We create seamless, intuitive digital experiences that delight
                 users across all devices and platforms, enhancing customer
                 engagement and loyalty.
@@ -292,3 +292,4 @@ function Android() {
 }
 
 export default Android;
+

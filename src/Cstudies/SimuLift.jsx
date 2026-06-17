@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 import Footer from "../Othercomps/Footer";
 import ProductFooter from "/src/Product/ProductFooter";
 import Copyright from "../Othercomps/Copyright";
@@ -17,7 +17,7 @@ function SimuLift() {
           <h2 className="text-blackk fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
             Quote &amp; Sizing Tools for Artificial Lift Methods
           </h2>
-          <p className="fontweight_1 max-w-4xl mx-auto text-blackk/60 fontsize_3 pt-4 px-4">
+          <p className="fontweight_1 max-w-4xl mx-auto text-blackk/70 fontsize_3 pt-4 px-4">
             SimuLIFT is a specialized engineering tool developed to streamline
             the quote and sizing process for artificial lift methods in the oil
             and gas industry, enabling engineers to quickly evaluate and select
@@ -37,7 +37,7 @@ function SimuLift() {
               <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
                 01
               </h1>
-              <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                 Handling complex engineering calculations for multiple artificial
                 lift methods including ESP, gas lift, and rod pump systems
               </p>
@@ -46,7 +46,7 @@ function SimuLift() {
               <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
                 02
               </h1>
-              <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                 Generating accurate equipment sizing recommendations based on
                 varying well parameters and production targets
               </p>
@@ -55,7 +55,7 @@ function SimuLift() {
               <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
                 03
               </h1>
-              <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                 Automating the quotation process to reduce engineering time and
                 minimize human error in proposal generation
               </p>
@@ -64,7 +64,7 @@ function SimuLift() {
               <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
                 04
               </h1>
-              <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                 Providing a user-friendly interface accessible to field engineers
                 without deep software expertise
               </p>
@@ -73,7 +73,7 @@ function SimuLift() {
               <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
                 05
               </h1>
-              <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                 Ensuring calculation accuracy across a wide range of well
                 conditions and fluid properties
               </p>
@@ -89,7 +89,7 @@ function SimuLift() {
           <h2 className="text-blackk fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
             Oil &amp; Gas Equipment Provider
           </h2>
-          <p className="fontweight_1 text-blackk/60 fontsize_3 pt-4">
+          <p className="fontweight_1 text-blackk/70 fontsize_3 pt-4">
             Our client is a leading supplier of artificial lift equipment and
             engineering solutions for the oil and gas industry. They required a
             streamlined digital tool to accelerate the quoting and sizing
@@ -116,7 +116,7 @@ function SimuLift() {
                   <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                     IDEATION:
                   </h1>
-                  <p className="z-20 fontweight_1 text-blackk/60 fontsize_3">
+                  <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">
                     We envisioned a unified platform where engineers could input
                     well data and instantly receive accurate sizing outputs and
                     formatted quotes for multiple artificial lift methods,
@@ -137,7 +137,7 @@ function SimuLift() {
                   <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                     OUR APPROACH
                   </h1>
-                  <p className="z-20 fontweight_1 text-blackk/60 fontsize_3">
+                  <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">
                     We built a calculation engine incorporating industry-standard
                     sizing algorithms for each lift method, paired with an
                     intuitive input form and automated report generator. The
@@ -159,7 +159,7 @@ function SimuLift() {
                   <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                     OUTCOMES
                   </h1>
-                  <p className="z-20 fontweight_1 text-blackk/60 fontsize_3">
+                  <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">
                     SimuLIFT dramatically reduced the time required to generate
                     engineering quotes and sizing reports. The tool improved
                     proposal accuracy, standardized the quoting process across
@@ -181,7 +181,7 @@ function SimuLift() {
             <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
               01
             </h1>
-            <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
               Developed a fully automated quote and sizing engine supporting
               multiple artificial lift methods within a single platform
             </p>
@@ -190,7 +190,7 @@ function SimuLift() {
             <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
               02
             </h1>
-            <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
               Significantly reduced proposal turnaround time, enabling faster
               and more competitive client responses
             </p>
@@ -199,7 +199,7 @@ function SimuLift() {
             <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
               03
             </h1>
-            <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
               Eliminated manual errors in sizing calculations through built-in
               validation and standardized engineering logic
             </p>
@@ -208,7 +208,7 @@ function SimuLift() {
             <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
               04
             </h1>
-            <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
               Delivered a scalable tool adaptable to new lift methods and
               equipment configurations as the client's product line expands
             </p>
@@ -223,3 +223,4 @@ function SimuLift() {
 }
 
 export default SimuLift;
+

@@ -168,50 +168,63 @@ function ContactForm() {
           <form onSubmit={sendOtp} className="space-y-4">
 
 
-            <input
-              type="text"
-              name="name"
-              value={formValues.name}
-              onChange={handleInputChange}
-              placeholder="Name"
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-bloo"
-              required
-            />
+            <div className="flex flex-col gap-1">
+              <label htmlFor="cf-name" className="text-sm font-medium text-gray-700">Name <span aria-hidden="true">*</span></label>
+              <input
+                id="cf-name"
+                type="text"
+                name="name"
+                value={formValues.name}
+                onChange={handleInputChange}
+                placeholder="Name"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-bloo"
+                required
+              />
+            </div>
 
+            <div className="flex flex-col gap-1">
+              <label htmlFor="cf-email" className="text-sm font-medium text-gray-700">Email <span aria-hidden="true">*</span></label>
+              <input
+                id="cf-email"
+                type="email"
+                name="email"
+                value={formValues.email}
+                onChange={handleInputChange}
+                placeholder="Email"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-bloo"
+                required
+              />
+            </div>
 
-            <input
-              type="email"
-              name="email"
-              value={formValues.email}
-              onChange={handleInputChange}
-              placeholder="Email"
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-bloo"
-              required
-            />
+            <div className="flex flex-col gap-1">
+              <label htmlFor="cf-contact" className="text-sm font-medium text-gray-700">Phone Number <span aria-hidden="true">*</span></label>
+              <input
+                id="cf-contact"
+                type="tel"
+                name="contact"
+                maxLength="10"
+                pattern="[0-9]{10}"
+                value={formValues.contact}
+                onChange={handleInputChange}
+                placeholder="Phone Number"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-bloo"
+                required
+              />
+            </div>
 
-
-            <input
-              type="tel"
-              name="contact"
-              maxLength="10"
-              pattern="[0-9]{10}"
-              value={formValues.contact}
-              onChange={handleInputChange}
-              placeholder="Phone Number"
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-bloo"
-              required
-            />
-
-
-            <textarea
-              name="message"
-              value={formValues.message}
-              onChange={handleInputChange}
-              placeholder="Message"
-              rows="4"
-              className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-bloo resize-none"
-              required
-            ></textarea>
+            <div className="flex flex-col gap-1">
+              <label htmlFor="cf-message" className="text-sm font-medium text-gray-700">Message <span aria-hidden="true">*</span></label>
+              <textarea
+                id="cf-message"
+                name="message"
+                value={formValues.message}
+                onChange={handleInputChange}
+                placeholder="Message"
+                rows="4"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-bloo resize-none"
+                required
+              ></textarea>
+            </div>
 
             {!otpbox && (<button
               type="submit"
@@ -228,19 +241,28 @@ function ContactForm() {
 
             {otpbox && (<>
 
-              <div style={{ color: "blue" }}>
-               An OTP has been successfully sent to your email address : {formValues.email}
+              <div
+                role="status"
+                aria-live="polite"
+                aria-atomic="true"
+                style={{ color: "blue" }}
+              >
+                An OTP has been successfully sent to your email address: {formValues.email}
               </div>
 
-              <input
-                type="text"
-                name="otp"
-                value={otp}
-                onChange={(e) => setotp(e.target.value)}
-                placeholder="Please Enter your OTP"
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-bloo"
-                required
-              />
+              <div className="flex flex-col gap-1">
+                <label htmlFor="cf-otp" className="text-sm font-medium text-gray-700">Enter OTP <span aria-hidden="true">*</span></label>
+                <input
+                  id="cf-otp"
+                  type="text"
+                  name="otp"
+                  value={otp}
+                  onChange={(e) => setotp(e.target.value)}
+                  placeholder="Please Enter your OTP"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-bloo"
+                  required
+                />
+              </div>
 
               <button
                 className="w-full bg-bloo text-white font-semibold py-2 px-4 rounded-md hover:bg-bloo-dark transition duration-300 ease-in-out"
@@ -318,9 +340,9 @@ function AddressCard({ country, company, address, phone, email }) {
     <div className="border-2 border-bloo/40 rounded-lg p-4 h-full flex flex-col justify-between">
       <div>
         <h3 className="fontweight_1 text-blackk  text-lg">{country}</h3>
-        <p className="font-medium text-blackk/60  text-lg">{company}</p>
-        <p className="font-medium text-blackk/60  text-lg">{address}</p>
-        <p className="font-medium text-blackk/60  text-lg">{phone}</p>
+        <p className="font-medium text-blackk/70  text-lg">{company}</p>
+        <p className="font-medium text-blackk/70  text-lg">{address}</p>
+        <p className="font-medium text-blackk/70  text-lg">{phone}</p>
       </div>
       {/*       <a href={`mailto:${email}`} className="text-sm text-blue-700 hover:underline">
         {email}
@@ -336,3 +358,4 @@ function AddressCard({ country, company, address, phone, email }) {
 }
 
 export default ContactForm;
+

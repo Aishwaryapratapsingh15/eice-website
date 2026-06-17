@@ -21,16 +21,16 @@ export default function Certificate() {
 
             <div className="mt-8 mb-14 flex flex-wrap justify-center items-center gap-6 sm:gap-x-8 md:gap-x-12 lg:gap-x-20 px-4">
                 <div className="w-20 sm:w-28 md:w-36">
-                    <img style={{width:"100%"}} src={c1} alt="" />
+                    <img style={{width:"100%"}} src={c1} alt="EICE Technology industry certification badge" />
                 </div>
                 <div className="w-20 sm:w-28 md:w-36">
-                    <img style={{width:"100%"}} src={c2} alt="" />
+                    <img style={{width:"100%"}} src={c2} alt="EICE Technology certification award" />
                 </div>
                 <div className="w-36 sm:w-52 md:w-72 lg:w-80">
-                    <img style={{width:"100%"}} src={c3} alt="" />
+                    <img style={{width:"100%"}} src={c3} alt="EICE Technology technology partnership certification" />
                 </div>
                 <div className="w-16 sm:w-20 md:w-28">
-                    <img style={{width:"100%"}} src={c4} alt="" />
+                    <img style={{width:"100%"}} src={c4} alt="EICE Technology quality certification badge" />
                 </div>
             </div>
 

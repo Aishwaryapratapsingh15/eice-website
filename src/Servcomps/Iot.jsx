@@ -194,7 +194,7 @@ function Iot() {
               <h1 className="text-blackk  fontweight_1 fontsize_6 ">
                 Internet of Things
               </h1>
-              <h2 className="text-blackk/60 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
+              <h2 className="text-blackk/70 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
                 {
                   "Empowering Businesses with IoT Transformative Connectivity and Innovation"
                 }
@@ -202,7 +202,7 @@ function Iot() {
             </div>
             <div className="lg:flex hidden items-center justify-end ">
               <div className=" w-1/2">
-                <img src={iot} alt="" className="rounded-full" />
+                <img src={iot} alt="Internet of Things (IoT) connectivity solutions" className="rounded-full" />
               </div>
             </div>
           </div>
@@ -220,14 +220,14 @@ function Iot() {
               </h1>
             </div>
             <div>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 In today's technologically advanced world, businesses across
                 various sectors are integrating their equipment and sensors with
                 the Internet. This shift towards the Internet of Things (IoT)
                 aims to enhance customer experiences, optimize energy usage,
                 boost productivity, and create new revenue streams.
               </p>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg  py-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg  py-4">
                 The connectivity provided by IoT is revolutionizing industries
                 by enabling smarter operations and data-driven decision-making.
               </p>
@@ -251,7 +251,7 @@ function Iot() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl ">
                 DISCOVERY AND REQUIREMENT GATHERING
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We identify and implement cutting-edge digital solutions to
                 drive innovation and create new value streams for your business.
               </p>
@@ -265,7 +265,7 @@ function Iot() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 DESIGN AND ARCHITECTURE PLANNING
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We leverage advanced analytics and AI to extract actionable
                 insights, enabling data-driven decision-making across your
                 organization.
@@ -280,7 +280,7 @@ function Iot() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 PROTOTYPING AND VALIDATION
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We create seamless, intuitive digital experiences that delight
                 users across all devices and platforms, enhancing customer
                 engagement and loyalty.
@@ -295,7 +295,7 @@ function Iot() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 DEVELOPMENT AND INTEGRATION
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We create seamless, intuitive digital experiences that delight
                 users across all devices and platforms, enhancing customer
                 engagement and loyalty.
@@ -310,7 +310,7 @@ function Iot() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 DEPLOYMENT AND IMPLEMENTATION
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We create seamless, intuitive digital experiences that delight
                 users across all devices and platforms, enhancing customer
                 engagement and loyalty.
@@ -325,7 +325,7 @@ function Iot() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 MAINTENANCE AND SUPPORT
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We create seamless, intuitive digital experiences that delight
                 users across all devices and platforms, enhancing customer
                 engagement and loyalty.
@@ -345,3 +345,4 @@ function Iot() {
 }
 
 export default Iot;
+

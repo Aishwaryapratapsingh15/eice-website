@@ -1,4 +1,4 @@
-import "../src/index.css";
+﻿import "../src/index.css";
 import "../src/App.css";
 import "../src/fontCss.css";
 import "../src/Cstudies/Styles/Cstudies.css";
@@ -29,12 +29,12 @@ export const metadata = {
     type: "website",
     locale: "en_US",
     siteName: "EICE Technology",
-    images: [{ url: "/assets/Compressed/bannerai.png", width: 1200, height: 630, alt: "EICE Technology - IT Solutions & Software Development" }],
+    images: [{ url: "https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png", width: 1200, height: 630, alt: "EICE Technology - IT Solutions & Software Development" }],
   },
   twitter: {
     card: "summary_large_image",
     site: "@EICETechnology",
-    images: ["/assets/Compressed/bannerai.png"],
+    images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png"],
   },
 };
 
@@ -100,6 +100,13 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
 
+        {/* LCP preload — hero image for homepage above-the-fold */}
+        <link
+          rel="preload"
+          as="image"
+          href="https://d3r43jacxrwsrp.cloudfront.net/Compressed/genai.png"
+          fetchPriority="high"
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link

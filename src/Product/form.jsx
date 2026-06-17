@@ -1,7 +1,7 @@
 "use client";
 
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { useLocation } from "/src/nextNavigation";
 import ProductFooter from "./ProductFooter";
@@ -32,10 +32,14 @@ export default function ProductForm() {
     setTimeout(() => setPopup({ show: false, type: "", message: "" }), 3000);
   };
 
+  const dialogRef = useRef(null);
+  const okBtnRef = useRef(null);
+
   useEffect(() => {
     if (popup.show) {
       document.documentElement.style.overflow = "hidden";
       document.body.style.overflow = "hidden";
+      setTimeout(() => okBtnRef.current?.focus(), 0);
     } else {
       document.documentElement.style.overflow = "";
       document.body.style.overflow = "";
@@ -45,6 +49,25 @@ export default function ProductForm() {
       document.body.style.overflow = "";
     };
   }, [popup.show]);
+
+  const handleDialogKeyDown = (e) => {
+    if (e.key === "Escape") {
+      setPopup({ show: false, type: "", message: "" });
+      return;
+    }
+    if (e.key === "Tab" && dialogRef.current) {
+      const focusable = dialogRef.current.querySelectorAll(
+        'button, [href], input, [tabindex]:not([tabindex="-1"])'
+      );
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        last.focus(); e.preventDefault();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        first.focus(); e.preventDefault();
+      }
+    }
+  };
 
   const handleInputChange = (e) => {
     setFormValues((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -149,6 +172,8 @@ export default function ProductForm() {
     <div className="w-full">
       {popup.show && createPortal(
         <div
+          aria-hidden="true"
+          onClick={() => setPopup({ show: false, type: "", message: "" })}
           style={{
             position: "fixed",
             top: 0,
@@ -163,6 +188,12 @@ export default function ProductForm() {
           }}
         >
           <div
+            ref={dialogRef}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="pf-dialog-title"
+            onKeyDown={handleDialogKeyDown}
+            onClick={(e) => e.stopPropagation()}
             style={{
               background: "#fff",
               borderRadius: "12px",
@@ -173,25 +204,29 @@ export default function ProductForm() {
               position: "relative",
             }}
           >
-            <span
+            <button
               onClick={() => setPopup({ show: false, type: "", message: "" })}
+              aria-label="Close dialog"
               style={{
                 position: "absolute",
                 top: "10px",
                 right: "15px",
                 cursor: "pointer",
                 fontSize: "18px",
+                background: "none",
+                border: "none",
+                padding: 0,
+                lineHeight: 1,
               }}
             >
               ×
-            </span>
+            </button>
             <div
               style={{
                 width: "60px",
                 height: "60px",
                 borderRadius: "50%",
-                background:
-                  popup.type === "success" ? "#ffffff" : "#dc3545",
+                background: popup.type === "success" ? "#ffffff" : "#dc3545",
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
@@ -200,17 +235,18 @@ export default function ProductForm() {
             >
               <img
                 src={popup.type === "success" ? successIcon : errorIcon}
-                alt="status"
+                alt={popup.type === "success" ? "Success" : "Error"}
                 style={{ width: "50px", height: "50px" }}
               />
             </div>
-            <h2 style={{ fontSize: "24px", marginBottom: "10px" }}>
+            <h2 id="pf-dialog-title" style={{ fontSize: "24px", marginBottom: "10px" }}>
               {popup.type === "success" ? "Success" : "Error"}
             </h2>
             <p style={{ fontSize: "16px", marginBottom: "20px" }}>
               {popup.message}
             </p>
             <button
+              ref={okBtnRef}
               onClick={() => setPopup({ show: false, type: "", message: "" })}
               style={{
                 background: "#012060",
@@ -240,44 +276,60 @@ export default function ProductForm() {
 
           {!otpbox ? (
             <form onSubmit={sendOtp} className="space-y-4">
-              <input
-                type="text"
-                name="name"
-                value={formValues.name}
-                onChange={handleInputChange}
-                placeholder="Full Name"
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-bloo"
-                required
-              />
-              <input
-                type="email"
-                name="email"
-                value={formValues.email}
-                onChange={handleInputChange}
-                placeholder="Email Address"
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-bloo"
-                required
-              />
-              <input
-                type="tel"
-                name="contact"
-                maxLength="10"
-                pattern="[0-9]{10}"
-                value={formValues.contact}
-                onChange={handleInputChange}
-                placeholder="Phone Number"
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-bloo"
-                required
-              />
-              <textarea
-                name="message"
-                value={formValues.message}
-                onChange={handleInputChange}
-                placeholder="Your Message"
-                rows="4"
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-bloo resize-none"
-                required
-              />
+              <div className="flex flex-col gap-1">
+                <label htmlFor="pf-name" className="text-sm font-medium text-gray-700">Full Name <span aria-hidden="true">*</span></label>
+                <input
+                  id="pf-name"
+                  type="text"
+                  name="name"
+                  value={formValues.name}
+                  onChange={handleInputChange}
+                  placeholder="Full Name"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-bloo"
+                  required
+                />
+              </div>
+              <div className="flex flex-col gap-1">
+                <label htmlFor="pf-email" className="text-sm font-medium text-gray-700">Email Address <span aria-hidden="true">*</span></label>
+                <input
+                  id="pf-email"
+                  type="email"
+                  name="email"
+                  value={formValues.email}
+                  onChange={handleInputChange}
+                  placeholder="Email Address"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-bloo"
+                  required
+                />
+              </div>
+              <div className="flex flex-col gap-1">
+                <label htmlFor="pf-contact" className="text-sm font-medium text-gray-700">Phone Number <span aria-hidden="true">*</span></label>
+                <input
+                  id="pf-contact"
+                  type="tel"
+                  name="contact"
+                  maxLength="10"
+                  pattern="[0-9]{10}"
+                  value={formValues.contact}
+                  onChange={handleInputChange}
+                  placeholder="Phone Number"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-bloo"
+                  required
+                />
+              </div>
+              <div className="flex flex-col gap-1">
+                <label htmlFor="pf-message" className="text-sm font-medium text-gray-700">Your Message <span aria-hidden="true">*</span></label>
+                <textarea
+                  id="pf-message"
+                  name="message"
+                  value={formValues.message}
+                  onChange={handleInputChange}
+                  placeholder="Your Message"
+                  rows="4"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-bloo resize-none"
+                  required
+                />
+              </div>
               <button
                 type="submit"
                 disabled={activeButton}
@@ -293,14 +345,18 @@ export default function ProductForm() {
                 <span className="fontweight_1">{formValues.email}</span>. Please
                 enter it below to confirm your submission.
               </p>
-              <input
-                type="text"
-                value={otp}
-                onChange={(e) => setOtp(e.target.value)}
-                placeholder="Enter OTP"
-                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-bloo"
-                required
-              />
+              <div className="flex flex-col gap-1">
+                <label htmlFor="pf-otp" className="text-sm font-medium text-gray-700">Enter OTP <span aria-hidden="true">*</span></label>
+                <input
+                  id="pf-otp"
+                  type="text"
+                  value={otp}
+                  onChange={(e) => setOtp(e.target.value)}
+                  placeholder="Enter OTP"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-bloo"
+                  required
+                />
+              </div>
               <button
                 type="submit"
                 disabled={activeButton}

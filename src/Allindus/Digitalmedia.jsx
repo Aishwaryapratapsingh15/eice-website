@@ -260,7 +260,7 @@ function Digitalmedia() {
         <div className="sm:max-w-7xl 2xl:pt-4 pt-32 xl:pb-12 pb-4 px-4 w-screen mx-auto">
           <img
             src={digital_img}
-            alt=""
+            alt="Digital media and content technology solutions"
             className="object-cover w-full h-full px-2"
           />
           {/* <img src={healthrect2} alt="" />
@@ -271,7 +271,7 @@ function Digitalmedia() {
             Transforming <span className="text-bloo">Media Landscape</span> with
             Innovative Technology Solutions
           </h1>
-          <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+          <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
             At EICE Technology, we specialize in transforming digital media with
             innovative technology solutions. Our mission is to deliver
             cutting-edge software solutions that enhance operational efficiency,
@@ -350,7 +350,7 @@ function Digitalmedia() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 Content Management Systems (CMS)
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 Developing robust CMS platforms for seamless content creation,
                 management, and distribution across digital channels.
               </p>
@@ -364,7 +364,7 @@ function Digitalmedia() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 Digital Marketing Automation
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 Implementing automated tools and strategies for targeted digital
                 marketing campaigns, optimizing audience engagement and
                 conversion rates.Digital Marketing Automation
@@ -379,7 +379,7 @@ function Digitalmedia() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 Data Analytics and Insights
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 Providing advanced analytics solutions to track audience
                 behavior, content performance, and ROI, enabling data-driven
                 decision-making.
@@ -394,7 +394,7 @@ function Digitalmedia() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 Interactive Media Solutions
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 Creating immersive and interactive digital experiences through
                 multimedia content, including videos, animations, and
                 interactive applications.
@@ -409,7 +409,7 @@ function Digitalmedia() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 Audience Engagement Platforms
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 Developing platforms for real-time audience interaction,
                 feedback gathering, and community building, enhancing user
                 engagement and brand loyalty.
@@ -429,3 +429,4 @@ function Digitalmedia() {
 }
 
 export default Digitalmedia;
+

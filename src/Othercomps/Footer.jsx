@@ -138,32 +138,27 @@ function Footer() {
 
 
               <div>
-                <Link href={"https://www.linkedin.com/company/eice-technology/posts/?feedView=all&viewAsMember=true"}>
+                <Link href={"https://www.linkedin.com/company/eice-technology/posts/?feedView=all&viewAsMember=true"} aria-label="EICE Technology on LinkedIn">
                   <FaLinkedin size={30} className="blueTextGlobalClass" />
                 </Link>
-
               </div>
 
               <div>
-                <Link href={"https://twitter.com/EiceTech24"}>
+                <Link href={"https://twitter.com/EiceTech24"} aria-label="EICE Technology on X (Twitter)">
                   <FaSquareXTwitter size={30} className="blueTextGlobalClass" />
                 </Link>
-
               </div>
 
               <div>
-                <Link href={"https://www.instagram.com/eicetechnology24/?next=%2F"}>
-                  {/* <FaInstagram size={30} className="blueTextGlobalClass" /> */}
+                <Link href={"https://www.instagram.com/eicetechnology24/?next=%2F"} aria-label="EICE Technology on Instagram">
                   <FaSquareInstagram size={30} className="blueTextGlobalClass" />
                 </Link>
-
               </div>
 
               <div>
-                <Link href={"https://www.facebook.com/Eicetechnology/"}>
+                <Link href={"https://www.facebook.com/Eicetechnology/"} aria-label="EICE Technology on Facebook">
                   <FaFacebookSquare size={30} className="blueTextGlobalClass" />
                 </Link>
-
               </div>
 
 
@@ -193,89 +188,89 @@ function Footer() {
 
               <Link style={{ color: "white", fontSize: "15px" }}
                 to="/services/digital-transformation"
-                className="text-blackk/60     hover:text-blackk  hover:underline py-1 px-3"
+                className="text-blackk/70     hover:text-blackk  hover:underline py-1 px-3"
               >
                 Digital Transformation
               </Link>
               <Link style={{ color: "white", fontSize: "15px" }}
                 to="/services/ai-ml"
-                className="text-blackk/60     hover:text-blackk  hover:underline py-1 px-3"
+                className="text-blackk/70     hover:text-blackk  hover:underline py-1 px-3"
               >
                 AI/ML
               </Link>
               <Link style={{ color: "white", fontSize: "15px" }}
                 to="/services/blockchain"
-                className="text-blackk/60     hover:text-blackk  hover:underline py-1 px-3"
+                className="text-blackk/70     hover:text-blackk  hover:underline py-1 px-3"
               >
                 Blockchain
               </Link>
               <Link style={{ color: "white", fontSize: "15px" }}
                 to="/services/iot"
-                className="text-blackk/60     hover:text-blackk  hover:underline py-1 px-3"
+                className="text-blackk/70     hover:text-blackk  hover:underline py-1 px-3"
               >
                 IOT
               </Link>
               <Link style={{ color: "white", fontSize: "15px" }}
                 to="/services/ui-ux"
-                className="text-blackk/60     hover:text-blackk  hover:underline py-1 px-3"
+                className="text-blackk/70     hover:text-blackk  hover:underline py-1 px-3"
               >
                 UI/UX Consulting
               </Link>
               <Link style={{ color: "white", fontSize: "15px" }}
                 to="/services/android"
-                className="text-blackk/60     hover:text-blackk  hover:underline py-1 px-3"
+                className="text-blackk/70     hover:text-blackk  hover:underline py-1 px-3"
               >
                 Desktop and Mobile App Development
               </Link>
               <Link style={{ color: "white", fontSize: "15px" }}
                 to="/services/web-development"
-                className="text-blackk/60     hover:text-blackk  hover:underline py-1 px-3"
+                className="text-blackk/70     hover:text-blackk  hover:underline py-1 px-3"
               >
                 Web Development
               </Link>
               <Link style={{ color: "white", fontSize: "15px" }}
                 to="/services/devops"
-                className="text-blackk/60     hover:text-blackk  hover:underline py-1 px-3"
+                className="text-blackk/70     hover:text-blackk  hover:underline py-1 px-3"
               >
                 DevOps
               </Link>
               <Link style={{ color: "white", fontSize: "15px" }}
                 to="/services/cloud"
-                className="text-blackk/60     hover:text-blackk  hover:underline py-1 px-3"
+                className="text-blackk/70     hover:text-blackk  hover:underline py-1 px-3"
               >
                 Cloud Services
               </Link>
               <Link style={{ color: "white", fontSize: "15px" }}
                 to="/services/software-testing"
-                className="text-blackk/60     hover:text-blackk  hover:underline py-1 px-3"
+                className="text-blackk/70     hover:text-blackk  hover:underline py-1 px-3"
               >
                 Software Testing
               </Link>
               <Link style={{ color: "white", fontSize: "15px" }}
                 target="_blank"
                 to="https://rise.eicetechnology.com/"
-                className="text-blackk/60     hover:text-blackk  hover:underline py-1 px-3"
+                className="text-blackk/70     hover:text-blackk  hover:underline py-1 px-3"
               >
                 EICE Rise
               </Link>
               <Link style={{ color: "white", fontSize: "15px" }}
                 target="_blank"
                 to="https://isyncdrive.eicetechnology.com/"
-                className="text-blackk/60     hover:text-blackk  hover:underline py-1 px-3"
+                className="text-blackk/70     hover:text-blackk  hover:underline py-1 px-3"
               >
                 iSync Drive
               </Link>
               <Link style={{ color: "white", fontSize: "15px" }}
                 target="_blank"
                 to="https://easylogy.eicetechnology.com/"
-                className="text-blackk/60     hover:text-blackk  hover:underline py-1 px-3"
+                className="text-blackk/70     hover:text-blackk  hover:underline py-1 px-3"
               >
                 WTMS
               </Link>
               <Link style={{ color: "white", fontSize: "15px" }}
                 target="_blank"
                 to="https://eicepayroll.eicetechnology.com/"
-                className="text-blackk/60     hover:text-blackk  hover:underline py-1 px-3"
+                className="text-blackk/70     hover:text-blackk  hover:underline py-1 px-3"
               >
                 Eice Payroll
               </Link>
@@ -289,14 +284,14 @@ function Footer() {
               <div className="flex flex-row flex-wrap">
                 <Link style={{ color: "white", fontSize: "15px" }}
                   to="/about"
-                  className=" text-blackk/60     hover:text-blackk  hover:underline py-1 px-3"
+                  className=" text-blackk/70     hover:text-blackk  hover:underline py-1 px-3"
                 >
                   About Us
                 </Link>
 
                 <Link style={{ color: "white", fontSize: "15px" }}
                   to="/our-team"
-                  className=" text-blackk/60     hover:text-blackk  hover:underline py-1 px-3"
+                  className=" text-blackk/70     hover:text-blackk  hover:underline py-1 px-3"
                 >
                   Our Team
                 </Link>
@@ -304,26 +299,26 @@ function Footer() {
 
                 <Link style={{ color: "white", fontSize: "15px" }}
                   to="/resources"
-                  className="text-blackk/60     hover:text-blackk  hover:underline py-1 px-3"
+                  className="text-blackk/70     hover:text-blackk  hover:underline py-1 px-3"
                 >
                   Resources
                 </Link>
                 <Link style={{ color: "white", fontSize: "15px" }}
                   to="/contact"
-                  className="text-blackk/60     hover:text-blackk  hover:underline py-1 px-3"
+                  className="text-blackk/70     hover:text-blackk  hover:underline py-1 px-3"
                 >
                   Contact Us
                 </Link>
                 <Link style={{ color: "white", fontSize: "15px" }}
                   to="/industries"
-                  className="text-blackk/60     hover:text-blackk  hover:underline py-1 px-3"
+                  className="text-blackk/70     hover:text-blackk  hover:underline py-1 px-3"
                 >
                   Industries
                 </Link>
 
                 {/* <Link
               to="/POS"
-              className="text-blackk/60  fontweight_1   hover:text-blackk  hover:underline py-1 px-3"
+              className="text-blackk/70  fontweight_1   hover:text-blackk  hover:underline py-1 px-3"
             >
               POS
             </Link> */}
@@ -371,3 +366,4 @@ function Footer() {
 }
 
 export default Footer;
+

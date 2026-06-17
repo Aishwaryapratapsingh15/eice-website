@@ -138,7 +138,7 @@ export default function PosSuite() {
                                 <div className={`${styles.iconAndTextBox} `}>
 
                                     <div className={styles.imgBox} >
-                                        <img src={item.icon?.src || item.icon} alt="" />
+                                        <img src={item.icon?.src || item.icon} alt={item.name || ""} />
                                     </div>
                                     <div className={`${styles.serviceName} font1`}>
                                                                             <div>  {item.serviceName}</div>
@@ -209,3 +209,4 @@ export default function PosSuite() {
         </>
     )
 }
+

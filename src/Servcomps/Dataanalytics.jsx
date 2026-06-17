@@ -184,13 +184,13 @@ function DataAnalytics() {
               <h1 className="text-blackk fontweight_1 fontsize_6 ">
                 Data Analytics Services
               </h1>
-              <h2 className="text-blackk/60 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
+              <h2 className="text-blackk/70 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
                 {"Unlocking Business Insights through Advanced Data Analytics"}
               </h2>
             </div>
             <div className="lg:flex hidden items-center justify-end ">
               <div className=" w-1/2">
-                <img src={data} alt="" className="rounded-full" />
+                <img src={data} alt="Data analytics and business intelligence services" className="rounded-full" />
               </div>
             </div>
           </div>
@@ -207,7 +207,7 @@ function DataAnalytics() {
               </h1>
             </div>
             <div>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 In today's data-driven world, the ability to extract meaningful
                 insights from vast amounts of information is crucial for
                 business success. Data analytics plays a pivotal role in helping
@@ -239,7 +239,7 @@ function DataAnalytics() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl ">
                 BUSINESS INTELLIGENCE AND VISUALIZATION
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We develop custom dashboards and reports that provide real-time
                 insights into your business performance, enabling data-driven
                 decision-making at all levels of your organization.
@@ -254,7 +254,7 @@ function DataAnalytics() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl ">
                 BIG DATA ANALYTICS
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We help you leverage big data technologies to process and
                 analyze large volumes of structured and unstructured data,
                 uncovering patterns and insights that drive business value.
@@ -269,7 +269,7 @@ function DataAnalytics() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 PREDICTIVE AND PRESCRIPTIVE ANALYTICS
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We develop advanced analytics models that forecast future trends
                 and recommend optimal actions, helping you anticipate market
                 changes and make proactive decisions.
@@ -284,7 +284,7 @@ function DataAnalytics() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 CUSTOMER ANALYTICS
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We analyze customer data to provide insights into behavior,
                 preferences, and trends, enabling you to enhance customer
                 experiences, improve retention, and increase lifetime value.
@@ -299,7 +299,7 @@ function DataAnalytics() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 DATA WAREHOUSING AND INTEGRATION
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We design and implement robust data warehousing solutions,
                 integrating data from multiple sources to create a single source
                 of truth for your analytics and reporting needs.
@@ -314,7 +314,7 @@ function DataAnalytics() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 DATA GOVERNANCE AND MANAGEMENT
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We help you establish robust data governance frameworks and
                 management practices to ensure data quality, security, and
                 compliance across your organization.
@@ -334,3 +334,4 @@ function DataAnalytics() {
 }
 
 export default DataAnalytics;
+

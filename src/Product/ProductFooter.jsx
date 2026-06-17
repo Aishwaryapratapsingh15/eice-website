@@ -35,7 +35,7 @@ const socialLinks = [
 ];
 
 const linkClass =
-  "text-white/40 hover:text-white transition-colors duration-200 cursor-pointer";
+  "text-white/70 hover:text-white transition-colors duration-200 cursor-pointer";
 
 const headingClass =
   "text-[#01B0F1] text-sm tracking-[3px] mb-6 font-bold";
@@ -67,7 +67,7 @@ export default function Footer() {
             </div>
 
             {/* TEXT */}
-            <p className="text-white/40 text-[16px] leading-[24px]">
+            <p className="text-white/70 text-[16px] leading-[24px]">
               EICE is a global software services organization offering high-quality
               solutions to businesses. It services the information technology
               requirements of Fortune 1000 companies by utilizing specialized domain
@@ -196,8 +196,8 @@ export default function Footer() {
                  
                 <div>
                   <p className="text-[#01B0F1] font-bold tracking-[3px]">INDIA</p>
-                  <p className="text-white/40">6th floor, Platina Heights, C-24,</p>
-                  <p className="text-white/40">Sector 62, Noida, Uttar Pradesh 201301</p>
+                  <p className="text-white/70">6th floor, Platina Heights, C-24,</p>
+                  <p className="text-white/70">Sector 62, Noida, Uttar Pradesh 201301</p>
                 </div>
               </div>
 
@@ -213,8 +213,8 @@ export default function Footer() {
   </div>
                 <div>
                   <p className="text-[#01B0F1] font-bold tracking-[3px]">USA</p>
-                  <p className="text-white/40">11011 Richmond Ave, Suite 715,</p>
-                  <p className="text-white/40">Houston, TX 77042</p>
+                  <p className="text-white/70">11011 Richmond Ave, Suite 715,</p>
+                  <p className="text-white/70">Houston, TX 77042</p>
                 </div>
               </div>
 
@@ -226,7 +226,7 @@ export default function Footer() {
         <div className="border-t border-white/30 mt-6 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
 
           {/* COPYRIGHT */}
-          <p className="text-white/40 text-[13px]">
+          <p className="text-white/70 text-[13px]">
             © 2026 EICE Technology Pvt. Ltd. All rights reserved.
           </p>
 
@@ -234,12 +234,13 @@ export default function Footer() {
          <div className="flex gap-4">
 
   {socialLinks.map((link, i) => (
-    
+
     <a
       key={i}
       href={link.url}
       target="_blank"
       rel="noopener noreferrer"
+      aria-label={`EICE Technology on ${link.name}`}
     >
       <div
         className="
@@ -271,7 +272,7 @@ export default function Footer() {
 </div>
 
           {/* LINKS */}
-          <div className="flex gap-8 text-white/40 text-[13px]">
+          <div className="flex gap-8 text-white/70 text-[13px]">
             <p className="hover:text-white cursor-pointer transition">
               Terms & Conditions
             </p>
@@ -288,3 +289,4 @@ export default function Footer() {
 
   );
 }
+

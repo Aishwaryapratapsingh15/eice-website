@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 /* eslint-disable react/display-name */
 import React, { useState, useEffect } from "react";
@@ -38,7 +38,7 @@ const eiceAgentIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/EiceAiAgent.
 const eiceSmartfitIcon = "https://d3r43jacxrwsrp.cloudfront.net/smartfit/SmartFit_Icon.svg";
 const eiceopsIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/EICEOPS.svg";
 
-// ─── Navigation Shell ────────────────────────────────────────────────────────
+// â”€â”€â”€ Navigation Shell â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 const NavLayout = ({ children }) => {
   const [menuView, setMenuView] = useState("main");
@@ -49,9 +49,16 @@ const NavLayout = ({ children }) => {
 
   return (
     <>
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100000] focus:bg-[#012060] focus:text-white focus:px-4 focus:py-2 focus:rounded focus:font-semibold"
+      >
+        Skip to main content
+      </a>
+
       <div className="relative overflow-visible">
 
-        {/* ── Desktop Navbar ── */}
+        {/* â”€â”€ Desktop Navbar â”€â”€ */}
         <nav className="overflow-visible fixed w-full top-0 left-0 z-30 shadow-md shadow-blackk/20 font-manrope bg-white font-semibold 2xl:block xl:block hidden">
           <div className="flex max-w-7xl mx-auto items-center justify-between text-lg py-3">
             <div className="cursor-pointer px-4">
@@ -76,7 +83,7 @@ const NavLayout = ({ children }) => {
           </div>
         </nav>
 
-        {/* ── Mobile Navbar ── */}
+        {/* â”€â”€ Mobile Navbar â”€â”€ */}
         <nav className="2xl:hidden xl:hidden flex fixed w-full top-0 left-0 z-30 shadow-md shadow-blackk/20 font-manrope bg-white font-semibold items-center overflow-hidden">
           <div className="cursor-pointer pl-3">
             <Link href="/"><img src={logo} alt="EICE Technology" className="scale-[1.15]" /></Link>
@@ -84,15 +91,28 @@ const NavLayout = ({ children }) => {
           <div className="w-full">
             <div className="flex flex-row items-center justify-end">
               <Dropdown open={menuOpen} onOpenChange={setMenuOpen}>
-                <MenuButton onClick={() => setMenuOpen((p) => !p)} className="scale-[0.6] -mr-1">
-                  <span><img src={menu} alt="Menu" /></span>
+                <MenuButton
+                  onClick={() => setMenuOpen((p) => !p)}
+                  className="scale-[0.6] -mr-1"
+                  aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+                  aria-expanded={menuOpen}
+                  aria-controls="mobile-nav-menu"
+                >
+                  <span><img src={menu} alt="" aria-hidden="true" /></span>
                 </MenuButton>
-                <Menu className="font-semibold z-50">
+                <Menu id="mobile-nav-menu" aria-label="Mobile navigation" className="font-semibold z-50">
                   <AnimatePresence mode="wait">
                     {menuView === "main" && (
                       <motion.div key="main" initial={{ x: -300, opacity: 0 }} animate={{ x: 0, opacity: 1 }} exit={{ x: -300, opacity: 0 }} transition={{ duration: 0.3 }}>
                         <MenuItem><Link onClick={closeMenu} className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]" to="/">Home</Link></MenuItem>
-                        <div onClick={() => setMenuView("products")} className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px] flex items-center cursor-pointer">Products <span>+</span></div>
+                        <button
+                          onClick={() => setMenuView("products")}
+                          aria-expanded={menuView === "products"}
+                          aria-haspopup="true"
+                          className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px] flex items-center cursor-pointer text-left bg-transparent border-0"
+                        >
+                          Products <span aria-hidden="true" className="ml-1">+</span>
+                        </button>
                         <MenuItem><Link onClick={closeMenu} className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]" to="/about">About Us</Link></MenuItem>
                         <MenuItem><Link onClick={closeMenu} className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]" to="/services">Service Profile</Link></MenuItem>
                         <MenuItem><Link onClick={closeMenu} className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]" to="/industries">Sector Portfolio</Link></MenuItem>
@@ -105,7 +125,7 @@ const NavLayout = ({ children }) => {
                         <div className="w-screen h-screen bg-white">
                           <div className="p-4 text-sm border-b flex gap-2">
                             <span className="cursor-pointer text-gray-500" onClick={() => setMenuView("main")}>Home</span>
-                            <span>›</span><span className="font-semibold">Products</span>
+                            <span>â€º</span><span className="font-semibold">Products</span>
                           </div>
                           {[
                             ["/products/eice-rise",   "EICE Rise"],
@@ -131,7 +151,7 @@ const NavLayout = ({ children }) => {
           </div>
         </nav>
 
-        <main className="2xl:mt-28 2xl:w-full 2xl:scale-100 w-screen scale-100">
+        <main id="main-content" className="2xl:mt-28 2xl:w-full 2xl:scale-100 w-screen scale-100">
           {children}
         </main>
       </div>
@@ -139,7 +159,7 @@ const NavLayout = ({ children }) => {
   );
 };
 
-// ─── Desktop Mega-Menu Tabs ───────────────────────────────────────────────────
+// â”€â”€â”€ Desktop Mega-Menu Tabs â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 const Tabs = () => {
   const [selected, setSelected] = useState(null);
@@ -233,7 +253,7 @@ const Nub = ({ selected }) => {
   );
 };
 
-// ─── Mega-Menu Panel Components ───────────────────────────────────────────────
+// â”€â”€â”€ Mega-Menu Panel Components â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 const StatsCard = () => (
   <div className="bg-[#012060] w-full h-full rounded-md">
@@ -256,9 +276,9 @@ const Aboutus = ({ handleSetSelected = () => {} }) => (
     <div><StatsCard /></div>
     <div className="col-span-2">
       <div className="flex flex-col gap-6 text-wrap">
-        <div><h1>Who We Are</h1><p className="font-semibold text-blackk/60 text-sm">We are a global IT services and consulting firm with over 200 professional technologists, specializing in innovative strategies that bridge technology and business solutions.</p></div>
-        <div><h1>What We Do</h1><p className="font-semibold text-blackk/60 text-sm">We partner with global leaders and startups to turn ideas into reality through custom software and integrated models, delivering cutting-edge IT solutions.</p></div>
-        <div>Mission and Vision<p className="font-semibold text-blackk/60 text-sm">Our mission is to ensure client satisfaction through innovative technology solutions that drive growth. Our vision is to be a global leader in IT services and software development.</p></div>
+        <div><h1>Who We Are</h1><p className="font-semibold text-blackk/70 text-sm">We are a global IT services and consulting firm with over 200 professional technologists, specializing in innovative strategies that bridge technology and business solutions.</p></div>
+        <div><h1>What We Do</h1><p className="font-semibold text-blackk/70 text-sm">We partner with global leaders and startups to turn ideas into reality through custom software and integrated models, delivering cutting-edge IT solutions.</p></div>
+        <div>Mission and Vision<p className="font-semibold text-blackk/70 text-sm">Our mission is to ensure client satisfaction through innovative technology solutions that drive growth. Our vision is to be a global leader in IT services and software development.</p></div>
       </div>
       <Link href="/our-team" onClick={() => handleSetSelected(null)}>
         <button className="bg-blue-900 rounded-md p-2 mt-4 flex items-center gap-1 hover:bg-blue-900/90 text-white text-base"><span>Our Team</span><FiArrowRight /></button>
@@ -279,7 +299,7 @@ const OurServices = ({ handleSetSelected = () => {} }) => (
             { to: "/services?scrollTo=consultancy",          Icon: FaPeopleArrows,           label: "Consultancy Services",   desc: "Our consultancy services draw on 15+ years of insight, assisting 60+ clients in 10+ countries." },
             { to: "/services?scrollTo=flagshipServices",     Icon: IoIosBuild,               label: "Flagship Services",      desc: "EICE provides robust technical services with a proven track record of 180+ projects." },
           ].map(({ to, Icon, label, desc }) => (
-            <Link key={to} to={to} onClick={() => handleSetSelected(null)} className="group cursor-pointer py-1 text-blackk/60 transition-colors">
+            <Link key={to} to={to} onClick={() => handleSetSelected(null)} className="group cursor-pointer py-1 text-blackk/70 transition-colors">
               <Icon size={40} className="mb-2 text-[#012060]" />
               <div className="text-md text-left fontweight_1 text-blackk">{label}</div>
               <div className="h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
@@ -351,7 +371,7 @@ const OurProducts = ({ handleSetSelected = () => {} }) => (
               { href: "/products/eice-ops",   icon: eiceopsIcon,      name: "EICEOps",        desc: "Help Desk Management" },
             ].map(({ href, icon, name, desc }) => (
               <Link key={href} href={href} onClick={() => handleSetSelected(null)} className="flex items-start gap-3 group">
-                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} className="w-full h-full object-contain" /></div>
+                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} alt="" className="w-full h-full object-contain" /></div>
                 <div><p className="font-semibold group-hover:text-bloo">{name}</p><p className="text-xs text-gray-500">{desc}</p></div>
               </Link>
             ))}
@@ -366,7 +386,7 @@ const OurProducts = ({ handleSetSelected = () => {} }) => (
               { href: "/products/infrasight", icon: infrasightIcon, name: "InfraSight", desc: "Infra monitoring" },
             ].map(({ href, icon, name, desc }) => (
               <Link key={href} href={href} onClick={() => handleSetSelected(null)} className="flex items-start gap-3 group">
-                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} className="w-full h-full object-contain" /></div>
+                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} alt="" className="w-full h-full object-contain" /></div>
                 <div><p className="font-semibold group-hover:text-bloo">{name}</p><p className="text-xs text-gray-500">{desc}</p></div>
               </Link>
             ))}
@@ -383,7 +403,7 @@ const OurProducts = ({ handleSetSelected = () => {} }) => (
               { href: "/products/eice-voice",  icon: eicevoiceIcon,  name: "EICE Voice",    desc: "Voice-Powered Order Management" },
             ].map(({ href, icon, name, desc }) => (
               <Link key={href} href={href} onClick={() => handleSetSelected(null)} className="flex items-start gap-3 group">
-                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} className="w-full h-full object-contain" /></div>
+                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} alt="" className="w-full h-full object-contain" /></div>
                 <div><p className="font-semibold group-hover:text-bloo">{name}</p><p className="text-xs text-gray-500">{desc}</p></div>
               </Link>
             ))}
@@ -402,7 +422,7 @@ const TABS = [
   { title: "RESOURCES",  Component: OurResources,  link: "/resources" },
 ].map((n, idx) => ({ ...n, id: idx + 1 }));
 
-// ─── MUI-Based Mobile Menu Components ────────────────────────────────────────
+// â”€â”€â”€ MUI-Based Mobile Menu Components â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 const resolveSlotProps = (fn, args) => typeof fn === "function" ? fn(args) : fn;
 
@@ -426,3 +446,4 @@ const MenuItem = React.forwardRef(({ className, ...other }, ref) => (
 MenuItem.propTypes = { className: PropTypes.string };
 
 export { NavLayout };
+

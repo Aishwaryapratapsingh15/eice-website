@@ -5,7 +5,7 @@ import styles from "./requestForm.module.css"
 
 
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Select from 'react-select';
 const ak = "https://d3r43jacxrwsrp.cloudfront.net/Rise/form/feedback/AK.png";
 const kd = "https://d3r43jacxrwsrp.cloudfront.net/Rise/form/feedback/KD.png";
@@ -95,10 +95,14 @@ const showLocalPopup = (type, message) => {
   setPopup({ show: true, type, message });
 };
 
+const rfDialogRef = useRef(null);
+const rfOkBtnRef = useRef(null);
+
 useEffect(() => {
   if (popup.show) {
     document.documentElement.style.overflow = "hidden";
     document.body.style.overflow = "hidden";
+    setTimeout(() => rfOkBtnRef.current?.focus(), 0);
   } else {
     document.documentElement.style.overflow = "";
     document.body.style.overflow = "";
@@ -108,6 +112,25 @@ useEffect(() => {
     document.body.style.overflow = "";
   };
 }, [popup.show]);
+
+const handleRfDialogKeyDown = (e) => {
+  if (e.key === "Escape") {
+    setPopup({ show: false, message: "" });
+    return;
+  }
+  if (e.key === "Tab" && rfDialogRef.current) {
+    const focusable = rfDialogRef.current.querySelectorAll(
+      'button, [href], input, [tabindex]:not([tabindex="-1"])'
+    );
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (e.shiftKey && document.activeElement === first) {
+      last.focus(); e.preventDefault();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      first.focus(); e.preventDefault();
+    }
+  }
+};
 
 useEffect(() => {
   const param = new URLSearchParams(location.search).get("embed");
@@ -569,44 +592,57 @@ const handleSelectChange2 = (selectedOption) => {
     return (
         <>
 {popup.show && createPortal(
-  <div style={{
-    position: "fixed",
-    top: 0,
-    left: 0,
-    width: "100vw",
-    height: "100vh",
-    background: "rgba(0,0,0,0.5)",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    zIndex: 99999
-  }}>
-    
-    <div style={{
-      background: "#ffffff",
-      borderRadius: "12px",
-      padding: "25px",
-      width: "320px",
-      textAlign: "center",
-      boxShadow: "0 10px 30px rgba(0,0,0,0.2)",
-      position: "relative"
-    }}>
-
-      {/* Close Button */}
-      <span 
+  <div
+    aria-hidden="true"
+    onClick={() => setPopup({ show: false, message: "" })}
+    style={{
+      position: "fixed",
+      top: 0,
+      left: 0,
+      width: "100vw",
+      height: "100vh",
+      background: "rgba(0,0,0,0.5)",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      zIndex: 99999
+    }}
+  >
+    <div
+      ref={rfDialogRef}
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="rf-dialog-title"
+      onKeyDown={handleRfDialogKeyDown}
+      onClick={(e) => e.stopPropagation()}
+      style={{
+        background: "#ffffff",
+        borderRadius: "12px",
+        padding: "25px",
+        width: "320px",
+        textAlign: "center",
+        boxShadow: "0 10px 30px rgba(0,0,0,0.2)",
+        position: "relative"
+      }}
+    >
+      <button
         onClick={() => setPopup({ show: false, message: "" })}
+        aria-label="Close dialog"
         style={{
           position: "absolute",
           top: "10px",
           right: "15px",
           cursor: "pointer",
-          fontSize: "18px"
+          fontSize: "18px",
+          background: "none",
+          border: "none",
+          padding: 0,
+          lineHeight: 1,
         }}
       >
         ×
-      </span>
+      </button>
 
-      {/* Icon */}
       <div style={{
         width: "60px",
         height: "60px",
@@ -616,17 +652,15 @@ const handleSelectChange2 = (selectedOption) => {
         justifyContent: "center",
         alignItems: "center",
         margin: "0 auto 15px",
-        color: "#fff",
-        fontSize: "28px"
       }}>
-              <img
-    src={popup.type === "success" ? successIcon : errorIcon}
-    alt="status"
-    style={{ width: "50px", height: "50px" }}
-  />
+        <img
+          src={popup.type === "success" ? successIcon : errorIcon}
+          alt={popup.type === "success" ? "Success" : "Error"}
+          style={{ width: "50px", height: "50px" }}
+        />
       </div>
 
-      <h3 style={{ marginBottom: "10px" }}>
+      <h3 id="rf-dialog-title" style={{ marginBottom: "10px" }}>
         {popup.type === "success" ? "Success" : "Error"}
       </h3>
 
@@ -635,6 +669,7 @@ const handleSelectChange2 = (selectedOption) => {
       </p>
 
       <button
+        ref={rfOkBtnRef}
         onClick={() => setPopup({ show: false, message: "" })}
         style={{
           background: "#012060",
@@ -648,7 +683,6 @@ const handleSelectChange2 = (selectedOption) => {
       >
         OK
       </button>
-
     </div>
   </div>,
   document.body
@@ -668,37 +702,37 @@ const handleSelectChange2 = (selectedOption) => {
 
                     <div className={`${styles.line1}`}>
                         <div className={`${styles.inputContainer}`}>
-                            <label>Name*</label>
+                            <label htmlFor="rf-name">Name*</label>
                             <div>
-                                <input placeholder="Enter your name" autoComplete="off" required className={`${styles.line1Input}`} type="text" name="name" value={formData.name} onChange={handleChange} />
+                                <input id="rf-name" placeholder="Enter your name" autoComplete="off" required className={`${styles.line1Input}`} type="text" name="name" value={formData.name} onChange={handleChange} />
                             </div>
                         </div>
 
                         <div className={`${styles.inputContainer}`}>
-                            <label>Company Name*</label>
+                            <label htmlFor="rf-companyName">Company Name*</label>
                             <div>
-                                <input placeholder="Enter your company name" autoComplete="off" required className={`${styles.line1Input}`} type="text" name="companyName" value={formData.companyName} onChange={handleChange} />
+                                <input id="rf-companyName" placeholder="Enter your company name" autoComplete="off" required className={`${styles.line1Input}`} type="text" name="companyName" value={formData.companyName} onChange={handleChange} />
                             </div>
                         </div>
                     </div>
 
                     <div className={`${styles.line2}`}>
                         <div className={`${styles.inputContainer}`}>
-                            <label>Role/Designation (optional)</label>
+                            <label htmlFor="rf-role">Role/Designation (optional)</label>
                             <div>
-                                <input autoComplete="off" placeholder="Enter Your Role ( e.g Manager , Director)" className={`${styles.line2Input}`} type="text" name="role" value={formData.role} onChange={handleChange} />
+                                <input id="rf-role" autoComplete="off" placeholder="Enter Your Role ( e.g Manager , Director)" className={`${styles.line2Input}`} type="text" name="role" value={formData.role} onChange={handleChange} />
                             </div>
                         </div>
 
                         <div className={`${styles.inputContainer}`}>
-                            <label>Email ID*</label>
+                            <label htmlFor="rf-email">Email ID*</label>
                             <div>
-                                <input placeholder="Enter Your Bussiness Email Address" autoComplete="off" required className={`${styles.line2Input}`} type="email" name="email" value={formData.email} onChange={handleChange} />
+                                <input id="rf-email" placeholder="Enter Your Bussiness Email Address" autoComplete="off" required className={`${styles.line2Input}`} type="email" name="email" value={formData.email} onChange={handleChange} />
                             </div>
                         </div>
 
                         <div className={`${styles.inputContainer}`}>
-                            <label>Phone Number*</label>
+                            <label htmlFor="rf-phone">Phone Number*</label>
                             <div className={`${styles.phoneNoAndCodeBox}`}>
                                 <div >
                                     {/* <Select
@@ -720,10 +754,10 @@ const handleSelectChange2 = (selectedOption) => {
                                         onChange={handleCountryCodeChange}
                                     /> */}
 
-                                    <input placeholder="Code" autoComplete="off" required className={`${styles.phoneCode}`} type="number" name="phoneCode" value={formData.phoneCode} onChange={handleChange} maxLength={10} pattern="[0-9]{10}" />
+                                    <input id="rf-phoneCode" aria-label="Phone country code" placeholder="Code" autoComplete="off" required className={`${styles.phoneCode}`} type="number" name="phoneCode" value={formData.phoneCode} onChange={handleChange} maxLength={10} pattern="[0-9]{10}" />
                                 </div>
-                                <div className={`${styles.phoneNoInputBox}`} >
-                                    <input placeholder="Enter Your Phone No" autoComplete="off" required className={`${styles.phoneNo}`} type="tel" name="phone" value={formData.phone} onChange={handleChange} pattern="[0-9]{10}" />
+                                <div className={`${styles.phoneNoInputBox}`}>
+                                    <input id="rf-phone" placeholder="Enter Your Phone No" autoComplete="off" required className={`${styles.phoneNo}`} type="tel" name="phone" value={formData.phone} onChange={handleChange} pattern="[0-9]{10}" />
                                 </div>
                             </div>
 
@@ -747,25 +781,23 @@ const handleSelectChange2 = (selectedOption) => {
 
                     <div className={`${styles.line3}`}>
                         <div className={`${styles.inputContainer}`}>
-                            <label htmlFor="country">Country:</label>
-
-
+                            <label htmlFor="rf-country">Country*</label>
                             <div>
-                                <input placeholder="Country Name" autoComplete="off" required className={`${styles.line3Input}`} type="text" name="country" value={formData.country} onChange={handleChange} />
+                                <input id="rf-country" placeholder="Country Name" autoComplete="off" required className={`${styles.line3Input}`} type="text" name="country" value={formData.country} onChange={handleChange} />
                             </div>
 
                         </div>
 
                         <div className={`${styles.inputContainer}`}>
-                            <label>Address*</label>
+                            <label htmlFor="rf-address">Address*</label>
                             <div>
-                                <input placeholder="Enter Your Address" autoComplete="off" required className={`${styles.line3Input}`} type="text" name="address" value={formData.address} onChange={handleChange} />
+                                <input id="rf-address" placeholder="Enter Your Address" autoComplete="off" required className={`${styles.line3Input}`} type="text" name="address" value={formData.address} onChange={handleChange} />
                             </div>
                         </div>
                     </div>
-                    
+
                     <div className={`${styles.requirement} ${styles.inputContainer} `}>
-                        <label>Requirement*</label>
+                        <label htmlFor="requirement">Requirement*</label>
                         <div>
 
 
@@ -800,18 +832,17 @@ const handleSelectChange2 = (selectedOption) => {
 
                     <div className={`${styles.messageTextArea}  ${styles.inputContainer} `}>
                         <div>
-                            <label htmlFor="message">Message:</label>
+                            <label htmlFor="rf-message">Message:</label>
                         </div>
                         <div>
                             <textarea
+                                id="rf-message"
                                 className={`${styles.messageTextAreaInput} font1`}
                                 rows="5"
                                 placeholder="Write your message here"
                                 name="message"
                                 value={formData.message}
                                 onChange={handleChange}
-
-
                             />
                         </div>
                     </div>
@@ -942,7 +973,7 @@ const handleSelectChange2 = (selectedOption) => {
                                         <figure >
 
                                             <div style={{ textAlign: "center" }}  >
-                                                <img style={{ width: "28%" }} src={item.img?.src || item.img} alt="" />
+                                                <img style={{ width: "28%" }} src={item.img?.src || item.img} alt={item.name || ""} />
                                             </div>
 
                                             <figcaption style={{ textAlign: "center", fontSize: "13px" }} > <span >--{item.client} ,</span> <span style={{ fontWeight: "bold" }}>{item.position}</span> <span>{item.company}</span></figcaption>
@@ -1101,3 +1132,4 @@ const handleSelectChange2 = (selectedOption) => {
         </>
     );
 }
+

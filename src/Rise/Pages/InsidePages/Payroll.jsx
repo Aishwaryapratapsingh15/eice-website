@@ -397,7 +397,7 @@ export default function Payroll() {
                 <div className={`${style.headingAndIconFeatures}`}>
 
                   <div style={{ width: item.width }}>
-                    <img style={{ width: "100%" }} src={item.img?.src || item.img} alt="" />
+                    <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
                   </div>
 
                   <div className={`${style.featureHeading}`}>
@@ -464,7 +464,7 @@ export default function Payroll() {
 
 
               <div style={{ width: "25%" }}>
-                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt="" />
+                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
               </div>
 
               <div className='GlobalBenefitTextBox' >
@@ -477,7 +477,7 @@ export default function Payroll() {
 
 
               <div style={{ width: "25%" }}>
-                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt="" />
+                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
               </div>
 
               <div className='GlobalBenefitTextBox' >
@@ -506,7 +506,7 @@ export default function Payroll() {
 
 
               <div className="GlobalBenefitImgBox" >
-                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt="" />
+                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
               </div>
 
               <div className='GlobalBenefitTextBox' >
@@ -519,7 +519,7 @@ export default function Payroll() {
 
 
               <div className="GlobalBenefitImgBox">
-                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt="" />
+                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
               </div>
 
               <div className='GlobalBenefitTextBox' >
@@ -562,4 +562,5 @@ export default function Payroll() {
     </>
   )
 }
+
 

@@ -20,16 +20,16 @@ export default function Certificate() {
 
             <div className={styles.container}>
                 <div className={styles.image1}>
-                    <img style={{ width: '100%' }} src={c1} alt="" />
+                    <img style={{ width: '100%' }} src={c1} alt="EasyLogy certification badge" />
                 </div>
                 <div className={styles.image2}>
-                    <img style={{ width: '100%' }} src={c2} alt="" />
+                    <img style={{ width: '100%' }} src={c2} alt="EasyLogy certification award" />
                 </div>
                 <div className={styles.image3}>
-                    <img style={{ width: '100%' }} src={c3} alt="" />
+                    <img style={{ width: '100%' }} src={c3} alt="EasyLogy technology partnership certification" />
                 </div>
                 <div className={styles.image4}>
-                    <img style={{ width: '100%' }} src={c4} alt="" />
+                    <img style={{ width: '100%' }} src={c4} alt="EasyLogy quality certification" />
                 </div>
             </div>
 

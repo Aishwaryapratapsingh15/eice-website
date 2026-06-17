@@ -173,8 +173,8 @@ export default function EiceVoice() {
           {/* CTA */}
           <div className="mt-10">
             <button
-              onClick={() => navigate("/products/form?embed=true&product=EiceVoice")}
-              className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto text-[18px] hover:bg-blue-800 transition"
+              onClick={() => navigate("/products/eice-rise/form")}
+              className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto text-[18px]  mx-auto hover:bg-blue-800 transition"
             >
               Request a Demo
               <img src={arrowIcon} alt="arrow" />
@@ -501,8 +501,8 @@ export default function EiceVoice() {
     </p>
 
         <button
-          onClick={() => navigate("/products/form?embed=true&product=EiceVoice")}
-          className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto text-[18px] hover:bg-blue-800"
+          onClick={() => navigate("/products/eice-rise/form")}
+          className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto text-[18px]  mx-auto hover:bg-blue-800"
         >
           Request a Demo
           <img src={arrowIcon} alt="arrow" />
@@ -514,4 +514,6 @@ export default function EiceVoice() {
     </div>
   );
 }
+
+
 

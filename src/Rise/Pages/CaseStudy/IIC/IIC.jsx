@@ -293,7 +293,7 @@ export default function IIC() {
                                 <div className={`${styles.iconAndTextBox} `}>
 
                                     <div className={styles.imgBox} >
-                                        <img src={item.icon?.src || item.icon} alt="" />
+                                        <img src={item.icon?.src || item.icon} alt={item.name || ""} />
                                     </div>
                                     <div>
                                         {item.key < 9 ? (<div className={`${styles.serviceName} font1`}>{item.serviceName}</div>) : (<div className={`${styles.serviceName2} font1`}>{item.serviceName}</div>)}
@@ -444,3 +444,4 @@ export default function IIC() {
       </>
     )
 }
+

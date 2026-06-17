@@ -192,7 +192,7 @@ function Blockchain() {
               <h1 className="text-blackk  fontweight_1 fontsize_6 ">
                 Blockchain Development
               </h1>
-              <h2 className="text-blackk/60 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
+              <h2 className="text-blackk/70 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
 
                 Leading Blockchain Development Services Pioneering the Future of Digital Solutions
 
@@ -200,7 +200,7 @@ function Blockchain() {
             </div>
             <div style={{ width: "800px" }} className="lg:flex w-90 hidden items-center justify-end ">
               <div className=" w-3/4 ">
-                <img src={blockchain} alt="" className="rounded-full" />
+                <img src={blockchain} alt="Blockchain development and decentralized solutions" className="rounded-full" />
               </div>
             </div>
           </div>
@@ -218,7 +218,7 @@ function Blockchain() {
               </h1>
             </div>
             <div>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 Blockchain technology has evolved beyond its initial application
                 in cryptocurrency to become a transformative force across
                 various industries. Its decentralized, transparent, and secure
@@ -250,7 +250,7 @@ function Blockchain() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl ">
                 CUSTOM BLOCKCHAIN DEVELOPMENT
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We create custom blockchain solutions tailored to your needs,
                 including new platforms, Apps, and blockchain networks, with
                 strategic planning, consensus selection, and architecture
@@ -266,7 +266,7 @@ function Blockchain() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 SMART CONTRACT DEVELOPMENT
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We develop and deploy smart contracts that automate processes,
                 reduce intermediaries, and enhance transparency. Our services
                 cover design, coding, testing, and deployment for secure,
@@ -282,7 +282,7 @@ function Blockchain() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 NFT DEVELOPMENT
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We offer comprehensive NFT development services, including token
                 creation, marketplaces, and platforms for trading digital assets
                 like art, collectibles, and games, tapping into the NFT market.
@@ -297,7 +297,7 @@ function Blockchain() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 BLOCKCHAIN SECURITY AUDITS
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We provide blockchain security audits with vulnerability
                 assessments, penetration testing, and code reviews to identify
                 risks, ensure security, and comply with industry standards for
@@ -313,7 +313,7 @@ function Blockchain() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 DECENTRALIZED FINANCE (DeFi) SOLUTIONS
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We develop DeFi solutions, including decentralized exchanges,
                 lending platforms, and stablecoins, offering innovative, secure,
                 and efficient alternatives to traditional financial services
@@ -329,7 +329,7 @@ function Blockchain() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 BLOCKCHAIN BASED SUPPLY CHAIN SOLUTIONS
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We offer blockchain-based supply chain solutions for end-to-end
                 visibility, traceability, and efficiency, including tracking
                 systems, smart contracts, and fraud reduction for improved
@@ -350,3 +350,4 @@ function Blockchain() {
 }
 
 export default Blockchain;
+

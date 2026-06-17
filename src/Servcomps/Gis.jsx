@@ -192,7 +192,7 @@ function GIS() {
               <h1 className="text-blackk  fontweight_1 fontsize_6 ">
                 GIS Services
               </h1>
-              <h2 className="text-blackk/60 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
+              <h2 className="text-blackk/70 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
                 {
                   "Comprehensive GIS Solutions: Transforming Spatial Data into Actionable Insights"
                 }
@@ -200,7 +200,7 @@ function GIS() {
             </div>
             <div className="lg:flex hidden items-center justify-end ">
               <div className="w-2/3">
-                <img src={gis} alt="" className="rounded-full" />
+                <img src={gis} alt="Geographic Information Systems (GIS) services" className="rounded-full" />
               </div>
             </div>
           </div>
@@ -217,7 +217,7 @@ function GIS() {
               </h1>
             </div>
             <div>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 In today's data-driven world, Geographic Information Systems
                 (GIS) are crucial for businesses to gain spatial insights, make
                 informed decisions, and optimize operations. GIS services play a
@@ -249,7 +249,7 @@ function GIS() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl ">
                 SPATIAL ANALYSIS AND MAPPING
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We provide advanced spatial analysis and custom mapping
                 solutions to help you visualize and interpret complex
                 geographical data, enabling better decision-making and strategic
@@ -265,7 +265,7 @@ function GIS() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl ">
                 GIS DATABASE MANAGEMENT
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We offer comprehensive GIS database management services,
                 including data collection, integration, and maintenance,
                 ensuring your spatial data is accurate, up-to-date, and easily
@@ -281,7 +281,7 @@ function GIS() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 WEB GIS DEVELOPMENT
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We develop custom web-based GIS applications that allow you to
                 share interactive maps and spatial data across your organization
                 or with the public, enhancing collaboration and engagement.
@@ -296,7 +296,7 @@ function GIS() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 REMOTE SENSING AND IMAGERY ANALYSIS
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We provide expert remote sensing services, including satellite
                 and aerial imagery analysis, to extract valuable information for
                 environmental monitoring, urban planning, and resource
@@ -312,7 +312,7 @@ function GIS() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 GEOSPATIAL BUSINESS INTELLIGENCE
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We integrate GIS with business intelligence tools to provide
                 location-based insights, helping you uncover patterns, trends,
                 and opportunities that drive business growth and efficiency.
@@ -327,7 +327,7 @@ function GIS() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 AI AND MACHINE LEARNING IN GIS
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We leverage AI and machine learning technologies to enhance GIS
                 capabilities, enabling advanced predictive modeling, automated
                 feature extraction, and intelligent spatial analysis.
@@ -347,3 +347,4 @@ function GIS() {
 }
 
 export default GIS;
+

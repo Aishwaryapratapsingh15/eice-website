@@ -114,7 +114,7 @@ useEffect(() => {
                             item.id % 2 == 0 ? (<div key={item.id} style={{ display: "flex", justifyContent: "center" }} >
                                 <div className={`${styles.benefitContainer}`}>
                                     <div style={{ width: item.width }} className={`${styles.benefitImgBox}`}>
-                                        <img style={{ width: "100%" }} src={item.img?.src || item.img} alt="" />
+                                        <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
                                     </div>
                                     <div className={`${styles.headingAndDescBox}`}>
                                         <div className={`${styles.benefitHeading}`}>{item.heading}</div>
@@ -132,7 +132,7 @@ useEffect(() => {
                                             <div className={`${styles.benefitDesc}`} >{item.desc}</div>
                                         </div>
                                         <div style={{ width: item.width }} className={`${styles.benefitImgBox}`}>
-                                            <img style={{ width: "100%" }} src={item.img?.src || item.img} alt="" />
+                                            <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
                                         </div>
                                     </div>
                                 </div>
@@ -178,6 +178,7 @@ useEffect(() => {
         </>
     )
 }
+
 
 
 

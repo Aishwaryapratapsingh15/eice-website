@@ -4,16 +4,17 @@ import Copyright from "../../../../src/Othercomps/Copyright";
 
 export const metadata = {
   title: "POS Suite Pricing | EICE Rise Hospitality ERP | EICE Technology",
-  description: "EICE Rise POS Suite — restaurant and hotel dining management solution with table ordering, kitchen display, menu management, and billing integration.",
+  description: "EICE Rise POS Suite â€” restaurant and hotel dining management solution with table ordering, kitchen display, menu management, and billing integration.",
+  keywords: ["POS Suite Pricing", "EICE Rise", "hospitality ERP", "hotel management system", "EICE Technology"],
   openGraph: {
     title: "POS Suite Pricing | EICE Rise Hospitality ERP",
-    description: "EICE Rise POS Suite — restaurant and hotel dining management solution with table ordering, kitchen display, menu management, and billing integration.",
+    description: "EICE Rise POS Suite â€” restaurant and hotel dining management solution with table ordering, kitchen display, menu management, and billing integration.",
     url: "https://www.eicetechnology.com/products/eice-rise/pos-suite",
     siteName: "EICE Technology",
     type: "website",
   },
-  twitter: { card: "summary_large_image", title: "POS Suite Pricing | EICE Rise Hospitality ERP", description: "EICE Rise POS Suite — restaurant and hotel dining management solution with table ordering, kitchen display, menu management, and billing integration." },
-  alternates: { canonical: "https://www.eicetechnology.com/products/eice-rise/pos-suite" },
+  twitter: { card: "summary_large_image", title: "POS Suite Pricing | EICE Rise Hospitality ERP", description: "EICE Rise POS Suite â€” restaurant and hotel dining management solution with table ordering, kitchen display, menu management, and billing integration." },
+  alternates: { canonical: "https://www.eicetechnology.com/products/eice-rise/pos-suite/", languages: { "en-IN": "https://www.eicetechnology.com/products/eice-rise/pos-suite/", "en-US": "https://www.eicetechnology.com/products/eice-rise/pos-suite/", "x-default": "https://www.eicetechnology.com/products/eice-rise/pos-suite/" } },
 };
 
 
@@ -26,3 +27,5 @@ export default function Page() {
     </>
   );
 }
+
+

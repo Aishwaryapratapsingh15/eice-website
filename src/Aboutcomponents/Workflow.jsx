@@ -16,7 +16,7 @@ function Workflow() {
       </div>
       <div className="py-4">
         <div className="flex flex-col items-center justify-center text-center text-blackk">
-          <p className="font-medium text-blackk/60 sm:text-xl text-lg max-w-5xl">
+          <p className="font-medium text-blackk/70 sm:text-xl text-lg max-w-5xl">
             Ensuring clarity and visibility throughout the development process to
             enhance collaboration and efficiency. Our workflow is well organized
             and flexible at its core.
@@ -26,7 +26,7 @@ function Workflow() {
           <div className="lg:w-52 lg:h-52 w-11/12 h-52 border-2 border-bloo rounded-lg">
             <div className="flex flex-col text-center w-full h-full items-center justify-center">
               <h1 className="fontweight_1 pb-4 text-bloo">Discover</h1>
-              <p className="font-medium text-blackk/60  text-lg ">
+              <p className="font-medium text-blackk/70  text-lg ">
                 Assessing the Requirements
               </p>
             </div>
@@ -40,7 +40,7 @@ function Workflow() {
           <div className="lg:w-52 lg:h-52 w-11/12 h-52 border-2 border-amber-500 rounded-lg">
             <div className="flex flex-col text-center w-full h-full items-center justify-center">
               <h1 className="fontweight_1 pb-4 text-amber-500">Define</h1>
-              <p className="font-medium text-blackk/60  text-lg ">
+              <p className="font-medium text-blackk/70  text-lg ">
                 Determining the scope and creating an SRS
               </p>
             </div>
@@ -54,7 +54,7 @@ function Workflow() {
           <div className="lg:w-52 lg:h-52 w-11/12 h-52 border-2 border-emerald-400 rounded-lg">
             <div className="flex flex-col text-center w-full h-full items-center justify-center">
               <h1 className="fontweight_1 pb-4 text-emerald-500">Design</h1>
-              <p className="font-medium text-blackk/60  text-lg ">
+              <p className="font-medium text-blackk/70  text-lg ">
                 System Design, UI/UX, Wireframing
               </p>
             </div>
@@ -70,7 +70,7 @@ function Workflow() {
               <h1 className="fontweight_1 pb-4 text-cyan-500">
                 Product Development
               </h1>
-              <p className="font-medium text-blackk/60  text-lg ">
+              <p className="font-medium text-blackk/70  text-lg ">
                 Coding APIs, Testing, Debuggings
               </p>
             </div>
@@ -84,7 +84,7 @@ function Workflow() {
           <div className="lg:w-52 lg:h-52 w-11/12 h-52 border-2 border-rose-400 rounded-lg">
             <div className="flex flex-col text-center w-full h-full items-center justify-center">
               <h1 className="fontweight_1 pb-4 text-rose-400">Delivery</h1>
-              <p className="font-medium text-blackk/60 text-lg ">
+              <p className="font-medium text-blackk/70 text-lg ">
                 Maintenance and Support
               </p>
             </div>
@@ -96,3 +96,4 @@ function Workflow() {
 }
 
 export default Workflow;
+

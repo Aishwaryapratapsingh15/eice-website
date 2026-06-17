@@ -193,7 +193,7 @@ function Entpappdev() {
               <h1 className="text-blackk  fontweight_1 fontsize_6 ">
                 Enterprise App Development
               </h1>
-              <h2 className="text-blackk/60 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
+              <h2 className="text-blackk/70 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
                 {
                   "Comprehensive App Development Services: Unlocking Your Digital Potential"
                 }
@@ -201,7 +201,7 @@ function Entpappdev() {
             </div>
             <div className="lg:flex hidden items-center justify-end ">
               <div className=" w-7/12">
-                <img src={enterprise} alt="" className="rounded-full" />
+                <img src={enterprise} alt="Enterprise application development services" className="rounded-full" />
               </div>
             </div>
           </div>
@@ -220,7 +220,7 @@ function Entpappdev() {
               </h1>
             </div>
             <div>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 EICE Technology specialize in delivering comprehensive mobile
                 and desktop app development services designed to transform your
                 ideas into innovative and user-centric applications. Our team of
@@ -253,7 +253,7 @@ function Entpappdev() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl ">
                 CUSTOM APP DEVELOPMENT
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 Specializing in custom mobile and desktop app development, we
                 deliver innovative, scalable solutions from concept to creation,
                 meeting your unique business needs and objectives.
@@ -268,7 +268,7 @@ function Entpappdev() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 UI/UX DESIGN
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We focus on creating intuitive, visually engaging UI/UX designs
                 that attract users, drive satisfaction, and ensure positive
                 interactions with your application through audience
@@ -284,7 +284,7 @@ function Entpappdev() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 CROSS-PLATFORM DEVELOPMENT
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 Providing cross-platform development to ensure your app
                 functions seamlessly on iOS, Android, Windows, and macOS,
                 utilizing the latest technologies for a consistent and efficient
@@ -300,7 +300,7 @@ function Entpappdev() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 APP MAINTENANCE AND SUPPORT
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We offer comprehensive app maintenance and support services to
                 keep your application up-to-date, secure, and performing well,
                 including regular updates, bug fixes, and technical support.
@@ -315,7 +315,7 @@ function Entpappdev() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 APP INTEGRATION AND TESTING
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 Handling app integration with existing systems, we perform
                 rigorous testing for functionality, performance, and security,
                 ensuring components work harmoniously and resolving issues for a
@@ -331,7 +331,7 @@ function Entpappdev() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 STRATEGY, DEPLOYMENT AND ANALYTICS
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 Our team develops deployment strategies and provides performance
                 analytics to set objectives, track metrics, and drive future app
                 success.
@@ -351,3 +351,4 @@ function Entpappdev() {
 }
 
 export default Entpappdev;
+

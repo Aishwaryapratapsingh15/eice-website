@@ -5,6 +5,62 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    font-size: 16px; /* India mobile: minimum readable base font */
+}
+
+/* Mobile font scaling */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+}
+
+/* CLS prevention: reserve space for images before they load */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Prevent horizontal overflow on small screens */
+* {
+    max-width: 100vw;
+}
+
+/* sr-only utility for accessible hidden text */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* WCAG 2.4.7 — Visible focus indicators for keyboard navigation */
+*:focus {
+    outline: none;
+}
+
+*:focus-visible {
+    outline: 2px solid #01b0f1;
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* India mobile: minimum tap target size (WCAG 2.5.5, Google 44×44px) */
+button, [role="button"], a, input[type="submit"], input[type="button"], input[type="reset"] {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Exception for small utility elements — override above where needed */
+.tap-sm {
+  min-height: unset;
+  min-width: unset;
 }
 
 .hide-scrollbar {

@@ -183,7 +183,7 @@ function DevOps() {
               <h1 className="text-blackk fontweight_1 fontsize_6 ">
                 DevOps Services
               </h1>
-              <h2 className="text-blackk/60 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
+              <h2 className="text-blackk/70 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
                 {
                   "Streamlining Development and Operations for Accelerated Business Growth"
                 }
@@ -191,7 +191,7 @@ function DevOps() {
             </div>
             <div className="lg:flex hidden items-center justify-end ">
               <div className=" w-1/2">
-                <img src={devops} alt="" className="rounded-full" />
+                <img src={devops} alt="DevOps services for streamlined development and operations" className="rounded-full" />
               </div>
             </div>
           </div>
@@ -210,7 +210,7 @@ function DevOps() {
             </div>
 
             <div>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 In today's fast-paced digital landscape, DevOps practices are
                 essential for businesses to deliver high-quality software
                 rapidly and efficiently. DevOps services play a crucial role in
@@ -247,7 +247,7 @@ function DevOps() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl ">
                 CLOUD INFRASTRUCTURE MANAGEMENT
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We provide expert cloud infrastructure management services,
                 helping you optimize your cloud resources, implement
                 Infrastructure as Code (IaC), and ensure scalability and
@@ -263,7 +263,7 @@ function DevOps() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl ">
                 CONTINUOUS INTEGRATION AND DELIVERY (CI/CD)
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We design and implement robust CI/CD pipelines to automate your
                 software delivery process, enabling faster releases, improved
                 code quality, and reduced time-to-market.
@@ -278,7 +278,7 @@ function DevOps() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 CONFIGURATION MANAGEMENT
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We implement efficient configuration management practices using
                 tools like Ansible, Puppet, or Chef to ensure consistency across
                 your infrastructure and applications.
@@ -293,7 +293,7 @@ function DevOps() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 IZATION AND ORCHESTRATION
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We leverage ization technologies like Docker and
                 orchestration platforms like Kubernetes to enhance application
                 portability, scalability, and resource efficiency.
@@ -308,7 +308,7 @@ function DevOps() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 MONITORING AND PERFORMANCE OPTIMIZATION
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We implement comprehensive monitoring solutions and performance
                 optimization strategies to ensure your applications run
                 efficiently and issues are detected and resolved proactively.
@@ -323,7 +323,7 @@ function DevOps() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 DEVSECOPS IMPLEMENTATION
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We integrate security practices into your DevOps processes,
                 implementing DevSecOps to ensure that security is a core
                 consideration throughout the development lifecycle.
@@ -343,3 +343,4 @@ function DevOps() {
 }
 
 export default DevOps;
+

@@ -186,13 +186,13 @@ function TechnologyConsulting() {
               <h1 className="text-blackk fontweight_1 fontsize_6 ">
                 Technology Consulting Services
               </h1>
-              <h2 className="text-blackk/60 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
+              <h2 className="text-blackk/70 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
                 {"Empowering Businesses with Strategic Technology Solutions"}
               </h2>
             </div>
             <div className="lg:flex hidden items-center justify-end ">
               <div className="w-2/5">
-                <img src={consult} alt="" className="rounded-full" />
+                <img src={consult} alt="Technology consulting and IT strategy services" className="rounded-full" />
               </div>
             </div>
           </div>
@@ -210,7 +210,7 @@ function TechnologyConsulting() {
               </h1>
             </div>
             <div>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 In today's rapidly evolving digital landscape, leveraging the
                 right technologies is crucial for business success. Technology
                 consulting plays a vital role in helping organizations navigate
@@ -242,7 +242,7 @@ function TechnologyConsulting() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl ">
                 TECHNOLOGY STRATEGY AND ROADMAP
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We help you develop a comprehensive technology strategy aligned
                 with your business goals, creating a clear roadmap for digital
                 transformation and innovation initiatives.
@@ -257,7 +257,7 @@ function TechnologyConsulting() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl ">
                 DIGITAL TRANSFORMATION CONSULTING
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We guide you through the digital transformation process, helping
                 you leverage emerging technologies to improve operational
                 efficiency, enhance customer experiences, and drive business
@@ -273,7 +273,7 @@ function TechnologyConsulting() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 CLOUD STRATEGY AND MIGRATION
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We provide expert guidance on cloud adoption strategies, helping
                 you choose the right cloud platforms and services, and manage
                 the migration of your applications and infrastructure to the
@@ -289,7 +289,7 @@ function TechnologyConsulting() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 CYBERSECURITY CONSULTING
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We assess your cybersecurity posture, identify vulnerabilities,
                 and develop comprehensive security strategies to protect your
                 digital assets and ensure compliance with industry regulations.
@@ -304,7 +304,7 @@ function TechnologyConsulting() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 AI AND MACHINE LEARNING IMPLEMENTATION
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We help you harness the power of AI and machine learning
                 technologies, identifying use cases, developing
                 proof-of-concepts, and implementing AI-driven solutions to
@@ -320,7 +320,7 @@ function TechnologyConsulting() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 IT INFRASTRUCTURE OPTIMIZATION
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We analyze your current IT infrastructure and provide
                 recommendations for optimization, helping you improve
                 performance, reduce costs, and enhance scalability through
@@ -341,3 +341,4 @@ function TechnologyConsulting() {
 }
 
 export default TechnologyConsulting;
+

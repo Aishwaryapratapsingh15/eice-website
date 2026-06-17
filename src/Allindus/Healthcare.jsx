@@ -244,16 +244,16 @@ function Healthcare() {
     <div className="">
       <div className="sm:max-w-7xl w-screen mx-auto pb-8">
         <div className="sm:max-w-7xl 2xl:pt-12 pt-32 xl:pb-12 pb-4 px-4 w-screen mx-auto grid grid-cols-3">
-          <img src={healthrect1} alt="" />
-          <img src={healthrect2} alt="" />
-          <img src={healthrect3} alt="" />
+          <img src={healthrect1} alt="Healthcare technology innovation" />
+          <img src={healthrect2} alt="Digital health solutions" />
+          <img src={healthrect3} alt="Healthcare software development" />
         </div>
         <div className="max-w-7xl mx-auto text-center px-8 flex flex-col gap-2">
           <h1 className="text-blackk  fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl pb-4">
             Transforming <span className="text-bloo">Healthcare</span> with
             Innovative Technology
           </h1>
-          <p className="font-medium text-blackk/60 sm:text-xl max-w-7xl text-lg ">
+          <p className="font-medium text-blackk/70 sm:text-xl max-w-7xl text-lg ">
             At EICE Technology, we empower businesses to excel in the digital
             age through cutting-edge technologies and innovative strategies. We
             recognize the essential role of technology in modern healthcare and
@@ -333,7 +333,7 @@ function Healthcare() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 SOFTWARE DEVELOPMENT
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 We build robust, scalable healthcare software solutions with a
                 focus on functionality, security, and seamless integration with
                 existing systems for efficient and effective operations.
@@ -348,7 +348,7 @@ function Healthcare() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 COMPREHENSIVE REQUIREMENTS ANALYSIS
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 We conduct detailed requirements analysis to understand your
                 healthcare needs, ensuring tailored solutions that address
                 specific challenges and regulatory requirements for effective
@@ -364,7 +364,7 @@ function Healthcare() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 INNOVATIVE DESIGN AND PROTOTYPING
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 Create advanced pharmacy management software for inventory
                 control, automated workflows, and improved pharmaceutical
                 services.{" "}
@@ -379,7 +379,7 @@ function Healthcare() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 PHARMACY MANAGEMENT SOFTWARE
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 Create advanced pharmacy management software for inventory
                 control, automated workflows, and improved pharmaceutical
                 services.{" "}
@@ -394,7 +394,7 @@ function Healthcare() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 MAINTENANCE AND SUPPORT
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 We offer continuous maintenance and support services, including
                 updates, bug fixes, and performance improvements to keep your
                 software up-to-date and responsive to evolving healthcare needs.
@@ -414,3 +414,4 @@ function Healthcare() {
 }
 
 export default Healthcare;
+

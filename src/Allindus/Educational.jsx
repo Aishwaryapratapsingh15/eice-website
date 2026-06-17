@@ -252,7 +252,7 @@ function Logistics() {
         <div className="sm:max-w-7xl 2xl:pt-12 pt-32 xl:pb-12 pb-4  w-screen mx-auto grid ">
           <img
             src={Education_img}
-            alt=""
+            alt="Education technology and e-learning solutions"
             className="w-full object-cover px-2"
           />
           {/* <img src={Education_img} alt="" />
@@ -263,7 +263,7 @@ function Logistics() {
             Empowering <span className="text-bloo">Education Through</span>{" "}
             Innovative Technology Solutions
           </h1>
-          <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+          <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
             At EICE Technology, we specialize in helping educational
             institutions leverage advanced technology to succeed in the digital
             age. Our mission is to provide innovative software solutions that
@@ -343,7 +343,7 @@ function Logistics() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 Personalized Learning Experiences{" "}
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 Customizing educational platforms involves tailoring learning to
                 each student's needs, and ensuring engagement through
                 personalized instruction, adaptive assessments, and diverse
@@ -360,7 +360,7 @@ function Logistics() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 Enhanced Classroom Collaboration{" "}
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 Enabling seamless communication among students, teachers, and
                 parents via intuitive software solutions enhances collaboration
                 and educational effectiveness.{" "}
@@ -376,7 +376,7 @@ function Logistics() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 Efficient Administrative Management{" "}
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 Automating administrative tasks like attendance, grading, and
                 scheduling streamlines educational operations for improved
                 efficiency and organization.{" "}
@@ -392,7 +392,7 @@ function Logistics() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 Comprehensive Learning Analytics{" "}
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 Providing educators with detailed insights and analytics enables
                 tracking of student performance, identifying trends, and
                 personalizing teaching strategies for effective learning
@@ -409,7 +409,7 @@ function Logistics() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 Secure and Scalable Infrastructure{" "}
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 Implementing robust, secure software infrastructure ensures data
                 privacy and supports scalable growth for educational
                 institutions, fostering a stable and reliable learning
@@ -424,7 +424,7 @@ function Logistics() {
             </div>
             <div className="pt-2 h-full text-left">
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">Supply Chain Visibility and Analytics</h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">Offer comprehensive supply chain visibility solutions, integrating advanced analytics for predictive insights, demand forecasting, and improved decision-making across the logistics network.</p>
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">Offer comprehensive supply chain visibility solutions, integrating advanced analytics for predictive insights, demand forecasting, and improved decision-making across the logistics network.</p>
             </div>
           </div> */}
         </div>
@@ -440,3 +440,4 @@ function Logistics() {
 }
 
 export default Logistics;
+

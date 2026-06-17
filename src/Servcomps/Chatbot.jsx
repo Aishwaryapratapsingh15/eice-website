@@ -192,7 +192,7 @@ function Chatbot() {
               <h1 className="text-blackk  fontweight_1 fontsize_6 ">
                 Chatbot Development
               </h1>
-              <h2 className="text-blackk/60 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
+              <h2 className="text-blackk/70 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
                 {
                   "Comprehensive Chatbot Development Services: Revolutionizing Customer Engagement and Efficiency"
                 }
@@ -200,7 +200,7 @@ function Chatbot() {
             </div>
             <div className="lg:flex hidden items-center justify-end ">
               <div className=" w-1/2">
-                <img src={bot} alt="" className="rounded-full" />
+                <img src={bot} alt="AI chatbot and conversational assistant development" className="rounded-full" />
               </div>
             </div>
           </div>
@@ -218,7 +218,7 @@ function Chatbot() {
               </h1>
             </div>
             <div>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 In today’s fast-paced digital world, businesses are increasingly
                 turning to chatbots to enhance customer interactions, streamline
                 operations, and drive growth. Chatbots offer a scalable solution
@@ -249,7 +249,7 @@ function Chatbot() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl ">
                 CUSTOM CHATBOT APPLICATION DEVELOPMENT{" "}
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We create custom chatbots tailored to your business needs,
                 designing conversational flows, integrating features, and
                 enhancing user experiences to automate interactions and
@@ -265,7 +265,7 @@ function Chatbot() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 AI POWERED CHATBOT SOLUTIONS
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We develop AI-powered chatbots using NLP for human-like
                 interactions, handling complex conversations, learning from user
                 interactions, and offering personalized support and lead
@@ -281,7 +281,7 @@ function Chatbot() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 CHATBOT INTEGRATION SERVICES
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We provide chatbot integration services for CRM systems,
                 helpdesks, and e-commerce platforms, ensuring seamless data
                 exchange and enhanced functionality for improved efficiency and
@@ -297,7 +297,7 @@ function Chatbot() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 CHATBOT DESIGN AND DEVELOPMENT
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We design intuitive, engaging chatbots with user-friendly
                 interfaces, crafting conversation scripts and visual elements to
                 ensure a pleasant experience and align with your brand’s style.
@@ -312,7 +312,7 @@ function Chatbot() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 CHATBOT MAINTENANCE AND SUPPORT
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We offer ongoing chatbot maintenance, including performance
                 monitoring, bug fixes, feature updates, and improvements,
                 ensuring your chatbot runs smoothly and adapts to evolving
@@ -328,7 +328,7 @@ function Chatbot() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 CONVERSATIONAL AI DEVELOPMENT
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We develop advanced conversational AI systems for natural,
                 dynamic interactions, using AI algorithms to manage dialogues
                 and provide relevant responses for enhanced user experiences and
@@ -349,3 +349,4 @@ function Chatbot() {
 }
 
 export default Chatbot;
+

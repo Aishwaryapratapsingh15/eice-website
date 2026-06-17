@@ -21,7 +21,7 @@ function Scopes() {
             Choosing an appropriate engagement method for your project
           </h2>
         </div>
-        <div className="font-medium text-blackk/60 sm:text-xl text-lg lg:px-32 sm:pt-4 pt-2 ">
+        <div className="font-medium text-blackk/70 sm:text-xl text-lg lg:px-32 sm:pt-4 pt-2 ">
           <p>
             The working model between the client and company plays a massive
             part in catering to each unique project. After an assessment of
@@ -57,21 +57,21 @@ function Scopes() {
             </h1>
             <div className="flex flex-row gap-2 py-2">
               <FaArrowRight size={30} className="text-blackk/70" />
-              <h2 className="font-medium text-blackk/60 sm:text-xl text-lg">
+              <h2 className="font-medium text-blackk/70 sm:text-xl text-lg">
                 Clear, Constricted scope with requirements that are unlikely to
                 change throughout the project
               </h2>
             </div>
             <div className="flex flex-row gap-2 py-2">
               <FaArrowRight size={30} className="text-blackk/70" />
-              <h2 className="font-medium text-blackk/60 sm:text-xl text-lg">
+              <h2 className="font-medium text-blackk/70 sm:text-xl text-lg">
                 Long term milestones can be defined irrespective of the chosen
                 development model (ie; Agile, Spiral, etc.)
               </h2>
             </div>
             <div className="flex flex-row gap-2 py-2">
               <FaArrowRight size={30} className="text-blackk/70" />
-              <h2 className="font-medium text-blackk/60 sm:text-xl text-lg">
+              <h2 className="font-medium text-blackk/70 sm:text-xl text-lg">
                 Clear, Constricted scope with requirements that are unlikely to
                 change throughout the project
               </h2>
@@ -105,21 +105,21 @@ function Scopes() {
 
             <div className="flex flex-row gap-2 py-2">
               <FaArrowRight size={30} className="text-blackk/70" />
-              <h2 className="font-medium text-blackk/60 sm:text-xl text-lg">
+              <h2 className="font-medium text-blackk/70 sm:text-xl text-lg">
                 Flexible Scope allows projects to evolve freely, adapting to
                 changes without rigid constraints.
               </h2>
             </div>
             <div className="flex flex-row gap-2 py-2">
               <FaArrowRight size={30} className="text-blackk/70" />
-              <h2 className="font-medium text-blackk/60 sm:text-xl text-lg">
+              <h2 className="font-medium text-blackk/70 sm:text-xl text-lg">
                 Dynamic Needs adapt to evolving business, market dynamics, and
                 stakeholder feedback effectively.
               </h2>
             </div>
             <div className="flex flex-row gap-2 py-2">
               <FaArrowRight size={30} className="text-blackk/70" />
-              <h2 className="font-medium text-blackk/60 sm:text-xl text-lg">
+              <h2 className="font-medium text-blackk/70 sm:text-xl text-lg">
                 Continuous feedback fosters iterative improvements and aligns
                 with evolving project objectives effectively.
               </h2>
@@ -137,21 +137,21 @@ function Scopes() {
 
             <div className="flex flex-row gap-2 py-2">
               <FaArrowRight size={30} className="text-blackk/70" />
-              <h2 className="font-medium text-blackk/60 sm:text-xl text-lg">
+              <h2 className="font-medium text-blackk/70 sm:text-xl text-lg">
                 Flexible Scope allows projects to evolve freely, adapting to
                 changes without rigid constraints.
               </h2>
             </div>
             <div className="flex flex-row gap-2 py-2">
               <FaArrowRight size={30} className="text-blackk/70" />
-              <h2 className="font-medium text-blackk/60 sm:text-xl text-lg">
+              <h2 className="font-medium text-blackk/70 sm:text-xl text-lg">
                 Dynamic Needs adapt to evolving business, market dynamics, and
                 stakeholder feedback effectively.
               </h2>
             </div>
             <div className="flex flex-row gap-2 py-2">
               <FaArrowRight size={30} className="text-blackk/70" />
-              <h2 className="font-medium text-blackk/60 sm:text-xl text-lg">
+              <h2 className="font-medium text-blackk/70 sm:text-xl text-lg">
                 Continuous feedback fosters iterative improvements and aligns
                 with evolving project objectives effectively.
               </h2>
@@ -200,7 +200,7 @@ function Scopes() {
             </h1>
             <div className="flex flex-row gap-2 py-2">
               <FaArrowRight size={30} className="text-blackk/70" />
-              <h2 className="font-medium text-blackk/60 sm:text-xl text-lg">
+              <h2 className="font-medium text-blackk/70 sm:text-xl text-lg">
                 Initial project requirements are not well-defined, allowing
                 flexibility for discovery and refinement as the project
                 progresses.
@@ -208,14 +208,14 @@ function Scopes() {
             </div>
             <div className="flex flex-row gap-2 py-2">
               <FaArrowRight size={30} className="text-blackk/70" />
-              <h2 className="font-medium text-blackk/60 sm:text-xl text-lg">
+              <h2 className="font-medium text-blackk/70 sm:text-xl text-lg">
                 Particularly suited for exploratory or innovative projects where
                 the outcomes are not fully known at the outset.
               </h2>
             </div>
             <div className="flex flex-row gap-2 py-2">
               <FaArrowRight size={30} className="text-blackk/70" />
-              <h2 className="font-medium text-blackk/60 sm:text-xl text-lg">
+              <h2 className="font-medium text-blackk/70 sm:text-xl text-lg">
                 Enables continuous discovery and definition of requirements
                 throughout the project lifecycle, adapting to evolving insights
                 and stakeholder needs
@@ -229,3 +229,4 @@ function Scopes() {
 }
 
 export default Scopes;
+

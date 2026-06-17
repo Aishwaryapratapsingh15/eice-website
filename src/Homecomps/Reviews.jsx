@@ -57,7 +57,7 @@ function Reviews() {
         <h1 className="text-left text-bloo fontweight_1 text-2xl sm:text-3xl mx-auto md:text-3xl lg:text-[32px] py-1">
           We Made Them Happy
         </h1>
-        <h2 className="text-blackk/60 font-semibold text-start fontsize_2  py-2 pb-12 ">
+        <h2 className="text-blackk/70 font-semibold text-start fontsize_2  py-2 pb-12 ">
           Trusted by Over{" "}
           <span className="fontweight_1 text-blackk">60+ Companies</span> in the{" "}
           <span className="fontweight_1 text-blackk">Past Decade</span>. Join Our
@@ -108,3 +108,4 @@ function Reviews() {
 }
 
 export default Reviews;
+

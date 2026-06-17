@@ -254,7 +254,7 @@ function Legal() {
         <div className="sm:max-w-7xl 2xl:pt-12 pt-32 xl:pb-12 pb-4 px-4 w-screen mx-auto grid">
           <img
             src={Enterprise_img}
-            alt=""
+            alt="Enterprise technology transformation solutions"
             className="object-cover w-full px-2"
           />
           {/* <img src={healthrect2} alt="" />
@@ -265,7 +265,7 @@ function Legal() {
             Transforming <span className="text-bloo">Enterprise</span> with
             Innovative Technology
           </h1>
-          <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+          <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
             At EICE Technology, we excel in transforming enterprise operations
             through state-of-the-art technology solutions. Our mission is to
             provide innovative software that significantly boosts operational
@@ -348,7 +348,7 @@ function Legal() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 Advanced ERP Systems
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 Implement robust ERP platforms to streamline inventory
                 management, optimize resource utilization, and enhance process
                 efficiency through automation and real-time tracking..
@@ -364,7 +364,7 @@ function Legal() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 Real-Time Business Process Management
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 Develop intelligent BPM systems that provide real-time tracking,
                 dynamic process optimization, and efficient management to ensure
                 timely and cost-effective operations.
@@ -380,7 +380,7 @@ function Legal() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 Business Visibility and Analytics
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 Offer comprehensive business visibility solutions, integrating
                 advanced analytics for predictive insights, demand forecasting,
                 and improved decision-making across the enterprise network.
@@ -396,7 +396,7 @@ function Legal() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 Automated Workflow Solutions
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 Create automated workflow systems that accelerate task
                 completion, reduce manual errors, and enhance employee
                 satisfaction through seamless integration with enterprise
@@ -413,7 +413,7 @@ function Legal() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl px-4">
                 IoT-Enabled Enterprise Solutions
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg px-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg px-4">
                 Deploy IoT-enabled solutions for real-time monitoring of assets,
                 predictive maintenance, and enhanced operational efficiency,
                 ensuring the integrity and security of data throughout the
@@ -434,3 +434,4 @@ function Legal() {
 }
 
 export default Legal;
+

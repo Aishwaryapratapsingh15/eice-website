@@ -192,7 +192,7 @@ function Chatbot() {
               <h1 className="text-blackk  fontweight_1 fontsize_6 ">
                 Cloud Services
               </h1>
-              <h2 className="text-blackk/60 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
+              <h2 className="text-blackk/70 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
                 {
                   "Comprehensive Cloud Services  Enhancing Agility and Efficiency"
                 }
@@ -200,7 +200,7 @@ function Chatbot() {
             </div>
             <div className="lg:flex hidden items-center justify-end ">
               <div className="lg:w-7/12 w-1/2">
-                <img src={cloud} alt="" className="rounded-full" />
+                <img src={cloud} alt="Cloud computing services" className="rounded-full" />
               </div>
             </div>
           </div>
@@ -217,7 +217,7 @@ function Chatbot() {
               </h1>
             </div>
             <div>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 In today’s technology-driven market, leveraging cloud services
                 is crucial for enhancing agility, ensuring operational
                 efficiency, and driving business growth. Cloud computing plays a
@@ -248,7 +248,7 @@ function Chatbot() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl ">
                 CLOUD STRATEGY AND CONSULTING
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We provide expert consulting services to help you develop a
                 robust cloud strategy. Our team works closely with you to assess
                 your current infrastructure, identify opportunities for cloud
@@ -264,7 +264,7 @@ function Chatbot() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl ">
                 CLOUD MIGRATION STATUS
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We offer seamless cloud migration services to help you
                 transition your applications, data, and workloads to the cloud.
                 Our approach minimizes downtime, mitigates risks, and ensures a
@@ -280,7 +280,7 @@ function Chatbot() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 CLOUD SECURITY SERVICES
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We offer robust cloud security services to protect your cloud
                 infrastructure from threats. Our approach includes identity and
                 access management, data encryption, vulnerability assessments,
@@ -296,7 +296,7 @@ function Chatbot() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 DEVOPS AND AUTOMATION
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We provide DevOps and automation services to streamline your
                 development and operations processes. Our solutions include
                 continuous integration, continuous delivery, and infrastructure
@@ -312,7 +312,7 @@ function Chatbot() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 CLOUD BACKUP AND DISASTER RECOVERY
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We provide cloud backup and disaster recovery services to ensure
                 business continuity. Our solutions include automated backups,
                 data replication, and disaster recovery planning to protect your
@@ -328,7 +328,7 @@ function Chatbot() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 CLOUD MONITORING AND REPORTING
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We offer comprehensive cloud monitoring and reporting services
                 to track the performance, availability, and security of your
                 cloud infrastructure. Our insights enable proactive management
@@ -349,3 +349,4 @@ function Chatbot() {
 }
 
 export default Chatbot;
+

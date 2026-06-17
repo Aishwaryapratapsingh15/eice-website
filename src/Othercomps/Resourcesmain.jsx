@@ -24,7 +24,7 @@ function Resourcesmain() {
             <h2 className="text-bloo font-semibold text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-4">
               Case Studies, Blogs and more
             </h2>
-            <h2 className="text-blackk/60 px-2 font-medium text-center sm:text-lg mx-auto lg:text-xl max-w-6xl py-2">
+            <h2 className="text-blackk/70 px-2 font-medium text-center sm:text-lg mx-auto lg:text-xl max-w-6xl py-2">
               Explore a wealth of knowledge and insights designed to help you
               navigate the complexities of digital transformation and stay ahead
               in your industry. Our resources are curated by experts to provide
@@ -45,7 +45,7 @@ function Resourcesmain() {
             <h2 className="text-blackk text-left fontweight_1 text-2xl sm:text-3xl lg:text-4xl mb-4">
               Case Studies
             </h2>
-            <p className="font-medium text-blackk/60 max-w-2xl text-base sm:text-lg mb-6">
+            <p className="font-medium text-blackk/70 max-w-2xl text-base sm:text-lg mb-6">
               Learn from real-world success stories where EICE has helped
               clients overcome challenges and achieve significant results. Our
               case studies highlight our approach, solutions, and the measurable
@@ -73,3 +73,4 @@ function Resourcesmain() {
 }
 
 export default Resourcesmain;
+

@@ -18,7 +18,7 @@ function Relimonitor() {
           <h2 className="text-blackk  fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
             A Real Time Sensor Monitoring Tool
           </h2>
-          <p className="fontweight_1 max-w-4xl mx-auto  text-blackk/60 fontsize_3 pt-4 px-4">
+          <p className="fontweight_1 max-w-4xl mx-auto  text-blackk/70 fontsize_3 pt-4 px-4">
             Development of RE.LI Monitor: A real-time sensor monitoring tool
             integrating SCADA data for intelligent alarm management and
             performance analysis across diverse well types.
@@ -26,10 +26,10 @@ function Relimonitor() {
           <div className=" w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
             <div className="relative w-full h-full rounded-lg">
               
-              <img src={temp} alt="" className="w-full h-full rounded-lg object-fit" />
+              <img src={temp} alt="RE.LI Monitor real-time sensor monitoring dashboard" className="w-full h-full rounded-lg object-fit" />
             </div>
             <div className="relative w-full h-full rounded-lg">
-              <img src={temp2} alt="" className="w-full h-full rounded-lg object-fit" />
+              <img src={temp2} alt="RE.LI Monitor SCADA data visualization interface" className="w-full h-full rounded-lg object-fit" />
             </div>
           </div>
         </div>
@@ -42,7 +42,7 @@ function Relimonitor() {
               <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
                 01
               </h1>
-              <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                 Real-time data integration: Interfacing with multiple data
                 acquisition systems (SCADA, DCS, Historian) in real-time.
               </p>
@@ -51,7 +51,7 @@ function Relimonitor() {
               <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
                 02
               </h1>
-              <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                 Alarm management: Developing an efficient system to raise
                 appropriate alarms without overwhelming operators.
               </p>
@@ -60,7 +60,7 @@ function Relimonitor() {
               <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
                 03
               </h1>
-              <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                 Performance optimization: Balancing system performance with the
                 need for real-time monitoring and analysis.
               </p>
@@ -69,7 +69,7 @@ function Relimonitor() {
               <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
                 04
               </h1>
-              <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                 Cross-platform compatibility: Extending the application to
                 various well types (ESP, PCP, Gas Lift, Natural flowing wells).
               </p>
@@ -78,7 +78,7 @@ function Relimonitor() {
               <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
                 05
               </h1>
-              <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                 User adoption: Ensuring the system is user-friendly for
                 operators and engineers across different domains.
               </p>
@@ -94,7 +94,7 @@ function Relimonitor() {
           <h2 className="text-blackk  fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
             ESPCT : ESP Completion Technologies
           </h2>
-          <p className="fontweight_1 text-blackk/60 fontsize_3 pt-4">
+          <p className="fontweight_1 text-blackk/70 fontsize_3 pt-4">
             ESPCT designs, manufactures and installs proprietary completion
             equipment for electric submersible pump (ESP) systems to meet the
             needs of ESP OEMs and E&P operators. ESPCT is headquartered in
@@ -123,7 +123,7 @@ function Relimonitor() {
                   <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                     IDEATION:
                   </h1>
-                  <p className="z-20 fontweight_1 text-blackk/60 fontsize_3">
+                  <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">
                     We meticulously designed a real-time monitoring system that
                     interfaces with existing SCADA infrastructure. Our focus was
                     on creating a versatile tool that could adapt to various
@@ -144,7 +144,7 @@ function Relimonitor() {
                   <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                     OUR APPROACH
                   </h1>
-                  <p className="z-20 fontweight_1 text-blackk/60 fontsize_3">
+                  <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">
                     We prioritized real-time data processing, intelligent alarm
                     management, and user-friendly visualizations. By leveraging
                     artificial lift methods calculations and SCADA data
@@ -167,7 +167,7 @@ function Relimonitor() {
                   <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                     OUTCOMES
                   </h1>
-                  <p className="z-20 fontweight_1 text-blackk/60 fontsize_3">
+                  <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">
                     The RE.LI Monitor tool has revolutionized real-time sensor
                     monitoring for ESPCT, enabling proactive management of well
                     operations. The system's ability to plot performance graphs,
@@ -190,7 +190,7 @@ function Relimonitor() {
             <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
               01
             </h1>
-            <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
               Developed a real-time sensor monitoring tool (RE.LI Monitor)
               capable of interfacing with multiple data acquisition systems.
             </p>
@@ -199,7 +199,7 @@ function Relimonitor() {
             <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
               02
             </h1>
-            <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
               Implemented an intelligent alarm system that raises appropriate
               alerts based on SCADA data analysis.
             </p>
@@ -208,7 +208,7 @@ function Relimonitor() {
             <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
               03
             </h1>
-            <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
               Created a robust plotting system for visualizing different alarm
               trends and performance metrics.
             </p>
@@ -217,7 +217,7 @@ function Relimonitor() {
             <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
               04
             </h1>
-            <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
               Established an automated email alert system for critical alarms.
             </p>
           </div>
@@ -225,7 +225,7 @@ function Relimonitor() {
             <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
               05
             </h1>
-            <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
               Successfully extended the application's use from ESP wells to PCP,
               Gas Lift, and Natural flowing wells.
             </p>
@@ -240,3 +240,4 @@ function Relimonitor() {
 }
 
 export default Relimonitor;
+

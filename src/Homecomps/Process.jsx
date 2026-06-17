@@ -14,12 +14,12 @@ function Process() {
       <div className="bg-zinc-50">
         <div className="sm:max-w-7xl mx-auto w-screen">
           <div className="flex flex-col items-center justify-center pb-12 sm:pb-16 md:pb-20">
-            <p className="text-bloo fontweight_1 text-xl sm:text-2xl lg:text-3xl mb-4 py-1">
+            <h2 className="text-bloo fontweight_1 text-xl sm:text-2xl lg:text-3xl mb-4 py-1">
               Agile Software Development
-            </p>
-            <h2 className="text-blackk fontweight_1 text-center text-2xl  md:text-3xl lg:text-[32px] max-w-4xl ">
-              Proven processes,  unparalleled expertise, and top notch tools
             </h2>
+            <h3 className="text-blackk fontweight_1 text-center text-2xl  md:text-3xl lg:text-[32px] max-w-4xl ">
+              Proven processes,  unparalleled expertise, and top notch tools
+            </h3>
           </div>
 
           <div className="flex flex-col gap-20 items-center w-full h-full justify-center max-w-7xl mx-auto">

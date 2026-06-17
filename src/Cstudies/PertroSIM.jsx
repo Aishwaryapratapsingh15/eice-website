@@ -17,15 +17,15 @@ function PetroSIM() {
           <h2 className="text-blackk  fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
             Product Quality Assurance for Refinery Simulation Tool
           </h2>
-          <p className="fontweight_1 max-w-4xl mx-auto  text-blackk/60 fontsize_3 pt-4 px-4">
+          <p className="fontweight_1 max-w-4xl mx-auto  text-blackk/70 fontsize_3 pt-4 px-4">
             PetroSIM: Comprehensive quality assurance and simulation tool for
             refinery operations, integrating advanced modeling capabilities with
             user-friendly interfaces for optimal process analysis and
             optimization.
           </p>
           <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
-            <img src={petrosim1} alt="" className="w-full h-full object-fit rounded-lg" />
-            <img src={petrosim2} alt="" className="w-full h-full object-fit rounded-lg" />
+            <img src={petrosim1} alt="PetroSIM refinery simulation tool interface" className="w-full h-full object-fit rounded-lg" />
+            <img src={petrosim2} alt="PetroSIM process analysis and optimization dashboard" className="w-full h-full object-fit rounded-lg" />
           </div>
         </div>
         <div className="w-full pb-6">
@@ -37,7 +37,7 @@ function PetroSIM() {
               <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
                 01
               </h1>
-              <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                 Integrating multiple equations of state (EOS) properties
                 accurately
               </p>
@@ -46,7 +46,7 @@ function PetroSIM() {
               <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
                 02
               </h1>
-              <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                 Ensuring user-friendliness while maintaining complex simulation
                 capabilities
               </p>
@@ -55,7 +55,7 @@ function PetroSIM() {
               <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
                 03
               </h1>
-              <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                 Developing a comprehensive help system for new users
               </p>
             </div>
@@ -63,7 +63,7 @@ function PetroSIM() {
               <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
                 04
               </h1>
-              <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                 Continuously updating the tool to keep pace with evolving
                 refinery technologies
               </p>
@@ -72,7 +72,7 @@ function PetroSIM() {
               <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
                 05
               </h1>
-              <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
                 Balancing simulation accuracy with computational efficiency
               </p>
             </div>
@@ -87,7 +87,7 @@ function PetroSIM() {
           <h2 className="text-blackk  fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
             KBC
           </h2>
-          <p className="fontweight_1 text-blackk/60 fontsize_3 pt-4">
+          <p className="fontweight_1 text-blackk/70 fontsize_3 pt-4">
             KBC is a subsidiary of Yokogawa Electric Corporation who deploy world
             class technology & expertise in energy & process management. As a
             leader in Digital Energy Management & Carbon Emissions Management,
@@ -114,7 +114,7 @@ function PetroSIM() {
                   <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                     IDEATION:
                   </h1>
-                  <p className="z-20 fontweight_1 text-blackk/60 fontsize_3">
+                  <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">
                     We conceptualized a comprehensive refinery simulation tool
                     that combines advanced modeling capabilities with
                     user-friendly interfaces. Our focus was on creating a
@@ -136,7 +136,7 @@ function PetroSIM() {
                   <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                     OUR APPROACH
                   </h1>
-                  <p className="z-20 fontweight_1 text-blackk/60 fontsize_3">
+                  <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">
                     We prioritized the integration of multiple equations of
                     state properties to ensure accurate simulations across
                     various refinery operations. By developing an intuitive user
@@ -161,7 +161,7 @@ function PetroSIM() {
                   <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                     OUTCOMES
                   </h1>
-                  <p className="z-20 fontweight_1 text-blackk/60 fontsize_3">
+                  <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">
                     PetroSIM has revolutionized refinery simulations by
                     providing a powerful yet user-friendly tool for process
                     analysis and optimization. Its ability to perform all basic
@@ -184,7 +184,7 @@ function PetroSIM() {
             <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
               01
             </h1>
-            <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
               Successfully developed a hydrocarbon process simulator capable of
               performing all basic refinery operations
             </p>
@@ -193,7 +193,7 @@ function PetroSIM() {
             <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
               02
             </h1>
-            <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
               Integrated multiple EOS properties (Peng Robinson, RKSA, Amine
               packages) for versatile operations
             </p>
@@ -202,7 +202,7 @@ function PetroSIM() {
             <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
               03
             </h1>
-            <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
               Created a user-friendly interface with comprehensive guide and
               help files
             </p>
@@ -211,7 +211,7 @@ function PetroSIM() {
             <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
               04
             </h1>
-            <p className="fontweight_1 text-blackk/60 fontsize_3 py-2">
+            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
               Delivered a quality assurance tool that enhances refinery
               simulation accuracy and efficiency
             </p>
@@ -226,3 +226,4 @@ function PetroSIM() {
 }
 
 export default PetroSIM;
+

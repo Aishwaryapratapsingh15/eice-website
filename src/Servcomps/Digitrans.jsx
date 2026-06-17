@@ -186,7 +186,7 @@ function Digitrans() {
               <h1 className="text-blackk  fontweight_1 fontsize_6 ">
                 Digital Transformation
               </h1>
-              <h2 className="text-blackk/60 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
+              <h2 className="text-blackk/70 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
                 {
                   "Revolutionize Your Business  Harness the Power of Digital Transformation for Sustainable Growth"
                 }
@@ -194,7 +194,7 @@ function Digitrans() {
             </div>
             <div className="lg:flex hidden items-center justify-end ">
               <div className="w-2/5">
-                <img src={digital} alt="" className="rounded-full" />
+                <img src={digital} alt="Digital transformation services" className="rounded-full" />
               </div>
             </div>
           </div>
@@ -212,17 +212,17 @@ function Digitrans() {
               </h1>
             </div>
             <div>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 In today's digital landscape, businesses must adapt to stay
                 relevant. EICE offers comprehensive digital transformation
                 services to propel your organization forward.
               </p>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg  py-2">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg  py-2">
                 Our strategic approach ensures alignment with your objectives,
                 combining industry insights and cutting-edge technologies to
                 drive meaningful change.
               </p>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We develop strategies that enhance operational efficiency,
                 capabilities, and customer experiences. Partner with EICE to
                 navigate the digital revolution and achieve long-term success.
@@ -248,7 +248,7 @@ function Digitrans() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl ">
                 DIGITAL INNOVATION
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We identify and implement cutting-edge digital solutions to
                 drive innovation and create new value streams for your business.
               </p>
@@ -262,7 +262,7 @@ function Digitrans() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 DATA-DRIVEN INSIGHTS
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We leverage advanced analytics and AI to extract actionable
                 insights, enabling data-driven decision-making across your
                 organization.
@@ -277,7 +277,7 @@ function Digitrans() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 DIGITAL EXPERIENCE DESIGN
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We create seamless, intuitive digital experiences that delight
                 users across all devices and platforms, enhancing customer
                 engagement and loyalty.
@@ -337,7 +337,7 @@ function Digitrans() {
                     <FiCheckCircle className="w-6 h-6 text-emerald-500" />
                   </div>
                   <div>
-                    <p className="font-medium text-blackk/60 sm:text-xl text-lg">
+                    <p className="font-medium text-blackk/70 sm:text-xl text-lg">
                       <span className="text-blackk fontweight_1 text-lg pt-1 pb-3 sm:text-xl">
                         {item.title}:{" "}
                       </span>
@@ -361,3 +361,4 @@ function Digitrans() {
 }
 
 export default Digitrans;
+

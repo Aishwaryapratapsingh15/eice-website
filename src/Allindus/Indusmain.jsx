@@ -28,7 +28,7 @@ const IndustryCard = ({ to, color, Icon, title, description }) => (
       </div>
       <div>
         <h3 className="font-semibold text-xl sm:text-2xl ">{title}</h3>
-        <p className="font-medium text-blackk/60 sm:text-xl text-lg">
+        <p className="font-medium text-blackk/70 sm:text-xl text-lg">
           {description}
         </p>
       </div>
@@ -112,7 +112,7 @@ function Indusmain() {
             Driving <span className="text-bloo">Digital Transformation</span>{" "}
             Across Industries
           </h1>
-          <p className="text-blackk/60 font-semibold max-w-5xl mx-auto  py-8 fontweight_1 fontsize_2 sm:leading-tight leading-snug text-center">
+          <p className="text-blackk/70 font-semibold max-w-5xl mx-auto  py-8 fontweight_1 fontsize_2 sm:leading-tight leading-snug text-center">
             EICE empowers businesses to thrive in the digital age by leveraging
             cutting-edge technologies and innovative strategies, revolutionizing
             operations and enhancing competitiveness.
@@ -165,3 +165,4 @@ function Indusmain() {
 }
 
 export default Indusmain;
+

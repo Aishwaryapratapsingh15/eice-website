@@ -147,7 +147,7 @@ function Aiml() {
               <h1 className="text-blackk  fontweight_1 fontsize_6 ">
                 Generative AI and Machine Learning
               </h1>
-              <h2 className="text-blackk/60 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
+              <h2 className="text-blackk/70 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
                 {
                   "Revolutionize Your Business  Harness the Power of AI for Sustainable Growth"
                 }
@@ -155,7 +155,7 @@ function Aiml() {
             </div>
             <div className="lg:flex hidden items-center justify-end ">
               <div className=" w-1/2">
-                <img src={ai} alt="artifical inteligece" className="rounded-full" />
+                <img src={ai} alt="Artificial intelligence and machine learning services" className="rounded-full" />
               </div>
             </div>
           </div>
@@ -173,19 +173,19 @@ function Aiml() {
               </h1>
             </div>
             <div>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 In today's rapidly evolving AI landscape, businesses must adapt
                 to stay relevant. At EICE, we offer comprehensive AI/ML and
                 generative AI services to propel your organization into the
                 future.
               </p>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg  py-4">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg  py-4">
                 Our strategic approach ensures alignment with your business
                 objectives. Our experts combine industry insights with
                 cutting-edge AI technologies to implement solutions that drive
                 meaningful change.
               </p>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We develop AI strategies that not only meet your goals but also
                 enhance operational efficiency, capabilities, and customer
                 experiences. Partner with EICE to navigate the AI revolution and
@@ -212,7 +212,7 @@ function Aiml() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl ">
                 AI INNOVATION
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We identify and implement cutting-edge digital solutions to
                 drive innovation and create new value streams for your business.
               </p>
@@ -226,7 +226,7 @@ function Aiml() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 MACHINE LEARNING INSIGHTS
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We leverage advanced analytics and AI to extract actionable
                 insights, enabling data-driven decision-making across your
                 organization.
@@ -241,7 +241,7 @@ function Aiml() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 GENERATIVE AI SOLUTIONS
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We create seamless, intuitive digital experiences that delight
                 users across all devices and platforms, enhancing customer
                 engagement and loyalty.
@@ -301,7 +301,7 @@ function Aiml() {
                     <FiCheckCircle className="w-6 h-6 text-emerald-500" />
                   </div>
                   <div>
-                    <p className="font-medium text-blackk/60 sm:text-xl text-lg">
+                    <p className="font-medium text-blackk/70 sm:text-xl text-lg">
                       <span className="text-blackk fontweight_1 text-lg pt-1 pb-3 sm:text-xl">
                         {item.title}:{" "}
                       </span>
@@ -325,3 +325,4 @@ function Aiml() {
 }
 
 export default Aiml;
+

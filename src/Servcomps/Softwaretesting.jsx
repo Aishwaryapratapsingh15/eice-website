@@ -187,7 +187,7 @@ function Chatbot() {
               <h1 className="text-blackk  fontweight_1 fontsize_6 ">
                 Software Testing
               </h1>
-              <h2 className="text-blackk/60 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
+              <h2 className="text-blackk/70 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
                 {
                   "Comprehensive Software Testing Services  Ensuring Quality and Reliability"
                 }
@@ -195,7 +195,7 @@ function Chatbot() {
             </div>
             <div className="lg:flex hidden items-center justify-end ">
               <div className="lg:w-7/12 w-1/2">
-                <img src={testing} alt="" className="rounded-full" />
+                <img src={testing} alt="Software testing and quality assurance services" className="rounded-full" />
               </div>
             </div>
           </div>
@@ -213,7 +213,7 @@ function Chatbot() {
               </h1>
             </div>
             <div>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 In today’s technology-driven market, delivering high-quality
                 software is crucial for maintaining customer satisfaction,
                 competitive edge, and operational efficiency. Software testing
@@ -245,7 +245,7 @@ function Chatbot() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl ">
                 FUNCTIONAL TESTING
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We conduct thorough functional testing to verify that your
                 software performs its intended functions correctly. Our team
                 designs test cases that cover all functional requirements,
@@ -261,7 +261,7 @@ function Chatbot() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl ">
                 PERFORMANCE TESTING
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We perform performance testing to evaluate the responsiveness,
                 stability, scalability, and speed of your software under various
                 conditions. This helps in identifying performance bottlenecks
@@ -277,7 +277,7 @@ function Chatbot() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 SECURITY TESTING
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We provide robust security testing services to identify
                 vulnerabilities, protect sensitive data, and safeguard your
                 software against cyber threats. Our approach includes
@@ -294,7 +294,7 @@ function Chatbot() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 AUTOMATION TESTING
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We utilize advanced automation testing tools to execute
                 repetitive test cases efficiently. Automation testing enhances
                 test coverage, improves accuracy, and accelerates the testing
@@ -310,7 +310,7 @@ function Chatbot() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 COMPATIBILITY TESTING
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We perform usability testing to evaluate the user-friendliness
                 of your software. Our experts assess the user interface,
                 navigation, and overall user experience to ensure that your
@@ -326,7 +326,7 @@ function Chatbot() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 REGRESSION TESTING
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We offer regression testing services to confirm that new code
                 changes do not negatively impact the existing functionalities of
                 your software. This helps in maintaining the stability and
@@ -342,7 +342,7 @@ function Chatbot() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 MOBILE APPLICATION TESTING
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We specialize in mobile application testing, ensuring that your
                 apps perform flawlessly on various mobile devices and platforms.
                 Our services include functional, performance, and security
@@ -358,7 +358,7 @@ function Chatbot() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 API TESTING
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We provide API testing services to verify the functionality,
                 reliability, performance, and security of your application
                 programming interfaces (APIs). Our testing ensures seamless
@@ -375,7 +375,7 @@ function Chatbot() {
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
                 ACCEPTANCE TESTING
               </h1>
-              <p className="font-medium text-blackk/60 sm:text-xl text-lg ">
+              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
                 We conduct acceptance testing to validate that your software
                 meets the specified requirements and is ready for deployment.
                 Our team collaborates closely with stakeholders to ensure that
@@ -397,3 +397,4 @@ function Chatbot() {
 }
 
 export default Chatbot;
+
