@@ -102,6 +102,14 @@ function Indusmain() {
       description:
         "Driving Enterprise Excellence with Intelligent Software Solutions.",
     },
+    {
+      color: "cyan",
+      Icon: indus_healthcare,
+      title: "Hospitality",
+      to: "/industries/hospitality",
+      description:
+        "Powering Hospitality Excellence with Integrated ERP and AI Technology Solutions.",
+    },
   ];
 
   return (

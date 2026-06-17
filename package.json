@@ -7,7 +7,8 @@
     "dev": "next dev --webpack",
     "build": "next build --webpack",
     "lint": "eslint . --ext js,jsx --max-warnings 0",
-    "start": "next start"
+    "start": "next start",
+    "preview": "next start"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",

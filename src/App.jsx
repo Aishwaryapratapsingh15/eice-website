@@ -11,7 +11,7 @@ import { GoLaw } from "react-icons/go";
 import { FaBusinessTime, FaOilCan, FaSyringe } from "react-icons/fa";
 import { IoIosCash } from "react-icons/io";
 import { BiPencil } from "react-icons/bi";
-import { MdPermMedia } from "react-icons/md";
+import { MdPermMedia, MdHotel } from "react-icons/md";
 import { BsTruck } from "react-icons/bs";
 import { FiArrowRight, FiChevronDown } from "react-icons/fi";
 import { FaPeopleArrows } from "react-icons/fa";
@@ -64,14 +64,8 @@ const NavLayout = ({ children }) => {
             <div className="cursor-pointer px-4">
               <Link href="/"><img src={logo} alt="EICE Technology" className="h-8 w-auto" /></Link>
             </div>
-            <div className="flex items-center justify-center gap-6">
-              <NavLink to="/" className="px-4 py-1">
-                <div className="group hover:text-bloo transition duration-300 ease-in-out">
-                  <div>HOME</div>
-                  <div className="bg-bloo h-0.5 rounded-full w-0 group-hover:w-full transition-all duration-300"></div>
-                </div>
-              </NavLink>
-              <div className="px-2"><Tabs /></div>
+            <div className="flex items-center justify-center">
+              <Tabs />
             </div>
             <div className="px-4">
               <NavLink to="/contact">
@@ -172,7 +166,15 @@ const Tabs = () => {
   };
 
   return (
-    <div onMouseLeave={() => handleSetSelected(null)} className="relative overflow-visible flex h-fit gap-4">
+    <div onMouseLeave={() => handleSetSelected(null)} className="relative overflow-visible flex items-center gap-4">
+      <div onMouseEnter={() => handleSetSelected(null)} className="h-10 flex items-center rounded-full px-3 text-md cursor-pointer">
+        <NavLink to="/" className="block">
+          <div className="group overflow-visible hover:text-bloo transition duration-300 ease-in-out">
+            <div>HOME</div>
+            <div className="bg-bloo h-0.5 rounded-full w-0 group-hover:w-full transition-width duration-300"></div>
+          </div>
+        </NavLink>
+      </div>
       {TABS.map((t) => (
         <Tab key={t.id} selected={selected} handleSetSelected={handleSetSelected} tab={t.id} link={t.link}>{t.title}</Tab>
       ))}
@@ -195,16 +197,16 @@ const Tab = ({ children, tab, handleSetSelected, selected, link }) => {
     <div
       id={`shift-tab-${tab}`}
       onMouseEnter={() => handleSetSelected(tab)}
-      className="h-full flex items-center gap-1 rounded-full px-3 py-1.5 text-md transition-colors cursor-pointer"
+      className="h-10 flex items-center gap-1 rounded-full px-3 text-md transition-colors cursor-pointer"
     >
       {link ? (
-        <Link href={link} onClick={() => handleSetSelected(null)}>
+        <Link href={link} onClick={() => handleSetSelected(null)} className="block">
           {tabContent}
         </Link>
       ) : (
-        <div onClick={() => handleSetSelected(tab)}>
+        <Link href="" onClick={(e) => { e.preventDefault(); handleSetSelected(tab); }} className="block">
           {tabContent}
-        </div>
+        </Link>
       )}
     </div>
   );
@@ -340,6 +342,7 @@ const OurIndustries = ({ handleSetSelected = () => {} }) => (
           { to: "/industries/digital-media", Icon: MdPermMedia,    label: "Digital Media" },
           { to: "/industries/logistics",     Icon: BsTruck,        label: "Logistics" },
           { to: "/industries/enterprise",    Icon: FaBusinessTime, label: "Enterprise" },
+          { to: "/industries/hospitality",   Icon: MdHotel,        label: "Hospitality" },
         ].map(({ to, Icon, label }) => (
           <div key={to} className="group flex flex-col gap-1">
             <Link to={to} onClick={() => handleSetSelected(null)} className="flex flex-row gap-4 items-center">

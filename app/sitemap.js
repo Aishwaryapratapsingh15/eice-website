@@ -48,7 +48,8 @@ export default function sitemap() {
     { url: "/industries/logistics/",     priority: 0.7, changeFrequency: "monthly", lastModified: DATES.industries },
     { url: "/industries/enterprise/",    priority: 0.7, changeFrequency: "monthly", lastModified: DATES.industries },
     { url: "/industries/legal/",         priority: 0.7, changeFrequency: "monthly", lastModified: DATES.industries },
-    { url: "/industries/digital-media/", priority: 0.7, changeFrequency: "monthly", lastModified: DATES.industries },
+    { url: "/industries/digital-media/",  priority: 0.7, changeFrequency: "monthly", lastModified: DATES.industries },
+    { url: "/industries/hospitality/",    priority: 0.8, changeFrequency: "monthly", lastModified: DATES.industries },
 
     // Products
     { url: "/products/eice-rise/",   priority: 0.8, changeFrequency: "monthly", lastModified: DATES.products },
