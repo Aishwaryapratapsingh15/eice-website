@@ -17,7 +17,7 @@ function VoiceCallAI() {
           </h2>
           <p className="fontweight_1 max-w-4xl mx-auto text-blackk/70 fontsize_3 pt-4 px-4">
             An AI-powered voice call assistant that automates customer interactions, delivers real-time conversation
-            insights, and reduces handle time â€” enabling businesses to scale support operations without compromising
+            insights, and reduces handle time, enabling businesses to scale support operations without compromising
             service quality.
           </p>
           <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
@@ -72,7 +72,7 @@ function VoiceCallAI() {
               <div className="w-full h-full items-center justify-start px-2 pb-2"><GiVirtualMarker size={50} className="text-bloo" /></div>
               <div className="flex flex-col p-2 text-start justify-end">
                 <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">IDEATION:</h1>
-                <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">We designed a conversational AI layer that sits between the telephony system and the CRM, handling routine queries autonomously, escalating complex cases to human agents with full context, and capturing structured call data for analytics â€” all in real time.</p>
+                <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">We designed a conversational AI layer that sits between the telephony system and the CRM, handling routine queries autonomously, escalating complex cases to human agents with full context, and capturing structured call data for analytics in real time.</p>
               </div>
             </div>
           </div>

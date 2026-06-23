@@ -16,7 +16,7 @@ function LogisticsAi() {
           </h2>
           <p className="fontweight_1 max-w-4xl mx-auto text-blackk/70 fontsize_3 pt-4 px-4">
             An AI-powered logistics optimisation platform that automates route planning, demand forecasting, and shipment
-            tracking â€” enabling logistics operators to reduce costs, improve delivery accuracy, and respond dynamically
+            tracking, enabling logistics operators to reduce costs, improve delivery accuracy, and respond dynamically
             to supply chain disruptions.
           </p>
           <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4">
@@ -40,7 +40,7 @@ function LogisticsAi() {
             </div>
             <div className="flex gap-4">
               <h2 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">04</h2>
-              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">Detecting and responding to supply chain disruptions â€” delays, route changes, and capacity shortfalls â€” in real time</p>
+              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">Detecting and responding to supply chain disruptions including delays, route changes, and capacity shortfalls in real time</p>
             </div>
             <div className="flex gap-4">
               <h2 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">05</h2>
@@ -71,7 +71,7 @@ function LogisticsAi() {
               <div className="w-full h-full items-center justify-start px-2 pb-2"><GiVirtualMarker size={50} className="text-bloo" /></div>
               <div className="flex flex-col p-2 text-start justify-end">
                 <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">IDEATION:</h1>
-                <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">We designed an AI operations layer that continuously optimises route plans, predicts demand signals, and alerts operators to emerging disruptions â€” replacing reactive manual planning with a proactive, data-driven workflow.</p>
+                <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">We designed an AI operations layer that continuously optimises route plans, predicts demand signals, and alerts operators to emerging disruptions, replacing reactive manual planning with a proactive, data-driven workflow.</p>
               </div>
             </div>
           </div>

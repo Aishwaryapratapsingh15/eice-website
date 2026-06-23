@@ -12,7 +12,7 @@ function Peep() {
         <div className="w-full">
           <h2 className="text-bloo fontweight_1 text-center fontsize_2 py-2">Business Analytics Automation</h2>
           <h2 className="text-blackk fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
-            Tool for Monitoring of Petroleum Financial Models â€” Schlumberger
+            Tool for Monitoring of Petroleum Financial Models - Schlumberger
           </h2>
           <p className="fontweight_1 max-w-4xl mx-auto text-blackk/70 fontsize_3 pt-4 px-4">
             A business analytics automation platform developed for Schlumberger, enabling real-time monitoring and
@@ -70,7 +70,7 @@ function Peep() {
               <div className="w-full h-full items-center justify-start px-2 pb-2"><GiVirtualMarker size={50} className="text-bloo" /></div>
               <div className="flex flex-col p-2 text-start justify-end">
                 <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">IDEATION:</h1>
-                <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">We designed a centralised analytics engine that automatically ingests upstream production and cost data, runs petroleum financial model calculations, and presents results through role-specific dashboards â€” eliminating manual spreadsheet workflows.</p>
+                <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">We designed a centralised analytics engine that automatically ingests upstream production and cost data, runs petroleum financial model calculations, and presents results through role-specific dashboards, eliminating manual spreadsheet workflows.</p>
               </div>
             </div>
           </div>

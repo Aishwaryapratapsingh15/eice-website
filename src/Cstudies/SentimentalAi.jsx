@@ -16,7 +16,7 @@ function SentimentalAi() {
           </h2>
           <p className="fontweight_1 max-w-4xl mx-auto text-blackk/70 fontsize_3 pt-4 px-4">
             An AI-driven sentiment analysis platform that processes large volumes of product reviews to surface actionable
-            insights about customer satisfaction, recurring issues, and feature preferences â€” enabling product and
+            insights about customer satisfaction, recurring issues, and feature preferences, enabling product and
             marketing teams to make faster, evidence-based decisions.
           </p>
           <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4">
@@ -70,7 +70,7 @@ function SentimentalAi() {
               <div className="w-full h-full items-center justify-start px-2 pb-2"><GiVirtualMarker size={50} className="text-bloo" /></div>
               <div className="flex flex-col p-2 text-start justify-end">
                 <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">IDEATION:</h1>
-                <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">We designed an aspect-based sentiment analysis pipeline that goes beyond overall star ratings, attributing sentiment to specific product features and themes â€” giving teams granular insight into exactly what customers love or want improved.</p>
+                <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">We designed an aspect-based sentiment analysis pipeline that goes beyond overall star ratings, attributing sentiment to specific product features and themes, giving teams granular insight into exactly what customers love or want improved.</p>
               </div>
             </div>
           </div>

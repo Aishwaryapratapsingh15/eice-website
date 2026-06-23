@@ -18,10 +18,9 @@ function SimuLift() {
             Quote &amp; Sizing Tools for Artificial Lift Methods
           </h2>
           <p className="fontweight_1 max-w-4xl mx-auto text-blackk/70 fontsize_3 pt-4 px-4">
-            SimuLIFT is a specialized engineering tool developed to streamline
-            the quote and sizing process for artificial lift methods in the oil
-            and gas industry, enabling engineers to quickly evaluate and select
-            the optimal lift solution for any well condition.
+            Development of a software application to design artificial lift
+            solutions for the oil industry covering different artificial lift
+            methods from ESP design to PCP and Hydraulic Rod pump systems.
           </p>
           <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
             <img src={simulift1} alt="SimuLIFT Tool" className="w-full h-full object-fit rounded-lg" />
@@ -38,8 +37,7 @@ function SimuLift() {
                 01
               </h1>
               <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
-                Handling complex engineering calculations for multiple artificial
-                lift methods including ESP, gas lift, and rod pump systems
+                Designing a comprehensive tool that integrates various artificial lift methods
               </p>
             </div>
             <div className="flex gap-4">
@@ -47,8 +45,7 @@ function SimuLift() {
                 02
               </h1>
               <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
-                Generating accurate equipment sizing recommendations based on
-                varying well parameters and production targets
+                Ensuring accurate and reliable data for quoting and sizing.
               </p>
             </div>
             <div className="flex gap-4">
@@ -56,8 +53,7 @@ function SimuLift() {
                 03
               </h1>
               <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
-                Automating the quotation process to reduce engineering time and
-                minimize human error in proposal generation
+                Facilitating ease of use for sales and engineering teams.
               </p>
             </div>
             <div className="flex gap-4">
@@ -65,8 +61,7 @@ function SimuLift() {
                 04
               </h1>
               <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
-                Providing a user-friendly interface accessible to field engineers
-                without deep software expertise
+                Integrating with existing systems for seamless data flow.
               </p>
             </div>
             <div className="flex gap-4">
@@ -74,8 +69,7 @@ function SimuLift() {
                 05
               </h1>
               <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
-                Ensuring calculation accuracy across a wide range of well
-                conditions and fluid properties
+                Providing extensive reporting features for detailed analysis.
               </p>
             </div>
           </div>
@@ -87,15 +81,14 @@ function SimuLift() {
             About Our Client
           </h1>
           <h2 className="text-blackk fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
-            Oil &amp; Gas Equipment Provider
+            HALLIBURTON
           </h2>
           <p className="fontweight_1 text-blackk/70 fontsize_3 pt-4">
-            Our client is a leading supplier of artificial lift equipment and
-            engineering solutions for the oil and gas industry. They required a
-            streamlined digital tool to accelerate the quoting and sizing
-            workflow for their sales and engineering teams, reducing turnaround
-            time on proposals while maintaining the precision demanded by
-            upstream operations.
+            Founded in 1919, Halliburton is one of the world&apos;s leading
+            providers of products and services to the energy industry. They
+            create innovative technologies, products, and services that help
+            our customers maximize their value throughout the life cycle of an
+            asset and advance a sustainable energy future.
           </p>
         </div>
       </div>
@@ -182,8 +175,7 @@ function SimuLift() {
               01
             </h1>
             <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
-              Developed a fully automated quote and sizing engine supporting
-              multiple artificial lift methods within a single platform
+              Successfully developed a comprehensive quote and sizing tool for artificial lift methods.
             </p>
           </div>
           <div className="flex gap-4 rounded-xl border-2 border-blue-900/60 p-4 shadow-md shadow-blue-900/20">
@@ -191,8 +183,7 @@ function SimuLift() {
               02
             </h1>
             <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
-              Significantly reduced proposal turnaround time, enabling faster
-              and more competitive client responses
+              Enhanced the ability to design and quote using various lift methods accurately.
             </p>
           </div>
           <div className="flex gap-4 rounded-xl border-2 border-blue-900/60 p-4 shadow-md shadow-blue-900/20">
@@ -200,8 +191,7 @@ function SimuLift() {
               03
             </h1>
             <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
-              Eliminated manual errors in sizing calculations through built-in
-              validation and standardized engineering logic
+              Improved data integration for seamless information flow.
             </p>
           </div>
           <div className="flex gap-4 rounded-xl border-2 border-blue-900/60 p-4 shadow-md shadow-blue-900/20">
@@ -209,8 +199,15 @@ function SimuLift() {
               04
             </h1>
             <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
-              Delivered a scalable tool adaptable to new lift methods and
-              equipment configurations as the client's product line expands
+              Provided extensive reporting features for detailed project analysis.
+            </p>
+          </div>
+          <div className="flex gap-4 rounded-xl border-2 border-blue-900/60 p-4 shadow-md shadow-blue-900/20">
+            <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
+              05
+            </h1>
+            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
+              Developed a versatile tool that supports both engineering and sales functions.
             </p>
           </div>
         </div>

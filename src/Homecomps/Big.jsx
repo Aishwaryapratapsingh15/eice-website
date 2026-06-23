@@ -187,7 +187,7 @@ function Big() {
                   aria-label={`Go to slide ${index + 1}`}
                   aria-current={currentIndex === index ? "true" : undefined}
                   onClick={() => setCurrentIndex(index)}
-                  className={`w-6 h-2 rounded-full ${
+                  className={`tap-sm w-6 h-2 rounded-full ${
                     currentIndex === index ? "bg-blue-900" : "bg-bloo/20"
                   }`}
                 />

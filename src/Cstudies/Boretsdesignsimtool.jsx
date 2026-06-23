@@ -11,10 +11,10 @@ function Boretsdesignsimtool() {
       <div className="max-w-7xl mx-auto px-4 2xl:pt-12 pt-32">
         <div className="w-full">
           <h1 className="text-bloo fontweight_1 text-center fontsize_2 py-2">
-            Oil &amp; Gas Product Development
+            Oil and Gas Product Development
           </h1>
           <h2 className="text-blackk fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
-            Design &amp; Simulation Tool for Production Monitoring â€” BORETS
+            Design and Simulation Tool for Production Monitoring - BORETS
           </h2>
           <p className="fontweight_1 max-w-4xl mx-auto text-blackk/70 fontsize_3 pt-4 px-4">
             A comprehensive design and simulation platform developed for BORETS,

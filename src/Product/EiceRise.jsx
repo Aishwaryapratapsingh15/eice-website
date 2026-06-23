@@ -16,14 +16,14 @@ export default function MicroSite() {
   }, []);
   return (
     <div className="w-full">
-      <iframe
+      {/* <iframe
           src="https://rise.eicetechnology.com/?embed=true"
         // src="http://localhost:5174/?embed=true"
         className="w-full border-0"
         // style={{ minHeight: "100vh" }}
         style={{ height: height + 150}} 
         scrolling="no"
-      />
+      /> */}
       <ProductFooter/>
     </div>
   );

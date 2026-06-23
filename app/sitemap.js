@@ -111,7 +111,7 @@ export default function sitemap() {
     { url: "/case-studies/design-sim-borets/",  priority: 0.6, changeFrequency: "monthly", lastModified: DATES.caseStudies },
     { url: "/case-studies/schlumberger-baa/",   priority: 0.6, changeFrequency: "monthly", lastModified: DATES.caseStudies },
 
-    // Blog / Content Hub (placeholder â€” add individual posts as published)
+    // Blog / Content Hub (placeholder  add individual posts as published)
     { url: "/blog/",  priority: 0.8, changeFrequency: "weekly",  lastModified: DATES.blog },
   ];
 

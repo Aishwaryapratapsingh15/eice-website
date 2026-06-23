@@ -60,14 +60,14 @@ const NavLayout = ({ children }) => {
 
         {/* â”€â”€ Desktop Navbar â”€â”€ */}
         <nav className="overflow-visible fixed w-full top-0 left-0 z-30 shadow-md shadow-blackk/20 font-manrope bg-white font-semibold 2xl:block xl:block hidden">
-          <div className="flex max-w-7xl mx-auto items-center justify-between text-lg py-3">
-            <div className="cursor-pointer px-4">
+          <div className="flex max-w-7xl mx-auto items-center text-lg py-3">
+            <div className="cursor-pointer px-4 flex-1">
               <Link href="/"><img src={logo} alt="EICE Technology" className="h-8 w-auto" /></Link>
             </div>
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center flex-1 mt-2">
               <Tabs />
             </div>
-            <div className="px-4">
+            <div className="px-4 flex-1 flex justify-end">
               <NavLink to="/contact">
                 <button className="flex items-center justify-center transition duration-200 py-2 w-28 hover:bg-blue-900/90 hover:shadow-md hover:shadow-blue-900/30 bg-blue-900 text-white text-sm font-semibold px-3 rounded">
                   Contact Us

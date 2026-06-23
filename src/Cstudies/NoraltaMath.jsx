@@ -12,7 +12,7 @@ function NoraltaMath() {
         <div className="w-full">
           <h2 className="text-bloo fontweight_1 text-center fontsize_2 py-2">FEMMS</h2>
           <h2 className="text-blackk fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
-            Fugitive Emission Monitoring, Estimation &amp; Management System
+            Fugitive Emission Monitoring, Estimation and Management System
           </h2>
           <p className="fontweight_1 max-w-4xl mx-auto text-blackk/70 fontsize_3 pt-4 px-4">
             FEMMS is a purpose-built platform for detecting, quantifying, and managing fugitive emissions across oil and
@@ -71,7 +71,7 @@ function NoraltaMath() {
               <div className="w-full h-full items-center justify-start px-2 pb-2"><GiVirtualMarker size={50} className="text-bloo" /></div>
               <div className="flex flex-col p-2 text-start justify-end">
                 <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">IDEATION:</h1>
-                <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">We envisioned a component-level LDAR platform that digitises every step of the fugitive emission lifecycle â€” from initial survey and leak detection, through estimation and repair scheduling, to final regulatory reporting â€” in one integrated system.</p>
+                <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">We envisioned a component-level LDAR platform that digitises every step of the fugitive emission lifecycle, from initial survey and leak detection, through estimation and repair scheduling, to final regulatory reporting, in one integrated system.</p>
               </div>
             </div>
           </div>

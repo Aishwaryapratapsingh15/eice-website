@@ -16,13 +16,13 @@ function CityGasAdani() {
             City Gas Distribution
           </h1>
           <h2 className="text-blackk fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
-            Gas Distribution Analysis App for Adani Gas
+            Construction and Operational Management System
           </h2>
           <p className="fontweight_1 max-w-4xl mx-auto text-blackk/70 fontsize_3 pt-4 px-4">
-            A comprehensive gas distribution management and analysis application
-            developed for Adani Gas, enabling real-time monitoring, safety
-            compliance, and operational efficiency across their city gas
-            distribution network.
+            Development of a GIS-based real-time construction and operational
+            management system for City Gas Distribution in Faridabad, India,
+            integrating multiple data sources for comprehensive project
+            execution and monitoring.
           </p>
           <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
             <img src={adanigas1} alt="City Gas Distribution App" className="w-full h-full object-fit rounded-lg" />
@@ -39,8 +39,7 @@ function CityGasAdani() {
                 01
               </h1>
               <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
-                Managing and monitoring a large-scale city gas distribution
-                network across multiple zones in real time
+                Implementing real-time construction data updates on a GIS platform
               </p>
             </div>
             <div className="flex gap-4">
@@ -48,8 +47,7 @@ function CityGasAdani() {
                 02
               </h1>
               <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
-                Ensuring safety and regulatory compliance across the entire
-                distribution pipeline
+                Integrating diverse data sources (Customer data, Honeywell SCADA, SAP) into a unified GIS system
               </p>
             </div>
             <div className="flex gap-4">
@@ -57,8 +55,7 @@ function CityGasAdani() {
                 03
               </h1>
               <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
-                Integrating data from multiple sensors and field devices into a
-                single unified platform
+                Developing a final pipe book in APDM format
               </p>
             </div>
             <div className="flex gap-4">
@@ -66,8 +63,7 @@ function CityGasAdani() {
                 04
               </h1>
               <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
-                Providing actionable analytics and reports for operational
-                decision-making
+                Ensuring seamless data flow between construction, operational, and financial systems
               </p>
             </div>
             <div className="flex gap-4">
@@ -75,8 +71,7 @@ function CityGasAdani() {
                 05
               </h1>
               <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
-                Minimizing downtime and responding rapidly to fault detection
-                across the network
+                Creating a scalable solution that could be adapted for other city gas projects, particularly in the Middle East
               </p>
             </div>
           </div>
