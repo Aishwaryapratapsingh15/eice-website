@@ -276,7 +276,7 @@ export default function ComplianceRegister() {
 
       {/* CTA */}
       <section>
-        <Link to="/products/eice-rise/form?product=EiceRise(Compliance Register)" style={{ color: "white",  textDecoration: "none" }}>
+        <Link to="/products/eicerise/form?product=EiceRise(Compliance Register)" style={{ color: "white",  textDecoration: "none" }}>
           <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
             <div className={style.demoButton}>
               Request a Demo <FaArrowRightLong />

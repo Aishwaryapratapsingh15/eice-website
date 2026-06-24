@@ -42,7 +42,7 @@ export default function Club() {
             serviceName: "ROOM",
             serviceName2: "BOOKING",
             icon: room,
-            path: "/products/eice-rise/room-booking",
+            path: "/products/eicerise/room-booking",
             key: 1
         },
 
@@ -50,7 +50,7 @@ export default function Club() {
             serviceName: "DINING",
             serviceName2: "(POS)",
             icon: pos,
-            path: "/products/eice-rise/pos-dining",
+            path: "/products/eicerise/pos-dining",
             key: 2
         },
 
@@ -58,7 +58,7 @@ export default function Club() {
             serviceName: "BANQUET &",
             serviceName2: "BILLING",
             icon: banquet,
-            path: "/products/eice-rise/banquet-billing",
+            path: "/products/eicerise/banquet-billing",
             key: 3
         },
 
@@ -67,7 +67,7 @@ export default function Club() {
             serviceName: "MEMBER",
             serviceName2: "SUITE",
             icon: member,
-            path: "/products/eice-rise/member-suite",
+            path: "/products/eicerise/member-suite",
             key: 4
         },
 
@@ -75,7 +75,7 @@ export default function Club() {
             serviceName: "ACCOUNT & ",
             serviceName2: "FINANCE",
             icon: account,
-            path: "/products/eice-rise/account-finance",
+            path: "/products/eicerise/account-finance",
             key: 5
         },
 
@@ -196,7 +196,7 @@ export default function Club() {
 
             <section className={`${styles.requestDemoBtn}`}>
 
-                <Link to={"/products/eice-rise/form?product=EiceRise(Club Suite)"} className="linkClass">
+                <Link to={"/products/eicerise/form?product=EiceRise(Club Suite)"} className="linkClass">
                     <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
                         <div className={`${styles.demoButton} font1`}>
                             <div > Request for Pricing </div>

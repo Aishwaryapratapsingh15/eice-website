@@ -14,7 +14,7 @@ export default function RiseBackNav({ label = "EICE Rise" }) {
       display: "flex",
       alignItems: "center",
     }}>
-      <Link to="/products/eice-rise" style={{ color: "white", textDecoration: "none", display: "flex", alignItems: "center", gap: "8px", fontSize: "14px", fontWeight: "500" }}>
+      <Link to="/products/eicerise" style={{ color: "white", textDecoration: "none", display: "flex", alignItems: "center", gap: "8px", fontSize: "14px", fontWeight: "500" }}>
         <FaArrowLeftLong />
         Back to {label}
       </Link>

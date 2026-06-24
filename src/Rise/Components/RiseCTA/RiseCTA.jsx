@@ -2,7 +2,7 @@
 import { FaArrowRightLong } from 'react-icons/fa6';
 
 export default function RiseCTA({ product = "EiceRise", heading = "Ready to Transform Your Hospitality Operations?", sub = "Schedule a live demo and see EICE Rise in action." }) {
-  const href = `/products/eice-rise/form?product=${encodeURIComponent(product)}`;
+  const href = `/products/eicerise/form?product=${encodeURIComponent(product)}`;
   return (
     <section style={{ background: "#012060", padding: "48px 20px", textAlign: "center" }}>
       <div className="globalSectionSize">

@@ -43,7 +43,7 @@ export default function Vanilla() {
             serviceName: "DINING",
             serviceName2: "(POS)",
             icon: pos,
-            path: "/products/eice-rise/pos-dining",
+            path: "/products/eicerise/pos-dining",
             key: 2
         },
 
@@ -51,7 +51,7 @@ export default function Vanilla() {
             serviceName: "BANQUET &",
             serviceName2: "BILLING",
             icon: banquet,
-            path: "/products/eice-rise/banquet-billing",
+            path: "/products/eicerise/banquet-billing",
             key: 3
         },
 
@@ -62,7 +62,7 @@ export default function Vanilla() {
         {
             serviceName: "USER STORE & INVENTORY",
             icon: inentry,
-            path: "/products/eice-rise/userstore-inventry",
+            path: "/products/eicerise/userstore-inventry",
             key: 8
         },
 
@@ -71,7 +71,7 @@ export default function Vanilla() {
         {
             serviceName: "FOOD & BEVERAGE COST ANALYSIS",
             icon: food,
-            path: "/products/eice-rise/food-cost",
+            path: "/products/eicerise/food-cost",
             key: 10
         }
     ]
@@ -182,7 +182,7 @@ export default function Vanilla() {
 
             <section className={`${styles.requestDemoBtn}`}>
 
-                <Link to={"/products/eice-rise/form?product=EiceRise(Vanilla Suite)"} className="linkClass">
+                <Link to={"/products/eicerise/form?product=EiceRise(Vanilla Suite)"} className="linkClass">
                     <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
                         <div className={`${styles.demoButton} font1`}>
                             <div > Request for Pricing </div>

@@ -39,7 +39,7 @@ export default function FrontDesk() {
             serviceName: "ROOM",
             serviceName2: "BOOKING",
             icon: room,
-            path: "/products/eice-rise/room-booking",
+            path: "/products/eicerise/room-booking",
             key: 1
         },
 
@@ -47,7 +47,7 @@ export default function FrontDesk() {
             serviceName: "ACCOUNT & ",
             serviceName2: "FINANCE",
             icon: account,
-            path: "/products/eice-rise/account-finance",
+            path: "/products/eicerise/account-finance",
             key: 5
         },
 
@@ -170,7 +170,7 @@ export default function FrontDesk() {
 
             <section className={`${styles.requestDemoBtn}`}>
 
-                <Link to={"/products/eice-rise/form?product=EiceRise(Front Desk Suite)"} className="linkClass">
+                <Link to={"/products/eicerise/form?product=EiceRise(Front Desk Suite)"} className="linkClass">
                     <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
                         <div className={`${styles.demoButton} font1`}>
                             <div > Request for Pricing </div>

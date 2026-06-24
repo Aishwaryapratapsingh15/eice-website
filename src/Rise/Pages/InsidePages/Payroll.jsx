@@ -437,7 +437,7 @@ export default function Payroll() {
       </section> */}
        <section className={`${style.requestDemoBtn}`}>
       
-              <Link style={{ color: "white" }} className="linkClass" to={"/products/eice-rise/form?product=EiceRise(Payroll Management)"}>
+              <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form?product=EiceRise(Payroll Management)"}>
                 <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
                   <div className={`${style.demoButton} font1`}>
                     <div > Request a Demo </div>

@@ -262,7 +262,7 @@ export default function Hospitality() {
             The hospitality industry demands seamless coordination across every touchpoint — from the
             front desk to the kitchen, the boardroom to the banquet hall. At EICE Technology, we
             understand these complexities. Through{" "}
-            <Link href="/products/eice-rise" className="text-bloo font-semibold hover:underline">
+            <Link href="/products/eicerise" className="text-bloo font-semibold hover:underline">
               EICE Rise
             </Link>
             , our purpose-built hospitality ERP, and{" "}

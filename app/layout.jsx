@@ -7,8 +7,6 @@ import "slick-carousel/slick/slick-theme.css";
 import SiteShell from "./SiteShell";
 import Script from "next/script";
 
-export const dynamic = 'force-dynamic';
-
 export const metadata = {
   metadataBase: new URL("https://www.eicetechnology.com"),
   title: {
@@ -122,9 +120,9 @@ export default function RootLayout({ children }) {
 
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-ZQMX8C7EJ0"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
       />
-      <Script id="google-analytics" strategy="afterInteractive">
+      <Script id="google-analytics" strategy="lazyOnload">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){

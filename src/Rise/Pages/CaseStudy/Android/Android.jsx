@@ -53,7 +53,7 @@ export default function Android() {
         {
             key: "USER STORE & INVENTORY",
             icon: inentry,
-            path: "/products/eice-rise/userstore-inventry",
+            path: "/products/eicerise/userstore-inventry",
             id: 1,
             value: "Ensured real-time inventory tracking and seamless store operations"
         },
@@ -61,7 +61,7 @@ export default function Android() {
         {
             key: "PURCHASE & VENDOR PORTAL",
             icon: vendor,
-            path: "/products/eice-rise/purchase-vendor",
+            path: "/products/eicerise/purchase-vendor",
             id: 2,
             value: "Enabled efficient vendor management and streamlined purchase processes"
         },

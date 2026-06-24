@@ -14,7 +14,7 @@ export default function Footer3() {
           </div>
           <div style={{ fontSize: "46px", fontWeight: "700" }} className="font1">experience."</div>
         </div>
-        <Link style={{ color: "white" }} className="linkClass" to="/products/eice-rise/form">
+        <Link style={{ color: "white" }} className="linkClass" to="/products/eicerise/form">
           <div className={`${styles.demoButton} font1`}>
             <div>Request a Demo</div>
             <div className={`${styles.demoArrowButton}`}><FaArrowRightLong /></div>

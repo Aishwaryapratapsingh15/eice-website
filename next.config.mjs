@@ -2,6 +2,22 @@
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  async headers() {
+    return [
+      {
+        source: "/_next/static/(.*)",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+        ],
+      },
+      {
+        source: "/(.*)\\.(ico|png|jpg|jpeg|webp|avif|svg|woff|woff2|ttf|otf)",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+        ],
+      },
+    ];
+  },
   async redirects() {
     return [
       // NOTE: enable this only after confirming www.eicetechnology.com does NOT redirect back to eicetechnology.com
@@ -14,6 +30,10 @@ const nextConfig = {
       // Old contact URLs
       { source: "/contact-us",  destination: "/contact", permanent: true },
       { source: "/contact-us/", destination: "/contact", permanent: true },
+
+      // Capital R Resources redirect
+      { source: "/Resources",   destination: "/resources", permanent: true },
+      { source: "/Resources/",  destination: "/resources/", permanent: true },
 
       // Old flat service URLs -> new /services/slug structure
       { source: "/services-devops",                destination: "/services/devops",                permanent: true },
@@ -50,8 +70,14 @@ const nextConfig = {
       { source: "/about-us/",               destination: "/about", permanent: true },
 
       // Old product form -> EICE Rise request form
-      { source: "/products/form",  destination: "/products/eice-rise/form", permanent: true },
-      { source: "/products/form/", destination: "/products/eice-rise/form", permanent: true },
+      { source: "/products/form",  destination: "/products/eicerise/form", permanent: true },
+      { source: "/products/form/", destination: "/products/eicerise/form", permanent: true },
+
+      // Old hyphenated product URLs -> new clean URLs
+      { source: "/products/eice-rise",           destination: "/products/eicerise",  permanent: true },
+      { source: "/products/eice-rise/:path*",    destination: "/products/eicerise/:path*", permanent: true },
+      { source: "/products/easy-logy",           destination: "/products/easylogy",  permanent: true },
+      { source: "/products/easy-logy/:path*",    destination: "/products/easylogy/:path*", permanent: true },
 
 
     ];

@@ -39,7 +39,7 @@ export default function PosSuite() {
                serviceName: "DINING",
                serviceName2 : "(POS)",
                icon: pos,
-               path: "/products/eice-rise/pos-dining",
+               path: "/products/eicerise/pos-dining",
                key: 2
            },
    
@@ -49,7 +49,7 @@ export default function PosSuite() {
                serviceName: "ACCOUNT & ",
                serviceName2 : "FINANCE" ,
                icon: account,
-               path: "/products/eice-rise/account-finance",
+               path: "/products/eicerise/account-finance",
                key: 5
            },
    
@@ -166,7 +166,7 @@ export default function PosSuite() {
 
             <section className={`${styles.requestDemoBtn}`}>
 
-                <Link to={"/products/eice-rise/form?product=EiceRise(POS Suite)"} className="linkClass">
+                <Link to={"/products/eicerise/form?product=EiceRise(POS Suite)"} className="linkClass">
                     <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
                         <div className={`${styles.demoButton} font1`}>
                             <div > Request for Pricing </div>

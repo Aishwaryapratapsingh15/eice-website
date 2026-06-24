@@ -455,7 +455,7 @@ export default function AccountAndFinance() {
       <section className={`${style.requestDemoBtn}`}>
 
 
-        <Link style={{ color: "white" }} className="linkClass" to={"/products/eice-rise/form?product=EiceRise(Account and Finance)"}>
+        <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form?product=EiceRise(Account and Finance)"}>
           <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
             <div className={`${style.demoButton} font1`}>
               <div > Request a Demo </div>

@@ -11,7 +11,7 @@ export default function FooterUpperPart({ text1, text2, text3, img }) {
             "{text1} {text2}<span className="font1" style={{ color: "black", fontWeight: "600" }}>{text3}"</span>
           </span>
         </div>
-        <Link style={{ color: "white" }} className="linkClass" to="/products/eice-rise/form">
+        <Link style={{ color: "white" }} className="linkClass" to="/products/eicerise/form">
           <div className={`${styles.demoButton} font1`}>
             <div>Request a Demo</div>
             <div className={`${styles.demoArrowButton}`}><FaArrowRightLong /></div>

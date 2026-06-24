@@ -266,7 +266,7 @@ export default function Budget() {
       </section>
 
       {/* CTA */}
-       <Link style={{ color: "white" }} className="linkClass" to={"/products/eice-rise/form?product=EiceRise(Budget)"}>
+       <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form?product=EiceRise(Budget)"}>
       <section className={style.requestDemoBtn}>
         <div style={{ display: "flex", justifyContent: "center" }}>
           <div className={style.demoButton}>Request a Demo →</div>

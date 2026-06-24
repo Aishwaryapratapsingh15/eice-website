@@ -256,7 +256,7 @@ export default function InfraSight() {
 
         {/* BUTTONS */}
         <div className="flex flex-wrap justify-center gap-4 mt-10">
-                          <button  onClick={() => navigate("/products/eice-rise/form")} 
+                          <button  onClick={() => navigate("/products/eicerise/form")} 
                           className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto hover:bg-blue-800 transition text-[18px]">
                             Request a Demo
                               <img src={arrowIcon} alt="arrow"/>
@@ -672,7 +672,7 @@ infrastructure</h4>
     <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
 
       {/* PRIMARY */}
-      <button onClick={() => navigate("/products/eice-rise/form")} 
+      <button onClick={() => navigate("/products/eicerise/form")} 
       className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto hover:bg-blue-800 transition text-[18px]">
         Request a Demo
           <img src={arrowIcon} alt="arrow"/>

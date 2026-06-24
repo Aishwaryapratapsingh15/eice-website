@@ -306,7 +306,7 @@ export default function WifiModule() {
 
       {/* CTA */}
       <section className={style.requestDemoBtn}>
-        <Link to={"/products/eice-rise/form?product=EiceRise(Wifi)"} className="linkClass">
+        <Link to={"/products/eicerise/form?product=EiceRise(Wifi)"} className="linkClass">
           <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
             <div className={style.demoButton}>
               <div>Request a Demo</div>

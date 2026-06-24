@@ -44,6 +44,8 @@ function Big() {
                 className="w-full max-w-md rounded-lg"
                 src={genai}
                 alt="Generative AI"
+                width="500"
+                height="400"
               />
             </div>
           </div>
@@ -85,6 +87,8 @@ function Big() {
                 className="w-full max-w-md rounded-lg scale-[.8]"
                 src={devops}
                 alt="DevOps solutions for accelerated innovation"
+                width="500"
+                height="400"
               />
             </div>
           </div>
@@ -126,6 +130,8 @@ function Big() {
                 className="w-full max-w-md rounded-lg"
                 src={digitrans}
                 alt="Digital transformation solutions for business growth"
+                width="500"
+                height="400"
               />
             </div>
           </div>

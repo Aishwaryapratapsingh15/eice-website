@@ -40,14 +40,14 @@ export default function Inventary() {
           {
               serviceName: "USER STORE & INVENTORY",
               icon: inentry,
-              path: "/products/eice-rise/userstore-inventry",
+              path: "/products/eicerise/userstore-inventry",
               key: 8
           },
   
           {
               serviceName: "PURCHASE & VENDOR PORTAL",
               icon: vendor,
-              path: "/products/eice-rise/purchase-vendor",
+              path: "/products/eicerise/purchase-vendor",
               key: 9
           },
   
@@ -166,7 +166,7 @@ export default function Inventary() {
 
             <section className={`${styles.requestDemoBtn}`}>
 
-                <Link to={"/products/eice-rise/form?product=EiceRise(Inventory Suite)"} className="linkClass">
+                <Link to={"/products/eicerise/form?product=EiceRise(Inventory Suite)"} className="linkClass">
                     <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
                         <div className={`${styles.demoButton} font1`}>
                             <div > Request for Pricing </div>

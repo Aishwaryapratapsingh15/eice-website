@@ -30,14 +30,14 @@ export default function PricingDrop() {
             title: "Enterprise Suite",
             description: "Optimize operations with full-scale control",
             icon: enterpriseIcon,
-            path: "/products/eice-rise/enterprise-suite",
+            path: "/products/eicerise/enterprise-suite",
         },
         {
             key: 2,
             title: "Club Suite",
             description: "Engage members with seamless management",
             icon: clubIcon,
-            path: "/products/eice-rise/club-suite",
+            path: "/products/eicerise/club-suite",
 
         },
         
@@ -46,14 +46,14 @@ export default function PricingDrop() {
             title: "Inventory Suite",
             description: "Simplify inventory and procurement workflows",
             icon: inventaryIcon,
-            path: "/products/eice-rise/inventory-suite",
+            path: "/products/eicerise/inventory-suite",
         },
         {
             key: 4,
             title: "POS Suite",
             description: "Streamline sales and transactions effortlessly",
             icon: posIcon,
-            path: "/products/eice-rise/pos-suite",
+            path: "/products/eicerise/pos-suite",
         },
 
     ]
@@ -64,14 +64,14 @@ export default function PricingDrop() {
             title: "Front Desk Suite",
             description: "Elevate guest experiences from check-in to billing",
             icon: frontDeskIcon,
-            path: "/products/eice-rise/frontdesk-suite",
+            path: "/products/eicerise/frontdesk-suite",
         },
         {
             key: 6,
             title: "Banquet Suite",
             description: "Manage events and finances flawlessly",
             icon: banquetIcon,
-            path: "/products/eice-rise/banquet-suite",
+            path: "/products/eicerise/banquet-suite",
 
         },
         {
@@ -79,7 +79,7 @@ export default function PricingDrop() {
             title: "Vanilla Suite",
             description: "All-in-one solution for versatileÂ operations",
             icon: vanillaIcon,
-            path: "/products/eice-rise/vanilla-suite",
+            path: "/products/eicerise/vanilla-suite",
         },
         // {
         //     key: 8,
@@ -87,7 +87,7 @@ export default function PricingDrop() {
         //     title: "Purchase & Vendor Portal",
         //     description: "Manage inventory effortlessly",
         //     icon: vendor,
-        //     path: "/products/eice-rise/userstore-inventry",
+        //     path: "/products/eicerise/userstore-inventry",
         // },
 
     ]
@@ -142,7 +142,7 @@ export default function PricingDrop() {
 
                 <div className={`${styles.requestDemo} font1 `}>
                     <div>
-                        <Link to={"/products/eice-rise/form"} style={{ textDecoration: "none", color: "white" }}>
+                        <Link to={"/products/eicerise/form"} style={{ textDecoration: "none", color: "white" }}>
                             Request a Demo
                         </Link>
                     </div>

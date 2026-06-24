@@ -268,7 +268,7 @@ const footerUpperText = {
 </section>
 
       {/* CTA */}
-      <Link style={{ color: "white" }} className="linkClass" to={"/products/eice-rise/form?product=EiceRise(Single Sign On)"}>
+      <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form?product=EiceRise(Single Sign On)"}>
       <section className={style.requestDemoBtn}>
         <div style={{ display: "flex", justifyContent: "center" }}>
           <div className={style.demoButton}>

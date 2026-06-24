@@ -14,7 +14,7 @@ const redirects = {
   "/INDUSTRIES":       "/industries",
 
   // Old flat product routes → nested
-  "/Products-EiceRise":    "/products/eice-rise",
+  "/Products-EiceRise":    "/products/eicerise",
   "/Products-EiceOps":     "/products/eice-ops",
   "/Products-Isynclite":   "/products/isync-lite",
   "/Products-iSyncLite":   "/products/isync-lite",
@@ -23,7 +23,7 @@ const redirects = {
   "/Products-EiceAgent":   "/products/eice-agent",
   "/Products-Verilock":    "/products/verilock",
   "/Products-Infrasight":  "/products/infrasight",
-  "/Products-EasyLogy":    "/products/easy-logy",
+  "/Products-EasyLogy":    "/products/easylogy",
   "/Products-EiceVoice":   "/products/eice-voice",
   "/Products-Smartfit":    "/products/smartfit",
   "/Products-form":        "/products/form",

@@ -45,7 +45,7 @@ export default function Enterprise() {
             serviceName: "ROOM",
             serviceName2: "BOOKING",
             icon: room,
-            path: "/products/eice-rise/room-booking",
+            path: "/products/eicerise/room-booking",
             key: 1
         },
 
@@ -53,7 +53,7 @@ export default function Enterprise() {
             serviceName: "DINING",
             serviceName2: "(POS)",
             icon: pos,
-            path: "/products/eice-rise/pos-dining",
+            path: "/products/eicerise/pos-dining",
             key: 2
         },
 
@@ -61,7 +61,7 @@ export default function Enterprise() {
             serviceName: "BANQUET &",
             serviceName2: "BILLING",
             icon: banquet,
-            path: "/products/eice-rise/banquet-billing",
+            path: "/products/eicerise/banquet-billing",
             key: 3
         },
 
@@ -70,7 +70,7 @@ export default function Enterprise() {
             serviceName: "MEMBER",
             serviceName2: "SUITE",
             icon: member,
-            path: "/products/eice-rise/member-suite",
+            path: "/products/eicerise/member-suite",
             key: 4
         },
 
@@ -78,7 +78,7 @@ export default function Enterprise() {
             serviceName: "ACCOUNT & ",
             serviceName2: "FINANCE",
             icon: account,
-            path: "/products/eice-rise/account-finance",
+            path: "/products/eicerise/account-finance",
             key: 5
         },
 
@@ -86,7 +86,7 @@ export default function Enterprise() {
             serviceName: "EMPLOYEE",
             serviceName2: "SUITE",
             icon: emp,
-            path: "/products/eice-rise/employee-suite",
+            path: "/products/eicerise/employee-suite",
             key: 6
         },
 
@@ -94,28 +94,28 @@ export default function Enterprise() {
             serviceName: "PAYROLL",
             serviceName2: "MANAGEMENT",
             icon: pay,
-            path: "/products/eice-rise/payroll",
+            path: "/products/eicerise/payroll",
             key: 7
         },
 
         {
             serviceName: "USER STORE & INVENTORY",
             icon: inentry,
-            path: "/products/eice-rise/userstore-inventry",
+            path: "/products/eicerise/userstore-inventry",
             key: 8
         },
 
         {
             serviceName: "PURCHASE & VENDOR PORTAL",
             icon: vendor,
-            path: "/products/eice-rise/purchase-vendor",
+            path: "/products/eicerise/purchase-vendor",
             key: 9
         },
 
         {
             serviceName: "FOOD & BEVERAGE COST ANALYSIS",
             icon: food,
-            path: "/products/eice-rise/food-cost",
+            path: "/products/eicerise/food-cost",
             key: 10
         }
     ]
@@ -230,7 +230,7 @@ export default function Enterprise() {
 
             <section className={`${styles.requestDemoBtn}`}>
 
-                <Link to={"/products/eice-rise/form?product=EiceRise(Enterprise Suite)"} className="linkClass">
+                <Link to={"/products/eicerise/form?product=EiceRise(Enterprise Suite)"} className="linkClass">
                     <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
                         <div className={`${styles.demoButton} font1`}>
                             <div > Request for Pricing </div>

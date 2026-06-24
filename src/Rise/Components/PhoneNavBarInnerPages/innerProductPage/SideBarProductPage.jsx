@@ -46,7 +46,7 @@ export default function SideBarProductPage() {
             title2: "Booking",
             description: "Streamline guest reservations",
             icon: room,
-            path: "/products/eice-rise/room-booking",
+            path: "/products/eicerise/room-booking",
 
         },
 
@@ -56,7 +56,7 @@ export default function SideBarProductPage() {
             title2: "& Billing",
             description: "Manage events with ease",
             icon: banwuet,
-            path: "/products/eice-rise/banquet-billing",
+            path: "/products/eicerise/banquet-billing",
         },
 
         {
@@ -67,7 +67,7 @@ export default function SideBarProductPage() {
             title2: "& Finances",
             description: "Gain full financial control",
             icon: account,
-            path: "/products/eice-rise/account-finance",
+            path: "/products/eicerise/account-finance",
         },
 
         {
@@ -76,7 +76,7 @@ export default function SideBarProductPage() {
             title2: "Booking",
             description: "Simplify payroll processing",
             icon: pay,
-            path: "/products/eice-rise/payroll",
+            path: "/products/eicerise/payroll",
         },
 
 
@@ -88,7 +88,7 @@ export default function SideBarProductPage() {
             description: "Manage inventory effortlessly",
             icon: vendor,
             
-            path: "/products/eice-rise/purchase-vendor", 
+            path: "/products/eicerise/purchase-vendor", 
         },
 
          {
@@ -97,7 +97,7 @@ export default function SideBarProductPage() {
             title2: "Sign-On ",
             description: "Boost profit accuracy",
             icon: sso,
-            path: "/products/eice-rise/single-sign-on",
+            path: "/products/eicerise/single-sign-on",
         },
 
          {
@@ -106,7 +106,7 @@ export default function SideBarProductPage() {
             // title2: "Cost Analysis",
             description: "Boost profit accuracy",
             icon: budget,
-            path: "/products/eice-rise/budget",
+            path: "/products/eicerise/budget",
         },
 
           {
@@ -115,7 +115,7 @@ export default function SideBarProductPage() {
             title2: "Attendance",
             description: "Boost profit accuracy",
             icon: attendance,
-            path: "/products/eice-rise/audience-attendance",
+            path: "/products/eicerise/audience-attendance",
         },
 
                 {
@@ -124,7 +124,7 @@ export default function SideBarProductPage() {
             title2: " Management",
             description: "Boost profit accuracy",
             icon: vendori,
-            path: "/products/eice-rise/vendor-management",
+            path: "/products/eicerise/vendor-management",
         },
 
 
@@ -139,7 +139,7 @@ export default function SideBarProductPage() {
             title2: "(POS)",
             description: "Simplify your dining operations",
             icon: dinning,
-            path: "/products/eice-rise/pos-dining",
+            path: "/products/eicerise/pos-dining",
         },
 
         {
@@ -148,7 +148,7 @@ export default function SideBarProductPage() {
             title2: "Suite",
             description: "Build a thriving member community",
             icon: member,
-            path: "/products/eice-rise/member-suite",
+            path: "/products/eicerise/member-suite",
         },
 
         {
@@ -157,7 +157,7 @@ export default function SideBarProductPage() {
             title2: "Portal",
             description: "Empower with centralized access",
             icon: emp,
-            path: "/products/eice-rise/employee-suite",
+            path: "/products/eicerise/employee-suite",
 
         },
 
@@ -167,7 +167,7 @@ export default function SideBarProductPage() {
             title2: "& Inventory",
             description: "Optimize vendor management",
             icon: inventary,
-            path: "/products/eice-rise/userstore-inventry",
+            path: "/products/eicerise/userstore-inventry",
            
         },
 
@@ -177,7 +177,7 @@ export default function SideBarProductPage() {
             title2: "Cost Analysis",
             description: "Boost profit accuracy",
             icon: food,
-            path: "/products/eice-rise/food-cost",
+            path: "/products/eicerise/food-cost",
         },
 
        
@@ -187,7 +187,7 @@ export default function SideBarProductPage() {
             title2: " Module",
             description: "Boost profit accuracy",
             icon: wifi,
-            path: "/products/eice-rise/wifi",
+            path: "/products/eicerise/wifi",
         },
 
        
@@ -198,7 +198,7 @@ export default function SideBarProductPage() {
             title2: " System",
             description: "Boost profit accuracy",
             icon: feedbacki,
-            path: "/products/eice-rise/feedback",
+            path: "/products/eicerise/feedback",
         },
 
 
@@ -208,7 +208,7 @@ export default function SideBarProductPage() {
             title2: " Register",
             description: "Boost profit accuracy",
             icon: compliance,
-            path: "/products/eice-rise/compliance-register",
+            path: "/products/eicerise/compliance-register",
         },
 
 

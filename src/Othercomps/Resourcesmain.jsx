@@ -36,9 +36,9 @@ function Resourcesmain() {
       <div className="pb-7"></div>
 
       <div className="max-w-7xl mx-auto py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
-        <h1 className="text-blackk fontweight_1 text-center text-2xl sm:text-3xl lg:text-4xl max-w-3xl mx-auto mb-8 sm:mb-12">
+        <h2 className="text-blackk fontweight_1 text-center text-2xl sm:text-3xl lg:text-4xl max-w-3xl mx-auto mb-8 sm:mb-12">
           Discover, Innovate and Excel with EICE
-        </h1>
+        </h2>
         <div className="grid lg:grid-cols-3 grid-cols-1 xl:gap-0 gap-12 justify-center items-center">
           <div className="flex flex-col col-span-2">
             <h2 className="text-blackk text-left fontweight_1 text-2xl sm:text-3xl lg:text-4xl mb-4">

@@ -36,13 +36,13 @@ export default function Clients() {
         <h2 className="text-bloo text-center fontsize_2 fontweight_1 mb-6">
           Our Clients
         </h2>
-        <h1 className="text-center text-2xl sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1 fontweight_1 mb-8">
+        <p className="text-center text-2xl sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1 fontweight_1 mb-8">
           Partnering with visionary clients to drive success and innovation
-        </h1>
+        </p>
 
         <div style={{ display: "flex", justifyContent: "center" }}>
           {width > 1000 ? (
-            <img src={imgn} alt="Large screen client logo" />
+            <img src={imgn} alt="Large screen client logo" width="1200" height="400" />
           ) : (
             <div style={{ width: '100%', maxWidth: '300px' }}>
               <div>

@@ -69,21 +69,21 @@ export default function IIC() {
         {
             serviceName: "ROOM BOOKING",
             icon: room,
-            path: "/products/eice-rise/room-booking",
+            path: "/products/eicerise/room-booking",
             key: 1
         },
 
         {
             serviceName: "DINING (POS)",
             icon: pos,
-            path: "/products/eice-rise/pos-dining",
+            path: "/products/eicerise/pos-dining",
             key: 2
         },
 
         {
             serviceName: "BANQUET & BILLING",
             icon: banquet,
-            path: "/products/eice-rise/banquet-billing",
+            path: "/products/eicerise/banquet-billing",
             key: 3
         },
 
@@ -91,49 +91,49 @@ export default function IIC() {
 
             serviceName: (<span style={{ padding: "0px 3px" }}>MEMBER SUITE</span>),
             icon: member,
-            path: "/products/eice-rise/member-suite",
+            path: "/products/eicerise/member-suite",
             key: 4
         },
 
         {
             serviceName: "ACCOUNT & FINANCE",
             icon: account,
-            path: "/products/eice-rise/account-finance",
+            path: "/products/eicerise/account-finance",
             key: 5
         },
 
         {
             serviceName: "EMPLOYEE SUITE",
             icon: emp,
-            path: "/products/eice-rise/employee-suite",
+            path: "/products/eicerise/employee-suite",
             key: 6
         },
 
         {
             serviceName: "PAYROLL",
             icon: pay,
-            path: "/products/eice-rise/payroll",
+            path: "/products/eicerise/payroll",
             key: 7
         },
 
         {
             serviceName: "USER STORE & INVENTORY",
             icon: inentry,
-            path: "/products/eice-rise/userstore-inventry",
+            path: "/products/eicerise/userstore-inventry",
             key: 8
         },
 
         {
             serviceName: "PURCHASE & VENDOR PORTAL",
             icon: vendor,
-            path: "/products/eice-rise/purchase-vendor",
+            path: "/products/eicerise/purchase-vendor",
             key: 9
         },
 
         {
             serviceName: "FOOD & BEVERAGE COST ANALYSIS",
             icon: food,
-            path: "/products/eice-rise/food-cost",
+            path: "/products/eicerise/food-cost",
             key: 10
         }
     ]

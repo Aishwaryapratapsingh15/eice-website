@@ -429,7 +429,7 @@ export default function RoomBooking() {
 
             <section className={`${style.requestDemoBtn}`}>
 
-                <Link style={{ color: "white" }} className="linkClass" to={"/products/eice-rise/form?product=EiceRise(Room Booking)"}>
+                <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form?product=EiceRise(Room Booking)"}>
                     <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
                         <div className={`${style.demoButton} font1`}>
                             <div > Request a Demo </div>

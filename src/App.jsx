@@ -122,14 +122,14 @@ const NavLayout = ({ children }) => {
                             <span>â€º</span><span className="font-semibold">Products</span>
                           </div>
                           {[
-                            ["/products/eice-rise",   "EICE Rise"],
+                            ["/products/eicerise",   "EICE Rise"],
                             ["/products/eice-ops",    "EICEOps"],
                             ["/products/isync-lite",  "iSyncLite"],
                             ["/products/isync-drive", "iSyncDrive"],
                             ["/products/eice-agent",  "EICE AI Agent"],
                             ["/products/verilock",    "Verilock"],
                             ["/products/infrasight",  "InfraSight"],
-                            ["/products/easy-logy",   "EasyLogy"],
+                            ["/products/easylogy",   "EasyLogy"],
                             ["/products/smartfit",    "EICE SmartFit"],
                             ["/products/eice-voice",  "EICE Voice"],
                           ].map(([href, label]) => (
@@ -368,8 +368,8 @@ const OurProducts = ({ handleSetSelected = () => {} }) => (
           <p className="text-xs text-gray-400 tracking-wide mb-3">ERP & LOGISTICS</p>
           <div className="grid grid-cols-2 gap-6">
             {[
-              { href: "/products/eice-rise",  icon: eiceriseIcon,     name: "EICE Rise",      desc: "Hospitality ERP platform" },
-              { href: "/products/easy-logy",  icon: easylogyIcon,     name: "EasyLogy",       desc: "Logistics management" },
+              { href: "/products/eicerise",  icon: eiceriseIcon,     name: "EICE Rise",      desc: "Hospitality ERP platform" },
+              { href: "/products/easylogy",  icon: easylogyIcon,     name: "EasyLogy",       desc: "Logistics management" },
               { href: "/products/smartfit",   icon: eiceSmartfitIcon, name: "EICE SmartFit",  desc: "Cargo Management" },
               { href: "/products/eice-ops",   icon: eiceopsIcon,      name: "EICEOps",        desc: "Help Desk Management" },
             ].map(({ href, icon, name, desc }) => (

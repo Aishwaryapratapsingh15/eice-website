@@ -283,7 +283,7 @@ export default function AudienceAttendance() {
 
       {/* ================= CTA ================= */}
       <section>
-        <Link to="/products/eice-rise/form?product=EiceRise(Audience Attendance)" style={{ color: "white",  textDecoration: "none" }}>
+        <Link to="/products/eicerise/form?product=EiceRise(Audience Attendance)" style={{ color: "white",  textDecoration: "none" }}>
           <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
             <div className={style.demoButton}>
               Request a Demo <FaArrowRightLong />

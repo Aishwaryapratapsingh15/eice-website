@@ -62,21 +62,21 @@ export default function Durgabari() {
         {
             serviceName: "ROOM BOOKING",
             icon: room,
-            path: "/products/eice-rise/room-booking",
+            path: "/products/eicerise/room-booking",
             key: 1
         },
 
         {
             serviceName: "DINING (POS)",
             icon: pos,
-            path: "/products/eice-rise/pos-dining",
+            path: "/products/eicerise/pos-dining",
             key: 2
         },
 
         {
             serviceName: "BANQUET & BILLING",
             icon: banquet,
-            path: "/products/eice-rise/banquet-billing",
+            path: "/products/eicerise/banquet-billing",
             key: 3
         },
 
@@ -84,14 +84,14 @@ export default function Durgabari() {
 
             serviceName: (<span style={{ padding: "0px 3px" }}>MEMBER SUITE</span>),
             icon: member,
-            path: "/products/eice-rise/member-suite",
+            path: "/products/eicerise/member-suite",
             key: 4
         },
 
         {
             serviceName: "ACCOUNT & FINANCE",
             icon: account,
-            path: "/products/eice-rise/account-finance",
+            path: "/products/eicerise/account-finance",
             key: 5
         },
 

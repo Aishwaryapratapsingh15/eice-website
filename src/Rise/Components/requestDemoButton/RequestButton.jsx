@@ -9,7 +9,7 @@ export default function RequestButton() {
 
         
             <div className={`${styles.requestDemoBtnSideBar} font1`}>
-                <Link style={{ color: "white" }} className="linkClass" to={"/products/eice-rise/form"}>
+                <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form"}>
                     <div className={`${styles.demoButtonSideBar}`}>
                         Request for Demo
                     </div>

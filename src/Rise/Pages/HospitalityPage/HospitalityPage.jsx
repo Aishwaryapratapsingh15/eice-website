@@ -106,7 +106,7 @@ export default function HospitalityPage() {
             serviceName: "ROOM",
             serviceName2: "BOOKING",
             icon: room,
-            path: "/products/eice-rise/room-booking",
+            path: "/products/eicerise/room-booking",
             key: 1
         },
 
@@ -114,7 +114,7 @@ export default function HospitalityPage() {
             serviceName: "DINING",
             serviceName2: "(POS)",
             icon: pos,
-            path: "/products/eice-rise/pos-dining",
+            path: "/products/eicerise/pos-dining",
             key: 2
         },
 
@@ -122,7 +122,7 @@ export default function HospitalityPage() {
             serviceName: "BANQUET &",
             serviceName2: "BILLING",
             icon: banquet,
-            path: "/products/eice-rise/banquet-billing",
+            path: "/products/eicerise/banquet-billing",
             key: 3
         },
 
@@ -131,7 +131,7 @@ export default function HospitalityPage() {
             serviceName: "MEMBER",
             serviceName2: "SUITE",
             icon: member,
-            path: "/products/eice-rise/member-suite",
+            path: "/products/eicerise/member-suite",
             key: 4
         },
 
@@ -139,7 +139,7 @@ export default function HospitalityPage() {
             serviceName: "ACCOUNT & ",
             serviceName2: "FINANCE",
             icon: account,
-            path: "/products/eice-rise/account-finance",
+            path: "/products/eicerise/account-finance",
             key: 5
         },
 
@@ -147,7 +147,7 @@ export default function HospitalityPage() {
             serviceName: "EMPLOYEE",
             serviceName2: "SUITE",
             icon: emp,
-            path: "/products/eice-rise/employee-suite",
+            path: "/products/eicerise/employee-suite",
             key: 6
         },
 
@@ -155,28 +155,28 @@ export default function HospitalityPage() {
             serviceName: "PAYROLL",
             serviceName2: "MANAGEMENT",
             icon: pay,
-            path: "/products/eice-rise/payroll",
+            path: "/products/eicerise/payroll",
             key: 7
         },
 
         {
             serviceName: "USER STORE & INVENTORY",
             icon: inentry,
-            path: "/products/eice-rise/userstore-inventry",
+            path: "/products/eicerise/userstore-inventry",
             key: 8
         },
 
         {
             serviceName: "PURCHASE & VENDOR PORTAL",
             icon: vendor,
-            path: "/products/eice-rise/purchase-vendor",
+            path: "/products/eicerise/purchase-vendor",
             key: 9
         },
 
         {
             serviceName: "FOOD & BEVERAGE COST ANALYSIS",
             icon: food,
-            path: "/products/eice-rise/food-cost",
+            path: "/products/eicerise/food-cost",
             key: 10
         },
 
@@ -184,7 +184,7 @@ export default function HospitalityPage() {
             serviceName: "RISE-SINGLE ",
             serviceName2: "SIGN-ON",
             icon: single,
-            path: "/products/eice-rise/single-sign-on",
+            path: "/products/eicerise/single-sign-on",
             key: 11
         },
 
@@ -192,14 +192,14 @@ export default function HospitalityPage() {
             serviceName: "WI-FI ",
             serviceName2: "MODULE",
             icon: wifi,
-            path: "/products/eice-rise/wifi",
+            path: "/products/eicerise/wifi",
             key: 12
         },
 
         {
             serviceName: "BUDGET ",
             icon: budget,
-            path: "/products/eice-rise/budget",
+            path: "/products/eicerise/budget",
             key: 13
         },
 
@@ -207,7 +207,7 @@ export default function HospitalityPage() {
             serviceName: "FEEDBACK ",
             serviceName2:"SYSTEM",
             icon: feedbacki,
-            path: "/products/eice-rise/feedback",
+            path: "/products/eicerise/feedback",
             key: 14
         },
 
@@ -215,7 +215,7 @@ export default function HospitalityPage() {
             serviceName: "AUDIENCE ",
             serviceName2:"ATTENDANCE",
             icon: audience,
-            path: "/products/eice-rise/audience-attendance",
+            path: "/products/eicerise/audience-attendance",
             key: 15
         },
 
@@ -223,7 +223,7 @@ export default function HospitalityPage() {
             serviceName: "COMPLIANCE ",
             serviceName2:"REGISTER",
             icon: compliance,
-            path: "/products/eice-rise/compliance-register",
+            path: "/products/eicerise/compliance-register",
             key: 16
         },
 
@@ -231,7 +231,7 @@ export default function HospitalityPage() {
             serviceName: "VENDOR ",
             serviceName2:"MANAGEMENT",
             icon: vendori,
-            path: "/products/eice-rise/vendor-management",
+            path: "/products/eicerise/vendor-management",
             key: 17
         }
     ]
@@ -368,7 +368,7 @@ export default function HospitalityPage() {
             img: and,
             heading: "Transforming Operational Efficiency for  Sales Vu",
             margin: "20px",
-            link: "/products/eice-rise/android",
+            link: "/products/eicerise/android",
             para: "The SalesVu Android App enhances POS functionality with features like order management, payment processing, and barcode scanning. These features streamline operations, improve inventory management..."
         },
 
@@ -376,7 +376,7 @@ export default function HospitalityPage() {
             key: 2,
             img: durga,
             heading: "Empowering Community Operations for Houston Durga Bari Society (HDBS)",
-            link: "/products/eice-rise/durgabari",
+            link: "/products/eicerise/durgabari",
             para: "The Houston Durga Bari Society (HDBS) sought a transformative digital solution to overcome the challenges of managing its diverse operations and engaging a geographically... ",
             margin: "22px"
         },
@@ -385,7 +385,7 @@ export default function HospitalityPage() {
             key: 3,
             img: iic,
             heading: "Empowering Indian International Center (IIC) ",
-            link: "/products/eice-rise/iic",
+            link: "/products/eicerise/iic",
             para: " The Indian International Center (IIC) faced the challenge of managing complex, multi-user interactions while ensuring secure access and operational efficiency. EICE Technology implemented the Enterprise Suite, tailored to... ",
             margin: "20px"
         }
@@ -458,7 +458,7 @@ export default function HospitalityPage() {
 
                     {!forSmallestScreen && (<div className={`${styles.requestDemoButtonContainer} font1`}>
 
-                        <Link style={{ color: "white" }} className="linkClass" to={"/products/eice-rise/form"}>
+                        <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form"}>
                             <div className={`${styles.demoButton}`}>
                                  Request a Demo
                                 <div className={`${styles.demoArrowButton}`}> <FaArrowRightLong /></div>
@@ -517,7 +517,7 @@ export default function HospitalityPage() {
 
             {/* <div className={` ${styles.requestDemoButtonContainer2} font1`}>
 
-                <Link style={{ color: "white" }} className="linkClass" to={"/products/eice-rise/form"}>
+                <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form"}>
                     <div className={`${styles.demoButton}`}>
                         <div> Request a Demo </div>
                         <div className={`${styles.demoArrowButton}`}> <FaArrowRightLong /></div>

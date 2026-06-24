@@ -47,7 +47,7 @@ export default function Banquet() {
             serviceName: "BANQUET &",
             serviceName2: "BILLING",
             icon: banquet,
-            path: "/products/eice-rise/banquet-billing",
+            path: "/products/eicerise/banquet-billing",
             key: 3
         },
 
@@ -57,7 +57,7 @@ export default function Banquet() {
             serviceName: "ACCOUNT & ",
             serviceName2: "FINANCE",
             icon: account,
-            path: "/products/eice-rise/account-finance",
+            path: "/products/eicerise/account-finance",
             key: 5
         },
 
@@ -184,7 +184,7 @@ export default function Banquet() {
 
             <section className={`${styles.requestDemoBtn}`}>
 
-                <Link to={"/products/eice-rise/form?product=EiceRise(Banquet Suite)"} className="linkClass">
+                <Link to={"/products/eicerise/form?product=EiceRise(Banquet Suite)"} className="linkClass">
                     <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
                         <div className={`${styles.demoButton} font1`}>
                             <div > Request for Pricing </div>

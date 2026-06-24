@@ -437,7 +437,7 @@ export default function PurchaseAndVendor() {
 
              <section className={`${style.requestDemoBtn}`}>
             
-                    <Link style={{ color: "white" }} className="linkClass" to={"/products/eice-rise/form?product=EiceRise(Purchase & Vendor Portal)"}>
+                    <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form?product=EiceRise(Purchase & Vendor Portal)"}>
                       <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
                         <div className={`${style.demoButton} font1`}>
                           <div > Request a Demo </div>

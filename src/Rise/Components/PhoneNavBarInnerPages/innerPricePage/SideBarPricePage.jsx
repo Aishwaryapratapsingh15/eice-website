@@ -32,7 +32,7 @@ export default function SideBarPricePage() {
             title2: "Suite",
             description: "Optimize operations with full-scale control",
             icon: enterpriseIcon,
-            path: "/products/eice-rise/enterprise-suite",
+            path: "/products/eicerise/enterprise-suite",
         },
         {
             key: 2,
@@ -40,7 +40,7 @@ export default function SideBarPricePage() {
             title2: "Suite",
             description: "Engage members with seamless management",
             icon: clubIcon,
-            path: "/products/eice-rise/club-suite",
+            path: "/products/eicerise/club-suite",
 
         },
 
@@ -50,7 +50,7 @@ export default function SideBarPricePage() {
             title2: "Suite",
             description: "Simplify inventory and procurement workflows",
             icon: inventaryIcon,
-            path: "/products/eice-rise/inventory-suite",
+            path: "/products/eicerise/inventory-suite",
         },
         {
             key: 4,
@@ -58,7 +58,7 @@ export default function SideBarPricePage() {
             title2: "Suite",
             description: "Streamline sales and transactions effortlessly",
             icon: posIcon,
-            path: "/products/eice-rise/pos-suite",
+            path: "/products/eicerise/pos-suite",
         },
 
         {
@@ -67,7 +67,7 @@ export default function SideBarPricePage() {
             title2: "Suite",
             description: "Elevate guest experiences from check-in to billing",
             icon: frontDeskIcon,
-            path: "/products/eice-rise/frontdesk-suite",
+            path: "/products/eicerise/frontdesk-suite",
         },
         {
             key: 6,
@@ -75,7 +75,7 @@ export default function SideBarPricePage() {
             title2: "Suite",
             description: "Manage events and finances flawlessly",
             icon: banquetIcon,
-            path: "/products/eice-rise/banquet-suite",
+            path: "/products/eicerise/banquet-suite",
 
         },
         {
@@ -84,7 +84,7 @@ export default function SideBarPricePage() {
             title2: "Suite",
             description: "All-in-one solution for versatile operations",
             icon: vanillaIcon,
-            path: "/products/eice-rise/vanilla-suite",
+            path: "/products/eicerise/vanilla-suite",
         },
 
 

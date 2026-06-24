@@ -108,7 +108,7 @@ export default function SmartFit() {
          <div className="mt-8 flex flex-wrap justify-center gap-4">
         
               {/* Primary */}
-              <button onClick={() => navigate("/products/eice-rise/form")}  
+              <button onClick={() => navigate("/products/eicerise/form")}  
               className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto hover:bg-blue-800 transition text-[18px]">
                 Request a Demo
                   <img src={arrowIcon} alt="arrow"/>
@@ -272,7 +272,7 @@ seconds.
           </p>
       
               <button
-                onClick={() => navigate("/products/eice-rise/form")}
+                onClick={() => navigate("/products/eicerise/form")}
                 className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto text-[18px] hover:bg-blue-800"
               >
                 Request a Demo
