@@ -21,7 +21,7 @@ function Offers() {
     //
 
     <>
-      <div  className="pb-10">
+      <div  className="pb-2 sm:pb-10">
         <div className="text-manrope px-4 py-2  sm:py-2 max-w-7xl mx-auto">
           <div ref={myRef} className="grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y- justify-items-center">
             {Ouroffers.map((project) => (

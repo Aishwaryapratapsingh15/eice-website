@@ -48,7 +48,7 @@ const categories = [
   { name: "Frontend", id: "frontend" },
   { name: "Database", id: "database" },
   { name: "Backend", id: "backend" },
-  { name: "Infra and DevOps", id: "devops" },
+  { name: "Infra & DevOps", id: "devops" },
 ];
 
 const iconComponents = {
@@ -174,15 +174,13 @@ const Technology = ({ name, icon, link }) => {
   const IconComponent = iconComponents[icon];
 
   return (
-    <div className="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
-      <div className="group  overflow-hidden flex flex-col gap-2 items-center p-3">
-        {/* <Link href={link} className=" mb-2"> */}
+    <div className="flex-shrink-0 sm:w-1/2 md:w-1/3 lg:w-1/4 sm:p-4">
+      <div className="group bg-white border border-gray-200 rounded-lg sm:border-0 sm:bg-transparent sm:rounded-none overflow-hidden flex flex-col gap-2 items-center justify-center p-3 min-h-[100px] sm:min-h-0">
         <IconComponent
-          size={60}
+          size={48}
           className="text-blackk group-hover:text-bloo transition duration-300"
         />
-        {/* </Link> */}
-        <span className=" group-hover:text-bloo transition duration-300 text-blackk font-semibold text-sm text-center">
+        <span className="group-hover:text-bloo transition duration-300 text-blackk font-semibold text-xs sm:text-sm text-center">
           {name}
         </span>
       </div>
@@ -197,23 +195,27 @@ function Techs() {
     <div className="">
       <div className="bg-bgplate bg-cover "></div>
       <div className="bg-zinc-50">
-        <div className="  mx-auto  font-manrope">
-          <header className="text-center mb-10">
-            <h1 className="text-bloo fontsize_2 fontweight_1  py-2">
+        <div className="mx-auto font-manrope px-4 py-6 sm:px-0 sm:py-0">
+
+          {/* Mobile: left-aligned short title | Desktop: centered full title */}
+          <header className="mb-6 sm:text-center sm:mb-10">
+            <h2 className="text-bloo fontsize_2 fontweight_1 py-2">
               Technologies we work with
-            </h1>
-            <h1 className="text-blackk  fontweight_1 text-center text-2xl sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-4xl py-1">
-              Explore our extensive range of cutting-edge tools and platforms
-            </h1>
+            </h2>
+            <h2 className="text-blackk fontweight_1 text-2xl sm:text-3xl sm:mx-auto md:text-3xl lg:text-[32px] sm:max-w-4xl py-1">
+              <span className="sm:hidden">Explore our cutting-edge tools</span>
+              <span className="hidden sm:inline">Explore our extensive range of cutting-edge tools and platforms</span>
+            </h2>
           </header>
 
-          <nav className="mb-12 max-w-4xl px-2 mx-auto">
-            <ul className="flex flex-wrap  items-center justify-center gap-x-[4.7rem] gap-y-8">
+          {/* Mobile: compact left-aligned | Desktop: centered wide gaps */}
+          <nav className="mb-8 sm:mb-12 sm:max-w-4xl sm:px-2 sm:mx-auto">
+            <ul className="flex flex-wrap items-center gap-2 sm:justify-center sm:gap-x-[4.7rem] sm:gap-y-8">
               {categories.map((category) => (
-                <li key={category.id} className="text-nowrap justify-center">
+                <li key={category.id} className="text-nowrap">
                   <button
                     onClick={() => setActiveCategory(category.id)}
-                    className={`px-4 py-2 rounded-full transition ${
+                    className={`px-4 py-2 rounded-full text-sm font-medium transition ${
                       activeCategory === category.id
                         ? "bg-blue-900 text-white"
                         : "bg-gray-200 text-gray-700 hover:bg-gray-300"
@@ -226,34 +228,27 @@ function Techs() {
             </ul>
           </nav>
 
-          <main className=" mx-auto px-4 pt-4 lg:max-w-7xl w:screen">
+          {/* Mobile: 3-col card grid | Desktop: flex-wrap original */}
+          <main className="sm:mx-auto sm:px-4 sm:pt-4 lg:max-w-7xl">
             {categories.map((category) => (
               <section
                 key={category.id}
-                className={`${
-                  activeCategory === category.id ? "block" : "hidden"
-                }`}
+                className={activeCategory === category.id ? "block" : "hidden"}
               >
-                <div className="relative ">
-                  <div className="flex items-center justify-center">
-                    <div
-                      className="items-center justify-center md:flex md:flex-wrap grid grid-cols-3"
-                      // className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
-                    >
-                      {technologies[category.id].map((tech, index) => (
-                        <Technology
-                          key={index}
-                          name={tech.name}
-                          icon={tech.icon}
-                          link={tech.link}
-                        />
-                      ))}
-                    </div>
-                  </div>
+                <div className="grid grid-cols-3 gap-3 sm:flex sm:flex-wrap sm:items-center sm:justify-center">
+                  {technologies[category.id].map((tech, index) => (
+                    <Technology
+                      key={index}
+                      name={tech.name}
+                      icon={tech.icon}
+                      link={tech.link}
+                    />
+                  ))}
                 </div>
               </section>
             ))}
           </main>
+
         </div>
       </div>
       <div className="bg-bgplate bg-cover py-4 rotate-180"></div>

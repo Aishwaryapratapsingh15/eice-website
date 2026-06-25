@@ -77,7 +77,7 @@ export default function Footer() {
           </div>
 
           {/* RIGHT */}
-          <div className="ml-auto text-right">
+          <div className="md:ml-auto md:text-right">
             <p className="text-white text-sm font-bold tracking-[4px] mb-3">
               GET IN TOUCH
             </p>
@@ -86,10 +86,10 @@ export default function Footer() {
               info@eicetechnology.com
             </p>
 
-            <p className="text-white text-lg mt-2 flex items-center justify-end gap-2">
+            <p className="text-white text-lg mt-2 flex items-center justify-start md:justify-end gap-2">
               Phone:  <img src={whatsappIcon} alt="Whatsapp" className="w-4 h-4" /> +91 987 189 5200
             </p>
-            <p className="text-white text-lg mt-2 flex items-center justify-end gap-4">
+            <p className="text-white text-lg mt-2 flex items-center justify-start md:justify-end gap-4">
               <img src={phoneIcon} alt="Whatsapp" className="w-4 h-4 invert" /> +1 832 280 4632
             </p>
           </div>

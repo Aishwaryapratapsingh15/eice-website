@@ -60,17 +60,17 @@ function Servmain() {
   return (
     <div className="">
       <div className=" relative font-manrope mx-auto px-1 sm:max-w-7xl w-screen pb-8">
-        <div className="2xl:pt-12 pt-36"></div>
-        <h1 className="text-bloo fontweight_1 text-center fontsize_2  py-2">
+        <div className="2xl:pt-12 pt-20 sm:pt-36"></div>
+        <h1 className="text-bloo fontweight_1 text-left sm:text-center fontsize_2  py-2">
           Our Services
         </h1>
-        <h2 className="text-blackk  fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
+        <h2 className="text-blackk  fontweight_1 text-left sm:text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
           Explore What We Offer
         </h2>
-        <div className="w-full rounded-xl max-w-screen-2xl mx-auto hidden sm:block">
-          <div className="bg-indusbanner w-full h-0 pb-[40%] sm:pb-[30%] lg:pb-[25%] bg-cover bg-center bg-no-repeat rounded-full"></div>
+        <div className="w-full rounded-xl max-w-screen-2xl mx-auto block">
+          <div className="bg-indusbanner w-full h-0 pb-[40%] sm:pb-[30%] lg:pb-[25%] bg-cover bg-center bg-no-repeat rounded-2xl sm:rounded-full"></div>
         </div>
-        <h2 className="text-blackk/70 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug px-1 text-center">
+        <h2 className="text-blackk/70 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug px-1 text-left sm:text-center">
           At EICE, we offer a comprehensive suite of tech services designed to
           propel your business into the digital future. From cutting-edge app
           development to strategic consultancy, we're here to transform your
@@ -84,10 +84,10 @@ function Servmain() {
         <div className="bg-zinc-50">
           <div className="py-12 relative font-manrope mx-auto px-1 sm:max-w-7xl w-screen">
             <div>
-              <h1 className="text-bloo fontweight_1 text-center fontsize_2  py-2">
+              <h1 className="text-bloo fontweight_1 text-left sm:text-center fontsize_2 py-2">
                 Our Flagship Services
               </h1>
-              <h2 className="text-blackk/70 font-semibold max-w-5xl mx-auto px-1 sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-center">
+              <h2 className="text-blackk/70 font-semibold max-w-5xl mx-auto px-1 sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left sm:text-center">
                 Discover EICE's core offerings that drive innovation and
                 efficiency across industries. Our flagship services are designed
                 to give your business a competitive edge in the digital
@@ -95,7 +95,7 @@ function Servmain() {
               </h2>
             </div>
             <div>
-              <div className="grid lg:grid-cols-3 px-4 grid-cols-1 gap-6 pt-12">
+              <div className="grid lg:grid-cols-3 grid-cols-1 gap-6 pt-12">
                 <Link
                   to="/services/digital-transformation"
                   className="group cursor-pointer p-4 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200 "
@@ -179,30 +179,30 @@ function Servmain() {
         <div id="emergingTechnologies" className="py-4"></div>
         <div className=" relative font-manrope mx-auto px-1 sm:max-w-7xl w-screen">
           <div>
-            <h1 className="text-bloo fontweight_1 text-center fontsize_2  py-2">
+            <h1 className="text-bloo fontweight_1 text-left sm:text-center fontsize_2 py-2">
               Emerging Technologies
             </h1>
-            <h2 className="text-blackk/70 font-semibold px-1 max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-center">
+            <h2 className="text-blackk/70 font-semibold px-1 max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left sm:text-center">
               Stay ahead of the curve with EICE's expertise in cutting-edge
               technologies. We help businesses leverage the latest innovations
               to create new opportunities and drive unprecedented growth.
             </h2>
-            <h2 className="text-blackk fontweight_1 sm:text-4xl text-2xl sm:leading-tight leading-snug text-center"></h2>
+            <h2 className="text-blackk fontweight_1 sm:text-4xl text-2xl sm:leading-tight leading-snug text-left sm:text-center"></h2>
           </div>
           <div>
             <div className="grid xl:grid-cols-3 lg:grid-cols-3 grid-cols-1 gap-4 pt-8">
               <Link
                 to="/services/ai-ml"
-                className="group cursor-pointer p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 "
+                className="group cursor-pointer p-4 sm:p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 "
               >
-                <div className="rounded-full  px-3">
-                  <LuBrainCircuit size={60} className="text-bloo" />
+                <div className="rounded-full">
+                  <LuBrainCircuit size={50} className="text-bloo" />
                 </div>
                 <div className="pt-4 h-full text-left">
-                  <h1 className="text-blackk fontweight_1 text-xl  pb-3 sm:text-2xl px-4">
+                  <h1 className="text-blackk fontweight_1 text-xl  pb-3 sm:text-2xl">
                     AI & ML
                   </h1>
-                  <p className="font-medium text-blackk/70 sm:text-xl text-lg text-left px-4">
+                  <p className="font-medium text-blackk/70 sm:text-xl text-lg text-left">
                     Unlock the potential of your data with our AI and Machine
                     Learning solutions. EICE helps you implement intelligent
                     systems that learn and improve over time.
@@ -211,16 +211,16 @@ function Servmain() {
               </Link>
               <Link
                 to="/services/iot"
-                className="group cursor-pointer p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 "
+                className="group cursor-pointer p-4 sm:p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 "
               >
-                <div className=" rounded-full  px-4">
-                  <GiCircuitry size={60} className="text-bloo" />
+                <div className="rounded-full">
+                  <GiCircuitry size={50} className="text-bloo" />
                 </div>
                 <div className="pt-4 h-full ">
-                  <h1 className="text-blackk fontweight_1 text-xl  pb-3 sm:text-2xl px-4">
+                  <h1 className="text-blackk fontweight_1 text-xl  pb-3 sm:text-2xl">
                     INTERNET OF THINGS
                   </h1>
-                  <p className="font-medium text-blackk/70 sm:text-xl text-lg text-left px-4">
+                  <p className="font-medium text-blackk/70 sm:text-xl text-lg text-left">
                     Connect your devices and gather valuable data with EICE's
                     IoT solutions. We help you create smart, interconnected
                     systems that drive efficiency and innovation.
@@ -229,16 +229,16 @@ function Servmain() {
               </Link>
               <Link
                 to="/services/blockchain"
-                className="group cursor-pointer p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 "
+                className="group cursor-pointer p-4 sm:p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 "
               >
-                <div className=" rounded-full  px-4">
-                  <SiBlockchaindotcom size={60} className="text-bloo" />
+                <div className="rounded-full">
+                  <SiBlockchaindotcom size={50} className="text-bloo" />
                 </div>
                 <div className="pt-4 h-full text-left">
-                  <h1 className="text-blackk fontweight_1 text-xl  pb-3 sm:text-2xl px-4">
+                  <h1 className="text-blackk fontweight_1 text-xl  pb-3 sm:text-2xl">
                     BLOCKCHAIN DEVELOPMENT
                   </h1>
-                  <p className="font-medium text-blackk/70 sm:text-xl text-lg text-left px-4">
+                  <p className="font-medium text-blackk/70 sm:text-xl text-lg text-left">
                     Enhance security and transparency with EICE's blockchain
                     solutions. We develop decentralized applications and smart
                     contracts tailored to your business needs.
@@ -253,34 +253,34 @@ function Servmain() {
       <div className="bg-zinc-50" id="appDevelopment">
         <div className="py-8 relative font-manrope mx-auto px-1 sm:max-w-7xl w-screen">
           <div>
-            <h1 className="text-bloo fontweight_1 text-center fontsize_2  py-2">
+            <h1 className="text-bloo fontweight_1 text-left sm:text-center fontsize_2 py-2">
               App Development Services
             </h1>
-            <h2 className="text-blackk/70 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-center">
+            <h2 className="text-blackk/70 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left sm:text-center">
               From mobile apps to complex enterprise solutions, EICE delivers
               cutting-edge software tailored to your unique business needs. Our
               expert developers use the latest technologies to create powerful,
               user-friendly applications.
             </h2>
-            <h2 className="text-blackk fontweight_1 sm:text-4xl text-2xl sm:leading-tight leading-snug text-center"></h2>
+            <h2 className="text-blackk fontweight_1 sm:text-4xl text-2xl sm:leading-tight leading-snug text-left sm:text-center"></h2>
           </div>
           <div className="">
-            <div className="px-4 grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 pt-16">
+            <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 pt-8">
               <Link
                 to="/services/saas"
-                className="group cursor-pointer p-8 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200"
+                className="group cursor-pointer p-4 sm:p-8 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200"
               >
-                <div className="flex px-1 rounded-full ">
+                <div className="flex rounded-full">
                   <GrCloudSoftware
-                    size={60}
+                    size={50}
                     className=" rounded-full text-bloo"
                   />
                 </div>
                 <div className="pt-2 h-full text-left">
-                  <h1 className="text-blackk fontweight_1 text-xl  pb-3 sm:text-2xl px-1">
+                  <h1 className="text-blackk fontweight_1 text-xl  pb-3 sm:text-2xl">
                     SAAS DEVELOPMENT
                   </h1>
-                  <p className="font-medium text-blackk/70 sm:text-xl text-lg text-left px-1">
+                  <p className="font-medium text-blackk/70 sm:text-xl text-lg text-left">
                     Transform your software into a scalable service with EICE's
                     SAAS development. We build cloud-based applications that
                     offer flexibility and accessibility to your customers.
@@ -289,16 +289,16 @@ function Servmain() {
               </Link>
               <Link
                 to="/services/web-development"
-                className="group cursor-pointer p-8 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200"
+                className="group cursor-pointer p-4 sm:p-8 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200"
               >
-                <div className="flex px-1 rounded-full ">
-                  <FaLaptopCode size={60} className=" text-bloo" />
+                <div className="flex rounded-full">
+                  <FaLaptopCode size={50} className=" text-bloo" />
                 </div>
                 <div className="pt-2 h-full text-left ">
-                  <h1 className="text-blackk fontweight_1 text-xl mb-3   sm:text-2xl px-1">
+                  <h1 className="text-blackk fontweight_1 text-xl mb-3   sm:text-2xl">
                     WEB APP DEVELOPMENT
                   </h1>
-                  <p className="font-medium text-blackk/70 sm:text-xl text-lg text-left px-1">
+                  <p className="font-medium text-blackk/70 sm:text-xl text-lg text-left">
                     Create powerful web applications with EICE. We develop
                     responsive, feature-rich web apps that work seamlessly
                     across all devices and platforms.
@@ -307,10 +307,10 @@ function Servmain() {
               </Link>
               <Link
                 to="/services/chatbot"
-                className="group cursor-pointer p-8 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200"
+                className="group cursor-pointer p-4 sm:p-8 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200"
               >
-                <div className="flex  rounded-full ">
-                  <IoIosChatboxes size={60} className="text-bloo" />
+                <div className="flex rounded-full">
+                  <IoIosChatboxes size={50} className="text-bloo" />
                 </div>
                 <div className="pt-2 h-full text-left">
                   <h1 className="text-blackk fontweight_1 text-xl mb-3  sm:text-2xl ">
@@ -329,7 +329,7 @@ function Servmain() {
       </div>
       <div id="consultancy" className="pt-8 pb-8">
         <div>
-          <h1 className="text-bloo fontweight_1 text-center fontsize_2  py-2">
+          <h1 className="text-bloo fontweight_1 text-left sm:text-center fontsize_2 py-2">
             Consultancy Service
           </h1>
         </div>
@@ -357,7 +357,7 @@ function Servmain() {
                   className="text-white lg:hidden pr-2 "
                 />
                 <FaPeopleArrows
-                  size={60}
+                  size={50}
                   className="text-white hidden lg:block pr-2"
                 />
                 <div>
@@ -385,7 +385,7 @@ function Servmain() {
             <div className="">
               <FaPencilRuler size={50} className="text-white lg:hidden pr-2 " />
               <FaPencilRuler
-                size={60}
+                size={50}
                 className="text-white hidden lg:block pr-2"
               />
               <div>
@@ -415,7 +415,7 @@ function Servmain() {
                   className="text-white lg:hidden pr-2 "
                 />
                 <FaPeopleArrows
-                  size={60}
+                  size={50}
                   className="text-white hidden lg:block pr-2"
                 />
                 <div>
@@ -442,7 +442,7 @@ function Servmain() {
               <div className="">
                 <FaPencilRuler size={50} className="text-white lg:hidden pr-2 " />
                 <FaPencilRuler
-                  size={60}
+                  size={50}
                   className="text-white hidden lg:block pr-2"
                 />
                 <div>

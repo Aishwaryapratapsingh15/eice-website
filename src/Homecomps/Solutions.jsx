@@ -323,66 +323,116 @@
 
 // export default Solutions;
 
-import React from "react";
+import React, { useRef, useEffect } from "react";
 const arrow = "https://d3r43jacxrwsrp.cloudfront.net/arrow.svg";
 import { NavLink, Link } from "/src/nextNavigation";
 
+const industries = [
+  {
+    link: "industries/healthcare",
+    name: "HEALTHCARE",
+    description:
+      "Innovative solutions to improve patient care and streamline healthcare operations",
+    bgClass: "bg-healthcare",
+  },
+  {
+    link: "industries/financial",
+    name: "FINANCIAL",
+    description:
+      "Secure software to streamline solutions and enhance customer experience",
+    bgClass: "bg-finance",
+  },
+  {
+    link: "industries/digital-media",
+    name: "DIGITAL MEDIA",
+    description:
+      "Advanced solutions for content creation, distribution and monetization",
+    bgClass: "bg-digimedia",
+  },
+  {
+    link: "industries/education",
+    name: "EDUCATION",
+    description:
+      "Digital tools that enhance learning and administrative efficiency",
+    bgClass: "bg-education",
+  },
+];
+
 function Solutions() {
-  const industries = [
-    {
-      link: "industries/healthcare",
-      name: "HEALTHCARE",
-      description:
-        "Innovative solutions to improve patient care and streamline healthcare operations",
-      bgClass: "bg-healthcare",
-    },
-    {
-      link: "industries/financial",
-      name: "FINANCIAL",
-      description:
-        "Secure software to streamline solutions and enhance customer experience",
-      bgClass: "bg-finance",
-    },
-    {
-      link: "industries/digital-media",
-      name: "DIGITAL MEDIA",
-      description:
-        "Advanced solutions for content creation, distribution and monetization",
-      bgClass: "bg-digimedia",
-    },
-    {
-      link: "industries/education",
-      name: "EDUCATION",
-      description:
-        "Digital tools that enhance learning and administrative efficiency",
-      bgClass: "bg-education",
-    },
-  ];
+  const scrollRef = useRef(null);
+  const animRef = useRef(null);
+
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+
+    const step = () => {
+      el.scrollLeft += 0.6;
+      if (el.scrollLeft >= el.scrollWidth / 2) {
+        el.scrollLeft = 0;
+      }
+      animRef.current = requestAnimationFrame(step);
+    };
+
+    animRef.current = requestAnimationFrame(step);
+    return () => cancelAnimationFrame(animRef.current);
+  }, []);
 
   return (
     <div className="font-manrope py-12 sm:py-12 lg:py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto ">
-        <h2 className="text-bloo font-bold text-center text-xl sm:text-xl lg:text-2xl  py-2 ">
+      <div className="max-w-7xl mx-auto">
+
+        {/* Mobile heading */}
+        <h2 className="sm:hidden text-blackk font-bold text-center text-2xl py-2 mb-2">
+          Solutions for Industries
+        </h2>
+
+        {/* Desktop headings — unchanged */}
+        <h2 className="hidden sm:block text-bloo font-bold text-center text-xl lg:text-2xl py-2">
           Industries We Serve
         </h2>
-        <h1 className="text-blackk  font-bold text-center text-2xl sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
+        <h1 className="hidden sm:block text-blackk font-bold text-center text-2xl sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
           IT & Software Development Solutions for Industries
         </h1>
 
-        <div className="grid grid-cols-1 px-4 sm:grid-cols-2 lg:grid-cols-4 gap-6 py-12">
+        {/* Mobile: infinite auto-scroll */}
+        <div
+          ref={scrollRef}
+          className="sm:hidden flex overflow-hidden gap-4 pb-4 px-0"
+          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+        >
+          {[...industries, ...industries].map((industry, index) => (
+            <IndustryCard key={index} {...industry} />
+          ))}
+        </div>
+
+        {/* Desktop: grid — unchanged */}
+        <div className="hidden sm:grid sm:grid-cols-2 sm:gap-6 sm:py-12 lg:grid-cols-4 sm:px-4">
           {industries.map((industry, index) => (
             <IndustryCard key={index} {...industry} />
           ))}
         </div>
 
-        <div className="flex justify-center">
+        {/* Mobile: View all button */}
+        <div className="sm:hidden mb-4">
           <Link
             to="/industries"
-            className="inline-flex items-center justify-center py-4 px-7  border border-blue-900 bg-blue-900 text-white font-semibold rounded-md text-lg transition duration-200 hover:bg-blue-900/90 hover:shadow-md hover:shadow-bloo/30"
+            className="block w-full border border-blue-900 bg-blue-900 text-white rounded-full py-3 text-center font-semibold text-sm"
+          >
+            View all industries →
+          </Link>
+        </div>
+
+        {/* Desktop: View More button — unchanged */}
+        <div className="hidden sm:flex justify-center">
+          <Link
+            to="/industries"
+            className="inline-flex items-center justify-center py-4 px-7 border border-blue-900 bg-blue-900 text-white font-semibold rounded-md text-lg transition duration-200 hover:bg-blue-900/90 hover:shadow-md hover:shadow-bloo/30"
           >
             View More <img src={arrow} alt="" className="ml-2 w-5 h-5" />
           </Link>
         </div>
+
       </div>
     </div>
   );
@@ -391,16 +441,16 @@ function Solutions() {
 function IndustryCard({ name, description, bgClass, link }) {
   return (
     <div
-      className={`relative ${bgClass} bg-cover rounded-lg cursor-pointer transition duration-200 hover:shadow-lg hover:shadow-blackk h-[20rem] sm:h-[25rem] lg:h-[30rem]`}
+      className={`relative ${bgClass} bg-cover rounded-xl cursor-pointer transition duration-200 hover:shadow-lg hover:shadow-blackk w-[72vw] flex-shrink-0 snap-start h-[200px] sm:w-auto sm:flex-shrink sm:snap-align-none sm:h-[25rem] lg:h-[30rem]`}
     >
       <Link
         to={`/${link}`}
-        className="absolute inset-0 bg-gradient-to-t from-stone-900/90 from-20% via-stone-800/95 via-20% to-transparent rounded-lg flex flex-col justify-end p-4"
+        className="absolute inset-0 bg-gradient-to-t from-stone-900/90 from-20% via-stone-800/95 via-20% to-transparent rounded-xl flex flex-col justify-end p-3 sm:p-4"
       >
-        <h3 className="text-stone-100 font-extrabold text-2xl sm:text-3xl mb-2">
+        <h3 className="text-stone-100 font-extrabold text-sm sm:text-3xl mb-1 sm:mb-2">
           {name}
         </h3>
-        <p className="text-white font-semibold text-sm sm:text-base">
+        <p className="text-white font-semibold text-xs sm:text-base">
           {description}
         </p>
       </Link>
