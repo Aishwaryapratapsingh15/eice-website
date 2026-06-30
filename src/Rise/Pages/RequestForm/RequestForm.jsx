@@ -23,7 +23,6 @@ import Certificate from "../../Components/Certificate/Certificate";
 
 import axios from "axios";
 import { createPortal } from "react-dom";
-import { useLocation } from '/src/nextNavigation';
 const successIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/common/success.svg";
 const errorIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/common/error.svg";
 
@@ -34,7 +33,6 @@ const [popup, setPopup] = useState({
   message: "",
 });
 
-const location = useLocation();
 const [product, setProduct] = useState("unknown");
 
     const [isPhone, setIsPhone] = useState(false);
@@ -133,7 +131,7 @@ const handleRfDialogKeyDown = (e) => {
 };
 
 useEffect(() => {
-  const param = new URLSearchParams(location.search).get("embed");
+  const param = new URLSearchParams(window.location.search).get("embed");
 
   if (param === "true") {
     sessionStorage.setItem("isEmbed", "true");

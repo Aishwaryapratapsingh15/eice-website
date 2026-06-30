@@ -106,7 +106,7 @@ export default function HospitalityPage() {
             serviceName: "ROOM",
             serviceName2: "BOOKING",
             icon: room,
-            path: "/products/eicerise/room-booking",
+            path: "/products/eicerise/roombooking",
             key: 1
         },
 
@@ -744,7 +744,7 @@ export default function HospitalityPage() {
             {isPhone ? (<section className={`${styles.section6ForPhone} globalSectionSize`}>
                 <div className={`${styles.section6Heading} font1`}>
 
-                    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "0px 20px" }}>
+                    <div style={{ display: "flex", justifyContent: "flex-start", alignItems: "center", gap: "0px 20px" }}>
                         <div style={{ width: "50px", paddingTop: "12px" }}>
                             <img style={{ width: "100%" }} src={h2} alt="" />
                         </div>

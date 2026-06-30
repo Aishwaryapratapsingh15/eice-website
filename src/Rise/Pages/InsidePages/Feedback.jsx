@@ -39,6 +39,7 @@ export default function Feedback() {
 
   useEffect(() => {
     const handleResize = () => setIsPhone(window.innerWidth <= 980);
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -181,15 +182,15 @@ export default function Feedback() {
       {isPhone ? (
         <section className={style.heroSectionConatinerPhone}>
           <div className={style.contentConatinerPhone}>
+            <div className={style.herosectionImgBoxPhone}>
+              <img style={{width : "100%"}} src={hero} alt={"feedback module"} />
+            </div>
+
             <div className={style.headingBoxPhone}>
               <div className={style.mainHeadingPhone}>FEEDBACK <span style={{color:"01b0F1"}}>SYSTEM</span></div>
               <div className={style.mainParaPhone}>
                 Capture, analyze, and act on guest feedback in real time, transforming opinions into operational improvements and enhanced guest satisfaction.
               </div>
-            </div>
-
-            <div className={style.herosectionImgBoxPhone}>
-              <img style={{width : "100%"}} src={hero} alt={"feedback module"} />
             </div>
           </div>
         </section>
@@ -216,7 +217,7 @@ export default function Feedback() {
       )}
 
       {/* ================= TAGWORDS ================= */}
-      <section style={{ backgroundColor: "#f5f5f5" }}>
+      <section style={{ backgroundColor: "#f5f5f5" }} className={style.section2Wrapper}>
         <div className={`${style.section2} globalSectionSize`}>
           {tag.map((t, i) => (
             <div key={i} className={style.section2IconAndName}>
@@ -273,9 +274,9 @@ export default function Feedback() {
       </section>
 
       {/* ================= CTA ================= */}
-      <section>
+      <section className={style.requestDemoBtn}>
         <Link to="/products/eicerise/form?product=EiceRise(Feedback)" style={{ color: "white",  textDecoration: "none" }}>
-          <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
+          <div className={`${style.demoBtnWrapper} globalSectionSize`}>
             <div className={style.demoButton}>
               Request a Demo <FaArrowRightLong />
             </div>
@@ -284,7 +285,7 @@ export default function Feedback() {
       </section>
 
       {/* ================= BENEFITS ================= */}
-      <section style={{ background: "#f5f5f5" }}>
+      <section style={{ background: "#f5f5f5" }} className={style.section5Wrapper}>
         <div className={`${style.section5} globalSectionSize`}>
           <div className={style.benefitSectionHeading}>Benefits</div>
 

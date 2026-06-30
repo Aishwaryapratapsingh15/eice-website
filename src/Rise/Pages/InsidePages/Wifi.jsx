@@ -44,6 +44,7 @@ export default function WifiModule() {
     const handleResize = () => {
       setIsPhone(window.innerWidth <= 980);
     };
+    handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
@@ -181,6 +182,10 @@ export default function WifiModule() {
         <section className={style.heroSectionConatinerPhone}>
           <div className={style.contentConatinerPhone}>
 
+            <div className={style.herosectionImgBoxPhone}>
+              <img style={{width : "100%"}} src={hero} alt={"wifi module"} />
+            </div>
+
             <div className={style.headingBoxPhone}>
               <div className={style.mainHeadingPhone}>
                 WI-FI <span style={{color:"#01B0F1"}}> MODULE </span>
@@ -189,10 +194,6 @@ export default function WifiModule() {
               <div className={style.mainParaPhone}>
                 Automate guest Wi-Fi access linked with the Room Booking module to the issuance system, delivering instant, secure connectivity from the moment of check-in. This module can also be utilised to generate the Wi-Fi cards for walking guests/visitors, who are utilising the banquets service, seminars etc.
               </div>
-            </div>
-
-            <div className={style.herosectionImgBoxPhone}>
-              <img style={{width : "100%"}} src={hero} alt={"wifi module"} />
             </div>
 
           </div>
@@ -234,7 +235,7 @@ export default function WifiModule() {
       )}
 
       {/* TAGWORDS */}
-      <section style={{ backgroundColor: "#f5f5f5" }}>
+      <section style={{ backgroundColor: "#f5f5f5" }} className={style.section2Wrapper}>
         <div className={`${style.section2} globalSectionSize`}>
 
           {tag.map((t, i) => (
@@ -307,7 +308,7 @@ export default function WifiModule() {
       {/* CTA */}
       <section className={style.requestDemoBtn}>
         <Link to={"/products/eicerise/form?product=EiceRise(Wifi)"} className="linkClass">
-          <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
+          <div className={`${style.demoBtnWrapper} globalSectionSize`}>
             <div className={style.demoButton}>
               <div>Request a Demo</div>
               <div className={style.demoArrowButton}><FaArrowRightLong /></div>
@@ -317,7 +318,7 @@ export default function WifiModule() {
       </section>
 
       {/* BENEFITS */}
-      <section style={{ background: "#f5f5f5" }}>
+      <section style={{ background: "#f5f5f5" }} className={style.section5Wrapper}>
         <div className={`${style.section5} globalSectionSize`}>
 
           <div className={style.benefitSectionHeading}>Benefits</div>

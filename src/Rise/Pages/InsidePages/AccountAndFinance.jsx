@@ -62,8 +62,9 @@ export default function AccountAndFinance() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsPhone(window.innerWidth <= 980); // Update based on screen size
+      setIsPhone(window.innerWidth <= 980);
     };
+    handleResize();
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
@@ -288,6 +289,10 @@ export default function AccountAndFinance() {
 
         <div className={`${style.contentConatinerPhone}`}>
 
+          <div className={`${style.herosectionImgBoxPhone}`}>
+            <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
+          </div>
+
           <div className={`${style.headingBoxPhone} font4 `}>
             <div className={`${style.mainHeadingPhone}`}>
               <span style={{ color: "#012060" }} >ACCOUNTS</span><span style={{ color: "#01B0F1" }} > & FINANCE</span>
@@ -299,17 +304,13 @@ export default function AccountAndFinance() {
 
           </div>
 
-          <div className={`${style.herosectionImgBoxPhone}`}>
-            <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
-          </div>
-
 
         </div>
 
       </section>)}
 
 
-      <section style={{ backgroundColor: "#f5f5f5" }}>
+      <section style={{ backgroundColor: "#f5f5f5" }} className={style.section2Wrapper}>
         <div className={`${style.section2} font4 globalSectionSize`}>
 
           <div className={style.section2IconAndName}>
@@ -456,7 +457,7 @@ export default function AccountAndFinance() {
 
 
         <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form?product=EiceRise(Account and Finance)"}>
-          <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
+          <div className={`${style.demoBtnWrapper} globalSectionSize`}>
             <div className={`${style.demoButton} font1`}>
               <div > Request a Demo </div>
               <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
@@ -471,7 +472,7 @@ export default function AccountAndFinance() {
 
 
 
-      <section style={{ background: "#f5f5f5" }} >
+      <section style={{ background: "#f5f5f5" }} className={style.section5Wrapper}>
         <div className={`${style.section5} font4 globalSectionSize`}>
 
 

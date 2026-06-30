@@ -37,7 +37,7 @@ export default function ProductDrop() {
             title: "Room Booking",
             description: "Streamline guest reservations",
             icon: room,
-            path: "/products/eicerise/room-booking",
+            path: "/products/eicerise/roombooking",
 
         },
         {

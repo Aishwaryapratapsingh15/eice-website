@@ -1,9 +1,16 @@
 .certificateHeading
 {
-    
-    text-align: center;
+    text-align: left;
+    padding-left: 20px;
     font-weight: 600;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (min-width: 640px) {
+    .certificateHeading {
+        text-align: center;
+        padding-left: 0;
+    }
 }
 .certificate
 {

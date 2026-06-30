@@ -69,7 +69,7 @@ export default function IIC() {
         {
             serviceName: "ROOM BOOKING",
             icon: room,
-            path: "/products/eicerise/room-booking",
+            path: "/products/eicerise/roombooking",
             key: 1
         },
 

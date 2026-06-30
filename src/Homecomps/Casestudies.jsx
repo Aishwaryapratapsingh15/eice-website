@@ -96,9 +96,9 @@ function Casestudies() {
 
       {/* Mobile layout — new card structure */}
       {isMobile && (
-        <div className="font-manrope px-4 py-4">
-          <h2 className="text-bloo text-center fontsize_2 fontweight_1">Case Study</h2>
-          <h1 className="text-blackk fontweight_1 text-center text-2xl mx-auto max-w-3xl py-1">
+        <div className="font-manrope px-5 py-4">
+          <h2 className="text-bloo text-left text-[18px] fontweight_1">Case Study</h2>
+          <h1 className="text-blackk fontweight_1 text-left text-[26px] max-w-3xl py-1">
             Explore the journeys behind the successful products we deliver
           </h1>
 

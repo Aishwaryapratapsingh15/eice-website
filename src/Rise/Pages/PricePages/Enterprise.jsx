@@ -45,7 +45,7 @@ export default function Enterprise() {
             serviceName: "ROOM",
             serviceName2: "BOOKING",
             icon: room,
-            path: "/products/eicerise/room-booking",
+            path: "/products/eicerise/roombooking",
             key: 1
         },
 

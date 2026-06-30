@@ -41,6 +41,7 @@ export default function SingleSignOn() {
     const handleResize = () => {
       setIsPhone(window.innerWidth <= 980);
     };
+    handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
@@ -156,6 +157,10 @@ const footerUpperText = {
         <section className={style.heroSectionConatinerPhone}>
           <div className={style.contentConatinerPhone}>
 
+            <div className={style.herosectionImgBoxPhone}>
+              <img style={{width : "100%"}} src={hero} alt={"room booking"} />
+            </div>
+
             <div className={style.headingBoxPhone}>
               <div className={style.mainHeadingPhone}>
                 RISE <span style={{ color: "#01B0F1" }}>SINGLE SIGN-ON</span>
@@ -164,10 +169,6 @@ const footerUpperText = {
               <div className={style.mainParaPhone}>
                 Take command of your entire EICE Rise ecosystem with a powerful software administration console that manages users, roles, configurations, and system-wide settings from a single control panel.
               </div>
-            </div>
-
-            <div className={style.herosectionImgBoxPhone}>
-              <img style={{width : "100%"}} src={hero} alt={"room booking"} />
             </div>
 
           </div>
@@ -198,7 +199,7 @@ const footerUpperText = {
       )}
 
       {/* TAGWORDS */}
-      <section style={{ backgroundColor: "#f5f5f5" }}>
+      <section style={{ backgroundColor: "#f5f5f5" }} className={style.section2Wrapper}>
         <div className={`${style.section2} globalSectionSize`}>
 
           {tag.map((t, i) => (
@@ -270,7 +271,7 @@ const footerUpperText = {
       {/* CTA */}
       <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form?product=EiceRise(Single Sign On)"}>
       <section className={style.requestDemoBtn}>
-        <div style={{ display: "flex", justifyContent: "center" }}>
+        <div className={`${style.demoBtnWrapper} globalSectionSize`}>
           <div className={style.demoButton}>
             Request a Demo →
           </div>
@@ -279,7 +280,7 @@ const footerUpperText = {
       </Link>
 
       {/* BENEFITS */}
-      <section style={{ background: "#f5f5f5" }}>
+      <section style={{ background: "#f5f5f5" }} className={style.section5Wrapper}>
         <div className={`${style.section5} globalSectionSize`}>
 
           <div className={style.benefitSectionHeading}>Benefits</div>

@@ -195,14 +195,14 @@ function Techs() {
     <div className="">
       <div className="bg-bgplate bg-cover "></div>
       <div className="bg-zinc-50">
-        <div className="mx-auto font-manrope px-4 py-6 sm:px-0 sm:py-0">
+        <div className="mx-auto font-manrope px-5 py-6 sm:px-0 sm:py-0">
 
           {/* Mobile: left-aligned short title | Desktop: centered full title */}
           <header className="mb-6 sm:text-center sm:mb-10">
-            <h2 className="text-bloo fontsize_2 fontweight_1 py-2">
+            <h2 className="text-bloo text-[18px] sm:text-[25px] fontweight_1 py-2">
               Technologies we work with
             </h2>
-            <h2 className="text-blackk fontweight_1 text-2xl sm:text-3xl sm:mx-auto md:text-3xl lg:text-[32px] sm:max-w-4xl py-1">
+            <h2 className="text-blackk fontweight_1 text-[26px] sm:text-3xl sm:mx-auto md:text-3xl lg:text-[32px] sm:max-w-4xl py-1">
               <span className="sm:hidden">Explore our cutting-edge tools</span>
               <span className="hidden sm:inline">Explore our extensive range of cutting-edge tools and platforms</span>
             </h2>
@@ -210,12 +210,12 @@ function Techs() {
 
           {/* Mobile: compact left-aligned | Desktop: centered wide gaps */}
           <nav className="mb-8 sm:mb-12 sm:max-w-4xl sm:px-2 sm:mx-auto">
-            <ul className="flex flex-wrap items-center gap-2 sm:justify-center sm:gap-x-[4.7rem] sm:gap-y-8">
-              {categories.map((category) => (
-                <li key={category.id} className="text-nowrap">
+            <ul className="grid grid-cols-6 gap-2 sm:flex sm:flex-wrap sm:justify-center sm:gap-x-[4.7rem] sm:gap-y-8">
+              {categories.map((category, index) => (
+                <li key={category.id} className={`flex justify-center ${index < 3 ? "col-span-2" : "col-span-3"}`}>
                   <button
                     onClick={() => setActiveCategory(category.id)}
-                    className={`px-4 py-2 rounded-full text-sm font-medium transition ${
+                    className={`w-full py-2 rounded-full text-sm font-medium transition ${
                       activeCategory === category.id
                         ? "bg-blue-900 text-white"
                         : "bg-gray-200 text-gray-700 hover:bg-gray-300"

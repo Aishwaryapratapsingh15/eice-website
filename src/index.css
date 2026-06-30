@@ -12,9 +12,13 @@ html, body {
 @media (max-width: 768px) {
     body {
         font-size: 16px;
-        line-height: 1.6;
+    }
+
+    p {
+        line-height: normal !important;
     }
 }
+
 
 /* CLS prevention: reserve space for images before they load */
 img {
@@ -163,5 +167,55 @@ button, [role="button"], a, input[type="submit"], input[type="button"], input[ty
 
 .offer-item:hover .back {
     transform: rotateY(0deg);
+}
+
+/* Dark blue button backgrounds → #012060 */
+button.bg-blue-900,
+a.bg-blue-900 {
+    background-color: #012060;
+}
+
+button.bg-blue-900.border-blue-900,
+a.bg-blue-900.border-blue-900 {
+    border-color: #012060;
+}
+
+button.bg-\[\#012060\],
+a.bg-\[\#012060\] {
+    background-color: #012060;
+}
+
+button.hover\:bg-blue-900:hover,
+a.hover\:bg-blue-900:hover {
+    background-color: #012060;
+}
+
+button.hover\:bg-blue-900\/90:hover,
+a.hover\:bg-blue-900\/90:hover,
+button.hover\:bg-blue-900\/95:hover,
+a.hover\:bg-blue-900\/95:hover {
+    background-color: rgb(1 32 64 / 0.9);
+}
+
+button.hover\:bg-blue-800:hover,
+a.hover\:bg-blue-800:hover {
+    background-color: #011530;
+}
+
+/* Mobile: 20px left/right margin for all content containers, excluding footer */
+@media (max-width: 639px) {
+    #main-content .max-w-7xl,
+    #main-content .sm\:max-w-7xl,
+    #main-content .lg\:max-w-7xl {
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+    /* Footer keeps its original internal padding */
+    #main-content footer .max-w-7xl {
+        padding-left: 8px;
+        padding-right: 16px;
+    }
 }
 

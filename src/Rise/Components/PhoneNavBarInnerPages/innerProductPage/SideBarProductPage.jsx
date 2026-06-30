@@ -46,7 +46,7 @@ export default function SideBarProductPage() {
             title2: "Booking",
             description: "Streamline guest reservations",
             icon: room,
-            path: "/products/eicerise/room-booking",
+            path: "/products/eicerise/roombooking",
 
         },
 

@@ -379,11 +379,11 @@ function Solutions() {
   }, []);
 
   return (
-    <div className="font-manrope py-12 sm:py-12 lg:py-12 px-4 sm:px-6 lg:px-8">
+    <div className="font-manrope py-12 sm:py-12 lg:py-12 px-5 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
 
         {/* Mobile heading */}
-        <h2 className="sm:hidden text-blackk font-bold text-center text-2xl py-2 mb-2">
+        <h2 className="sm:hidden text-blackk font-semibold text-left text-[26px] py-2 mb-2">
           Solutions for Industries
         </h2>
 

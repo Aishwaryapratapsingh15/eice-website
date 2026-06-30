@@ -1,6 +1,6 @@
 ﻿"use client";
 import React, { useEffect } from "react";
-import { Link, useLocation } from "/src/nextNavigation";
+import { Link } from "/src/nextNavigation";
 import Offers from "../Homecomps/Offers";
 import styles from "./styles/servmain.module.css"
 // import "./Styles/Servmain.css"
@@ -15,9 +15,6 @@ import { LuBrainCircuit, LuCloudCog } from "react-icons/lu";
 import { SiBlockchaindotcom } from "react-icons/si";
 import { TbLetterA, TbLetterI } from "react-icons/tb";
 function Servmain() {
-  const location = useLocation();
-
-
   const appStyle = {
     backgroundImage: `url(${consultancy})`,
     backgroundSize: 'cover',
@@ -47,16 +44,14 @@ function Servmain() {
   };
 
   useEffect(() => {
-    const searchParams = new URLSearchParams(location.search);
-    const scrollTo = searchParams.get("scrollTo");
-
+    const scrollTo = new URLSearchParams(window.location.search).get("scrollTo");
     if (scrollTo) {
       const element = document.getElementById(scrollTo);
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
       }
     }
-  }, [location]);
+  }, []);
   return (
     <div className="">
       <div className=" relative font-manrope mx-auto px-1 sm:max-w-7xl w-screen pb-8">

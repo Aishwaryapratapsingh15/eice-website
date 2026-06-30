@@ -11,10 +11,10 @@ function Big() {
   const slides = [
     {
       content: (
-        <div className=" mx-auto px-4 sm:px-12 lg:px-0 xl:px-12 2xl:px-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <div className="flex flex-col space-y-4 ">
-              <h1 className="text-blackk fontsize_6 font-semibold lg:leading-[3.7rem]">
+        <div className=" mx-auto px-5 sm:px-12 lg:px-0 xl:px-12 2xl:px-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 sm:gap-8 items-center">
+            <div className="flex flex-col space-y-2 sm:space-y-4 ">
+              <h1 className="text-blackk fontsize_6 font-semibold leading-tight lg:leading-[3.7rem]">
                 Unlock Creativity with{" "}
                 <span className="text-bloo">Generative AI</span>
                 {/* Transforming your Business through */}
@@ -39,7 +39,7 @@ function Big() {
                 </Link>
               </div>
             </div>
-            <div className="flex lg:order-last order-first xl:justify-end justify-center mt-8 lg:mt-0">
+            <div className="flex lg:order-last order-first xl:justify-end justify-center mt-2 lg:mt-0">
               <img
                 className="w-full max-w-md rounded-lg"
                 src={genai}
@@ -54,10 +54,10 @@ function Big() {
     },
     {
       content: (
-        <div className=" mx-auto px-4 sm:px-12 lg:px-0 xl:px-12 2xl:px-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <div className="flex flex-col space-y-4">
-              <h1 className="text-blackk fontsize_6 font-semibold lg:leading-[3.7rem]">
+        <div className=" mx-auto px-5 sm:px-12 lg:px-0 xl:px-12 2xl:px-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 sm:gap-8 items-center">
+            <div className="flex flex-col space-y-2 sm:space-y-4">
+              <h1 className="text-blackk fontsize_6 font-semibold leading-tight lg:leading-[3.7rem]">
                 {/* Improving your Efficiency with
                               <span className="text-bloo font-semibold block mt-2">DevOps</span> */}
                 Accelerate innovation with{" "}
@@ -82,7 +82,7 @@ function Big() {
                 </Link>
               </div>
             </div>
-            <div className="flex lg:order-last order-first xl:justify-end justify-center mt-8 lg:mt-0">
+            <div className="flex lg:order-last order-first xl:justify-end justify-center mt-2 lg:mt-0">
               <img
                 className="w-full max-w-md rounded-lg scale-[.8]"
                 src={devops}
@@ -97,10 +97,10 @@ function Big() {
     },
     {
       content: (
-        <div className=" mx-auto px-4 sm:px-12 lg:px-0 xl:px-12 2xl:px-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <div className="flex flex-col space-y-4">
-              <h1 className="text-blackk fontsize_6 font-semibold lg:leading-[3.7rem]">
+        <div className=" mx-auto px-5 sm:px-12 lg:px-0 xl:px-12 2xl:px-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 sm:gap-8 items-center">
+            <div className="flex flex-col space-y-2 sm:space-y-4">
+              <h1 className="text-blackk fontsize_6 font-semibold leading-tight lg:leading-[3.7rem]">
                 {/* Driving business Growth with
                             <span className="text-bloo font-semibold block mt-2 2xl:text-nowrap text-wrap">Digital Transformation</span> */}
                 Transform your Business with{" "}
@@ -125,7 +125,7 @@ function Big() {
                 </Link>
               </div>
             </div>
-            <div className="flex lg:order-last order-first xl:justify-end justify-center mt-8 lg:mt-0">
+            <div className="flex lg:order-last order-first xl:justify-end justify-center mt-2 lg:mt-0">
               <img
                 className="w-full max-w-md rounded-lg"
                 src={digitrans}
@@ -179,13 +179,13 @@ function Big() {
     >
       <div  className="  absolute inset-0 bg-bannerbg bg-cover bg-center bg-blend-overlay"></div>
       <div className="relative z-10 ">
-        <div className=" mx-auto px-4 sm:px-2 xl:px-8">
-          <div className="min-h-[500px] sm:min-h-[450px] max-w-[1536px] mx-auto">
-            <div key={currentIndex} className="px-2 xl:px-12">
+        <div className=" mx-auto px-0 sm:px-2 xl:px-8">
+          <div className="sm:min-h-[450px] max-w-[1536px] mx-auto">
+            <div key={currentIndex} className="px-0 xl:px-12">
               {slides[currentIndex].content}
             </div>
           </div>
-          <div className="flex justify-center mt-12">
+          <div className="flex justify-center mt-4 sm:mt-12">
             <div className="flex space-x-4">
               {slides.map((_, index) => (
                 <button

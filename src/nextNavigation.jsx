@@ -1,7 +1,7 @@
 "use client";
 
 import NextLink from "next/link";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 const normalizeHref = (href) => {
   if (!href) return "#";
@@ -59,11 +59,5 @@ export function useNavigate() {
 
 export function useLocation() {
   const pathname = usePathname() || "/";
-  const searchParams = useSearchParams();
-  const query = searchParams?.toString();
-
-  return {
-    pathname,
-    search: query ? `?${query}` : "",
-  };
+  return { pathname, search: "" };
 }

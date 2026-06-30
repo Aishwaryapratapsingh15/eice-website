@@ -31,7 +31,7 @@ export default function Hospitality() {
             serviceName: "Room Booking",
             img: room,
             width: "",
-            link: "/roombooking"
+            link: "/products/eicerise/roombooking"
         },
 
         {

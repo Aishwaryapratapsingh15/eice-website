@@ -32,11 +32,11 @@ export default function Clients() {
 
   return (
     <>
-      <div className="font-manrope" style={{ margin: "60px auto", width: "90%" }}>
-        <h2 className="text-bloo text-center fontsize_2 fontweight_1 mb-6">
+      <div className="font-manrope px-5 sm:px-0 sm:w-[90%] sm:mx-auto" style={{ marginTop: "60px", marginBottom: "60px" }}>
+        <h2 className="text-bloo text-left sm:text-center text-[18px] sm:text-[25px] fontweight_1 mb-6">
           Our Clients
         </h2>
-        <p className="text-center text-2xl sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1 fontweight_1 mb-8">
+        <p className="text-left sm:text-center text-[26px] sm:text-3xl sm:mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1 fontweight_1 mb-8">
           Partnering with visionary clients to drive success and innovation
         </p>
 

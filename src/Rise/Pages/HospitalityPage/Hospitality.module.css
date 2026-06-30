@@ -89,7 +89,6 @@
 .text1 {
     font-size: 52px;
     font-weight: 600;
-    line-height: 53px;
 }
 
 
@@ -494,7 +493,6 @@
 
     .text1 {
         font-size: 36px;
-        line-height: normal;
     }
 
 }
@@ -557,7 +555,7 @@
         /* top: 9%; */
         left: unset;
         transform: unset;
-        padding-top: 50px;
+        padding-top: 80px;
         /* text-align: left; */
 
     }
@@ -565,6 +563,7 @@
     .text1 {
         text-align: left;
         padding: 10px 20px;
+        line-height: 1.1;
     }
 
     .text2 {
@@ -603,8 +602,9 @@
 
     .laptopImg {
 
-
-        width: 100%;
+        left: 20px;
+        right: 20px;
+        width: auto;
         bottom: 10rem;
     }
 
@@ -624,13 +624,14 @@
     .section2Heading {
 
         font-size: 20px;
+        text-align: left;
 
     }
 
 
     .servicesBox {
         column-gap: 32px;
-        padding: 40px 20px;
+        padding: 20px 20px;
         row-gap: 1rem;
     }
 
@@ -664,7 +665,19 @@
 
 @media (max-width: 800px) {
     .servicesBox {
-        grid-template-columns: repeat(2, 1fr); /* ✅ 2 cards per row */
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .iconAndTextBox {
+        width: 100%;
+    }
+
+    .clientLogoBox {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -697,7 +710,7 @@
     .section4Heading {
 
         font-size: 20px;
-        text-align: center;
+        text-align: left;
     }
 
     .clientSection {
@@ -785,7 +798,7 @@
     .section6Heading {
 
         font-size: 20px;
-        text-align: center;
+        text-align: left;
     }
 
     .viewMoreBtn {
@@ -809,7 +822,7 @@
         align-items: center;
         height: 27rem;
         overflow: hidden;
-        width: 370px;
+        width: 100%;
 
     }
 
@@ -860,7 +873,7 @@
         /* height: 69vh; */
         height: 35rem;
         overflow: hidden;
-        width: 370px;
+        width: 100%;
 
 
     }
@@ -901,7 +914,9 @@
 
     .laptopImg {
 
-        width: 120%;
+        left: 20px;
+        right: 20px;
+        width: auto;
         bottom: 10rem;
     }
 
@@ -909,7 +924,7 @@
         top: 11%;
         left: unset;
         transform: unset;
-        padding-top: 50px;
+        padding-top: 90px;
     }
 
 
@@ -942,8 +957,6 @@
 @media (max-width : 400px) {
 
     .iconAndTextBox {
-        width: 120px;
-        height: 145px;
 
 
     }

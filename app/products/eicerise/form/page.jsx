@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import RequestForm from "../../../../src/Rise/Pages/RequestForm/RequestForm";
 import ProductFooter from "../../../../src/Product/ProductFooter";
 import Copyright from "../../../../src/Othercomps/Copyright";
@@ -11,7 +12,9 @@ export const metadata = {
 export default function Page() {
   return (
     <>
-      <RequestForm />
+      <Suspense fallback={null}>
+        <RequestForm />
+      </Suspense>
       <ProductFooter />
       <Copyright />
     </>

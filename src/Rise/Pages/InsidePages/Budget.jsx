@@ -40,6 +40,7 @@ export default function Budget() {
     const handleResize = () => {
       setIsPhone(window.innerWidth <= 980);
     };
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -171,15 +172,15 @@ export default function Budget() {
       {isPhone ? (
         <section className={style.heroSectionConatinerPhone}>
           <div className={style.contentConatinerPhone}>
+            <div className={style.herosectionImgBoxPhone}>
+              <img style={{width : "100%"}} src={hero} alt={"wifi module"} />
+            </div>
+
             <div className={style.headingBoxPhone}>
               <div className={style.mainHeadingPhone}>BUDGET</div>
               <div className={style.mainParaPhone}>
                 Plan, allocate, and monitor budgets across departments and properties with real-time variance tracking and intelligent forecasting tools.
               </div>
-            </div>
-
-            <div className={style.herosectionImgBoxPhone}>
-              <img style={{width : "100%"}} src={hero} alt={"wifi module"} />
             </div>
           </div>
         </section>
@@ -202,7 +203,7 @@ export default function Budget() {
       )}
 
       {/* TAGWORDS */}
-      <section style={{ backgroundColor: "#f5f5f5" }}>
+      <section style={{ backgroundColor: "#f5f5f5" }} className={style.section2Wrapper}>
         <div className={`${style.section2} globalSectionSize`}>
           {tag.map((t, i) => (
             <div key={i} className={style.section2IconAndName}>
@@ -268,14 +269,14 @@ export default function Budget() {
       {/* CTA */}
        <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form?product=EiceRise(Budget)"}>
       <section className={style.requestDemoBtn}>
-        <div style={{ display: "flex", justifyContent: "center" }}>
+        <div className={`${style.demoBtnWrapper} globalSectionSize`}>
           <div className={style.demoButton}>Request a Demo →</div>
         </div>
       </section>
       </Link>
 
       {/* BENEFITS */}
-      <section style={{ background: "#f5f5f5" }}>
+      <section style={{ background: "#f5f5f5" }} className={style.section5Wrapper}>
         <div className={`${style.section5} globalSectionSize`}>
           <div className={style.benefitSectionHeading}>Benefits</div>
 

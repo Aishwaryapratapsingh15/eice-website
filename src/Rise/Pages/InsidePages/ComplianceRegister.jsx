@@ -39,6 +39,7 @@ export default function ComplianceRegister() {
 
   useEffect(() => {
     const handleResize = () => setIsPhone(window.innerWidth <= 980);
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -187,15 +188,15 @@ export default function ComplianceRegister() {
       {isPhone ? (
         <section className={style.heroSectionConatinerPhone}>
           <div className={style.contentConatinerPhone}>
+            <div className={style.herosectionImgBoxPhone}>
+              <img src={hero}style={{ width: "100%" }} />
+            </div>
+
             <div className={style.headingBoxPhone}>
               <div className={style.mainHeadingPhone}>COMPLIANCE <span style={{color:"#01B0F1"}}>REGISTER</span></div>
               <div className={style.mainParaPhone}>
                 Track, assign, and monitor operational activities and tasks across departments in real time, ensuring accountability and timely completion.
               </div>
-            </div>
-
-            <div className={style.herosectionImgBoxPhone}>
-              <img src={hero}style={{ width: "100%" }} />
             </div>
           </div>
         </section>
@@ -220,7 +221,7 @@ export default function ComplianceRegister() {
       )}
 
       {/* TAGWORDS */}
-      <section style={{ backgroundColor: "#f5f5f5" }}>
+      <section style={{ backgroundColor: "#f5f5f5" }} className={style.section2Wrapper}>
         <div className={`${style.section2} globalSectionSize`}>
           {tag.map((t, i) => (
             <div key={i} className={style.section2IconAndName}>
@@ -275,9 +276,9 @@ export default function ComplianceRegister() {
       </section>
 
       {/* CTA */}
-      <section>
+      <section className={style.requestDemoBtn}>
         <Link to="/products/eicerise/form?product=EiceRise(Compliance Register)" style={{ color: "white",  textDecoration: "none" }}>
-          <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
+          <div className={`${style.demoBtnWrapper} globalSectionSize`}>
             <div className={style.demoButton}>
               Request a Demo <FaArrowRightLong />
             </div>
@@ -286,7 +287,7 @@ export default function ComplianceRegister() {
       </section>
 
       {/* BENEFITS */}
-      <section style={{ background: "#f5f5f5" }}>
+      <section style={{ background: "#f5f5f5" }} className={style.section5Wrapper}>
         <div className={`${style.section5} globalSectionSize`}>
           <div className={style.benefitSectionHeading}>Benefits</div>
 

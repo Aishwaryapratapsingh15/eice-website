@@ -10,7 +10,7 @@ export default function Certificate() {
     return (
         <div className={`${styles.certificate}`}>
 
-            <div className={`${styles.certificateHeading} fontsize_6`}>
+            <div className={`${styles.certificateHeading} text-[18px] sm:text-[35px]`}>
                 Our Certifications
             </div>
 

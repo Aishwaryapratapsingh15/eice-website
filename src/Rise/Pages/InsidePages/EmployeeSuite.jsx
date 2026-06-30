@@ -68,8 +68,9 @@ export default function EmployeeSuite() {
 
   useEffect(() => {
       const handleResize = () => {
-          setIsPhone(window.innerWidth <= 980); // Update based on screen size
+          setIsPhone(window.innerWidth <= 980);
       };
+      handleResize();
       window.addEventListener('resize', handleResize);
       return () => {
           window.removeEventListener('resize', handleResize);
@@ -249,6 +250,10 @@ export default function EmployeeSuite() {
 
 <div className={`${style.contentConatinerPhone}`}>
 
+    <div className={`${style.herosectionImgBoxPhone}`}>
+        <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
+    </div>
+
     <div className={`${style.headingBoxPhone} font4 `}>
         <div className={`${style.mainHeadingPhone}`}>
             <span style={{ color: "#012060" }} >EMPLOYEE </span><span style={{ color: "#01B0F1" }} >SUITE</span>
@@ -258,10 +263,6 @@ export default function EmployeeSuite() {
         </div>
 
 
-    </div>
-
-    <div className={`${style.herosectionImgBoxPhone}`}>
-        <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
     </div>
 
 
@@ -301,7 +302,7 @@ export default function EmployeeSuite() {
 
  
 
-      <section style={{ backgroundColor: "#f5f5f5" }}>
+      <section style={{ backgroundColor: "#f5f5f5" }} className={style.section2Wrapper}>
         <div className={`${style.section2} font4 globalSectionSize`}>
 
           <div className={style.section2IconAndName}>
@@ -446,12 +447,12 @@ export default function EmployeeSuite() {
       <section className={`${style.requestDemoBtn}`}>
 
       <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form?product=EiceRise(Employee Suite)"}>
-                <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
+                <div className={`${style.demoBtnWrapper} globalSectionSize`}>
                   <div className={`${style.demoButton} font1`}>
                     <div > Request a Demo </div>
                     <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
                   </div>
-      
+
                 </div>
               </Link>
 
@@ -503,7 +504,7 @@ export default function EmployeeSuite() {
         </div>
       </section> */}
 
-      <section style={{ background: "#f5f5f5" }} >
+      <section style={{ background: "#f5f5f5" }} className={style.section5Wrapper}>
         <div className={`${style.section5} font4 globalSectionSize`}>
 
 

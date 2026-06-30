@@ -49,36 +49,31 @@ export default function Page() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-      <div className="flex flex-col">
-        {/* Hero — 2nd on mobile, 1st on desktop */}
-        <div className="order-2 sm:order-1 inner_components">
-          <Big />
-        </div>
+      <div className="inner_components">
+        <Big />
+      </div>
 
-        {/* Core Services — 1st on mobile, 2nd on desktop */}
-        <div className="order-1 sm:order-2">
-          <div className="flex flex-col gap-0.5 items-center justify-center xl:pt-8 pt-2 sm:pt-4 w-screen px-2 mb-2 sm:mb-8 md:mb-12">
-            <h2 className="text-bloo fontsize_2 fontweight_1 py-2">Core Services</h2>
-            <h2 className="text-blackk fontweight_1 text-center text-2xl sm:text-3xl md:text-3xl lg:text-[32px] max-w-4xl py-1">
-              Unlocking Innovation: <br className="sm:hidden" />
-              Explore Our Suite of Solutions for Your Digital Evolution
-            </h2>
-          </div>
-          <div className="mx-auto px-2">
-            <Offers />
-          </div>
+      <div>
+        <div className="flex flex-col gap-0.5 items-start sm:items-center justify-start sm:justify-center xl:pt-8 pt-2 sm:pt-4 w-screen px-4 mb-2 sm:mb-8 md:mb-12">
+          <h2 className="text-bloo text-[18px] sm:text-[25px] fontweight_1 py-2">Core Services</h2>
+          <h2 className="text-blackk fontweight_1 text-left sm:text-center text-[26px] sm:text-3xl md:text-3xl lg:text-[32px] max-w-4xl py-1">
+            Unlocking Innovation: <br className="sm:hidden" />
+            Explore Our Suite of Solutions for Your Digital Evolution
+          </h2>
         </div>
+        <div className="mx-auto px-0 sm:px-2">
+          <Offers />
+        </div>
+      </div>
 
-        {/* Remaining sections */}
-        <div className="order-3 sm:order-3">
-          <Techs />
-          <Solutions />
-          <Casestudies />
-          <Clients />
-          <Clientele />
-          <Certificate />
-          <div style={{ marginBottom: "100px" }}></div>
-        </div>
+      <div>
+        <Techs />
+        <Solutions />
+        <Casestudies />
+        <Clients />
+        <Clientele />
+        <Certificate />
+        <div style={{ marginBottom: "100px" }}></div>
       </div>
 
       <ProductFooter />

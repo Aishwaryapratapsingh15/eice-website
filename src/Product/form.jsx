@@ -3,7 +3,6 @@
 import axios from "axios";
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-import { useLocation } from "/src/nextNavigation";
 import ProductFooter from "./ProductFooter";
 import Copyright from "../Othercomps/Copyright";
 import Cookies from "js-cookie";
@@ -11,9 +10,11 @@ const successIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/success.svg";
 const errorIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/error.svg";
 
 export default function ProductForm() {
-  const location = useLocation();
-  const params = new URLSearchParams(location.search);
-  const product = params.get("product") || "General Inquiry";
+  const [product, setProduct] = useState("General Inquiry");
+
+  useEffect(() => {
+    setProduct(new URLSearchParams(window.location.search).get("product") || "General Inquiry");
+  }, []);
 
   const [formValues, setFormValues] = useState({
     name: "",
