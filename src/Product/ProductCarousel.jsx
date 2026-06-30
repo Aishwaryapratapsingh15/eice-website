@@ -1,9 +1,9 @@
-"use client";
+﻿"use client";
 
 /* eslint-disable react/prop-types */
 import React, { useState, useEffect, useRef } from "react";
 const productBgImage = "https://d3r43jacxrwsrp.cloudfront.net/product-carousel/products-background.png";
-import { useNavigate } from "/src/nextNavigation";
+import { useNavigate } from "@/nextNavigation";
 
 export default function ProductCarousel({ slides = [] }) {
   const [current, setCurrent] = useState(1);

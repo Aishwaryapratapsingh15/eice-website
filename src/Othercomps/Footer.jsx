@@ -10,7 +10,7 @@ const iso = "https://d3r43jacxrwsrp.cloudfront.net/iso4.jpg";
 const isms = "https://d3r43jacxrwsrp.cloudfront.net/isms.jpg";
 const cmi = "https://d3r43jacxrwsrp.cloudfront.net/cmi3.png";
 
-import { NavLink, Link } from "/src/nextNavigation";
+import { NavLink, Link } from "@/nextNavigation";
 import { FaLinkedin, FaFacebookSquare } from "react-icons/fa";
 import { FaSquareXTwitter, FaSquareInstagram } from "react-icons/fa6";
 

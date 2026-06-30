@@ -14,7 +14,7 @@ const dtransbanner = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/dtransban
 const servicebannerpattern = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/servicebannerpattern.png";
 
 import Footer from "../Othercomps/Footer.jsx";
-import ProductFooter from "/src/Product/ProductFooter";
+import ProductFooter from "@/Product/ProductFooter";
 import Copyright from "../Othercomps/Copyright.jsx";
 import TalkToUs from "../Othercomps/Talktous.jsx";
 import Reviews from "../Homecomps/Reviews.jsx";

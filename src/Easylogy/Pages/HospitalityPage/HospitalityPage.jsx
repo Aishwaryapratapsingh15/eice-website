@@ -1,6 +1,6 @@
 ﻿"use client";
 import styles from "./Hospitality.module.css"
-import { Link } from '/src/nextNavigation'
+import { Link } from '@/nextNavigation'
 import { useState, useEffect } from "react"
 
 const b1 = "https://d3r43jacxrwsrp.cloudfront.net/easylogy/Hospitality/benefit/w.jpg";

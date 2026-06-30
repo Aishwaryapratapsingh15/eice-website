@@ -1,5 +1,5 @@
 ﻿import React from "react";
-import ProductFooter from "/src/Product/ProductFooter";
+import ProductFooter from "@/Product/ProductFooter";
 import Copyright from "../Othercomps/Copyright";
 const sentiments = "https://d3r43jacxrwsrp.cloudfront.net/ai/sentiments.jpg";
 import { GiVirtualMarker } from "react-icons/gi";

@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 const logo = "https://d3r43jacxrwsrp.cloudfront.net/logo.svg";
-import { NavLink, Link, useNavigate } from "/src/nextNavigation";
+import { NavLink, Link, useNavigate } from "@/nextNavigation";
 
 import { GoLaw } from "react-icons/go";
 import { FaBusinessTime, FaOilCan, FaSyringe } from "react-icons/fa";

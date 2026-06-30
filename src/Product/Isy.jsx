@@ -27,7 +27,7 @@ const cbbIcon = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/CBB.svg";
 const opbIcon = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/OPB.svg";
 const hdIcon = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/HD.svg";
 const bg_image = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/bg_image.png";
-import { useNavigate } from "/src/nextNavigation";
+import { useNavigate } from "@/nextNavigation";
 
 
 

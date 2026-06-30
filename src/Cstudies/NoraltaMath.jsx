@@ -1,5 +1,5 @@
 ﻿import React from "react";
-import ProductFooter from "/src/Product/ProductFooter";
+import ProductFooter from "@/Product/ProductFooter";
 import Copyright from "../Othercomps/Copyright";
 const noraltamath1 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/noraltamath1.png";
 const noraltamath2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/noraltamath2.png";

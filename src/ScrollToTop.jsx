@@ -1,7 +1,7 @@
 ﻿"use client";
 
 import { useEffect } from "react";
-import { useLocation } from "/src/nextNavigation";
+import { useLocation } from "@/nextNavigation";
 
 export default function ScrollToTop() {
   const { pathname } = useLocation();

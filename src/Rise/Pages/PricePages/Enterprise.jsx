@@ -3,7 +3,7 @@ import styles from "./Styles/enterprise.module.css"
 
 
 
-import { Link } from '/src/nextNavigation'
+import { Link } from '@/nextNavigation'
 
 
 const account = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/Account.png";

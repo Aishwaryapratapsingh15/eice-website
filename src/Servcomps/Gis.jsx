@@ -1,6 +1,6 @@
 ﻿"use client";
 import Footer from "../Othercomps/Footer";
-import ProductFooter from "/src/Product/ProductFooter";
+import ProductFooter from "@/Product/ProductFooter";
 import Copyright from "../Othercomps/Copyright";
 import React, { useState, useRef } from "react";
 const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/Laptop.png";

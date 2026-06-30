@@ -5,7 +5,7 @@
 import styles from "./sideBarProductPage.module.css"
 
 
-import { Link } from '/src/nextNavigation'
+import { Link } from '@/nextNavigation'
 
 
 

@@ -1,5 +1,5 @@
 ﻿import React from "react";
-import ProductFooter from "/src/Product/ProductFooter";
+import ProductFooter from "@/Product/ProductFooter";
 import Copyright from "../Othercomps/Copyright";
 const peep1 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/Peep1.png";
 const peep2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/Peep2.png";

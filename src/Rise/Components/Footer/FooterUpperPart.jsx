@@ -1,6 +1,6 @@
 ﻿import styles from "./footer.module.css";
 import { FaArrowRightLong } from "react-icons/fa6";
-import { Link } from "/src/nextNavigation";
+import { Link } from "@/nextNavigation";
 
 export default function FooterUpperPart({ text1, text2, text3, img }) {
   return (

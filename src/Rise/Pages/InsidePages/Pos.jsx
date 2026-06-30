@@ -6,7 +6,7 @@ const icon1 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pos/posPag
 const icon2 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pos/posPage/section3/icon2.png";
 const icon3 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pos/posPage/section3/icon3.png";
 
-import { Link } from '/src/nextNavigation'
+import { Link } from '@/nextNavigation'
 
 // features
 const ips = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pos/posPage/feature/ips.png";

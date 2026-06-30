@@ -3,13 +3,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   async headers() {
-    return [
-      {
-        source: "/_next/static/(.*)",
-        headers: [
-          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
-        ],
-      },
+    const rules = [
       {
         source: "/(.*)\\.(ico|png|jpg|jpeg|webp|avif|svg|woff|woff2|ttf|otf)",
         headers: [
@@ -17,6 +11,16 @@ const nextConfig = {
         ],
       },
     ];
+    // Next.js owns /_next/static caching internally during dev; only set in production
+    if (process.env.NODE_ENV === "production") {
+      rules.unshift({
+        source: "/_next/static/(.*)",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+        ],
+      });
+    }
+    return rules;
   },
   async redirects() {
     return [
@@ -30,10 +34,6 @@ const nextConfig = {
       // Old contact URLs
       { source: "/contact-us",  destination: "/contact", permanent: true },
       { source: "/contact-us/", destination: "/contact", permanent: true },
-
-      // Capital R Resources redirect
-      { source: "/Resources",   destination: "/resources", permanent: true },
-      { source: "/Resources/",  destination: "/resources/", permanent: true },
 
       // Old flat service URLs -> new /services/slug structure
       { source: "/services-devops",                destination: "/services/devops",                permanent: true },
@@ -92,9 +92,9 @@ const nextConfig = {
     ],
     formats: ["image/avif", "image/webp"],
   },
+  turbopack: {},
   webpack: (config) => {
-    config.resolve.alias["/src"] = path.resolve("./src");
-    config.resolve.alias["/src/Product"] = path.resolve("./src/Product");
+    config.resolve.alias["@"] = path.resolve("./src");
     return config;
   },
 };

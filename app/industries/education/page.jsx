@@ -15,6 +15,32 @@ export const metadata = {
   alternates: { canonical: "https://www.eicetechnology.com/industries/education/", languages: { "en-IN": "https://www.eicetechnology.com/industries/education/", "en-US": "https://www.eicetechnology.com/industries/education/", "x-default": "https://www.eicetechnology.com/industries/education/" } },
 };
 
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.eicetechnology.com" },
+      { "@type": "ListItem", "position": 2, "name": "Industries", "item": "https://www.eicetechnology.com/industries" },
+      { "@type": "ListItem", "position": 3, "name": "Education" }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Education Technology Solutions",
+    "provider": { "@type": "Organization", "name": "EICE Technology", "url": "https://www.eicetechnology.com" },
+    "serviceType": "Education Technology Solutions",
+    "areaServed": { "@type": "Place", "name": "India" },
+    "url": "https://www.eicetechnology.com/industries/education/"
+  }
+];
+
 export default function Page() {
-  return <Educational />;
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <Educational />
+    </>
+  );
 }

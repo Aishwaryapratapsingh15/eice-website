@@ -6,7 +6,7 @@ import TalkToUs from "../Othercomps/Talktous";
 import Reviews from "../Homecomps/Reviews";
 import Clients from "../Homecomps/Clients";
 import Clientele from "../Homecomps/Clientele";
-import ProductFooter from "/src/Product/ProductFooter";
+import ProductFooter from "@/Product/ProductFooter";
 import { FaCloud, FaDatabase, FaPencilRuler } from "react-icons/fa";
 
 const Education_img = "https://d3r43jacxrwsrp.cloudfront.net/industry-images/Education.png";

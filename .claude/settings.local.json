@@ -9,7 +9,8 @@
       "Bash(Select-Object Name)",
       "Bash(powershell -Command ' *)",
       "PowerShell(Get-ChildItem \"C:\\\\eicegit\\\\React_App\" -ErrorAction SilentlyContinue | Select-Object -First 5 | ForEach-Object { $_.Name })",
-      "Bash(findstr /M \"use client\" *.jsx)"
+      "Bash(findstr /M \"use client\" *.jsx)",
+      "PowerShell(Remove-Item *)"
     ]
   }
 }

@@ -4,7 +4,7 @@
 
 import styles from "./sideBarPricePage.module.css"
 
-import { Link } from '/src/nextNavigation'
+import { Link } from '@/nextNavigation'
 
 const clubIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/DropDown/pricingSuites/clubIcon.png";
 const enterpriseIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/DropDown/pricingSuites/enterIcon.png";

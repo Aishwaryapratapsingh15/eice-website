@@ -41,7 +41,7 @@ const bgImage2 = "https://d3r43jacxrwsrp.cloudfront.net/common/Background.png";
 const shieldIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/shield_02.svg";
 const checkIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Check_all.svg";
 const linkingIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/linking.svg";
-import { useNavigate } from "/src/nextNavigation";
+import { useNavigate } from "@/nextNavigation";
 
 
 const features = [

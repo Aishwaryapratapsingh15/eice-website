@@ -9,6 +9,30 @@ export const metadata = {
   alternates: { canonical: "https://www.eicetechnology.com/our-team/", languages: { "en-IN": "https://www.eicetechnology.com/our-team/", "en-US": "https://www.eicetechnology.com/our-team/", "x-default": "https://www.eicetechnology.com/our-team/" } },
 };
 
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.eicetechnology.com" },
+      { "@type": "ListItem", "position": 2, "name": "Our Team" }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "Our Team",
+    "description": "Meet the leadership team and technology experts at EICE Technology driving innovation across AI/ML, cloud, IoT, and digital transformation globally.",
+    "url": "https://www.eicetechnology.com/our-team/",
+    "publisher": { "@type": "Organization", "name": "EICE Technology", "url": "https://www.eicetechnology.com" }
+  }
+];
+
 export default function Page() {
-  return <OurTeam />;
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <OurTeam />
+    </>
+  );
 }

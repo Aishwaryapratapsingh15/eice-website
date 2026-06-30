@@ -1,6 +1,6 @@
 ﻿"use client";
 import React, { useState, useRef } from "react";
-import { Link } from "/src/nextNavigation";
+import { Link } from "@/nextNavigation";
 const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/Laptop.png";
 
 import Cookies from "js-cookie";

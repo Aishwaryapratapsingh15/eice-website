@@ -34,7 +34,7 @@ const verilockLogoIcon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/veriloc
 const authenticatorLogoIcon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/authenticatorLogo.svg";
 const tickIcon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/tick.svg";
 const nilIcon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/nil.svg";
-import { useNavigate } from "/src/nextNavigation";
+import { useNavigate } from "@/nextNavigation";
 const rsIcon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/Registration_Setup.svg";
 const saIcon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/Security_Architecture.svg";
 const lmIcon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/Login_Methods.svg";

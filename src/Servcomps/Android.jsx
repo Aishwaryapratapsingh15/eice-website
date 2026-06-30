@@ -18,7 +18,7 @@ import TalkToUs from "../Othercomps/Talktous";
 import Reviews from "../Homecomps/Reviews";
 import Clients from "../Homecomps/Clients";
 import Clientele from "../Homecomps/Clientele";
-import ProductFooter from "/src/Product/ProductFooter";
+import ProductFooter from "@/Product/ProductFooter";
 const app = "https://d3r43jacxrwsrp.cloudfront.net/Service_and_technology/app.jpg";
 
 

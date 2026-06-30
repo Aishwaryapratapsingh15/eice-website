@@ -1,6 +1,6 @@
 ﻿"use client";
 import styles from "./Hospitality.module.css"
-import { Link } from '/src/nextNavigation'
+import { Link } from '@/nextNavigation'
 import { useState, useEffect } from "react"
 const allLaptop = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allLaptop.webp";
 

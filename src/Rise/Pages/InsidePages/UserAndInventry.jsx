@@ -10,7 +10,7 @@ const sv = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/inventry/sect
 const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/Rise/allHero/new/inventaryH.webp";
 
 
-import { Link } from '/src/nextNavigation'
+import { Link } from '@/nextNavigation'
 
 
 const ara = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/inventry/featuresIcon/ara.png";

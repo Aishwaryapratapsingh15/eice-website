@@ -15,6 +15,32 @@ export const metadata = {
   alternates: { canonical: "https://www.eicetechnology.com/industries/oil-and-gas/", languages: { "en-IN": "https://www.eicetechnology.com/industries/oil-and-gas/", "en-US": "https://www.eicetechnology.com/industries/oil-and-gas/", "x-default": "https://www.eicetechnology.com/industries/oil-and-gas/" } },
 };
 
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.eicetechnology.com" },
+      { "@type": "ListItem", "position": 2, "name": "Industries", "item": "https://www.eicetechnology.com/industries" },
+      { "@type": "ListItem", "position": 3, "name": "Oil and Gas" }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Oil and Gas IT Solutions",
+    "provider": { "@type": "Organization", "name": "EICE Technology", "url": "https://www.eicetechnology.com" },
+    "serviceType": "Oil and Gas Technology Solutions",
+    "areaServed": { "@type": "Place", "name": "India" },
+    "url": "https://www.eicetechnology.com/industries/oil-and-gas/"
+  }
+];
+
 export default function Page() {
-  return <Oilandgas />;
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <Oilandgas />
+    </>
+  );
 }

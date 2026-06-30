@@ -1,6 +1,6 @@
 ﻿"use client";
 import React, { useState, useEffect, useRef } from "react";
-import { Link } from "/src/nextNavigation";
+import { Link } from "@/nextNavigation";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 const genai = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/genai.png";
 const devops = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/devops.png";

@@ -23,7 +23,7 @@ const fvIcon = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/FV.svg";
 const mcoIcon = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/MCO.svg";
 const nscIcon = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/NSC.svg";
 const nescIcon = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/NESC.svg";
-import { useNavigate } from "/src/nextNavigation";
+import { useNavigate } from "@/nextNavigation";
 const infrabannerIcon = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/infraBanner.png";
 
 

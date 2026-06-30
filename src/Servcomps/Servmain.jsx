@@ -1,6 +1,6 @@
 ﻿"use client";
 import React, { useEffect } from "react";
-import { Link } from "/src/nextNavigation";
+import { Link } from "@/nextNavigation";
 import Offers from "../Homecomps/Offers";
 import styles from "./styles/servmain.module.css"
 // import "./Styles/Servmain.css"

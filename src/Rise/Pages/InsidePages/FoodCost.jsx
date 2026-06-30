@@ -9,7 +9,7 @@ const ep = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/food/ICONS/EP
 
 
 
-import { Link } from '/src/nextNavigation'
+import { Link } from '@/nextNavigation'
 
 
 

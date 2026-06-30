@@ -22,6 +22,32 @@ export const metadata = {
   },
 };
 
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.eicetechnology.com" },
+      { "@type": "ListItem", "position": 2, "name": "Industries", "item": "https://www.eicetechnology.com/industries" },
+      { "@type": "ListItem", "position": 3, "name": "Hospitality" }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Hospitality IT Solutions",
+    "provider": { "@type": "Organization", "name": "EICE Technology", "url": "https://www.eicetechnology.com" },
+    "serviceType": "Hospitality Technology Solutions",
+    "areaServed": { "@type": "Place", "name": "India" },
+    "url": "https://www.eicetechnology.com/industries/hospitality/"
+  }
+];
+
 export default function Page() {
-  return <Hospitality />;
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <Hospitality />
+    </>
+  );
 }

@@ -2,7 +2,7 @@
 import style from "./Styles/wifi.module.css";
 import { useState, useEffect } from "react";
 import Accordion from "../../Components/Accordian/Accordian.jsx";
-import { Link } from '/src/nextNavigation';
+import { Link } from '@/nextNavigation';
 import { FaArrowRightLong } from "react-icons/fa6";
 import Certificate from "../../Components/Certificate/Certificate.jsx";
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx";

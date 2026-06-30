@@ -1,7 +1,7 @@
 ﻿"use client";
 
 import style from "./Styles/accountAndFinance.module.css"
-import { Link } from '/src/nextNavigation'
+import { Link } from '@/nextNavigation'
 
 
 const afw = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/account/financeSection2/afw.png";

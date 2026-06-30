@@ -1,6 +1,6 @@
 ﻿import React from "react";
 
-import { Link } from "/src/nextNavigation";
+import { Link } from "@/nextNavigation";
 const indImg = "https://d3r43jacxrwsrp.cloudfront.net/common/India.png";
 const usImg = "https://d3r43jacxrwsrp.cloudfront.net/common/USA.png";
 const logo = "https://d3r43jacxrwsrp.cloudfront.net/logo.svg";

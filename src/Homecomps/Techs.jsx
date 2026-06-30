@@ -1,7 +1,7 @@
 ﻿"use client";
 import React, { useState } from "react";
 
-import { NavLink, Link } from "/src/nextNavigation";
+import { NavLink, Link } from "@/nextNavigation";
 import { FaAndroid, FaApple, FaReact } from "react-icons/fa";
 import { DiDotnet } from "react-icons/di";
 import { RiNextjsFill } from "react-icons/ri";

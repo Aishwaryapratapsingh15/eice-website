@@ -1,7 +1,7 @@
 ﻿import React from "react";
 import Footer from "../Othercomps/Footer";
 import Copyright from "../Othercomps/Copyright";
-import ProductFooter from "/src/Product/ProductFooter";
+import ProductFooter from "@/Product/ProductFooter";
 
 const temp = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/temp.png";
 const temp2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/temp2.png";

@@ -1,5 +1,5 @@
 ﻿import React from "react";
-import { Link } from "/src/nextNavigation";
+import { Link } from "@/nextNavigation";
 
 function Offeritem({ svg, title, link, fliptext }) {
   return (

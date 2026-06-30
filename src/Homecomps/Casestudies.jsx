@@ -1,10 +1,10 @@
-"use client";
+﻿"use client";
 
 
 import React from "react";
 
 import styles from "./Styles/case.module.css"
-import { Link } from "/src/nextNavigation";
+import { Link } from "@/nextNavigation";
 import { useState, useEffect } from "react";
 
 

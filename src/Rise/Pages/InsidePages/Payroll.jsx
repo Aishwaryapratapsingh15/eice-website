@@ -8,7 +8,7 @@ const icon3 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pos/posPag
 
 const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/Rise/allHero/payrollh.webp";
 
-import { Link } from '/src/nextNavigation'
+import { Link } from '@/nextNavigation'
 
 // features
 

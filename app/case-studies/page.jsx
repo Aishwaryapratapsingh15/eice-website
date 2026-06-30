@@ -13,9 +13,29 @@ export const metadata = {
   alternates: { canonical: "https://www.eicetechnology.com/case-studies/", languages: { "en-IN": "https://www.eicetechnology.com/case-studies/", "en-US": "https://www.eicetechnology.com/case-studies/", "x-default": "https://www.eicetechnology.com/case-studies/" } },
 };
 
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.eicetechnology.com" },
+      { "@type": "ListItem", "position": 2, "name": "Case Studies" }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Case Studies",
+    "description": "Explore EICE Technology's portfolio of 180+ successful IT projects through detailed case studies across oil & gas, healthcare, finance, and more.",
+    "url": "https://www.eicetechnology.com/case-studies/",
+    "publisher": { "@type": "Organization", "name": "EICE Technology", "url": "https://www.eicetechnology.com" }
+  }
+];
+
 export default function Page() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Cstdmain />
       <ProductFooter />
       <Copyright />

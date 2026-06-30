@@ -325,7 +325,7 @@
 
 import React, { useRef, useEffect } from "react";
 const arrow = "https://d3r43jacxrwsrp.cloudfront.net/arrow.svg";
-import { NavLink, Link } from "/src/nextNavigation";
+import { NavLink, Link } from "@/nextNavigation";
 
 const industries = [
   {

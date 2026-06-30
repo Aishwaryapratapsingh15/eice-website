@@ -12,8 +12,8 @@ const teamsbanner2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/teamsbann
 const teamsbanner11 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/teamsbanner11.png";
 const teamsbanner12 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/teamsbanner12.png";
 const teamsbanner13 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/teamsbanner13.png";
-import { Link } from "/src/nextNavigation";
-import ProductFooter from "/src/Product/ProductFooter";
+import { Link } from "@/nextNavigation";
+import ProductFooter from "@/Product/ProductFooter";
 
 function OurTeam() {
   const settings = {

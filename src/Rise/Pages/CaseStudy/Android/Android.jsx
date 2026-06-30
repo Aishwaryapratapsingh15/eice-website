@@ -6,7 +6,7 @@ const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Rise/caseStudy/android.web
 
 const vendor = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/purchase.png";
 const inentry = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/store.png";
-import { Link } from '/src/nextNavigation'
+import { Link } from '@/nextNavigation'
 
 import { useEffect, useState } from "react"
 

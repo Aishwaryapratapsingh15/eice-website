@@ -12,7 +12,7 @@ const tc = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/emp/empSectio
 
 
 
-import { Link } from '/src/nextNavigation'
+import { Link } from '@/nextNavigation'
 
 // features
 const bm = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/emp/icon/bm.png";

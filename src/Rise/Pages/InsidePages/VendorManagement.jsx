@@ -1,7 +1,7 @@
 ﻿"use client";
 import style from "./Styles/vendor.module.css";
 
-import { Link } from '/src/nextNavigation';
+import { Link } from '@/nextNavigation';
 import { useEffect, useState } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 

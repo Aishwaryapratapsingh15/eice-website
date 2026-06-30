@@ -13,7 +13,7 @@ const indus_financial = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/indus-
 const indus_logistics = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/indus-logistics.png";
 const indus_enterprise = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/indus-enterprise.png";
 
-import { Link } from "/src/nextNavigation";
+import { Link } from "@/nextNavigation";
 
 const IndustryCard = ({ to, color, Icon, title, description }) => (
   <Link

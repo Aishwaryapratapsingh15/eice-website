@@ -9,7 +9,7 @@ const sp = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/vendor/sectio
 const vm = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/vendor/section2icon/vm.png";
 
 
-import { Link } from '/src/nextNavigation'
+import { Link } from '@/nextNavigation'
 
 
 

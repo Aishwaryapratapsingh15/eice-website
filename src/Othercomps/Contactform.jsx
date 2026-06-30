@@ -1,7 +1,7 @@
 ﻿"use client";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Link } from "/src/nextNavigation";
+import { Link } from "@/nextNavigation";
 import Cookies from "js-cookie";
 const emailIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Email.svg";
 const whatsappIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Whatsapp.svg";

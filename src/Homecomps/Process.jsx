@@ -1,6 +1,6 @@
 ﻿"use client";
 import React from "react";
-import { NavLink, Link } from "/src/nextNavigation";
+import { NavLink, Link } from "@/nextNavigation";
 import { TbLetterG, TbLetterP, TbLetterT } from "react-icons/tb";
 import { FaPython, FaNodeJs } from "react-icons/fa";
 import { SiJupyter, SiAnaconda, SiMongodb, SiExpress } from "react-icons/si";

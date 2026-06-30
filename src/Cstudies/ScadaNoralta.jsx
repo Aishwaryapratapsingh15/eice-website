@@ -1,5 +1,5 @@
 ﻿import React from "react";
-import ProductFooter from "/src/Product/ProductFooter";
+import ProductFooter from "@/Product/ProductFooter";
 import Copyright from "../Othercomps/Copyright";
 const scadanoralta1 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/scadanoralta1.png";
 const scadanoralta2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/scadanoralta2.png";

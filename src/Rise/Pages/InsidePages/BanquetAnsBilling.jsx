@@ -7,7 +7,7 @@ const eem = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/banquet/sect
 const fcb = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/banquet/section2B/fcb.png";
 
 
-import { Link } from '/src/nextNavigation'
+import { Link } from '@/nextNavigation'
 
 
 const herosectionImg = "https://d3r43jacxrwsrp.cloudfront.net/Rise/allHero/new/banquetH.webp";

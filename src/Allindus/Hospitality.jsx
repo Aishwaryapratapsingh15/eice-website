@@ -1,8 +1,8 @@
-"use client";
+﻿"use client";
 import React, { useState } from "react";
-import { Link } from "/src/nextNavigation";
+import { Link } from "@/nextNavigation";
 import TalkToUs from "../Othercomps/Talktous";
-import ProductFooter from "/src/Product/ProductFooter";
+import ProductFooter from "@/Product/ProductFooter";
 import Copyright from "../Othercomps/Copyright";
 import { FaQuoteLeft } from "react-icons/fa";
 

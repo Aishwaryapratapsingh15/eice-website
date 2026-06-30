@@ -1,6 +1,6 @@
 ﻿"use client";
 import React, { useState, useRef } from "react";
-import { Link } from "/src/nextNavigation";
+import { Link } from "@/nextNavigation";
 const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/Laptop.png";
 
 const ai = "https://d3r43jacxrwsrp.cloudfront.net/Service_and_technology/ai.png";
@@ -11,7 +11,7 @@ const inventry = "https://d3r43jacxrwsrp.cloudfront.net/ai/inventry.jpg";
 const logistics = "https://d3r43jacxrwsrp.cloudfront.net/ai/logistics.jpg";
 const sentiments = "https://d3r43jacxrwsrp.cloudfront.net/ai/sentiments.jpg";
 const voice = "https://d3r43jacxrwsrp.cloudfront.net/ai/voice.jpg";
-import ProductFooter from "/src/Product/ProductFooter";
+import ProductFooter from "@/Product/ProductFooter";
 import Copyright from "../Othercomps/Copyright";
 import Reviews from "../Homecomps/Reviews";
 import TalkToUs from "../Othercomps/Talktous";

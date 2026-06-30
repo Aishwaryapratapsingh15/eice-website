@@ -18,7 +18,7 @@ const dtdesign = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/dtdesign.svg"
 const dtconsulting = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/dtconsulting.svg";
 
 import Footer from "../Othercomps/Footer.jsx";
-import ProductFooter from "/src/Product/ProductFooter";
+import ProductFooter from "@/Product/ProductFooter";
 import Copyright from "../Othercomps/Copyright.jsx";
 import TalkToUs from "../Othercomps/Talktous";
 import Reviews from "../Homecomps/Reviews";

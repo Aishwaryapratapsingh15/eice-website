@@ -1,6 +1,6 @@
 ﻿"use client";
 import React from "react";
-import { useNavigate } from "/src/nextNavigation";
+import { useNavigate } from "@/nextNavigation";
 import ProductFooter from "./ProductFooter";
 import ProductCarousel from "./ProductCarousel";
 import productSlides from "./carouselData";

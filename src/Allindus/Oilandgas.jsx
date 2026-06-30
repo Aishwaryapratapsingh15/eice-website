@@ -9,7 +9,7 @@ import Clientele from "../Homecomps/Clientele";
 
 import { FaCloud, FaDatabase } from "react-icons/fa";
 
-import ProductFooter from "/src/Product/ProductFooter";
+import ProductFooter from "@/Product/ProductFooter";
 
 const oilandgas_img = "https://d3r43jacxrwsrp.cloudfront.net/industry-images/Oil & Gas.png";
 const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/Laptop.png";

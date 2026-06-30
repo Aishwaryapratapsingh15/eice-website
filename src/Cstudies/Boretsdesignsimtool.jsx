@@ -1,5 +1,5 @@
 ﻿import React from "react";
-import ProductFooter from "/src/Product/ProductFooter";
+import ProductFooter from "@/Product/ProductFooter";
 import Copyright from "../Othercomps/Copyright";
 const borets1 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/Borets1.png";
 const borets2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/Borets2.png";

@@ -1,5 +1,5 @@
 ﻿import React from "react";
-import ProductFooter from "/src/Product/ProductFooter";
+import ProductFooter from "@/Product/ProductFooter";
 import Copyright from "../Othercomps/Copyright";
 const logistics = "https://d3r43jacxrwsrp.cloudfront.net/ai/logistics.jpg";
 import { GiVirtualMarker } from "react-icons/gi";

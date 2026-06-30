@@ -1,5 +1,5 @@
 ﻿import React from "react";
-import { Link } from "/src/nextNavigation";
+import { Link } from "@/nextNavigation";
 import Talktous from "../Othercomps/Talktous";
 
 const budget1 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/budget1.jpg";

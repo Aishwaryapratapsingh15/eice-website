@@ -3,7 +3,7 @@ import styles from "./Styles/inventary.module.css"
 
 
 
-import { Link } from '/src/nextNavigation'
+import { Link } from '@/nextNavigation'
 
 
 

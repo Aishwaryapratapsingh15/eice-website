@@ -15,7 +15,7 @@ import {
 } from "react-icons/fa";
 
 import Footer from "../Othercomps/Footer.jsx";
-import ProductFooter from "/src/Product/ProductFooter";
+import ProductFooter from "@/Product/ProductFooter";
 import Copyright from "../Othercomps/Copyright.jsx";
 import TalkToUs from "../Othercomps/Talktous.jsx";
 import Reviews from "../Homecomps/Reviews.jsx";

@@ -4,7 +4,7 @@
 
 
 
-import { Link } from '/src/nextNavigation'
+import { Link } from '@/nextNavigation'
 import { FaArrowRightLong } from "react-icons/fa6";
 
 

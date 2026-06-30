@@ -1,5 +1,5 @@
 ﻿import styles from "./requestButton.module.css"
-import { Link } from '/src/nextNavigation'
+import { Link } from '@/nextNavigation'
 
 export default function RequestButton() {
   return (

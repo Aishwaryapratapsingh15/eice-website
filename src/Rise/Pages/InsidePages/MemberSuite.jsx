@@ -3,7 +3,7 @@
 import style from "./Styles/memberSuite.module.css"
 
 
-import { Link } from '/src/nextNavigation'
+import { Link } from '@/nextNavigation'
 
 
 const cag = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/member/memberSection2/cag.png";

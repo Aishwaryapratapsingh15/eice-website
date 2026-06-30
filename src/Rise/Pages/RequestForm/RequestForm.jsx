@@ -200,7 +200,7 @@ const images = document.images;
     window.removeEventListener("resize", sendHeight);
     observer.disconnect();
   };
-}, [location]);
+}, []);
 
     const [imagesLoaded, setImagesLoaded] = useState(false);
 

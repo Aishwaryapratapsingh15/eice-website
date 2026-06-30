@@ -42,7 +42,7 @@ const isoImg = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/ISO.png";
 const iecImg = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/IEC.png";
 const ismsImg = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/ISMS.png"; 
 const shieldIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/shield_02.svg";
-import { useNavigate } from "/src/nextNavigation";
+import { useNavigate } from "@/nextNavigation";
 
 const steps = [
   {

@@ -7,7 +7,7 @@ import Reviews from "../Homecomps/Reviews";
 import Clients from "../Homecomps/Clients";
 import Clientele from "../Homecomps/Clientele";
 
-import ProductFooter from "/src/Product/ProductFooter";
+import ProductFooter from "@/Product/ProductFooter";
 
 import { FaCloud, FaDatabase } from "react-icons/fa";
 

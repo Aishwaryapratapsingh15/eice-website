@@ -1,6 +1,6 @@
 ﻿import React from "react";
 import Footer from "../Othercomps/Footer";
-import ProductFooter from "/src/Product/ProductFooter";
+import ProductFooter from "@/Product/ProductFooter";
 import Copyright from "../Othercomps/Copyright";
 const petrosim1 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/kbcchempetro1.png";
 const petrosim2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/kbcchempetro2.png";

@@ -1,7 +1,7 @@
 ﻿import styles from "./styles/Hospitality.module.css"
 
 const mainImg = "https://d3r43jacxrwsrp.cloudfront.net/hospitalityMain/hospitalitypage/Herosection.png";
-import { Link } from "/src/nextNavigation";
+import { Link } from "@/nextNavigation";
 
 
 

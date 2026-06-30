@@ -2,7 +2,7 @@
 
 
 const eyeImg = "https://d3r43jacxrwsrp.cloudfront.net/Rise/pricing/eye/eye.webp";
-import { Link } from '/src/nextNavigation'
+import { Link } from '@/nextNavigation'
 
 
 const account = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/Account.png";

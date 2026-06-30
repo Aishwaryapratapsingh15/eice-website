@@ -1,5 +1,5 @@
 ﻿"use client";
-import { useNavigate } from "/src/nextNavigation";
+import { useNavigate } from "@/nextNavigation";
 import { ICON_MAP } from "../utils/iconMapper";
 
 export default function GenericDropdown({ data }) {

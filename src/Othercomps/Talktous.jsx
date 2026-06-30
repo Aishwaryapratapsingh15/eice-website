@@ -1,5 +1,5 @@
 ﻿import React from "react";
-import { NavLink, Link } from "/src/nextNavigation";
+import { NavLink, Link } from "@/nextNavigation";
 
 function Talktous() {
   return (
