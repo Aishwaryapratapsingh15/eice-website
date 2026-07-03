@@ -56,13 +56,13 @@ export  async function generateMetadata() {
 //   }
 // };
 
-// const jsonLd = {"@context":"https://schema.org","@type":"Organization","name":"EICE Technology","url":"https://www.eicetechnology.com","logo":"https://d3r43jacxrwsrp.cloudfront.net/logo.svg","sameAs":["https://linkedin.com/company/eice-technology"],"contactPoint":{"@type":"ContactPoint","contactType":"sales","areaServed":"IN"}}
+const jsonLd = {"@context":"https://schema.org","@type":"Organization","name":"EICE Technology","url":"https://www.eicetechnology.com","logo":"https://d3r43jacxrwsrp.cloudfront.net/logo.svg","sameAs":["https://linkedin.com/company/eice-technology"],"contactPoint":{"@type":"ContactPoint","contactType":"sales","areaServed":"IN"}}
 
 
 export default function Page() {
   return (
     <>
-      {/* <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} /> */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <div className="inner_components">
         <Big />
