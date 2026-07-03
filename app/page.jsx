@@ -9,26 +9,38 @@ import Certificate from "../src/Homecomps/Certificate";
 import ProductFooter from "../src/Product/ProductFooter";
 import Copyright from "../src/Othercomps/Copyright";
 
-export const metadata = {
-  title: "EICE Technology | IT Solutions, Software Development & Digital Transformation",
-  description: "EICE Technology delivers cutting-edge IT solutions including AI/ML, cloud computing, software development, and digital transformation to 60+ clients across 10+ countries since 2010.",
-  keywords: ["IT solutions", "software development", "AI ML", "cloud computing", "digital transformation", "EICE Technology"],
-  openGraph: {
-    title: "EICE Technology | IT Solutions & Software Development",
-    description: "Leading IT services company — AI/ML, cloud, software development, digital transformation. 180+ projects, 60+ clients, 10+ countries.",
-    url: "https://www.eicetechnology.com",
-    siteName: "EICE Technology",
-    images: [{ url: "https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png", width: 1200, height: 630, alt: "EICE Technology" }],
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "EICE Technology | IT Solutions & Software Development",
-    images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png"],
-    description: "Leading IT services — AI/ML, cloud, software development, digital transformation.",
-  },
+// export const metadata = {
+//   title: "EICE Technology | IT Solutions, Software Development & Digital Transformation",
+//   description: "EICE Technology delivers cutting-edge IT solutions including AI/ML, cloud computing, software development, and digital transformation to 60+ clients across 10+ countries since 2010.",
+//   keywords: ["IT solutions", "software development", "AI ML", "cloud computing", "digital transformation", "EICE Technology"],
+//   openGraph: {
+//     title: "EICE Technology | IT Solutions & Software Development",
+//     description: "Leading IT services company — AI/ML, cloud, software development, digital transformation. 180+ projects, 60+ clients, 10+ countries.",
+//     url: "https://www.eicetechnology.com",
+//     siteName: "EICE Technology",
+//     images: [{ url: "https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png", width: 1200, height: 630, alt: "EICE Technology" }],
+//     type: "website",
+//   },
+//   twitter: {
+//     card: "summary_large_image",
+//     title: "EICE Technology | IT Solutions & Software Development",
+//     images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png"],
+//     description: "Leading IT services — AI/ML, cloud, software development, digital transformation.",
+//   },
+//   alternates: { canonical: "https://www.eicetechnology.com", languages: { "en-IN": "https://www.eicetechnology.com", "en-US": "https://www.eicetechnology.com", "x-default": "https://www.eicetechnology.com" } },
+// };
+
+export  async function generateMetadata() {
+ const title= "EICE Technology — IT Solutions, AI Agents & ERP Software India";
+  const description= "EICE Technology delivers AI Agent platforms, Hospitality ERP (EiceRise), Logistics Software (EasyLogy) and Cargo Management (Smartfit) for Indian businesses.";
+  
+  return {
+    keywords: ["EICE Technology IT solutions India"],
+  openGraph: { title, description, url: "https://www.eicetechnology.com", siteName: "EICE Technology", type: "website" },
+  twitter: { card: "summary_large_image", title , description,
+    images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png"]},
   alternates: { canonical: "https://www.eicetechnology.com", languages: { "en-IN": "https://www.eicetechnology.com", "en-US": "https://www.eicetechnology.com", "x-default": "https://www.eicetechnology.com" } },
-};
+};}
 
 // const jsonLd = {
 //   "@context": "https://schema.org",
