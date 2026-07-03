@@ -93,7 +93,7 @@ export default function SmartFit() {
           Container loading optimization software
         </span>
 
-       <h1 className="text-[32px] text-[#334155] md:text-[48px] sm:mt-6 pt-4 font-bold max-w-4xl mx-auto leading-tight pb-4">
+       <h1 className="text-[40px] text-[#334155] md:text-[48px] sm:mt-6 pt-4 font-bold max-w-4xl mx-auto leading-tight pb-4">
          <span className="text-[#01B0F1]">Optimize </span> Every Load. <span className="text-[#01B0F1]">Maximize</span> Every Container.
          <span className="text-[#01B0F1]"> Minimize</span> Every Cost.
         </h1>

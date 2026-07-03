@@ -99,14 +99,16 @@ const NavLayout = ({ children }) => {
                     {menuView === "main" && (
                       <motion.div key="main" initial={{ x: -300, opacity: 0 }} animate={{ x: 0, opacity: 1 }} exit={{ x: -300, opacity: 0 }} transition={{ duration: 0.3 }}>
                         <MenuItem><Link onClick={closeMenu} className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]" to="/">Home</Link></MenuItem>
-                        <button
-                          onClick={() => setMenuView("products")}
-                          aria-expanded={menuView === "products"}
-                          aria-haspopup="true"
-                          className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px] flex items-center cursor-pointer text-left bg-transparent border-0"
-                        >
-                          Products <span aria-hidden="true" className="ml-1">+</span>
-                        </button>
+                        <MenuItem>
+                          <button
+                            onClick={() => setMenuView("products")}
+                            aria-expanded={menuView === "products"}
+                            aria-haspopup="true"
+                            className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px] flex items-center cursor-pointer text-left bg-transparent border-0"
+                          >
+                            Products <span aria-hidden="true" className="ml-1">+</span>
+                          </button>
+                        </MenuItem>
                         <MenuItem><Link onClick={closeMenu} className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]" to="/about">About Us</Link></MenuItem>
                         <MenuItem><Link onClick={closeMenu} className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]" to="/services">Service Profile</Link></MenuItem>
                         <MenuItem><Link onClick={closeMenu} className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]" to="/industries">Sector Portfolio</Link></MenuItem>

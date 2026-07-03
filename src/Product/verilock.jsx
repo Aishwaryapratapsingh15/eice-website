@@ -202,7 +202,7 @@ export default function ISyncDrivePage() {
   Enterprise MFA platform
 </span>
 
-        <h1 className="text-[32px] text-[#334155] md:text-[48px] sm:text-[32px]mt-6 font-bold max-w-4xl mx-auto leading-tight">
+        <h1 className="text-[40px] text-[#334155] md:text-[48px] sm:text-[32px]mt-6 font-bold max-w-4xl mx-auto leading-tight">
           Enterprise <span className="text-[#01B0F1]">Multi-Factor<br /> Authentication,</span> Simplified
         </h1>
 
@@ -629,7 +629,7 @@ locations with full admin control.
 
       {/* Header */}
       <div className="flex-column items-start gap-4 mb-5">
-        <div className="py-5 rounded-lg">
+        <div className="py-4 sm:py-5 rounded-lg">
           <img src={ztsIcon} alt="icon"/>
         </div>
         <h3 className="text-2xl font-bold text-[#334155]">
@@ -648,7 +648,7 @@ locations with full admin control.
 
       {/* Header */}
       <div className="flex-column items-start gap-4 mb-5">
-        <div className="py-5 rounded-lg">
+        <div className="py-4 sm:py-5 rounded-lg">
           <img src={ztkIcon} alt="icon"/>
         </div>
         <h3 className="text-2xl font-bold text-[#334155]">
@@ -666,7 +666,7 @@ locations with full admin control.
 
       {/* Header */}
       <div className="flex-column items-start gap-4 mb-5">
-        <div className="py-5 rounded-lg">
+        <div className="py-4 sm:py-5 rounded-lg">
           <img src={laaIcon} alt="icon"/>
         </div>
         <h3 className="text-2xl font-bold text-[#334155]">
@@ -684,7 +684,7 @@ locations with full admin control.
 
       {/* Header */}
       <div className="flex-column items-start gap-4 mb-5">
-        <div className="py-5 rounded-lg">
+        <div className="py-4 sm:py-5 rounded-lg">
           <img src={sprIcon} alt="icon"/>
         </div>
         <h3 className="text-2xl font-bold text-[#334155]">

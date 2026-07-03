@@ -207,9 +207,9 @@ export default function EiceOps() {
                          </div>
         <div className="max-w-6xl mx-auto text-center">
 
-          <h2 className="mt-6 text-[40px] leading-[48px] md:text-4xl font-bold text-[#111]">
+          <h1 className="mt-6 text-[40px] leading-[48px] md:text-4xl font-bold text-[#111]">
             Your <span className="text-[#01B0F1]">Help Desk</span>, Working <span className="text-[#01B0F1]">Smarter.</span>
-          </h2>
+          </h1>
 
           {/* <p className="mt-3 text-xl text-[#111] font-semibold">
             Every ticket. Every SLA. Every time.
@@ -226,7 +226,7 @@ missed escalations, ensures structured communication, and gives managers full vi
           <div className="mt-10">
             <button
               onClick={() => navigate("/products/eicerise/form")}
-              className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto text-[18px] hover:bg-blue-800 transition"
+              className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 sm:mx-auto text-[18px] hover:bg-blue-800 transition"
             >
               Request a Demo
               <img src={arrowIcon} alt="arrow" />

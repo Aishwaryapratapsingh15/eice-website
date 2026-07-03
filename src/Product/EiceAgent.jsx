@@ -179,7 +179,7 @@ export default function EiceAgent() {
       <section className="mt-10 sm:mt-20 py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40">
   <div className="mt-5 max-w-[1200px] mx-auto px-4 sm:px-6 text-left sm:text-center">
 
-    <h1 className="text-[32px] sm:text-3xl md:text-4xl font-bold">
+    <h1 className="text-[40px] sm:text-3xl md:text-4xl font-bold">
       An AI-driven ecosystem to 
       <span className="italic text-[#01B0F1] font-semibold">
         {" "}automate,<br /> optimize, and scale{" "}
@@ -824,9 +824,9 @@ is our foundation.
 {/* Measurable Business Impact */ }
 
  {/* <section className="relative py-10 overflow-hidden px-20" style={{ backgroundImage: `url(${bgImage2})` }}> */}
- <section className="relative py-4 sm:py-10 overflow-hidden px-4 sm:px-6 md:px-10 lg:px-20" style={{ backgroundImage: `url(${bgImage2})` }}>
+ <section className="relative py-4 sm:py-10 overflow-hidden px-5 sm:px-6 md:px-10 lg:px-20" style={{ backgroundImage: `url(${bgImage2})` }}>
 
-      <div className="max-w-[1200px] mx-auto px-6 relative z-10">
+      <div className="max-w-[1200px] mx-auto px-0 sm:px-6 relative z-10">
 
         {/* Heading */}
         <h2 className="text-center text-[32px] sm:text-4xl font-bold text-[#334155] mb-4">
@@ -874,8 +874,8 @@ is our foundation.
     {/* Security and Compliance */ }
 
     {/* <section className="bg-white py-10 px-20"> */}
-    <section className="bg-white py-4 sm:py-10 px-4 sm:px-6 md:px-10 lg:px-20">
-      <div className="max-w-[1200px] mx-auto px-6 text-center">
+    <section className="bg-white py-4 sm:py-10 px-5 sm:px-6 md:px-10 lg:px-20">
+      <div className="max-w-[1200px] mx-auto px-0 sm:px-6 text-center">
 
         {/* Top Tag */}
         <div className="inline-flex border-2 border-[#228441] items-center gap-2 bg-[#F0FDF4] text-[#2e7d32] px-4 py-2 rounded-full text-sm font-medium mb-2">

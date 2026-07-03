@@ -159,7 +159,7 @@ export default function EiceVoice() {
         </div>
 
           {/* HEADING */}
-          <h1 className="text-[32px] md:text-[54px] font-bold">
+          <h1 className="text-[40px] md:text-[54px] font-bold">
            <span className="text-[#01B0F1]"> Voice-Powered </span>Order Management <br /> 
             
             for Modern Hospitality

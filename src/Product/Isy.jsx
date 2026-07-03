@@ -165,7 +165,7 @@ export default function IsyncLitePage() {
           
                 {/* Primary */}
                 <button onClick={() => navigate("/products/eicerise/form")} 
-                className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto hover:bg-blue-800 transition text-[18px]">
+                className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-[18px]">
                   Request a Demo
                     <img src={arrowIcon} alt="arrow"/>
           

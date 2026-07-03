@@ -205,7 +205,7 @@ export default function ISyncDrivePage() {
   Enterprise-Grade File Management
 </span>
 
-        <h1 className="text-[32px] text-[#334155] md:text-[40px] mt-6 font-bold max-w-4xl mx-auto leading-tight">
+        <h1 className="text-[40px] text-[#334155] md:text-[40px] mt-6 font-bold max-w-4xl mx-auto leading-tight">
           <span className="text-[#01B0F1]">Secure</span> File Access, Storage & <span className="text-[#01B0F1]">Team<br /> Collaboration</span> with Full Enterprise Control
         </h1>
 

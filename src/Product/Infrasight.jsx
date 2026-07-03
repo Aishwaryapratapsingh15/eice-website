@@ -242,7 +242,7 @@ export default function InfraSight() {
         </div>
 
         {/* HEADING */}
-        <h1 className="text-[32px] md:text-[56px] font-bold leading-tight text-[#334155] mb-[14px]">
+        <h1 className="text-[40px] md:text-[56px] font-bold leading-tight text-[#334155] mb-[14px]">
           Intelligent Infrastructure <br />
           <span className="text-[#01B0F1]">Observability</span> Platform
         </h1>
