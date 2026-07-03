@@ -25,6 +25,8 @@ export  async function generateMetadata() {
   const description= "EiceRise is a cloud-based hospitality ERP for Indian hotels: PMS, front desk, GST billing, channel manager, housekeeping and F&B management in one platform.";
   
   return {
+    title,
+    description,
     keywords: ["hospitality ERP software India / hotel management software India"],
   openGraph: { title, description, url: "https://www.eicetechnology.com/products/eicerise", siteName: "EICE Technology", type: "website" },
   twitter: { card: "summary_large_image", title , description,
