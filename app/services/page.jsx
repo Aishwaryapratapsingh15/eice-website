@@ -13,6 +13,21 @@ export const metadata = {
   alternates: { canonical: "https://www.eicetechnology.com/services/", languages: { "en-IN": "https://www.eicetechnology.com/services/", "en-US": "https://www.eicetechnology.com/services/", "x-default": "https://www.eicetechnology.com/services/" } },
 };
 
+
+export  async function generateMetadata() {
+ const title= "EICE Technology | Custom Software & IT Services Company India";
+  const description= "Partner with EICE Technology for reliable IT consulting, custom software development, web and mobile applications, and digital transformation solutions tailored for businesses in India.";
+  
+  return {
+    title,
+    description,
+    keywords: ["UI UX design company India, UI UX design services India, product design services, user experience design company, user interface design services, wireframing services, prototyping services, mobile app UI UX design, web UI UX design, UX research services, enterprise UI UX design, UI UX company Delhi, UI UX company Mumbai, UI UX company Bengaluru, UI UX company Hyderabad, UI UX company Chennai, UI UX company Pune, UI UX company Kolkata, UI UX company Ahmedabad, EICE Technology"],
+  openGraph: { title, description, url: "https://www.eicetechnology.com/services", siteName: "EICE Technology", type: "website" },
+  twitter: { card: "summary_large_image", title , description,
+    images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png"]},
+  alternates: { canonical: "https://www.eicetechnology.com/services/", languages: { "en-IN": "https://www.eicetechnology.com/services/", "en-US": "https://www.eicetechnology.com/services/", "x-default": "https://www.eicetechnology.com/services/" } },
+};}
+
 const jsonLd = [
   {
     "@context": "https://schema.org",
@@ -25,8 +40,8 @@ const jsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "IT Services",
-    "description": "Comprehensive IT services from EICE Technology: AI/ML, cloud computing, IoT, DevOps, web development, mobile apps, blockchain, and digital transformation.",
+    "name": "EICE Technology | Custom Software & IT Services Company India",
+    "description": "Partner with EICE Technology for reliable IT consulting, custom software development, web and mobile applications, and digital transformation solutions tailored for businesses in India.",
     "url": "https://www.eicetechnology.com/services/",
     "publisher": { "@type": "Organization", "name": "EICE Technology", "url": "https://www.eicetechnology.com" }
   }

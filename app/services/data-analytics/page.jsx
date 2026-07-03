@@ -1,13 +1,13 @@
 import Dataanalytics from "../../../src/Servcomps/Dataanalytics";
 
 export  async function generateMetadata() {
- const title= "Data Analytics Services India | BI & Insights — EICE Technology";
-  const description= "Unlock business insights with EICE Technology's data analytics services — dashboards, BI, predictive analytics and data engineering for Indian enterprises.";
+ const title= "EICE Technology | IT Services & Custom Software Development Company in India";
+  const description= "EICE Technology is a leading IT and software development company in India, providing custom software development, web and mobile app development, cloud solutions, digital transformation, and IT consulting services for businesses across industries. .";
   
   return {
     title,
     description,
-    keywords: ["data analytics services India"],
+    keywords: ["EICE Technology, IT company India, software development company India, custom software development, web development services, mobile app development company, IT consulting services, cloud solutions India, enterprise software solutions, digital transformation services, business software development, B2B IT services India, software outsourcing company India, technology solutions provider India, ERP development company, CRM software development, IT solutions for businesses, software services India, enterprise application development, Indian IT service provider"],
   openGraph: { title, description, url: "https://www.eicetechnology.com/services/data-analytics", siteName: "EICE Technology", type: "website" },
   twitter: { card: "summary_large_image", title , description,
     images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png"]},
