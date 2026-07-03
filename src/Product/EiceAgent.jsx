@@ -176,10 +176,10 @@ export default function EiceAgent() {
 
         </div>
       </section> */}
-      <section className="mt-20 py-10 px-4 md:px-10 lg:px-20 xl:px-40">
-  <div className="mt-5 max-w-[1200px] mx-auto px-4 sm:px-6 text-center">
+      <section className="mt-10 sm:mt-20 py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40">
+  <div className="mt-5 max-w-[1200px] mx-auto px-4 sm:px-6 text-left sm:text-center">
 
-    <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold">
+    <h1 className="text-[32px] sm:text-3xl md:text-4xl font-bold">
       An AI-driven ecosystem to 
       <span className="italic text-[#01B0F1] font-semibold">
         {" "}automate,<br /> optimize, and scale{" "}
@@ -195,12 +195,12 @@ export default function EiceAgent() {
 </section>
 
 
-    <section className="bg-white mb-10">
+    <section className="bg-white mb-4 sm:mb-10">
       {/* <div className="max-w-[1100px] mx-auto grid md:grid-cols-2 gap-8 px-60"> */}
-      <div className="max-w-[1100px] mx-auto grid md:grid-cols-2 gap-6 md:gap-8 px-4 sm:px-6 md:px-10 lg:px-20 xl:px-40">
+      <div className="max-w-[1100px] mx-auto grid md:grid-cols-2 gap-4 md:gap-8 px-4 sm:px-6 md:px-10 lg:px-20 xl:px-40">
 
         {/* LEFT CARD */}
-        <div className="bg-white border border-[#E2E8F0] rounded-xl py-4  text-center shadow-sm">
+        <div className="bg-white border border-[#E2E8F0] rounded-xl py-4 px-4 text-center shadow-sm">
 
           {/* LOGO */}
            <div className="flex justify-center mb-1">
@@ -210,7 +210,7 @@ export default function EiceAgent() {
               className=" object-contain"
             />
           </div>
-          <p className="text-gray-500 text-[12px] leading-relaxed max-w-[420px] mx-auto">
+          <p className="text-gray-500 text-[12px] !text-center leading-relaxed max-w-[420px] mx-auto">
            The Knowledge Agent.
           </p>
 
@@ -231,7 +231,7 @@ export default function EiceAgent() {
         </div>
 
         {/* RIGHT CARD */}
-        <div className="bg-white border border-[#E2E8F0] rounded-xl py-4 text-center shadow-sm">
+        <div className="bg-white border border-[#E2E8F0] rounded-xl py-4 px-4 text-center shadow-sm">
 
           {/* LOGO */}
            <div className="flex justify-center mb-1">
@@ -242,7 +242,7 @@ export default function EiceAgent() {
             />
           </div>
 
-          <p className="text-gray-500 text-[12px] leading-relaxed max-w-[420px] mx-auto">
+          <p className="text-gray-500 text-[12px] !text-center leading-relaxed max-w-[420px] mx-auto">
            The Action Agent.
           </p>
 
@@ -265,10 +265,10 @@ export default function EiceAgent() {
       </div>
     </section>  
 
-<section className = "flex justify-center mb-10">
+<section className = "flex justify-start sm:justify-center mb-10 px-5">
     {/* <button className="bg-[#012060] text-white px-14 py-5 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-lg"> */}
-    <button onClick={() => navigate("/products/eicerise/form")} 
-    className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto hover:bg-blue-800 transition text-[18px]">
+    <button onClick={() => navigate("/products/eicerise/form")}
+    className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-[18px]">
             Request a Demo
               <img src={arrowIcon} alt="arrow"/>
     
@@ -279,7 +279,7 @@ export default function EiceAgent() {
      <section className="bg-gray-50 border-1 border border-[#E2E8F0] py-2 mb-10">
       <div className="max-w-[1200px] mx-auto px-6">
 
-        <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-16">
 
           {/* ITEM 1 */}
           <div className="flex items-center gap-3">
@@ -312,16 +312,16 @@ export default function EiceAgent() {
 
       {/* WHAT IS */}
       {/* <section className="bg-[#F4F9FF] py-10 px-40"> */}
-      <section className="bg-[#F4F9FF] py-10 px-4 sm:px-6 md:px-10 lg:px-20 xl:px-40">
-        <div className="grid md:grid-cols-[1fr_2fr] gap-10 max-w-6xl mx-auto items-center">
+      <section className="bg-[#F4F9FF] py-4 sm:py-10 px-4 sm:px-6 md:px-10 lg:px-20 xl:px-40">
+        <div className="grid md:grid-cols-[1fr_2fr] gap-4 md:gap-10 max-w-6xl mx-auto items-center">
           <div>
             {/* <h2 className="text-3xl font-bold leading-relaxed text-[#334155]"> */}
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#334155]">
+            <h2 className="text-[32px] sm:text-2xl md:text-3xl font-bold mb-4 text-[#334155]">
               What is EICE AI Agent Suite?
             </h2>
           </div>
 
-          <div className="text-[#64748B] font-semibold mb-6 leading-8 space-y-6">
+          <div className="text-[#64748B] font-semibold mb-6 leading-8 space-y-4 sm:space-y-6">
             <p>
               The EICE Agent Suite is a powerful AI-driven ecosystem designed to automate, optimize, 
 and scale enterprise intelligence.
@@ -337,20 +337,20 @@ data-driven workflows.
       {/* EICE Inteliigent right side image */}
 
        {/* <section className="bg-white py-10 px-40"> */}
-       <section className="bg-white py-10 px-4 sm:px-6 md:px-10 lg:px-20 xl:px-40">
+       <section className="bg-white py-4 sm:py-10 px-5 sm:px-6 md:px-10 lg:px-20 xl:px-40">
       <div className="max-w-6xl mx-auto">
 
         {/* Heading */}
-        <h2 className="text-center text-[34px] font-bold text-[#334155] mb-16">
+        <h2 className="text-center text-[32px] sm:text-[34px] font-bold text-[#334155] mb-4 sm:mb-16">
           The EICE Intelligence Ecosystem
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-4 sm:gap-12 items-center">
 
           {/* LEFT CONTENT */}
           <div>
 
-            <h3 className="text-[28px] font-bold text-[#334155] mb-4">
+            <h3 className="text-[24px] sm:text-[28px] font-bold text-[#334155] mb-4">
               The Action Agent (EICE AIM)
             </h3>
 
@@ -362,11 +362,11 @@ data-driven workflows.
             </p>
 
             {/* FEATURES LIST */}
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-6">
 
               {/* ITEM */}
               <div className="flex items-start gap-4">
-                <div className="rounded-lg flex items-center justify-center">
+                <div className="rounded-lg flex items-center">
                   <img src={aiIcon} alt="icon"/>
                 </div>
                 <div>
@@ -380,7 +380,7 @@ data-driven workflows.
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="rounded-lg flex items-center justify-center">
+                <div className="rounded-lg flex items-center">
                   <img src={scmIcon} alt="icon"/>
                 </div>
                 <div>
@@ -394,7 +394,7 @@ data-driven workflows.
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="rounded-lg flex items-center justify-center">
+                <div className="rounded-lg flex items-center">
                   <img src={dfIcon} alt="icon"/>
                 </div>
                 <div>
@@ -408,7 +408,7 @@ data-driven workflows.
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="rounded-lg flex items-center justify-center">
+                <div className="rounded-lg flex items-center">
                   <img src={aeIcon} alt="icon"/>
                 </div>
                 <div>
@@ -464,9 +464,9 @@ data-driven workflows.
 
             </div> */}
             {/* <div className="flex gap-4 mt-6"> */}
-            <div className="flex flex-col sm:flex-row gap-4 mt-6 items-center">
+            <div className="flex flex-col items-center md:items-start gap-4 sm:gap-6">
 
-  <div className="bg-[#F4F7FD] px-4 py-2 rounded-full flex items-center gap-2 w-[200px] justify-center">
+  <div className="bg-[#F4F7FD] sm:px-4 py-2 rounded-full flex items-center gap-2 w-[200px] justify-center">
     <span className="text-[28px] font-bold text-[#334155]">
       60%
     </span>
@@ -475,7 +475,7 @@ data-driven workflows.
     </span>
   </div>
 
-  <div className="bg-[#F4F7FD] px-4 py-2 rounded-full flex items-center gap-2 w-[200px] justify-center">
+  <div className="bg-[#F4F7FD] sm:px-4 py-2 rounded-full flex items-center gap-2 w-[200px] justify-center">
     <span className="text-[28px] font-semibold text-[#2f3b4a]">
       ~25%
     </span>
@@ -495,11 +495,11 @@ data-driven workflows.
 
     {/* Eice Intelligent left side image */}
     {/* <section className="bg-white py-10 px-40"> */}
-    <section className="bg-white py-10 px-4 sm:px-6 md:px-10 lg:px-20 xl:px-40">
-      <div className="max-w-[1200px] mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <section className="bg-white py-4 sm:py-10 px-5 sm:px-6 md:px-10 lg:px-20 xl:px-40">
+      <div className="max-w-[1200px] mx-auto grid md:grid-cols-2 gap-4 sm:gap-12 items-center">
 
         {/* LEFT SIDE */}
-        <div className="flex flex-col items-center md:items-start gap-6">
+        <div className="flex flex-col items-center md:items-start gap-4 sm:gap-6">
 
           {/* IMAGE */}
           <div className="rounded-[28px] overflow-hidden">
@@ -530,7 +530,7 @@ data-driven workflows.
         <div>
 
           {/* HEADING */}
-          <h3 className="text-[28px] font-bold text-[#334155] mb-4">
+          <h3 className="text-[24px] sm:text-[28px] font-bold text-[#334155] mb-4">
             The Knowledge Agent (AskEICE)
           </h3>
 
@@ -544,7 +544,7 @@ data-driven workflows.
 
             {/* ITEM */}
             {/* <div className="flex items-start gap-4">
-              <div className="rounded-lg flex items-center justify-center">
+              <div className="rounded-lg flex items-center">
                   <img src={reductionIcon} alt="icon"/>
                 </div>
               <div>
@@ -570,7 +570,7 @@ data-driven workflows.
   </div>
 </div>
             <div className="flex items-start gap-4">
-              <div className="rounded-lg flex items-center justify-center">
+              <div className="rounded-lg flex items-center">
                   <img src={scmIcon} alt="icon"/>
                 </div>
               <div>
@@ -584,7 +584,7 @@ data-driven workflows.
             </div>
 
             <div className="flex items-start gap-4">
-              <div className="rounded-lg flex items-center justify-center">
+              <div className="rounded-lg flex items-center">
                   <img src={semanticIcon} alt="icon"/>
                 </div>
               <div>
@@ -598,7 +598,7 @@ data-driven workflows.
             </div>
 
             <div className="flex items-start gap-4">
-              <div className="rounded-lg flex items-center justify-center">
+              <div className="rounded-lg flex items-center">
                   <img src={racIcon} alt="icon"/>
                 </div>
               <div>
@@ -621,26 +621,26 @@ data-driven workflows.
     {/* how it works */}   
 
       {/* <section className="py-10 px-20 bg-white"> */}
-      <section className="py-10 px-4 sm:px-6 md:px-10 lg:px-20 bg-white">
+      <section className="py-4 sm:py-10 px-4 sm:px-6 md:px-10 lg:px-20 bg-white">
 
   {/* Heading */}
-  <div className="max-w-6xl mx-auto text-center mb-7">
+  <div className="max-w-6xl mx-auto text-center mb-4 sm:mb-7">
     {/* <h2 className="text-4xl font-bold"> */}
-    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">
+    <h2 className="text-[32px] sm:text-3xl md:text-4xl font-bold">
       How it Works
     </h2>
-    <p className="text-[#64748B] font-semibold mt-6 text-xl">
+    <p className="text-[#64748B] font-semibold mt-6 text-[22px] sm:text-xl">
       A proven continuous journey from planning to optimization
     </p>
   </div>
 
   {/* Cards */}
-  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
 
     {steps.map((item, i) => (
       <div
         key={i}
-        className="relative bg-white border border-gray-200 rounded-xl p-6 flex flex-col gap-4 min-h-[220px]"
+        className="relative bg-white border border-gray-200 rounded-xl p-4 sm:p-6 flex flex-col gap-4 min-h-[220px]"
       >
 
         {/* STEP NUMBER (top right) */}
@@ -659,7 +659,7 @@ data-driven workflows.
         </h3>
 
         {/* DESCRIPTION */}
-        <p className="text-[#64748B] font-semibold text-lg leading-relaxed">
+        <p className="text-[#64748B] font-semibold text-[16px] sm:text-lg leading-relaxed">
           {item.desc}
         </p>
 
@@ -673,22 +673,22 @@ data-driven workflows.
 {/* Core Capabilities */ }
 
      {/* <section className="py-10 px-20 bg-white"> */}
-     <section className="py-10 px-4 sm:px-6 md:px-10 lg:px-20 bg-white">
+     <section className="py-4 sm:py-10 px-4 sm:px-6 md:px-10 lg:px-20 bg-white">
         {/* <h2 className="text-4xl text-[#334155] font-bold text-center mb-5"> */}
-        <h2 className="text-2xl sm:text-3xl md:text-4xl text-[#334155] font-bold text-center mb-5">
+        <h2 className="text-[32px] sm:text-3xl md:text-4xl text-[#334155] font-bold text-center mb-5">
           Core Capabilities
         </h2>
-        <h4 className="text-xl text-[#64748B] font-semibold text-center mb-10 max-w-3xl mx-auto">
+        <h4 className="text-[22px] sm:text-xl text-[#64748B] font-semibold text-center mb-4 sm:mb-10 max-w-3xl mx-auto">
           Along with secure storage, iSyncDrive enables controlled file and folder sharing to support collaborations across teams and locations        </h4>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
           {platformFeatures.map((item, i) => (
              <div
         key={i}
-        className="bg-white rounded-xl  border-2 border-gray-200 shadow-sm hover:shadow-md transition p-6 flex flex-col items-start text-start gap-4"
+        className="bg-white rounded-xl  border-2 border-gray-200 shadow-sm hover:shadow-md transition p-4 sm:p-6 flex flex-col items-start text-start gap-4"
       >
 
         {/* SVG */}
-        <div className="rounded-lg flex items-start justify-center">
+        <div className="rounded-lg flex items-start">
           <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" />
         </div>
 
@@ -698,7 +698,7 @@ data-driven workflows.
         </h3>
 
         {/* SMALL TEXT */}
-        <p className="text-[#64748B] text-lg leading-relaxed">
+        <p className="text-[#64748B] text-[16px] sm:text-lg leading-relaxed">
           {item.desc}
         </p>
 
@@ -709,21 +709,21 @@ data-driven workflows.
 
 {/* Why Eice Agent Suite */}
 {/* <section className="py-10 px-20 bg-white"> */}
-<section className="py-10 px-4 sm:px-6 md:px-10 lg:px-20 bg-white">
+<section className="py-4 sm:py-10 px-4 sm:px-6 md:px-10 lg:px-20 bg-white">
 
   {/* Heading */}
-  <div className="max-w-5xl mx-auto text-center mb-14">
-    <h2 className="text-4xl font-bold text-[#334155] mb-5">
+  <div className="max-w-5xl mx-auto text-center mb-4 sm:mb-14">
+    <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155] mb-5">
       Why EICE Agent Suite
     </h2>
-    <p className="text-[#64748B] text-xl font-semibold mb-10 max-w-2xl mx-auto">
+    <p className="text-[#64748B] text-[16px] sm:text-xl font-semibold mb-4 sm:mb-10 max-w-2xl mx-auto">
       The intelligent choice for enterprises demanding more from their AI
     </p>
   </div>
 
   {/* Cards */}
   {/* <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-8"> */}
-<div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+<div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
 
     {/* CARD 1 */}
     <div className="bg-white border border-gray-200 rounded-xl py-4 px-8">
@@ -771,7 +771,7 @@ enterprise intelligence.
     </div>
 
     { /* CARD 3 */}
-     <div className="bg-white border border-gray-200 rounded-xl py-4 px-8">
+     <div className="bg-white border border-gray-200 rounded-xl py-4 px-4 sm:px-8">
 
       {/* Header */}
       <div className="flex items-center gap-4 mb-5">
@@ -795,7 +795,7 @@ expert team.
     </div>
 
     {/* CARD 4 */}
-     <div className="bg-white border border-gray-200 rounded-xl py-4 px-8">
+     <div className="bg-white border border-gray-200 rounded-xl py-4 px-4 sm:px-8">
 
       {/* Header */}
       <div className="flex items-center gap-4 mb-5">
@@ -824,33 +824,33 @@ is our foundation.
 {/* Measurable Business Impact */ }
 
  {/* <section className="relative py-10 overflow-hidden px-20" style={{ backgroundImage: `url(${bgImage2})` }}> */}
- <section className="relative py-10 overflow-hidden px-4 sm:px-6 md:px-10 lg:px-20" style={{ backgroundImage: `url(${bgImage2})` }}>
+ <section className="relative py-4 sm:py-10 overflow-hidden px-4 sm:px-6 md:px-10 lg:px-20" style={{ backgroundImage: `url(${bgImage2})` }}>
 
       <div className="max-w-[1200px] mx-auto px-6 relative z-10">
 
         {/* Heading */}
-        <h2 className="text-center text-4xl font-bold text-[#334155] mb-4">
+        <h2 className="text-center text-[32px] sm:text-4xl font-bold text-[#334155] mb-4">
           Measurable Business Impact
         </h2>
 
-        <p className="text-center text-[#64748B] font-semibold text-xl mt-3 mb-10">
+        <p className="text-center text-[#64748B] font-semibold text-[16px] sm:text-xl mt-3 mb-4 sm:mb-10">
           Real results from enterprises that transformed their operations with EICE Agent Suite
         </p>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
 
           {stats.map((item, i) => (
             <div
               key={i}
-              className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm"
+              className="bg-white border border-gray-200 rounded-xl p-4 sm:p-6 shadow-sm"
             >
 
               {/* Icon */}
               <div
                 className={`rounded-lg flex items-start justify-start text-white text-lg mb-4`}
               >
-                  <img src={item.icon} alt="icon" className="w-12 h-12 object-contain" />
+                  <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" />
               </div>
 
               {/* Value */}
@@ -874,7 +874,7 @@ is our foundation.
     {/* Security and Compliance */ }
 
     {/* <section className="bg-white py-10 px-20"> */}
-    <section className="bg-white py-10 px-4 sm:px-6 md:px-10 lg:px-20">
+    <section className="bg-white py-4 sm:py-10 px-4 sm:px-6 md:px-10 lg:px-20">
       <div className="max-w-[1200px] mx-auto px-6 text-center">
 
         {/* Top Tag */}
@@ -883,17 +883,17 @@ is our foundation.
         </div>
 
         {/* Heading */}
-        <h2 className="text-4xl font-bold text-[#334155] mb-4">
+        <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155] mb-4">
           Security, Compliance & Trust
         </h2>
 
         {/* Subtitle */}
-        <p className="text-[#64748B] font-semibold text-lg mb-10 max-w-2xl mx-auto">
+        <p className="text-[#64748B] font-semibold text-[16px] sm:text-lg mb-4 sm:mb-10 max-w-2xl mx-auto">
           Your data security is our foundation. Built with enterprise compliance at every layer.
         </p>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
 
           {badges.map((item, i) => (
             <div
@@ -902,7 +902,7 @@ is our foundation.
             >
 
               {/* Title */}
-              <h3 className="text-[20px] font-bold text-[#334155] mb-3">
+              <h3 className="text-[24px] sm:text-[20px] font-bold text-[#334155] mb-3">
                 {item.title}
               </h3>
 
@@ -964,7 +964,7 @@ is our foundation.
     </div>
   
     {/* Bottom Cards */}
-    <div className="mt-16 max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6">
+    <div className="mt-16 max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
   
       <div className="bg-gray-100 rounded-xl py-6 px-4">
         <h3 className="text-lg font-semibold text-[#64748B]">

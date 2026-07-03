@@ -1,19 +1,21 @@
 import Educational from "../../../src/Allindus/Educational";
 
-export const metadata = {
-  title: "EdTech Solutions | Educational Software Development | EICE Technology",
-  description: "Revolutionize learning with EICE Technology's education technology. LMS platforms, e-learning content, student information systems, and virtual classrooms.",
-  keywords: ["education technology", "edtech", "LMS platform", "e-learning software", "student information system", "virtual classroom", "EICE Technology"],
-  openGraph: {
-    title: "EdTech Solutions | Educational Software Development | EICE Technology",
-    description: "Revolutionize learning with EICE Technology's education technology. LMS platforms, e-learning content, student information systems, and virtual classrooms.",
-    url: "https://www.eicetechnology.com/industries/education",
-    siteName: "EICE Technology",
-    type: "website",
-  },
-  twitter: { card: "summary_large_image", title: "EdTech Solutions | Educational Software Development | EICE Technology", description: "Revolutionize learning with EICE Technology's education technology. LMS platforms, e-learning content, student information systems, and virtual classrooms." },
+
+
+export  async function generateMetadata() {
+ const title= "Education Technology Solutions India | EdTech IT Services — EICE";
+  const description= "EICE Technology powers schools, colleges and edtech companies with custom software, LMS platforms and cloud solutions across India.";
+  
+  return {
+    keywords: ["education technology solutions India"],
+  openGraph: { title, description, url: "https://www.eicetechnology.com/industries/education", siteName: "EICE Technology", type: "website" },
+  twitter: { card: "summary_large_image", title , description,
+    images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png"]},
   alternates: { canonical: "https://www.eicetechnology.com/industries/education/", languages: { "en-IN": "https://www.eicetechnology.com/industries/education/", "en-US": "https://www.eicetechnology.com/industries/education/", "x-default": "https://www.eicetechnology.com/industries/education/" } },
-};
+};}
+
+
+
 
 const jsonLd = [
   {

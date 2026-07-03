@@ -196,18 +196,18 @@ export default function EiceOps() {
     <div className="bg-white text-[#111]">
 
       {/* HERO SECTION */}
-      <section className="relative overflow-hidden pt-32 pb-20 px-5 md:px-20 lg:px-32">
+      <section className="relative overflow-hidden px-5 pt-32 pb-4 md:pt-32 lg:pt-32 md:pb-20 lg:pb-20 md:px-5 md:px-20 lg:px-5 lg:px-32">
         
            <div className="mt-5 flex justify-center">
                             <img
                                      src={heroImg}
                                      alt="product"
-                                     className="mx-auto mb-6 w-72 md:w-full lg:w-[480px]"
+                                     className="mx-auto mb-6 md:w-full lg:w-[480px]"
                                    />
                          </div>
         <div className="max-w-6xl mx-auto text-center">
 
-          <h2 className="mt-6 text-2xl md:text-4xl font-bold text-[#111]">
+          <h2 className="mt-6 text-[40px] leading-[48px] md:text-4xl font-bold text-[#111]">
             Your <span className="text-[#01B0F1]">Help Desk</span>, Working <span className="text-[#01B0F1]">Smarter.</span>
           </h2>
 
@@ -236,28 +236,28 @@ missed escalations, ensures structured communication, and gives managers full vi
       </section>
 
       {/* STATS */}
-      <section className="px-5 md:px-20 lg:px-32 -mt-10 relative z-10">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5">
+      <section className="px-5 py-4 md:px-20 lg:px-32 lg:-mt-10 md:-mt-10 sm:-mt-10 relative z-10">
+        <div className="max-w-7xl mx-auto grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-5">
           {stats.map((item, index) => (
             <div
               key={index}
-              className="text-white py-8 px-5 text-center"
+              className="text-white py-2 pr-2 text-left lg:text-white lg:py-8 lg:px-5 lg:text-center md:text-white md:py-8 md:px-5 md:text-center"
             >
-              <h3 className="text-[#01B0F1] text-4xl font-bold mb-5">{item.number}</h3>
-              <p className="font-bold text-lg leading-relaxed text-[#334155]">{item.title}</p>
+              <h3 className="text-[#01B0F1] text-[22px] font-bold mb-4 text-left lg:text-4xl lg:mb-5 md:text-4xl md:mb-5">{item.number}</h3>
+              <p className="font-semi-bold text-[16px] leading-relaxed text-[#334155] lg:font-bold lg:text-lg lg:leading-relaxed text-[#334155] md:font-bold md:text-lg sm:font-bold sm:text-lg">{item.title}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* FOUR PILLARS */}
-     <section className="py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
+     <section className="py-4 px-5 md:px-10 lg:px-20 xl:px-40 bg-white">
 
-  <h1 className="text-4xl md:text-4xl text-[#334155] font-bold text-center leading-relaxed mb-5">
+  <h1 className="text-[32px] leading-[48px] md:text-4xl text-[#334155] font-bold text-center leading-relaxed pb-4">
     Enterprise Authentication Challenges
   </h1>
 
-  <h4 className="text-lg md:text-xl text-[#64748B] text-center mb-12 max-w-2xl mx-auto">
+  <h4 className="text-[22px] pb-4 md:text-xl text-[#64748B] text-center max-w-2xl mx-auto">
     Traditional MFA solutions lack enterprise control and flexibility
   </h4>
 
@@ -267,7 +267,7 @@ missed escalations, ensures structured communication, and gives managers full vi
     {pillars.map((item, i) => (
       <div
         key={i}
-        className="bg-white rounded-xl  border-2 border-gray-200 shadow-sm hover:shadow-md transition p-6 flex flex-col items-start text-start gap-4"
+        className="bg-white rounded-xl  border-2 border-gray-200 shadow-sm hover:shadow-md transition p-4 flex flex-col items-start text-start gap-4"
       >
 
         {/* SVG */}
@@ -276,12 +276,12 @@ missed escalations, ensures structured communication, and gives managers full vi
         </div>
 
         {/* TITLE */}
-        <h3 className="font-bold text-2xl">
+        <h3 className="font-bold lg:text-2xl md:text-2xl text-[24px]">
           {item.title}
         </h3>
 
         {/* SMALL TEXT */}
-        <p className="text-gray-500 text-lg leading-relaxed">
+        <p className="text-gray-500 lg:text-lg md:text-lg leading-relaxed text-[16px]">
           {item.description}
         </p>
 
@@ -292,9 +292,9 @@ missed escalations, ensures structured communication, and gives managers full vi
 </section>
 
       {/* FEATURE HIGHLIGHTS */}
-<section className="py-10 px-5 md:px-20 lg:px-20 xl:px-40 bg-white">
+<section className="py-4 px-5 md:px-20 lg:px-20 xl:px-40 bg-white">
 
-  <h1 className="text-4xl md:text-4xl text-[#334155] font-bold text-center leading-relaxed mb-10">
+  <h1 className="text-[32px] leading-[48px] lg:text-4xl md:text-4xl text-[#334155] font-bold text-center leading-relaxed lg:mb-10 md:mb-10 pb-4">
     Help Desk Agent Highlights
   </h1>
 
@@ -303,12 +303,12 @@ missed escalations, ensures structured communication, and gives managers full vi
   </h4> */}
 
   {/* 4 CARDS ROW */}
-  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:gap-6 md:gap-6 sm:gap-6 gap-4">
 
     {agentFeatures.map((item, i) => (
       <div
         key={i}
-        className="bg-white rounded-xl  border-2 border-gray-200 shadow-sm hover:shadow-md transition p-6 flex flex-col items-start text-start gap-4"
+        className="bg-white rounded-xl  border-2 border-gray-200 shadow-sm hover:shadow-md transition p-4 flex flex-col items-start text-start gap-4"
       >
 
         {/* SVG */}
@@ -317,12 +317,12 @@ missed escalations, ensures structured communication, and gives managers full vi
         </div>
 
         {/* TITLE */}
-        <h3 className="font-bold md:text-[24px] text-[#334155] whitespace-pre-line">
+        <h3 className="font-bold lg:text-2xl md:text-2xl text-[24px] text-[#334155] whitespace-pre-line">
           {item.heading}
         </h3>
 
         {/* SMALL TEXT */}
-        <p className="text-[#64748B] md:text-[16px] leading-relaxed">
+        <p className="text-[#64748B] md:text-[16px] leading-relaxed text-[16px]">
           {item.paragraph}
         </p>
 
@@ -332,9 +332,9 @@ missed escalations, ensures structured communication, and gives managers full vi
   </div>
 </section>
 
-<section className="py-10 px-5 md:px-20 lg:px-20 xl:px-40 bg-white">
+<section className="py-4 px-5 md:px-20 lg:px-20 xl:px-40 bg-white">
 
-  <h1 className="text-4xl md:text-4xl text-[#334155] font-bold text-center leading-relaxed mb-10">
+  <h1 className="text-[32px] leading-[48px] lg:text-4xl md:text-4xl text-[#334155] font-bold text-center leading-relaxed lg:mb-10 md:mb-10 sm:mb-10 pb-4">
     Admin Agent Highlights
   </h1>
 
@@ -343,12 +343,12 @@ missed escalations, ensures structured communication, and gives managers full vi
   </h4> */}
 
   {/* 4 CARDS ROW */}
-  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:gap-6 md:gap-6 sm:gap-6 gap-4">
 
     {adminFeatures.map((item, i) => (
       <div
         key={i}
-        className="bg-white rounded-xl  border-2 border-gray-200 shadow-sm hover:shadow-md transition p-6 flex flex-col items-start text-start gap-4"
+        className="bg-white rounded-xl  border-2 border-gray-200 shadow-sm hover:shadow-md transition p-4 flex flex-col items-start text-start gap-4"
       >
 
         {/* SVG */}
@@ -357,12 +357,12 @@ missed escalations, ensures structured communication, and gives managers full vi
         </div>
 
         {/* TITLE */}
-        <h3 className="font-bold md:text-[24px] text-[#334155] whitespace-pre-line">
+        <h3 className="font-bold md:text-[24px] text-[#334155] text-[24px] whitespace-pre-line">
           {item.heading}
         </h3>
 
         {/* SMALL TEXT */}
-        <p className="text-[#64748B] md:text-[16px] leading-relaxed">
+        <p className="text-[#64748B] md:text-[16px] text-[16px] leading-relaxed">
           {item.paragraph}
         </p>
 
@@ -374,23 +374,23 @@ missed escalations, ensures structured communication, and gives managers full vi
 
 
       {/* WHY CHOOSE */}
-  <section className="py-10 px-4 md:px-20 lg:px-20 xl:px-40 bg-white">
+  <section className="py-4 px-5 md:px-20 lg:px-20 xl:px-40 bg-white">
   
   {/* Heading */}
-  <h2 className="text-4xl md:text-4xl font-bold text-center text-[#334155] mb-[14px]">
+  <h2 className="text-[32px] leading-[48px] lg:text-4xl md:text-4xl font-bold text-center text-[#334155] lg:mb-[14px] md:mb-[14px] sm:mb-[14px] pb-4">
     Why enterprises choose EICEOps?
   </h2>
 
   {/* Subheading */}
-  <h4 className="text-lg md:text-xl text-[#64748B] text-center mb-10 max-w-3xl mx-auto">
+  <h4 className="lg:text-lg md:text-xl text-[#64748B] text-[22px] text-center lg:mb-10 md:mb-10 sm:mb-10 pb-4 max-w-3xl mx-auto">
     Built for organizations that require complete infrastructure <br /> control and observability
   </h4>
 
   {/* Content */}
-  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 text-[#334155]">
+  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:gap-10 md:gap-10 sm:gap-10 gap-4 text-[#334155]">
 
     {/* LEFT COLUMN */}
-    <div className="space-y-6 text-xl leading-relaxed">
+    <div className="lg:space-y-6 md:space-y-6 space-y-4 lg:text-xl md:text-xl text-[18px] leading-relaxed">
       <p>
         <span className="font-bold">1. ITIL 4 Aligned :</span> Built on internationally recognised best practices for modern, scalable, efficient IT service management operations.
       </p>
@@ -405,7 +405,7 @@ missed escalations, ensures structured communication, and gives managers full vi
     </div>
 
     {/* RIGHT COLUMN */}
-    <div className="space-y-6 text-xl leading-relaxed">
+    <div className="lg:space-y-6 md:space-y-6 space-y-4 lg:text-xl md:text-xl text-[18px] leading-relaxed">
       <p>
         <span className="font-bold">4. Escalation You Can Trust :</span> Time-based escalation rules ensure the right  people are alerted before SLAs are breached
 </p>
@@ -422,7 +422,7 @@ missed escalations, ensures structured communication, and gives managers full vi
   </div>
 </section>
           {/* ================= FINAL CTA ================= */}
-          <section className="bg-gray-50 relative py-10 px-6 md:px-12 lg:px-24 xl:px-40 overflow-hidden mb-10">
+          <section className="bg-gray-50 relative py-4 px-6 md:px-12 lg:px-24 xl:px-40 overflow-hidden mb-10">
             <h2 className="text-4xl md:text-4xl font-bold text-[#334155] mb-[14px] leading-tight text-center">
               Ready to Transform Your Order Management?
             </h2>

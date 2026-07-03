@@ -172,7 +172,7 @@ function Casestudies() {
           </div>
 
           <div className="flex flex-col items-center mt-6 gap-3">
-            <Link href="/case-studies" className="w-full border border-blue-900 bg-blue-900 text-white rounded-full py-3 text-center font-semibold text-sm">
+            <Link href="/case-studies" className="flex justify-center items-center w-full border border-blue-900 bg-blue-900 text-white rounded-full py-3 font-semibold text-sm">
               View all case studies →
             </Link>
           </div>

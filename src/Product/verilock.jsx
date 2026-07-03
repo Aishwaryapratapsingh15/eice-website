@@ -179,19 +179,19 @@ export default function ISyncDrivePage() {
     <div className="bg-white text-gray-800 font-poppins">
 
       {/* HERO */}
-      <section className="mt-10 text-center py-16 px-6 bg-white">
+      <section className="mt-10 text-left sm:text-center py-4 sm:py-16 px-5 bg-white">
          <div className="mt-5 flex justify-center">
            <img
                     src={verilockIcon}
                     alt="product"
-                    className="mx-auto mb-6 w-72 md:w-96 lg:w-[350px] h-[280px]"
+                    className="mx-auto mb-6 md:w-96 lg:w-[350px] h-[280px]"
                   />
         </div>
 
         {/* <span className="bg-blue-100 text-blue-900 px-4 py-1 rounded-full text-sm font-small border border-blue-300">
           Enterprise-Grade File Management
         </span> */}
-        <span className="inline-flex items-center gap-2 bg-blue-50 text-[#012060] px-3 py-2 rounded-full text-sm font-medium border border-blue-200 mb-4">
+        <span className="flex w-fit mx-auto items-center gap-2 bg-blue-50 text-[#012060] px-3 py-2 rounded-full text-sm font-medium border border-blue-200 mb-4">
   
   <img 
     src={shieldIcon} 
@@ -206,7 +206,7 @@ export default function ISyncDrivePage() {
           Enterprise <span className="text-[#01B0F1]">Multi-Factor<br /> Authentication,</span> Simplified
         </h1>
 
-        <p className="mt-6 text-[#64748B] max-w-2xl mx-auto text-[20px] font-semi-bold">
+        <p className="mt-6 text-[#64748B] max-w-2xl mx-auto text-[16px] sm:text-[20px] font-semi-bold">
         Verilock secures your applications with TOTP-based 2FA, push approval, and geo-fencing — all from one mobile-first platform.
         </p>
 
@@ -219,11 +219,11 @@ export default function ISyncDrivePage() {
             Talk to an Expert
           </button>
         </div> */}
-         <div className="mt-8 flex flex-wrap justify-center gap-4">
+         <div className="mt-8 flex flex-wrap justify-start sm:justify-center gap-4">
 
       {/* Primary */}
-      <button onClick={() => navigate("/products/eicerise/form")}  
-      className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto hover:bg-blue-800 transition text-[18px]">
+      <button onClick={() => navigate("/products/eicerise/form")}
+      className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-[18px]">
         Request a Demo
           <img src={arrowIcon} alt="arrow"/>
 
@@ -239,7 +239,7 @@ export default function ISyncDrivePage() {
       </section>
 
       {/* FEATURES */}
-<section className="pb-10 px-4 max-w-7xl mx-auto md:px-10 lg:px-20 xl:px-40 bg-white grid md:grid-cols-3 text-center gap-8">
+<section className="pb-4 sm:pb-10 px-4 max-w-7xl mx-auto md:px-10 lg:px-20 xl:px-40 bg-white grid md:grid-cols-3 text-center gap-4 sm:gap-8">
   {features.map((item, i) => (
     <div key={i} className="flex flex-col mx-auto items-center gap-1">
 
@@ -249,12 +249,12 @@ export default function ISyncDrivePage() {
       </div>
 
       {/* TITLE */}
-      <h3 className="font-bold text-xl leading-relaxed text-[#334155]">
+      <h3 className="font-bold text-[24px] sm:text-xl leading-relaxed text-[#334155]">
         {item.title}
       </h3>
 
       {/* DESCRIPTION */}
-      <p className="text-[#64748B] font-semibold text-md leading-relaxed max-w-xs">
+      <p className="text-[#64748B] font-semibold text-[16px] sm:text-md leading-relaxed max-w-xs">
         {item.desc}
       </p>
 
@@ -281,16 +281,16 @@ export default function ISyncDrivePage() {
           </div>
         </div>
       </section> */}
-      <section className="bg-[#F4F9FF] py-10 px-4 md:px-10 lg:px-20 xl:px-40">
-  <div className="max-w-6xl mx-auto grid md:grid-cols-[1.1fr_1fr] gap-16 items-start">
+      <section className="bg-[#F4F9FF] py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40">
+  <div className="max-w-6xl mx-auto grid md:grid-cols-[1.1fr_1fr] gap-4 sm:gap-16 items-start">
 
     {/* LEFT CONTENT */}
     <div>
-      <h2 className="text-4xl md:text-4xl font-bold text-[#1E293B] mb-6">
+      <h2 className="text-[32px] sm:text-4xl font-bold text-[#1E293B] mb-6">
         What is Verilock?
       </h2>
 
-      <div className="text-[#64748B] font-semibold mb-6 leading-8 space-y-6">
+      <div className="text-[#64748B] font-semibold mb-6 leading-8 space-y-4 sm:space-y-6">
         <p>
           Verilock is EICE Technology's enterprise multi-factor
 authentication platform designed to provide secure, mobile-first
@@ -307,12 +307,12 @@ locations with full admin control.
     </div>
 
     {/* RIGHT CARDS */}
-    <div className="grid sm:grid-cols-2 gap-6 bg-[#F4F9FF]">
+    <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 bg-[#F4F9FF]">
 
       {/* CARD 1 */}
-      <div className="bg-white border border-[#E2E8F0] rounded-2xl p-6 shadow-sm">
+      <div className="bg-white border border-[#E2E8F0] rounded-2xl p-4 sm:p-6 shadow-sm">
         {/* <div className="w-2 h-2 bg-[#01B0F1] rounded-full mb-4"></div> */}
-        <h3 className="text-lg font-semibold text-[#1E293B] mb-1">
+        <h3 className="text-[22px] sm:text-lg font-semibold text-[#1E293B] mb-1">
           TOTP Standard
         </h3>
         <p className="text-sm text-[#64748B]">
@@ -321,9 +321,9 @@ locations with full admin control.
       </div>
 
       {/* CARD 2 */}
-      <div className="bg-white border border-[#E2E8F0] rounded-2xl p-6 shadow-sm">
+      <div className="bg-white border border-[#E2E8F0] rounded-2xl p-4 sm:p-6 shadow-sm">
         {/* <div className="w-2 h-2 bg-[#01B0F1] rounded-full mb-4"></div> */}
-        <h3 className="text-lg font-semibold text-[#1E293B] mb-1">
+        <h3 className="text-[22px] sm:text-lg font-semibold text-[#1E293B] mb-1">
           Mobile-First
         </h3>
         <p className="text-sm text-[#64748B]">
@@ -332,9 +332,9 @@ locations with full admin control.
       </div>
 
       {/* CARD 3 */}
-      <div className="bg-white border border-[#E2E8F0] rounded-2xl p-6 shadow-sm">
+      <div className="bg-white border border-[#E2E8F0] rounded-2xl p-4 sm:p-6 shadow-sm">
         {/* <div className="w-2 h-2 bg-[#01B0F1] rounded-full mb-4"></div> */}
-        <h3 className="text-lg font-semibold text-[#1E293B] mb-1">
+        <h3 className="text-[22px] sm:text-lg font-semibold text-[#1E293B] mb-1">
           Zero Setup Friction
         </h3>
         <p className="text-sm text-[#64748B]">
@@ -343,9 +343,9 @@ locations with full admin control.
       </div>
 
       {/* CARD 4 */}
-      <div className="bg-white border border-[#E2E8F0] rounded-2xl p-6 shadow-sm">
+      <div className="bg-white border border-[#E2E8F0] rounded-2xl p-4 sm:p-6 shadow-sm">
         {/* <div className="w-2 h-2 bg-[#01B0F1] rounded-full mb-4"></div> */}
-        <h3 className="text-lg font-semibold text-[#1E293B] mb-1">
+        <h3 className="text-[22px] sm:text-lg font-semibold text-[#1E293B] mb-1">
           Universal Compat.
         </h3>
         <p className="text-sm text-[#64748B]">
@@ -357,27 +357,27 @@ locations with full admin control.
   </div>
 </section>
 
-<section className="py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
+<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
 
-  <h1 className="text-4xl md:text-4xl text-[#334155] font-bold text-center leading-relaxed mb-5">
+  <h1 className="text-[32px] sm:text-4xl text-[#334155] font-bold text-center leading-relaxed mb-5">
     Enterprise Authentication Challenges
   </h1>
 
-  <h4 className="text-lg md:text-xl text-[#64748B] text-center mb-12 max-w-2xl mx-auto">
+  <h4 className="text-[22px] sm:text-lg md:text-xl text-[#64748B] text-center mb-4 sm:mb-12 max-w-2xl mx-auto">
     Traditional MFA solutions lack enterprise control and flexibility
   </h4>
 
   {/* 4 CARDS ROW */}
-  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
 
     {challenges.map((item, i) => (
       <div
         key={i}
-        className="bg-white rounded-xl  border-2 border-gray-200 shadow-sm hover:shadow-md transition p-6 flex flex-col items-start text-start gap-4"
+        className="bg-white rounded-xl  border-2 border-gray-200 shadow-sm hover:shadow-md transition p-4 sm:p-6 flex flex-col items-start text-start gap-4"
       >
 
         {/* SVG */}
-        <div className="rounded-lg flex items-start justify-center">
+        <div className="rounded-lg flex items-start">
           <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" />
         </div>
 
@@ -387,7 +387,7 @@ locations with full admin control.
         </h3>
 
         {/* SMALL TEXT */}
-        <p className="text-gray-500 text-lg leading-relaxed">
+        <p className="text-gray-500 text-[16px] sm:text-lg leading-relaxed">
           {item.desc}
         </p>
 
@@ -398,14 +398,14 @@ locations with full admin control.
 </section>
 
       {/* ARCHITECTURE */}
-<section className="pb-20 pt-2 px-4 sm:px-8 md:px-10 lg:px-20 xl:px-40 bg-white">
+<section className="py-4 sm:pb-20 sm:pt-2 px-4 sm:px-8 md:px-10 lg:px-20 xl:px-40 bg-white">
 
   {/* KEEP YOUR HEADING */}
-  <h2 className="text-4xl text-[#334155] font-bold text-center leading-relaxed mb-14">
+  <h2 className="text-[32px] sm:text-4xl text-[#334155] font-bold text-center leading-relaxed mb-4 sm:mb-14">
     How It works
   </h2>
 
-  <div className="relative max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+  <div className="relative max-w-6xl sm:mx-auto grid grid-cols-2 sm:flex sm:flex-col sm:flex-row sm:items-center sm:justify-between gap-4 md:gap-6">
 
     {architecture.map((item, i) => (
       <div key={i} className="flex items-center">
@@ -439,7 +439,7 @@ locations with full admin control.
 </section>
 
       {/* IMAGE + TEXT SECTION */}
-<section className="py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
+<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
 
   <div className="max-w-6xl mx-auto text-center">
 
@@ -459,30 +459,30 @@ locations with full admin control.
 
 </section>
 
-<section className="bg-[#F4F9FF] py-20 px-6 md:px-12 lg:px-24 xl:px-40">
+<section className="bg-[#F4F9FF] py-4 sm:py-20 px-5 md:px-12 lg:px-24 xl:px-40">
   <div className="max-w-6xl mx-auto">
 
     {/* HEADER */}
-    <div className="text-center mb-16">
-      <h2 className="text-4xl md:text-4xl font-bold text-[#1E293B] mb-4">
+    <div className="text-center mb-4 sm:mb-16">
+      <h2 className="text-[32px] sm:text-4xl font-bold text-[#1E293B] mb-4">
         Comprehensive platform capabilities
       </h2>
 
-      <p className="text-[#64748B] text-lg">
+      <p className="text-[#64748B] text-[16px] sm:text-lg">
         Everything you need for enterprise-grade authentication
       </p>
     </div>
 
     {/* GRID */}
-    <div className="grid md:grid-cols-2 gap-8">
+    <div className="grid md:grid-cols-2 gap-4 sm:gap-8">
 
       {/* CARD 1 */}
-      <div className="bg-white border border-[#E2E8F0] rounded-2xl p-8 shadow-sm">
+      <div className="bg-white border border-[#E2E8F0] rounded-2xl p-4 sm:p-8 shadow-sm">
         <div className="flex items-center gap-4 mb-6">
-          <div className="w-12 h-12 rounded-xl flex items-center justify-center text-xl">
-            <img src={rsIcon} alt="icon" className="w-12 h-12 object-contain"/>
+          <div className="w-14 h-14 rounded-xl flex items-center justify-center text-xl">
+            <img src={rsIcon} alt="icon" className="w-14 h-14 object-contain"/>
           </div>
-          <h3 className="text-xl font-semibold text-[#1E293B]">
+          <h3 className="text-[24px] sm:text-xl font-semibold text-[#1E293B]">
             Registration & setup
           </h3>
         </div>
@@ -512,12 +512,12 @@ locations with full admin control.
       </div>
 
       {/* CARD 2 */}
-      <div className="bg-white border border-[#E2E8F0] rounded-2xl p-8 shadow-sm">
+      <div className="bg-white border border-[#E2E8F0] rounded-2xl p-4 sm:p-8 shadow-sm">
         <div className="flex items-center gap-4 mb-6">
-          <div className="w-12 h-12 rounded-xl flex items-center justify-center text-xl">
-            <img src={lmIcon} alt="icon" className="w-12 h-12 object-contain"/>
+          <div className="w-14 h-14 rounded-xl flex items-center justify-center text-xl">
+            <img src={lmIcon} alt="icon" className="w-14 h-14 object-contain"/>
           </div>
-          <h3 className="text-xl font-semibold text-[#1E293B]">
+          <h3 className="text-[24px] sm:text-xl font-semibold text-[#1E293B]">
             Login methods
           </h3>
         </div>
@@ -542,12 +542,12 @@ locations with full admin control.
       </div>
 
       {/* CARD 3 */}
-      <div className="bg-white border border-[#E2E8F0] rounded-2xl p-8 shadow-sm">
+      <div className="bg-white border border-[#E2E8F0] rounded-2xl p-4 sm:p-8 shadow-sm">
         <div className="flex items-center gap-4 mb-6">
-          <div className="w-12 h-12 rounded-xl flex items-center justify-center text-xl">
-            <img src={gfIcon} alt="icon" className="w-12 h-12 object-contain"/>
+          <div className="w-14 h-14 rounded-xl flex items-center justify-center text-xl">
+            <img src={gfIcon} alt="icon" className="w-14 h-14 object-contain"/>
           </div>
-          <h3 className="text-xl font-semibold text-[#1E293B]">
+          <h3 className="text-[24px] sm:text-xl font-semibold text-[#1E293B]">
             Geo-fencing controls
           </h3>
         </div>
@@ -573,12 +573,12 @@ locations with full admin control.
       </div>
 
       {/* CARD 4 */}
-      <div className="bg-white border border-[#E2E8F0] rounded-2xl p-8 shadow-sm">
+      <div className="bg-white border border-[#E2E8F0] rounded-2xl p-4 sm:p-8 shadow-sm">
         <div className="flex items-center gap-4 mb-6">
-          <div className="w-12 h-12 rounded-xl flex items-center justify-center text-xl">
-            <img src={saIcon} alt="icon" className="w-12 h-12 object-contain"/>
+          <div className="w-14 h-14 rounded-xl flex items-center justify-center text-xl">
+            <img src={saIcon} alt="icon" className="w-14 h-14 object-contain"/>
           </div>
-          <h3 className="text-xl font-semibold text-[#1E293B]">
+          <h3 className="text-[24px] sm:text-xl font-semibold text-[#1E293B]">
             Security architecture
           </h3>
         </div>
@@ -609,23 +609,23 @@ locations with full admin control.
 
 
 {/* WHY CHOOSE */}
-<section className="py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
+<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
 
   {/* Heading */}
-  <div className="max-w-5xl mx-auto text-center mb-14">
-    <h2 className="text-4xl font-bold text-[#334155]">
+  <div className="max-w-5xl mx-auto text-center mb-4 sm:mb-14">
+    <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155]">
       Why Enterprises choose Verilock?
     </h2>
-    <p className="mt-4 text-[#64748B] text-lg max-w-2xl mx-auto">
+    <p className="mt-4 text-[#64748B] text-[16px] sm:text-lg max-w-2xl mx-auto">
       Built for organizations that require control, governance, and flexible deployment.
     </p>
   </div>
 
   {/* Cards */}
-  <div className="max-w-6xl mx-auto items-start grid md:grid-cols-4 gap-8 w-auto">
+  <div className="max-w-6xl mx-auto items-start grid md:grid-cols-4 gap-4 sm:gap-8 w-auto">
 
     {/* LEFT CARD */}
-    <div className="bg-white border border-[#E2E8F0] rounded-xl p-4 w-auto h-[370px]">
+    <div className="bg-white border border-[#E2E8F0] rounded-xl p-4 w-auto h-auto sm:h-[370px]">
 
       {/* Header */}
       <div className="flex-column items-start gap-4 mb-5">
@@ -644,7 +644,7 @@ locations with full admin control.
     </div>
 
     {/* RIGHT CARD */}
-    <div className="bg-white border border-[#E2E8F0] rounded-xl p-4 w-auto h-[370px]">
+    <div className="bg-white border border-[#E2E8F0] rounded-xl p-4 w-auto h-auto sm:h-[370px]">
 
       {/* Header */}
       <div className="flex-column items-start gap-4 mb-5">
@@ -662,7 +662,7 @@ locations with full admin control.
       </p>
     </div>
 
-        <div className="bg-white border border-[#E2E8F0] rounded-xl p-4 w-auto h-[370px]">
+        <div className="bg-white border border-[#E2E8F0] rounded-xl p-4 w-auto h-auto sm:h-[370px]">
 
       {/* Header */}
       <div className="flex-column items-start gap-4 mb-5">
@@ -680,7 +680,7 @@ locations with full admin control.
       </p>
     </div>
 
-        <div className="bg-white border border-[#E2E8F0] rounded-xl p-4 w-auto h-[370px]">
+        <div className="bg-white border border-[#E2E8F0] rounded-xl p-4 w-auto h-auto sm:h-[370px]">
 
       {/* Header */}
       <div className="flex-column items-start gap-4 mb-5">
@@ -702,17 +702,17 @@ locations with full admin control.
 </section>
 
 
-<section className="bg-[#F4F9FF] py-20 px-6 md:px-12 lg:px-24 xl:px-40 mb-10">
+<section className="bg-[#F4F9FF] py-4 sm:py-20 px-5 md:px-12 lg:px-24 xl:px-40 mb-10">
   <div className="max-w-6xl mx-auto">
 
     {/* HEADER */}
-    <div className="text-center mb-14">
+    <div className="text-center mb-4 sm:mb-14">
 
-      <h2 className="text-4xl md:text-4xl font-bold text-[#1E293B] mb-4">
+      <h2 className="text-[32px] sm:text-4xl font-bold text-[#1E293B] mb-4">
         Verilock vs Google Authenticator
       </h2>
 
-      <p className="text-[#64748B] text-lg">
+      <p className="text-[#64748B] text-[16px] sm:text-lg">
         See how Verilock stands out
       </p>
     </div>
@@ -831,7 +831,7 @@ locations with full admin control.
 </section>
 
 
-<section className="bg-gray-50 relative py-10 px-6 md:px-12 lg:px-24 xl:px-40 overflow-hidden mb-10">
+<section className="bg-gray-50 relative py-10 px-5 md:px-12 lg:px-24 xl:px-40 overflow-hidden mb-10">
 
   {/* CONTENT */}
   <div className="relative z-10 max-w-4xl mx-auto text-center">

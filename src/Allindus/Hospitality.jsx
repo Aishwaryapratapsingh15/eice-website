@@ -1,5 +1,5 @@
 ﻿"use client";
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "@/nextNavigation";
 import TalkToUs from "../Othercomps/Talktous";
 import ProductFooter from "@/Product/ProductFooter";
@@ -156,60 +156,128 @@ const steps = [
 
 // ─── CASE STUDIES ────────────────────────────────────────────────────────────
 
-const caseStudyTabs = ["Hospitality", "Oil and Gas", "Healthcare industry", "automobile industry"];
+const cs_industries = [
+  { id: "Hospitality", name: "Hospitality" },
+  { id: "Oil and Gas", name: "Oil and Gas" },
+  { id: "Healthcare industry", name: "Healthcare industry" },
+  { id: "automobile industry", name: "automobile industry" },
+];
 
-const caseStudies = {
-  Hospitality: [
+const cs_projects = {
+  "Hospitality": [
     {
       title: "Transforming Operational Efficiency for SalesVu",
-      desc: "HDBS sought a transformative digital solution to overcome the challenges of managing its diverse operations and engaging a geographically dispersed global community while maintaining...",
-      link: "/case-studies/durgabari",
+      description: "HDBS sought a transformative digital solution to overcome the challenges of managing its diverse operations and engaging a geographically dispersed global community while maintaining...",
       img: "https://d3r43jacxrwsrp.cloudfront.net/Rise/caseStudy/android.webp",
     },
     {
       title: "Empowering Community Operations for Houston Durga Bari Society",
-      desc: "The Indian International Center (IIC) faced the challenge of managing complex, multi-user interactions while ensuring secure access and operational efficiency across admin, user, and guest roles.",
-      link: "/case-studies/iic",
+      description: "The Indian International Center (IIC) faced the challenge of managing complex, multi-user interactions while ensuring secure access and operational efficiency across admin, user, and guest roles.",
       img: "https://d3r43jacxrwsrp.cloudfront.net/Rise/caseStudy/durga.webp",
     },
     {
       title: "Empowering Indian International Center (IIC)",
-      desc: "The Indian International Center (IIC) faced the challenge of managing complex, multi-user interactions while ensuring secure access and operational efficiency across admin, user, and guest roles.",
-      link: "/case-studies/iic",
+      description: "The Indian International Center (IIC) faced the challenge of managing complex, multi-user interactions while ensuring secure access and operational efficiency across admin, user, and guest roles.",
       img: "https://d3r43jacxrwsrp.cloudfront.net/Rise/caseStudy/IIC.webp",
     },
   ],
   "Oil and Gas": [
     {
       title: "Noralta SCADA Implementation",
-      desc: "Robust industrial control system enabling real-time monitoring and control of field operations for Noralta.",
-      link: "/case-studies/noralta-scada",
+      description: "Robust industrial control system enabling real-time monitoring and control of field operations for Noralta.",
       img: "https://d3r43jacxrwsrp.cloudfront.net/Petroleum/scada.jpg",
     },
     {
       title: "PetroSIM Refinery Simulation",
-      desc: "Comprehensive petroleum simulation tool for refinery operations with advanced modeling and process optimization.",
-      link: "/case-studies/petro-sim",
+      description: "Comprehensive petroleum simulation tool for refinery operations with advanced modeling and process optimization.",
       img: "https://d3r43jacxrwsrp.cloudfront.net/Petroleum/petrosim.jpeg",
     },
   ],
   "Healthcare industry": [
     {
       title: "AI-Powered Healthcare Solutions",
-      desc: "Transforming patient care with intelligent diagnostics, telemedicine, and clinical management platforms.",
-      link: "/case-studies/inventory-ai",
+      description: "Transforming patient care with intelligent diagnostics, telemedicine, and clinical management platforms.",
       img: "https://d3r43jacxrwsrp.cloudfront.net/medical/aipdt.jpeg",
     },
   ],
   "automobile industry": [
     {
       title: "Autonomous Driving AI",
-      desc: "Machine learning model improving object detection accuracy by 30% in diverse weather conditions.",
-      link: "/case-studies/voice-call-ai",
+      description: "Machine learning model improving object detection accuracy by 30% in diverse weather conditions.",
       img: "https://d3r43jacxrwsrp.cloudfront.net/Automobile/adai.jpeg",
     },
   ],
 };
+
+const CaseStudy = ({ title, description, image }) => (
+  <div className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 md:p-4">
+    <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
+      <img
+        src={image?.src || image}
+        alt={title}
+        className="w-full h-32 sm:h-40 md:h-48 object-cover transition duration-300 filter grayscale hover:grayscale-0"
+      />
+      <div className="p-3 md:p-4">
+        <h3 className="fontweight_1 text-[24px] sm:text-base md:text-lg mb-1 sm:mb-2">{title}</h3>
+        <p className="text-gray-600 text-[16px] sm:text-sm">{description}</p>
+      </div>
+    </div>
+  </div>
+);
+
+function Cstdmain() {
+  const [activeIndustry, setActiveIndustry] = useState(cs_industries[0].id);
+  return (
+    <div className="font-manrope px-5 sm:px-6 lg:px-8">
+      <h2 className="text-bloo fontweight_1 text-center text-[22px] sm:text-[25px] py-2">
+        Case Studies
+      </h2>
+      <h1 className="text-blackk fontweight_1 text-center text-[32px] sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1 pb-8">
+        Explore how we digitally transformed other businesses
+      </h1>
+      <main className="mx-auto max-w-7xl">
+        <nav className="mb-8 sm:mb-12">
+          <ul className="grid grid-cols-2 sm:flex sm:flex-wrap sm:justify-center gap-2 sm:gap-4">
+            {cs_industries.map((industry) => (
+              <li key={industry.id} className="w-full sm:w-auto">
+                <button
+                  onClick={() => setActiveIndustry(industry.id)}
+                  className={`w-full sm:w-auto px-3 py-1 sm:px-4 sm:py-2 text-sm sm:text-base rounded-full transition ${
+                    activeIndustry === industry.id
+                      ? "bg-blue-900 text-white"
+                      : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                  }`}
+                >
+                  {industry.name}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </nav>
+        {cs_industries.map((industry) => (
+          <section
+            key={industry.id}
+            className={`mb-12 ${activeIndustry === industry.id ? "block" : "hidden"}`}
+          >
+            <h2 className="text-[24px] px-2 sm:text-2xl fontweight_1 mb-4 sm:mb-6">
+              {industry.name}
+            </h2>
+            <div className="flex flex-wrap -mx-2">
+              {(cs_projects[industry.id] || []).map((project, index) => (
+                <CaseStudy
+                  key={index}
+                  title={project.title}
+                  description={project.description}
+                  image={project.img}
+                />
+              ))}
+            </div>
+          </section>
+        ))}
+      </main>
+    </div>
+  );
+}
 
 // ─── TESTIMONIALS ─────────────────────────────────────────────────────────────
 
@@ -240,25 +308,71 @@ const testimonials = [
 // ─── MAIN COMPONENT ──────────────────────────────────────────────────────────
 
 export default function Hospitality() {
-  const [activeCaseTab, setActiveCaseTab] = useState("Hospitality");
+  const scrollRef = useRef(null);
+  const animRef = useRef(null);
+  const isPaused = useRef(false);
+  const touchStartX = useRef(0);
+  const [mobileIndex, setMobileIndex] = useState(0);
+
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    const step = () => {
+      if (!isPaused.current) {
+        el.scrollLeft += 0.6;
+        if (el.scrollLeft >= el.scrollWidth / 2) el.scrollLeft = 0;
+      }
+      const firstCard = el.children[0];
+      if (firstCard) {
+        const cardWidth = firstCard.offsetWidth + 16;
+        const idx = Math.round(el.scrollLeft / cardWidth) % testimonials.length;
+        setMobileIndex(idx < 0 ? 0 : idx);
+      }
+      animRef.current = requestAnimationFrame(step);
+    };
+    animRef.current = requestAnimationFrame(step);
+    return () => cancelAnimationFrame(animRef.current);
+  }, []);
+
+  const handleTouchStart = (e) => {
+    touchStartX.current = e.touches[0].clientX;
+    isPaused.current = true;
+  };
+  const handleTouchMove = (e) => {
+    const el = scrollRef.current;
+    if (!el) return;
+    const diff = touchStartX.current - e.touches[0].clientX;
+    el.scrollLeft += diff;
+    touchStartX.current = e.touches[0].clientX;
+    if (el.scrollLeft >= el.scrollWidth / 2) el.scrollLeft -= el.scrollWidth / 2;
+    else if (el.scrollLeft < 0) el.scrollLeft += el.scrollWidth / 2;
+  };
+  const handleTouchEnd = () => {
+    setTimeout(() => { isPaused.current = false; }, 800);
+  };
 
   return (
     <div className="font-manrope">
 
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="sm:max-w-7xl w-screen mx-auto px-4 pt-32 pb-12">
-        <div className="w-full grid grid-cols-3 gap-4 mb-10">
-          <img src={heroImg1} alt="Hospitality technology solutions" className="w-full h-48 sm:h-64 object-cover rounded-xl" />
-          <img src={heroImg2} alt="Hotel management software" className="w-full h-48 sm:h-64 object-cover rounded-xl" />
-          <img src={heroImg3} alt="EICE Rise ERP for hospitality" className="w-full h-48 sm:h-64 object-cover rounded-xl" />
+      <section className="sm:max-w-7xl w-screen mx-auto px-4 pt-32 pb-8 sm:pb-12">
+        {/* Desktop: 3 images */}
+        <div className="hidden sm:grid grid-cols-3 gap-4 mb-10">
+          <img src={heroImg1} alt="Hospitality technology solutions" className="w-full h-64 object-cover rounded-xl" />
+          <img src={heroImg2} alt="Hotel management software" className="w-full h-64 object-cover rounded-xl" />
+          <img src={heroImg3} alt="EICE Rise ERP for hospitality" className="w-full h-64 object-cover rounded-xl" />
+        </div>
+        {/* Mobile: only first image full-width */}
+        <div className="sm:hidden mb-4">
+          <img src={heroImg1} alt="Hospitality technology solutions" className="w-full h-48 object-cover rounded-xl" />
         </div>
 
         <div className="max-w-4xl mx-auto text-center flex flex-col gap-4">
-          <h1 className="text-blackk fontweight_1 text-center text-2xl sm:text-2xl md:text-3xl lg:text-[32px] max-w-3xl mx-auto pb-4">
+          <h1 className="text-blackk fontweight_1 text-center text-[32px] sm:text-2xl md:text-3xl lg:text-[32px] max-w-3xl mx-auto pb-4">
             <span className="text-bloo">Powering Hospitality</span> Excellence with
             Integrated Technology Solutions
           </h1>
-          <p className="font-medium text-blackk/70 sm:text-xl text-lg leading-relaxed max-w-4xl mx-auto">
+          <p className="font-medium text-blackk/70 text-[16px] sm:text-xl leading-relaxed max-w-4xl mx-auto">
             The hospitality industry demands seamless coordination across every touchpoint — from the
             front desk to the kitchen, the boardroom to the banquet hall. At EICE Technology, we
             understand these complexities. Through{" "}
@@ -277,50 +391,50 @@ export default function Hospitality() {
       </section>
 
       {/* ── KEY SERVICES ─────────────────────────────────────────────────── */}
-      <section className="py-16">
+      <section className="pb-8 sm:py-16">
         <div className="sm:max-w-7xl w-screen mx-auto px-4">
 
           {/* Section Heading */}
-          <div className="text-center mb-14">
-            <h2 className="text-bloo fontweight_1 text-center fontsize_2 py-2">Key Services</h2>
-            <h3 className="text-blackk fontweight_1 text-center text-2xl sm:text-2xl md:text-3xl lg:text-[32px] max-w-3xl mx-auto">
+          <div className="text-center mb-4 sm:mb-14">
+            <h2 className="text-bloo fontweight_1 text-center text-[22px] sm:text-[25px] py-2">Key Services</h2>
+            <h3 className="text-blackk fontweight_1 text-center text-[32px] sm:text-2xl md:text-3xl lg:text-[32px] max-w-3xl mx-auto">
               Everything your property needs to run seamlessly — from front desk to
               back office, all in one platform.
             </h3>
           </div>
 
-          <div className="flex flex-col gap-16">
+          <div className="flex flex-col gap-4 sm:gap-16">
             {services.map((svc, index) => (
               <div key={svc.id}>
 
                 {/* Image + Content — 50/50 split, alternating sides */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-6">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-8 mb-4 sm:mb-6">
                   {/* Image — moves to right on odd rows */}
                   <div className={`w-full${index % 2 !== 0 ? " lg:order-last" : ""}`}>
                     <img src={svc.image} alt={svc.title} className="w-full h-full object-cover rounded-xl" />
                   </div>
 
                   {/* Right — Title + Challenge + Solution */}
-                  <div className="flex flex-col gap-5 justify-center">
+                  <div className="flex flex-col gap-4 justify-center">
                     {/* Service Title */}
-                    <h3 className="text-blackk fontweight_1 text-2xl sm:text-2xl md:text-3xl lg:text-[32px]">{svc.title}</h3>
+                    <h3 className="text-blackk fontweight_1 text-[32px] sm:text-2xl md:text-3xl lg:text-[32px]">{svc.title}</h3>
                     <div>
-                      <h4 className="fontweight_1 text-blackk sm:text-xl text-lg mb-2">The Challenge</h4>
-                      <p className="font-medium text-blackk/70 sm:text-xl text-lg leading-relaxed">"{svc.challenge}"</p>
+                      <h4 className="fontweight_1 text-blackk text-[16px] sm:text-xl mb-2">The Challenge</h4>
+                      <p className="font-medium text-blackk/70 text-[16px] sm:text-xl leading-relaxed">"{svc.challenge}"</p>
                     </div>
                     <div>
-                      <h4 className="fontweight_1 text-blackk sm:text-xl text-lg mb-2">The Solution</h4>
-                      <p className="font-medium text-blackk/70 sm:text-xl text-lg leading-relaxed">{svc.solution}</p>
+                      <h4 className="fontweight_1 text-blackk text-[16px] sm:text-xl mb-2">The Solution</h4>
+                      <p className="font-medium text-blackk/70 text-[16px] sm:text-xl leading-relaxed">{svc.solution}</p>
                     </div>
                   </div>
                 </div>
 
                 {/* Modules — full width below */}
                 <div>
-                  <h4 className="fontweight_1 text-blackk sm:text-xl text-lg mb-3">Modules:</h4>
+                  <h4 className="fontweight_1 text-blackk text-[16px] sm:text-xl mb-3">Modules:</h4>
                   <div className="flex flex-wrap gap-2">
                     {svc.modules.map((mod) => (
-                      <span key={mod} className="px-3 py-1.5 text-sm font-medium rounded-full border border-[#a0e1fa] bg-[#dcf5ff] text-blackk">
+                      <span key={mod} className="px-3 py-1.5 text-[14px] sm:text-sm font-medium rounded-full border border-[#a0e1fa] bg-[#dcf5ff] text-blackk">
                         {mod}
                       </span>
                     ))}
@@ -328,7 +442,7 @@ export default function Hospitality() {
                 </div>
 
                 {/* Divider */}
-                <div className="border-b border-gray-200 mt-12" />
+                <div className="border-b border-gray-200 mt-4 sm:mt-12" />
               </div>
             ))}
           </div>
@@ -336,23 +450,23 @@ export default function Hospitality() {
       </section>
 
       {/* ── IMPLEMENTATION APPROACH ──────────────────────────────────────── */}
-      <section className="py-16 sm:max-w-7xl w-screen mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-blackk fontweight_1 text-center text-2xl sm:text-2xl md:text-3xl lg:text-[32px] max-w-3xl mx-auto pb-4">EICE Rise Implementation Approach</h2>
-          <p className="font-medium text-blackk/70 sm:text-xl text-lg max-w-3xl mx-auto mt-3">
+      <section className="pb-8 sm:py-16 sm:max-w-7xl w-screen mx-auto px-4">
+        <div className="text-center mb-4 sm:mb-12">
+          <h2 className="text-blackk fontweight_1 text-center text-[32px] sm:text-2xl md:text-3xl lg:text-[32px] max-w-3xl mx-auto pb-4">EICE Rise Implementation Approach</h2>
+          <p className="font-medium text-blackk/70 text-[16px] sm:text-xl max-w-3xl mx-auto mt-3">
             Empowering Hospitality Businesses with a Turnkey ERP Implementation — Operational from Day One
           </p>
         </div>
 
         {/* Steps Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mt-10 items-stretch">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mt-4 sm:mt-10 items-stretch">
           {steps.map((step, index) => (
             <div key={step.number} className="relative h-full p-5 bg-white rounded-xl border border-gray-200 flex flex-col gap-3">
               <div className="w-12 h-12 bg-blue-900 rounded-xl flex items-center justify-center flex-shrink-0">
                 <img src={step.icon} alt={step.title} className="w-7 h-7 object-contain" />
               </div>
-              <h4 className="fontweight_1 text-blackk text-base">{step.title}</h4>
-              <p className="text-blackk/60 font-medium text-xs leading-relaxed">{step.desc}</p>
+              <h4 className="fontweight_1 text-blackk text-[24px] sm:text-base">{step.title}</h4>
+              <p className="text-blackk/60 font-medium text-[16px] sm:text-xs leading-relaxed">{step.desc}</p>
               {index < steps.length - 1 && (
                 <div className="hidden lg:flex absolute top-1/2 -translate-y-1/2 z-10" style={{ right: "-30px" }}>
                   <div className="w-11 h-11 rounded-lg border-2 border-blue-900 flex items-center justify-center bg-white">
@@ -366,79 +480,75 @@ export default function Hospitality() {
       </section>
 
       {/* ── CASE STUDIES ─────────────────────────────────────────────────── */}
-      <section className="bg-zinc-50 py-16">
-        <div className="sm:max-w-7xl w-screen mx-auto px-4">
-          <div className="text-center mb-10">
-            <h2 className="text-bloo fontweight_1 fontsize_2 py-2">Case Studies</h2>
-            <h3 className="text-blackk fontweight_1 text-center text-2xl sm:text-2xl md:text-3xl lg:text-[32px] max-w-3xl mx-auto">
-              Explore how we digitally transformed other businesses
-            </h3>
-          </div>
-
-          {/* Tabs */}
-          <div className="flex flex-wrap justify-center gap-3 mb-10">
-            {caseStudyTabs.map((tab) => (
-              <button
-                key={tab}
-                onClick={() => setActiveCaseTab(tab)}
-                className={`px-5 py-2 rounded-full text-sm font-semibold transition ${
-                  activeCaseTab === tab
-                    ? "bg-blue-900 text-white"
-                    : "bg-white text-gray-600 border border-gray-300 hover:border-bloo hover:text-bloo"
-                }`}
-              >
-                {tab}
-              </button>
-            ))}
-          </div>
-
-          {/* Cards */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {(caseStudies[activeCaseTab] || []).map((cs, i) => (
-              <Link
-                key={i}
-                href={cs.link}
-                className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md border border-gray-100 transition group"
-              >
-                <img src={cs.img} alt={cs.title} className="w-full h-44 object-cover" />
-                <div className="p-5">
-                  <h4 className="fontweight_1 text-blackk text-base mb-2 group-hover:text-bloo transition">
-                    {cs.title}
-                  </h4>
-                  <p className="text-blackk/70 text-sm font-medium leading-relaxed">{cs.desc}</p>
-                  <span className="inline-block mt-3 text-bloo text-sm fontweight_1">
-                    View more →
-                  </span>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
+      <section className="bg-zinc-50 pb-8 sm:py-16">
+        <Cstdmain />
       </section>
 
       {/* ── TESTIMONIALS ─────────────────────────────────────────────────── */}
-      <section className="py-16 sm:max-w-7xl w-screen mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-bloo fontweight_1 fontsize_2 py-2">Testimonials</h2>
-          <h3 className="text-blackk fontweight_1 text-center text-2xl sm:text-2xl md:text-3xl lg:text-[32px] max-w-3xl mx-auto">
+      <section className="pb-8 sm:py-16 sm:max-w-7xl w-screen mx-auto px-4">
+        <div className="text-center mb-4 sm:mb-12">
+          <h2 className="text-bloo fontweight_1 text-[22px] sm:text-[25px] py-2">Testimonials</h2>
+          <h3 className="text-blackk fontweight_1 text-center text-[32px] sm:text-2xl md:text-3xl lg:text-[32px] max-w-3xl mx-auto">
             Trusted by Over 60+ Companies in the Past Decade. Join Our Success Story!
           </h3>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        {/* Mobile: auto-scroll carousel */}
+        <div
+          ref={scrollRef}
+          className="sm:hidden flex overflow-hidden gap-4 pb-4"
+          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
+        >
+          {[...testimonials, ...testimonials].map((t, i) => (
+            <div
+              key={i}
+              className="flex-shrink-0 w-[82vw] bg-white rounded-xl p-6 shadow-sm border border-gray-100 flex flex-col gap-4"
+            >
+              <FaQuoteLeft size={28} className="text-bloo/30" />
+              <h4 className="fontweight_1 text-blackk text-[24px] sm:text-lg leading-snug">{t.title}</h4>
+              <p className="text-blackk/70 font-medium text-[16px] leading-relaxed flex-1">
+                &ldquo;{t.quote}&rdquo;
+              </p>
+              <div className="border-t border-gray-100 pt-4">
+                <p className="fontweight_1 text-blackk text-[14px] sm:text-sm">{t.name}</p>
+                <p className="text-blackk/60 text-[14px] sm:text-xs mt-1">{t.role}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Mobile dots */}
+        <div className="sm:hidden flex justify-center pt-4 space-x-2">
+          {testimonials.map((_, index) => (
+            <div
+              key={index}
+              className={`${
+                mobileIndex === index
+                  ? "px-3 py-1 rounded-xl bg-blue-900"
+                  : "px-3 py-1 rounded-xl bg-bloo/30"
+              }`}
+            />
+          ))}
+        </div>
+
+        {/* Desktop: 3-card grid */}
+        <div className="hidden sm:grid grid-cols-1 lg:grid-cols-3 gap-6">
           {testimonials.map((t, i) => (
             <div
               key={i}
               className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 flex flex-col gap-4 hover:shadow-md transition"
             >
               <FaQuoteLeft size={28} className="text-bloo/30" />
-              <h4 className="fontweight_1 text-blackk text-lg leading-snug">{t.title}</h4>
-              <p className="text-blackk/70 font-medium text-base leading-relaxed flex-1">
+              <h4 className="fontweight_1 text-blackk text-[24px] sm:text-lg leading-snug">{t.title}</h4>
+              <p className="text-blackk/70 font-medium text-[16px] leading-relaxed flex-1">
                 &ldquo;{t.quote}&rdquo;
               </p>
               <div className="border-t border-gray-100 pt-4">
-                <p className="fontweight_1 text-blackk text-sm">{t.name}</p>
-                <p className="text-blackk/60 text-xs mt-1">{t.role}</p>
+                <p className="fontweight_1 text-blackk text-[14px] sm:text-sm">{t.name}</p>
+                <p className="text-blackk/60 text-[14px] sm:text-xs mt-1">{t.role}</p>
               </div>
             </div>
           ))}
@@ -448,13 +558,13 @@ export default function Hospitality() {
 
       {/* ── CTA BANNER ────────────────────────────────────────────────────── */}
       <section
-        className="py-16 bg-no-repeat bg-cover bg-center relative"
+        className="pb-8 sm:py-16 bg-no-repeat bg-cover bg-center relative"
         style={{ backgroundImage: `url(${BASE}/cta_img.png)` }}
       >
         <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(0,0,0,0.75) 40%, transparent 80%)" }} />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="max-w-lg flex flex-col gap-6">
-            <h2 className="text-white fontweight_1 text-2xl sm:text-3xl leading-snug">
+          <div className="max-w-lg flex flex-col gap-4 sm:gap-6">
+            <h2 className="text-white fontweight_1 text-[32px] sm:text-3xl leading-snug">
               Our strength lies in delivering innovative, Industry-Specific Solutions. Partner with EICE to transform your hospitality business and achieve Exceptional Results.
             </h2>
             <div>

@@ -130,14 +130,14 @@ export default function IsyncLitePage() {
     <div className="font-poppins">
 
       {/* ================= HERO ================= */}
-      <section className="text-center py-16 px-4 md:px-10 lg:px-20 xl:px-40 mt-10">
+      <section className="text-center pb-4 pt-16 sm:pb-16 px-4 md:px-10 lg:px-20 xl:px-40 mt-10">
         <div className="max-w-[1200px] mx-auto">
 
           {/* IMAGE */}
-          <img src={heroImg} alt="Hero" className="mx-auto mb-6 w-72 md:w-96 lg:w-[480px]" />
+          <img src={heroImg} alt="Hero" className="mx-auto pb-4 lg:mb-6 md:mb-6 md:w-96 lg:w-[480px]" />
 
           {/* BADGE */}
-                  <span className="inline-flex items-center gap-2 bg-blue-50 text-[#334155] px-3 py-2 rounded-full text-sm font-medium border border-blue-200">
+                  <span className="lg:inline-flex md:inline-flex flex w-fit mx-auto items-center md:items-center gap-2 bg-blue-50 text-[#334155] px-3 py-2 rounded-full text-sm font-medium border border-blue-200">
             
             <img 
               src={shieldIcon} 
@@ -149,19 +149,19 @@ export default function IsyncLitePage() {
           </span>
 
           {/* HEADING */}
-          <h1 className="text-3xl md:text-5xl text-[#334155] font-bold leading-relaxed mt-6 mb-6">
+          <h1 className="text-[40px] lg:text-3xl md:text-5xl text-[#334155] font-bold leading-[48px] lg:mt-6 md:mt-6 lg:mb-6 md:mb-6 py-4">
             <span className="text-[#01B0F1]">Secure</span> Enterprise Backup & Recovery <br />
             with <span className="text-[#01B0F1]">Full Data Control</span>
           </h1>
 
           {/* SUBTEXT */}
-          <p className="text-[#64748B] max-w-[800px] mx-auto mb-8 text-sm md:text-lg">
+          <p className="text-[#64748B] max-w-[800px] mx-auto lg:mb-8 md:mb-8 sm:mb-8 pb-4 text-[18px] md:text-lg">
             A secure, intelligent backup platform designed to protect enterprise data with automated backups,
             end-to-end encryption, and reliable recovery—without disrupting business operations.
           </p>
 
           {/* BUTTON */}
-                   <div className="mt-8 flex flex-wrap justify-center gap-4">
+                   <div className="lg:mt-8 md:mt-8 sm:mt-8 flex flex-wrap justify-start lg:justify-center md:justify-center sm:justify-center gap-4">
           
                 {/* Primary */}
                 <button onClick={() => navigate("/products/eicerise/form")} 
@@ -182,16 +182,16 @@ export default function IsyncLitePage() {
       </section>
 
       {/* ================= WHAT IS ================= */}
-      <section className="py-10 px-4 md:px-10 lg:px-20 xl:px-40">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-[1.1fr_1fr] gap-16 items-center">
+      <section className="py-4 px-5 sm:py-10 sm:px-4 md:px-10 lg:px-20 xl:px-40">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-[1.1fr_1fr] sm:gap-16 items-center gap-4">
 
           {/* LEFT */}
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#334155]">
+            <h2 className="text-[32px] pb-4 sm:text-2xl lg:text-2xl md:text-3xl font-bold sm:mb-4 text-[#334155]">
               What is iSyncLite?
             </h2>
 
-            <p className="text-[#64748B] font-semibold mb-6 leading-8 space-y-6">
+            <p className="text-[18px] leading-[48px] pb-4 text-[#64748B] font-semibold sm:mb-6 sm:leading-8 sm:space-y-6">
               iSyncLite is an enterprise-grade backup and recovery platform built for modern data protection needs.
             </p>
 
@@ -225,27 +225,27 @@ export default function IsyncLitePage() {
       </section>
 
       {/* ================= CHALLENGES ================= */}
-      <section className="py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
+      <section className="py-4 px-5 sm:py-10 sm:px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
         <div className="max-w-6xl mx-auto text-center">
 
-          <h2 className="text-2xl md:text-4xl font-bold text-[#334155] mb-5">
+          <h2 className="text-[32px] sm:text-2xl md:text-4xl font-bold text-[#334155] sm:mb-5 pb-4">
             Enterprise Data Protection Challenges
           </h2>
-          <h6 className="text-2xl md:text-xl font-semibold text-[#64748B] mb-10">
+          <h6 className="text-[22px] sm:text-2xl md:text-xl font-semibold text-[#64748B] sm:mb-10 pb-4">
             Organizations face critical challenges in protecting their data. < br />
 iSyncLite addresses these head-on.
           </h6>
 
-          <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 sm:gap-6 gap-4">
 
            {data.map((item, i) => (
-              <div key={i} className="bg-white rounded-xl  border-1 border border-[#E2E8F0] shadow-sm hover:shadow-md transition p-6 flex flex-col items-start text-start gap-4">
+              <div key={i} className="bg-white rounded-xl  border-1 border border-[#E2E8F0] shadow-sm hover:shadow-md transition sm:p-6 p-4 flex flex-col items-start text-start gap-4">
                 <div className="rounded-lg flex items-start justify-center">
                   <img src={item.icon} alt="" className="w-14 h-14 object-contain" />
                 </div>
-                <h3 className="font-bold text-2xl text-[#334155] whitespace-pre-line">{item.title}</h3>
+                <h3 className="font-bold text-[24px] sm:text-2xl text-[#334155] sm:whitespace-pre-line">{item.title}</h3>
 
-                 <p className="text-[#64748B] text-lg leading-relaxed">
+                 <p className="text-[#64748B] text-[16px] sm:text-lg leading-relaxed">
           {item.desc}
         </p>
               </div>
@@ -256,17 +256,17 @@ iSyncLite addresses these head-on.
       </section>
 
       {/* ================= CAPABILITIES ================= */}
-     <section className="py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
-        <h2 className="text-2xl md:text-4xl font-bold text-[#334155] mb-5 text-center">
+     <section className="sm:py-10 py-4 px-5 md:px-10 lg:px-20 xl:px-40 bg-white">
+        <h2 className="text-[32px] pb-4 md:text-4xl font-bold text-[#334155] sm:mb-5 text-center">
           Core Capabilities
         </h2>
-        <h4 className="text-xl text-[#64748B] font-semibold text-center mb-10 max-w-3xl mx-auto">
+        <h4 className="text-[22px] sm:text-xl text-[#64748B] font-semibold text-center sm:mb-10 max-w-3xl mx-auto pb-4">
           Along with secure storage, iSyncDrive enables controlled file and folder sharing to support collaborations across teams and locations        </h4>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:gap-6 gap-4">
           {capabilities.map((item, i) => (
              <div
         key={i}
-        className="bg-white rounded-xl  border-1 border border-[#E2E8F0] shadow-sm hover:shadow-md transition p-6 flex flex-col items-start text-start gap-4"
+        className="bg-white rounded-xl  border-1 border border-[#E2E8F0] shadow-sm hover:shadow-md transition sm:p-6 p-4 flex flex-col items-start text-start gap-4"
       >
 
         {/* SVG */}
@@ -275,12 +275,12 @@ iSyncLite addresses these head-on.
         </div>
 
         {/* TITLE */}
-        <h3 className="font-bold text-2xl text-[#334155]">
+        <h3 className="font-bold text-[24px] sm:text-2xl text-[#334155]">
           {item.title}
         </h3>
 
         {/* SMALL TEXT */}
-        <p className="text-[#64748B] text-lg leading-relaxed">
+        <p className="text-[#64748B] text-[16px] sm:text-lg leading-relaxed">
           {item.desc}
         </p>
 
@@ -305,26 +305,26 @@ iSyncLite addresses these head-on.
       </section>
 
       {/* ================= HOW IT WORKS ================= */}
-<section className="py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
+<section className="sm:py-10 px-5 md:px-10 lg:px-20 xl:px-40 bg-white">
 
   {/* Heading */}
-  <div className="max-w-6xl mx-auto text-center mb-7">
+  <div className="max-w-6xl mx-auto text-center sm:mb-7">
     {/* <h2 className="text-4xl font-bold"> */}
-    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold">
+    <h2 className="text-[32px] sm:text-3xl md:text-4xl font-bold pb-4">
       How it Works
     </h2>
-    <p className="text-[#64748B] font-semibold mt-6 text-xl">
+    <p className="text-[22px] text-[#64748B] font-semibold pb-4">
       A proven continuous journey from planning to optimization
     </p>
   </div>
 
   {/* Cards */}
-  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 sm:gap-6 gap-4">
 
     {steps.map((item, i) => (
       <div
         key={i}
-        className="relative bg-white border border border-[#E2E8F0] rounded-xl p-6 flex flex-col items-center text-center gap-4 min-h-[220px]"
+        className="relative bg-white border border border-[#E2E8F0] rounded-xl sm:p-6 p-4 flex flex-col sm:items-center items-start sm:text-center text-start gap-4 min-h-[220px]"
       >
         {/* ICON */}
         <div className="w-12 h-12 flex items-center justify-center text-white rounded-lg text-xl">
@@ -332,12 +332,12 @@ iSyncLite addresses these head-on.
         </div>
 
         {/* TITLE */}
-        <h3 className="text-2xl font-bold text-[#334155]]">
+        <h3 className="text-[24px] sm:text-2xl font-bold text-[#334155]]">
           {item.title}
         </h3>
 
         {/* DESCRIPTION */}
-        <p className="text-[#64748B] font-semibold text-lg leading-relaxed">
+        <p className="text-[16px] text-[#64748B] font-semibold sm:text-lg leading-relaxed">
           {item.desc}
         </p>
 
@@ -349,15 +349,15 @@ iSyncLite addresses these head-on.
 </section>
 
       {/* ================= BENEFITS ================= */}
-<section className="bg-white py-10 px-4 md:px-10 lg:px-20 xl:px-40">
+<section className="bg-white py-4 sm:py-10 px-5 md:px-10 lg:px-20 xl:px-40">
   <div className="max-w-[1100px] mx-auto">
 
     {/* Heading */}
-    <div className="text-center mb-10 sm:mb-14">
-      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#334155]">
+    <div className="text-center sm:mb-14">
+      <h2 className="text-[32px] sm:text-3xl md:text-4xl font-bold text-[#334155] pb-4">
         Key Benefits for Enterprises
       </h2>
-      <p className="mt-3 text-sm sm:text-base md:text-xl text-[#64748B] font-semibold">
+      <p className="pb-4 sm:mt-3 text-[22px] sm:text-base md:text-xl text-[#64748B] font-semibold">
         Transform your backup operations into a strategic advantage.
       </p>
     </div>
@@ -373,10 +373,10 @@ iSyncLite addresses these head-on.
         </div>
 
         <div>
-          <h3 className="text-base sm:text-lg md:text-xl font-bold text-[#334155]">
+          <h3 className="text-[18px] sm:text-lg md:text-xl font-bold text-[#334155]">
             Reduced Risk of Data Loss
           </h3>
-          <p className="mt-1 text-sm sm:text-base text-[#64748B] leading-relaxed font-semibold">
+          <p className="mt-1 text-[18px] sm:text-base text-[#64748B] leading-relaxed font-semibold">
             Comprehensive backup coverage ensures your critical business data is always protected.
           </p>
         </div>
@@ -388,10 +388,10 @@ iSyncLite addresses these head-on.
           <img src={kbtIcon} alt="icon" className="w-14 h-14 object-contain" />
         </div>
         <div>
-          <h3 className="text-base sm:text-lg md:text-xl font-bold text-[#334155]">
+          <h3 className="text-[18px] sm:text-lg md:text-xl font-bold text-[#334155]">
             Faster Recovery and Minimal Downtime
           </h3>
-          <p className="mt-1 text-sm sm:text-base text-[#64748B] leading-relaxed font-semibold">
+          <p className="mt-1 text-[18px] sm:text-base text-[#64748B] leading-relaxed font-semibold">
             Rapid restore capabilities get your systems back online quickly when incidents occur.
           </p>
         </div>
@@ -403,10 +403,10 @@ iSyncLite addresses these head-on.
           <img src={kbtIcon} alt="icon" className="w-14 h-14 object-contain" />
         </div>
         <div>
-          <h3 className="text-base sm:text-lg md:text-xl font-bold text-[#334155]">
+          <h3 className="text-[18px] sm:text-lg md:text-xl font-bold text-[#334155]">
             Simplified Backup Operations
           </h3>
-          <p className="mt-1 text-sm sm:text-base text-[#64748B] leading-relaxed font-semibold">
+          <p className="mt-1 text-[18px] sm:text-base text-[#64748B] leading-relaxed font-semibold">
             Automation and intelligent scheduling reduce manual effort and operational complexity.
           </p>
         </div>
@@ -418,10 +418,10 @@ iSyncLite addresses these head-on.
           <img src={kbtIcon} alt="icon" className="w-14 h-14 object-contain" />
         </div>
         <div>
-          <h3 className="text-base sm:text-lg md:text-xl font-bold text-[#334155]">
+          <h3 className="text-[18px] sm:text-lg md:text-xl font-bold text-[#334155]">
             Compliance-Ready Data Retention
           </h3>
-          <p className="mt-1 text-sm sm:text-base text-[#64748B] leading-relaxed font-semibold">
+          <p className="mt-1 text-[18px] sm:text-base text-[#64748B] leading-relaxed font-semibold">
             Meet regulatory requirements with audit trails and policy-based retention management.
           </p>
         </div>
@@ -433,10 +433,10 @@ iSyncLite addresses these head-on.
           <img src={kbtIcon} alt="icon" className="w-14 h-14 object-contain" />
         </div>
         <div>
-          <h3 className="text-base sm:text-lg md:text-xl font-bold text-[#334155]">
+          <h3 className="text-[18px] sm:text-lg md:text-xl font-bold text-[#334155]">
             Cost-Efficient Backup Management
           </h3>
-          <p className="mt-1 text-sm sm:text-base text-[#64748B] leading-relaxed font-semibold">
+          <p className="mt-1 text-[18px] sm:text-base text-[#64748B] leading-relaxed font-semibold">
             Optimize storage costs with incremental backups and intelligent data deduplication.
           </p>
         </div>
@@ -447,27 +447,27 @@ iSyncLite addresses these head-on.
 </section>
 
       {/* ================= DEPLOYMENT ================= */}
-      <section className="py-10 px-20 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
+      <section className="py-4 sm:py-10 px-5 md:px-10 lg:px-20 xl:px-40 bg-white">
         <div className="max-w-6xl mx-auto text-center">
 
-          <h2 className="text-2xl md:text-4xl font-bold mb-6 text-[#334155]">
+          <h2 className="text-[32px] md:text-4xl font-bold sm:mb-6 pb-4 text-[#334155]">
             Deployment & Flexibility
           </h2>
-           <p className="text-sm sm:text-base md:text-xl text-[#64748B] font-semibold mb-6">
+           <p className="text-[22px] sm:text-base md:text-xl text-[#64748B] font-semibold sm:mb-6 pb-4">
         Deploy iSyncLite where it works best for your infrastructure.
       </p>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-3 sm:gap-6 gap-4">
 
             {deploy.map((item, i) => (
-              <div key={i} className="p-6 rounded-xl shadow-sm bg-[#EFFAFF] border border-[#E2E8F0]">
-                <div className="w-10 h-10 mb-4 mx-auto">
+              <div key={i} className="p-4 sm:p-6 rounded-xl shadow-sm bg-[#EFFAFF] border border-[#E2E8F0]">
+                <div className="w-14 h-14 mb-4 sm:mx-auto">
                   <img src={item.icon} alt="icon" className="w-full h-full object-contain" />
                   </div>
-                  <h3 className="font-bold text-[#334155] text-2xl">
+                  <h3 className="font-bold text-[#334155] sm:text-2xl text-[24px]">
     {item.title}
   </h3>
-                <p className="font-semibold text-[#64748B] mt-5 whitespace-pre-line">{item.desc}</p>
+                <p className="text-[16px] font-semibold text-[#64748B] mt-5 whitespace-pre-line">{item.desc}</p>
               </div>
             ))}
 

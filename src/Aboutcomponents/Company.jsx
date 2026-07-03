@@ -13,7 +13,7 @@ function Company() {
           Expertise, Integrity & Collaboration
         </h2>
       </div>
-      <div className="flex sm:flex-row flex-col px-1 sm:gap-24 gap-12 items-center justify-center text-center text-blackk">
+      <div className="flex sm:flex-row flex-col px-1 sm:gap-24 gap-12 sm:items-center sm:justify-center items-start justify-start text-center text-blackk">
         <div className="">
           <h1 className="text-blackk  fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
             Who We Are

@@ -182,19 +182,19 @@ export default function ISyncDrivePage() {
     <div className="bg-white text-gray-800 font-poppins">
 
       {/* HERO */}
-      <section className="mt-10 text-center py-16 px-6 bg-white">
+      <section className="mt-10 text-left sm:text-center py-4 sm:py-16 px-5 bg-white">
          <div className="mt-5 flex justify-center">
            <img
                     src={heroImg}
                     alt="product"
-                    className="mx-auto mb-6 w-72 md:w-96 lg:w-[480px]"
+                    className="mx-auto mb-6 md:w-96 lg:w-[480px]"
                   />
         </div>
 
         {/* <span className="bg-blue-100 text-blue-900 px-4 py-1 rounded-full text-sm font-small border border-blue-300">
           Enterprise-Grade File Management
         </span> */}
-        <span className="inline-flex items-center gap-2 bg-blue-50 text-[#012060] px-3 py-2 rounded-full text-sm font-medium border border-blue-200">
+        <span className="flex w-fit mx-auto items-center gap-2 bg-blue-50 text-[#012060] px-3 py-2 rounded-full text-sm font-medium border border-blue-200">
   
   <img 
     src={shieldIcon} 
@@ -223,11 +223,11 @@ access, sync, and share files across devices from a single platform with full co
             Talk to an Expert
           </button>
         </div> */}
-         <div className="mt-8 flex flex-wrap justify-center gap-4">
+         <div className="mt-8 flex flex-wrap justify-start sm:justify-center gap-4">
 
       {/* Primary */}
-      <button onClick={() => navigate("/products/eicerise/form")} 
-      className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto hover:bg-blue-800 transition text-[18px]">
+      <button onClick={() => navigate("/products/eicerise/form")}
+      className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-[18px]">
         Request a Demo
           <img src={arrowIcon} alt="arrow"/>
 
@@ -243,7 +243,7 @@ access, sync, and share files across devices from a single platform with full co
       </section>
 
       {/* FEATURES */}
-<section className="pb-10 px-4 max-w-7xl mx-auto md:px-10 lg:px-20 xl:px-40 bg-white grid md:grid-cols-3 text-center">
+<section className="pb-4 sm:pb-10 px-4 max-w-7xl mx-auto md:px-10 lg:px-20 xl:px-40 bg-white grid md:grid-cols-3 text-center">
 
   {features.map((item, i) => (
     <div key={i} className="flex flex-col items-center gap-1">
@@ -254,12 +254,12 @@ access, sync, and share files across devices from a single platform with full co
       </div>
 
       {/* TITLE */}
-      <h3 className="font-bold text-xl leading-relaxed text-[#334155]">
+      <h3 className="font-bold text-[24px] sm:text-xl leading-relaxed text-[#334155]">
         {item.title}
       </h3>
 
       {/* DESCRIPTION */}
-      <p className="text-[#64748B] font-semibold text-md leading-relaxed max-w-xs">
+      <p className="text-[#64748B] font-semibold text-[16px] sm:text-md leading-relaxed max-w-xs">
         {item.desc}
       </p>
 
@@ -269,15 +269,15 @@ access, sync, and share files across devices from a single platform with full co
 </section>
 
       {/* WHAT IS */}
-      <section className="bg-[#F4F9FF] py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-[#F4F9FF]">
-        <div className="grid md:grid-cols-[1fr_2fr] gap-10 max-w-6xl mx-auto items-center">
+      <section className="bg-[#F4F9FF] py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-[#F4F9FF]">
+        <div className="grid md:grid-cols-[1fr_2fr] gap-4 md:gap-10 max-w-6xl mx-auto items-center">
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#334155]">
+            <h2 className="text-[32px] sm:text-2xl md:text-3xl font-bold mb-4 text-[#334155]">
               What is iSyncDrive?
             </h2>
           </div>
 
-          <div className="text-[#64748B] font-semibold mb-6 leading-8 space-y-6">
+          <div className="text-[#64748B] font-semibold mb-6 leading-8 space-y-4 sm:space-y-6">
             <p>
               iSyncDrive is a next-generation hybrid cloud storage and synchronization platform that combines the flexibility of the cloud with the control of on-premises infrastructure.
               It enables organizations to securely store, sync, and manage data across teams and regions while maintaining full ownership and compliance control.
@@ -295,7 +295,7 @@ access, sync, and share files across devices from a single platform with full co
         <h4 className="text-xl text-gray-600 text-center mb-10">
           Traditional file storage solutions fall short of enterprise needs.
         </h4>
-        <div className="grid md:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-4 gap-4 md:gap-6">
           {challenges.map((item, i) => (
             <div key={i} className="p-6 bg-white rounded-lg shadow text-center">
               {item}
@@ -303,27 +303,27 @@ access, sync, and share files across devices from a single platform with full co
           ))}
         </div>
       </section> */}
-<section className="py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
+<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
 
-  <h1 className="text-4xl md:text-4xl text-[#334155] font-bold text-center leading-relaxed mb-5">
+  <h1 className="text-[32px] sm:text-4xl text-[#334155] font-bold text-center leading-relaxed mb-5">
     Enterprise Challenges
   </h1>
 
-  <h4 className="text-lg md:text-xl text-[#64748B] text-center mb-12 max-w-2xl mx-auto">
+  <h4 className="text-[22px] sm:text-lg md:text-xl text-[#64748B] text-center mb-4 sm:mb-12 max-w-2xl mx-auto">
     Traditional file storage solutions fall short of enterprise needs.
   </h4>
 
   {/* 4 CARDS ROW */}
-  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
 
     {challenges.map((item, i) => (
       <div
         key={i}
-        className="bg-white rounded-xl  border-2 border-gray-200 shadow-sm hover:shadow-md transition p-6 flex flex-col items-start text-start gap-4"
+        className="bg-white rounded-xl  border-2 border-gray-200 shadow-sm hover:shadow-md transition p-4 sm:p-6 flex flex-col items-start text-start gap-4"
       >
 
         {/* SVG */}
-        <div className="rounded-lg flex items-start justify-center">
+        <div className="rounded-lg flex items-start">
           <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" />
         </div>
 
@@ -333,7 +333,7 @@ access, sync, and share files across devices from a single platform with full co
         </h3>
 
         {/* SMALL TEXT */}
-        <p className="text-gray-500 text-lg leading-relaxed">
+        <p className="text-gray-500 text-[16px] sm:text-lg leading-relaxed">
           {item.desc}
         </p>
 
@@ -344,21 +344,21 @@ access, sync, and share files across devices from a single platform with full co
 </section>
 
       {/* ARCHITECTURE */}
-      <section className="pb-10 pt-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
-        <h2 className="text-4xl text-[#334155] font-bold text-center leading-relaxed mb-10">
+      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
+        <h2 className="text-[32px] sm:text-4xl text-[#334155] font-bold text-center leading-relaxed mb-4 sm:mb-10">
           Architecture Overview
         </h2>
-        <div className="relative max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="relative max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
          
           {architecture.map((item, i) => (
             
             <div
         key={i}
-        className="bg-white rounded-xl  border-1 border border-[#E2E8F0] shadow-sm hover:shadow-md transition p-6 flex flex-col items-start text-start gap-4"
+        className="bg-white rounded-xl  border-1 border border-[#E2E8F0] shadow-sm hover:shadow-md transition p-4 sm:p-6 flex flex-col items-start text-start gap-4"
       >
 
         {/* SVG */}
-        <div className="rounded-lg flex items-start justify-center">
+        <div className="rounded-lg flex items-start">
           <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" />
         </div>
 
@@ -368,7 +368,7 @@ access, sync, and share files across devices from a single platform with full co
         </h3>
 
         {/* SMALL TEXT */}
-        <p className="text-[#64748B] text-lg leading-relaxed">
+        <p className="text-[#64748B] text-[16px] sm:text-lg leading-relaxed">
           {item.desc}
         </p>
 
@@ -376,12 +376,12 @@ access, sync, and share files across devices from a single platform with full co
           ))}
         </div>
 
-       
-      
+
+
       </section>
 
       {/* IMAGE + TEXT SECTION */}
-<section className="py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
+<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
 
   <div className="max-w-6xl mx-auto text-center">
 
@@ -402,31 +402,31 @@ access, sync, and share files across devices from a single platform with full co
 </section>
 
       {/* UNIFIED PLATFORM */}
-      <section className="py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
-        <h2 className="text-3xl font-bold text-center text-[#334155] mb-5">
+      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
+        <h2 className="text-[32px] sm:text-3xl font-bold text-center text-[#334155] mb-5">
           A Unified Platform for Total Data Control
         </h2>
-        <h4 className="text-xl text-[#64748B] font-semibold text-center mb-10 max-w-3xl mx-auto">
+        <h4 className="text-[22px] sm:text-xl text-[#64748B] font-semibold text-center mb-4 sm:mb-10 max-w-3xl mx-auto">
           Along with secure storage, iSyncDrive enables controlled file and folder sharing to support collaborations across teams and locations        </h4>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
           {platformFeatures.map((item, i) => (
              <div
         key={i}
-        className="bg-white rounded-xl  border-1 border border-[#E2E8F0] shadow-sm hover:shadow-md transition py-6 px-6 flex flex-col items-start text-start w-auto h-[300px] gap-4"
+        className="bg-white rounded-xl  border-1 border border-[#E2E8F0] shadow-sm hover:shadow-md transition p-4 sm:p-6 flex flex-col items-start text-start w-auto h-auto sm:h-[300px] gap-4"
       >
 
         {/* SVG */}
-        <div className="rounded-lg flex items-start justify-center">
+        <div className="rounded-lg flex items-start">
           <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" />
         </div>
 
         {/* TITLE */}
-        <h3 className="font-bold md:text-2xl text-2xl">
+        <h3 className="font-bold text-[24px] sm:text-2xl">
           {item.title}
         </h3>
 
         {/* SMALL TEXT */}
-        <p className="text-gray-500 md:text-lg text-lg leading-relaxed">
+        <p className="text-gray-500 text-[16px] sm:text-lg leading-relaxed">
           {item.desc}
         </p>
 
@@ -436,25 +436,25 @@ access, sync, and share files across devices from a single platform with full co
       </section>
 
 {/* IMPLEMENTATION */}
-<section className="py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
+<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
 
   {/* Heading */}
-  <div className="max-w-6xl mx-auto text-center mb-12">
-    <h2 className="text-4xl font-bold text-[#334155] font-poppins">
+  <div className="max-w-6xl mx-auto text-center mb-4 sm:mb-12">
+    <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155] font-poppins">
       Implementation Journey
     </h2>
-    <p className="text-[#64748B] mt-3 text-lg">
+    <p className="text-[#64748B] mt-3 text-[16px] sm:text-lg">
       A proven continuous journey from planning to optimization
     </p>
   </div>
 
   {/* Cards */}
-  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
 
     {steps.map((item, i) => (
       <div
         key={i}
-        className="relative bg-white border border-gray-200 rounded-xl p-6 flex flex-col gap-4 min-h-[220px]"
+        className="relative bg-white border border-gray-200 rounded-xl p-4 sm:p-6 flex flex-col gap-4 min-h-[220px]"
       >
 
         {/* STEP NUMBER (top right) */}
@@ -473,7 +473,7 @@ access, sync, and share files across devices from a single platform with full co
         </h3>
 
         {/* DESCRIPTION */}
-        <p className="text-[#64748B] text-lg leading-relaxed">
+        <p className="text-[#64748B] text-[16px] sm:text-lg leading-relaxed">
           {item.desc}
         </p>
 
@@ -485,23 +485,23 @@ access, sync, and share files across devices from a single platform with full co
 </section>
 
 {/* WHY CHOOSE */}
-<section className="py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
+<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
 
   {/* Heading */}
-  <div className="max-w-5xl mx-auto text-center mb-14">
-    <h2 className="text-4xl font-bold text-[#334155]">
+  <div className="max-w-5xl mx-auto text-center mb-4 sm:mb-14">
+    <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155]">
       Why enterprises choose iSyncDrive?
     </h2>
-    <p className="mt-4 text-[#64748B] text-lg font-semibold max-w-2xl mx-auto">
+    <p className="mt-4 text-[#64748B] text-[16px] sm:text-lg font-semibold max-w-2xl mx-auto">
       Built for organizations that require control, governance, and flexible deployment.
     </p>
   </div>
 
   {/* Cards */}
-  <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+  <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-4 sm:gap-8">
 
     {/* LEFT CARD */}
-    <div className="bg-white border border-[#E2E8F0] rounded-xl p-8">
+    <div className="bg-white border border-[#E2E8F0] rounded-xl p-4 sm:p-8">
 
       {/* Header */}
       <div className="flex items-center gap-4 mb-5">
@@ -533,7 +533,7 @@ access, sync, and share files across devices from a single platform with full co
     </div>
 
     {/* RIGHT CARD */}
-    <div className="bg-white border border-[#E2E8F0] rounded-xl p-8">
+    <div className="bg-white border border-[#E2E8F0] rounded-xl p-4 sm:p-8">
 
       {/* Header */}
       <div className="flex items-center gap-4 mb-5">
@@ -570,32 +570,32 @@ access, sync, and share files across devices from a single platform with full co
 
 
 {/* ACCESS CONTROL */}
-<section className="py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-gradient-to-r from-[#eef4fb] to-[#e6f0fa] bg-cover bg-center font-poppins" style={{ backgroundImage: `url(${bgImage2})` }}>
+<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-gradient-to-r from-[#eef4fb] to-[#e6f0fa] bg-cover bg-center font-poppins" style={{ backgroundImage: `url(${bgImage2})` }}>
 
   {/* Heading */}
-  <div className="max-w-4xl mx-auto text-center mb-14">
-    <h2 className="text-4xl font-bold text-[#334155]">
+  <div className="max-w-4xl mx-auto text-center mb-4 sm:mb-14">
+    <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155]">
       Access Control & Governance Logic
     </h2>
-    <p className="mt-4 text-[#64748B] text-lg">
+    <p className="mt-4 text-[#64748B] text-[16px] sm:text-lg">
       Advanced security and policy enforcement at every level
     </p>
   </div>
 
   {/* Cards */}
-  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
 
     {/* CARD 1 */}
-    <div className="bg-white border border-[#E2E8F0] rounded-xl p-6 flex items-start gap-3">
+    <div className="bg-white border border-[#E2E8F0] rounded-xl p-4 sm:p-6 flex items-start gap-3">
 
       {/* ICON */}
       <div className="py-1 rounded-lg">
-        <img src={rbacIcon} alt="rbac" className="w-10 h-10"/>
+        <img src={rbacIcon} alt="rbac" className="w-14 h-14"/>
       </div>
 
       {/* CONTENT */}
       <div>
-        <h3 className="text-xl font-semibold text-[#334155]">
+        <h3 className="text-[24px] sm:text-xl font-semibold text-[#334155]">
           Role-Based Access Control (RBAC)
         </h3>
         <p className="text-[#64748B] mt-2">
@@ -606,14 +606,14 @@ access, sync, and share files across devices from a single platform with full co
     </div>
 
     {/* CARD 2 */}
-    <div className="bg-white border border-[#E2E8F0] rounded-xl p-6 flex items-start gap-3">
+    <div className="bg-white border border-[#E2E8F0] rounded-xl p-4 sm:p-6 flex items-start gap-3">
 
       <div className=" py-1 rounded-lg">
-        <img src={approvalIcon} alt="approval" className="w-10 h-10"/>
+        <img src={approvalIcon} alt="approval" className="w-14 h-14"/>
       </div>
 
       <div>
-        <h3 className="text-xl font-semibold text-[#334155]">
+        <h3 className="text-[24px] sm:text-xl font-semibold text-[#334155]">
           Approval Workflows
         </h3>
         <p className="text-[#64748B] mt-2">
@@ -624,14 +624,14 @@ access, sync, and share files across devices from a single platform with full co
     </div>
 
     {/* CARD 3 */}
-    <div className="bg-white border border-[#E2E8F0] rounded-xl p-6 flex items-start gap-3">
+    <div className="bg-white border border-[#E2E8F0] rounded-xl p-4 sm:p-6 flex items-start gap-3">
 
       <div className="py-1 rounded-lg">
-        <img src={tenantIcon} alt="tenant" className="w-10 h-10"/>
+        <img src={tenantIcon} alt="tenant" className="w-14 h-14"/>
       </div>
 
       <div>
-        <h3 className="text-xl font-semibold text-[#334155]">
+        <h3 className="text-[24px] sm:text-xl font-semibold text-[#334155]">
           Tenant Governance
         </h3>
         <p className="text-[#64748B] mt-2">
@@ -647,30 +647,30 @@ access, sync, and share files across devices from a single platform with full co
 
 
 {/* DEPLOYMENT */}
-<section className="py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
+<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
 
   {/* Heading */}
-  <div className="max-w-5xl mx-auto text-center mb-10">
-    <h2 className="text-4xl font-bold text-[#334155]">
+  <div className="max-w-5xl mx-auto text-center mb-4 sm:mb-10">
+    <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155]">
       Deployment & Infrastructure
     </h2>
-    <p className="mt-4 text-[#64748B] text-lg">
+    <p className="mt-4 text-[#64748B] text-[16px] sm:text-lg">
       Choose the deployment model that fits your organization's needs
     </p>
   </div>
 
   {/* Cards */}
-  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
 
     {/* CLOUD */}
-    <div className="bg-[#EFFAFF] border border-[#E2E8F0] rounded-xl p-8 text-center">
+    <div className="bg-[#EFFAFF] border border-[#E2E8F0] rounded-xl p-4 sm:p-8 text-left sm:text-center">
 
       {/* ICON */}
-      <div className="w-14 h-14 mx-auto flex items-center justify-center rounded-lg mb-6">
+      <div className="w-14 h-14 mx-0 sm:mx-auto flex items-center justify-center rounded-lg mb-6">
         <img src={cloudIcon} alt="cloud"/>
       </div>
 
-      <h3 className="text-xl font-bold text-[#334155]">
+      <h3 className="text-[24px] sm:text-xl font-bold text-[#334155]">
         Cloud Deployment
       </h3>
 
@@ -708,13 +708,13 @@ access, sync, and share files across devices from a single platform with full co
     </div>
 
     {/* ON-PREM */}
-    <div className="bg-[#EFFAFF] border border-[#E2E8F0] rounded-xl p-8 text-center">
+    <div className="bg-[#EFFAFF] border border-[#E2E8F0] rounded-xl p-4 sm:p-8 text-left sm:text-center">
 
-      <div className="w-14 h-14 mx-auto flex items-center justify-center rounded-lg mb-6">
+      <div className="w-14 h-14 mx-0 sm:mx-auto flex items-center justify-center rounded-lg mb-6">
         <img src={onPremIcon} alt="onprem"/>
       </div>
 
-      <h3 className="text-xl font-semibold text-gray-800">
+      <h3 className="text-[24px] sm:text-xl font-semibold text-gray-800">
         On-Prem Deployment
       </h3>
 
@@ -752,13 +752,13 @@ access, sync, and share files across devices from a single platform with full co
     </div>
 
     {/* HYBRID */}
-    <div className="bg-[#EFFAFF] border border-[#E2E8F0] rounded-xl p-8 text-center">
+    <div className="bg-[#EFFAFF] border border-[#E2E8F0] rounded-xl p-4 sm:p-8 text-left sm:text-center">
 
-      <div className="w-14 h-14 mx-auto flex items-center justify-centerrounded-lg mb-6">
+      <div className="w-14 h-14 mx-0 sm:mx-auto flex items-center justify-center rounded-lg mb-6">
         <img src={hybridIcon} alt="hybrid"/>
       </div>
 
-      <h3 className="text-xl font-semibold text-gray-800">
+      <h3 className="text-[24px] sm:text-xl font-semibold text-gray-800">
         Hybrid Deployment
       </h3>
 
@@ -824,7 +824,7 @@ access, sync, and share files across devices from a single platform with full co
   </div>
 
   {/* Bottom Cards */}
-  <div className="mt-16 max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6">
+  <div className="mt-16 max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
 
     <div className="border border-gray-200 bg-gray-100 rounded-xl py-6 px-4">
       <h3 className="text-xl font-bold text-gray-600">

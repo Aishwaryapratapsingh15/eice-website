@@ -13,7 +13,7 @@ function Scopes() {
   return (
     <div className="font-manrope mx-auto sm:px-4 px-4 sm:max-w-7xl w-screen sm:pt-6  py-4">
       <div className="text-center text-blackk fontweight_1 sm:text-4xl text-3xl">
-        <div className="flex flex-col items-center justify-center text-center sm:pb-6 pb-2">
+        <div className="flex flex-col sm:items-center sm:justify-center items-start sm:text-center pb-2 sm:pb-6">
           <h1 className="text-bloo fontweight_1 fontsize_2 pb-4">
             Engage With Us
           </h1>
@@ -30,9 +30,9 @@ function Scopes() {
           </p>
         </div>
       </div>
-      <div className="flex flex-col gap-12 items-center justify-center sm:pt-20 pt-16">
-        <div className="lg:grid lg:grid-cols-2 flex flex-col items-center justify-center w-full h-full">
-          <div className="relative w-11/12 h-[30rem] items-center justify-center flex justify-self-start">
+      <div className="flex flex-col gap-12 sm:items-center sm:justify-center items-start sm:pt-20 pt-16">
+        <div className="lg:grid lg:grid-cols-2 flex flex-col sm:items-center sm:justify-center items-start w-full h-full">
+          <div className="relative w-full sm:w-11/12 h-[30rem] items-center justify-center flex justify-self-start">
             <div className="flex flex-col lg:p-16 ps:p-5  absolute inset-0 justify-center">
               <div className="z-20 pb-8 justify-start flex w-full px-4">
                 <img src={ConstrainedBudget} alt="" className="scale-[1.2]" />
@@ -48,7 +48,7 @@ function Scopes() {
             <img src={budget1} alt="" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-cyan-600/80"></div>
           </div>
-          <div className="flex flex-col px-8 py-4">
+          <div className="flex flex-col sm:px-8 px-0 py-4">
             <h1 className="w-full text-center text-blackk/50 font-semibold text-2xl pb-2">
               When to Choose
             </h1>
@@ -78,8 +78,8 @@ function Scopes() {
             </div>
           </div>
         </div>
-        <div className="lg:hidden flex flex-col items-center justify-center w-full h-full">
-          <div className="relative w-11/12 h-[30rem] items-center justify-center flex justify-self-end">
+        <div className="lg:hidden flex flex-col sm:items-center sm:justify-center items-start w-full h-full">
+          <div className="relative w-full sm:w-11/12 h-[30rem] items-center justify-center flex justify-self-end">
             <div className="flex flex-col  lg:p-16 ps:p-5  justify-center absolute inset-0 ">
               <div className="z-20 pb-8  flex w-full">
                 <img src={EvolvingScope} alt="" className="scale-[1.2]" />
@@ -95,7 +95,7 @@ function Scopes() {
             <img src={budget2} alt="" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-slate-800/80"></div>
           </div>
-          <div className="flex flex-col px-8 py-4">
+          <div className="flex flex-col sm:px-8 px-0 py-4">
             <h1 className="w-full text-center text-blackk/50 font-semibold text-2xl pb-2">
               When to Choose
             </h1>
@@ -127,7 +127,7 @@ function Scopes() {
           </div>
         </div>
         <div className="lg:grid lg:grid-cols-2 hidden items-center justify-center w-full h-full">
-          <div className="flex flex-col px-8 py-4">
+          <div className="flex flex-col sm:px-8 px-0 py-4">
             <h1 className="w-full text-center text-blackk/50 font-semibold text-2xl pb-2">
               When to Choose
             </h1>
@@ -157,7 +157,7 @@ function Scopes() {
               </h2>
             </div>
           </div>
-          <div className="relative w-11/12 h-[30rem] items-center justify-center flex justify-self-end">
+          <div className="relative w-full sm:w-11/12 h-[30rem] items-center justify-center flex justify-self-end">
             <div className="flex flex-col p-16  justify-center absolute inset-0 ">
               <div className="z-20 pb-8 px-4 flex w-full">
                 <img src={EvolvingScope} alt="" className="scale-[1.2]" />
@@ -174,8 +174,8 @@ function Scopes() {
             <div className="absolute inset-0 bg-slate-800/80"></div>
           </div>
         </div>
-        <div className="lg:grid lg:grid-cols-2 flex flex-col items-center justify-center w-full h-full">
-          <div className="relative w-11/12 h-[30rem] items-center justify-center flex justify-self-start">
+        <div className="lg:grid lg:grid-cols-2 flex flex-col sm:items-center sm:justify-center items-start w-full h-full">
+          <div className="relative w-full sm:w-11/12 h-[30rem] items-center justify-center flex justify-self-start">
             <div className="flex flex-col lg:p-16 ps:p-5  justify-center absolute inset-0">
               <div className="z-20 pb-8 px-4  flex w-full">
                 <img src={UnclearRequirements} alt="" className="scale-[1.2]" />
@@ -191,7 +191,7 @@ function Scopes() {
             <img src={budget3} alt="" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-teal-700/80"></div>
           </div>
-          <div className="flex flex-col px-8 py-4">
+          <div className="flex flex-col sm:px-8 px-0 py-4">
             <h1 className="w-full text-center text-blackk/50 font-semibold text-2xl">
               When to Choose
             </h1>

@@ -27,8 +27,8 @@ const IndustryCard = ({ to, color, Icon, title, description }) => (
         </div>
       </div>
       <div>
-        <h3 className="font-semibold text-xl sm:text-2xl ">{title}</h3>
-        <p className="font-medium text-blackk/70 sm:text-xl text-lg">
+        <h3 className="font-semibold text-[24px] sm:text-2xl ">{title}</h3>
+        <p className="font-medium text-blackk/70 sm:text-xl text-[16px]">
           {description}
         </p>
       </div>
@@ -113,14 +113,14 @@ function Indusmain() {
   ];
 
   return (
-    <div>
-      <div className="font-manrope max-w-7xl mx-auto px-4  pt-32 sm:pt-32 2xl:pt-8">
-        <section className="text-center">
-          <h1 className="text-blackk fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-7xl py-1">
+    <div id="indusmain-root">
+      <div className="font-manrope max-w-7xl mx-auto px-5 sm:px-4  pt-32 sm:pt-32 2xl:pt-8">
+        <section className="text-left sm:text-center">
+          <h1 className="text-blackk fontweight_1 text-left sm:text-center text-[32px] sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-7xl py-2">
             Driving <span className="text-bloo">Digital Transformation</span>{" "}
             Across Industries
           </h1>
-          <p className="text-blackk/70 font-semibold max-w-5xl mx-auto  py-8 fontweight_1 fontsize_2 sm:leading-tight leading-snug text-center">
+          <p className="text-blackk/70 font-semibold max-w-5xl mx-auto  py-2 fontweight_1 text-[18px] sm:text-[25px] sm:leading-tight leading-snug text-left sm:text-center">
             EICE empowers businesses to thrive in the digital age by leveraging
             cutting-edge technologies and innovative strategies, revolutionizing
             operations and enhancing competitiveness.
@@ -131,16 +131,16 @@ function Indusmain() {
           <div className="bg-indusbanner w-full h-0 pb-[40%] sm:pb-[30%] lg:pb-[25%] bg-cover bg-center bg-no-repeat rounded-full"></div>
         </div>
 
-        <section className="text-center py-8">
-          <h2 className="text-bloo fontweight_1 text-center fontsize_2  py-2">
+        <section className="text-left sm:text-center py-4">
+          <h2 className="text-bloo fontweight_1 text-left sm:text-center text-[22px] sm:text-[25px]  py-2">
             Industry Solutions
           </h2>
-          <h3 className="text-blackk  fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-7xl py-1">
+          <h3 className="text-blackk  fontweight_1 text-left sm:text-center text-[32px] sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-7xl pt-2 pb-2">
             Transforming Sectors Through Digital Innovation
           </h3>
         </section>
 
-        <div className="grid sm:grid-cols-2 gap-6 ">
+        <div className="grid sm:grid-cols-2 gap-4 ">
           {industries.map((industry, index) => (
             <IndustryCard
               key={index}
@@ -153,8 +153,8 @@ function Indusmain() {
           ))}
         </div>
 
-        <div className="pt-12 pb-4 grid lg:grid-cols-2 grid-cols-1 gap-4">
-          <h1 className="text-bloo flex items-center justify-center h-full  text-center responsiveFont1   py-2">
+        <div className="py-4 grid lg:grid-cols-2 grid-cols-1 gap-4">
+          <h1 className="text-bloo flex items-center justify-start sm:justify-center h-full  text-left sm:text-center responsiveFont1   py-2">
             Why Choose EICE
           </h1>
           <h1 className="text-blackk  responsiveFont2  mb-4">

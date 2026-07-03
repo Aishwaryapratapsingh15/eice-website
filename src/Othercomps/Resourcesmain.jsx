@@ -14,16 +14,16 @@ const resoucres_cs = "https://d3r43jacxrwsrp.cloudfront.net/Service_and_technolo
 function Resourcesmain() {
   return (
     <div>
-      <div className="bg-gradient-to-br mt-24 from-cyan-100/10 to-bloo/10 w-screen 2xl:h-[35vh] h-[60vh] bg-cover bg-no-repeat ">
+      <div className="bg-gradient-to-br mt-10 sm:mt-24 from-cyan-100/10 to-bloo/10 w-screen h-auto sm:h-[60vh] 2xl:h-[35vh] bg-cover bg-no-repeat ">
         <div className=" max-w-7xl mx-auto w-full h-full">
-          <div className="2xl:pt-0  flex flex-col items-center justify-center w-full h-full ">
-            <h1 className="text-blackk fontweight_1 text-center fontsize_6 py-2">
+          <div className="2xl:pt-0 flex flex-col items-start sm:items-center justify-start sm:justify-center w-full h-full py-8 sm:py-0 px-5 sm:px-0">
+            <h1 className="text-blackk fontweight_1 text-left sm:text-center text-[32px] sm:text-[35px] py-2">
               EICE Resources
             </h1>
-            <h2 className="text-bloo font-semibold text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-4">
+            <h2 className="text-bloo font-semibold text-left sm:text-center text-[32px] sm:text-2xl md:text-3xl lg:text-[32px] max-w-3xl py-4">
               Case Studies, Blogs and more
             </h2>
-            <h2 className="text-blackk/70 px-2 font-medium text-center sm:text-lg mx-auto lg:text-xl max-w-6xl py-2">
+            <h2 className="text-blackk/70 font-medium text-left sm:text-center text-[16px] sm:text-lg lg:text-xl max-w-6xl py-2">
               Explore a wealth of knowledge and insights designed to help you
               navigate the complexities of digital transformation and stay ahead
               in your industry. Our resources are curated by experts to provide
@@ -33,18 +33,16 @@ function Resourcesmain() {
           </div>
         </div>
       </div>
-      <div className="pb-7"></div>
-
-      <div className="max-w-7xl mx-auto py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
-        <h2 className="text-blackk fontweight_1 text-center text-2xl sm:text-3xl lg:text-4xl max-w-3xl mx-auto mb-8 sm:mb-12">
+      <div className="max-w-7xl mx-auto py-8 sm:py-12 px-5 sm:px-6 lg:px-8">
+        <h2 className="text-blackk fontweight_1 text-left sm:text-center text-[32px] sm:text-3xl lg:text-4xl max-w-3xl sm:mx-auto mb-4 sm:mb-12">
           Discover, Innovate and Excel with EICE
         </h2>
-        <div className="grid lg:grid-cols-3 grid-cols-1 xl:gap-0 gap-12 justify-center items-center">
+        <div className="grid lg:grid-cols-3 grid-cols-1 xl:gap-0 gap-4 sm:gap-12 justify-center items-center">
           <div className="flex flex-col col-span-2">
-            <h2 className="text-blackk text-left fontweight_1 text-2xl sm:text-3xl lg:text-4xl mb-4">
+            <h2 className="text-blackk text-left fontweight_1 text-[32px] sm:text-3xl lg:text-4xl mb-4">
               Case Studies
             </h2>
-            <p className="font-medium text-blackk/70 max-w-2xl text-base sm:text-lg mb-6">
+            <p className="font-medium text-blackk/70 max-w-2xl text-[16px] sm:text-lg mb-4 sm:mb-6">
               Learn from real-world success stories where EICE has helped
               clients overcome challenges and achieve significant results. Our
               case studies highlight our approach, solutions, and the measurable

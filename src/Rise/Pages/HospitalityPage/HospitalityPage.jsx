@@ -1,7 +1,7 @@
 ﻿"use client";
 import styles from "./Hospitality.module.css"
 import { Link } from '@/nextNavigation'
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 const allLaptop = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allLaptop.webp";
 
 const account = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/allPageIcon/Account.png";
@@ -160,7 +160,8 @@ export default function HospitalityPage() {
         },
 
         {
-            serviceName: "USER STORE & INVENTORY",
+            serviceName: "USER STORE &",
+            serviceName2: "INVENTORY",
             icon: inentry,
             path: "/products/eicerise/userstore-inventry",
             key: 8
@@ -412,6 +413,50 @@ export default function HospitalityPage() {
 
 
 
+    const storyScrollRef = useRef(null);
+    const storyAnimRef = useRef(null);
+    const touchStartXRef = useRef(0);
+    const touchScrollLeftRef = useRef(0);
+
+    const resumeScroll = () => {
+        const step = () => {
+            const el = storyScrollRef.current;
+            if (!el) return;
+            el.scrollLeft += 0.6;
+            if (el.scrollLeft >= el.scrollWidth / 2) el.scrollLeft = 0;
+            storyAnimRef.current = requestAnimationFrame(step);
+        };
+        storyAnimRef.current = requestAnimationFrame(step);
+    };
+
+    const handleTouchStart = (e) => {
+        cancelAnimationFrame(storyAnimRef.current);
+        touchStartXRef.current = e.touches[0].clientX;
+        touchScrollLeftRef.current = storyScrollRef.current.scrollLeft;
+    };
+
+    const handleTouchMove = (e) => {
+        const dx = touchStartXRef.current - e.touches[0].clientX;
+        const el = storyScrollRef.current;
+        el.scrollLeft = touchScrollLeftRef.current + dx;
+        if (el.scrollLeft >= el.scrollWidth / 2) el.scrollLeft = 0;
+        if (el.scrollLeft < 0) el.scrollLeft = el.scrollWidth / 2 + el.scrollLeft;
+    };
+
+    useEffect(() => {
+        const el = storyScrollRef.current;
+        if (!el) return;
+        const step = () => {
+            el.scrollLeft += 0.6;
+            if (el.scrollLeft >= el.scrollWidth / 2) {
+                el.scrollLeft = 0;
+            }
+            storyAnimRef.current = requestAnimationFrame(step);
+        };
+        storyAnimRef.current = requestAnimationFrame(step);
+        return () => cancelAnimationFrame(storyAnimRef.current);
+    }, []);
+
     const [isPhone, setIsPhone] = useState(false);
     const [forSmallestScreen, setforSmallestScreen] = useState(false);
 
@@ -421,6 +466,7 @@ export default function HospitalityPage() {
             setIsPhone(window.innerWidth <= 800);
             setforSmallestScreen(window.innerWidth <= 290);
         };
+        handleResize();
         window.addEventListener('resize', handleResize);
         return () => {
             window.removeEventListener('resize', handleResize);
@@ -741,110 +787,90 @@ export default function HospitalityPage() {
             {/* section6 */}
 
 
-            {isPhone ? (<section className={`${styles.section6ForPhone} globalSectionSize`}>
+            {/* section6 mobile — hidden on sm+ via CSS */}
+            <section className={`${styles.section6ForPhone} globalSectionSize sm:hidden`}>
                 <div className={`${styles.section6Heading} font1`}>
-
                     <div style={{ display: "flex", justifyContent: "flex-start", alignItems: "center", gap: "0px 20px" }}>
                         <div style={{ width: "50px", paddingTop: "12px" }}>
                             <img style={{ width: "100%" }} src={h2} alt="" />
                         </div>
-
                         <div className="font3">
                             Real  <span className={` blueTextGlobalClass font2`}>Stories</span> , Real <span className={` blueTextGlobalClass font2`}>Impact</span>
                         </div>
                     </div>
                 </div>
 
-
-                <div className={`${styles.storySection} font1`}>
-
-                    <article className={styles.storyCardContainer}>
-                        <div className={styles.storyCard} style={{position : "relative"}}>
-
-                            <div >
-                                <img style={{ width: "100%" }} src={stories[storyIndex].img?.src || stories[storyIndex].img} alt="storyimg" />
-                            </div>
-
-                            <div className={`${styles.cardBoxStoryInnerHeading} blueTextGlobalClass font1`}>
-                                {stories[storyIndex].heading}
-                            </div>
-
-                            <p style={{ lineHeight: "1.8rem", marginBottom: stories[storyIndex].margin }} >{stories[storyIndex].para}</p>
-
-
-                            <Link to={stories[storyIndex].link} className={`${styles.viewMoreBtnBox} linkClass`} style={{position : "absolute" , bottom : "1rem"}}>
-                                <div className={`${styles.viewMoreBtn} font1`} style={{ textAlign: "center" }}>
-                                    View More
+                <div
+                    ref={storyScrollRef}
+                    onTouchStart={handleTouchStart}
+                    onTouchMove={handleTouchMove}
+                    onTouchEnd={resumeScroll}
+                    style={{ display: "flex", overflowX: "hidden", gap: "16px", paddingBottom: "12px", scrollbarWidth: "none", msOverflowStyle: "none" }}
+                >
+                    {[...stories, ...stories].map((item, index) => (
+                        <Link key={index} to={item.link} className="linkClass" style={{ flexShrink: 0, width: "72vw" }}>
+                            <div style={{
+                                backgroundImage: `url(${item.img?.src || item.img})`,
+                                backgroundSize: "cover",
+                                backgroundPosition: "center",
+                                borderRadius: "12px",
+                                height: "200px",
+                                overflow: "hidden",
+                                display: "flex",
+                                flexDirection: "column",
+                                justifyContent: "flex-end"
+                            }}>
+                                <div style={{
+                                    background: "linear-gradient(to top, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.5) 55%, transparent 100%)",
+                                    padding: "12px"
+                                }}>
+                                    <div className="font1" style={{ color: "white", fontWeight: "700", fontSize: "13px", lineHeight: "1.3" }}>
+                                        {item.heading}
+                                    </div>
+                                    <div className="font1" style={{ color: "rgba(255,255,255,0.85)", fontSize: "12px", marginTop: "5px" }}>
+                                        View More →
+                                    </div>
                                 </div>
-                            </Link>
-
-                        </div>
-                    </article>
-
-
-                </div>
-
-                <div className="indicators">
-                    {stories.map((_, index) => (
-                        <span
-                            key={index}
-                            className={`indicator ${storyIndex === index ? 'active' : ''}`}
-                            onClick={() => setStoryIndex(index)}
-                        ></span>
+                            </div>
+                        </Link>
                     ))}
                 </div>
+            </section>
 
-
-            </section>) : (<section className={`${styles.section6} globalSectionSize`}>
+            {/* section6 desktop — hidden on mobile via CSS */}
+            <section className={`${styles.section6} globalSectionSize hidden sm:block`}>
                 <div className={`${styles.section6Heading} font1`}>
-
                     <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "0px 20px" }}>
                         <div style={{ width: "50px", paddingTop: "12px" }}>
                             <img style={{ width: "100%" }} src={h2} alt="" />
                         </div>
-
                         <div className="font3">
                             Real  <span className={` blueTextGlobalClass font2`}>Stories</span> , Real <span className={` blueTextGlobalClass font2`}>Impact</span>
                         </div>
                     </div>
-
                 </div>
 
-
                 <div className={`${styles.storySection} font1`}>
-
-                    {stories.map((item, index) =>
-                    (
+                    {stories.map((item, index) => (
                         <div key={item.key ?? index} className={`${styles.storyBox}`}>
-
-
                             {item.key === 1 ? (<div className={`${styles.storyImgHeight}`}>
                                 <img style={{ width: "113%" }} src={item.img?.src || item.img} alt="storyimg" />
                             </div>) : (<div className={`${styles.storyImgHeight}`}>
                                 <img style={{ width: "100%" }} src={item.img?.src || item.img} alt="storyimg" />
                             </div>)}
-
                             <div className={`${styles.cardBoxStoryInnerHeading} blueTextGlobalClass font1`}>
                                 {item.heading}
                             </div>
-
                             <p style={{ lineHeight: "1.8rem", marginBottom: item.margin }} >{item.para}</p>
-
                             <Link to={item.link} className="linkClass">
                                 <div className={`${styles.viewMoreBtn} font1`} style={{ textAlign: "center" }}>
                                     View More
                                 </div>
                             </Link>
-
-
                         </div>
-
                     ))}
-
                 </div>
-
-
-            </section>)}
+            </section>
 
 
 <Certificate/>

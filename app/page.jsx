@@ -30,19 +30,22 @@ export const metadata = {
   alternates: { canonical: "https://www.eicetechnology.com", languages: { "en-IN": "https://www.eicetechnology.com", "en-US": "https://www.eicetechnology.com", "x-default": "https://www.eicetechnology.com" } },
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "EICE Technology",
-  "url": "https://www.eicetechnology.com",
-  "description": "EICE Technology delivers IT solutions including AI/ML, cloud computing, software development, and digital transformation globally.",
-  "publisher": { "@type": "Organization", "name": "EICE Technology" },
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": { "@type": "EntryPoint", "urlTemplate": "https://www.eicetechnology.com/resources?q={search_term_string}" },
-    "query-input": "required name=search_term_string"
-  }
-};
+// const jsonLd = {
+//   "@context": "https://schema.org",
+//   "@type": "WebSite",
+//   "name": "EICE Technology",
+//   "url": "https://www.eicetechnology.com",
+//   "description": "EICE Technology delivers IT solutions including AI/ML, cloud computing, software development, and digital transformation globally.",
+//   "publisher": { "@type": "Organization", "name": "EICE Technology" },
+//   "potentialAction": {
+//     "@type": "SearchAction",
+//     "target": { "@type": "EntryPoint", "urlTemplate": "https://www.eicetechnology.com/resources?q={search_term_string}" },
+//     "query-input": "required name=search_term_string"
+//   }
+// };
+
+const jsonLd = {"@context":"https://schema.org","@type":"Organization","name":"EICE Technology","url":"https://www.eicetechnology.com","logo":"https://d3r43jacxrwsrp.cloudfront.net/logo.svg","sameAs":["https://linkedin.com/company/eice-technology"],"contactPoint":{"@type":"ContactPoint","contactType":"sales","areaServed":"IN"}}
+
 
 export default function Page() {
   return (

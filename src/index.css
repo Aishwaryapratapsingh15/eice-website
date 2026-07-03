@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
+html {
+    max-width: 100%;
+    font-size: 16px;
+}
+body {
     max-width: 100%;
     overflow-x: hidden;
     font-size: 16px; /* India mobile: minimum readable base font */
@@ -202,20 +206,32 @@ a.hover\:bg-blue-800:hover {
     background-color: #011530;
 }
 
-/* Mobile: 20px left/right margin for all content containers, excluding footer */
+/* Mobile: left-align all content, 20px horizontal padding */
 @media (max-width: 639px) {
+    #main-content .text-center {
+        text-align: left !important;
+    }
+
     #main-content .max-w-7xl,
     #main-content .sm\:max-w-7xl,
     #main-content .lg\:max-w-7xl {
-        padding-left: 20px;
-        padding-right: 20px;
         box-sizing: border-box;
     }
 
-    /* Footer keeps its original internal padding */
     #main-content footer .max-w-7xl {
-        padding-left: 8px;
-        padding-right: 16px;
+        padding-left: 8px !important;
+        padding-right: 16px !important;
+    }
+}
+
+/* Industries page: force left-align all text on mobile */
+@media (max-width: 639px) {
+    #indusmain-root h1,
+    #indusmain-root h2,
+    #indusmain-root h3,
+    #indusmain-root p,
+    #indusmain-root section {
+        text-align: left !important;
     }
 }
 

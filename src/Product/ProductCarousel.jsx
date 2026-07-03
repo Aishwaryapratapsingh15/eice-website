@@ -93,7 +93,7 @@ export default function ProductCarousel({ slides = [] }) {
         Product {liveIndex + 1} of {slides.length}: {liveSlide?.title}
       </div>
 
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-10 lg:px-20">
+      <div className="max-w-[1200px] mx-auto px-5 sm:px-6 md:px-10 lg:px-20">
 
         {/* Heading */}
         <h2 className="text-center text-2xl sm:text-3xl md:text-[34px] font-bold text-[#2f3b4a] mb-8 md:mb-14">
@@ -156,7 +156,7 @@ export default function ProductCarousel({ slides = [] }) {
         </div>
 
         {/* DOTS */}
-        <div className="flex justify-center mt-8 md:mt-10 gap-2 sm:gap-3" role="tablist" aria-label="Product slides">
+        <div className="flex justify-center mt-8 md:mt-10" role="tablist" aria-label="Product slides">
           {slides.map((slide, i) => (
             <button
               key={i}
@@ -164,10 +164,14 @@ export default function ProductCarousel({ slides = [] }) {
               aria-selected={current - 1 === i}
               aria-label={`Go to ${slide.title}`}
               onClick={() => setCurrent(i + 1)}
-              className={`w-3 h-3 rounded-full ${
-                current - 1 === i ? "bg-[#1f3b82]" : "bg-gray-300"
-              }`}
-            />
+              className="p-[11px] sm:p-2 flex items-center justify-center bg-transparent"
+            >
+              <span
+                className={`w-3 h-3 sm:w-5 sm:h-5 rounded-full block shrink-0 ${
+                  current - 1 === i ? "bg-[#1f3b82]" : "bg-gray-300"
+                }`}
+              />
+            </button>
           ))}
         </div>
 

@@ -417,7 +417,7 @@ function Solutions() {
         <div className="sm:hidden mb-4">
           <Link
             to="/industries"
-            className="block w-full border border-blue-900 bg-blue-900 text-white rounded-full py-3 text-center font-semibold text-sm"
+            className="flex justify-center items-center w-full border border-blue-900 bg-blue-900 text-white rounded-full py-3 font-semibold text-sm"
           >
             View all industries →
           </Link>

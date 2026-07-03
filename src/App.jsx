@@ -119,7 +119,7 @@ const NavLayout = ({ children }) => {
                         <div className="w-screen h-screen bg-white">
                           <div className="p-4 text-sm border-b flex gap-2">
                             <span className="cursor-pointer text-gray-500" onClick={() => setMenuView("main")}>Home</span>
-                            <span>â€º</span><span className="font-semibold">Products</span>
+                            <span className="text-gray-400">{">"}</span><span className="font-semibold">Products</span>
                           </div>
                           {[
                             ["/products/eicerise",   "EICE Rise"],

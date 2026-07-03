@@ -5,32 +5,36 @@ import Certificate from "../../src/Homecomps/Certificate";
 import ProductFooter from "../../src/Product/ProductFooter";
 import Copyright from "../../src/Othercomps/Copyright";
 
-export const metadata = {
-  title: "About EICE Technology | Global IT Services Company Since 2010",
-  description: "Learn about EICE Technology, a global IT services company with 200+ professionals delivering 180+ projects across 10+ countries since 2010.",
-  keywords: ["EICE Technology", "IT company", "software development company", "global IT services", "about EICE", "IT firm since 2010"],
-  openGraph: { title: "About EICE Technology | Global IT Services Since 2010", description: "Global IT firm with 200+ professionals, 180+ projects, 10+ countries.", url: "https://www.eicetechnology.com/about", siteName: "EICE Technology",
+export  async function generateMetadata() {
+ const title= "About EICE Technology — Our Company & Mission | India IT Firm";
+  const description= "Learn about EICE Technology — a Noida-based IT company building AI, ERP and logistics software for Indian enterprises. Meet our team and vision.";
+  
+  return {
+    keywords: ["EICE Technology", "IT company", "software development company", "global IT services", "about EICE", "IT firm since 2010"],
+  openGraph: { title, description, url: "https://www.eicetechnology.com/about", siteName: "EICE Technology",
     images: [{ url: "https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png", width: 1200, height: 630, alt: "EICE Technology" }], type: "website" },
-  twitter: { card: "summary_large_image", title: "About EICE Technology" ,
+  twitter: { card: "summary_large_image", title , description,
     images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png"]},
   alternates: { canonical: "https://www.eicetechnology.com/about/", languages: { "en-IN": "https://www.eicetechnology.com/about/", "en-US": "https://www.eicetechnology.com/about/", "x-default": "https://www.eicetechnology.com/about/" } },
-};
+};}
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "AboutPage",
-  "name": "About EICE Technology",
-  "url": "https://www.eicetechnology.com/about",
-  "description": "EICE Technology is a global IT services company founded in 2010 with 200+ professionals delivering 180+ projects across 10+ countries.",
-  "publisher": {
-    "@type": "Organization",
-    "name": "EICE Technology",
-    "url": "https://www.eicetechnology.com",
-    "foundingDate": "2010",
-    "numberOfEmployees": { "@type": "QuantitativeValue", "value": 200 },
-    "logo": { "@type": "ImageObject", "url": "https://d3r43jacxrwsrp.cloudfront.net/logo.svg" }
-  }
-};
+// const jsonLd = {
+//   "@context": "https://schema.org",
+//   "@type": "AboutPage",
+//   "name": "About EICE Technology",
+//   "url": "https://www.eicetechnology.com/about",
+//   "description": "EICE Technology is a global IT services company founded in 2010 with 200+ professionals delivering 180+ projects across 10+ countries.",
+//   "publisher": {
+//     "@type": "Organization",
+//     "name": "EICE Technology",
+//     "url": "https://www.eicetechnology.com",
+//     "foundingDate": "2010",
+//     "numberOfEmployees": { "@type": "QuantitativeValue", "value": 200 },
+//     "logo": { "@type": "ImageObject", "url": "https://d3r43jacxrwsrp.cloudfront.net/logo.svg" }
+//   }
+// };
+
+const jsonLd=[{"@context":"https://schema.org","@type":"AboutPage","name":"About EICE Technology — Our Company & Mission | India IT Firm","url":"https://www.eicetechnology.com/about-us/our-company/","description":"EICE Technology is a Noida-based IT company...","publisher":{"@type":"Organization","name":"EICE Technology"}}];
 
 export default function Page() {
   return (

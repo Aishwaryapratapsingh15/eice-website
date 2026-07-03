@@ -408,7 +408,7 @@
     .section2 {
         padding-left: 20px;
         padding-right: 20px;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     .section3Para {

@@ -21,9 +21,9 @@ function Offers() {
     //
 
     <>
-      <div  className="pb-2 sm:pb-10">
+      <div  className="pb-4 sm:pb-10">
         <div className="text-manrope px-5 sm:px-4 py-2 sm:py-2 max-w-7xl mx-auto">
-          <div ref={myRef} className="grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y- justify-items-center">
+          <div ref={myRef} className="grid grid-cols-1 lg:grid-cols-2 gap-4 justify-items-center">
             {Ouroffers.map((project) => (
               <Offeritem
                 key={project.id}
@@ -37,8 +37,8 @@ function Offers() {
           </div>
         </div>
 
-        {showmore && (<div className="text-manrope px-4 py-2  sm:py-2 max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y- justify-items-center">
+        {showmore && (<div className="text-manrope px-5 sm:px-4 py-2  sm:py-2 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 justify-items-center">
             {viewmore.map((project) => (
               <Offeritem
                 key={project.id}

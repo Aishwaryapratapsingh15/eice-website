@@ -74,15 +74,15 @@ export default function SmartFit() {
   return (
     <div className="w-full text-black">
       {/* HERO SECTION */}
-      <section className="py-10 px-4 sm:px-8 md:px-20 lg:px-20 xl:px-40 bg-white text-center pt-24 sm:pt-32">
-        <div className="flex justify-center mb-10">
+      <section className="py-4 sm:py-10 px-4 sm:px-8 md:px-20 lg:px-20 xl:px-40 bg-white text-left sm:text-center pt-20 sm:pt-32">
+        <div className="flex justify-center sm:mb-10 pb-4">
           <img
             src={heroImg}
             alt="EICE SmartFit"
             className="w-full max-w-[650px] object-contain"
           />
         </div>
-           <span className="inline-flex items-center gap-2 bg-blue-50 text-[#012060] px-3 py-2 rounded-full text-sm font-medium border border-blue-200 mb-4">
+           <span className="flex w-fit mx-auto items-center gap-2 bg-blue-50 text-[#012060] px-3 py-2 rounded-full text-sm font-medium border border-blue-200 sm:mb-4">
           
           <img 
             src={eiceSmartfitIcon}
@@ -93,7 +93,7 @@ export default function SmartFit() {
           Container loading optimization software
         </span>
 
-       <h1 className="text-[28px] sm:text-[32px] text-[#334155] md:text-[48px] mt-6 font-bold max-w-4xl mx-auto leading-tight">
+       <h1 className="text-[32px] text-[#334155] md:text-[48px] sm:mt-6 pt-4 font-bold max-w-4xl mx-auto leading-tight pb-4">
          <span className="text-[#01B0F1]">Optimize </span> Every Load. <span className="text-[#01B0F1]">Maximize</span> Every Container.
          <span className="text-[#01B0F1]"> Minimize</span> Every Cost.
         </h1>
@@ -102,14 +102,14 @@ export default function SmartFit() {
 
        
           
-           <p className="mt-6 text-[#64748B] max-w-2xl mx-auto text-base sm:text-[19px] font-semi-bold">
+           <p className="pb-4 sm:mt-6 text-[#64748B] max-w-2xl mx-auto text-[22px] sm:text-[19px] font-semi-bold">
           Stop paying for wasted container space. Eice SmartFit uses intelligent 3D optimization to generate perfect load plans — maximizing capacity, balancing weight distribution, and ensuring correct cargo placement. Upload your cargo list, select a container, and get step-by-step loading instructions with real-time weight analysis. No installation required.
         </p>
-         <div className="mt-8 flex flex-wrap justify-center gap-4">
+         <div className="sm:mt-8 flex flex-wrap justify-start sm:justify-center gap-4">
         
               {/* Primary */}
               <button onClick={() => navigate("/products/eicerise/form")}  
-              className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto hover:bg-blue-800 transition text-[18px]">
+              className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-[18px]">
                 Request a Demo
                   <img src={arrowIcon} alt="arrow"/>
         
@@ -124,16 +124,16 @@ export default function SmartFit() {
       </section>
 
       {/* CHALLENGE & SOLUTION */}
-      <section className="px-4 sm:px-8 md:px-12 lg:px-20 py-10 flex flex-col lg:flex-row gap-8 text-black">
+      <section className="px-4 sm:px-8 md:px-12 lg:px-20 py-4 sm:py-10 flex flex-col lg:flex-row gap-4 lg:gap-8 text-black">
 
-          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-4 sm:gap-8">
         {/* CHALLENGES */}
         <div className="flex-1 bg-white border border-[#E2E8F0] rounded-xl pt-4 pb-8 px-8">
-          <h2 className="text-3xl font-bold text-[#334155] mb-8 text-center">
+          <h2 className="text-[32px] sm:text-3xl font-bold text-[#334155] mb-4 sm:mb-8 text-center">
             Challenges
           </h2>
 
-          <ul className="space-y-5">
+          <ul className="space-y-4 sm:space-y-5">
             <li className="flex items-start gap-4 text-[#64748B] leading-relaxed font-semibold">
               <div className="min-w-6 h-6">
                 <img src={challengeIcon} className="w-6 h-6"/>
@@ -178,11 +178,11 @@ export default function SmartFit() {
 
         {/* SOLUTIONS */}
         <div className="flex-1 bg-white border border-[#E2E8F0] rounded-xl pt-4 pb-8 px-8">
-          <h2 className="text-3xl font-bold text-[#334155] mb-8 text-center">
+          <h2 className="text-[32px] sm:text-3xl font-bold text-[#334155] mb-4 sm:mb-8 text-center">
             Solutions
           </h2>
 
-          <ul className="space-y-5">
+          <ul className="space-y-4 sm:space-y-5">
             <li className="flex items-start gap-4 text-[#64748B] leading-relaxed font-semibold">
               <div className="min-w-6 h-6">
                 <img src={kbtIcon}/>
@@ -228,40 +228,40 @@ export default function SmartFit() {
       </section>
 
       {/* FEATURES */}
-      <section className="py-10 px-5 md:px-20 lg:px-20 xl:px-40 bg-white mx-auto">
-        <div className="text-center mb-10">
-          <h2 className="text-4xl font-bold text-[#334155] mb-5">
+      <section className="py-4 sm:py-10 px-5 md:px-20 lg:px-20 xl:px-40 bg-white mx-auto">
+        <div className="text-center mb-4 sm:mb-10">
+          <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155] mb-5">
             What You Can Do
           </h2>
 
-          <p className="text-[#64748B] text-lg md:text-xl max-w-2xl mx-auto">
+          <p className="text-[#64748B] text-[22px] sm:text-lg md:text-xl max-w-2xl mx-auto">
             Smart tools designed to optimize every shipment efficiently.
           </p>
         </div>
 
-        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="p-5 bg-white border border-[#E2E8F0] rounded-xl hover:-translate-y-2 transition-all duration-300"
+              className="p-4 sm:p-5 bg-white border border-[#E2E8F0] rounded-xl hover:-translate-y-2 transition-all duration-300"
             >
               {/* SVG */}
         <div className="rounded-lg flex items-start mb-5">
           <img src={feature.icon} alt="icon" className="w-14 h-14 object-contain" />
         </div>
 
-              <h3 className="font-bold md:text-2xl text-2xl text-[#334155] whitespace-pre-line mb-2">
+              <h3 className="font-bold text-[24px] sm:text-2xl text-[#334155] whitespace-pre-line mb-2">
                 {feature.title}
               </h3>
 
-              <p className="text-[#64748B] md:text-lg text-lg leading-relaxed">
+              <p className="text-[#64748B] text-[16px] sm:text-lg leading-relaxed">
                 {feature.text}
               </p>
             </div>
           ))}
         </div>
       </section>
-            <section className="bg-gray-50 relative py-10 px-6 md:px-12 lg:px-24 xl:px-40 overflow-hidden mb-10">
+            <section className="bg-gray-50 relative py-10 px-5 md:px-12 lg:px-24 xl:px-40 overflow-hidden mb-10">
               <h2 className="text-4xl md:text-4xl font-bold text-[#334155] mb-[14px] leading-tight text-center">
                 Ready to Transform Your Container Optimization?
               </h2>

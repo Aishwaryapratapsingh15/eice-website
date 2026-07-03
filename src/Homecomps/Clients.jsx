@@ -44,7 +44,7 @@ export default function Clients() {
           {width > 1000 ? (
             <img src={imgn} alt="Large screen client logo" width="1200" height="400" />
           ) : (
-            <div style={{ width: '100%', maxWidth: '300px' }}>
+            <div style={{ width: '100%' }}>
               <div>
                 <img
                   src={images[currentIndex]}

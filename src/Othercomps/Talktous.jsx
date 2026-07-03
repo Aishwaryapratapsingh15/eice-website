@@ -3,10 +3,10 @@ import { NavLink, Link } from "@/nextNavigation";
 
 function Talktous() {
   return (
-    <div className="bg-talkbanner bg-no-repeat bg-cover  py-12">
+    <div className="bg-talkbanner bg-no-repeat bg-cover bg-center w-full">
       <div className="flex items-center justify-center pb-10 sm:pb-12 lg:pb-16">
         <div className="max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 lg:gap-12 gap-4 grid-cols-1 justify-center items-center text-left">
-          <h1 className="col-span-full max-w-3xl text-blackk lg:text-left text-left fontweight_1 fontsize_2 w-full ">
+          <h1 className="col-span-full max-w-3xl text-blackk lg:text-left text-left fontweight_1 fontsize_2 w-full pt-4">
             Our strength lies in delivering innovative,{" "}
             <span className="text-bloo">Industry-Specific Solutions</span>.
             Partner with EICE to transform your business and achieve{" "}

@@ -1,4 +1,4 @@
-﻿import React from 'react'
+import React from 'react'
 import styles from "./Certificate.module.css"
 
 const c1 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/cert/oip.jpeg";

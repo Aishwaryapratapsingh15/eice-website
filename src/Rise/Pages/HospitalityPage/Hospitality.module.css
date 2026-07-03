@@ -673,6 +673,11 @@
 
     .iconAndTextBox {
         width: 100%;
+        height: 185px;
+    }
+
+    .imgBox img {
+        width: 55%;
     }
 
     .clientLogoBox {
