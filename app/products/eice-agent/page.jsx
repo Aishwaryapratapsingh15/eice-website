@@ -22,6 +22,8 @@ export  async function generateMetadata() {
   const description= "EiceAgent is a no-code AI agent platform for Indian enterprises: automate sales, customer support, HR and operations with conversational AI workflows.";
   
   return {
+    title,
+    description,
     keywords: ["AI agent platform India / AI automation software India B2B"],
   openGraph: { title, description, url: "https://www.eicetechnology.com/products/eice-agent", siteName: "EICE Technology", type: "website" },
   twitter: { card: "summary_large_image", title , description,

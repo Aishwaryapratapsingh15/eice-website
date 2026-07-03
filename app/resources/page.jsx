@@ -10,6 +10,8 @@ export  async function generateMetadata() {
   const description= "Explore EICE Technology's resource hub: guides, case studies, whitepapers and blogs on AI agents, hospitality ERP, logistics software and more.";
   
   return {
+    title,
+    description,
     keywords: ["EICE Technology resources"],
   openGraph: { title, description, url: "https://www.eicetechnology.com/resources", siteName: "EICE Technology", type: "website" },
   twitter: { card: "summary_large_image", title , description,

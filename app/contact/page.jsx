@@ -10,6 +10,8 @@ export  async function generateMetadata() {
   const description= "Contact EICE Technology to schedule a demo of EiceRise, EasyLogy, Smartfit, EiceAgent or EiceVoice. Reach our team in Noida, India.";
   
   return {
+    title,
+    description,
     keywords: ["contact EICE Technology"],
   openGraph: { title, description, url: "https://www.eicetechnology.com/contact", siteName: "EICE Technology", type: "website" },
   twitter: { card: "summary_large_image", title , description,

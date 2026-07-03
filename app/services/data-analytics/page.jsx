@@ -5,6 +5,8 @@ export  async function generateMetadata() {
   const description= "Unlock business insights with EICE Technology's data analytics services — dashboards, BI, predictive analytics and data engineering for Indian enterprises.";
   
   return {
+    title,
+    description,
     keywords: ["data analytics services India"],
   openGraph: { title, description, url: "https://www.eicetechnology.com/services/data-analytics", siteName: "EICE Technology", type: "website" },
   twitter: { card: "summary_large_image", title , description,

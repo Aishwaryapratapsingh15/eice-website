@@ -23,6 +23,8 @@ export  async function generateMetadata() {
   const description= "Smartfit simplifies cargo management for Indian freight forwarders, courier companies and 3PL providers: tracking, billing, manifests and GST compliance.";
   
   return {
+    title,
+    description,
     keywords: ["logistics management software India / TMS software India"],
   openGraph: { title, description, url: "https://www.eicetechnology.com/products/smartfit", siteName: "EICE Technology", type: "website" },
   twitter: { card: "summary_large_image", title , description,

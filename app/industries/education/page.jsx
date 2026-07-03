@@ -7,6 +7,8 @@ export  async function generateMetadata() {
   const description= "EICE Technology powers schools, colleges and edtech companies with custom software, LMS platforms and cloud solutions across India.";
   
   return {
+    title,
+    description,
     keywords: ["education technology solutions India"],
   openGraph: { title, description, url: "https://www.eicetechnology.com/industries/education", siteName: "EICE Technology", type: "website" },
   twitter: { card: "summary_large_image", title , description,

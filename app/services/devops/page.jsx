@@ -5,6 +5,8 @@ export  async function generateMetadata() {
   const description= "EICE Technology's DevOps services: CI/CD pipelines, cloud infrastructure, Kubernetes, Docker and automation for Indian tech companies.";
   
   return {
+    title,
+    description,
     keywords: ["DevOps services India"],
   openGraph: { title, description, url: "https://www.eicetechnology.com/services/devops", siteName: "EICE Technology", type: "website" },
   twitter: { card: "summary_large_image", title , description,

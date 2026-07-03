@@ -10,6 +10,8 @@ export  async function generateMetadata() {
   const description= "Learn about EICE Technology — a Noida-based IT company building AI, ERP and logistics software for Indian enterprises. Meet our team and vision.";
   
   return {
+    title,
+    description,
     keywords: ["EICE Technology", "IT company", "software development company", "global IT services", "about EICE", "IT firm since 2010"],
   openGraph: { title, description, url: "https://www.eicetechnology.com/about", siteName: "EICE Technology",
     images: [{ url: "https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png", width: 1200, height: 630, alt: "EICE Technology" }], type: "website" },

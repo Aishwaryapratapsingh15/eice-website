@@ -35,6 +35,8 @@ export  async function generateMetadata() {
   const description= "EICE Technology delivers AI Agent platforms, Hospitality ERP (EiceRise), Logistics Software (EasyLogy) and Cargo Management (Smartfit) for Indian businesses.";
   
   return {
+    title,
+    description,
     keywords: ["EICE Technology IT solutions India"],
   openGraph: { title, description, url: "https://www.eicetechnology.com", siteName: "EICE Technology", type: "website" },
   twitter: { card: "summary_large_image", title , description,
