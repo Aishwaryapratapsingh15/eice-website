@@ -159,7 +159,7 @@ export default function AppDevelopment() {
 
         <h1 className="text-[40px] sm:text-[48px] md:text-[56px] font-bold text-[#334155] max-w-4xl mx-auto leading-tight mt-4">
           Build apps that{" "}
-          <span className="text-[#01B0F1]">scale with your business</span>
+          <span className="text-[#01B0F1]">scale<br/> with your business</span>
         </h1>
 
         <p className="mt-6 text-[#64748B] max-w-2xl mx-auto text-[16px] sm:text-[20px] leading-relaxed">

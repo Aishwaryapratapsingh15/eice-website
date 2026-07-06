@@ -205,7 +205,7 @@ export default function ConsultancyServices() {
             {services.map((service, i) => (
               <div key={i} className="bg-white border border-[#E2E8F0] rounded-xl p-4 sm:p-8 flex flex-col">
                 {service.icon ? (
-                  <div className="w-12 h-12 bg-[#012060] rounded-lg flex items-center justify-center p-2 mb-4">
+                  <div className="w-12 h-12 rounded-lg flex items-center justify-center p-2 mb-4">
                     <img src={service.icon} alt="" className="w-full h-full object-contain" />
                   </div>
                 ) : (
