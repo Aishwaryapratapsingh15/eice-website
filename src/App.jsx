@@ -46,6 +46,8 @@ const cloudservicesIcon = "https://d3r43jacxrwsrp.cloudfront.net/cloud_services.
 const dataAnalyticsIcon = "https://d3r43jacxrwsrp.cloudfront.net/data_analytics.svg";
 const enterpriseIcon = "https://d3r43jacxrwsrp.cloudfront.net/enterprise_app_dev.svg";
 const gisIcon = "https://d3r43jacxrwsrp.cloudfront.net/gis.svg";
+const softwareTestingIcon ="https://d3r43jacxrwsrp.cloudfront.net/software_testing.svg";
+const androidAndIosIcon ="https://d3r43jacxrwsrp.cloudfront.net/android_and_ios.svg"
 
 // â”€â”€â”€ Navigation Shell â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
@@ -325,7 +327,7 @@ const OurServices = ({ handleSetSelected = () => {} }) => (
               { href: "/services/enterprise-app-dev", icon: enterpriseIcon, name: "Enterprise App Dev",  desc: "Custom enterprise solutions" },
               { href: "/services/web-development",    icon: `${_APP}/web_development.svg`,          name: "Web Development",     desc: "Modern web applications" },
               { href: "/services/saas",               icon: `${_APP}/saas_development.svg`,         name: "SaaS Development",    desc: "Cloud-based SaaS platforms" },
-              { href: "/services/android",            icon: null,                                   name: "Android & iOS Development", desc: "Native mobile applications" },
+              { href: "/services/android",            icon: androidAndIosIcon,                                   name: "Android & iOS Development", desc: "Native mobile applications" },
               { href: "/services/chatbot",            icon: `${_APP}/chat_bot_development.svg`,     name: "Chatbot Development", desc: "AI-powered conversational bots" },
             ].map(({ href, icon, name, desc }) => (
               <Link key={href} href={href} onClick={() => handleSetSelected(null)} className="flex items-start gap-3 group">
@@ -383,7 +385,7 @@ const OurServices = ({ handleSetSelected = () => {} }) => (
           <div className="grid grid-cols-2 gap-4">
             {[
               { href: "/services/ui-ux",            icon: `${_CS}/uiux_consulting.svg`, name: "UI/UX Design",     desc: "User-centred design" },
-              { href: "/services/software-testing",  icon: null,                                  name: "Software Testing", desc: "QA & test automation" },
+              { href: "/services/software-testing",  icon: softwareTestingIcon,                                  name: "Software Testing", desc: "QA & test automation" },
               { href: "/services/gis",              icon: gisIcon,          name: "GIS Solutions",    desc: "Geospatial data & mapping" },
             ].map(({ href, icon, name, desc }) => (
               <Link key={href} href={href} onClick={() => handleSetSelected(null)} className="flex items-start gap-3 group">
