@@ -16,7 +16,7 @@ import Aiml from "../../../src/Servcomps/Aiml";
 // };
 
 export  async function generateMetadata() {
- const title= "AI & Machine Learning Solutions Company in India | EICE Technology";
+ const title= "Generative AI & Machine Learning Solutions Company in India | EICE Technology";
   const description= "EICE Technology delivers AI and Machine Learning solutions for businesses in India, including generative AI, predictive analytics, intelligent automation, NLP, computer vision, and custom AI development to accelerate digital transformation and business growth.";
   
   return {

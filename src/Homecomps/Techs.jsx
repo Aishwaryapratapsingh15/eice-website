@@ -215,7 +215,7 @@ function Techs() {
                 <li key={category.id} className={`flex justify-center ${index < 3 ? "col-span-2" : "col-span-3"}`}>
                   <button
                     onClick={() => setActiveCategory(category.id)}
-                    className={`w-full py-2 rounded-full text-sm font-medium transition ${
+                    className={`w-full px-4 py-2 rounded-full text-sm font-medium transition ${
                       activeCategory === category.id
                         ? "bg-blue-900 text-white"
                         : "bg-gray-200 text-gray-700 hover:bg-gray-300"
@@ -235,7 +235,7 @@ function Techs() {
                 key={category.id}
                 className={activeCategory === category.id ? "block" : "hidden"}
               >
-                <div className="grid grid-cols-3 gap-3 sm:flex sm:flex-wrap sm:items-center sm:justify-center">
+                <div className="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-items-center">
                   {technologies[category.id].map((tech, index) => (
                     <Technology
                       key={index}

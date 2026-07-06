@@ -7,6 +7,11 @@ import { AnimatePresence, motion } from "framer-motion";
 const logo = "https://d3r43jacxrwsrp.cloudfront.net/logo.svg";
 import { NavLink, Link, useNavigate } from "@/nextNavigation";
 
+import Ouroffers, { viewmore } from "./Data/Ouroffers";
+const _offerIcons = Object.fromEntries(
+  [...Ouroffers, ...viewmore].map(o => [o.link, `data:image/svg+xml;utf8,${encodeURIComponent(o.svg)}`])
+);
+
 import { GoLaw } from "react-icons/go";
 import { FaBusinessTime, FaOilCan, FaSyringe } from "react-icons/fa";
 import { IoIosCash } from "react-icons/io";
@@ -37,6 +42,10 @@ const verilockIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Verilock.svg"
 const eiceAgentIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/EiceAiAgent.svg";
 const eiceSmartfitIcon = "https://d3r43jacxrwsrp.cloudfront.net/smartfit/SmartFit_Icon.svg";
 const eiceopsIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/EICEOPS.svg";
+const cloudservicesIcon = "https://d3r43jacxrwsrp.cloudfront.net/cloud_services.svg";
+const dataAnalyticsIcon = "https://d3r43jacxrwsrp.cloudfront.net/data_analytics.svg";
+const enterpriseIcon = "https://d3r43jacxrwsrp.cloudfront.net/enterprise_app_dev.svg";
+const gisIcon = "https://d3r43jacxrwsrp.cloudfront.net/gis.svg";
 
 // â”€â”€â”€ Navigation Shell â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
@@ -291,26 +300,100 @@ const Aboutus = ({ handleSetSelected = () => {} }) => (
   </div>
 );
 
+const _APP = "https://d3r43jacxrwsrp.cloudfront.net/app-development";
+const _ET  = "https://d3r43jacxrwsrp.cloudfront.net/emerging-tech";
+const _CS  = "https://d3r43jacxrwsrp.cloudfront.net/consulting-services";
+const _FS  = "https://d3r43jacxrwsrp.cloudfront.net/flagship-services";
+
+const SvcNavIcon = ({ src }) => (
+  <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg flex-shrink-0 p-2 flex items-center justify-center">
+    {src ? <img src={src} alt="" className="w-full h-full object-contain" /> : null}
+  </div>
+);
+
 const OurServices = ({ handleSetSelected = () => {} }) => (
-  <div className="p-1">
-    <div className="grid grid-cols-3 gap-4">
-      <div><StatsCard /></div>
-      <div className="col-span-2">
-        <div className="grid grid-cols-2 gap-y-2 gap-x-4 items-start">
-          {[
-            { to: "/services?scrollTo=appDevelopment",       Icon: MdOutlineAppRegistration, label: "App Development",       desc: "Leveraging 15+ years of expertise, EICE has delivered over 180 projects across 10+ countries." },
-            { to: "/services?scrollTo=emergingTechnologies", Icon: LuCircuitBoard,           label: "Emerging Tech",          desc: "EICE pioneers in integrating emerging technologies, backed by experience across 10+ countries." },
-            { to: "/services?scrollTo=consultancy",          Icon: FaPeopleArrows,           label: "Consultancy Services",   desc: "Our consultancy services draw on 15+ years of insight, assisting 60+ clients in 10+ countries." },
-            { to: "/services?scrollTo=flagshipServices",     Icon: IoIosBuild,               label: "Flagship Services",      desc: "EICE provides robust technical services with a proven track record of 180+ projects." },
-          ].map(({ to, Icon, label, desc }) => (
-            <Link key={to} to={to} onClick={() => handleSetSelected(null)} className="group cursor-pointer py-1 text-blackk/70 transition-colors">
-              <Icon size={40} className="mb-2 text-[#012060]" />
-              <div className="text-md text-left fontweight_1 text-blackk">{label}</div>
-              <div className="h-0.5 rounded-full group-hover:w-full w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
-              <h1 className="text-sm pt-1">{desc}</h1>
-            </Link>
-          ))}
+  <div className="grid grid-cols-3 gap-4">
+    <div><StatsCard /></div>
+    <div className="col-span-2">
+      <div className="bg-white rounded-2xl p-5 shadow-sm overflow-y-auto max-h-[70vh]">
+
+        <div className="mb-5">
+          <p className="text-xs text-gray-400 tracking-wide mb-3">APP DEVELOPMENT</p>
+          <div className="grid grid-cols-2 gap-4">
+            {[
+              { href: "/services/app-development",    icon: `${_APP}/application_development.svg`, name: "App Development",     desc: "SaaS, web apps & chatbots" },
+              { href: "/services/enterprise-app-dev", icon: enterpriseIcon, name: "Enterprise App Dev",  desc: "Custom enterprise solutions" },
+              { href: "/services/web-development",    icon: `${_APP}/web_development.svg`,          name: "Web Development",     desc: "Modern web applications" },
+              { href: "/services/saas",               icon: `${_APP}/saas_development.svg`,         name: "SaaS Development",    desc: "Cloud-based SaaS platforms" },
+              { href: "/services/android",            icon: null,                                   name: "Android & iOS Development", desc: "Native mobile applications" },
+              { href: "/services/chatbot",            icon: `${_APP}/chat_bot_development.svg`,     name: "Chatbot Development", desc: "AI-powered conversational bots" },
+            ].map(({ href, icon, name, desc }) => (
+              <Link key={href} href={href} onClick={() => handleSetSelected(null)} className="flex items-start gap-3 group">
+                <SvcNavIcon src={icon} />
+                <div><p className="font-semibold text-sm group-hover:text-bloo transition-colors">{name}</p><p className="text-xs text-gray-500">{desc}</p></div>
+              </Link>
+            ))}
+          </div>
         </div>
+
+        <div className="border-t my-3" />
+
+        <div className="mb-5">
+          <p className="text-xs text-gray-400 tracking-wide mb-3">AI & EMERGING TECH</p>
+          <div className="grid grid-cols-2 gap-4">
+            {[
+              { href: "/services/emerging-tech", icon: `${_ET}/research_backed_implementation.svg`, name: "Emerging Tech",  desc: "AI, IoT & Blockchain" },
+              { href: "/services/ai-ml",         icon: `${_ET}/ai_and_ml.svg`,                      name: "AI / ML",        desc: "Machine learning solutions" },
+              { href: "/services/blockchain",    icon: `${_ET}/blockchain_development.svg`,          name: "Blockchain",     desc: "Decentralized applications" },
+              { href: "/services/iot",           icon: `${_ET}/internet_of_things.svg`,              name: "IoT Solutions",  desc: "Connected device ecosystems" },
+            ].map(({ href, icon, name, desc }) => (
+              <Link key={href} href={href} onClick={() => handleSetSelected(null)} className="flex items-start gap-3 group">
+                <SvcNavIcon src={icon} />
+                <div><p className="font-semibold text-sm group-hover:text-bloo transition-colors">{name}</p><p className="text-xs text-gray-500">{desc}</p></div>
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        <div className="border-t my-3" />
+
+        <div className="mb-5">
+          <p className="text-xs text-gray-400 tracking-wide mb-3">STRATEGY & OPERATIONS</p>
+          <div className="grid grid-cols-2 gap-4">
+            {[
+              { href: "/services/consultancy-services",   icon: `${_CS}/embedded_partnership.svg`,   name: "Consultancy Services",   desc: "Strategic technology guidance" },
+              { href: "/services/flagship-services",      icon: `${_FS}/end_to_end_ownership.svg`,   name: "Flagship Services",      desc: "Digital transformation & DevOps" },
+              { href: "/services/digital-transformation", icon: `${_FS}/digital_transformation.svg`, name: "Digital Transformation", desc: "End-to-end modernisation" },
+              { href: "/services/devops",                 icon: `${_FS}/devOps.svg`,                 name: "DevOps",                 desc: "CI/CD & cloud automation" },
+              { href: "/services/cloud",                  icon: cloudservicesIcon,       name: "Cloud Services",         desc: "AWS, Azure & GCP solutions" },
+              { href: "/services/data-analytics",         icon: dataAnalyticsIcon, name: "Data Analytics",      desc: "Insights from your data" },
+            ].map(({ href, icon, name, desc }) => (
+              <Link key={href} href={href} onClick={() => handleSetSelected(null)} className="flex items-start gap-3 group">
+                <SvcNavIcon src={icon} />
+                <div><p className="font-semibold text-sm group-hover:text-bloo transition-colors">{name}</p><p className="text-xs text-gray-500">{desc}</p></div>
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        <div className="border-t my-3" />
+
+        <div>
+          <p className="text-xs text-gray-400 tracking-wide mb-3">QUALITY & DESIGN</p>
+          <div className="grid grid-cols-2 gap-4">
+            {[
+              { href: "/services/ui-ux",            icon: `${_CS}/uiux_consulting.svg`, name: "UI/UX Design",     desc: "User-centred design" },
+              { href: "/services/software-testing",  icon: null,                                  name: "Software Testing", desc: "QA & test automation" },
+              { href: "/services/gis",              icon: gisIcon,          name: "GIS Solutions",    desc: "Geospatial data & mapping" },
+            ].map(({ href, icon, name, desc }) => (
+              <Link key={href} href={href} onClick={() => handleSetSelected(null)} className="flex items-start gap-3 group">
+                <SvcNavIcon src={icon} />
+                <div><p className="font-semibold text-sm group-hover:text-bloo transition-colors">{name}</p><p className="text-xs text-gray-500">{desc}</p></div>
+              </Link>
+            ))}
+          </div>
+        </div>
+
       </div>
     </div>
   </div>

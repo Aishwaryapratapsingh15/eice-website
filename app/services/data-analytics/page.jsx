@@ -1,13 +1,13 @@
 import Dataanalytics from "../../../src/Servcomps/Dataanalytics";
 
 export  async function generateMetadata() {
- const title= "EICE Technology | IT Services & Custom Software Development Company in India";
-  const description= "EICE Technology is a leading IT and software development company in India, providing custom software development, web and mobile app development, cloud solutions, digital transformation, and IT consulting services for businesses across industries. .";
+ const title= "Data Analytics Services Company in India | Business Intelligence & Data Insights";
+  const description= "Transform your business with data analytics services in India. We provide business intelligence, dashboards, reporting, predictive analytics, and actionable insights to drive growth.";
   
   return {
     title,
     description,
-    keywords: ["EICE Technology, IT company India, software development company India, custom software development, web development services, mobile app development company, IT consulting services, cloud solutions India, enterprise software solutions, digital transformation services, business software development, B2B IT services India, software outsourcing company India, technology solutions provider India, ERP development company, CRM software development, IT solutions for businesses, software services India, enterprise application development, Indian IT service provider"],
+    keywords: ["Data Analytics Services India, Data Analytics Company India, Business Intelligence Services India, Data Analytics Consulting India, Predictive Analytics Services India, Data Visualization Services India, Big Data Analytics India, Business Reporting Solutions India, Data Insights Company India, Data Analytics Solutions India"],
   openGraph: { title, description, url: "https://www.eicetechnology.com/services/data-analytics", siteName: "EICE Technology", type: "website" },
   twitter: { card: "summary_large_image", title , description,
     images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png"]},

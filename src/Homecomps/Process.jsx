@@ -11,23 +11,23 @@ function Process() {
       {/*Pattern*/}
       <div className="bg-bgplate bg-cover pt-20 "></div>
       {/* Proven processes,  unparalleled expertise, top notch tools */}
-      <div className="bg-zinc-50">
+      <div className="bg-zinc-50 px-5">
         <div className="sm:max-w-7xl mx-auto w-screen">
-          <div className="flex flex-col items-center justify-center pb-12 sm:pb-16 md:pb-20">
-            <h2 className="text-bloo fontweight_1 text-xl sm:text-2xl lg:text-3xl mb-4 py-1">
+          <div className="flex flex-col justify-start sm:items-center sm:justify-center pb-4 sm:pb-16 md:pb-20">
+            <h2 className="text-bloo fontweight_1 text-[22px] sm:text-2xl lg:text-3xl mb-4 py-1">
               Agile Software Development
             </h2>
-            <h3 className="text-blackk fontweight_1 text-center text-2xl  md:text-3xl lg:text-[32px] max-w-4xl ">
+            <h3 className="text-blackk fontweight_1 text-center text-[32px]  md:text-3xl lg:text-[32px] max-w-4xl mb-4">
               Proven processes,  unparalleled expertise, and top notch tools
             </h3>
           </div>
 
-          <div className="flex flex-col gap-20 items-center w-full h-full justify-center max-w-7xl mx-auto">
-            <div className="p-4 px-8 grid md:grid-cols-2 grid-cols-1 gap-12">
+          <div className="flex flex-col gap-4 justify-start sm:gap-20 sm:items-center w-full h-full sm:justify-center max-w-7xl mx-auto">
+            <div className="sm:p-4 sm:px-8 grid md:grid-cols-2 grid-cols-1 gap-12">
               <div className="justify-self-center bg-bannerai bg-cover w-[41vh] h-[38.3vh] scale-[1.1]"></div>
               <div>
                 <div className="justify-center flex flex-col w-full h-full">
-                  <h2 className="responsiveFont1 text-blackk">
+                  <h2 className="responsiveFont1 text-blackk text-[18px]">
                     Generative AI
                   </h2>
                   
@@ -45,7 +45,7 @@ function Process() {
               </div>
             </div>
             <div>
-              <div className="flex flex-col sm:flex-row justify-center items-center gap-8 p-4">
+              <div className="flex flex-col justify-start sm:flex-row sm:justify-center sm:items-center gap-4 sm:p-4">
                 <div className="w-9/12">
                   <h2 className="text-2xl font-semibold mb-4 text-gray-600">
                     Tech We Use
