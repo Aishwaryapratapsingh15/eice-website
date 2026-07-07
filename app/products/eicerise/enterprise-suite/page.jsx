@@ -14,7 +14,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Enterprise Suite Pricing | EICE Rise Hospitality ERP", description: "EICE Rise Enterprise Suite  comprehensive hospitality ERP for large hotel groups with all modules including room booking, POS, payroll, and advanced analytics." },
-  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/enterprise-suite/", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/enterprise-suite/", "en-US": "https://www.eicetechnology.com/products/eicerise/enterprise-suite/", "x-default": "https://www.eicetechnology.com/products/eicerise/enterprise-suite/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/enterprise-suite", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/enterprise-suite/", "en-US": "https://www.eicetechnology.com/products/eicerise/enterprise-suite/", "x-default": "https://www.eicetechnology.com/products/eicerise/enterprise-suite/" } },
 };
 
 

@@ -17,7 +17,7 @@ export  async function generateMetadata() {
     images: [{ url: "https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png", width: 1200, height: 630, alt: "EICE Technology" }], type: "website" },
   twitter: { card: "summary_large_image", title , description,
     images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png"]},
-  alternates: { canonical: "https://www.eicetechnology.com/about/", languages: { "en-IN": "https://www.eicetechnology.com/about/", "en-US": "https://www.eicetechnology.com/about/", "x-default": "https://www.eicetechnology.com/about/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/about", languages: { "en-IN": "https://www.eicetechnology.com/about/", "en-US": "https://www.eicetechnology.com/about/", "x-default": "https://www.eicetechnology.com/about/" } },
 };}
 
 // const jsonLd = {

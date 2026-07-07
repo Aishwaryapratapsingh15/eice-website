@@ -14,7 +14,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Vanilla Suite Pricing | EICE Rise Hospitality ERP", description: "EICE Rise Vanilla Suite  essential hospitality ERP bundle with POS, banquet management, inventory tracking, and food cost analysis at an affordable price." },
-  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/vanilla-suite/", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/vanilla-suite/", "en-US": "https://www.eicetechnology.com/products/eicerise/vanilla-suite/", "x-default": "https://www.eicetechnology.com/products/eicerise/vanilla-suite/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/vanilla-suite", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/vanilla-suite/", "en-US": "https://www.eicetechnology.com/products/eicerise/vanilla-suite/", "x-default": "https://www.eicetechnology.com/products/eicerise/vanilla-suite/" } },
 };
 
 

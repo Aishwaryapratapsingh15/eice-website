@@ -25,7 +25,7 @@ export  async function generateMetadata() {
   openGraph: { title, description, url: "https://www.eicetechnology.com/services", siteName: "EICE Technology", type: "website" },
   twitter: { card: "summary_large_image", title , description,
     images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png"]},
-  alternates: { canonical: "https://www.eicetechnology.com/services/", languages: { "en-IN": "https://www.eicetechnology.com/services/", "en-US": "https://www.eicetechnology.com/services/", "x-default": "https://www.eicetechnology.com/services/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/services", languages: { "en-IN": "https://www.eicetechnology.com/services/", "en-US": "https://www.eicetechnology.com/services/", "x-default": "https://www.eicetechnology.com/services/" } },
 };}
 
 const jsonLd = [

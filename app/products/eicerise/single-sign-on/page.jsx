@@ -14,7 +14,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Single Sign-On | EICE Rise Hospitality ERP", description: "Secure hotel operations with EICE Rise Single Sign-On  centralized authentication, role-based access control, and seamless integration across all EICE Rise modules." },
-  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/single-sign-on/", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/single-sign-on/", "en-US": "https://www.eicetechnology.com/products/eicerise/single-sign-on/", "x-default": "https://www.eicetechnology.com/products/eicerise/single-sign-on/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/single-sign-on", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/single-sign-on/", "en-US": "https://www.eicetechnology.com/products/eicerise/single-sign-on/", "x-default": "https://www.eicetechnology.com/products/eicerise/single-sign-on/" } },
 };
 
 

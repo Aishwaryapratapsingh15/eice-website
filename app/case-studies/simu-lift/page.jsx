@@ -12,7 +12,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "SimuLIFT Case Study | Elevator Simulation Platform | EICE Technology", description: "EICE Technology's SimuLIFT: an advanced elevator simulation platform for testing and optimizing lift system performance and safety." },
-  alternates: { canonical: "https://www.eicetechnology.com/case-studies/simu-lift/", languages: { "en-IN": "https://www.eicetechnology.com/case-studies/simu-lift/", "en-US": "https://www.eicetechnology.com/case-studies/simu-lift/", "x-default": "https://www.eicetechnology.com/case-studies/simu-lift/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/case-studies/simu-lift", languages: { "en-IN": "https://www.eicetechnology.com/case-studies/simu-lift/", "en-US": "https://www.eicetechnology.com/case-studies/simu-lift/", "x-default": "https://www.eicetechnology.com/case-studies/simu-lift/" } },
 };
 
 

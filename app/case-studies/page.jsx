@@ -10,7 +10,7 @@ export const metadata = {
     images: [{ url: "https://d3r43jacxrwsrp.cloudfront.net/Compressed/casestudy.png", width: 1200, height: 630, alt: "EICE Technology" }], type: "website" },
   twitter: { card: "summary_large_image", title: "Case Studies | EICE Technology" ,
     images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/casestudy.png"]},
-  alternates: { canonical: "https://www.eicetechnology.com/case-studies/", languages: { "en-IN": "https://www.eicetechnology.com/case-studies/", "en-US": "https://www.eicetechnology.com/case-studies/", "x-default": "https://www.eicetechnology.com/case-studies/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/case-studies", languages: { "en-IN": "https://www.eicetechnology.com/case-studies/", "en-US": "https://www.eicetechnology.com/case-studies/", "x-default": "https://www.eicetechnology.com/case-studies/" } },
 };
 
 const jsonLd = [

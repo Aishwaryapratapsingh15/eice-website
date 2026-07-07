@@ -14,7 +14,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Pricing | EICE Rise Hotel & Hospitality ERP", description: "Explore EICE Rise pricing plans  flexible, modular hospitality ERP pricing for hotels, resorts, and clubs. Choose the right suite for your property size." },
-  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/pricing/", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/pricing/", "en-US": "https://www.eicetechnology.com/products/eicerise/pricing/", "x-default": "https://www.eicetechnology.com/products/eicerise/pricing/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/pricing", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/pricing/", "en-US": "https://www.eicetechnology.com/products/eicerise/pricing/", "x-default": "https://www.eicetechnology.com/products/eicerise/pricing/" } },
 };
 
 

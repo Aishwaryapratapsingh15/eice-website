@@ -14,7 +14,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Vendor Management | EICE Rise Hospitality ERP", description: "Manage hotel vendor relationships with EICE Rise Vendor Management  vendor onboarding, performance rating, contract management, and compliance tracking." },
-  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/vendor-management/", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/vendor-management/", "en-US": "https://www.eicetechnology.com/products/eicerise/vendor-management/", "x-default": "https://www.eicetechnology.com/products/eicerise/vendor-management/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/vendor-management", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/vendor-management/", "en-US": "https://www.eicetechnology.com/products/eicerise/vendor-management/", "x-default": "https://www.eicetechnology.com/products/eicerise/vendor-management/" } },
 };
 
 

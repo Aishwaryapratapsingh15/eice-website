@@ -5,7 +5,7 @@ import Copyright from "../../../../src/Othercomps/Copyright";
 export const metadata = {
   title: "Products | EICE Rise Hospitality ERP",
   robots: { index: false, follow: false },
-  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/products/", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/products/", "en-US": "https://www.eicetechnology.com/products/eicerise/products/", "x-default": "https://www.eicetechnology.com/products/eicerise/products/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/products", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/products/", "en-US": "https://www.eicetechnology.com/products/eicerise/products/", "x-default": "https://www.eicetechnology.com/products/eicerise/products/" } },
 };
 
 const jsonLd = {

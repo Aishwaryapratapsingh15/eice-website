@@ -12,7 +12,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Noralta FEMMS Case Study | Field Equipment Management | EICE Technology", description: "EICE Technology's FEMMS for Noralta: a field equipment maintenance management system improving asset lifecycle and reducing maintenance costs." },
-  alternates: { canonical: "https://www.eicetechnology.com/case-studies/noralta-femms/", languages: { "en-IN": "https://www.eicetechnology.com/case-studies/noralta-femms/", "en-US": "https://www.eicetechnology.com/case-studies/noralta-femms/", "x-default": "https://www.eicetechnology.com/case-studies/noralta-femms/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/case-studies/noralta-femms", languages: { "en-IN": "https://www.eicetechnology.com/case-studies/noralta-femms/", "en-US": "https://www.eicetechnology.com/case-studies/noralta-femms/", "x-default": "https://www.eicetechnology.com/case-studies/noralta-femms/" } },
 };
 
 

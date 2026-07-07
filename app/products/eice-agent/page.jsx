@@ -28,7 +28,7 @@ export  async function generateMetadata() {
   openGraph: { title, description, url: "https://www.eicetechnology.com/products/eice-agent", siteName: "EICE Technology", type: "website" },
   twitter: { card: "summary_large_image", title , description,
     images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png"]},
-  alternates: { canonical: "https://www.eicetechnology.com/products/eice-agent/", languages: { "en-IN": "https://www.eicetechnology.com/products/eice-agent/", "en-US": "https://www.eicetechnology.com/products/eice-agent/", "x-default": "https://www.eicetechnology.com/products/eice-agent/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/eice-agent", languages: { "en-IN": "https://www.eicetechnology.com/products/eice-agent/", "en-US": "https://www.eicetechnology.com/products/eice-agent/", "x-default": "https://www.eicetechnology.com/products/eice-agent/" } },
 };}
 
 

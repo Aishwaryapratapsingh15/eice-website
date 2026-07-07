@@ -14,7 +14,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Club Suite Pricing | EICE Rise Hospitality ERP", description: "Explore EICE Rise Club Suite pricing  modular hospitality ERP solution for clubs, with room booking, POS, member management, and finance modules." },
-  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/club-suite/", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/club-suite/", "en-US": "https://www.eicetechnology.com/products/eicerise/club-suite/", "x-default": "https://www.eicetechnology.com/products/eicerise/club-suite/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/club-suite", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/club-suite/", "en-US": "https://www.eicetechnology.com/products/eicerise/club-suite/", "x-default": "https://www.eicetechnology.com/products/eicerise/club-suite/" } },
 };
 
 

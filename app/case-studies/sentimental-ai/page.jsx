@@ -12,7 +12,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Sentimental AI Case Study | Customer Sentiment Analysis | EICE Technology", description: "How EICE Technology built a sentiment analysis platform helping businesses understand customer emotions and drive data-driven satisfaction improvements." },
-  alternates: { canonical: "https://www.eicetechnology.com/case-studies/sentimental-ai/", languages: { "en-IN": "https://www.eicetechnology.com/case-studies/sentimental-ai/", "en-US": "https://www.eicetechnology.com/case-studies/sentimental-ai/", "x-default": "https://www.eicetechnology.com/case-studies/sentimental-ai/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/case-studies/sentimental-ai", languages: { "en-IN": "https://www.eicetechnology.com/case-studies/sentimental-ai/", "en-US": "https://www.eicetechnology.com/case-studies/sentimental-ai/", "x-default": "https://www.eicetechnology.com/case-studies/sentimental-ai/" } },
 };
 
 

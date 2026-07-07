@@ -12,7 +12,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Inventory AI Case Study | Intelligent Inventory Management | EICE Technology", description: "How EICE Technology developed an AI-powered inventory management system that reduced stockouts and overstock significantly for a major retail client." },
-  alternates: { canonical: "https://www.eicetechnology.com/case-studies/inventory-ai/", languages: { "en-IN": "https://www.eicetechnology.com/case-studies/inventory-ai/", "en-US": "https://www.eicetechnology.com/case-studies/inventory-ai/", "x-default": "https://www.eicetechnology.com/case-studies/inventory-ai/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/case-studies/inventory-ai", languages: { "en-IN": "https://www.eicetechnology.com/case-studies/inventory-ai/", "en-US": "https://www.eicetechnology.com/case-studies/inventory-ai/", "x-default": "https://www.eicetechnology.com/case-studies/inventory-ai/" } },
 };
 
 

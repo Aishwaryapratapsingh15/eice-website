@@ -14,7 +14,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Audience Attendance | EICE Rise Hospitality ERP", description: "Manage event attendance and audience tracking with EICE Rise Audience Attendance module  check-in management, capacity tracking, and event analytics." },
-  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/audience-attendance/", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/audience-attendance/", "en-US": "https://www.eicetechnology.com/products/eicerise/audience-attendance/", "x-default": "https://www.eicetechnology.com/products/eicerise/audience-attendance/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/audience-attendance", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/audience-attendance/", "en-US": "https://www.eicetechnology.com/products/eicerise/audience-attendance/", "x-default": "https://www.eicetechnology.com/products/eicerise/audience-attendance/" } },
 };
 
 

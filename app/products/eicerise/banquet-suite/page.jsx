@@ -14,7 +14,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Banquet Suite Pricing | EICE Rise Hospitality ERP", description: "EICE Rise Banquet Suite pricing  complete banquet and event management solution with venue booking, catering, billing, and event analytics." },
-  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/banquet-suite/", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/banquet-suite/", "en-US": "https://www.eicetechnology.com/products/eicerise/banquet-suite/", "x-default": "https://www.eicetechnology.com/products/eicerise/banquet-suite/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/banquet-suite", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/banquet-suite/", "en-US": "https://www.eicetechnology.com/products/eicerise/banquet-suite/", "x-default": "https://www.eicetechnology.com/products/eicerise/banquet-suite/" } },
 };
 
 

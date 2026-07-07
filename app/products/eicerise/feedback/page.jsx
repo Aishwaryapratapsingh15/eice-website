@@ -14,7 +14,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Feedback System | EICE Rise Hospitality ERP", description: "Capture and analyze guest feedback with EICE Rise Feedback System  real-time sentiment analysis, department-wise routing, and service recovery workflows." },
-  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/feedback/", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/feedback/", "en-US": "https://www.eicetechnology.com/products/eicerise/feedback/", "x-default": "https://www.eicetechnology.com/products/eicerise/feedback/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/feedback", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/feedback/", "en-US": "https://www.eicetechnology.com/products/eicerise/feedback/", "x-default": "https://www.eicetechnology.com/products/eicerise/feedback/" } },
 };
 
 

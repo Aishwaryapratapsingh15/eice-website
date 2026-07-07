@@ -13,7 +13,7 @@ export const metadata = {
   },
   twitter: { card: "summary_large_image", title: "Hospitality Technology Solutions | EICE Technology" },
   alternates: {
-    canonical: "https://www.eicetechnology.com/industries/hospitality/",
+    canonical: "https://www.eicetechnology.com/industries/hospitality",
     languages: {
       "en-IN": "https://www.eicetechnology.com/industries/hospitality/",
       "en-US": "https://www.eicetechnology.com/industries/hospitality/",

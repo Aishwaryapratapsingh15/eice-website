@@ -14,7 +14,7 @@ export const metadata = {
   },
   twitter: { card: "summary_large_image", title: "EICEOps | IT Help Desk & Operations Management | EICE Technology",
     images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png"], description: "EICEOps is a powerful help desk and IT operations management platform that streamlines support tickets, asset management, and team workflows." },
-  alternates: { canonical: "https://www.eicetechnology.com/products/eice-ops/", languages: { "en-IN": "https://www.eicetechnology.com/products/eice-ops/", "en-US": "https://www.eicetechnology.com/products/eice-ops/", "x-default": "https://www.eicetechnology.com/products/eice-ops/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/eice-ops", languages: { "en-IN": "https://www.eicetechnology.com/products/eice-ops/", "en-US": "https://www.eicetechnology.com/products/eice-ops/", "x-default": "https://www.eicetechnology.com/products/eice-ops/" } },
 };
 
 

@@ -14,7 +14,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Accounts & Finance | EICE Rise Hospitality ERP", description: "Automate hotel financial operations with EICE Rise Accounts & Finance module  invoicing, ledger management, GST compliance, and real-time financial reporting." },
-  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/account-finance/", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/account-finance/", "en-US": "https://www.eicetechnology.com/products/eicerise/account-finance/", "x-default": "https://www.eicetechnology.com/products/eicerise/account-finance/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/account-finance", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/account-finance/", "en-US": "https://www.eicetechnology.com/products/eicerise/account-finance/", "x-default": "https://www.eicetechnology.com/products/eicerise/account-finance/" } },
 };
 
 
