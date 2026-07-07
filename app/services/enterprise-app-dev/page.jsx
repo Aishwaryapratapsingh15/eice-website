@@ -12,7 +12,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Enterprise Application Development Services | EICE Technology", description: "Build scalable, secure enterprise applications with EICE Technology. Custom ERP, CRM, and business management systems tailored to your organization." },
-  alternates: { canonical: "https://www.eicetechnology.com/services/enterprise-app-dev/", languages: { "en-IN": "https://www.eicetechnology.com/services/enterprise-app-dev/", "en-US": "https://www.eicetechnology.com/services/enterprise-app-dev/", "x-default": "https://www.eicetechnology.com/services/enterprise-app-dev/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/services/enterprise-app-dev", languages: { "en-IN": "https://www.eicetechnology.com/services/enterprise-app-dev/", "en-US": "https://www.eicetechnology.com/services/enterprise-app-dev/", "x-default": "https://www.eicetechnology.com/services/enterprise-app-dev/" } },
 };
 
 

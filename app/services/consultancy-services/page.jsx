@@ -24,7 +24,7 @@ export async function generateMetadata() {
       description,
     },
     alternates: {
-      canonical: "https://www.eicetechnology.com/services/consultancy-services/",
+      canonical: "https://www.eicetechnology.com/services/consultancy-services",
       languages: {
         "en-IN": "https://www.eicetechnology.com/services/consultancy-services/",
         "en-US": "https://www.eicetechnology.com/services/consultancy-services/",

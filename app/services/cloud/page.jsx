@@ -12,7 +12,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Cloud Computing Services | AWS, Azure & GCP | EICE Technology", description: "Accelerate your cloud journey with EICE Technology. Cloud migration, architecture design, and managed services on AWS, Azure, and Google Cloud Platform." },
-  alternates: { canonical: "https://www.eicetechnology.com/services/cloud/", languages: { "en-IN": "https://www.eicetechnology.com/services/cloud/", "en-US": "https://www.eicetechnology.com/services/cloud/", "x-default": "https://www.eicetechnology.com/services/cloud/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/services/cloud", languages: { "en-IN": "https://www.eicetechnology.com/services/cloud/", "en-US": "https://www.eicetechnology.com/services/cloud/", "x-default": "https://www.eicetechnology.com/services/cloud/" } },
 };
 
 

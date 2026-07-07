@@ -12,7 +12,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "GIS Development & Mapping Solutions | EICE Technology", description: "Harness the power of geographic information systems with EICE Technology. Custom mapping, spatial analysis, and location intelligence solutions." },
-  alternates: { canonical: "https://www.eicetechnology.com/services/gis/", languages: { "en-IN": "https://www.eicetechnology.com/services/gis/", "en-US": "https://www.eicetechnology.com/services/gis/", "x-default": "https://www.eicetechnology.com/services/gis/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/services/gis", languages: { "en-IN": "https://www.eicetechnology.com/services/gis/", "en-US": "https://www.eicetechnology.com/services/gis/", "x-default": "https://www.eicetechnology.com/services/gis/" } },
 };
 
 

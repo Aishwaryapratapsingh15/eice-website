@@ -12,7 +12,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Web Development Services | Custom Websites & Web Apps | EICE Technology", description: "Build modern, performant websites and web applications with EICE Technology. Full-stack development, CMS, e-commerce, and progressive web apps." },
-  alternates: { canonical: "https://www.eicetechnology.com/services/web-development/", languages: { "en-IN": "https://www.eicetechnology.com/services/web-development/", "en-US": "https://www.eicetechnology.com/services/web-development/", "x-default": "https://www.eicetechnology.com/services/web-development/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/services/web-development", languages: { "en-IN": "https://www.eicetechnology.com/services/web-development/", "en-US": "https://www.eicetechnology.com/services/web-development/", "x-default": "https://www.eicetechnology.com/services/web-development/" } },
 };
 
 

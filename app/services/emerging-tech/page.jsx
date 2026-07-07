@@ -24,7 +24,7 @@ export async function generateMetadata() {
       description,
     },
     alternates: {
-      canonical: "https://www.eicetechnology.com/services/emerging-tech/",
+      canonical: "https://www.eicetechnology.com/services/emerging-tech",
       languages: {
         "en-IN": "https://www.eicetechnology.com/services/emerging-tech/",
         "en-US": "https://www.eicetechnology.com/services/emerging-tech/",
