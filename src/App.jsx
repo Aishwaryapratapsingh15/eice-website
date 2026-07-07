@@ -121,8 +121,26 @@ const NavLayout = ({ children }) => {
                           </button>
                         </MenuItem>
                         <MenuItem><Link onClick={closeMenu} className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]" to="/about">About Us</Link></MenuItem>
-                        <MenuItem><Link onClick={closeMenu} className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]" to="/services">Service Profile</Link></MenuItem>
-                        <MenuItem><Link onClick={closeMenu} className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]" to="/industries">Sector Portfolio</Link></MenuItem>
+                        <MenuItem>
+                          <button
+                            onClick={() => setMenuView("services")}
+                            aria-expanded={menuView === "services"}
+                            aria-haspopup="true"
+                            className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px] flex items-center cursor-pointer text-left bg-transparent border-0"
+                          >
+                            Service Profile <span aria-hidden="true" className="ml-1">+</span>
+                          </button>
+                        </MenuItem>
+                        <MenuItem>
+                          <button
+                            onClick={() => setMenuView("industries")}
+                            aria-expanded={menuView === "industries"}
+                            aria-haspopup="true"
+                            className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px] flex items-center cursor-pointer text-left bg-transparent border-0"
+                          >
+                            Sector Portfolio <span aria-hidden="true" className="ml-1">+</span>
+                          </button>
+                        </MenuItem>
                         <MenuItem><Link onClick={closeMenu} className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]" to="/resources">Resources</Link></MenuItem>
                         <MenuItem><Link onClick={closeMenu} className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]" to="/contact">Contact Us</Link></MenuItem>
                       </motion.div>
@@ -145,6 +163,62 @@ const NavLayout = ({ children }) => {
                             ["/products/easylogy",   "EasyLogy"],
                             ["/products/smartfit",    "EICE SmartFit"],
                             ["/products/eice-voice",  "EICE Voice"],
+                          ].map(([href, label]) => (
+                            <Link key={href} onClick={closeMenu} className="block p-4 text-lg border-b" to={href}>{label}</Link>
+                          ))}
+                        </div>
+                      </motion.div>
+                    )}
+                    {menuView === "services" && (
+                      <motion.div key="services" initial={{ x: -300, opacity: 0 }} animate={{ x: 0, opacity: 1 }} exit={{ x: -300, opacity: 0 }} transition={{ duration: 0.3 }} className="w-screen h-screen bg-white">
+                        <div className="w-screen h-screen bg-white">
+                          <div className="p-4 text-sm border-b flex gap-2">
+                            <span className="cursor-pointer text-gray-500" onClick={() => setMenuView("main")}>Home</span>
+                            <span className="text-gray-400">{">"}</span><span className="font-semibold">Services</span>
+                          </div>
+                          {[
+                            ["/services/app-development", "App Development"],
+                            ["/services/enterprise-app-dev", "Enterprise App Dev"],
+                            ["/services/web-development", "Web Development"],
+                            ["/services/saas", "SaaS Development"],
+                            ["/services/android", "Android & iOS Development"],
+                            ["/services/chatbot", "Chatbot Development"],
+                            ["/services/emerging-tech", "Emerging Tech"],
+                            ["/services/ai-ml", "AI / ML"],
+                            ["/services/blockchain", "Blockchain"],
+                            ["/services/iot", "IoT Solutions"],
+                            ["/services/consultancy-services", "Consultancy Services"],
+                            ["/services/flagship-services", "Flagship Services"],
+                            ["/services/digital-transformation", "Digital Transformation"],
+                            ["/services/devops", "DevOps"],
+                            ["/services/cloud", "Cloud Services"],
+                            ["/services/data-analytics", "Data Analytics"],
+                            ["/services/ui-ux", "UI/UX Design"],
+                            ["/services/software-testing", "Software Testing"],
+                            ["/services/gis", "GIS Solutions"],
+                          ].map(([href, label]) => (
+                            <Link key={href} onClick={closeMenu} className="block p-4 text-lg border-b" to={href}>{label}</Link>
+                          ))}
+                        </div>
+                      </motion.div>
+                    )}
+                    {menuView === "industries" && (
+                      <motion.div key="industries" initial={{ x: -300, opacity: 0 }} animate={{ x: 0, opacity: 1 }} exit={{ x: -300, opacity: 0 }} transition={{ duration: 0.3 }} className="w-screen h-screen bg-white">
+                        <div className="w-screen h-screen bg-white">
+                          <div className="p-4 text-sm border-b flex gap-2">
+                            <span className="cursor-pointer text-gray-500" onClick={() => setMenuView("main")}>Home</span>
+                            <span className="text-gray-400">{">"}</span><span className="font-semibold">Industries</span>
+                          </div>
+                          {[
+                            ["/industries/oil-and-gas", "Oil and Gas"],
+                            ["/industries/healthcare", "Healthcare"],
+                            ["/industries/legal", "Legal"],
+                            ["/industries/education", "Education"],
+                            ["/industries/financial", "Financial"],
+                            ["/industries/digital-media", "Digital Media"],
+                            ["/industries/logistics", "Logistics"],
+                            ["/industries/enterprise", "Enterprise"],
+                            ["/industries/hospitality", "Hospitality"],
                           ].map(([href, label]) => (
                             <Link key={href} onClick={closeMenu} className="block p-4 text-lg border-b" to={href}>{label}</Link>
                           ))}
