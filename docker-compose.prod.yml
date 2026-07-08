@@ -1,0 +1,19 @@
+services:
+  eicetech-website-prod:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: eicetech-website-prod
+    ports:
+      - "3010:3000"
+    env_file:
+      - .env
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:3000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s

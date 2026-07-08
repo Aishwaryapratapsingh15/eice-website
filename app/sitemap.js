@@ -38,6 +38,10 @@ export default function sitemap() {
     { url: "/services/gis/",                    priority: 0.7, changeFrequency: "monthly", lastModified: DATES.services },
     { url: "/services/tech-consultancy/",       priority: 0.7, changeFrequency: "monthly", lastModified: DATES.services },
     { url: "/services/chatbot/",                priority: 0.7, changeFrequency: "monthly", lastModified: DATES.services },
+    { url: "/services/app-development/",        priority: 0.7, changeFrequency: "monthly", lastModified: DATES.services },
+    { url: "/services/consultancy-services/",   priority: 0.7, changeFrequency: "monthly", lastModified: DATES.services },
+    { url: "/services/emerging-tech/",          priority: 0.7, changeFrequency: "monthly", lastModified: DATES.services },
+    { url: "/services/flagship-services/",      priority: 0.7, changeFrequency: "monthly", lastModified: DATES.services },
 
     // Industries
     { url: "/industries/",               priority: 0.8, changeFrequency: "monthly", lastModified: DATES.industries },
@@ -87,7 +91,7 @@ export default function sitemap() {
     { url: "/products/eicerise/pos-dining/",          priority: 0.6, changeFrequency: "monthly", lastModified: DATES.rise },
     { url: "/products/eicerise/pos-suite/",           priority: 0.6, changeFrequency: "monthly", lastModified: DATES.rise },
     { url: "/products/eicerise/purchase-vendor/",     priority: 0.6, changeFrequency: "monthly", lastModified: DATES.rise },
-    { url: "/products/eicerise/room-booking/",        priority: 0.6, changeFrequency: "monthly", lastModified: DATES.rise },
+    { url: "/products/eicerise/roombooking/",         priority: 0.6, changeFrequency: "monthly", lastModified: DATES.rise },
     { url: "/products/eicerise/single-sign-on/",      priority: 0.6, changeFrequency: "monthly", lastModified: DATES.rise },
     { url: "/products/eicerise/userstore-inventry/",  priority: 0.5, changeFrequency: "monthly", lastModified: DATES.rise },
     { url: "/products/eicerise/vanilla-suite/",       priority: 0.6, changeFrequency: "monthly", lastModified: DATES.rise },
