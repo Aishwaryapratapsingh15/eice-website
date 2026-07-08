@@ -338,8 +338,36 @@
         font-size: 16px;
     }
 
-    
+    /* Benefits section - stack image above text on mobile */
 
+    .benefitContainer {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    /* Overview and About us sections - left align on mobile */
+
+    .overViewHeading,
+    .aboutHeading {
+        text-align: left;
+        padding: 0 20px;
+    }
+
+    .overViewParaDesc,
+    .aboutUsPara {
+        text-align: left;
+        padding: 0 20px;
+    }
+
+    .benefitImgBox {
+        order: 1;
+        width: 100% !important;
+    }
+
+    .headingAndDescBox {
+        order: 2;
+        width: 100%;
+    }
 
 
 
