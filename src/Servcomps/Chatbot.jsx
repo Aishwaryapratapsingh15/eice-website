@@ -218,7 +218,7 @@ function Chatbot() {
               </h1>
             </div>
             <div>
-              <p className="font-medium text-blackk/70 sm:text-xl text-[16px] ">
+              <div className="font-medium text-blackk/70 sm:text-xl text-[16px] ">
                 In todays fast-paced digital world, businesses are increasingly
                 turning to chatbots to enhance customer interactions, streamline
                 operations, and drive growth. Chatbots offer a scalable solution
@@ -228,7 +228,7 @@ function Chatbot() {
                 At EICE Technology we provide a range of advanced chatbot
                 development services designed to help you leverage this
                 innovative technology to achieve your business goals.
-              </p>
+              </div>
             </div>
           </div>
         </div>

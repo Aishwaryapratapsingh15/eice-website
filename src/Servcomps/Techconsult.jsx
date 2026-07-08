@@ -846,7 +846,7 @@ function TechnologyConsulting() {
 
 
 
-              <p className="font-medium text-blackk/70 sm:text-xl text-lg ">
+              <div className="font-medium text-blackk/70 sm:text-xl text-lg ">
 
 
 
@@ -890,7 +890,7 @@ function TechnologyConsulting() {
 
 
 
-              </p>
+              </div>
 
 
 

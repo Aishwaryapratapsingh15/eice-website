@@ -207,7 +207,7 @@ function DataAnalytics() {
               </h1>
             </div>
             <div>
-              <p className="font-medium text-blackk/70 sm:text-xl text-[16px] ">
+              <div className="font-medium text-blackk/70 sm:text-xl text-[16px] ">
                 In today's data-driven world, the ability to extract meaningful
                 insights from vast amounts of information is crucial for
                 business success. Data analytics plays a pivotal role in helping
@@ -218,7 +218,7 @@ function DataAnalytics() {
                 services designed to help you harness the full potential of your
                 data, uncover valuable insights, and drive data-informed
                 decision-making across your organization.
-              </p>
+              </div>
             </div>
           </div>
         </div>

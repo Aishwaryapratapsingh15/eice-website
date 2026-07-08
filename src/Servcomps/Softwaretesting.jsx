@@ -213,7 +213,7 @@ function Chatbot() {
               </h1>
             </div>
             <div>
-              <p className="font-medium text-blackk/70 sm:text-xl text-[16px] ">
+              <div className="font-medium text-blackk/70 sm:text-xl text-[16px] ">
                 In todays technology-driven market, delivering high-quality
                 software is crucial for maintaining customer satisfaction,
                 competitive edge, and operational efficiency. Software testing
@@ -224,7 +224,7 @@ function Chatbot() {
                 At EICE Technology, we offer a comprehensive suite of software
                 testing services designed to ensure the reliability,
                 functionality, and security of your software solutions.
-              </p>
+              </div>
             </div>
           </div>
         </div>

@@ -224,7 +224,7 @@ function Webdevelopment() {
               </h1>
             </div>
             <div>
-              <p className="font-medium text-blackk/70 sm:text-xl text-[16px] ">
+              <div className="font-medium text-blackk/70 sm:text-xl text-[16px] ">
                 In an era where digital presence is crucial for business
                 success, web applications have become a key component of a
                 company's strategy. A well-designed web app can drive user
@@ -235,7 +235,7 @@ function Webdevelopment() {
                 design to deliver exceptional digital solutions. Our team of
                 experts is dedicated to creating web applications that not only
                 meet but exceed client expectations.
-              </p>
+              </div>
             </div>
           </div>
         </div>

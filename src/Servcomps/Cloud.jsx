@@ -217,7 +217,7 @@ function Chatbot() {
               </h1>
             </div>
             <div>
-              <p className="font-medium text-blackk/70 sm:text-xl text-[16px] ">
+              <div className="font-medium text-blackk/70 sm:text-xl text-[16px] ">
                 In todays technology-driven market, leveraging cloud services
                 is crucial for enhancing agility, ensuring operational
                 efficiency, and driving business growth. Cloud computing plays a
@@ -227,7 +227,7 @@ function Chatbot() {
                 At EICE Technology, we offer a comprehensive suite of cloud
                 services designed to ensure the reliability, security, and
                 scalability of your cloud infrastructure.
-              </p>
+              </div>
             </div>
           </div>
         </div>

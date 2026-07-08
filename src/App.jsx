@@ -128,7 +128,7 @@ const NavLayout = ({ children }) => {
                             aria-haspopup="true"
                             className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px] flex items-center cursor-pointer text-left bg-transparent border-0"
                           >
-                            Service Profile <span aria-hidden="true" className="ml-1">+</span>
+                            Services <span aria-hidden="true" className="ml-1">+</span>
                           </button>
                         </MenuItem>
                         <MenuItem>
@@ -138,7 +138,7 @@ const NavLayout = ({ children }) => {
                             aria-haspopup="true"
                             className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px] flex items-center cursor-pointer text-left bg-transparent border-0"
                           >
-                            Sector Portfolio <span aria-hidden="true" className="ml-1">+</span>
+                            Industries <span aria-hidden="true" className="ml-1">+</span>
                           </button>
                         </MenuItem>
                         <MenuItem><Link onClick={closeMenu} className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]" to="/resources">Resources</Link></MenuItem>
@@ -181,7 +181,7 @@ const NavLayout = ({ children }) => {
                             ["/services/enterprise-app-dev", "Enterprise App Dev"],
                             ["/services/web-development", "Web Development"],
                             ["/services/saas", "SaaS Development"],
-                            ["/services/android", "Android & iOS Development"],
+                            ["/services/android", "Mobile Development"],
                             ["/services/chatbot", "Chatbot Development"],
                             ["/services/emerging-tech", "Emerging Tech"],
                             ["/services/ai-ml", "AI / ML"],
@@ -401,7 +401,7 @@ const OurServices = ({ handleSetSelected = () => {} }) => (
               { href: "/services/enterprise-app-dev", icon: enterpriseIcon, name: "Enterprise App Dev",  desc: "Custom enterprise solutions" },
               { href: "/services/web-development",    icon: `${_APP}/web_development.svg`,          name: "Web Development",     desc: "Modern web applications" },
               { href: "/services/saas",               icon: `${_APP}/saas_development.svg`,         name: "SaaS Development",    desc: "Cloud-based SaaS platforms" },
-              { href: "/services/android",            icon: androidAndIosIcon,                                   name: "Android & iOS Development", desc: "Native mobile applications" },
+              { href: "/services/android",            icon: androidAndIosIcon,                                   name: "Mobile Development", desc: "Native mobile applications" },
               { href: "/services/chatbot",            icon: `${_APP}/chat_bot_development.svg`,     name: "Chatbot Development", desc: "AI-powered conversational bots" },
             ].map(({ href, icon, name, desc }) => (
               <Link key={href} href={href} onClick={() => handleSetSelected(null)} className="flex items-start gap-3 group">

@@ -217,7 +217,7 @@ function GIS() {
               </h1>
             </div>
             <div>
-              <p className="font-medium text-blackk/70 sm:text-xl text-[16px] ">
+              <div className="font-medium text-blackk/70 sm:text-xl text-[16px] ">
                 In today's data-driven world, Geographic Information Systems
                 (GIS) are crucial for businesses to gain spatial insights, make
                 informed decisions, and optimize operations. GIS services play a
@@ -228,7 +228,7 @@ function GIS() {
                 At EICE Technology, we offer a comprehensive suite of GIS
                 services designed to harness the power of spatial data and
                 transform it into actionable insights for your business.
-              </p>
+              </div>
             </div>
           </div>
         </div>

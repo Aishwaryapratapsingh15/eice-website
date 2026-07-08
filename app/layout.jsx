@@ -112,6 +112,8 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
         <meta name="google-site-verification" content="Pfk9vE97adn5ZyQ4onqOBfgDhaer6MQzCfRBd9Jt8dE" />
+        
+
 
       </head>
       <body>
