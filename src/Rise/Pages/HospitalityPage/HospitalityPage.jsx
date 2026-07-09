@@ -168,14 +168,16 @@ export default function HospitalityPage() {
         },
 
         {
-            serviceName: "PURCHASE & VENDOR PORTAL",
+            serviceName: "PURCHASE &",
+            serviceName2: "VENDOR PORTAL",
             icon: vendor,
             path: "/products/eicerise/purchase-vendor",
             key: 9
         },
 
         {
-            serviceName: "FOOD & BEVERAGE COST ANALYSIS",
+            serviceName: "FOOD & BEVERAGE",
+            serviceName2: "COST ANALYSIS",
             icon: food,
             path: "/products/eicerise/food-cost",
             key: 10

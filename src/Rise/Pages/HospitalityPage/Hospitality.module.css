@@ -239,10 +239,14 @@
 
 
 .serviceName {
-    padding: 10px 20px;
+    padding: 10px 8px;
     text-align: center;
     font-size: 17px;
     font-weight: 600;
+}
+
+.serviceName div {
+    white-space: nowrap;
 }
 
 /* 

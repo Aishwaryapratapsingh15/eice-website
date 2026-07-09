@@ -10,6 +10,12 @@ const nextConfig = {
           { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
         ],
       },
+      {
+        source: "/products/eicerise",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=300, stale-while-revalidate=3600" },
+        ],
+      },
     ];
     // Next.js owns /_next/static caching internally during dev; only set in production
     if (process.env.NODE_ENV === "production") {

@@ -24,11 +24,13 @@ export  async function generateMetadata() {
   const description= "EasyLogy is an end-to-end logistics platform for Indian companies: TMS, fleet tracking, e-way bill, route optimisation and GST-compliant billing.";
   
   return {
+    title,
+    description,
     keywords: ["logistics management software India / TMS software India"],
   openGraph: { title, description, url: "https://www.eicetechnology.com/products/easylogy", siteName: "EICE Technology", type: "website" },
   twitter: { card: "summary_large_image", title , description,
     images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png"]},
-  alternates: { canonical: "https://www.eicetechnology.com/products/easylogy/", languages: { "en-IN": "https://www.eicetechnology.com/products/easylogy/", "en-US": "https://www.eicetechnology.com/products/easylogy/", "x-default": "https://www.eicetechnology.com/products/easylogy/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/easylogy", languages: { "en-IN": "https://www.eicetechnology.com/products/easylogy/", "en-US": "https://www.eicetechnology.com/products/easylogy/", "x-default": "https://www.eicetechnology.com/products/easylogy/" } },
 };}
 
 
