@@ -73,7 +73,6 @@ Allow: /
 Disallow: /admin/
 Disallow: /login/
 Disallow: /api/
-Crawl-delay: 1
 
 # ── SITEMAP ──────────────────────────────────────────────────
 Sitemap: https://www.eicetechnology.com/sitemap.xml
