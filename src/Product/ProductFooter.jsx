@@ -56,12 +56,12 @@ export default function Footer() {
 
               {/* 🔲 LOGO */}
                {/* ✅ EICE LOGO */}
-                <img src={logo} alt="EICE" className="h-10 object-contain brightness-0 invert" />
+                <img src={logo} alt="EICE" className="h-10 object-contain brightness-0 invert" width="80" height="28" />
               <div className="w-[1px] h-[40px] bg-white mx-4" />
 
               {/* DIVIDER */}
               <div className="w-[130px] h-[60px] border border-white/30">
-              <img src={cmmiIcon} alt="EICE" className="h-12 object-contain brightness-0 invert" />
+              <img src={cmmiIcon} alt="EICE" className="h-12 object-contain brightness-0 invert" width="319" height="98" />
               </div>
                
             </div>
@@ -191,6 +191,8 @@ export default function Footer() {
       src={indImg}   // 🔁 your main logo
       alt="EICE"
       className="h-full object-contain"
+      width="34"
+      height="34"
     />
   </div>
                  
@@ -209,6 +211,8 @@ export default function Footer() {
       src={usImg}   // 🔁 your main logo
       alt="EICE"
       className="h-full object-contain"
+      width="34"
+      height="34"
     />
   </div>
                 <div>

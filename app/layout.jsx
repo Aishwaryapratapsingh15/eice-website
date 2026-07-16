@@ -98,13 +98,17 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         /> */}
 
-        {/* LCP preload — hero image for homepage above-the-fold */}
+        {/* LCP preload — Lighthouse identifies the hero bg-bannerbg overlay div
+            (public/assets/Compressed/bannerbg.png) as the actual LCP element,
+            not the genai.png product image. Preloading the wrong image was
+            delaying LCP discovery for the real one. */}
         <link
           rel="preload"
           as="image"
-          href="https://d3r43jacxrwsrp.cloudfront.net/Compressed/genai.png"
+          href="/assets/Compressed/bannerbg.png"
           fetchPriority="high"
         />
+        <link rel="preconnect" href="https://d3r43jacxrwsrp.cloudfront.net" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link

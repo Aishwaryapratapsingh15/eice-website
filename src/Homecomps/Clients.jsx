@@ -50,6 +50,8 @@ export default function Clients() {
                   src={images[currentIndex]}
                   alt={`Client ${currentIndex + 1}`}
                   style={{ width: '100%', display: 'block' }}
+                  width="390"
+                  height="560"
                 />
               </div>
 
