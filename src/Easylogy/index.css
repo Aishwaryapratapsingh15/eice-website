@@ -3,21 +3,21 @@
 
 /* Font classes mapped to Poppins (loaded globally in EICE Technology) */
 .font1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-poppins), sans-serif;
 }
 
 .font2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-poppins), sans-serif;
   font-weight: 600;
 }
 
 .font3 {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-poppins), sans-serif;
   font-weight: 700;
 }
 
 .font4 {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-poppins), sans-serif;
 }
 
 

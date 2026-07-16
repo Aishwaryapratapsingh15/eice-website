@@ -1,6 +1,15 @@
 import "../../../src/Easylogy/index.css";
 import "../../../src/Easylogy/App.css";
+import { Poppins } from "next/font/google";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  style: ["normal", "italic"],
+  display: "swap",
+  variable: "--font-poppins",
+});
 
 export default function EasylogyLayout({ children }) {
-  return <>{children}</>;
+  return <div className={poppins.variable}>{children}</div>;
 }

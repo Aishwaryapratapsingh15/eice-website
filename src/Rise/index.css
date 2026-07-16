@@ -1,8 +1,8 @@
 /* CSS reset handled by EICE Technology root layout */
 
-body {
+.rise-font-scope {
 
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-poppins), sans-serif;
 
 }
 

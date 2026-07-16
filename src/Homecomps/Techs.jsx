@@ -175,7 +175,7 @@ const Technology = ({ name, icon, link }) => {
 
   return (
     <div className="flex-shrink-0 sm:w-1/2 md:w-1/3 lg:w-1/4 sm:p-4">
-      <div className="group bg-white border border-gray-200 rounded-lg sm:border-0 sm:bg-transparent sm:rounded-none overflow-hidden flex flex-col gap-2 items-center justify-center p-3 min-h-[100px] sm:min-h-0">
+      <div className="group bg-white border border-gray-200 rounded-lg sm:border-0 sm:bg-transparent sm:rounded-none flex flex-col gap-2 items-center justify-center p-3 min-h-[100px] sm:min-h-0">
         <IconComponent
           size={48}
           className="text-blackk group-hover:text-bloo transition duration-300"
