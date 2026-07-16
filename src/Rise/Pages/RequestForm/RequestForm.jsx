@@ -44,6 +44,7 @@ const [product, setProduct] = useState("unknown");
             setIsPhone(window.innerWidth <= 800);
 
         };
+        handleResize();
         window.addEventListener('resize', handleResize);
         return () => {
             window.removeEventListener('resize', handleResize);
@@ -663,8 +664,7 @@ const handleSubmit = async (e) => {
     const customStyles2 = {
         control: (provided) => ({
             ...provided,
-            paddingTop: '3px',
-            paddingBottom: '3px',
+            minHeight: '50px',
             // width: '31rem',
         }),
         menu: (provided) => ({
@@ -827,67 +827,54 @@ const handleSelectChange2 = (selectedOption) => {
                         <div className={`${styles.inputContainer}`}>
                             <label htmlFor="rf-role">Role/Designation (optional)</label>
                             <div>
-                                <input id="rf-role" aria-invalid={!!errors.role} aria-describedby={errors.role ? "rf-role-error" : undefined} autoComplete="off" placeholder="Enter Your Role ( e.g Manager , Director)" className={`${styles.line2Input}`} type="text" name="role" value={formData.role} onChange={handleChange} />
+                                <input id="rf-role" aria-invalid={!!errors.role} aria-describedby={errors.role ? "rf-role-error" : undefined} autoComplete="off" placeholder="Enter Your Role ( e.g Manager , Director)" className={`${styles.roleInput}`} type="text" name="role" value={formData.role} onChange={handleChange} />
                                 {errors.role && <span id="rf-role-error" className={styles.fieldError}>{errors.role}</span>}
                             </div>
                         </div>
 
-                        <div className={`${styles.inputContainer}`}>
-                            <label htmlFor="rf-email">Email ID*</label>
-                            <div>
-                                <input id="rf-email" aria-invalid={!!errors.email} aria-describedby={errors.email ? "rf-email-error" : undefined} placeholder="Enter Your Bussiness Email Address" autoComplete="off" required className={`${styles.line2Input}`} type="email" name="email" value={formData.email} onChange={handleChange} />
-                                {errors.email && <span id="rf-email-error" className={styles.fieldError}>{errors.email}</span>}
-                            </div>
-                        </div>
-
-                        <div className={`${styles.inputContainer}`}>
-                            <label htmlFor="rf-phone">Phone Number*</label>
-                            <div className={`${styles.phoneNoAndCodeBox}`}>
-                                <div >
-                                    {/* <Select
-                                        className={`${styles.phoneCode}`}
-                                        id="countryCode"
-                                        placeholder="Code"
-                                        options={countries.map(country => ({
-                                            label: `+${country.code}`,
-                                            value: country.value,
-                                            code: country.code,
-                                        }))}
-                                        isSearchable={true}
-                                        styles={customStyles2}
-
-                                        value={countries.find(option => option.code === formData.phoneCode) ? {
-                                            label: `+${formData.phoneCode}`,
-                                            value: formData.phoneCode
-                                        } : null}
-                                        onChange={handleCountryCodeChange}
-                                    /> */}
-
-                                    <input id="rf-phoneCode" aria-label="Phone country code" aria-invalid={!!errors.phoneCode} aria-describedby={errors.phoneCode ? "rf-phoneCode-error" : undefined} placeholder="Code" autoComplete="off" required className={`${styles.phoneCode}`} type="tel" name="phoneCode" value={formData.phoneCode} onChange={handleChange} maxLength={4} pattern="[0-9]{1,4}" />
-                                    {errors.phoneCode && <span id="rf-phoneCode-error" className={styles.fieldError}>{errors.phoneCode}</span>}
-                                </div>
-                                <div className={`${styles.phoneNoInputBox}`}>
-                                    <input id="rf-phone" aria-invalid={!!errors.phone} aria-describedby={errors.phone ? "rf-phone-error" : undefined} placeholder="Enter Your Phone No" autoComplete="off" required className={`${styles.phoneNo}`} type="tel" name="phone" value={formData.phone} onChange={handleChange} pattern="[0-9]{10}" />
+                        {isPhone ? (
+                          <>
+                            <div className={`${styles.inputContainer}`}>
+                                <label htmlFor="rf-email">Email ID*</label>
+                                <div>
+                                    <input id="rf-email" aria-invalid={!!errors.email} aria-describedby={errors.email ? "rf-email-error" : undefined} placeholder="Enter Your Bussiness Email Address" autoComplete="off" required className={`${styles.line2Input}`} type="email" name="email" value={formData.email} onChange={handleChange} />
+                                    {errors.email && <span id="rf-email-error" className={styles.fieldError}>{errors.email}</span>}
                                 </div>
                             </div>
-                            {errors.phone && <span id="rf-phone-error" className={styles.fieldError}>{errors.phone}</span>}
 
-                            {/* <div>
-                                <input
-                                    placeholder="Enter Your Phone Number"
-                                    autoComplete="off"
-                                    required
-                                    className={`${styles.line2Input}`}
-                                    type="tel"
-                                    name="phone"
-                                    value={formData.phone}
-                                    onChange={handleChange}
-                                    pattern="[0-9]{10}"
-                                    title="Please enter a valid 10-digit phone number"
-                                />
-                            </div> */}
-
-                        </div>
+                            <div className={`${styles.inputContainer}`}>
+                                <label htmlFor="rf-phone">Phone Number*</label>
+                                <div className={`${styles.phoneNoAndCodeBox}`}>
+                                    <div >
+                                        <input id="rf-phoneCode" aria-label="Phone country code" aria-invalid={!!errors.phoneCode} aria-describedby={errors.phoneCode ? "rf-phoneCode-error" : undefined} placeholder="Code" autoComplete="off" required className={`${styles.phoneCode}`} type="tel" name="phoneCode" value={formData.phoneCode} onChange={handleChange} maxLength={4} pattern="[0-9]{1,4}" />
+                                        {errors.phoneCode && <span id="rf-phoneCode-error" className={styles.fieldError}>{errors.phoneCode}</span>}
+                                    </div>
+                                    <div className={`${styles.phoneNoInputBox}`}>
+                                        <input id="rf-phone" aria-invalid={!!errors.phone} aria-describedby={errors.phone ? "rf-phone-error" : undefined} placeholder="Enter Your Phone No" autoComplete="off" required className={`${styles.phoneNo}`} type="tel" name="phone" value={formData.phone} onChange={handleChange} pattern="[0-9]{10}" />
+                                    </div>
+                                </div>
+                                {errors.phone && <span id="rf-phone-error" className={styles.fieldError}>{errors.phone}</span>}
+                            </div>
+                          </>
+                        ) : (
+                          <div className={`${styles.inputContainer}`}>
+                              <label htmlFor="requirement">Requirement*</label>
+                              <div>
+                                  <Select
+                                      instanceId="requirement-select"
+                                      inputId="requirement"
+                                      name="requirement"
+                                      options={options}
+                                      value={options.find(option => option.value === formData.requirement)}
+                                      onChange={handleSelectChange2}
+                                      className={styles.requirementInput}
+                                      placeholder="-- Please Select --"
+                                      styles={customStyles2}
+                                  />
+                                  {errors.requirement && <span className={styles.fieldError}>{errors.requirement}</span>}
+                              </div>
+                          </div>
+                        )}
                     </div>
 
                     <div className={`${styles.line3}`}>
@@ -895,6 +882,7 @@ const handleSelectChange2 = (selectedOption) => {
                             <label htmlFor="rf-country">Country*</label>
                             <div>
                                 <Select
+                                    instanceId="country-select"
                                     inputId="rf-country"
                                     name="country"
                                     options={COUNTRIES}
@@ -902,7 +890,7 @@ const handleSelectChange2 = (selectedOption) => {
                                     getOptionValue={(o) => o.iso2}
                                     value={COUNTRIES.find((c) => c.name === formData.country) || null}
                                     onChange={handleCountrySelectChange}
-                                    className={styles.line3Input}
+                                    className={styles.countrySelectInput}
                                     placeholder="Select your country"
                                     styles={customStyles2}
                                     aria-invalid={!!errors.country}
@@ -924,37 +912,49 @@ const handleSelectChange2 = (selectedOption) => {
                     </div>
 
                     <div className={`${styles.requirement} ${styles.inputContainer} `}>
-                        <label htmlFor="requirement">Requirement*</label>
-                        <div>
+                        {isPhone ? (
+                          <>
+                            <label htmlFor="requirement">Requirement*</label>
+                            <div>
+                                <Select
+                                    instanceId="requirement-select"
+                                    inputId="requirement"
+                                    name="requirement"
+                                    options={options}
+                                    value={options.find(option => option.value === formData.requirement)}
+                                    onChange={handleSelectChange2}
+                                    className={styles.requirementInput}
+                                    placeholder="-- Please Select --"
+                                    styles={customStyles2}
+                                />
+                                {errors.requirement && <span className={styles.fieldError}>{errors.requirement}</span>}
+                            </div>
+                          </>
+                        ) : (
+                          <div className={styles.requirementRow}>
+                              <div className={styles.requirementRowItem}>
+                                  <label htmlFor="rf-email">Email ID*</label>
+                                  <div>
+                                      <input id="rf-email" aria-invalid={!!errors.email} aria-describedby={errors.email ? "rf-email-error" : undefined} placeholder="Enter Your Bussiness Email Address" autoComplete="off" required className={styles.requirementRowInput} type="email" name="email" value={formData.email} onChange={handleChange} />
+                                      {errors.email && <span id="rf-email-error" className={styles.fieldError}>{errors.email}</span>}
+                                  </div>
+                              </div>
 
-
-                            {/* <select
-                                id="requirement"
-                                name="requirement"
-                                required
-                                className={`${styles.requirementInput}`}
-                                value={formData.requirement}
-                                onChange={handleChange}
-                            >
-                                <option value="">-- Please Select --</option>
-                                <option value="Product Details or Demo">Product Details or Demo</option>
-                                <option value="Product Pricing">Product Pricing</option>
-                                <option value="Support or Training">Support or Training</option>
-                            </select> */}
-
-                            <Select
-                                inputId="requirement"
-                                name="requirement"
-                                options={options}
-                                value={options.find(option => option.value === formData.requirement)}
-                                onChange={handleSelectChange2}
-                                className={styles.requirementInput}
-                                placeholder="-- Please Select --"
-                                styles={customStyles2}
-                            />
-                            {errors.requirement && <span className={styles.fieldError}>{errors.requirement}</span>}
-
-                        </div>
+                              <div className={styles.requirementRowItem}>
+                                  <label htmlFor="rf-phone">Phone Number*</label>
+                                  <div className={`${styles.phoneNoAndCodeBox}`}>
+                                      <div>
+                                          <input id="rf-phoneCode" aria-label="Phone country code" aria-invalid={!!errors.phoneCode} aria-describedby={errors.phoneCode ? "rf-phoneCode-error" : undefined} placeholder="Code" autoComplete="off" required className={`${styles.phoneCode}`} type="tel" name="phoneCode" value={formData.phoneCode} onChange={handleChange} maxLength={4} pattern="[0-9]{1,4}" />
+                                          {errors.phoneCode && <span id="rf-phoneCode-error" className={styles.fieldError}>{errors.phoneCode}</span>}
+                                      </div>
+                                      <div className={`${styles.phoneNoInputBox}`}>
+                                          <input id="rf-phone" aria-invalid={!!errors.phone} aria-describedby={errors.phone ? "rf-phone-error" : undefined} placeholder="Enter Your Phone No" autoComplete="off" required className={styles.phoneNo} type="tel" name="phone" value={formData.phone} onChange={handleChange} pattern="[0-9]{10}" />
+                                      </div>
+                                  </div>
+                                  {errors.phone && <span id="rf-phone-error" className={styles.fieldError}>{errors.phone}</span>}
+                              </div>
+                          </div>
+                        )}
                     </div>
 
                     <div className={`${styles.messageTextArea}  ${styles.inputContainer} `}>

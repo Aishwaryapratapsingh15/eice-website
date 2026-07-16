@@ -77,31 +77,44 @@
 
 }
 
-.phoneNoAndCodeBox {
-    display: flex;
-    align-items: center;
-    row-gap: 10px;
-    margin-top: 0.4rem;
-}
-
-.phoneNo {
-    width: 13rem;
+.roleInput {
+    width: 33rem;
+    font-size: 16px;
     padding: 12px 10px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    margin-left: 10px;
+    margin-top: 0.4rem;
+}
+
+.phoneNoAndCodeBox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0.4rem;
+    width: 33rem;
+}
+
+.phoneNoInputBox {
+    flex: 1;
+}
+
+.phoneNo {
+    width: 100%;
+    padding: 12px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
     font-size: 16px;
+    box-sizing: border-box;
 
 }
 
 .phoneCode {
-   
+
 
     width: 7rem;
     padding: 12px 10px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    margin-left: 10px;
     font-size: 16px;
 }
 
@@ -129,6 +142,15 @@
 
 }
 
+/* Country uses react-select, which already draws its own border/padding
+   around the control — no border/padding here, or it doubles up. */
+.countrySelectInput {
+    width: 33rem;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 0.4rem;
+}
+
 .line6Input {
 
     width: 33rem;
@@ -151,6 +173,27 @@
     border-radius: 5px;
     margin-top: 0.4rem;
     /* border: 1px solid rgba(0, 0, 0, 0.2); */
+}
+
+/* Desktop-only: Email + Phone swapped into the requirement row, split equally */
+.requirementRow {
+    display: flex;
+    gap: 2rem;
+}
+
+.requirementRowItem {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.requirementRowInput {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-top: 0.4rem;
+    box-sizing: border-box;
 }
 
 .messageTextArea {
@@ -470,6 +513,14 @@
 
     }
 
+    .roleInput {
+        width: 100%;
+    }
+
+    .phoneNoAndCodeBox {
+        width: 100%;
+    }
+
     .phoneNoInputBox
     {
 
@@ -477,7 +528,11 @@
     }
 
     .phoneNo {
-        width: 95%;
+        width: 100%;
+    }
+
+    .phoneCode {
+        flex-shrink: 0;
     }
 
 
@@ -492,6 +547,10 @@
 
     }
 
+    .countrySelectInput {
+        width: 100%;
+    }
+
 
 
     .messageTextAreaInput {
@@ -504,8 +563,7 @@
     }
 
     .requirementInput {
-        /* width: 100%; */
-        width: 50%;
+        width: 100%;
     }
 
     .line6Input {
