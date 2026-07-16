@@ -2,6 +2,9 @@
 .next/
 out/
 
+# robots.txt is generated dynamically by app/robots.js
+public/robots.txt
+
 # Dependencies
 node_modules/
 
