@@ -368,7 +368,7 @@ const OurIndustries = ({ handleSetSelected = () => {} }) => (
   <div className="grid grid-cols-3 gap-4">
     <div><StatsCard /></div>
     <div className="col-span-2">
-      <div className="grid grid-cols-2 gap-y-10 gap-x-1 p-6">
+      <div className="grid grid-cols-2 gap-y-10 gap-x-1 p-6 overflow-y-auto max-h-[70vh]">
         {[
           { to: "/industries/oil-and-gas",   Icon: FaOilCan,       label: "Oil and Gas" },
           { to: "/industries/healthcare",    Icon: FaSyringe,      label: "Healthcare" },
@@ -399,7 +399,7 @@ const OurProducts = ({ handleSetSelected = () => {} }) => (
   <div className="grid grid-cols-3 gap-4">
     <div><StatsCard /></div>
     <div className="col-span-2">
-      <div className="bg-white rounded-2xl p-6 shadow-sm">
+      <div className="bg-white rounded-2xl p-6 shadow-sm overflow-y-auto max-h-[70vh]">
         <div className="mb-8">
           <p className="text-xs text-gray-400 tracking-wide mb-3">ERP & LOGISTICS</p>
           <div className="grid grid-cols-2 gap-6">
