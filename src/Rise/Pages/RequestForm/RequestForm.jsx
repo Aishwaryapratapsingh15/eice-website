@@ -328,29 +328,29 @@ const images = document.images;
 
     const validators = {
         name: (v) => {
-            if (!v.trim()) return "Name is required";
-            if (!/^[A-Za-z][A-Za-z.'\- ]{1,59}$/.test(v)) return "Please enter your full name using letters only.";
-            if (!hasVowel(v)) return "Please enter your full name using letters only.";
-            if (!v.trim().includes(" ")) return "Please enter your full name (first and last).";
+            if (!v.trim()) return "We'd love to know your name!";
+            if (!/^[A-Za-z][A-Za-z.'\- ]{1,59}$/.test(v)) return "Looks incomplete — please add your first and last name.";
+            if (!hasVowel(v)) return "Looks incomplete — please add your first and last name.";
+            if (!v.trim().includes(" ")) return "Looks incomplete — please add your first and last name.";
             return "";
         },
         companyName: (v) => {
-            if (!v.trim()) return "Company name is required";
-            if (!/^[A-Za-z0-9][A-Za-z0-9.,&'\- ]{1,99}$/.test(v)) return "Please enter your company's registered or trading name.";
-            if (!hasVowel(v)) return "Please enter your company's registered or trading name.";
+            if (!v.trim()) return "Please tell us where you work.";
+            if (!/^[A-Za-z0-9][A-Za-z0-9.,&'\- ]{1,99}$/.test(v)) return "Hmm, that doesn't look like a company name. Please double-check.";
+            if (!hasVowel(v)) return "Hmm, that doesn't look like a company name. Please double-check.";
             return "";
         },
         role: (v) => {
             if (!v.trim()) return ""; // optional field
-            if (!/^[A-Za-z0-9][A-Za-z0-9.,&'/\- ]{1,49}$/.test(v)) return "Please select your role, or describe it briefly.";
-            if (!hasVowel(v)) return "Please select your role, or describe it briefly.";
+            if (!/^[A-Za-z0-9][A-Za-z0-9.,&'/\- ]{1,49}$/.test(v)) return "Please enter a valid job title (e.g., Marketing Manager).";
+            if (!hasVowel(v)) return "Please enter a valid job title (e.g., Marketing Manager).";
             return "";
         },
         email: (v) => {
-            if (!v.trim()) return "Email is required";
-            if (v.length < 5 || v.length > 254) return "Please use your official work email address, not a personal one like Gmail or Yahoo.";
-            if (!/^[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$/.test(v)) return "Enter a valid email address";
-            if (FREE_EMAIL_DOMAINS.test(v)) return "Please use your official work email address, not a personal one like Gmail or Yahoo.";
+            if (!v.trim()) return "Please add your email so we can get back to you.";
+            if (v.length < 5 || v.length > 254) return "That email doesn't look quite right — mind checking it?";
+            if (!/^[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$/.test(v)) return "That email doesn't look quite right — mind checking it?";
+            if (FREE_EMAIL_DOMAINS.test(v)) return "Please use your work email — it helps us serve you faster.";
             return "";
         },
         phoneCode: (v) => {
@@ -359,14 +359,14 @@ const images = document.images;
             return "";
         },
         phone: (v) => {
-            if (!v.trim()) return "Phone number is required";
-            if (!/^[6-9]\d{9}$/.test(v)) return "Please enter a valid 10-digit mobile number.";
-            if (isRepeatingOrSequential(v)) return "Please enter a valid 10-digit mobile number.";
+            if (!v.trim()) return "Please add a number so our team can reach you.";
+            if (!/^[6-9]\d{9}$/.test(v)) return "That number looks a bit short — please check and re-enter.";
+            if (isRepeatingOrSequential(v)) return "That number looks a bit short — please check and re-enter.";
             return "";
         },
-        country: (v) => (v.trim() ? "" : "Please select your country from the list."),
-        address: (v) => (v.trim() ? "" : "Address is required"),
-        requirement: (v) => (v.trim() ? "" : "Please select what you're interested in."),
+        country: (v) => (v.trim() ? "" : "Please select your country so we can route this correctly."),
+        address: (v) => (v.trim() ? "" : "Please share your address so we can reach you."),
+        requirement: (v) => (v.trim() ? "" : "What can we help you with? Please pick one."),
     };
 
     // Soft checks — shown as non-blocking hints, never prevent submission.
@@ -374,7 +374,7 @@ const images = document.images;
         const w = {};
         const addr = formData.address.trim();
         if (addr && (addr.length < 8 || !hasVowel(addr))) {
-            w.address = "Please enter a more complete address.";
+            w.address = "That looks a little short — could you add more detail (street, city, etc.)?";
         }
         const msg = formData.message.trim();
         if (msg && msg.length > 6) {
