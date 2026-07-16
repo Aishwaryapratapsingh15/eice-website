@@ -24,8 +24,8 @@ function PetroSIM() {
             optimization.
           </p>
           <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
-            <img src={petrosim1} alt="PetroSIM refinery simulation tool interface" className="w-full h-full object-fit rounded-lg" />
-            <img src={petrosim2} alt="PetroSIM process analysis and optimization dashboard" className="w-full h-full object-fit rounded-lg" />
+            <img src={petrosim1} alt="PetroSIM refinery simulation tool interface" className="w-full h-full object-fit rounded-lg"  width="1068" height="567" />
+            <img src={petrosim2} alt="PetroSIM process analysis and optimization dashboard" className="w-full h-full object-fit rounded-lg"  width="1071" height="568" />
           </div>
         </div>
         <div className="w-full pb-6">

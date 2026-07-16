@@ -20,8 +20,8 @@ function NoraltaMath() {
             monitoring and reporting workflows.
           </p>
           <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
-            <img src={noraltamath1} alt="FEMMS Platform" className="w-full h-full object-fit rounded-lg" />
-            <img src={noraltamath2} alt="FEMMS Dashboard" className="w-full h-full object-fit rounded-lg" />
+            <img src={noraltamath1} alt="FEMMS Platform" className="w-full h-full object-fit rounded-lg"  width="308" height="406" />
+            <img src={noraltamath2} alt="FEMMS Dashboard" className="w-full h-full object-fit rounded-lg"  width="160" height="96" />
           </div>
         </div>
         <div className="w-full pb-6">

@@ -94,63 +94,63 @@ export default function PurchaseAndVendor() {
             desc: "Maintain a centralized database with detailed vendor profiles, including contact information, product offerings, and contract terms, helping businesses efficiently track and manage supplier relationships.",
             img: vmfeature, // Image from the previous feature array
             width: "64px" // Width from the previous feature array
-        },
+        , __w: 300, __h: 300},
         {
             key: 2,
             heading: "RFP/RFQ Management",
             desc: "Easily create, send, and manage Requests for Proposals (RFPs) and Quotations (RFQs), ensuring businesses receive competitive bids from multiple vendors, simplifying the procurement process.",
             img: rtmm, // Image from the previous feature array
             width: "65px" // Width from the previous feature array
-        },
+        , __w: 200, __h: 200},
         {
             key: 3,
             heading: "Automated Quotation Comparison",
             desc: "Automatically compare vendor quotations based on price, delivery, and quality, helping businesses make data-driven procurement decisions quickly.",
             img: aqc, // Image from the previous feature array
             width: "54px" // Width from the previous feature array
-        },
+        , __w: 300, __h: 300},
         {
             key: 4,
             heading: "Order Management",
             desc: "Track and manage purchase orders from creation to fulfilment, with integration to inventory and warehouse management for real-time stock level and delivery updates.",
             img: tm, // Image from the previous feature array
             width: "65px" // Width from the previous feature array
-        },
+        , __w: 200, __h: 200},
         {
             key: 5,
             heading: "Vendor Payment Tracking",
             desc: "Monitor vendor payments, including invoices and due dates, ensuring smooth transactions with transparent payment status for both businesses and vendors.",
             img: vpt, // Image from the previous feature array
             width: "65px" // Width from the previous feature array
-        },
+        , __w: 300, __h: 300},
         {
             key: 6,
             heading: "Purchase Order Approvals",
             desc: "Enable multi-level approval workflows for purchase orders to ensure alignment with internal budgets and procurement policies before sending to vendors.",
             img: poa, // Image from the previous feature array
             width: "63px" // Width from the previous feature array
-        },
+        , __w: 300, __h: 300},
         {
             key: 7,
             heading: "Supplier Performance Monitoring",
             desc: "Evaluate vendor performance through comprehensive reports on delivery, product quality, and compliance, helping businesses strengthen supplier relationships.",
             img: spm, // Image reused for consistency
             width: "64px" // Reused width for consistency
-        },
+        , __w: 300, __h: 300},
         {
             key: 8,
             heading: "Document Management",
             desc: "Securely store and access procurement-related documents like contracts, invoices, and agreements in a centralized repository for easy sharing with vendors.",
             img: dm, // Reused image for consistency
             width: "65px" // Reused width for consistency
-        },
+        , __w: 300, __h: 300},
         {
             key: 9,
             heading: "Purchase Forecasting and Budgeting",
             desc: "Forecast purchasing needs based on historical data and trends, set procurement budgets, and track spending to ensure financial control.",
             img: pfb, // Reused image for consistency
             width: "54px" // Reused width for consistency
-        }
+        , __w: 300, __h: 300}
     ];
 
 
@@ -162,31 +162,31 @@ export default function PurchaseAndVendor() {
             heading: "Efficient Vendor Management",
             desc: "Centralized vendor profiles allow businesses to maintain organized and up-to-date records, making it easier to track relationships and performance over time.",
             img: evm,
-        },
+        __w: 1068, __h: 1017},
         {
             key: 2,
             heading: "Time and Cost Savings",
             desc: "Streamlining the RFP and RFQ processes reduces the time spent on sourcing and vendor selection, allowing businesses to make quicker procurement decisions and secure better prices.",
             img: tcs,
-        },
+        __w: 1068, __h: 1017},
         {
             key: 3,
             heading: "Transparency and Accountability",
             desc: "Vendors can easily track payment statuses and purchase orders, reducing disputes and fostering trust between businesses and suppliers.",
             img: ta,
-        },
+        __w: 1068, __h: 1017},
         {
             key: 4,
             heading: "Improved Supplier Relationships",
             desc: "By evaluating supplier performance and maintaining clear, direct communication through the portal, businesses can build stronger, more collaborative partnerships with vendors.",
             img: isr,
-        },
+        __w: 1068, __h: 1017},
         {
             key: 5,
             heading: "Better Financial Control",
             desc: "Integration with finance modules ensures that payment terms, budgets, and spending are tracked efficiently, enabling businesses to stay within budget and manage cash flow effectively.",
             img: bfc,
-        },
+        __w: 1068, __h: 1017},
        
     ];
 
@@ -249,7 +249,7 @@ export default function PurchaseAndVendor() {
 <div className={`${style.contentConatinerPhone}`}>
 
     <div className={`${style.herosectionImgBoxPhone}`}>
-        <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
+        <img style={{ width: "100%" }} src={heroImg} alt={"room booking"}  width="941" height="437" />
     </div>
 
     <div className={`${style.headingBoxPhone} font4 `}>
@@ -303,7 +303,7 @@ export default function PurchaseAndVendor() {
 
                     <div className={style.section2IconAndName}>
                         <div className={`${style.section2Icon}`}>
-                            <img style={{ width: "100%" }} src={sp} alt="" />
+                            <img style={{ width: "100%" }} src={sp} alt=""  width="300" height="300" />
                         </div>
 
                         <div className={`${style.iconName} `}>
@@ -318,7 +318,7 @@ export default function PurchaseAndVendor() {
                     <div className={style.section2IconAndName}>
 
                         <div className={`${style.section2Icon}`}>
-                            <img style={{ width: "100%" }} src={vm} alt="" />
+                            <img style={{ width: "100%" }} src={vm} alt=""  width="300" height="300" />
                         </div>
 
                         <div className={`${style.iconName} `}>
@@ -370,7 +370,7 @@ export default function PurchaseAndVendor() {
 
                         <div className={`${style.laptopImgSection3}`}>
                             <div className={`${style.laptopImgBox}`} >
-                                <img style={{ width: "100%" }} src={laptop} alt="" />
+                                <img style={{ width: "100%" }} src={laptop} alt=""  width="1440" height="916" />
                             </div>
                         </div>
 
@@ -409,7 +409,7 @@ export default function PurchaseAndVendor() {
                                 <div className={`${style.headingAndIconFeatures}`}>
 
                                     <div style={{ width: item.width }}>
-                                        <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                                        <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
                                     </div>
 
                                     <div className={`${style.featureHeading}`}>
@@ -465,7 +465,7 @@ export default function PurchaseAndVendor() {
 
 
                             <div style={{ width: "25%" }}>
-                                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
                             </div>
 
                             <div className='GlobalBenefitTextBox' >
@@ -478,7 +478,7 @@ export default function PurchaseAndVendor() {
 
 
                             <div style={{ width: "25%" }}>
-                                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
                             </div>
 
                             <div className='GlobalBenefitTextBox' >
@@ -507,7 +507,7 @@ export default function PurchaseAndVendor() {
 
 
                             <div className="GlobalBenefitImgBox" >
-                                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
                             </div>
 
                             <div className='GlobalBenefitTextBox' >
@@ -520,7 +520,7 @@ export default function PurchaseAndVendor() {
 
 
                             <div className="GlobalBenefitImgBox">
-                                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
                             </div>
 
                             <div className='GlobalBenefitTextBox' >

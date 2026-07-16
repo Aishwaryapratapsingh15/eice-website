@@ -75,7 +75,7 @@
 //         <div className={styles.mainbox}>
 
 //           <div className={styles.innerbox} >
-//             <img className={styles.imgsize} src={health} alt="" />
+//             <img className={styles.imgsize} src={health} alt=""  width="1" height="298" />
 
 //             <div className={styles.text} >
 //               <div className={styles.headimg}>HEALTHCARE</div>
@@ -86,7 +86,7 @@
 
 
 //           <div className={styles.innerbox}>
-//             <img className={styles.imgsize} src={digital} alt="" />
+//             <img className={styles.imgsize} src={digital} alt=""  width="1" height="298" />
 //             <div className={styles.text} >
 //               <div className={styles.headimg}>DIGITAL MEDIA</div>
 //               <div>Advanced solutions for content creation, distribution and monetization</div>
@@ -95,7 +95,7 @@
 
 
 //           <div className={styles.innerbox}>
-//             <img className={styles.imgsize} src={education} alt="" />
+//             <img className={styles.imgsize} src={education} alt=""  width="1" height="298" />
 //             <div className={styles.text} >
 //               <div className={styles.headimg} >EDUCATION</div>
 //               <div>Digital tools that enhance learning and administrative efficiency</div>
@@ -112,7 +112,7 @@
 
 
 //           <div className={styles.innerbox}>
-//             <img className={styles.imgsize} src={enterprise} alt="" />
+//             <img className={styles.imgsize} src={enterprise} alt=""  width="1" height="298" />
 //             <div className={styles.text} >
 //               <div className={styles.headimg} >ENTERPRISE</div>
 //               <div>Driving Enterprise Excellence with Intelligent Software Solutions</div>
@@ -122,7 +122,7 @@
 
 
 //           <div className={styles.innerbox}>
-//             <img className={styles.imgsize} src={financial} alt="" />
+//             <img className={styles.imgsize} src={financial} alt=""  width="1" height="298" />
 //             <div className={styles.text} >
 //               <div className={styles.headimg} >FINANCIAL SERVICES</div>
 //               <div>Transforming financial services with IT solutions for seamless operations and compliance</div>
@@ -131,7 +131,7 @@
 
 
 //           <div className={styles.innerbox}>
-//             <img className={styles.imgsize} src={legal} alt="" />
+//             <img className={styles.imgsize} src={legal} alt=""  width="1" height="298" />
 
 //             <div className={styles.text} >
 //               <div className={styles.headimg} >LEGAL</div>
@@ -147,7 +147,7 @@
 //         <div className={styles.mainbox}>
 
 //           <div className={styles.innerbox}>
-//             <img className={styles.imgsize} src={oil} alt="" />
+//             <img className={styles.imgsize} src={oil} alt=""  width="1" height="298" />
 //             <div className={styles.text} >
 //               <div className={styles.headimg} >OIL & GAS</div>
 //               <div> Pioneering the Future of Oil and Gas with State-of-the-Art Solutions</div>
@@ -158,7 +158,7 @@
 
 
 //           <div className={styles.innerbox}>
-//             <img className={styles.imgsize} src={logistics} alt="" />
+//             <img className={styles.imgsize} src={logistics} alt=""  width="1" height="298" />
 
 //             <div className={styles.text} >
 //               <div className={styles.headimg} >LOGISTICS</div>
@@ -429,7 +429,7 @@ function Solutions() {
             to="/industries"
             className="inline-flex items-center justify-center py-4 px-7 border border-blue-900 bg-blue-900 text-white font-semibold rounded-md text-lg transition duration-200 hover:bg-blue-900/90 hover:shadow-md hover:shadow-bloo/30"
           >
-            View More <img src={arrow} alt="" className="ml-2 w-5 h-5" />
+            View More <img src={arrow} alt="" className="ml-2 w-5 h-5"  width="20" height="20" />
           </Link>
         </div>
 

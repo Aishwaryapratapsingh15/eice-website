@@ -474,7 +474,7 @@ function OurTeam() {
           src={teamsbanner}
           alt=""
           className="-z-20 absolute inset-0 w-full h-full object-cover"
-        />
+         width="1434" height="273" />
         <h1 className="fontsize_2 font-manrope text-white  text-center  py-16">
           Our Team
         </h1>
@@ -572,7 +572,7 @@ function OurTeam() {
                     This culture of innovation ensures that we stay ahead of our competition and deliver cutting edge solutions to our clients.
                   </p>
                 </div>
-                <img src={teamsbanner11} alt="EICE Technology team collaborating on innovative solutions" className="lg:order-last order-first" />
+                <img src={teamsbanner11} alt="EICE Technology team collaborating on innovative solutions" className="lg:order-last order-first"  width="438" height="195" />
               </div>
             </div>
             <div className=" px-4">
@@ -584,7 +584,7 @@ function OurTeam() {
                     This culture of innovation ensures that we stay ahead of our competition and deliver cutting edge solutions to our clients.
                   </p>
                 </div>
-                <img src={teamsbanner12} alt="EICE Technology team members working together" className="order-first " />
+                <img src={teamsbanner12} alt="EICE Technology team members working together" className="order-first "  width="438" height="195" />
               </div>
             </div>
             <div className=" px-4">
@@ -596,7 +596,7 @@ function OurTeam() {
                     This culture of innovation ensures that we stay ahead of our competition and deliver cutting edge solutions to our clients.
                   </p>
                 </div>
-                <img src={teamsbanner13} alt="EICE Technology team driving innovation and excellence" className="lg:order-last order-first" />
+                <img src={teamsbanner13} alt="EICE Technology team driving innovation and excellence" className="lg:order-last order-first"  width="438" height="195" />
               </div>
             </div>
           </div>
@@ -605,7 +605,7 @@ function OurTeam() {
 
       </div>
       <div className="relative py-12 mb-10">
-        <img src={teamsbanner2} alt="" className="-z-20 absolute inset-0 h-full w-full object-cover" />
+        <img src={teamsbanner2} alt="" className="-z-20 absolute inset-0 h-full w-full object-cover"  width="1434" height="331" />
         <div className="max-w-7xl mx-auto w-full h-full px-4 py-12">
           <h2 className=" fontsize_2  text-white   mx-auto   py-1">
             Come and Work with Us

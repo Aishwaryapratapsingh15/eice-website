@@ -231,7 +231,7 @@ export default function InfraSight() {
                              src={infraSightHero}
                              alt="product"
                              className="mx-auto sm:mb-6 md:w-full lg:w-[480px] pb-4 pt-14"
-                           />
+                            width="2326" height="900" />
                  </div>
       <div className="max-w-[1100px] mx-auto text-left sm:text-center">
 
@@ -259,7 +259,7 @@ export default function InfraSight() {
                           <button  onClick={() => navigate("/products/eicerise/form")} 
                           className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-[18px]">
                             Request a Demo
-                              <img src={arrowIcon} alt="arrow"/>
+                              <img src={arrowIcon} alt="arrow" width="24" height="24" />
                     
                           </button>
 
@@ -327,7 +327,7 @@ systems.
     <div className="hidden md:block h-full">
       {/* Placeholder for image */}
       <div className="w-full h-[350px]">
-        <img src={sidebgIcon} alt="What is InfraSight" className="w-full h-full object-cover rounded-xl" />
+        <img src={sidebgIcon} alt="What is InfraSight" className="w-full h-full object-cover rounded-xl"  width="772" height="654" />
       </div>
     </div>
 
@@ -357,7 +357,7 @@ systems.
 
         {/* SVG */}
         <div className="rounded-lg flex items-start">
-          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain"  width="56" height="56" />
         </div>
 
         {/* TITLE */}
@@ -392,7 +392,7 @@ infrastructure </h4>
 
         {/* SVG */}
         <div className="rounded-lg flex items-start">
-          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain"  width="56" height="56" />
         </div>
 
         {/* TITLE */}
@@ -437,7 +437,7 @@ infrastructure </h4>
             src={infrabannerIcon}
             alt="platform"
             className="w-full rounded-xl"
-          />
+           width="2094" height="494" />
 
            <p className="mt-4 text-gray-400 text-xl max-w-3xl mx-auto">
       Real-time observability, intelligent monitoring, and proactive issue resolution across your entire IT infrastructure.
@@ -496,7 +496,7 @@ infrastructure</h4>
             src={cobIcon}
             alt="platform"
             className="w-full rounded-xl"
-          />
+           width="535" height="254" />
   
         </div>
       
@@ -519,7 +519,7 @@ infrastructure</h4>
 
         {/* SVG */}
         <div className="rounded-lg flex items-start">
-          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain"  width="56" height="56" />
         </div>
 
         {/* TITLE */}
@@ -675,7 +675,7 @@ infrastructure</h4>
       <button onClick={() => navigate("/products/eicerise/form")} 
       className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto hover:bg-blue-800 transition text-[18px]">
         Request a Demo
-          <img src={arrowIcon} alt="arrow"/>
+          <img src={arrowIcon} alt="arrow" width="24" height="24" />
 
       </button>
     </div>

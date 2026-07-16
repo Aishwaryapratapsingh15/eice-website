@@ -29,7 +29,7 @@ export default function TopNavBar() {
             </div>
 
             <div style={{ width: "9rem" }}>
-                <img style={{ width: "100%" }} src={logo} alt="Logo" />
+                <img style={{ width: "100%" }} src={logo} alt="Logo"  width="336" height="51" />
             </div>
 
         </>

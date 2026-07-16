@@ -45,7 +45,7 @@ export default function Vanilla() {
             icon: pos,
             path: "/products/eicerise/pos-dining",
             key: 2
-        },
+        , __w: 300, __h: 300},
 
         {
             serviceName: "BANQUET &",
@@ -53,7 +53,7 @@ export default function Vanilla() {
             icon: banquet,
             path: "/products/eicerise/banquet-billing",
             key: 3
-        },
+        , __w: 300, __h: 300},
 
        
 
@@ -64,7 +64,7 @@ export default function Vanilla() {
             icon: inentry,
             path: "/products/eicerise/userstore-inventry",
             key: 8
-        },
+        , __w: 300, __h: 300},
 
        
 
@@ -73,7 +73,7 @@ export default function Vanilla() {
             icon: food,
             path: "/products/eicerise/food-cost",
             key: 10
-        }
+        , __w: 300, __h: 300}
     ]
 
     const whyToChooseUs = [
@@ -103,11 +103,11 @@ export default function Vanilla() {
 
             {isPhone ? (<section className={`${styles.heroImgSectionPhone}`}>
                 <div className={`${styles.heroImgBoxPhone}`}>
-                    {/* <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite" /> */}
+                    {/* <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite"  width="1601" height="787" /> */}
                 </div>
             </section>) : (<section className={`${styles.heroImgSection}`}>
                 <div className={`${styles.heroImgBox}`}>
-                    <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite" />
+                    <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite"  width="1601" height="787" />
                 </div>
             </section>)}
 
@@ -154,7 +154,7 @@ export default function Vanilla() {
                                 <div className={`${styles.iconAndTextBox} `}>
 
                                     <div className={styles.imgBox} >
-                                        <img src={item.icon?.src || item.icon} alt={item.name || ""} />
+                                        <img src={item.icon?.src || item.icon} alt={item.name || ""}  width={item.__w} height={item.__h} />
                                     </div>
                                     <div className={`${styles.serviceName} font1`}>
                                         <div>  {item.serviceName}</div>

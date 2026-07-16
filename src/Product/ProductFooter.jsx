@@ -87,10 +87,10 @@ export default function Footer() {
             </p>
 
             <p className="text-white text-lg mt-2 flex items-center justify-start md:justify-end gap-2">
-              Phone:  <img src={whatsappIcon} alt="Whatsapp" className="w-4 h-4" /> +91 987 189 5200
+              Phone:  <img src={whatsappIcon} alt="Whatsapp" className="w-4 h-4"  width="16" height="16" /> +91 987 189 5200
             </p>
             <p className="text-white text-lg mt-2 flex items-center justify-start md:justify-end gap-4">
-              <img src={phoneIcon} alt="Whatsapp" className="w-4 h-4 invert" /> +1 832 280 4632
+              <img src={phoneIcon} alt="Whatsapp" className="w-4 h-4 invert"  width="16" height="16" /> +1 832 280 4632
             </p>
           </div>
         </div>
@@ -267,7 +267,7 @@ export default function Footer() {
             transition-all duration-200
             group-hover:invert
           "
-        />
+         width="20" height="20" />
       </div>
     </a>
 

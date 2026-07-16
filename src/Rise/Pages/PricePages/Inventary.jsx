@@ -42,14 +42,14 @@ export default function Inventary() {
               icon: inentry,
               path: "/products/eicerise/userstore-inventry",
               key: 8
-          },
+          , __w: 300, __h: 300},
   
           {
               serviceName: "PURCHASE & VENDOR PORTAL",
               icon: vendor,
               path: "/products/eicerise/purchase-vendor",
               key: 9
-          },
+          , __w: 300, __h: 300},
   
           
       ]
@@ -86,11 +86,11 @@ export default function Inventary() {
 
             {isPhone ? (<section className={`${styles.heroImgSectionPhone}`}>
                 <div className={`${styles.heroImgBoxPhone}`}>
-                    {/* <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite" /> */}
+                    {/* <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite"  width="1601" height="785" /> */}
                 </div>
             </section>) : (<section className={`${styles.heroImgSection}`}>
                 <div className={`${styles.heroImgBox}`}>
-                    <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite" />
+                    <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite"  width="1601" height="785" />
                 </div>
             </section>)}
 
@@ -138,7 +138,7 @@ export default function Inventary() {
                                 <div className={`${styles.iconAndTextBox} `}>
 
                                     <div className={styles.imgBox} >
-                                        <img src={item.icon?.src || item.icon} alt={item.name || ""} />
+                                        <img src={item.icon?.src || item.icon} alt={item.name || ""}  width={item.__w} height={item.__h} />
                                     </div>
                                     <div className={`${styles.serviceName} font1`}>
                                                                             <div>  {item.serviceName}</div>

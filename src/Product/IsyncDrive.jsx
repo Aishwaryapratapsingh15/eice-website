@@ -45,9 +45,9 @@ import { useNavigate } from "@/nextNavigation";
 
 
 const features = [
-  { icon: enterpriseGovernanceIcon, title: "Enterprise Governance", desc: "Role based access and approvals" },
-  { icon: flexibleDeploymentIcon, title: "Flexible Deployment", desc: "Cloud, On prem or hybrid" },
-  { icon: cRoleSeparationIcon, title: "Clear Role Separation", desc: "User, Admin, Super Admin" },
+  { icon: enterpriseGovernanceIcon, title: "Enterprise Governance", desc: "Role based access and approvals" , __w: 42, __h: 42},
+  { icon: flexibleDeploymentIcon, title: "Flexible Deployment", desc: "Cloud, On prem or hybrid" , __w: 42, __h: 42},
+  { icon: cRoleSeparationIcon, title: "Clear Role Separation", desc: "User, Admin, Super Admin" , __w: 42, __h: 42},
 ];
 
 // const challenges = [
@@ -188,7 +188,7 @@ export default function ISyncDrivePage() {
                     src={heroImg}
                     alt="product"
                     className="mx-auto mb-6 md:w-96 lg:w-[480px]"
-                  />
+                   width="873" height="404" />
         </div>
 
         {/* <span className="bg-blue-100 text-blue-900 px-4 py-1 rounded-full text-sm font-small border border-blue-300">
@@ -200,7 +200,7 @@ export default function ISyncDrivePage() {
     src={shieldIcon} 
     alt="icon" 
     className="w-5 h-5 object-contain"
-  />
+   width="20" height="20" />
 
   Enterprise-Grade File Management
 </span>
@@ -217,7 +217,7 @@ access, sync, and share files across devices from a single platform with full co
         {/* <div className="mt-8 flex flex-wrap justify-center gap-4">
           <button className="bg-blue-900 text-white px-6 py-3 rounded-md">
             Request a Demo
-            <img src={arrowIcon} alt="arrow" className="w-4 h-4" />
+            <img src={arrowIcon} alt="arrow" className="w-4 h-4"  width="16" height="16" />
           </button>
           <button className="border border-gray-300 px-6 py-3 rounded-md">
             Talk to an Expert
@@ -229,7 +229,7 @@ access, sync, and share files across devices from a single platform with full co
       <button onClick={() => navigate("/products/eicerise/form")}
       className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-[18px]">
         Request a Demo
-          <img src={arrowIcon} alt="arrow"/>
+          <img src={arrowIcon} alt="arrow" width="24" height="24" />
 
       </button>
 
@@ -250,7 +250,7 @@ access, sync, and share files across devices from a single platform with full co
 
       {/* ICON (Rounded Rectangle) */}
       <div className=" px-6 rounded-xl">
-       <img src={item.icon} alt="icon"/>
+       <img src={item.icon} alt="icon" width={item.__w} height={item.__h} />
       </div>
 
       {/* TITLE */}
@@ -324,7 +324,7 @@ access, sync, and share files across devices from a single platform with full co
 
         {/* SVG */}
         <div className="rounded-lg flex items-start">
-          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain"  width="56" height="56" />
         </div>
 
         {/* TITLE */}
@@ -359,7 +359,7 @@ access, sync, and share files across devices from a single platform with full co
 
         {/* SVG */}
         <div className="rounded-lg flex items-start">
-          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain"  width="56" height="56" />
         </div>
 
         {/* TITLE */}
@@ -390,7 +390,7 @@ access, sync, and share files across devices from a single platform with full co
       src={bgImage}
       alt="platform"
       className="w-full rounded-xl"
-    />
+     width="1625" height="371" />
 
     {/* TEXT */}
     <p className="mt-4 text-gray-400 text-xl max-w-3xl mx-auto">
@@ -417,7 +417,7 @@ access, sync, and share files across devices from a single platform with full co
 
         {/* SVG */}
         <div className="rounded-lg flex items-start">
-          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain"  width="56" height="56" />
         </div>
 
         {/* TITLE */}
@@ -464,7 +464,7 @@ access, sync, and share files across devices from a single platform with full co
 
         {/* ICON */}
         <div className="w-12 h-12 flex items-center justify-center bg-blue-900 text-white rounded-lg text-xl">
-          <img src={item.icon} alt="icon"/>
+          <img src={item.icon} alt="icon" width="48" height="48" />
         </div>
 
         {/* TITLE */}
@@ -506,7 +506,7 @@ access, sync, and share files across devices from a single platform with full co
       {/* Header */}
       <div className="flex items-center gap-4 mb-5">
         <div className="p-3 rounded-lg">
-          <img src={unifiedEcosystemIcon} alt="icon"/>
+          <img src={unifiedEcosystemIcon} alt="icon" width="42" height="42" />
         </div>
         <h3 className="text-2xl font-bold text-[#334155]">
           Unified Ecosystem
@@ -538,7 +538,7 @@ access, sync, and share files across devices from a single platform with full co
       {/* Header */}
       <div className="flex items-center gap-4 mb-5">
         <div className="p-3 rounded-lg">
-          <img src={adaptiveIntelligenceIcon} alt="icon"/>
+          <img src={adaptiveIntelligenceIcon} alt="icon" width="42" height="42" />
         </div>
         <h3 className="text-2xl font-bold text-[#334155]">
           Adaptive Intelligence
@@ -590,7 +590,7 @@ access, sync, and share files across devices from a single platform with full co
 
       {/* ICON */}
       <div className="py-1 rounded-lg">
-        <img src={rbacIcon} alt="rbac" className="w-14 h-14"/>
+        <img src={rbacIcon} alt="rbac" className="w-14 h-14" width="56" height="56" />
       </div>
 
       {/* CONTENT */}
@@ -609,7 +609,7 @@ access, sync, and share files across devices from a single platform with full co
     <div className="bg-white border border-[#E2E8F0] rounded-xl p-4 sm:p-6 flex items-start gap-3">
 
       <div className=" py-1 rounded-lg">
-        <img src={approvalIcon} alt="approval" className="w-14 h-14"/>
+        <img src={approvalIcon} alt="approval" className="w-14 h-14" width="56" height="56" />
       </div>
 
       <div>
@@ -627,7 +627,7 @@ access, sync, and share files across devices from a single platform with full co
     <div className="bg-white border border-[#E2E8F0] rounded-xl p-4 sm:p-6 flex items-start gap-3">
 
       <div className="py-1 rounded-lg">
-        <img src={tenantIcon} alt="tenant" className="w-14 h-14"/>
+        <img src={tenantIcon} alt="tenant" className="w-14 h-14" width="56" height="56" />
       </div>
 
       <div>
@@ -667,7 +667,7 @@ access, sync, and share files across devices from a single platform with full co
 
       {/* ICON */}
       <div className="w-14 h-14 mx-0 sm:mx-auto flex items-center justify-center rounded-lg mb-6">
-        <img src={cloudIcon} alt="cloud"/>
+        <img src={cloudIcon} alt="cloud" width="56" height="56" />
       </div>
 
       <h3 className="text-[24px] sm:text-xl font-bold text-[#334155]">
@@ -684,7 +684,7 @@ access, sync, and share files across devices from a single platform with full co
     src={checkIcon}
     alt="check"
     className="w-5 h-5 mt-1"
-  />
+   width="20" height="20" />
           Zero infrastructure management
         </li>
         <li className="flex items-start gap-2">
@@ -692,7 +692,7 @@ access, sync, and share files across devices from a single platform with full co
     src={checkIcon}
     alt="check"
     className="w-5 h-5 mt-1"
-  />
+   width="20" height="20" />
           Auto-scaling capabilities
         </li>
         <li className="flex items-start gap-2">
@@ -700,7 +700,7 @@ access, sync, and share files across devices from a single platform with full co
     src={checkIcon}
     alt="check"
     className="w-5 h-5 mt-1"
-  />
+   width="20" height="20" />
           Global availability
         </li>
       </ul>
@@ -711,7 +711,7 @@ access, sync, and share files across devices from a single platform with full co
     <div className="bg-[#EFFAFF] border border-[#E2E8F0] rounded-xl p-4 sm:p-8 text-left sm:text-center">
 
       <div className="w-14 h-14 mx-0 sm:mx-auto flex items-center justify-center rounded-lg mb-6">
-        <img src={onPremIcon} alt="onprem"/>
+        <img src={onPremIcon} alt="onprem" width="56" height="56" />
       </div>
 
       <h3 className="text-[24px] sm:text-xl font-semibold text-gray-800">
@@ -728,7 +728,7 @@ access, sync, and share files across devices from a single platform with full co
     src={checkIcon}
     alt="check"
     className="w-5 h-5 mt-1"
-  />
+   width="20" height="20" />
           Complete control over data
         </li>
         <li className="flex items-start gap-2">
@@ -736,7 +736,7 @@ access, sync, and share files across devices from a single platform with full co
     src={checkIcon}
     alt="check"
     className="w-5 h-5 mt-1"
-  />
+   width="20" height="20" />
           Meet regulatory requirements
         </li>
         <li className="flex items-start gap-2">
@@ -744,7 +744,7 @@ access, sync, and share files across devices from a single platform with full co
     src={checkIcon}
     alt="check"
     className="w-5 h-5 mt-1"
-  />
+   width="20" height="20" />
           Custom infrastructure
         </li>
       </ul>
@@ -755,7 +755,7 @@ access, sync, and share files across devices from a single platform with full co
     <div className="bg-[#EFFAFF] border border-[#E2E8F0] rounded-xl p-4 sm:p-8 text-left sm:text-center">
 
       <div className="w-14 h-14 mx-0 sm:mx-auto flex items-center justify-center rounded-lg mb-6">
-        <img src={hybridIcon} alt="hybrid"/>
+        <img src={hybridIcon} alt="hybrid" width="56" height="56" />
       </div>
 
       <h3 className="text-[24px] sm:text-xl font-semibold text-gray-800">
@@ -772,7 +772,7 @@ access, sync, and share files across devices from a single platform with full co
     src={checkIcon}
     alt="check"
     className="w-5 h-5 mt-1"
-  />
+   width="20" height="20" />
           Controlled internal and external sharing
         </li>
         <li className="flex items-start gap-2">
@@ -780,7 +780,7 @@ access, sync, and share files across devices from a single platform with full co
     src={checkIcon}
     alt="check"
     className="w-5 h-5 mt-1"
-  />
+   width="20" height="20" />
           Permission-based access
         </li>
       </ul>
@@ -811,7 +811,7 @@ access, sync, and share files across devices from a single platform with full co
           <button onClick={() => navigate("/products/eicerise/form")} 
           className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto hover:bg-blue-800 transition text-[18px]">
         Request a Demo
-          <img src={arrowIcon} alt="arrow"/>
+          <img src={arrowIcon} alt="arrow" width="24" height="24" />
 
       </button>
 

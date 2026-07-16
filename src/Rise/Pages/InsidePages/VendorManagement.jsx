@@ -59,7 +59,7 @@ export default function VendorManagement() {
       desc: "Digitize vendor onboarding with online registration forms, document collection (GST, PAN, bank details), and verification workflows for compliance-ready vendor profiles.",
       img: vroIcon,
       width: "44px"
-    },
+    , __w: 50, __h: 50},
     {
       key: 2,
       heading: "Vendor Master",
@@ -67,7 +67,7 @@ export default function VendorManagement() {
       desc: "Maintain a centralized vendor directory with contact details, service categories, payment terms, credit limits, and compliance documentation for quick reference.",
       img: vmdIcon,
       width: "44px"
-    },
+    , __w: 50, __h: 50},
     {
       key: 3,
       heading: "Performance",
@@ -75,7 +75,7 @@ export default function VendorManagement() {
       desc: "Rate vendors based on delivery timeliness, quality compliance, pricing competitiveness, and responsiveness with configurable scoring parameters.",
       img: psrIcon,
       width: "44px"
-    },
+    , __w: 50, __h: 50},
     {
       key: 4,
       heading: "Contract",
@@ -83,7 +83,7 @@ export default function VendorManagement() {
       desc: "Store and manage vendor contracts, rate agreements, and service level agreements with renewal alerts, expiry notifications, and version-controlled documents.",
       img: camIcon,
       width: "44px"
-    },
+    , __w: 50, __h: 50},
     {
       key: 5,
       heading: "Compliance &",
@@ -91,7 +91,7 @@ export default function VendorManagement() {
       desc: "Track vendor compliance documents — licenses, insurance, certifications, FSSAI — with expiry alerts and auto-blocking of non-compliant vendors.",
       img: cdtIcon,
       width: "44px"
-    },
+    , __w: 50, __h: 50},
     {
       key: 6,
       heading: "Vendor",
@@ -99,7 +99,7 @@ export default function VendorManagement() {
       desc: "Compare vendors across parameters — pricing, quality, lead time, payment terms — with visual comparison matrices for informed selection.",
       img: vctIcon,
       width: "44px"
-    },
+    , __w: 50, __h: 50},
     {
       key: 7,
       heading: "Blacklist &",
@@ -107,7 +107,7 @@ export default function VendorManagement() {
       desc: "Maintain preferred vendor lists and blacklist non-performing suppliers with documented reasons, ensuring procurement teams work with vetted partners.",
       img: bpvmIcon,
       width: "44px"
-    },
+    , __w: 50, __h: 50},
     {
       key: 8,
       heading: "Payment History",
@@ -115,7 +115,7 @@ export default function VendorManagement() {
       desc: "Track vendor-wise payment history, outstanding balances, and debit/credit notes with integration to Accounts & Finance for reconciliation.",
       img: phlIcon,
       width: "44px"
-    },
+    , __w: 50, __h: 50},
     {
       key: 9,
       heading: "Vendor Communication",
@@ -123,7 +123,7 @@ export default function VendorManagement() {
       desc: "Enable direct communication with vendors for quotation requests, order confirmations, and dispute resolution through a built-in messaging system.",
       img: vcpIcon,
       width: "44px"
-    }
+    , __w: 50, __h: 50}
   ];
 
   // ================= BENEFITS =================
@@ -133,31 +133,31 @@ export default function VendorManagement() {
       heading: "Enhanced Supply Chain Reliability",
       desc: "Performance-rated vendors and preferred supplier lists ensure consistent quality and timely delivery of goods and services.",
       img: bescrIcon
-    },
+    , __w: 1068, __h: 1017},
     {
       key: 2,
       heading: "Operational Efficiency",
       desc: "Digital onboarding, centralized documentation, and automated alerts reduce vendor management overhead significantly.",
       img: boeIcon
-    },
+    , __w: 1068, __h: 1017},
     {
       key: 3,
       heading: "Cost Optimization",
       desc: "Vendor comparison tools and rate contract management ensure the best pricing and terms across all procurement categories.",
       img: bcoIcon
-    },
+    , __w: 1068, __h: 1017},
     {
       key: 4,
       heading: "Centralized Management",
       desc: "A single vendor portal for all properties, categories, and contracts provides complete supplier network visibility.",
       img: bcmIcon
-    },
+    , __w: 1068, __h: 1017},
     {
       key: 5,
       heading: "Compliance & Risk Mitigation",
       desc: "Automated document tracking and compliance checks prevent engagement with non-compliant or blacklisted vendors.",
       img: bcrmIcon
-    }
+    , __w: 1068, __h: 1017}
   ];
 
   // ================= FAQ =================
@@ -184,17 +184,17 @@ export default function VendorManagement() {
             {
             icon:reliableIcon,
             title:"Reliable", 
-            },
+            __w: 60, __h: 60},
             
             {
               icon:ratedIcon,
               title:"Rated",
-             }, 
+             __w: 60, __h: 60}, 
              
              {
               icon:regulatedIcon,
               title:"Regulated"
-        }
+        , __w: 60, __h: 60}
         ];
   
 
@@ -212,7 +212,7 @@ export default function VendorManagement() {
         <section className={style.heroSectionConatinerPhone}>
           <div className={style.contentConatinerPhone}>
             <div className={style.herosectionImgBoxPhone}>
-              <img src={hero} style={{ width: "100%" }} />
+              <img src={hero} style={{ width: "100%" }}  width="1389" height="915" />
             </div>
 
             <div className={style.headingBoxPhone}>
@@ -248,7 +248,7 @@ export default function VendorManagement() {
         <div className={`${style.section2} globalSectionSize`}>
           {tag.map((t, i) => (
             <div key={i} className={style.section2IconAndName}>
-              <img src={t.icon?.src || t.icon} className={style.section2Icon} />
+              <img src={t.icon?.src || t.icon} className={style.section2Icon}  width={t.__w} height={t.__h} />
               <div className={style.iconName}>{t.title}</div>
             </div>
           ))}
@@ -261,7 +261,7 @@ export default function VendorManagement() {
           <div className={style.blueBoxSetion3}>
              <div className={`${style.laptopImgSection3}`}>
                                                  <div className={`${style.laptopImgBox}`} >
-                                                     <img style={{ width: "100%" }} src={overviewIcon} alt="" />
+                                                     <img style={{ width: "100%" }} src={overviewIcon} alt=""  width="995" height="540" />
                                                  </div>
                                              </div>
 
@@ -284,7 +284,7 @@ export default function VendorManagement() {
               <div key={item.key ?? index} className={style.featureInnerBox}>
                 <div className={style.headingAndIconFeatures}>
                   <div style={{ width: item.width }}>
-                    <img src={item.img?.src || item.img} style={{ width: "100%" }} />
+                    <img src={item.img?.src || item.img} style={{ width: "100%" }}  width={item.__w} height={item.__h} />
                   </div>
                   <div className={style.featureHeading}>
                     <div>{item.heading}</div>
@@ -318,7 +318,7 @@ export default function VendorManagement() {
             index % 2 === 0 ? (
               <div key={index} className="GlobalBenefitBox1">
                 <div className="GlobalBenefitImgBox">
-                  <img src={item.img?.src || item.img} style={{ width: "100%" }} />
+                  <img src={item.img?.src || item.img} style={{ width: "100%" }}  width={item.__w} height={item.__h} />
                 </div>
                 <div className="GlobalBenefitTextBox">
                   <div className={style.innerHeadingBenifit}>{item.heading}</div>
@@ -328,7 +328,7 @@ export default function VendorManagement() {
             ) : (
               <div key={index} className="GlobalBenefitBox2">
                 <div className="GlobalBenefitImgBox">
-                  <img src={item.img?.src || item.img} style={{ width: "100%" }} />
+                  <img src={item.img?.src || item.img} style={{ width: "100%" }}  width={item.__w} height={item.__h} />
                 </div>
                 <div className="GlobalBenefitTextBox">
                   <div className={style.innerHeadingBenifit}>{item.heading}</div>

@@ -59,7 +59,7 @@ function Resourcesmain() {
               src={resoucres_cs}
               alt="Case Study"
               className="w-full h-full object-cover rounded-full"
-            />
+             width="72" height="72" />
             {/* <div className="absolute inset-0 bg-slate-800/80 rounded-full"></div> */}
           </div>
         </div>

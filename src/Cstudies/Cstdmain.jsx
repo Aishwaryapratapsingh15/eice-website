@@ -54,67 +54,67 @@ const projects = {
       link: "/case-studies/relimonitor",
       img :reli
       
-    },
+    , __w: 1024, __h: 740},
     {
       title: "PetroSIM",
       description:
         "Comprehensive quality assurance and simulation tool for refinery operations.",
       link: "/case-studies/petro-sim",
       img : petrosim
-    },
+    , __w: 1920, __h: 1282},
     {
       title: "ESPCT Quote",
       description: "Web Based Sales and Quotation Tool",
       link: "/case-studies/espct-quote",
       img : espct
-    },
+    , __w: 960, __h: 640},
     {
       title: "City Gas Distribution",
       description: "Gas Distribution Analysis App for Adani Gas",
       link: "/case-studies/city-gas-adani",
       img : cgd
-    },
+    , __w: 871, __h: 613},
     {
       title: "SimuLIFT",
       description:
         "Development of Quote & Sizing Tools for Artificial Lift Methods",
       link: "/case-studies/simu-lift",
       img : simul
-    },
+    , __w: 1000, __h: 562},
     {
       title: "E&P Data Management on GIS",
       description:
         "An Integrated Exploration & Production Data Management System",
       link: "/case-studies/epgis",
       img : dmg
-    },
+    , __w: 1000, __h: 668},
     {
       title: "Engineering Integration with SCADA",
       description: "Development of PLC Information Management System",
       link: "/case-studies/noralta-scada",
       img : scada
-    },
+    , __w: 800, __h: 534},
     {
       title: "FEMMS",
       description:
         "Development of Fugitive Emission Monitoring, Estimation & Management System (FEMMS)",
       link: "/case-studies/noralta-femms",
       img : femms
-    },
+    , __w: 1920, __h: 1280},
     {
       title: "Business Analytics Automation",
       description:
         "Development of Tool for Monitoring of Petroleum Financial Models",
       link: "/case-studies/schlumberger-baa",
       img : bsa
-    },
+    , __w: 612, __h: 408},
     {
       title: "Oil & Gas Product Development",
       description:
         "Development of Design & Simulation Tool for Production Monitoring in Oil and Gas Industry for BORETS",
       link: "/case-studies/design-sim-borets",
       img : ogpd
-    },
+    , __w: 2048, __h: 1366},
   ],
   // oil: [
   //   { title: "Offshore Platform Optimization", description: "Improved production efficiency by 25% through advanced AI-driven monitoring systems." },
@@ -131,25 +131,25 @@ const projects = {
       description:
         "Developed an advanced BMS increasing EV range by 12% and battery lifespan by 2 years.",
         img : evbm
-    },
+    , __w: 1920, __h: 1080},
     {
       title: "Autonomous Driving AI",
       description:
         "Created a machine learning model improving object detection accuracy by 30% in diverse weather conditions.",
         img : adai
-    },
+    , __w: 1200, __h: 800},
     {
       title: "Connected Car Platform",
       description:
         "Designed a cloud-based system enabling OTA updates and predictive maintenance for 100,000+ vehicles.",
         img : ccp
-    },
+    , __w: 1200, __h: 675},
     {
       title: "Manufacturing Process Optimization",
       description:
         "Implemented an AI-driven system reducing production line downtime by 40% and improving quality control.",
         img : mpo
-    },
+    , __w: 2075, __h: 916},
   ],
   health: [
     {
@@ -157,13 +157,13 @@ const projects = {
       description:
         "Developed an AI algorithm for early cancer detection, improving accuracy by 15% over traditional methods.",
         img : aipdt
-    },
+    , __w: 1400, __h: 787},
     {
       title: "Telemedicine Platform",
       description:
         "Created a secure, HIPAA-compliant telehealth solution, facilitating over 1 million virtual consultations.",
         img : tmp
-    },
+    , __w: 1032, __h: 581},
   ],
 
   AiandMl : [
@@ -172,38 +172,38 @@ const projects = {
       description: "Development of an Advanced AI Voice Call Assistant: Revolutionizing Customer Interaction and Efficiency",
       link: "/case-studies/voice-call-ai",
       img : AiVoice
-    },
+    , __w: 409, __h: 257},
     {
       title: "Product Review Using Sentimental Analysis",
       description:"Enhancing Product Insights with AI: Advanced Sentiment Analysis of Product Reviews",
       link: "/case-studies/sentimental-ai",
       img : AiSentiments
-    },
+    , __w: 96, __h: 96},
     {
       title: "Logistics Using AI",
       description: "Transforming Logistics Operations with AI: Enhancing Efficiency and Accuracy", 
       link: "/case-studies/logistics-ai",
       img : AiLogistics
-    },
+    , __w: 96, __h: 96},
     {
       title: "Inventory Management Using AI",
       description: "Revolutionizing Inventory Management with AI: Enhancing Accuracy and Efficiency",
       link: "/case-studies/inventory-ai",
       img : AiInventory
-    },
+    , __w: 96, __h: 96},
 
     
   ]
 };
 
-const CaseStudy = ({ link, title, description, image }) => (
+const CaseStudy = ({ link, title, description, image, __w, __h }) => (
   <Link href={link} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 md:p-4">
     <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
       <img
         src={image?.src || image}
         alt={title}
         className="w-full h-32 sm:h-40 md:h-48 object-cover transition duration-300 filter grayscale hover:grayscale-0"
-      />
+       width={__w} height={__h}/>
       <div className="p-3 md:p-4">
         <h3 className="fontweight_1 text-sm sm:text-base md:text-lg mb-1 sm:mb-2">
           {title}
@@ -272,7 +272,7 @@ function Cstdmain() {
                   description={project.description}
                   image={project.img}
                   link={project.link}
-                />
+                 __w={project.__w} __h={project.__h}/>
               ))}
             </div>
           </section>

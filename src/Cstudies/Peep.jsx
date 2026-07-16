@@ -19,8 +19,8 @@ function Peep() {
             analysis of petroleum financial models to support data-driven decision-making across global operations.
           </p>
           <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
-            <img src={peep1} alt="Schlumberger BAA Platform" className="w-full h-full object-fit rounded-lg" />
-            <img src={peep2} alt="Schlumberger BAA Dashboard" className="w-full h-full object-fit rounded-lg" />
+            <img src={peep1} alt="Schlumberger BAA Platform" className="w-full h-full object-fit rounded-lg"  width="422" height="212" />
+            <img src={peep2} alt="Schlumberger BAA Dashboard" className="w-full h-full object-fit rounded-lg"  width="474" height="221" />
           </div>
         </div>
         <div className="w-full pb-6">

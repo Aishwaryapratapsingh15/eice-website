@@ -84,63 +84,63 @@ export default function FoodCost() {
       desc: "Monitor the cost of ingredients, resources, and overhead in real time, ensuring that all food and beverage transactions, from procurement to sale, are tracked and analyzed for accurate cost control.",
       img: rtct,
       width: "64px",
-    },
+    __w: 300, __h: 300},
     {
       key: 2,
       heading: "Recipe Costing",
       desc: "Track detailed recipes, including ingredient quantities, preparation methods, and associated costs. The system automatically calculates the cost per dish or drink, helping businesses make accurate pricing decisions.",
       img: rc,
       width: "65px",
-    },
+    __w: 300, __h: 300},
     {
       key: 3,
       heading: "Menu Engineering",
       desc: "Analyze the profitability of menu items by evaluating cost versus price. This helps identify high-cost or low-margin items and suggests ways to adjust pricing, optimize menu offerings, and implement portion control to boost profitability.",
       img: me,
       width: "54px",
-    },
+    __w: 300, __h: 300},
     {
       key: 4,
       heading: "Supplier Management & Purchase Orders",
       desc: "Monitor supplier prices and purchase orders to ensure the best deals on ingredients. The system helps compare supplier prices, manage inventory efficiently, and negotiate better prices to reduce the cost of goods sold (COGS).",
       img: smpo,
       width: "65px",
-    },
+    __w: 300, __h: 300},
     {
       key: 5,
       heading: "COGS Calculation",
       desc: "Track and calculate the cost of goods sold on a daily, weekly, or monthly basis. This feature provides insights into the total cost of ingredients used and evaluates the profitability of each food and beverage sale.",
       img: COGSc,
       width: "65px",
-    },
+    __w: 300, __h: 300},
     {
       key: 6,
       heading: "Waste and Loss Management",
       desc: "Identify and reduce food and beverage wastage, whether caused by over-portioning, spoilage, or incorrect inventory practices. This feature helps minimize loss and optimize resource utilization.",
       img: wlm,
       width: "63px",
-    },
+    __w: 300, __h: 300},
     {
       key: 7,
       heading: "Dynamic Pricing and Cost Adjustments",
       desc: "Adjust pricing strategies based on demand fluctuations, seasonality, or special events. The system enables businesses to set flexible pricing options for peak periods, offering promotions or discounts while maintaining profitability.",
       img: dpca,
       width: "70px",
-    },
+    __w: 300, __h: 300},
     {
       key: 8,
       heading: "Inventory Management",
       desc: "Efficiently manage inventory levels to avoid overstocking or stockouts. This system integrates inventory and purchasing to ensure stock availability, reduce waste, and maintain optimal ingredient levels.",
       img: im,
       width: "65px",
-    },
+    __w: 300, __h: 300},
     {
       key: 9,
       heading: "Sales Performance Insights",
       desc: "Analyze the sales performance of menu items and identify top-performing dishes and beverages. Use these insights to adjust menu offerings and match customer preferences.",
       img: spi,
       width: "60px",
-    },
+    __w: 300, __h: 300},
 
   ];
 
@@ -155,31 +155,31 @@ export default function FoodCost() {
       heading: "Profitability Optimization",
       desc: "Gain insights into ingredient costs, portion sizes, and menu profitability to adjust pricing, eliminate waste, and improve profit margins.",
       img: po,
-    },
+    __w: 1068, __h: 1017},
     {
       key: 2,
       heading: "Cost Control",
       desc: "Track F&B expenses in real-time from procurement to sale, reducing unexpected costs and ensuring better financial control.",
       img: cc,
-    },
+    __w: 1068, __h: 1017},
     {
       key: 3,
       heading: "Efficient Menu Management",
       desc: "Optimize menu items based on profitability, removing low-margin dishes and adjusting portions to meet customer demand while ensuring profitability.",
       img: emm,
-    },
+    __w: 1068, __h: 1017},
     {
       key: 4,
       heading: "Enhanced Supplier Negotiation",
       desc: "Track supplier prices and evaluate cost-effectiveness to negotiate better terms and reduce ingredient costs.",
       img: esn,
-    },
+    __w: 1068, __h: 1017},
     {
       key: 5,
       heading: "Increased Operational Efficiency",
       desc: "Automated calculations, real-time tracking, and insightful analytics streamline daily operations, improving efficiency and guest experiences.",
       img: ioe,
-    }
+    __w: 1068, __h: 1017}
   ];
 
 
@@ -236,7 +236,7 @@ export default function FoodCost() {
         <div className={`${style.contentConatinerPhone}`}>
 
           <div className={`${style.herosectionImgBoxPhone}`}>
-            <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
+            <img style={{ width: "100%" }} src={heroImg} alt={"room booking"}  width="618" height="473" />
           </div>
 
           <div className={`${style.headingBoxPhone} font4 `}>
@@ -295,7 +295,7 @@ export default function FoodCost() {
 
           <div className={style.section2IconAndName}>
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={eh} alt="" />
+              <img style={{ width: "100%" }} src={eh} alt=""  width="300" height="300" />
             </div>
 
             <div className={`${style.iconName} `}>
@@ -310,7 +310,7 @@ export default function FoodCost() {
           <div className={style.section2IconAndName}>
 
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={ep} alt="" />
+              <img style={{ width: "100%" }} src={ep} alt=""  width="300" height="300" />
             </div>
 
             <div className={`${style.iconName} `}>
@@ -362,7 +362,7 @@ export default function FoodCost() {
 
             <div className={`${style.laptopImgSection3}`}>
               <div className={`${style.laptopImgBox}`} >
-                <img style={{ width: "100%" }} src={laptop} alt="" />
+                <img style={{ width: "100%" }} src={laptop} alt=""  width="1440" height="916" />
               </div>
             </div>
 
@@ -405,7 +405,7 @@ export default function FoodCost() {
                 <div className={`${style.headingAndIconFeatures}`}>
 
                   <div style={{ width: item.width }}>
-                    <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                    <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
                   </div>
 
                   <div className={`${style.featureHeading}`}>
@@ -460,7 +460,7 @@ export default function FoodCost() {
 
 
               <div style={{ width: "25%" }}>
-                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
               </div>
 
               <div className='GlobalBenefitTextBox' >
@@ -473,7 +473,7 @@ export default function FoodCost() {
 
 
               <div style={{ width: "25%" }}>
-                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
               </div>
 
               <div className='GlobalBenefitTextBox' >
@@ -502,7 +502,7 @@ export default function FoodCost() {
 
 
               <div className="GlobalBenefitImgBox" >
-                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
               </div>
 
               <div className='GlobalBenefitTextBox' >
@@ -515,7 +515,7 @@ export default function FoodCost() {
 
 
               <div className="GlobalBenefitImgBox">
-                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
               </div>
 
               <div className='GlobalBenefitTextBox' >

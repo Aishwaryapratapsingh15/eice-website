@@ -122,7 +122,7 @@ const KeyService = ({ title, description, image }) => (
 
         className="w-full h-48 object-cover transition duration-300 filter grayscale hover:grayscale-0"
 
-      />
+       width={__w} height={__h}/>
 
       <div className="p-4">
 
@@ -168,7 +168,7 @@ const projects = {
 
         
 
-    },
+    , __w: 6000, __h: 4000},
 
     {
 
@@ -180,7 +180,7 @@ const projects = {
 
         img : etp
 
-    },
+    , __w: 1468, __h: 1000},
 
   ],
 
@@ -198,7 +198,7 @@ const projects = {
 
         img : adai
 
-    },
+    , __w: 1200, __h: 800},
 
     {
 
@@ -210,7 +210,7 @@ const projects = {
 
     img : ccp
 
-      },
+      , __w: 1200, __h: 675},
 
     {
 
@@ -222,7 +222,7 @@ const projects = {
 
         img :mpo
 
-    },
+    , __w: 2075, __h: 916},
 
   ],
 
@@ -238,7 +238,7 @@ const projects = {
 
         img : adai
 
-    },
+    , __w: 1200, __h: 800},
 
     {
 
@@ -250,7 +250,7 @@ const projects = {
 
         img :tmp
 
-    },
+    , __w: 1032, __h: 581},
 
   ],
 
@@ -260,7 +260,7 @@ const projects = {
 
 
 
-const CaseStudy = ({ title, description, image }) => (
+const CaseStudy = ({ title, description, image, __w, __h }) => (
 
   <div className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 md:p-4">
 
@@ -392,7 +392,7 @@ function Cstdmain() {
 
                   image={project.img}
 
-                />
+                 __w={project.__w} __h={project.__h}/>
 
               ))}
 
@@ -426,7 +426,7 @@ const services = [
 
       "Conduct geological surveys and drilling operations to locate and access new oil and gas reserves.",
 
-  },
+  __w: 1280, __h: 853},
 
 
 
@@ -442,7 +442,7 @@ const services = [
 
       "Enable remote consultations and virtual care through secure telemedicine platforms.",
 
-  },
+  __w: 2048, __h: 1365},
 
 
 
@@ -458,7 +458,7 @@ const services = [
 
       "Design, construct, and maintain pipelines for safe, efficient transportation of oil and gas products.",
 
-  },
+  __w: 600, __h: 600},
 
 
 
@@ -474,7 +474,7 @@ const services = [
 
       "Ensure adherence to environmental regulations and implement safety measures to protect workers and the environment.",
 
-  },
+  __w: 1536, __h: 864},
 
 
 
@@ -490,7 +490,7 @@ const services = [
 
       "Monitor asset performance and perform maintenance to extend the life and reliability of infrastructure.? ",
 
-  },
+  __w: 1920, __h: 827},
 
 ];
 
@@ -522,7 +522,7 @@ function Oilandgas() {
 
             className="hidden sm:block object-cover w-full px-2"
 
-          />
+           width="1098" height="207" />
 
           {/* Mobile: show only first panel, 20px margin each side */}
 
@@ -536,13 +536,13 @@ function Oilandgas() {
 
               className="w-[300%] max-w-none"
 
-            />
+             width="1098" height="207" />
 
           </div>
 
-          {/* <img src={healthrect2} alt="" />
+          {/* <img src={healthrect2} alt=""  width="354" height="207" />
 
-          <img src={healthrect3} alt="" /> */}
+          <img src={healthrect3} alt=""  width="354" height="207" /> */}
 
         </div>
 
@@ -656,7 +656,7 @@ function Oilandgas() {
 
                         className="absolute inset-0 -z-10 w-full h-full object-cover mb-4 rounded-xl"
 
-                      />
+                       width={service.__w} height={service.__h} />
 
                       <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-black/90 rounded-xl to-black/30  -z-10"></div>
 

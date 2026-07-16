@@ -21,8 +21,8 @@ function VoiceCallAI() {
             service quality.
           </p>
           <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
-            <img src={voicecall1} alt="Voice Call AI Platform" className="w-full h-full object-fit rounded-lg" />
-            <img src={voicecall2} alt="Voice Call AI Dashboard" className="w-full h-full object-fit rounded-lg" />
+            <img src={voicecall1} alt="Voice Call AI Platform" className="w-full h-full object-fit rounded-lg"  width="1" height="1" />
+            <img src={voicecall2} alt="Voice Call AI Dashboard" className="w-full h-full object-fit rounded-lg"  width="300" height="300" />
           </div>
         </div>
         <div className="w-full pb-6">

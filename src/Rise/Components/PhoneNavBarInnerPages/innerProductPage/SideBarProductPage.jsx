@@ -48,7 +48,7 @@ export default function SideBarProductPage() {
             icon: room,
             path: "/products/eicerise/roombooking",
 
-        },
+        __w: 120, __h: 120},
 
         {
             key: 3,
@@ -57,7 +57,7 @@ export default function SideBarProductPage() {
             description: "Manage events with ease",
             icon: banwuet,
             path: "/products/eicerise/banquet-billing",
-        },
+        __w: 120, __h: 120},
 
         {
 
@@ -68,7 +68,7 @@ export default function SideBarProductPage() {
             description: "Gain full financial control",
             icon: account,
             path: "/products/eicerise/account-finance",
-        },
+        __w: 120, __h: 120},
 
         {
             key: 7,
@@ -77,7 +77,7 @@ export default function SideBarProductPage() {
             description: "Simplify payroll processing",
             icon: pay,
             path: "/products/eicerise/payroll",
-        },
+        __w: 120, __h: 120},
 
 
         {
@@ -89,7 +89,7 @@ export default function SideBarProductPage() {
             icon: vendor,
             
             path: "/products/eicerise/purchase-vendor", 
-        },
+        __w: 120, __h: 120},
 
          {
             key: 11,
@@ -98,7 +98,7 @@ export default function SideBarProductPage() {
             description: "Boost profit accuracy",
             icon: sso,
             path: "/products/eicerise/single-sign-on",
-        },
+        __w: 48, __h: 48},
 
          {
             key: 13,
@@ -107,7 +107,7 @@ export default function SideBarProductPage() {
             description: "Boost profit accuracy",
             icon: budget,
             path: "/products/eicerise/budget",
-        },
+        __w: 48, __h: 48},
 
           {
             key: 15,
@@ -116,7 +116,7 @@ export default function SideBarProductPage() {
             description: "Boost profit accuracy",
             icon: attendance,
             path: "/products/eicerise/audience-attendance",
-        },
+        __w: 48, __h: 48},
 
                 {
             key: 17,
@@ -125,7 +125,7 @@ export default function SideBarProductPage() {
             description: "Boost profit accuracy",
             icon: vendori,
             path: "/products/eicerise/vendor-management",
-        },
+        __w: 48, __h: 48},
 
 
 
@@ -140,7 +140,7 @@ export default function SideBarProductPage() {
             description: "Simplify your dining operations",
             icon: dinning,
             path: "/products/eicerise/pos-dining",
-        },
+        __w: 120, __h: 120},
 
         {
             key: 4,
@@ -149,7 +149,7 @@ export default function SideBarProductPage() {
             description: "Build a thriving member community",
             icon: member,
             path: "/products/eicerise/member-suite",
-        },
+        __w: 120, __h: 120},
 
         {
             key: 6,
@@ -159,7 +159,7 @@ export default function SideBarProductPage() {
             icon: emp,
             path: "/products/eicerise/employee-suite",
 
-        },
+        __w: 120, __h: 120},
 
         {
             key: 9,
@@ -169,7 +169,7 @@ export default function SideBarProductPage() {
             icon: inventary,
             path: "/products/eicerise/userstore-inventry",
            
-        },
+        __w: 120, __h: 120},
 
         {
             key: 10,
@@ -178,7 +178,7 @@ export default function SideBarProductPage() {
             description: "Boost profit accuracy",
             icon: food,
             path: "/products/eicerise/food-cost",
-        },
+        __w: 120, __h: 120},
 
        
         {
@@ -188,7 +188,7 @@ export default function SideBarProductPage() {
             description: "Boost profit accuracy",
             icon: wifi,
             path: "/products/eicerise/wifi",
-        },
+        __w: 48, __h: 48},
 
        
 
@@ -199,7 +199,7 @@ export default function SideBarProductPage() {
             description: "Boost profit accuracy",
             icon: feedbacki,
             path: "/products/eicerise/feedback",
-        },
+        __w: 48, __h: 48},
 
 
         {
@@ -209,7 +209,7 @@ export default function SideBarProductPage() {
             description: "Boost profit accuracy",
             icon: compliance,
             path: "/products/eicerise/compliance-register",
-        },
+        __w: 48, __h: 48},
 
 
     ]
@@ -264,7 +264,7 @@ export default function SideBarProductPage() {
                             <Link className="linkClass" key={item.key ?? index} to={item.path}>
                                 <div onClick={handleProductItems} className={`${styles.productDetailBox}`}>
                                     <div className={`${styles.productIcon}`}>
-                                        <img className={`${styles.iconSize}`} src={item.icon?.src || item.icon} alt={item.title} />
+                                        <img className={`${styles.iconSize}`} src={item.icon?.src || item.icon} alt={item.title}  width={item.__w} height={item.__h} />
                                     </div>
                                     <div className={`${styles.titleHeading} font3`}>
 
@@ -287,7 +287,7 @@ export default function SideBarProductPage() {
                             <Link className="linkClass" key={item.key ?? index} to={item.path}>
                                 <div onClick={handleProductItems} className={`${styles.productDetailBox}`}>
                                     <div className={`${styles.productIcon}`}>
-                                        <img className={`${styles.iconSize}`} src={item.icon?.src || item.icon} alt={item.title} />
+                                        <img className={`${styles.iconSize}`} src={item.icon?.src || item.icon} alt={item.title}  width={item.__w} height={item.__h} />
                                     </div>
                                     <div className={`${styles.titleHeading} font3`}>
 

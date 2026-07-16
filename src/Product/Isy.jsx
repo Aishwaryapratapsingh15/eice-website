@@ -134,7 +134,7 @@ export default function IsyncLitePage() {
         <div className="max-w-[1200px] mx-auto">
 
           {/* IMAGE */}
-          <img src={heroImg} alt="Hero" className="mx-auto pb-4 lg:mb-6 md:mb-6 md:w-96 lg:w-[480px]" />
+          <img src={heroImg} alt="Hero" className="mx-auto pb-4 lg:mb-6 md:mb-6 md:w-96 lg:w-[480px]"  width="873" height="404" />
 
           {/* BADGE */}
                   <span className="lg:inline-flex md:inline-flex flex w-fit mx-auto items-center md:items-center gap-2 bg-blue-50 text-[#334155] px-3 py-2 rounded-full text-sm font-medium border border-blue-200">
@@ -143,7 +143,7 @@ export default function IsyncLitePage() {
               src={shieldIcon} 
               alt="icon" 
               className="w-5 h-5 object-contain"
-            />
+             width="20" height="20" />
           
             Enterprise-Data Protection
           </span>
@@ -167,7 +167,7 @@ export default function IsyncLitePage() {
                 <button onClick={() => navigate("/products/eicerise/form")} 
                 className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-[18px]">
                   Request a Demo
-                    <img src={arrowIcon} alt="arrow"/>
+                    <img src={arrowIcon} alt="arrow" width="24" height="24" />
           
                 </button>
           
@@ -200,27 +200,27 @@ export default function IsyncLitePage() {
                   src={checkIcon}
                   alt="check"
                   className="w-5 h-5 mt-1"
-                />Enterprise backup & restore platform</li>
+                 width="20" height="20" />Enterprise backup & restore platform</li>
               <li className="flex items-start gap-2"><img
                   src={checkIcon}
                   alt="check"
                   className="w-5 h-5 mt-1"
-                />Automated, policy-driven backups</li>
+                 width="20" height="20" />Automated, policy-driven backups</li>
               <li className="flex items-start gap-2"><img
                   src={checkIcon}
                   alt="check"
                   className="w-5 h-5 mt-1"
-                />Secure, encrypted data protection</li>
+                 width="20" height="20" />Secure, encrypted data protection</li>
               <li className="flex items-start gap-2"><img
                   src={checkIcon}
                   alt="check"
                   className="w-5 h-5 mt-1"
-                />Designed for business continuity & compliance</li>
+                 width="20" height="20" />Designed for business continuity & compliance</li>
             </ul>
           </div>
 
           {/* RIGHT IMAGE */}
-          <img src={wIsynclite} alt="What is" className="w-full max-w-[500px] mx-auto" />
+          <img src={wIsynclite} alt="What is" className="w-full max-w-[500px] mx-auto"  width="579" height="491" />
         </div>
       </section>
 
@@ -241,7 +241,7 @@ iSyncLite addresses these head-on.
            {data.map((item, i) => (
               <div key={i} className="bg-white rounded-xl  border-1 border border-[#E2E8F0] shadow-sm hover:shadow-md transition sm:p-6 p-4 flex flex-col items-start text-start gap-4">
                 <div className="rounded-lg flex items-start justify-center">
-                  <img src={item.icon} alt="" className="w-14 h-14 object-contain" />
+                  <img src={item.icon} alt="" className="w-14 h-14 object-contain"  width="56" height="56" />
                 </div>
                 <h3 className="font-bold text-[24px] sm:text-2xl text-[#334155] sm:whitespace-pre-line">{item.title}</h3>
 
@@ -271,7 +271,7 @@ iSyncLite addresses these head-on.
 
         {/* SVG */}
         <div className="rounded-lg flex items-start justify-center">
-          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain"  width="56" height="56" />
         </div>
 
         {/* TITLE */}
@@ -298,7 +298,7 @@ iSyncLite addresses these head-on.
             src={bg_image}
             alt="platform"
             className="w-full rounded-xl"
-          />
+           width="1571" height="371" />
       
         </div>
       
@@ -328,7 +328,7 @@ iSyncLite addresses these head-on.
       >
         {/* ICON */}
         <div className="w-12 h-12 flex items-center justify-center text-white rounded-lg text-xl">
-          <img src={item.icon} alt="icon"/>
+          <img src={item.icon} alt="icon" width="48" height="48" />
         </div>
 
         {/* TITLE */}
@@ -369,7 +369,7 @@ iSyncLite addresses these head-on.
       <div className="flex items-start gap-4 sm:gap-5">
         {/* ICON SPACE */}
         <div className="w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0 rounded-full flex items-center justify-center">
-         <img src={kbtIcon} alt="icon" className="w-14 h-14 object-contain" />
+         <img src={kbtIcon} alt="icon" className="w-14 h-14 object-contain"  width="56" height="56" />
         </div>
 
         <div>
@@ -385,7 +385,7 @@ iSyncLite addresses these head-on.
       {/* ITEM */}
       <div className="flex items-start gap-4 sm:gap-5">
         <div className="w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0 rounded-full flex items-center justify-center">
-          <img src={kbtIcon} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={kbtIcon} alt="icon" className="w-14 h-14 object-contain"  width="56" height="56" />
         </div>
         <div>
           <h3 className="text-[18px] sm:text-lg md:text-xl font-bold text-[#334155]">
@@ -400,7 +400,7 @@ iSyncLite addresses these head-on.
       {/* ITEM */}
       <div className="flex items-start gap-4 sm:gap-5">
         <div className="w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0 rounded-full flex items-center justify-center">
-          <img src={kbtIcon} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={kbtIcon} alt="icon" className="w-14 h-14 object-contain"  width="56" height="56" />
         </div>
         <div>
           <h3 className="text-[18px] sm:text-lg md:text-xl font-bold text-[#334155]">
@@ -415,7 +415,7 @@ iSyncLite addresses these head-on.
       {/* ITEM */}
       <div className="flex items-start gap-4 sm:gap-5">
         <div className="w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0 rounded-full flex items-center justify-center">
-          <img src={kbtIcon} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={kbtIcon} alt="icon" className="w-14 h-14 object-contain"  width="56" height="56" />
         </div>
         <div>
           <h3 className="text-[18px] sm:text-lg md:text-xl font-bold text-[#334155]">
@@ -430,7 +430,7 @@ iSyncLite addresses these head-on.
       {/* ITEM */}
       <div className="flex items-start gap-4 sm:gap-5">
         <div className="w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0 rounded-full flex items-center justify-center">
-          <img src={kbtIcon} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={kbtIcon} alt="icon" className="w-14 h-14 object-contain"  width="56" height="56" />
         </div>
         <div>
           <h3 className="text-[18px] sm:text-lg md:text-xl font-bold text-[#334155]">
@@ -462,7 +462,7 @@ iSyncLite addresses these head-on.
             {deploy.map((item, i) => (
               <div key={i} className="p-4 sm:p-6 rounded-xl shadow-sm bg-[#EFFAFF] border border-[#E2E8F0]">
                 <div className="w-14 h-14 mb-4 sm:mx-auto">
-                  <img src={item.icon} alt="icon" className="w-full h-full object-contain" />
+                  <img src={item.icon} alt="icon" className="w-full h-full object-contain"  width="56" height="56" />
                   </div>
                   <h3 className="font-bold text-[#334155] sm:text-2xl text-[24px]">
     {item.title}
@@ -495,7 +495,7 @@ iSyncLite addresses these head-on.
                 <button onClick={() => navigate("/products/eicerise/form")} 
                 className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto hover:bg-blue-800 transition text-[18px]">
               Request a Demo
-                <img src={arrowIcon} alt="arrow"/>
+                <img src={arrowIcon} alt="arrow" width="24" height="24" />
       
             </button>
       
@@ -643,7 +643,7 @@ iSyncLite addresses these head-on.
 //           src={heroImg}
 //           alt="product"
 //           className="mx-auto mb-6 w-72 md:w-96 lg:w-[580px]"
-//         />
+//          width="873" height="404" />
 
 //         <span className="bg-blue-100 text-blue-800 px-4 py-1 rounded-full text-sm font-medium border border-blue-500">
 //           Enterprise-Data Protection

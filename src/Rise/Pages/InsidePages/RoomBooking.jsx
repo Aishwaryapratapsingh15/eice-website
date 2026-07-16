@@ -110,7 +110,7 @@ export default function RoomBooking() {
             width: "73px",
 
 
-        },
+        __w: 200, __h: 200},
         {
             key: 2,
             heading: "Flexible Room ",
@@ -118,7 +118,7 @@ export default function RoomBooking() {
             desc: "Choose from a variety of room types, including standard, deluxe, and suite categories. Each room type includes detailed descriptions, photos, and amenities.",
             img: frs,
             width: "62px"
-        },
+        , __w: 200, __h: 200},
         {
             key: 3,
             heading: "Integrated ",
@@ -126,7 +126,7 @@ export default function RoomBooking() {
             desc: "Automatically grants guests secure Wi-Fi access as part of their booking package, enhancing their stay experience from the moment they check in.",
             img: wifi,
             width: "60px"
-        },
+        , __w: 200, __h: 200},
         {
             key: 4,
             heading: "Customizable ",
@@ -134,7 +134,7 @@ export default function RoomBooking() {
             desc: "Enable guests to select add-ons such as breakfast packages, airport transfers, or room upgrades directly during the booking process.",
             img: cbo,
             width: "56px"
-        },
+        , __w: 200, __h: 200},
         {
             key: 5,
             heading: "Automated Pricing ",
@@ -142,7 +142,7 @@ export default function RoomBooking() {
             desc: "Dynamic pricing based on demand, seasonality, and special events, with options for promotional codes and loyalty discounts to attract repeat customers.",
             img: app,
             width: "70px"
-        },
+        , __w: 200, __h: 200},
         {
             key: 6,
             heading: "Centralized ",
@@ -150,7 +150,7 @@ export default function RoomBooking() {
             desc: "Manage all room bookings from a single dashboard. Track check-ins, check-outs, and cancellations effortlessly, optimizing room occupancy rates.",
             img: cbd,
             width: "60px"
-        },
+        , __w: 200, __h: 200},
         {
             key: 7,
             heading: "Integrated ",
@@ -158,7 +158,7 @@ export default function RoomBooking() {
             desc: "Secure online payment processing with multiple options (credit/debit cards, UPI, mobile wallets) for a smooth, hassle-free booking experience.",
             img: ipg,
             width: "60px"
-        },
+        , __w: 200, __h: 200},
         {
             key: 8,
             heading: "Mobile-Friendly ",
@@ -166,7 +166,7 @@ export default function RoomBooking() {
             desc: "Guests can book rooms on the go using mobile devices, ensuring a responsive and seamless experience across all platforms.",
             img: mfi,
             width: "60px"
-        },
+        , __w: 200, __h: 200},
         {
             key: 9,
             heading: "Instant Booking Confirmation",
@@ -174,7 +174,7 @@ export default function RoomBooking() {
             desc: "Automated email and SMS confirmations are sent to guests upon successful booking, including details like check-in time, room type, and any additional services selected.",
             img: ibc,
             width: "56px"
-        },
+        , __w: 200, __h: 200},
 
     ];
 
@@ -187,35 +187,35 @@ export default function RoomBooking() {
             desc: "Provides a hassle-free booking process that enhances customer satisfaction and loyalty.",
             img: b1,
 
-        },
+        __w: 1068, __h: 1017},
         {
             key: 2,
             heading: "Operational Efficiency",
             desc: "Reduces manual workload for staff and minimizes booking errors, resulting in smoother operations.",
             img: b2,
 
-        },
+        __w: 1068, __h: 1017},
         {
             key: 3,
             heading: "Revenue Optimization",
             desc: "Maximizes room occupancy and boosts revenue through dynamic pricing and promotional features.",
             img: b3,
 
-        },
+        __w: 1068, __h: 1017},
         {
             key: 4,
             heading: "Centralized Management",
             desc: "Offers a unified platform for handling all room bookings, reducing complexity and improving oversight.",
             img: b4,
 
-        },
+        __w: 1068, __h: 1017},
         {
             key: 5,
             heading: "Real-time Availability",
             desc: "Ensures guests have access to up-to-date room availability, preventing overbooking and improving guest trust.",
             img: b5,
 
-        }
+        __w: 1068, __h: 1017}
     ];
 
 
@@ -250,7 +250,7 @@ export default function RoomBooking() {
 <div className={`${style.contentConatinerPhone}`}>
 
     <div className={`${style.herosectionImgBoxPhone}`}>
-        <img style={{width : "100%"}} src={heroImg} alt={"room booking"} />
+        <img style={{width : "100%"}} src={heroImg} alt={"room booking"}  width="839" height="555" />
     </div>
 
     <div className={`${style.headingBoxPhone} font4 `}>
@@ -306,7 +306,7 @@ export default function RoomBooking() {
 
                     <div className={style.section2IconAndName}>
                         <div className={`${style.section2Icon}`}>
-                            <img style={{ width: "100%" }} src={icon1} alt="" />
+                            <img style={{ width: "100%" }} src={icon1} alt=""  width="200" height="200" />
                         </div>
 
                         <div className={`${style.iconName} `}>
@@ -319,7 +319,7 @@ export default function RoomBooking() {
                     <div className={style.section2IconAndName}>
 
                         <div className={`${style.section2Icon}`}>
-                            <img style={{ width: "100%" }} src={icon2} alt="" />
+                            <img style={{ width: "100%" }} src={icon2} alt=""  width="200" height="200" />
                         </div>
 
                         <div className={`${style.iconName} `}>Smart</div>
@@ -330,7 +330,7 @@ export default function RoomBooking() {
                     <div className={style.section2IconAndName}>
 
                         <div className={`${style.section2Icon}`}>
-                            <img style={{ width: "100%" }} src={icon3} alt="" />
+                            <img style={{ width: "100%" }} src={icon3} alt=""  width="200" height="200" />
                         </div>
 
                         <div className={`${style.iconName}`}>
@@ -356,7 +356,7 @@ export default function RoomBooking() {
 
                         <div className={`${style.laptopImgSection3}`}>
                             <div className={`${style.laptopImgBox}`} >
-                                <img style={{ width: "100%" }} src={laptop} alt="" />
+                                <img style={{ width: "100%" }} src={laptop} alt=""  width="1440" height="916" />
                             </div>
                         </div>
 
@@ -398,7 +398,7 @@ export default function RoomBooking() {
                                 <div className={`${style.headingAndIconFeatures}`}>
 
                                     <div style={{ width: item.width }}>
-                                        <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                                        <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
                                     </div>
 
                                     <div className={`${style.featureHeading}`}>
@@ -459,7 +459,7 @@ export default function RoomBooking() {
 
 
                             <div className="GlobalBenefitImgBox" >
-                                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
                             </div>
 
                             <div className='GlobalBenefitTextBox' >
@@ -473,7 +473,7 @@ export default function RoomBooking() {
 
 
                             <div className="GlobalBenefitImgBox">
-                                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
                             </div>
 
                             <div className='GlobalBenefitTextBox' >

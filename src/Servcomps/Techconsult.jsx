@@ -210,7 +210,7 @@ const projects = {
 
 
 
-    },
+    , __w: 6000, __h: 4000},
 
 
 
@@ -234,7 +234,7 @@ const projects = {
 
 
 
-    },
+    , __w: 1468, __h: 1000},
 
 
 
@@ -270,7 +270,7 @@ const projects = {
 
 
 
-    },
+    , __w: 1200, __h: 800},
 
 
 
@@ -294,7 +294,7 @@ const projects = {
 
 
 
-      },
+      , __w: 1200, __h: 675},
 
 
 
@@ -318,7 +318,7 @@ const projects = {
 
 
 
-    },
+    , __w: 2075, __h: 916},
 
 
 
@@ -350,7 +350,7 @@ const projects = {
 
 
 
-    },
+    , __w: 1200, __h: 800},
 
 
 
@@ -374,7 +374,7 @@ const projects = {
 
 
 
-    },
+    , __w: 1032, __h: 581},
 
 
 
@@ -394,7 +394,7 @@ const projects = {
 
 
 
-const CaseStudy = ({ title, description, image }) => (
+const CaseStudy = ({ title, description, image, __w, __h }) => (
 
 
 
@@ -422,7 +422,7 @@ const CaseStudy = ({ title, description, image }) => (
 
 
 
-      />
+       width={__w} height={__h}/>
 
 
 
@@ -658,7 +658,7 @@ function Cstdmain() {
 
 
 
-                />
+                 __w={project.__w} __h={project.__h}/>
 
 
 
@@ -722,7 +722,7 @@ function TechnologyConsulting() {
 
 
 
-            <img src={servicebannerpattern} alt="" />
+            <img src={servicebannerpattern} alt=""  width="427" height="426" />
 
 
 
@@ -774,7 +774,7 @@ function TechnologyConsulting() {
 
 
 
-                <img src={consult} alt="Technology consulting and IT strategy services" className="rounded-full" />
+                <img src={consult} alt="Technology consulting and IT strategy services" className="rounded-full"  width="0" height="0" />
 
 
 

@@ -108,7 +108,7 @@ export default function HospitalityPage() {
             icon: room,
             path: "/products/eicerise/roombooking",
             key: 1
-        },
+        , __w: 300, __h: 300},
 
         {
             serviceName: "DINING",
@@ -116,7 +116,7 @@ export default function HospitalityPage() {
             icon: pos,
             path: "/products/eicerise/pos-dining",
             key: 2
-        },
+        , __w: 300, __h: 300},
 
         {
             serviceName: "BANQUET &",
@@ -124,7 +124,7 @@ export default function HospitalityPage() {
             icon: banquet,
             path: "/products/eicerise/banquet-billing",
             key: 3
-        },
+        , __w: 300, __h: 300},
 
         {
 
@@ -133,7 +133,7 @@ export default function HospitalityPage() {
             icon: member,
             path: "/products/eicerise/member-suite",
             key: 4
-        },
+        , __w: 300, __h: 300},
 
         {
             serviceName: "ACCOUNT & ",
@@ -141,7 +141,7 @@ export default function HospitalityPage() {
             icon: account,
             path: "/products/eicerise/account-finance",
             key: 5
-        },
+        , __w: 300, __h: 300},
 
         {
             serviceName: "EMPLOYEE",
@@ -149,7 +149,7 @@ export default function HospitalityPage() {
             icon: emp,
             path: "/products/eicerise/employee-suite",
             key: 6
-        },
+        , __w: 300, __h: 300},
 
         {
             serviceName: "PAYROLL",
@@ -157,7 +157,7 @@ export default function HospitalityPage() {
             icon: pay,
             path: "/products/eicerise/payroll",
             key: 7
-        },
+        , __w: 300, __h: 300},
 
         {
             serviceName: "USER STORE &",
@@ -165,7 +165,7 @@ export default function HospitalityPage() {
             icon: inentry,
             path: "/products/eicerise/userstore-inventry",
             key: 8
-        },
+        , __w: 300, __h: 300},
 
         {
             serviceName: "PURCHASE &",
@@ -173,7 +173,7 @@ export default function HospitalityPage() {
             icon: vendor,
             path: "/products/eicerise/purchase-vendor",
             key: 9
-        },
+        , __w: 300, __h: 300},
 
         {
             serviceName: "FOOD & BEVERAGE",
@@ -181,7 +181,7 @@ export default function HospitalityPage() {
             icon: food,
             path: "/products/eicerise/food-cost",
             key: 10
-        },
+        , __w: 300, __h: 300},
 
         {
             serviceName: "RISE-SINGLE ",
@@ -189,7 +189,7 @@ export default function HospitalityPage() {
             icon: single,
             path: "/products/eicerise/single-sign-on",
             key: 11
-        },
+        , __w: 300, __h: 300},
 
         {
             serviceName: "WI-FI ",
@@ -197,14 +197,14 @@ export default function HospitalityPage() {
             icon: wifi,
             path: "/products/eicerise/wifi",
             key: 12
-        },
+        , __w: 300, __h: 300},
 
         {
             serviceName: "BUDGET ",
             icon: budget,
             path: "/products/eicerise/budget",
             key: 13
-        },
+        , __w: 300, __h: 300},
 
         {
             serviceName: "FEEDBACK ",
@@ -212,7 +212,7 @@ export default function HospitalityPage() {
             icon: feedbacki,
             path: "/products/eicerise/feedback",
             key: 14
-        },
+        , __w: 300, __h: 300},
 
         {
             serviceName: "AUDIENCE ",
@@ -220,7 +220,7 @@ export default function HospitalityPage() {
             icon: audience,
             path: "/products/eicerise/audience-attendance",
             key: 15
-        },
+        , __w: 300, __h: 300},
 
         {
             serviceName: "COMPLIANCE ",
@@ -228,7 +228,7 @@ export default function HospitalityPage() {
             icon: compliance,
             path: "/products/eicerise/compliance-register",
             key: 16
-        },
+        , __w: 300, __h: 300},
 
         {
             serviceName: "VENDOR ",
@@ -236,7 +236,7 @@ export default function HospitalityPage() {
             icon: vendori,
             path: "/products/eicerise/vendor-management",
             key: 17
-        }
+        , __w: 300, __h: 300}
     ]
 
 
@@ -302,7 +302,7 @@ export default function HospitalityPage() {
 
             key: 1
 
-        },
+        , __w: 216, __h: 216},
 
         {
             img: c2,
@@ -312,7 +312,7 @@ export default function HospitalityPage() {
             para: (<span>The <span style={{ fontWeight: "bold" }}>intuitive modules</span>  offered by EICE Rise have simplified our front desk and housekeeping operations. <span style={{ fontWeight: "bold" }} >Their team’s support and innovative approach are unmatched. </span> We' ve seen remarkable growth since implementing their solutions.</span>),
             key: 2
 
-        },
+        , __w: 216, __h: 216},
 
         {
             img: c3,
@@ -322,7 +322,7 @@ export default function HospitalityPage() {
             para: (<span>Thanks to EICE Rise, <span style={{ fontWeight: "bold" }}>we've streamlined processes</span>  like banquet management and inventory control. The centralized platform has <span style={{ fontWeight: "bold" }}>saved us time</span>  and significantly improved <span style={{ fontWeight: "bold" }} > guest satisfaction.</span> </span>),
             key: 3
 
-        }
+        , __w: 216, __h: 216}
     ]
 
 
@@ -373,7 +373,7 @@ export default function HospitalityPage() {
             margin: "20px",
             link: "/products/eicerise/android",
             para: "The SalesVu Android App enhances POS functionality with features like order management, payment processing, and barcode scanning. These features streamline operations, improve inventory management..."
-        },
+        , __w: 852, __h: 496},
 
         {
             key: 2,
@@ -382,7 +382,7 @@ export default function HospitalityPage() {
             link: "/products/eicerise/durgabari",
             para: "The Houston Durga Bari Society (HDBS) sought a transformative digital solution to overcome the challenges of managing its diverse operations and engaging a geographically... ",
             margin: "22px"
-        },
+        , __w: 803, __h: 511},
 
         {
             key: 3,
@@ -391,7 +391,7 @@ export default function HospitalityPage() {
             link: "/products/eicerise/iic",
             para: " The Indian International Center (IIC) faced the challenge of managing complex, multi-user interactions while ensuring secure access and operational efficiency. EICE Technology implemented the Enterprise Suite, tailored to... ",
             margin: "20px"
-        }
+        , __w: 796, __h: 506}
 
     ]
 
@@ -491,13 +491,13 @@ export default function HospitalityPage() {
 
 
                 {!forSmallestScreen && (<div className={styles.laptopImg}>
-                    <img className={`${styles.laptopImgDimension}`} src={allLaptop} alt="" />
+                    <img className={`${styles.laptopImgDimension}`} src={allLaptop} alt=""  width="1594" height="581" />
                 </div>)}
 
 
                 <div className={styles.textBox}>
                     <div className={`${styles.text1}  `}>
-                        <span className="font2" >Flexible, Modular Solutions</span> <span style={{ fontWeight: "600" }} className="font1">tailored to your business needs</span>
+                        <span className="font2" >Flexible, Modular Solutions</span> <span style={{ fontWeight: "600" }} className="font1">tailored to your business{" "}needs</span>
                     </div>
 
                     <p className={`${styles.text2} font1`}>
@@ -538,7 +538,7 @@ export default function HospitalityPage() {
                                 <div className={`${styles.iconAndTextBox} `}>
 
                                     <div className={styles.imgBox} >
-                                        <img src={item.icon?.src || item.icon} alt={item.serviceName} />
+                                        <img src={item.icon?.src || item.icon} alt={item.serviceName}  width={item.__w} height={item.__h} />
                                     </div>
 
                                     <div className={`${styles.serviceName} font1`}>
@@ -587,7 +587,7 @@ export default function HospitalityPage() {
 
 
                 <div className={`${styles.section3Video}`} >
-                    <img style={{ width: "100%" }} loading="lazy" src={vimg} alt="video" />
+                    <img style={{ width: "100%" }} loading="lazy" src={vimg} alt="video"  width="883" height="296" />
                 </div>
 
 
@@ -621,7 +621,7 @@ export default function HospitalityPage() {
                 <div className={`${styles.clientLogoBox} globalSectionSize`} >
                     {displayedLogos.map((item, index) => (
                         <div key={index} className={`${styles.clinetLogoSize}`} >
-                            <img style={{ width: "100%" }} src={item.logo?.src || item.logo} alt="EICE Technology" />
+                            <img style={{ width: "100%" }} src={item.logo?.src || item.logo} alt="EICE Technology"  width={item.__w} height={item.__h} />
                         </div>
                     ))}
                 </div>
@@ -643,7 +643,7 @@ export default function HospitalityPage() {
                     <div className={`${styles.section5Heading} font1`}>
                         <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "0px 20px" }}>
                             <div style={{ width: "55px", paddingBottom: "14px" }}>
-                                <img style={{ width: "100%" }} src={clientHeadIcon} alt="clients" />
+                                <img style={{ width: "100%" }} src={clientHeadIcon} alt="clients"  width="150" height="150" />
                             </div>
 
                             <div className="font3">
@@ -671,7 +671,7 @@ export default function HospitalityPage() {
                                 <figure >
 
                                     <div style={{ textAlign: "center" }}  >
-                                        <img style={{ width: "28%" }} src={item.img?.src || item.img} alt="" />
+                                        <img style={{ width: "28%" }} src={item.img?.src || item.img} alt=""  width={item.__w} height={item.__h} />
                                     </div>
 
                                     <figcaption style={{ textAlign: "center" }} > <span style={{ fontWeight: "bold" }}>{item.position}</span> <span>{item.company}</span></figcaption>
@@ -704,7 +704,7 @@ export default function HospitalityPage() {
                         <div className={`${styles.section5HeadingAndIconBox}`} >
 
                             <div style={{ width: "40px", }}>
-                                <img style={{ width: "100%" }} src={clientHeadIcon} alt="" />
+                                <img style={{ width: "100%" }} src={clientHeadIcon} alt=""  width="150" height="150" />
                             </div>
 
                             <div style={{ textAlign: "left", paddingLeft: "20px" }} className="font3">
@@ -794,7 +794,7 @@ export default function HospitalityPage() {
                 <div className={`${styles.section6Heading} font1`}>
                     <div style={{ display: "flex", justifyContent: "flex-start", alignItems: "center", gap: "0px 20px" }}>
                         <div style={{ width: "50px", paddingTop: "12px" }}>
-                            <img style={{ width: "100%" }} src={h2} alt="" />
+                            <img style={{ width: "100%" }} src={h2} alt=""  width="151" height="150" />
                         </div>
                         <div className="font3">
                             Real  <span className={` blueTextGlobalClass font2`}>Stories</span> , Real <span className={` blueTextGlobalClass font2`}>Impact</span>
@@ -844,7 +844,7 @@ export default function HospitalityPage() {
                 <div className={`${styles.section6Heading} font1`}>
                     <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "0px 20px" }}>
                         <div style={{ width: "50px", paddingTop: "12px" }}>
-                            <img style={{ width: "100%" }} src={h2} alt="" />
+                            <img style={{ width: "100%" }} src={h2} alt=""  width="151" height="150" />
                         </div>
                         <div className="font3">
                             Real  <span className={` blueTextGlobalClass font2`}>Stories</span> , Real <span className={` blueTextGlobalClass font2`}>Impact</span>
@@ -856,9 +856,9 @@ export default function HospitalityPage() {
                     {stories.map((item, index) => (
                         <div key={item.key ?? index} className={`${styles.storyBox}`}>
                             {item.key === 1 ? (<div className={`${styles.storyImgHeight}`}>
-                                <img style={{ width: "113%" }} src={item.img?.src || item.img} alt="storyimg" />
+                                <img style={{ width: "113%" }} src={item.img?.src || item.img} alt="storyimg"  width={item.__w} height={item.__h} />
                             </div>) : (<div className={`${styles.storyImgHeight}`}>
-                                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt="storyimg" />
+                                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt="storyimg"  width={item.__w} height={item.__h} />
                             </div>)}
                             <div className={`${styles.cardBoxStoryInnerHeading} blueTextGlobalClass font1`}>
                                 {item.heading}

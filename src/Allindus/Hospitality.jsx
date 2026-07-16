@@ -46,7 +46,7 @@ const services = [
       "Employee Suite", "Compliance Register", "Dining POS", "User Request-Indent",
       "Store & Inventory", "F&B Cost Analysis", "Purchase Vendor Mgmt", "Budget",
     ],
-  },
+  __w: 1174, __h: 950},
   {
     id: "fnb",
     title: "Food & Beverage Operations",
@@ -60,7 +60,7 @@ const services = [
       "Dining POS", "F&B Cost Analysis", "EICEVoice", "Accounts and billing",
       "User Request-Indent", "Purchase Vendor Mgmt.", "Store & Inventory",
     ],
-  },
+  __w: 1174, __h: 950},
   {
     id: "banquet",
     title: "Banquet & Event Management",
@@ -75,7 +75,7 @@ const services = [
       "Accounts and billing", "Dining POS", "Employee Suite", "User Request-Indent",
       "Store & Inventory", "Feedback System", "F&B Cost Analysis", "Purchase Vendor Mgmt",
     ],
-  },
+  __w: 1174, __h: 950},
   {
     id: "member",
     title: "Member & Guest Management",
@@ -86,7 +86,7 @@ const services = [
     solution:
       "EICE Rise Member Suite simplifies membership management with customizable plans, subscription tracking, and secure portal access. The Member Portal lets members manage bookings, access services, and stay connected to the community. The WiFi Module ensures secure internet access, while the Feedback System captures real-time insights to continuously improve service quality.",
     modules: ["Member Suite", "Member Portal", "WiFi Module", "Feedback System"],
-  },
+  __w: 1174, __h: 950},
   {
     id: "finance",
     title: "Finance, HR & Compliance",
@@ -99,7 +99,7 @@ const services = [
     modules: [
       "Accounts and Finance", "Employee Suite", "Payroll", "Budget", "Compliance Register",
     ],
-  },
+  __w: 1174, __h: 950},
   {
     id: "vendor",
     title: "Vendor & Inventory Management",
@@ -110,7 +110,7 @@ const services = [
     solution:
       "EICE Rise connects your entire supply chain end-to-end. The Purchase and Vendor Portal streamlines vendor collaboration with real-time order tracking and digital bill submission. User, Store and Inventory efficiently handles material requests, stock issuance, and reconciliation — keeping everything centralized, connected, and under complete operational control across your entire property.",
     modules: ["Purchase & Vendor Portal", "User, Store & Inventory"],
-  },
+  __w: 1174, __h: 950},
 ];
 
 // ─── IMPLEMENTATION STEPS ────────────────────────────────────────────────────
@@ -358,13 +358,13 @@ export default function Hospitality() {
       <section className="sm:max-w-7xl w-screen mx-auto px-4 pt-32 pb-8 sm:pb-12">
         {/* Desktop: 3 images */}
         <div className="hidden sm:grid grid-cols-3 gap-4 mb-10">
-          <img src={heroImg1} alt="Hospitality technology solutions" className="w-full h-64 object-cover rounded-xl" />
-          <img src={heroImg2} alt="Hotel management software" className="w-full h-64 object-cover rounded-xl" />
-          <img src={heroImg3} alt="EICE Rise ERP for hospitality" className="w-full h-64 object-cover rounded-xl" />
+          <img src={heroImg1} alt="Hospitality technology solutions" className="w-full h-64 object-cover rounded-xl"  width="1496" height="918" />
+          <img src={heroImg2} alt="Hotel management software" className="w-full h-64 object-cover rounded-xl"  width="1496" height="918" />
+          <img src={heroImg3} alt="EICE Rise ERP for hospitality" className="w-full h-64 object-cover rounded-xl"  width="1496" height="918" />
         </div>
         {/* Mobile: only first image full-width */}
         <div className="sm:hidden mb-4">
-          <img src={heroImg1} alt="Hospitality technology solutions" className="w-full h-48 object-cover rounded-xl" />
+          <img src={heroImg1} alt="Hospitality technology solutions" className="w-full h-48 object-cover rounded-xl"  width="1496" height="918" />
         </div>
 
         <div className="max-w-4xl mx-auto text-center flex flex-col gap-4">
@@ -411,7 +411,7 @@ export default function Hospitality() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-8 mb-4 sm:mb-6">
                   {/* Image — moves to right on odd rows */}
                   <div className={`w-full${index % 2 !== 0 ? " lg:order-last" : ""}`}>
-                    <img src={svc.image} alt={svc.title} className="w-full h-full object-cover rounded-xl" />
+                    <img src={svc.image} alt={svc.title} className="w-full h-full object-cover rounded-xl"  width={svc.__w} height={svc.__h} />
                   </div>
 
                   {/* Right — Title + Challenge + Solution */}
@@ -463,14 +463,14 @@ export default function Hospitality() {
           {steps.map((step, index) => (
             <div key={step.number} className="relative h-full p-5 bg-white rounded-xl border border-gray-200 flex flex-col gap-3">
               <div className="w-12 h-12 bg-blue-900 rounded-xl flex items-center justify-center flex-shrink-0">
-                <img src={step.icon} alt={step.title} className="w-7 h-7 object-contain" />
+                <img src={step.icon} alt={step.title} className="w-7 h-7 object-contain"  width="28" height="28" />
               </div>
               <h4 className="fontweight_1 text-blackk text-[24px] sm:text-base">{step.title}</h4>
               <p className="text-blackk/60 font-medium text-[16px] sm:text-xs leading-relaxed">{step.desc}</p>
               {index < steps.length - 1 && (
                 <div className="hidden lg:flex absolute top-1/2 -translate-y-1/2 z-10" style={{ right: "-30px" }}>
                   <div className="w-11 h-11 rounded-lg border-2 border-blue-900 flex items-center justify-center bg-white">
-                    <img src={iconArrow} alt="→" className="w-5 h-5 object-contain" style={{ filter: "brightness(0) saturate(100%) invert(11%) sepia(60%) saturate(800%) hue-rotate(200deg)" }} />
+                    <img src={iconArrow} alt="→" className="w-5 h-5 object-contain" style={{ filter: "brightness(0) saturate(100%) invert(11%) sepia(60%) saturate(800%) hue-rotate(200deg)" }}  width="20" height="20" />
                   </div>
                 </div>
               )}

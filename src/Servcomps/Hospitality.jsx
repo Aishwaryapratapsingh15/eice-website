@@ -32,70 +32,70 @@ export default function Hospitality() {
             img: room,
             width: "",
             link: "/products/eicerise/roombooking"
-        },
+        , __w: 253, __h: 199},
 
         {
             serviceName: "Dining (POS)",
             img: pos,
             width: "",
             link: "/pos"
-        },
+        , __w: 225, __h: 225},
 
         {
             serviceName: "Banquet & Billing",
             img: banquet,
             width: "",
             link: "/banquetAndBilling"
-        },
+        , __w: 512, __h: 512},
 
         {
             serviceName: "Member Suite ",
             img: member,
             width: "",
             link: "/memberPortal"
-        },
+        , __w: 256, __h: 256},
 
         {
             serviceName: "Accounts & Finances",
             img: finance,
             width: "",
             link: "/accountAndFinance"
-        },
+        , __w: 512, __h: 512},
 
         {
             serviceName: "Employee Portal",
             img: employee,
             width: "",
             link: "/employeePortal"
-        },
+        , __w: 225, __h: 225},
 
         {
             serviceName: "Payroll",
             img: payroll,
             width: "",
             link: "/payroll"
-        },
+        , __w: 512, __h: 512},
 
         {
             serviceName: "User, Store & Inventory",
             img: inventry,
             width: "",
             link: "/storeAndInventry"
-        },
+        , __w: 512, __h: 512},
 
         {
             serviceName: "Purchase & Vendor Portal",
             img: vendor,
             width: "",
             link: "/purchaseVendorPortal"
-        },
+        , __w: 512, __h: 512},
 
         {
             serviceName: "Food & Beverage Cost Analysis",
             img: foodcost,
             width: "",
             link: "/foodCost"
-        }
+        , __w: 512, __h: 512}
     ]
 
 
@@ -120,7 +120,7 @@ export default function Hospitality() {
                     </div>
 
                     <div className={styles.mainImageBox}>
-                        <img className={styles.mainImage} src={mainImg} alt="EICE hospitality management software hero" />
+                        <img className={styles.mainImage} src={mainImg} alt="EICE hospitality management software hero"  width="1020" height="936" />
                         <div>
 
                             <img src="" alt="" />
@@ -159,7 +159,7 @@ export default function Hospitality() {
                                     </div>
 
                                     <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                                        <img style={{ maxWidth: "100%", width: "70%" }} src={item.img} alt={item.serviceName} />
+                                        <img style={{ maxWidth: "100%", width: "70%" }} src={item.img} alt={item.serviceName}  width={item.__w} height={item.__h} />
                                     </div>
                                 </div>
                             </Link>

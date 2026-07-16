@@ -87,63 +87,63 @@ export default function EmployeeSuite() {
       desc: "Employees can update their contact details, emergency contacts, and tax information, ensuring accurate and up-to-date records.",
       img: pim, // Replace with the appropriate image from your existing feature array
       width: "64px", // Adjust to match the previous feature array
-    },
+    __w: 300, __h: 300},
     {
       key: 2,
       heading: "Payroll and Compensation",
       desc: "Employees can access payslips, track salary history, and view deductions and bonuses, providing full transparency on compensation.",
       img: pc, // Replace with the appropriate image from your existing feature array
       width: "58px", // Adjust to match the previous feature array
-    },
+    __w: 300, __h: 300},
     {
       key: 3,
       heading: "Leave and Attendance Management",
       desc: "Employees can submit leave requests, track attendance, and view leave balances, making time-off management easier.",
       img: lam, // Replace with the appropriate image from your existing feature array
       width: "66px", // Adjust to match the previous feature array
-    },
+    __w: 300, __h: 300},
     {
       key: 4,
       heading: "Training and Development",
       desc: "Employees can explore training programs, track progress, and enroll in courses to enhance their professional skills.",
       img: td, // Replace with the appropriate image from your existing feature array
       width: "53px", // Adjust to match the previous feature array
-    },
+    __w: 300, __h: 300},
     {
       key: 5,
       heading: "Document Access",
       desc: "Employees can access important documents such as policies, contracts, benefits, and company announcements, ensuring quick access to essential information.",
       img: da, // Replace with the appropriate image from your existing feature array
       width: "56px", // Adjust to match the previous feature array
-    },
+    __w: 300, __h: 300},
     {
       key: 6,
       heading: "Company Announcements and News",
       desc: "Employees stay updated on company news, policy changes, and upcoming events, fostering better communication within the organization.",
       img: can, // Replace with the appropriate image from your existing feature array
       width: "71px", // Adjust to match the previous feature array
-    },
+    __w: 300, __h: 300},
     {
       key: 7,
       heading: "Performance Management",
       desc: "Employees can track their goals, review feedback, and collaborate with managers to set development plans.",
       img: pm, // Replace with the appropriate image from your existing feature array
       width: "60px", // Adjust to match the previous feature array
-    },
+    __w: 300, __h: 300},
     {
       key: 8,
       heading: "Benefits Management",
       desc: "Employees can manage their benefits like health insurance, retirement plans, and wellness programs, ensuring they stay informed of all available options.",
       img: bm, // Replace with the appropriate image from your existing feature array
       width: "65px", // Adjust to match the previous feature array
-    },
+    __w: 300, __h: 300},
     {
       key: 9,
       heading: "Support and Requests",
       desc: "Employees can submit HR inquiries, request support, or raise issues through the portal, streamlining communication and issue resolution.",
       img: sr, // Replace with the appropriate image from your existing feature array
       width: "61px", // Adjust to match the previous feature array
-    }
+    __w: 300, __h: 300}
   ];
 
 
@@ -157,31 +157,31 @@ export default function EmployeeSuite() {
       heading: "Improved Efficiency",
       desc: "Reduces administrative work by centralizing HR services and allowing employees to manage their own data.",
       img: ie,
-    },
+    __w: 1068, __h: 1017},
     {
       key: 2,
       heading: "Enhanced Communication",
       desc: "Ensures clear communication about company policies, events, and updates.",
       img: ec,
-    },
+    __w: 1068, __h: 1017},
     {
       key: 3,
       heading: "Employee Empowerment",
       desc: "Increases engagement by giving employees control over their personal and professional information.",
       img: ee,
-    },
+    __w: 1068, __h: 1017},
     {
       key: 4,
       heading: "Transparency and Trust",
       desc: "Promotes trust by providing full visibility into payroll, benefits, and performance.",
       img: tt,
-    },
+    __w: 1068, __h: 1017},
     {
       key: 5,
       heading: "Time Savings",
       desc: "Automates HR processes, freeing up time for HR teams to focus on strategic tasks.",
       img: ts
-    },
+    , __w: 1068, __h: 1017},
     // {
     //     key: 6,
     //     heading: "Compliance and Security",
@@ -251,7 +251,7 @@ export default function EmployeeSuite() {
 <div className={`${style.contentConatinerPhone}`}>
 
     <div className={`${style.herosectionImgBoxPhone}`}>
-        <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
+        <img style={{ width: "100%" }} src={heroImg} alt={"room booking"}  width="957" height="461" />
     </div>
 
     <div className={`${style.headingBoxPhone} font4 `}>
@@ -307,7 +307,7 @@ export default function EmployeeSuite() {
 
           <div className={style.section2IconAndName}>
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={as} alt="" />
+              <img style={{ width: "100%" }} src={as} alt=""  width="300" height="300" />
             </div>
 
             <div className={`${style.iconName} `}>
@@ -322,7 +322,7 @@ export default function EmployeeSuite() {
           <div className={style.section2IconAndName}>
 
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={cd} alt="" />
+              <img style={{ width: "100%" }} src={cd} alt=""  width="300" height="300" />
             </div>
 
             <div className={`${style.iconName} `}>
@@ -340,7 +340,7 @@ export default function EmployeeSuite() {
           <div className={style.section2IconAndName}>
 
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={tc} alt="" />
+              <img style={{ width: "100%" }} src={tc} alt=""  width="300" height="300" />
             </div>
 
             <div className={`${style.iconName}`}>
@@ -374,7 +374,7 @@ export default function EmployeeSuite() {
 
             <div className={`${style.laptopImgSection3}`}>
               <div className={`${style.laptopImgBox}`} >
-                <img style={{ width: "100%" }} src={laptop} alt="" />
+                <img style={{ width: "100%" }} src={laptop} alt=""  width="1440" height="916" />
               </div>
             </div>
 
@@ -417,7 +417,7 @@ export default function EmployeeSuite() {
                 <div className={`${style.headingAndIconFeatures}`}>
 
                   <div style={{ width: item.width }}>
-                    <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                    <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
                   </div>
 
                   <div className={`${style.featureHeading}`}>
@@ -474,7 +474,7 @@ export default function EmployeeSuite() {
 
 
               <div style={{ width: "25%" }}>
-                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
               </div>
 
               <div className='GlobalBenefitTextBox' >
@@ -487,7 +487,7 @@ export default function EmployeeSuite() {
 
 
               <div style={{ width: "25%" }}>
-                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
               </div>
 
               <div className='GlobalBenefitTextBox' >
@@ -516,7 +516,7 @@ export default function EmployeeSuite() {
 
 
               <div className="GlobalBenefitImgBox" >
-                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
               </div>
 
               <div className='GlobalBenefitTextBox' >
@@ -529,7 +529,7 @@ export default function EmployeeSuite() {
 
 
               <div className="GlobalBenefitImgBox">
-                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
               </div>
 
               <div className='GlobalBenefitTextBox' >

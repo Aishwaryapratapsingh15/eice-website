@@ -49,13 +49,13 @@ const projects = {
         "Improved production efficiency by 25% through advanced AI-driven monitoring systems.",
         img : opo
         
-    },
+    , __w: 6000, __h: 4000},
     {
       title: "Energy Trading Platform",
       description:
         "Built a blockchain-based trading platform, improving transaction security and reducing costs by 20%.",
         img : etp
-    },
+    , __w: 1468, __h: 1000},
   ],
   auto: [
     
@@ -64,19 +64,19 @@ const projects = {
       description:
         "Created a machine learning model improving object detection accuracy by 30% in diverse weather conditions.",
         img : adai
-    },
+    , __w: 1200, __h: 800},
     {
       title: "Connected Car Platform",
       description:
         "Designed a cloud-based system enabling OTA updates and predictive maintenance for 100,000+ vehicles.",
     img : ccp
-      },
+      , __w: 1200, __h: 675},
     {
       title: "Manufacturing Process Optimization",
       description:
         "Implemented an AI-driven system reducing production line downtime by 40% and improving quality control.",
         img :mpo
-    },
+    , __w: 2075, __h: 916},
   ],
   health: [
     {
@@ -84,24 +84,24 @@ const projects = {
       description:
         "Developed an AI algorithm for early cancer detection, improving accuracy by 15% over traditional methods.",
         img : adai
-    },
+    , __w: 1200, __h: 800},
     {
       title: "Telemedicine Platform",
       description:
         "Created a secure, HIPAA-compliant telehealth solution, facilitating over 1 million virtual consultations.",
         img :tmp
-    },
+    , __w: 1032, __h: 581},
   ],
 };
 
-const CaseStudy = ({ title, description, image }) => (
+const CaseStudy = ({ title, description, image, __w, __h }) => (
   <div className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 md:p-4">
     <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
       <img
         src={image}
         alt={title}
         className="w-full h-32 sm:h-40 md:h-48 object-cover transition duration-300 filter grayscale hover:grayscale-0"
-      />
+       width={__w} height={__h}/>
       <div className="p-3 md:p-4">
         <h3 className="fontweight_1 text-sm sm:text-base md:text-lg mb-1 sm:mb-2">
           {title}
@@ -160,7 +160,7 @@ function Cstdmain() {
                   title={project.title}
                   description={project.description}
                   image={project.img}
-                />
+                 __w={project.__w} __h={project.__h}/>
               ))}
             </div>
           </section>
@@ -176,7 +176,7 @@ function DevOps() {
       <div className="xl:-mt-8 -mt-4 bg-gradient-to-r from-transparent via-bloo/5 to-bloo/10 pt-16 md:pt-20 lg:pt-12 2xl:pt-0">
         <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen ">
           <div className="absolute -z-20 inset-0 right-[75%]">
-            <img src={servicebannerpattern} alt="" />
+            <img src={servicebannerpattern} alt=""  width="427" height="426" />
           </div>
           <div className="flex lg:flex-row flex-col px-5 py-12 sm:py-20 items-center">
             <div className="w-full">
@@ -191,7 +191,7 @@ function DevOps() {
             </div>
             <div className="lg:flex hidden items-center justify-end ">
               <div className=" w-1/2">
-                <img src={devops} alt="DevOps services for streamlined development and operations" className="rounded-full" />
+                <img src={devops} alt="DevOps services for streamlined development and operations" className="rounded-full"  width="300" height="300" />
               </div>
             </div>
           </div>

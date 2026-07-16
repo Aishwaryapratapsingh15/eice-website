@@ -503,6 +503,16 @@
 
 /* width increase of herosection for bigger screen */
 
+/* At >=1536px (Tailwind's 2xl), the shared page layout already adds
+   margin-top (2xl:mt-28) to clear the navbar. Section1's own top offset
+   from the 1120px+ rule stacks on top of that and creates a large gap,
+   so it's zeroed out here. */
+@media (min-width: 1536px) {
+    .section1 {
+        top: 0px;
+    }
+}
+
 @media (min-width: 1700px) {
     .section1 {
 

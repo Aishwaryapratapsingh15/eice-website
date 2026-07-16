@@ -79,42 +79,42 @@ export default function UserAndInventry() {
             desc: "Streamline user access store-wise with customizable roles and permissions.",
             img: cum,
             width: "64px"
-        },
+        , __w: 300, __h: 300},
         {
             key: 2,
             heading: "Efficient Store Management",
             desc: "Manage multiple stores from one dashboard, tracking performance, inventory, and sales trends for optimized success.",
             img: esm,
             width: "65px"
-        },
+        , __w: 300, __h: 300},
         {
             key: 3,
             heading: "Real-Time Inventory Control",
             desc: "Get live updates on inventory levels with automated synchronization and low stock alerts to ensure smooth operations.",
             img: rtic,
             width: "54px"
-        },
+        , __w: 300, __h: 300},
         {
             key: 4,
             heading: "Advanced Reporting and Analytics",
             desc: "Leverage real-time, customizable reports to gain valuable insights into sales, stock turnover, and user activities.",
             img: ara,
             width: "65px"
-        },
+        , __w: 300, __h: 300},
         {
             key: 5,
             heading: "Multi-Location Support",
             desc: "Manage multiple stores from a central platform, transfer stock between locations, and monitor regional inventory needs.",
             img: mls,
             width: "65px"
-        },
+        , __w: 300, __h: 300},
         {
             key: 6,
             heading: "Seamless ERP Integration",
             desc: "Sync data across your systems automatically, reducing manual data entry and enhancing operational efficiency.",
             img: serpi,
             width: "63px"
-        }
+        , __w: 300, __h: 300}
     ];
 
 
@@ -127,32 +127,32 @@ export default function UserAndInventry() {
             heading: "Operational Efficiency",
             desc: "Reduce manual errors, accelerate processes, and free up resources for strategic tasks.",
             img: oe,
-        },
+        __w: 1068, __h: 1017},
         {
             key: 2,
             heading: "Real-Time Insights",
             desc: "Get instant visibility into inventory, store performance, and user activity to make faster decisions.",
             img: rti,
-        },
+        __w: 1068, __h: 1017},
         {
             key: 3,
             heading: "Cost Optimization",
             desc: "Automate restocking and inventory updates to minimize costs, prevent overstocking, and boost profit margins.",
             img: co,
 
-        },
+        __w: 1068, __h: 1017},
         {
             key: 4,
             heading: "Scalability",
             desc: "Easily manage multiple locations as your business grows with customizable configurations and consistent performance.",
             img: s,
-        },
+        __w: 1068, __h: 1017},
         {
             key: 5,
             heading: "Improved Inventory Control",
             desc: "Accurate, automated inventory management ensures real-time stock updates, enhancing the customer experience.",
             img: iic,
-        },
+        __w: 1068, __h: 1017},
 
 
     ];
@@ -216,7 +216,7 @@ export default function UserAndInventry() {
                     <div className={`${style.contentConatinerPhone}`}>
 
                         <div className={`${style.herosectionImgBoxPhone}`}>
-                            <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
+                            <img style={{ width: "100%" }} src={heroImg} alt={"room booking"}  width="838" height="451" />
                         </div>
 
                         <div className={`${style.headingBoxPhone} font4 `}>
@@ -278,7 +278,7 @@ export default function UserAndInventry() {
                     <div className={style.section2IconAndName}>
 
                         <div className={`${style.section2Icon}`}>
-                            <img style={{ width: "100%" }} src={sv} alt="" />
+                            <img style={{ width: "100%" }} src={sv} alt=""  width="300" height="300" />
                         </div>
 
                         <div className={`${style.iconName}`}>
@@ -297,7 +297,7 @@ export default function UserAndInventry() {
 
                     <div className={style.section2IconAndName}>
                         <div className={`${style.section2Icon}`}>
-                            <img style={{ width: "100%" }} src={au} alt="" />
+                            <img style={{ width: "100%" }} src={au} alt=""  width="300" height="300" />
                         </div>
 
                         <div className={`${style.iconName} `}>
@@ -311,7 +311,7 @@ export default function UserAndInventry() {
                     <div className={style.section2IconAndName}>
 
                         <div className={`${style.section2Icon}`}>
-                            <img style={{ width: "100%" }} src={ir} alt="" />
+                            <img style={{ width: "100%" }} src={ir} alt=""  width="300" height="300" />
                         </div>
 
                         <div className={`${style.iconName} `}>
@@ -341,7 +341,7 @@ export default function UserAndInventry() {
 
                         <div className={`${style.laptopImgSection3}`}>
                             <div className={`${style.laptopImgBox}`} >
-                                <img style={{ width: "100%" }} src={laptop} alt="" />
+                                <img style={{ width: "100%" }} src={laptop} alt=""  width="1440" height="916" />
                             </div>
                         </div>
 
@@ -384,7 +384,7 @@ export default function UserAndInventry() {
                                 <div className={`${style.headingAndIconFeatures}`}>
 
                                     <div style={{ width: item.width }}>
-                                        <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                                        <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
                                     </div>
 
                                     <div className={`${style.featureHeading}`}>
@@ -437,7 +437,7 @@ export default function UserAndInventry() {
 
 
                             <div style={{ width: "25%" }}>
-                                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
                             </div>
 
                             <div className='GlobalBenefitTextBox' >
@@ -450,7 +450,7 @@ export default function UserAndInventry() {
 
 
                             <div style={{ width: "25%" }}>
-                                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
                             </div>
 
                             <div className='GlobalBenefitTextBox' >
@@ -479,7 +479,7 @@ export default function UserAndInventry() {
 
 
                             <div className="GlobalBenefitImgBox" >
-                                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
                             </div>
 
                             <div className='GlobalBenefitTextBox' >
@@ -492,7 +492,7 @@ export default function UserAndInventry() {
 
 
                             <div className="GlobalBenefitImgBox">
-                                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
                             </div>
 
                             <div className='GlobalBenefitTextBox' >

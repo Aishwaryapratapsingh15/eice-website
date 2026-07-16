@@ -83,42 +83,42 @@ export default function MemberSuite() {
       desc: "Seamlessly register and manage different membership tiers, and convert membership with customizable features, including individual, family, corporate, and lifetime memberships.",
       img: mrm,
       width: "86px"
-    },
+    , __w: 300, __h: 300},
     {
       key: 2,
       heading: "Self-Service Portal",
       desc: "Empower members with a self-service portal to update their profiles, renew subscriptions, and outstanding bills, view membership benefits, and access exclusive offers.",
       img: ssp,
       width: "60px"
-    },
+    , __w: 300, __h: 300},
     {
       key: 3,
       heading: "Subscription Management",
       desc: "Automate subscription renewals, payments, and reminders, ensuring members stay informed and engaged without any manual effort.",
       img: sm,
       width: "60px"
-    },
+    , __w: 300, __h: 300},
     {
       key: 4,
       heading: "Exclusive Member Benefits",
       desc: "Offer tailored benefits such as priority bookings, special discounts, and access to exclusive events, enhancing the overall member experience.",
       img: emb,
       width: "65px"
-    },
+    , __w: 300, __h: 300},
     {
       key: 5,
       heading: "Integrated Communication Tools",
       desc: "Enable real-time communication with members via email, push notifications, and in-app messages, keeping them informed about events, announcements, and offers.",
       img: ict,
       width: "65px"
-    },
+    , __w: 300, __h: 300},
     {
       key: 6,
       heading: "Analytics Dashboard",
       desc: "Gain insights into member activity, preferences, and engagement levels with detailed analytics, helping you tailor services to meet their needs.",
       img: ad,
       width: "60px"
-    }
+    , __w: 300, __h: 300}
   ];
 
 
@@ -131,31 +131,31 @@ export default function MemberSuite() {
       heading: "Enhanced Member Experience",
       desc: "Provide a personalized and streamlined experience for your members, improving retention and satisfaction.",
       img: eme,
-    },
+    __w: 1068, __h: 1017},
     {
       key: 2,
       heading: "Operational Efficiency",
       desc: "Automate routine tasks such as renewals and notifications, reducing administrative workload.",
       img: oe,
-    },
+    __w: 1068, __h: 1017},
     {
       key: 3,
       heading: "Data-Driven Insights",
       desc: "Leverage analytics to understand member preferences and make informed decisions on services and offerings.",
       img: ddi,
-    },
+    __w: 1068, __h: 1017},
     {
       key: 4,
       heading: "Improved Communication",
       desc: "Streamline communication with members through automated alerts, reminders, and personalized messaging, fostering stronger relationships and engagement.",
       img: ic,
-    },
+    __w: 1068, __h: 1017},
     {
       key: 5,
       heading: "Increased Member Retention",
       desc: "By offering targeted services and benefits based on member data, you can increase retention and reduce churn, creating long-term loyalty.",
       img: imr,
-    },
+    __w: 1068, __h: 1017},
 
     // {
     //     key: 6,
@@ -215,7 +215,7 @@ export default function MemberSuite() {
           <div className={`${style.contentConatinerPhone}`}>
 
             <div className={`${style.herosectionImgBoxPhone}`}>
-              <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
+              <img style={{ width: "100%" }} src={heroImg} alt={"room booking"}  width="911" height="543" />
             </div>
 
             <div className={`${style.headingBoxPhone} font4 `}>
@@ -270,7 +270,7 @@ export default function MemberSuite() {
 
           <div className={style.section2IconAndName}>
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={cag} alt="" />
+              <img style={{ width: "100%" }} src={cag} alt=""  width="300" height="300" />
             </div>
 
             <div className={`${style.iconName} `}>
@@ -285,7 +285,7 @@ export default function MemberSuite() {
           <div className={style.section2IconAndName}>
 
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={smo} alt="" />
+              <img style={{ width: "100%" }} src={smo} alt=""  width="300" height="300" />
             </div>
 
             <div className={`${style.iconName} `}>
@@ -312,7 +312,7 @@ export default function MemberSuite() {
           <div className={style.section2IconAndName}>
 
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={pme} alt="" />
+              <img style={{ width: "100%" }} src={pme} alt=""  width="300" height="300" />
             </div>
 
             <div className={`${style.iconName}`}>
@@ -341,7 +341,7 @@ export default function MemberSuite() {
 
             <div className={`${style.laptopImgSection3}`}>
               <div className={`${style.laptopImgBox}`} >
-                <img style={{ width: "100%" }} src={laptop} alt="" />
+                <img style={{ width: "100%" }} src={laptop} alt=""  width="1440" height="916" />
               </div>
             </div>
 
@@ -384,7 +384,7 @@ export default function MemberSuite() {
                 <div className={`${style.headingAndIconFeatures}`}>
 
                   <div style={{ width: item.width }}>
-                    <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                    <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
                   </div>
 
                   <div className={`${style.featureHeading}`}>
@@ -444,7 +444,7 @@ export default function MemberSuite() {
 
 
               <div className="GlobalBenefitImgBox" >
-                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
               </div>
 
               <div className='GlobalBenefitTextBox' >
@@ -457,7 +457,7 @@ export default function MemberSuite() {
 
 
               <div className="GlobalBenefitImgBox">
-                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
               </div>
 
               <div className='GlobalBenefitTextBox' >

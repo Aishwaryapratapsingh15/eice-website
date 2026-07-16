@@ -51,32 +51,32 @@ export default function SingleSignOn() {
     icon: umpIcon,
     title: "User Management & Provisioning",
     desc: "Create, modify, and deactivate user accounts with role assignments, department mapping, and property-level access in a centralised directory."
-  },
+  , __w: 50, __h: 50},
   {
     icon: rbacIcon,
     title: "Role-Based Access Control (RBAC)",
     desc: "Define granular permission sets by role — admin, manager, operator, viewer — controlling access to modules, screens, actions, and data at the field level."
-  },
+  , __w: 50, __h: 50},
   {
     icon: mpcIcon,
     title: "Multi-Property Configuration",
     desc: "Manage configurations for multiple properties from a single admin panel with property-specific settings for taxes, currencies, policies, and workflows."
-  },
+  , __w: 50, __h: 50},
   {
     icon: malIcon,
     title: "Module Activation & Licensing",
     desc: "Enable or disable EICE Rise modules per property based on requirement and utilization."
-  },
+  , __w: 50, __h: 50},
   {
     icon: salIcon,
     title: "System Audit Logs",
     desc: "Maintain detailed audit trails of every administrative action — user changes, configuration edits, permission modifications — with timestamps and actor identification."
-  },
+  , __w: 50, __h: 50},
   {
     icon: nacIcon,
     title: "Notification & Alert Configuration",
     desc: "Set up system-wide notification rules — email, SMS, in-app — for approvals, escalations, system events, and threshold alerts across all modules."
-  }
+  , __w: 50, __h: 50}
 ];
 
  const benefits = [
@@ -84,27 +84,27 @@ export default function SingleSignOn() {
     icon: bcscIcon,
     title: "Complete System Control",
     desc: "Provides a single command center for all administrative functions, eliminating the need to manage settings across individual modules."
-  },
+  , __w: 1068, __h: 1017},
   {
     icon: besIcon,
     title: "Enhanced Security",
     desc: "Granular RBAC and comprehensive audit logs ensure that every access and action is authorized, tracked, and accountable."
-  },
+  , __w: 1068, __h: 1017},
   {
     icon: boeIcon,
     title: "Operational Efficiency",
     desc: "Centralized user and configuration management reduces IT overhead and speeds up onboarding of new users and properties."
-  },
+  , __w: 1068, __h: 1017},
   {
     icon: bsIcon,
     title: "Scalability",
     desc: "Multi-property support with modular activation makes it easy to scale operations as the organization grows."
-  },
+  , __w: 1068, __h: 1017},
   {
     icon: bcgIcon,
     title: "Compliance & Governance",
     desc: "Audit trails, access controls, and backup configurations ensure regulatory compliance and organizational governance standards."
-  }
+  , __w: 1068, __h: 1017}
 ];
 
   const query = [
@@ -130,15 +130,15 @@ export default function SingleSignOn() {
     {
       icon:centralizedIcon,
       title:"Centralized",
-    },
+    __w: 60, __h: 60},
     {
       icon:configurableIcon,
       title: "Configurable",
-     },
+     __w: 60, __h: 60},
      { 
       icon:controllableIcon,
       title:"Controlled"
-}
+, __w: 60, __h: 60}
 ];
 
 const footerUpperText = {
@@ -158,7 +158,7 @@ const footerUpperText = {
           <div className={style.contentConatinerPhone}>
 
             <div className={style.herosectionImgBoxPhone}>
-              <img style={{width : "100%"}} src={hero} alt={"room booking"} />
+              <img style={{width : "100%"}} src={hero} alt={"room booking"}  width="1621" height="847" />
             </div>
 
             <div className={style.headingBoxPhone}>
@@ -205,7 +205,7 @@ const footerUpperText = {
           {tag.map((t, i) => (
             <div key={i} className={style.section2IconAndName}>
               <div className={style.section2Icon}>
-                <img src={t.icon?.src || t.icon}/>
+                <img src={t.icon?.src || t.icon} width={t.__w} height={t.__h} />
               </div>
               <div className={style.iconName}>{t.title}</div>
             </div>
@@ -221,7 +221,7 @@ const footerUpperText = {
 
           <div className={`${style.laptopImgSection3}`}>
                                       <div className={`${style.laptopImgBox}`} >
-                                          <img style={{ width: "100%" }} src={middleImg} alt="" />
+                                          <img style={{ width: "100%" }} src={middleImg} alt=""  width="720" height="458" />
                                       </div>
                                   </div>
 
@@ -248,7 +248,7 @@ const footerUpperText = {
           {/* ICON + HEADING */}
           <div className={style.headingAndIconFeatures}>
             <div style={{ width: "44px" }}>
-              <img src={f.icon?.src || f.icon} style={{ width: "100%" }} />
+              <img src={f.icon?.src || f.icon} style={{ width: "100%" }}  width={f.__w} height={f.__h} />
             </div>
 
             <div className={style.featureHeading}>
@@ -294,7 +294,7 @@ const footerUpperText = {
     {/* IMAGE SIDE */}
     <div className="GlobalBenefitImgBox">
       <div style={{ display: "flex", gap: "10px" }}>
-        <img src={b.icon?.src || b.icon} width="350px" />
+        <img src={b.icon?.src || b.icon} width="350px"  width={b.__w} height={b.__h} />
         {/* <img src="/placeholders/benefit.jpg" width="80" />
         <img src="/placeholders/benefit.jpg" width="80" /> */}
       </div>

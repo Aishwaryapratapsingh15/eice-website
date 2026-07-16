@@ -238,7 +238,7 @@ const KeyService = ({ title, description, image }) => (
 
 
 
-      />
+       width={__w} height={__h}/>
 
 
 
@@ -330,7 +330,7 @@ const projects = {
 
 
 
-    },
+    , __w: 6000, __h: 4000},
 
 
 
@@ -354,7 +354,7 @@ const projects = {
 
 
 
-    },
+    , __w: 1468, __h: 1000},
 
 
 
@@ -390,7 +390,7 @@ const projects = {
 
 
 
-    },
+    , __w: 1200, __h: 800},
 
 
 
@@ -414,7 +414,7 @@ const projects = {
 
 
 
-      },
+      , __w: 1200, __h: 675},
 
 
 
@@ -438,7 +438,7 @@ const projects = {
 
 
 
-    },
+    , __w: 2075, __h: 916},
 
 
 
@@ -470,7 +470,7 @@ const projects = {
 
 
 
-    },
+    , __w: 1200, __h: 800},
 
 
 
@@ -494,7 +494,7 @@ const projects = {
 
 
 
-    },
+    , __w: 1032, __h: 581},
 
 
 
@@ -514,7 +514,7 @@ const projects = {
 
 
 
-const CaseStudy = ({ title, description, image }) => (
+const CaseStudy = ({ title, description, image, __w, __h }) => (
 
 
 
@@ -775,7 +775,7 @@ function Cstdmain() {
 
 
 
-                />
+                 __w={project.__w} __h={project.__h}/>
 
 
 
@@ -843,7 +843,7 @@ const services = [
 
 
 
-  },
+  __w: 2560, __h: 1705},
 
 
 
@@ -875,7 +875,7 @@ const services = [
 
 
 
-  },
+  __w: 1196, __h: 876},
 
 
 
@@ -907,7 +907,7 @@ const services = [
 
 
 
-  },
+  __w: 1200, __h: 469},
 
 
 
@@ -939,7 +939,7 @@ const services = [
 
 
 
-  },
+  __w: 769, __h: 445},
 
 
 
@@ -971,7 +971,7 @@ const services = [
 
 
 
-  },
+  __w: 1000, __h: 700},
 
 
 
@@ -1020,14 +1020,14 @@ function Legal() {
             src={financial_img}
             alt="Financial services technology solutions"
             className="hidden sm:block object-cover w-full px-2"
-          />
+           width="1098" height="207" />
           {/* Mobile: show only left portion */}
           <div className="sm:hidden overflow-hidden w-full">
             <img
               src={financial_img}
               alt="Financial services technology solutions"
               className="w-[300%] max-w-none"
-            />
+             width="1098" height="207" />
           </div>
 
 
@@ -1257,7 +1257,7 @@ function Legal() {
 
 
 
-                      />
+                       width={service.__w} height={service.__h} />
 
 
 

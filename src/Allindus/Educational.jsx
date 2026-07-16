@@ -230,7 +230,7 @@ const KeyService = ({ title, description, image }) => (
 
 
 
-      />
+       width={__w} height={__h}/>
 
 
 
@@ -322,7 +322,7 @@ const projects = {
 
 
 
-    },
+    , __w: 6000, __h: 4000},
 
 
 
@@ -346,7 +346,7 @@ const projects = {
 
 
 
-    },
+    , __w: 1468, __h: 1000},
 
 
 
@@ -382,7 +382,7 @@ const projects = {
 
 
 
-    },
+    , __w: 1200, __h: 800},
 
 
 
@@ -406,7 +406,7 @@ const projects = {
 
 
 
-      },
+      , __w: 1200, __h: 675},
 
 
 
@@ -430,7 +430,7 @@ const projects = {
 
 
 
-    },
+    , __w: 2075, __h: 916},
 
 
 
@@ -462,7 +462,7 @@ const projects = {
 
 
 
-    },
+    , __w: 1200, __h: 800},
 
 
 
@@ -486,7 +486,7 @@ const projects = {
 
 
 
-    },
+    , __w: 1032, __h: 581},
 
 
 
@@ -502,7 +502,7 @@ const projects = {
 
 
 
-const CaseStudy = ({ title, description, image }) => (
+const CaseStudy = ({ title, description, image, __w, __h }) => (
 
 
 
@@ -763,7 +763,7 @@ function Cstdmain() {
 
 
 
-                />
+                 __w={project.__w} __h={project.__h}/>
 
 
 
@@ -831,7 +831,7 @@ const services = [
 
 
 
-  },
+  __w: 3750, __h: 1888},
 
 
 
@@ -863,7 +863,7 @@ const services = [
 
 
 
-  },
+  __w: 1280, __h: 800},
 
 
 
@@ -895,7 +895,7 @@ const services = [
 
 
 
-  },
+  __w: 1280, __h: 720},
 
 
 
@@ -927,7 +927,7 @@ const services = [
 
 
 
-  },
+  __w: 1000, __h: 776},
 
 
 
@@ -959,7 +959,7 @@ const services = [
 
 
 
-  },
+  __w: 889, __h: 889},
 
 
 
@@ -1008,19 +1008,19 @@ function Logistics() {
             src={Education_img}
             alt="Education technology and e-learning solutions"
             className="hidden sm:block object-cover w-full px-2"
-          />
+           width="1098" height="207" />
           {/* Mobile: show only left portion */}
           <div className="sm:hidden overflow-hidden w-full">
             <img
               src={Education_img}
               alt="Education technology and e-learning solutions"
               className="w-[300%] max-w-none"
-            />
+             width="1098" height="207" />
           </div>
 
 
 
-          {/* <img src={Education_img} alt="" />
+          {/* <img src={Education_img} alt=""  width="1098" height="207" />
 
 
 
@@ -1245,7 +1245,7 @@ function Logistics() {
 
 
 
-                      />
+                       width={service.__w} height={service.__h} />
 
 
 

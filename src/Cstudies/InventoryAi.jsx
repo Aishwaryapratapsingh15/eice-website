@@ -44,14 +44,14 @@ function InventoryAi() {
                             src={voicecall1}
                             alt="AI-based inventory management system dashboard"
                             className="h-[400px] object-contain rounded-lg"
-                        />
+                         width="1" height="1" />
                         <div className="relative">
                             <div className="w-full h-full absolute bg-bloo/10  rounded-lg"></div>
                             <img
                                 src={inventryAi}
                                 alt="AI inventory management system — stock tracking visualization"
                                 className="h-[400px] z-20 object-contain"
-                            />
+                             width="96" height="96" />
                         </div>
                     </div>
                 </div>
@@ -257,7 +257,7 @@ function InventoryAi() {
                                 <img
                                     src={petrosim1}
                                     className="  transition duration-300 filter grayscale hover:grayscale-0"
-                                />
+                                 width="1068" height="567" />
                                 <div className="p-3 md:p-4">
                                     <h3 className="fontweight_1 text-sm sm:text-base md:text-lg mb-1 sm:mb-2">
                                         PetroSIM
@@ -278,7 +278,7 @@ function InventoryAi() {
                                 <img
                                     src={temp}
                                     className=" transition duration-300 filter grayscale hover:grayscale-0"
-                                />
+                                 width="742" height="427" />
                                 <div className="p-3 md:p-4">
                                     <h3 className="fontweight_1 text-sm sm:text-base md:text-lg mb-1 sm:mb-2">
                                         RE.LI Monitor
@@ -299,7 +299,7 @@ function InventoryAi() {
                                 <img
                                     src={espctquote1}
                                     className=" transition duration-300 filter grayscale hover:grayscale-0"
-                                />
+                                 width="506" height="335" />
                                 <div className="p-3 md:p-4">
                                     <h3 className="fontweight_1 text-sm sm:text-base md:text-lg mb-1 sm:mb-2">
                                         ESPCT Quote

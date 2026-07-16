@@ -14,7 +14,7 @@ function Offeritem({ svg, title, link, fliptext }) {
                 src={svg}
                 alt="svg"
                 className="object-contain w-3/4 h-3/4 scale-[.85]"
-              />
+               width="12" height="12" />
             </div>
           </div>
           <div className="col-span-4 sm:ml-4">

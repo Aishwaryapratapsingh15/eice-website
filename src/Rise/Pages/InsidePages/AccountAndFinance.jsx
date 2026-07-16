@@ -80,63 +80,63 @@ export default function AccountAndFinance() {
       desc: "Manage all core financial functions, including accounts receivable, accounts payable, debit & credit notes, taxation, balance sheets, and general ledger. Streamline processes and ensure timely payments and collections.",
       img: cfm,
       width: "65px",
-    },
+    __w: 300, __h: 300},
     {
       key: 2,
       heading: "Real-Time Financial Data",
       desc: "Access up-to-date financial data at any time, empowering managers to make data-driven decisions that enhance profitability and financial health.",
       img: rtfd,
       width: "65px",
-    },
+    __w: 300, __h: 300},
     {
       key: 3,
       heading: "Integrated Invoicing and Billing",
       desc: "Automatically generate invoices and billing statements for room bookings, event bookings, dining, and more. Customizable invoice templates ensure branding consistency and accuracy.",
       img: iib,
       width: "65px",
-    },
+    __w: 300, __h: 300},
     {
       key: 4,
       heading: "Tax Management and Compliance",
       desc: "Stay compliant with regional and international tax regulations. Automate tax calculations based on local laws and apply them seamlessly to invoices and payments.",
       img: tmc,
       width: "65px",
-    },
+    __w: 300, __h: 300},
     {
       key: 5,
       heading: "Advanced Reporting and Analytics",
       desc: "Create custom financial reports that provide deeper insights into revenue, expenditures, profit margins, etc. Analyze trends and generate forecasts to support future planning.",
       img: ara,
       width: "65px",
-    },
+    __w: 300, __h: 300},
     {
       key: 6,
       heading: "Payment Gateway Integration",
       desc: "Integrated with secure payment gateways, businesses can process payments efficiently and track financial transactions in real-time.",
       img: pgi,
       width: "58px",
-    },
+    __w: 300, __h: 300},
     {
       key: 7,
       heading: "Budgeting and Forecasting",
       desc: "Plan and monitor your budget effectively with integrated forecasting tools. Track expenses, and revenues, and allocate resources for better financial planning.",
       img: bf,
       width: "58px",
-    },
+    __w: 300, __h: 300},
     {
       key: 8,
       heading: "Cash Flow Management",
       desc: "Monitor cash flow with real-time reporting to ensure liquidity, helping businesses manage operational costs and optimize cash reserves.",
       img: cfm,
       width: "60px",
-    },
+    __w: 300, __h: 300},
     {
       key: 9,
       heading: "Vendor and Supplier Payments",
       desc: "Easily manage payments to vendors and suppliers, track due invoices, and ensure timely settlements with the automated payment tracking system.",
       img: vsp,
       width: "60px",
-    },
+    __w: 300, __h: 300},
 
   ];
 
@@ -150,35 +150,35 @@ export default function AccountAndFinance() {
       desc: "Reduce human error in financial reporting and ensure accuracy in all transactions and documentation.",
       img: ac,
 
-    },
+    __w: 1068, __h: 1017},
     {
       key: 2,
       heading: "Operational Efficiency",
       desc: "Automate routine financial tasks, freeing up time for finance teams to focus on strategic decision-making.",
       img: oe
 
-    },
+    , __w: 1068, __h: 1017},
     {
       key: 3,
       heading: "Cost Control",
       desc: "Monitor expenses, analyze spending patterns, and optimize cost management across departments.",
       img: cc,
 
-    },
+    __w: 1068, __h: 1017},
     {
       key: 4,
       heading: "Compliance Assurance",
       desc: "Stay compliant with industry standards and tax regulations, avoiding penalties and ensuring financial transparency.",
       img: ca,
 
-    },
+    __w: 1068, __h: 1017},
     {
       key: 5,
       heading: "Improved Cash Flow Management",
       desc: "With real-time tracking and reporting, businesses can manage their cash flow more effectively, improving financial stability.",
       img: icfm,
 
-    },
+    __w: 1068, __h: 1017},
 
 
     // {
@@ -290,7 +290,7 @@ export default function AccountAndFinance() {
         <div className={`${style.contentConatinerPhone}`}>
 
           <div className={`${style.herosectionImgBoxPhone}`}>
-            <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
+            <img style={{ width: "100%" }} src={heroImg} alt={"room booking"}  width="854" height="545" />
           </div>
 
           <div className={`${style.headingBoxPhone} font4 `}>
@@ -315,7 +315,7 @@ export default function AccountAndFinance() {
 
           <div className={style.section2IconAndName}>
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={ddfi} alt="" />
+              <img style={{ width: "100%" }} src={ddfi} alt=""  width="300" height="300" />
             </div>
 
             <div className={`${style.iconName} `}>
@@ -330,7 +330,7 @@ export default function AccountAndFinance() {
           <div className={style.section2IconAndName}>
 
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={afw} alt="" />
+              <img style={{ width: "100%" }} src={afw} alt=""  width="300" height="300" />
             </div>
 
             <div className={`${style.iconName} `}>
@@ -348,7 +348,7 @@ export default function AccountAndFinance() {
           <div className={style.section2IconAndName}>
 
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={rtet} alt="" />
+              <img style={{ width: "100%" }} src={rtet} alt=""  width="300" height="300" />
             </div>
 
             <div className={`${style.iconName}`}>
@@ -382,7 +382,7 @@ export default function AccountAndFinance() {
 
             <div className={`${style.laptopImgSection3}`}>
               <div className={`${style.laptopImgBox}`} >
-                <img style={{ width: "100%" }} src={laptop} alt="" />
+                <img style={{ width: "100%" }} src={laptop} alt=""  width="1440" height="916" />
               </div>
             </div>
 
@@ -426,7 +426,7 @@ export default function AccountAndFinance() {
                 <div className={`${style.headingAndIconFeatures}`}>
 
                   <div style={{ width: item.width }}>
-                    <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                    <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
                   </div>
 
                   <div className={`${style.featureHeading}`}>
@@ -484,7 +484,7 @@ export default function AccountAndFinance() {
 
 
               <div className="GlobalBenefitImgBox" >
-                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
               </div>
 
               <div className='GlobalBenefitTextBox' >
@@ -497,7 +497,7 @@ export default function AccountAndFinance() {
 
 
               <div className="GlobalBenefitImgBox">
-                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
               </div>
 
               <div className='GlobalBenefitTextBox' >

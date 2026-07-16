@@ -31,7 +31,7 @@ export default function PricingDrop() {
             description: "Optimize operations with full-scale control",
             icon: enterpriseIcon,
             path: "/products/eicerise/enterprise-suite",
-        },
+        __w: 120, __h: 120},
         {
             key: 2,
             title: "Club Suite",
@@ -39,7 +39,7 @@ export default function PricingDrop() {
             icon: clubIcon,
             path: "/products/eicerise/club-suite",
 
-        },
+        __w: 120, __h: 120},
         
         {
             key: 3,
@@ -47,14 +47,14 @@ export default function PricingDrop() {
             description: "Simplify inventory and procurement workflows",
             icon: inventaryIcon,
             path: "/products/eicerise/inventory-suite",
-        },
+        __w: 120, __h: 120},
         {
             key: 4,
             title: "POS Suite",
             description: "Streamline sales and transactions effortlessly",
             icon: posIcon,
             path: "/products/eicerise/pos-suite",
-        },
+        __w: 120, __h: 120},
 
     ]
 
@@ -65,7 +65,7 @@ export default function PricingDrop() {
             description: "Elevate guest experiences from check-in to billing",
             icon: frontDeskIcon,
             path: "/products/eicerise/frontdesk-suite",
-        },
+        __w: 120, __h: 120},
         {
             key: 6,
             title: "Banquet Suite",
@@ -73,14 +73,14 @@ export default function PricingDrop() {
             icon: banquetIcon,
             path: "/products/eicerise/banquet-suite",
 
-        },
+        __w: 120, __h: 120},
         {
             key: 7,
             title: "Vanilla Suite",
             description: "All-in-one solution for versatileÂ operations",
             icon: vanillaIcon,
             path: "/products/eicerise/vanilla-suite",
-        },
+        __w: 120, __h: 120},
         // {
         //     key: 8,
 
@@ -108,7 +108,7 @@ export default function PricingDrop() {
                         <Link   className="linkClass" key={item.key ?? index} to={item.path}>
                             <div  className={`${styles.productDetailBox}`}>
                                 <div className={`${styles.productIcon}`}>
-                                    <img className={`${styles.iconSize}`} src={item.icon?.src || item.icon} alt={item.title} />
+                                    <img className={`${styles.iconSize}`} src={item.icon?.src || item.icon} alt={item.title}  width={item.__w} height={item.__h} />
                                 </div>
                                 <div className={`${styles.titleHeading} font3`}>{item.title}</div>
                                 <div className={`${styles.titeDesc} font1`} >{item.description} </div>
@@ -127,7 +127,7 @@ export default function PricingDrop() {
                         <Link className="linkClass" key={item.key ?? index} to={item.path}>
                             <div className={`${styles.productDetailBox}`} >
                                 <div className={`${styles.productIcon}`}>
-                                    <img className={`${styles.iconSize}`} src={item.icon?.src || item.icon} alt= {item.title} />
+                                    <img className={`${styles.iconSize}`} src={item.icon?.src || item.icon} alt= {item.title}  width={item.__w} height={item.__h} />
                                 </div>
                                 <div className={`${styles.titleHeading} font3`}>{item.title}</div>
                                 <div className={`${styles.titeDesc} font1`} >{item.description} </div>

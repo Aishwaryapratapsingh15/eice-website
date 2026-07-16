@@ -81,7 +81,7 @@ export default function BanquetAnsBilling() {
       desc: "Create tailored event packages, allowing clients to choose from various services, amenities, and F&B options to suit their preferences.",
       img: cpp,
       width: "69px",
-    },
+    __w: 300, __h: 300},
 
     {
       key: 2,
@@ -89,7 +89,7 @@ export default function BanquetAnsBilling() {
       desc: "Generate digital contracts and detailed invoices for events, with transparent breakdowns of services, charges, and taxes.",
       img: dci,
       width: "58px",
-    },
+    __w: 300, __h: 300},
 
     {
       key: 3,
@@ -97,7 +97,7 @@ export default function BanquetAnsBilling() {
       desc: "Allocate staff, catering, equipment, etc., based on event requirements, optimizing resources and reducing overbooking risks.",
       img: irm,
       width: "72px",
-    },
+    __w: 300, __h: 300},
 
     {
       key: 4,
@@ -105,7 +105,7 @@ export default function BanquetAnsBilling() {
       desc: "Streamline the billing process with automatic calculations for banquet charges, F&B services, and additional event-related costs.",
       img: abs,
       width: "65px",
-    },
+    __w: 300, __h: 300},
 
     {
       key: 5,
@@ -113,7 +113,7 @@ export default function BanquetAnsBilling() {
       desc: "Access real-time reports on event bookings, revenue, and client preferences, enabling better forecasting and decision-making.",
       img: cr,
       width: "58px",
-    },
+    __w: 300, __h: 300},
 
     {
       key: 6,
@@ -121,7 +121,7 @@ export default function BanquetAnsBilling() {
       desc: "Provide clients with a portal to review booking details, confirm event schedules, and make payments easily.",
       img: cpa,
       width: "54px",
-    }
+    __w: 300, __h: 300}
   ];
 
 
@@ -133,31 +133,31 @@ export default function BanquetAnsBilling() {
       heading: "Enhanced Client Experience",
       desc: "Simplified booking and clear billing ensure a hassle-free experience for clients.",
       img: ece,
-    },
+    __w: 1068, __h: 1017},
     {
       key: 2,
       heading: "Improved Efficiency",
       desc: "Automates event management and billing, reducing manual errors and saving time.",
       img: ie,
-    },
+    __w: 1068, __h: 1017},
     {
       key: 3,
       heading: "Revenue Optimization",
       desc: "Accurate invoicing and comprehensive reports help maximize revenue from event services.",
       img: ro,
-    },
+    __w: 1068, __h: 1017},
     {
       key: 4,
       heading: "Centralized Management",
       desc: "A unified platform allows for streamlined event management, reducing complexity and ensuring that all event-related details are easily accessible and managed in one place.",
       img: cm,
-    },
+    __w: 1068, __h: 1017},
     {
       key: 5,
       heading: "Better Resource Utilization",
       desc: "Automated scheduling and inventory tracking ensure efficient use of resources, preventing overbooking and underutilization of assets.",
       img: bru,
-    },
+    __w: 1068, __h: 1017},
 
   ];
 
@@ -211,7 +211,7 @@ export default function BanquetAnsBilling() {
 <div className={`${style.contentConatinerPhone}`}>
 
     <div className={`${style.herosectionImgBoxPhone}`}>
-        <img style={{ width: "100%" }} src={herosectionImg} alt={"room booking"} />
+        <img style={{ width: "100%" }} src={herosectionImg} alt={"room booking"}  width="920" height="542" />
     </div>
 
     <div className={`${style.headingBoxPhone} font4 `}>
@@ -265,7 +265,7 @@ export default function BanquetAnsBilling() {
 
           <div className={style.section2IconAndName}>
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={artb} alt="" />
+              <img style={{ width: "100%" }} src={artb} alt=""  width="300" height="300" />
             </div>
 
             <div className={`${style.iconName} `}>
@@ -280,7 +280,7 @@ export default function BanquetAnsBilling() {
           <div className={style.section2IconAndName}>
 
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={eem} alt="" />
+              <img style={{ width: "100%" }} src={eem} alt=""  width="300" height="300" />
             </div>
 
             <div className={`${style.iconName} `}>
@@ -298,7 +298,7 @@ export default function BanquetAnsBilling() {
           <div className={style.section2IconAndName}>
 
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={fcb} alt="" />
+              <img style={{ width: "100%" }} src={fcb} alt=""  width="300" height="300" />
             </div>
 
             <div className={`${style.iconName}`}>
@@ -332,7 +332,7 @@ export default function BanquetAnsBilling() {
 
             <div className={`${style.laptopImgSection3}`}>
               <div className={`${style.laptopImgBox}`} >
-                <img style={{ width: "100%" }} src={laptop} alt="" />
+                <img style={{ width: "100%" }} src={laptop} alt=""  width="1440" height="916" />
               </div>
             </div>
 
@@ -376,7 +376,7 @@ export default function BanquetAnsBilling() {
                 <div className={`${style.headingAndIconFeatures}`}>
 
                   <div style={{ width: item.width }}>
-                    <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                    <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
                   </div>
 
                   <div className={`${style.featureHeading}`}>
@@ -433,7 +433,7 @@ export default function BanquetAnsBilling() {
 
 
               <div style={{ width: "25%" }}>
-                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
               </div>
 
               <div className='GlobalBenefitTextBox' >
@@ -446,7 +446,7 @@ export default function BanquetAnsBilling() {
 
 
               <div style={{ width: "25%" }}>
-                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
               </div>
 
               <div className='GlobalBenefitTextBox' >
@@ -475,7 +475,7 @@ export default function BanquetAnsBilling() {
 
 
               <div className="GlobalBenefitImgBox" >
-                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
               </div>
 
               <div className='GlobalBenefitTextBox' >
@@ -488,7 +488,7 @@ export default function BanquetAnsBilling() {
 
 
               <div className="GlobalBenefitImgBox">
-                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
               </div>
 
               <div className='GlobalBenefitTextBox' >

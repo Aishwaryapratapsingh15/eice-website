@@ -41,7 +41,7 @@ export default function PosSuite() {
                icon: pos,
                path: "/products/eicerise/pos-dining",
                key: 2
-           },
+           , __w: 300, __h: 300},
    
           
    
@@ -51,7 +51,7 @@ export default function PosSuite() {
                icon: account,
                path: "/products/eicerise/account-finance",
                key: 5
-           },
+           , __w: 300, __h: 300},
    
            
    
@@ -87,11 +87,11 @@ export default function PosSuite() {
 
             {isPhone ? (<section className={`${styles.heroImgSectionPhone}`}>
                 <div className={`${styles.heroImgBoxPhone}`}>
-                    {/* <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite" /> */}
+                    {/* <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite"  width="1600" height="783" /> */}
                 </div>
             </section>) : (<section className={`${styles.heroImgSection}`}>
                 <div className={`${styles.heroImgBox}`}>
-                    <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite" />
+                    <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite"  width="1600" height="783" />
                 </div>
             </section>)}
 
@@ -138,7 +138,7 @@ export default function PosSuite() {
                                 <div className={`${styles.iconAndTextBox} `}>
 
                                     <div className={styles.imgBox} >
-                                        <img src={item.icon?.src || item.icon} alt={item.name || ""} />
+                                        <img src={item.icon?.src || item.icon} alt={item.name || ""}  width={item.__w} height={item.__h} />
                                     </div>
                                     <div className={`${styles.serviceName} font1`}>
                                                                             <div>  {item.serviceName}</div>

@@ -51,13 +51,13 @@ const projects = {
         "Improved production efficiency by 25% through advanced AI-driven monitoring systems.",
         img : opo
         
-    },
+    , __w: 6000, __h: 4000},
     {
       title: "Energy Trading Platform",
       description:
         "Built a blockchain-based trading platform, improving transaction security and reducing costs by 20%.",
         img : etp
-    },
+    , __w: 1468, __h: 1000},
   ],
   auto: [
     
@@ -66,19 +66,19 @@ const projects = {
       description:
         "Created a machine learning model improving object detection accuracy by 30% in diverse weather conditions.",
         img : adai
-    },
+    , __w: 1200, __h: 800},
     {
       title: "Connected Car Platform",
       description:
         "Designed a cloud-based system enabling OTA updates and predictive maintenance for 100,000+ vehicles.",
     img : ccp
-      },
+      , __w: 1200, __h: 675},
     {
       title: "Manufacturing Process Optimization",
       description:
         "Implemented an AI-driven system reducing production line downtime by 40% and improving quality control.",
         img :mpo
-    },
+    , __w: 2075, __h: 916},
   ],
   health: [
     {
@@ -86,25 +86,25 @@ const projects = {
       description:
         "Developed an AI algorithm for early cancer detection, improving accuracy by 15% over traditional methods.",
         img : adai
-    },
+    , __w: 1200, __h: 800},
     {
       title: "Telemedicine Platform",
       description:
         "Created a secure, HIPAA-compliant telehealth solution, facilitating over 1 million virtual consultations.",
         img :tmp
-    },
+    , __w: 1032, __h: 581},
   ],
 };
 
 
-const CaseStudy = ({ title, description, image }) => (
+const CaseStudy = ({ title, description, image, __w, __h }) => (
   <div className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 md:p-4">
     <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
       <img
         src={image}
         alt={title}
         className="w-full h-32 sm:h-40 md:h-48 object-cover transition duration-300 filter grayscale hover:grayscale-0"
-      />
+       width={__w} height={__h}/>
       <div className="p-3 md:p-4">
         <h3 className="fontweight_1 text-sm sm:text-base md:text-lg mb-1 sm:mb-2">
           {title}
@@ -163,7 +163,7 @@ function Cstdmain() {
                   title={project.title}
                   description={project.description}
                   image={project.img}
-                />
+                 __w={project.__w} __h={project.__h}/>
               ))}
             </div>
           </section>
@@ -179,7 +179,7 @@ function Digitrans() {
       <div className="xl:-mt-8 -mt-4 bg-gradient-to-r from-transparent via-bloo/5 to-bloo/10 pt-16 md:pt-20 lg:pt-12 2xl:pt-0">
         <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen ">
           <div className="absolute -z-20 inset-0 right-[75%]">
-            <img src={servicebannerpattern} alt="" />
+            <img src={servicebannerpattern} alt=""  width="427" height="426" />
           </div>
           <div className="flex lg:flex-row flex-col px-5 py-12 sm:py-20 items-center">
             <div className="w-full">
@@ -194,7 +194,7 @@ function Digitrans() {
             </div>
             <div className="lg:flex hidden items-center justify-end ">
               <div className="w-2/5">
-                <img src={digital} alt="Digital transformation services" className="rounded-full" />
+                <img src={digital} alt="Digital transformation services" className="rounded-full"  width="2400" height="1412" />
               </div>
             </div>
           </div>
@@ -242,7 +242,7 @@ function Digitrans() {
         <div className="grid px-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-6 gap-4 sm:pt-8">
           <div className="group p-4 sm:p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
             <div className="rounded-full flex items-start w-full">
-              <img src={dtdigital} alt="" />
+              <img src={dtdigital} alt=""  width="100" height="100" />
             </div>
             <div className="pt-2 h-full text-left">
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl ">
@@ -256,7 +256,7 @@ function Digitrans() {
           </div>
           <div className="group p-4 sm:p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
             <div className=" rounded-full  flex items-start w-full">
-              <img src={dtconsulting} alt="" className="scale-[0.85]" />
+              <img src={dtconsulting} alt="" className="scale-[0.85]"  width="100" height="100" />
             </div>
             <div className="pt-2 h-full text-left">
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
@@ -271,7 +271,7 @@ function Digitrans() {
           </div>
           <div className="group p-4 sm:p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
             <div className=" rounded-full  flex items-start w-full">
-              <img src={dtdesign} alt="" className="scale-[0.8]" />
+              <img src={dtdesign} alt="" className="scale-[0.8]"  width="100" height="100" />
             </div>
             <div className="pt-2 h-full text-left">
               <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">

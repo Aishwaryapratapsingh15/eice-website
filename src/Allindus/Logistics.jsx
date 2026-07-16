@@ -230,7 +230,7 @@ const KeyService = ({ title, description, image }) => (
 
 
 
-      />
+       width={__w} height={__h}/>
 
 
 
@@ -322,7 +322,7 @@ const projects = {
 
 
 
-    },
+    , __w: 6000, __h: 4000},
 
 
 
@@ -346,7 +346,7 @@ const projects = {
 
 
 
-    },
+    , __w: 1468, __h: 1000},
 
 
 
@@ -382,7 +382,7 @@ const projects = {
 
 
 
-    },
+    , __w: 1200, __h: 800},
 
 
 
@@ -406,7 +406,7 @@ const projects = {
 
 
 
-      },
+      , __w: 1200, __h: 675},
 
 
 
@@ -430,7 +430,7 @@ const projects = {
 
 
 
-    },
+    , __w: 2075, __h: 916},
 
 
 
@@ -462,7 +462,7 @@ const projects = {
 
 
 
-    },
+    , __w: 1200, __h: 800},
 
 
 
@@ -486,7 +486,7 @@ const projects = {
 
 
 
-    },
+    , __w: 1032, __h: 581},
 
 
 
@@ -506,7 +506,7 @@ const projects = {
 
 
 
-const CaseStudy = ({ title, description, image }) => (
+const CaseStudy = ({ title, description, image, __w, __h }) => (
 
 
 
@@ -767,7 +767,7 @@ function Cstdmain() {
 
 
 
-                />
+                 __w={project.__w} __h={project.__h}/>
 
 
 
@@ -835,7 +835,7 @@ const services = [
 
 
 
-  },
+  __w: 960, __h: 640},
 
 
 
@@ -867,7 +867,7 @@ const services = [
 
 
 
-  },
+  __w: 1280, __h: 708},
 
 
 
@@ -899,7 +899,7 @@ const services = [
 
 
 
-  },
+  __w: 2070, __h: 1380},
 
 
 
@@ -931,7 +931,7 @@ const services = [
 
 
 
-  },
+  __w: 1000, __h: 563},
 
 
 
@@ -963,7 +963,7 @@ const services = [
 
 
 
-  },
+  __w: 600, __h: 600},
 
 
 
@@ -1007,15 +1007,15 @@ function Logistics() {
 
 
 
-          {/* <img src={healthrect1} alt="" />
+          {/* <img src={healthrect1} alt=""  width="354" height="207" />
 
 
 
-          <img src={healthrect2} alt="" />
+          <img src={healthrect2} alt=""  width="354" height="207" />
 
 
 
-          <img src={healthrect3} alt="" /> */}
+          <img src={healthrect3} alt=""  width="354" height="207" /> */}
 
 
 
@@ -1024,14 +1024,14 @@ function Logistics() {
             src={Logistics_img}
             alt="Logistics and supply chain technology solutions"
             className="hidden sm:block object-cover w-full px-2"
-          />
+           width="1098" height="207" />
           {/* Mobile: show only left portion */}
           <div className="sm:hidden overflow-hidden w-full">
             <img
               src={Logistics_img}
               alt="Logistics and supply chain technology solutions"
               className="w-[300%] max-w-none"
-            />
+             width="1098" height="207" />
           </div>
 
 
@@ -1269,7 +1269,7 @@ function Logistics() {
 
 
 
-                      />
+                       width={service.__w} height={service.__h} />
 
 
 

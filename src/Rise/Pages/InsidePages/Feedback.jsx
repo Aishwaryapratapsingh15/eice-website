@@ -53,7 +53,7 @@ export default function Feedback() {
       desc: "Receive instant notifications for negative feedback or low ratings, enabling immediate intervention and service recovery before guest departure.",
       icon: rtfaIcon,
       width: "44px"
-    },
+    , __w: 50, __h: 50},
     {
       key: 2,
       heading: "Sentiment",
@@ -61,7 +61,7 @@ export default function Feedback() {
       desc: "Visualize guest sentiment trends, satisfaction scores, and NPS across departments, outlets, and time periods through an interactive analytics dashboard.",
       icon: sadIcon,
       width: "44px"
-    },
+    , __w: 50, __h: 50},
     {
       key: 3,
       heading: "Department-Wise",
@@ -69,7 +69,7 @@ export default function Feedback() {
       desc: "Automatically route feedback to the relevant department — housekeeping, F&B, front desk, maintenance — based on category for targeted resolution.",
       icon: dwrIcon,
       width: "44px"
-    },
+    , __w: 50, __h: 50},
     {
       key: 4,
       heading: "Resolution &",
@@ -77,7 +77,7 @@ export default function Feedback() {
       desc: "Track feedback resolution from acknowledgement to closure with SLA timers, escalation rules, and manager override capabilities.",
       icon: retIcon,
       width: "44px"
-    },
+    , __w: 50, __h: 50},
     {
       key: 5,
       heading: "Guest History",
@@ -85,7 +85,7 @@ export default function Feedback() {
       desc: "Link feedback to guest profiles, building a comprehensive preference and complaint history for personalised future interactions.",
       icon: ghpmIcon,
       width: "44px"
-    },
+    , __w: 50, __h: 50},
     {
       key: 6,
       heading: "Comparative",
@@ -93,7 +93,7 @@ export default function Feedback() {
       desc: "Benchmark feedback scores across properties, departments, and time periods to identify best practices and areas requiring improvement.",
       icon: caIcon,
       width: "44px"
-    }
+    , __w: 50, __h: 50}
   ];
 
   // ================= BENEFITS =================
@@ -103,31 +103,31 @@ export default function Feedback() {
       heading: "Enhanced Guest Loyalty",
       desc: "Prompt acknowledgement and resolution of feedback demonstrates care, converting potentially dissatisfied guests into loyal advocates.",
       img: beglIcon
-    },
+    , __w: 1068, __h: 1017},
     {
       key: 2,
       heading: "Operational Improvement",
       desc: "Data-driven insights from feedback trends help identify systemic issues and prioritize operational improvements.",
       img: boiIcon
-    },
+    , __w: 1068, __h: 1017},
     {
       key: 3,
       heading: "Revenue Impact",
       desc: "Improved satisfaction scores directly correlate with higher repeat visits, positive reviews, and increased referral revenue.",
       img: briIcon
-    },
+    , __w: 1068, __h: 1017},
     {
       key: 4,
       heading: "Centralized Management",
       desc: "A single dashboard for all feedback across properties, channels, and departments provides complete visibility into guest sentiment.",
       img: bcmIcon
-    },
+    , __w: 1068, __h: 1017},
     {
       key: 5,
       heading: "Service Recovery",
       desc: "Real-time alerts enable immediate intervention for negative experiences, turning potential complaints into service recovery success stories.",
       img: bsrIcon
-    }
+    , __w: 1068, __h: 1017}
   ];
 
   // ================= FAQ =================
@@ -155,17 +155,17 @@ export default function Feedback() {
         {
         icon:insightfulIcon,
         title:"Insightful", 
-        },
+        __w: 60, __h: 60},
         
         {
           icon:realtimeIcon,
           title:"Real Time",
-         }, 
+         __w: 60, __h: 60}, 
          
          {
           icon:actionableIcon,
           title:"Actionable"
-    }
+    , __w: 60, __h: 60}
     ];
 
 
@@ -183,7 +183,7 @@ export default function Feedback() {
         <section className={style.heroSectionConatinerPhone}>
           <div className={style.contentConatinerPhone}>
             <div className={style.herosectionImgBoxPhone}>
-              <img style={{width : "100%"}} src={hero} alt={"feedback module"} />
+              <img style={{width : "100%"}} src={hero} alt={"feedback module"}  width="2097" height="897" />
             </div>
 
             <div className={style.headingBoxPhone}>
@@ -221,7 +221,7 @@ export default function Feedback() {
         <div className={`${style.section2} globalSectionSize`}>
           {tag.map((t, i) => (
             <div key={i} className={style.section2IconAndName}>
-              <img src={t.icon?.src || t.icon} className={style.section2Icon} />
+              <img src={t.icon?.src || t.icon} className={style.section2Icon}  width={t.__w} height={t.__h} />
               <div className={style.iconName}>{t.title}</div>
             </div>
           ))}
@@ -234,7 +234,7 @@ export default function Feedback() {
           <div className={style.blueBoxSetion3}>
             <div className={`${style.laptopImgSection3}`}>
                                                   <div className={`${style.laptopImgBox}`} >
-                                                      <img style={{ width: "100%" }} src={overviewIcon} alt="" />
+                                                      <img style={{ width: "100%" }} src={overviewIcon} alt=""  width="746" height="441" />
                                                   </div>
                                               </div>
 
@@ -257,7 +257,7 @@ export default function Feedback() {
               <div key={item.key ?? index} className={style.featureInnerBox}>
                 <div className={style.headingAndIconFeatures}>
                   <div style={{ width: item.width }}>
-                    <img src={item.icon?.src || item.icon} style={{ width: "100%" }} />
+                    <img src={item.icon?.src || item.icon} style={{ width: "100%" }}  width={item.__w} height={item.__h} />
                   </div>
 
                   <div className={style.featureHeading}>
@@ -293,7 +293,7 @@ export default function Feedback() {
             index % 2 === 0 ? (
               <div key={index} className="GlobalBenefitBox1">
                 <div className="GlobalBenefitImgBox">
-                  <img src={item.img?.src || item.img} style={{ width: "100%" }} />
+                  <img src={item.img?.src || item.img} style={{ width: "100%" }}  width={item.__w} height={item.__h} />
                 </div>
                 <div className="GlobalBenefitTextBox">
                   <div className={style.innerHeadingBenifit}>{item.heading}</div>
@@ -303,7 +303,7 @@ export default function Feedback() {
             ) : (
               <div key={index} className="GlobalBenefitBox2">
                 <div className="GlobalBenefitImgBox">
-                  <img src={item.img?.src || item.img} style={{ width: "100%" }} />
+                  <img src={item.img?.src || item.img} style={{ width: "100%" }}  width={item.__w} height={item.__h} />
                 </div>
                 <div className="GlobalBenefitTextBox">
                   <div className={style.innerHeadingBenifit}>{item.heading}</div>

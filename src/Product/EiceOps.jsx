@@ -203,7 +203,7 @@ export default function EiceOps() {
                                      src={heroImg}
                                      alt="product"
                                      className="mx-auto mb-6 md:w-full lg:w-[480px]"
-                                   />
+                                    width="3299" height="1187" />
                          </div>
         <div className="max-w-6xl mx-auto text-center">
 
@@ -229,7 +229,7 @@ missed escalations, ensures structured communication, and gives managers full vi
               className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 sm:mx-auto text-[18px] hover:bg-blue-800 transition"
             >
               Request a Demo
-              <img src={arrowIcon} alt="arrow" />
+              <img src={arrowIcon} alt="arrow"  width="24" height="24" />
             </button>
           </div>
         </div>
@@ -272,7 +272,7 @@ missed escalations, ensures structured communication, and gives managers full vi
 
         {/* SVG */}
         <div className="rounded-lg flex items-start justify-center">
-          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain"  width="56" height="56" />
         </div>
 
         {/* TITLE */}
@@ -313,7 +313,7 @@ missed escalations, ensures structured communication, and gives managers full vi
 
         {/* SVG */}
         <div className="rounded-lg flex items-start justify-center">
-          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain"  width="56" height="56" />
         </div>
 
         {/* TITLE */}
@@ -353,7 +353,7 @@ missed escalations, ensures structured communication, and gives managers full vi
 
         {/* SVG */}
         <div className="rounded-lg flex items-start justify-center">
-          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain"  width="56" height="56" />
         </div>
 
         {/* TITLE */}
@@ -436,7 +436,7 @@ missed escalations, ensures structured communication, and gives managers full vi
               className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto text-[18px] hover:bg-blue-800"
             >
               Request a Demo
-              <img src={arrowIcon} alt="arrow" />
+              <img src={arrowIcon} alt="arrow"  width="24" height="24" />
             </button>
           </section>
 

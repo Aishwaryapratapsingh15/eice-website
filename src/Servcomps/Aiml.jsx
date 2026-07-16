@@ -35,36 +35,36 @@ const projects = {
       description: "Development of an Advanced AI Voice Call Assistant: Revolutionizing Customer Interaction and Efficiency",
       link: "/case-studies/voice-call-ai",
       img : voice
-    },
+    , __w: 409, __h: 257},
     {
       title: "Product Review Using Sentimental Analysis",
       description:"Enhancing Product Insights with AI: Advanced Sentiment Analysis of Product Reviews",
       link: "/case-studies/sentimental-ai",
       img : sentiments
-    },
+    , __w: 96, __h: 96},
     {
       title: "Logistics Using AI",
       description: "Transforming Logistics Operations with AI: Enhancing Efficiency and Accuracy", 
       link: "/case-studies/logistics-ai",
       img : logistics
-    },
+    , __w: 96, __h: 96},
     {
       title: "Inventory Management Using AI",
       description: "Revolutionizing Inventory Management with AI: Enhancing Accuracy and Efficiency",
       link: "/case-studies/inventory-ai",
       img : inventry
-    },
+    , __w: 96, __h: 96},
   ],
 };
 
-const CaseStudy = ({ title, description, image, link }) => (
+const CaseStudy = ({ title, description, image, link, __w, __h }) => (
   <Link href={link} className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 md:p-4">
     <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
       <img
         src={image?.src || image}
         alt={title}
         className="w-full h-32 sm:h-40 md:h-48 object-cover transition duration-300 filter grayscale hover:grayscale-0"
-      />
+       width={__w} height={__h}/>
       <div className="p-3 md:p-4">
         <h3 className="fontweight_1 text-sm sm:text-base md:text-lg mb-1 sm:mb-2">
           {title}
@@ -124,7 +124,7 @@ function Cstdmain() {
                   description={project.description}
                   image={project.img}
                   link ={project.link}
-                />
+                 __w={project.__w} __h={project.__h}/>
               ))}
             </div>
           </section>
@@ -140,7 +140,7 @@ function Aiml() {
       <div className="xl:-mt-8 -mt-4 bg-gradient-to-r from-transparent via-bloo/5 to-bloo/10 pt-16 md:pt-20 lg:pt-12 2xl:pt-0">
         <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen ">
           <div className="absolute -z-20 inset-0 right-[75%]">
-            <img src={servicebannerpattern} alt="" />
+            <img src={servicebannerpattern} alt=""  width="427" height="426" />
           </div>
           <div className="flex lg:flex-row flex-col px-5 py-12 sm:py-20 items-center">
             <div className="w-full">
@@ -155,7 +155,7 @@ function Aiml() {
             </div>
             <div className="lg:flex hidden items-center justify-end ">
               <div className=" w-1/2">
-                <img src={ai} alt="Artificial intelligence and machine learning services" className="rounded-full" />
+                <img src={ai} alt="Artificial intelligence and machine learning services" className="rounded-full"  width="1280" height="720" />
               </div>
             </div>
           </div>

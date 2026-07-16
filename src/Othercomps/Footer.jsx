@@ -52,17 +52,17 @@ function Footer() {
 
               {/* <div> */}
                 <Link href="/" className="inline-block mb-2 w-24 md:w-28 lg:w-40">
-                  <img style={{ filter: "brightness(0) invert(1)" , width : "100%" }} src={logo} alt="EICE Logo"  />
+                  <img style={{ filter: "brightness(0) invert(1)" , width : "100%" }} src={logo} alt="EICE Logo"   width="80" height="28" />
                 </Link>
                 <div  className="inline-block mb-2 ml-4  lg:ml-12  w-40  lg:w-60">
-                  <img style={{ filter: "brightness(0) invert(1)" , width : "100%" ,  }} src={cmi} alt="EICE Logo"  />
+                  <img style={{ filter: "brightness(0) invert(1)" , width : "100%" ,  }} src={cmi} alt="EICE Logo"   width="311" height="79" />
                 </div>
               {/* </div> */}
 
 
               {/* <div> */}
                
-                  {/* <img style={{ width: "13rem", filter: "brightness(0) invert(1)" }} src={cmi} alt="EICE Logo" className="" /> */}
+                  {/* <img style={{ width: "13rem", filter: "brightness(0) invert(1)" }} src={cmi} alt="EICE Logo" className=""  width="311" height="79" /> */}
            
               {/* </div> */}
 
@@ -95,7 +95,7 @@ function Footer() {
                 src={x}
                 alt="Twitter"
                 className="h-6 w-6 hover:opacity-80 transition-opacity"
-              />
+               width="24" height="24" />
             </Link>
             <Link
               to={"https://www.linkedin.com/company/eice-technology/posts/?feedView=all&viewAsMember=true"}
@@ -106,7 +106,7 @@ function Footer() {
                 src={linkedin}
                 alt="LinkedIn"
                 className="h-6 w-6 hover:opacity-80 transition-opacity"
-              />
+               width="24" height="24" />
             </Link>
 
 
@@ -119,7 +119,7 @@ function Footer() {
                 src={fb}
                 alt="Facebook"
                 className="h-6 w-6 hover:opacity-80 transition-opacity"
-              />
+               width="24" height="24" />
             </Link>
 
             <Link
@@ -132,7 +132,7 @@ function Footer() {
                 src={insta}
                 alt="Instagram"
                 className="h-6 w-6 hover:opacity-80 transition-opacity"
-              />
+               width="24" height="24" />
 
             </Link> */}
 
@@ -329,11 +329,11 @@ function Footer() {
             </div>
 
             {/* <Link style={{ marginLeft: "35rem" }} to="/" className="inline-block mb-2">
-              <img style={{ width: "8rem" }} src={isms} alt="EICE Logo" className="" />
+              <img style={{ width: "8rem" }} src={isms} alt="EICE Logo" className=""  width="96" height="96" />
             </Link>
 
             <Link style={{ marginLeft: "3rem" }} to="/" className="inline-block mb-2">
-              <img style={{ width: "8rem"  }} src={iso} alt="EICE Logo" className="" />
+              <img style={{ width: "8rem"  }} src={iso} alt="EICE Logo" className=""  width="96" height="96" />
             </Link> */}
 
           </div>

@@ -31,12 +31,12 @@ function EspctQuote() {
               src={espctquote1}
               alt="ESPCT Quote sales quotation tool — product configuration screen"
               className="w-full h-full object-fit"
-            />
+             width="506" height="335" />
             <img
               src={espctquote2}
               alt="ESPCT Quote sales quotation tool — quote generation interface"
               className="w-full h-full object-fit"
-            />
+             width="405" height="330" />
           </div>
         </div>
         <div className="w-full pb-6">

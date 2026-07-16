@@ -56,7 +56,7 @@ export default function Android() {
             path: "/products/eicerise/userstore-inventry",
             id: 1,
             value: "Ensured real-time inventory tracking and seamless store operations"
-        },
+        , __w: 300, __h: 300},
 
         {
             key: "PURCHASE & VENDOR PORTAL",
@@ -64,7 +64,7 @@ export default function Android() {
             path: "/products/eicerise/purchase-vendor",
             id: 2,
             value: "Enabled efficient vendor management and streamlined purchase processes"
-        },
+        , __w: 300, __h: 300},
     ]
 
 
@@ -99,7 +99,7 @@ export default function Android() {
                 <div className={`${styles.imgAndDescBox} globalSectionSize `}>
 
                     <div className={`${styles.descImg}`}>
-                        <img style={{ width: "100%" }} src={laptop} alt="brief description" />
+                        <img style={{ width: "100%" }} src={laptop} alt="brief description"  width="852" height="496" />
                     </div>
 
                     <div className={`${styles.briefDescBox}`}>
@@ -122,7 +122,7 @@ export default function Android() {
             {isPhone && (<section className={`${styles.briefDescSectionPhone}  `}>
 
                 <div className={`${styles.descImgPhone}`}>
-                    <img style={{ width: "100%" }} src={laptop} alt="brief description" />
+                    <img style={{ width: "100%" }} src={laptop} alt="brief description"  width="852" height="496" />
                 </div>
 
             </section>
@@ -193,7 +193,7 @@ export default function Android() {
 
                                 <div className={`${styles.moduleImgBorder}`}>
                                     <div className={`${styles.iconWidth}`}>
-                                        <img style={{ width: "100%" }} src={item.icon?.src || item.icon} alt={item.key} />
+                                        <img style={{ width: "100%" }} src={item.icon?.src || item.icon} alt={item.key}  width={item.__w} height={item.__h} />
                                     </div>
                                 </div>
 
@@ -244,7 +244,7 @@ export default function Android() {
                 <div className={`${styles.imgAndParaBox}  font1`}>
 
                     <div className={`${styles.valueClientImg}`}>
-                        <img style={{ width: "100%" }} src={family} alt="client" />
+                        <img style={{ width: "100%" }} src={family} alt="client"  width="920" height="616" />
                     </div>
 
                     <div className={`${styles.valueToClientPara}`}>

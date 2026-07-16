@@ -49,7 +49,7 @@ export default function Banquet() {
             icon: banquet,
             path: "/products/eicerise/banquet-billing",
             key: 3
-        },
+        , __w: 300, __h: 300},
 
        
 
@@ -59,7 +59,7 @@ export default function Banquet() {
             icon: account,
             path: "/products/eicerise/account-finance",
             key: 5
-        },
+        , __w: 300, __h: 300},
 
         
 
@@ -102,11 +102,11 @@ export default function Banquet() {
 
             {isPhone ? (<section className={`${styles.heroImgSectionPhone}`}>
                 <div className={`${styles.heroImgBoxPhone}`}>
-                    {/* <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite" /> */}
+                    {/* <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite"  width="1602" height="789" /> */}
                 </div>
             </section>) : (<section className={`${styles.heroImgSection}`}>
                 <div className={`${styles.heroImgBox}`}>
-                    <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite" />
+                    <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite"  width="1602" height="789" />
                 </div>
             </section>)}
 
@@ -156,7 +156,7 @@ export default function Banquet() {
                                 <div className={`${styles.iconAndTextBox} `}>
 
                                     <div className={styles.imgBox} >
-                                        <img src={item.icon?.src || item.icon} alt={item.name || ""} />
+                                        <img src={item.icon?.src || item.icon} alt={item.name || ""}  width={item.__w} height={item.__h} />
                                     </div>
                                     <div className={`${styles.serviceName} font1`}>
                                         <div>  {item.serviceName}</div>

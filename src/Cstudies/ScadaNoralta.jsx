@@ -19,8 +19,8 @@ function ScadaNoralta() {
             operational data workflows to deliver real-time visibility and control across field engineering assets.
           </p>
           <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
-            <img src={scadanoralta1} alt="SCADA Noralta System" className="w-full h-full object-fit rounded-lg" />
-            <img src={scadanoralta2} alt="SCADA Noralta Dashboard" className="w-full h-full object-fit rounded-lg" />
+            <img src={scadanoralta1} alt="SCADA Noralta System" className="w-full h-full object-fit rounded-lg"  width="390" height="529" />
+            <img src={scadanoralta2} alt="SCADA Noralta Dashboard" className="w-full h-full object-fit rounded-lg"  width="1500" height="753" />
           </div>
         </div>
         <div className="w-full pb-6">

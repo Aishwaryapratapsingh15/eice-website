@@ -321,7 +321,7 @@ function Servmain() {
               src={consultancy}
               alt=""
               className="inset-0 object-cover w-full h-full rounded-xl"
-            />
+             width="96" height="96" />
             <div className="absolute inset-0 bg-gradient-to-t from-stone-900/90 from-30% via-stone-800/95 via-30% to-transparent rounded-lg flex flex-col justify-end p-4"></div>
             <div className="absolute inset-0 flex flex-col gap-6 text-white font-extrabold text-4xl lg:text-6xl text-left p-4 lg:p-8">
               <div className="h-3/4"></div>
@@ -352,7 +352,7 @@ function Servmain() {
             src={uiuxdesign}
             alt=""
             className="inset-0 object-cover w-full h-full rounded-xl"
-          />
+           width="96" height="96" />
           <div className="absolute inset-0 bg-gradient-to-t from-stone-900/90 from-30% via-stone-800/95 via-30% to-transparent rounded-lg flex flex-col justify-end p-4"></div>
           <div className="absolute inset-0 flex flex-col gap-6 text-white font-extrabold text-4xl lg:text-6xl text-left p-4 lg:p-8">
             <div className="h-3/4"></div>

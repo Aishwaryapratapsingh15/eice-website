@@ -20,7 +20,7 @@ function LogisticsAi() {
             to supply chain disruptions.
           </p>
           <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4">
-            <img src={logistics} alt="Logistics AI Platform" className="w-full max-h-96 object-cover rounded-lg" />
+            <img src={logistics} alt="Logistics AI Platform" className="w-full max-h-96 object-cover rounded-lg"  width="96" height="96" />
           </div>
         </div>
         <div className="w-full pb-6">

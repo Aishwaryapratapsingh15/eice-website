@@ -15,7 +15,7 @@ export default function Certificate() {
             </div>
 
             {/* <div className={`${styles. certificateImgBox} w-3/4 lg:w-1/2 `}>
-                <img style={{width : "100%"}} src={cert} alt="" />
+                <img style={{width : "100%"}} src={cert} alt=""  width="96" height="96" />
 
             </div> */}
 

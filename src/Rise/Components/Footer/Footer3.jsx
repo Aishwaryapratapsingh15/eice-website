@@ -22,7 +22,7 @@ export default function Footer3() {
         </Link>
       </div>
       <div className={`${styles.footerLaptopImg}`}>
-        <img style={{ width: "100%" }} src={footerPosLaptop} alt="pos dining" />
+        <img style={{ width: "100%" }} src={footerPosLaptop} alt="pos dining"  width="1040" height="461" />
       </div>
     </div>
   );

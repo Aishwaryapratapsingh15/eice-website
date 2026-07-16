@@ -53,7 +53,7 @@ export default function AudienceAttendance() {
       desc: "Monitor live attendance across all venues — gym, pool, restaurant, banquet hall, sports facilities — with real-time headcounts and capacity indicators.",
       img: rtotIcon,
       width: "44px"
-    },
+    , __w: 50, __h: 50},
     {
       key: 2,
       heading: "Guest & Visitor",
@@ -61,7 +61,7 @@ export default function AudienceAttendance() {
       desc: "Register non-member guests and visitors with host details, purpose of visit, and time-stamped entry/exit logs for security and compliance.",
       img: gvrIcon,
       width: "44px"
-    },
+    , __w: 50, __h: 50},
     {
       key: 3,
       heading: "Capacity Alerts",
@@ -69,7 +69,7 @@ export default function AudienceAttendance() {
       desc: "Set maximum capacity limits per venue and receive alerts when occupancy approaches or reaches limits, ensuring safety compliance and comfort.",
       img: camIcon,
       width: "44px"
-    },
+    , __w: 50, __h: 50},
     {
       key: 4,
       heading: "Venue-Wise",
@@ -77,7 +77,7 @@ export default function AudienceAttendance() {
       desc: "Generate detailed reports on venue usage patterns — peak hours, popular days, average duration of stay — for infrastructure planning and scheduling.",
       img: vwurIcon,
       width: "44px"
-    },
+    , __w: 50, __h: 50},
     {
       key: 5,
       heading: "Member Activity",
@@ -85,7 +85,7 @@ export default function AudienceAttendance() {
       desc: "Track individual member venue visits, frequency, and activity preferences to understand usage patterns and drive personalized engagement.",
       img: matIcon,
       width: "44px"
-    },
+    , __w: 50, __h: 50},
     {
       key: 6,
       heading: "Event Attendance",
@@ -93,7 +93,7 @@ export default function AudienceAttendance() {
       desc: "Record and manage attendance for events, workshops, and programs with pre-registration, walk-in tracking, and post-event attendance reports.",
       img: eamIcon,
       width: "44px"
-    },
+    , __w: 50, __h: 50},
     {
       key: 7,
       heading: "Dashboard &",
@@ -101,7 +101,7 @@ export default function AudienceAttendance() {
       desc: "Visualize attendance trends, peak-hour heatmaps, and venue comparison metrics through an interactive dashboard for strategic facility management.",
       img: daIcon,
       width: "44px"
-    }
+    , __w: 50, __h: 50}
   ];
 
   // ================= BENEFITS =================
@@ -111,31 +111,31 @@ export default function AudienceAttendance() {
       heading: "Enhanced Member Experience",
       desc: "Fast, frictionless check-in methods and capacity management ensure a comfortable, well-managed venue experience.",
       img: bemeIcon
-    },
+    , __w: 1068, __h: 1017},
     {
       key: 2,
       heading: "Operational Efficiency",
       desc: "Automated attendance capture eliminates manual tracking, freeing staff to focus on member service and facility management.",
       img: boeIcon
-    },
+    , __w: 1068, __h: 1017},
     {
       key: 3,
       heading: "Revenue Insights",
       desc: "Utilization data helps identify underused venues for revenue programs and justifies investment in high-demand facilities.",
       img: briIcon
-    },
+    , __w: 1068, __h: 1017},
     {
       key: 4,
       heading: "Centralized Management",
       desc: "A single dashboard provides real-time visibility into all venue occupancy and member activity across the entire property.",
       img: bcmIcon
-    },
+    , __w: 1068, __h: 1017},
     {
       key: 5,
       heading: "Safety & Compliance",
       desc: "Capacity alerts and visitor logs ensure regulatory compliance and enable swift head counts during emergency situations.",
       img: bscIcon
-    }
+    , __w: 1068, __h: 1017}
   ];
 
   // ================= FAQ =================
@@ -162,17 +162,17 @@ export default function AudienceAttendance() {
     {
       icon: trackIcon,
       title: "Tracked",
-    },
+    __w: 60, __h: 60},
 
     {
       icon: transparentIcon,
       title: "Transparent",
-    },
+    __w: 60, __h: 60},
 
     {
       icon: realtimeIcon,
       title: "Real-Time"
-    }
+    , __w: 60, __h: 60}
   ];
 
 
@@ -190,7 +190,7 @@ export default function AudienceAttendance() {
         <section className={style.heroSectionConatinerPhone}>
           <div className={style.contentConatinerPhone}>
             <div className={style.herosectionImgBoxPhone}>
-              <img style={{ width: "100%" }} src={hero} alt={"wifi module"} />
+              <img style={{ width: "100%" }} src={hero} alt={"wifi module"}  width="1997" height="700" />
             </div>
 
             <div className={style.headingBoxPhone}>
@@ -226,7 +226,7 @@ export default function AudienceAttendance() {
         <div className={`${style.section2} globalSectionSize`}>
           {tag.map((t, i) => (
             <div key={i} className={style.section2IconAndName}>
-              <img src={t.icon?.src || t.icon} className={style.section2Icon} />
+              <img src={t.icon?.src || t.icon} className={style.section2Icon}  width={t.__w} height={t.__h} />
               <div className={style.iconName}>{t.title}</div>
             </div>
           ))}
@@ -239,7 +239,7 @@ export default function AudienceAttendance() {
           <div className={style.blueBoxSetion3}>
             <div className={`${style.laptopImgSection3}`}>
               <div className={`${style.laptopImgBox}`} >
-                <img style={{ width: "100%" }} src={overviewIcon} alt="" />
+                <img style={{ width: "100%" }} src={overviewIcon} alt=""  width="995" height="556" />
               </div>
             </div>
 
@@ -263,7 +263,7 @@ export default function AudienceAttendance() {
                 <div key={item.key ?? index} className={style.featureInnerBox}>
                   <div className={style.headingAndIconFeatures}>
                     <div style={{ width: item.width }}>
-                      <img src={item.img?.src || item.img} style={{ width: "100%" }} />
+                      <img src={item.img?.src || item.img} style={{ width: "100%" }}  width={item.__w} height={item.__h} />
                     </div>
 
                     <div className={style.featureHeading}>
@@ -304,7 +304,7 @@ export default function AudienceAttendance() {
 
                 <div className="GlobalBenefitBox1">
                   <div className="GlobalBenefitImgBox">
-                    <img src={item.img?.src || item.img} style={{ width: "100%" }} />
+                    <img src={item.img?.src || item.img} style={{ width: "100%" }}  width={item.__w} height={item.__h} />
                   </div>
                   <div className="GlobalBenefitTextBox">
                     <div className={style.innerHeadingBenifit}>{item.heading}</div>
@@ -316,7 +316,7 @@ export default function AudienceAttendance() {
 
                 <div className="GlobalBenefitBox2">
                   <div className="GlobalBenefitImgBox">
-                    <img src={item.img?.src || item.img} style={{ width: "100%" }} />
+                    <img src={item.img?.src || item.img} style={{ width: "100%" }}  width={item.__w} height={item.__h} />
                   </div>
                   <div className="GlobalBenefitTextBox">
                     <div className={style.innerHeadingBenifit}>{item.heading}</div>

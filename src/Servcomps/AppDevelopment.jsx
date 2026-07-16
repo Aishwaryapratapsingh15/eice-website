@@ -144,7 +144,7 @@ export default function AppDevelopment() {
       <section className="mt-10 text-left sm:text-center py-4 sm:py-16 px-5 bg-white">
         <div className="mt-5 flex justify-center mb-6">
           {heroImg ? (
-            <img src={heroImg} alt="Application Development" className="mx-auto w-full max-w-[480px] object-contain" />
+            <img src={heroImg} alt="Application Development" className="mx-auto w-full max-w-[480px] object-contain"  width="590" height="333" />
           ) : (
             <div className="w-full max-w-[480px] h-48 sm:h-64 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 text-sm">
               Hero Image
@@ -153,7 +153,7 @@ export default function AppDevelopment() {
         </div>
 
         <span className="flex w-fit mx-auto items-center gap-2 bg-blue-50 text-[#012060] px-3 py-2 rounded-full text-sm font-medium border border-blue-200 mb-4">
-          {badgeIcon && <img src={badgeIcon} alt="" className="w-5 h-5 object-contain" />}
+          {badgeIcon && <img src={badgeIcon} alt="" className="w-5 h-5 object-contain"  width="20" height="20" />}
           Application Development
         </span>
 
@@ -172,7 +172,7 @@ export default function AppDevelopment() {
             className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-[18px]"
           >
             Get in Touch
-            <img src={arrowIcon} alt="arrow" />
+            <img src={arrowIcon} alt="arrow"  width="24" height="24" />
           </button>
         </div>
       </section>
@@ -194,7 +194,7 @@ export default function AppDevelopment() {
                 {overviewFeatures.map((feat, i) => (
                   <div key={i} className="flex items-start gap-4">
                     {feat.icon ? (
-                      <img src={feat.icon} alt="" className="w-8 h-8 object-contain flex-shrink-0 mt-0.5" />
+                      <img src={feat.icon} alt="" className="w-8 h-8 object-contain flex-shrink-0 mt-0.5"  width="32" height="32" />
                     ) : (
                       <div className="w-8 h-8 bg-[#01B0F1] rounded-full flex-shrink-0 mt-0.5" />
                     )}
@@ -264,7 +264,7 @@ export default function AppDevelopment() {
             {services.map((service, i) => (
               <div key={i} className="bg-white border border-[#E2E8F0] rounded-xl p-4 sm:p-6 flex flex-col">
                 {service.icon ? (
-                  <img src={service.icon} alt="" className="w-12 h-12 object-contain mb-4" />
+                  <img src={service.icon} alt="" className="w-12 h-12 object-contain mb-4"  width="48" height="48" />
                 ) : (
                   <div className="w-12 h-12 bg-blue-100 rounded-lg mb-4" />
                 )}
@@ -368,7 +368,7 @@ export default function AppDevelopment() {
             {whyEice.map((item, i) => (
               <div key={i} className="bg-white/10 border border-white/20 rounded-xl p-4 sm:p-6 flex flex-col items-start">
                 {item.icon ? (
-                  <img src={item.icon} alt="" className="w-12 h-12 object-contain mb-4" />
+                  <img src={item.icon} alt="" className="w-12 h-12 object-contain mb-4"  width="48" height="48" />
                 ) : (
                   <div className="w-12 h-12 bg-white/20 rounded-lg mb-4" />
                 )}
@@ -397,7 +397,7 @@ export default function AppDevelopment() {
             className="bg-white text-[#012060] px-10 py-3 rounded-md flex items-center gap-2 mx-auto font-semibold text-[18px] hover:bg-blue-50 transition"
           >
             Get in Touch
-            <img src={arrowIcon} alt="arrow" />
+            <img src={arrowIcon} alt="arrow"  width="24" height="24" />
           </button>
         </div>
       </section>

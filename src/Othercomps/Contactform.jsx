@@ -310,19 +310,19 @@ function ContactForm() {
 
     <a href="https://wa.me/919871895200" target="_blank" rel="noopener noreferrer"
       className="flex flex-col items-center gap-1 p-2 rounded-lg hover:bg-gray-50 transition text-center">
-      <img src={whatsappIcon} alt="WhatsApp" className="w-6 h-6" />
+      <img src={whatsappIcon} alt="WhatsApp" className="w-6 h-6"  width="24" height="24" />
       <span className="text-xs text-blackk/70 leading-tight">+91-9871895200</span>
     </a>
 
     <a href="tel:+18322804632"
       className="flex flex-col items-center gap-1 p-2 rounded-lg hover:bg-gray-50 transition text-center">
-      <img src={phoneIcon} alt="Phone" className="w-6 h-6" />
+      <img src={phoneIcon} alt="Phone" className="w-6 h-6"  width="24" height="24" />
       <span className="text-xs text-blackk/70 leading-tight">+1 832 280 4632</span>
     </a>
 
     <a href="mailto:info@eicetechnology.com"
       className="flex flex-col items-center gap-1 p-2 rounded-lg hover:bg-gray-50 transition text-center">
-      <img src={emailIcon} alt="Email" className="w-6 h-6" />
+      <img src={emailIcon} alt="Email" className="w-6 h-6"  width="24" height="24" />
       <span className="text-xs text-blackk/70 leading-tight break-all">info@eicetechnology.com</span>
     </a>
 

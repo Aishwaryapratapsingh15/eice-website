@@ -24,8 +24,8 @@ function DataManagement() {
             accelerate upstream workflows.
           </p>
           <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
-            <img src={datamgmt1} alt="E&P Data Management Platform" className="w-full h-full object-fit rounded-lg" />
-            <img src={datamgmt2} alt="E&P GIS Dashboard" className="w-full h-full object-fit rounded-lg" />
+            <img src={datamgmt1} alt="E&P Data Management Platform" className="w-full h-full object-fit rounded-lg"  width="504" height="408" />
+            <img src={datamgmt2} alt="E&P GIS Dashboard" className="w-full h-full object-fit rounded-lg"  width="816" height="1391" />
           </div>
         </div>
         <div className="w-full pb-6">

@@ -22,7 +22,7 @@ export default function Footer2() {
         </Link>
       </div>
       <div className={`${styles.footerLaptopImg}`}>
-        <img style={{ width: "100%" }} src={footerRoomLaptop} alt="room booking" />
+        <img style={{ width: "100%" }} src={footerRoomLaptop} alt="room booking"  width="1149" height="453" />
       </div>
     </div>
   );

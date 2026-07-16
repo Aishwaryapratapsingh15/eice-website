@@ -47,7 +47,7 @@ export default function Enterprise() {
             icon: room,
             path: "/products/eicerise/roombooking",
             key: 1
-        },
+        , __w: 300, __h: 300},
 
         {
             serviceName: "DINING",
@@ -55,7 +55,7 @@ export default function Enterprise() {
             icon: pos,
             path: "/products/eicerise/pos-dining",
             key: 2
-        },
+        , __w: 300, __h: 300},
 
         {
             serviceName: "BANQUET &",
@@ -63,7 +63,7 @@ export default function Enterprise() {
             icon: banquet,
             path: "/products/eicerise/banquet-billing",
             key: 3
-        },
+        , __w: 300, __h: 300},
 
         {
 
@@ -72,7 +72,7 @@ export default function Enterprise() {
             icon: member,
             path: "/products/eicerise/member-suite",
             key: 4
-        },
+        , __w: 300, __h: 300},
 
         {
             serviceName: "ACCOUNT & ",
@@ -80,7 +80,7 @@ export default function Enterprise() {
             icon: account,
             path: "/products/eicerise/account-finance",
             key: 5
-        },
+        , __w: 300, __h: 300},
 
         {
             serviceName: "EMPLOYEE",
@@ -88,7 +88,7 @@ export default function Enterprise() {
             icon: emp,
             path: "/products/eicerise/employee-suite",
             key: 6
-        },
+        , __w: 300, __h: 300},
 
         {
             serviceName: "PAYROLL",
@@ -96,28 +96,28 @@ export default function Enterprise() {
             icon: pay,
             path: "/products/eicerise/payroll",
             key: 7
-        },
+        , __w: 300, __h: 300},
 
         {
             serviceName: "USER STORE & INVENTORY",
             icon: inentry,
             path: "/products/eicerise/userstore-inventry",
             key: 8
-        },
+        , __w: 300, __h: 300},
 
         {
             serviceName: "PURCHASE & VENDOR PORTAL",
             icon: vendor,
             path: "/products/eicerise/purchase-vendor",
             key: 9
-        },
+        , __w: 300, __h: 300},
 
         {
             serviceName: "FOOD & BEVERAGE COST ANALYSIS",
             icon: food,
             path: "/products/eicerise/food-cost",
             key: 10
-        }
+        , __w: 300, __h: 300}
     ]
 
     const whyToChooseUs = [
@@ -153,11 +153,11 @@ export default function Enterprise() {
 
             {isPhone ? (<section className={`${styles.heroImgSectionPhone}`}>
                 <div className={`${styles.heroImgBoxPhone}`}>
-                    {/* <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite" /> */}
+                    {/* <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite"  width="1604" height="786" /> */}
                 </div>
             </section>) : (<section className={`${styles.heroImgSection}`}>
                 <div className={`${styles.heroImgBox}`}>
-                    <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite" />
+                    <img style={{ width: "100%" }} src={heroimg} alt="banquet Suite"  width="1604" height="786" />
                 </div>
             </section>)}
 
@@ -202,7 +202,7 @@ export default function Enterprise() {
                                 <div className={`${styles.iconAndTextBox} `}>
 
                                     <div className={styles.imgBox} >
-                                        <img src={item.icon?.src || item.icon} alt={item.name || ""} />
+                                        <img src={item.icon?.src || item.icon} alt={item.name || ""}  width={item.__w} height={item.__h} />
                                     </div>
                                     <div className={`${styles.serviceName} font1`}>
                                         <div>  {item.serviceName}</div>

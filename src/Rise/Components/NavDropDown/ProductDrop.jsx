@@ -39,28 +39,28 @@ export default function ProductDrop() {
             icon: room,
             path: "/products/eicerise/roombooking",
 
-        },
+        __w: 120, __h: 120},
         {
             key: 2,
             title: "Dining (POS)",
             description: "Simplify your dining operations",
             icon: dinning,
             path: "/products/eicerise/pos-dining",
-        },
+        __w: 120, __h: 120},
         {
             key: 3,
             title: "Banquet & Billing",
             description: "Manage events with ease",
             icon: banwuet,
             path: "/products/eicerise/banquet-billing",
-        },
+        __w: 120, __h: 120},
         {
             key: 4,
             title: "Member Suite",
             description: "Build a thriving member community",
             icon: member,
             path: "/products/eicerise/member-suite",
-        },
+        __w: 120, __h: 120},
 
     ]
 
@@ -71,7 +71,7 @@ export default function ProductDrop() {
             description: "Gain full financial control",
             icon: account,
             path: "/products/eicerise/account-finance",
-        },
+        __w: 120, __h: 120},
         {
             key: 6,
             title: "Employee Suite",
@@ -79,14 +79,14 @@ export default function ProductDrop() {
             icon: emp,
             path: "/products/eicerise/employee-suite",
 
-        },
+        __w: 120, __h: 120},
         {
             key: 7,
             title: "PayRoll",
             description: "Simplify payroll processing",
             icon: pay,
             path: "/products/eicerise/payroll",
-        },
+        __w: 120, __h: 120},
         {
             key: 8,
 
@@ -96,7 +96,7 @@ export default function ProductDrop() {
             icon: vendor,
            
             path: "/products/eicerise/purchase-vendor",
-        },
+        __w: 120, __h: 120},
 
     ]
 
@@ -107,28 +107,28 @@ export default function ProductDrop() {
              description: "Manage inventory effortlessly",
             icon: inventary,
              path: "/products/eicerise/userstore-inventry",
-        },
+        __w: 120, __h: 120},
         {
             key: 10,
             title: "Food & Beverage Cost Analysis",
             description: "BoostÂ profitÂ accuracy",
             icon: food,
             path: "/products/eicerise/food-cost",
-        },
+        __w: 120, __h: 120},
         {
             key: 11,
             title: "Single-Sign-On",
             description: "Take command of your entire EICE Rise ecosystem ",
             icon: sso,
             path: "/products/eicerise/single-sign-on",
-        },
+        __w: 48, __h: 48},
         {
             key: 12,
             title: "Wi-Fi Module",
             description: "Automate guest Wi-Fi access ",
             icon: wifi,
             path: "/products/eicerise/wifi",
-        },
+        __w: 48, __h: 48},
 
     ]
 
@@ -139,28 +139,28 @@ export default function ProductDrop() {
              description: "Plan, allocate, and monitor budgets",
             icon: budget,
              path: "/products/eicerise/budget",
-        },
+        __w: 48, __h: 48},
         {
             key: 14,
             title: "Feedback System",
             description: "Capture, analyze, and act on guest feedback",
             icon: feedbacki,
             path: "/products/eicerise/feedback",
-        },
+        __w: 48, __h: 48},
         {
             key: 15,
             title: "Audience Attendance",
             description: "Monitor and manage banquet-wise footfall ",
             icon: attendance,
             path: "/products/eicerise/audience-attendance",
-        },
+        __w: 48, __h: 48},
         {
             key: 16,
             title: "Compliance Register",
             description: "Track, assign, and monitor operational activities ",
             icon: compliance,
             path: "/products/eicerise/compliance-register",
-        },
+        __w: 48, __h: 48},
 
     ]
 
@@ -171,7 +171,7 @@ export default function ProductDrop() {
              description: "Build and manage a trusted vendor ecosystem ",
             icon: vendori,
              path: "/products/eicerise/vendor-management",
-        },
+        __w: 48, __h: 48},
         
     ]
 
@@ -189,7 +189,7 @@ export default function ProductDrop() {
                         <Link  className="linkClass" key={item.key ?? index} to={item.path}>
                             <div  className={`${styles.productDetailBox}`}>
                                 <div className={`${styles.productIcon}`}>
-                                    <img className={`${styles.iconSize}`} src={item.icon?.src || item.icon} alt={item.title} />
+                                    <img className={`${styles.iconSize}`} src={item.icon?.src || item.icon} alt={item.title}  width={item.__w} height={item.__h} />
                                 </div>
                                 <div className={`${styles.titleHeading} font3`}>{item.title}</div>
                                 <div className={`${styles.titeDesc} font1`} >{item.description} </div>
@@ -208,7 +208,7 @@ export default function ProductDrop() {
                         <Link className="linkClass" key={item.key ?? index} to={item.path}>
                             <div className={`${styles.productDetailBox}`} >
                                 <div className={`${styles.productIcon}`}>
-                                    <img className={`${styles.iconSize}`} src={item.icon?.src || item.icon} alt={item.title} />
+                                    <img className={`${styles.iconSize}`} src={item.icon?.src || item.icon} alt={item.title}  width={item.__w} height={item.__h} />
                                 </div>
                                 <div className={`${styles.titleHeading} font3`}>{item.title}</div>
                                 <div className={`${styles.titeDesc} font1`} >{item.description} </div>
@@ -226,7 +226,7 @@ export default function ProductDrop() {
                         <Link className="linkClass"  key={item.key ?? index} to={item.path}>
                             <div  className={`${styles.productDetailBox}`}>
                                 <div className={`${styles.productIcon}`} >
-                                    <img className={`${styles.iconSize}`} src={item.icon?.src || item.icon} alt={item.title} />
+                                    <img className={`${styles.iconSize}`} src={item.icon?.src || item.icon} alt={item.title}  width={item.__w} height={item.__h} />
                                 </div>
                                 <div className={`${styles.titleHeading} font3`}>{item.title}</div>
                                 <div className={`${styles.titeDesc} font1`} >{item.description} </div>
@@ -247,7 +247,7 @@ export default function ProductDrop() {
                         <Link className="linkClass"  key={item.key ?? index} to={item.path}>
                             <div  className={`${styles.productDetailBox}`}>
                                 <div className={`${styles.productIcon}`} >
-                                    <img className={`${styles.iconSize}`} src={item.icon?.src || item.icon} alt={item.title} />
+                                    <img className={`${styles.iconSize}`} src={item.icon?.src || item.icon} alt={item.title}  width={item.__w} height={item.__h} />
                                 </div>
                                 <div className={`${styles.titleHeading} font3`}>{item.title}</div>
                                 <div className={`${styles.titeDesc} font1`} >{item.description} </div>
@@ -266,7 +266,7 @@ export default function ProductDrop() {
                         <Link className="linkClass"  key={item.key ?? index} to={item.path}>
                             <div  className={`${styles.productDetailBox}`}>
                                 <div className={`${styles.productIcon}`} >
-                                    <img className={`${styles.iconSize}`} src={item.icon?.src || item.icon} alt={item.title} />
+                                    <img className={`${styles.iconSize}`} src={item.icon?.src || item.icon} alt={item.title}  width={item.__w} height={item.__h} />
                                 </div>
                                 <div className={`${styles.titleHeading} font3`}>{item.title}</div>
                                 <div className={`${styles.titeDesc} font1`} >{item.description} </div>

@@ -23,7 +23,7 @@ export default function InsidePageFooterUpper() {
         </Link>
       </div>
       <div className={`${styles.footerLaptopImg}`}>
-        <img style={{ width: "100%" }} src={footer} alt="eice rise" />
+        <img style={{ width: "100%" }} src={footer} alt="eice rise"  width="1040" height="461" />
       </div>
     </div>
   );

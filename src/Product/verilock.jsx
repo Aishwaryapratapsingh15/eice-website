@@ -42,9 +42,9 @@ const gfIcon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/Geo-Fencing_Contr
 
 
 const features = [
-  { icon: codeRefreshIcon, title: "Code Refresh", desc: "Lightning-fast code regeneration for enterprise speed" },
-  { icon: multilayerIcon, title: "Multi-Layer Auth ", desc: "TOTP-based, push approval, and token-based authentication" },
-  { icon: appIntegrationIcon, title: "App Integrations", desc: "Seamless integration with unlimited third-party applications" },
+  { icon: codeRefreshIcon, title: "Code Refresh", desc: "Lightning-fast code regeneration for enterprise speed" , __w: 52, __h: 52},
+  { icon: multilayerIcon, title: "Multi-Layer Auth ", desc: "TOTP-based, push approval, and token-based authentication" , __w: 52, __h: 52},
+  { icon: appIntegrationIcon, title: "App Integrations", desc: "Seamless integration with unlimited third-party applications" , __w: 52, __h: 52},
 ];
 
 // const challenges = [
@@ -185,7 +185,7 @@ export default function ISyncDrivePage() {
                     src={verilockIcon}
                     alt="product"
                     className="mx-auto mb-6 md:w-96 lg:w-[350px] h-[280px]"
-                  />
+                   width="2262" height="1897" />
         </div>
 
         {/* <span className="bg-blue-100 text-blue-900 px-4 py-1 rounded-full text-sm font-small border border-blue-300">
@@ -197,7 +197,7 @@ export default function ISyncDrivePage() {
     src={shieldIcon} 
     alt="icon" 
     className="w-5 h-5 object-contain"
-  />
+   width="20" height="20" />
 
   Enterprise MFA platform
 </span>
@@ -213,7 +213,7 @@ export default function ISyncDrivePage() {
         {/* <div className="mt-8 flex flex-wrap justify-center gap-4">
           <button className="bg-blue-900 text-white px-6 py-3 rounded-md">
             Request a Demo
-            <img src={arrowIcon} alt="arrow" className="w-4 h-4" />
+            <img src={arrowIcon} alt="arrow" className="w-4 h-4"  width="16" height="16" />
           </button>
           <button className="border border-gray-300 px-6 py-3 rounded-md">
             Talk to an Expert
@@ -225,7 +225,7 @@ export default function ISyncDrivePage() {
       <button onClick={() => navigate("/products/eicerise/form")}
       className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-[18px]">
         Request a Demo
-          <img src={arrowIcon} alt="arrow"/>
+          <img src={arrowIcon} alt="arrow" width="24" height="24" />
 
       </button>
 
@@ -245,7 +245,7 @@ export default function ISyncDrivePage() {
 
       {/* ICON (Rounded Rectangle) */}
       <div className=" px-6 rounded-xl">
-       <img src={item.icon} alt="icon"/>
+       <img src={item.icon} alt="icon" width={item.__w} height={item.__h} />
       </div>
 
       {/* TITLE */}
@@ -378,7 +378,7 @@ locations with full admin control.
 
         {/* SVG */}
         <div className="rounded-lg flex items-start">
-          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain"  width="56" height="56" />
         </div>
 
         {/* TITLE */}
@@ -448,7 +448,7 @@ locations with full admin control.
       src={bannerIcon}
       alt="platform"
       className="w-full rounded-xl"
-    />
+     width="1571" height="371" />
 
     {/* TEXT */}
     <p className="mt-4 text-gray-400 text-xl max-w-3xl mx-auto">
@@ -480,7 +480,7 @@ locations with full admin control.
       <div className="bg-white border border-[#E2E8F0] rounded-2xl p-4 sm:p-8 shadow-sm">
         <div className="flex items-center gap-4 mb-6">
           <div className="w-14 h-14 rounded-xl flex items-center justify-center text-xl">
-            <img src={rsIcon} alt="icon" className="w-14 h-14 object-contain"/>
+            <img src={rsIcon} alt="icon" className="w-14 h-14 object-contain" width="56" height="56" />
           </div>
           <h3 className="text-[24px] sm:text-xl font-semibold text-[#1E293B]">
             Registration & setup
@@ -515,7 +515,7 @@ locations with full admin control.
       <div className="bg-white border border-[#E2E8F0] rounded-2xl p-4 sm:p-8 shadow-sm">
         <div className="flex items-center gap-4 mb-6">
           <div className="w-14 h-14 rounded-xl flex items-center justify-center text-xl">
-            <img src={lmIcon} alt="icon" className="w-14 h-14 object-contain"/>
+            <img src={lmIcon} alt="icon" className="w-14 h-14 object-contain" width="56" height="56" />
           </div>
           <h3 className="text-[24px] sm:text-xl font-semibold text-[#1E293B]">
             Login methods
@@ -545,7 +545,7 @@ locations with full admin control.
       <div className="bg-white border border-[#E2E8F0] rounded-2xl p-4 sm:p-8 shadow-sm">
         <div className="flex items-center gap-4 mb-6">
           <div className="w-14 h-14 rounded-xl flex items-center justify-center text-xl">
-            <img src={gfIcon} alt="icon" className="w-14 h-14 object-contain"/>
+            <img src={gfIcon} alt="icon" className="w-14 h-14 object-contain" width="56" height="56" />
           </div>
           <h3 className="text-[24px] sm:text-xl font-semibold text-[#1E293B]">
             Geo-fencing controls
@@ -576,7 +576,7 @@ locations with full admin control.
       <div className="bg-white border border-[#E2E8F0] rounded-2xl p-4 sm:p-8 shadow-sm">
         <div className="flex items-center gap-4 mb-6">
           <div className="w-14 h-14 rounded-xl flex items-center justify-center text-xl">
-            <img src={saIcon} alt="icon" className="w-14 h-14 object-contain"/>
+            <img src={saIcon} alt="icon" className="w-14 h-14 object-contain" width="56" height="56" />
           </div>
           <h3 className="text-[24px] sm:text-xl font-semibold text-[#1E293B]">
             Security architecture
@@ -630,7 +630,7 @@ locations with full admin control.
       {/* Header */}
       <div className="flex-column items-start gap-4 mb-5">
         <div className="py-4 sm:py-5 rounded-lg">
-          <img src={ztsIcon} alt="icon"/>
+          <img src={ztsIcon} alt="icon" width="42" height="42" />
         </div>
         <h3 className="text-2xl font-bold text-[#334155]">
           Zero trust architecture
@@ -649,7 +649,7 @@ locations with full admin control.
       {/* Header */}
       <div className="flex-column items-start gap-4 mb-5">
         <div className="py-4 sm:py-5 rounded-lg">
-          <img src={ztkIcon} alt="icon"/>
+          <img src={ztkIcon} alt="icon" width="42" height="42" />
         </div>
         <h3 className="text-2xl font-bold text-[#334155]">
           Zero transmission key
@@ -667,7 +667,7 @@ locations with full admin control.
       {/* Header */}
       <div className="flex-column items-start gap-4 mb-5">
         <div className="py-4 sm:py-5 rounded-lg">
-          <img src={laaIcon} alt="icon"/>
+          <img src={laaIcon} alt="icon" width="42" height="42" />
         </div>
         <h3 className="text-2xl font-bold text-[#334155]">
           Location aware authentication
@@ -685,7 +685,7 @@ locations with full admin control.
       {/* Header */}
       <div className="flex-column items-start gap-4 mb-5">
         <div className="py-4 sm:py-5 rounded-lg">
-          <img src={sprIcon} alt="icon"/>
+          <img src={sprIcon} alt="icon" width="42" height="42" />
         </div>
         <h3 className="text-2xl font-bold text-[#334155]">
           Signed push responses
@@ -728,11 +728,11 @@ locations with full admin control.
         </div>
 
         <div className="p-5 text-left text-blue-400 flex items-center gap-2">
-          <img src={verilockLogoIcon} alt="Verilock Logo" className="w-28 h-auto"/>
+          <img src={verilockLogoIcon} alt="Verilock Logo" className="w-28 h-auto" width="92" height="30" />
         </div>
 
         <div className="p-5 text-left text-[#94A3B8]">
-          <img src={authenticatorLogoIcon} alt="Google Authenticator Logo" className="w-28 h-auto scale-125"/>
+          <img src={authenticatorLogoIcon} alt="Google Authenticator Logo" className="w-28 h-auto scale-125" width="144" height="30" />
         </div>
       </div>
 
@@ -800,7 +800,7 @@ locations with full admin control.
         src={row.verilock.type === "tick" ? tickIcon : nilIcon}
         alt=""
         className="w-4 h-4 mt-1"
-      />
+       width="16" height="16" />
       <span className="text-green-600 font-medium">
         {row.verilock.text}
       </span>
@@ -812,7 +812,7 @@ locations with full admin control.
         src={row.google.type === "tick" ? tickIcon : nilIcon}
         alt=""
         className="w-4 h-4 mt-1"
-      />
+       width="16" height="16" />
       <span
         className={
           row.google.type === "tick"
@@ -871,7 +871,7 @@ locations with full admin control.
       <button onClick={() => navigate("/products/eicerise/form")} 
       className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto hover:bg-blue-800 transition text-[18px]">
         Request a Demo
-          <img src={arrowIcon} alt="arrow"/>
+          <img src={arrowIcon} alt="arrow" width="24" height="24" />
 
       </button>
     </div>

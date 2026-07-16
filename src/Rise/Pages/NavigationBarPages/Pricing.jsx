@@ -143,13 +143,13 @@ export default function Pricing() {
 
 
         <div className={`${styles.animationImgSize} ${styles.sideImgCutLeft}`}>
-          <img style={{ width: "100%" }} src={img1} alt="RISE ERP hospitality management software on mobile device" />
+          <img style={{ width: "100%" }} src={img1} alt="RISE ERP hospitality management software on mobile device"  width="1440" height="1920" />
         </div>
         <div className={`${styles.animationImgSize} ${styles.middleimage}`}>
-          <img style={{ width: "100%" }} src={img2} alt="RISE ERP pricing plans interface" />
+          <img style={{ width: "100%" }} src={img2} alt="RISE ERP pricing plans interface"  width="911" height="1070" />
         </div>
         <div className={`${styles.animationImgSize} ${styles.sideImgCutRight}`}>
-          <img style={{ width: "100%" }} src={img3} alt="RISE ERP hospitality software on tablet device" />
+          <img style={{ width: "100%" }} src={img3} alt="RISE ERP hospitality software on tablet device"  width="911" height="1070" />
         </div>
 
 

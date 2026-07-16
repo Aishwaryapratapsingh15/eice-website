@@ -118,7 +118,7 @@ export default function ConsultancyServices() {
       <section className="mt-10 text-left sm:text-center py-4 sm:py-16 px-5 bg-white">
         <div className="mt-5 flex justify-center mb-6">
           {heroImg ? (
-            <img src={heroImg} alt="Consultancy Services" className="mx-auto w-full max-w-[480px] object-contain" />
+            <img src={heroImg} alt="Consultancy Services" className="mx-auto w-full max-w-[480px] object-contain"  width="396" height="239" />
           ) : (
             <div className="w-full max-w-[480px] h-48 sm:h-64 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 text-sm">
               Hero Image
@@ -127,7 +127,7 @@ export default function ConsultancyServices() {
         </div>
 
         <span className="flex w-fit mx-auto items-center gap-2 bg-blue-50 text-[#012060] px-3 py-2 rounded-full text-sm font-medium border border-blue-200 mb-4">
-          {badgeIcon && <img src={badgeIcon} alt="" className="w-5 h-5 object-contain" />}
+          {badgeIcon && <img src={badgeIcon} alt="" className="w-5 h-5 object-contain"  width="20" height="20" />}
           Consultancy Services
         </span>
 
@@ -146,7 +146,7 @@ export default function ConsultancyServices() {
             className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-[18px]"
           >
             Get in Touch
-            <img src={arrowIcon} alt="arrow" />
+            <img src={arrowIcon} alt="arrow"  width="24" height="24" />
           </button>
         </div>
       </section>
@@ -174,7 +174,7 @@ export default function ConsultancyServices() {
               {overviewCards.map((card, i) => (
                 <div key={i} className="bg-white border border-[#E2E8F0] rounded-xl p-4 flex items-start gap-4 shadow-sm">
                   {card.icon ? (
-                    <img src={card.icon} alt="" className="w-10 h-10 object-contain flex-shrink-0" />
+                    <img src={card.icon} alt="" className="w-10 h-10 object-contain flex-shrink-0"  width="40" height="40" />
                   ) : (
                     <div className="w-10 h-10 bg-blue-100 rounded-lg flex-shrink-0" />
                   )}
@@ -206,7 +206,7 @@ export default function ConsultancyServices() {
               <div key={i} className="bg-white border border-[#E2E8F0] rounded-xl p-4 sm:p-8 flex flex-col">
                 {service.icon ? (
                   <div className="w-12 h-12 rounded-lg flex items-center justify-center p-2 mb-4">
-                    <img src={service.icon} alt="" className="w-full h-full object-contain" />
+                    <img src={service.icon} alt="" className="w-full h-full object-contain"  width="48" height="48" />
                   </div>
                 ) : (
                   <div className="w-12 h-12 bg-[#012060] rounded-lg mb-4" />
@@ -252,7 +252,7 @@ export default function ConsultancyServices() {
                   <div className="flex items-start justify-between mb-4">
                     {step.icon ? (
                       <div className="w-10 h-10 bg-[#012060] rounded-lg flex items-center justify-center flex-shrink-0 p-2">
-                        <img src={step.icon} alt="" className="w-full h-full object-contain" />
+                        <img src={step.icon} alt="" className="w-full h-full object-contain"  width="40" height="40" />
                       </div>
                     ) : (
                       <div className="w-10 h-10 bg-[#012060] rounded-lg flex-shrink-0" />
@@ -293,7 +293,7 @@ export default function ConsultancyServices() {
             {whyEice.map((item, i) => (
               <div key={i} className="bg-white border border-[#E2E8F0] rounded-xl p-4 sm:p-6 flex flex-col items-start">
                 {item.icon ? (
-                  <img src={item.icon} alt="" className="w-12 h-12 object-contain mb-4" />
+                  <img src={item.icon} alt="" className="w-12 h-12 object-contain mb-4"  width="48" height="48" />
                 ) : (
                   <div className="w-12 h-12 bg-blue-100 rounded-lg mb-4" />
                 )}
@@ -322,7 +322,7 @@ export default function ConsultancyServices() {
             className="bg-white text-[#012060] px-10 py-3 rounded-md flex items-center gap-2 mx-auto font-semibold text-[18px] hover:bg-blue-50 transition"
           >
             Get in Touch
-            <img src={arrowIcon} alt="arrow" />
+            <img src={arrowIcon} alt="arrow"  width="24" height="24" />
           </button>
         </div>
       </section>

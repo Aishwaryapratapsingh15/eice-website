@@ -29,14 +29,14 @@ export default function Pos() {
         //     icon: room,
         //     path: "/products/eicerise/room-booking",
         //     key: 1
-        // },
+        // , __w: 300, __h: 300},
 
         {
             serviceName: "DINNING (POS)",
             icon: pos,
             path: "/products/eicerise/pos-dining",
             key: 2
-        },
+        , __w: 300, __h: 300},
 
 
         // {
@@ -44,7 +44,7 @@ export default function Pos() {
         //     icon: banquet,
         //     path: "/products/eicerise/banquet-billing",
         //     key: 3
-        // },
+        // __w: 300, __h: 300},
 
         // {
 
@@ -52,49 +52,49 @@ export default function Pos() {
         //     icon: member,
         //     path: "/products/eicerise/member-suite",
         //     key: 4
-        // },
+        // __w: 300, __h: 300},
 
         {
             serviceName: "ACCOUNT & FINANCE",
             icon: account,
             path: "/products/eicerise/account-finance",
             key: 5
-        },
+        , __w: 300, __h: 300},
 
         // {
         //     serviceName: "EMPLOYEE SUITE",
         //     icon: emp,
         //     path: "/products/eicerise/employee-suite",
         //     key: 6
-        // },
+        // __w: 300, __h: 300},
 
         // {
         //     serviceName: "PAYROLL",
         //     icon: pay,
         //     path: "/products/eicerise/payroll",
         //     key: 7
-        // },
+        // __w: 300, __h: 300},
 
         // {
         //     serviceName: "USER STORE & INVENTORY",
         //     icon: inentry,
         //     path: "/products/eicerise/userstore-inventry",
         //     key: 8
-        // },
+        // __w: 300, __h: 300},
 
         // {
         //     serviceName: "PURCHASE & VENDOR PORTAL",
         //     icon: vendor,
         //     path: "/products/eicerise/purchase-vendor",
         //     key: 9
-        // },
+        // __w: 300, __h: 300},
 
         // {
         //     serviceName: "FOOD & BEVERAGE COST ANALYSIS",
         //     icon: food,
         //     path: "/products/eicerise/food-cost",
         //     key: 10
-        // }
+        // __w: 300, __h: 300}
     ]
 
     const whyToChooseUs = [
@@ -124,7 +124,7 @@ export default function Pos() {
 
 
                     {/* <div className={`${styles.overviewEyeImgSize}`}>
-                        <img style={{ width: "100%" }} src={eyeImg} alt="" />
+                        <img style={{ width: "100%" }} src={eyeImg} alt=""  width="1368" height="744" />
                     </div> */}
 
                     <div className={`${styles.overviewPara} font1`}>
@@ -156,7 +156,7 @@ export default function Pos() {
                 <div className={`${styles.iconAndTextBox} `}>
 
                     <div className={styles.imgBox} >
-                        <img src={item.icon?.src || item.icon} alt={item.name || ""} />
+                        <img src={item.icon?.src || item.icon} alt={item.name || ""}  width={item.__w} height={item.__h} />
                     </div>
                     <div>
                         {item.key < 9 ? (<div className={`${styles.serviceName} font1`}>{item.serviceName}</div>) : (<div className={`${styles.serviceName2} font1`}>{item.serviceName}</div>)}

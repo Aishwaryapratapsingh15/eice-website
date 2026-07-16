@@ -28,7 +28,7 @@ useEffect(() => {
             heading: "Real-Time Tracking",
             desc: "Easylogy enables businesses to monitor fleet movements with live GPS tracking, ensuring accurate location updates and enhanced visibility. This helps in reducing delays, improving delivery accuracy, and providing customers with real-time ETAs, making fleet management more transparent, efficient, and reliable.",
             width: "40%"
-        },
+        , __w: 1280, __h: 813},
 
         {
             id: 2,
@@ -37,7 +37,7 @@ useEffect(() => {
             desc: "Drivers can effortlessly update their trip status, live location, fuel consumption, and upload images directly from the Easylogy mobile app. This ensures seamless communication, reduces manual reporting errors, and provides fleet managers with instant insights into vehicle movements and driver activities for better operational efficiency.",
            width: "40%"
 
-        },
+        , __w: 1280, __h: 853},
 
         {
             id: 3,
@@ -45,7 +45,7 @@ useEffect(() => {
             heading: "Optimized Route Planning ",
             desc: "Easylogy uses intelligent algorithms to suggest the most efficient routes, reducing travel time and fuel consumption. By avoiding traffic congestion and minimizing unnecessary stops, businesses can cut costs, improve delivery schedules, and ensure that goods reach their destination faster and more reliably.",
             width: "40%"
-        },
+        , __w: 1280, __h: 853},
 
         {
             id: 4,
@@ -53,7 +53,7 @@ useEffect(() => {
             heading: "Instant Alerts & Notifications",
             desc: "Receive real-time alerts for route deviations, unexpected stops, vehicle breakdowns, or delays. With instant notifications, businesses can take proactive action, communicate with drivers, and make quick adjustments to prevent delivery disruptions and enhance overall supply chain reliability.",
             width: "40%"
-        },
+        , __w: 1280, __h: 720},
 
     ]
 
@@ -114,7 +114,7 @@ useEffect(() => {
                             item.id % 2 == 0 ? (<div key={item.id} style={{ display: "flex", justifyContent: "center" }} >
                                 <div className={`${styles.benefitContainer}`}>
                                     <div style={{ width: item.width }} className={`${styles.benefitImgBox}`}>
-                                        <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                                        <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
                                     </div>
                                     <div className={`${styles.headingAndDescBox}`}>
                                         <div className={`${styles.benefitHeading}`}>{item.heading}</div>
@@ -132,7 +132,7 @@ useEffect(() => {
                                             <div className={`${styles.benefitDesc}`} >{item.desc}</div>
                                         </div>
                                         <div style={{ width: item.width }} className={`${styles.benefitImgBox}`}>
-                                            <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                                            <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
                                         </div>
                                     </div>
                                 </div>

@@ -26,10 +26,10 @@ function Relimonitor() {
           <div className=" w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
             <div className="relative w-full h-full rounded-lg">
               
-              <img src={temp} alt="RE.LI Monitor real-time sensor monitoring dashboard" className="w-full h-full rounded-lg object-fit" />
+              <img src={temp} alt="RE.LI Monitor real-time sensor monitoring dashboard" className="w-full h-full rounded-lg object-fit"  width="742" height="427" />
             </div>
             <div className="relative w-full h-full rounded-lg">
-              <img src={temp2} alt="RE.LI Monitor SCADA data visualization interface" className="w-full h-full rounded-lg object-fit" />
+              <img src={temp2} alt="RE.LI Monitor SCADA data visualization interface" className="w-full h-full rounded-lg object-fit"  width="1464" height="904" />
             </div>
           </div>
         </div>

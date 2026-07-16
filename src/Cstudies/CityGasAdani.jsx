@@ -25,8 +25,8 @@ function CityGasAdani() {
             execution and monitoring.
           </p>
           <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
-            <img src={adanigas1} alt="City Gas Distribution App" className="w-full h-full object-fit rounded-lg" />
-            <img src={adanigas2} alt="City Gas Distribution Dashboard" className="w-full h-full object-fit rounded-lg" />
+            <img src={adanigas1} alt="City Gas Distribution App" className="w-full h-full object-fit rounded-lg"  width="517" height="208" />
+            <img src={adanigas2} alt="City Gas Distribution Dashboard" className="w-full h-full object-fit rounded-lg"  width="368" height="247" />
           </div>
         </div>
         <div className="w-full pb-6">

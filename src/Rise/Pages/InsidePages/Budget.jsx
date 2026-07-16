@@ -50,47 +50,47 @@ export default function Budget() {
       icon: abpIcon,
       title: "Annual Budget Preparation",
       desc: "Create detailed annual budgets by department, cost center, and GL account with revenue projections, expense estimates, and capital expenditure planning"
-    },
+    , __w: 50, __h: 50},
     {
       icon: dwaIcon,
       title: "Department-Wise Allocation",
       desc: "Allocate budgets to individual departments with sub-category breakdowns — manpower, materials, utilities, maintenance — for granular cost control."
-    },
+    , __w: 50, __h: 50},
     {
       icon: mqtIcon,
       title: "Monthly & Quarterly Tracking",
       desc: "Compare actual spend against budgeted amounts on a monthly and quarterly basis with auto-calculated variances and trend visualizations."
-    },
+    , __w: 50, __h: 50},
     {
       icon: varIcon,
       title: "Variance Analysis & Alerts",
       desc: "Receive automated alerts when spending exceeds budget thresholds at 80%, 90%, and 100% levels, enabling proactive cost management."
-    },
+    , __w: 50, __h: 50},
     {
       icon: brrIcon,
       title: "Budget Revision & Reforecast",
       desc: "Submit and approve mid-year budget revisions with version control, maintaining a clear audit trail of all changes and their justifications."
-    },
+    , __w: 50, __h: 50},
     {
       icon: cepIcon,
       title: "Capital Expenditure (CAPEX) Planning",
       desc: "Plan and track capital investments separately with ROI projections, approval workflows, and disbursement schedules."
-    },
+    , __w: 50, __h: 50},
     {
       icon: mpcIcon,
       title: "Multi-Property Consolidation",
       desc: "Consolidate budgets across multiple properties into a unified corporate view while maintaining property-level granularity."
-    },
+    , __w: 50, __h: 50},
     {
       icon: hcIcon,
       title: "Historical Comparison",
       desc: "Compare current budgets and actuals against previous years’ data for trend analysis, seasonal adjustments, and more accurate forecasting."
-    },
+    , __w: 50, __h: 50},
     {
       icon: ipIcon,
       title: "Integration with Purchase",
       desc: "Auto-feed actual expenditure data from Purchase and Accounts modules for real-time budget utilization without manual data entry."
-    }
+    , __w: 50, __h: 50}
   ];
 
   const benefits = [
@@ -98,27 +98,27 @@ export default function Budget() {
       icon: bfdIcon,
       title: "Financial Discipline",
       desc: "Threshold-based alerts and approval workflows enforce spending discipline across all departments and properties."
-    },
+    , __w: 1068, __h: 1017},
     {
       icon: boeIcon,
       title: "Operational Efficiency",
       desc: "Automated variance calculations and report generation save finance teams hours of manual reconciliation work."
-    },
+    , __w: 1068, __h: 1017},
     {
       icon: bspIcon,
       title: "Strategic Planning",
       desc: "Historical comparisons and trend analytics enable more accurate forecasting and informed financial decisions."
-    },
+    , __w: 1068, __h: 1017},
     {
       icon: bcoIcon,
       title: "Centralized Oversight",
       desc: "Multi-property budget consolidation gives leadership a complete financial picture across the entire organization."
-    },
+    , __w: 1068, __h: 1017},
     {
       icon: barIcon,
       title: "Audit Readiness",
       desc: "Version-controlled revisions, approval trails, and automated feeds ensure transparent, audit-ready budget documentation."
-    }
+    , __w: 1068, __h: 1017}
   ];
 
   const faqs = [
@@ -144,17 +144,17 @@ export default function Budget() {
       {
       icon:plannedIcon,
       title:"Planned", 
-      },
+      __w: 60, __h: 60},
       
       {
         icon:preciseIcon,
         title:"Precise",
-       }, 
+       __w: 60, __h: 60}, 
        
        {
         icon:predictIcon,
         title:"Predictive"
-  }
+  , __w: 60, __h: 60}
   ];
   
 
@@ -173,7 +173,7 @@ export default function Budget() {
         <section className={style.heroSectionConatinerPhone}>
           <div className={style.contentConatinerPhone}>
             <div className={style.herosectionImgBoxPhone}>
-              <img style={{width : "100%"}} src={hero} alt={"wifi module"} />
+              <img style={{width : "100%"}} src={hero} alt={"wifi module"}  width="1121" height="923" />
             </div>
 
             <div className={style.headingBoxPhone}>
@@ -208,7 +208,7 @@ export default function Budget() {
           {tag.map((t, i) => (
             <div key={i} className={style.section2IconAndName}>
               <div className={style.section2Icon}>
-                <img src={t.icon?.src || t.icon} />
+                <img src={t.icon?.src || t.icon}  width={t.__w} height={t.__h} />
               </div>
               <div className={style.iconName}>{t.title}</div>
             </div>
@@ -222,7 +222,7 @@ export default function Budget() {
           <div className={style.blueBoxSetion3}>
            <div className={`${style.laptopImgSection3}`}>
                                       <div className={`${style.laptopImgBox}`} >
-                                          <img style={{ width: "100%" }} src={overviewIcon} alt="" />
+                                          <img style={{ width: "100%" }} src={overviewIcon} alt=""  width="720" height="458" />
                                       </div>
                                   </div>
 
@@ -254,7 +254,7 @@ export default function Budget() {
               <div key={i} className={style.featureInnerBox}>
                 <div className={style.headingAndIconFeatures}>
                   <div style={{ width: "44px" }}>
-                    <img src={f.icon?.src || f.icon} style={{ width: "100%" }} />
+                    <img src={f.icon?.src || f.icon} style={{ width: "100%" }}  width={f.__w} height={f.__h} />
                   </div>
                   <div className={style.featureHeading}>{f.title}</div>
                 </div>
@@ -287,7 +287,7 @@ export default function Budget() {
             >
               <div className="GlobalBenefitImgBox">
                 <div style={{ display: "flex", gap: "10px" }}>
-                  <img src={b.icon?.src || b.icon} width="350px" />
+                  <img src={b.icon?.src || b.icon} width="350px"  width={b.__w} height={b.__h} />
                   {/* <img src="/p2.jpg" width="80" />
                   <img src="/p3.jpg" width="80" /> */}
                 </div>

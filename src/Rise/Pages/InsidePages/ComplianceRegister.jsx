@@ -53,7 +53,7 @@ export default function ComplianceRegister() {
       desc: "Assign tasks with priority levels, deadlines, attachments, and detailed instructions from a centralized task management dashboard.",
       img: tadIcon,
       width: "44px"
-    },
+    , __w: 50, __h: 50},
     {
       key: 2,
       heading: "Real-Time",
@@ -61,7 +61,7 @@ export default function ComplianceRegister() {
       desc: "Monitor task status — pending, in-progress, completed, overdue — in real time with progress percentages and timeline views.",
       img: rtptIcon,
       width: "44px"
-    },
+    , __w: 50, __h: 50},
     {
       key: 3,
       heading: "Department-Wise",
@@ -69,7 +69,7 @@ export default function ComplianceRegister() {
       desc: "Organize activities by department — housekeeping, maintenance, F&B, front office — with customizable boards, filters, and views.",
       img: dwabIcon,
       width: "60px"
-    },
+    , __w: 50, __h: 50},
     {
       key: 4,
       heading: "Recurring Task",
@@ -77,7 +77,7 @@ export default function ComplianceRegister() {
       desc: "Set up recurring tasks for monthly operations like room inspections, equipment servicing, and compliance checks with auto-assignment.",
       img: rtaIcon,
       width: "60px"
-    },
+    , __w: 50, __h: 50},
     {
       key: 5,
       heading: "SLA &",
@@ -85,7 +85,7 @@ export default function ComplianceRegister() {
       desc: "Define Service Level Agreements for task categories with automated escalation to supervisors and managers when deadlines are breached.",
       img: serIcon,
       width: "44px"
-    },
+    , __w: 50, __h: 50},
     {
       key: 6,
       heading: "Photo & Document",
@@ -93,7 +93,7 @@ export default function ComplianceRegister() {
       desc: "Allow staff to attach before/after photos, inspection reports, and documents to tasks as proof of completion for audit trails.",
       img: pdaIcon,
       width: "4opx"
-    },
+    , __w: 50, __h: 50},
     {
       key: 7,
       heading: "Performance",
@@ -101,7 +101,7 @@ export default function ComplianceRegister() {
       desc: "Generate individual and team performance reports — completion rates, average resolution time, SLA compliance — for workforce optimization.",
       img: pprIcon,
       width: "60px"
-    }
+    , __w: 50, __h: 50}
   ];
 
   // ================= BENEFITS =================
@@ -111,31 +111,31 @@ export default function ComplianceRegister() {
       heading: "Enhanced Accountability",
       desc: "Clear task ownership, deadlines, and audit trails ensure every activity has a responsible person and a documented outcome.",
       img: beaIcon
-    },
+    , __w: 1068, __h: 1017},
     {
       key: 2,
       heading: "Operational Efficiency",
       desc: "Automated recurring tasks and reduce supervisor follow-up effort and keep operations running smoothly.",
       img: boeIcon
-    },
+    , __w: 1068, __h: 1017},
     {
       key: 3,
       heading: "Service Quality",
       desc: "SLA-driven task management ensures guest-impacting activities are prioritized and completed within acceptable timeframes.",
       img: bsqIcon
-    },
+    , __w: 1068, __h: 1017},
     {
       key: 4,
       heading: "Centralized Visibility",
       desc: "Management gets a bird’s-eye view of all operational activities across departments and properties from a single dashboard.",
       img: bcvIcon
-    },
+    , __w: 1068, __h: 1017},
     {
       key: 5,
       heading: "Data-Driven Decisions",
       desc: "Performance analytics help identify bottlenecks, reward top performers, and allocate resources more effectively.",
       img: bdddIcon
-    }
+    , __w: 1068, __h: 1017}
   ];
 
   // ================= FAQ =================
@@ -162,17 +162,17 @@ export default function ComplianceRegister() {
           {
           icon:visibleIcon,
           title:"Visible", 
-          },
+          __w: 60, __h: 60},
           
           {
             icon:accountableIcon,
             title:"Accountable",
-           }, 
+           __w: 60, __h: 60}, 
            
            {
             icon:connectedIcon,
             title:"Connected"
-      }
+      , __w: 60, __h: 60}
       ];
 
   const footerUpperText = {
@@ -189,7 +189,7 @@ export default function ComplianceRegister() {
         <section className={style.heroSectionConatinerPhone}>
           <div className={style.contentConatinerPhone}>
             <div className={style.herosectionImgBoxPhone}>
-              <img src={hero}style={{ width: "100%" }} />
+              <img src={hero}style={{ width: "100%" }}  width="1200" height="918" />
             </div>
 
             <div className={style.headingBoxPhone}>
@@ -225,7 +225,7 @@ export default function ComplianceRegister() {
         <div className={`${style.section2} globalSectionSize`}>
           {tag.map((t, i) => (
             <div key={i} className={style.section2IconAndName}>
-              <img src={t.icon?.src || t.icon} className={style.section2Icon} />
+              <img src={t.icon?.src || t.icon} className={style.section2Icon}  width={t.__w} height={t.__h} />
               <div className={style.iconName}>{t.title}</div>
             </div>
           ))}
@@ -238,7 +238,7 @@ export default function ComplianceRegister() {
           <div className={style.blueBoxSetion3}>
             <div className={`${style.laptopImgSection3}`}>
                                                   <div className={`${style.laptopImgBox}`} >
-                                                      <img style={{ width: "100%" }} src={overviewIcon} alt="" />
+                                                      <img style={{ width: "100%" }} src={overviewIcon} alt=""  width="995" height="543" />
                                                   </div>
                                               </div>
 
@@ -261,7 +261,7 @@ export default function ComplianceRegister() {
               <div key={item.key ?? index} className={style.featureInnerBox}>
                 <div className={style.headingAndIconFeatures}>
                   <div style={{ width: item.width }}>
-                    <img src={item.img?.src || item.img} style={{ width: "100%" }} />
+                    <img src={item.img?.src || item.img} style={{ width: "100%" }}  width={item.__w} height={item.__h} />
                   </div>
                   <div className={style.featureHeading}>
                     <div>{item.heading}</div>
@@ -295,7 +295,7 @@ export default function ComplianceRegister() {
             index % 2 === 0 ? (
               <div key={index} className="GlobalBenefitBox1">
                 <div className="GlobalBenefitImgBox">
-                  <img src={item.img?.src || item.img} style={{ width: "100%" }} />
+                  <img src={item.img?.src || item.img} style={{ width: "100%" }}  width={item.__w} height={item.__h} />
                 </div>
                 <div className="GlobalBenefitTextBox">
                   <div className={style.innerHeadingBenifit}>{item.heading}</div>
@@ -305,7 +305,7 @@ export default function ComplianceRegister() {
             ) : (
               <div key={index} className="GlobalBenefitBox2">
                 <div className="GlobalBenefitImgBox">
-                  <img src={item.img?.src || item.img} style={{ width: "100%" }} />
+                  <img src={item.img?.src || item.img} style={{ width: "100%" }}  width={item.__w} height={item.__h} />
                 </div>
                 <div className="GlobalBenefitTextBox">
                   <div className={style.innerHeadingBenifit}>{item.heading}</div>

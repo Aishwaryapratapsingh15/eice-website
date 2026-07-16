@@ -35,7 +35,7 @@ function Scopes() {
           <div className="relative w-full sm:w-11/12 h-[30rem] items-center justify-center flex justify-self-start">
             <div className="flex flex-col lg:p-16 ps:p-5  absolute inset-0 justify-center">
               <div className="z-20 pb-8 justify-start flex w-full px-4">
-                <img src={ConstrainedBudget} alt="" className="scale-[1.2]" />
+                <img src={ConstrainedBudget} alt="" className="scale-[1.2]"  width="100" height="100" />
               </div>
               <h1 className="text-white z-20 fontweight_1 text-4xl pb-4 px-2">
                 Constrained Budget
@@ -45,7 +45,7 @@ function Scopes() {
                 give you a fixed cost and timeline.
               </p>
             </div>
-            <img src={budget1} alt="" className="w-full h-full object-cover" />
+            <img src={budget1} alt="" className="w-full h-full object-cover"  width="96" height="96" />
             <div className="absolute inset-0 bg-cyan-600/80"></div>
           </div>
           <div className="flex flex-col sm:px-8 px-0 py-4">
@@ -82,7 +82,7 @@ function Scopes() {
           <div className="relative w-full sm:w-11/12 h-[30rem] items-center justify-center flex justify-self-end">
             <div className="flex flex-col  lg:p-16 ps:p-5  justify-center absolute inset-0 ">
               <div className="z-20 pb-8  flex w-full">
-                <img src={EvolvingScope} alt="" className="scale-[1.2]" />
+                <img src={EvolvingScope} alt="" className="scale-[1.2]"  width="100" height="100" />
               </div>
               <h1 className="text-white z-20 fontweight_1 text-4xl pb-4 px-2">
                 Evolving Scope
@@ -92,7 +92,7 @@ function Scopes() {
                 dynamics throughout the development lifecycle.
               </p>
             </div>
-            <img src={budget2} alt="" className="w-full h-full object-cover" />
+            <img src={budget2} alt="" className="w-full h-full object-cover"  width="96" height="96" />
             <div className="absolute inset-0 bg-slate-800/80"></div>
           </div>
           <div className="flex flex-col sm:px-8 px-0 py-4">
@@ -160,7 +160,7 @@ function Scopes() {
           <div className="relative w-full sm:w-11/12 h-[30rem] items-center justify-center flex justify-self-end">
             <div className="flex flex-col p-16  justify-center absolute inset-0 ">
               <div className="z-20 pb-8 px-4 flex w-full">
-                <img src={EvolvingScope} alt="" className="scale-[1.2]" />
+                <img src={EvolvingScope} alt="" className="scale-[1.2]"  width="100" height="100" />
               </div>
               <h1 className="text-white z-20 fontweight_1 text-4xl pb-4 px-2">
                 Evolving Scope
@@ -170,7 +170,7 @@ function Scopes() {
                 dynamics throughout the development lifecycle.
               </p>
             </div>
-            <img src={budget2} alt="" className="w-full h-full object-cover" />
+            <img src={budget2} alt="" className="w-full h-full object-cover"  width="96" height="96" />
             <div className="absolute inset-0 bg-slate-800/80"></div>
           </div>
         </div>
@@ -178,7 +178,7 @@ function Scopes() {
           <div className="relative w-full sm:w-11/12 h-[30rem] items-center justify-center flex justify-self-start">
             <div className="flex flex-col lg:p-16 ps:p-5  justify-center absolute inset-0">
               <div className="z-20 pb-8 px-4  flex w-full">
-                <img src={UnclearRequirements} alt="" className="scale-[1.2]" />
+                <img src={UnclearRequirements} alt="" className="scale-[1.2]"  width="100" height="100" />
               </div>
               <h1 className="text-white z-20 px-2 fontweight_1 text-4xl pb-4">
                 Unclear Requirements
@@ -188,7 +188,7 @@ function Scopes() {
                 challenges in defining clear development objectives.
               </p>
             </div>
-            <img src={budget3} alt="" className="w-full h-full object-cover" />
+            <img src={budget3} alt="" className="w-full h-full object-cover"  width="96" height="96" />
             <div className="absolute inset-0 bg-teal-700/80"></div>
           </div>
           <div className="flex flex-col sm:px-8 px-0 py-4">

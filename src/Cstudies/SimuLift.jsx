@@ -23,8 +23,8 @@ function SimuLift() {
             methods from ESP design to PCP and Hydraulic Rod pump systems.
           </p>
           <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
-            <img src={simulift1} alt="SimuLIFT Tool" className="w-full h-full object-fit rounded-lg" />
-            <img src={simulift2} alt="SimuLIFT Dashboard" className="w-full h-full object-fit rounded-lg" />
+            <img src={simulift1} alt="SimuLIFT Tool" className="w-full h-full object-fit rounded-lg"  width="380" height="264" />
+            <img src={simulift2} alt="SimuLIFT Dashboard" className="w-full h-full object-fit rounded-lg"  width="447" height="254" />
           </div>
         </div>
         <div className="w-full pb-6">

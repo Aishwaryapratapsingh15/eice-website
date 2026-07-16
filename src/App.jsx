@@ -80,7 +80,7 @@ const NavLayout = ({ children }) => {
         <nav className="overflow-visible fixed w-full top-0 left-0 z-30 shadow-md shadow-blackk/20 font-manrope bg-white font-semibold 2xl:block xl:block hidden">
           <div className="flex max-w-7xl mx-auto items-center text-lg py-3">
             <div className="cursor-pointer px-4 flex-1">
-              <Link href="/"><img src={logo} alt="EICE Technology" className="h-8 w-auto" /></Link>
+              <Link href="/"><img src={logo} alt="EICE Technology" className="h-8 w-auto"  width="80" height="28" /></Link>
             </div>
             <div className="flex items-center justify-center flex-1 mt-2">
               <Tabs />
@@ -258,7 +258,7 @@ const _FS  = "https://d3r43jacxrwsrp.cloudfront.net/flagship-services";
 
 const SvcNavIcon = ({ src }) => (
   <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg flex-shrink-0 p-2 flex items-center justify-center">
-    {src ? <img src={src} alt="" className="w-full h-full object-contain" /> : null}
+    {src ? <img src={src} alt="" className="w-full h-full object-contain"  width="40" height="40" /> : null}
   </div>
 );
 
@@ -410,7 +410,7 @@ const OurProducts = ({ handleSetSelected = () => {} }) => (
               { href: "/products/eice-ops",   icon: eiceopsIcon,      name: "EICEOps",        desc: "Help Desk Management" },
             ].map(({ href, icon, name, desc }) => (
               <Link key={href} href={href} onClick={() => handleSetSelected(null)} className="flex items-start gap-3 group">
-                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} alt="" className="w-full h-full object-contain" /></div>
+                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} alt="" className="w-full h-full object-contain"  width="40" height="40" /></div>
                 <div><p className="font-semibold group-hover:text-bloo">{name}</p><p className="text-xs text-gray-500">{desc}</p></div>
               </Link>
             ))}
@@ -425,7 +425,7 @@ const OurProducts = ({ handleSetSelected = () => {} }) => (
               { href: "/products/infrasight", icon: infrasightIcon, name: "InfraSight", desc: "Infra monitoring" },
             ].map(({ href, icon, name, desc }) => (
               <Link key={href} href={href} onClick={() => handleSetSelected(null)} className="flex items-start gap-3 group">
-                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} alt="" className="w-full h-full object-contain" /></div>
+                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} alt="" className="w-full h-full object-contain"  width="40" height="40" /></div>
                 <div><p className="font-semibold group-hover:text-bloo">{name}</p><p className="text-xs text-gray-500">{desc}</p></div>
               </Link>
             ))}
@@ -442,7 +442,7 @@ const OurProducts = ({ handleSetSelected = () => {} }) => (
               { href: "/products/eice-voice",  icon: eicevoiceIcon,  name: "EICE Voice",    desc: "Voice-Powered Order Management" },
             ].map(({ href, icon, name, desc }) => (
               <Link key={href} href={href} onClick={() => handleSetSelected(null)} className="flex items-start gap-3 group">
-                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} alt="" className="w-full h-full object-contain" /></div>
+                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} alt="" className="w-full h-full object-contain"  width="40" height="40" /></div>
                 <div><p className="font-semibold group-hover:text-bloo">{name}</p><p className="text-xs text-gray-500">{desc}</p></div>
               </Link>
             ))}

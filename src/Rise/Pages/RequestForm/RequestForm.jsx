@@ -288,9 +288,21 @@ const images = document.images;
     };
 
     const handleBlur = (e) => {
-        const { name } = e.target;
-        if (name !== "address" && name !== "message") return;
-        setWarnings((prev) => ({ ...prev, ...computeWarnings() }));
+        const { name, value } = e.target;
+        if (validators[name]) {
+            const msg = validators[name](String(value ?? ""));
+            setErrors((prev) => ({ ...prev, [name]: msg }));
+        }
+        if (name === "address" || name === "message") {
+            setWarnings((prev) => ({ ...prev, ...computeWarnings() }));
+        }
+    };
+
+    const validateField = (name, value) => {
+        if (validators[name]) {
+            const msg = validators[name](String(value ?? ""));
+            setErrors((prev) => ({ ...prev, [name]: msg }));
+        }
     };
 
     const handleCountrySelectChange = (selectedOption) => {
@@ -545,7 +557,7 @@ const handleSubmit = async (e) => {
             heading: "Transformative Technology Partner !",
             para: "The Enterprise Suite has streamlined our operations like never before. From payroll management to inventory tracking, every module is perfectly tailored to our needs. The support team is outstanding and always ready to help. Highly recommended!",
             key: 1
-        },
+        , __w: 208, __h: 208},
         {
             img: pd,
             client: "Priya Desai",
@@ -554,7 +566,7 @@ const handleSubmit = async (e) => {
             heading: "Exceptional Efficiency and Customization!",
             para: "The POS Suite has revolutionized our customer experience. The integration with accounts and finance has made tracking and reporting seamless. It's an invaluable tool for any growing business.",
             key: 2
-        },
+        , __w: 208, __h: 208},
         {
             img: ak,
             client: "Amit Khanna",
@@ -563,7 +575,7 @@ const handleSubmit = async (e) => {
             heading: "Impressive All-In-One Solution !",
             para: "Switching to the Club Suite was the best decision for our membership-driven business. The member portal and room service modules work flawlessly, saving us countless hours each week. We couldn't be happier!",
             key: 3
-        }
+        , __w: 208, __h: 208}
     ];
 
 
@@ -809,7 +821,7 @@ const handleSelectChange2 = (selectedOption) => {
                         <div className={`${styles.inputContainer}`}>
                             <label htmlFor="rf-name">Name*</label>
                             <div>
-                                <input id="rf-name" aria-invalid={!!errors.name} aria-describedby={errors.name ? "rf-name-error" : undefined} placeholder="Enter your name" autoComplete="off" required className={`${styles.line1Input}`} type="text" name="name" value={formData.name} onChange={handleChange} />
+                                <input id="rf-name" aria-invalid={!!errors.name} aria-describedby={errors.name ? "rf-name-error" : undefined} placeholder="Enter your name" autoComplete="off" required className={`${styles.line1Input}`} type="text" name="name" value={formData.name} onChange={handleChange} onBlur={handleBlur} />
                                 {errors.name && <span id="rf-name-error" className={styles.fieldError}>{errors.name}</span>}
                             </div>
                         </div>
@@ -817,7 +829,7 @@ const handleSelectChange2 = (selectedOption) => {
                         <div className={`${styles.inputContainer}`}>
                             <label htmlFor="rf-companyName">Company Name*</label>
                             <div>
-                                <input id="rf-companyName" aria-invalid={!!errors.companyName} aria-describedby={errors.companyName ? "rf-companyName-error" : undefined} placeholder="Enter your company name" autoComplete="off" required className={`${styles.line1Input}`} type="text" name="companyName" value={formData.companyName} onChange={handleChange} />
+                                <input id="rf-companyName" aria-invalid={!!errors.companyName} aria-describedby={errors.companyName ? "rf-companyName-error" : undefined} placeholder="Enter your company name" autoComplete="off" required className={`${styles.line1Input}`} type="text" name="companyName" value={formData.companyName} onChange={handleChange} onBlur={handleBlur} />
                                 {errors.companyName && <span id="rf-companyName-error" className={styles.fieldError}>{errors.companyName}</span>}
                             </div>
                         </div>
@@ -827,7 +839,7 @@ const handleSelectChange2 = (selectedOption) => {
                         <div className={`${styles.inputContainer}`}>
                             <label htmlFor="rf-role">Role/Designation (optional)</label>
                             <div>
-                                <input id="rf-role" aria-invalid={!!errors.role} aria-describedby={errors.role ? "rf-role-error" : undefined} autoComplete="off" placeholder="Enter Your Role ( e.g Manager , Director)" className={`${styles.roleInput}`} type="text" name="role" value={formData.role} onChange={handleChange} />
+                                <input id="rf-role" aria-invalid={!!errors.role} aria-describedby={errors.role ? "rf-role-error" : undefined} autoComplete="off" placeholder="Enter Your Role ( e.g Manager , Director)" className={`${styles.roleInput}`} type="text" name="role" value={formData.role} onChange={handleChange} onBlur={handleBlur} />
                                 {errors.role && <span id="rf-role-error" className={styles.fieldError}>{errors.role}</span>}
                             </div>
                         </div>
@@ -837,7 +849,7 @@ const handleSelectChange2 = (selectedOption) => {
                             <div className={`${styles.inputContainer}`}>
                                 <label htmlFor="rf-email">Email ID*</label>
                                 <div>
-                                    <input id="rf-email" aria-invalid={!!errors.email} aria-describedby={errors.email ? "rf-email-error" : undefined} placeholder="Enter Your Bussiness Email Address" autoComplete="off" required className={`${styles.line2Input}`} type="email" name="email" value={formData.email} onChange={handleChange} />
+                                    <input id="rf-email" aria-invalid={!!errors.email} aria-describedby={errors.email ? "rf-email-error" : undefined} placeholder="Enter Your Bussiness Email Address" autoComplete="off" required className={`${styles.line2Input}`} type="email" name="email" value={formData.email} onChange={handleChange} onBlur={handleBlur} />
                                     {errors.email && <span id="rf-email-error" className={styles.fieldError}>{errors.email}</span>}
                                 </div>
                             </div>
@@ -846,11 +858,11 @@ const handleSelectChange2 = (selectedOption) => {
                                 <label htmlFor="rf-phone">Phone Number*</label>
                                 <div className={`${styles.phoneNoAndCodeBox}`}>
                                     <div >
-                                        <input id="rf-phoneCode" aria-label="Phone country code" aria-invalid={!!errors.phoneCode} aria-describedby={errors.phoneCode ? "rf-phoneCode-error" : undefined} placeholder="Code" autoComplete="off" required className={`${styles.phoneCode}`} type="tel" name="phoneCode" value={formData.phoneCode} onChange={handleChange} maxLength={4} pattern="[0-9]{1,4}" />
+                                        <input id="rf-phoneCode" aria-label="Phone country code" aria-invalid={!!errors.phoneCode} aria-describedby={errors.phoneCode ? "rf-phoneCode-error" : undefined} placeholder="Code" autoComplete="off" required className={`${styles.phoneCode}`} type="tel" name="phoneCode" value={formData.phoneCode} onChange={handleChange} onBlur={handleBlur} maxLength={4} pattern="[0-9]{1,4}" />
                                         {errors.phoneCode && <span id="rf-phoneCode-error" className={styles.fieldError}>{errors.phoneCode}</span>}
                                     </div>
                                     <div className={`${styles.phoneNoInputBox}`}>
-                                        <input id="rf-phone" aria-invalid={!!errors.phone} aria-describedby={errors.phone ? "rf-phone-error" : undefined} placeholder="Enter Your Phone No" autoComplete="off" required className={`${styles.phoneNo}`} type="tel" name="phone" value={formData.phone} onChange={handleChange} pattern="[0-9]{10}" />
+                                        <input id="rf-phone" aria-invalid={!!errors.phone} aria-describedby={errors.phone ? "rf-phone-error" : undefined} placeholder="Enter Your Phone No" autoComplete="off" required className={`${styles.phoneNo}`} type="tel" name="phone" value={formData.phone} onChange={handleChange} onBlur={handleBlur} pattern="[0-9]{10}" />
                                     </div>
                                 </div>
                                 {errors.phone && <span id="rf-phone-error" className={styles.fieldError}>{errors.phone}</span>}
@@ -867,6 +879,7 @@ const handleSelectChange2 = (selectedOption) => {
                                       options={options}
                                       value={options.find(option => option.value === formData.requirement)}
                                       onChange={handleSelectChange2}
+                                      onBlur={() => validateField('requirement', formData.requirement)}
                                       className={styles.requirementInput}
                                       placeholder="-- Please Select --"
                                       styles={customStyles2}
@@ -890,6 +903,7 @@ const handleSelectChange2 = (selectedOption) => {
                                     getOptionValue={(o) => o.iso2}
                                     value={COUNTRIES.find((c) => c.name === formData.country) || null}
                                     onChange={handleCountrySelectChange}
+                                    onBlur={() => validateField('country', formData.country)}
                                     className={styles.countrySelectInput}
                                     placeholder="Select your country"
                                     styles={customStyles2}
@@ -923,6 +937,7 @@ const handleSelectChange2 = (selectedOption) => {
                                     options={options}
                                     value={options.find(option => option.value === formData.requirement)}
                                     onChange={handleSelectChange2}
+                                    onBlur={() => validateField('requirement', formData.requirement)}
                                     className={styles.requirementInput}
                                     placeholder="-- Please Select --"
                                     styles={customStyles2}
@@ -935,7 +950,7 @@ const handleSelectChange2 = (selectedOption) => {
                               <div className={styles.requirementRowItem}>
                                   <label htmlFor="rf-email">Email ID*</label>
                                   <div>
-                                      <input id="rf-email" aria-invalid={!!errors.email} aria-describedby={errors.email ? "rf-email-error" : undefined} placeholder="Enter Your Bussiness Email Address" autoComplete="off" required className={styles.requirementRowInput} type="email" name="email" value={formData.email} onChange={handleChange} />
+                                      <input id="rf-email" aria-invalid={!!errors.email} aria-describedby={errors.email ? "rf-email-error" : undefined} placeholder="Enter Your Bussiness Email Address" autoComplete="off" required className={styles.requirementRowInput} type="email" name="email" value={formData.email} onChange={handleChange} onBlur={handleBlur} />
                                       {errors.email && <span id="rf-email-error" className={styles.fieldError}>{errors.email}</span>}
                                   </div>
                               </div>
@@ -944,11 +959,11 @@ const handleSelectChange2 = (selectedOption) => {
                                   <label htmlFor="rf-phone">Phone Number*</label>
                                   <div className={`${styles.phoneNoAndCodeBox}`}>
                                       <div>
-                                          <input id="rf-phoneCode" aria-label="Phone country code" aria-invalid={!!errors.phoneCode} aria-describedby={errors.phoneCode ? "rf-phoneCode-error" : undefined} placeholder="Code" autoComplete="off" required className={`${styles.phoneCode}`} type="tel" name="phoneCode" value={formData.phoneCode} onChange={handleChange} maxLength={4} pattern="[0-9]{1,4}" />
+                                          <input id="rf-phoneCode" aria-label="Phone country code" aria-invalid={!!errors.phoneCode} aria-describedby={errors.phoneCode ? "rf-phoneCode-error" : undefined} placeholder="Code" autoComplete="off" required className={`${styles.phoneCode}`} type="tel" name="phoneCode" value={formData.phoneCode} onChange={handleChange} onBlur={handleBlur} maxLength={4} pattern="[0-9]{1,4}" />
                                           {errors.phoneCode && <span id="rf-phoneCode-error" className={styles.fieldError}>{errors.phoneCode}</span>}
                                       </div>
                                       <div className={`${styles.phoneNoInputBox}`}>
-                                          <input id="rf-phone" aria-invalid={!!errors.phone} aria-describedby={errors.phone ? "rf-phone-error" : undefined} placeholder="Enter Your Phone No" autoComplete="off" required className={styles.phoneNo} type="tel" name="phone" value={formData.phone} onChange={handleChange} pattern="[0-9]{10}" />
+                                          <input id="rf-phone" aria-invalid={!!errors.phone} aria-describedby={errors.phone ? "rf-phone-error" : undefined} placeholder="Enter Your Phone No" autoComplete="off" required className={styles.phoneNo} type="tel" name="phone" value={formData.phone} onChange={handleChange} onBlur={handleBlur} pattern="[0-9]{10}" />
                                       </div>
                                   </div>
                                   {errors.phone && <span id="rf-phone-error" className={styles.fieldError}>{errors.phone}</span>}
@@ -1106,7 +1121,7 @@ const handleSelectChange2 = (selectedOption) => {
                                         <figure >
 
                                             <div style={{ textAlign: "center" }}  >
-                                                <img style={{ width: "28%" }} src={item.img?.src || item.img} alt={item.name || ""} />
+                                                <img style={{ width: "28%" }} src={item.img?.src || item.img} alt={item.name || ""}  width={item.__w} height={item.__h} />
                                             </div>
 
                                             <figcaption style={{ textAlign: "center", fontSize: "13px" }} > <span >--{item.client} ,</span> <span style={{ fontWeight: "bold" }}>{item.position}</span> <span>{item.company}</span></figcaption>
@@ -1251,7 +1266,7 @@ const handleSelectChange2 = (selectedOption) => {
   }}>
 
                 <div className={`${styles.LaptopImg}`}>
-                    <img src={productsIcon} alt="footer" />
+                    <img src={productsIcon} alt="footer"  width="2167" height="564" />
                 </div>
             </section>
 

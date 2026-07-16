@@ -137,22 +137,22 @@ const badges = [
     title: "CMMI Level 3",
     desc: "Capability Maturity\nModel integration",
     icon: cmmiImg,
-  },
+  __w: 319, __h: 98},
   {
     title: "ISO 9001",
     desc: "Quality Management\nSytem",
     icon: isoImg,
-  },
+  __w: 117, __h: 118},
   {
     title: "ISO 27001",
     desc: "Information Security\nManagement",
     icon: ismsImg,
-  },
+  __w: 128, __h: 173},
   {
     title: "ISO/IEC 20000",
     desc: "IT Service\nManagement",
     icon: iecImg,
-  },
+  __w: 143, __h: 143},
 ];
 
 export default function EiceAgent() {
@@ -208,7 +208,7 @@ export default function EiceAgent() {
               src={askLogoIcon}
               alt="knowledge"
               className=" object-contain"
-            />
+             width="107" height="20" />
           </div>
           <p className="text-gray-500 text-[12px] !text-center leading-relaxed max-w-[420px] mx-auto">
            The Knowledge Agent.
@@ -220,7 +220,7 @@ export default function EiceAgent() {
               src={Frame1Icon}
               alt="knowledge"
               className="w-full max-w-lg h-[80px] sm:h-[100px] object-contain"
-            />
+             width="653" height="416" />
           </div>
 
           {/* TEXT */}
@@ -239,7 +239,7 @@ export default function EiceAgent() {
               src={eiceAimIcon}
               alt="action"
               className="object-contain"
-            />
+             width="122" height="22" />
           </div>
 
           <p className="text-gray-500 text-[12px] !text-center leading-relaxed max-w-[420px] mx-auto">
@@ -252,7 +252,7 @@ export default function EiceAgent() {
               src={Frame2Icon}
               alt="action"
               className="w-full max-w-lg h-[80px] sm:h-[100px] object-contain"
-            />
+             width="652" height="415" />
           </div>
 
           {/* TEXT */}
@@ -270,7 +270,7 @@ export default function EiceAgent() {
     <button onClick={() => navigate("/products/eicerise/form")}
     className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-[18px]">
             Request a Demo
-              <img src={arrowIcon} alt="arrow"/>
+              <img src={arrowIcon} alt="arrow" width="24" height="24" />
     
           </button>
           </section>
@@ -283,7 +283,7 @@ export default function EiceAgent() {
 
           {/* ITEM 1 */}
           <div className="flex items-center gap-3">
-            <img src={checkIcon} alt="check" className="w-5 h-5" />
+            <img src={checkIcon} alt="check" className="w-5 h-5"  width="20" height="20" />
             <span className="text-[16px] font-medium text-[#2f3b4a]">
               AI-driven ecosystem
             </span>
@@ -291,7 +291,7 @@ export default function EiceAgent() {
 
           {/* ITEM 2 */}
           <div className="flex items-center gap-3">
-            <img src={checkIcon} alt="check" className="w-5 h-5" />
+            <img src={checkIcon} alt="check" className="w-5 h-5"  width="20" height="20" />
             <span className="text-[16px] font-medium text-[#2f3b4a]">
               Action + Knowledge agents
             </span>
@@ -299,7 +299,7 @@ export default function EiceAgent() {
 
           {/* ITEM 3 */}
           <div className="flex items-center gap-3">
-            <img src={checkIcon} alt="check" className="w-5 h-5" />
+            <img src={checkIcon} alt="check" className="w-5 h-5"  width="20" height="20" />
             <span className="text-[16px] font-medium text-[#2f3b4a]">
               Built for enterprise-scale
             </span>
@@ -367,7 +367,7 @@ data-driven workflows.
               {/* ITEM */}
               <div className="flex items-start gap-4">
                 <div className="rounded-lg flex items-center">
-                  <img src={aiIcon} alt="icon"/>
+                  <img src={aiIcon} alt="icon" width="38" height="38" />
                 </div>
                 <div>
                   <h4 className="font-small text-[#334155] text-[17px]">
@@ -381,7 +381,7 @@ data-driven workflows.
 
               <div className="flex items-start gap-4">
                 <div className="rounded-lg flex items-center">
-                  <img src={scmIcon} alt="icon"/>
+                  <img src={scmIcon} alt="icon" width="38" height="38" />
                 </div>
                 <div>
                   <h4 className="font-small text-[#334155] text-[17px]">
@@ -395,7 +395,7 @@ data-driven workflows.
 
               <div className="flex items-start gap-4">
                 <div className="rounded-lg flex items-center">
-                  <img src={dfIcon} alt="icon"/>
+                  <img src={dfIcon} alt="icon" width="38" height="38" />
                 </div>
                 <div>
                   <h4 className="font-small text-[#334155] text-[17px]">
@@ -409,7 +409,7 @@ data-driven workflows.
 
               <div className="flex items-start gap-4">
                 <div className="rounded-lg flex items-center">
-                  <img src={aeIcon} alt="icon"/>
+                  <img src={aeIcon} alt="icon" width="38" height="38" />
                 </div>
                 <div>
                   <h4 className="font-small text-[#334155] text-[17px]">
@@ -434,11 +434,11 @@ data-driven workflows.
                 src={actionIcon}
                 alt="ai"
                 className="w-[420px] h-[360px] object-cover"
-              /> */}
+               width="420" height="360" /> */}
               <img
   src={actionIcon}
   className="w-full max-w-[420px] h-auto object-cover"
-/>
+ width="1141" height="1086" />
             </div>
 
             {/* STATS */}
@@ -507,11 +507,11 @@ data-driven workflows.
               src={knowledgeIcon}
               alt="knowledge"
               className="w-[440px] h-[320px] object-cover"
-            /> */}
+             width="440" height="320" /> */}
             <img
   src={knowledgeIcon}
   className="w-full max-w-[440px] h-auto object-cover"
-/>
+ width="1141" height="958" />
           </div>
 
           {/* STAT */}
@@ -545,7 +545,7 @@ data-driven workflows.
             {/* ITEM */}
             {/* <div className="flex items-start gap-4">
               <div className="rounded-lg flex items-center">
-                  <img src={reductionIcon} alt="icon"/>
+                  <img src={reductionIcon} alt="icon" width="38" height="38" />
                 </div>
               <div>
                 <h4 className="text-[17px] font-medium text-[#334155]">
@@ -558,7 +558,7 @@ data-driven workflows.
             </div> */}
               <div className="flex items-start gap-4">
   <div className="flex-shrink-0">
-    <img src={reductionIcon} alt="icon" />
+    <img src={reductionIcon} alt="icon"  width="38" height="38" />
   </div>
   <div>
     <h4 className="text-base sm:text-[17px] font-medium text-[#334155]">
@@ -571,7 +571,7 @@ data-driven workflows.
 </div>
             <div className="flex items-start gap-4">
               <div className="rounded-lg flex items-center">
-                  <img src={scmIcon} alt="icon"/>
+                  <img src={scmIcon} alt="icon" width="38" height="38" />
                 </div>
               <div>
                 <h4 className="text-[17px] font-medium text-[#334155]">
@@ -585,7 +585,7 @@ data-driven workflows.
 
             <div className="flex items-start gap-4">
               <div className="rounded-lg flex items-center">
-                  <img src={semanticIcon} alt="icon"/>
+                  <img src={semanticIcon} alt="icon" width="38" height="38" />
                 </div>
               <div>
                 <h4 className="text-[17px] font-medium text-[#334155]">
@@ -599,7 +599,7 @@ data-driven workflows.
 
             <div className="flex items-start gap-4">
               <div className="rounded-lg flex items-center">
-                  <img src={racIcon} alt="icon"/>
+                  <img src={racIcon} alt="icon" width="38" height="38" />
                 </div>
               <div>
                 <h4 className="text-[17px] font-medium text-[#334155]">
@@ -650,7 +650,7 @@ data-driven workflows.
 
         {/* ICON */}
         <div className="w-12 h-12 flex items-center justify-center text-white rounded-lg text-xl">
-          <img src={item.icon} alt="icon"/>
+          <img src={item.icon} alt="icon" width="48" height="48" />
         </div>
 
         {/* TITLE */}
@@ -689,7 +689,7 @@ data-driven workflows.
 
         {/* SVG */}
         <div className="rounded-lg flex items-start">
-          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain"  width="56" height="56" />
         </div>
 
         {/* TITLE */}
@@ -731,7 +731,7 @@ data-driven workflows.
       {/* Header */}
       <div className="flex items-center gap-4 mb-5">
         <div className="rounded-lg">
-          <img src={unifiedEcosystemIcon} alt="icon" className="w-[70px] h-[70px]"/>
+          <img src={unifiedEcosystemIcon} alt="icon" className="w-[70px] h-[70px]" width="70" height="70" />
         </div>
         <h3 className="text-2xl font-bold text-[#334155]">
           Unified AI Ecosystem
@@ -756,7 +756,7 @@ enterprise intelligence.
       {/* Header */}
       <div className="flex items-center gap-4 mb-5">
         <div className="rounded-lg">
-          <img src={adaptiveIntelligenceIcon} alt="icon" className="w-[70px] h-[70px]"/>
+          <img src={adaptiveIntelligenceIcon} alt="icon" className="w-[70px] h-[70px]" width="70" height="70" />
         </div>
         <h3 className="text-2xl font-bold text-[#334155]">
           Adaptive Intelligence
@@ -776,7 +776,7 @@ enterprise intelligence.
       {/* Header */}
       <div className="flex items-center gap-4 mb-5">
         <div className="rounded-lg">
-          <img src={enterpriseRIcon} alt="icon" className="w-[70px] h-[70px]"/>
+          <img src={enterpriseRIcon} alt="icon" className="w-[70px] h-[70px]" width="70" height="70" />
         </div>
         <h3 className="text-2xl font-bold text-[#334155]">
           Enterprise Reliability
@@ -800,7 +800,7 @@ expert team.
       {/* Header */}
       <div className="flex items-center gap-4 mb-5">
         <div className="rounded-lg">
-          <img src={isoIcon} alt="icon" className="w-[70px] h-[70px]"/>
+          <img src={isoIcon} alt="icon" className="w-[70px] h-[70px]" width="70" height="70" />
         </div>
         <h3 className="text-2xl font-bold text-[#334155]">
           ISO-Compliant
@@ -850,7 +850,7 @@ is our foundation.
               <div
                 className={`rounded-lg flex items-start justify-start text-white text-lg mb-4`}
               >
-                  <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" />
+                  <img src={item.icon} alt="icon" className="w-14 h-14 object-contain"  width="56" height="56" />
               </div>
 
               {/* Value */}
@@ -879,7 +879,7 @@ is our foundation.
 
         {/* Top Tag */}
         <div className="inline-flex border-2 border-[#228441] items-center gap-2 bg-[#F0FDF4] text-[#2e7d32] px-4 py-2 rounded-full text-sm font-medium mb-2">
-          <img src={shieldIcon} alt="icon" className="w-4 h-4 object-contain" /> Enterprise-Grade Security
+          <img src={shieldIcon} alt="icon" className="w-4 h-4 object-contain"  width="16" height="16" /> Enterprise-Grade Security
         </div>
 
         {/* Heading */}
@@ -917,7 +917,7 @@ is our foundation.
                   src={item.icon}
                   alt="badge"
                   className="h-16 object-contain"
-                />
+                 width={item.__w} height={item.__h} />
               </div>
 
             </div>
@@ -951,7 +951,7 @@ is our foundation.
            <button onClick={() => navigate("/products/eicerise/form")} 
            className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto hover:bg-blue-800 transition text-[18px]">
                Request a Demo
-                 <img src={arrowIcon} alt="arrow"/>
+                 <img src={arrowIcon} alt="arrow" width="24" height="24" />
        
              </button>
   

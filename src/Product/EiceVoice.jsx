@@ -145,7 +145,7 @@ export default function EiceVoice() {
           {/* ICON */}
           <div className="mb-6 flex items-center justify-center">
             <img src={heroImage} alt="product"
-                    className="mx-auto sm:mb-6 md:w-96 lg:w-[600px]"/>
+                    className="mx-auto sm:mb-6 md:w-96 lg:w-[600px]" width="2639" height="995" />
           </div>
 
                   {/* TAG */}
@@ -154,7 +154,7 @@ export default function EiceVoice() {
             src={speakIcon} 
             alt="icon" 
             className="w-5 h-5 rounded-full object-contain"
-          />
+           width="20" height="20" />
           <span className = "text-[#334155]">Voice-First AI for Hospitality</span>
         </div>
 
@@ -177,7 +177,7 @@ export default function EiceVoice() {
               className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 text-[18px] hover:bg-blue-800 transition"
             >
               Request a Demo
-              <img src={arrowIcon} alt="arrow" />
+              <img src={arrowIcon} alt="arrow"  width="24" height="24" />
             </button>
           </div>
         </div>
@@ -213,7 +213,7 @@ export default function EiceVoice() {
         <div className="flex items-center gap-3">
           {/* ICON PLACEHOLDER */}
           <div className="w-6 h-6 rounded-full flex items-center justify-center text-white text-sm">
-            <img src={tickIcon}/>
+            <img src={tickIcon} width="24" height="24" />
           </div>
           <p className="space-y-3 text-[#334155] font-semibold">
             Voice-first, hands-free order placement
@@ -222,7 +222,7 @@ export default function EiceVoice() {
 
         <div className="flex items-center gap-3">
           <div className="w-6 h-6 rounded-full flex items-center justify-center text-white text-sm">
-            <img src={tickIcon}/>
+            <img src={tickIcon} width="24" height="24" />
           </div>
           <p className="space-y-3 text-[#334155] font-semibold">
             Integrates with existing POS systems
@@ -231,7 +231,7 @@ export default function EiceVoice() {
 
         <div className="flex items-center gap-3">
           <div className="w-6 h-6 rounded-full flex items-center justify-center text-white text-sm">
-            <img src={tickIcon}/>
+            <img src={tickIcon} width="24" height="24" />
           </div>
           <p className="space-y-3 text-[#334155] font-semibold">
             Custom NLU trained for hospitality vocabulary
@@ -240,7 +240,7 @@ export default function EiceVoice() {
 
         <div className="flex items-center gap-3">
           <div className="w-6 h-6 rounded-full flex items-center justify-center text-white text-sm">
-            <img src={tickIcon}/>
+            <img src={tickIcon} width="24" height="24" />
           </div>
           <p className="space-y-3 text-[#334155] font-semibold">
             Real-time speech-to-text with order confirmation
@@ -252,7 +252,7 @@ export default function EiceVoice() {
 
     {/* RIGHT */}
     <div className="w-full h-[400px] bg-white rounded-xl flex items-center justify-center pt-10px">
-      <img src={eiceVoiceIcon} className = "w-full h-[400px]"/>
+      <img src={eiceVoiceIcon} className = "w-full h-[400px]" width="1295" height="1237" />
     </div>
 
   </div>
@@ -274,7 +274,7 @@ export default function EiceVoice() {
             <div key={i} className="bg-white rounded-xl  border-2 border-gray-200 shadow-sm hover:shadow-md transition p-4 sm:p-6 flex flex-col items-start text-start gap-4">
                   {/* SVG */}
         <div className="rounded-lg flex items-start">
-          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain"  width="56" height="56" />
         </div>
               <h3 className="font-bold text-[24px] sm:text-2xl text-[#334155] whitespace-pre-line">{item.title}</h3>
               <p className="text-[#64748B] text-[16px] sm:text-lg leading-relaxed">{item.desc}</p>
@@ -297,7 +297,7 @@ export default function EiceVoice() {
           {capabilities.map((item, i) => (
             <div key={i} className="border rounded-xl p-4 sm:p-6">
                <div className="rounded-lg flex items-start pb-5">
-          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain"  width="56" height="56" />
         </div>
               <h3 className="font-bold text-[24px] sm:text-2xl text-[#334155] whitespace-pre-line">{item.title}</h3>
               <p className="text-[#64748B] text-[16px] sm:text-lg leading-relaxed">{item.desc}</p>
@@ -334,7 +334,7 @@ export default function EiceVoice() {
       {/* Mic Circle */}
       {/* <div className="w-50 h-24 rounded-full bg-cyan-400/20 flex items-center justify-center"> */}
         {/* <div className="w-12 h-12 rounded-full bg-cyan-400 flex items-center justify-center"> */}
-          <img src={BannerIcon} className="w-auto h-70"/>
+          <img src={BannerIcon} className="w-auto h-70" width="48" height="48" />
         {/* </div> */}
       {/* </div> */}
 
@@ -374,22 +374,22 @@ export default function EiceVoice() {
 
             {i === 0 && (
               // MIC ICON
-              <img src={speakIcon} className = "w-12 h-12 rounded-full object-cover"/>
+              <img src={speakIcon} className = "w-12 h-12 rounded-full object-cover" width="48" height="48" />
             )}
 
             {i === 1 && (
               // BRAIN / AI ICON
-              <img src={understandIcon} className = "w-12 h-12 rounded-full object-cover"/>
+              <img src={understandIcon} className = "w-12 h-12 rounded-full object-cover" width="48" height="48" />
             )}
 
             {i === 2 && (
               // CHECK ICON
-              <img src={confirmIcon} className = "w-12 h-12 rounded-full object-cover"/>
+              <img src={confirmIcon} className = "w-12 h-12 rounded-full object-cover" width="48" height="48" />
             )}
 
             {i === 3 && (
               // DISPATCH ICON
-             <img src={dispatchIcon} className = "w-12 h-12 rounded-full object-cover"/>
+             <img src={dispatchIcon} className = "w-12 h-12 rounded-full object-cover" width="48" height="48" />
             )}
 
           </div>
@@ -429,7 +429,7 @@ export default function EiceVoice() {
         
         {/* ICON (LEFT) */}
         <div className="w-14 h-14 rounded-full flex items-center justify-center shrink-0">
-          <img src={tickIcon}/>
+          <img src={tickIcon} width="56" height="56" />
         </div>
 
         {/* TEXT */}
@@ -466,7 +466,7 @@ export default function EiceVoice() {
 
         {/* ICON PLACEHOLDER */}
         <div className="w-14 h-14 mx-0 sm:mx-auto mb-4 rounded-xl flex items-center justify-center">
-         <img src={item.icon}/>
+         <img src={item.icon} width="56" height="56" />
         </div>
 
         {/* TAG */}
@@ -505,7 +505,7 @@ export default function EiceVoice() {
           className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto text-[18px]  mx-auto hover:bg-blue-800"
         >
           Request a Demo
-          <img src={arrowIcon} alt="arrow" />
+          <img src={arrowIcon} alt="arrow"  width="24" height="24" />
         </button>
       </section>
 

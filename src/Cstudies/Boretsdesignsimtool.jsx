@@ -23,8 +23,8 @@ function Boretsdesignsimtool() {
             capabilities.
           </p>
           <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
-            <img src={borets1} alt="BORETS Design Tool" className="w-full h-full object-fit rounded-lg" />
-            <img src={borets2} alt="BORETS Simulation Dashboard" className="w-full h-full object-fit rounded-lg" />
+            <img src={borets1} alt="BORETS Design Tool" className="w-full h-full object-fit rounded-lg"  width="341" height="341" />
+            <img src={borets2} alt="BORETS Simulation Dashboard" className="w-full h-full object-fit rounded-lg"  width="384" height="341" />
           </div>
         </div>
         <div className="w-full pb-6">

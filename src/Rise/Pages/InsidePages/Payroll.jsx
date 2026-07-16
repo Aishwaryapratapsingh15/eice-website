@@ -77,42 +77,42 @@ export default function Payroll() {
       desc: "Automates salary calculations, deductions, bonuses, and taxes, ensuring timely and accurate payroll processing every time.",
       img: app,
       width: "58px",
-    },
+    __w: 300, __h: 300},
     {
       key: 2,
       heading: "Employee Data Management",
       desc: "Centralized storage of employee records, including salary details, benefits, tax information, and working hours, ensuring easy access and data accuracy.",
       img: edm,
       width: "59px",
-    },
+    __w: 300, __h: 300},
     {
       key: 3,
       heading: "Customizable Pay Structures",
       desc: "Define multiple earnings & deduction pay types, to accommodate various employee compensation models.",
       img: cps,
       width: "54px",
-    },
+    __w: 300, __h: 300},
     {
       key: 4,
       heading: "Tax Compliance and Reporting",
       desc: "Automatically calculates taxes based on current laws, generates tax reports, and ensures compliance regulations.",
       img: tcr,
       width: "62px",
-    },
+    __w: 300, __h: 300},
     {
       key: 5,
       heading: "Leave and Attendance Management",
       desc: "Integrates with time tracking systems to manage employee leave, absences, and overtime, ensuring accurate payroll calculations.",
       img: lam,
       width: "71px",
-    },
+    __w: 300, __h: 300},
     {
       key: 6,
       heading: "Direct Deposit and Payment Processing",
       desc: "Enables direct deposit to employees' bank accounts, reducing manual payment efforts and improving payment accuracy.",
       img: ddpp,
       width: "63px",
-    },
+    __w: 300, __h: 300},
 
   ];
 
@@ -127,33 +127,33 @@ export default function Payroll() {
       heading: "Time Efficiency",
       desc: "Automates payroll tasks, reducing manual effort and the time spent on calculating, processing, and distributing payroll.",
       img: te,
-    },
+    __w: 1068, __h: 1017},
     {
       key: 2,
       heading: "Accurate Payroll Processing",
       desc: "Reduces errors by automating calculations and ensuring compliance with tax laws, minimizing the risk of overpayments, underpayments, or compliance issues.",
       img: appb,
 
-    },
+    __w: 1068, __h: 1017},
     {
       key: 3,
       heading: "Improved Compliance",
       desc: "Helps businesses stay up-to-date with changing tax regulations and labor laws, ensuring compliance and reducing legal risks.",
       img: ic,
-    },
+    __w: 1068, __h: 1017},
     {
       key: 4,
       heading: "Cost Savings",
       desc: "By automating payroll and reducing errors, businesses can save on administrative costs and avoid costly penalties for non-compliance.",
       img: cs,
-    },
+    __w: 1068, __h: 1017},
 
     {
       key: 5,
       heading: "Employee Satisfaction",
       desc: "Ensures timely and accurate payments, boosting employee trust and satisfaction.",
       img: es,
-    },
+    __w: 1068, __h: 1017},
 
 
 
@@ -231,7 +231,7 @@ export default function Payroll() {
             <div className={`${style.contentConatinerPhone}`}>
 
                 <div className={`${style.herosectionImgBoxPhone}`}>
-                    <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
+                    <img style={{ width: "100%" }} src={heroImg} alt={"room booking"}  width="872" height="504" />
                 </div>
 
                 <div className={`${style.headingBoxPhone} font4 `}>
@@ -287,7 +287,7 @@ export default function Payroll() {
 
           <div className={style.section2IconAndName}>
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={icon1} alt="" />
+              <img style={{ width: "100%" }} src={icon1} alt=""  width="200" height="200" />
             </div>
 
             <div className={`${style.iconName} `}>
@@ -302,7 +302,7 @@ export default function Payroll() {
           <div className={style.section2IconAndName}>
 
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={icon2} alt="" />
+              <img style={{ width: "100%" }} src={icon2} alt=""  width="200" height="200" />
             </div>
 
             <div className={`${style.iconName} `}>
@@ -320,7 +320,7 @@ export default function Payroll() {
           <div className={style.section2IconAndName}>
 
             <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={icon3} alt="" />
+              <img style={{ width: "100%" }} src={icon3} alt=""  width="200" height="200" />
             </div>
 
             <div className={`${style.iconName}`}>
@@ -354,7 +354,7 @@ export default function Payroll() {
 
             <div className={`${style.laptopImgSection3}`}>
               <div className={`${style.laptopImgBox}`} >
-                <img style={{ width: "100%" }} src={laptop} alt="" />
+                <img style={{ width: "100%" }} src={laptop} alt=""  width="1440" height="916" />
               </div>
             </div>
 
@@ -398,7 +398,7 @@ export default function Payroll() {
                 <div className={`${style.headingAndIconFeatures}`}>
 
                   <div style={{ width: item.width }}>
-                    <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                    <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
                   </div>
 
                   <div className={`${style.featureHeading}`}>
@@ -465,7 +465,7 @@ export default function Payroll() {
 
 
               <div style={{ width: "25%" }}>
-                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
               </div>
 
               <div className='GlobalBenefitTextBox' >
@@ -478,7 +478,7 @@ export default function Payroll() {
 
 
               <div style={{ width: "25%" }}>
-                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
               </div>
 
               <div className='GlobalBenefitTextBox' >
@@ -507,7 +507,7 @@ export default function Payroll() {
 
 
               <div className="GlobalBenefitImgBox" >
-                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
               </div>
 
               <div className='GlobalBenefitTextBox' >
@@ -520,7 +520,7 @@ export default function Payroll() {
 
 
               <div className="GlobalBenefitImgBox">
-                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
               </div>
 
               <div className='GlobalBenefitTextBox' >

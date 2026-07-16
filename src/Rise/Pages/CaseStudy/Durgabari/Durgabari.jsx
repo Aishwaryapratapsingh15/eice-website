@@ -64,21 +64,21 @@ export default function Durgabari() {
             icon: room,
             path: "/products/eicerise/roombooking",
             key: 1
-        },
+        , __w: 300, __h: 300},
 
         {
             serviceName: "DINING (POS)",
             icon: pos,
             path: "/products/eicerise/pos-dining",
             key: 2
-        },
+        , __w: 300, __h: 300},
 
         {
             serviceName: "BANQUET & BILLING",
             icon: banquet,
             path: "/products/eicerise/banquet-billing",
             key: 3
-        },
+        , __w: 300, __h: 300},
 
         {
 
@@ -86,14 +86,14 @@ export default function Durgabari() {
             icon: member,
             path: "/products/eicerise/member-suite",
             key: 4
-        },
+        , __w: 300, __h: 300},
 
         {
             serviceName: "ACCOUNT & FINANCE",
             icon: account,
             path: "/products/eicerise/account-finance",
             key: 5
-        },
+        , __w: 300, __h: 300},
 
     ]
 
@@ -203,7 +203,7 @@ export default function Durgabari() {
                 <div className={`${styles.imgAndDescBox} globalSectionSize `}>
 
                     <div className={`${styles.descImg}`}>
-                        <img style={{ width: "100%" }} src={laptop} alt="brief description" />
+                        <img style={{ width: "100%" }} src={laptop} alt="brief description"  width="803" height="511" />
                     </div>
 
                     <div className={`${styles.briefDescBox}`}>
@@ -229,7 +229,7 @@ export default function Durgabari() {
             {isPhone && (<section className={`${styles.briefDescSectionPhone}  `}>
 
                 <div className={`${styles.descImgPhone}`}>
-                    <img style={{ width: "100%" }} src={laptop} alt="brief description" />
+                    <img style={{ width: "100%" }} src={laptop} alt="brief description"  width="803" height="511" />
                 </div>
 
             </section>)}
@@ -267,7 +267,7 @@ export default function Durgabari() {
                                 <div className={`${styles.iconAndTextBox} `}>
 
                                     <div className={styles.imgBox} >
-                                        <img src={item.icon?.src || item.icon} alt={item.name || ""} />
+                                        <img src={item.icon?.src || item.icon} alt={item.name || ""}  width={item.__w} height={item.__h} />
                                     </div>
                                     <div>
                                         {item.key < 9 ? (<div className={`${styles.serviceName} font1`}>{item.serviceName}</div>) : (<div className={`${styles.serviceName2} font1`}>{item.serviceName}</div>)}

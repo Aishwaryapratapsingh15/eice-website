@@ -76,63 +76,63 @@ export default function Pos() {
             desc: "Enjoy an intuitive, tablet-based POS system that allows staff to quickly and efficiently manage orders, reducing wait times and improving service quality.",
             img: ufi,
             width: "54px",
-        },
+        __w: 200, __h: 200},
         {
             key: 2,
             heading: "Real-Time Menu Management",
             desc: "Easily update the menu with daily specials, seasonal items, and pricing changes. Reflect these updates instantly across all devices to ensure consistent information.",
             img: rtmm,
             width: "54px",
-        },
+        __w: 200, __h: 200},
         {
             key: 3,
             heading: "Order Customization",
             desc: "Enable guests to customize their orders with specific preferences, such as dietary restrictions or ingredient substitutions, ensuring a personalized dining experience.",
             img: oc,
             width: "54px",
-        },
+        __w: 200, __h: 200},
         {
             key: 4,
             heading: "Table Management",
             desc: "Visually manage table assignments, seating, and reservations with a dynamic table layout. Optimize table turnover and seating arrangements for better service flow.",
             img: tm,
             width: "54px",
-        },
+        __w: 200, __h: 200},
         {
             key: 5,
             heading: "Integrated Payment Solutions",
             desc: "Accept multiple payment methods, including credit/debit cards, UPI, mobile wallets, and contactless payments. Split bills or apply discounts seamlessly at checkout.",
             img: ips,
             width: "54px",
-        },
+        __w: 200, __h: 200},
         {
             key: 6,
             heading: "Inventory Tracking",
             desc: "Automatically track ingredient usage and monitor stock levels in real time. Get low-stock alerts to ensure timely replenishment and avoid service disruptions.",
             img: it,
             width: "54px",
-        },
+        __w: 200, __h: 200},
         {
             key: 7,
             heading: "Kitchen Display System (KDS) Integration",
             desc: "Orders are directly sent to the kitchen display system, streamlining communication between the wait staff and kitchen team for faster, error-free order preparation.",
             img: kds,
             width: "54px",
-        },
+        __w: 200, __h: 200},
         {
             key: 8,
             heading: "Promotions and Loyalty Programs",
             desc: "Easily set up special offers, happy hours, and loyalty programs to engage customers and drive repeat business. Track customer preferences for targeted promotions.",
             img: plp,
             width: "54px",
-        },
+        __w: 200, __h: 200},
         {
             key: 9,
             heading: "Real-Time Sales Reporting",
             desc: "Access detailed sales reports and analytics to gain insights into daily revenue, top-selling items, and customer preferences, helping you make informed business decisions.",
             img: rtsr,
             width: "54px",
-        }
+        __w: 200, __h: 200}
     ];
 
 
@@ -145,28 +145,28 @@ export default function Pos() {
             desc: "Streamlines the ordering process with a user-friendly interface, reducing wait times and improving service quality, leading to higher customer satisfaction.",
             img: b1,
 
-        },
+        __w: 1068, __h: 1017},
         {
             key: 2,
             heading: "Operational Efficiency",
             desc: "Real-time menu updates and automated order management significantly reduce manual work, ensuring smooth operations across all dining outlets.",
             img: b2,
 
-        },
+        __w: 1068, __h: 1017},
         {
             key: 3,
             heading: "Personalized Dining Experience",
             desc: "Customizable orders allow guests to specify dietary restrictions or preferences, providing a personalized dining experience that boosts customer loyalty.",
             img: b3,
 
-        },
+        __w: 1068, __h: 1017},
         {
             key: 4,
             heading: "Optimized Resource Utilization",
             desc: "Dynamic table management and real-time inventory tracking enable better management of seating arrangements, stock levels, and ingredient usage, optimizing resource utilization.",
             img: b4,
 
-        },
+        __w: 1068, __h: 1017},
 
         {
             key: 5,
@@ -175,7 +175,7 @@ export default function Pos() {
             img: b5,
 
 
-        }
+        __w: 1068, __h: 1017}
     ];
 
 
@@ -230,7 +230,7 @@ export default function Pos() {
                     <div className={`${style.contentConatinerPhone}`}>
 
                         <div className={`${style.herosectionImgBoxPhone}`}>
-                            <img style={{ width: "100%" }} src={heroImg} alt={"room booking"} />
+                            <img style={{ width: "100%" }} src={heroImg} alt={"room booking"}  width="746" height="543" />
                         </div>
 
                         <div className={`${style.headingBoxPhone} font4 `}>
@@ -286,7 +286,7 @@ export default function Pos() {
 
                     <div className={style.section2IconAndName}>
                         <div className={`${style.section2Icon}`}>
-                            <img style={{ width: "100%" }} src={icon1} alt="" />
+                            <img style={{ width: "100%" }} src={icon1} alt=""  width="200" height="200" />
                         </div>
 
                         <div className={`${style.iconName} `}>
@@ -301,7 +301,7 @@ export default function Pos() {
                     <div className={style.section2IconAndName}>
 
                         <div className={`${style.section2Icon}`}>
-                            <img style={{ width: "100%" }} src={icon2} alt="" />
+                            <img style={{ width: "100%" }} src={icon2} alt=""  width="200" height="200" />
                         </div>
 
                         <div className={`${style.iconName} `}>
@@ -319,7 +319,7 @@ export default function Pos() {
                     <div className={style.section2IconAndName}>
 
                         <div className={`${style.section2Icon}`}>
-                            <img style={{ width: "100%" }} src={icon3} alt="" />
+                            <img style={{ width: "100%" }} src={icon3} alt=""  width="200" height="200" />
                         </div>
 
                         <div className={`${style.iconName}`}>
@@ -353,7 +353,7 @@ export default function Pos() {
 
                         <div className={`${style.laptopImgSection3}`}>
                             <div className={`${style.laptopImgBox}`} >
-                                <img style={{ width: "100%" }} src={laptop} alt="" />
+                                <img style={{ width: "100%" }} src={laptop} alt=""  width="1280" height="739" />
                             </div>
                         </div>
 
@@ -388,7 +388,7 @@ export default function Pos() {
                                 <div className={`${style.headingAndIconFeatures}`}>
 
                                     <div style={{ width: "44px" }}>
-                                        <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                                        <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
                                     </div>
 
                                     <div className={`${style.featureHeading}`}>
@@ -445,7 +445,7 @@ export default function Pos() {
 
 
                             <div className="GlobalBenefitImgBox" >
-                                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
                             </div>
 
                             <div className='GlobalBenefitTextBox' >
@@ -458,7 +458,7 @@ export default function Pos() {
 
 
                             <div className="GlobalBenefitImgBox">
-                                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""} />
+                                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
                             </div>
 
                             <div className='GlobalBenefitTextBox' >

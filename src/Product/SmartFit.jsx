@@ -80,7 +80,7 @@ export default function SmartFit() {
             src={heroImg}
             alt="EICE SmartFit"
             className="w-full max-w-[650px] object-contain"
-          />
+           width="1355" height="535" />
         </div>
            <span className="flex w-fit mx-auto items-center gap-2 bg-blue-50 text-[#012060] px-3 py-2 rounded-full text-sm font-medium border border-blue-200 sm:mb-4">
           
@@ -88,7 +88,7 @@ export default function SmartFit() {
             src={eiceSmartfitIcon}
             alt="icon" 
             className="w-5 h-5 object-contain"
-          />
+           width="20" height="20" />
         
           Container loading optimization software
         </span>
@@ -111,7 +111,7 @@ export default function SmartFit() {
               <button onClick={() => navigate("/products/eicerise/form")}  
               className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-[18px]">
                 Request a Demo
-                  <img src={arrowIcon} alt="arrow"/>
+                  <img src={arrowIcon} alt="arrow" width="24" height="24" />
         
               </button>
         
@@ -136,7 +136,7 @@ export default function SmartFit() {
           <ul className="space-y-4 sm:space-y-5">
             <li className="flex items-start gap-4 text-[#64748B] leading-relaxed font-semibold">
               <div className="min-w-6 h-6">
-                <img src={challengeIcon} className="w-6 h-6"/>
+                <img src={challengeIcon} className="w-6 h-6" width="24" height="24" />
               </div>
 
               Wasted container space increases freight costs
@@ -144,7 +144,7 @@ export default function SmartFit() {
 
             <li className="flex items-start gap-4 text-[#64748B] leading-relaxed font-semibold">
               <div className="min-w-6 h-6">
-                <img src={challengeIcon} className="w-6 h-6"/>
+                <img src={challengeIcon} className="w-6 h-6" width="24" height="24" />
               </div>
 
               Manual planning is slow and error-prone
@@ -152,7 +152,7 @@ export default function SmartFit() {
 
             <li className="flex items-start gap-4 text-[#64748B] leading-relaxed font-semibold">
               <div className="min-w-6 h-6">
-                 <img src={challengeIcon} className="w-6 h-6"/>
+                 <img src={challengeIcon} className="w-6 h-6" width="24" height="24" />
               </div>
 
               Improper weight balance causes safety risks
@@ -160,7 +160,7 @@ export default function SmartFit() {
 
             <li className="flex items-start gap-4 text-[#64748B] leading-relaxed font-semibold">
               <div className="min-w-6 h-6">
-                 <img src={challengeIcon} className="w-6 h-6"/>
+                 <img src={challengeIcon} className="w-6 h-6" width="24" height="24" />
               </div>
 
               Difficult unloading due to poor sequencing
@@ -168,7 +168,7 @@ export default function SmartFit() {
 
             <li className="flex items-start gap-4 text-[#64748B] leading-relaxed font-semibold">
               <div className="min-w-6 h-6">
-                 <img src={challengeIcon} className="w-6 h-6"/>
+                 <img src={challengeIcon} className="w-6 h-6" width="24" height="24" />
               </div>
 
               No visibility into remaining container capacity
@@ -185,7 +185,7 @@ export default function SmartFit() {
           <ul className="space-y-4 sm:space-y-5">
             <li className="flex items-start gap-4 text-[#64748B] leading-relaxed font-semibold">
               <div className="min-w-6 h-6">
-                <img src={kbtIcon}/>
+                <img src={kbtIcon} width="32" height="32" />
               </div>
 
               Automated 3D optimized load plans
@@ -193,7 +193,7 @@ export default function SmartFit() {
 
             <li className="flex items-start gap-4 text-[#64748B] leading-relaxed font-semibold">
               <div className="min-w-6 h-6">
-                <img src={kbtIcon}/>
+                <img src={kbtIcon} width="32" height="32" />
               </div>
 
               Generate plans in seconds
@@ -201,7 +201,7 @@ export default function SmartFit() {
 
             <li className="flex items-start gap-4 text-[#64748B] leading-relaxed font-semibold">
               <div className="min-w-6 h-6">
-                 <img src={kbtIcon}/>
+                 <img src={kbtIcon} width="32" height="32" />
               </div>
 
               Smart weight balance analysis
@@ -209,7 +209,7 @@ export default function SmartFit() {
 
             <li className="flex items-start gap-4 text-[#64748B] leading-relaxed font-semibold">
               <div className="min-w-6 h-6">
-                <img src={kbtIcon}/>
+                <img src={kbtIcon} width="32" height="32" />
               </div>
 
               Priority-based unloading system
@@ -217,7 +217,7 @@ export default function SmartFit() {
 
             <li className="flex items-start gap-4 text-[#64748B] leading-relaxed font-semibold">
               <div className="min-w-6 h-6">
-               <img src={kbtIcon}/>
+               <img src={kbtIcon} width="32" height="32" />
               </div>
 
               One-click capacity estimation
@@ -247,7 +247,7 @@ export default function SmartFit() {
             >
               {/* SVG */}
         <div className="rounded-lg flex items-start mb-5">
-          <img src={feature.icon} alt="icon" className="w-14 h-14 object-contain" />
+          <img src={feature.icon} alt="icon" className="w-14 h-14 object-contain"  width="56" height="56" />
         </div>
 
               <h3 className="font-bold text-[24px] sm:text-2xl text-[#334155] whitespace-pre-line mb-2">
@@ -276,7 +276,7 @@ seconds.
                 className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto text-[18px] hover:bg-blue-800"
               >
                 Request a Demo
-                <img src={arrowIcon} alt="arrow" />
+                <img src={arrowIcon} alt="arrow"  width="24" height="24" />
               </button>
             </section>
 <ProductCarousel slides={productSlides} />

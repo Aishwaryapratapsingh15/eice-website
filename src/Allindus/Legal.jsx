@@ -270,7 +270,7 @@ const KeyService = ({ title, description, image }) => (
 
 
 
-      />
+       width={__w} height={__h}/>
 
 
 
@@ -362,7 +362,7 @@ const projects = {
 
 
 
-    },
+    , __w: 6000, __h: 4000},
 
 
 
@@ -386,7 +386,7 @@ const projects = {
 
 
 
-    },
+    , __w: 1468, __h: 1000},
 
 
 
@@ -422,7 +422,7 @@ const projects = {
 
 
 
-    },
+    , __w: 1200, __h: 800},
 
 
 
@@ -446,7 +446,7 @@ const projects = {
 
 
 
-      },
+      , __w: 1200, __h: 675},
 
 
 
@@ -470,7 +470,7 @@ const projects = {
 
 
 
-    },
+    , __w: 2075, __h: 916},
 
 
 
@@ -502,7 +502,7 @@ const projects = {
 
 
 
-    },
+    , __w: 1200, __h: 800},
 
 
 
@@ -526,7 +526,7 @@ const projects = {
 
 
 
-    },
+    , __w: 1032, __h: 581},
 
 
 
@@ -550,7 +550,7 @@ const projects = {
 
 
 
-const CaseStudy = ({ title, description, image }) => (
+const CaseStudy = ({ title, description, image, __w, __h }) => (
 
 
 
@@ -811,7 +811,7 @@ function Cstdmain() {
 
 
 
-                />
+                 __w={project.__w} __h={project.__h}/>
 
 
 
@@ -879,7 +879,7 @@ const services = [
 
 
 
-  },
+  __w: 1280, __h: 853},
 
 
 
@@ -911,7 +911,7 @@ const services = [
 
 
 
-  },
+  __w: 1536, __h: 864},
 
 
 
@@ -943,7 +943,7 @@ const services = [
 
 
 
-  },
+  __w: 2048, __h: 1365},
 
 
 
@@ -975,7 +975,7 @@ const services = [
 
 
 
-  },
+  __w: 960, __h: 640},
 
 
 
@@ -1007,7 +1007,7 @@ const services = [
 
 
 
-  },
+  __w: 1200, __h: 800},
 
 
 
@@ -1039,7 +1039,7 @@ const services = [
 
 
 
-  },
+  __w: 1000, __h: 667},
 
 
 
@@ -1088,23 +1088,23 @@ function Legal() {
             src={legal_img}
             alt="Legal technology and legaltech solutions"
             className="hidden sm:block object-cover w-full px-2"
-          />
+           width="1098" height="207" />
           {/* Mobile: show only left portion */}
           <div className="sm:hidden overflow-hidden w-full">
             <img
               src={legal_img}
               alt="Legal technology and legaltech solutions"
               className="w-[300%] max-w-none"
-            />
+             width="1098" height="207" />
           </div>
 
 
 
-          {/* <img src={healthrect2} alt="" />
+          {/* <img src={healthrect2} alt=""  width="354" height="207" />
 
 
 
-          <img src={healthrect3} alt="" /> */}
+          <img src={healthrect3} alt=""  width="354" height="207" /> */}
 
 
 
@@ -1325,7 +1325,7 @@ function Legal() {
 
 
 
-                      />
+                       width={service.__w} height={service.__h} />
 
 
 

@@ -246,7 +246,7 @@ const KeyService = ({ title, description, image }) => (
 
 
 
-      />
+       width={__w} height={__h}/>
 
 
 
@@ -338,7 +338,7 @@ const projects = {
 
 
 
-    },
+    , __w: 6000, __h: 4000},
 
 
 
@@ -362,7 +362,7 @@ const projects = {
 
 
 
-    },
+    , __w: 1468, __h: 1000},
 
 
 
@@ -398,7 +398,7 @@ const projects = {
 
 
 
-    },
+    , __w: 1200, __h: 800},
 
 
 
@@ -422,7 +422,7 @@ const projects = {
 
 
 
-      },
+      , __w: 1200, __h: 675},
 
 
 
@@ -446,7 +446,7 @@ const projects = {
 
 
 
-    },
+    , __w: 2075, __h: 916},
 
 
 
@@ -478,7 +478,7 @@ const projects = {
 
 
 
-    },
+    , __w: 1200, __h: 800},
 
 
 
@@ -502,7 +502,7 @@ const projects = {
 
 
 
-    },
+    , __w: 1032, __h: 581},
 
 
 
@@ -518,7 +518,7 @@ const projects = {
 
 
 
-const CaseStudy = ({ title, description, image  }) => (
+const CaseStudy = ({ title, description, image, __w, __h }) => (
 
 
 
@@ -783,7 +783,7 @@ function Cstdmain() {
 
 
 
-                />
+                 __w={project.__w} __h={project.__h}/>
 
 
 
@@ -851,7 +851,7 @@ const services = [
 
 
 
-  },
+  __w: 720, __h: 516},
 
 
 
@@ -879,7 +879,7 @@ const services = [
 
 
 
-  // },
+  // __w: 2494, __h: 3741},
 
 
 
@@ -907,7 +907,7 @@ const services = [
 
 
 
-  },
+  __w: 1920, __h: 1276},
 
 
 
@@ -935,7 +935,7 @@ const services = [
 
 
 
-  // },
+  // __w: 6720, __h: 4536},
 
 
 
@@ -963,7 +963,7 @@ const services = [
 
 
 
-  },
+  __w: 1920, __h: 1282},
 
 
 
@@ -991,7 +991,7 @@ const services = [
 
 
 
-  },
+  __w: 1200, __h: 630},
 
 
 
@@ -1040,23 +1040,23 @@ function Digitalmedia() {
             src={digital_img}
             alt="Digital media and content technology solutions"
             className="hidden sm:block object-cover w-full px-2"
-          />
+           width="1098" height="207" />
           {/* Mobile: show only left portion */}
           <div className="sm:hidden overflow-hidden w-full">
             <img
               src={digital_img}
               alt="Digital media and content technology solutions"
               className="w-[300%] max-w-none"
-            />
+             width="1098" height="207" />
           </div>
 
 
 
-          {/* <img src={healthrect2} alt="" />
+          {/* <img src={healthrect2} alt=""  width="354" height="207" />
 
 
 
-          <img src={healthrect3} alt="" /> */}
+          <img src={healthrect3} alt=""  width="354" height="207" /> */}
 
 
 
@@ -1277,7 +1277,7 @@ function Digitalmedia() {
 
 
 
-                      />
+                       width={service.__w} height={service.__h} />
 
 
 
