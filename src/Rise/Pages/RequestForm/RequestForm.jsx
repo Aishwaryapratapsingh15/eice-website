@@ -23,6 +23,7 @@ import Certificate from "../../Components/Certificate/Certificate";
 
 import axios from "axios";
 import { createPortal } from "react-dom";
+import COUNTRIES from "./countryList";
 const successIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/common/success.svg";
 const errorIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/common/error.svg";
 
@@ -226,6 +227,8 @@ const images = document.images;
 
 
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [errors, setErrors] = useState({});
+    const [warnings, setWarnings] = useState({});
 
     const [countries, setCountries] = useState([]);
     const [formData, setFormData] = useState({
@@ -277,6 +280,107 @@ const images = document.images;
             ...prevData,
             [name]: type === 'checkbox' ? checked : value,
         }));
+        setErrors((prev) => (prev[name] ? { ...prev, [name]: "" } : prev));
+        if (name === "address" || name === "message") {
+            setWarnings((prev) => ({ ...prev, [name]: "" }));
+        }
+    };
+
+    const handleBlur = (e) => {
+        const { name } = e.target;
+        if (name !== "address" && name !== "message") return;
+        setWarnings((prev) => ({ ...prev, ...computeWarnings() }));
+    };
+
+    const handleCountrySelectChange = (selectedOption) => {
+        setFormData((prev) => ({
+            ...prev,
+            country: selectedOption ? selectedOption.name : "",
+            phoneCode: selectedOption ? selectedOption.dialCode : "",
+        }));
+        setErrors((prev) => ({ ...prev, country: "", phoneCode: "" }));
+    };
+
+    // Gibberish/quality heuristics (per Request Demo Optimization spec):
+    // real words almost always contain a vowel; keyboard-mash strings usually don't.
+    const hasVowel = (v) => /[aeiouAEIOU]/.test(v);
+    const isRepeatingOrSequential = (digits) => {
+        if (/^(\d)\1{9}$/.test(digits)) return true; // 0000000000
+        const ascending = "01234567890123456789";
+        const descending = "98765432109876543210";
+        return ascending.includes(digits) || descending.includes(digits);
+    };
+
+    const FREE_EMAIL_DOMAINS = /@(gmail\.|yahoo\.|outlook\.|hotmail\.|live\.|icloud\.|aol\.|protonmail\.|zoho\.|rediffmail\.|yandex\.|gmx\.|mail\.com)/i;
+
+    const validators = {
+        name: (v) => {
+            if (!v.trim()) return "Name is required";
+            if (!/^[A-Za-z][A-Za-z.'\- ]{1,59}$/.test(v)) return "Please enter your full name using letters only.";
+            if (!hasVowel(v)) return "Please enter your full name using letters only.";
+            if (!v.trim().includes(" ")) return "Please enter your full name (first and last).";
+            return "";
+        },
+        companyName: (v) => {
+            if (!v.trim()) return "Company name is required";
+            if (!/^[A-Za-z0-9][A-Za-z0-9.,&'\- ]{1,99}$/.test(v)) return "Please enter your company's registered or trading name.";
+            if (!hasVowel(v)) return "Please enter your company's registered or trading name.";
+            return "";
+        },
+        role: (v) => {
+            if (!v.trim()) return ""; // optional field
+            if (!/^[A-Za-z0-9][A-Za-z0-9.,&'/\- ]{1,49}$/.test(v)) return "Please select your role, or describe it briefly.";
+            if (!hasVowel(v)) return "Please select your role, or describe it briefly.";
+            return "";
+        },
+        email: (v) => {
+            if (!v.trim()) return "Email is required";
+            if (v.length < 5 || v.length > 254) return "Please use your official work email address, not a personal one like Gmail or Yahoo.";
+            if (!/^[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$/.test(v)) return "Enter a valid email address";
+            if (FREE_EMAIL_DOMAINS.test(v)) return "Please use your official work email address, not a personal one like Gmail or Yahoo.";
+            return "";
+        },
+        phoneCode: (v) => {
+            if (!v.trim()) return "Country code is required";
+            if (!/^[0-9]{1,4}$/.test(v)) return "Enter a valid country code (1-4 digits)";
+            return "";
+        },
+        phone: (v) => {
+            if (!v.trim()) return "Phone number is required";
+            if (!/^[6-9]\d{9}$/.test(v)) return "Please enter a valid 10-digit mobile number.";
+            if (isRepeatingOrSequential(v)) return "Please enter a valid 10-digit mobile number.";
+            return "";
+        },
+        country: (v) => (v.trim() ? "" : "Please select your country from the list."),
+        address: (v) => (v.trim() ? "" : "Address is required"),
+        requirement: (v) => (v.trim() ? "" : "Please select what you're interested in."),
+    };
+
+    // Soft checks — shown as non-blocking hints, never prevent submission.
+    const computeWarnings = () => {
+        const w = {};
+        const addr = formData.address.trim();
+        if (addr && (addr.length < 8 || !hasVowel(addr))) {
+            w.address = "Please enter a more complete address.";
+        }
+        const msg = formData.message.trim();
+        if (msg && msg.length > 6) {
+            const vowelCount = (msg.match(/[aeiouAEIOU]/g) || []).length;
+            if (vowelCount / msg.length < 0.2) {
+                w.message = "This message looks unclear — feel free to add more detail.";
+            }
+        }
+        return w;
+    };
+
+    const validateForm = () => {
+        const newErrors = {};
+        Object.keys(validators).forEach((key) => {
+            const msg = validators[key](String(formData[key] ?? ""));
+            if (msg) newErrors[key] = msg;
+        });
+        if (!formData.policyAgree) newErrors.policyAgree = "You must agree to the privacy policy";
+        return newErrors;
     };
 
 
@@ -374,13 +478,15 @@ const images = document.images;
 
 const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsSubmitting(true);
 
-    if (!formData.subscribe || !formData.policyAgree) {
-        alert("Please agree to the terms and conditions before submitting.");
-        setIsSubmitting(false);
+    const validationErrors = validateForm();
+    if (Object.keys(validationErrors).length > 0) {
+        setErrors(validationErrors);
         return;
     }
+    setErrors({});
+    setWarnings(computeWarnings());
+    setIsSubmitting(true);
 
     const dataToSend = {
         name: formData.name,
@@ -583,6 +689,7 @@ const handleSelectChange2 = (selectedOption) => {
             target: {
                 name: 'requirement',
                 value: selectedOption ? selectedOption.value : '',
+                type: 'text',
             },
         });
     };
@@ -702,14 +809,16 @@ const handleSelectChange2 = (selectedOption) => {
                         <div className={`${styles.inputContainer}`}>
                             <label htmlFor="rf-name">Name*</label>
                             <div>
-                                <input id="rf-name" placeholder="Enter your name" autoComplete="off" required className={`${styles.line1Input}`} type="text" name="name" value={formData.name} onChange={handleChange} />
+                                <input id="rf-name" aria-invalid={!!errors.name} aria-describedby={errors.name ? "rf-name-error" : undefined} placeholder="Enter your name" autoComplete="off" required className={`${styles.line1Input}`} type="text" name="name" value={formData.name} onChange={handleChange} />
+                                {errors.name && <span id="rf-name-error" className={styles.fieldError}>{errors.name}</span>}
                             </div>
                         </div>
 
                         <div className={`${styles.inputContainer}`}>
                             <label htmlFor="rf-companyName">Company Name*</label>
                             <div>
-                                <input id="rf-companyName" placeholder="Enter your company name" autoComplete="off" required className={`${styles.line1Input}`} type="text" name="companyName" value={formData.companyName} onChange={handleChange} />
+                                <input id="rf-companyName" aria-invalid={!!errors.companyName} aria-describedby={errors.companyName ? "rf-companyName-error" : undefined} placeholder="Enter your company name" autoComplete="off" required className={`${styles.line1Input}`} type="text" name="companyName" value={formData.companyName} onChange={handleChange} />
+                                {errors.companyName && <span id="rf-companyName-error" className={styles.fieldError}>{errors.companyName}</span>}
                             </div>
                         </div>
                     </div>
@@ -718,14 +827,16 @@ const handleSelectChange2 = (selectedOption) => {
                         <div className={`${styles.inputContainer}`}>
                             <label htmlFor="rf-role">Role/Designation (optional)</label>
                             <div>
-                                <input id="rf-role" autoComplete="off" placeholder="Enter Your Role ( e.g Manager , Director)" className={`${styles.line2Input}`} type="text" name="role" value={formData.role} onChange={handleChange} />
+                                <input id="rf-role" aria-invalid={!!errors.role} aria-describedby={errors.role ? "rf-role-error" : undefined} autoComplete="off" placeholder="Enter Your Role ( e.g Manager , Director)" className={`${styles.line2Input}`} type="text" name="role" value={formData.role} onChange={handleChange} />
+                                {errors.role && <span id="rf-role-error" className={styles.fieldError}>{errors.role}</span>}
                             </div>
                         </div>
 
                         <div className={`${styles.inputContainer}`}>
                             <label htmlFor="rf-email">Email ID*</label>
                             <div>
-                                <input id="rf-email" placeholder="Enter Your Bussiness Email Address" autoComplete="off" required className={`${styles.line2Input}`} type="email" name="email" value={formData.email} onChange={handleChange} />
+                                <input id="rf-email" aria-invalid={!!errors.email} aria-describedby={errors.email ? "rf-email-error" : undefined} placeholder="Enter Your Bussiness Email Address" autoComplete="off" required className={`${styles.line2Input}`} type="email" name="email" value={formData.email} onChange={handleChange} />
+                                {errors.email && <span id="rf-email-error" className={styles.fieldError}>{errors.email}</span>}
                             </div>
                         </div>
 
@@ -752,12 +863,14 @@ const handleSelectChange2 = (selectedOption) => {
                                         onChange={handleCountryCodeChange}
                                     /> */}
 
-                                    <input id="rf-phoneCode" aria-label="Phone country code" placeholder="Code" autoComplete="off" required className={`${styles.phoneCode}`} type="number" name="phoneCode" value={formData.phoneCode} onChange={handleChange} maxLength={10} pattern="[0-9]{10}" />
+                                    <input id="rf-phoneCode" aria-label="Phone country code" aria-invalid={!!errors.phoneCode} aria-describedby={errors.phoneCode ? "rf-phoneCode-error" : undefined} placeholder="Code" autoComplete="off" required className={`${styles.phoneCode}`} type="tel" name="phoneCode" value={formData.phoneCode} onChange={handleChange} maxLength={4} pattern="[0-9]{1,4}" />
+                                    {errors.phoneCode && <span id="rf-phoneCode-error" className={styles.fieldError}>{errors.phoneCode}</span>}
                                 </div>
                                 <div className={`${styles.phoneNoInputBox}`}>
-                                    <input id="rf-phone" placeholder="Enter Your Phone No" autoComplete="off" required className={`${styles.phoneNo}`} type="tel" name="phone" value={formData.phone} onChange={handleChange} pattern="[0-9]{10}" />
+                                    <input id="rf-phone" aria-invalid={!!errors.phone} aria-describedby={errors.phone ? "rf-phone-error" : undefined} placeholder="Enter Your Phone No" autoComplete="off" required className={`${styles.phoneNo}`} type="tel" name="phone" value={formData.phone} onChange={handleChange} pattern="[0-9]{10}" />
                                 </div>
                             </div>
+                            {errors.phone && <span id="rf-phone-error" className={styles.fieldError}>{errors.phone}</span>}
 
                             {/* <div>
                                 <input
@@ -781,7 +894,21 @@ const handleSelectChange2 = (selectedOption) => {
                         <div className={`${styles.inputContainer}`}>
                             <label htmlFor="rf-country">Country*</label>
                             <div>
-                                <input id="rf-country" placeholder="Country Name" autoComplete="off" required className={`${styles.line3Input}`} type="text" name="country" value={formData.country} onChange={handleChange} />
+                                <Select
+                                    inputId="rf-country"
+                                    name="country"
+                                    options={COUNTRIES}
+                                    getOptionLabel={(o) => o.name}
+                                    getOptionValue={(o) => o.iso2}
+                                    value={COUNTRIES.find((c) => c.name === formData.country) || null}
+                                    onChange={handleCountrySelectChange}
+                                    className={styles.line3Input}
+                                    placeholder="Select your country"
+                                    styles={customStyles2}
+                                    aria-invalid={!!errors.country}
+                                    aria-describedby={errors.country ? "rf-country-error" : undefined}
+                                />
+                                {errors.country && <span id="rf-country-error" className={styles.fieldError}>{errors.country}</span>}
                             </div>
 
                         </div>
@@ -789,7 +916,9 @@ const handleSelectChange2 = (selectedOption) => {
                         <div className={`${styles.inputContainer}`}>
                             <label htmlFor="rf-address">Address*</label>
                             <div>
-                                <input id="rf-address" placeholder="Enter Your Address" autoComplete="off" required className={`${styles.line3Input}`} type="text" name="address" value={formData.address} onChange={handleChange} />
+                                <input id="rf-address" aria-invalid={!!errors.address} aria-describedby={errors.address ? "rf-address-error" : "rf-address-warning"} placeholder="Enter Your Address" autoComplete="off" required className={`${styles.line3Input}`} type="text" name="address" value={formData.address} onChange={handleChange} onBlur={handleBlur} />
+                                {errors.address && <span id="rf-address-error" className={styles.fieldError}>{errors.address}</span>}
+                                {!errors.address && warnings.address && <span id="rf-address-warning" className={styles.fieldError}>{warnings.address}</span>}
                             </div>
                         </div>
                     </div>
@@ -814,7 +943,7 @@ const handleSelectChange2 = (selectedOption) => {
                             </select> */}
 
                             <Select
-                                id="requirement"
+                                inputId="requirement"
                                 name="requirement"
                                 options={options}
                                 value={options.find(option => option.value === formData.requirement)}
@@ -823,7 +952,7 @@ const handleSelectChange2 = (selectedOption) => {
                                 placeholder="-- Please Select --"
                                 styles={customStyles2}
                             />
-
+                            {errors.requirement && <span className={styles.fieldError}>{errors.requirement}</span>}
 
                         </div>
                     </div>
@@ -841,7 +970,10 @@ const handleSelectChange2 = (selectedOption) => {
                                 name="message"
                                 value={formData.message}
                                 onChange={handleChange}
+                                onBlur={handleBlur}
+                                aria-describedby={warnings.message ? "rf-message-warning" : undefined}
                             />
+                            {warnings.message && <span id="rf-message-warning" className={styles.fieldError}>{warnings.message}</span>}
                         </div>
                     </div>
 
@@ -864,9 +996,12 @@ const handleSelectChange2 = (selectedOption) => {
                                 name="policyAgree"
                                 checked={formData.policyAgree}
                                 onChange={handleChange}
+                                aria-invalid={!!errors.policyAgree}
+                                aria-describedby={errors.policyAgree ? "rf-policyAgree-error" : undefined}
                             />
                             <span className={`${styles.checkBoxNote}`}>I have agreed to EICE Technology Privacy policy</span>
                         </div>
+                        {errors.policyAgree && <span id="rf-policyAgree-error" className={styles.fieldError}>{errors.policyAgree}</span>}
                     </div>
 
                     <div className={`${styles.submitButtonConatiner}`}>

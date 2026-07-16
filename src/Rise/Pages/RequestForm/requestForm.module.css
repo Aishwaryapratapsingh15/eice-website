@@ -783,3 +783,10 @@
   border-left: 6px solid #dc3545;
 }
 
+.fieldError {
+  color: #dc3545;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+}
+

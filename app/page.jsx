@@ -1,13 +1,20 @@
+import dynamic from "next/dynamic";
 import Big from "../src/Homecomps/Big";
 import Offers from "../src/Homecomps/Offers";
 import Solutions from "../src/Homecomps/Solutions";
-import Clientele from "../src/Homecomps/Clientele";
-import Clients from "../src/Homecomps/Clients";
-import Casestudies from "../src/Homecomps/Casestudies";
 import Techs from "../src/Homecomps/Techs";
-import Certificate from "../src/Homecomps/Certificate";
-import ProductFooter from "../src/Product/ProductFooter";
 import Copyright from "../src/Othercomps/Copyright";
+
+// Below-the-fold sections: still server-rendered (content stays in the
+// initial HTML for SEO/no-JS), but their hydration JS is split into
+// separate chunks instead of the main bundle, since it's not needed
+// for the first paint. next/dynamic can't use ssr:false in a Server
+// Component like this page, so SSR stays on — only the JS chunk splits.
+const Clientele = dynamic(() => import("../src/Homecomps/Clientele"));
+const Clients = dynamic(() => import("../src/Homecomps/Clients"));
+const Casestudies = dynamic(() => import("../src/Homecomps/Casestudies"));
+const Certificate = dynamic(() => import("../src/Homecomps/Certificate"));
+const ProductFooter = dynamic(() => import("../src/Product/ProductFooter"));
 
 // export const metadata = {
 //   title: "EICE Technology | IT Solutions, Software Development & Digital Transformation",
