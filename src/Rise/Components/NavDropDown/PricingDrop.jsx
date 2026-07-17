@@ -142,7 +142,7 @@ export default function PricingDrop() {
 
                 <div className={`${styles.requestDemo} font1 `}>
                     <div>
-                        <Link to={"/products/eicerise/form"} style={{ textDecoration: "none", color: "white" }}>
+                        <Link to={"/products/eicerise/form?product=EiceRise"} style={{ textDecoration: "none", color: "white" }}>
                             Request a Demo
                         </Link>
                     </div>

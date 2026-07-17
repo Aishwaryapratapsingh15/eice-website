@@ -15,7 +15,7 @@ export default function InsidePageFooterUpper() {
             </span>
           </span>
         </div>
-        <Link style={{ color: "white" }} className="linkClass" to="/products/eicerise/form">
+        <Link style={{ color: "white" }} className="linkClass" to="/products/eicerise/form?product=EiceRise">
           <div className={`${styles.demoButton} font1`}>
             <div>Request a Demo</div>
             <div className={`${styles.demoArrowButton}`}><FaArrowRightLong /></div>

@@ -225,7 +225,7 @@ missed escalations, ensures structured communication, and gives managers full vi
           {/* CTA */}
           <div className="mt-10">
             <button
-              onClick={() => navigate("/products/eicerise/form")}
+              onClick={() => navigate("/products/eicerise/form?product=EiceOps")}
               className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 sm:mx-auto text-[18px] hover:bg-blue-800 transition"
             >
               Request a Demo
@@ -432,7 +432,7 @@ missed escalations, ensures structured communication, and gives managers full vi
         </p>
     
             <button
-              onClick={() => navigate("/products/eicerise/form")}
+              onClick={() => navigate("/products/eicerise/form?product=EiceOps")}
               className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto text-[18px] hover:bg-blue-800"
             >
               Request a Demo

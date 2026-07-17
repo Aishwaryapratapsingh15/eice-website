@@ -76,7 +76,7 @@ useEffect(() => {
                     </p>
                     <div className={`${styles.requestDemoButtonContainer} font1`}>
 
-                        <Link style={{ color: "white" }} className="linkClass" to={"https://www.eicetechnology.com/Contact"}>
+                        <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form?product=Easylogy"}>
                             <div className={`${styles.demoButton}`}>
                                 <div> Request a Demo </div>
                                 <div className={`${styles.demoArrowButton}`}> <FaArrowRightLong /></div>

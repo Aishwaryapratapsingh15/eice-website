@@ -182,7 +182,7 @@ export default function Pos() {
 
             <section className={`${styles.requestDemoBtn}`}>
 
-               <Link to={"/products/eicerise/form"} className="linkClass">
+               <Link to={"/products/eicerise/form?product=EiceRise%20POS%20Suite"} className="linkClass">
                                <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
                                    <div className={`${styles.demoButton} font1`}>
                                        <div > Request for Pricing </div>
