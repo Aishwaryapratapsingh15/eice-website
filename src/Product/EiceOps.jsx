@@ -243,7 +243,7 @@ missed escalations, ensures structured communication, and gives managers full vi
               key={index}
               className="text-white py-2 pr-2 text-left lg:text-white lg:py-8 lg:px-5 lg:text-center md:text-white md:py-8 md:px-5 md:text-center"
             >
-              <h3 className="text-[#01B0F1] text-[22px] font-bold mb-4 text-left lg:text-4xl lg:mb-5 md:text-4xl md:mb-5">{item.number}</h3>
+              <h3 className="text-[#01B0F1] text-[22px] font-bold mb-4 text-left md:text-center lg:text-center lg:text-4xl lg:mb-5 md:text-4xl md:mb-5">{item.number}</h3>
               <p className="font-semi-bold text-[16px] leading-relaxed text-[#334155] lg:font-bold lg:text-lg lg:leading-relaxed text-[#334155] md:font-bold md:text-lg sm:font-bold sm:text-lg">{item.title}</p>
             </div>
           ))}

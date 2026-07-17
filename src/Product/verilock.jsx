@@ -405,7 +405,7 @@ locations with full admin control.
     How It works
   </h2>
 
-  <div className="relative max-w-6xl sm:mx-auto grid grid-cols-2 sm:flex sm:flex-col sm:flex-row sm:items-center sm:justify-between gap-4 md:gap-6">
+  <div className="relative max-w-6xl sm:mx-auto grid grid-cols-2 sm:flex sm:flex-col sm:items-center sm:justify-between md:flex-row gap-4 md:gap-6">
 
     {architecture.map((item, i) => (
       <div key={i} className="flex items-center">
