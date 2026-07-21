@@ -127,7 +127,7 @@ function Indusmain() {
           </p>
         </section>
 
-        <div className="w-full -my-6 max-w-screen-2xl mx-auto hidden sm:block">
+        <div className="w-full my-6 max-w-screen-2xl mx-auto hidden sm:block">
           <div className="bg-indusbanner w-full h-0 pb-[40%] sm:pb-[30%] lg:pb-[25%] bg-cover bg-center bg-no-repeat rounded-full"></div>
         </div>
 
