@@ -16,6 +16,7 @@ const scada = "https://d3r43jacxrwsrp.cloudfront.net/Petroleum/scada.jpg";
 const femms = "https://d3r43jacxrwsrp.cloudfront.net/Petroleum/FEMMS.jpeg";
 const bsa = "https://d3r43jacxrwsrp.cloudfront.net/Petroleum/bsa.jpeg";
 const ogpd = "https://d3r43jacxrwsrp.cloudfront.net/Petroleum/ogpd.png";
+const espDesign = "https://d3r43jacxrwsrp.cloudfront.net/Petroleum/ESPDesignAnalysis.jpeg";
 
 
 // automobile
@@ -115,6 +116,13 @@ const projects = {
       link: "/case-studies/design-sim-borets",
       img : ogpd
     , __w: 2048, __h: 1366},
+    {
+      title: "ESP Design & Analysis Software",
+      description:
+        "Cloud-based ESP Design & Analysis Software platform modernizing engineering workflows for a global ESP manufacturer.",
+      link: "/case-studies/esp-design-analysis",
+      img : espDesign
+    , __w: 1431, __h: 806},
   ],
   // oil: [
   //   { title: "Offshore Platform Optimization", description: "Improved production efficiency by 25% through advanced AI-driven monitoring systems." },

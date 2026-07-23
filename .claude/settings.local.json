@@ -10,7 +10,23 @@
       "Bash(powershell -Command ' *)",
       "PowerShell(Get-ChildItem \"C:\\\\eicegit\\\\React_App\" -ErrorAction SilentlyContinue | Select-Object -First 5 | ForEach-Object { $_.Name })",
       "Bash(findstr /M \"use client\" *.jsx)",
-      "PowerShell(Remove-Item *)"
+      "PowerShell(Remove-Item *)",
+      "Read(//c//**)",
+      "Bash(mkdir -p /tmp/espdocx_extract)",
+      "Bash(python3 -c ' *)",
+      "Bash(mkdir -p espimg)",
+      "Skill(run)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(curl -s -o /dev/null -w \"case-studies list: %{http_code}\\\\n\" http://localhost:3002/case-studies)",
+      "Bash(curl -s -o /dev/null -w \"esp-design-analysis: %{http_code}\\\\n\" http://localhost:3002/case-studies/esp-design-analysis)",
+      "Bash(curl -s http://localhost:3002/case-studies/esp-design-analysis)",
+      "Skill(claude-in-chrome)",
+      "Bash(curl -s -o /dev/null -w \"hero image: %{http_code}\\\\n\" http://localhost:3002/assets/Petroleum/ESPDesignAnalysis.jpeg)",
+      "Bash(curl -s http://localhost:3002/case-studies)",
+      "Bash(powershell -Command \"Get-CimInstance Win32_Process -Filter \\\\\"CommandLine LIKE '%next dev%'\\\\\" | Select-Object ProcessId,CommandLine\")",
+      "Bash(powershell -Command \"Stop-Process -Id 22820 -Force\")",
+      "Bash(curl -s -o /dev/null -w \"port 3002 esp page: %{http_code}\\\\n\" http://localhost:3002/case-studies/esp-design-analysis)",
+      "Bash(curl *)"
     ]
   }
 }
