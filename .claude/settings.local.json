@@ -26,7 +26,10 @@
       "Bash(powershell -Command \"Get-CimInstance Win32_Process -Filter \\\\\"CommandLine LIKE '%next dev%'\\\\\" | Select-Object ProcessId,CommandLine\")",
       "Bash(powershell -Command \"Stop-Process -Id 22820 -Force\")",
       "Bash(curl -s -o /dev/null -w \"port 3002 esp page: %{http_code}\\\\n\" http://localhost:3002/case-studies/esp-design-analysis)",
-      "Bash(curl *)"
+      "Bash(curl *)",
+      "Bash(npm run *)",
+      "Bash(netstat -ano)",
+      "Bash(taskkill *)"
     ]
   }
 }

@@ -351,16 +351,26 @@ const OurServices = ({ handleSetSelected = () => {} }) => (
 );
 
 const OurResources = ({ handleSetSelected = () => {} }) => (
-  <div className="p-1 grid-cols-2 grid gap-4">
-    <Link to="/case-studies" onClick={() => handleSetSelected(null)} className="group cursor-pointer grid grid-rows-3 order-last rounded-md">
-      <div className="row-span-2 w-full h-full bg-casestudy bg-contain bg-no-repeat"></div>
-      <div>
-        <h1 className="text-center">Case Studies</h1>
-        <h1 className="w-0 group-hover:w-1/2 transition duration-500 mx-auto group-hover:bg-bloo h-0.5 bg-white"></h1>
-        <h1 className="text-sm pt-2 text-blackk/50">Explore our detailed case studies and learn how we transform businesses.</h1>
-      </div>
-    </Link>
+  <div className="p-1 grid grid-cols-3 gap-4">
     <div><StatsCard /></div>
+    <div className="col-span-2 grid grid-cols-2 gap-4">
+      <Link to="/case-studies" onClick={() => handleSetSelected(null)} className="group cursor-pointer grid grid-rows-3 rounded-md">
+        <div className="row-span-2 w-full h-full rounded-md bg-casestudy bg-cover bg-center bg-no-repeat"></div>
+        <div>
+          <h1 className="text-center">Case Studies</h1>
+          <h1 className="w-0 group-hover:w-1/2 transition duration-500 mx-auto group-hover:bg-bloo h-0.5 bg-white"></h1>
+          <h1 className="text-sm pt-2 text-blackk/50">Explore our detailed case studies and learn how we transform businesses.</h1>
+        </div>
+      </Link>
+      <Link to="/blog" onClick={() => handleSetSelected(null)} className="group cursor-pointer grid grid-rows-3 rounded-md">
+        <div className="row-span-2 w-full h-full rounded-md bg-gradient-to-br from-[#012060] to-bloo"></div>
+        <div>
+          <h1 className="text-center">Blog</h1>
+          <h1 className="w-0 group-hover:w-1/2 transition duration-500 mx-auto group-hover:bg-bloo h-0.5 bg-white"></h1>
+          <h1 className="text-sm pt-2 text-blackk/50">Read our latest insights, product updates, and industry knowledge.</h1>
+        </div>
+      </Link>
+    </div>
   </div>
 );
 

@@ -171,7 +171,7 @@ export default function Footer() {
               <li className={linkClass}><Link href="/about">About Us</Link></li>
               <li className={linkClass}><Link href="/our-team">Our Team</Link></li>
               <li className={linkClass}><Link href="/case-studies">Case Studies</Link></li>
-              {/* <li className={linkClass}><a href="https://www.eicetechnology.com/#/Blog">Blog</a></li> */}
+              <li className={linkClass}><Link href="/blog">Blog</Link></li>
               {/* <li className={linkClass}><Link href="/careers">Careers</Link></li> */}
               <li className={linkClass}><Link href="/contact">Contact Us</Link></li>
             </ul>

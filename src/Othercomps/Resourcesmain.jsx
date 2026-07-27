@@ -64,6 +64,27 @@ function Resourcesmain() {
           </div>
         </div>
       </div>
+      <div className="max-w-7xl mx-auto py-8 sm:py-12 px-5 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-3 grid-cols-1 xl:gap-0 gap-4 sm:gap-12 justify-center items-center">
+          <div className="flex flex-col col-span-2">
+            <h2 className="text-blackk text-left fontweight_1 text-[32px] sm:text-3xl lg:text-4xl mb-4">
+              Blog
+            </h2>
+            <p className="font-medium text-blackk/70 max-w-2xl text-[16px] sm:text-lg mb-4 sm:mb-6">
+              Read our latest insights, product updates, and industry knowledge —
+              from AI and cloud infrastructure to cybersecurity and digital
+              transformation strategy.
+            </p>
+            <Link href="/blog" className="self-start">
+              <button className="w-full sm:w-auto py-3 px-8 sm:px-12 font-semibold rounded transition duration-200 border-2 border-blue-900 bg-blue-900 text-white hover:bg-blue-800 text-sm sm:text-base">
+                Learn More
+              </button>
+            </Link>
+          </div>
+          <div className="lg:order-last lg:block hidden order-first justify-end items-end relative w-full h-64 sm:h-80 rounded-full overflow-hidden bg-gradient-to-br from-[#012060] to-bloo">
+          </div>
+        </div>
+      </div>
       <Talktous />
     </div>
   );
