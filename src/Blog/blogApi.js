@@ -1,4 +1,4 @@
-const BLOG_API_URL = process.env.BLOG_API_URL || "http://localhost:3000/api/v1";
+const BLOG_API_URL = process.env.BLOG_API_URL || "http://eiceapi.eicetechnology.com/api/v1";
 
 export class BlogApiError extends Error {
   constructor(status, message) {

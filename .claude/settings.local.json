@@ -29,7 +29,8 @@
       "Bash(curl *)",
       "Bash(npm run *)",
       "Bash(netstat -ano)",
-      "Bash(taskkill *)"
+      "Bash(taskkill *)",
+      "Bash(wmic process *)"
     ]
   }
 }
