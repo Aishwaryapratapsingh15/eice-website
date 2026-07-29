@@ -115,9 +115,8 @@ export function BlogDetail({ blog, relatedPosts, latestPosts, categories }) {
             />
           )}
 
-          <div className="mt-6 flex items-center justify-between border-b border-black/10 pb-6 text-[14px]">
+          <div className="mt-6 flex items-center border-b border-black/10 pb-6 text-[14px]">
             <span className="font-semibold text-blackk">By {blog.author.fullName}</span>
-            <span className="text-blackk/50">{blog.views.toLocaleString()} views</span>
           </div>
 
           <div className="prose prose-neutral mt-8 max-w-none">
