@@ -10,17 +10,15 @@ export function BlogHero({ blog }) {
             Featured Article
           </span>
 
-          <Link to={`/blog/${blog.slug}`} className="group">
-            <h1 className="mt-4 text-[32px] font-extrabold leading-[1.1] tracking-tight text-white transition-colors duration-300 group-hover:text-bloo sm:text-5xl">
-              {blog.title}
-            </h1>
+          <h1 className="mt-4 text-[32px] font-extrabold leading-[1.1] tracking-tight text-white sm:text-5xl">
+            {blog.title}
+          </h1>
 
-            {blog.excerpt && (
-              <p className="mt-3 max-w-xl text-[18px] text-base leading-relaxed text-white/75 line-clamp-4 sm:text-lg">
-                {blog.excerpt}
-              </p>
-            )}
-          </Link>
+          {blog.excerpt && (
+            <p className="mt-3 max-w-xl text-[18px] text-base leading-relaxed text-white/75 line-clamp-4 sm:text-lg">
+              {blog.excerpt}
+            </p>
+          )}
 
           <div className="mt-3 flex flex-wrap items-center gap-2 text-[14px] text-white/60">
             <span>{blog.author.fullName}</span>
@@ -36,10 +34,10 @@ export function BlogHero({ blog }) {
 
           <div className="mt-5 flex text-[18px] flex-wrap items-center gap-4">
             <Link
-              to="/blog#articles"
+              to={`/blog/${blog.slug}`}
               className="inline-flex h-12 items-center justify-center rounded-full border-2 border-transparent bg-bloo px-7 font-semibold text-white shadow-lg shadow-bloo/25 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#012060] hover:shadow-xl"
             >
-              Browse Blogs
+              Read Blog
             </Link>
             <Link
               to="/products/eicerise/form?product=Blog"
