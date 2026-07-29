@@ -30,7 +30,7 @@ export function CtaSection({ content = defaultCtaContent }) {
       />
 
       <div className="relative z-10 mx-auto flex max-w-[800px] flex-col items-center px-5 pt-8 pb-8 text-center sm:px-6 sm:pb-10 lg:pb-12">
-        <span className="text-[22px] font-semibold uppercase tracking-[0.2em] text-bloo">
+        <span className="text-[18px] font-semibold uppercase text-bloo">
           {eyebrow}
         </span>
 

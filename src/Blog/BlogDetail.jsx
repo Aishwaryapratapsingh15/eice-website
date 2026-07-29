@@ -81,20 +81,6 @@ export function BlogDetail({ blog, relatedPosts, latestPosts, categories }) {
                 {primaryCategory.name}
               </span>
             )}
-            <span className="text-blackk/40">·</span>
-            <span className="inline-flex items-center gap-1.5 text-blackk/50">
-              <CalendarIcon />
-              {formatDate(blog.publishedAt)}
-            </span>
-            {blog.readingTime && (
-              <>
-                <span className="text-blackk/40">·</span>
-                <span className="inline-flex items-center gap-1.5 text-blackk/50">
-                  <ClockIcon />
-                  {blog.readingTime} min read
-                </span>
-              </>
-            )}
           </div>
 
           <h1 className="mt-4 text-[32px] font-bold leading-tight tracking-tight text-blackk sm:text-4xl">
@@ -115,8 +101,23 @@ export function BlogDetail({ blog, relatedPosts, latestPosts, categories }) {
             />
           )}
 
-          <div className="mt-6 flex items-center border-b border-black/10 pb-6 text-[14px]">
+          <div className="mt-6 flex items-center justify-between border-b border-black/10 pb-6 text-[14px]">
             <span className="font-semibold text-blackk">By {blog.author.fullName}</span>
+            <div className="flex flex-wrap items-center gap-3">
+              <span className="inline-flex items-center gap-1.5 text-blackk/50">
+                <CalendarIcon />
+                {formatDate(blog.publishedAt)}
+              </span>
+              {blog.readingTime && (
+                <>
+                  <span className="text-blackk/40">·</span>
+                  <span className="inline-flex items-center gap-1.5 text-blackk/50">
+                    <ClockIcon />
+                    {blog.readingTime} min read
+                  </span>
+                </>
+              )}
+            </div>
           </div>
 
           <div className="prose prose-neutral mt-8 max-w-none">
@@ -138,7 +139,7 @@ export function BlogDetail({ blog, relatedPosts, latestPosts, categories }) {
           )}
 
           <div className="relative mt-16 overflow-hidden rounded-2xl bg-gradient-to-br from-[#012060] via-[#0b3a63] to-[#012060] p-8">
-            <span className="text-[12px] font-semibold uppercase tracking-[0.2em] text-bloo">
+            <span className="text-[12px] font-semibold uppercase text-bloo">
               Explore This In Your Environment
             </span>
             <h3 className="mt-3 text-[22px] font-extrabold leading-snug text-white sm:text-[26px]">
