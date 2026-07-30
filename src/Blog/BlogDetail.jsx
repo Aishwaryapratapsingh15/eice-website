@@ -102,22 +102,20 @@ export function BlogDetail({ blog, relatedPosts, latestPosts, categories }) {
           )}
 
           <div className="mt-6 flex items-center justify-between border-b border-black/10 pb-6 text-[14px]">
-            <span className="font-semibold text-blackk">By {blog.author.fullName}</span>
             <div className="flex flex-wrap items-center gap-3">
+              <span className="font-semibold text-blackk">By {blog.author.fullName}</span>
+              <span className="text-blackk/40">·</span>
               <span className="inline-flex items-center gap-1.5 text-blackk/50">
                 <CalendarIcon />
                 {formatDate(blog.publishedAt)}
               </span>
-              {blog.readingTime && (
-                <>
-                  <span className="text-blackk/40">·</span>
-                  <span className="inline-flex items-center gap-1.5 text-blackk/50">
-                    <ClockIcon />
-                    {blog.readingTime} min read
-                  </span>
-                </>
-              )}
             </div>
+            {blog.readingTime && (
+              <span className="inline-flex items-center gap-1.5 text-blackk/50">
+                <ClockIcon />
+                {blog.readingTime} min read
+              </span>
+            )}
           </div>
 
           <div className="prose prose-neutral mt-8 max-w-none">
