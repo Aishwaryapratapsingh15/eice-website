@@ -50,7 +50,7 @@ export function CtaSection({ content = defaultCtaContent }) {
         <div className="mt-5 flex w-full flex-col items-center gap-4 sm:w-auto sm:flex-row sm:justify-center">
           <Link
             to={primaryCta.href}
-            className="group inline-flex h-12 w-full items-center justify-center gap-2 rounded-full bg-bloo px-7 text-[18px] font-semibold text-white shadow-lg shadow-bloo/30 transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-[#012060] sm:w-56"
+            className="group inline-flex h-12 w-full items-center justify-center gap-2 whitespace-nowrap rounded-full bg-bloo px-7 text-[18px] font-semibold text-white shadow-lg shadow-bloo/30 transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-[#012060] sm:w-auto sm:min-w-56"
           >
             {primaryCta.text}
             <span
@@ -62,7 +62,7 @@ export function CtaSection({ content = defaultCtaContent }) {
           </Link>
           <Link
             to={secondaryCta.href}
-            className="inline-flex h-12 w-full items-center justify-center rounded-full border-2 border-white/40 px-7 text-[18px] font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-white hover:bg-white/10 sm:w-56"
+            className="inline-flex h-12 w-full items-center justify-center whitespace-nowrap rounded-full border-2 border-white/40 px-7 text-[18px] font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-white hover:bg-white/10 sm:w-auto sm:min-w-56"
           >
             {secondaryCta.text}
           </Link>

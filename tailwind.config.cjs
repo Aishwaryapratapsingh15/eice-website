@@ -44,6 +44,15 @@ module.exports = {
       screens: {
         'ps': '300px',
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            h2: {
+              marginBottom: '0.5em',
+            },
+          },
+        },
+      },
     },
   },
   plugins: [require('@tailwindcss/typography')],

@@ -1,4 +1,36 @@
-﻿const BASE_URL = "https://www.eicetechnology.com";
+﻿import { blogApiFetch } from "../src/Blog/blogApi";
+
+const BASE_URL = "https://www.eicetechnology.com";
+
+async function fetchAllPublishedBlogs() {
+  const posts = [];
+  let page = 1;
+
+  try {
+    // Loop pages since the backend caps `limit` at 100 per request.
+    for (;;) {
+      const result = await blogApiFetch(
+        `/blogs/public?page=${page}&limit=100&sortBy=publishedAt&sortOrder=desc`,
+      );
+      posts.push(...result.items);
+      if (page >= result.meta.totalPages) break;
+      page += 1;
+    }
+  } catch {
+    // If the blog API is unreachable, don't fail the whole sitemap — just
+    // ship it without blog post entries this time.
+  }
+
+  return posts;
+}
+
+async function fetchAllBlogCategories() {
+  try {
+    return await blogApiFetch("/categories/public");
+  } catch {
+    return [];
+  }
+}
 
 const DATES = {
   core:         "2026-06-15",
@@ -10,7 +42,24 @@ const DATES = {
   blog:         "2026-06-16",
 };
 
-export default function sitemap() {
+export default async function sitemap() {
+  const [blogs, blogCategories] = await Promise.all([
+    fetchAllPublishedBlogs(),
+    fetchAllBlogCategories(),
+  ]);
+  const blogRoutes = blogs.map((blog) => ({
+    url: `${BASE_URL}/blog/${blog.slug}/`,
+    lastModified: blog.updatedAt ?? blog.publishedAt ?? DATES.blog,
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+  const blogCategoryRoutes = blogCategories.map((category) => ({
+    url: `${BASE_URL}/blog/category/${category.slug}/`,
+    lastModified: DATES.blog,
+    changeFrequency: "weekly",
+    priority: 0.6,
+  }));
+
   const routes = [
     // Core pages
     { url: "/",           priority: 1.0, changeFrequency: "weekly",  lastModified: DATES.core      },
@@ -116,15 +165,19 @@ export default function sitemap() {
     { url: "/case-studies/schlumberger-baa/",   priority: 0.6, changeFrequency: "monthly", lastModified: DATES.caseStudies },
     { url: "/case-studies/esp-design-analysis/", priority: 0.6, changeFrequency: "monthly", lastModified: DATES.caseStudies },
 
-    // Blog / Content Hub (placeholder  add individual posts as published)
+    // Blog / Content Hub
     { url: "/blog/",  priority: 0.8, changeFrequency: "weekly",  lastModified: DATES.blog },
   ];
 
-  return routes.map(({ url, priority, changeFrequency, lastModified }) => ({
-    url: `${BASE_URL}${url}`,
-    lastModified,
-    changeFrequency,
-    priority,
-  }));
+  return [
+    ...routes.map(({ url, priority, changeFrequency, lastModified }) => ({
+      url: `${BASE_URL}${url}`,
+      lastModified,
+      changeFrequency,
+      priority,
+    })),
+    ...blogRoutes,
+    ...blogCategoryRoutes,
+  ];
 }
 

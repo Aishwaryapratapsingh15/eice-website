@@ -49,20 +49,18 @@ function PhoneIcon() {
   );
 }
 
-function PlayIcon() {
+function PlusIcon() {
   return (
-    <svg aria-hidden viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4">
-      <path
-        fillRule="evenodd"
-        d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-        clipRule="evenodd"
-      />
+    <svg aria-hidden viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5">
+      <path d="M10 4a1 1 0 011 1v4h4a1 1 0 110 2h-4v4a1 1 0 11-2 0v-4H5a1 1 0 110-2h4V5a1 1 0 011-1z" />
     </svg>
   );
 }
 
 export function BlogDetail({ blog, relatedPosts, latestPosts, categories }) {
-  const primaryCategory = blog.categories[0];
+  const primaryCategory = blog.categories?.[0];
+  const tags = blog.tags ?? [];
+  const faqs = blog.faqs ?? [];
 
   return (
     <main className="mx-auto max-w-7xl pl-2 pr-6 py-16">
@@ -70,8 +68,9 @@ export function BlogDetail({ blog, relatedPosts, latestPosts, categories }) {
         <article className="lg:col-span-2 mt-10">
           <div className="flex flex-wrap items-center gap-3 text-[12px]">
             {primaryCategory && (
-              <span
-                className="inline-flex items-center gap-1.5 rounded-full px-3 py-1 font-semibold uppercase tracking-wide"
+              <Link
+                to={`/blog/category/${primaryCategory.slug}`}
+                className="inline-flex items-center gap-1.5 rounded-full px-3 py-1 font-semibold uppercase tracking-wide transition-opacity duration-200 hover:opacity-80"
                 style={{
                   backgroundColor: primaryCategory.color ? `${primaryCategory.color}1a` : undefined,
                   color: primaryCategory.color ?? undefined,
@@ -79,11 +78,11 @@ export function BlogDetail({ blog, relatedPosts, latestPosts, categories }) {
               >
                 <CategoryIcon className="h-3.5 w-3.5" />
                 {primaryCategory.name}
-              </span>
+              </Link>
             )}
           </div>
 
-          <h1 className="mt-4 text-[32px] font-bold leading-tight tracking-tight text-blackk sm:text-4xl">
+          <h1 className="mt-4 text-[32px] font-semibold leading-tight tracking-tight text-blackk sm:text-4xl">
             {blog.title}
           </h1>
 
@@ -103,7 +102,7 @@ export function BlogDetail({ blog, relatedPosts, latestPosts, categories }) {
 
           <div className="mt-6 flex items-center justify-between border-b border-black/10 pb-6 text-[14px]">
             <div className="flex flex-wrap items-center gap-3">
-              <span className="font-semibold text-blackk">By {blog.author.fullName}</span>
+              <span className="font-semibold text-blackk">By {blog.author?.fullName ?? "EICE Technology"}</span>
               <span className="text-blackk/40">·</span>
               <span className="inline-flex items-center gap-1.5 text-blackk/50">
                 <CalendarIcon />
@@ -122,9 +121,9 @@ export function BlogDetail({ blog, relatedPosts, latestPosts, categories }) {
             <ReactMarkdown remarkPlugins={[remarkGfm]}>{blog.content}</ReactMarkdown>
           </div>
 
-          {blog.tags.length > 0 && (
+          {tags.length > 0 && (
             <div className="mt-10 flex flex-wrap gap-2 border-t border-black/10 pt-6">
-              {blog.tags.map((tag) => (
+              {tags.map((tag) => (
                 <span
                   key={tag.id}
                   className="inline-flex items-center gap-1 rounded-full bg-black/5 px-2.5 py-0.5 text-[12px] text-blackk/60"
@@ -136,32 +135,53 @@ export function BlogDetail({ blog, relatedPosts, latestPosts, categories }) {
             </div>
           )}
 
+          {faqs.length > 0 && (
+            <div className="mt-10 border-t border-black/10 pt-8">
+              <h2 className="text-[22px] font-extrabold text-blackk">
+                Frequently Asked Questions
+              </h2>
+              <div className="mt-4 divide-y divide-black/5">
+                {faqs.map((faq) => (
+                  <details key={faq.id} className="group py-4">
+                    <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-[16px] font-semibold text-blackk marker:content-['']">
+                      {faq.question}
+                      <span className="shrink-0 text-bloo transition-transform duration-200 group-open:rotate-45">
+                        <PlusIcon />
+                      </span>
+                    </summary>
+                    <p className="mt-3 text-[14px] leading-relaxed text-slate-600">
+                      {faq.answer}
+                    </p>
+                  </details>
+                ))}
+              </div>
+            </div>
+          )}
+
           <div className="relative mt-16 overflow-hidden rounded-2xl bg-gradient-to-br from-[#012060] via-[#0b3a63] to-[#012060] p-8">
             <span className="text-[12px] font-semibold uppercase text-bloo">
               Explore This In Your Environment
             </span>
             <h3 className="mt-3 text-[22px] font-extrabold leading-snug text-white sm:text-[26px]">
-              See how EICE Technology implements this for enterprise clients.
+              {blog.ctaHeading ?? "See how EICE Technology implements this for enterprise clients."}
             </h3>
             <p className="mt-3 max-w-xl text-[14px] leading-relaxed text-white/70">
-              Our engineers have deployed this architecture across dozens of
-              organizations. Schedule a working session to walk through your specific
-              constraints.
+              {blog.ctaDescription ??
+                "Our engineers have deployed this architecture across dozens of organizations. Schedule a working session to walk through your specific constraints."}
             </p>
             <div className="mt-5 flex flex-wrap gap-3">
               <Link
-                to="/products/eicerise/form?product=Blog"
+                to={blog.ctaPrimaryUrl ?? "/products/eicerise/form?product=Blog"}
                 className="inline-flex h-11 items-center justify-center gap-2 rounded-full bg-bloo px-6 text-[14px] font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-[#012060]"
               >
-                <PlayIcon />
-                Request a Demo
+                {blog.ctaPrimaryText ?? "Request a Demo"}
               </Link>
               <Link
-                to="/contact"
+                to={blog.ctaSecondaryUrl ?? "/contact"}
                 className="inline-flex h-11 items-center justify-center gap-2 rounded-full border-2 border-white/40 px-6 text-[14px] font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-white hover:bg-white/10"
               >
                 <PhoneIcon />
-                Talk to Sales
+                {blog.ctaSecondaryText ?? "Talk to Sales"}
               </Link>
             </div>
           </div>

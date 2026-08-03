@@ -22,18 +22,6 @@ function PhoneIcon() {
   );
 }
 
-function PlayIcon() {
-  return (
-    <svg aria-hidden viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4">
-      <path
-        fillRule="evenodd"
-        d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-        clipRule="evenodd"
-      />
-    </svg>
-  );
-}
-
 function RssIcon() {
   return (
     <svg aria-hidden viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5 text-bloo">
@@ -63,7 +51,6 @@ export function BlogSidebar({ latestPosts, categories }) {
             to="/products/eicerise/form?product=Blog"
             className="inline-flex h-11 w-full items-center justify-center gap-2 rounded-full bg-bloo text-[14px] font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-[#012060]"
           >
-            <PlayIcon />
             Request a Demo
           </Link>
           <Link
@@ -83,7 +70,7 @@ export function BlogSidebar({ latestPosts, categories }) {
           </div>
           <ul className="divide-y divide-black/5">
             {latestPosts.map((post) => {
-              const category = post.categories[0];
+              const category = post.categories?.[0];
               return (
                 <li key={post.id}>
                   <Link to={`/blog/${post.slug}`} className="group flex gap-3 px-6 py-4">
@@ -142,7 +129,7 @@ export function BlogSidebar({ latestPosts, categories }) {
             {categories.map((category) => (
               <li key={category.id}>
                 <Link
-                  to={`/blog?category=${category.slug}`}
+                  to={`/blog/category/${category.slug}`}
                   className="flex items-center justify-between px-6 py-3 text-[14px] text-blackk/70 transition-colors duration-200 hover:text-bloo"
                 >
                   <span className="inline-flex items-center gap-2">

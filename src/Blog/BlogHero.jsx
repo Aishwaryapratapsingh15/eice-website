@@ -10,7 +10,7 @@ export function BlogHero({ blog }) {
             Featured Article
           </span>
 
-          <h1 className="mt-4 text-[32px] font-extrabold leading-[1.1] tracking-tight text-white sm:text-5xl">
+          <h1 className="mt-4 text-[32px] font-semibold leading-[1.1] tracking-tight text-white sm:text-5xl">
             {blog.title}
           </h1>
 
@@ -21,7 +21,7 @@ export function BlogHero({ blog }) {
           )}
 
           <div className="mt-3 flex flex-wrap items-center gap-2 text-[14px] text-white/60">
-            <span>{blog.author.fullName}</span>
+            <span>{blog.author?.fullName ?? "EICE Technology"}</span>
             <span aria-hidden>·</span>
             <span>{formatDate(blog.publishedAt)}</span>
             {blog.readingTime && (
@@ -47,15 +47,16 @@ export function BlogHero({ blog }) {
             </Link>
           </div>
 
-          {blog.categories.length > 0 && (
-            <div className="mt-5 flex flex-wrap gap-2">
-              {blog.categories.map((category) => (
-                <span
+          {(blog.categories ?? []).length > 0 && (
+            <div className="mt-5 flex text-[13px] flex-wrap items-center gap-2">
+              {(blog.categories ?? []).map((category) => (
+                <Link
                   key={category.id}
-                  className="rounded-full bg-[#eef4fb] px-4 py-1.5 text-[12px] font-medium text-[#012060] transition-colors duration-200 hover:bg-bloo hover:text-white"
+                  to={`/blog/category/${category.slug}`}
+                  className="inline-flex h-7 items-center justify-center rounded-full border-2 border-bloo px-3 font-semibold text-bloo transition-all duration-300 hover:-translate-y-0.5 hover:bg-bloo hover:text-white"
                 >
                   {category.name}
-                </span>
+                </Link>
               ))}
             </div>
           )}

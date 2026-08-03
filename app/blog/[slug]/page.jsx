@@ -32,6 +32,8 @@ export async function generateMetadata({ params }) {
       url,
       siteName: "EICE Technology",
       type: "article",
+      publishedTime: blog.publishedAt ?? undefined,
+      modifiedTime: blog.updatedAt ?? undefined,
       images: blog.featuredMedia
         ? [{ url: blog.featuredMedia.url, width: blog.featuredMedia.width ?? undefined, height: blog.featuredMedia.height ?? undefined }]
         : undefined,
@@ -52,10 +54,11 @@ export default async function Page({ params }) {
 
   const otherPosts = recentBatch.items.filter((post) => post.id !== blog.id);
   const latestPosts = otherPosts.slice(0, 4);
-  const blogCategoryIds = new Set(blog.categories.map((c) => c.id));
+  const blogCategoryIds = new Set((blog.categories ?? []).map((c) => c.id));
   const relatedPosts = otherPosts
-    .filter((post) => post.categories.some((c) => blogCategoryIds.has(c.id)))
+    .filter((post) => (post.categories ?? []).some((c) => blogCategoryIds.has(c.id)))
     .slice(0, 2);
+  const faqs = blog.faqs ?? [];
 
   const jsonLd = [
     {
@@ -73,10 +76,39 @@ export default async function Page({ params }) {
       headline: blog.title,
       description: blog.excerpt ?? undefined,
       datePublished: blog.publishedAt ?? undefined,
-      author: { "@type": "Person", name: blog.author.fullName },
-      image: blog.featuredMedia?.url,
-      publisher: { "@type": "Organization", name: "EICE Technology", url: "https://www.eicetechnology.com" },
+      dateModified: blog.updatedAt ?? blog.publishedAt ?? undefined,
+      author: { "@type": "Person", name: blog.author?.fullName ?? "EICE Technology" },
+      image: blog.featuredMedia
+        ? {
+            "@type": "ImageObject",
+            url: blog.featuredMedia.url,
+            width: blog.featuredMedia.width ?? undefined,
+            height: blog.featuredMedia.height ?? undefined,
+          }
+        : undefined,
+      publisher: {
+        "@type": "Organization",
+        name: "EICE Technology",
+        url: "https://www.eicetechnology.com",
+        logo: {
+          "@type": "ImageObject",
+          url: "https://d3r43jacxrwsrp.cloudfront.net/logo.svg",
+        },
+      },
     },
+    ...(faqs.length > 0
+      ? [
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqs.map((faq) => ({
+              "@type": "Question",
+              name: faq.question,
+              acceptedAnswer: { "@type": "Answer", text: faq.answer },
+            })),
+          },
+        ]
+      : []),
   ];
 
   return (
