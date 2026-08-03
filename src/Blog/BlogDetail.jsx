@@ -159,10 +159,7 @@ export function BlogDetail({ blog, relatedPosts, latestPosts, categories }) {
           )}
 
           <div className="relative mt-16 overflow-hidden rounded-2xl bg-gradient-to-br from-[#012060] via-[#0b3a63] to-[#012060] p-8">
-            <span className="text-[12px] font-semibold uppercase text-bloo">
-              Explore This In Your Environment
-            </span>
-            <h3 className="mt-3 text-[22px] font-extrabold leading-snug text-white sm:text-[26px]">
+            <h3 className="text-[22px] font-extrabold leading-snug text-white sm:text-[26px]">
               {blog.ctaHeading ?? "See how EICE Technology implements this for enterprise clients."}
             </h3>
             <p className="mt-3 max-w-xl text-[14px] leading-relaxed text-white/70">

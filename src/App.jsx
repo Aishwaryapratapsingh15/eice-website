@@ -363,7 +363,7 @@ const OurResources = ({ handleSetSelected = () => {} }) => (
         </div>
       </Link>
       <Link to="/blog" onClick={() => handleSetSelected(null)} className="group cursor-pointer grid grid-rows-3 rounded-md">
-        <div className="row-span-2 w-full h-full rounded-md bg-gradient-to-br from-[#012060] to-bloo"></div>
+        <div className="row-span-2 w-full h-full rounded-md bg-[url('https://d3r43jacxrwsrp.cloudfront.net/home_case_study/blog_menu.png')] bg-cover bg-center bg-no-repeat"></div>
         <div>
           <h1 className="text-center">Blog</h1>
           <h1 className="w-0 group-hover:w-1/2 transition duration-500 mx-auto group-hover:bg-bloo h-0.5 bg-white"></h1>
