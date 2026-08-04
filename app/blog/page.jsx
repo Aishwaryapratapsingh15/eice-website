@@ -47,13 +47,14 @@ const jsonLd = [
 
 export default async function Page({ searchParams }) {
   const params = await searchParams;
-  const page = params?.page ?? "1";
   const categoryParam = params?.category
     ? `&category=${encodeURIComponent(params.category)}`
     : "";
 
+  // No pagination on this listing — 1 featured + a fixed 6-card grid, always
+  // the latest posts, so only 7 ever need fetching.
   const result = await blogApiFetch(
-    `/blogs/public?page=${page}&limit=9&sortBy=publishedAt&sortOrder=desc${categoryParam}`,
+    `/blogs/public?page=1&limit=7&sortBy=publishedAt&sortOrder=desc${categoryParam}`,
   );
 
   return (

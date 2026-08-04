@@ -8,18 +8,19 @@ export function LatestArticles({ blogs, hideHeading = false }) {
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div className="max-w-2xl">
             <span className="text-[18px] font-semibold uppercase text-bloo">
-              Latest Articles
+              Latest Insights
             </span>
-            <h2 className="mt-3 text-[28px] font-extrabold tracking-tight text-blackk sm:text-4xl">
-              Fresh from the blog
+            <h2 className="mt-3 text-[28px] font-semibold tracking-tight text-blackk sm:text-4xl">
+              Insights That Help You Make Better Technology Decisions
             </h2>
             <p className="mt-3 text-[18px] leading-relaxed text-slate-600">
-              Explore our latest insights, product updates, and industry knowledge.
+              Explore expert articles, industry trends, implementation guides, and practical
+              insights across hospitality, logistics, AI, and enterprise software.
             </p>
           </div>
 
           <Link
-            to="/blog#articles"
+            to="/blog/articles"
             className="inline-flex h-11 shrink-0 items-center justify-center rounded-full border-2 border-bloo px-6 text-[18px] font-semibold text-bloo transition-all duration-300 hover:-translate-y-0.5 hover:bg-bloo hover:text-white sm:self-auto"
           >
             View All Articles

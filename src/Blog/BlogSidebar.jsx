@@ -37,14 +37,13 @@ export function BlogSidebar({ latestPosts, categories }) {
     <aside className="flex flex-col gap-8 lg:sticky lg:top-24 lg:self-start">
       <div className="rounded-2xl bg-[#012060] p-6">
         <span className="text-[12px] font-semibold uppercase tracking-[0.2em] text-bloo">
-          Ready to Modernize?
+          READY TO TRANSFORM YOUR OPERATIONS?
         </span>
         <h3 className="mt-3 text-[20px] font-extrabold leading-snug text-white">
-          Talk to an engineer, not a sales script.
+          Build the right solution with experts.
         </h3>
         <p className="mt-3 text-[14px] leading-relaxed text-white/70">
-          Our solutions engineers map your current architecture and surface quick wins
-          before any contract conversation.
+          Whether you're modernizing hospitality operations, streamlining logistics, or exploring AI automation, our team will help you identify the right approach for your business.
         </p>
         <div className="mt-5 flex flex-col gap-3">
           <Link
@@ -130,7 +129,7 @@ export function BlogSidebar({ latestPosts, categories }) {
               <li key={category.id}>
                 <Link
                   to={`/blog/category/${category.slug}`}
-                  className="flex items-center justify-between px-6 py-3 text-[14px] text-blackk/70 transition-colors duration-200 hover:text-bloo"
+                  className="tap-sm flex items-center justify-between px-6 py-3 text-[14px] text-blackk/70 transition-colors duration-200 hover:text-bloo"
                 >
                   <span className="inline-flex items-center gap-2">
                     <CategoryIcon />

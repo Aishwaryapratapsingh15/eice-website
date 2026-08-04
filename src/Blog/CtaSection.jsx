@@ -6,7 +6,7 @@ export const defaultCtaContent = {
   description:
     "EICE Technology helps organizations accelerate digital transformation through intelligent software solutions, enterprise applications, AI-powered platforms, cloud infrastructure, cybersecurity, and business automation.",
   primaryCta: { text: "Request a Demo", href: "/products/eicerise/form?product=Blog" },
-  secondaryCta: { text: "Talk to Sales", href: "/contact" },
+  secondaryCta: { text: "Contact Our Team", href: "/contact" },
   trustIndicators: [
     "Enterprise-ready solutions",
     "AI-powered innovation",
@@ -53,12 +53,6 @@ export function CtaSection({ content = defaultCtaContent }) {
             className="group inline-flex h-12 w-full items-center justify-center gap-2 whitespace-nowrap rounded-full bg-bloo px-7 text-[18px] font-semibold text-white shadow-lg shadow-bloo/30 transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-[#012060] sm:w-auto sm:min-w-56"
           >
             {primaryCta.text}
-            <span
-              aria-hidden
-              className="transition-transform duration-300 group-hover:translate-x-1"
-            >
-              →
-            </span>
           </Link>
           <Link
             to={secondaryCta.href}

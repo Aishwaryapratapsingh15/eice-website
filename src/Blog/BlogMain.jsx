@@ -30,6 +30,10 @@ export function BlogMain({
   const featured =
     !isCategoryView && isFirstPage ? (items.find((blog) => blog.isFeatured) ?? items[0]) : undefined;
   const gridItems = featured ? items.filter((blog) => blog.id !== featured.id) : items;
+  // The main blog listing has no pagination — always show a fixed 6-card
+  // grid below the featured hero. Category pages are unaffected: they can
+  // still page through everything in that category.
+  const displayItems = isCategoryView ? gridItems : gridItems.slice(0, 6);
 
   const basePath = categorySlug ? `/blog/category/${categorySlug}` : "/blog";
   const categorySuffix = !categorySlug && category ? `&category=${category}` : "";
@@ -60,9 +64,9 @@ export function BlogMain({
 
       {featured && <BlogHero blog={featured} />}
 
-      <LatestArticles blogs={gridItems} hideHeading={isCategoryView} />
+      <LatestArticles blogs={displayItems} hideHeading={isCategoryView} />
 
-      {meta.totalPages > 1 && (
+      {isCategoryView && meta.totalPages > 1 && (
         <div className="mx-auto flex max-w-6xl items-center justify-center gap-4 px-5 pt-8 pb-8 text-[14px] sm:px-6">
           {meta.page > 1 && (
             <Link to={`${basePath}?page=${meta.page - 1}${categorySuffix}`} className="underline">

@@ -23,7 +23,7 @@ export function BlogCard({ blog }) {
           {category && (
             <Link
               to={`/blog/category/${category.slug}`}
-              className="font-semibold uppercase tracking-wide text-bloo hover:underline"
+              className="tap-sm font-semibold uppercase tracking-wide text-bloo hover:underline"
               style={category.color ? { color: category.color } : undefined}
             >
               {category.name}

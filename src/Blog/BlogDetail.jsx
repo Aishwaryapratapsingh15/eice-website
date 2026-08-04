@@ -63,14 +63,14 @@ export function BlogDetail({ blog, relatedPosts, latestPosts, categories }) {
   const faqs = blog.faqs ?? [];
 
   return (
-    <main className="mx-auto max-w-7xl pl-2 pr-6 py-16">
+    <main className="mx-auto max-w-7xl pl-2 pr-6 pt-8 pb-16">
       <div className="grid gap-10 lg:grid-cols-3 lg:items-start">
-        <article className="lg:col-span-2 mt-10">
+        <article className="lg:col-span-2">
           <div className="flex flex-wrap items-center gap-3 text-[12px]">
             {primaryCategory && (
               <Link
                 to={`/blog/category/${primaryCategory.slug}`}
-                className="inline-flex items-center gap-1.5 rounded-full px-3 py-1 font-semibold uppercase tracking-wide transition-opacity duration-200 hover:opacity-80"
+                className="tap-sm inline-flex items-center gap-1.5 rounded-full px-3 py-1 font-semibold uppercase tracking-wide transition-opacity duration-200 hover:opacity-80"
                 style={{
                   backgroundColor: primaryCategory.color ? `${primaryCategory.color}1a` : undefined,
                   color: primaryCategory.color ?? undefined,

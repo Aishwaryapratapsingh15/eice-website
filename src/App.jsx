@@ -7,6 +7,7 @@ import dynamic from "next/dynamic";
 
 const logo = "https://d3r43jacxrwsrp.cloudfront.net/logo.svg";
 import { NavLink, Link, useNavigate } from "@/nextNavigation";
+import { Breadcrumbs } from "./Othercomps/Breadcrumbs";
 
 // The mobile nav dropdown (MUI Menu + framer-motion panels) is closed by
 // default and not needed for first paint, so it's split into its own chunk
@@ -108,6 +109,7 @@ const NavLayout = ({ children }) => {
         </nav>
 
         <main id="main-content" className="2xl:mt-28 2xl:w-full 2xl:scale-100 w-screen scale-100">
+          <Breadcrumbs />
           {children}
         </main>
       </div>

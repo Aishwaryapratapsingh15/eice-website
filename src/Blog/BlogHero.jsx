@@ -21,6 +21,13 @@ export function BlogHero({ blog }) {
           )}
 
           <div className="mt-3 flex flex-wrap items-center gap-2 text-[14px] text-white/60">
+            {blog.author?.avatarMedia && (
+              <img
+                src={blog.author.avatarMedia.url}
+                alt={blog.author.avatarMedia.altText ?? blog.author.fullName ?? ""}
+                className="h-8 w-8 rounded-full object-cover"
+              />
+            )}
             <span>{blog.author?.fullName ?? "EICE Technology"}</span>
             <span aria-hidden>·</span>
             <span>{formatDate(blog.publishedAt)}</span>
@@ -35,13 +42,13 @@ export function BlogHero({ blog }) {
           <div className="mt-5 flex text-[18px] flex-wrap items-center gap-4">
             <Link
               to={`/blog/${blog.slug}`}
-              className="inline-flex h-12 items-center justify-center rounded-full border-2 border-transparent bg-bloo px-7 font-semibold text-white shadow-lg shadow-bloo/25 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#012060] hover:shadow-xl"
+              className="inline-flex h-12 items-center justify-center rounded-full border-2 border-transparent bg-bloo px-7 font-semibold text-white shadow-lg shadow-bloo/25 transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-[#012060]"
             >
               Read Blog
             </Link>
             <Link
               to="/products/eicerise/form?product=Blog"
-              className="inline-flex h-12 items-center justify-center rounded-full border-2 border-bloo px-7 font-semibold text-bloo transition-all duration-300 hover:-translate-y-0.5 hover:bg-bloo hover:text-white"
+              className="inline-flex h-12 items-center justify-center whitespace-nowrap rounded-full border-2 border-white/40 px-7 font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-white hover:bg-white/10"
             >
               Request a Demo
             </Link>
