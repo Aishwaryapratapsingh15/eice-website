@@ -55,7 +55,7 @@ export function BlogHero({ blog }) {
             </Link>
           </div>
 
-          {(blog.categories ?? []).length > 0 && (
+          {/* {(blog.categories ?? []).length > 0 && (
             <div className="mt-5 flex text-[13px] flex-wrap items-center gap-2">
               {(blog.categories ?? []).map((category) => (
                 <Link
@@ -67,7 +67,7 @@ export function BlogHero({ blog }) {
                 </Link>
               ))}
             </div>
-          )}
+          )} */}
         </div>
 
         <Link
