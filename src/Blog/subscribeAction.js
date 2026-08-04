@@ -1,6 +1,6 @@
 "use server";
 
-const BLOG_API_URL = process.env.BLOG_API_URL || "http://eiceapi.eicetechnology.com/api/v1";
+const BLOG_API_URL = process.env.BLOG_API_URL || "https://eiceapi.eicetechnology.com/api/v1";
 
 export async function subscribeToNewsletter(_prevState, formData) {
   const email = String(formData.get("email") ?? "").trim();
