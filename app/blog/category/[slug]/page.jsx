@@ -69,6 +69,8 @@ export default async function Page({ params, searchParams }) {
         categorySlug={category.slug}
         categoryName={category.name}
         categoryColor={category.color}
+        categoryHeading={category.heading}
+        categoryDescription={category.description}
       />
       <ProductFooter />
       <Copyright />

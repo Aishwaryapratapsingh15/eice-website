@@ -15,7 +15,16 @@ function CategoryIcon({ className }) {
   );
 }
 
-export function BlogMain({ items, meta, category, categorySlug, categoryName, categoryColor }) {
+export function BlogMain({
+  items,
+  meta,
+  category,
+  categorySlug,
+  categoryName,
+  categoryColor,
+  categoryHeading,
+  categoryDescription,
+}) {
   const isCategoryView = Boolean(categorySlug);
   const isFirstPage = meta.page === 1;
   const featured =
@@ -39,6 +48,13 @@ export function BlogMain({ items, meta, category, categorySlug, categoryName, ca
             <CategoryIcon className="h-3.5 w-3.5" />
             {categoryName}
           </h1>
+          <h2 className="mt-4 text-[28px] font-extrabold tracking-tight text-blackk sm:text-4xl">
+            {categoryHeading ?? `${categoryName} Articles and Insights`}
+          </h2>
+          <p className="mt-3 max-w-2xl text-[16px] leading-relaxed text-slate-600">
+            {categoryDescription ??
+              "Explore our latest insights, guides, and updates in this category."}
+          </p>
         </div>
       )}
 

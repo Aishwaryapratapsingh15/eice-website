@@ -35,7 +35,7 @@ export function BlogCard({ blog }) {
         </div>
 
         <Link to={`/blog/${blog.slug}`} className="contents">
-          <h3 className="mt-3 line-clamp-2 text-[18px] font-bold leading-snug text-blackk transition-colors duration-300 group-hover:text-bloo sm:line-clamp-3">
+          <h3 className="mt-3 line-clamp-2 text-[18px] font-bold leading-snug text-blackk transition-colors duration-300 group-hover:text-bloo">
             {blog.title}
           </h3>
 

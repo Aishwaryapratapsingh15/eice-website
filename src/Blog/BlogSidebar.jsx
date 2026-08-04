@@ -58,7 +58,7 @@ export function BlogSidebar({ latestPosts, categories }) {
             className="inline-flex h-11 w-full items-center justify-center gap-2 rounded-full border-2 border-white/40 text-[14px] font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-white hover:bg-white/10"
           >
             <PhoneIcon />
-            Talk to Sales
+            Contact our Team
           </Link>
         </div>
       </div>
