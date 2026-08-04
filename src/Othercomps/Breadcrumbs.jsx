@@ -46,11 +46,15 @@ const ACRONYM_WORDS = new Set([
 
 // Top-level sections with no index page of their own (linking to them 404s)
 // — render as plain, non-clickable text instead of a broken link.
-const NO_INDEX_PAGE = new Set(["products"]);
+const NO_INDEX_PAGE = new Set([]);
 
 // Purely structural URL segments with no real page of their own and no
 // meaningful label — omitted from the trail entirely (not just unlinked).
-const SKIP_SEGMENTS = new Set(["category"]);
+// "products" only ever shows up as a dropdown menu, never a real page.
+const SKIP_SEGMENTS = new Set(["category", "products"]);
+
+// Exact pages that never show a breadcrumb, regardless of depth.
+const HIDDEN_PATHS = new Set(["/products/eicerise", "/products/easylogy"]);
 
 function toTitleCase(segment) {
   return segment
@@ -69,6 +73,8 @@ function labelFor(segment) {
 
 export function Breadcrumbs() {
   const pathname = usePathname() || "/";
+  if (HIDDEN_PATHS.has(pathname)) return null;
+
   const segments = pathname.split("/").filter(Boolean);
 
   // Only surface the trail once the visitor is more than two pages deep

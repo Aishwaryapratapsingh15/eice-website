@@ -8,7 +8,6 @@
     height: 904px;
     margin: 0px auto;
     position: relative;
-    margin-top: 64px;
     z-index: 1;
 }
 
@@ -225,11 +224,6 @@
 /* shift of top section when phone nav bar  appear */
 @media (max-width :1120px) {
 
-
-    .section1 {
-        top: 64px;
-
-    }
 
     .text1 {
         font-size: 36px;
