@@ -41,9 +41,9 @@ function ClockIcon() {
   );
 }
 
-function PhoneIcon() {
+function PhoneIcon({ className = "h-4 w-4" }) {
   return (
-    <svg aria-hidden viewBox="0 0 20 20" fill="currentColor" className="h-4 w-4">
+    <svg aria-hidden viewBox="0 0 20 20" fill="currentColor" className={className}>
       <path d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-.54 1.409l-1.048.81a12.023 12.023 0 006.086 6.086l.81-1.048a1.5 1.5 0 011.408-.54l3.223.716A1.5 1.5 0 0117 15.352V16.5a1.5 1.5 0 01-1.5 1.5h-1C8.82 18 2 11.18 2 3.5v-1z" />
     </svg>
   );
@@ -63,9 +63,9 @@ export function BlogDetail({ blog, relatedPosts, latestPosts, categories }) {
   const faqs = blog.faqs ?? [];
 
   return (
-    <main className="mx-auto max-w-7xl pl-2 pr-6 pt-8 pb-16">
+    <main className="mx-auto max-w-7xl px-5 pt-8 pb-16">
       <div className="grid gap-10 lg:grid-cols-3 lg:items-start">
-        <article className="lg:col-span-2">
+        <article className="min-w-0 lg:col-span-2">
           <div className="flex flex-wrap items-center gap-3 text-[12px]">
             {primaryCategory && (
               <Link
@@ -173,18 +173,18 @@ export function BlogDetail({ blog, relatedPosts, latestPosts, categories }) {
               {blog.ctaDescription ??
                 "Our engineers have deployed this architecture across dozens of organizations. Schedule a working session to walk through your specific constraints."}
             </p>
-            <div className="mt-5 flex flex-wrap gap-3">
+            <div className="mt-5 flex flex-nowrap items-center gap-1.5 sm:gap-3">
               <Link
                 to={blog.ctaPrimaryUrl ?? "/products/eicerise/form?product=Blog"}
-                className="inline-flex h-11 items-center justify-center gap-2 rounded-full bg-bloo px-6 text-[14px] font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-[#012060]"
+                className="inline-flex h-10 shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-bloo px-3 text-[12px] font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-[#012060] sm:h-11 sm:px-6 sm:text-[14px]"
               >
                 {blog.ctaPrimaryText ?? "Request a Demo"}
               </Link>
               <Link
                 to={blog.ctaSecondaryUrl ?? "/contact"}
-                className="inline-flex h-11 items-center justify-center gap-2 rounded-full border-2 border-white/40 px-6 text-[14px] font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-white hover:bg-white/10"
+                className="inline-flex h-10 shrink-0 items-center justify-center gap-1 whitespace-nowrap rounded-full border-2 border-white/40 px-3 text-[12px] font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-white hover:bg-white/10 sm:gap-2 sm:px-6 sm:text-[14px] sm:h-11"
               >
-                <PhoneIcon />
+                <PhoneIcon className="hidden h-4 w-4 sm:block" />
                 {blog.ctaSecondaryText ?? "Talk to Sales"}
               </Link>
             </div>

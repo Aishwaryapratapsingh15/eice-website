@@ -174,7 +174,7 @@ function Cstdmain() {
 function DataAnalytics() {
   return (
     <div>
-      <div className="xl:-mt-8 -mt-4 bg-gradient-to-r from-transparent via-bloo/5 to-bloo/10 pt-16 md:pt-20 lg:pt-12 2xl:pt-0">
+      <div className="bg-gradient-to-r from-transparent via-bloo/5 to-bloo/10 pt-4">
         <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen ">
           <div className="absolute -z-20 inset-0 right-[75%]">
             <img src={servicebannerpattern} alt=""  width="427" height="426" />

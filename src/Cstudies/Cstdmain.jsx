@@ -230,7 +230,7 @@ function Cstdmain() {
 
   return (
     <div className="font-manrope  xl:-mt-4">
-      <header className="bg-gradient-to-r from-cyan-100/10 to-bloo/10 w-screen text-white 2xl:py-8 pt-32 pb-8 text-center px-5 sm:px-0">
+      <header className="bg-gradient-to-r from-cyan-100/10 to-bloo/10 w-screen text-white pt-4 pb-8 text-center px-5 sm:px-0">
         <h1 className="text-blackk fontsize_6 fontweight_1 mb-4">
           CASE STUDIES
         </h1>

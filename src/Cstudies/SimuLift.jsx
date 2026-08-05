@@ -9,7 +9,7 @@ import { GiVirtualMarker } from "react-icons/gi";
 function SimuLift() {
   return (
     <div className="">
-      <div className="max-w-7xl mx-auto px-4 2xl:pt-12 pt-32">
+      <div className="max-w-7xl mx-auto px-4 pt-4">
         <div className="w-full">
           <h1 className="text-bloo fontweight_1 text-center fontsize_2 py-2">
             SimuLIFT

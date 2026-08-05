@@ -196,7 +196,7 @@ export default function EiceOps() {
     <div className="bg-white text-[#111]">
 
       {/* HERO SECTION */}
-      <section className="relative overflow-hidden px-5 pt-32 pb-4 md:pt-32 lg:pt-32 md:pb-20 lg:pb-20 md:px-5 md:px-20 lg:px-5 lg:px-32">
+      <section className="relative overflow-hidden px-5 pb-4 md:pb-20 lg:pb-20 md:px-5 md:px-20 lg:px-5 lg:px-32">
         
            <div className="mt-5 flex justify-center">
                             <img

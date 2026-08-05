@@ -25,7 +25,7 @@ export function BlogHero({ blog }) {
   return (
     <section className="flex items-stretch overflow-hidden bg-[#012060] pt-10 sm:pt-16 pb-8 mt-10">
       
-      <div className="mx-auto h-full w-full max-w-7xl grid gap-6 pl-2 pr-6 lg:grid-cols-2 lg:items-center lg:gap-10">
+      <div className="mx-auto h-full w-full max-w-7xl grid gap-6 px-5 lg:grid-cols-2 lg:items-center lg:gap-10">
         <div className="flex flex-col justify-center">
           <span className="text-[18px] font-semibold uppercase text-bloo">
             Featured Article
@@ -34,7 +34,9 @@ export function BlogHero({ blog }) {
           <HeroImage blog={blog} className="mt-4 lg:hidden" />
 
           <h1 className="mt-4 text-[32px] font-semibold leading-[1.1] tracking-tight text-white sm:text-5xl">
-            {blog.title}
+            <Link to={blogPostUrl(blog)} className="transition-colors duration-300 hover:text-bloo">
+              {blog.title}
+            </Link>
           </h1>
 
           {blog.excerpt && (

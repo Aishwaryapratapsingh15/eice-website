@@ -975,7 +975,7 @@ function Healthcare() {
 
 
 
-        <div className="sm:max-w-7xl 2xl:pt-12 pt-32 pb-8 px-5 sm:px-4 w-screen mx-auto grid grid-cols-1 sm:grid-cols-3">
+        <div className="sm:max-w-7xl pt-4 pb-8 px-5 sm:px-4 w-screen mx-auto grid grid-cols-1 sm:grid-cols-3">
 
 
 

@@ -510,7 +510,7 @@ function Oilandgas() {
 
       <div className="sm:max-w-7xl w-full mx-auto px-5 sm:px-0">
 
-        <div className="sm:max-w-7xl 2xl:pt-12 pt-32 pb-8 px-0 sm:px-4 w-full mx-auto grid ">
+        <div className="sm:max-w-7xl pt-4 pb-8 px-0 sm:px-4 w-full mx-auto grid ">
 
           {/* Desktop: full image */}
 

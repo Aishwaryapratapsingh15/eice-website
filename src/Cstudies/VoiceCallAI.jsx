@@ -9,7 +9,7 @@ import Link from "next/link";
 function VoiceCallAI() {
   return (
     <div className="">
-      <div className="max-w-7xl mx-auto px-4 2xl:pt-12 pt-32">
+      <div className="max-w-7xl mx-auto px-4 pt-4">
         <div className="w-full">
           <h2 className="text-bloo fontweight_1 text-center fontsize_2 py-2">Voice Call Assistant</h2>
           <h2 className="text-blackk fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">

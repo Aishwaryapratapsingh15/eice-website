@@ -355,7 +355,7 @@ export default function Hospitality() {
     <div className="font-manrope">
 
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="sm:max-w-7xl w-screen mx-auto px-4 pt-32 pb-8 sm:pb-12">
+      <section className="sm:max-w-7xl w-screen mx-auto px-4 pt-4 pb-8 sm:pb-12">
         {/* Desktop: 3 images */}
         <div className="hidden sm:grid grid-cols-3 gap-4 mb-10">
           <img src={heroImg1} alt="Hospitality technology solutions" className="w-full h-64 object-cover rounded-xl"  width="1496" height="918" />

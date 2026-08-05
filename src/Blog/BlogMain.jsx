@@ -42,7 +42,7 @@ export function BlogMain({
     <main>
       {categoryName && (
         // <div className="mx-auto mt-10 max-w-7xl pl-2 pr-6 pt-10 text-[12px] sm:pt-16">
-          <div className="mx-auto mt-10 max-w-7xl pl-2 pr-6  text-[12px]">
+          <div className="mx-auto mt-10 max-w-7xl px-5 text-[12px]">
           <h1
             className="inline-flex items-center gap-1.5 rounded-full px-3 py-1 font-semibold uppercase tracking-wide"
             style={{

@@ -1031,7 +1031,7 @@ function Digitalmedia() {
 
 
 
-        <div className="sm:max-w-7xl 2xl:pt-4 pt-32 pb-8 px-5 sm:px-4 w-screen mx-auto">
+        <div className="sm:max-w-7xl pt-4 pb-8 px-5 sm:px-4 w-screen mx-auto">
 
 
 

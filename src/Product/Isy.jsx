@@ -130,7 +130,7 @@ export default function IsyncLitePage() {
     <div className="font-poppins">
 
       {/* ================= HERO ================= */}
-      <section className="text-center pb-4 pt-16 sm:pb-16 px-4 md:px-10 lg:px-20 xl:px-40 mt-10">
+      <section className="text-center pb-4 sm:pb-16 px-4 md:px-10 lg:px-20 xl:px-40">
         <div className="max-w-[1200px] mx-auto">
 
           {/* IMAGE */}

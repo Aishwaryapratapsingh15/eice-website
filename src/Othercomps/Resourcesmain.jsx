@@ -14,9 +14,9 @@ const resoucres_cs = "https://d3r43jacxrwsrp.cloudfront.net/Service_and_technolo
 function Resourcesmain() {
   return (
     <div>
-      <div className="bg-gradient-to-br mt-10 sm:mt-24 from-cyan-100/10 to-bloo/10 w-screen h-auto sm:h-[60vh] 2xl:h-[35vh] bg-cover bg-no-repeat ">
+      <div className="bg-gradient-to-br from-cyan-100/10 to-bloo/10 w-screen h-auto sm:h-[60vh] 2xl:h-[35vh] bg-cover bg-no-repeat ">
         <div className=" max-w-7xl mx-auto w-full h-full">
-          <div className="2xl:pt-0 flex flex-col items-start sm:items-center justify-start sm:justify-center w-full h-full py-8 sm:py-0 px-5 sm:px-0">
+          <div className="pt-4 flex flex-col items-start sm:items-center justify-start sm:justify-center w-full h-full pb-8 sm:pb-0 px-5 sm:px-0">
             <h1 className="text-blackk fontweight_1 text-left sm:text-center text-[32px] sm:text-[35px] py-2">
               EICE Resources
             </h1>

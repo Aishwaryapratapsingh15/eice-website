@@ -119,7 +119,7 @@ export function Breadcrumbs() {
       aria-label="Breadcrumb"
       className="mx-auto mt-20 w-full max-w-7xl px-4 pt-3 text-[16px] sm:px-6 2xl:mt-0"
     >
-      <ol className="flex flex-nowrap items-center gap-1.5 text-blackk/50">
+      <ol className="flex flex-wrap items-center gap-1.5 text-blackk/50">
         {crumbs.map((crumb, index) => {
           const isLast = index === crumbs.length - 1;
           return (

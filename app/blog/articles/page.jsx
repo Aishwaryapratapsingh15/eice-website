@@ -55,13 +55,13 @@ export default async function Page({ searchParams }) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <div className="mx-auto max-w-7xl pl-2 pr-6 pt-8">
+      <div className="mx-auto max-w-7xl px-5 pt-8">
         <h1 className="text-[28px] font-semibold tracking-tight text-blackk sm:text-4xl">
           All Articles
         </h1>
       </div>
 
-      <section className="mx-auto max-w-7xl pl-2 pr-6 pt-8 pb-8">
+      <section className="mx-auto max-w-7xl px-5 pt-8 pb-8">
         {result.items.length === 0 ? (
           <p className="mt-16 text-center text-[18px] text-blackk/50">
             No posts published yet — check back soon.

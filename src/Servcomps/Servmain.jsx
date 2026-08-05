@@ -36,7 +36,7 @@ function Servmain() {
   return (
     <div className="">
       <div className=" relative font-manrope mx-auto px-5 sm:px-1 sm:max-w-7xl w-screen pb-0">
-        <div className="2xl:pt-12 pt-20 sm:pt-36"></div>
+        <div className="pt-4"></div>
         <h1 className="text-bloo fontweight_1 text-left sm:text-center text-[22px] sm:text-[25px] pt-2 pb-4">
           Our Services
         </h1>

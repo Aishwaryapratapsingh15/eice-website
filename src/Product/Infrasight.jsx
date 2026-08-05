@@ -225,7 +225,7 @@ export default function InfraSight() {
 
       {/* ================= HERO / OVERVIEW ================= */}
 
-       <section className="bg-white pb-4 sm:pb-10 px-4 sm:px-8 md:px-20 mt-10 sm:mt-20 md:mt-40">
+       <section className="bg-white pb-4 sm:pb-10 px-4 sm:px-8 md:px-20">
          <div className="sm:mt-5 mt-10 flex justify-center">
                     <img
                              src={infraSightHero}

@@ -182,7 +182,7 @@ export default function ISyncDrivePage() {
     <div className="bg-white text-gray-800 font-poppins">
 
       {/* HERO */}
-      <section className="mt-10 text-left sm:text-center py-4 sm:py-16 px-5 bg-white">
+      <section className="text-left sm:text-center py-4 px-5 bg-white">
          <div className="mt-5 flex justify-center">
            <img
                     src={heroImg}

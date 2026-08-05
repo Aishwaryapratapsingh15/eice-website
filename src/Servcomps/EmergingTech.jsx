@@ -138,7 +138,7 @@ export default function EmergingTech() {
     <div className="bg-white text-gray-800 font-poppins">
 
       {/* HERO */}
-      <section className="mt-10 text-left sm:text-center py-4 sm:py-16 px-5 bg-white">
+      <section className="text-left sm:text-center pt-4 pb-4 sm:pb-16 px-5 bg-white">
         <div className="mt-5 flex justify-center mb-6">
           {/* Replace with actual hero image once available */}
           {heroImg ? (

@@ -3,7 +3,7 @@ import { BlogCard } from "./BlogCard";
 
 export function LatestArticles({ blogs, hideHeading = false }) {
   return (
-    <section id="articles" className="mx-auto max-w-7xl pl-2 pr-6 pt-8 pb-8">
+    <section id="articles" className="mx-auto max-w-7xl px-5 pt-8 pb-8">
       {!hideHeading && (
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div className="max-w-2xl">

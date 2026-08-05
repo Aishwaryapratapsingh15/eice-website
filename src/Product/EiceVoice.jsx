@@ -139,7 +139,7 @@ export default function EiceVoice() {
     <div className="bg-white text-[#334155]">
 
       {/* ================= HERO ================= */}
-      <section className="bg-white py-4 sm:py-16 md:py-20 text-left sm:text-center mt-20 sm:mt-20 px-4">
+      <section className="bg-white py-4 sm:py-16 md:py-20 text-left sm:text-center px-4">
         <div className="max-w-4xl mx-auto">
 
           {/* ICON */}

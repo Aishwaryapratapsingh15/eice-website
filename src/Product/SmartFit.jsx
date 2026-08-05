@@ -74,7 +74,7 @@ export default function SmartFit() {
   return (
     <div className="w-full text-black">
       {/* HERO SECTION */}
-      <section className="py-4 sm:py-10 px-4 sm:px-8 md:px-20 lg:px-20 xl:px-40 bg-white text-left sm:text-center pt-20 sm:pt-32">
+      <section className="py-4 sm:py-10 px-4 sm:px-8 md:px-20 lg:px-20 xl:px-40 bg-white text-left sm:text-center">
         <div className="flex justify-center sm:mb-10 pb-4">
           <img
             src={heroImg}

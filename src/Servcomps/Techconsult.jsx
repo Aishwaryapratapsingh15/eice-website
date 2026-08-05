@@ -710,7 +710,7 @@ function TechnologyConsulting() {
 
 
 
-      <div className="xl:-mt-8 -mt-4 bg-gradient-to-r from-transparent via-bloo/5 to-bloo/10 pt-16 md:pt-20 lg:pt-12 2xl:pt-0">
+      <div className="bg-gradient-to-r from-transparent via-bloo/5 to-bloo/10 pt-4">
 
 
 
