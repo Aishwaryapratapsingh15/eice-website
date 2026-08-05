@@ -1,4 +1,6 @@
 import { blogApiFetch } from "../../src/Blog/blogApi";
+import { toIstIsoString } from "../../src/Blog/formatDate";
+import { blogPostUrl } from "../../src/Blog/blogUrl";
 
 const BASE_URL = "https://www.eicetechnology.com";
 const FORTY_EIGHT_HOURS_MS = 48 * 60 * 60 * 1000;
@@ -21,7 +23,10 @@ async function fetchRecentlyPublishedBlogs() {
     );
     const cutoff = Date.now() - FORTY_EIGHT_HOURS_MS;
     return result.items.filter(
-      (blog) => blog.publishedAt && new Date(blog.publishedAt).getTime() >= cutoff,
+      (blog) =>
+        blog.publishedAt &&
+        new Date(blog.publishedAt).getTime() >= cutoff &&
+        (blog.categories ?? []).some((c) => c.slug === "news"),
     );
   } catch {
     return [];
@@ -33,7 +38,7 @@ export async function GET() {
 
   const urlEntries = blogs
     .map((blog) => {
-      const url = `${BASE_URL}/blog/${blog.slug}/`;
+      const url = `${BASE_URL}${blogPostUrl(blog)}/`;
       return `  <url>
     <loc>${escapeXml(url)}</loc>
     <news:news>
@@ -41,7 +46,7 @@ export async function GET() {
         <news:name>EICE Technology</news:name>
         <news:language>en</news:language>
       </news:publication>
-      <news:publication_date>${new Date(blog.publishedAt).toISOString()}</news:publication_date>
+      <news:publication_date>${toIstIsoString(blog.publishedAt)}</news:publication_date>
       <news:title>${escapeXml(blog.title)}</news:title>
     </news:news>
   </url>`;

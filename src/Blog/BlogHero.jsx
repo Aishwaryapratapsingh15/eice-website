@@ -1,5 +1,25 @@
 import { Link } from "@/nextNavigation";
 import { formatDate } from "./formatDate";
+import { blogPostUrl } from "./blogUrl";
+
+function HeroImage({ blog, className }) {
+  return (
+    <Link
+      to={blogPostUrl(blog)}
+      className={`group relative aspect-[16/9] w-full overflow-hidden rounded-[24px] shadow-2xl shadow-slate-900/15 ${className}`}
+    >
+      {blog.featuredMedia ? (
+        <img
+          src={blog.featuredMedia.url}
+          alt={blog.featuredMedia.altText ?? blog.title}
+          className="h-full w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105"
+        />
+      ) : (
+        <div className="h-full w-full bg-gradient-to-br from-[#012060] to-bloo" />
+      )}
+    </Link>
+  );
+}
 
 export function BlogHero({ blog }) {
   return (
@@ -10,6 +30,8 @@ export function BlogHero({ blog }) {
           <span className="text-[18px] font-semibold uppercase text-bloo">
             Featured Article
           </span>
+
+          <HeroImage blog={blog} className="mt-4 lg:hidden" />
 
           <h1 className="mt-4 text-[32px] font-semibold leading-[1.1] tracking-tight text-white sm:text-5xl">
             {blog.title}
@@ -40,16 +62,16 @@ export function BlogHero({ blog }) {
             )}
           </div>
 
-          <div className="mt-5 flex text-[18px] flex-wrap items-center gap-4">
+          <div className="mt-5 flex flex-nowrap items-center gap-2 text-[14px] sm:gap-4 sm:text-[18px]">
             <Link
-              to={`/blog/${blog.slug}`}
-              className="inline-flex h-12 items-center justify-center rounded-full border-2 border-transparent bg-bloo px-7 font-semibold text-white shadow-lg shadow-bloo/25 transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-[#012060]"
+              to={blogPostUrl(blog)}
+              className="inline-flex h-10 shrink-0 items-center justify-center whitespace-nowrap rounded-full border-2 border-transparent bg-bloo px-4 font-semibold text-white shadow-lg shadow-bloo/25 transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-[#012060] sm:h-12 sm:px-7"
             >
               Read Blog
             </Link>
             <Link
               to="/products/eicerise/form?product=Blog"
-              className="inline-flex h-12 items-center justify-center whitespace-nowrap rounded-full border-2 border-white/40 px-7 font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-white hover:bg-white/10"
+              className="inline-flex h-10 shrink-0 items-center justify-center whitespace-nowrap rounded-full border-2 border-white/40 px-4 font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-white hover:bg-white/10 sm:h-12 sm:px-7"
             >
               Request a Demo
             </Link>
@@ -70,20 +92,7 @@ export function BlogHero({ blog }) {
           )} */}
         </div>
 
-        <Link
-          to={`/blog/${blog.slug}`}
-          className="group relative aspect-[16/9] w-full overflow-hidden rounded-[24px] shadow-2xl shadow-slate-900/15 mr-4"
-        >
-          {blog.featuredMedia ? (
-            <img
-              src={blog.featuredMedia.url}
-              alt={blog.featuredMedia.altText ?? blog.title}
-              className="h-full w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105"
-            />
-          ) : (
-            <div className="h-full w-full bg-gradient-to-br from-[#012060] to-bloo" />
-          )}
-        </Link>
+        <HeroImage blog={blog} className="mr-4 hidden lg:block" />
       </div>
     </section>
   );

@@ -1,12 +1,14 @@
 import { Link } from "@/nextNavigation";
 import { formatDate } from "./formatDate";
+import { blogPostUrl } from "./blogUrl";
 
 export function BlogCard({ blog }) {
   const category = blog.categories?.[0];
+  const postUrl = blogPostUrl(blog);
 
   return (
     <div className="group flex flex-col overflow-hidden rounded-2xl bg-white shadow-md ring-1 ring-black/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-      <Link to={`/blog/${blog.slug}`} className="relative block aspect-[16/10] w-full overflow-hidden">
+      <Link to={postUrl} className="relative block aspect-[16/10] w-full overflow-hidden">
         {blog.featuredMedia ? (
           <img
             src={blog.featuredMedia.url}
@@ -34,7 +36,7 @@ export function BlogCard({ blog }) {
           )}
         </div>
 
-        <Link to={`/blog/${blog.slug}`} className="contents">
+        <Link to={postUrl} className="contents">
           <h3 className="mt-3 line-clamp-2 text-[18px] font-bold leading-snug text-blackk transition-colors duration-300 group-hover:text-bloo">
             {blog.title}
           </h3>

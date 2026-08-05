@@ -1,7 +1,7 @@
 "use client";
 
 /* eslint-disable react/display-name */
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import PropTypes from "prop-types";
 import clsx from "clsx";
@@ -78,10 +78,19 @@ export default function MobileNavMenu() {
     setMenuView("main");
   };
 
+  useEffect(() => {
+    console.log("[MobileNavMenu] menuOpen state is now:", menuOpen);
+  }, [menuOpen]);
+
   return (
-    <Dropdown open={menuOpen} onOpenChange={setMenuOpen}>
+    <Dropdown
+      open={menuOpen}
+      onOpenChange={(event, isOpen) => {
+        console.log("[MobileNavMenu] onOpenChange fired — event.type:", event?.type, "isOpen:", isOpen);
+        setMenuOpen(isOpen);
+      }}
+    >
       <MenuButton
-        onClick={() => setMenuOpen((p) => !p)}
         className="scale-[0.6] -mr-1"
         aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
         aria-expanded={menuOpen}

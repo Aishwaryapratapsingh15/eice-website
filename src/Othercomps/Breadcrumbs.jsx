@@ -82,15 +82,31 @@ export function Breadcrumbs() {
   // a section does).
   if (segments.length < 2) return null;
 
+  // Blog post URLs are /blog/{category}/{slug} — the middle segment is a
+  // category slug, but its real page lives at /blog/category/{slug}, not
+  // /blog/{slug}. "uncategorized" is our fallback for posts with no real
+  // category, so it has no listing page at all — render it as plain text.
+  // Excludes segments[1] === "category" so this doesn't also match the
+  // (unrelated, also 3-segment) /blog/category/{slug} listing route.
+  const isBlogPostPath =
+    segments[0] === "blog" && segments.length === 3 && segments[1] !== "category";
+
   const crumbs = [
     { label: "Home", href: "/", linkable: true },
     ...segments
-      .map((segment, index) => ({
-        segment,
-        label: labelFor(segment),
-        href: `/${segments.slice(0, index + 1).join("/")}`,
-        linkable: !NO_INDEX_PAGE.has(segment),
-      }))
+      .map((segment, index) => {
+        const isBlogCategorySegment = isBlogPostPath && index === 1;
+        return {
+          segment,
+          label: labelFor(segment),
+          href: isBlogCategorySegment
+            ? `/blog/category/${segment}`
+            : `/${segments.slice(0, index + 1).join("/")}`,
+          linkable:
+            !NO_INDEX_PAGE.has(segment) &&
+            !(isBlogCategorySegment && segment === "uncategorized"),
+        };
+      })
       .filter((crumb) => !SKIP_SEGMENTS.has(crumb.segment)),
   ];
 

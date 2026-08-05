@@ -97,7 +97,10 @@ const NavLayout = ({ children }) => {
         </nav>
 
         {/* â”€â”€ Mobile Navbar â”€â”€ */}
-        <nav className="2xl:hidden xl:hidden flex fixed w-full top-0 left-0 z-30 shadow-md shadow-blackk/20 font-manrope bg-white font-semibold items-center overflow-hidden">
+        {/* z-[60] (not z-30) so this bar — and the hamburger button inside it —
+            stays tappable above MobileNavMenu's full-screen panel, which
+            portals to document.body at z-50. */}
+        <nav className="2xl:hidden xl:hidden flex fixed w-full top-0 left-0 z-[60] shadow-md shadow-blackk/20 font-manrope bg-white font-semibold items-center overflow-hidden">
           <div className="cursor-pointer pl-3">
             <Link href="/"><img src={logo} alt="EICE Technology" className="scale-[1.15]" width="80" height="28" /></Link>
           </div>

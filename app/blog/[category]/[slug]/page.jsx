@@ -1,8 +1,10 @@
-import { notFound } from "next/navigation";
-import { BlogDetail } from "../../../src/Blog/BlogDetail";
-import { blogApiFetch, BlogApiError } from "../../../src/Blog/blogApi";
-import ProductFooter from "../../../src/Product/ProductFooter";
-import Copyright from "../../../src/Othercomps/Copyright";
+import { notFound, permanentRedirect } from "next/navigation";
+import { BlogDetail } from "../../../../src/Blog/BlogDetail";
+import { blogApiFetch, BlogApiError } from "../../../../src/Blog/blogApi";
+import { toIstIsoString } from "../../../../src/Blog/formatDate";
+import { blogPostUrl } from "../../../../src/Blog/blogUrl";
+import ProductFooter from "../../../../src/Product/ProductFooter";
+import Copyright from "../../../../src/Othercomps/Copyright";
 
 async function getBlog(slug) {
   try {
@@ -20,7 +22,7 @@ export async function generateMetadata({ params }) {
 
   const title = blog.seoTitle ?? blog.title;
   const description = blog.seoDescription ?? blog.excerpt ?? undefined;
-  const url = blog.canonicalUrl ?? `https://www.eicetechnology.com/blog/${blog.slug}`;
+  const url = blog.canonicalUrl ?? `https://www.eicetechnology.com${blogPostUrl(blog)}`;
 
   return {
     title: `${title} | EICE Technology`,
@@ -32,8 +34,8 @@ export async function generateMetadata({ params }) {
       url,
       siteName: "EICE Technology",
       type: "article",
-      publishedTime: blog.publishedAt ?? undefined,
-      modifiedTime: blog.updatedAt ?? undefined,
+      publishedTime: toIstIsoString(blog.publishedAt),
+      modifiedTime: toIstIsoString(blog.updatedAt),
       images: blog.featuredMedia
         ? [{ url: blog.featuredMedia.url, width: blog.featuredMedia.width ?? undefined, height: blog.featuredMedia.height ?? undefined }]
         : undefined,
@@ -43,9 +45,16 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function Page({ params }) {
-  const { slug } = await params;
+  const { category, slug } = await params;
   const blog = await getBlog(slug);
   if (!blog) notFound();
+
+  // Enforce the canonical category prefix — a post's primary category can
+  // change over time, or someone can type a stale/wrong one in by hand.
+  const canonicalUrl = blogPostUrl(blog);
+  if (canonicalUrl !== `/blog/${category}/${slug}`) {
+    permanentRedirect(canonicalUrl);
+  }
 
   const [categories, recentBatch] = await Promise.all([
     blogApiFetch("/categories/public"),
@@ -59,6 +68,9 @@ export default async function Page({ params }) {
     .filter((post) => (post.categories ?? []).some((c) => blogCategoryIds.has(c.id)))
     .slice(0, 2);
   const faqs = blog.faqs ?? [];
+  // A post tagged with the "news" category is treated as a news-angle
+  // article for schema purposes (Article otherwise) — see EICE_P1_Blog_SEO_Checklist item #11.
+  const isNewsArticle = (blog.categories ?? []).some((c) => c.slug === "news");
 
   const jsonLd = [
     {
@@ -72,11 +84,11 @@ export default async function Page({ params }) {
     },
     {
       "@context": "https://schema.org",
-      "@type": "Article",
+      "@type": isNewsArticle ? "NewsArticle" : "Article",
       headline: blog.title,
       description: blog.excerpt ?? undefined,
-      datePublished: blog.publishedAt ?? undefined,
-      dateModified: blog.updatedAt ?? blog.publishedAt ?? undefined,
+      datePublished: toIstIsoString(blog.publishedAt),
+      dateModified: toIstIsoString(blog.updatedAt ?? blog.publishedAt),
       author: { "@type": "Person", name: blog.author?.fullName ?? "EICE Technology" },
       image: blog.featuredMedia
         ? {

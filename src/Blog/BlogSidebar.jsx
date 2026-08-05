@@ -1,6 +1,7 @@
 import { Link } from "@/nextNavigation";
 import { formatDate } from "./formatDate";
 import { NewsletterForm } from "./NewsletterForm";
+import { blogPostUrl } from "./blogUrl";
 
 function CategoryIcon() {
   return (
@@ -72,7 +73,7 @@ export function BlogSidebar({ latestPosts, categories }) {
               const category = post.categories?.[0];
               return (
                 <li key={post.id}>
-                  <Link to={`/blog/${post.slug}`} className="group flex gap-3 px-6 py-4">
+                  <Link to={blogPostUrl(post)} className="group flex gap-3 px-6 py-4">
                     <div className="h-14 w-14 shrink-0 overflow-hidden rounded-lg bg-gradient-to-br from-[#012060] to-bloo">
                       {post.featuredMedia && (
                         <img

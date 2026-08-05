@@ -1,4 +1,5 @@
 ﻿import { blogApiFetch } from "../src/Blog/blogApi";
+import { blogPostUrl } from "../src/Blog/blogUrl";
 
 const BASE_URL = "https://www.eicetechnology.com";
 
@@ -48,7 +49,7 @@ export default async function sitemap() {
     fetchAllBlogCategories(),
   ]);
   const blogRoutes = blogs.map((blog) => ({
-    url: `${BASE_URL}/blog/${blog.slug}/`,
+    url: `${BASE_URL}${blogPostUrl(blog)}/`,
     lastModified: blog.updatedAt ?? blog.publishedAt ?? DATES.blog,
     changeFrequency: "monthly",
     priority: 0.7,
