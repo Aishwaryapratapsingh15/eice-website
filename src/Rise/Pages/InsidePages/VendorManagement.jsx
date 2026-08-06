@@ -354,7 +354,7 @@ export default function VendorManagement() {
       </section>
   {/* ================= FOOTER ================= */}
                            <Certificate />
-                           <FooterUpperPart text1={footerUpperText.text1} text2= {<> {footerUpperText.text2} <br />  </>} text3={footerUpperText.text3} img={overviewIcon} />
+                           <FooterUpperPart product="Vendor Management" text1={footerUpperText.text1} text2= {<> {footerUpperText.text2} <br />  </>} text3={footerUpperText.text3} img={overviewIcon} />
                            {!isEmbed && <FooterLower />}
     </>
   );

@@ -343,7 +343,7 @@ export default function AudienceAttendance() {
 
       {/* ================= FOOTER ================= */}
       <Certificate />
-      <FooterUpperPart text1={footerUpperText.text1} text2={<> {footerUpperText.text2} <br />  </>} text3={footerUpperText.text3} img={overviewIcon} />
+      <FooterUpperPart product="Audience Attendance" text1={footerUpperText.text1} text2={<> {footerUpperText.text2} <br />  </>} text3={footerUpperText.text3} img={overviewIcon} />
       {!isEmbed && <FooterLower />}
 
     </>

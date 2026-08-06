@@ -498,7 +498,7 @@ export default function Pos() {
 
             <div >
                 <Certificate/>
-                <FooterUpperPart text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={footerUpperText.img} />
+                <FooterUpperPart product="POS Dining" text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={footerUpperText.img} />
                 {!isEmbed && <FooterLower />}
 
             </div>

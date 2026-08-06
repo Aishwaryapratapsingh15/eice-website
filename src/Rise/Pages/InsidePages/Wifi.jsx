@@ -357,7 +357,7 @@ export default function WifiModule() {
 
       {/* ================= FOOTER ================= */}
                   <Certificate />
-                  <FooterUpperPart text1={footerUpperText.text1} text2= {<> {footerUpperText.text2} <br />  </>} text3={footerUpperText.text3} img={overviewIcon} />
+                  <FooterUpperPart product="Wi-Fi" text1={footerUpperText.text1} text2= {<> {footerUpperText.text2} <br />  </>} text3={footerUpperText.text3} img={overviewIcon} />
                   {!isEmbed && <FooterLower />}
 
     </>

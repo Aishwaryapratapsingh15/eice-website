@@ -551,7 +551,7 @@ export default function FoodCost() {
 
       <div >
         <Certificate/>
-        <FooterUpperPart text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={laptop} />
+        <FooterUpperPart product="Food Cost" text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={laptop} />
         {!isEmbed &&<FooterLower />}
 
       </div>
