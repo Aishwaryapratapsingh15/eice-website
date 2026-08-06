@@ -334,7 +334,7 @@ function DevOps() {
       </div>
       <Cstdmain />
       <Reviews />
-      <TalkToUs />
+      <TalkToUs product="DevOps" />
       {/* <Footer /> */}
       <ProductFooter />
       <Copyright />

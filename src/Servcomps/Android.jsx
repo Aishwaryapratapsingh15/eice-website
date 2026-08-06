@@ -283,7 +283,7 @@ function Android() {
       <div className="lg:pt-20 pt-12"></div>
       <Cstdmain />
       <Reviews />
-      <TalkToUs />
+      <TalkToUs product="Android" />
       {/* <Footer /> */}
       <ProductFooter />
       <Copyright />

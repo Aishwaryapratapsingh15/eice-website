@@ -166,7 +166,7 @@ export default function EmergingTech() {
 
         <div className="mt-8 flex flex-wrap justify-start sm:justify-center gap-4">
           <button
-            onClick={() => navigate("/contact")}
+            onClick={() => navigate("/products/eicerise/form?product=Emerging%20Tech")}
             className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-[18px]"
           >
             Get in Touch
@@ -363,7 +363,7 @@ export default function EmergingTech() {
             Tell us about your challenge. We&apos;ll identify the right emerging technology to solve it.
           </p>
           <button
-            onClick={() => navigate("/contact")}
+            onClick={() => navigate("/products/eicerise/form?product=Emerging%20Tech")}
             className="bg-white text-[#012060] px-10 py-3 rounded-md flex items-center gap-2 mx-auto font-semibold text-[18px] hover:bg-blue-50 transition"
           >
             Get in Touch

@@ -347,7 +347,7 @@ function Webdevelopment() {
       </div>
       <Cstdmain />
       <Reviews />
-      <TalkToUs />
+      <TalkToUs product="Web Development" />
       {/* <Footer /> */}
       <ProductFooter />
       <Copyright />

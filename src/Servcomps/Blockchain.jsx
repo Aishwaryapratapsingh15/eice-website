@@ -341,7 +341,7 @@ function Blockchain() {
       </div>
       <Cstdmain />
       <Reviews />
-      <TalkToUs />
+      <TalkToUs product="Blockchain" />
       {/* <Footer /> */}
       <ProductFooter />
       <Copyright />

@@ -325,7 +325,7 @@ function DataAnalytics() {
       </div>
       <Cstdmain />
       <Reviews />
-      <TalkToUs />
+      <TalkToUs product="Data Analytics" />
       {/* <Footer /> */}
       <ProductFooter />
       <Copyright />

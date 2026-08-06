@@ -388,7 +388,7 @@ function Chatbot() {
       </div>
       <Cstdmain />
       <Reviews />
-      <TalkToUs />
+      <TalkToUs product="Software Testing" />
       {/* <Footer /> */}
       <ProductFooter />
       <Copyright />

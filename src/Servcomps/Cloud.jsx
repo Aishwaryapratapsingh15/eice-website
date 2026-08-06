@@ -340,7 +340,7 @@ function Chatbot() {
       </div>
       <Cstdmain />
       <Reviews />
-      <TalkToUs />
+      <TalkToUs product="Cloud" />
       {/* <Footer /> */}
       <ProductFooter />
       <Copyright />

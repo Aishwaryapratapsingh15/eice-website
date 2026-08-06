@@ -110,7 +110,8 @@ export default function ProductForm() {
           name: Cookies.get("pf_name"),
           email: Cookies.get("pf_email"),
           contact: Cookies.get("pf_contact"),
-          message: `[Product: ${Cookies.get("pf_product")}] ${Cookies.get("pf_message")}`,
+          message: Cookies.get("pf_message"),
+          product: Cookies.get("pf_product"),
         }
       );
       if (response.data.status == 200) {

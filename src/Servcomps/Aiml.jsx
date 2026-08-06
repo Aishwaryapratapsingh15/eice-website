@@ -316,7 +316,7 @@ function Aiml() {
       </div>
       <Cstdmain />
       <Reviews />
-      <TalkToUs />
+      <TalkToUs product="AI/ML" />
       {/* <Footer /> */}
       <ProductFooter />
       <Copyright />

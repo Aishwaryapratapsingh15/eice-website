@@ -335,7 +335,7 @@ function Uiux() {
       </div>
       <Cstdmain />
       <Reviews />
-      <TalkToUs />
+      <TalkToUs product="UI/UX" />
       {/* <Footer /> */}
       <ProductFooter />
       <Copyright />

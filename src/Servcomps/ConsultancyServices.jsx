@@ -142,7 +142,7 @@ export default function ConsultancyServices() {
 
         <div className="mt-8 flex flex-wrap justify-start sm:justify-center gap-4">
           <button
-            onClick={() => navigate("/contact")}
+            onClick={() => navigate("/products/eicerise/form?product=Consultancy%20Services")}
             className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-[18px]"
           >
             Get in Touch
@@ -318,7 +318,7 @@ export default function ConsultancyServices() {
             Book a free 45-minute discovery call. No pitch, no pressure — just an honest conversation about what you&apos;re trying to solve
           </p>
           <button
-            onClick={() => navigate("/contact")}
+            onClick={() => navigate("/products/eicerise/form?product=Consultancy%20Services")}
             className="bg-white text-[#012060] px-10 py-3 rounded-md flex items-center gap-2 mx-auto font-semibold text-[18px] hover:bg-blue-50 transition"
           >
             Get in Touch

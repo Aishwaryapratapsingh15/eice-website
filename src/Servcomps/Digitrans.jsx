@@ -352,7 +352,7 @@ function Digitrans() {
       </div>
       <Cstdmain />
       <Reviews />
-      <TalkToUs />
+      <TalkToUs product="Digital Transformation" />
       {/* <Footer /> */}
       <ProductFooter />
       <Copyright />

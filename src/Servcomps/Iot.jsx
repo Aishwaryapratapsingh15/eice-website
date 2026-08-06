@@ -336,7 +336,7 @@ function Iot() {
       </div>
       <Cstdmain />
       <Reviews />
-      <TalkToUs />
+      <TalkToUs product="IoT" />
       {/* <Footer /> */}
       <ProductFooter />
       <Copyright />

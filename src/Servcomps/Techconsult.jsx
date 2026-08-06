@@ -1334,7 +1334,7 @@ function TechnologyConsulting() {
 
 
 
-      <TalkToUs />
+      <TalkToUs product="Tech Consultancy" />
 
 
 

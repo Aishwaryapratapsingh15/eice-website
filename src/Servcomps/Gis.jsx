@@ -338,7 +338,7 @@ function GIS() {
       </div>
       <Cstdmain />
       <Reviews />
-      <TalkToUs />
+      <TalkToUs product="GIS" />
       {/* <Footer /> */}
       <ProductFooter />
       <Copyright />

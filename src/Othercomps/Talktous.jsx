@@ -1,7 +1,11 @@
 ﻿import React from "react";
 import { NavLink, Link } from "@/nextNavigation";
 
-function Talktous() {
+function Talktous({ product }) {
+  const href = product
+    ? `/products/eicerise/form?product=${encodeURIComponent(product)}`
+    : "/contact";
+
   return (
     <div className="bg-talkbanner bg-no-repeat bg-cover bg-center w-full">
       <div className="flex items-center justify-center pb-10 sm:pb-12 lg:pb-16">
@@ -13,7 +17,7 @@ function Talktous() {
             <span className="">Exceptional Results</span>.
           </h1>
           <div className="flex lg:pt-0 pt-4">
-            <Link href="/contact" className="h-full">
+            <Link href={href} className="h-full">
               <button className=" text-nowrap p-4   rounded-md  font-semibold transition duration-200 border-2 border-blue-900 hover:bg-blue-900/95 bg-blue-900 text-white hover:shadow-md hover:shadow-blue-900/30 text-base sm:text-lg lg:text-xl">
                 Let's Connect
               </button>
