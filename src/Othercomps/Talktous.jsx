@@ -3,7 +3,7 @@ import { NavLink, Link } from "@/nextNavigation";
 
 function Talktous({ product }) {
   const href = product
-    ? `/products/eicerise/form?product=${encodeURIComponent(product)}`
+    ? `/contact?product=${encodeURIComponent(product)}`
     : "/contact";
 
   return (

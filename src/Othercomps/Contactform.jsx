@@ -16,8 +16,13 @@ function ContactForm() {
   });
 
   const [otpbox, setotpbox] = useState(false)
-  const [otp, setotp] = useState()
+  const [otp, setotp] = useState("")
   const [activeButton, setActiveButton] = useState(false)
+  const [product, setProduct] = useState("")
+
+  useEffect(() => {
+    setProduct(new URLSearchParams(window.location.search).get("product") || "")
+  }, [])
 
   const handleInputChange = (e) => {
     setFormValues((prev) => ({
@@ -38,6 +43,7 @@ function ContactForm() {
         Cookies.set("contact", formValues.contact, { expires: 1 })
         Cookies.set("name", formValues.name, { expires: 1 })
         Cookies.set("message", formValues.message, { expires: 1 })
+        Cookies.set("product", product, { expires: 1 })
         setotpbox(true)
         alert("Please enter otp for final Submission")
         setActiveButton(false)
@@ -64,6 +70,7 @@ function ContactForm() {
       Cookies.remove("contact")
       Cookies.remove("name")
       Cookies.remove("message")
+      Cookies.remove("product")
       setotpbox(false)
       setFormValues({ name: "", email: "", contact: "", message: "" })
       setActiveButton(false)
@@ -73,6 +80,7 @@ function ContactForm() {
       Cookies.remove("contact")
       Cookies.remove("name")
       Cookies.remove("message")
+      Cookies.remove("product")
       setotpbox(false)
       setFormValues({ name: "", email: "", contact: "", message: "" })
       setActiveButton(false)
@@ -94,6 +102,7 @@ function ContactForm() {
         email: Cookies.get("email"),
         contact: Cookies.get("contact"),
         message: Cookies.get("message"),
+        product: Cookies.get("product"),
 
       }
 
@@ -115,6 +124,7 @@ function ContactForm() {
         Cookies.remove("contact")
         Cookies.remove("name")
         Cookies.remove("message")
+        Cookies.remove("product")
         setotpbox(false)
         setFormValues({ name: "", email: "", contact: "", message: "" })
         setotp("")
@@ -134,6 +144,7 @@ function ContactForm() {
       Cookies.remove("contact")
       Cookies.remove("name")
       Cookies.remove("message")
+      Cookies.remove("product")
       setotpbox(false)
       setFormValues({ name: "", email: "", contact: "", message: "" })
       setotp("")

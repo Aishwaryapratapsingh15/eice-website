@@ -168,7 +168,7 @@ export default function AppDevelopment() {
 
         <div className="mt-8 flex flex-wrap justify-start sm:justify-center gap-4">
           <button
-            onClick={() => navigate("/products/eicerise/form?product=App%20Development")}
+            onClick={() => navigate("/contact?product=App%20Development")}
             className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-[18px]"
           >
             Get in Touch
@@ -393,7 +393,7 @@ export default function AppDevelopment() {
             From your first prototype to enterprise scale — tell us what you&apos;re building and we&apos;ll tell you how we&apos;d approach it
           </p>
           <button
-            onClick={() => navigate("/products/eicerise/form?product=App%20Development")}
+            onClick={() => navigate("/contact?product=App%20Development")}
             className="bg-white text-[#012060] px-10 py-3 rounded-md flex items-center gap-2 mx-auto font-semibold text-[18px] hover:bg-blue-50 transition"
           >
             Get in Touch
