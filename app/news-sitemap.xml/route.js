@@ -35,7 +35,7 @@ export async function GET() {
 
   const urlEntries = blogs
     .map((blog) => {
-      const url = `${BASE_URL}${blogPostUrl(blog)}/`;
+      const url = `${BASE_URL}${blogPostUrl(blog)}`;
       return `  <url>
     <loc>${escapeXml(url)}</loc>
     <news:news>

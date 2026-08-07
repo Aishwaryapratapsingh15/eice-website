@@ -14,7 +14,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "POS Suite Pricing | EICE Rise Hospitality ERP", description: "EICE Rise POS Suite  restaurant and hotel dining management solution with table ordering, kitchen display, menu management, and billing integration." },
-  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/pos-suite", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/pos-suite/", "en-US": "https://www.eicetechnology.com/products/eicerise/pos-suite/", "x-default": "https://www.eicetechnology.com/products/eicerise/pos-suite/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/pos-suite", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/pos-suite", "en-US": "https://www.eicetechnology.com/products/eicerise/pos-suite", "x-default": "https://www.eicetechnology.com/products/eicerise/pos-suite" } },
 };
 
 

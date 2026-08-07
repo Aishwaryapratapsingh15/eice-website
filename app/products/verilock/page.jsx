@@ -14,7 +14,7 @@ export const metadata = {
   },
   twitter: { card: "summary_large_image", title: "Verilock | Multi-Factor Authentication & Access Control | EICE Technology",
     images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png"], description: "Protect your enterprise with Verilock's advanced multi-factor authentication and access control system. Secure, compliant access across all systems." },
-  alternates: { canonical: "https://www.eicetechnology.com/products/verilock", languages: { "en-IN": "https://www.eicetechnology.com/products/verilock/", "en-US": "https://www.eicetechnology.com/products/verilock/", "x-default": "https://www.eicetechnology.com/products/verilock/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/verilock", languages: { "en-IN": "https://www.eicetechnology.com/products/verilock", "en-US": "https://www.eicetechnology.com/products/verilock", "x-default": "https://www.eicetechnology.com/products/verilock" } },
 };
 
 

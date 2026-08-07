@@ -14,7 +14,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Compliance Register | EICE Rise Hospitality ERP", description: "Track hotel compliance tasks with EICE Rise Compliance Register  task assignment, progress monitoring, SLA management, and audit-ready documentation." },
-  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/compliance-register", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/compliance-register/", "en-US": "https://www.eicetechnology.com/products/eicerise/compliance-register/", "x-default": "https://www.eicetechnology.com/products/eicerise/compliance-register/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/compliance-register", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/compliance-register", "en-US": "https://www.eicetechnology.com/products/eicerise/compliance-register", "x-default": "https://www.eicetechnology.com/products/eicerise/compliance-register" } },
 };
 
 

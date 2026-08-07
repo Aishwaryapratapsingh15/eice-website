@@ -14,7 +14,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Front Desk Suite Pricing | EICE Rise Hospitality ERP", description: "EICE Rise Front Desk Suite  hotel reception management with room booking, check-in/check-out, guest profiles, and real-time availability dashboard." },
-  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/frontdesk-suite", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/frontdesk-suite/", "en-US": "https://www.eicetechnology.com/products/eicerise/frontdesk-suite/", "x-default": "https://www.eicetechnology.com/products/eicerise/frontdesk-suite/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/frontdesk-suite", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/frontdesk-suite", "en-US": "https://www.eicetechnology.com/products/eicerise/frontdesk-suite", "x-default": "https://www.eicetechnology.com/products/eicerise/frontdesk-suite" } },
 };
 
 

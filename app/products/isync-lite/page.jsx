@@ -14,7 +14,7 @@ export const metadata = {
   },
   twitter: { card: "summary_large_image", title: "iSyncLite | Lightweight File Synchronization Software | EICE Technology",
     images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png"], description: "iSyncLite delivers fast, secure file synchronization for teams. Sync files across devices and platforms with our lightweight enterprise solution." },
-  alternates: { canonical: "https://www.eicetechnology.com/products/isync-lite", languages: { "en-IN": "https://www.eicetechnology.com/products/isync-lite/", "en-US": "https://www.eicetechnology.com/products/isync-lite/", "x-default": "https://www.eicetechnology.com/products/isync-lite/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/isync-lite", languages: { "en-IN": "https://www.eicetechnology.com/products/isync-lite", "en-US": "https://www.eicetechnology.com/products/isync-lite", "x-default": "https://www.eicetechnology.com/products/isync-lite" } },
 };
 
 

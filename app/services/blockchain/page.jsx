@@ -12,7 +12,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Blockchain Development Services | Smart Contracts | EICE Technology", description: "Build secure, transparent blockchain solutions with EICE Technology. Smart contracts, DeFi platforms, NFT marketplaces, and enterprise blockchain." },
-  alternates: { canonical: "https://www.eicetechnology.com/services/blockchain", languages: { "en-IN": "https://www.eicetechnology.com/services/blockchain/", "en-US": "https://www.eicetechnology.com/services/blockchain/", "x-default": "https://www.eicetechnology.com/services/blockchain/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/services/blockchain", languages: { "en-IN": "https://www.eicetechnology.com/services/blockchain", "en-US": "https://www.eicetechnology.com/services/blockchain", "x-default": "https://www.eicetechnology.com/services/blockchain" } },
 };
 
 

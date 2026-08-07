@@ -14,7 +14,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Android Case Study | EICE Rise Success Story", description: "Explore how EICE Rise transformed mobile operations for hospitality clients  a real-world case study demonstrating the power of integrated hotel management software." },
-  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/android", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/android/", "en-US": "https://www.eicetechnology.com/products/eicerise/android/", "x-default": "https://www.eicetechnology.com/products/eicerise/android/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/android", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/android", "en-US": "https://www.eicetechnology.com/products/eicerise/android", "x-default": "https://www.eicetechnology.com/products/eicerise/android" } },
 };
 
 

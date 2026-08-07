@@ -14,7 +14,7 @@ export const metadata = {
   },
   twitter: { card: "summary_large_image", title: "iSyncDrive | Enterprise Cloud Sync & Storage Client | EICE Technology",
     images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png"], description: "iSyncDrive provides enterprise-grade cloud file synchronization, enabling secure data access and collaboration across your organization." },
-  alternates: { canonical: "https://www.eicetechnology.com/products/isync-drive", languages: { "en-IN": "https://www.eicetechnology.com/products/isync-drive/", "en-US": "https://www.eicetechnology.com/products/isync-drive/", "x-default": "https://www.eicetechnology.com/products/isync-drive/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/isync-drive", languages: { "en-IN": "https://www.eicetechnology.com/products/isync-drive", "en-US": "https://www.eicetechnology.com/products/isync-drive", "x-default": "https://www.eicetechnology.com/products/isync-drive" } },
 };
 
 

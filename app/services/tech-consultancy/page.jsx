@@ -12,7 +12,7 @@ import Techconsult from "../../../src/Servcomps/Techconsult";
 //     type: "website",
 //   },
 //   twitter: { card: "summary_large_image", title: "Technology Consultancy Services | IT Strategy & Advisory | EICE Technology", description: "Get expert technology guidance from EICE Technology's consultants. IT strategy, architecture review, digital roadmapping, and technology selection." },
-//   alternates: { canonical: "https://www.eicetechnology.com/services/tech-consultancy/", languages: { "en-IN": "https://www.eicetechnology.com/services/tech-consultancy/", "en-US": "https://www.eicetechnology.com/services/tech-consultancy/", "x-default": "https://www.eicetechnology.com/services/tech-consultancy/" } },
+//   alternates: { canonical: "https://www.eicetechnology.com/services/tech-consultancy", languages: { "en-IN": "https://www.eicetechnology.com/services/tech-consultancy", "en-US": "https://www.eicetechnology.com/services/tech-consultancy", "x-default": "https://www.eicetechnology.com/services/tech-consultancy" } },
 // };
 
 export  async function generateMetadata() {
@@ -26,7 +26,7 @@ export  async function generateMetadata() {
   openGraph: { title, description, url: "https://www.eicetechnology.com/services/tech-consultancy", siteName: "EICE Technology", type: "website" },
   twitter: { card: "summary_large_image", title , description,
     images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png"]},
-  alternates: { canonical: "https://www.eicetechnology.com/services/tech-consultancy", languages: { "en-IN": "https://www.eicetechnology.com/services/tech-consultancy/", "en-US": "https://www.eicetechnology.com/services/tech-consultancy/", "x-default": "https://www.eicetechnology.com/services/tech-consultancy/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/services/tech-consultancy", languages: { "en-IN": "https://www.eicetechnology.com/services/tech-consultancy", "en-US": "https://www.eicetechnology.com/services/tech-consultancy", "x-default": "https://www.eicetechnology.com/services/tech-consultancy" } },
 };}
 
 
@@ -36,7 +36,7 @@ const jsonLd = [
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.eicetechnology.com" },
-      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.eicetechnology.com/services/tech-consultancy/" },
+      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.eicetechnology.com/services/tech-consultancy" },
       { "@type": "ListItem", "position": 3, "name": "Tech Consultancy" }
     ]
   },

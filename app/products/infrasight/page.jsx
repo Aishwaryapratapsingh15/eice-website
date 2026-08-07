@@ -14,7 +14,7 @@ export const metadata = {
   },
   twitter: { card: "summary_large_image", title: "InfraSight | Infrastructure Monitoring & Observability | EICE Technology",
     images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png"], description: "Monitor your entire IT infrastructure with InfraSight. Real-time alerts, performance dashboards, and proactive monitoring to ensure maximum uptime." },
-  alternates: { canonical: "https://www.eicetechnology.com/products/infrasight", languages: { "en-IN": "https://www.eicetechnology.com/products/infrasight/", "en-US": "https://www.eicetechnology.com/products/infrasight/", "x-default": "https://www.eicetechnology.com/products/infrasight/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/infrasight", languages: { "en-IN": "https://www.eicetechnology.com/products/infrasight", "en-US": "https://www.eicetechnology.com/products/infrasight", "x-default": "https://www.eicetechnology.com/products/infrasight" } },
 };
 
 

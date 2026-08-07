@@ -19,9 +19,9 @@ export const metadata = {
   alternates: {
     canonical: "https://www.eicetechnology.com/blog",
     languages: {
-      "en-IN": "https://www.eicetechnology.com/blog/",
-      "en-US": "https://www.eicetechnology.com/blog/",
-      "x-default": "https://www.eicetechnology.com/blog/",
+      "en-IN": "https://www.eicetechnology.com/blog",
+      "en-US": "https://www.eicetechnology.com/blog",
+      "x-default": "https://www.eicetechnology.com/blog",
     },
   },
 };
@@ -40,7 +40,7 @@ const jsonLd = [
     "@type": "CollectionPage",
     name: "Blog",
     description: "Latest insights, product updates, and industry knowledge from EICE Technology.",
-    url: "https://www.eicetechnology.com/blog/",
+    url: "https://www.eicetechnology.com/blog",
     publisher: { "@type": "Organization", name: "EICE Technology", url: "https://www.eicetechnology.com" },
   },
 ];

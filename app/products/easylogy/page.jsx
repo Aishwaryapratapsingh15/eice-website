@@ -16,7 +16,7 @@ import Copyright from "../../../src/Othercomps/Copyright";
 //   },
 //   twitter: { card: "summary_large_image", title: "EasyLogy | Logistics Management & Tracking Software | EICE Technology" ,
 //     images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png"]},
-//   alternates: { canonical: "https://www.eicetechnology.com/products/easylogy/", languages: { "en-IN": "https://www.eicetechnology.com/products/easylogy/", "en-US": "https://www.eicetechnology.com/products/easylogy/", "x-default": "https://www.eicetechnology.com/products/easylogy/" } },
+//   alternates: { canonical: "https://www.eicetechnology.com/products/easylogy", languages: { "en-IN": "https://www.eicetechnology.com/products/easylogy", "en-US": "https://www.eicetechnology.com/products/easylogy", "x-default": "https://www.eicetechnology.com/products/easylogy" } },
 // };
 
 export  async function generateMetadata() {
@@ -30,7 +30,7 @@ export  async function generateMetadata() {
   openGraph: { title, description, url: "https://www.eicetechnology.com/products/easylogy", siteName: "EICE Technology", type: "website" },
   twitter: { card: "summary_large_image", title , description,
     images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png"]},
-  alternates: { canonical: "https://www.eicetechnology.com/products/easylogy", languages: { "en-IN": "https://www.eicetechnology.com/products/easylogy/", "en-US": "https://www.eicetechnology.com/products/easylogy/", "x-default": "https://www.eicetechnology.com/products/easylogy/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/easylogy", languages: { "en-IN": "https://www.eicetechnology.com/products/easylogy", "en-US": "https://www.eicetechnology.com/products/easylogy", "x-default": "https://www.eicetechnology.com/products/easylogy" } },
 };}
 
 

@@ -14,7 +14,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Houston Durga Bari Society | EICE Rise Case Study", description: "Discover how EICE Rise empowered the Houston Durga Bari Society with digital transformation  member portal, event management, and financial automation." },
-  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/durgabari", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/durgabari/", "en-US": "https://www.eicetechnology.com/products/eicerise/durgabari/", "x-default": "https://www.eicetechnology.com/products/eicerise/durgabari/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/durgabari", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/durgabari", "en-US": "https://www.eicetechnology.com/products/eicerise/durgabari", "x-default": "https://www.eicetechnology.com/products/eicerise/durgabari" } },
 };
 
 

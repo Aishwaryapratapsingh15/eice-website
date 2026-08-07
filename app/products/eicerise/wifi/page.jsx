@@ -14,7 +14,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Wi-Fi Module | EICE Rise Hospitality ERP", description: "Manage hotel guest Wi-Fi with EICE Rise Wi-Fi Module  bandwidth control, guest authentication, usage monitoring, and revenue generation from internet services." },
-  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/wifi", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/wifi/", "en-US": "https://www.eicetechnology.com/products/eicerise/wifi/", "x-default": "https://www.eicetechnology.com/products/eicerise/wifi/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/wifi", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/wifi", "en-US": "https://www.eicetechnology.com/products/eicerise/wifi", "x-default": "https://www.eicetechnology.com/products/eicerise/wifi" } },
 };
 
 

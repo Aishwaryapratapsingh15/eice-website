@@ -14,7 +14,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Room Booking | EICE Rise Hospitality ERP", description: "Streamline hotel room reservations with EICE Rise Room Booking module  real-time availability, seamless check-in/check-out, and integrated billing for modern hospitality operations." },
-  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/room-booking", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/room-booking/", "en-US": "https://www.eicetechnology.com/products/eicerise/room-booking/", "x-default": "https://www.eicetechnology.com/products/eicerise/room-booking/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/room-booking", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/room-booking", "en-US": "https://www.eicetechnology.com/products/eicerise/room-booking", "x-default": "https://www.eicetechnology.com/products/eicerise/room-booking" } },
 };
 
 

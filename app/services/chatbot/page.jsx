@@ -12,7 +12,7 @@ import Chatbot from "../../../src/Servcomps/Chatbot";
 //     type: "website",
 //   },
 //   twitter: { card: "summary_large_image", title: "Chatbot Development Services | AI Virtual Agents | EICE Technology", description: "Automate customer interactions with EICE Technology's AI-powered chatbots. Intelligent virtual agents for support, sales, HR, and enterprise workflows." },
-//   alternates: { canonical: "https://www.eicetechnology.com/services/chatbot/", languages: { "en-IN": "https://www.eicetechnology.com/services/chatbot/", "en-US": "https://www.eicetechnology.com/services/chatbot/", "x-default": "https://www.eicetechnology.com/services/chatbot/" } },
+//   alternates: { canonical: "https://www.eicetechnology.com/services/chatbot", languages: { "en-IN": "https://www.eicetechnology.com/services/chatbot", "en-US": "https://www.eicetechnology.com/services/chatbot", "x-default": "https://www.eicetechnology.com/services/chatbot" } },
 // };
 
 
@@ -27,7 +27,7 @@ export  async function generateMetadata() {
   openGraph: { title, description, url: "https://www.eicetechnology.com/services/chatbot", siteName: "EICE Technology", type: "website" },
   twitter: { card: "summary_large_image", title , description,
     images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png"]},
-  alternates: { canonical: "https://www.eicetechnology.com/services/chatbot", languages: { "en-IN": "https://www.eicetechnology.com/services/chatbot/", "en-US": "https://www.eicetechnology.com/services/chatbot/", "x-default": "https://www.eicetechnology.com/services/chatbot/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/services/chatbot", languages: { "en-IN": "https://www.eicetechnology.com/services/chatbot", "en-US": "https://www.eicetechnology.com/services/chatbot", "x-default": "https://www.eicetechnology.com/services/chatbot" } },
 };}
 
 const jsonLd = [
@@ -36,7 +36,7 @@ const jsonLd = [
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.eicetechnology.com" },
-      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.eicetechnology.com/services/chatbot/" },
+      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.eicetechnology.com/services/chatbot" },
       { "@type": "ListItem", "position": 3, "name": "Chatbot Development" }
     ]
   },

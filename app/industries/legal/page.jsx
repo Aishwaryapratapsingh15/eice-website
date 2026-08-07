@@ -12,7 +12,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Legal Technology Solutions | LegalTech Software | EICE Technology", description: "Modernize legal operations with EICE Technology's LegalTech solutions. Document management, contract lifecycle management, compliance, and legal analytics." },
-  alternates: { canonical: "https://www.eicetechnology.com/industries/legal", languages: { "en-IN": "https://www.eicetechnology.com/industries/legal/", "en-US": "https://www.eicetechnology.com/industries/legal/", "x-default": "https://www.eicetechnology.com/industries/legal/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/industries/legal", languages: { "en-IN": "https://www.eicetechnology.com/industries/legal", "en-US": "https://www.eicetechnology.com/industries/legal", "x-default": "https://www.eicetechnology.com/industries/legal" } },
 };
 
 const jsonLd = [
@@ -32,7 +32,7 @@ const jsonLd = [
     "provider": { "@type": "Organization", "name": "EICE Technology", "url": "https://www.eicetechnology.com" },
     "serviceType": "Legal Technology Solutions",
     "areaServed": { "@type": "Place", "name": "India" },
-    "url": "https://www.eicetechnology.com/industries/legal/"
+    "url": "https://www.eicetechnology.com/industries/legal"
   }
 ];
 

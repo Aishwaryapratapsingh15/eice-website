@@ -26,9 +26,9 @@ export async function generateMetadata() {
     alternates: {
       canonical: "https://www.eicetechnology.com/services/flagship-services",
       languages: {
-        "en-IN": "https://www.eicetechnology.com/services/flagship-services/",
-        "en-US": "https://www.eicetechnology.com/services/flagship-services/",
-        "x-default": "https://www.eicetechnology.com/services/flagship-services/",
+        "en-IN": "https://www.eicetechnology.com/services/flagship-services",
+        "en-US": "https://www.eicetechnology.com/services/flagship-services",
+        "x-default": "https://www.eicetechnology.com/services/flagship-services",
       },
     },
   };

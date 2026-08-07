@@ -12,7 +12,7 @@ import Saas from "../../../src/Servcomps/Saas";
 //     type: "website",
 //   },
 //   twitter: { card: "summary_large_image", title: "SaaS Development Services | Cloud Software Solutions | EICE Technology", description: "Build scalable multi-tenant SaaS products with EICE Technology. From MVP to enterprise SaaS platforms — secure, cloud-native software solutions." },
-//   alternates: { canonical: "https://www.eicetechnology.com/services/saas/", languages: { "en-IN": "https://www.eicetechnology.com/services/saas/", "en-US": "https://www.eicetechnology.com/services/saas/", "x-default": "https://www.eicetechnology.com/services/saas/" } },
+//   alternates: { canonical: "https://www.eicetechnology.com/services/saas", languages: { "en-IN": "https://www.eicetechnology.com/services/saas", "en-US": "https://www.eicetechnology.com/services/saas", "x-default": "https://www.eicetechnology.com/services/saas" } },
 // };
 
 export  async function generateMetadata() {
@@ -26,7 +26,7 @@ export  async function generateMetadata() {
   openGraph: { title, description, url: "https://www.eicetechnology.com/services/saas", siteName: "EICE Technology", type: "website" },
   twitter: { card: "summary_large_image", title , description,
     images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png"]},
-  alternates: { canonical: "https://www.eicetechnology.com/services/saas", languages: { "en-IN": "https://www.eicetechnology.com/services/saas/", "en-US": "https://www.eicetechnology.com/services/saas/", "x-default": "https://www.eicetechnology.com/services/saas/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/services/saas", languages: { "en-IN": "https://www.eicetechnology.com/services/saas", "en-US": "https://www.eicetechnology.com/services/saas", "x-default": "https://www.eicetechnology.com/services/saas" } },
 };}
 
 
@@ -36,7 +36,7 @@ const jsonLd = [
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.eicetechnology.com" },
-      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.eicetechnology.com/services/saas/" },
+      { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.eicetechnology.com/services/saas" },
       { "@type": "ListItem", "position": 3, "name": "SaaS Development" }
     ]
   },

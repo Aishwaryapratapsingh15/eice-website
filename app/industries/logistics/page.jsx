@@ -12,7 +12,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Logistics Technology Solutions | Supply Chain Software | EICE Technology", description: "Optimize your supply chain with EICE Technology's logistics solutions. Fleet management, warehouse automation, shipment tracking, and supply chain visibility." },
-  alternates: { canonical: "https://www.eicetechnology.com/industries/logistics", languages: { "en-IN": "https://www.eicetechnology.com/industries/logistics/", "en-US": "https://www.eicetechnology.com/industries/logistics/", "x-default": "https://www.eicetechnology.com/industries/logistics/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/industries/logistics", languages: { "en-IN": "https://www.eicetechnology.com/industries/logistics", "en-US": "https://www.eicetechnology.com/industries/logistics", "x-default": "https://www.eicetechnology.com/industries/logistics" } },
 };
 
 const jsonLd = [
@@ -32,7 +32,7 @@ const jsonLd = [
     "provider": { "@type": "Organization", "name": "EICE Technology", "url": "https://www.eicetechnology.com" },
     "serviceType": "Logistics Technology Solutions",
     "areaServed": { "@type": "Place", "name": "India" },
-    "url": "https://www.eicetechnology.com/industries/logistics/"
+    "url": "https://www.eicetechnology.com/industries/logistics"
   }
 ];
 

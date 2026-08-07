@@ -14,7 +14,7 @@ import EiceVoice from "../../../src/Product/EiceVoice";
 //   },
 //   twitter: { card: "summary_large_image", title: "EICE Voice | Voice-Powered Order Management System | EICE Technology",
 //     images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png"], description: "Transform order processing with EICE Voice, a voice-powered management system enabling hands-free order entry and real-time updates." },
-//   alternates: { canonical: "https://www.eicetechnology.com/products/eice-voice/", languages: { "en-IN": "https://www.eicetechnology.com/products/eice-voice/", "en-US": "https://www.eicetechnology.com/products/eice-voice/", "x-default": "https://www.eicetechnology.com/products/eice-voice/" } },
+//   alternates: { canonical: "https://www.eicetechnology.com/products/eice-voice", languages: { "en-IN": "https://www.eicetechnology.com/products/eice-voice", "en-US": "https://www.eicetechnology.com/products/eice-voice", "x-default": "https://www.eicetechnology.com/products/eice-voice" } },
 // };
 
 export  async function generateMetadata() {
@@ -28,7 +28,7 @@ export  async function generateMetadata() {
   openGraph: { title, description, url: "https://www.eicetechnology.com/products/eice-voice", siteName: "EICE Technology", type: "website" },
   twitter: { card: "summary_large_image", title , description,
     images: ["https://d3r43jacxrwsrp.cloudfront.net/logo.svg"]},
-  alternates: { canonical: "https://www.eicetechnology.com/products/eice-voice", languages: { "en-IN": "https://www.eicetechnology.com/products/eice-voice/", "en-US": "https://www.eicetechnology.com/products/eice-voice/", "x-default": "https://www.eicetechnology.com/products/eice-voice/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/eice-voice", languages: { "en-IN": "https://www.eicetechnology.com/products/eice-voice", "en-US": "https://www.eicetechnology.com/products/eice-voice", "x-default": "https://www.eicetechnology.com/products/eice-voice" } },
 };}
 
 

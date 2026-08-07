@@ -14,7 +14,7 @@ import Smartfit from "../../../src/Product/SmartFit";
 //   },
 //   twitter: { card: "summary_large_image", title: "EICE SmartFit | Cargo Optimization & Management System | EICE Technology",
 //     images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png"], description: "Optimize cargo space and reduce shipping costs with EICE SmartFit, an intelligent cargo management and optimization solution for logistics companies." },
-//   alternates: { canonical: "https://www.eicetechnology.com/products/smartfit/", languages: { "en-IN": "https://www.eicetechnology.com/products/smartfit/", "en-US": "https://www.eicetechnology.com/products/smartfit/", "x-default": "https://www.eicetechnology.com/products/smartfit/" } },
+//   alternates: { canonical: "https://www.eicetechnology.com/products/smartfit", languages: { "en-IN": "https://www.eicetechnology.com/products/smartfit", "en-US": "https://www.eicetechnology.com/products/smartfit", "x-default": "https://www.eicetechnology.com/products/smartfit" } },
 // };
 
 
@@ -29,7 +29,7 @@ export  async function generateMetadata() {
   openGraph: { title, description, url: "https://www.eicetechnology.com/products/smartfit", siteName: "EICE Technology", type: "website" },
   twitter: { card: "summary_large_image", title , description,
     images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png"]},
-  alternates: { canonical: "https://www.eicetechnology.com/products/smartfit", languages: { "en-IN": "https://www.eicetechnology.com/products/smartfit/", "en-US": "https://www.eicetechnology.com/products/smartfit/", "x-default": "https://www.eicetechnology.com/products/smartfit/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/smartfit", languages: { "en-IN": "https://www.eicetechnology.com/products/smartfit", "en-US": "https://www.eicetechnology.com/products/smartfit", "x-default": "https://www.eicetechnology.com/products/smartfit" } },
 };}
 
 

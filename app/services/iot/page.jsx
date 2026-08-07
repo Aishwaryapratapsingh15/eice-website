@@ -12,7 +12,7 @@ import Iot from "../../../src/Servcomps/Iot";
 //     type: "website",
 //   },
 //   twitter: { card: "summary_large_image", title: "IoT Development Services | Connected Device Solutions | EICE Technology", description: "Connect, monitor, and control smart devices with EICE Technology's IoT services. Sensor integration, real-time dashboards, and predictive maintenance." },
-//   alternates: { canonical: "https://www.eicetechnology.com/services/iot/", languages: { "en-IN": "https://www.eicetechnology.com/services/iot/", "en-US": "https://www.eicetechnology.com/services/iot/", "x-default": "https://www.eicetechnology.com/services/iot/" } },
+//   alternates: { canonical: "https://www.eicetechnology.com/services/iot", languages: { "en-IN": "https://www.eicetechnology.com/services/iot", "en-US": "https://www.eicetechnology.com/services/iot", "x-default": "https://www.eicetechnology.com/services/iot" } },
 // };
 
 export  async function generateMetadata() {
@@ -26,7 +26,7 @@ export  async function generateMetadata() {
   openGraph: { title, description, url: "https://www.eicetechnology.com/services/iot", siteName: "EICE Technology", type: "website" },
   twitter: { card: "summary_large_image", title , description,
     images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png"]},
-  alternates: { canonical: "https://www.eicetechnology.com/services/iot", languages: { "en-IN": "https://www.eicetechnology.com/services/iot/", "en-US": "https://www.eicetechnology.com/services/iot/", "x-default": "https://www.eicetechnology.com/services/iot/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/services/iot", languages: { "en-IN": "https://www.eicetechnology.com/services/iot", "en-US": "https://www.eicetechnology.com/services/iot", "x-default": "https://www.eicetechnology.com/services/iot" } },
 };}
 
 

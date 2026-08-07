@@ -12,7 +12,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Digital Media Technology Solutions | EICE Technology", description: "Power your media business with EICE Technology. Content management, streaming platforms, digital asset management, and audience analytics solutions." },
-  alternates: { canonical: "https://www.eicetechnology.com/industries/digital-media", languages: { "en-IN": "https://www.eicetechnology.com/industries/digital-media/", "en-US": "https://www.eicetechnology.com/industries/digital-media/", "x-default": "https://www.eicetechnology.com/industries/digital-media/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/industries/digital-media", languages: { "en-IN": "https://www.eicetechnology.com/industries/digital-media", "en-US": "https://www.eicetechnology.com/industries/digital-media", "x-default": "https://www.eicetechnology.com/industries/digital-media" } },
 };
 
 const jsonLd = [
@@ -32,7 +32,7 @@ const jsonLd = [
     "provider": { "@type": "Organization", "name": "EICE Technology", "url": "https://www.eicetechnology.com" },
     "serviceType": "Digital Media Technology Solutions",
     "areaServed": { "@type": "Place", "name": "India" },
-    "url": "https://www.eicetechnology.com/industries/digital-media/"
+    "url": "https://www.eicetechnology.com/industries/digital-media"
   }
 ];
 

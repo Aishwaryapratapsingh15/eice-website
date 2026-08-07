@@ -14,7 +14,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Inventory Suite Pricing | EICE Rise Hospitality ERP", description: "EICE Rise Inventory Suite pricing  complete inventory and procurement management for hotels, including purchase orders, GRN, and vendor management." },
-  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/inventory-suite", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/inventory-suite/", "en-US": "https://www.eicetechnology.com/products/eicerise/inventory-suite/", "x-default": "https://www.eicetechnology.com/products/eicerise/inventory-suite/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/inventory-suite", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/inventory-suite", "en-US": "https://www.eicetechnology.com/products/eicerise/inventory-suite", "x-default": "https://www.eicetechnology.com/products/eicerise/inventory-suite" } },
 };
 
 

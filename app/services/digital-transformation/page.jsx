@@ -12,7 +12,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Digital Transformation Services | Business Modernization | EICE Technology", description: "Drive business growth with EICE Technology's digital transformation services. Modernize legacy systems, optimize processes, and enable data-driven decisions." },
-  alternates: { canonical: "https://www.eicetechnology.com/services/digital-transformation", languages: { "en-IN": "https://www.eicetechnology.com/services/digital-transformation/", "en-US": "https://www.eicetechnology.com/services/digital-transformation/", "x-default": "https://www.eicetechnology.com/services/digital-transformation/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/services/digital-transformation", languages: { "en-IN": "https://www.eicetechnology.com/services/digital-transformation", "en-US": "https://www.eicetechnology.com/services/digital-transformation", "x-default": "https://www.eicetechnology.com/services/digital-transformation" } },
 };
 
 

@@ -11,7 +11,7 @@ export  async function generateMetadata() {
   openGraph: { title, description, url: "https://www.eicetechnology.com/services/devops", siteName: "EICE Technology", type: "website" },
   twitter: { card: "summary_large_image", title , description,
     images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png"]},
-  alternates: { canonical: "https://www.eicetechnology.com/services/devops", languages: { "en-IN": "https://www.eicetechnology.com/services/devops/", "en-US": "https://www.eicetechnology.com/services/devops/", "x-default": "https://www.eicetechnology.com/services/devops/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/services/devops", languages: { "en-IN": "https://www.eicetechnology.com/services/devops", "en-US": "https://www.eicetechnology.com/services/devops", "x-default": "https://www.eicetechnology.com/services/devops" } },
 };}
 
 
@@ -36,7 +36,7 @@ export  async function generateMetadata() {
 //   "areaServed": { "@type": "Place", "name": "Global" }
 // }];
 
-const jsonLd=[{"@context":"https://schema.org","@type":"Service","name":"DevOps Services India | CI/CD, Cloud & Automation — EICE","provider":{"@type":"Organization","name":"EICE Technology"},"serviceType":"DevOps","areaServed":"IN","url":"https://www.eicetechnology.com/services/devops/"}];
+const jsonLd=[{"@context":"https://schema.org","@type":"Service","name":"DevOps Services India | CI/CD, Cloud & Automation — EICE","provider":{"@type":"Organization","name":"EICE Technology"},"serviceType":"DevOps","areaServed":"IN","url":"https://www.eicetechnology.com/services/devops"}];
 
 export default function Page() {
   return (

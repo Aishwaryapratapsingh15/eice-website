@@ -12,7 +12,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "EspctQuote Case Study | Automated Quoting System | EICE Technology", description: "How EICE Technology built an automated quoting system that reduced quote generation time by 70% and improved accuracy for a global industrial client." },
-  alternates: { canonical: "https://www.eicetechnology.com/case-studies/espct-quote", languages: { "en-IN": "https://www.eicetechnology.com/case-studies/espct-quote/", "en-US": "https://www.eicetechnology.com/case-studies/espct-quote/", "x-default": "https://www.eicetechnology.com/case-studies/espct-quote/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/case-studies/espct-quote", languages: { "en-IN": "https://www.eicetechnology.com/case-studies/espct-quote", "en-US": "https://www.eicetechnology.com/case-studies/espct-quote", "x-default": "https://www.eicetechnology.com/case-studies/espct-quote" } },
 };
 
 

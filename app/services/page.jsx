@@ -10,7 +10,7 @@ import Copyright from "../../src/Othercomps/Copyright";
 //     images: [{ url: "https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png", width: 1200, height: 630, alt: "EICE Technology" }], type: "website" },
 //   twitter: { card: "summary_large_image", title: "IT Services | EICE Technology" ,
 //     images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png"]},
-//   alternates: { canonical: "https://www.eicetechnology.com/services/", languages: { "en-IN": "https://www.eicetechnology.com/services/", "en-US": "https://www.eicetechnology.com/services/", "x-default": "https://www.eicetechnology.com/services/" } },
+//   alternates: { canonical: "https://www.eicetechnology.com/services", languages: { "en-IN": "https://www.eicetechnology.com/services", "en-US": "https://www.eicetechnology.com/services", "x-default": "https://www.eicetechnology.com/services" } },
 // };
 
 
@@ -25,7 +25,7 @@ export  async function generateMetadata() {
   openGraph: { title, description, url: "https://www.eicetechnology.com/services", siteName: "EICE Technology", type: "website" },
   twitter: { card: "summary_large_image", title , description,
     images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png"]},
-  alternates: { canonical: "https://www.eicetechnology.com/services", languages: { "en-IN": "https://www.eicetechnology.com/services/", "en-US": "https://www.eicetechnology.com/services/", "x-default": "https://www.eicetechnology.com/services/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/services", languages: { "en-IN": "https://www.eicetechnology.com/services", "en-US": "https://www.eicetechnology.com/services", "x-default": "https://www.eicetechnology.com/services" } },
 };}
 
 const jsonLd = [
@@ -42,7 +42,7 @@ const jsonLd = [
     "@type": "CollectionPage",
     "name": "EICE Technology | Custom Software & IT Services Company India",
     "description": "Partner with EICE Technology for reliable IT consulting, custom software development, web and mobile applications, and digital transformation solutions tailored for businesses in India.",
-    "url": "https://www.eicetechnology.com/services/",
+    "url": "https://www.eicetechnology.com/services",
     "publisher": { "@type": "Organization", "name": "EICE Technology", "url": "https://www.eicetechnology.com" }
   }
 ];

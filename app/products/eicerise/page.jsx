@@ -16,7 +16,7 @@ import Copyright from "../../../src/Othercomps/Copyright";
 //   },
 //   twitter: { card: "summary_large_image", title: "EICE Rise | Hotel & Hospitality ERP System | EICE Technology",
 //     images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/casestudy.png"], description: "Streamline hotel operations with EICE Rise, a comprehensive hospitality ERP platform. Manage reservations, billing, housekeeping and more." },
-//   alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/", "en-US": "https://www.eicetechnology.com/products/eicerise/", "x-default": "https://www.eicetechnology.com/products/eicerise/" } },
+//   alternates: { canonical: "https://www.eicetechnology.com/products/eicerise", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise", "en-US": "https://www.eicetechnology.com/products/eicerise", "x-default": "https://www.eicetechnology.com/products/eicerise" } },
 // };
 
 
@@ -31,7 +31,7 @@ export  async function generateMetadata() {
   openGraph: { title, description, url: "https://www.eicetechnology.com/products/eicerise", siteName: "EICE Technology", type: "website" },
   twitter: { card: "summary_large_image", title , description,
     images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png"]},
-  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/", "en-US": "https://www.eicetechnology.com/products/eicerise/", "x-default": "https://www.eicetechnology.com/products/eicerise/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise", "en-US": "https://www.eicetechnology.com/products/eicerise", "x-default": "https://www.eicetechnology.com/products/eicerise" } },
 };}
 
 

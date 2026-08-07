@@ -12,7 +12,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "EPGIS Case Study | Enterprise GIS Data Management | EICE Technology", description: "How EICE Technology developed an enterprise GIS data management solution that transformed geospatial data handling for energy sector operations." },
-  alternates: { canonical: "https://www.eicetechnology.com/case-studies/epgis", languages: { "en-IN": "https://www.eicetechnology.com/case-studies/epgis/", "en-US": "https://www.eicetechnology.com/case-studies/epgis/", "x-default": "https://www.eicetechnology.com/case-studies/epgis/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/case-studies/epgis", languages: { "en-IN": "https://www.eicetechnology.com/case-studies/epgis", "en-US": "https://www.eicetechnology.com/case-studies/epgis", "x-default": "https://www.eicetechnology.com/case-studies/epgis" } },
 };
 
 

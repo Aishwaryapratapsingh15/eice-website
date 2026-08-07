@@ -14,7 +14,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Food & Beverage Cost Analysis | EICE Rise Hospitality ERP", description: "Control F&B costs with EICE Rise Food Cost Analysis module  recipe costing, wastage tracking, consumption analysis, and profitability reporting for hotels." },
-  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/food-cost", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/food-cost/", "en-US": "https://www.eicetechnology.com/products/eicerise/food-cost/", "x-default": "https://www.eicetechnology.com/products/eicerise/food-cost/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/food-cost", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/food-cost", "en-US": "https://www.eicetechnology.com/products/eicerise/food-cost", "x-default": "https://www.eicetechnology.com/products/eicerise/food-cost" } },
 };
 
 

@@ -12,7 +12,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Schlumberger BAA Case Study | Business Analytics Platform | EICE Technology", description: "How EICE Technology built a business analytics platform for Schlumberger enabling data-driven decisions across global operations." },
-  alternates: { canonical: "https://www.eicetechnology.com/case-studies/schlumberger-baa", languages: { "en-IN": "https://www.eicetechnology.com/case-studies/schlumberger-baa/", "en-US": "https://www.eicetechnology.com/case-studies/schlumberger-baa/", "x-default": "https://www.eicetechnology.com/case-studies/schlumberger-baa/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/case-studies/schlumberger-baa", languages: { "en-IN": "https://www.eicetechnology.com/case-studies/schlumberger-baa", "en-US": "https://www.eicetechnology.com/case-studies/schlumberger-baa", "x-default": "https://www.eicetechnology.com/case-studies/schlumberger-baa" } },
 };
 
 

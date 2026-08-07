@@ -26,9 +26,9 @@ export async function generateMetadata() {
     alternates: {
       canonical: "https://www.eicetechnology.com/services/app-development",
       languages: {
-        "en-IN": "https://www.eicetechnology.com/services/app-development/",
-        "en-US": "https://www.eicetechnology.com/services/app-development/",
-        "x-default": "https://www.eicetechnology.com/services/app-development/",
+        "en-IN": "https://www.eicetechnology.com/services/app-development",
+        "en-US": "https://www.eicetechnology.com/services/app-development",
+        "x-default": "https://www.eicetechnology.com/services/app-development",
       },
     },
   };

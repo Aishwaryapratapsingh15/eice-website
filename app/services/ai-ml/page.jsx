@@ -12,7 +12,7 @@ import Aiml from "../../../src/Servcomps/Aiml";
 //     type: "website",
 //   },
 //   twitter: { card: "summary_large_image", title: "AI & Machine Learning Services | EICE Technology", description: "Leverage AI and machine learning with EICE Technology. From predictive analytics to NLP and computer vision, we build intelligent enterprise solutions." },
-//   alternates: { canonical: "https://www.eicetechnology.com/services/ai-ml/", languages: { "en-IN": "https://www.eicetechnology.com/services/ai-ml/", "en-US": "https://www.eicetechnology.com/services/ai-ml/", "x-default": "https://www.eicetechnology.com/services/ai-ml/" } },
+//   alternates: { canonical: "https://www.eicetechnology.com/services/ai-ml", languages: { "en-IN": "https://www.eicetechnology.com/services/ai-ml", "en-US": "https://www.eicetechnology.com/services/ai-ml", "x-default": "https://www.eicetechnology.com/services/ai-ml" } },
 // };
 
 export  async function generateMetadata() {
@@ -26,7 +26,7 @@ export  async function generateMetadata() {
   openGraph: { title, description, url: "https://www.eicetechnology.com/services/ai-ml", siteName: "EICE Technology", type: "website" },
   twitter: { card: "summary_large_image", title , description,
     images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png"]},
-  alternates: { canonical: "https://www.eicetechnology.com/services/ai-ml", languages: { "en-IN": "https://www.eicetechnology.com/services/ai-ml/", "en-US": "https://www.eicetechnology.com/services/ai-ml/", "x-default": "https://www.eicetechnology.com/services/ai-ml/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/services/ai-ml", languages: { "en-IN": "https://www.eicetechnology.com/services/ai-ml", "en-US": "https://www.eicetechnology.com/services/ai-ml", "x-default": "https://www.eicetechnology.com/services/ai-ml" } },
 };}
 
 

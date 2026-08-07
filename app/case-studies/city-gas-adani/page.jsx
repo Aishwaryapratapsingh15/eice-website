@@ -12,7 +12,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "City Gas Adani Case Study | Smart Gas Distribution | EICE Technology", description: "How EICE Technology partnered with City Gas Adani to implement a smart gas distribution management system, improving safety and operational efficiency." },
-  alternates: { canonical: "https://www.eicetechnology.com/case-studies/city-gas-adani", languages: { "en-IN": "https://www.eicetechnology.com/case-studies/city-gas-adani/", "en-US": "https://www.eicetechnology.com/case-studies/city-gas-adani/", "x-default": "https://www.eicetechnology.com/case-studies/city-gas-adani/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/case-studies/city-gas-adani", languages: { "en-IN": "https://www.eicetechnology.com/case-studies/city-gas-adani", "en-US": "https://www.eicetechnology.com/case-studies/city-gas-adani", "x-default": "https://www.eicetechnology.com/case-studies/city-gas-adani" } },
 };
 
 

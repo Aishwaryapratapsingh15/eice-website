@@ -16,7 +16,7 @@ export  async function generateMetadata() {
   openGraph: { title, description, url: "https://www.eicetechnology.com/resources", siteName: "EICE Technology", type: "website" },
   twitter: { card: "summary_large_image", title , description,
     images: ["https://d3r43jacxrwsrp.cloudfront.net/Compressed/bannerai.png"]},
-  alternates: { canonical: "https://www.eicetechnology.com/resources", languages: { "en-IN": "https://www.eicetechnology.com/resources/", "en-US": "https://www.eicetechnology.com/resources/", "x-default": "https://www.eicetechnology.com/resources/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/resources", languages: { "en-IN": "https://www.eicetechnology.com/resources", "en-US": "https://www.eicetechnology.com/resources", "x-default": "https://www.eicetechnology.com/resources" } },
 };}
 
 
@@ -33,7 +33,7 @@ const jsonLd = [
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Resources | EICE Technology",
-    "url": "https://www.eicetechnology.com/resources/",
+    "url": "https://www.eicetechnology.com/resources",
     "description": "Explore EICE Technology's resources including case studies, whitepapers, and insights on AI/ML, cloud computing, IoT, and digital transformation.",
     "publisher": {
       "@type": "Organization",

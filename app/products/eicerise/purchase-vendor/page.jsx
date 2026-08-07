@@ -14,7 +14,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Purchase & Vendor Portal | EICE Rise Hospitality ERP", description: "Streamline hotel procurement with EICE Rise Purchase & Vendor module  purchase orders, vendor management, GRN tracking, and supply chain visibility." },
-  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/purchase-vendor", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/purchase-vendor/", "en-US": "https://www.eicetechnology.com/products/eicerise/purchase-vendor/", "x-default": "https://www.eicetechnology.com/products/eicerise/purchase-vendor/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/purchase-vendor", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/purchase-vendor", "en-US": "https://www.eicetechnology.com/products/eicerise/purchase-vendor", "x-default": "https://www.eicetechnology.com/products/eicerise/purchase-vendor" } },
 };
 
 

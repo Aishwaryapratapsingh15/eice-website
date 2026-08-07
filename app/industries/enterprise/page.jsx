@@ -12,7 +12,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Enterprise Software Solutions | Business Technology | EICE Technology", description: "Drive enterprise efficiency with EICE Technology's custom solutions. ERP systems, workflow automation, enterprise integration, and digital transformation." },
-  alternates: { canonical: "https://www.eicetechnology.com/industries/enterprise", languages: { "en-IN": "https://www.eicetechnology.com/industries/enterprise/", "en-US": "https://www.eicetechnology.com/industries/enterprise/", "x-default": "https://www.eicetechnology.com/industries/enterprise/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/industries/enterprise", languages: { "en-IN": "https://www.eicetechnology.com/industries/enterprise", "en-US": "https://www.eicetechnology.com/industries/enterprise", "x-default": "https://www.eicetechnology.com/industries/enterprise" } },
 };
 
 const jsonLd = [
@@ -32,7 +32,7 @@ const jsonLd = [
     "provider": { "@type": "Organization", "name": "EICE Technology", "url": "https://www.eicetechnology.com" },
     "serviceType": "Enterprise Technology Solutions",
     "areaServed": { "@type": "Place", "name": "India" },
-    "url": "https://www.eicetechnology.com/industries/enterprise/"
+    "url": "https://www.eicetechnology.com/industries/enterprise"
   }
 ];
 

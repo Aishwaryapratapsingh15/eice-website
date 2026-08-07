@@ -12,7 +12,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Noralta SCADA Case Study | Industrial Control System | EICE Technology", description: "EICE Technology's SCADA implementation for Noralta: a robust industrial control system enabling real-time monitoring and control of field operations." },
-  alternates: { canonical: "https://www.eicetechnology.com/case-studies/noralta-scada", languages: { "en-IN": "https://www.eicetechnology.com/case-studies/noralta-scada/", "en-US": "https://www.eicetechnology.com/case-studies/noralta-scada/", "x-default": "https://www.eicetechnology.com/case-studies/noralta-scada/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/case-studies/noralta-scada", languages: { "en-IN": "https://www.eicetechnology.com/case-studies/noralta-scada", "en-US": "https://www.eicetechnology.com/case-studies/noralta-scada", "x-default": "https://www.eicetechnology.com/case-studies/noralta-scada" } },
 };
 
 

@@ -12,7 +12,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "PetroSIM Case Study | Petroleum Process Simulation | EICE Technology", description: "EICE Technology's PetroSIM platform: a comprehensive petroleum simulation tool delivering accurate process modeling for the oil and gas industry." },
-  alternates: { canonical: "https://www.eicetechnology.com/case-studies/petro-sim", languages: { "en-IN": "https://www.eicetechnology.com/case-studies/petro-sim/", "en-US": "https://www.eicetechnology.com/case-studies/petro-sim/", "x-default": "https://www.eicetechnology.com/case-studies/petro-sim/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/case-studies/petro-sim", languages: { "en-IN": "https://www.eicetechnology.com/case-studies/petro-sim", "en-US": "https://www.eicetechnology.com/case-studies/petro-sim", "x-default": "https://www.eicetechnology.com/case-studies/petro-sim" } },
 };
 
 

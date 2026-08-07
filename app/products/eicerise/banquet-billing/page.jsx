@@ -14,7 +14,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Banquet & Billing | EICE Rise Hospitality ERP", description: "Manage banquet hall bookings, event billing, and catering operations with EICE Rise Banquet module  end-to-end event management for hotels and resorts." },
-  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/banquet-billing", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/banquet-billing/", "en-US": "https://www.eicetechnology.com/products/eicerise/banquet-billing/", "x-default": "https://www.eicetechnology.com/products/eicerise/banquet-billing/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/banquet-billing", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/banquet-billing", "en-US": "https://www.eicetechnology.com/products/eicerise/banquet-billing", "x-default": "https://www.eicetechnology.com/products/eicerise/banquet-billing" } },
 };
 
 

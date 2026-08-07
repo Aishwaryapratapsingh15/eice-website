@@ -14,7 +14,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Member Suite | EICE Rise Hospitality ERP", description: "Manage hotel memberships, loyalty programs, and member benefits with EICE Rise Member Suite  centralized member portal for hotels, clubs, and resorts." },
-  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/member-suite", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/member-suite/", "en-US": "https://www.eicetechnology.com/products/eicerise/member-suite/", "x-default": "https://www.eicetechnology.com/products/eicerise/member-suite/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/member-suite", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/member-suite", "en-US": "https://www.eicetechnology.com/products/eicerise/member-suite", "x-default": "https://www.eicetechnology.com/products/eicerise/member-suite" } },
 };
 
 

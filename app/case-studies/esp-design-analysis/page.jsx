@@ -12,7 +12,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "ESP Design & Analysis Software Case Study | EICE Technology", description: "How EICE Technology helped a global ESP manufacturer modernize engineering with a cloud-based ESP Design & Analysis Software platform on Microsoft Azure." },
-  alternates: { canonical: "https://www.eicetechnology.com/case-studies/esp-design-analysis", languages: { "en-IN": "https://www.eicetechnology.com/case-studies/esp-design-analysis/", "en-US": "https://www.eicetechnology.com/case-studies/esp-design-analysis/", "x-default": "https://www.eicetechnology.com/case-studies/esp-design-analysis/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/case-studies/esp-design-analysis", languages: { "en-IN": "https://www.eicetechnology.com/case-studies/esp-design-analysis", "en-US": "https://www.eicetechnology.com/case-studies/esp-design-analysis", "x-default": "https://www.eicetechnology.com/case-studies/esp-design-analysis" } },
 };
 
 

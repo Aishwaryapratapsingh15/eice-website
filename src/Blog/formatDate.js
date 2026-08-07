@@ -7,6 +7,34 @@ export function formatDate(iso) {
   });
 }
 
+// Explicit timeZone so this renders the same IST time regardless of the
+// server's host timezone (SSR runs on the server, not the visitor's browser).
+export function formatDateTime(iso) {
+  if (!iso) return "";
+  const formatted = new Date(iso).toLocaleString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    hour: "numeric",
+    minute: "2-digit",
+    timeZone: "Asia/Kolkata",
+  });
+  return `${formatted} IST`;
+}
+
+const ONE_DAY_MS = 24 * 60 * 60 * 1000;
+
+// Treat the post as "updated" only once updatedAt drifts a full day past
+// publishedAt — filters out the sub-second gap between save and publish.
+export function getDisplayDate(blog) {
+  const updatedAt = blog.updatedAt;
+  const publishedAt = blog.publishedAt;
+  if (updatedAt && publishedAt && new Date(updatedAt).getTime() - new Date(publishedAt).getTime() > ONE_DAY_MS) {
+    return { label: "Updated", date: formatDateTime(updatedAt) };
+  }
+  return { label: "Published", date: formatDateTime(publishedAt) };
+}
+
 const IST_OFFSET_MS = 5.5 * 60 * 60 * 1000;
 
 // Backend timestamps are UTC — Google News/Search schema wants dates

@@ -8,7 +8,7 @@ export const metadata = {
   keywords: ["EICE Technology careers", "IT jobs", "software developer jobs", "tech careers", "IT company jobs", "EICE hiring"],
   openGraph: { title: "Careers at EICE Technology", description: "Join EICE Technology's team of 200+ global IT professionals.", url: "https://www.eicetechnology.com/careers", siteName: "EICE Technology", type: "website" },
   twitter: { card: "summary_large_image", title: "Careers at EICE Technology" },
-  alternates: { canonical: "https://www.eicetechnology.com/careers", languages: { "en-IN": "https://www.eicetechnology.com/careers/", "en-US": "https://www.eicetechnology.com/careers/", "x-default": "https://www.eicetechnology.com/careers/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/careers", languages: { "en-IN": "https://www.eicetechnology.com/careers", "en-US": "https://www.eicetechnology.com/careers", "x-default": "https://www.eicetechnology.com/careers" } },
 };
 
 const jsonLd = [

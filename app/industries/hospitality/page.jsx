@@ -15,9 +15,9 @@ export const metadata = {
   alternates: {
     canonical: "https://www.eicetechnology.com/industries/hospitality",
     languages: {
-      "en-IN": "https://www.eicetechnology.com/industries/hospitality/",
-      "en-US": "https://www.eicetechnology.com/industries/hospitality/",
-      "x-default": "https://www.eicetechnology.com/industries/hospitality/",
+      "en-IN": "https://www.eicetechnology.com/industries/hospitality",
+      "en-US": "https://www.eicetechnology.com/industries/hospitality",
+      "x-default": "https://www.eicetechnology.com/industries/hospitality",
     },
   },
 };
@@ -39,7 +39,7 @@ const jsonLd = [
     "provider": { "@type": "Organization", "name": "EICE Technology", "url": "https://www.eicetechnology.com" },
     "serviceType": "Hospitality Technology Solutions",
     "areaServed": { "@type": "Place", "name": "India" },
-    "url": "https://www.eicetechnology.com/industries/hospitality/"
+    "url": "https://www.eicetechnology.com/industries/hospitality"
   }
 ];
 

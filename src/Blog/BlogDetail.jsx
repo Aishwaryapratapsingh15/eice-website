@@ -1,7 +1,7 @@
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { Link } from "@/nextNavigation";
-import { formatDate } from "./formatDate";
+import { getDisplayDate } from "./formatDate";
 import { BlogCard } from "./BlogCard";
 import { BlogSidebar } from "./BlogSidebar";
 
@@ -61,6 +61,7 @@ export function BlogDetail({ blog, relatedPosts, latestPosts, categories }) {
   const primaryCategory = blog.categories?.[0];
   const tags = blog.tags ?? [];
   const faqs = blog.faqs ?? [];
+  const displayDate = getDisplayDate(blog);
 
   return (
     <main className="mx-auto max-w-7xl px-5 pt-8 pb-16">
@@ -113,7 +114,7 @@ export function BlogDetail({ blog, relatedPosts, latestPosts, categories }) {
               <span className="shrink-0 text-blackk/40">·</span>
               <span className="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap text-blackk/50">
                 <CalendarIcon />
-                {formatDate(blog.publishedAt)}
+                {displayDate.label}: {displayDate.date}
               </span>
             </div>
             {blog.readingTime && (

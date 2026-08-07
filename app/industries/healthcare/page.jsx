@@ -12,7 +12,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Healthcare IT Solutions | Medical Software Development | EICE Technology", description: "Transform patient care with EICE Technology's healthcare IT solutions. EHR systems, telemedicine platforms, clinical management, and health analytics." },
-  alternates: { canonical: "https://www.eicetechnology.com/industries/healthcare", languages: { "en-IN": "https://www.eicetechnology.com/industries/healthcare/", "en-US": "https://www.eicetechnology.com/industries/healthcare/", "x-default": "https://www.eicetechnology.com/industries/healthcare/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/industries/healthcare", languages: { "en-IN": "https://www.eicetechnology.com/industries/healthcare", "en-US": "https://www.eicetechnology.com/industries/healthcare", "x-default": "https://www.eicetechnology.com/industries/healthcare" } },
 };
 
 const jsonLd = [
@@ -32,7 +32,7 @@ const jsonLd = [
     "provider": { "@type": "Organization", "name": "EICE Technology", "url": "https://www.eicetechnology.com" },
     "serviceType": "Healthcare Technology Solutions",
     "areaServed": { "@type": "Place", "name": "India" },
-    "url": "https://www.eicetechnology.com/industries/healthcare/"
+    "url": "https://www.eicetechnology.com/industries/healthcare"
   }
 ];
 

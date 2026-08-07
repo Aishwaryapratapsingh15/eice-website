@@ -14,7 +14,7 @@ export const metadata = {
     type: "website",
   },
   twitter: { card: "summary_large_image", title: "Budget Management | EICE Rise Hospitality ERP", description: "Plan and control hotel budgets with EICE Rise Budget module  departmental budget allocation, variance analysis, and real-time spend tracking for financial discipline." },
-  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/budget", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/budget/", "en-US": "https://www.eicetechnology.com/products/eicerise/budget/", "x-default": "https://www.eicetechnology.com/products/eicerise/budget/" } },
+  alternates: { canonical: "https://www.eicetechnology.com/products/eicerise/budget", languages: { "en-IN": "https://www.eicetechnology.com/products/eicerise/budget", "en-US": "https://www.eicetechnology.com/products/eicerise/budget", "x-default": "https://www.eicetechnology.com/products/eicerise/budget" } },
 };
 
 
