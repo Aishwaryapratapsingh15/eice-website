@@ -23,10 +23,7 @@ async function fetchRecentlyPublishedBlogs() {
     );
     const cutoff = Date.now() - FORTY_EIGHT_HOURS_MS;
     return result.items.filter(
-      (blog) =>
-        blog.publishedAt &&
-        new Date(blog.publishedAt).getTime() >= cutoff &&
-        (blog.categories ?? []).some((c) => c.slug === "news"),
+      (blog) => blog.publishedAt && new Date(blog.publishedAt).getTime() >= cutoff,
     );
   } catch {
     return [];
