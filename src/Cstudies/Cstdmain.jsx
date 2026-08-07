@@ -229,12 +229,12 @@ function Cstdmain() {
   
 
   return (
-    <div className="font-manrope  xl:-mt-4">
+    <div className="font-manrope">
       <header className="bg-gradient-to-r from-cyan-100/10 to-bloo/10 w-screen text-white pt-20 pb-8 text-center px-5 sm:px-0">
         <h1 className="text-blackk fontsize_6 fontweight_1 mb-4">
           CASE STUDIES
         </h1>
-        <p className="text-blackk text-xl fontweight_1  md:text-2xl max-w-3xl py-2 mx-auto px-5 sm:px-4">
+        <p className="text-blackk text-xl fontweight_1  md:text-2xl max-w-3xl py-2 mx-auto sm:px-4">
           Explore{" "}
           <span className="text-bloo fontweight_2">Real-World Examples</span> of
           how EICE has transformed businesses across industries through
