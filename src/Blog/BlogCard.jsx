@@ -1,10 +1,11 @@
 import { Link } from "@/nextNavigation";
-import { formatDate } from "./formatDate";
+import { formatDate, getDisplayDate } from "./formatDate";
 import { blogPostUrl } from "./blogUrl";
 
 export function BlogCard({ blog }) {
   const category = blog.categories?.[0];
   const postUrl = blogPostUrl(blog);
+  const displayDate = getDisplayDate(blog, formatDate);
 
   return (
     <div className="group flex flex-col overflow-hidden rounded-2xl bg-white shadow-md ring-1 ring-black/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
@@ -50,7 +51,7 @@ export function BlogCard({ blog }) {
 
         <div className="mt-4 flex items-center justify-between border-t border-black/5 pt-4 text-[14px] text-slate-500">
           <span>By {blog.author?.fullName ?? "EICE Technology"}</span>
-          <span>{formatDate(blog.publishedAt)}</span>
+          <span>{displayDate.label}: {displayDate.date}</span>
         </div>
       </div>
     </div>

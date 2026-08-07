@@ -1,5 +1,5 @@
 import { Link } from "@/nextNavigation";
-import { formatDate } from "./formatDate";
+import { formatDate, getDisplayDate } from "./formatDate";
 import { blogPostUrl } from "./blogUrl";
 
 function HeroImage({ blog, className }) {
@@ -22,6 +22,7 @@ function HeroImage({ blog, className }) {
 }
 
 export function BlogHero({ blog }) {
+  const displayDate = getDisplayDate(blog, formatDate);
   return (
     <section className="flex items-stretch overflow-hidden bg-[#012060] pt-10 sm:pt-16 pb-8 mt-10">
       
@@ -55,7 +56,7 @@ export function BlogHero({ blog }) {
             )}
             <span>{blog.author?.fullName ?? "EICE Technology"}</span>
             <span aria-hidden>·</span>
-            <span>{formatDate(blog.publishedAt)}</span>
+            <span>{displayDate.label}: {displayDate.date}</span>
             {blog.readingTime && (
               <>
                 <span aria-hidden>·</span>

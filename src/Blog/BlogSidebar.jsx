@@ -1,5 +1,5 @@
 import { Link } from "@/nextNavigation";
-import { formatDate } from "./formatDate";
+import { formatDate, getDisplayDate } from "./formatDate";
 import { NewsletterForm } from "./NewsletterForm";
 import { blogPostUrl } from "./blogUrl";
 
@@ -71,6 +71,7 @@ export function BlogSidebar({ latestPosts, categories }) {
           <ul className="divide-y divide-black/5">
             {latestPosts.map((post) => {
               const category = post.categories?.[0];
+              const displayDate = getDisplayDate(post, formatDate);
               return (
                 <li key={post.id}>
                   <Link to={blogPostUrl(post)} className="group flex gap-3 px-6 py-4">
@@ -99,7 +100,7 @@ export function BlogSidebar({ latestPosts, categories }) {
                         {post.title}
                       </span>
                       <span className="text-[12px] text-blackk/50">
-                        {formatDate(post.publishedAt)}
+                        {displayDate.label}: {displayDate.date}
                       </span>
                     </div>
                   </Link>

@@ -26,13 +26,13 @@ const ONE_DAY_MS = 24 * 60 * 60 * 1000;
 
 // Treat the post as "updated" only once updatedAt drifts a full day past
 // publishedAt — filters out the sub-second gap between save and publish.
-export function getDisplayDate(blog) {
+export function getDisplayDate(blog, formatter = formatDateTime) {
   const updatedAt = blog.updatedAt;
   const publishedAt = blog.publishedAt;
   if (updatedAt && publishedAt && new Date(updatedAt).getTime() - new Date(publishedAt).getTime() > ONE_DAY_MS) {
-    return { label: "Updated", date: formatDateTime(updatedAt) };
+    return { label: "Updated", date: formatter(updatedAt) };
   }
-  return { label: "Published", date: formatDateTime(publishedAt) };
+  return { label: "Published", date: formatter(publishedAt) };
 }
 
 const IST_OFFSET_MS = 5.5 * 60 * 60 * 1000;
