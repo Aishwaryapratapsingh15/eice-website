@@ -96,9 +96,9 @@ export default function Page() {
         <Solutions />
         <Casestudies />
         <Clients />
+        <LatestVideos />
         <Clientele />
         <Certificate />
-        <LatestVideos />
         <div style={{ marginBottom: "100px" }}></div>
       </div>
 
