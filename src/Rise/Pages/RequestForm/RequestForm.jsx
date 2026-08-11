@@ -324,7 +324,7 @@ const images = document.images;
         return ascending.includes(digits) || descending.includes(digits);
     };
 
-    const FREE_EMAIL_DOMAINS = /@(gmail\.|yahoo\.|outlook\.|hotmail\.|live\.|icloud\.|aol\.|protonmail\.|zoho\.|rediffmail\.|yandex\.|gmx\.|mail\.com)/i;
+    const FREE_EMAIL_DOMAINS = /@(yahoo\.|live\.|icloud\.|aol\.|protonmail\.|rediffmail\.|yandex\.|gmx\.|mail\.com)/i;
 
     const validators = {
         name: (v) => {

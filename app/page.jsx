@@ -14,6 +14,7 @@ const Clientele = dynamic(() => import("../src/Homecomps/Clientele"));
 const Clients = dynamic(() => import("../src/Homecomps/Clients"));
 const Casestudies = dynamic(() => import("../src/Homecomps/Casestudies"));
 const Certificate = dynamic(() => import("../src/Homecomps/Certificate"));
+const LatestVideos = dynamic(() => import("../src/Homecomps/LatestVideos"));
 const ProductFooter = dynamic(() => import("../src/Product/ProductFooter"));
 
 // export const metadata = {
@@ -97,6 +98,7 @@ export default function Page() {
         <Clients />
         <Clientele />
         <Certificate />
+        <LatestVideos />
         <div style={{ marginBottom: "100px" }}></div>
       </div>
 

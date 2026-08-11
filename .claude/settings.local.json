@@ -30,7 +30,9 @@
       "Bash(npm run *)",
       "Bash(netstat -ano)",
       "Bash(taskkill *)",
-      "Bash(wmic process *)"
+      "Bash(wmic process *)",
+      "Bash(npx next *)",
+      "Bash(npx eslint *)"
     ]
   }
 }
