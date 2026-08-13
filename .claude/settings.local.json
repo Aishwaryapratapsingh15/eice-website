@@ -32,7 +32,11 @@
       "Bash(taskkill *)",
       "Bash(wmic process *)",
       "Bash(npx next *)",
-      "Bash(npx eslint *)"
+      "Bash(npx eslint *)",
+      "Bash(python3 -c \"import openpyxl; print\\('openpyxl ok'\\)\")",
+      "Bash(python3 -c \"import pandas; print\\('pandas ok'\\)\")",
+      "Bash(node -e \"console.log\\(process.version\\)\")",
+      "Bash(node -e \"require.resolve\\('xlsx'\\); console.log\\('xlsx module ok'\\)\")"
     ]
   }
 }

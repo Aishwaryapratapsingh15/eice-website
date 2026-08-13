@@ -1,7 +1,34 @@
 "use client";
 
-import { usePathname } from "next/navigation";
+import { Suspense } from "react";
+import { usePathname, useSearchParams } from "next/navigation";
 import { Link } from "@/nextNavigation";
+
+// Every non-EiceRise product's "Request a Demo" button funnels into this one
+// shared form route, distinguished only by a ?product= query param — the URL
+// path alone would otherwise mislabel all of them as "EiceRise". Values here
+// must match the exact ?product= strings used across src/Product/*.jsx and
+// src/Easylogy/**. Genuine EiceRise pages (the "EiceRise"/"EiceRise(...)"
+// values) aren't listed — the path-derived "EiceRise" crumb is already
+// correct for those, so they fall through to the default.
+const DEMO_FORM_PATH = "/products/eicerise/form";
+const PRODUCT_CRUMB_OVERRIDES = {
+  "Eice SmartFit": { label: "Smartfit", href: "/products/smartfit" },
+  Verilock: { label: "Verilock", href: "/products/verilock" },
+  iSyncDrive: { label: "iSync Drive", href: "/products/isync-drive" },
+  iSyncLite: { label: "iSync Lite", href: "/products/isync-lite" },
+  Infrasight: { label: "InfraSight", href: "/products/infrasight" },
+  "Eice Voice": { label: "EICE Voice", href: "/products/eice-voice" },
+  EiceOps: { label: "EICE Ops", href: "/products/eice-ops" },
+  "EICE Agent": { label: "EICE Agent", href: "/products/eice-agent" },
+  Easylogy: { label: "EasyLogy", href: "/products/easylogy" },
+};
+
+// Exact-path label overrides — for routes where the URL segment reads
+// awkwardly (e.g. the shared demo form's last segment is literally "form").
+const PATH_LABEL_OVERRIDES = {
+  [DEMO_FORM_PATH]: "Request a Demo",
+};
 
 // Slugs that don't read well from naive title-casing (brand names,
 // ampersands, acronym pairs).
@@ -96,12 +123,13 @@ export function Breadcrumbs() {
     ...segments
       .map((segment, index) => {
         const isBlogCategorySegment = isBlogPostPath && index === 1;
+        const href = isBlogCategorySegment
+          ? `/blog/category/${segment}`
+          : `/${segments.slice(0, index + 1).join("/")}`;
         return {
           segment,
-          label: labelFor(segment),
-          href: isBlogCategorySegment
-            ? `/blog/category/${segment}`
-            : `/${segments.slice(0, index + 1).join("/")}`,
+          label: PATH_LABEL_OVERRIDES[href] ?? labelFor(segment),
+          href,
           linkable:
             !NO_INDEX_PAGE.has(segment) &&
             !(isBlogCategorySegment && segment === "uncategorized"),
@@ -114,6 +142,34 @@ export function Breadcrumbs() {
   // BreadcrumbList JSON-LD (with the real page/post title, not an
   // auto-generated slug label) — this component only adds the visible trail,
   // which never existed before, and deliberately doesn't duplicate schema.
+  if (pathname === DEMO_FORM_PATH) {
+    return (
+      <Suspense fallback={<BreadcrumbTrail crumbs={crumbs} />}>
+        <DemoFormBreadcrumb defaultCrumbs={crumbs} />
+      </Suspense>
+    );
+  }
+
+  return <BreadcrumbTrail crumbs={crumbs} />;
+}
+
+// The ?product= query param is invisible to usePathname, so this reads it
+// separately via useSearchParams (which needs the Suspense boundary above —
+// confined to just this one route so the rest of the site keeps its static
+// rendering unaffected).
+function DemoFormBreadcrumb({ defaultCrumbs }) {
+  const searchParams = useSearchParams();
+  const override = PRODUCT_CRUMB_OVERRIDES[searchParams.get("product")];
+
+  if (!override) return <BreadcrumbTrail crumbs={defaultCrumbs} />;
+
+  const crumbs = defaultCrumbs.map((crumb) =>
+    crumb.segment === "eicerise" ? { ...crumb, ...override } : crumb,
+  );
+  return <BreadcrumbTrail crumbs={crumbs} />;
+}
+
+function BreadcrumbTrail({ crumbs }) {
   return (
     <nav
       aria-label="Breadcrumb"
