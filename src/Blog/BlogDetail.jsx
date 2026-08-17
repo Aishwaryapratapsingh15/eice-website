@@ -101,8 +101,8 @@ export function BlogDetail({ blog, relatedPosts, latestPosts, categories }) {
             />
           )}
 
-          <div className="mt-6 flex flex-nowrap items-center justify-between gap-2 border-b border-black/10 pb-6 text-[14px]">
-            <div className="flex min-w-0 flex-nowrap items-center gap-2">
+          <div className="mt-6 flex flex-wrap items-center justify-between gap-2 border-b border-black/10 pb-6 text-[14px] sm:flex-nowrap">
+            <div className="flex min-w-0 flex-wrap items-center gap-2 sm:flex-nowrap">
               {blog.author?.avatarMedia && (
                 <img
                   src={blog.author.avatarMedia.url}

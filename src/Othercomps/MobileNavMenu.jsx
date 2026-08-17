@@ -100,7 +100,11 @@ export default function MobileNavMenu() {
           {menuView === "main" && (
             <motion.div key="main" initial={{ x: -300, opacity: 0 }} animate={{ x: 0, opacity: 1 }} exit={{ x: -300, opacity: 0 }} transition={{ duration: 0.3 }}>
               <MenuItem><Link onClick={closeMenu} className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]" to="/">Home</Link></MenuItem>
-              <MenuItem>
+              {/* Plain <li>, not <MenuItem> — MenuItem has MUI Base's built-in
+                  "activate and close the menu" behavior, which fired
+                  regardless of this button's own onClick and closed the
+                  whole dropdown instead of drilling into the sub-view. */}
+              <li className="list-none">
                 <button
                   onClick={() => setMenuView("products")}
                   aria-expanded={menuView === "products"}
@@ -109,9 +113,9 @@ export default function MobileNavMenu() {
                 >
                   Products <span aria-hidden="true" className="ml-1">+</span>
                 </button>
-              </MenuItem>
+              </li>
               <MenuItem><Link onClick={closeMenu} className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]" to="/about">About Us</Link></MenuItem>
-              <MenuItem>
+              <li className="list-none">
                 <button
                   onClick={() => setMenuView("services")}
                   aria-expanded={menuView === "services"}
@@ -120,8 +124,8 @@ export default function MobileNavMenu() {
                 >
                   Services <span aria-hidden="true" className="ml-1">+</span>
                 </button>
-              </MenuItem>
-              <MenuItem>
+              </li>
+              <li className="list-none">
                 <button
                   onClick={() => setMenuView("industries")}
                   aria-expanded={menuView === "industries"}
@@ -130,7 +134,7 @@ export default function MobileNavMenu() {
                 >
                   Industries <span aria-hidden="true" className="ml-1">+</span>
                 </button>
-              </MenuItem>
+              </li>
               <MenuItem><Link onClick={closeMenu} className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]" to="/resources">Resources</Link></MenuItem>
               <MenuItem><Link onClick={closeMenu} className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]" to="/contact">Contact Us</Link></MenuItem>
             </motion.div>

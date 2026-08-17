@@ -36,7 +36,9 @@
       "Bash(python3 -c \"import openpyxl; print\\('openpyxl ok'\\)\")",
       "Bash(python3 -c \"import pandas; print\\('pandas ok'\\)\")",
       "Bash(node -e \"console.log\\(process.version\\)\")",
-      "Bash(node -e \"require.resolve\\('xlsx'\\); console.log\\('xlsx module ok'\\)\")"
+      "Bash(node -e \"require.resolve\\('xlsx'\\); console.log\\('xlsx module ok'\\)\")",
+      "Bash(npx --yes create-next-app@latest lms-frontend --js --tailwind --eslint --app --src-dir=false --import-alias \"@/*\" --use-npm --no-turbopack)",
+      "Bash(tasklist *)"
     ]
   }
 }

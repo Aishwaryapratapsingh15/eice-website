@@ -34,7 +34,7 @@ export function BlogHero({ blog }) {
 
           <HeroImage blog={blog} className="mt-4 lg:hidden" />
 
-          <h1 className="mt-4 text-[32px] font-semibold leading-[1.1] tracking-tight text-white sm:text-5xl">
+          <h1 className="mt-4 text-[32px] font-semibold leading-[1.1] text-white sm:text-5xl">
             <Link to={blogPostUrl(blog)} className="transition-colors duration-300 hover:text-bloo">
               {blog.title}
             </Link>

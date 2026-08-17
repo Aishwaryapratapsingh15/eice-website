@@ -34,6 +34,5 @@ export default function robots() {
       "https://www.eicetechnology.com/sitemap.xml",
       "https://www.eicetechnology.com/news-sitemap.xml",
     ],
-    host: "https://www.eicetechnology.com",
   };
 }
