@@ -516,27 +516,23 @@ const handleSubmit = async (e) => {
     };
 
     try {
-        const response = await axios.post("/api/contact", dataToSend);
+        await axios.post("/api/contact", dataToSend);
 
-        if (response.status === 200) {
-            showLocalPopup("success", "Form submitted successfully!");
-            setFormData({
-                name: "",
-                companyName: "",
-                role: "",
-                email: "",
-                phone: "",
-                phoneCode: "",
-                country: "",
-                address: "",
-                requirement: "",
-                message: "",
-                subscribe: false,
-                policyAgree: false,
-            });
-        } else {
-            showLocalPopup("error", "Something went wrong. Please try again.");
-        }
+        showLocalPopup("success", "Form submitted successfully!");
+        setFormData({
+            name: "",
+            companyName: "",
+            role: "",
+            email: "",
+            phone: "",
+            phoneCode: "",
+            country: "",
+            address: "",
+            requirement: "",
+            message: "",
+            subscribe: false,
+            policyAgree: false,
+        });
     } catch (error) {
         console.error("Error submitting form:", error);
         showLocalPopup("error", "Something went wrong. Please try again.");
