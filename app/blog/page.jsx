@@ -1,7 +1,6 @@
 import { BlogMain } from "../../src/Blog/BlogMain";
 import { blogApiFetch } from "../../src/Blog/blogApi";
 import ProductFooter from "../../src/Product/ProductFooter";
-import Copyright from "../../src/Othercomps/Copyright";
 
 export const metadata = {
   title: "Blog | Insights, Updates & Industry Knowledge — EICE Technology",
@@ -62,7 +61,6 @@ export default async function Page({ searchParams }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <BlogMain items={result.items} meta={result.meta} category={params?.category} />
       <ProductFooter />
-      <Copyright />
     </>
   );
 }

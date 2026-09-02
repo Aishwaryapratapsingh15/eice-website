@@ -3,7 +3,6 @@ import Workflow from "../../src/Aboutcomponents/Workflow";
 import Scopes from "../../src/Aboutcomponents/Scopes";
 import Certificate from "../../src/Homecomps/Certificate";
 import ProductFooter from "../../src/Product/ProductFooter";
-import Copyright from "../../src/Othercomps/Copyright";
 
 export  async function generateMetadata() {
  const title= "About EICE Technology — Our Company & Mission | India IT Firm";
@@ -48,7 +47,6 @@ export default function Page() {
       <Certificate />
       <div style={{ marginBottom: "100px" }}></div>
       <ProductFooter />
-      <Copyright />
     </>
   );
 }

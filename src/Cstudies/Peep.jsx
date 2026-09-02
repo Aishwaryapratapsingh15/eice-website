@@ -1,6 +1,5 @@
 ﻿import React from "react";
 import ProductFooter from "@/Product/ProductFooter";
-import Copyright from "../Othercomps/Copyright";
 const peep1 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/Peep1.png";
 const peep2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/Peep2.png";
 import { GiVirtualMarker } from "react-icons/gi";
@@ -10,8 +9,8 @@ function Peep() {
     <div className="">
       <div className="max-w-7xl mx-auto px-4 pt-4">
         <div className="w-full">
-          <h2 className="text-bloo fontweight_1 text-center fontsize_2 py-2">Business Analytics Automation</h2>
-          <h2 className="text-blackk fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
+          <h2 className="text-blackk fontweight_1 text-center text-[32px] py-2">Business Analytics Automation</h2>
+          <h2 className="text-gray-400 fontweight_1 text-center text-[18px] mx-auto max-w-3xl py-1">
             Tool for Monitoring of Petroleum Financial Models - Schlumberger
           </h2>
           <p className="fontweight_1 max-w-4xl mx-auto text-blackk/70 fontsize_3 pt-4 px-4">
@@ -116,7 +115,6 @@ function Peep() {
         </div>
       </div>
       <ProductFooter />
-      <Copyright />
     </div>
   );
 }

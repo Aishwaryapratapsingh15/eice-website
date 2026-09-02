@@ -1,6 +1,5 @@
 import Careerform from "../../src/Othercomps/Careerform";
 import ProductFooter from "../../src/Product/ProductFooter";
-import Copyright from "../../src/Othercomps/Copyright";
 
 export const metadata = {
   title: "Careers at EICE Technology | Join Our Global IT Team",
@@ -46,7 +45,6 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Careerform />
       <ProductFooter />
-      <Copyright />
     </>
   );
 }

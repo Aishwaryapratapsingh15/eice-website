@@ -4,7 +4,6 @@ import axios from "axios";
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import ProductFooter from "./ProductFooter";
-import Copyright from "../Othercomps/Copyright";
 import Cookies from "js-cookie";
 const successIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/success.svg";
 const errorIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/error.svg";
@@ -380,7 +379,6 @@ export default function ProductForm() {
       </div>
 
       <ProductFooter />
-      <Copyright />
     </div>
   );
 }

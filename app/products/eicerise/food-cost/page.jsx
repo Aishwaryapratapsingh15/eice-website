@@ -1,6 +1,5 @@
 import FoodCost from "../../../../src/Rise/Pages/InsidePages/FoodCost";
 import ProductFooter from "../../../../src/Product/ProductFooter";
-import Copyright from "../../../../src/Othercomps/Copyright";
 
 export const metadata = {
   title: "Food & Beverage Cost Analysis | EICE Rise Hospitality ERP | EICE Technology",
@@ -35,7 +34,6 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <FoodCost />
       <ProductFooter />
-      <Copyright />
     </>
   );
 }

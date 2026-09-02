@@ -14,7 +14,6 @@ const dtconsulting = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/dtconsult
 
 import Footer from "../Othercomps/Footer.jsx";
 import ProductFooter from "@/Product/ProductFooter";
-import Copyright from "../Othercomps/Copyright.jsx";
 import TalkToUs from "../Othercomps/Talktous";
 import Reviews from "../Homecomps/Reviews";
 import Clients from "../Homecomps/Clients";
@@ -355,7 +354,6 @@ function Digitrans() {
       <TalkToUs product="Digital Transformation" />
       {/* <Footer /> */}
       <ProductFooter />
-      <Copyright />
     </div>
   );
 }

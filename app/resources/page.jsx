@@ -1,6 +1,5 @@
 import Resourcesmain from "../../src/Othercomps/Resourcesmain";
 import ProductFooter from "../../src/Product/ProductFooter";
-import Copyright from "../../src/Othercomps/Copyright";
 
 
 
@@ -49,7 +48,6 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Resourcesmain />
       <ProductFooter />
-      <Copyright />
     </>
   );
 }

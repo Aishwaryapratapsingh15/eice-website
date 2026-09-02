@@ -2,7 +2,6 @@
 import Link from "next/link";
 import { GiVirtualMarker } from "react-icons/gi";
 import Footer from "../Othercomps/Footer";
-import Copyright from "../Othercomps/Copyright";
 import ProductFooter from "@/Product/ProductFooter";
 
 const temp = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/temp.png";
@@ -30,29 +29,23 @@ function InventoryAi() {
         <div className="">
             <div className="max-w-7xl  mx-auto px-4 pt-4">
                 <div className="w-full">
-                    <h1 className="text-bloo fontweight_1 text-center fontsize_2  py-2">
+                    <h1 className="text-blackk fontweight_1 text-center text-[32px] py-2">
                         Development of AI-Based Inventory Management System
                     </h1>
-                    <h2 className="text-blackk  fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-5xl py-1">
+                    <h2 className="text-gray-400 fontweight_1 text-center text-[18px] mx-auto max-w-5xl py-1">
                         Revolutionizing Inventory Management with AI: Enhancing Accuracy and Efficiency
                     </h2>
                     <p className="fontweight_1 max-w-4xl mx-auto  text-blackk/70 fontsize_3 pt-4 px-4">
                         For our client in the retail sector, we developed an AI-based inventory management system by integrating advanced machine learning algorithms, real-time data analytics, and predictive modeling. This solution ensured precise inventory tracking, optimal stock levels, and efficient supply chain operations.
                     </p>
-                    <div className="w-full h-full max-w-7xl mx-auto items-center justify-center pt-12 pb-4 flex flex-row flex-wrap gap-16">
+                    <div className="w-full max-w-5xl mx-auto items-center justify-center pt-8 pb-4">
                         <img
-                            src={voicecall1}
-                            alt="AI-based inventory management system dashboard"
-                            className="h-[400px] object-contain rounded-lg"
-                         width="1" height="1" />
-                        <div className="relative">
-                            <div className="w-full h-full absolute bg-bloo/10  rounded-lg"></div>
-                            <img
-                                src={inventryAi}
-                                alt="AI inventory management system — stock tracking visualization"
-                                className="h-[400px] z-20 object-contain"
-                             width="96" height="96" />
-                        </div>
+                            src={inventryAi}
+                            alt="AI inventory management system — stock tracking visualization"
+                            className="w-full h-56 sm:h-72 md:h-96 object-cover rounded-lg"
+                            width="1280"
+                            height="1217"
+                        />
                     </div>
                 </div>
                 <div className="w-full pb-6 text-left">
@@ -315,7 +308,6 @@ function InventoryAi() {
             </div>
             {/* <Footer /> */}
             <ProductFooter />
-            <Copyright />
         </div>
     );
 }

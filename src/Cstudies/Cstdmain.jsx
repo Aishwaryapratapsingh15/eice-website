@@ -17,6 +17,7 @@ const femms = "https://d3r43jacxrwsrp.cloudfront.net/Petroleum/FEMMS.jpeg";
 const bsa = "https://d3r43jacxrwsrp.cloudfront.net/Petroleum/bsa.jpeg";
 const ogpd = "https://d3r43jacxrwsrp.cloudfront.net/Petroleum/ogpd.png";
 const espDesign = "https://d3r43jacxrwsrp.cloudfront.net/Petroleum/ESPDesignAnalysis.jpeg";
+const subsurfaceWorkflow = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/Sub-surface_workflows_orchestration_hero_image.png";
 
 
 // automobile
@@ -123,6 +124,13 @@ const projects = {
       link: "/case-studies/esp-design-analysis",
       img : espDesign
     , __w: 1431, __h: 806},
+    {
+      title: "Subsurface Workflow Orchestration",
+      description:
+        "Automated orchestration connecting reservoir simulation and surface network models within an Integrated Asset Modelling platform.",
+      link: "/case-studies/subsurface-workflow-orchestration",
+      img : subsurfaceWorkflow
+    , __w: 1672, __h: 941},
   ],
   // oil: [
   //   { title: "Offshore Platform Optimization", description: "Improved production efficiency by 25% through advanced AI-driven monitoring systems." },

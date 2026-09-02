@@ -1,6 +1,5 @@
 import IIC from "../../../../src/Rise/Pages/CaseStudy/IIC/IIC";
 import ProductFooter from "../../../../src/Product/ProductFooter";
-import Copyright from "../../../../src/Othercomps/Copyright";
 
 export const metadata = {
   title: "IIC Case Study | EICE Rise Success Story | EICE Technology",
@@ -35,7 +34,6 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <IIC />
       <ProductFooter />
-      <Copyright />
     </>
   );
 }

@@ -1,6 +1,5 @@
 import Durgabari from "../../../../src/Rise/Pages/CaseStudy/Durgabari/Durgabari";
 import ProductFooter from "../../../../src/Product/ProductFooter";
-import Copyright from "../../../../src/Othercomps/Copyright";
 
 export const metadata = {
   title: "Houston Durga Bari Society | EICE Rise Case Study | EICE Technology",
@@ -35,7 +34,6 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Durgabari />
       <ProductFooter />
-      <Copyright />
     </>
   );
 }

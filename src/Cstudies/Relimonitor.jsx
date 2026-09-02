@@ -1,6 +1,5 @@
 ﻿import React from "react";
 import Footer from "../Othercomps/Footer";
-import Copyright from "../Othercomps/Copyright";
 import ProductFooter from "@/Product/ProductFooter";
 
 const temp = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/temp.png";
@@ -12,10 +11,10 @@ function Relimonitor() {
     <div className="">
       <div className="max-w-7xl  mx-auto px-4 pt-4">
         <div className="w-full">
-          <h1 className="text-bloo fontweight_1 text-center fontsize_2  py-2">
+          <h1 className="text-blackk fontweight_1 text-center text-[32px] py-2">
             RE.LI Monitor
           </h1>
-          <h2 className="text-blackk  fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
+          <h2 className="text-gray-400 fontweight_1 text-center text-[18px] mx-auto max-w-3xl py-1">
             A Real Time Sensor Monitoring Tool
           </h2>
           <p className="fontweight_1 max-w-4xl mx-auto  text-blackk/70 fontsize_3 pt-4 px-4">
@@ -234,7 +233,6 @@ function Relimonitor() {
       </div>
       {/* <Footer /> */}
       <ProductFooter />
-      <Copyright />
     </div>
   );
 }

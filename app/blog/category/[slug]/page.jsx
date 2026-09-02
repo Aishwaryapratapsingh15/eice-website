@@ -2,7 +2,6 @@ import { notFound } from "next/navigation";
 import { BlogMain } from "../../../../src/Blog/BlogMain";
 import { blogApiFetch } from "../../../../src/Blog/blogApi";
 import ProductFooter from "../../../../src/Product/ProductFooter";
-import Copyright from "../../../../src/Othercomps/Copyright";
 
 const BASE_URL = "https://www.eicetechnology.com";
 
@@ -73,7 +72,6 @@ export default async function Page({ params, searchParams }) {
         categoryDescription={category.description}
       />
       <ProductFooter />
-      <Copyright />
     </>
   );
 }

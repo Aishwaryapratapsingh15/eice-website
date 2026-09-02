@@ -69,6 +69,8 @@ export default async function sitemap() {
     { url: "/our-team",   priority: 0.6, changeFrequency: "monthly", lastModified: DATES.core      },
     { url: "/careers",    priority: 0.6, changeFrequency: "weekly",  lastModified: DATES.core      },
     { url: "/resources",  priority: 0.7, changeFrequency: "weekly",  lastModified: DATES.core      },
+    { url: "/privacy-policy", priority: 0.3, changeFrequency: "yearly", lastModified: DATES.core },
+    { url: "/terms-and-conditions", priority: 0.3, changeFrequency: "yearly", lastModified: DATES.core },
 
     // Services
     { url: "/services",                        priority: 0.9, changeFrequency: "monthly", lastModified: DATES.services },
@@ -165,6 +167,7 @@ export default async function sitemap() {
     { url: "/case-studies/design-sim-borets",  priority: 0.6, changeFrequency: "monthly", lastModified: DATES.caseStudies },
     { url: "/case-studies/schlumberger-baa",   priority: 0.6, changeFrequency: "monthly", lastModified: DATES.caseStudies },
     { url: "/case-studies/esp-design-analysis", priority: 0.6, changeFrequency: "monthly", lastModified: DATES.caseStudies },
+    { url: "/case-studies/subsurface-workflow-orchestration", priority: 0.6, changeFrequency: "monthly", lastModified: DATES.caseStudies },
 
     // Blog / Content Hub
     { url: "/blog",  priority: 0.8, changeFrequency: "weekly",  lastModified: DATES.blog },

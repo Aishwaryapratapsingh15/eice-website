@@ -1,6 +1,5 @@
 import ComplianceRegister from "../../../../src/Rise/Pages/InsidePages/ComplianceRegister";
 import ProductFooter from "../../../../src/Product/ProductFooter";
-import Copyright from "../../../../src/Othercomps/Copyright";
 
 export const metadata = {
   title: "Compliance Register | EICE Rise Hospitality ERP | EICE Technology",
@@ -35,7 +34,6 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <ComplianceRegister />
       <ProductFooter />
-      <Copyright />
     </>
   );
 }

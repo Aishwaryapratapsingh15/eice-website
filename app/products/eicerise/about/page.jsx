@@ -1,6 +1,5 @@
 import AboutUs from "../../../../src/Rise/Pages/NavigationBarPages/AboutUs";
 import ProductFooter from "../../../../src/Product/ProductFooter";
-import Copyright from "../../../../src/Othercomps/Copyright";
 
 export const metadata = {
   title: "About EICE Rise | Hotel & Hospitality ERP System | EICE Technology",
@@ -35,7 +34,6 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <AboutUs />
       <ProductFooter />
-      <Copyright />
     </>
   );
 }

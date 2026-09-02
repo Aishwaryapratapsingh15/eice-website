@@ -19,7 +19,6 @@ const dtconsulting = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/dtconsult
 
 import Footer from "../Othercomps/Footer.jsx";
 import ProductFooter from "@/Product/ProductFooter";
-import Copyright from "../Othercomps/Copyright.jsx";
 import TalkToUs from "../Othercomps/Talktous.jsx";
 import Reviews from "../Homecomps/Reviews.jsx";
 import Clients from "../Homecomps/Clients.jsx";
@@ -352,7 +351,6 @@ function Saas() {
       {/* <Footer /> */}
       
       <ProductFooter />
-      <Copyright />
     </div>
   );
 }

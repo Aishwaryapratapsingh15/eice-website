@@ -3,7 +3,6 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link } from "@/nextNavigation";
 import TalkToUs from "../Othercomps/Talktous";
 import ProductFooter from "@/Product/ProductFooter";
-import Copyright from "../Othercomps/Copyright";
 import { FaQuoteLeft } from "react-icons/fa";
 
 const heroImg1 = "https://d3r43jacxrwsrp.cloudfront.net/industries_hospitality/hero_1.png";
@@ -578,7 +577,6 @@ export default function Hospitality() {
         </div>
       </section>
       <ProductFooter />
-      <Copyright />
     </div>
   );
 }

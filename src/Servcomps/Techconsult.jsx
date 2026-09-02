@@ -66,7 +66,6 @@ import ProductFooter from "@/Product/ProductFooter";
 
 
 
-import Copyright from "../Othercomps/Copyright.jsx";
 
 
 
@@ -1346,7 +1345,6 @@ function TechnologyConsulting() {
 
 
 
-      <Copyright />
 
 
 

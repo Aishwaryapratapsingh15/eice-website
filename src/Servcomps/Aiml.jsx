@@ -12,7 +12,6 @@ const logistics = "https://d3r43jacxrwsrp.cloudfront.net/ai/logistics.jpg";
 const sentiments = "https://d3r43jacxrwsrp.cloudfront.net/ai/sentiments.jpg";
 const voice = "https://d3r43jacxrwsrp.cloudfront.net/ai/voice.jpg";
 import ProductFooter from "@/Product/ProductFooter";
-import Copyright from "../Othercomps/Copyright";
 import Reviews from "../Homecomps/Reviews";
 import TalkToUs from "../Othercomps/Talktous";
 import Process from "../Homecomps/Process";
@@ -319,7 +318,6 @@ function Aiml() {
       <TalkToUs product="AI/ML" />
       {/* <Footer /> */}
       <ProductFooter />
-      <Copyright />
     </div>
   );
 }

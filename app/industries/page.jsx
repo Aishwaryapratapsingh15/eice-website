@@ -1,6 +1,5 @@
 import Indusmain from "../../src/Allindus/Indusmain";
 import ProductFooter from "../../src/Product/ProductFooter";
-import Copyright from "../../src/Othercomps/Copyright";
 
 export const metadata = {
   title: "Industries We Serve | Sector-Specific IT Solutions | EICE Technology",
@@ -36,7 +35,6 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Indusmain />
       <ProductFooter />
-      <Copyright />
     </>
   );
 }

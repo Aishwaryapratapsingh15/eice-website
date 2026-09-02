@@ -1,6 +1,5 @@
 import Servmain from "../../src/Servcomps/Servmain";
 import ProductFooter from "../../src/Product/ProductFooter";
-import Copyright from "../../src/Othercomps/Copyright";
 
 // export const metadata = {
 //   title: "IT Services | AI/ML, Cloud, DevOps & More | EICE Technology",
@@ -53,7 +52,6 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Servmain />
       <ProductFooter />
-      <Copyright />
     </>
   );
 }

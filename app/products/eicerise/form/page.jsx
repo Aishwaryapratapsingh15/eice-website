@@ -1,7 +1,6 @@
 import { Suspense } from "react";
 import RequestForm from "../../../../src/Rise/Pages/RequestForm/RequestForm";
 import ProductFooter from "../../../../src/Product/ProductFooter";
-import Copyright from "../../../../src/Othercomps/Copyright";
 
 export const metadata = {
   title: "Request a Demo | EICE Rise Hospitality ERP",
@@ -28,7 +27,6 @@ export default function Page() {
         <RequestForm />
       </Suspense>
       <ProductFooter />
-      <Copyright />
     </>
   );
 }

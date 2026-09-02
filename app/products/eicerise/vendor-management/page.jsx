@@ -1,6 +1,5 @@
 import VendorManagement from "../../../../src/Rise/Pages/InsidePages/VendorManagement";
 import ProductFooter from "../../../../src/Product/ProductFooter";
-import Copyright from "../../../../src/Othercomps/Copyright";
 
 export const metadata = {
   title: "Vendor Management | EICE Rise Hospitality ERP | EICE Technology",
@@ -35,7 +34,6 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <VendorManagement />
       <ProductFooter />
-      <Copyright />
     </>
   );
 }

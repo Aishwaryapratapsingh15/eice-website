@@ -3,7 +3,6 @@ import Big from "../src/Homecomps/Big";
 import Offers from "../src/Homecomps/Offers";
 import Solutions from "../src/Homecomps/Solutions";
 import Techs from "../src/Homecomps/Techs";
-import Copyright from "../src/Othercomps/Copyright";
 
 // Below-the-fold sections: still server-rendered (content stays in the
 // initial HTML for SEO/no-JS), but their hydration JS is split into
@@ -103,7 +102,6 @@ export default function Page() {
       </div>
 
       <ProductFooter />
-      <Copyright />
     </>
   );
 }

@@ -1,6 +1,5 @@
 import FrontDesk from "../../../../src/Rise/Pages/PricePages/FrontDesk";
 import ProductFooter from "../../../../src/Product/ProductFooter";
-import Copyright from "../../../../src/Othercomps/Copyright";
 
 export const metadata = {
   title: "Front Desk Suite Pricing | EICE Rise Hospitality ERP | EICE Technology",
@@ -35,7 +34,6 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <FrontDesk />
       <ProductFooter />
-      <Copyright />
     </>
   );
 }

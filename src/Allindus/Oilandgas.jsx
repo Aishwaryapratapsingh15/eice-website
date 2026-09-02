@@ -4,7 +4,6 @@ import React, { useState, useRef } from "react";
 
 import Footer from "../Othercomps/Footer";
 
-import Copyright from "../Othercomps/Copyright";
 
 import TalkToUs from "../Othercomps/Talktous";
 
@@ -908,7 +907,6 @@ function Oilandgas() {
 
       <ProductFooter/>
 
-      <Copyright />
 
     </div>
 

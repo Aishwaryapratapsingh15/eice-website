@@ -4,7 +4,6 @@ import { blogApiFetch, BlogApiError } from "../../../../src/Blog/blogApi";
 import { toIstIsoString } from "../../../../src/Blog/formatDate";
 import { blogPostUrl } from "../../../../src/Blog/blogUrl";
 import ProductFooter from "../../../../src/Product/ProductFooter";
-import Copyright from "../../../../src/Othercomps/Copyright";
 
 async function getBlog(slug) {
   try {
@@ -133,7 +132,6 @@ export default async function Page({ params }) {
         categories={categories}
       />
       <ProductFooter />
-      <Copyright />
     </>
   );
 }

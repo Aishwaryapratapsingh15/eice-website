@@ -2,7 +2,6 @@
 import React from "react";
 import { useNavigate, Link } from "@/nextNavigation";
 import ProductFooter from "@/Product/ProductFooter";
-import Copyright from "@/Othercomps/Copyright";
 
 const arrowIcon = "https://d3r43jacxrwsrp.cloudfront.net/arrow.svg";
 
@@ -403,7 +402,6 @@ export default function AppDevelopment() {
       </section>
 
       <ProductFooter />
-      <Copyright />
     </div>
   );
 }

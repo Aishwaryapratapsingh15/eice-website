@@ -1,6 +1,5 @@
 import Cstdmain from "../../src/Cstudies/Cstdmain";
 import ProductFooter from "../../src/Product/ProductFooter";
-import Copyright from "../../src/Othercomps/Copyright";
 
 export const metadata = {
   title: "Case Studies | IT Project Success Stories | EICE Technology",
@@ -38,7 +37,6 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <Cstdmain />
       <ProductFooter />
-      <Copyright />
     </>
   );
 }

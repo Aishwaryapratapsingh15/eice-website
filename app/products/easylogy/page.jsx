@@ -1,6 +1,5 @@
 import HospitalityPage from "../../../src/Easylogy/Pages/HospitalityPage/HospitalityPage";
 import ProductFooter from "../../../src/Product/ProductFooter";
-import Copyright from "../../../src/Othercomps/Copyright";
 
 // export const metadata = {
 //   title: "EasyLogy | Logistics Management & Tracking Software | EICE Technology",
@@ -75,7 +74,6 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <HospitalityPage />
       <ProductFooter />
-      <Copyright />
     </>
   );
 }

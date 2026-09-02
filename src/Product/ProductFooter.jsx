@@ -277,12 +277,18 @@ export default function Footer() {
 
           {/* LINKS */}
           <div className="flex gap-8 text-white/70 text-[13px]">
-            <p className="hover:text-white cursor-pointer transition">
+            <Link
+              href="/terms-and-conditions"
+              className="hover:text-white cursor-pointer transition"
+            >
               Terms & Conditions
-            </p>
-            <p className="hover:text-white cursor-pointer transition">
+            </Link>
+            <Link
+              href="/privacy-policy"
+              className="hover:text-white cursor-pointer transition"
+            >
               Privacy Policy
-            </p>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,7 +1,6 @@
 ﻿"use client";
 import React from "react";
 import Footer from "./Footer";
-import Copyright from "./Copyright";
 import styles from "./Styles/ourteam.module.css"
 
 import Slider from "react-slick";
@@ -621,7 +620,6 @@ function OurTeam() {
         </div>
       </div>
       <ProductFooter/>
-      <Copyright />
     </div>
   );
 }

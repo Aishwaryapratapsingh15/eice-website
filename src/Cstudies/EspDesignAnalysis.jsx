@@ -1,6 +1,5 @@
 import React from "react";
 import ProductFooter from "@/Product/ProductFooter";
-import Copyright from "../Othercomps/Copyright";
 const espHero = "https://d3r43jacxrwsrp.cloudfront.net/Petroleum/ESPDesignAnalysis.jpeg";
 
 const challengeBullets = [
@@ -72,10 +71,10 @@ function EspDesignAnalysis() {
     <div className="">
       <div className="max-w-7xl mx-auto px-4 pt-4">
         <div className="w-full">
-          <h1 className="text-bloo fontweight_1 text-left sm:text-center fontsize_2 py-2">
-            How EICE Technology -An Indian IT company, Helped a Global ESP Manufacturer Modernize<br className="hidden sm:block" /> Engineering with Cloud-Based Software
+          <h1 className="text-blackk fontweight_1 text-left sm:text-center text-[32px] py-2">
+            How EICE Technology -An Indian IT company, Helped a Global ESP Manufacturer<br className="hidden sm:block" />Modernize Engineering with Cloud-Based Software
           </h1>
-          <h2 className="text-blackk fontweight_1 text-left sm:text-center text-lg sm:text-xl md:text-xl lg:text-2xl mx-auto max-w-3xl py-1">
+          <h2 className="text-gray-400 fontweight_1 text-left sm:text-center text-[18px] mx-auto max-w-3xl py-1">
             Transforming Electrical Submersible Pump Engineering with<br className="hidden sm:block" /> Cloud-Based Innovation
           </h2>
           <div className="w-full max-w-5xl mx-auto items-center justify-center pt-8 pb-4">
@@ -259,7 +258,6 @@ function EspDesignAnalysis() {
       </div>
 
       <ProductFooter />
-      <Copyright />
     </div>
   );
 }

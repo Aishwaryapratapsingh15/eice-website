@@ -1,7 +1,6 @@
 import Contactform from "../../src/Othercomps/Contactform";
 import Certificate from "../../src/Homecomps/Certificate";
 import ProductFooter from "../../src/Product/ProductFooter";
-import Copyright from "../../src/Othercomps/Copyright";
 
 
 
@@ -62,7 +61,6 @@ export default function Page() {
       <Contactform />
       <Certificate />
       <ProductFooter />
-      <Copyright />
     </>
   );
 }

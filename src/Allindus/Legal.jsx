@@ -10,7 +10,6 @@ import Footer from "../Othercomps/Footer";
 
 
 
-import Copyright from "../Othercomps/Copyright";
 
 
 
@@ -1833,7 +1832,6 @@ function Legal() {
 
 
 
-      <Copyright />
 
 
 

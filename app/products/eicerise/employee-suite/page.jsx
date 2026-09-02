@@ -1,6 +1,5 @@
 import EmployeeSuite from "../../../../src/Rise/Pages/InsidePages/EmployeeSuite";
 import ProductFooter from "../../../../src/Product/ProductFooter";
-import Copyright from "../../../../src/Othercomps/Copyright";
 
 export const metadata = {
   title: "Employee Suite | EICE Rise Hospitality ERP | EICE Technology",
@@ -35,7 +34,6 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <EmployeeSuite />
       <ProductFooter />
-      <Copyright />
     </>
   );
 }
