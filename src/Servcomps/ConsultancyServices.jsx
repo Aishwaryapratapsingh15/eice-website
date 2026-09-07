@@ -141,7 +141,7 @@ export default function ConsultancyServices() {
 
         <div className="mt-8 flex flex-wrap justify-start sm:justify-center gap-4">
           <button
-            onClick={() => navigate("/contact?product=Consultancy%20Services")}
+            onClick={() => navigate("/products/eicerise/form?product=Consultancy%20Services")}
             className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-[18px]"
           >
             Get in Touch
@@ -305,7 +305,7 @@ export default function ConsultancyServices() {
       </section>
 
       {/* CTA — GET STARTED */}
-      <section className="bg-[#012060] py-4 sm:py-10 px-5 sm:px-6 md:px-10 lg:px-20 mb-10">
+      <section className="bg-[#012060] py-4 sm:py-10 px-5 sm:px-6 md:px-10 lg:px-20">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[#01B0F1] text-[22px] font-semibold mb-2">
             GET STARTED
@@ -317,8 +317,8 @@ export default function ConsultancyServices() {
             Book a free 45-minute discovery call. No pitch, no pressure — just an honest conversation about what you&apos;re trying to solve
           </p>
           <button
-            onClick={() => navigate("/contact?product=Consultancy%20Services")}
-            className="bg-white text-[#012060] px-10 py-3 rounded-md flex items-center gap-2 mx-auto font-semibold text-[18px] hover:bg-blue-50 transition"
+            onClick={() => navigate("/products/eicerise/form?product=Consultancy%20Services")}
+            className="bg-[#01B0F1] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto font-semibold text-[18px] hover:bg-white hover:text-[#012060] transition"
           >
             Get in Touch
             <img src={arrowIcon} alt="arrow"  width="24" height="24" />

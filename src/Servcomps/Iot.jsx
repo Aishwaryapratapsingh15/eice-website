@@ -193,7 +193,7 @@ function Iot() {
               <h1 className="text-blackk  fontweight_1 text-[40px] sm:text-[35px] ">
                 Internet of Things
               </h1>
-              <h2 className="text-blackk/70 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-[16px] sm:leading-tight leading-snug text-left">
+              <h2 className="text-blackk/70 font-semibold max-w-7xl mx-auto sm:text-2xl py-4 text-[16px] sm:leading-tight leading-snug text-left">
                 {
                   "Empowering Businesses with IoT Transformative Connectivity and Innovation"
                 }
@@ -201,7 +201,7 @@ function Iot() {
             </div>
             <div className="lg:flex hidden items-center justify-end ">
               <div className=" w-1/2">
-                <img src={iot} alt="Internet of Things (IoT) connectivity solutions" className="rounded-full"  width="1800" height="945" />
+                {/* <img src={iot} alt="Internet of Things (IoT) connectivity solutions" className="rounded-full"  width="1800" height="945" /> */}
               </div>
             </div>
           </div>

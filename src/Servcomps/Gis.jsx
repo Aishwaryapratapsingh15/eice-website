@@ -191,7 +191,7 @@ function GIS() {
               <h1 className="text-blackk  fontweight_1 text-[40px] sm:text-[35px] ">
                 GIS Services
               </h1>
-              <h2 className="text-blackk/70 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-[16px] sm:leading-tight leading-snug text-left">
+              <h2 className="text-blackk/70 font-semibold max-w-7xl mx-auto sm:text-2xl py-4 text-[16px] sm:leading-tight leading-snug text-left">
                 {
                   "Comprehensive GIS Solutions: Transforming Spatial Data into Actionable Insights"
                 }
@@ -199,7 +199,7 @@ function GIS() {
             </div>
             <div className="lg:flex hidden items-center justify-end ">
               <div className="w-2/3">
-                <img src={gis} alt="Geographic Information Systems (GIS) services" className="rounded-full"  width="0" height="0" />
+                {/* <img src={gis} alt="Geographic Information Systems (GIS) services" className="rounded-full"  width="0" height="0" /> */}
               </div>
             </div>
           </div>

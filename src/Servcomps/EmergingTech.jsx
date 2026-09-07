@@ -165,7 +165,7 @@ export default function EmergingTech() {
 
         <div className="mt-8 flex flex-wrap justify-start sm:justify-center gap-4">
           <button
-            onClick={() => navigate("/contact?product=Emerging%20Tech")}
+            onClick={() => navigate("/products/eicerise/form?product=Emerging%20Tech")}
             className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-[18px]"
           >
             Get in Touch
@@ -350,7 +350,7 @@ export default function EmergingTech() {
       </section>
 
       {/* CTA — GET STARTED */}
-      <section className="bg-[#012060] py-4 sm:py-10 px-5 sm:px-6 md:px-10 lg:px-20 mb-10">
+      <section className="bg-[#012060] py-4 sm:py-10 px-5 sm:px-6 md:px-10 lg:px-20">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[#01B0F1] text-[22px] font-semibold mb-2">
             GET STARTED
@@ -362,8 +362,8 @@ export default function EmergingTech() {
             Tell us about your challenge. We&apos;ll identify the right emerging technology to solve it.
           </p>
           <button
-            onClick={() => navigate("/contact?product=Emerging%20Tech")}
-            className="bg-white text-[#012060] px-10 py-3 rounded-md flex items-center gap-2 mx-auto font-semibold text-[18px] hover:bg-blue-50 transition"
+            onClick={() => navigate("/products/eicerise/form?product=Emerging%20Tech")}
+            className="bg-[#01B0F1] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto font-semibold text-[18px] hover:bg-blue-50 transition"
           >
             Get in Touch
             <img src={arrowIcon} alt="arrow"  width="24" height="24" />

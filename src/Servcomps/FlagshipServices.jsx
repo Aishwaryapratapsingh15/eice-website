@@ -18,7 +18,7 @@ const stepIcon1        = `${CDN}/business_audit.svg`;
 const stepIcon2        = `${CDN}/transformation_roadmap.svg`;
 const stepIcon3        = `${CDN}/agile_execution.svg`;
 const stepIcon4        = `${CDN}/optimise_and_scale.svg`;
-const whyIcon1         = `${CDN}/180+_projects_delivered.svg`;
+const whyIcon1         = `${CDN}/180_plus_projects_delivered.svg`;
 const whyIcon2         = `${CDN}/cmmi_certified_processes.svg`;
 const whyIcon3         = `${CDN}/cross_functional_teams.svg`;
 const whyIcon4         = `${CDN}/operational_continuity.svg`;
@@ -164,7 +164,7 @@ export default function FlagshipServices() {
 
         <div className="mt-8 flex flex-wrap justify-start sm:justify-center gap-4">
           <button
-            onClick={() => navigate("/contact?product=Flagship%20Services")}
+            onClick={() => navigate("/products/eicerise/form?product=Flagship%20Services")}
             className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-[18px]"
           >
             Get in Touch
@@ -358,7 +358,7 @@ export default function FlagshipServices() {
       </section>
 
       {/* CTA — GET STARTED */}
-      <section className="bg-[#012060] py-4 sm:py-10 px-5 sm:px-6 md:px-10 lg:px-20 mb-10">
+      <section className="bg-[#012060] py-4 sm:py-10 px-5 sm:px-6 md:px-10 lg:px-20">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[#01B0F1] text-[22px] font-semibold mb-2">
             GET STARTED
@@ -370,8 +370,8 @@ export default function FlagshipServices() {
             Our flagship services have delivered measurable results for 60+ clients. Let&apos;s talk about what they can do for yours
           </p>
           <button
-            onClick={() => navigate("/contact?product=Flagship%20Services")}
-            className="bg-white text-[#012060] px-10 py-3 rounded-md flex items-center gap-2 mx-auto font-semibold text-[18px] hover:bg-blue-50 transition"
+            onClick={() => navigate("/products/eicerise/form?product=Flagship%20Services")}
+            className="bg-[#01B0F1] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto font-semibold text-[18px] hover:bg-white hover:text-[#012060] transition"
           >
             Get in Touch
             <img src={arrowIcon} alt="arrow"  width="24" height="24" />

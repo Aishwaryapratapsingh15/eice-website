@@ -22,6 +22,10 @@ const PRODUCT_CRUMB_OVERRIDES = {
   EiceOps: { label: "EICE Ops", href: "/products/eice-ops" },
   "EICE Agent": { label: "EICE Agent", href: "/products/eice-agent" },
   Easylogy: { label: "EasyLogy", href: "/products/easylogy" },
+  "Flagship Services": { label: "Flagship Services", href: "/services/flagship-services" },
+  "App Development": { label: "App Development", href: "/services/app-development" },
+  "Consultancy Services": { label: "Consultancy Services", href: "/services/consultancy-services" },
+  "Emerging Tech": { label: "Emerging Tech", href: "/services/emerging-tech" },
 };
 
 // Exact-path label overrides — for routes where the URL segment reads

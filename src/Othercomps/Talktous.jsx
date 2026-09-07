@@ -19,7 +19,7 @@ function Talktous({ product }) {
           <div className="flex lg:pt-0 pt-4">
             <Link href={href} className="h-full">
               <button className=" text-nowrap p-4   rounded-md  font-semibold transition duration-200 border-2 border-blue-900 hover:bg-blue-900/95 bg-blue-900 text-white hover:shadow-md hover:shadow-blue-900/30 text-base sm:text-lg lg:text-xl">
-                Let's Connect
+                Contact Us
               </button>
             </Link>
           </div>

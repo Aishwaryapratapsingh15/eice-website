@@ -199,7 +199,7 @@ function Blockchain() {
             </div>
             <div style={{ width: "800px" }} className="lg:flex w-90 hidden items-center justify-end ">
               <div className=" w-3/4 ">
-                <img src={blockchain} alt="Blockchain development and decentralized solutions" className="rounded-full"  width="28" height="28" />
+                {/* <img src={blockchain} alt="Blockchain development and decentralized solutions" className="rounded-full"  width="28" height="28" /> */}
               </div>
             </div>
           </div>

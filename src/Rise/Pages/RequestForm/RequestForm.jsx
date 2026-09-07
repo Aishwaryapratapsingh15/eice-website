@@ -689,6 +689,7 @@ const handleSubmit = async (e) => {
         { value: 'Product Details or Demo', label: 'Product Details or Demo' },
         { value: 'Product Pricing', label: 'Product Pricing' },
         { value: 'Support or Training', label: 'Support or Training' },
+        { value: 'Services', label: 'Services' },
     ];
 
 

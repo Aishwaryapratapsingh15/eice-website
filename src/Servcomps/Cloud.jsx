@@ -191,7 +191,7 @@ function Chatbot() {
               <h1 className="text-blackk  fontweight_1 text-[40px] sm:text-[35px] ">
                 Cloud Services
               </h1>
-              <h2 className="text-blackk/70 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-[16px] sm:leading-tight leading-snug text-left">
+              <h2 className="text-blackk/70 font-semibold max-w-7xl mx-auto sm:text-2xl py-4 text-[16px] sm:leading-tight leading-snug text-left">
                 {
                   "Comprehensive Cloud Services  Enhancing Agility and Efficiency"
                 }
@@ -199,7 +199,7 @@ function Chatbot() {
             </div>
             <div className="lg:flex hidden items-center justify-end ">
               <div className="lg:w-7/12 w-1/2">
-                <img src={cloud} alt="Cloud computing services" className="rounded-full"  width="1" height="1" />
+                {/* <img src={cloud} alt="Cloud computing services" className="rounded-full"  width="1" height="1" /> */}
               </div>
             </div>
           </div>

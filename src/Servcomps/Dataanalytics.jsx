@@ -183,13 +183,13 @@ function DataAnalytics() {
               <h1 className="text-blackk fontweight_1 text-[40px] sm:text-[35px] ">
                 Data Analytics Services
               </h1>
-              <h2 className="text-blackk/70 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-[16px] sm:leading-tight leading-snug text-left">
+              <h2 className="text-blackk/70 font-semibold max-w-7xl mx-auto sm:text-2xl py-4 text-[16px] sm:leading-tight leading-snug text-left">
                 {"Unlocking Business Insights through Advanced Data Analytics"}
               </h2>
             </div>
             <div className="lg:flex hidden items-center justify-end ">
               <div className=" w-1/2">
-                <img src={data} alt="Data analytics and business intelligence services" className="rounded-full"  width="1" height="1" />
+                {/* <img src={data} alt="Data analytics and business intelligence services" className="rounded-full"  width="1" height="1" /> */}
               </div>
             </div>
           </div>

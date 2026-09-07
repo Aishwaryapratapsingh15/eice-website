@@ -185,7 +185,7 @@ function Digitrans() {
               <h1 className="text-blackk  fontweight_1 text-[40px] sm:text-[35px] ">
                 Digital Transformation
               </h1>
-              <h2 className="text-blackk/70 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-[16px] sm:leading-tight leading-snug text-left">
+              <h2 className="text-blackk/70 font-semibold max-w-7xl mx-auto sm:text-2xl py-4 text-[16px] sm:leading-tight leading-snug text-left">
                 {
                   "Revolutionize Your Business  Harness the Power of Digital Transformation for Sustainable Growth"
                 }
@@ -193,7 +193,7 @@ function Digitrans() {
             </div>
             <div className="lg:flex hidden items-center justify-end ">
               <div className="w-2/5">
-                <img src={digital} alt="Digital transformation services" className="rounded-full"  width="2400" height="1412" />
+                {/* <img src={digital} alt="Digital transformation services" className="rounded-full"  width="2400" height="1412" /> */}
               </div>
             </div>
           </div>
