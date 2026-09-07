@@ -480,7 +480,7 @@ iSyncLite addresses these head-on.
       
         {/* Heading */}
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-semibold text-gray-800">
+          <h2 className="text-4xl font-bold text-gray-800">
             Ready to Secure Your Enterprise Data?
           </h2>
       
