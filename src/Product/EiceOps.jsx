@@ -254,11 +254,11 @@ missed escalations, ensures structured communication, and gives managers full vi
      <section className="py-4 px-5 md:px-10 lg:px-20 xl:px-40 bg-white">
 
   <h1 className="text-[32px] leading-[48px] md:text-4xl text-[#334155] font-bold text-center leading-relaxed pb-4">
-    Enterprise Authentication Challenges
+    Complete Ticket Lifecycle Management
   </h1>
 
   <h4 className="text-[22px] pb-4 md:text-xl text-[#64748B] text-center max-w-2xl mx-auto">
-    Traditional MFA solutions lack enterprise control and flexibility
+    Everything you need for accountable, SLA-driven IT support
   </h4>
 
   {/* 4 CARDS ROW */}
@@ -424,11 +424,11 @@ missed escalations, ensures structured communication, and gives managers full vi
           {/* ================= FINAL CTA ================= */}
           <section className="bg-gray-50 relative py-4 px-6 md:px-12 lg:px-24 xl:px-40 overflow-hidden mb-10">
             <h2 className="text-4xl md:text-4xl font-bold text-[#334155] mb-[14px] leading-tight text-center">
-              Ready to Transform Your Order Management?
+              Ready to Take Control of Every Ticket?
             </h2>
     
             <p className="text-[#64748B] text-lg md:text-xl leading-relaxed mb-10 text-center">
-          Talk to our experts to see how EICE Voice fits your hospitality<br/> operations and order management strategy.
+          See how EICE Ops brings live SLA clocks, structured escalation,<br/> and a full audit trail to your help desk — talk to our team.
         </p>
     
             <button

@@ -936,11 +936,11 @@ is our foundation.
     <div className="max-w-6xl mx-auto">
       {/* <h2 className="text-4xl font-bold text-[#334155] mb-4"> */}
       <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#334155] mb-4">
-        Ready to Transform Your File Management?
+        Ready to Put AI to Work Across Your Enterprise?
       </h2>
   
       <p className="mt-5 text-xl text-[#64748B] max-w-2xl mx-auto leading-relaxed">
-        Join forward-thinking enterprises that trust iSyncDrive for secure, scalable, and governed file storage
+        See how EICEAIM and AskEICE automate outreach and turn your knowledge base into instant answers — talk to our team about EICE Agent.
       </p>
   
       {/* Buttons */}

@@ -23,7 +23,7 @@ function Company() {
             delivering high-quality solutions to Fortune 1000 companies. We
             leverage specialized domain knowledge, cutting-edge technologies,
             and flexible engagement models to meet our clients' IT needs. With
-            over 10 years of experience, we operate from our headquarters in
+            over 14+ years of experience, we operate from our headquarters in
             Houston, Texas, and our office in Noida, India, servicing customers
             in Financial Services and Enterprise Services.
           </p>
