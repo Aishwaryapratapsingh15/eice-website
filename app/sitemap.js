@@ -67,7 +67,7 @@ export default async function sitemap() {
     { url: "/about",      priority: 0.8, changeFrequency: "monthly", lastModified: DATES.core      },
     { url: "/contact",    priority: 0.8, changeFrequency: "monthly", lastModified: DATES.core      },
     { url: "/our-team",   priority: 0.6, changeFrequency: "monthly", lastModified: DATES.core      },
-    { url: "/careers",    priority: 0.6, changeFrequency: "weekly",  lastModified: DATES.core      },
+    // { url: "/careers",    priority: 0.6, changeFrequency: "weekly",  lastModified: DATES.core      },
     { url: "/resources",  priority: 0.7, changeFrequency: "weekly",  lastModified: DATES.core      },
     { url: "/privacy-policy", priority: 0.3, changeFrequency: "yearly", lastModified: DATES.core },
     { url: "/terms-and-conditions", priority: 0.3, changeFrequency: "yearly", lastModified: DATES.core },
