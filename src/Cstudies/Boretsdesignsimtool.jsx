@@ -1,10 +1,14 @@
-﻿import React from "react";
+﻿"use client";
+import React from "react";
+import { useNavigate } from "@/nextNavigation";
 import ProductFooter from "@/Product/ProductFooter";
+const arrowIcon = "https://d3r43jacxrwsrp.cloudfront.net/arrow.svg";
 const borets1 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/Borets1.png";
 const borets2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/Borets2.png";
 import { GiVirtualMarker } from "react-icons/gi";
 
 function Boretsdesignsimtool() {
+  const navigate = useNavigate();
   return (
     <div className="">
       <div className="max-w-7xl mx-auto px-4 pt-4">
@@ -120,6 +124,18 @@ function Boretsdesignsimtool() {
           </div>
         </div>
       </div>
+      {/* CTA */}
+      <section className="bg-[#012060] py-4 sm:py-10 px-5 sm:px-6 md:px-10 lg:px-20">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-[32px] sm:text-4xl font-bold text-white mb-4 leading-tight">Building a Product for Oil &amp; Gas Production Monitoring?</h2>
+          <p className="text-blue-200 text-[16px] sm:text-lg leading-relaxed mb-8 max-w-2xl mx-auto">Talk to our team about design and simulation tools for equipment manufacturers.</p>
+          <button onClick={() => navigate("/products/eicerise/form?product=Oil%20%26%20Gas")} className="bg-[#01B0F1] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto font-semibold text-[18px] hover:text-[#012060] transition">
+            Talk to Our Oil &amp; Gas Team
+            <img src={arrowIcon} alt="arrow" width="24" height="24" />
+          </button>
+        </div>
+      </section>
+
       <ProductFooter />
     </div>
   );

@@ -363,7 +363,7 @@ export default function EmergingTech() {
           </p>
           <button
             onClick={() => navigate("/products/eicerise/form?product=Emerging%20Tech")}
-            className="bg-[#01B0F1] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto font-semibold text-[18px] hover:bg-blue-50 transition"
+            className="bg-[#01B0F1] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto font-semibold text-[18px] hover:text-[#012060] transition"
           >
             Get in Touch
             <img src={arrowIcon} alt="arrow"  width="24" height="24" />

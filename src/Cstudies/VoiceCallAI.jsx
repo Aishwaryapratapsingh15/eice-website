@@ -1,11 +1,15 @@
-﻿import React from "react";
+﻿"use client";
+import React from "react";
+import { useNavigate } from "@/nextNavigation";
 import ProductFooter from "@/Product/ProductFooter";
+const arrowIcon = "https://d3r43jacxrwsrp.cloudfront.net/arrow.svg";
 const voicecall1 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/voicecall1.png";
 const voicecall2 = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/voicecall2.png";
 import { GiVirtualMarker } from "react-icons/gi";
 import Link from "next/link";
 
 function VoiceCallAI() {
+  const navigate = useNavigate();
   return (
     <div className="">
       <div className="max-w-7xl mx-auto px-4 pt-4">
@@ -150,6 +154,18 @@ function VoiceCallAI() {
           </div>
         </div>
       </div>
+      {/* CTA */}
+      <section className="bg-[#012060] py-4 sm:py-10 px-5 sm:px-6 md:px-10 lg:px-20">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-[32px] sm:text-4xl font-bold text-white mb-4 leading-tight">Ready to Automate Your Customer Call Handling?</h2>
+          <p className="text-blue-200 text-[16px] sm:text-lg leading-relaxed mb-8 max-w-2xl mx-auto">Talk to our team about AI voice assistants for customer interaction.</p>
+          <button onClick={() => navigate("/products/eicerise/form?product=AI%2FML")} className="bg-[#01B0F1] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto font-semibold text-[18px] hover:text-[#012060] transition">
+            Talk to Our AI/ML Team
+            <img src={arrowIcon} alt="arrow" width="24" height="24" />
+          </button>
+        </div>
+      </section>
+
       <ProductFooter />
     </div>
   );
