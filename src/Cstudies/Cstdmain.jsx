@@ -37,6 +37,9 @@ const AiInventory = "https://d3r43jacxrwsrp.cloudfront.net/ai/inventry.jpg";
 const AiVoice = "https://d3r43jacxrwsrp.cloudfront.net/ai/voice.jpg";
 const AiSentiments = "https://d3r43jacxrwsrp.cloudfront.net/ai/sentiments.jpg";
 
+// legal
+const legalIntake = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/legal-intake-matter-management-automation-us-law-firms.png";
+
 
 
 const industries = [
@@ -46,6 +49,7 @@ const industries = [
   { name: "HEALTHCARE INDUSTRY", id: "health" },
   // { name: "ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING", id: "AiandMl" },
   { name: "AI And ML", id: "AiandMl" },
+  { name: "LEGAL INDUSTRY", id: "legal" },
 ];
 
 const projects = {
@@ -208,8 +212,19 @@ const projects = {
       img : AiInventory
     , __w: 96, __h: 96},
 
-    
-  ]
+
+  ],
+
+  legal: [
+    {
+      title: "Legal Intake & Matter Management Automation",
+      description:
+        "How EICE Technology Helped a US Large Law Firm Automate Legal Intake and Matter Management",
+      link: "/case-studies/legal-intake-matter-management",
+      img: legalIntake,
+      __w: 1693, __h: 929,
+    },
+  ],
 };
 
 const CaseStudy = ({ link, title, description, image, __w, __h }) => (
