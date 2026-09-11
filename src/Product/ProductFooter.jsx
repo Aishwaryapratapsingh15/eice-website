@@ -43,7 +43,7 @@ const headingClass =
 export default function Footer() {
   return (
     <footer className="bg-[#010A14] text-white">
-      <div className="px-5 py-4 sm:max-w-7xl sm:mx-auto sm:pl-2 sm:pr-4 sm:pt-16 sm:pb-10">
+      <div className="px-5 py-4 sm:max-w-7xl sm:mx-auto sm:px-4 sm:pt-16 sm:pb-10">
 
         {/* ================= TOP ================= */}
         <div className="flex flex-col md:flex-row justify-between gap-10">
@@ -77,19 +77,24 @@ export default function Footer() {
           </div>
 
           {/* RIGHT */}
-          <div className="md:ml-auto md:text-right">
+          {/* min-w-0 lets this flex item shrink/wrap instead of overflowing
+              past the container's right edge (flex items default to
+              min-width:auto, which otherwise refuses to shrink below the
+              content's natural width — e.g. the 2xl email address). Capped
+              at the same max-w-[560px] as the LEFT block for symmetry. */}
+          <div className="md:ml-auto md:mr-[14px] md:text-right min-w-0 max-w-[560px]">
             <p className="text-white text-sm font-bold tracking-[4px] mb-3">
               GET IN TOUCH
             </p>
 
-            <p className="text-white text-2xl font-bold">
+            <p className="text-white text-2xl font-bold break-words">
               info@eicetechnology.com
             </p>
 
-            <p className="text-white text-lg mt-2 flex items-center justify-start md:justify-end gap-2">
+            <p className="text-white text-lg mt-2 flex flex-wrap items-center justify-start md:justify-end gap-2">
               Phone:  <img src={whatsappIcon} alt="Whatsapp" className="w-4 h-4"  width="16" height="16" /> +91 987 189 5200
             </p>
-            <p className="text-white text-lg mt-2 flex items-center justify-start md:justify-end gap-4">
+            <p className="text-white text-lg mt-2 flex flex-wrap items-center justify-start md:justify-end gap-4">
               <img src={phoneIcon} alt="Whatsapp" className="w-4 h-4 invert"  width="16" height="16" /> +1 832 280 4632
             </p>
           </div>
@@ -276,7 +281,7 @@ export default function Footer() {
 </div>
 
           {/* LINKS */}
-          <div className="flex gap-8 text-white/70 text-[13px]">
+          <div className="flex gap-4 text-white/70 text-[13px] md:mr-[14px]">
             <Link
               href="/terms-and-conditions"
               className="hover:text-white cursor-pointer transition"
