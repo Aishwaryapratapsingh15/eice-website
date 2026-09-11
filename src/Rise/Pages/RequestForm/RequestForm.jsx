@@ -3,8 +3,6 @@ import styles from "./requestForm.module.css"
 
 
 
-
-
 import React, { useEffect, useRef, useState } from 'react';
 import Select from 'react-select';
 const ak = "https://d3r43jacxrwsrp.cloudfront.net/Rise/form/feedback/AK.png";
@@ -24,6 +22,7 @@ import Certificate from "../../Components/Certificate/Certificate";
 import axios from "axios";
 import { createPortal } from "react-dom";
 import COUNTRIES from "./countryList";
+import { Link } from "@/nextNavigation";
 const successIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/common/success.svg";
 const errorIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/common/error.svg";
 
@@ -1011,7 +1010,7 @@ const handleSelectChange2 = (selectedOption) => {
                                 aria-invalid={!!errors.policyAgree}
                                 aria-describedby={errors.policyAgree ? "rf-policyAgree-error" : undefined}
                             />
-                            <span className={`${styles.checkBoxNote}`}>I have agreed to EICE Technology Privacy policy</span>
+                            <span className={`${styles.checkBoxNote}`}>I have agreed to EICE Technology <Link href="/privacy-policy" className="hover:text-blue-800 cursor-pointer transition">Privacy Policy</Link></span>
                         </div>
                         {errors.policyAgree && <span id="rf-policyAgree-error" className={styles.fieldError}>{errors.policyAgree}</span>}
                     </div>
