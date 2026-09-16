@@ -39,6 +39,7 @@ const AiSentiments = "https://d3r43jacxrwsrp.cloudfront.net/ai/sentiments.jpg";
 
 // legal
 const legalIntake = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/legal-intake-matter-management-automation-us-law-firms.png";
+const referralAgreementCompliance = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/referral-agreement-automation-digital-signatures-us-law-firms.png";
 
 
 
@@ -223,6 +224,14 @@ const projects = {
       link: "/case-studies/legal-intake-matter-management",
       img: legalIntake,
       __w: 1693, __h: 929,
+    },
+    {
+      title: "Referral Agreement Compliance & Digital Signature Automation",
+      description:
+        "How EICE Technology, an Indian IT Company, Helped a Large US Law Firm Automate Referral Agreement Compliance and Digital Signatures",
+      link: "/case-studies/referral-agreement-compliance-digital-signatures",
+      img: referralAgreementCompliance,
+      __w: 1713, __h: 918,
     },
   ],
 };

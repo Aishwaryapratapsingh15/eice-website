@@ -154,59 +154,27 @@ const steps = [
 ];
 
 // ─── CASE STUDIES ────────────────────────────────────────────────────────────
+// Hospitality-specific only — the Oil and Gas / Healthcare / Automobile tabs
+// that used to sit alongside these were unrelated generic placeholder
+// content and have been removed.
 
-const cs_industries = [
-  { id: "Hospitality", name: "Hospitality" },
-  { id: "Oil and Gas", name: "Oil and Gas" },
-  { id: "Healthcare industry", name: "Healthcare industry" },
-  { id: "automobile industry", name: "automobile industry" },
+const cs_projects = [
+  {
+    title: "Transforming Operational Efficiency for SalesVu",
+    description: "HDBS sought a transformative digital solution to overcome the challenges of managing its diverse operations and engaging a geographically dispersed global community while maintaining...",
+    img: "https://d3r43jacxrwsrp.cloudfront.net/Rise/caseStudy/android.webp",
+  },
+  {
+    title: "Empowering Community Operations for Houston Durga Bari Society",
+    description: "The Indian International Center (IIC) faced the challenge of managing complex, multi-user interactions while ensuring secure access and operational efficiency across admin, user, and guest roles.",
+    img: "https://d3r43jacxrwsrp.cloudfront.net/Rise/caseStudy/durga.webp",
+  },
+  {
+    title: "Empowering Indian International Center (IIC)",
+    description: "The Indian International Center (IIC) faced the challenge of managing complex, multi-user interactions while ensuring secure access and operational efficiency across admin, user, and guest roles.",
+    img: "https://d3r43jacxrwsrp.cloudfront.net/Rise/caseStudy/IIC.webp",
+  },
 ];
-
-const cs_projects = {
-  "Hospitality": [
-    {
-      title: "Transforming Operational Efficiency for SalesVu",
-      description: "HDBS sought a transformative digital solution to overcome the challenges of managing its diverse operations and engaging a geographically dispersed global community while maintaining...",
-      img: "https://d3r43jacxrwsrp.cloudfront.net/Rise/caseStudy/android.webp",
-    },
-    {
-      title: "Empowering Community Operations for Houston Durga Bari Society",
-      description: "The Indian International Center (IIC) faced the challenge of managing complex, multi-user interactions while ensuring secure access and operational efficiency across admin, user, and guest roles.",
-      img: "https://d3r43jacxrwsrp.cloudfront.net/Rise/caseStudy/durga.webp",
-    },
-    {
-      title: "Empowering Indian International Center (IIC)",
-      description: "The Indian International Center (IIC) faced the challenge of managing complex, multi-user interactions while ensuring secure access and operational efficiency across admin, user, and guest roles.",
-      img: "https://d3r43jacxrwsrp.cloudfront.net/Rise/caseStudy/IIC.webp",
-    },
-  ],
-  "Oil and Gas": [
-    {
-      title: "Noralta SCADA Implementation",
-      description: "Robust industrial control system enabling real-time monitoring and control of field operations for Noralta.",
-      img: "https://d3r43jacxrwsrp.cloudfront.net/Petroleum/scada.jpg",
-    },
-    {
-      title: "PetroSIM Refinery Simulation",
-      description: "Comprehensive petroleum simulation tool for refinery operations with advanced modeling and process optimization.",
-      img: "https://d3r43jacxrwsrp.cloudfront.net/Petroleum/petrosim.jpeg",
-    },
-  ],
-  "Healthcare industry": [
-    {
-      title: "AI-Powered Healthcare Solutions",
-      description: "Transforming patient care with intelligent diagnostics, telemedicine, and clinical management platforms.",
-      img: "https://d3r43jacxrwsrp.cloudfront.net/medical/aipdt.jpeg",
-    },
-  ],
-  "automobile industry": [
-    {
-      title: "Autonomous Driving AI",
-      description: "Machine learning model improving object detection accuracy by 30% in diverse weather conditions.",
-      img: "https://d3r43jacxrwsrp.cloudfront.net/Automobile/adai.jpeg",
-    },
-  ],
-};
 
 const CaseStudy = ({ title, description, image }) => (
   <div className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 md:p-4">
@@ -225,7 +193,6 @@ const CaseStudy = ({ title, description, image }) => (
 );
 
 function Cstdmain() {
-  const [activeIndustry, setActiveIndustry] = useState(cs_industries[0].id);
   return (
     <div className="font-manrope px-5 sm:px-6 lg:px-8">
       <h2 className="text-bloo fontweight_1 text-center text-[22px] sm:text-[25px] py-2">
@@ -235,44 +202,16 @@ function Cstdmain() {
         Explore how we digitally transformed other businesses
       </h1>
       <main className="mx-auto max-w-7xl">
-        <nav className="mb-8 sm:mb-12">
-          <ul className="grid grid-cols-2 sm:flex sm:flex-wrap sm:justify-center gap-2 sm:gap-4">
-            {cs_industries.map((industry) => (
-              <li key={industry.id} className="w-full sm:w-auto">
-                <button
-                  onClick={() => setActiveIndustry(industry.id)}
-                  className={`w-full sm:w-auto px-3 py-1 sm:px-4 sm:py-2 text-sm sm:text-base rounded-full transition ${
-                    activeIndustry === industry.id
-                      ? "bg-blue-900 text-white"
-                      : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-                  }`}
-                >
-                  {industry.name}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </nav>
-        {cs_industries.map((industry) => (
-          <section
-            key={industry.id}
-            className={`mb-12 ${activeIndustry === industry.id ? "block" : "hidden"}`}
-          >
-            <h2 className="text-[24px] px-2 sm:text-2xl fontweight_1 mb-4 sm:mb-6">
-              {industry.name}
-            </h2>
-            <div className="flex flex-wrap -mx-2">
-              {(cs_projects[industry.id] || []).map((project, index) => (
-                <CaseStudy
-                  key={index}
-                  title={project.title}
-                  description={project.description}
-                  image={project.img}
-                />
-              ))}
-            </div>
-          </section>
-        ))}
+        <div className="flex flex-wrap -mx-2">
+          {cs_projects.map((project, index) => (
+            <CaseStudy
+              key={index}
+              title={project.title}
+              description={project.description}
+              image={project.img}
+            />
+          ))}
+        </div>
       </main>
     </div>
   );
