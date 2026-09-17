@@ -52,6 +52,8 @@ const isyncdriveIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/isyncdrive.
 const isyncliteIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/isynclite.svg";
 const verilockIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Verilock.svg";
 const eiceAgentIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/EiceAiAgent.svg";
+const askEiceIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/Ask_Eice_Logo.svg";
+const eiceAimIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/EICE_AIM_Logo.svg";
 const eiceSmartfitIcon = "https://d3r43jacxrwsrp.cloudfront.net/smartfit/SmartFit_Icon.svg";
 const eiceopsIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/EICEOPS.svg";
 const cloudservicesIcon = "https://d3r43jacxrwsrp.cloudfront.net/cloud_services.svg";
@@ -416,6 +418,22 @@ const OurProducts = ({ handleSetSelected = () => {} }) => (
     <div className="col-span-2">
       <div className="bg-white rounded-2xl p-6 shadow-sm overflow-y-auto max-h-[70vh]">
         <div className="mb-8">
+          <p className="text-xs text-gray-400 tracking-wide mb-3">AI</p>
+          <div className="grid grid-cols-2 gap-6">
+            {[
+              { href: "/products/eice-voice", icon: eicevoiceIcon, name: "EICE Voice", desc: "Voice-Powered Order Management" },
+              { href: "/products/ask-eice",    icon: askEiceIcon,   name: "Ask Eice",   desc: "AI-powered knowledge search" },
+              { href: "/products/eice-aim",    icon: eiceAimIcon,   name: "Eice Aim",   desc: "AI-powered lead generation" },
+            ].map(({ href, icon, name, desc }) => (
+              <Link key={href} href={href} onClick={() => handleSetSelected(null)} className="flex items-start gap-3 group">
+                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} alt="" className="w-full h-full object-contain"  width="40" height="40" /></div>
+                <div><p className="font-semibold group-hover:text-bloo">{name}</p><p className="text-xs text-gray-500">{desc}</p></div>
+              </Link>
+            ))}
+          </div>
+        </div>
+        <div className="border-t my-3"></div>
+        <div className="mb-8">
           <p className="text-xs text-gray-400 tracking-wide mb-3">ERP & LOGISTICS</p>
           <div className="grid grid-cols-2 gap-6">
             {[
@@ -448,13 +466,11 @@ const OurProducts = ({ handleSetSelected = () => {} }) => (
         </div>
         <div className="border-t my-3"></div>
         <div>
-          <p className="text-xs text-gray-400 tracking-wide mb-3">SYNC & AI</p>
+          <p className="text-xs text-gray-400 tracking-wide mb-3">SYNC</p>
           <div className="grid grid-cols-2 gap-6">
             {[
-              { href: "/products/isync-drive", icon: isyncdriveIcon, name: "iSyncDrive",    desc: "Enterprise cloud sync client" },
-              { href: "/products/isync-lite",  icon: isyncliteIcon,  name: "iSyncLite",     desc: "Lightweight sync tool" },
-              { href: "/products/eice-agent",  icon: eiceAgentIcon,  name: "EICE AI Agent", desc: "AI-powered automation suite" },
-              { href: "/products/eice-voice",  icon: eicevoiceIcon,  name: "EICE Voice",    desc: "Voice-Powered Order Management" },
+              { href: "/products/isync-drive", icon: isyncdriveIcon, name: "iSyncDrive", desc: "Enterprise cloud sync client" },
+              { href: "/products/isync-lite",  icon: isyncliteIcon,  name: "iSyncLite",  desc: "Lightweight sync tool" },
             ].map(({ href, icon, name, desc }) => (
               <Link key={href} href={href} onClick={() => handleSetSelected(null)} className="flex items-start gap-3 group">
                 <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} alt="" className="w-full h-full object-contain"  width="40" height="40" /></div>
