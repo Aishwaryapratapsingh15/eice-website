@@ -239,8 +239,8 @@ export default function MobileNavMenu() {
                   <span className="text-gray-400">{">"}</span><span className="font-semibold">Resources</span>
                 </div>
                 {[
-                  ["/resources/blog", "Blog"],
-                  ["/resources/case-studies", "Case Studies"],
+                  ["/blog", "Blog"],
+                  ["/case-studies", "Case Studies"],
                 ].map(([href, label]) => (
                   <Link key={href} onClick={closeMenu} className="block p-4 text-lg border-b" to={href}>{label}</Link>
                 ))}
