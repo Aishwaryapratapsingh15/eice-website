@@ -100,6 +100,8 @@ export default function MobileNavMenu() {
           {menuView === "main" && (
             <motion.div key="main" initial={{ x: -300, opacity: 0 }} animate={{ x: 0, opacity: 1 }} exit={{ x: -300, opacity: 0 }} transition={{ duration: 0.3 }}>
               <MenuItem><Link onClick={closeMenu} className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]" to="/">Home</Link></MenuItem>
+              <MenuItem><Link onClick={closeMenu} className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]" to="/about">About Us</Link></MenuItem>
+
               {/* Plain <li>, not <MenuItem> — MenuItem has MUI Base's built-in
                   "activate and close the menu" behavior, which fired
                   regardless of this button's own onClick and closed the
@@ -114,7 +116,6 @@ export default function MobileNavMenu() {
                   Products <span aria-hidden="true" className="ml-1">+</span>
                 </button>
               </li>
-              <MenuItem><Link onClick={closeMenu} className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]" to="/about">About Us</Link></MenuItem>
               <li className="list-none">
                 <button
                   onClick={() => setMenuView("services")}
@@ -135,7 +136,17 @@ export default function MobileNavMenu() {
                   Industries <span aria-hidden="true" className="ml-1">+</span>
                 </button>
               </li>
-              <MenuItem><Link onClick={closeMenu} className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]" to="/resources">Resources</Link></MenuItem>
+              <li className="list-none">
+                <button
+                  onClick={() => setMenuView("resources")}
+                  aria-expanded={menuView === "resources"}
+                  aria-haspopup="true"
+                  className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px] flex items-center cursor-pointer text-left bg-transparent border-0"
+                >
+                  Resources <span aria-hidden="true" className="ml-1">+</span>
+                </button>
+              </li>
+              {/* <MenuItem><Link onClick={closeMenu} className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]" to="/resources">Resources</Link></MenuItem> */}
               <MenuItem><Link onClick={closeMenu} className="w-screen overflow-hidden shadow-sm p-2 pl-4 text-[20px]" to="/contact">Contact Us</Link></MenuItem>
             </motion.div>
           )}
@@ -147,16 +158,17 @@ export default function MobileNavMenu() {
                   <span className="text-gray-400">{">"}</span><span className="font-semibold">Products</span>
                 </div>
                 {[
+                  ["/products/eice-voice",  "EICE Voice"],
+                  ["/products/eice-aim",  "EICE Aim"],
+                  ["/products/ask-eice",  "Ask EICE"],
                   ["/products/eicerise",   "EICE Rise"],
+                  ["/products/easylogy",   "EasyLogy"],
+                  ["/products/smartfit",   "EICE SmartFit"],
                   ["/products/eice-ops",    "EICEOps"],
-                  ["/products/isync-lite",  "iSyncLite"],
-                  ["/products/isync-drive", "iSyncDrive"],
-                  ["/products/eice-agent",  "EICE AI Agent"],
                   ["/products/verilock",    "Verilock"],
                   ["/products/infrasight",  "InfraSight"],
-                  ["/products/easylogy",   "EasyLogy"],
-                  ["/products/smartfit",    "EICE SmartFit"],
-                  ["/products/eice-voice",  "EICE Voice"],
+                  ["/products/isync-lite",  "iSyncLite"],
+                  ["/products/isync-drive", "iSyncDrive"],
                 ].map(([href, label]) => (
                   <Link key={href} onClick={closeMenu} className="block p-4 text-lg border-b" to={href}>{label}</Link>
                 ))}
@@ -213,6 +225,22 @@ export default function MobileNavMenu() {
                   ["/industries/logistics", "Logistics"],
                   ["/industries/enterprise", "Enterprise"],
                   ["/industries/hospitality", "Hospitality"],
+                ].map(([href, label]) => (
+                  <Link key={href} onClick={closeMenu} className="block p-4 text-lg border-b" to={href}>{label}</Link>
+                ))}
+              </div>
+            </motion.div>
+          )}
+          {menuView === "resources" && (
+            <motion.div key="resources" initial={{ x: -300, opacity: 0 }} animate={{ x: 0, opacity: 1 }} exit={{ x: -300, opacity: 0 }} transition={{ duration: 0.3 }} className="w-screen h-screen bg-white">
+              <div className="w-screen h-screen bg-white">
+                <div className="p-4 text-sm border-b flex gap-2">
+                  <span className="cursor-pointer text-gray-500" onClick={() => setMenuView("main")}>Home</span>
+                  <span className="text-gray-400">{">"}</span><span className="font-semibold">Resources</span>
+                </div>
+                {[
+                  ["/resources/blog", "Blog"],
+                  ["/resources/case-studies", "Case Studies"],
                 ].map(([href, label]) => (
                   <Link key={href} onClick={closeMenu} className="block p-4 text-lg border-b" to={href}>{label}</Link>
                 ))}

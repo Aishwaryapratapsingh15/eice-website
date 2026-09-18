@@ -476,7 +476,7 @@ iSyncLite addresses these head-on.
       </section>
 
         {/* FINAL CTA */}
-      <section className="py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-gray-50 text-center mb-10">
+      <section className="py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-gray-50 text-center">
       
         {/* Heading */}
         <div className="max-w-6xl mx-auto">

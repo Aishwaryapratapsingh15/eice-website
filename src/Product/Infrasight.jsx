@@ -641,7 +641,7 @@ infrastructure</h4>
 </section>
 
       {/* ================= CTA ================= */}
-<section className="bg-gray-50 relative py-10 px-5 md:px-12 lg:px-24 xl:px-40 overflow-hidden mb-10">
+<section className="bg-gray-50 relative py-10 px-5 md:px-12 lg:px-24 xl:px-40 overflow-hidden">
 
   {/* CONTENT */}
   <div className="relative z-10 max-w-6xl mx-auto text-center">

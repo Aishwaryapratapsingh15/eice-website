@@ -30,7 +30,7 @@ const smartCampaignIcon = `${EA}/Smart-campaign-management.svg`;
 const dynamicFollowUpIcon = `${EA}/Dynamic-follow-up-logic.svg`;
 const analyticsPerInteractionIcon = `${EA}/Analytics-for-every-interaction.svg`;
 const cognitiveAutomationIcon = `${EA}/Cognitive-automation.svg`;
-const realTimeAnalyticsIcon = `${EA}/Real-time%20analytics.svg`;
+const realTimeAnalyticsIcon = `${EA}/Real-time-analytics.svg`;
 const enterpriseSecurityIcon = `${EA}/Enterprise-security.svg`;
 const globalScalabilityIcon = `${EA}/Global-scalability.svg`;
 const instantIntegrationsIcon = `${EA}/Instant-integrations.svg`;
@@ -41,8 +41,37 @@ const scaleIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Scale.svg";
 const optimizeIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Optimize.svg";
 const alwaysOnOutreachIcon = `${EA}/Always-on-outreach.svg`;
 const everyCallLoggedIcon = `${EA}/Every-call-logged.svg`;
-const stat60Icon = `${EA}/60%25.svg`;
-const stat25Icon = `${EA}/25%25.svg`;
+const stat60Icon = `${EA}/25.svg`;
+const stat25Icon = `${EA}/of-data-stays-within-your-own-infrastructure.svg`;
+const cmmiImg = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/CMMI.png";
+const isoImg = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/ISO.png";
+const iecImg = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/IEC.png";
+const ismsImg = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/ISMS.png"; 
+const actionIcon = "https://d3r43jacxrwsrp.cloudfront.net/eice-aim/Action-Agent.svg"
+
+
+const badges = [
+  {
+    title: "CMMI Level 3",
+    desc: "Capability Maturity\nModel integration",
+    icon: cmmiImg,
+  __w: 319, __h: 98},
+  {
+    title: "ISO 9001",
+    desc: "Quality Management\nSytem",
+    icon: isoImg,
+  __w: 117, __h: 118},
+  {
+    title: "ISO 27001",
+    desc: "Information Security\nManagement",
+    icon: ismsImg,
+  __w: 128, __h: 173},
+  {
+    title: "ISO/IEC 20000",
+    desc: "IT Service\nManagement",
+    icon: iecImg,
+  __w: 143, __h: 143},
+];
 
 const features = [
   { icon: outreach247Icon, title: "24×7 outreach", desc: "Always-on AI communication", __w: 42, __h: 42 },
@@ -81,8 +110,8 @@ const steps = [
 ];
 
 const impactStats = [
-  { icon: stat60Icon, value: "60%", label: "reduction in cost per lead" },
-  { icon: stat25Icon, value: "~25%", label: "increase in lead conversions" },
+  { icon: stat25Icon, color: "text-[#1BA23D]", value: "60%", label: "reduction in cost per lead" },
+  { icon: stat60Icon, color: "text-[#6322C5]", value: "~25%", label: "increase in lead conversions" },
 ];
 
 const campaignControls = [
@@ -92,12 +121,6 @@ const campaignControls = [
   { icon: everyCallLoggedIcon, title: "Every call logged", desc: "Comprehensive analytics and reporting for coaching and forecasting." },
 ];
 
-const trustBadges = [
-  { code: "CMMI Level 3", desc: "Process maturity & quality assurance" },
-  { code: "ISO 9001:2000", desc: "Quality management systems" },
-  { code: "ISO 27001", desc: "Information security management" },
-  { code: "ISO/IEC 20000", desc: "IT service management standard" },
-];
 
 const faqs = [
   { q: "Q. Does EICEAIM replace our sales team?", a: "A. No — it acts as your team's always-on outreach partner. EICEAIM automates the repetitive parts of the funnel (outreach, qualification, follow-up) so your reps spend their time on qualified conversations and closing, not cold-dialing." },
@@ -118,7 +141,7 @@ export default function EiceAim() {
           <img
             src={heroImg}
             alt="product"
-            className="mx-auto md:w-96 lg:w-[180px]"
+            className="mx-auto w-[300px] h-[70px] md:w-96 lg:w-[180px]"
             width="873" height="404" />
           <img
             src={Frame1Icon}
@@ -129,7 +152,7 @@ export default function EiceAim() {
 
         <span className="flex w-fit mx-auto items-center gap-2 bg-blue-50 text-[#012060] px-3 py-2 rounded-full text-sm font-medium border border-blue-200">
           <img
-            src={shieldIcon}
+            src={actionIcon}
             alt="icon"
             className="w-5 h-5 object-contain"
             width="20" height="20" />
@@ -268,10 +291,10 @@ export default function EiceAim() {
       {/* UNIFIED PLATFORM */}
       <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
         <h2 className="text-[32px] sm:text-3xl font-bold text-center text-[#334155] mb-5">
-          Built to run outreach at enterprise scale
+          Core capabilities
         </h2>
         <h4 className="text-[22px] sm:text-xl text-[#64748B] font-semibold text-center mb-4 sm:mb-10 max-w-3xl mx-auto">
-          Core capabilities
+          Built to run outreach at enterprise scale
         </h4>
         <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
           {platformFeatures.map((item, i) => (
@@ -297,9 +320,9 @@ export default function EiceAim() {
             {impactStats.map((item, i) => (
               <div key={i} className="bg-white border border-gray-200 rounded-xl p-6 sm:p-10 shadow-sm text-center">
                 <div className="flex items-center justify-center mb-3 gap-4">
-                  <img src={item.icon} alt="icon" className="w-8 h-8 object-contain" width="24" height="24" />
+                  <img src={item.icon} alt="icon" className="w-10 h-10 object-contain" width="24" height="24" />
                 
-                <h3 className="text-[40px] font-bold text-[#01B0F1]">{item.value}</h3></div>
+                <h3 className={`text-[40px] font-bold ${item.color}`}>{item.value}</h3></div>
                 <p className="text-[#64748B] font-semibold text-[16px] sm:text-lg mt-2">{item.label}</p>
               </div>
             ))}
@@ -327,20 +350,61 @@ export default function EiceAim() {
       </section>
 
 
-      {/* WHY EICE TECHNOLOGY */}
-      <section className="bg-white py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155] mb-4 sm:mb-10">A proven enterprise software partner <br /> — trusted since 2010</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
-            {trustBadges.map((item, i) => (
-              <div key={i} className="bg-white border border-[#E2E8F0] rounded-xl py-6 px-4 text-center shadow-sm">
-                <p className="font-bold text-sm text-[#334155]">{item.code}</p>
-                <p className="text-[#64748B] text-xs mt-2">{item.desc}</p>
-              </div>
-            ))}
-          </div>
+    
+      {/* SECURITY, COMPLIANCE & TRUST */}
+        <section className="bg-white py-4 sm:py-10 px-4 sm:px-6 md:px-10 lg:px-20 xl:px-40">
+      <div className="max-w-[1200px] mx-auto px-0 text-center">
+
+        {/* Top Tag */}
+        <div className="inline-flex border-2 border-[#228441] items-center gap-2 bg-[#F0FDF4] text-[#2e7d32] px-4 py-2 rounded-full text-sm font-medium mb-2">
+          <img src={shieldIcon} alt="icon" className="w-4 h-4 object-contain"  width="16" height="16" /> Enterprise-Grade Security
         </div>
-      </section>
+
+        {/* Heading */}
+        <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155] mb-4">
+          Security, Compliance & Trust
+        </h2>
+
+        {/* Subtitle */}
+        <p className="text-[#64748B] font-semibold text-[16px] sm:text-lg mb-4 sm:mb-10 max-w-2xl mx-auto">
+          Your data security is our foundation. Built with enterprise compliance at every layer.
+        </p>
+
+        {/* Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+
+          {badges.map((item, i) => (
+            <div
+              key={i}
+              className="bg-white border border-[#e2e8f0] rounded-xl py-8 px-6 shadow-sm"
+            >
+
+              {/* Title */}
+              <h3 className="text-[24px] sm:text-[20px] font-bold text-[#334155] mb-3">
+                {item.title}
+              </h3>
+
+              {/* Description */}
+              <p className="text-[#64748B] font-semibold text-[15px] whitespace-pre-line leading-relaxed mb-6">
+                {item.desc}
+              </p>
+
+              {/* Image */}
+              <div className="flex justify-center">
+                <img
+                  src={item.icon}
+                  alt="badge"
+                  className="h-16 object-contain"
+                 width={item.__w} height={item.__h} />
+              </div>
+
+            </div>
+          ))}
+
+        </div>
+
+      </div>
+    </section>
 
       {/* FAQ */}
       <section className="bg-[#F4F9FF] py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40">

@@ -422,7 +422,7 @@ missed escalations, ensures structured communication, and gives managers full vi
   </div>
 </section>
           {/* ================= FINAL CTA ================= */}
-          <section className="bg-gray-50 relative py-4 px-6 md:px-12 lg:px-24 xl:px-40 overflow-hidden mb-10">
+          <section className="bg-gray-50 relative py-4 px-6 md:px-12 lg:px-24 xl:px-40 overflow-hidden">
             <h2 className="text-4xl md:text-4xl font-bold text-[#334155] mb-[14px] leading-tight text-center">
               Ready to Take Control of Every Ticket?
             </h2>

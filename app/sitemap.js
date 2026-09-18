@@ -114,6 +114,8 @@ export default async function sitemap() {
     { url: "/products/infrasight",  priority: 0.8, changeFrequency: "monthly", lastModified: DATES.products },
     { url: "/products/eice-agent",  priority: 0.8, changeFrequency: "monthly", lastModified: DATES.products },
     { url: "/products/eice-voice",  priority: 0.8, changeFrequency: "monthly", lastModified: DATES.products },
+    { url: "/products/ask-eice",    priority: 0.8, changeFrequency: "monthly", lastModified: DATES.products },
+    { url: "/products/eice-aim",    priority: 0.8, changeFrequency: "monthly", lastModified: DATES.products },
     { url: "/products/isync-drive", priority: 0.8, changeFrequency: "monthly", lastModified: DATES.products },
     { url: "/products/isync-lite",  priority: 0.8, changeFrequency: "monthly", lastModified: DATES.products },
     { url: "/products/smartfit",    priority: 0.8, changeFrequency: "monthly", lastModified: DATES.products },
@@ -168,6 +170,8 @@ export default async function sitemap() {
     { url: "/case-studies/schlumberger-baa",   priority: 0.6, changeFrequency: "monthly", lastModified: DATES.caseStudies },
     { url: "/case-studies/esp-design-analysis", priority: 0.6, changeFrequency: "monthly", lastModified: DATES.caseStudies },
     { url: "/case-studies/subsurface-workflow-orchestration", priority: 0.6, changeFrequency: "monthly", lastModified: DATES.caseStudies },
+    { url: "/case-studies/legal-intake-matter-management", priority: 0.6, changeFrequency: "monthly", lastModified: DATES.caseStudies },
+    { url: "/case-studies/referral-agreement-compliance-digital-signatures", priority: 0.6, changeFrequency: "monthly", lastModified: DATES.caseStudies },
 
     // Blog / Content Hub
     { url: "/blog",  priority: 0.8, changeFrequency: "weekly",  lastModified: DATES.blog },

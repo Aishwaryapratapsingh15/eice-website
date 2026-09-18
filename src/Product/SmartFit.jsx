@@ -261,7 +261,7 @@ export default function SmartFit() {
           ))}
         </div>
       </section>
-            <section className="bg-gray-50 relative py-10 px-5 md:px-12 lg:px-24 xl:px-40 overflow-hidden mb-10">
+            <section className="bg-gray-50 relative py-10 px-5 md:px-12 lg:px-24 xl:px-40 overflow-hidden">
               <h2 className="text-4xl md:text-4xl font-bold text-[#334155] mb-[14px] leading-tight text-center">
                 Ready to Transform Your Container Optimization?
               </h2>
