@@ -103,10 +103,10 @@ const platformFeatures = [
 ];
 
 const steps = [
-  { icon: planIcon, step: "01", title: "Plan", desc: "Define ideal customer profiles, target segments, and campaign goals." },
-  { icon: deployIcon, step: "02", title: "Deploy", desc: "Configure AI personas, connect your CRM, and launch outreach." },
-  { icon: scaleIcon, step: "03", title: "Scale", desc: "Expand campaigns across teams and territories." },
-  { icon: optimizeIcon, step: "04", title: "Optimize", desc: "Analyze conversion data and refine scripts and targeting." },
+  { icon: planIcon, step: "01", title: "Import", desc: "Import contact lists, define your audience, and prepare targeted outreach campaigns." },
+  { icon: deployIcon, step: "02", title: "Configure", desc: "Configure AI personas, conversation goals, and qualification logic for every campaign." },
+  { icon: scaleIcon, step: "03", title: "Engage", desc: "AI agents handle calls, capture responses, and analyze conversations and sentiment in real time." },
+  { icon: optimizeIcon, step: "04", title: "Follow Up", desc: "Identify high-intent leads and trigger personalized follow-ups to keep conversations moving." },
 ];
 
 const impactStats = [
@@ -141,7 +141,7 @@ export default function EiceAim() {
           <img
             src={heroImg}
             alt="product"
-            className="mx-auto w-[300px] h-[70px] md:w-96 lg:w-[180px]"
+            className="mx-auto w-[180px] h-[70px] md:w-96 lg:w-[180px]"
             width="873" height="404" />
           <img
             src={Frame1Icon}
@@ -179,7 +179,7 @@ export default function EiceAim() {
       {/* FEATURES */}
       <section className="sm:pt-4 sm:pb-10 px-4 max-w-7xl mx-auto md:px-10 lg:px-20 xl:px-40 bg-white grid md:grid-cols-3 text-center">
         {features.map((item, i) => (
-          <div key={i} className="flex flex-col items-center gap-1">
+          <div key={i} className="flex flex-col items-center gap-1 pb-2">
             <div className=" px-6 rounded-xl">
               <img src={item.icon} alt="icon" width={item.__w} height={item.__h} />
             </div>
@@ -390,7 +390,7 @@ export default function EiceAim() {
               </p>
 
               {/* Image */}
-              <div className="flex justify-center">
+              <div className="flex sm:justify-center">
                 <img
                   src={item.icon}
                   alt="badge"

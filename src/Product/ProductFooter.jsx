@@ -189,14 +189,14 @@ export default function Footer() {
             <div className="space-y-6 text-[14px] text-white/70">
 
               {/* INDIA */}
-              <div className="flex gap-1">
+              <div className="flex gap-2">
                 {/* 🔲 FLAG */}
-                 <div className="w-[110px] h-[36px] flex items-center">
+                 <div className="w-[70px] h-[36px] flex items-center">
     <img
       src={indImg}   // 🔁 your main logo
       alt="EICE"
       className="h-full object-contain"
-      width="34"
+      width="45"
       height="34"
     />
   </div>
@@ -209,14 +209,14 @@ export default function Footer() {
               </div>
 
               {/* USA */}
-              <div className="flex gap-1">
+              <div className="flex">
                 {/* 🔲 FLAG */}
-                 <div className="w-[110px] h-[36px] flex items-center">
+                 <div className="w-[70px] h-[36px] flex items-center">
     <img
       src={usImg}   // 🔁 your main logo
       alt="EICE"
       className="h-full object-contain"
-      width="34"
+      width="45"
       height="34"
     />
   </div>

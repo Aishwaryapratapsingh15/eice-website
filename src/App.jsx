@@ -418,7 +418,7 @@ const OurProducts = ({ handleSetSelected = () => {} }) => (
     <div className="col-span-2">
       <div className="bg-white rounded-2xl p-6 shadow-sm overflow-y-auto max-h-[70vh]">
         <div className="mb-8">
-          <p className="text-xs text-gray-400 tracking-wide mb-3">AI</p>
+          <p className="text-xs text-gray-400 tracking-wide mb-3">AI & Automation</p>
           <div className="grid grid-cols-2 gap-6">
             {[
               { href: "/products/eice-voice", icon: eicevoiceIcon, name: "EICE Voice", desc: "Voice-Powered Order Management" },
@@ -486,7 +486,7 @@ const OurProducts = ({ handleSetSelected = () => {} }) => (
 
 const TABS = [
   { title: "ABOUT",      Component: Aboutus,       link: "/about" },
-  { title: "PRODUCTS",   Component: OurProducts,   link: "" },
+  { title: "PRODUCTS",   Component: OurProducts,   link: "/products" },
   { title: "INDUSTRIES", Component: OurIndustries, link: "/industries" },
   { title: "SERVICES",   Component: OurServices,   link: "/services" },
   { title: "RESOURCES",  Component: OurResources,  link: "/resources" },

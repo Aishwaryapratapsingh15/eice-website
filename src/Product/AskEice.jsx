@@ -126,10 +126,10 @@ const byomPoints = [
 ];
 
 const steps = [
-  { icon: ingestIcon, step: "01", title: "Ingest", desc: "Define goals, identify data sources, and map AI opportunities." },
-  { icon: indexIcon, step: "02", title: "Index", desc: "Configure agents, integrate systems, and launch operations." },
-  { icon: askIcon, step: "03", title: "Ask", desc: "Expand across teams and automate more workflows." },
-  { icon: answerIcon, step: "04", title: "Answer", desc: "Analyze results, refine models, and enhance performance." },
+  { icon: ingestIcon, step: "01", title: "Ingest", desc: "Automatically ingest documents from your existing systems." },
+  { icon: indexIcon, step: "02", title: "Index", desc: "Automatically index documents so they’re searchable across your organization." },
+  { icon: askIcon, step: "03", title: "Ask", desc: "Ask questions in plain language and understand context, not just keywords." },
+  { icon: answerIcon, step: "04", title: "Answer", desc: "Get instant, verified answers with full source traceability." },
 ];
 
 const governanceCards = [
@@ -141,8 +141,8 @@ const governanceCards = [
 const impactStats = [
   { icon: NintyIcon, value: "97%", color: "text-orange-500",label: "reduction in knowledge discovery time" },
   { icon: TwentyIcon, value: "~25%", color: "text-purple-500", label: "reduction in document search time" },
-  { icon: ofdatastaysIcon, value: "100%", color: "text-green-500", label: "of data stays within your own infrastructure" },
-  { icon: validationLayersIcon, value: "Up to 4", color: "text-blue-500", label: "validation layers for document compliance" },
+  { icon: validationLayersIcon, value: "100%", color: "text-green-500", label: "of data stays within your own infrastructure" },
+  { icon: ofdatastaysIcon, value: "Up to 4", color: "text-blue-500", label: "validation layers for document compliance" },
 ];
 
 const microStats = [
@@ -193,7 +193,7 @@ export default function AskEice() {
          <img
             src={heroImg}
             alt="product"
-            className="mx-auto md:w-96 lg:w-[180px]"
+            className="mx-auto w-[250px] h-[70px] md:w-96 lg:w-[280px] lg:h-[80px]"
             width="873" height="404" />
           <img
             src={Frame2Icon}
@@ -231,7 +231,7 @@ export default function AskEice() {
       {/* FEATURES */}
       <section className="sm:pt-4 sm:pb-10 px-4 max-w-7xl mx-auto md:px-10 lg:px-20 xl:px-40 bg-white grid md:grid-cols-3 text-center">
         {features.map((item, i) => (
-          <div key={i} className="flex flex-col items-center gap-1">
+          <div key={i} className="flex flex-col items-center gap-1 pb-2">
             <div className=" px-6 rounded-xl">
               <img src={item.icon} alt="icon" width={item.__w} height={item.__h} />
             </div>
@@ -391,6 +391,15 @@ export default function AskEice() {
       {/* BRING YOUR OWN MODEL */}
       <section className="bg-[#F4F9FF] py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-4 md:gap-10 items-center">
+            <div>
+            <h2 className="text-[32px] sm:text-2xl md:text-3xl font-bold mb-4 text-[#334155]">
+              Model-agnostic by design
+            </h2>
+            <p className="text-[#64748B] text-[16px] sm:text-lg mb-6">
+              Choose from industry-leading AI models, configured per organization or use case. Complete flexibility, zero vendor lock-in.
+            </p>
+            <Bullets items={byomPoints} />
+          </div>
           <div className="space-y-3">
             {byomModels.map((item) => (
               <div key={item.org} className="flex items-center justify-between gap-4 border border-[#E2E8F0] rounded-xl bg-white p-4">
@@ -405,15 +414,6 @@ export default function AskEice() {
               </div>
             ))}
             <p className="text-[#64748B] text-sm mt-2">Independently selected and configured — switch anytime.</p>
-          </div>
-          <div>
-            <h2 className="text-[32px] sm:text-2xl md:text-3xl font-bold mb-4 text-[#334155]">
-              Model-agnostic by design
-            </h2>
-            <p className="text-[#64748B] text-[16px] sm:text-lg mb-6">
-              Choose from industry-leading AI models, configured per organization or use case. Complete flexibility, zero vendor lock-in.
-            </p>
-            <Bullets items={byomPoints} />
           </div>
         </div>
       </section>
@@ -452,8 +452,8 @@ export default function AskEice() {
           </div>
           <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {impactStats.map((item, i) => (
-              <div key={i} className="bg-white border border-gray-200 rounded-xl p-6 sm:p-8 shadow-sm text-center">
-                <div className="flex justify-center mb-3">
+              <div key={i} className="bg-white border border-gray-200 rounded-xl p-6 sm:p-4 shadow-sm text-center">
+                <div className="flex sm:justify-center mb-3">
                   <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" width="24" height="24" />
                 </div>
                 <h3 className={`text-[40px] font-bold ${item.color}`}>{item.value}</h3>
@@ -549,7 +549,7 @@ export default function AskEice() {
               </p>
 
               {/* Image */}
-              <div className="flex justify-center">
+              <div className="flex sm:justify-center">
                 <img
                   src={item.icon}
                   alt="badge"

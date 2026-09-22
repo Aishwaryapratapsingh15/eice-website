@@ -246,7 +246,7 @@ access, sync, and share files across devices from a single platform with full co
 <section className="pb-4 sm:pb-10 px-4 max-w-7xl mx-auto md:px-10 lg:px-20 xl:px-40 bg-white grid md:grid-cols-3 text-center">
 
   {features.map((item, i) => (
-    <div key={i} className="flex flex-col items-center gap-1">
+    <div key={i} className="flex flex-col items-center gap-1 pb-2">
 
       {/* ICON (Rounded Rectangle) */}
       <div className=" px-6 rounded-xl">
