@@ -20,7 +20,6 @@ const dtconsulting = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/dtconsult
 import Footer from "../Othercomps/Footer.jsx";
 import ProductFooter from "@/Product/ProductFooter";
 import TalkToUs from "../Othercomps/Talktous";
-import Reviews from "../Homecomps/Reviews";
 import Clients from "../Homecomps/Clients";
 import Clientele from "../Homecomps/Clientele";
 import Process from "../Homecomps/Process.jsx";
@@ -339,7 +338,6 @@ function Blockchain() {
         </div>
       </div>
       <Cstdmain />
-      <Reviews />
       <TalkToUs product="Blockchain" />
       {/* <Footer /> */}
       <ProductFooter />

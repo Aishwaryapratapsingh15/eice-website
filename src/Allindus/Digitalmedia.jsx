@@ -17,8 +17,6 @@ import TalkToUs from "../Othercomps/Talktous";
 
 
 
-import Reviews from "../Homecomps/Reviews";
-
 
 
 import Clients from "../Homecomps/Clients";
@@ -488,7 +486,7 @@ function Digitalmedia() {
 
 
 
-    <div className="">
+    <div className="font-manrope px-5 sm:px-6 lg:px-8">
 
 
 
@@ -1134,10 +1132,6 @@ function Digitalmedia() {
 
 
 
-
-
-
-      <Reviews />
 
 
 

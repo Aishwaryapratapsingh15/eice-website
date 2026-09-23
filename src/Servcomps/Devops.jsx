@@ -16,7 +16,6 @@ const servicebannerpattern = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/s
 import Footer from "../Othercomps/Footer.jsx";
 import ProductFooter from "@/Product/ProductFooter";
 import TalkToUs from "../Othercomps/Talktous.jsx";
-import Reviews from "../Homecomps/Reviews.jsx";
 
 
 
@@ -332,7 +331,6 @@ function DevOps() {
         </div>
       </div>
       <Cstdmain />
-      <Reviews />
       <TalkToUs product="DevOps" />
       {/* <Footer /> */}
       <ProductFooter />

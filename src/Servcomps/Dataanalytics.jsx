@@ -17,7 +17,6 @@ import {
 import Footer from "../Othercomps/Footer.jsx";
 import ProductFooter from "@/Product/ProductFooter";
 import TalkToUs from "../Othercomps/Talktous.jsx";
-import Reviews from "../Homecomps/Reviews.jsx";
 
 
 // cs images
@@ -323,7 +322,6 @@ function DataAnalytics() {
         </div>
       </div>
       <Cstdmain />
-      <Reviews />
       <TalkToUs product="Data Analytics" />
       {/* <Footer /> */}
       <ProductFooter />

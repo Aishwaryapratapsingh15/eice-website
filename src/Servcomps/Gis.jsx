@@ -23,7 +23,6 @@ const dtdesign = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/dtdesign.svg"
 const dtconsulting = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/dtconsulting.svg";
 
 import TalkToUs from "../Othercomps/Talktous.jsx";
-import Reviews from "../Homecomps/Reviews.jsx";
 import Clients from "../Homecomps/Clients.jsx";
 import Clientele from "../Homecomps/Clientele.jsx";
 import Process from "../Homecomps/Process.jsx";
@@ -336,7 +335,6 @@ function GIS() {
         </div>
       </div>
       <Cstdmain />
-      <Reviews />
       <TalkToUs product="GIS" />
       {/* <Footer /> */}
       <ProductFooter />

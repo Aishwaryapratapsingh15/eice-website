@@ -1,5 +1,4 @@
 ﻿import React from "react";
-import Reviews from "../Homecomps/Reviews";
 import Talktous from "../Othercomps/Talktous";
 import Clients from "../Homecomps/Clients";
 import Clientele from "../Homecomps/Clientele";
@@ -114,7 +113,7 @@ function Indusmain() {
 
   return (
     <div id="indusmain-root">
-      <div className="font-manrope max-w-7xl mx-auto px-5 sm:px-4  pt-32 sm:pt-32 2xl:pt-8">
+      <div className="font-manrope max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 pt-32 sm:pt-32 2xl:pt-8">
         <section className="text-left sm:text-center">
           <h1 className="text-blackk fontweight_1 text-left sm:text-center text-[32px] sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-7xl py-2">
             Driving <span className="text-bloo">Digital Transformation</span>{" "}
@@ -166,7 +165,6 @@ function Indusmain() {
           </h1>
         </div>
       </div>
-      <Reviews />
       <Talktous />
     </div>
   );

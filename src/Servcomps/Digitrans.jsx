@@ -15,7 +15,6 @@ const dtconsulting = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/dtconsult
 import Footer from "../Othercomps/Footer.jsx";
 import ProductFooter from "@/Product/ProductFooter";
 import TalkToUs from "../Othercomps/Talktous";
-import Reviews from "../Homecomps/Reviews";
 import Clients from "../Homecomps/Clients";
 import Clientele from "../Homecomps/Clientele";
 
@@ -291,7 +290,7 @@ function Digitrans() {
           <h1 className="px-5 text-bloo responsiveFont1 text-center">
             Why Choose EICE
           </h1>
-          <h2 className="px-5 text-blackk responsiveFont2 text-center px-4 mt-4">
+          <h2 className="text-blackk responsiveFont2 text-center px-4 mt-4">
             Key Advantages of Partnering with EICE for Your AI/ML and Generative
             AI Journey
           </h2>
@@ -350,7 +349,6 @@ function Digitrans() {
         </div>
       </div>
       <Cstdmain />
-      <Reviews />
       <TalkToUs product="Digital Transformation" />
       {/* <Footer /> */}
       <ProductFooter />

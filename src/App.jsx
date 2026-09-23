@@ -421,9 +421,10 @@ const OurProducts = ({ handleSetSelected = () => {} }) => (
           <p className="text-xs text-gray-400 tracking-wide mb-3">AI & Automation</p>
           <div className="grid grid-cols-2 gap-6">
             {[
-              { href: "/products/eice-voice", icon: eicevoiceIcon, name: "EICE Voice", desc: "Voice-Powered Order Management" },
-              { href: "/products/ask-eice",    icon: askEiceIcon,   name: "Ask Eice",   desc: "AI-powered knowledge search" },
-              { href: "/products/eice-aim",    icon: eiceAimIcon,   name: "Eice Aim",   desc: "AI-powered lead generation" },
+              { href: "/products/eice-voice",    icon: eicevoiceIcon, name: "EICE Voice",    desc: "Voice-Powered Order Management" },
+              { href: "/products/ask-eice",       icon: askEiceIcon,   name: "Ask Eice",      desc: "AI-powered knowledge search" },
+              { href: "/products/eice-aim",       icon: eiceAimIcon,   name: "Eice Aim",      desc: "AI-powered lead generation" },
+              { href: "/products/eice-catalyst",  icon: eiceAgentIcon, name: "EICE Catalyst", desc: "Integrated AI engineering platform" },
             ].map(({ href, icon, name, desc }) => (
               <Link key={href} href={href} onClick={() => handleSetSelected(null)} className="flex items-start gap-3 group">
                 <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} alt="" className="w-full h-full object-contain"  width="40" height="40" /></div>

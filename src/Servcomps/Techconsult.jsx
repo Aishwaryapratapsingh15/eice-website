@@ -73,8 +73,6 @@ import TalkToUs from "../Othercomps/Talktous.jsx";
 
 
 
-import Reviews from "../Homecomps/Reviews.jsx";
-
 
 
 
@@ -729,7 +727,7 @@ function TechnologyConsulting() {
 
 
 
-          <div className="flex lg:flex-row flex-col px-0 sm:px-4 py-20 items-center">
+          <div className="flex lg:flex-row flex-col px-5 py-20 items-center">
 
 
 
@@ -737,7 +735,7 @@ function TechnologyConsulting() {
 
 
 
-              <h1 className="px-5 text-blackk fontweight_1 fontsize_6 ">
+              <h1 className="text-blackk fontweight_1 fontsize_6 ">
 
 
 
@@ -749,7 +747,7 @@ function TechnologyConsulting() {
 
 
 
-              <h2 className="px-5 text-blackk/70 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
+              <h2 className="text-blackk/70 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-2xl sm:leading-tight leading-snug text-left">
 
 
 
@@ -805,7 +803,7 @@ function TechnologyConsulting() {
 
 
 
-        <div className="relative font-manrope mx-auto px-4 lg:px-4 max-w-7xl">
+        <div className="relative font-manrope mx-auto px-5 lg:px-4 max-w-7xl">
 
 
 
@@ -937,7 +935,7 @@ function TechnologyConsulting() {
 
 
 
-        <div className="grid px-0 sm:px-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 pt-8">
+        <div className="grid px-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 pt-8">
 
 
 
@@ -1326,10 +1324,6 @@ function TechnologyConsulting() {
 
 
       <Cstdmain />
-
-
-
-      <Reviews />
 
 
 

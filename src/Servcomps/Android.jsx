@@ -14,7 +14,6 @@ const dtconsulting = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/dtconsult
 
 import Footer from "../Othercomps/Footer.jsx";
 import TalkToUs from "../Othercomps/Talktous";
-import Reviews from "../Homecomps/Reviews";
 import Clients from "../Homecomps/Clients";
 import Clientele from "../Homecomps/Clientele";
 import ProductFooter from "@/Product/ProductFooter";
@@ -281,7 +280,6 @@ function Android() {
       </div>
       <div className="lg:pt-20 pt-12"></div>
       <Cstdmain />
-      <Reviews />
       <TalkToUs product="Android" />
       {/* <Footer /> */}
       <ProductFooter />

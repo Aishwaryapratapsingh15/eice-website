@@ -12,7 +12,6 @@ const logistics = "https://d3r43jacxrwsrp.cloudfront.net/ai/logistics.jpg";
 const sentiments = "https://d3r43jacxrwsrp.cloudfront.net/ai/sentiments.jpg";
 const voice = "https://d3r43jacxrwsrp.cloudfront.net/ai/voice.jpg";
 import ProductFooter from "@/Product/ProductFooter";
-import Reviews from "../Homecomps/Reviews";
 import TalkToUs from "../Othercomps/Talktous";
 import Process from "../Homecomps/Process";
 
@@ -202,7 +201,7 @@ function Aiml() {
         <h2 className="text-blackk mb-4  fontweight_1 text-center text-[32px] sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
           Our Digital Transformation Expertise
         </h2>
-        <div className="grid sm:px-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-6 sm:pt-8 gap-4">
+        <div className="grid px-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-6 sm:pt-8 gap-4">
           <div className="group p-4 sm:p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
             <div className="rounded-full flex items-start w-full">
               <FaLightbulb size={48} className="text-bloo" />
@@ -314,7 +313,6 @@ function Aiml() {
         </div>
       </div>
       <Cstdmain />
-      <Reviews />
       <TalkToUs product="AI/ML" />
       {/* <Footer /> */}
       <ProductFooter />

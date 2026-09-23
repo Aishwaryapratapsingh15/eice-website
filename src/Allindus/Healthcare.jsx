@@ -17,8 +17,6 @@ import TalkToUs from "../Othercomps/Talktous";
 
 
 
-import Reviews from "../Homecomps/Reviews";
-
 
 
 import Clients from "../Homecomps/Clients";
@@ -1612,10 +1610,6 @@ function Healthcare() {
 
 
       <Cstdmain />
-
-
-
-      <Reviews />
 
 
 

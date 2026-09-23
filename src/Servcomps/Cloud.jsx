@@ -15,7 +15,6 @@ const dtconsulting = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/dtconsult
 import Footer from "../Othercomps/Footer.jsx";
 import ProductFooter from "@/Product/ProductFooter";
 import TalkToUs from "../Othercomps/Talktous.jsx";
-import Reviews from "../Homecomps/Reviews.jsx";
 import Clients from "../Homecomps/Clients.jsx";
 import Clientele from "../Homecomps/Clientele.jsx";
 import Process from "../Homecomps/Process.jsx";
@@ -338,7 +337,6 @@ function Chatbot() {
         </div>
       </div>
       <Cstdmain />
-      <Reviews />
       <TalkToUs product="Cloud" />
       {/* <Footer /> */}
       <ProductFooter />

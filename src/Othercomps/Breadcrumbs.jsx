@@ -21,6 +21,7 @@ const PRODUCT_CRUMB_OVERRIDES = {
   "Eice Voice": { label: "EICE Voice", href: "/products/eice-voice" },
   EiceOps: { label: "EICE Ops", href: "/products/eice-ops" },
   "EICE Agent": { label: "EICE Agent", href: "/products/eice-agent" },
+  "EICE Catalyst": { label: "EICE Catalyst", href: "/products/eice-catalyst" },
   Easylogy: { label: "EasyLogy", href: "/products/easylogy" },
   "Flagship Services": { label: "Flagship Services", href: "/services/flagship-services" },
   "App Development": { label: "App Development", href: "/services/app-development" },
@@ -80,9 +81,13 @@ const ACRONYM_WORDS = new Set([
 const NO_INDEX_PAGE = new Set([]);
 
 // Purely structural URL segments with no real page of their own and no
-// meaningful label — omitted from the trail entirely (not just unlinked).
-// "products" only ever shows up as a dropdown menu, never a real page.
-const SKIP_SEGMENTS = new Set(["category", "products"]);
+// meaningful label — omitted from the trail entirely. Just "category": the
+// blog category listing lives at /blog/category/{slug}, and the literal
+// word "category" in that URL isn't a page to show a crumb for. "products"
+// is a real section with its own page, so — unlike this — it's shown like
+// any other segment (Home / Products / iSync Drive), consistent with every
+// other multi-level trail on the site (e.g. Home / {blog category} / post).
+const SKIP_SEGMENTS = new Set(["category"]);
 
 // Exact pages that never show a breadcrumb, regardless of depth.
 const HIDDEN_PATHS = new Set(["/products/eicerise", "/products/easylogy"]);
@@ -110,8 +115,10 @@ export function Breadcrumbs() {
 
   // Only surface the trail once the visitor is more than two pages deep
   // (home + one top-level section doesn't need it; a specific item within
-  // a section does).
-  if (segments.length < 2) return null;
+  // a section does) — except /products itself, which (unlike its sibling
+  // top-level sections) is a real catalog page that still wants "Home /
+  // Products" shown.
+  if (segments.length < 2 && pathname !== "/products") return null;
 
   // Blog post URLs are /blog/{category}/{slug} — the middle segment is a
   // category slug, but its real page lives at /blog/category/{slug}, not
@@ -122,24 +129,24 @@ export function Breadcrumbs() {
   const isBlogPostPath =
     segments[0] === "blog" && segments.length === 3 && segments[1] !== "category";
 
+  const rawCrumbs = segments.map((segment, index) => {
+    const isBlogCategorySegment = isBlogPostPath && index === 1;
+    const href = isBlogCategorySegment
+      ? `/blog/category/${segment}`
+      : `/${segments.slice(0, index + 1).join("/")}`;
+    return {
+      segment,
+      label: PATH_LABEL_OVERRIDES[href] ?? labelFor(segment),
+      href,
+      linkable:
+        !NO_INDEX_PAGE.has(segment) &&
+        !(isBlogCategorySegment && segment === "uncategorized"),
+    };
+  });
+
   const crumbs = [
     { label: "Home", href: "/", linkable: true },
-    ...segments
-      .map((segment, index) => {
-        const isBlogCategorySegment = isBlogPostPath && index === 1;
-        const href = isBlogCategorySegment
-          ? `/blog/category/${segment}`
-          : `/${segments.slice(0, index + 1).join("/")}`;
-        return {
-          segment,
-          label: PATH_LABEL_OVERRIDES[href] ?? labelFor(segment),
-          href,
-          linkable:
-            !NO_INDEX_PAGE.has(segment) &&
-            !(isBlogCategorySegment && segment === "uncategorized"),
-        };
-      })
-      .filter((crumb) => !SKIP_SEGMENTS.has(crumb.segment)),
+    ...rawCrumbs.filter((crumb) => !SKIP_SEGMENTS.has(crumb.segment)),
   ];
 
   // Nearly every page on this site already emits its own hand-built
