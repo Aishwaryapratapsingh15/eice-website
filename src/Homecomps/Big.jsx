@@ -192,7 +192,7 @@ function Big() {
 
   return (
     <div
-      className="relative overflow-visible font-manrope mt-40 text-blackk pb-4"
+      className="relative overflow-visible font-manrope pt-40 text-blackk pb-4"
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
       role="region"
@@ -201,7 +201,7 @@ function Big() {
       <div  className="  absolute inset-0 bg-bannerbg bg-cover bg-center bg-blend-overlay"></div>
       <div className="relative z-10 ">
         <div className=" mx-auto px-0 sm:px-2 xl:px-8">
-          <div className="sm:min-h-[480px] max-w-[1536px] mx-auto">
+          <div className="sm:min-h-[380px] max-w-[1536px] mx-auto">
             <div key={currentIndex} className="px-0 xl:px-12">
               {slides[currentIndex].content}
             </div>
