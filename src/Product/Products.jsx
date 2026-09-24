@@ -11,6 +11,7 @@ const isyncdriveIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/isyncdrive.
 const isyncliteIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/isynclite.svg";
 const verilockIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Verilock.svg";
 const eiceAgentIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/EiceAiAgent.svg";
+const eiceCatalystIcon = "https://d3r43jacxrwsrp.cloudfront.net/eice-catalyst/Catalyst.svg";
 const askEiceIcon = "https://d3r43jacxrwsrp.cloudfront.net/eice-aim/Knowledge-agent.svg";
 const eiceAimIcon = "https://d3r43jacxrwsrp.cloudfront.net/eice-aim/Action-Agent.svg";
 const eiceSmartfitIcon = "https://d3r43jacxrwsrp.cloudfront.net/smartfit/SmartFit_Icon.svg";
@@ -50,7 +51,7 @@ const products = [
   {
     name: "EICE Catalyst",
     category: "ai",
-    icon: eiceAgentIcon,
+    icon: eiceCatalystIcon,
     type: "AI · Platform",
     description:
       "An integrated AI platform for engineering acceleration, agentic delivery, modernization, enterprise AI, governance, and measurable value.",

@@ -265,7 +265,7 @@ const _FS  = "https://d3r43jacxrwsrp.cloudfront.net/flagship-services";
 
 const SvcNavIcon = ({ src }) => (
   <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg flex-shrink-0 p-2 flex items-center justify-center">
-    {src ? <img src={src} alt="" className="!w-6 !h-6 object-contain"  width="24" height="24" /> : null}
+    {src ? <img src={src} alt="" className="!w-6 !h-6 !max-w-none object-contain"  width="24" height="24" /> : null}
   </div>
 );
 
@@ -427,7 +427,7 @@ const OurProducts = ({ handleSetSelected = () => {} }) => (
               { href: "/products/eice-catalyst",  icon: eiceCatalystIcon, name: "EICE Catalyst", desc: "Integrated AI engineering platform" },
             ].map(({ href, icon, name, desc }) => (
               <Link key={href} href={href} onClick={() => handleSetSelected(null)} className="flex items-start gap-3 group">
-                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} style ={{ width: '24px'}} alt="" className="!w-6 object-contain"  width="24" height="24" /></div>
+                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} alt="" className="!w-6 !h-6 !max-w-none object-contain"  width="24" height="24" /></div>
                 <div><p className="font-semibold group-hover:text-bloo">{name}</p><p className="text-xs text-gray-500">{desc}</p></div>
               </Link>
             ))}
@@ -444,7 +444,7 @@ const OurProducts = ({ handleSetSelected = () => {} }) => (
               { href: "/products/eice-ops",   icon: eiceopsIcon,      name: "EICEOps",        desc: "Help Desk Management" },
             ].map(({ href, icon, name, desc }) => (
               <Link key={href} href={href} onClick={() => handleSetSelected(null)} className="flex items-start gap-3 group">
-                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} alt="" className="!w-6 !h-6 object-contain"  width="24" height="24" /></div>
+                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} alt="" className="!w-6 !h-6 !max-w-none object-contain"  width="24" height="24" /></div>
                 <div><p className="font-semibold group-hover:text-bloo">{name}</p><p className="text-xs text-gray-500">{desc}</p></div>
               </Link>
             ))}
@@ -459,7 +459,7 @@ const OurProducts = ({ handleSetSelected = () => {} }) => (
               { href: "/products/infrasight", icon: infrasightIcon, name: "InfraSight", desc: "Infra monitoring" },
             ].map(({ href, icon, name, desc }) => (
               <Link key={href} href={href} onClick={() => handleSetSelected(null)} className="flex items-start gap-3 group">
-                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} alt="" className="!w-6 !h-6 object-contain"  width="24" height="24" /></div>
+                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} alt="" className="!w-6 !h-6 !max-w-none object-contain"  width="24" height="24" /></div>
                 <div><p className="font-semibold group-hover:text-bloo">{name}</p><p className="text-xs text-gray-500">{desc}</p></div>
               </Link>
             ))}
@@ -474,7 +474,7 @@ const OurProducts = ({ handleSetSelected = () => {} }) => (
               { href: "/products/isync-lite",  icon: isyncliteIcon,  name: "iSyncLite",  desc: "Lightweight sync tool" },
             ].map(({ href, icon, name, desc }) => (
               <Link key={href} href={href} onClick={() => handleSetSelected(null)} className="flex items-start gap-3 group">
-                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} alt="" className="!w-6 !h-6 object-contain"  width="24" height="24" /></div>
+                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} alt="" className="!w-6 !h-6 !max-w-none object-contain"  width="24" height="24" /></div>
                 <div><p className="font-semibold group-hover:text-bloo">{name}</p><p className="text-xs text-gray-500">{desc}</p></div>
               </Link>
             ))}
