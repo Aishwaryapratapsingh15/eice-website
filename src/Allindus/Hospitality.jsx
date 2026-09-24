@@ -194,7 +194,7 @@ const CaseStudy = ({ title, description, image }) => (
 
 function Cstdmain() {
   return (
-    <div className="font-manrope px-5 sm:px-6 lg:px-8">
+    <div className="font-manrope px-4 md:px-10 lg:px-20 xl:px-40">
       <h2 className="text-bloo fontweight_1 text-center text-[22px] sm:text-[25px] py-2">
         Case Studies
       </h2>
@@ -293,7 +293,8 @@ export default function Hospitality() {
     <div className="font-manrope">
 
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="sm:max-w-7xl w-screen mx-auto px-4 pt-4 pb-8 sm:pb-12">
+      <section className="px-4 md:px-10 lg:px-20 xl:px-40 pt-4 pb-8 sm:pb-12">
+        <div className="max-w-7xl mx-auto">
         {/* Desktop: 3 images */}
         <div className="hidden sm:grid grid-cols-3 gap-4 mb-10">
           <img src={heroImg1} alt="Hospitality technology solutions" className="w-full h-64 object-cover rounded-xl"  width="1496" height="918" />
@@ -326,11 +327,13 @@ export default function Hospitality() {
             decisions — all from one integrated system.
           </p>
         </div>
+        </div>
       </section>
 
       {/* ── KEY SERVICES ─────────────────────────────────────────────────── */}
       <section className="pb-8 sm:py-16">
-        <div className="sm:max-w-7xl w-screen mx-auto px-4">
+        <div className="px-4 md:px-10 lg:px-20 xl:px-40">
+        <div className="max-w-7xl mx-auto">
 
           {/* Section Heading */}
           <div className="text-center mb-4 sm:mb-14">
@@ -385,10 +388,12 @@ export default function Hospitality() {
             ))}
           </div>
         </div>
+        </div>
       </section>
 
       {/* ── IMPLEMENTATION APPROACH ──────────────────────────────────────── */}
-      <section className="pb-8 sm:py-16 sm:max-w-7xl w-screen mx-auto px-4">
+      <section className="pb-8 sm:py-16 px-4 md:px-10 lg:px-20 xl:px-40">
+        <div className="max-w-7xl mx-auto">
         <div className="text-center mb-4 sm:mb-12">
           <h2 className="text-blackk fontweight_1 text-center text-[32px] sm:text-2xl md:text-3xl lg:text-[32px] max-w-3xl mx-auto pb-4">EICE Rise Implementation Approach</h2>
           <p className="font-medium text-blackk/70 text-[16px] sm:text-xl max-w-3xl mx-auto mt-3">
@@ -415,6 +420,7 @@ export default function Hospitality() {
             </div>
           ))}
         </div>
+        </div>
       </section>
 
       {/* ── CASE STUDIES ─────────────────────────────────────────────────── */}
@@ -423,7 +429,8 @@ export default function Hospitality() {
       </section>
 
       {/* ── TESTIMONIALS ─────────────────────────────────────────────────── */}
-      <section className="pb-8 sm:py-16 sm:max-w-7xl w-screen mx-auto px-4">
+      <section className="pb-8 sm:py-16 px-4 md:px-10 lg:px-20 xl:px-40">
+        <div className="max-w-7xl mx-auto">
         <div className="text-center mb-4 sm:mb-12">
           <h2 className="text-bloo fontweight_1 text-[22px] sm:text-[25px] py-2">Testimonials</h2>
           <h3 className="text-blackk fontweight_1 text-center text-[32px] sm:text-2xl md:text-3xl lg:text-[32px] max-w-3xl mx-auto">
@@ -491,6 +498,7 @@ export default function Hospitality() {
             </div>
           ))}
         </div>
+        </div>
       </section>
 
 
@@ -500,7 +508,8 @@ export default function Hospitality() {
         style={{ backgroundImage: `url(${BASE}/cta_img.png)` }}
       >
         <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(0,0,0,0.75) 40%, transparent 80%)" }} />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="relative px-4 md:px-10 lg:px-20 xl:px-40 py-8">
+          <div className="max-w-7xl mx-auto">
           <div className="max-w-lg flex flex-col gap-4 sm:gap-6">
             <h2 className="text-white fontweight_1 text-[32px] sm:text-3xl leading-snug">
               Our strength lies in delivering innovative, Industry-Specific Solutions. Partner with EICE to transform your hospitality business and achieve Exceptional Results.
@@ -512,6 +521,7 @@ export default function Hospitality() {
                 </button>
               </Link>
             </div>
+          </div>
           </div>
         </div>
       </section>

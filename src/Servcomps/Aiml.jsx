@@ -77,7 +77,7 @@ function Cstdmain() {
   const [activeIndustry, setActiveIndustry] = useState(industries[0].id);
 
   return (
-    <div className="font-manrope px-5 sm:px-6 lg:px-8 ">
+    <div className="font-manrope px-4 md:px-10 lg:px-20 xl:px-40 ">
       <h2 className="text-bloo text-center text-xl sm:text-2xl lg:text-3xl fontweight_1 mb-2 sm:mb-4 py-1">
         Case Studies
       </h2>
@@ -136,11 +136,12 @@ function Aiml() {
   return (
     <div>
       <div className="bg-gradient-to-r from-transparent via-bloo/5 to-bloo/10 pt-4">
-        <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen ">
+        <div className="relative font-manrope px-4 md:px-10 lg:px-20 xl:px-40">
+        <div className="max-w-7xl mx-auto">
           <div className="absolute -z-20 inset-0 right-[75%]">
             <img src={servicebannerpattern} alt=""  width="427" height="426" />
           </div>
-          <div className="flex lg:flex-row flex-col px-5 py-12 sm:py-20 items-center">
+          <div className="flex lg:flex-row flex-col py-12 sm:py-20 items-center">
             <div className="w-full">
               <h1 className="text-blackk  fontweight_1 text-[40px] sm:text-[35px] ">
                 Generative AI and Machine Learning
@@ -158,10 +159,12 @@ function Aiml() {
             </div>
           </div>
         </div>
+        </div>
       </div>
 
       <div className="py-8 md:py-20 lg:py-16">
-        <div className="relative font-manrope mx-auto px-5 lg:px-4 max-w-7xl">
+        <div className="relative font-manrope px-4 md:px-10 lg:px-20 xl:px-40">
+        <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             <div>
               <h1 className="text-blackk text-[22px] sm:text-[25px] fontweight_1  ">
@@ -192,16 +195,18 @@ function Aiml() {
             </div>
           </div>
         </div>
+        </div>
       </div>
       <Process />
-      <div className="px-5 relative font-manrope mx-auto sm:max-w-7xl w-screen py-4 sm:pt-18 sm:pb-8">
+      <div className="relative font-manrope px-4 md:px-10 lg:px-20 xl:px-40 py-4 sm:pt-18 sm:pb-8">
+      <div className="max-w-7xl mx-auto">
         <h1 className="text-bloo fontweight_1 sm:text-center text-[22px] sm:text-[25px]  py-2">
           Core Competencies
         </h1>
         <h2 className="text-blackk mb-4  fontweight_1 text-center text-[32px] sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
           Our Digital Transformation Expertise
         </h2>
-        <div className="grid px-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-6 sm:pt-8 gap-4">
+        <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-6 sm:pt-8 gap-4">
           <div className="group p-4 sm:p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
             <div className="rounded-full flex items-start w-full">
               <FaLightbulb size={48} className="text-bloo" />
@@ -247,20 +252,24 @@ function Aiml() {
             </div>
           </div>
         </div>
+        </div>
       </div>
 
       <div className="bg-zinc-50 sm:pb-12 sm:my-4">
-        <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen pt-12">
-          <h1 className="text-bloo px-5 text-[22px] responsiveFont1  flex items-start sm:items-center sm:justify-center">
+        <div className="relative font-manrope px-4 md:px-10 lg:px-20 xl:px-40 pt-12">
+        <div className="max-w-7xl mx-auto">
+          <h1 className="text-bloo text-[22px] responsiveFont1  flex items-start sm:items-center sm:justify-center">
             Why Choose EICE
           </h1>
-          <h2 className="text-blackk responsiveFont2  px-4 mt-4  text-center">
+          <h2 className="text-blackk responsiveFont2  mt-4  text-center">
             Key Advantages of Partnering with EICE for Your AI/ML and Generative
             AI Journey
           </h2>
         </div>
+        </div>
         <div className="">
-          <div className="relative px-4 font-manrope mx-auto sm:max-w-7xl w-screen pt-12">
+          <div className="relative font-manrope px-4 md:px-10 lg:px-20 xl:px-40 pt-12">
+          <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 gap-10">
               {[
                 {
@@ -309,6 +318,7 @@ function Aiml() {
                 </div>
               ))}
             </div>
+          </div>
           </div>
         </div>
       </div>

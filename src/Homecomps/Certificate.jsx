@@ -8,7 +8,7 @@ const c3 = "https://d3r43jacxrwsrp.cloudfront.net/cert/c3.png";
 const c4 = "https://d3r43jacxrwsrp.cloudfront.net/cert/c4.png";
 export default function Certificate() {
     return (
-        <div className={`${styles.certificate}`}>
+        <div className={`${styles.certificate} font-poppins py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40`}>
 
             <div className={`${styles.certificateHeading} text-[26px] sm:text-[35px]`}>
                 Our Certifications
@@ -19,7 +19,7 @@ export default function Certificate() {
 
             </div> */}
 
-            <div className="mt-8 mb-14 flex items-center gap-2 px-5 sm:justify-center sm:flex-wrap sm:gap-x-8 md:gap-x-12 lg:gap-x-20 sm:px-4">
+            <div className="mt-8 flex items-center gap-2 sm:justify-center sm:flex-wrap sm:gap-x-8 md:gap-x-12 lg:gap-x-20">
                 <div className="flex-1 min-w-0 sm:flex-none sm:w-28 md:w-36">
                     <img style={{width:"100%"}} width="144" height="144" src={c1} alt="EICE Technology industry certification badge" />
                 </div>

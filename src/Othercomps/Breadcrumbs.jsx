@@ -115,10 +115,8 @@ export function Breadcrumbs() {
 
   // Only surface the trail once the visitor is more than two pages deep
   // (home + one top-level section doesn't need it; a specific item within
-  // a section does) — except /products itself, which (unlike its sibling
-  // top-level sections) is a real catalog page that still wants "Home /
-  // Products" shown.
-  if (segments.length < 2 && pathname !== "/products") return null;
+  // a section does).
+  if (segments.length < 2) return null;
 
   // Blog post URLs are /blog/{category}/{slug} — the middle segment is a
   // category slug, but its real page lives at /blog/category/{slug}, not

@@ -46,12 +46,12 @@ const menu = "https://d3r43jacxrwsrp.cloudfront.net/menu.svg";
 
 const easylogyIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Easylogy.svg";
 const eiceriseIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/EiceRise.svg";
-const eicevoiceIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/EiceVoice.svg";
+const eicevoiceIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Eice-Voice.svg";
 const infrasightIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/infrasight.svg";
 const isyncdriveIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/isyncdrive.svg";
 const isyncliteIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/isynclite.svg";
 const verilockIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Verilock.svg";
-const eiceAgentIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/EiceAiAgent.svg";
+const eiceCatalystIcon = "https://d3r43jacxrwsrp.cloudfront.net/eice-catalyst/Catalyst.svg";
 const askEiceIcon = "https://d3r43jacxrwsrp.cloudfront.net/eice-aim/Knowledge-agent.svg";
 const eiceAimIcon = "https://d3r43jacxrwsrp.cloudfront.net/eice-aim/Action-Agent.svg";
 const eiceSmartfitIcon = "https://d3r43jacxrwsrp.cloudfront.net/smartfit/SmartFit_Icon.svg";
@@ -265,7 +265,7 @@ const _FS  = "https://d3r43jacxrwsrp.cloudfront.net/flagship-services";
 
 const SvcNavIcon = ({ src }) => (
   <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg flex-shrink-0 p-2 flex items-center justify-center">
-    {src ? <img src={src} alt="" className="w-full h-full object-contain"  width="40" height="40" /> : null}
+    {src ? <img src={src} alt="" className="!w-6 !h-6 object-contain"  width="24" height="24" /> : null}
   </div>
 );
 
@@ -424,10 +424,10 @@ const OurProducts = ({ handleSetSelected = () => {} }) => (
               { href: "/products/eice-voice",    icon: eicevoiceIcon, name: "EICE Voice",    desc: "Voice-Powered Order Management" },
               { href: "/products/ask-eice",       icon: askEiceIcon,   name: "Ask Eice",      desc: "AI-powered knowledge search" },
               { href: "/products/eice-aim",       icon: eiceAimIcon,   name: "Eice Aim",      desc: "AI-powered lead generation" },
-              { href: "/products/eice-catalyst",  icon: eiceAgentIcon, name: "EICE Catalyst", desc: "Integrated AI engineering platform" },
+              { href: "/products/eice-catalyst",  icon: eiceCatalystIcon, name: "EICE Catalyst", desc: "Integrated AI engineering platform" },
             ].map(({ href, icon, name, desc }) => (
               <Link key={href} href={href} onClick={() => handleSetSelected(null)} className="flex items-start gap-3 group">
-                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} alt="" className="w-full h-full object-contain"  width="40" height="40" /></div>
+                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} style ={{ width: '24px'}} alt="" className="!w-6 object-contain"  width="24" height="24" /></div>
                 <div><p className="font-semibold group-hover:text-bloo">{name}</p><p className="text-xs text-gray-500">{desc}</p></div>
               </Link>
             ))}
@@ -444,7 +444,7 @@ const OurProducts = ({ handleSetSelected = () => {} }) => (
               { href: "/products/eice-ops",   icon: eiceopsIcon,      name: "EICEOps",        desc: "Help Desk Management" },
             ].map(({ href, icon, name, desc }) => (
               <Link key={href} href={href} onClick={() => handleSetSelected(null)} className="flex items-start gap-3 group">
-                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} alt="" className="w-full h-full object-contain"  width="40" height="40" /></div>
+                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} alt="" className="!w-6 !h-6 object-contain"  width="24" height="24" /></div>
                 <div><p className="font-semibold group-hover:text-bloo">{name}</p><p className="text-xs text-gray-500">{desc}</p></div>
               </Link>
             ))}
@@ -459,7 +459,7 @@ const OurProducts = ({ handleSetSelected = () => {} }) => (
               { href: "/products/infrasight", icon: infrasightIcon, name: "InfraSight", desc: "Infra monitoring" },
             ].map(({ href, icon, name, desc }) => (
               <Link key={href} href={href} onClick={() => handleSetSelected(null)} className="flex items-start gap-3 group">
-                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} alt="" className="w-full h-full object-contain"  width="40" height="40" /></div>
+                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} alt="" className="!w-6 !h-6 object-contain"  width="24" height="24" /></div>
                 <div><p className="font-semibold group-hover:text-bloo">{name}</p><p className="text-xs text-gray-500">{desc}</p></div>
               </Link>
             ))}
@@ -474,7 +474,7 @@ const OurProducts = ({ handleSetSelected = () => {} }) => (
               { href: "/products/isync-lite",  icon: isyncliteIcon,  name: "iSyncLite",  desc: "Lightweight sync tool" },
             ].map(({ href, icon, name, desc }) => (
               <Link key={href} href={href} onClick={() => handleSetSelected(null)} className="flex items-start gap-3 group">
-                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} alt="" className="w-full h-full object-contain"  width="40" height="40" /></div>
+                <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} alt="" className="!w-6 !h-6 object-contain"  width="24" height="24" /></div>
                 <div><p className="font-semibold group-hover:text-bloo">{name}</p><p className="text-xs text-gray-500">{desc}</p></div>
               </Link>
             ))}

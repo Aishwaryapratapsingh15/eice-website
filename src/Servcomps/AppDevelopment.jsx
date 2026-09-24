@@ -140,7 +140,7 @@ export default function AppDevelopment() {
     <div className="bg-white text-gray-800 font-poppins">
 
       {/* HERO */}
-      <section className="text-left sm:text-center pt-4 pb-4 sm:pb-16 px-5 bg-white">
+      <section className="text-left sm:text-center pt-4 pb-4 sm:pb-16 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
         <div className="mt-5 flex justify-center mb-6">
           {heroImg ? (
             <img src={heroImg} alt="Application Development" className="mx-auto w-full max-w-[480px] object-contain"  width="590" height="333" />
@@ -177,7 +177,7 @@ export default function AppDevelopment() {
       </section>
 
       {/* OVERVIEW */}
-      <section className="py-4 sm:py-10 px-5 sm:px-6 md:px-10 lg:px-20 bg-[#F4F9FF]">
+      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-[#F4F9FF]">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-6 sm:gap-12 items-start">
 
@@ -248,7 +248,7 @@ export default function AppDevelopment() {
       </section>
 
       {/* OUR APP DEVELOPMENT SERVICES */}
-      <section className="py-4 sm:py-10 px-5 sm:px-6 md:px-10 lg:px-20 bg-white">
+      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
         <div className="max-w-6xl mx-auto">
           <p className="text-[#01B0F1] text-[22px] font-semibold mb-2 text-center">
             OUR APP DEVELOPMENT SERVICES
@@ -287,7 +287,7 @@ export default function AppDevelopment() {
 
       {/* HOW WE WORK — PROCESS */}
       {/* Blue step numbers (prominent, per PDF) — not faded gray like Consultancy/Flagship */}
-      <section className="py-4 sm:py-10 px-5 sm:px-6 md:px-10 lg:px-20 bg-gray-50">
+      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <p className="text-[#01B0F1] text-[22px] font-semibold mb-2 text-center">
             HOW WE WORK
@@ -323,7 +323,7 @@ export default function AppDevelopment() {
       </section>
 
       {/* TECH STACK */}
-      <section className="py-4 sm:py-10 px-5 sm:px-6 md:px-10 lg:px-20 bg-white">
+      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
         <div className="max-w-6xl mx-auto">
           <p className="text-[#01B0F1] text-[22px] font-semibold mb-2 text-center">
             TECHNOLOGY
@@ -355,7 +355,7 @@ export default function AppDevelopment() {
       </section>
 
       {/* WHY EICE */}
-      <section className="py-4 sm:py-10 px-5 sm:px-6 md:px-10 lg:px-20 bg-[#012060]">
+      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-[#012060]">
         <div className="max-w-6xl mx-auto">
           <p className="text-[#01B0F1] text-[22px] font-semibold mb-2 text-center">
             WHY EICE
@@ -380,7 +380,7 @@ export default function AppDevelopment() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#012060] py-4 sm:py-10 px-5 sm:px-6 md:px-10 lg:px-20">
+      <section className="bg-[#012060] py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[#01B0F1] text-[22px] font-semibold mb-2">
             GET STARTED

@@ -262,7 +262,7 @@ function Cstdmain() {
 
   return (
     <div className="font-manrope">
-      <header className="bg-gradient-to-r from-cyan-100/10 to-bloo/10 w-screen text-white pt-20 pb-8 text-center px-5 sm:px-0">
+      <header className="bg-gradient-to-r from-cyan-100/10 to-bloo/10 text-white pt-20 pb-8 text-center px-4 md:px-10 lg:px-20 xl:px-40">
         <h1 className="text-blackk fontsize_6 fontweight_1 mb-4">
           CASE STUDIES
         </h1>
@@ -273,7 +273,8 @@ function Cstdmain() {
           innovative software solutions and unparalleled expertise.
         </p>
       </header>
-      <main className="container mx-auto max-w-7xl pt-8 px-5 sm:px-0">
+      <main className="px-4 md:px-10 lg:px-20 xl:px-40 pt-8">
+      <div className="max-w-7xl mx-auto">
         <nav className="mb-8 sm:mb-12">
           <ul className="flex flex-wrap justify-center gap-2 sm:gap-4">
             {industries.map((industry) => (
@@ -317,6 +318,7 @@ function Cstdmain() {
             </div>
           </section>
         ))}
+      </div>
       </main>
     </div>
   );

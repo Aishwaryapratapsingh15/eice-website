@@ -209,9 +209,9 @@ export default function ProductsPage() {
   return (
     <main className="min-h-screen bg-white text-[#101828]">
       {/* Hero */}
-      <section className="bg-white px-5 py-4 text-left sm:text-center">
+      <section className="bg-white px-5 py-4 text-left sm:text-center sm:mt-10">
         {/* Hero image — placeholder until the real product image is ready */}
-        <div className="mt-5 flex justify-center">
+        <div className="mt-10 flex justify-center">
           <img
             src={productHeroImg}
             alt="EICE product ecosystem — AI & Automation, Logistics, Hospitality, and Enterprise IT"
@@ -444,9 +444,9 @@ export default function ProductsPage() {
       {/* CTA */}
       <div
         id="contact"
-        className="mx-auto max-w-7xl px-4 py-4 sm:py-10 md:px-10 lg:px-20 xl:px-40"
+        className=""
       >
-        <section className="overflow-hidden rounded-[24px] bg-gray-50">
+        <section className="overflow-hidden bg-gray-50">
           <div className="flex flex-col items-center gap-7 px-6 py-10 text-left sm:px-[70px] sm:py-[62px] sm:text-center">
             <div>
               <h2 className="mb-2 text-[32px] font-bold leading-tight text-gray-800 sm:text-4xl">
@@ -455,7 +455,7 @@ export default function ProductsPage() {
 
               <p className="mx-auto max-w-[620px] text-sm text-gray-500">
                 Tell us what your team is trying to improve. We can help
-                identify the relevant EICE product or scope a solution around
+                identify the relevant EICE product or <br />scope a solution around
                 your workflow.
               </p>
             </div>

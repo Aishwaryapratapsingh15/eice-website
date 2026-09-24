@@ -161,6 +161,7 @@ export default function MobileNavMenu() {
                   ["/products/eice-voice",  "EICE Voice"],
                   ["/products/eice-aim",  "EICE Aim"],
                   ["/products/ask-eice",  "Ask EICE"],
+                  ["/products/eice-catalyst", "EICE Catalyst"],
                   ["/products/eicerise",   "EICE Rise"],
                   ["/products/easylogy",   "EasyLogy"],
                   ["/products/smartfit",   "EICE SmartFit"],

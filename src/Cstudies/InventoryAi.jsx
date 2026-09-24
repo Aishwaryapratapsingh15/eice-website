@@ -32,7 +32,7 @@ function InventoryAi() {
     const navigate = useNavigate();
     return (
         <div className="">
-            <div className="max-w-7xl  mx-auto px-4 pt-4">
+            <div className="max-w-7xl  mx-auto px-4 md:px-10 lg:px-20 xl:px-40 pt-4">
                 <div className="w-full">
                     <h1 className="text-blackk fontweight_1 text-center text-[32px] py-2">
                         Development of AI-Based Inventory Management System
@@ -103,7 +103,7 @@ function InventoryAi() {
                 </div>
             </div>
             <div className="bg-zinc-50 py-12 mt-12">
-                <div className="max-w-7xl mx-auto px-4">
+                <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
                     <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
                         About Our Client
                     </h1>
@@ -119,7 +119,7 @@ function InventoryAi() {
                     </p>
                 </div>
             </div>
-            <div className="max-w-7xl mx-auto px-4">
+            <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
                 <div className="pt-8 pb-6">
                     <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
                         Unlocking Success
@@ -191,7 +191,7 @@ function InventoryAi() {
                     </div>
                 </div>
             </div>
-            <div className="w-full pb-20 px-4">
+            <div className="w-full pb-20 px-4 md:px-10 lg:px-20 xl:px-40">
                 <h2 className="text-blackk max-w-3xl pb-2 fontweight_1 text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] pt-12">
                     Project Outcomes
                 </h2>
@@ -312,7 +312,7 @@ function InventoryAi() {
                 </div>
             </div>
             {/* CTA */}
-            <section className="bg-[#012060] py-4 sm:py-10 px-5 sm:px-6 md:px-10 lg:px-20">
+            <section className="bg-[#012060] py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40">
                 <div className="max-w-4xl mx-auto text-center">
                     <h2 className="text-[32px] sm:text-4xl font-bold text-white mb-4 leading-tight">Tired of Stockouts and Overstock?</h2>
                     <p className="text-blue-200 text-[16px] sm:text-lg leading-relaxed mb-8 max-w-2xl mx-auto">Talk to our team about AI-driven inventory forecasting and reconciliation.</p>

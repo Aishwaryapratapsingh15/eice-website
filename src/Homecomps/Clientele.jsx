@@ -3,7 +3,7 @@ import Clients from "./Clients";
 
 function Clientele() {
   return (
-    <div className="relative font-manrope text-blackk mb-8 px-5 sm:px-6 lg:px-8 overflow-hidden">
+    <div className="relative font-poppins text-blackk py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 overflow-hidden">
       <div className="absolute inset-0 w-full h-full -z-10">
         <div className="bg-map bg-no-repeat bg-cover bg-center h-full w-full opacity-70"></div>
       </div>
@@ -12,13 +12,13 @@ function Clientele() {
         <h2 className="text-bloo text-left sm:text-center text-[18px] sm:text-[25px] fontweight_1 mb-2 sm:mb-3">
           Journey so far
         </h2>
-        <h1 className="text-left sm:text-center text-[26px] sm:text-[35px] fontweight_1 mb-8 sm:mb-12 lg:mb-16">
+        <h1 className="text-left sm:text-center text-[26px] sm:text-[35px] fontweight_1 mb-8">
           Milestones and Achievements
         </h1>
 
         {/* <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-6 lg:gap-12"> */}
         <div style={{display :"flex" , justifyContent : "space-between" , columnGap : "1rem" }}>
-          <Milestone number="14+" text="Years" smallText="Of Experience" />
+          <Milestone number="16+" text="Years" smallText="Of Experience" />
           <Milestone
             number="180+"
             text="Projects"

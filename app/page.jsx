@@ -1,8 +1,10 @@
 import dynamic from "next/dynamic";
 import Big from "../src/Homecomps/Big";
 import Offers from "../src/Homecomps/Offers";
+import OurProducts from "../src/Homecomps/OurProducts";
+import HowItWorks from "../src/Homecomps/HowItWorks";
+import AiCapability from "../src/Homecomps/AiCapability";
 import Solutions from "../src/Homecomps/Solutions";
-import Techs from "../src/Homecomps/Techs";
 
 // Below-the-fold sections: still server-rendered (content stays in the
 // initial HTML for SEO/no-JS), but their hydration JS is split into
@@ -13,7 +15,6 @@ const Clientele = dynamic(() => import("../src/Homecomps/Clientele"));
 const Clients = dynamic(() => import("../src/Homecomps/Clients"));
 const Casestudies = dynamic(() => import("../src/Homecomps/Casestudies"));
 const Certificate = dynamic(() => import("../src/Homecomps/Certificate"));
-const LatestVideos = dynamic(() => import("../src/Homecomps/LatestVideos"));
 const ProductFooter = dynamic(() => import("../src/Product/ProductFooter"));
 
 // export const metadata = {
@@ -78,11 +79,11 @@ export default function Page() {
       </div>
 
       <div>
-        <div className="flex flex-col gap-0.5 items-start sm:items-center justify-start sm:justify-center xl:pt-8 pt-2 sm:pt-4 w-screen px-4 mb-2 sm:mb-8 md:mb-12">
-          <h2 className="text-bloo text-[18px] sm:text-[25px] fontweight_1 py-2">Core Services</h2>
+        <div className="flex flex-col gap-0.5 items-start sm:items-center justify-start sm:justify-center xl:pt-8 pt-2 sm:pt-4 w-screen px-4 mb-6 sm:mb-10">
+          <h2 className="text-bloo text-[18px] sm:text-[25px] fontweight_1 py-2">Core capabilities</h2>
           <h2 className="text-blackk fontweight_1 text-left sm:text-center text-[26px] sm:text-3xl md:text-3xl lg:text-[32px] max-w-4xl py-1">
-            Unlocking Innovation: <br className="sm:hidden" />
-            Explore Our Suite of Solutions for Your Digital Evolution
+            Enterprise-grade intelligence, <br className="sm:hidden" />
+            built to scale
           </h2>
         </div>
         <div className="mx-auto px-0 sm:px-2">
@@ -90,12 +91,14 @@ export default function Page() {
         </div>
       </div>
 
+      <OurProducts />
+      <HowItWorks />
+      <AiCapability />
+
       <div>
-        <Techs />
         <Solutions />
         <Casestudies />
         <Clients />
-        <LatestVideos />
         <Clientele />
         <Certificate />
         <div style={{ marginBottom: "100px" }}></div>

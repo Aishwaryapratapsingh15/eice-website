@@ -301,7 +301,7 @@ function Cstdmain() {
 
   return (
 
-    <div className="font-manrope px-5 sm:px-6 lg:px-8">
+    <div className="font-manrope px-4 md:px-10 lg:px-20 xl:px-40">
 
       <h2 className="text-bloo fontweight_1 text-center text-[22px] sm:text-[25px] py-2">
 
@@ -505,9 +505,9 @@ function Oilandgas() {
 
     <div className="overflow-x-hidden">
 
-      <div className="sm:max-w-7xl w-full mx-auto px-5 sm:px-0">
+      <div className="px-4 md:px-10 lg:px-20 xl:px-40">
 
-        <div className="sm:max-w-7xl pt-4 pb-8 px-0 sm:px-4 w-full mx-auto grid ">
+        <div className="sm:max-w-7xl pt-4 pb-8 w-full mx-auto grid ">
 
           {/* Desktop: full image */}
 
@@ -543,7 +543,7 @@ function Oilandgas() {
 
         </div>
 
-        <div className="max-w-7xl mx-auto text-center px-5 sm:px-8 flex flex-col gap-4 pb-8">
+        <div className="max-w-7xl mx-auto text-center flex flex-col gap-4 pb-8">
 
           <h1 className="text-blackk  fontweight_1 text-center text-[32px] sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl">
 
@@ -579,7 +579,7 @@ function Oilandgas() {
 
 
 
-        <div className="sm:max-w-3xl w-screen mx-auto text-center px-5 sm:px-0 pb-4">
+        <div className="sm:max-w-3xl mx-auto text-center pb-4">
 
           <h1 className="text-bloo fontweight_1 text-center text-[22px] sm:text-[25px] pb-4">
 
@@ -595,7 +595,7 @@ function Oilandgas() {
 
         </div>
 
-        <div className="sm:max-w-7xl w-full mx-auto px-5 sm:px-4 pb-8">
+        <div className="sm:max-w-7xl w-full mx-auto pb-8">
 
           <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-12 gap-4 items-center justify-center">
 
@@ -685,7 +685,7 @@ function Oilandgas() {
 
         </div>
 
-        <div className="px-5 sm:px-0 pb-4">
+        <div className="pb-4">
 
           <h1 className="text-blackk  fontweight_1 text-center text-[32px] sm:text-2xl mx-auto md:text-3xl lg:mb-4 lg:text-[32px] max-w-3xl ">
 
@@ -697,7 +697,7 @@ function Oilandgas() {
 
         </div>
 
-        <div className="grid px-5 sm:px-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 pb-8">
+        <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 pb-8">
 
           <div className="group  p-4 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
 

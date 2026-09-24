@@ -35,7 +35,8 @@ function Servmain() {
   }, []);
   return (
     <div className="">
-      <div className=" relative font-manrope mx-auto px-5 sm:px-6 lg:px-8 sm:max-w-7xl w-screen pb-0">
+      <div className="relative font-manrope px-4 md:px-10 lg:px-20 xl:px-40 pb-0">
+      <div className="max-w-7xl mx-auto">
         <div className="pt-4"></div>
         <h1 className="text-bloo fontweight_1 text-left sm:text-center text-[22px] sm:text-[25px] pt-2 pb-4">
           Our Services
@@ -53,12 +54,14 @@ function Servmain() {
           ideas into reality.
         </h2>
       </div>
+      </div>
       <Offers />
 
       <div className="py-4 sm:py-10">
         <div id="flagshipServices"></div>
         <div className="bg-zinc-50 pt-4">
-          <div className="pt-2 pb-4 relative font-manrope mx-auto px-5 sm:px-6 lg:px-8 sm:max-w-7xl w-screen">
+          <div className="pt-2 pb-4 relative font-manrope px-4 md:px-10 lg:px-20 xl:px-40">
+          <div className="max-w-7xl mx-auto">
             <div>
               <h1 className="text-bloo fontweight_1 text-left sm:text-center text-[22px] sm:text-[25px] py-2">
                 Our Flagship Services
@@ -146,14 +149,24 @@ function Servmain() {
                   </div>
                 </Link>
               </div>
+              <div className="flex justify-center pt-6">
+                <Link
+                  to="/services/flagship-services"
+                  className="inline-flex items-center gap-2 py-3 px-6 border-2 border-blue-900 text-blue-900 font-semibold rounded-md hover:bg-blue-900 hover:text-white transition duration-200"
+                >
+                  View More →
+                </Link>
+              </div>
             </div>
+          </div>
           </div>
         </div>
       </div>
 
       <div className="">
         <div id="emergingTechnologies"></div>
-        <div className="py-4 sm:py-10 relative font-manrope mx-auto px-5 sm:px-6 lg:px-8 sm:max-w-7xl w-screen">
+        <div className="py-4 sm:py-10 relative font-manrope px-4 md:px-10 lg:px-20 xl:px-40">
+        <div className="max-w-7xl mx-auto">
           <div>
             <h1 className="text-bloo fontweight_1 text-left sm:text-center text-[22px] sm:text-[25px] py-2">
               Emerging Technologies
@@ -223,10 +236,12 @@ function Servmain() {
             </div>
           </div>
         </div>
+        </div>
       </div>
 
       <div className="bg-zinc-50" id="appDevelopment">
-        <div className="py-4 sm:py-10 relative font-manrope mx-auto px-5 sm:px-6 lg:px-8 sm:max-w-7xl w-screen">
+        <div className="py-4 sm:py-10 relative font-manrope px-4 md:px-10 lg:px-20 xl:px-40">
+        <div className="max-w-7xl mx-auto">
           <div>
             <h1 className="text-bloo fontweight_1 text-left sm:text-center text-[22px] sm:text-[25px] py-2">
               App Development Services
@@ -298,10 +313,19 @@ function Servmain() {
                 </div>
               </Link>
             </div>
+            <div className="flex justify-center pt-6">
+              <Link
+                to="/services/app-development"
+                className="inline-flex items-center gap-2 py-3 px-6 border-2 border-blue-900 text-blue-900 font-semibold rounded-md hover:bg-blue-900 hover:text-white transition duration-200"
+              >
+                View More →
+              </Link>
+            </div>
           </div>
         </div>
+        </div>
       </div>
-      <div id="consultancy" className="pt-4 sm:pt-10 pb-2 px-5 sm:px-0">
+      <div id="consultancy" className="pt-4 sm:pt-10 pb-2 px-4 md:px-10 lg:px-20 xl:px-40">
         <div>
           <h1 className="text-bloo fontweight_1 text-left sm:text-center fontsize_2 py-2">
             Consultancy Service

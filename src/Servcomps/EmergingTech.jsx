@@ -137,7 +137,7 @@ export default function EmergingTech() {
     <div className="bg-white text-gray-800 font-poppins">
 
       {/* HERO */}
-      <section className="text-left sm:text-center pt-4 pb-4 sm:pb-16 px-5 bg-white">
+      <section className="text-left sm:text-center pt-4 pb-4 sm:pb-16 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
         <div className="mt-5 flex justify-center mb-6">
           {/* Replace with actual hero image once available */}
           {heroImg ? (
@@ -175,7 +175,7 @@ export default function EmergingTech() {
       </section>
 
       {/* OVERVIEW — WHAT WE DO */}
-      <section className="py-4 sm:py-10 px-5 sm:px-6 md:px-10 lg:px-20 bg-[#F4F9FF]">
+      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-[#F4F9FF]">
         <div className="max-w-6xl mx-auto">
           <p className="text-[#01B0F1] text-[22px] font-semibold mb-4 sm:mb-8 sm:text-center">
             OVERVIEW — WHAT WE DO
@@ -214,7 +214,7 @@ export default function EmergingTech() {
       </section>
 
       {/* OUR EMERGING TECH SERVICES */}
-      <section className="py-4 sm:py-10 px-5 sm:px-6 md:px-10 lg:px-20 bg-white">
+      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
         <div className="max-w-6xl mx-auto">
           <p className="text-[#01B0F1] text-[22px] font-semibold mb-2 text-center">
             OUR EMERGING TECH SERVICES
@@ -249,7 +249,7 @@ export default function EmergingTech() {
       </section>
 
       {/* HOW WE WORK — PROCESS */}
-      <section className="py-4 sm:py-10 px-5 sm:px-6 md:px-10 lg:px-20 bg-[#012060]">
+      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-[#012060]">
         <div className="max-w-6xl mx-auto">
           <p className="text-[#01B0F1] text-[22px] font-semibold mb-2 text-center">
             HOW WE WORK
@@ -293,7 +293,7 @@ export default function EmergingTech() {
       </section>
 
       {/* TECH STACK */}
-      <section className="py-4 sm:py-10 px-5 sm:px-6 md:px-10 lg:px-20 bg-white">
+      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
         <div className="max-w-6xl mx-auto">
           <p className="text-[#01B0F1] text-[22px] font-semibold mb-2 text-center">
             TECHNOLOGY
@@ -325,7 +325,7 @@ export default function EmergingTech() {
       </section>
 
       {/* WHY EICE */}
-      <section className="py-4 sm:py-10 px-5 sm:px-6 md:px-10 lg:px-20 bg-[#F4F9FF]">
+      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-[#F4F9FF]">
         <div className="max-w-6xl mx-auto">
           <p className="text-[#01B0F1] text-[22px] font-semibold mb-2 text-center">
             WHY EICE
@@ -350,7 +350,7 @@ export default function EmergingTech() {
       </section>
 
       {/* CTA — GET STARTED */}
-      <section className="bg-[#012060] py-4 sm:py-10 px-5 sm:px-6 md:px-10 lg:px-20">
+      <section className="bg-[#012060] py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[#01B0F1] text-[22px] font-semibold mb-2">
             GET STARTED

@@ -114,7 +114,7 @@ function Cstdmain() {
   const [activeIndustry, setActiveIndustry] = useState(industries[0].id);
 
   return (
-    <div className="font-manrope px-5 sm:px-6 lg:px-8 ">
+    <div className="font-manrope px-4 md:px-10 lg:px-20 xl:px-40 ">
       <h2 className="text-bloo text-center text-xl sm:text-2xl lg:text-3xl fontweight_1 mb-2 sm:mb-4 py-1">
         Case Studies
       </h2>
@@ -172,11 +172,11 @@ function DevOps() {
   return (
     <div>
       <div className="bg-gradient-to-r from-transparent via-bloo/5 to-bloo/10 pt-4">
-        <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen ">
+        <div className="relative font-manrope max-w-7xl mx-auto ">
           <div className="absolute -z-20 inset-0 right-[75%]">
             <img src={servicebannerpattern} alt=""  width="427" height="426" />
           </div>
-          <div className="flex lg:flex-row flex-col px-5 py-12 sm:py-20 items-center">
+          <div className="flex lg:flex-row flex-col px-4 md:px-10 lg:px-20 xl:px-40 py-12 sm:py-20 items-center">
             <div className="w-full">
               <h1 className="text-blackk fontweight_1 text-[40px] sm:text-[35px] ">
                 DevOps Services
@@ -197,7 +197,8 @@ function DevOps() {
       </div>
 
       <div className="py-8  ">
-        <div className="relative font-manrope mx-auto px-5 lg:px-4 max-w-7xl">
+        <div className="relative font-manrope px-4 md:px-10 lg:px-20 xl:px-40">
+        <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
 
             <div>
@@ -224,19 +225,21 @@ function DevOps() {
             </div>
           </div>
         </div>
+        </div>
 
       </div>
 
 
 
-      <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen py-4 lg:pt-4 pb-12">
-        <h1 className="px-5 text-bloo fontweight_1 text-center text-[22px] sm:text-[25px] py-2">
+      <div className="relative font-manrope px-4 md:px-10 lg:px-20 xl:px-40 py-4 lg:pt-4 pb-12">
+      <div className="max-w-7xl mx-auto">
+        <h1 className="text-bloo fontweight_1 text-center text-[22px] sm:text-[25px] py-2">
           Our DevOps Services
         </h1>
-        <h2 className="px-5 text-blackk fontweight_1 text-center text-[32px] sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
+        <h2 className="text-blackk fontweight_1 text-center text-[32px] sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
           Our DevOps Expertise
         </h2>
-        <div className="grid px-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 pt-8">
+        <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 pt-8">
           <div className="group p-4 sm:p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
             <div className="rounded-full flex items-start w-full">
               <FaCloud size={48} className="text-bloo" />
@@ -329,6 +332,7 @@ function DevOps() {
             </div>
           </div>
         </div>
+      </div>
       </div>
       <Cstdmain />
       <TalkToUs product="DevOps" />

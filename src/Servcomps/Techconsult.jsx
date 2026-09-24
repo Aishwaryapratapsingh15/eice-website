@@ -479,7 +479,7 @@ function Cstdmain() {
 
 
 
-    <div className="font-manrope px-5 sm:px-6 lg:px-8 ">
+    <div className="font-manrope px-4 md:px-10 lg:px-20 xl:px-40 ">
 
 
 
@@ -711,7 +711,7 @@ function TechnologyConsulting() {
 
 
 
-        <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen ">
+        <div className="relative font-manrope max-w-7xl mx-auto ">
 
 
 
@@ -727,7 +727,7 @@ function TechnologyConsulting() {
 
 
 
-          <div className="flex lg:flex-row flex-col px-5 py-20 items-center">
+          <div className="flex lg:flex-row flex-col px-4 md:px-10 lg:px-20 xl:px-40 py-20 items-center">
 
 
 
@@ -803,7 +803,8 @@ function TechnologyConsulting() {
 
 
 
-        <div className="relative font-manrope mx-auto px-5 lg:px-4 max-w-7xl">
+        <div className="relative font-manrope px-4 md:px-10 lg:px-20 xl:px-40">
+        <div className="mx-auto max-w-7xl">
 
 
 
@@ -901,17 +902,19 @@ function TechnologyConsulting() {
 
         </div>
 
+        </div>
+
 
 
       </div>
 
 
 
-      <div className="relative font-manrope mx-auto sm:max-w-7xl w-screen py-4 lg:pt-24 pt-12 pb-20  ">
+      <div className="relative font-manrope px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto py-4 lg:pt-24 pt-12 pb-20  ">
 
 
 
-        <h1 className="px-5 text-bloo fontweight_1 text-center fontsize_2  py-2">
+        <h1 className="text-bloo fontweight_1 text-center fontsize_2  py-2">
 
 
 
@@ -923,7 +926,7 @@ function TechnologyConsulting() {
 
 
 
-        <h2 className="px-5 text-blackk fontweight_1 text-center text-2xl sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
+        <h2 className="text-blackk fontweight_1 text-center text-2xl sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
 
 
 
@@ -935,7 +938,7 @@ function TechnologyConsulting() {
 
 
 
-        <div className="grid px-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 pt-8">
+        <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 pt-8">
 
 
 

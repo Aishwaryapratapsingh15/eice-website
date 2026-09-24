@@ -32,7 +32,7 @@ export default function Clients() {
 
   return (
     <>
-      <div className="font-manrope px-5 sm:px-0 sm:w-[90%] sm:mx-auto" style={{ marginTop: "60px", marginBottom: "60px" }}>
+      <div className="font-poppins py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40">
         <h2 className="text-bloo text-left sm:text-center text-[18px] sm:text-[25px] fontweight_1 mb-6">
           Our Clients
         </h2>

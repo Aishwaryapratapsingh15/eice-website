@@ -1,49 +1,56 @@
 ﻿"use client";
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "@/nextNavigation";
-import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
-const genai = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/genai.png";
-const devops = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/devops.png";
-const digitrans = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/digitrans.png";
-
+import { BsChevronLeft, BsChevronRight, BsStars } from "react-icons/bs";
+const hero1image = "https://d3r43jacxrwsrp.cloudfront.net/landing-page/home-hero-image1.png";
+const hero2image = "https://d3r43jacxrwsrp.cloudfront.net/landing-page/home-hero-image2.png";
+const hero3image = "https://d3r43jacxrwsrp.cloudfront.net/landing-page/home-hero-image3.png";
+const haloicon = "https://d3r43jacxrwsrp.cloudfront.net/landing-page/Halo.svg";
+  
 
 function Big() {
   const slides = [
     {
       content: (
-        <div className=" mx-auto px-5 sm:px-12 lg:px-0 xl:px-12 2xl:px-16">
+        <div className=" mx-auto px-5 sm:px-12 lg:px-0 xl:px-12 2xl:px-16 sm:mt-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 sm:gap-8 items-center">
-            <div className="flex flex-col space-y-2 sm:space-y-4 ">
-              <h1 className="text-blackk fontsize_6 font-semibold leading-tight lg:leading-[3.7rem]">
-                Unlock Creativity with{" "}
-                <span className="text-bloo">Generative AI</span>
-                {/* Transforming your Business through */}
-                {/* <span className="text-bloo font-semibold block mt-2">Generative AI</span> */}
+            <div className="flex flex-col space-y-2 sm:space-y-2 ">
+              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-bloo/10 text-bloo text-xs sm:text-sm font-semibold tracking-wide w-fit">
+                <BsStars size={14} />
+                AI-POWERED ENTERPRISE SOLUTIONS
+              </span>
+              <h1 className="text-blackk fontsize_6 font-semibold leading-tight">
+                Transforming Enterprise Operations with{" "}
+                <span className="text-bloo">AI</span>
               </h1>
               <p className="font-medium text-blackk/70 sm:text-xl text-lg">
-                As a focused AI development company, we leverage models like
-                GANs and GPT-3. Our expertise transforms data into innovative
-                solutions, enhancing business capabilities and driving
-                technological advancements.
+                Build smarter workflows, uncover predictive insights, and
+                automate complex decisions with EICE's AI-powered solutions.
               </p>
               <div className="flex flex-row sm:flex-row gap-4 ">
                 <Link href="/contact">
-                  <button aria-label="Let's Connect" className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 border-2 border-blue-900 bg-blue-900 text-white hover:bg-blue-800 text-sm sm:text-base">
-                    Let's Connect
+                  <button aria-label="Contact Our Team" className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 border-2 border-blue-900 bg-blue-900 text-white hover:bg-blue-800 text-sm sm:text-base">
+                    Contact Our Team
                   </button>
                 </Link>
                 <Link href="/services/ai-ml">
                   <button aria-label="Learn More" className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 border-2 border-blue-900 text-blue-900 hover:bg-blue-100 text-sm sm:text-base">
-                    Learn More
+                    Learn More →
                   </button>
                 </Link>
               </div>
             </div>
-            <div className="flex lg:order-last order-first xl:justify-end justify-center mt-2 lg:mt-0">
+            <div className="relative flex lg:order-last order-first justify-center mt-2 lg:mt-0">
               <img
-                className="w-full max-w-md rounded-lg"
-                src={genai}
-                alt="Generative AI"
+                src={haloicon}
+                alt=""
+                aria-hidden="true"
+                className="animate-spin-slow absolute inset-0 m-auto w-full max-w-lg h-auto -z-10 pointer-events-none select-none"
+              />
+              <img
+                className="relative w-full max-w-md rounded-lg"
+                src={hero1image}
+                alt="Home Hero Image 1"
                 width="500"
                 height="400"
               />
@@ -54,39 +61,46 @@ function Big() {
     },
     {
       content: (
-        <div className=" mx-auto px-5 sm:px-12 lg:px-0 xl:px-12 2xl:px-16">
+        <div className=" mx-auto px-5 sm:px-12 lg:px-0 xl:px-12 2xl:px-16 sm:mt-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 sm:gap-8 items-center">
-            <div className="flex flex-col space-y-2 sm:space-y-4">
-              <h1 className="text-blackk fontsize_6 font-semibold leading-tight lg:leading-[3.7rem]">
-                {/* Improving your Efficiency with
-                              <span className="text-bloo font-semibold block mt-2">DevOps</span> */}
-                Accelerate innovation with{" "}
-                <span className="text-bloo">DevOps</span>
+            <div className="flex flex-col space-y-2 sm:space-y-2">
+              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-bloo/10 text-bloo text-xs sm:text-sm font-semibold tracking-wide w-fit">
+                <BsStars size={14} />
+                ENTERPRISE ENGINEERING, DONE RIGHT
+              </span>
+              <h1 className="text-blackk fontsize_6 font-semibold leading-tight">
+                Software <span className="text-bloo">Built to Last</span>,
+                Not Just to Ship
               </h1>
               <p className="font-medium text-blackk/70 sm:text-xl text-lg">
-                As a top DevOps development firm, we specialize in optimizing
-                your business's infrastructure and operations. Our customized
-                DevOps solutions empower business owners to lead, thrive, and
-                innovate in the digital age.
+                From legacy modernization to custom web, mobile, and SaaS
+                platforms — we engineer for what happens after launch,
+                backed by CMMI Level 3 and ISO-certified practices.
               </p>
               <div className="flex flex-row sm:flex-row gap-4">
                 <Link href="/contact">
                   <button className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 border-2 border-blue-900 bg-blue-900 text-white hover:bg-blue-800 text-sm sm:text-base">
-                    Let's Connect
+                    Talk to Our Team
                   </button>
                 </Link>
-                <Link href="/services/devops">
+                <Link href="/services">
                   <button className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 border-2 border-blue-900 text-blue-900 hover:bg-blue-100 text-sm sm:text-base">
-                    Learn More
+                    Explore Our Services →
                   </button>
                 </Link>
               </div>
             </div>
-            <div className="flex lg:order-last order-first xl:justify-end justify-center mt-2 lg:mt-0">
+            <div className="relative flex lg:order-last order-first justify-center mt-2 lg:mt-0">
               <img
-                className="w-full max-w-md rounded-lg scale-[.8]"
-                src={devops}
-                alt="DevOps solutions for accelerated innovation"
+                src={haloicon}
+                alt=""
+                aria-hidden="true"
+                className="animate-spin-slow absolute inset-0 m-auto w-full max-w-lg h-auto -z-10 pointer-events-none select-none"
+              />
+              <img
+                className="relative w-full max-w-md rounded-lg"
+                src={hero2image}
+                alt="Enterprise engineering and modernization"
                 width="500"
                 height="400"
               />
@@ -97,39 +111,47 @@ function Big() {
     },
     {
       content: (
-        <div className=" mx-auto px-5 sm:px-12 lg:px-0 xl:px-12 2xl:px-16">
+        <div className=" mx-auto px-5 sm:px-12 lg:px-0 xl:px-12 2xl:px-16 sm:mt-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 sm:gap-8 items-center">
-            <div className="flex flex-col space-y-2 sm:space-y-4">
-              <h1 className="text-blackk fontsize_6 font-semibold leading-tight lg:leading-[3.7rem]">
-                {/* Driving business Growth with
-                            <span className="text-bloo font-semibold block mt-2 2xl:text-nowrap text-wrap">Digital Transformation</span> */}
-                Transform your Business with{" "}
-                <span className="text-bloo">Digital Solutions</span>
+            <div className="flex flex-col space-y-2 sm:space-y-2">
+              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-bloo/10 text-bloo text-xs sm:text-sm font-semibold tracking-wide w-fit">
+                <BsStars size={14} />
+                REAL RESULTS, NOT PROMISES
+              </span>
+              <h1 className="text-blackk fontsize_6 font-semibold leading-tight">
+                <span className="text-bloo">82 Applications.</span> One
+                Governance Standard. Zero Guesswork.
               </h1>
               <p className="font-medium text-blackk/70 sm:text-xl text-lg">
-                As the digital landscape evolves, businesses need effective
-                strategies. We offer tailored digital transformation services,
-                using our expertise to drive innovation, enhance efficiency, and
-                improve processes and customer experiences.
+                We don't just talk about AI value — we measure it. Our
+                AI-Enabled Engineering Excellence Center delivers
+                portfolio-wide governance and task-level AI impact tracking
+                for a real, currently-operating enterprise client.
               </p>
               <div className="flex flex-row sm:flex-row gap-4">
                 <Link href="/contact">
                   <button className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 border-2 border-blue-900 bg-blue-900 text-white hover:bg-blue-800 text-sm sm:text-base">
-                    Let's Connect
+                    Talk to Our Team
                   </button>
                 </Link>
-                <Link href="/services/digital-transformation">
+                <Link href="/services/ai-ml">
                   <button className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 border-2 border-blue-900 text-blue-900 hover:bg-blue-100 text-sm sm:text-base">
-                    Learn More
+                    See How It Works →
                   </button>
                 </Link>
               </div>
             </div>
-            <div className="flex lg:order-last order-first xl:justify-end justify-center mt-2 lg:mt-0">
+            <div className="relative flex lg:order-last order-first justify-center mt-2 lg:mt-0">
               <img
-                className="w-full max-w-md rounded-lg"
-                src={digitrans}
-                alt="Digital transformation solutions for business growth"
+                src={haloicon}
+                alt=""
+                aria-hidden="true"
+                className="animate-spin-slow absolute inset-0 m-auto w-full max-w-lg h-auto -z-10 pointer-events-none select-none"
+              />
+              <img
+                className="relative w-full max-w-md rounded-lg"
+                src={hero3image}
+                alt="Home Hero Image 3"
                 width="500"
                 height="400"
               />
@@ -138,7 +160,6 @@ function Big() {
         </div>
       ),
     },
-    // ... Similar structure for other slides ...
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -171,7 +192,7 @@ function Big() {
 
   return (
     <div
-      className="relative overflow-hidden font-manrope mt-24 text-blackk pb-4"
+      className="relative overflow-visible font-manrope mt-40 text-blackk pb-4"
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
       role="region"
@@ -180,7 +201,7 @@ function Big() {
       <div  className="  absolute inset-0 bg-bannerbg bg-cover bg-center bg-blend-overlay"></div>
       <div className="relative z-10 ">
         <div className=" mx-auto px-0 sm:px-2 xl:px-8">
-          <div className="sm:min-h-[450px] max-w-[1536px] mx-auto">
+          <div className="sm:min-h-[480px] max-w-[1536px] mx-auto">
             <div key={currentIndex} className="px-0 xl:px-12">
               {slides[currentIndex].content}
             </div>

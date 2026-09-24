@@ -113,7 +113,8 @@ function Indusmain() {
 
   return (
     <div id="indusmain-root">
-      <div className="font-manrope max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 pt-32 sm:pt-32 2xl:pt-8">
+      <div className="font-manrope px-4 md:px-10 lg:px-20 xl:px-40 pt-32 sm:pt-32 2xl:pt-8">
+      <div className="max-w-7xl mx-auto">
         <section className="text-left sm:text-center">
           <h1 className="text-blackk fontweight_1 text-left sm:text-center text-[32px] sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-7xl py-2">
             Driving <span className="text-bloo">Digital Transformation</span>{" "}
@@ -164,6 +165,7 @@ function Indusmain() {
             the digital era.
           </h1>
         </div>
+      </div>
       </div>
       <Talktous />
     </div>

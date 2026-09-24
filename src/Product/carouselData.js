@@ -1,11 +1,13 @@
 ﻿const carousel1 = "https://d3r43jacxrwsrp.cloudfront.net/product-carousel/isynclite-carousel.png";
 const carousel2 = "https://d3r43jacxrwsrp.cloudfront.net/product-carousel/isyncdrive-carousel.png";
-const carousel3 = "https://d3r43jacxrwsrp.cloudfront.net/product-carousel/eiceAgent-carousel.png";
 const carousel4 = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/infrasight.png";
 const carousel5 = "https://d3r43jacxrwsrp.cloudfront.net/verilock/verilockHero.png";  
 const carousel6 = "https://d3r43jacxrwsrp.cloudfront.net/product-carousel/eiceVoice-carousel.png";
 const carousel7 = "https://d3r43jacxrwsrp.cloudfront.net/smartfit/SmartFit.png";
 const carousel8 = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/screens.png";
+const carousel9 = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/Frame2.png";
+const carousel10 = "https://d3r43jacxrwsrp.cloudfront.net/EiceAgent/Frame1.png";
+const carousel11 = "https://d3r43jacxrwsrp.cloudfront.net/eice-catalyst/eice_catalyst_hero.png";
 
 const productSlides = [
   {
@@ -25,11 +27,28 @@ const productSlides = [
     path:"/products/isync-drive"
     },
   {
-    image: carousel3,
-    title: "EICE Agent",
-    tags: ["Simplify", "Automate", "Accelerate"],
-    description: "The EICE Agent is a powerful AI-driven ecosystem that brings together EICEAIM(The Action Agent) and AskEICE(The Knowledge Agent) to automate outreach, quality leads, and transform enterprise data into instant, actionable intelligence.",
-    path:"/products/eice-agent"
+    image: carousel9,
+    title: "AskEICE",
+    tags: ["Ask", "Discover", "Decide"],
+    description:
+      "AskEICE is the knowledge agent that turns your organization's own documents into instant, verified answers. Employees get accurate responses through WhatsApp on mobile or desktop — no new app, login, or learning curve required. It replaces hours of manual searching with a single question, asked in plain language.",
+    path: "/products/ask-eice",
+  },
+  {
+    image: carousel10,
+    title: "EICEAIM",
+    tags: ["Engage", "Qualify", "Convert"],
+    description:
+      "EICEAIM is the action agent that automates outreach, lead qualification, and follow-ups with configurable AI personas. It replaces manual telecalling with a scalable, 24×7 communication system that never misses a follow-up. The result is consistent engagement and measurably better conversion rates.",
+    path: "/products/eice-aim",
+  },
+  {
+    image: carousel11,
+    title: "EICE Catalyst",
+    tags: ["Engineer", "Modernize", "Measure"],
+    description:
+      "EICE Catalyst is an integrated AI platform that helps organizations move from AI adoption to AI-driven engineering. It spans engineering acceleration, agentic delivery, legacy modernization, enterprise AI, governance, and value measurement — one connected platform, not six disconnected initiatives. The result is faster delivery, safer modernization, and provable ROI, with governance built in from day one, not bolted on after launch.",
+    path: "/products/eice-catalyst",
   },
   {
     image: carousel4,

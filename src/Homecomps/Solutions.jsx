@@ -329,32 +329,29 @@ import { NavLink, Link } from "@/nextNavigation";
 
 const industries = [
   {
-    link: "industries/healthcare",
-    name: "HEALTHCARE",
+    link: "industries/hospitality",
+    name: "Hospitality",
     description:
-      "Innovative solutions to improve patient care and streamline healthcare operations",
-    bgClass: "bg-healthcare",
+      "Digital platforms designed to streamline hotel operations, enhance guest experiences, and optimize revenue.",
+    image: "https://d3r43jacxrwsrp.cloudfront.net/landing-page/hospitality.png",
   },
   {
-    link: "industries/financial",
-    name: "FINANCIAL",
+    link: "industries/logistics",
+    name: "Logistics",
     description:
-      "Secure software to streamline solutions and enhance customer experience",
-    bgClass: "bg-finance",
+      "Intelligent logistics solutions that optimize supply chains, improve visibility, and enhance operational efficiency.",
+    image: "https://d3r43jacxrwsrp.cloudfront.net/landing-page/logistics.png",
   },
   {
-    link: "industries/digital-media",
-    name: "DIGITAL MEDIA",
+    // No dedicated industries subpage exists yet for Energy & Utilities, and
+    // no background image asset has been supplied for it either — links to
+    // the industries hub for now and renders on a plain gradient instead of
+    // a photo until both are ready.
+    link: "industries",
+    name: "Energy & utilities",
     description:
-      "Advanced solutions for content creation, distribution and monetization",
-    bgClass: "bg-digimedia",
-  },
-  {
-    link: "industries/education",
-    name: "EDUCATION",
-    description:
-      "Digital tools that enhance learning and administrative efficiency",
-    bgClass: "bg-education",
+      "Enterprise-grade systems for monitoring, analytics, and operational intelligence across energy value chains.",
+    image: "https://d3r43jacxrwsrp.cloudfront.net/landing-page/energy&utility.png",
   },
 ];
 
@@ -379,7 +376,7 @@ function Solutions() {
   }, []);
 
   return (
-    <div className="font-manrope py-12 sm:py-12 lg:py-12 px-5 sm:px-6 lg:px-8">
+    <div className="font-poppins py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40">
       <div className="max-w-7xl mx-auto">
 
         {/* Mobile heading */}
@@ -387,12 +384,12 @@ function Solutions() {
           Solutions for Industries
         </h2>
 
-        {/* Desktop headings — unchanged */}
+        {/* Desktop headings */}
         <h2 className="hidden sm:block text-bloo font-bold text-center text-xl lg:text-2xl py-2">
           Industries We Serve
         </h2>
         <h1 className="hidden sm:block text-blackk font-bold text-center text-2xl sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
-          IT & Software Development Solutions for Industries
+          Industry-Focused Solutions With Enterprise Depth
         </h1>
 
         {/* Mobile: infinite auto-scroll */}
@@ -407,7 +404,7 @@ function Solutions() {
         </div>
 
         {/* Desktop: grid — unchanged */}
-        <div className="hidden sm:grid sm:grid-cols-2 sm:gap-6 sm:py-12 lg:grid-cols-4 sm:px-4">
+        <div className="hidden sm:grid sm:grid-cols-3 sm:gap-6 sm:mt-8 sm:mb-8 sm:px-4">
           {industries.map((industry, index) => (
             <IndustryCard key={index} {...industry} />
           ))}
@@ -438,23 +435,29 @@ function Solutions() {
   );
 }
 
-function IndustryCard({ name, description, bgClass, link }) {
+function IndustryCard({ name, description, image, link }) {
   return (
-    <div
-      className={`relative ${bgClass} bg-cover rounded-xl cursor-pointer transition duration-200 hover:shadow-lg hover:shadow-blackk w-[72vw] flex-shrink-0 snap-start h-[200px] sm:w-auto sm:flex-shrink sm:snap-align-none sm:h-[25rem] lg:h-[30rem]`}
+    <Link
+      to={`/${link}`}
+      className="block bg-white rounded-xl border border-gray-200 overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 w-[72vw] flex-shrink-0 snap-start sm:w-auto sm:flex-shrink sm:snap-align-none"
     >
-      <Link
-        to={`/${link}`}
-        className="absolute inset-0 bg-gradient-to-t from-stone-900/90 from-20% via-stone-800/95 via-20% to-transparent rounded-xl flex flex-col justify-end p-3 sm:p-4"
-      >
-        <h3 className="text-stone-100 font-extrabold text-sm sm:text-3xl mb-1 sm:mb-2">
+      <div
+        className="w-full h-[160px] sm:h-[220px] lg:h-[260px] bg-cover bg-center"
+        style={
+          image
+            ? { backgroundImage: `url(${image})` }
+            : { backgroundImage: "linear-gradient(135deg, #012060, #01B0F1)" }
+        }
+      />
+      <div className="p-4 sm:p-5">
+        <h3 className="text-blackk font-bold text-lg sm:text-xl mb-2">
           {name}
         </h3>
-        <p className="text-white font-semibold text-xs sm:text-base">
+        <p className="text-blackk/70 text-sm sm:text-base">
           {description}
         </p>
-      </Link>
-    </div>
+      </div>
+    </Link>
   );
 }
 

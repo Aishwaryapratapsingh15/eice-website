@@ -459,18 +459,19 @@ function Legal() {
 
 
   return (
+    <>
 
 
 
-    <div className="font-manrope px-5 sm:px-6 lg:px-8">
+    <div className="font-manrope px-4 md:px-10 lg:px-20 xl:px-40">
 
 
 
-      <div className="sm:max-w-7xl w-screen mx-auto pb-8">
+      <div className="sm:max-w-7xl mx-auto pb-8">
 
 
 
-        <div className="sm:max-w-7xl pt-4 pb-8 px-5 sm:px-4 w-screen mx-auto grid">
+        <div className="sm:max-w-7xl pt-4 pb-8 mx-auto grid">
 
 
 
@@ -503,7 +504,7 @@ function Legal() {
 
 
 
-        <div className="max-w-7xl mx-auto text-center px-5 sm:px-8 flex flex-col gap-4 pb-8">
+        <div className="max-w-7xl mx-auto text-center flex flex-col gap-4 pb-8">
 
 
 
@@ -587,7 +588,7 @@ function Legal() {
 
 
 
-        <div className="sm:max-w-3xl w-screen mx-auto text-center px-5 sm:px-0 pb-4">
+        <div className="sm:max-w-3xl mx-auto text-center pb-4">
 
 
 
@@ -616,7 +617,7 @@ function Legal() {
 
 
 
-        <div className="sm:max-w-7xl w-full mx-auto px-5 sm:px-4 pb-8">
+        <div className="sm:max-w-7xl w-full mx-auto pb-8">
 
 
 
@@ -796,7 +797,7 @@ function Legal() {
 
 
 
-        <div className="px-5 sm:px-0 pb-4">
+        <div className="pb-4">
 
 
 
@@ -816,7 +817,7 @@ function Legal() {
 
 
 
-        <div className="grid px-5 sm:px-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 pb-8">
+        <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 pb-8">
 
 
 
@@ -1149,6 +1150,7 @@ function Legal() {
 
 
       </div>
+      </div>
 
 
 
@@ -1170,10 +1172,10 @@ function Legal() {
 
 
 
-    </div>
 
 
 
+    </>
   );
 
 

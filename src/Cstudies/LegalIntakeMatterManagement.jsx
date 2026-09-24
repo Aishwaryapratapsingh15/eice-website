@@ -78,7 +78,7 @@ function LegalIntakeMatterManagement() {
   const navigate = useNavigate();
   return (
     <div className="">
-      <div className="max-w-7xl mx-auto px-4 pt-4">
+      <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40 pt-4">
         <div className="w-full">
           <h1 className="text-blackk fontweight_1 text-left sm:text-center text-[32px] py-2">
             How EICE Technology, an Indian IT Company, Helped a US Large Law Firm<br className="hidden sm:block" /> Automate Legal Intake and Matter Management
@@ -110,7 +110,7 @@ function LegalIntakeMatterManagement() {
       </div>
 
       <div className="bg-zinc-50 py-12">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
           <h2 className="text-blackk max-w-3xl pb-2 fontweight_1 text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] text-left sm:text-center">
             Who Is Our Client?
           </h2>
@@ -121,7 +121,7 @@ function LegalIntakeMatterManagement() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
         <div className="w-full pb-6">
           <h2 className="text-blackk max-w-3xl pb-2 fontweight_1 text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] pt-12 text-left sm:text-center">
             The Challenge
@@ -144,7 +144,7 @@ function LegalIntakeMatterManagement() {
       </div>
 
       <div className="bg-zinc-50 py-12">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
           <h2 className="text-blackk max-w-3xl pb-2 fontweight_1 text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] text-left sm:text-center">
             Our Approach
           </h2>
@@ -162,7 +162,7 @@ function LegalIntakeMatterManagement() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
         <div className="w-full pb-6">
           <h2 className="text-blackk max-w-3xl pb-2 fontweight_1 text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] pt-12 text-left sm:text-center">
             What We Delivered
@@ -175,7 +175,7 @@ function LegalIntakeMatterManagement() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 pb-20">
+      <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40 pb-20">
         <h2 className="text-blackk max-w-3xl pb-2 fontweight_1 text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] pt-4 text-left sm:text-center">
           Technology Stack
         </h2>
@@ -200,7 +200,7 @@ function LegalIntakeMatterManagement() {
       </div>
 
       <div className="bg-zinc-50 py-12">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
           <h2 className="text-blackk max-w-3xl pb-2 fontweight_1 text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] text-left sm:text-center">
             Business Benefits
           </h2>
@@ -211,7 +211,7 @@ function LegalIntakeMatterManagement() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
         <div className="w-full pb-6">
           <h2 className="text-blackk max-w-3xl pb-2 fontweight_1 text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] pt-12 text-left sm:text-center">
             Why Choose EICE Technology?
@@ -235,7 +235,7 @@ function LegalIntakeMatterManagement() {
       </div>
 
       <div className="bg-zinc-50 py-16">
-        <div className="max-w-7xl mx-auto px-4">
+        <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
           <h2 className="text-blackk max-w-3xl pb-2 fontweight_1 text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] text-left sm:text-center">
             Let&apos;s Build the Future of Legal Operations Technology
           </h2>
@@ -244,7 +244,7 @@ function LegalIntakeMatterManagement() {
       </div>
 
       {/* CTA */}
-      <section className="bg-[#012060] py-4 sm:py-10 px-5 sm:px-6 md:px-10 lg:px-20">
+      <section className="bg-[#012060] py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-[32px] sm:text-4xl font-bold text-white mb-4 leading-tight">Ready to Automate Your Legal Intake and Matter Management?</h2>
           <p className="text-blue-200 text-[16px] sm:text-lg leading-relaxed mb-8 max-w-2xl mx-auto">Talk to our team about centralising legal request intake, assignment, and SLA tracking on Microsoft Power Platform.</p>

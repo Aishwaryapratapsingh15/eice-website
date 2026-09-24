@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import { useNavigate } from "@/nextNavigation";
+import ProductCarousel from "./ProductCarousel";
+import productSlides from "./carouselData";
 import ProductFooter from "./ProductFooter";
 
 const arrowIcon = "https://d3r43jacxrwsrp.cloudfront.net/arrow.svg";
@@ -55,8 +57,7 @@ const capabilities = [
     tagline: "Prove the return, not just the rollout.",
     desc: "Measuring productivity, quality, adoption, risk, and business outcomes with dashboards, defect-impact tracking, AI contribution and ROI attribution models, risk scorecards, and a continuous-improvement feedback loop.",
     value: "Measurable ROI, transparent reporting, and continuous improvement tied to business outcomes.",
-    proof:
-      "A structured, task-level record of AI tool usage and effort savings is already delivered for a real, currently-operating enterprise client.",
+    
   },
 ];
 
@@ -209,7 +210,7 @@ export default function EiceCatalystPage() {
         <div className="max-w-6xl mx-auto">
           <div className="mx-auto mb-8 max-w-3xl text-left sm:text-center">
             <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155] mb-4">
-              Designed as a platform, not a collection of services.
+              Designed as a platform, not a<br/> collection of services.
             </h2>
             <p className="text-[#64748B] text-[16px] sm:text-lg leading-relaxed">
               Accelerate everyday engineering work, safely modernize legacy systems, deploy
@@ -233,11 +234,6 @@ export default function EiceCatalystPage() {
                 <div className="mt-4 border-t border-[#E2E8F0] pt-4 text-sm text-[#012060]">
                   <strong className="text-[#01B0F1]">Customer value:</strong> {cap.value}
                 </div>
-                {cap.proof && (
-                  <div className="mt-4 rounded-xl border border-[#C7EDF9] bg-[#ECF9FE] px-4 py-3 text-sm text-[#17415D]">
-                    <strong className="text-[#012060]">Proof today:</strong> {cap.proof}
-                  </div>
-                )}
               </article>
             ))}
           </div>
@@ -361,28 +357,31 @@ export default function EiceCatalystPage() {
       </section>
 
       {/* CTA */}
-      <section id ="contact" className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
-        <div className="max-w-7xl mx-auto overflow-hidden rounded-[24px] bg-gray-50">
+      <section id ="contact" className=" bg-white">
+        <div className="max-w-7xl mx-auto overflow-hidden bg-gray-50">
           <div className="flex flex-col items-center gap-6 px-6 py-10 text-left sm:px-16 sm:py-14 sm:text-center">
             <div>
               <h2 className="text-[32px] sm:text-4xl font-bold leading-tight text-gray-800">
-                Ready to Move From AI Adoption to AI-Driven Engineering?
+                Ready to Move From AI Adoption to <br />AI-Driven Engineering?
               </h2>
               <p className="mt-3 max-w-2xl mx-auto text-gray-500">
-                Talk to our team about which capabilities fit your current technology estate
+                Talk to our team about which capabilities fit your <br/>current technology estate
                 and AI maturity.
               </p>
             </div>
 
-            <a
-              href="mailto:business@eicetechnology.com"
+            <button
+              onClick={() => navigate("/products/eicerise/form?product=EICE%20Catalyst")}
               className="inline-flex items-center gap-2 rounded-md bg-[#012060] px-10 py-3 text-[18px] text-white transition hover:bg-blue-800"
             >
-              Talk to Our Catalyst Team →
-            </a>
+              Request a Demo
+              <img src={arrowIcon} alt="arrow" width="24" height="24" />
+            </button>
           </div>
         </div>
       </section>
+
+      <ProductCarousel slides={productSlides} />
 
       <ProductFooter />
     </div>

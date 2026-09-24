@@ -137,7 +137,7 @@ export default function FlagshipServices() {
     <div className="bg-white text-gray-800 font-poppins">
 
       {/* HERO */}
-      <section className="text-left sm:text-center pt-4 pb-4 sm:pb-16 px-5 bg-white">
+      <section className="text-left sm:text-center pt-4 pb-4 sm:pb-16 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
         <div className="mt-5 flex justify-center mb-6">
           {heroImg ? (
             <img src={heroImg} alt="Flagship Services" className="mx-auto w-full max-w-[480px] object-contain"  width="427" height="240" />
@@ -174,7 +174,7 @@ export default function FlagshipServices() {
       </section>
 
       {/* OVERVIEW — WHAT WE DO */}
-      <section className="py-4 sm:py-10 px-5 sm:px-6 md:px-10 lg:px-20 bg-[#F4F9FF]">
+      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-[#F4F9FF]">
         <div className="max-w-6xl mx-auto">
           <p className="text-[#01B0F1] text-[22px] font-semibold mb-4 sm:mb-8">
             OVERVIEW — WHAT WE DO
@@ -213,7 +213,7 @@ export default function FlagshipServices() {
       </section>
 
       {/* OUR FLAGSHIP SERVICES */}
-      <section className="py-4 sm:py-10 px-5 sm:px-6 md:px-10 lg:px-20 bg-white">
+      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
         <div className="max-w-6xl mx-auto">
           <p className="text-[#01B0F1] text-[22px] font-semibold mb-2 text-center">
             OUR FLAGSHIP SERVICES
@@ -251,7 +251,7 @@ export default function FlagshipServices() {
 
       {/* HOW WE WORK — PROCESS */}
       {/* Light gray bg + white bordered cards — same as Consultancy process section */}
-      <section className="py-4 sm:py-10 px-5 sm:px-6 md:px-10 lg:px-20 bg-gray-50">
+      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <p className="text-[#01B0F1] text-[22px] font-semibold mb-2 text-center">
             HOW WE WORK
@@ -301,7 +301,7 @@ export default function FlagshipServices() {
       </section>
 
       {/* TECH STACK */}
-      <section className="py-4 sm:py-10 px-5 sm:px-6 md:px-10 lg:px-20 bg-white">
+      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
         <div className="max-w-6xl mx-auto">
           <p className="text-[#01B0F1] text-[22px] font-semibold mb-2 text-center">
             TECHNOLOGY
@@ -333,7 +333,7 @@ export default function FlagshipServices() {
       </section>
 
       {/* WHY EICE */}
-      <section className="py-4 sm:py-10 px-5 sm:px-6 md:px-10 lg:px-20 bg-[#F4F9FF]">
+      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-[#F4F9FF]">
         <div className="max-w-6xl mx-auto">
           <p className="text-[#01B0F1] text-[22px] font-semibold mb-2 text-center">
             WHY EICE
@@ -358,7 +358,7 @@ export default function FlagshipServices() {
       </section>
 
       {/* CTA — GET STARTED */}
-      <section className="bg-[#012060] py-4 sm:py-10 px-5 sm:px-6 md:px-10 lg:px-20">
+      <section className="bg-[#012060] py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-[#01B0F1] text-[22px] font-semibold mb-2">
             GET STARTED
