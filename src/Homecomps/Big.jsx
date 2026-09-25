@@ -45,7 +45,7 @@ function Big() {
                 src={haloicon}
                 alt=""
                 aria-hidden="true"
-                className="animate-spin-slow absolute inset-0 m-auto w-full max-w-lg h-auto -z-10 pointer-events-none select-none"
+                className="animate-spin-slow absolute inset-0 m-auto w-[75%] max-w-lg h-auto -z-10 pointer-events-none select-none"
               />
               <img
                 className="relative w-full max-w-md rounded-lg"
@@ -95,7 +95,7 @@ function Big() {
                 src={haloicon}
                 alt=""
                 aria-hidden="true"
-                className="animate-spin-slow absolute inset-0 m-auto w-full max-w-lg h-auto -z-10 pointer-events-none select-none"
+                className="animate-spin-slow absolute inset-0 m-auto w-[75%] max-w-lg h-auto -z-10 pointer-events-none select-none"
               />
               <img
                 className="relative w-full max-w-md rounded-lg"
@@ -146,7 +146,7 @@ function Big() {
                 src={haloicon}
                 alt=""
                 aria-hidden="true"
-                className="animate-spin-slow absolute inset-0 m-auto w-full max-w-lg h-auto -z-10 pointer-events-none select-none"
+                className="animate-spin-slow absolute inset-0 m-auto w-[75%] max-w-lg h-auto -z-10 pointer-events-none select-none"
               />
               <img
                 className="relative w-full max-w-md rounded-lg"
@@ -192,7 +192,7 @@ function Big() {
 
   return (
     <div
-      className="relative overflow-visible font-manrope pt-40 text-blackk pb-4"
+      className="relative overflow-visible font-manrope pt-[100px] text-blackk pb-4"
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
       role="region"
