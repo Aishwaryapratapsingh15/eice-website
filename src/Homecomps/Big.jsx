@@ -28,14 +28,14 @@ function Big() {
                 automate complex decisions with EICE's AI-powered solutions.
               </p>
               <div className="flex flex-row sm:flex-row gap-4 ">
-                <Link href="/contact">
-                  <button aria-label="Contact Our Team" className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 border-2 border-blue-900 bg-blue-900 text-white hover:bg-blue-800 text-sm sm:text-base">
-                    Contact Our Team
+                <Link href="/products/eicerise/form?product=Home">
+                  <button aria-label="Request A Demo" className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 border-2 border-blue-900 bg-blue-900 text-white hover:bg-blue-800 text-sm sm:text-base">
+                    Request A Demo
                   </button>
                 </Link>
-                <Link href="/services/ai-ml">
-                  <button aria-label="Learn More" className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 border-2 border-blue-900 text-blue-900 hover:bg-blue-100 text-sm sm:text-base">
-                    Learn More →
+                <Link href="/contact">
+                  <button aria-label="Contact Us" className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 border-2 border-blue-900 text-blue-900 hover:bg-blue-100 text-sm sm:text-base">
+                    Contact Us
                   </button>
                 </Link>
               </div>
@@ -78,14 +78,14 @@ function Big() {
                 backed by CMMI Level 3 and ISO-certified practices.
               </p>
               <div className="flex flex-row sm:flex-row gap-4">
-                <Link href="/contact">
+                <Link href="/products/eicerise/form?product=Home">
                   <button className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 border-2 border-blue-900 bg-blue-900 text-white hover:bg-blue-800 text-sm sm:text-base">
-                    Talk to Our Team
+                    Request A Demo
                   </button>
                 </Link>
-                <Link href="/services">
+                <Link href="/contact">
                   <button className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 border-2 border-blue-900 text-blue-900 hover:bg-blue-100 text-sm sm:text-base">
-                    Explore Our Services →
+                    Contact Us
                   </button>
                 </Link>
               </div>
@@ -129,14 +129,14 @@ function Big() {
                 for a real, currently-operating enterprise client.
               </p>
               <div className="flex flex-row sm:flex-row gap-4">
-                <Link href="/contact">
+                <Link href="/products/eicerise/form?product=Home">
                   <button className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 border-2 border-blue-900 bg-blue-900 text-white hover:bg-blue-800 text-sm sm:text-base">
-                    Talk to Our Team
+                    Request A Demo
                   </button>
                 </Link>
-                <Link href="/services/ai-ml">
+                <Link href="/contact">
                   <button className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 border-2 border-blue-900 text-blue-900 hover:bg-blue-100 text-sm sm:text-base">
-                    See How It Works →
+                    Contact Us
                   </button>
                 </Link>
               </div>

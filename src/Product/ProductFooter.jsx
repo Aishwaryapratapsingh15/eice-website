@@ -9,8 +9,6 @@ const FbIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/FB.svg";
 const linkedinIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/linkedin.svg";
 const XIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/X.svg";
 const InstaIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Insta.svg";
-const whatsappIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Whatsapp.svg";
-const phoneIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Phone.svg";
 const socialLinks = [
   {
     name: "X",
@@ -89,13 +87,6 @@ export default function Footer() {
 
             <p className="text-white text-2xl font-bold break-words">
               info@eicetechnology.com
-            </p>
-
-            <p className="text-white text-lg mt-2 flex flex-wrap items-center justify-start md:justify-end gap-2">
-              Phone:  <img src={whatsappIcon} alt="Whatsapp" className="w-4 h-4"  width="16" height="16" /> +91 987 189 5200
-            </p>
-            <p className="text-white text-lg mt-2 flex flex-wrap items-center justify-start md:justify-end gap-4">
-              <img src={phoneIcon} alt="Whatsapp" className="w-4 h-4 invert"  width="16" height="16" /> +1 832 280 4632
             </p>
           </div>
         </div>
