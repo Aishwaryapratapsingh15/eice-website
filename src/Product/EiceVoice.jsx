@@ -89,7 +89,7 @@ export default function EiceVoice() {
 
   const steps = [
     { title: "Speak", desc: "Staff speak the order naturally - table number, items, quantities, and modifiers - in their own words." },
-    { title: "Understand", desc: "EICE Voice's NLU engine parses the speech, resolves menu items, and structures the order in real time." },
+    { title: "Understand", desc: "EICE Voice's AI-driven NLU engine parses the speech, resolves menu items, and structures the order in real time." },
     { title: "Confirm", desc: "Order is read back or shown on screen for instant confirmation before submission. Errors caught before they happen." },
     { title: "Dispatch", desc: "Confirmed order is sent to the kitchen display and synced with the POS system - hands-free, zero lag." },
   ];
@@ -160,7 +160,7 @@ export default function EiceVoice() {
 
           {/* HEADING */}
           <h1 className="text-[40px] md:text-[54px] font-bold">
-           <span className="text-[#01B0F1]"> Voice-Powered </span>Order Management <br /> 
+           <span className="text-[#01B0F1]"> AI-Powered </span>VoiceOrder Management <br /> 
             
             for Modern Hospitality
           </h1>
@@ -234,7 +234,7 @@ export default function EiceVoice() {
             <img src={tickIcon} width="24" height="24" />
           </div>
           <p className="space-y-3 text-[#334155] font-semibold">
-            Custom NLU trained for hospitality vocabulary
+            Custom AI-driven NLU trained for hospitality vocabulary
           </p>
         </div>
 
@@ -243,7 +243,7 @@ export default function EiceVoice() {
             <img src={tickIcon} width="24" height="24" />
           </div>
           <p className="space-y-3 text-[#334155] font-semibold">
-            Real-time speech-to-text with order confirmation
+            AI-driven real-time speech-to-text with order confirmation
           </p>
         </div>
 
@@ -290,7 +290,7 @@ export default function EiceVoice() {
         </h2>
 
          <h4 className="text-[22px] sm:text-lg md:text-xl text-[#64748B] font- text-center mb-4 sm:mb-10 max-w-3xl mx-auto">
-    Powerful voice-first features designed for hospitality speed and accuracy.
+    Powered by AI, built for hospitality speed and accuracy.
   </h4>
 
         <div className="grid md:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">

@@ -570,7 +570,7 @@ function Logistics() {
 
 
 
-          <h1 className="text-bloo fontweight_1 text-center text-[22px] sm:text-[25px] pb-4">
+          <h1 className="text-bloo text-center text-xs font-extrabold uppercase tracking-[0.12em] pb-4">
             Key Services
 
 

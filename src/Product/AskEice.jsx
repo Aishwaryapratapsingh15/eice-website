@@ -340,7 +340,7 @@ export default function AskEice() {
       <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 md:gap-14 items-center">
           <div>
-            <p className="text-[#01B0F1] text-xs font-bold tracking-[0.15em] uppercase mb-3">RAG-based semantic search</p>
+            <p className="text-[#01B0F1] text-xs font-extrabold uppercase tracking-[0.12em] mb-3">RAG-based semantic search</p>
             <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155] mb-4">Context, not just keywords</h2>
             <p className="text-[#64748B] text-[16px] sm:text-lg leading-relaxed mb-8">
               Powered by retrieval-augmented generation, AskEICE understands what you mean — not just what you typed. Every answer comes with full source traceability.

@@ -82,7 +82,7 @@ function CityGasAdani() {
       </div>
       <div className="bg-zinc-50 py-12 mt-12">
         <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
-          <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">
+          <h1 className="text-bloo flex items-center justify-center h-full text-xs font-extrabold uppercase tracking-[0.12em] py-2">
             About Our Client
           </h1>
           <h2 className="text-blackk fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">

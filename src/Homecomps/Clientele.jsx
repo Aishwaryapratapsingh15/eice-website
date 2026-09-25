@@ -9,7 +9,7 @@ function Clientele() {
       </div>
 
       <div className="relative max-w-5xl mx-auto">
-        <h2 className="text-bloo text-left sm:text-center text-[18px] sm:text-[25px] fontweight_1 mb-2 sm:mb-3">
+        <h2 className="text-bloo text-left sm:text-center text-xs font-extrabold uppercase tracking-[0.12em] mb-2 sm:mb-3">
           Journey so far
         </h2>
         <h1 className="text-left sm:text-center text-[26px] sm:text-[35px] fontweight_1 mb-8">

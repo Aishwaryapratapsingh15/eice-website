@@ -14,7 +14,7 @@ function Casestudies() {
     >
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
         <div>
-          <h2 className="text-bloo font-bold text-[18px] sm:text-[25px] py-2">
+          <h2 className="text-bloo text-xs font-extrabold uppercase tracking-[0.12em] py-2">
             Case Studies
           </h2>
           <h1 className="text-blackk font-bold text-[26px] sm:text-3xl lg:text-[32px] leading-tight mb-6">

@@ -483,7 +483,7 @@ function Cstdmain() {
 
 
 
-      <h2 className="text-bloo text-center text-xl sm:text-2xl lg:text-3xl fontweight_1 mb-2 sm:mb-4 py-1">
+      <h2 className="text-bloo text-xs font-extrabold uppercase tracking-[0.12em] text-center mb-2 sm:mb-4 py-1">
 
 
 
@@ -914,7 +914,7 @@ function TechnologyConsulting() {
 
 
 
-        <h1 className="text-bloo fontweight_1 text-center fontsize_2  py-2">
+        <h1 className="text-bloo text-xs font-extrabold uppercase tracking-[0.12em] text-center py-2">
 
 
 

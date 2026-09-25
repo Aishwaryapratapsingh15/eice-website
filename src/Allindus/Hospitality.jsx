@@ -195,7 +195,7 @@ const CaseStudy = ({ title, description, image }) => (
 function Cstdmain() {
   return (
     <div className="font-manrope px-4 md:px-10 lg:px-20 xl:px-40">
-      <h2 className="text-bloo fontweight_1 text-center text-[22px] sm:text-[25px] py-2">
+      <h2 className="text-bloo text-xs font-extrabold uppercase tracking-[0.12em] text-center py-2">
         Case Studies
       </h2>
       <h1 className="text-blackk fontweight_1 text-center text-[32px] sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1 pb-8">
@@ -337,7 +337,7 @@ export default function Hospitality() {
 
           {/* Section Heading */}
           <div className="text-center mb-4 sm:mb-14">
-            <h2 className="text-bloo fontweight_1 text-center text-[22px] sm:text-[25px] py-2">Key Services</h2>
+            <h2 className="text-bloo text-xs font-extrabold uppercase tracking-[0.12em] text-center py-2">Key Services</h2>
             <h3 className="text-blackk fontweight_1 text-center text-[32px] sm:text-2xl md:text-3xl lg:text-[32px] max-w-3xl mx-auto">
               Everything your property needs to run seamlessly — from front desk to
               back office, all in one platform.
@@ -432,7 +432,7 @@ export default function Hospitality() {
       <section className="pb-8 sm:py-16 px-4 md:px-10 lg:px-20 xl:px-40">
         <div className="max-w-7xl mx-auto">
         <div className="text-center mb-4 sm:mb-12">
-          <h2 className="text-bloo fontweight_1 text-[22px] sm:text-[25px] py-2">Testimonials</h2>
+          <h2 className="text-bloo text-xs font-extrabold uppercase tracking-[0.12em] py-2">Testimonials</h2>
           <h3 className="text-blackk fontweight_1 text-center text-[32px] sm:text-2xl md:text-3xl lg:text-[32px] max-w-3xl mx-auto">
             Trusted by Over 60+ Companies in the Past Decade. Join Our Success Story!
           </h3>

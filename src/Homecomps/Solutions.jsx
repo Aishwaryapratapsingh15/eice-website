@@ -385,7 +385,7 @@ function Solutions() {
         </h2>
 
         {/* Desktop headings */}
-        <h2 className="hidden sm:block text-bloo fontweight_1 text-center text-[18px] sm:text-[25px] py-2">
+        <h2 className="hidden sm:block text-bloo text-xs font-extrabold uppercase tracking-[0.12em] text-center py-2">
           Industries We Serve
         </h2>
         <h1 className="hidden sm:block text-blackk fontweight_1 text-center text-[26px] sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">

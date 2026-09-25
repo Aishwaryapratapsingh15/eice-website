@@ -42,7 +42,7 @@ export default function OurProducts() {
     <div className="font-poppins py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40">
       <div className="max-w-7xl mx-auto">
         <div className="text-left sm:text-center mb-8">
-          <h2 className="text-bloo fontweight_1 text-[18px] sm:text-[25px] py-2">
+          <h2 className="text-bloo text-xs font-extrabold uppercase tracking-[0.12em] py-2">
             Our Products
           </h2>
           <h1 className="text-blackk fontweight_1 text-[26px] sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">

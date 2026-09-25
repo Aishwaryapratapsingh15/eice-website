@@ -116,7 +116,7 @@ function Cstdmain() {
 
   return (
     <div className="font-manrope px-4 md:px-10 lg:px-20 xl:px-40 ">
-      <h2 className="text-bloo text-center text-xl sm:text-2xl lg:text-3xl fontweight_1 mb-2 sm:mb-4 py-1">
+      <h2 className="text-bloo text-center text-xs font-extrabold uppercase tracking-[0.12em] mb-2 sm:mb-4 py-1">
         Case Studies
       </h2>
       <h1 className="text-blackk  fontweight_1 text-center text-2xl sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-7xl py-1 pb-8">
@@ -227,7 +227,7 @@ function DataAnalytics() {
       </div>
       <div className="relative font-manrope px-4 md:px-10 lg:px-20 xl:px-40 py-4 lg:pt-24 pt-12 pb-20  ">
         <div className="max-w-7xl mx-auto">
-        <h1 className="text-bloo fontweight_1 text-center text-[22px] sm:text-[25px]  py-2">
+        <h1 className="text-bloo text-center text-xs font-extrabold uppercase tracking-[0.12em] py-2">
           Our Data Analytics Services
         </h1>
         <h2 className="text-blackk fontweight_1 text-center text-[32px] sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">

@@ -132,7 +132,7 @@ function Indusmain() {
         </div>
 
         <section className="text-left sm:text-center py-4">
-          <h2 className="text-bloo fontweight_1 text-left sm:text-center text-[22px] sm:text-[25px]  py-2">
+          <h2 className="text-bloo text-xs font-extrabold uppercase tracking-[0.12em] text-left sm:text-center py-2">
             Industry Solutions
           </h2>
           <h3 className="text-blackk  fontweight_1 text-left sm:text-center text-[32px] sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-7xl pt-2 pb-2">

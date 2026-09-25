@@ -583,7 +583,7 @@ function Cstdmain() {
 
 
 
-      <h2 className="text-bloo fontweight_1 text-center text-[22px] sm:text-[25px] py-2">
+      <h2 className="text-bloo text-xs font-extrabold uppercase tracking-[0.12em] text-center py-2">
         Case Studies
 
 
@@ -1068,7 +1068,7 @@ function Healthcare() {
 
 
 
-          <h1 className="text-bloo fontweight_1 text-center text-[22px] sm:text-[25px] pb-4">
+          <h1 className="text-bloo text-xs font-extrabold uppercase tracking-[0.12em] text-center pb-4">
             Key Services
 
 

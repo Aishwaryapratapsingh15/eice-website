@@ -80,7 +80,7 @@ export default function Page() {
 
       <div>
         <div className="flex flex-col gap-0.5 items-start sm:items-center justify-start sm:justify-center xl:pt-8 pt-2 sm:pt-4 w-screen px-4 mb-6 sm:mb-10">
-          <h2 className="text-bloo text-[18px] sm:text-[25px] fontweight_1 py-2">Core capabilities</h2>
+          <h2 className="text-bloo text-xs font-extrabold uppercase tracking-[0.12em] py-2">Core capabilities</h2>
           <h2 className="text-blackk fontweight_1 text-left sm:text-center text-[26px] sm:text-3xl md:text-3xl lg:text-[32px] max-w-4xl py-1">
             Enterprise-grade intelligence, <br className="sm:hidden" />
             built to scale
@@ -101,7 +101,6 @@ export default function Page() {
         <Clients />
         <Clientele />
         <Certificate />
-        <div style={{ marginBottom: "100px" }}></div>
       </div>
 
       <ProductFooter />

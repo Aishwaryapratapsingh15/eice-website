@@ -38,7 +38,7 @@ function Servmain() {
       <div className="relative font-manrope px-4 md:px-10 lg:px-20 xl:px-40 pb-0">
       <div className="max-w-7xl mx-auto">
         <div className="pt-4"></div>
-        <h1 className="text-bloo fontweight_1 text-left sm:text-center text-[22px] sm:text-[25px] pt-2 pb-4">
+        <h1 className="text-bloo text-xs font-extrabold uppercase tracking-[0.12em] text-left sm:text-center pt-2 pb-4">
           Our Services
         </h1>
         <h2 className="text-blackk  fontweight_1 text-left sm:text-center text-[32px] sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl pt-0 pb-4">
@@ -63,7 +63,7 @@ function Servmain() {
           <div className="pt-2 pb-4 relative font-manrope px-4 md:px-10 lg:px-20 xl:px-40">
           <div className="max-w-7xl mx-auto">
             <div>
-              <h1 className="text-bloo fontweight_1 text-left sm:text-center text-[22px] sm:text-[25px] py-2">
+              <h1 className="text-bloo text-xs font-extrabold uppercase tracking-[0.12em] text-left sm:text-center py-2">
                 Our Flagship Services
               </h1>
               <h2 className="text-blackk/70 font-semibold max-w-5xl mx-auto px-1 sm:text-2xl pt-2 pb-2 text-[18px] sm:leading-tight leading-snug text-left sm:text-center">
@@ -168,7 +168,7 @@ function Servmain() {
         <div className="py-4 sm:py-10 relative font-manrope px-4 md:px-10 lg:px-20 xl:px-40">
         <div className="max-w-7xl mx-auto">
           <div>
-            <h1 className="text-bloo fontweight_1 text-left sm:text-center text-[22px] sm:text-[25px] py-2">
+            <h1 className="text-bloo text-xs font-extrabold uppercase tracking-[0.12em] text-left sm:text-center py-2">
               Emerging Technologies
             </h1>
             <h2 className="text-blackk/70 font-semibold px-1 max-w-5xl mx-auto sm:text-2xl pt-2 pb-2 text-[32px] sm:leading-tight leading-snug text-left sm:text-center">
@@ -243,7 +243,7 @@ function Servmain() {
         <div className="py-4 sm:py-10 relative font-manrope px-4 md:px-10 lg:px-20 xl:px-40">
         <div className="max-w-7xl mx-auto">
           <div>
-            <h1 className="text-bloo fontweight_1 text-left sm:text-center text-[22px] sm:text-[25px] py-2">
+            <h1 className="text-bloo text-xs font-extrabold uppercase tracking-[0.12em] text-left sm:text-center py-2">
               App Development Services
             </h1>
             <h2 className="text-blackk/70 font-semibold max-w-5xl mx-auto sm:text-2xl pt-2 pb-2 text-[32px] sm:leading-tight leading-snug text-left sm:text-center">
@@ -327,7 +327,7 @@ function Servmain() {
       </div>
       <div id="consultancy" className="pt-4 sm:pt-10 pb-2 px-4 md:px-10 lg:px-20 xl:px-40">
         <div>
-          <h1 className="text-bloo fontweight_1 text-left sm:text-center fontsize_2 py-2">
+          <h1 className="text-bloo text-xs font-extrabold uppercase tracking-[0.12em] text-left sm:text-center py-2">
             Consultancy Service
           </h1>
         </div>

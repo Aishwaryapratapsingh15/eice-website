@@ -23,7 +23,7 @@ function Big() {
                 Transforming Enterprise Operations with{" "}
                 <span className="text-bloo">AI</span>
               </h1>
-              <p className="font-medium text-blackk/70 sm:text-xl text-lg">
+              <p className="font-normal text-blackk/70 sm:text-xl text-lg">
                 Build smarter workflows, uncover predictive insights, and
                 automate complex decisions with EICE's AI-powered solutions.
               </p>
@@ -72,7 +72,7 @@ function Big() {
                 Software <span className="text-bloo">Built to Last</span>,
                 Not Just to Ship
               </h1>
-              <p className="font-medium text-blackk/70 sm:text-xl text-lg">
+              <p className="font-normal text-blackk/70 sm:text-xl text-lg">
                 From legacy modernization to custom web, mobile, and SaaS
                 platforms — we engineer for what happens after launch,
                 backed by CMMI Level 3 and ISO-certified practices.
@@ -122,7 +122,7 @@ function Big() {
                 <span className="text-bloo">82 Applications.</span> One
                 Governance Standard. Zero Guesswork.
               </h1>
-              <p className="font-medium text-blackk/70 sm:text-xl text-lg">
+              <p className="font-normal text-blackk/70 sm:text-xl text-lg">
                 We don't just talk about AI value — we measure it. Our
                 AI-Enabled Engineering Excellence Center delivers
                 portfolio-wide governance and task-level AI impact tracking
@@ -202,7 +202,7 @@ function Big() {
       <div className="relative z-10 ">
         <div className=" mx-auto px-0 sm:px-2 xl:px-8">
           <div className="sm:min-h-[380px] max-w-[1536px] mx-auto">
-            <div key={currentIndex} className="px-0 xl:px-12">
+            <div key={currentIndex} className="px-0 xl:px-12 animate-hero-slide-in">
               {slides[currentIndex].content}
             </div>
           </div>
