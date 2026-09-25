@@ -75,25 +75,31 @@ export default function HowItWorks() {
           ))}
         </div>
 
-        {/* Mobile: vertical connected timeline — same rule, the connector
-            only exists between circles. */}
+        {/* Mobile: vertical connected timeline. Each step's own wrapper is
+            `relative`, and (except the last) carries a connector positioned
+            at `top-16` (the circle's own vertical center) with `h-full` —
+            since height is a percentage of THIS block's own height, the
+            connector always self-computes to reach exactly into the next
+            circle's center, however tall this step's text happens to wrap.
+            This keeps the line continuous regardless of text length,
+            without any JS measurement. */}
         <div className="flex sm:hidden flex-col">
           {steps.map((s, i) => (
-            <React.Fragment key={s.title}>
-              <div className="flex items-start gap-4">
-                <StepCircle color={s.color} icon={s.icon} title={s.title} />
-                <div className="pt-2">
-                  <h3 className="text-blackk text-base font-bold mb-1">{s.title}</h3>
-                  <p className="text-blackk/60 text-sm leading-snug">{s.desc}</p>
-                </div>
-              </div>
+            <div key={s.title} className="relative flex items-start gap-4 pb-6 last:pb-0">
               {i < steps.length - 1 && (
                 <div
-                  className="w-6 h-8 rounded-full ml-[52px]"
+                  className="absolute left-[52px] top-16 h-full w-6 rounded-full"
                   style={{ backgroundColor: LINE_COLOR }}
                 />
               )}
-            </React.Fragment>
+              <div className="relative z-10">
+                <StepCircle color={s.color} icon={s.icon} title={s.title} />
+              </div>
+              <div className="relative z-10 pt-2">
+                <h3 className="text-blackk text-base font-bold mb-1">{s.title}</h3>
+                <p className="text-blackk/60 text-sm leading-snug">{s.desc}</p>
+              </div>
+            </div>
           ))}
         </div>
       </div>

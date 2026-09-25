@@ -385,10 +385,10 @@ function Solutions() {
         </h2>
 
         {/* Desktop headings */}
-        <h2 className="hidden sm:block text-bloo font-bold text-center text-xl lg:text-2xl py-2">
+        <h2 className="hidden sm:block text-bloo fontweight_1 text-center text-[18px] sm:text-[25px] py-2">
           Industries We Serve
         </h2>
-        <h1 className="hidden sm:block text-blackk font-bold text-center text-2xl sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
+        <h1 className="hidden sm:block text-blackk fontweight_1 text-center text-[26px] sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
           Industry-Focused Solutions With Enterprise Depth
         </h1>
 
@@ -439,21 +439,21 @@ function IndustryCard({ name, description, image, link }) {
   return (
     <Link
       to={`/${link}`}
-      className="block bg-white rounded-xl border border-gray-200 overflow-hidden cursor-pointer transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 w-[72vw] flex-shrink-0 snap-start sm:w-auto sm:flex-shrink sm:snap-align-none"
+      className="block bg-white rounded-[18px] border border-[#E6EAF1] overflow-hidden cursor-pointer transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] w-[72vw] flex-shrink-0 snap-start sm:w-auto sm:flex-shrink sm:snap-align-none"
     >
       <div
-        className="w-full h-[160px] sm:h-[220px] lg:h-[260px] bg-cover bg-center"
+        className="w-full h-[160px] sm:h-auto sm:aspect-[2/1] bg-cover bg-center"
         style={
           image
             ? { backgroundImage: `url(${image})` }
             : { backgroundImage: "linear-gradient(135deg, #012060, #01B0F1)" }
         }
       />
-      <div className="p-4 sm:p-5">
-        <h3 className="text-blackk font-bold text-lg sm:text-xl mb-2">
+      <div className="pt-[19px] px-[25px] pb-[25px]">
+        <h3 className="text-[#373737] font-bold text-[20px] mb-[7px]">
           {name}
         </h3>
-        <p className="text-blackk/70 text-sm sm:text-base">
+        <p className="text-[#64748B] text-[16px] font-normal">
           {description}
         </p>
       </div>

@@ -45,11 +45,11 @@ export default function AiCapability() {
           {capabilities.map((cap) => (
             <div
               key={cap.num}
-              className="rounded-xl border border-white/15 bg-white/[0.04] p-5"
+              className="rounded-[18px] border border-white/15 bg-white/[0.04] p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]"
             >
-              <div className="text-bloo font-extrabold text-sm mb-2">{cap.num}</div>
-              <h3 className="text-white text-lg font-bold mb-1">{cap.title}</h3>
-              <p className="text-[#C7D3EB] text-sm leading-relaxed">{cap.desc}</p>
+              <div className="text-bloo font-extrabold text-sm mb-[19px]">{cap.num}</div>
+              <h3 className="text-white text-[20px] font-bold mb-[7px]">{cap.title}</h3>
+              <p className="text-[#C7D3EB] text-[16px] font-normal leading-relaxed">{cap.desc}</p>
             </div>
           ))}
         </div>

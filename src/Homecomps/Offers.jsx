@@ -50,19 +50,19 @@ function Offers() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {capabilities.map((cap) => (
             <Link key={cap.title} href={cap.link} className="w-full block pb-2">
-              <div className="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+              <div className="bg-white rounded-[18px] overflow-hidden border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
                 <img
                   src={cap.icon}
                   alt=""
-                  className="w-full h-[220px] object-cover"
+                  className="w-full h-[220px] sm:h-auto sm:aspect-[2/1] object-cover"
                   width="494"
                   height="220"
                 />
-                <div className="p-5">
-                  <h3 className="text-blackk fontweight_1 text-[22px] sm:text-2xl pt-1 pb-1">
+                <div className="pt-[19px] px-[25px] pb-[25px]">
+                  <h3 className="text-[#373737] text-[20px] font-bold mb-[7px]">
                     {cap.title}
                   </h3>
-                  <p className="font-medium text-blackk/70 text-[16px] sm:text-base">
+                  <p className="text-[#64748B] text-[16px] font-normal">
                     {cap.desc}
                   </p>
                 </div>

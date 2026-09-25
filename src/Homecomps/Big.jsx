@@ -15,7 +15,7 @@ function Big() {
         <div className=" mx-auto px-5 sm:px-12 lg:px-0 xl:px-12 2xl:px-16 sm:mt-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="flex flex-col space-y-2 sm:space-y-2 ">
-              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-bloo/10 text-bloo text-xs sm:text-sm font-semibold tracking-wide w-fit">
+              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-bloo/10 text-[#012060] text-xs sm:text-sm font-semibold tracking-wide w-fit">
                 <BsStars size={14} />
                 AI-POWERED ENTERPRISE SOLUTIONS
               </span>
@@ -64,7 +64,7 @@ function Big() {
         <div className=" mx-auto px-5 sm:px-12 lg:px-0 xl:px-12 2xl:px-16 sm:mt-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="flex flex-col space-y-2 sm:space-y-2">
-              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-bloo/10 text-bloo text-xs sm:text-sm font-semibold tracking-wide w-fit">
+              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-bloo/10 text-[#012060] text-xs sm:text-sm font-semibold tracking-wide w-fit">
                 <BsStars size={14} />
                 ENTERPRISE ENGINEERING, DONE RIGHT
               </span>
@@ -114,7 +114,7 @@ function Big() {
         <div className=" mx-auto px-5 sm:px-12 lg:px-0 xl:px-12 2xl:px-16 sm:mt-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="flex flex-col space-y-2 sm:space-y-2">
-              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-bloo/10 text-bloo text-xs sm:text-sm font-semibold tracking-wide w-fit">
+              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-bloo/10 text-[#012060] text-xs sm:text-sm font-semibold tracking-wide w-fit">
                 <BsStars size={14} />
                 REAL RESULTS, NOT PROMISES
               </span>

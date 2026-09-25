@@ -57,17 +57,17 @@ export default function OurProducts() {
           {products.map((product) => (
             <div
               key={product.name}
-              className="rounded-xl border border-[#E6EAF1] bg-white p-6 shadow-sm transition duration-200 hover:-translate-y-1 hover:shadow-lg"
+              className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]"
             >
-              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-[#E6F4FD]">
+              <div className="mb-[19px] flex h-12 w-12 items-center justify-center rounded-lg bg-[#E6F4FD]">
                 <img src={product.icon} alt="" className="h-6 w-6 object-contain" width="24" height="24" />
               </div>
-              <h3 className="text-blackk text-xl font-bold mb-1">{product.name}</h3>
+              <h3 className="text-[#373737] text-[20px] font-bold mb-[7px]">{product.name}</h3>
               <p className="text-bloo font-semibold text-sm mb-3">{product.tagline}</p>
-              <p className="text-blackk/70 text-sm leading-relaxed mb-5">{product.description}</p>
+              <p className="text-[#64748B] text-[16px] font-normal leading-relaxed mb-[18px]">{product.description}</p>
               <Link
                 href={product.href}
-                className="inline-flex items-center gap-2 text-sm font-bold text-[#012060] hover:text-bloo transition"
+                className="inline-flex items-center gap-2 text-[14px] font-bold text-[#01B0F1] hover:text-blue-900 transition"
               >
                 {product.cta} <img src={arrowIcon} alt="" className="w-4 h-4" width="16" height="16" />
               </Link>
