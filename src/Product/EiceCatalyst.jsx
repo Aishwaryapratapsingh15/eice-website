@@ -151,7 +151,7 @@ export default function EiceCatalystPage() {
           Integrated AI Platform
         </span>
 
-        <h1 className="text-[40px] text-[#334155] md:text-[40px] mt-6 font-bold max-w-4xl mx-auto leading-tight">
+        <h1 className="text-[40px] text-[#334155] md:text-[48px] mt-6 font-bold max-w-4xl mx-auto leading-tight">
           From AI Adoption to <span className="text-[#01B0F1]">AI-Driven Engineering</span>
         </h1>
 
@@ -328,14 +328,9 @@ export default function EiceCatalystPage() {
       {/* FAQ */}
       <section id="faq" className="bg-[#F4F9FF] py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40">
         <div className="max-w-4xl mx-auto">
-          <div className="mb-4 sm:mb-10 text-left sm:text-center">
-            <div className="mb-2 text-xs font-extrabold uppercase tracking-[0.12em] text-[#01B0F1]">
-              FAQs
-            </div>
-            <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155]">
-              Questions enterprises ask first.
-            </h2>
-          </div>
+          <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155] text-center mb-4 sm:mb-10">
+            Questions enterprises ask first.
+          </h2>
 
           <div className="space-y-3">
             {faqs.map((item) => (
@@ -343,7 +338,7 @@ export default function EiceCatalystPage() {
                 key={item.q}
                 className="bg-white border border-[#E2E8F0] rounded-xl p-4 sm:p-5"
               >
-                <summary className="cursor-pointer list-none flex items-center justify-between gap-4 font-bold text-[#334155] text-[16px] sm:text-lg hover:text-[#01B0F1] transition">
+                <summary className="cursor-pointer list-none flex items-center justify-between gap-4 font-bold text-[#334155] text-[16px] sm:text-lg">
                   {item.q}
                   <span className="text-[#012060] text-xl leading-none">+</span>
                 </summary>

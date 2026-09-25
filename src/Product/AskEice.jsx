@@ -211,7 +211,7 @@ export default function AskEice() {
           The Knowledge Agent
         </span>
 
-        <h1 className="text-[40px] text-[#334155] md:text-[40px] mt-6 font-bold max-w-4xl mx-auto leading-tight">
+        <h1 className="text-[40px] text-[#334155] md:text-[48px] mt-6 font-bold max-w-4xl mx-auto leading-tight">
           Turn your organization&apos;s documents into <span className="text-[#01B0F1]">instant, verified answers</span>
         </h1>
 

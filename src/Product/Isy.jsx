@@ -149,7 +149,7 @@ export default function IsyncLitePage() {
           </span>
 
           {/* HEADING */}
-          <h1 className="text-[40px] lg:text-3xl md:text-5xl text-[#334155] font-bold leading-[48px] lg:mt-6 md:mt-6 lg:mb-6 md:mb-6 py-4">
+          <h1 className="text-[40px] lg:text-[48px] md:text-[48px] text-[#334155] font-bold leading-[48px] lg:mt-6 md:mt-6 lg:mb-6 md:mb-6 py-4">
             <span className="text-[#01B0F1]">Secure</span> Enterprise Backup & Recovery <br />
             with <span className="text-[#01B0F1]">Full Data Control</span>
           </h1>

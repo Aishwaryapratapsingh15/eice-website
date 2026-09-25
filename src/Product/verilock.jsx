@@ -202,7 +202,7 @@ export default function ISyncDrivePage() {
   Enterprise MFA platform
 </span>
 
-        <h1 className="text-[40px] text-[#334155] md:text-[48px] sm:text-[32px]mt-6 font-bold max-w-4xl mx-auto leading-tight">
+        <h1 className="text-[40px] text-[#334155] md:text-[48px] sm:text-[32px] mt-6 font-bold max-w-4xl mx-auto leading-tight">
           Enterprise <span className="text-[#01B0F1]">Multi-Factor<br /> Authentication,</span> Simplified
         </h1>
 

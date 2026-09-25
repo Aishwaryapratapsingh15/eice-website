@@ -179,7 +179,7 @@ export default function EiceAgent() {
       <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40">
   <div className="mt-5 max-w-[1200px] mx-auto px-4 sm:px-6 text-left sm:text-center">
 
-    <h1 className="text-[40px] sm:text-3xl md:text-4xl font-bold">
+    <h1 className="text-[40px] sm:text-3xl md:text-[48px] font-bold">
       An AI-driven ecosystem to 
       <span className="italic text-[#01B0F1] font-semibold">
         {" "}automate,<br /> optimize, and scale{" "}

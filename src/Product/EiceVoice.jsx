@@ -159,7 +159,7 @@ export default function EiceVoice() {
         </div>
 
           {/* HEADING */}
-          <h1 className="text-[40px] md:text-[54px] font-bold">
+          <h1 className="text-[40px] md:text-[48px] font-bold">
            <span className="text-[#01B0F1]"> AI-Powered </span>VoiceOrder Management <br /> 
             
             for Modern Hospitality
@@ -491,7 +491,7 @@ export default function EiceVoice() {
 </section>
 
       {/* ================= FINAL CTA ================= */}
-      <section className="bg-gray-50 relative py-10 px-5 md:px-12 lg:px-24 xl:px-40 overflow-hidden mb-10">
+      <section className="bg-gray-50 relative py-10 px-5 md:px-12 lg:px-24 xl:px-40 overflow-hidden">
         <h2 className="text-4xl md:text-4xl font-bold text-[#334155] mb-[14px] leading-tight text-center">
           Ready to Transform Your Order Management?
         </h2>

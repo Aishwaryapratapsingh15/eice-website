@@ -207,7 +207,7 @@ export default function EiceOps() {
                          </div>
         <div className="max-w-6xl mx-auto text-center">
 
-          <h1 className="mt-6 text-[40px] leading-[48px] md:text-4xl font-bold text-[#111]">
+          <h1 className="mt-6 text-[40px] leading-[48px] md:text-[48px] font-bold text-[#111]">
             Your <span className="text-[#01B0F1]">Help Desk</span>, Working <span className="text-[#01B0F1]">Smarter.</span>
           </h1>
 

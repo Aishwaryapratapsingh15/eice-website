@@ -1,7 +1,7 @@
 ﻿"use client";
 import React, { useEffect } from "react";
 import { Link } from "@/nextNavigation";
-import Offers from "../Homecomps/Offers";
+import ServicesGrid from "./ServicesGrid";
 import styles from "./styles/servmain.module.css"
 // import "./Styles/Servmain.css"
 const consultancy = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/consultancy.jpg";
@@ -35,9 +35,8 @@ function Servmain() {
   }, []);
   return (
     <div className="">
-      <div className="relative font-manrope px-4 md:px-10 lg:px-20 xl:px-40 pb-0">
+      <div className="relative font-manrope px-4 md:px-10 lg:px-20 xl:px-40 pt-32 sm:pt-32 2xl:pt-8 pb-8 sm:pb-10">
       <div className="max-w-7xl mx-auto">
-        <div className="pt-4"></div>
         <h1 className="text-bloo text-xs font-extrabold uppercase tracking-[0.12em] text-left sm:text-center pt-2 pb-4">
           Our Services
         </h1>
@@ -55,7 +54,7 @@ function Servmain() {
         </h2>
       </div>
       </div>
-      <Offers />
+      <ServicesGrid />
 
       <div className="py-4 sm:py-10">
         <div id="flagshipServices"></div>

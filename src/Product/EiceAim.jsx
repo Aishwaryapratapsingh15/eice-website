@@ -159,7 +159,7 @@ export default function EiceAim() {
           The Action Agent · EICE Agent Suite
         </span>
 
-        <h1 className="text-[40px] text-[#334155] md:text-[40px] mt-6 font-bold max-w-4xl mx-auto leading-tight">
+        <h1 className="text-[40px] text-[#334155] md:text-[48px] mt-6 font-bold max-w-4xl mx-auto leading-tight">
           The AI sales partner that <span className="text-[#01B0F1]">never stops selling.</span>
         </h1>
 
@@ -247,7 +247,7 @@ export default function EiceAim() {
         <h2 className="text-[32px] sm:text-4xl text-[#334155] font-bold text-center leading-relaxed mb-4">
           Outreach, qualification, and follow-up fully automated
         </h2>
-        <p className="text-[#64748B] text-center text-[16px] sm:text-lg max-w-3xl mx-auto sm:mb-10">
+        <p className="text-[#64748B] text-center text-[16px] sm:text-lg max-w-3xl mx-auto sm:mb-10 mb-4">
           EICEAIM acts as your intelligent sales partner, automating outreach, lead qualification, and follow-ups with precision and personalization.
         </p>
         <div className="relative max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
@@ -290,10 +290,10 @@ export default function EiceAim() {
 
       {/* UNIFIED PLATFORM */}
       <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
-        <h2 className="text-[32px] sm:text-3xl font-bold text-center text-[#334155] mb-5">
+        <h2 className="text-[32px] sm:text-3xl font-bold text-center text-[#334155] mb-3">
           Core capabilities
         </h2>
-        <h4 className="text-[22px] sm:text-xl text-[#64748B] font-semibold text-center mb-4 sm:mb-10 max-w-3xl mx-auto">
+        <h4 className="text-[16px] sm:text-lg text-[#64748B] text-center mb-4 sm:mb-10 max-w-3xl mx-auto">
           Built to run outreach at enterprise scale
         </h4>
         <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
@@ -334,7 +334,7 @@ export default function EiceAim() {
       <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
         <div className="max-w-5xl mx-auto text-center mb-4 sm:mb-14">
           <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155]">What that impact actually looks like</h2>
-          <p className="mt-4 text-[#64748B] text-[16px] sm:text-lg">The numbers above come from three concrete operating changes.</p>
+          <p className="mt-3 text-[#64748B] text-[16px] sm:text-lg">The numbers above come from three concrete operating changes.</p>
         </div>
         <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
           {campaignControls.map((item, i) => (
@@ -413,7 +413,7 @@ export default function EiceAim() {
           <div className="space-y-3">
             {faqs.map((item, i) => (
               <details key={i} className="bg-white border border-[#E2E8F0] rounded-xl p-4 sm:p-5">
-                <summary className="cursor-pointer list-none flex items-center justify-between gap-4 font-bold text-[#334155] text-[16px] sm:text-lg hover:text-[#01B0F1] transition">
+                <summary className="cursor-pointer list-none flex items-center justify-between gap-4 font-bold text-[#334155] text-[16px] sm:text-lg">
                   {item.q}
                   <span className="text-[#012060] text-xl leading-none">+</span>
                 </summary>

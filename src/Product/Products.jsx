@@ -11,7 +11,7 @@ const isyncdriveIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/isyncdrive.
 const isyncliteIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/isynclite.svg";
 const verilockIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Verilock.svg";
 const eiceAgentIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/EiceAiAgent.svg";
-const eiceCatalystIcon = "https://d3r43jacxrwsrp.cloudfront.net/eice-catalyst/Catalyst.svg";
+const eiceCatalystIcon = "https://d3r43jacxrwsrp.cloudfront.net/eice-catalyst/eice-catalyst.svg";
 const askEiceIcon = "https://d3r43jacxrwsrp.cloudfront.net/eice-aim/Knowledge-agent.svg";
 const eiceAimIcon = "https://d3r43jacxrwsrp.cloudfront.net/eice-aim/Action-Agent.svg";
 const eiceSmartfitIcon = "https://d3r43jacxrwsrp.cloudfront.net/smartfit/SmartFit_Icon.svg";
@@ -226,7 +226,7 @@ export default function ProductsPage() {
           EICE Product Ecosystem
         </span>
 
-        <h1 className="mx-auto mt-6 max-w-4xl text-[40px] font-bold leading-tight text-[#334155] md:text-[40px]">
+        <h1 className="mx-auto mt-6 max-w-4xl text-[40px] font-bold leading-tight text-[#334155] md:text-[48px]">
           Software built to{" "}
           <span className="text-[#01B0F1]">solve the job.</span>
         </h1>

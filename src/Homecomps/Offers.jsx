@@ -3,6 +3,7 @@ import React from "react";
 import { Link } from "@/nextNavigation";
 
 const _LP = "https://d3r43jacxrwsrp.cloudfront.net/landing-page";
+const arrowIcon = "https://d3r43jacxrwsrp.cloudfront.net/arrow.svg";
 
 const capabilities = [
   {
@@ -49,25 +50,29 @@ function Offers() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {capabilities.map((cap) => (
-            <Link key={cap.title} href={cap.link} className="w-full block pb-2">
-              <div className="bg-white rounded-[18px] overflow-hidden border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
-                <img
-                  src={cap.icon}
-                  alt=""
-                  className="w-full h-[220px] sm:h-auto sm:aspect-[2/1] object-cover"
-                  width="494"
-                  height="220"
-                />
-                <div className="pt-[19px] px-[25px] pb-[25px]">
-                  <h3 className="text-[#373737] text-[20px] font-bold mb-[7px]">
-                    {cap.title}
-                  </h3>
-                  <p className="text-[#64748B] text-[16px] font-normal">
-                    {cap.desc}
-                  </p>
-                </div>
+            <div key={cap.title} className="bg-white rounded-[18px] overflow-hidden border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
+              <img
+                src={cap.icon}
+                alt=""
+                className="w-full h-[220px] sm:h-auto sm:aspect-[2/1] object-cover"
+                width="494"
+                height="220"
+              />
+              <div className="pt-[19px] px-[25px] pb-[25px]">
+                <h3 className="text-[#373737] text-[20px] font-bold mb-[7px]">
+                  {cap.title}
+                </h3>
+                <p className="text-[#64748B] text-[16px] font-normal mb-[18px]">
+                  {cap.desc}
+                </p>
+                <Link
+                  href={cap.link}
+                  className="inline-flex items-center gap-2 text-[14px] font-bold text-[#01B0F1] hover:text-blue-900 transition"
+                >
+                  Explore More <img src={arrowIcon} alt="" className="w-4 h-4" width="16" height="16" />
+                </Link>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
 

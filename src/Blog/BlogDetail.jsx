@@ -49,14 +49,6 @@ function PhoneIcon({ className = "h-4 w-4" }) {
   );
 }
 
-function PlusIcon() {
-  return (
-    <svg aria-hidden viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5">
-      <path d="M10 4a1 1 0 011 1v4h4a1 1 0 110 2h-4v4a1 1 0 11-2 0v-4H5a1 1 0 110-2h4V5a1 1 0 011-1z" />
-    </svg>
-  );
-}
-
 export function BlogDetail({ blog, relatedPosts, latestPosts, categories }) {
   const primaryCategory = blog.categories?.[0];
   const tags = blog.tags ?? [];
@@ -144,20 +136,18 @@ export function BlogDetail({ blog, relatedPosts, latestPosts, categories }) {
           )}
 
           {faqs.length > 0 && (
-            <div className="mt-10 border-t border-black/10 pt-8">
-              <h2 className="text-[22px] font-extrabold text-blackk">
-                Frequently Asked Questions
+            <div className="mt-10 -mx-4 sm:-mx-6 bg-[#F4F9FF] px-4 py-4 sm:px-6 sm:py-10">
+              <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155] text-center mb-4 sm:mb-10">
+                Frequently asked questions
               </h2>
-              <div className="mt-4 divide-y divide-black/5">
+              <div className="space-y-3">
                 {faqs.map((faq) => (
-                  <details key={faq.id} className="group py-4">
-                    <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-[16px] font-semibold text-blackk marker:content-['']">
+                  <details key={faq.id} className="bg-white border border-[#E2E8F0] rounded-xl p-4 sm:p-5">
+                    <summary className="cursor-pointer list-none flex items-center justify-between gap-4 font-bold text-[#334155] text-[16px] sm:text-lg">
                       {faq.question}
-                      <span className="shrink-0 text-bloo transition-transform duration-200 group-open:rotate-45">
-                        <PlusIcon />
-                      </span>
+                      <span className="text-[#012060] text-xl leading-none">+</span>
                     </summary>
-                    <p className="mt-3 text-[14px] leading-relaxed text-slate-600">
+                    <p className="text-[#64748B] mt-3 text-[16px] sm:text-lg leading-relaxed">
                       {faq.answer}
                     </p>
                   </details>
