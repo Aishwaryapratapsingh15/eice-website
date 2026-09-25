@@ -13,7 +13,7 @@ function Big() {
     {
       content: (
         <div className=" mx-auto px-5 sm:px-12 lg:px-0 xl:px-12 2xl:px-16 sm:mt-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 sm:gap-8 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="flex flex-col space-y-2 sm:space-y-2 ">
               <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-bloo/10 text-bloo text-xs sm:text-sm font-semibold tracking-wide w-fit">
                 <BsStars size={14} />
@@ -62,7 +62,7 @@ function Big() {
     {
       content: (
         <div className=" mx-auto px-5 sm:px-12 lg:px-0 xl:px-12 2xl:px-16 sm:mt-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 sm:gap-8 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="flex flex-col space-y-2 sm:space-y-2">
               <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-bloo/10 text-bloo text-xs sm:text-sm font-semibold tracking-wide w-fit">
                 <BsStars size={14} />
@@ -112,7 +112,7 @@ function Big() {
     {
       content: (
         <div className=" mx-auto px-5 sm:px-12 lg:px-0 xl:px-12 2xl:px-16 sm:mt-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 sm:gap-8 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="flex flex-col space-y-2 sm:space-y-2">
               <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-bloo/10 text-bloo text-xs sm:text-sm font-semibold tracking-wide w-fit">
                 <BsStars size={14} />
@@ -192,7 +192,7 @@ function Big() {
 
   return (
     <div
-      className="relative overflow-visible font-manrope pt-[100px] text-blackk pb-4"
+      className="relative overflow-visible font-manrope pt-20 sm:pt-[100px] text-blackk pb-4"
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
       role="region"
