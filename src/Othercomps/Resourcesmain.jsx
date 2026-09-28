@@ -81,11 +81,8 @@ function Resourcesmain() {
               </button>
             </Link>
           </div>
-          <div className="lg:order-last lg:block hidden order-first justify-end items-end relative w-full h-64 sm:h-80 rounded-full overflow-hidden bg-gradient-to-br from-[#012060] to-bloo">
-          </div>
         </div>
       </div>
-      <Talktous />
     </div>
   );
 }
