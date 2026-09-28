@@ -45,7 +45,7 @@ function Big() {
                 src={haloicon}
                 alt=""
                 aria-hidden="true"
-                className="animate-spin-slow absolute inset-0 m-auto w-[75%] max-w-lg h-auto -z-10 pointer-events-none select-none"
+                className="animate-spin-slow absolute inset-0 m-auto w-[75%] max-w-lg min-[1500px]:w-[432px] h-auto -z-10 pointer-events-none select-none"
               />
               <img
                 className="relative w-full max-w-md rounded-lg"
@@ -95,7 +95,7 @@ function Big() {
                 src={haloicon}
                 alt=""
                 aria-hidden="true"
-                className="animate-spin-slow absolute inset-0 m-auto w-[75%] max-w-lg h-auto -z-10 pointer-events-none select-none"
+                className="animate-spin-slow absolute inset-0 m-auto w-[75%] max-w-lg min-[1500px]:w-[432px] h-auto -z-10 pointer-events-none select-none"
               />
               <img
                 className="relative w-full max-w-md rounded-lg"
@@ -146,7 +146,7 @@ function Big() {
                 src={haloicon}
                 alt=""
                 aria-hidden="true"
-                className="animate-spin-slow absolute inset-0 m-auto w-[75%] max-w-lg h-auto -z-10 pointer-events-none select-none"
+                className="animate-spin-slow absolute inset-0 m-auto w-[75%] max-w-lg min-[1500px]:w-[432px] h-auto -z-10 pointer-events-none select-none"
               />
               <img
                 className="relative w-full max-w-md rounded-lg"

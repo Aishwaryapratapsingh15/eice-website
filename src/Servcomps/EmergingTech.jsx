@@ -264,7 +264,7 @@ export default function EmergingTech() {
             {steps.map((step, i) => (
               <div key={i} className="relative flex items-stretch">
                 <div className="bg-[#0B3A63] rounded-2xl p-4 sm:p-6 w-full">
-                  <div className="flex items-center gap-3 mb-3">
+                  <div className="flex items-center justify-between gap-3 mb-3">
                     {step.icon ? (
                       <img src={step.icon} alt="" className="w-10 h-10 object-contain"  width="40" height="40" />
                     ) : (

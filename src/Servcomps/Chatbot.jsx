@@ -218,7 +218,7 @@ function Chatbot() {
             </div>
             <div>
               <div className="font-medium text-blackk/70 sm:text-xl text-[16px] ">
-                In todays fast-paced digital world, businesses are increasingly
+                In today's fast-paced digital world, businesses are increasingly
                 turning to chatbots to enhance customer interactions, streamline
                 operations, and drive growth. Chatbots offer a scalable solution
                 for managing customer inquiries, automating repetitive tasks,

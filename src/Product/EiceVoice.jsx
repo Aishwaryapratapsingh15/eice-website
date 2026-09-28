@@ -318,7 +318,7 @@ export default function EiceVoice() {
       </h2> */}
 
  <h2 className="text-[32px] sm:text-3xl md:text-[36px] leading-1.2 font-bold tracking-relaxed mb-6">
-  India’s first staff-facing voice-to-kitchen Natural Language order Management Platform
+  India’s first staff-facing AI Powered voice-to-kitchen Natural Language order Management Platform
 </h2>
 
       <p className="text-white/70 text-[16px] sm:text-lg leading-relaxed max-w-xl">

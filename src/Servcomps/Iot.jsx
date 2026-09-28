@@ -299,9 +299,7 @@ function Iot() {
                 DEVELOPMENT AND INTEGRATION
               </h1>
               <p className="font-medium text-blackk/70 sm:text-xl text-[16px] ">
-                We create seamless, intuitive digital experiences that delight
-                users across all devices and platforms, enhancing customer
-                engagement and loyalty.
+                We develop and integrate intelligent IoT solutions that seamlessly connect devices, systems, and data, enabling real-time monitoring, automation, and smarter decision-making across connected environments.
               </p>
             </div>
           </div>
@@ -329,9 +327,7 @@ function Iot() {
                 MAINTENANCE AND SUPPORT
               </h1>
               <p className="font-medium text-blackk/70 sm:text-xl text-[16px] ">
-                We create seamless, intuitive digital experiences that delight
-                users across all devices and platforms, enhancing customer
-                engagement and loyalty.
+                We provide reliable maintenance and ongoing support to keep your IoT solutions secure, optimized, and running smoothly, ensuring consistent performance, timely issue resolution, and long-term system reliability.
               </p>
             </div>
           </div>

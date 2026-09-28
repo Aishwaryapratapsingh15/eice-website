@@ -327,6 +327,14 @@ import React, { useRef, useEffect } from "react";
 const arrow = "https://d3r43jacxrwsrp.cloudfront.net/arrow.svg";
 import { NavLink, Link } from "@/nextNavigation";
 
+function ArrowIcon({ className }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+      <path d="M16.175 13H4V11H16.175L10.575 5.4L12 4L20 12L12 20L10.575 18.6L16.175 13Z" />
+    </svg>
+  );
+}
+
 const industries = [
   {
     link: "industries/hospitality",
@@ -437,10 +445,7 @@ function Solutions() {
 
 function IndustryCard({ name, description, image, link }) {
   return (
-    <Link
-      to={`/${link}`}
-      className="block bg-white rounded-[18px] border border-[#E6EAF1] overflow-hidden cursor-pointer transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] w-[72vw] flex-shrink-0 snap-start sm:w-auto sm:flex-shrink sm:snap-align-none"
-    >
+    <div className="bg-white rounded-[18px] border border-[#E6EAF1] overflow-hidden transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] w-[72vw] flex-shrink-0 snap-start sm:w-auto sm:flex-shrink sm:snap-align-none">
       <div
         className="w-full h-[160px] sm:h-auto sm:aspect-[2/1] bg-cover bg-center"
         style={
@@ -453,11 +458,17 @@ function IndustryCard({ name, description, image, link }) {
         <h3 className="text-[#373737] font-bold text-[20px] mb-[7px]">
           {name}
         </h3>
-        <p className="text-[#64748B] text-[16px] font-normal">
+        <p className="text-[#64748B] text-[16px] font-normal mb-[18px]">
           {description}
         </p>
+        <Link
+          to={`/${link}`}
+          className="inline-flex items-center gap-2 text-[14px] font-bold text-[#01B0F1] hover:text-blue-900 transition"
+        >
+          Explore More <ArrowIcon className="w-4 h-4" />
+        </Link>
       </div>
-    </Link>
+    </div>
   );
 }
 

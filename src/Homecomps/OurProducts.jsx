@@ -37,7 +37,7 @@ const products = [
   {
     icon: eiceSmartfitIcon,
     name: "SmartFit",
-    tagline: "Intelligent container loading optimization",
+    tagline: "Smart container loading optimization",
     description:
       "A smart logistics platform that maximizes container space, optimizes cargo placement, balances weight distribution, and helps reduce wasted capacity and freight costs.",
     href: "/products/smartfit",
