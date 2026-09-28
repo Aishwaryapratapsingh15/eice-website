@@ -185,7 +185,7 @@ const Content = ({ selected, dir, handleSetSelected }) => (
   <motion.div
     id="overlay-content"
     initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 8 }}
-    className="absolute overflow-visible z-50 left-0 transform -translate-x-1/2 top-16 w-[90vw] max-w-[720px] rounded-lg border border-blackk/50 shadow-md shadow-blackk/20 bg-white py-6 px-4"
+    className="absolute overflow-visible z-50 left-24 transform -translate-x-1/2 top-16 w-[90vw] max-w-[720px] rounded-lg border border-blackk/50 shadow-md shadow-blackk/20 bg-white py-6 px-4"
   >
     <Bridge />
     <Nub selected={selected} />

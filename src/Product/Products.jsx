@@ -17,7 +17,7 @@ const eiceAimIcon = "https://d3r43jacxrwsrp.cloudfront.net/eice-aim/Action-Agent
 const eiceSmartfitIcon = "https://d3r43jacxrwsrp.cloudfront.net/smartfit/SmartFit_Icon.svg";
 const eiceopsIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/EICEOPS.svg";
 const arrowIcon = "https://d3r43jacxrwsrp.cloudfront.net/arrow.svg";
-const productHeroImg = "https://d3r43jacxrwsrp.cloudfront.net/product/product_hero.png";
+const productHeroImg = "https://d3r43jacxrwsrp.cloudfront.net/product/product-hero.png";
 
 
 const products = [

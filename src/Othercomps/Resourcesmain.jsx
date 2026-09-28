@@ -16,7 +16,7 @@ function Resourcesmain() {
     <div>
       <div className="bg-gradient-to-br from-cyan-100/10 to-bloo/10 w-screen h-auto sm:h-[60vh] 2xl:h-[35vh] bg-cover bg-no-repeat ">
         <div className=" max-w-7xl mx-auto w-full h-full">
-          <div className="pt-4 flex flex-col items-start sm:items-center justify-start sm:justify-center w-full h-full pb-8 sm:pb-0 px-5 sm:px-0">
+          <div className="pt-4 flex flex-col items-start sm:items-center justify-start sm:justify-center w-full h-full pb-8 sm:pb-0 px-4 md:px-10 lg:px-20 xl:px-40">
             <h1 className="text-blackk fontweight_1 text-left sm:text-center text-[32px] sm:text-[35px] py-2">
               EICE Resources
             </h1>
@@ -33,7 +33,7 @@ function Resourcesmain() {
           </div>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto py-8 sm:py-12 px-5 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto py-8 sm:py-12 px-4 md:px-10 lg:px-20 xl:px-40">
         <h2 className="text-blackk fontweight_1 text-left sm:text-center text-[32px] sm:text-3xl lg:text-4xl max-w-3xl sm:mx-auto mb-4 sm:mb-12">
           Discover, Innovate and Excel with EICE
         </h2>
@@ -64,7 +64,7 @@ function Resourcesmain() {
           </div>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto py-8 sm:py-12 px-5 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto py-8 sm:py-12 px-4 md:px-10 lg:px-20 xl:px-40">
         <div className="grid lg:grid-cols-3 grid-cols-1 xl:gap-0 gap-4 sm:gap-12 justify-center items-center">
           <div className="flex flex-col col-span-2">
             <h2 className="text-blackk text-left fontweight_1 text-[32px] sm:text-3xl lg:text-4xl mb-4">

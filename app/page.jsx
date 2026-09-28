@@ -13,6 +13,7 @@ import Solutions from "../src/Homecomps/Solutions";
 // Component like this page, so SSR stays on — only the JS chunk splits.
 const Clientele = dynamic(() => import("../src/Homecomps/Clientele"));
 const Clients = dynamic(() => import("../src/Homecomps/Clients"));
+const LatestVideos = dynamic(() => import("../src/Homecomps/LatestVideos"));
 const Casestudies = dynamic(() => import("../src/Homecomps/Casestudies"));
 const Certificate = dynamic(() => import("../src/Homecomps/Certificate"));
 const ProductFooter = dynamic(() => import("../src/Product/ProductFooter"));
@@ -99,6 +100,7 @@ export default function Page() {
         <Solutions />
         <Casestudies />
         <Clients />
+        <LatestVideos />
         <Clientele />
         <Certificate />
       </div>

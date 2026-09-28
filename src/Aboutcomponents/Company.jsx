@@ -2,7 +2,7 @@
 
 function Company() {
   return (
-    <div className="font-manrope mx-auto sm:px-4 px-4 sm:max-w-7xl w-screen 2xl:pt-12 sm:pt-28 pt-36">
+    <div className="font-manrope mx-auto px-4 md:px-10 lg:px-20 xl:px-40 sm:max-w-7xl w-screen 2xl:pt-12 sm:pt-28 pt-36">
       {/* <div className="w-full h-full bg-bloo/5 -rotate-45 absolute left-[75%] blur-[400px]"></div> */}
 
       <div className="text-center pb-12">

@@ -5,6 +5,14 @@ import { Link } from "@/nextNavigation";
 const _LP = "https://d3r43jacxrwsrp.cloudfront.net/landing-page";
 const arrowIcon = "https://d3r43jacxrwsrp.cloudfront.net/arrow.svg";
 
+function ArrowIcon({ className }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+      <path d="M16.175 13H4V11H16.175L10.575 5.4L12 4L20 12L12 20L10.575 18.6L16.175 13Z" />
+    </svg>
+  );
+}
+
 const capabilities = [
   {
     icon: `${_LP}/App-development.png`,
@@ -69,7 +77,7 @@ function Offers() {
                   href={cap.link}
                   className="inline-flex items-center gap-2 text-[14px] font-bold text-[#01B0F1] hover:text-blue-900 transition"
                 >
-                  Explore More <img src={arrowIcon} alt="" className="w-4 h-4" width="16" height="16" />
+                  Explore More <ArrowIcon className="w-4 h-4" />
                 </Link>
               </div>
             </div>

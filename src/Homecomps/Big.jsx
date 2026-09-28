@@ -14,20 +14,20 @@ function Big() {
       content: (
         <div className=" mx-auto px-5 sm:px-12 lg:px-0 xl:px-12 2xl:px-16 sm:mt-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <div className="flex flex-col space-y-2 sm:space-y-2 ">
+            <div className="flex flex-col">
               <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-bloo/10 text-[#012060] text-xs sm:text-sm font-semibold tracking-wide w-fit">
                 <BsStars size={14} />
                 AI-POWERED ENTERPRISE SOLUTIONS
               </span>
-              <h1 className="text-blackk fontsize_6 font-semibold leading-tight">
+              <h1 className="mt-[10px] text-blackk fontsize_6 font-semibold leading-tight">
                 Transforming Enterprise Operations with{" "}
                 <span className="text-bloo">AI</span>
               </h1>
-              <p className="font-normal text-blackk/70 sm:text-xl text-lg">
+              <p className="mt-4 font-normal text-blackk/70 sm:text-xl text-lg">
                 Build smarter workflows, uncover predictive insights, and
                 automate complex decisions with EICE's AI-powered solutions.
               </p>
-              <div className="flex flex-row sm:flex-row gap-4 ">
+              <div className="mt-8 flex flex-row sm:flex-row gap-4 ">
                 <Link href="/products/eicerise/form?product=Home">
                   <button aria-label="Request A Demo" className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 border-2 border-blue-900 bg-blue-900 text-white hover:bg-blue-800 text-sm sm:text-base">
                     Request A Demo
@@ -63,21 +63,21 @@ function Big() {
       content: (
         <div className=" mx-auto px-5 sm:px-12 lg:px-0 xl:px-12 2xl:px-16 sm:mt-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <div className="flex flex-col space-y-2 sm:space-y-2">
+            <div className="flex flex-col">
               <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-bloo/10 text-[#012060] text-xs sm:text-sm font-semibold tracking-wide w-fit">
                 <BsStars size={14} />
                 ENTERPRISE ENGINEERING, DONE RIGHT
               </span>
-              <h1 className="text-blackk fontsize_6 font-semibold leading-tight">
+              <h1 className="mt-[10px] text-blackk fontsize_6 font-semibold leading-tight">
                 Software <span className="text-bloo">Built to Last</span>,
                 Not Just to Ship
               </h1>
-              <p className="font-normal text-blackk/70 sm:text-xl text-lg">
+              <p className="mt-4 font-normal text-blackk/70 sm:text-xl text-lg">
                 From legacy modernization to custom web, mobile, and SaaS
                 platforms — we engineer for what happens after launch,
                 backed by CMMI Level 3 and ISO-certified practices.
               </p>
-              <div className="flex flex-row sm:flex-row gap-4">
+              <div className="mt-8 flex flex-row sm:flex-row gap-4">
                 <Link href="/products/eicerise/form?product=Home">
                   <button className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 border-2 border-blue-900 bg-blue-900 text-white hover:bg-blue-800 text-sm sm:text-base">
                     Request A Demo
@@ -113,22 +113,22 @@ function Big() {
       content: (
         <div className=" mx-auto px-5 sm:px-12 lg:px-0 xl:px-12 2xl:px-16 sm:mt-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <div className="flex flex-col space-y-2 sm:space-y-2">
+            <div className="flex flex-col">
               <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-bloo/10 text-[#012060] text-xs sm:text-sm font-semibold tracking-wide w-fit">
                 <BsStars size={14} />
                 REAL RESULTS, NOT PROMISES
               </span>
-              <h1 className="text-blackk fontsize_6 font-semibold leading-tight">
+              <h1 className="mt-[10px] text-blackk fontsize_6 font-semibold leading-tight">
                 <span className="text-bloo">82 Applications.</span> One
                 Governance Standard. Zero Guesswork.
               </h1>
-              <p className="font-normal text-blackk/70 sm:text-xl text-lg">
+              <p className="mt-4 font-normal text-blackk/70 sm:text-xl text-lg">
                 We don't just talk about AI value — we measure it. Our
                 AI-Enabled Engineering Excellence Center delivers
                 portfolio-wide governance and task-level AI impact tracking
                 for a real, currently-operating enterprise client.
               </p>
-              <div className="flex flex-row sm:flex-row gap-4">
+              <div className="mt-8 flex flex-row sm:flex-row gap-4">
                 <Link href="/products/eicerise/form?product=Home">
                   <button className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 border-2 border-blue-900 bg-blue-900 text-white hover:bg-blue-800 text-sm sm:text-base">
                     Request A Demo

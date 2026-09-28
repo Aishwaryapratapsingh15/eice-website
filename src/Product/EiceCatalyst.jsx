@@ -352,8 +352,8 @@ export default function EiceCatalystPage() {
       </section>
 
       {/* CTA */}
-      <section id ="contact" className=" bg-white">
-        <div className="max-w-7xl mx-auto overflow-hidden bg-gray-50">
+      <section id ="contact" className="bg-gray-50">
+        <div className="max-w-7xl mx-auto overflow-hidden">
           <div className="flex flex-col items-center gap-6 px-6 py-10 text-left sm:px-16 sm:py-14 sm:text-center">
             <div>
               <h2 className="text-[32px] sm:text-4xl font-bold leading-tight text-gray-800">

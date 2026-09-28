@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 function Workflow() {
   return (
-    <div className="font-manrope mx-auto sm:px-4 px-4 sm:max-w-7xl w-screen sm:pt-24 pt-20 sm:pb-24 pb-16">
+    <div className="font-manrope mx-auto px-4 md:px-10 lg:px-20 xl:px-40 sm:max-w-7xl w-screen sm:pt-24 pt-20 sm:pb-24 pb-16">
       {/* <div className="w-screen h-1/4 bg-bloo/10 rotate-45 absolute top-0 z-1 left-[50%] blur-[300px]"></div> */}
       {/* <div className="w-full h-full bg-bloo/5 -rotate-45 absolute right-[75%] blur-[400px]"></div> */}
       <div className="flex flex-col sm:items-center sm:justify-center items-start text-center">
