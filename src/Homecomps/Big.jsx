@@ -12,7 +12,7 @@ function Big() {
   const slides = [
     {
       content: (
-        <div className=" mx-auto px-5 sm:px-12 lg:px-0 xl:px-12 2xl:px-16 sm:mt-10">
+        <div className=" mx-auto px-5 sm:px-12 lg:px-0 xl:px-12 2xl:px-8 sm:mt-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="flex flex-col">
               <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-bloo/10 text-[#012060] text-xs sm:text-sm font-semibold tracking-wide w-fit">
@@ -20,12 +20,14 @@ function Big() {
                 AI-POWERED ENTERPRISE SOLUTIONS
               </span>
               <h1 className="mt-[10px] text-blackk fontsize_6 font-semibold leading-tight">
-                Transforming Enterprise Operations with{" "}
-                <span className="text-bloo">AI</span>
+                Transforming Enterprise Operations. Smarter Decisions.
+                Powered by <span className="text-bloo">AI</span>.
               </h1>
-              <p className="mt-4 font-normal text-blackk/70 sm:text-xl text-lg">
+              <p className="mt-4 font-normal text-blackk/70 sm:text-[16px]">
                 Build smarter workflows, uncover predictive insights, and
-                automate complex decisions with EICE's AI-powered solutions.
+                automate complex decisions across your organization. EICE's
+                AI-powered solutions turn everyday operations into measurable
+                business outcomes, backed by real engineering discipline.
               </p>
               <div className="mt-8 flex flex-row sm:flex-row gap-4 ">
                 <Link href="/products/eicerise/form?product=Home">
@@ -45,7 +47,7 @@ function Big() {
                 src={haloicon}
                 alt=""
                 aria-hidden="true"
-                className="animate-spin-slow absolute inset-0 m-auto w-[75%] max-w-lg min-[1500px]:w-[432px] h-auto -z-10 pointer-events-none select-none"
+                className="hidden lg:block animate-spin-slow absolute inset-0 m-auto w-[75%] max-w-lg min-[1500px]:w-[432px] h-[280px] sm:h-[350px] md:h-[390px] min-[1500px]:h-[330px] -z-10 pointer-events-none select-none"
               />
               <img
                 className="relative w-full max-w-md rounded-lg"
@@ -69,13 +71,14 @@ function Big() {
                 ENTERPRISE ENGINEERING, DONE RIGHT
               </span>
               <h1 className="mt-[10px] text-blackk fontsize_6 font-semibold leading-tight">
-                Software <span className="text-bloo">Built to Last</span>,
-                Not Just to Ship
+                Software <span className="text-bloo">Built to Last</span>.
+                Engineered to Scale. Never Just to Ship.
               </h1>
-              <p className="mt-4 font-normal text-blackk/70 sm:text-xl text-lg">
+              <p className="mt-4 font-normal text-blackk/70 sm:text-[16px]">
                 From legacy modernization to custom web, mobile, and SaaS
-                platforms — we engineer for what happens after launch,
-                backed by CMMI Level 3 and ISO-certified practices.
+                platforms, we engineer for what happens after launch. Every
+                build is backed by CMMI Level 3 and ISO-certified practices,
+                so reliability isn't an afterthought — it's the standard.
               </p>
               <div className="mt-8 flex flex-row sm:flex-row gap-4">
                 <Link href="/products/eicerise/form?product=Home">
@@ -95,7 +98,7 @@ function Big() {
                 src={haloicon}
                 alt=""
                 aria-hidden="true"
-                className="animate-spin-slow absolute inset-0 m-auto w-[75%] max-w-lg min-[1500px]:w-[432px] h-auto -z-10 pointer-events-none select-none"
+                className="hidden lg:block animate-spin-slow absolute inset-0 m-auto w-[75%] max-w-lg min-[1500px]:w-[432px] h-[280px] sm:h-[350px] md:h-[390px] min-[1500px]:h-[330px] -z-10 pointer-events-none select-none"
               />
               <img
                 className="relative w-full max-w-md rounded-lg"
@@ -122,7 +125,7 @@ function Big() {
                 <span className="text-bloo">82 Applications.</span> One
                 Governance Standard. Zero Guesswork.
               </h1>
-              <p className="mt-4 font-normal text-blackk/70 sm:text-xl text-lg">
+              <p className="mt-4 font-normal text-blackk/70 sm:text-[16px]">
                 We don't just talk about AI value — we measure it. Our
                 AI-Enabled Engineering Excellence Center delivers
                 portfolio-wide governance and task-level AI impact tracking
@@ -146,7 +149,7 @@ function Big() {
                 src={haloicon}
                 alt=""
                 aria-hidden="true"
-                className="animate-spin-slow absolute inset-0 m-auto w-[75%] max-w-lg min-[1500px]:w-[432px] h-auto -z-10 pointer-events-none select-none"
+                className="hidden lg:block animate-spin-slow absolute inset-0 m-auto w-[75%] max-w-lg min-[1500px]:w-[432px] h-[280px] sm:h-[350px] md:h-[390px] min-[1500px]:h-[330px] -z-10 pointer-events-none select-none"
               />
               <img
                 className="relative w-full max-w-md rounded-lg"
@@ -192,7 +195,7 @@ function Big() {
 
   return (
     <div
-      className="relative overflow-visible font-manrope pt-20 sm:pt-[100px] text-blackk pb-4"
+      className="relative overflow-visible font-manrope pt-20 sm:pt-[75px] 2xl:pt-[2px] text-blackk pb-4"
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
       role="region"

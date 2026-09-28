@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { Link } from "@/nextNavigation";
 
 const capabilities = [
   {
@@ -30,7 +29,7 @@ export default function AiCapability() {
     <div className="font-poppins py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-gradient-to-br from-[#010F33] to-[#012060] text-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-left sm:text-center mb-8">
-          <h2 className="text-[#6EDBFF] text-xs font-extrabold uppercase tracking-[0.12em] py-2">
+          <h2 className="text-[#01B0F1] text-xs font-extrabold uppercase tracking-[0.12em] py-2">
             Our AI Capability
           </h2>
           <h1 className="text-white fontweight_1 text-[26px] sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
@@ -52,15 +51,6 @@ export default function AiCapability() {
               <p className="text-[#C7D3EB] text-[16px] font-normal leading-relaxed">{cap.desc}</p>
             </div>
           ))}
-        </div>
-
-        <div className="flex justify-center mt-8 sm:mt-10">
-          <Link
-            href="/services/ai-ml"
-            className="inline-flex items-center justify-center py-4 px-7 rounded-md bg-bloo text-white font-semibold text-lg transition duration-200 hover:bg-[#009fdc]"
-          >
-            Explore AI Capabilities
-          </Link>
         </div>
       </div>
     </div>

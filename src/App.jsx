@@ -90,7 +90,7 @@ const NavLayout = ({ children }) => {
             </div>
             <div className="px-4 flex-1 flex justify-end">
               <NavLink to="/contact">
-                <button className="flex items-center justify-center transition duration-200 py-2 w-28 hover:bg-blue-900/90 hover:shadow-md hover:shadow-blue-900/30 bg-blue-900 text-white text-sm font-semibold px-3 rounded">
+                <button className="flex items-center justify-center transition duration-200 w-28 h-[34px] min-h-[34px] hover:bg-blue-900/90 hover:shadow-md hover:shadow-blue-900/30 bg-blue-900 text-white text-sm font-semibold px-3 rounded">
                   Contact Us
                 </button>
               </NavLink>

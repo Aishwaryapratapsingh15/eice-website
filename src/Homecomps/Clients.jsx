@@ -37,7 +37,7 @@ export default function Clients() {
           Our Clients
         </h2>
         <p className="text-left sm:text-center text-[26px] sm:text-3xl sm:mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1 fontweight_1 mb-8">
-          Partnering with visionary clients to drive success and innovation
+          Partnering with visionary clients to drive <br />success and innovation
         </p>
 
         <div style={{ display: "flex", justifyContent: "center" }}>

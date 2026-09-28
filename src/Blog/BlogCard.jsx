@@ -9,12 +9,12 @@ export function BlogCard({ blog }) {
 
   return (
     <div className="group flex flex-col overflow-hidden rounded-2xl bg-white shadow-md ring-1 ring-black/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-      <Link to={postUrl} className="relative block aspect-[16/10] w-full overflow-hidden">
+      <Link to={postUrl} className="relative w-full overflow-hidden">
         {blog.featuredMedia ? (
           <img
             src={blog.featuredMedia.url}
             alt={blog.featuredMedia.altText ?? blog.title}
-            className="h-full w-full object-cover transition-transform duration-300 ease-out group-hover:scale-105"
+            className="h-full w-full object-contain transition-transform duration-300 ease-out group-hover:scale-105"
           />
         ) : (
           <div className="h-full w-full bg-gradient-to-br from-[#012060] to-bloo" />
