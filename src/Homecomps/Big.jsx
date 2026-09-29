@@ -36,7 +36,7 @@ function Big() {
                   </button>
                 </Link>
                 <Link href="/contact">
-                  <button aria-label="Contact Us" className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 border-2 border-blue-900 text-blue-900 hover:bg-blue-100 text-sm sm:text-base">
+                  <button aria-label="Contact Us" className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 border-2 border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white text-sm sm:text-base">
                     Contact Us
                   </button>
                 </Link>
@@ -87,7 +87,7 @@ function Big() {
                   </button>
                 </Link>
                 <Link href="/contact">
-                  <button className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 border-2 border-blue-900 text-blue-900 hover:bg-blue-100 text-sm sm:text-base">
+                  <button className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 border-2 border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white text-sm sm:text-base">
                     Contact Us
                   </button>
                 </Link>
@@ -138,7 +138,7 @@ function Big() {
                   </button>
                 </Link>
                 <Link href="/contact">
-                  <button className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 border-2 border-blue-900 text-blue-900 hover:bg-blue-100 text-sm sm:text-base">
+                  <button className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 border-2 border-blue-900 text-blue-900 hover:bg-blue-900 hover:text-white text-sm sm:text-base">
                     Contact Us
                   </button>
                 </Link>

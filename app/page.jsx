@@ -14,6 +14,7 @@ import Solutions from "../src/Homecomps/Solutions";
 const Clientele = dynamic(() => import("../src/Homecomps/Clientele"));
 const Clients = dynamic(() => import("../src/Homecomps/Clients"));
 const LatestVideos = dynamic(() => import("../src/Homecomps/LatestVideos"));
+const Faq = dynamic(() => import("../src/Homecomps/Faq"));
 const Casestudies = dynamic(() => import("../src/Homecomps/Casestudies"));
 const Certificate = dynamic(() => import("../src/Homecomps/Certificate"));
 const ProductFooter = dynamic(() => import("../src/Product/ProductFooter"));
@@ -113,6 +114,7 @@ export default function Page() {
         <Casestudies />
         <Clients />
         <LatestVideos />
+        <Faq />
         <Clientele />
         <Certificate />
       </div>

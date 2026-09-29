@@ -56,7 +56,8 @@ export default function OurProducts() {
           Built as a Unified Enterprise Intelligence Ecosystem
         </h1>
         <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl mx-auto mt-2">
-          Modular platforms designed to work independently or together, based on your business needs.
+          Modular platforms designed to work independently or together,
+          <br className="hidden min-[1000px]:inline" /> based on your business needs.
         </p>
       </div>
 
