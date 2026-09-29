@@ -5,7 +5,7 @@ import ProductFooter from "./ProductFooter";
 
 const easylogyIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Easylogy.svg";
 const eiceriseIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/EiceRise.svg";
-const eicevoiceIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/EiceVoice.svg";
+const eicevoiceIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Eice-Voice.svg";
 const infrasightIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/infrasight.svg";
 const isyncdriveIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/isyncdrive.svg";
 const isyncliteIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/isynclite.svg";
@@ -22,7 +22,7 @@ const productHeroImg = "https://d3r43jacxrwsrp.cloudfront.net/product/product-he
 
 const products = [
   {
-    name: "Eice Voice",
+    name: "EICE Voice",
     category: "ai",
     icon: eicevoiceIcon,
     type: "AI · Voice",
