@@ -9,15 +9,15 @@ const casestudiesbgImage = "https://d3r43jacxrwsrp.cloudfront.net/landing-page/c
 function Casestudies() {
   return (
     <div
-      className="font-poppins py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-cover bg-center"
+      className="bg-cover bg-center"
       style={{ backgroundImage: `url(${casestudiesbgImage})` }}
     >
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+      <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
         <div>
-          <h2 className="text-bloo text-xs font-extrabold uppercase tracking-[0.12em] py-2">
+          <h2 className="font-general font-medium text-bloo text-[15px] sm:text-[16px] uppercase tracking-[0.12em] py-2">
             Case Studies
           </h2>
-          <h1 className="text-blackk font-bold text-[26px] sm:text-3xl lg:text-[32px] leading-tight mb-6">
+          <h1 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] max-w-4xl mb-6">
             Proven impact across complex enterprise environments
           </h1>
           <Link

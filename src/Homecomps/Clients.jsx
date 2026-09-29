@@ -32,12 +32,12 @@ export default function Clients() {
 
   return (
     <>
-      <div className="font-poppins py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40">
+      <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
         <h2 className="text-bloo text-left sm:text-center text-xs font-extrabold uppercase tracking-[0.12em] py-2">
           Our Clients
         </h2>
-        <p className="text-left sm:text-center text-[26px] sm:text-3xl sm:mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1 fontweight_1 mb-8">
-          Partnering with visionary clients to drive <br />success and innovation
+        <p className="text-left sm:text-center text-[26px] sm:text-3xl sm:mx-auto md:text-3xl lg:text-[32px] max-w-4xl py-1 fontweight_1 mb-8">
+          Partnering with visionary clients to drive success and innovation
         </p>
 
         <div style={{ display: "flex", justifyContent: "center" }}>

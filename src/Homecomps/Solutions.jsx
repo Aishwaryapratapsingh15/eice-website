@@ -384,61 +384,59 @@ function Solutions() {
   }, []);
 
   return (
-    <div className="font-poppins py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40">
-      <div className="max-w-7xl mx-auto">
+    <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
 
-        {/* Mobile heading */}
-        <h2 className="sm:hidden text-blackk font-semibold text-left text-[26px] py-2 mb-2">
-          Solutions for Industries
-        </h2>
+      {/* Mobile heading */}
+      <h2 className="sm:hidden font-general font-semibold text-blackk text-left text-[24px] leading-[1.2] max-w-4xl py-2 mb-2">
+        Solutions for Industries
+      </h2>
 
-        {/* Desktop headings */}
-        <h2 className="hidden sm:block text-bloo text-xs font-extrabold uppercase tracking-[0.12em] text-center py-2">
-          Industries We Serve
-        </h2>
-        <h1 className="hidden sm:block text-blackk fontweight_1 text-center text-[26px] sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
-          Industry-Focused Solutions With Enterprise Depth
-        </h1>
+      {/* Desktop headings */}
+      <h2 className="hidden sm:block font-general font-medium text-bloo text-[16px] uppercase tracking-[0.12em] text-center py-2">
+        Industries We Serve
+      </h2>
+      <h1 className="hidden sm:block font-general font-semibold text-blackk text-center text-[32px] leading-[1.2] mx-auto max-w-4xl py-1">
+        Industry-Focused Solutions With Enterprise Depth
+      </h1>
 
-        {/* Mobile: infinite auto-scroll */}
-        <div
-          ref={scrollRef}
-          className="sm:hidden flex overflow-hidden gap-4 pb-4 px-0"
-          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-        >
-          {[...industries, ...industries].map((industry, index) => (
-            <IndustryCard key={index} {...industry} />
-          ))}
-        </div>
-
-        {/* Desktop: grid — unchanged */}
-        <div className="hidden sm:grid sm:grid-cols-3 sm:gap-6 sm:mt-8 sm:mb-8 sm:px-4">
-          {industries.map((industry, index) => (
-            <IndustryCard key={index} {...industry} />
-          ))}
-        </div>
-
-        {/* Mobile: View all button */}
-        <div className="sm:hidden mb-4">
-          <Link
-            to="/industries"
-            className="flex justify-center items-center w-full border border-blue-900 bg-blue-900 text-white rounded-full py-3 font-semibold text-sm"
-          >
-            View all industries →
-          </Link>
-        </div>
-
-        {/* Desktop: View More button — unchanged */}
-        <div className="hidden sm:flex justify-center">
-          <Link
-            to="/industries"
-            className="inline-flex items-center justify-center py-4 px-7 border border-blue-900 bg-blue-900 text-white font-semibold rounded-md text-lg transition duration-200 hover:bg-blue-900/90 hover:shadow-md hover:shadow-bloo/30"
-          >
-            View More <img src={arrow} alt="" className="ml-2 w-5 h-5"  width="20" height="20" />
-          </Link>
-        </div>
-
+      {/* Mobile: infinite auto-scroll */}
+      <div
+        ref={scrollRef}
+        className="sm:hidden flex overflow-hidden gap-4 pb-4 px-0"
+        style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+      >
+        {[...industries, ...industries].map((industry, index) => (
+          <IndustryCard key={index} {...industry} />
+        ))}
       </div>
+
+      {/* Desktop: grid — unchanged */}
+      <div className="hidden sm:grid sm:grid-cols-3 sm:gap-6 sm:mt-8 sm:mb-8">
+        {industries.map((industry, index) => (
+          <IndustryCard key={index} {...industry} />
+        ))}
+      </div>
+
+      {/* Mobile: View all button */}
+      <div className="sm:hidden mb-4">
+        <Link
+          to="/industries"
+          className="flex justify-center items-center w-full border border-blue-900 bg-blue-900 text-white rounded-full py-3 font-semibold text-sm"
+        >
+          View all industries →
+        </Link>
+      </div>
+
+      {/* Desktop: View More button — unchanged */}
+      <div className="hidden sm:flex justify-center">
+        <Link
+          to="/industries"
+          className="inline-flex items-center justify-center py-4 px-7 border border-blue-900 bg-blue-900 text-white font-semibold rounded-md text-lg transition duration-200 hover:bg-blue-900/90 hover:shadow-md hover:shadow-bloo/30"
+        >
+          View More <img src={arrow} alt="" className="ml-2 w-5 h-5"  width="20" height="20" />
+        </Link>
+      </div>
+
     </div>
   );
 }
@@ -455,10 +453,10 @@ function IndustryCard({ name, description, image, link }) {
         }
       />
       <div className="pt-[19px] px-[25px] pb-[25px]">
-        <h3 className="text-[#373737] font-bold text-[20px] mb-[7px]">
+        <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[22px] leading-[1.3] mb-[7px]">
           {name}
         </h3>
-        <p className="text-[#64748B] text-[16px] font-normal mb-[18px]">
+        <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6] mb-[18px]">
           {description}
         </p>
         <Link

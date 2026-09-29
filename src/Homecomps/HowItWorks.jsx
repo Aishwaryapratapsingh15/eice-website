@@ -41,16 +41,16 @@ function StepCircle({ color, icon, title }) {
 
 export default function HowItWorks() {
   return (
-    <div className="font-poppins py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
+    <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="text-left sm:text-center mb-8">
-          <h2 className="text-bloo text-xs font-extrabold uppercase tracking-[0.12em] py-2">
+          <h2 className="font-general font-medium text-bloo text-[15px] sm:text-[16px] uppercase tracking-[0.12em] py-2">
             How it works
           </h2>
-          <h1 className="text-blackk fontweight_1 text-[26px] sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
+          <h1 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] mx-auto max-w-4xl py-1">
             A proven journey from strategy to impact
           </h1>
-          <p className="text-blackk/70 font-semibold text-[16px] sm:text-lg max-w-2xl mx-auto mt-2">
+          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl mx-auto mt-2">
             We follow a structured approach to design, deploy, and optimize enterprise solutions.
           </p>
         </div>
@@ -69,8 +69,8 @@ export default function HowItWorks() {
           {steps.map((s) => (
             <div key={s.title} className="relative z-10 flex flex-col items-center text-center px-2 flex-1">
               <StepCircle color={s.color} icon={s.icon} title={s.title} />
-              <h3 className="text-blackk text-base font-bold mt-4 mb-1">{s.title}</h3>
-              <p className="text-blackk/60 text-sm leading-snug max-w-[160px]">{s.desc}</p>
+              <h3 className="font-general font-semibold text-blackk text-[18px] sm:text-[22px] leading-[1.3] mt-4 mb-1">{s.title}</h3>
+              <p className="font-inter font-normal text-blackk/60 text-[13px] sm:text-[14px] leading-[1.5] max-w-[160px]">{s.desc}</p>
             </div>
           ))}
         </div>
@@ -96,8 +96,8 @@ export default function HowItWorks() {
                 <StepCircle color={s.color} icon={s.icon} title={s.title} />
               </div>
               <div className="relative z-10 pt-2">
-                <h3 className="text-blackk text-base font-bold mb-1">{s.title}</h3>
-                <p className="text-blackk/60 text-sm leading-snug">{s.desc}</p>
+                <h3 className="font-general font-semibold text-blackk text-[18px] sm:text-[22px] leading-[1.3] mb-1">{s.title}</h3>
+                <p className="font-inter font-normal text-blackk/60 text-[13px] sm:text-[14px] leading-[1.5]">{s.desc}</p>
               </div>
             </div>
           ))}

@@ -75,21 +75,33 @@ export default function Page() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
+      {/* Landing-page-only Option A type scale fonts (General Sans + Inter).
+          Rendered only here, so no other route loads or is affected by them. */}
+      <link rel="preconnect" href="https://api.fontshare.com" />
+      <link
+        rel="stylesheet"
+        href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,700&display=swap"
+      />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      />
+
       <div className="inner_components">
         <Big />
       </div>
 
       <div>
-        <div className="flex flex-col gap-0.5 items-start sm:items-center justify-start sm:justify-center xl:pt-8 pt-2 sm:pt-4 w-screen px-4 mb-6 sm:mb-10">
-          <h2 className="text-bloo text-xs font-extrabold uppercase tracking-[0.12em] py-2">Core capabilities</h2>
-          <h2 className="text-blackk fontweight_1 text-left sm:text-center text-[26px] sm:text-3xl md:text-3xl lg:text-[32px] max-w-4xl py-1">
+        <div className="flex flex-col gap-0.5 items-start sm:items-center justify-start sm:justify-center pt-4 sm:pt-10 px-4 md:px-10 lg:px-20 xl:px-40 mb-6 sm:mb-10 max-w-7xl mx-auto">
+          <h2 className="font-general font-medium text-bloo text-[15px] sm:text-[16px] uppercase tracking-[0.12em] py-2">Core capabilities</h2>
+          <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] max-w-4xl py-1">
             Enterprise-grade intelligence, <br className="sm:hidden" />
             built to scale
           </h2>
         </div>
-        <div className="mx-auto px-0 sm:px-2">
-          <Offers />
-        </div>
+        <Offers />
       </div>
 
       <OurProducts />

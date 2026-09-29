@@ -11,8 +11,8 @@ export default async function LatestVideos() {
   if (videos.length === 0) return null;
 
   return (
-    <div className={styles.latestVideos}>
-      <div className={`${styles.heading} text-[26px] sm:text-[35px]`}>
+    <div className={`${styles.latestVideos} py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto`}>
+      <div className={`${styles.heading} text-[24px] sm:text-[32px]`}>
         Latest Videos
       </div>
 

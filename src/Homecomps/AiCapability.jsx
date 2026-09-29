@@ -26,16 +26,16 @@ const capabilities = [
 
 export default function AiCapability() {
   return (
-    <div className="font-poppins py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-gradient-to-br from-[#010F33] to-[#012060] text-white">
-      <div className="max-w-7xl mx-auto">
+    <div className="bg-gradient-to-br from-[#010F33] to-[#012060] text-white">
+      <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
         <div className="text-left sm:text-center mb-8">
-          <h2 className="text-[#01B0F1] text-xs font-extrabold uppercase tracking-[0.12em] py-2">
+          <h2 className="font-general font-medium text-[#01B0F1] text-[15px] sm:text-[16px] uppercase tracking-[0.12em] py-2">
             Our AI Capability
           </h2>
-          <h1 className="text-white fontweight_1 text-[26px] sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
+          <h1 className="font-general font-semibold text-white text-[24px] sm:text-[32px] leading-[1.2] mx-auto max-w-4xl py-1">
             From Data to Intelligence to Action
           </h1>
-          <p className="text-[#C7D3EB] font-semibold text-[16px] sm:text-lg max-w-2xl mx-auto mt-2">
+          <p className="font-inter font-normal text-[#C7D3EB] text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl mx-auto mt-2">
             AI at EICE is focused on practical enterprise outcomes, automating work, finding intelligence in business data and helping teams make faster decisions.
           </p>
         </div>
@@ -47,8 +47,8 @@ export default function AiCapability() {
               className="rounded-[18px] border border-white/15 bg-white/[0.04] p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]"
             >
               <div className="text-bloo font-extrabold text-sm mb-[19px]">{cap.num}</div>
-              <h3 className="text-white text-[20px] font-bold mb-[7px]">{cap.title}</h3>
-              <p className="text-[#C7D3EB] text-[16px] font-normal leading-relaxed">{cap.desc}</p>
+              <h3 className="font-general font-semibold text-white text-[18px] sm:text-[22px] leading-[1.3] mb-[7px]">{cap.title}</h3>
+              <p className="font-inter font-normal text-[#C7D3EB] text-[15px] sm:text-[16px] leading-[1.6]">{cap.desc}</p>
             </div>
           ))}
         </div>

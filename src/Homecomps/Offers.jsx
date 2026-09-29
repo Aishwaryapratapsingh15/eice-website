@@ -54,44 +54,42 @@ const capabilities = [
 
 function Offers() {
   return (
-    <div className="font-poppins pb-4 sm:pb-10 px-4 md:px-10 lg:px-20 xl:px-40">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {capabilities.map((cap) => (
-            <div key={cap.title} className="bg-white rounded-[18px] overflow-hidden border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
-              <img
-                src={cap.icon}
-                alt=""
-                className="w-full h-[220px] sm:h-auto sm:aspect-[2/1] object-cover"
-                width="494"
-                height="220"
-              />
-              <div className="pt-[19px] px-[25px] pb-[25px]">
-                <h3 className="text-[#373737] text-[20px] font-bold mb-[7px]">
-                  {cap.title}
-                </h3>
-                <p className="text-[#64748B] text-[16px] font-normal mb-[18px]">
-                  {cap.desc}
-                </p>
-                <Link
-                  href={cap.link}
-                  className="inline-flex items-center gap-2 text-[14px] font-bold text-[#01B0F1] hover:text-blue-900 transition"
-                >
-                  Explore More <ArrowIcon className="w-4 h-4" />
-                </Link>
-              </div>
+    <div className="pb-4 sm:pb-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {capabilities.map((cap) => (
+          <div key={cap.title} className="bg-white rounded-[18px] overflow-hidden border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
+            <img
+              src={cap.icon}
+              alt=""
+              className="w-full h-[220px] sm:h-auto sm:aspect-[2/1] object-cover"
+              width="494"
+              height="220"
+            />
+            <div className="pt-[19px] px-[25px] pb-[25px]">
+              <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[22px] leading-[1.3] mb-[7px]">
+                {cap.title}
+              </h3>
+              <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6] mb-[18px]">
+                {cap.desc}
+              </p>
+              <Link
+                href={cap.link}
+                className="inline-flex items-center gap-2 text-[14px] font-bold text-[#01B0F1] hover:text-blue-900 transition"
+              >
+                Explore More <ArrowIcon className="w-4 h-4" />
+              </Link>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
+      </div>
 
-        <div className="flex justify-center mt-8 sm:mt-10">
-          <Link
-            href="/services"
-            className="inline-flex items-center justify-center py-4 px-7 border border-blue-900 bg-blue-900 text-white font-semibold rounded-md text-lg transition duration-200 hover:bg-blue-900/90 hover:shadow-md hover:shadow-bloo/30"
-          >
-            Explore our services →
-          </Link>
-        </div>
+      <div className="flex justify-center mt-8 sm:mt-10">
+        <Link
+          href="/services"
+          className="inline-flex items-center justify-center py-4 px-7 border border-blue-900 bg-blue-900 text-white font-semibold rounded-md text-lg transition duration-200 hover:bg-blue-900/90 hover:shadow-md hover:shadow-bloo/30"
+        >
+          Explore our services →
+        </Link>
       </div>
     </div>
   );

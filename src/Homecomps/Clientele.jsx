@@ -3,16 +3,16 @@ import Clients from "./Clients";
 
 function Clientele() {
   return (
-    <div className="relative font-poppins text-blackk py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 overflow-hidden">
+    <div className="relative text-blackk py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 overflow-hidden">
       <div className="absolute inset-0 w-full h-full -z-10">
         <div className="bg-map bg-no-repeat bg-cover bg-center h-full w-full opacity-70"></div>
       </div>
 
-      <div className="relative max-w-5xl mx-auto">
-        <h2 className="text-bloo text-left sm:text-center text-xs font-extrabold uppercase tracking-[0.12em] mb-2 sm:mb-3">
+      <div className="relative max-w-7xl mx-auto">
+        <h2 className="font-general font-medium text-bloo text-left sm:text-center text-[15px] sm:text-[16px] uppercase tracking-[0.12em] mb-2 sm:mb-3">
           Journey so far
         </h2>
-        <h1 className="text-left sm:text-center text-[26px] sm:text-[35px] fontweight_1 mb-8">
+        <h1 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] mb-8">
           Milestones and Achievements
         </h1>
 

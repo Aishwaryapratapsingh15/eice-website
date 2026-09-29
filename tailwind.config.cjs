@@ -5,6 +5,11 @@ module.exports = {
     extend: {
       fontFamily: {
         valera: ['Valera Round Regular', 'serif'],
+        // Landing-page-only Option A type scale (General Sans + Inter).
+        // Only used by homepage-exclusive components — other pages never
+        // reference these classes, so they render unaffected.
+        general: ['General Sans', 'sans-serif'],
+        inter: ['Inter', 'sans-serif'],
       },
       backgroundImage: {
         'offers':        "url('/assets/Compressed/offers.png')",
