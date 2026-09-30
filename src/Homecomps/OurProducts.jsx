@@ -49,7 +49,7 @@ export default function OurProducts() {
   return (
     <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
       <div className="text-left sm:text-center mb-8">
-        <h2 className="font-general font-medium text-bloo text-[15px] sm:text-[16px] uppercase tracking-[0.12em] py-2">
+        <h2 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">
           Our Products
         </h2>
         <h1 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] mx-auto max-w-4xl py-1">
@@ -70,7 +70,7 @@ export default function OurProducts() {
             <div className="mb-[19px] flex h-16 w-16 items-center justify-center rounded-lg bg-[#E6F4FD]">
               <img src={product.icon} alt="" className="h-[41px] w-[41px] object-contain" width="41" height="41" />
             </div>
-            <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[22px] leading-[1.3] mb-[7px]">{product.name}</h3>
+            <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">{product.name}</h3>
             <p className="text-bloo font-semibold text-sm mb-3">{product.tagline}</p>
             <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6] mb-[18px]">{product.description}</p>
             <Link

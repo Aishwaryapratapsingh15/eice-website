@@ -3,6 +3,7 @@ import React from "react";
 import { useNavigate } from "@/nextNavigation";
 import ProductCarousel from "./ProductCarousel";
 import productSlides from "./carouselData";
+import ProductVideo from "./ProductVideo";
 import ProductFooter from "./ProductFooter";
 const arrowIcon = "https://d3r43jacxrwsrp.cloudfront.net/arrow.svg";
 const eiceVoiceIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceVoice/EiceVoice.png";
@@ -139,7 +140,7 @@ export default function EiceVoice() {
     <div className="bg-white text-[#334155]">
 
       {/* ================= HERO ================= */}
-      <section className="bg-white py-4 sm:py-16 md:py-20 text-left sm:text-center px-4">
+      <section className="bg-white py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto text-left sm:text-center">
         <div className="max-w-4xl mx-auto">
 
           {/* ICON */}
@@ -149,29 +150,29 @@ export default function EiceVoice() {
           </div>
 
                   {/* TAG */}
-        <div className="flex w-fit mx-auto items-center gap-2 bg-blue-50 text-[#012060] px-3 py-2 rounded-full text-sm font-medium border border-blue-200 mb-4">
-         <img 
-            src={speakIcon} 
-            alt="icon" 
+        <div className="font-general font-semibold flex w-fit mx-auto items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[12px] sm:text-[14px] tracking-wide mb-4">
+         <img
+            src={speakIcon}
+            alt="icon"
             className="w-5 h-5 rounded-full object-contain"
            width="20" height="20" />
-          <span className = "text-[#334155]">Voice-First AI for Hospitality</span>
+          <span>Voice-First AI for Hospitality</span>
         </div>
 
           {/* HEADING */}
-          <h1 className="text-[40px] md:text-[48px] font-bold">
-           <span className="text-[#01B0F1]"> AI-Powered </span>VoiceOrder Management <br /> 
-            
+          <h1 className="font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] text-blackk py-1">
+           <span className="text-bloo"> AI-Powered </span>Voice Order Management <br />
+
             for Modern Hospitality
           </h1>
 
           {/* SUBTEXT */}
-          <p className="mt-3 text-[#64748B] text-[16px] sm:text-lg max-w-2xl mx-auto">
+          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl mx-auto mt-2">
             EICE Voice is an AI-Powered, voice-first order management platform that lets restaurant and hotel staff place, manage and track orders hand-free--with natural language understanding built for the hospitality industry.
           </p>
 
           {/* CTA */}
-          <div className="mt-10 sm:flex sm:justify-center">
+          <div className="mt-8 sm:flex sm:justify-center">
             <button
               onClick={() => navigate("/products/eicerise/form?product=Eice%20Voice")}
               className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 text-[18px] hover:bg-blue-800 transition"
@@ -184,23 +185,23 @@ export default function EiceVoice() {
       </section>
 
       {/* ================= WHAT IS ================= */}
-  <section className="bg-white py-4 sm:py-10 px-5 md:px-20 lg:px-20 xl:px-40">
+  <section className="bg-white py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
   <div className="grid md:grid-cols-2 gap-4 sm:gap-10 items-center max-w-6xl mx-auto">
 
     {/* LEFT */}
     <div>
-      <h2 className="text-[32px] sm:text-2xl md:text-3xl font-bold mb-4 text-[#334155]">
+      <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mb-8">
         What is EICE Voice?
       </h2>
 
-      <p className="text-[#64748B] font-semibold mb-6 leading-8 space-y-6 max-w-[600px]">
+      <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] mb-3 max-w-[600px]">
         EICE Voice is an AI-powered voice layer built on top of existing POS
         and ERP systems. It enables hospitality staff to place and manage
         orders using natural speech — without touching a screen or learning
         complex software.
       </p>
 
-      <p className="text-[#64748B] font-semibold mb-6 leading-8 space-y-6 max-w-[600px]">
+      <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] mb-6 max-w-[600px]">
         Built with a custom NLU engine trained on hospitality-specific
         vocabulary, EICE Voice understands kitchen terminology, table
         numbers, modifiers, and multi-item orders — in real time, across
@@ -215,7 +216,7 @@ export default function EiceVoice() {
           <div className="w-6 h-6 rounded-full flex items-center justify-center text-white text-sm">
             <img src={tickIcon} width="24" height="24" />
           </div>
-          <p className="space-y-3 text-[#334155] font-semibold">
+          <p className="font-inter font-normal text-blackk text-[15px] sm:text-[16px] leading-[1.6]">
             Voice-first, hands-free order placement
           </p>
         </div>
@@ -224,7 +225,7 @@ export default function EiceVoice() {
           <div className="w-6 h-6 rounded-full flex items-center justify-center text-white text-sm">
             <img src={tickIcon} width="24" height="24" />
           </div>
-          <p className="space-y-3 text-[#334155] font-semibold">
+          <p className="font-inter font-normal text-blackk text-[15px] sm:text-[16px] leading-[1.6]">
             Integrates with existing POS systems
           </p>
         </div>
@@ -233,7 +234,7 @@ export default function EiceVoice() {
           <div className="w-6 h-6 rounded-full flex items-center justify-center text-white text-sm">
             <img src={tickIcon} width="24" height="24" />
           </div>
-          <p className="space-y-3 text-[#334155] font-semibold">
+          <p className="font-inter font-normal text-blackk text-[15px] sm:text-[16px] leading-[1.6]">
             Custom AI-driven NLU trained for hospitality vocabulary
           </p>
         </div>
@@ -242,7 +243,7 @@ export default function EiceVoice() {
           <div className="w-6 h-6 rounded-full flex items-center justify-center text-white text-sm">
             <img src={tickIcon} width="24" height="24" />
           </div>
-          <p className="space-y-3 text-[#334155] font-semibold">
+          <p className="font-inter font-normal text-blackk text-[15px] sm:text-[16px] leading-[1.6]">
             AI-driven real-time speech-to-text with order confirmation
           </p>
         </div>
@@ -259,55 +260,59 @@ export default function EiceVoice() {
 </section>
 
       {/* ================= CHALLENGES ================= */}
-      <section className="py-4 sm:py-10 px-5 md:px-20 lg:px-20 xl:px-40 bg-white">
-        <h1 className="text-[32px] sm:text-4xl text-[#334155] font-bold text-center leading-relaxed mb-[14px]">
-          Hospitality Order Management Challenges
-        </h1>
+      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+        <div className="text-center mb-8">
+          <h1 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
+            Hospitality Order Management Challenges
+          </h1>
 
-          <h4 className="text-[22px] sm:text-lg md:text-xl text-[#64748B] text-center mb-4 sm:mb-10 max-w-2xl mx-auto">
-    Restaurants and hotels face critical bottlenecks in order handling. EICE Voice addresses these head-on.
-  </h4>
-
+          <h4 className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl mx-auto mt-2">
+            Restaurants and hotels face critical bottlenecks in order handling. EICE Voice<br className="hidden sm:inline" /> addresses these head-on.
+          </h4>
+        </div>
 
         <div className="grid md:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto">
           {challenges.map((item, i) => (
-            <div key={i} className="bg-white rounded-xl  border-2 border-gray-200 shadow-sm hover:shadow-md transition p-4 sm:p-6 flex flex-col items-start text-start gap-4">
+            <div key={i} className="bg-white rounded-[18px] border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] p-[25px] flex flex-col items-start text-start">
                   {/* SVG */}
-        <div className="rounded-lg flex items-start">
-          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain"  width="56" height="56" />
+        <div className="rounded-lg flex items-start mb-[19px]">
+          <img src={item.icon} alt="icon" className="w-11 h-11 object-contain"  width="56" height="56" />
         </div>
-              <h3 className="font-bold text-[24px] sm:text-2xl text-[#334155] whitespace-pre-line">{item.title}</h3>
-              <p className="text-[#64748B] text-[16px] sm:text-lg leading-relaxed">{item.desc}</p>
+              <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">{item.title}</h3>
+              <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">{item.desc}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* ================= CAPABILITIES ================= */}
-      <section className="py-4 sm:py-10 px-5 md:px-20 lg:px-20 xl:px-40 bg-white">
-        <h2 className="text-[32px] sm:text-4xl font-bold text-center mb-[14px] text-[#334155]">
-          Core Capabilities of EICE Voice
-        </h2>
+      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+        <div className="text-center mb-8">
+          <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
+            Core Capabilities of EICE Voice
+          </h2>
 
-         <h4 className="text-[22px] sm:text-lg md:text-xl text-[#64748B] font- text-center mb-4 sm:mb-10 max-w-3xl mx-auto">
-    Powered by AI, built for hospitality speed and accuracy.
-  </h4>
+          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl mx-auto mt-2">
+            Powered by AI, built for hospitality speed and accuracy.
+          </p>
+        </div>
 
         <div className="grid md:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
           {capabilities.map((item, i) => (
-            <div key={i} className="border rounded-xl p-4 sm:p-6">
-               <div className="rounded-lg flex items-start pb-5">
-          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain"  width="56" height="56" />
+            <div key={i} className="rounded-[18px] border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] p-[25px]">
+               <div className="rounded-lg flex items-start mb-[19px]">
+          <img src={item.icon} alt="icon" className="w-11 h-11 object-contain"  width="56" height="56" />
         </div>
-              <h3 className="font-bold text-[24px] sm:text-2xl text-[#334155] whitespace-pre-line">{item.title}</h3>
-              <p className="text-[#64748B] text-[16px] sm:text-lg leading-relaxed">{item.desc}</p>
+              <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">{item.title}</h3>
+              <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">{item.desc}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* ================= BANNER ================= */}
-   <section  style={{ backgroundImage: `url(${bannerbg})` }} className="bg-cover bg-center py-4 sm:py-10 px-5 md:px-20 lg:px-20 xl:px-40">
+   <section  style={{ backgroundImage: `url(${bannerbg})` }} className="bg-cover bg-center">
+  <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
   <div className="max-w-6xl mx-auto grid md:grid-cols-[2fr_1fr] gap-4 sm:gap-20 items-center">
 
     {/* LEFT SIDE - CONTENT */}
@@ -317,12 +322,12 @@ export default function EiceVoice() {
         India’s first staff-facing voice-to-kitchen NLU order management platform
       </h2> */}
 
- <h2 className="text-[32px] sm:text-3xl md:text-[36px] leading-1.2 font-bold tracking-relaxed mb-6">
+ <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-white py-1">
   India’s first staff-facing AI Powered voice-to-kitchen Natural Language order Management Platform
 </h2>
 
-      <p className="text-white/70 text-[16px] sm:text-lg leading-relaxed max-w-xl">
-        EICE Voice is uniquely positioned as a voice layer atop existing POS systems — not a replacement. 
+      <p className="font-inter font-normal text-white/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-xl mt-2">
+        EICE Voice is uniquely positioned as a voice layer atop existing POS systems — not a replacement.
         Hotels and restaurants get all the speed of voice ordering without ripping out their current infrastructure.
       </p>
 
@@ -350,15 +355,18 @@ export default function EiceVoice() {
     </div>
 
   </div>
+  </div>
 </section>
 
       {/* ================= WORKFLOW ================= */}
-<section className="py-4 sm:py-10 px-5 md:px-20 lg:px-20 xl:px-40 text-center">
-  <h2 className="text-[32px] sm:text-4xl font-bold text-center mb-[14px] text-[#334155]">How EICE Voice Works</h2>
+<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto text-center">
+  <div className="mb-8">
+    <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">How EICE Voice Works</h2>
 
-  <h4 className="text-[#64748B] text-[22px] sm:text-lg md:text-xl mb-4 sm:mb-10">
+    <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl mx-auto mt-2">
           A Simple, reliable 4-step voice workflow that protects your order accuracy.
-        </h4>
+        </p>
+  </div>
 
   <div className="relative max-w-5xl mx-auto">
 
@@ -394,8 +402,8 @@ export default function EiceVoice() {
 
           </div>
 
-          <h3 className="font-bold text-[#334155] mb-2 text-[18px]">{step.title}</h3>
-          <p className="text-sm text-[#64748B] leading-relaxed max-w-[180px]">
+          <h3 className="font-general font-semibold text-blackk mb-1 text-[18px] sm:text-[20px] leading-[1.3]">{step.title}</h3>
+          <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] max-w-[180px]">
             {step.desc}
           </p>
 
@@ -407,35 +415,38 @@ export default function EiceVoice() {
 </section>
 
       {/* ================= BENEFITS ================= */}
- <section className="py-4 sm:py-10 px-5 md:px-20 lg:px-20 xl:px-40 bg-[#F8FAFC] text-center">
+ <section className="bg-[#F8FAFC]">
+  <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto text-center">
 
   {/* HEADING */}
-  <h2 className="text-[32px] sm:text-4xl font-bold text-center mb-[14px] text-[#334155]">
+  <div className="mb-8">
+  <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
     Key Benefits for Hospitality Teams
   </h2>
 
   {/* SUBTEXT */}
-  <p className="text-[22px] sm:text-lg md:text-xl text-[#64748B] font- text-center mb-4 sm:mb-10 max-w-3xl mx-auto">
+  <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl mx-auto mt-2">
     Transform your order operations into a competitive advantage.
   </p>
+  </div>
 
   {/* CARDS */}
   <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 sm:gap-6">
     {benefits.map((item, i) => (
       <div
         key={i}
-        className="flex items-start gap-4 border border-gray-200 rounded-2xl p-4 sm:p-6 bg-white"
+        className="flex items-start gap-4 rounded-[18px] border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] p-[25px] bg-white"
       >
-        
+
         {/* ICON (LEFT) */}
-        <div className="w-14 h-14 rounded-full flex items-center justify-center shrink-0">
+        <div className="w-11 h-11 rounded-full flex items-center justify-center shrink-0">
           <img src={tickIcon} width="56" height="56" />
         </div>
 
         {/* TEXT */}
         <div className="text-left">
-          <h3 className="font-bold text-[24px] sm:text-2xl text-[#334155]">{item.title}</h3>
-          <p className="text-[#64748B] text-[16px] sm:text-lg leading-relaxed">
+          <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">{item.title}</h3>
+          <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
             {item.desc}
           </p>
         </div>
@@ -444,29 +455,32 @@ export default function EiceVoice() {
     ))}
   </div>
 
+  </div>
 </section>
 
       {/* ================= DEPLOYMENT ================= */}
-<section className="py-4 sm:py-10 px-5 md:px-20 lg:px-20 xl:px-40 text-center">
+<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto text-center">
 
-  <h2 className="text-[32px] sm:text-4xl font-bold text-center mb-[14px] text-[#334155]">
+  <div className="mb-8">
+  <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
     Deployment & Flexibility
   </h2>
 
-  <p className="text-[22px] sm:text-lg md:text-xl text-[#64748B] font- text-center mb-4 sm:mb-10 max-w-3xl mx-auto">
+  <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl mx-auto mt-2">
     Deploy EICE Voice where it works best for your hospitality infrastructure.
   </p>
+  </div>
 
   <div className="grid md:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
     {deployment.map((item, i) => (
       <div
         key={i}
-        className="border border-gray-200 rounded-2xl p-4 sm:p-8 bg-white text-left sm:text-center"
+        className="rounded-[18px] border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] p-[25px] bg-white text-left sm:text-center"
       >
 
         {/* ICON PLACEHOLDER */}
-        <div className="w-14 h-14 mx-0 sm:mx-auto mb-4 rounded-xl flex items-center justify-center">
-         <img src={item.icon} width="56" height="56" />
+        <div className="w-16 h-16 mx-0 sm:mx-auto mb-4 rounded-xl flex items-center justify-center">
+         <img src={item.icon} width="64" height="64" />
         </div>
 
         {/* TAG */}
@@ -475,12 +489,12 @@ export default function EiceVoice() {
         </div>
 
         {/* TITLE */}
-        <h3 className="font-bold text-[24px] sm:text-2xl text-[#334155]">
+        <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">
           {item.title}
         </h3>
 
         {/* DESCRIPTION */}
-        <p className="text-[#64748B] text-[16px] sm:text-lg leading-relaxed">
+        <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
           {item.desc}
         </p>
 
@@ -490,13 +504,22 @@ export default function EiceVoice() {
 
 </section>
 
+      {/* ================= VIDEO ================= */}
+      <ProductVideo
+        eyebrow="Voice-Powered AI"
+        heading="See EICE Voice in Action"
+        subtext="Experience how voice-powered AI simplifies ordering, connects with your existing systems, and helps hospitality teams serve guests faster."
+        videoId="vsYw6GvlpSc"
+      />
+
       {/* ================= FINAL CTA ================= */}
-      <section className="bg-gray-50 relative py-10 px-5 md:px-12 lg:px-24 xl:px-40 overflow-hidden">
-        <h2 className="text-4xl md:text-4xl font-bold text-[#334155] mb-[14px] leading-tight text-center">
+      <section className="bg-gray-50 relative overflow-hidden">
+        <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
+        <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk text-center py-1">
           Ready to Transform Your Order Management?
         </h2>
 
-        <p className="text-[#64748B] text-lg md:text-xl leading-relaxed mb-10 text-center">
+        <p className="font-inter font-normal text-blackk/70 text-[15px] sm:text-[16px] leading-[1.6] mt-2 mb-10 text-center">
       Talk to our experts to see how EICE Voice fits your hospitality<br/> operations and order management strategy.
     </p>
 
@@ -507,6 +530,7 @@ export default function EiceVoice() {
           Request a Demo
           <img src={arrowIcon} alt="arrow"  width="24" height="24" />
         </button>
+        </div>
       </section>
 
       <ProductCarousel slides={productSlides} />

@@ -2,6 +2,7 @@
 import React from "react";
 import ProductCarousel from "./ProductCarousel";
 import productSlides from "./carouselData";
+import ProductVideo from "./ProductVideo";
 import ProductFooter from "./ProductFooter";
 const cobIcon = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/COB.svg";
 const arrowIcon = "https://d3r43jacxrwsrp.cloudfront.net/arrow.svg";
@@ -225,7 +226,7 @@ export default function InfraSight() {
 
       {/* ================= HERO / OVERVIEW ================= */}
 
-       <section className="bg-white pb-4 sm:pb-10 px-4 sm:px-8 md:px-20">
+       <section className="bg-white py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
          <div className="sm:mt-5 mt-10 flex justify-center">
                     <img
                              src={infraSightHero}
@@ -233,22 +234,21 @@ export default function InfraSight() {
                              className="mx-auto sm:mb-6 md:w-full lg:w-[480px] pb-4 pt-14"
                             width="2326" height="900" />
                  </div>
-      <div className="max-w-[1100px] mx-auto text-left sm:text-center">
+      <div className="max-w-4xl mx-auto text-left sm:text-center">
 
         {/* TAG */}
-        <div className="flex w-fit mx-auto items-center gap-2 bg-blue-50 border border-blue-200 text-[#344155] px-4 py-1 rounded-full text-sm font-medium mb-6">
-          <span className="w-2 h-2 bg-[#344155] rounded-full"></span>
+        <div className="font-general font-semibold flex w-fit mx-auto items-center gap-2 rounded-full bg-bloo/10 px-4 py-1.5 text-[12px] sm:text-[14px] tracking-wide text-[#012060] mb-6">
           ENTERPRISE OBSERVABILITY PLATFORM
         </div>
 
         {/* HEADING */}
-        <h1 className="text-[40px] md:text-[48px] font-bold leading-tight text-[#334155] mb-[14px]">
+        <h1 className="font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] text-blackk py-1">
           Intelligent Infrastructure <br />
-          <span className="text-[#01B0F1]">Observability</span> Platform
+          <span className="text-bloo">Observability</span> Platform
         </h1>
 
         {/* SUBTEXT */}
-        <p className="mt-6 text-[#64748B] max-w-2xl mx-auto text-[16px] md:text-[18px] leading-relaxed mb-[14px]">
+        <p className="font-inter font-normal text-blackk/70 max-w-3xl mx-auto text-[16px] sm:text-[18px] leading-[1.6] mt-2">
           Real-time visibility into servers, networks, applications, cloud
           services, and IoT devices — all from a unified dashboard. No agent
           installation required.
@@ -269,23 +269,23 @@ export default function InfraSight() {
     </section>
 
           {/* FEATURES */}
-<section className="pb-4 sm:pb-10 px-4 max-w-7xl mx-auto md:px-10 lg:px-20 xl:px-40 bg-white grid md:grid-cols-3 text-center gap-4 sm:gap-8">
+<section className="py-4 sm:py-10 px-4 max-w-7xl mx-auto md:px-10 lg:px-20 xl:px-40 bg-white grid md:grid-cols-3 text-center gap-4 sm:gap-8">
 
   {features.map((item, i) => (
-    <div key={i} className="flex flex-col items-center gap-1">
+    <div key={i} className="flex flex-col items-center">
 
       {/* ICON (Rounded Rectangle) */}
-      <div className=" px-6 rounded-xl">
-       <h3 className="font-bold text-3xl leading-relaxed text-[#01B0F1]">{item.icon}</h3>
+      <div className="px-6 rounded-xl mb-[19px]">
+       <h3 className="font-general font-bold text-3xl leading-relaxed text-[#01B0F1]">{item.icon}</h3>
       </div>
 
       {/* TITLE */}
-      <h3 className="font-bold text-[24px] sm:text-xl leading-relaxed text-[#334155]">
+      <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">
         {item.title}
       </h3>
 
       {/* DESCRIPTION */}
-      <p className="text-[#64748B] font-semibold text-[16px] sm:text-md leading-relaxed max-w-xs">
+      <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6] max-w-xs">
         {item.desc}
       </p>
 
@@ -296,19 +296,19 @@ export default function InfraSight() {
 
 
 
-<section className="bg-[#F4F9FF] py-4 sm:py-10 px-5 md:px-20 lg:px-20 xl:px-40">
-  <div className="max-w-6xl mx-auto grid md:grid-cols-[1.1fr_1fr] gap-4 sm:gap-16 items-center">
+<section className="bg-[#F4F9FF]">
+  <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto grid md:grid-cols-[1.1fr_1fr] gap-4 sm:gap-16 items-center">
 
     {/* LEFT CONTENT */}
     <div>
 
       {/* HEADING */}
-      <h2 className="text-[32px] sm:text-2xl md:text-3xl font-bold mb-4 text-[#334155]">
+      <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mb-8">
         What is InfraSight?
       </h2>
 
       {/* DESCRIPTION */}
-      <p className="text-[#64748B] font-semibold mb-6 leading-8 space-y-6 max-w-[600px]">
+      <p className="font-inter font-normal text-blackk/70 mt-2 leading-[1.6] max-w-[600px] text-[15px] sm:text-[16px]">
         InfraSight is EICE Technology's enterprise observability
 platform designed to provide real-time visibility into servers,
 networks, applications, cloud services, and IoT devices — all
@@ -336,37 +336,39 @@ systems.
 
 
       {/* ================= PROBLEM ================= */}
-<section className="py-4 sm:py-10 px-5 md:px-20 lg:px-20 xl:px-40 bg-white">
+<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
 
-  <h1 className="text-[32px] sm:text-4xl text-[#334155] font-bold text-center leading-relaxed mb-[14px]">
-    Infrastructure monitoring challenges
-  </h1>
+  <div className="text-center mb-8">
+    <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
+      Infrastructure monitoring challenges
+    </h2>
 
-  <h4 className="text-[22px] sm:text-lg md:text-xl text-[#64748B] text-center mb-4 sm:mb-10 max-w-2xl mx-auto">
-    Traditional monitoring tools fall short of modern enterprise observability needs
-  </h4>
+    <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl mx-auto mt-2">
+      Traditional monitoring tools fall short of modern enterprise observability needs
+    </p>
+  </div>
 
   {/* 4 CARDS ROW */}
-  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
 
     {challenges.map((item, i) => (
       <div
         key={i}
-        className="bg-white rounded-xl  border-2 border-gray-200 shadow-sm hover:shadow-md transition p-4 sm:p-6 flex flex-col items-start text-start gap-4"
+        className="bg-white rounded-[18px] border border-[#E6EAF1] p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col items-start text-start"
       >
 
         {/* SVG */}
-        <div className="rounded-lg flex items-start">
-          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain"  width="56" height="56" />
+        <div className="rounded-lg flex items-start mb-[19px]">
+          <img src={item.icon} alt="icon" className="w-11 h-11 object-contain"  width="44" height="44" />
         </div>
 
         {/* TITLE */}
-        <h3 className="font-bold text-[24px] text-[#334155]">
+        <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">
           {item.title}
         </h3>
 
         {/* SMALL TEXT */}
-        <p className="text-[#64748B] text-[16px] leading-relaxed">
+        <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
           {item.desc}
         </p>
 
@@ -376,32 +378,34 @@ systems.
   </div>
 </section>
 
-      <section className="py-4 sm:py-10 px-5 md:px-20 lg:px-20 xl:px-40 bg-white">
-        <h2 className="text-[32px] sm:text-4xl font-bold text-center text-[#334155] mb-[14px]">
-          Real-time observability <br />for modern IT infrastructure
-        </h2>
-        <h4 className="text-[22px] sm:text-lg md:text-xl text-[#64748B] text-center mb-4 sm:mb-10 max-w-2xl mx-auto">
-          InfraSight continuously monitors and alerts <br />across every layer of your
-infrastructure </h4>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+        <div className="text-center mb-8">
+          <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
+            Real-time observability <br />for modern IT infrastructure
+          </h2>
+          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl mx-auto mt-2">
+            InfraSight continuously monitors and alerts <br />across every layer of your
+infrastructure </p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
           {platformFeatures.map((item, i) => (
              <div
         key={i}
-        className="bg-white rounded-xl  border-1 border border-[#E2E8F0] shadow-sm hover:shadow-md transition p-4 sm:p-6 flex flex-col items-start text-start w-auto h-auto sm:h-[400px] gap-4"
+        className="bg-white rounded-[18px] border border-[#E6EAF1] p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col items-start text-start w-auto h-auto sm:h-[400px]"
       >
 
         {/* SVG */}
-        <div className="rounded-lg flex items-start">
-          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain"  width="56" height="56" />
+        <div className="rounded-lg flex items-start mb-[19px]">
+          <img src={item.icon} alt="icon" className="w-11 h-11 object-contain"  width="44" height="44" />
         </div>
 
         {/* TITLE */}
-        <h3 className="font-bold text-[24px] sm:text-2xl text-[#334155] whitespace-pre-line">
+        <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
           {item.title}
         </h3>
 
         {/* SMALL TEXT */}
-        <p className="text-[#64748B] text-[16px] sm:text-lg leading-relaxed">
+        <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
           {item.desc}
         </p>
 
@@ -428,9 +432,9 @@ infrastructure </h4>
         </div>
       </section> */}
 
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
+      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
 
-        <div className="max-w-6xl mx-auto text-center">
+        <div className="text-center">
 
           {/* IMAGE */}
           <img
@@ -439,39 +443,41 @@ infrastructure </h4>
             className="w-full rounded-xl"
            width="2094" height="494" />
 
-           <p className="mt-4 text-gray-400 text-xl max-w-3xl mx-auto">
+           <p className="font-inter font-normal mt-4 text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl mx-auto">
       Real-time observability, intelligent monitoring, and proactive issue resolution across your entire IT infrastructure.
     </p>
-      
+
         </div>
-      
+
       </section>
 
       {/* ================= CORE CAPABILITIES ================= */}
-      <section className="py-4 sm:py-10 max-w-6xl mx-auto px-5 md:px-20 lg:px-20 xl:px-40">
-        <h2 className="text-[32px] sm:text-4xl font-bold text-center mb-[14px] text-[#334155]">
-          Core Observability Capabilities
-        </h2>
+      <section className="py-4 sm:py-10 max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
+        <div className="text-center mb-8">
+          <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
+            Core Observability Capabilities
+          </h2>
 
-        <h4 className="text-[22px] sm:text-lg md:text-xl text-[#64748B] font- text-center mb-4 sm:mb-10 max-w-3xl mx-auto">
-          Everything you need to monitor, detect, and<br /> resolve infrastructure incidents </h4>
+          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] text-center max-w-3xl mx-auto mt-2">
+            Everything you need to monitor, detect, and<br /> resolve infrastructure incidents </p>
+        </div>
 
         <div className="grid md:grid-cols-2 gap-4 sm:gap-8 justify-center">
           {capabilities.map((item, i) => (
             <div
         key={i}
-        className="bg-white rounded-xl  border-1 border border-[#E2E8F0] shadow-sm hover:shadow-md transition p-4 sm:p-6 flex flex-col items-start text-start max-w-[550px] w-full min-h-[200px] h-auto gap-4"
+        className="bg-white rounded-[18px] border border-[#E6EAF1] p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col items-start text-start max-w-[550px] w-full min-h-[200px] h-auto"
       >
 
         {/* SVG */}
-        <div className="rounded-lg flex items-start gap-4 justify-center">
-          <h3 className="font-bold text-[24px] sm:text-2xl text-[#334155]">{item.icon}</h3>
-        
-           <h3 className="font-bold text-[24px] sm:text-2xl text-[#334155]">
+        <div className="rounded-lg flex items-start gap-2 mb-[7px]">
+          <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737]">{item.icon}</h3>
+
+           <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737]">
           {item.title}
         </h3>
         </div>
-        <p className="text-[#64748B] text-[16px] sm:text-lg leading-relaxed">
+        <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
           {item.desc}
         </p>
 
@@ -480,17 +486,19 @@ infrastructure </h4>
         </div>
       </section>
 
-      <section className="py-4 sm:py-10 px-4 md:px-20 lg:px-20 xl:px-40 bg-white">
+      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
 
-        <div className="max-w-6xl mx-auto text-center">
+        <div className="text-center">
 
-           <h1 className="text-[32px] sm:text-4xl font-bold text-center text-[#334155] mb-[14px]">
-          Centralised observability architecture
-        </h1>
+           <div className="mb-8">
+             <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
+               Centralised observability architecture
+             </h2>
 
-        <h4 className="text-[#64748B] text-[22px] sm:text-lg md:text-xl max-w-2xl mx-auto mb-4 sm:mb-10"> high-performance Monitoring Engine at the centre of your entire
-infrastructure</h4>
-      
+             <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl mx-auto mt-2"> high-performance Monitoring Engine at the centre of your entire
+infrastructure</p>
+           </div>
+
           {/* IMAGE */}
           <img
             src={cobIcon}
@@ -504,31 +512,33 @@ infrastructure</h4>
 
 
       {/* ================= MODULES ================= */}
-   <section className="py-4 sm:py-10 px-4 md:px-20 lg:px-20 xl:px-40 bg-white">
-        <h2 className="text-[32px] sm:text-4xl font-bold text-center text-[#334155] mb-[14px]">
-          Product Modules
-        </h2>
-        <h4 className="text-[22px] sm:text-lg md:text-xl text-[#64748B] text-center mb-4 sm:mb-10 max-w-3xl mx-auto">
-          Six purpose-built modules covering the full observability lifecycle </h4>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+   <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+        <div className="text-center mb-8">
+          <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
+            Product Modules
+          </h2>
+          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl mx-auto mt-2">
+            Six purpose-built modules covering the full observability lifecycle </p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
           {modules.map((item, i) => (
              <div
         key={i}
-        className="bg-white rounded-xl  border-1 border border-[#E2E8F0] shadow-sm hover:shadow-md transition p-4 sm:p-6 flex flex-col items-start text-start w-auto h-auto sm:h-[350px] gap-4"
+        className="bg-white rounded-[18px] border border-[#E6EAF1] p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col items-start text-start w-auto h-auto sm:h-[350px]"
       >
 
         {/* SVG */}
-        <div className="rounded-lg flex items-start">
-          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain"  width="56" height="56" />
+        <div className="rounded-lg flex items-start mb-[19px]">
+          <img src={item.icon} alt="icon" className="w-11 h-11 object-contain"  width="44" height="44" />
         </div>
 
         {/* TITLE */}
-        <h3 className="font-bold text-[24px] sm:text-2xl text-[#334155]">
+        <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">
           {item.title}
         </h3>
 
         {/* SMALL TEXT */}
-        <p className="text-[#64748B] text-[16px] sm:text-lg leading-relaxed">
+        <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
           {item.desc}
         </p>
 
@@ -539,16 +549,18 @@ infrastructure</h4>
 
 
             {/* ================= WORKFLOW ================= */}
-<section className="bg-[#012060] py-4 sm:py-10 px-4 md:px-20 lg:px-20 xl:px-40">
-      <div className="max-w-6xl mx-auto text-center">
+<section className="bg-[#012060]">
+      <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto text-center">
 
-        <h2 className="text-[32px] sm:text-4xl font-bold text-white mb-[14px]">
-          Monitoring Workflow
-        </h2>
+        <div className="mb-8">
+          <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-white mx-auto max-w-4xl py-1">
+            Monitoring Workflow
+          </h2>
 
-        <h4 className="text-white text-[22px] sm:text-lg md:text-xl mb-4 sm:mb-10">
-          Five simple steps from discovery to full observability
-        </h4>
+          <p className="font-inter font-normal text-white/70 text-[16px] sm:text-[18px] leading-[1.6] mt-2">
+            Five simple steps from discovery to full observability
+          </p>
+        </div>
 
         {/* STEPPER */}
         <div className="relative">
@@ -574,12 +586,12 @@ infrastructure</h4>
                 </div>
 
                 {/* TITLE */}
-                <h3 className="font-bold text-white mb-2 text-[18px]">
+                <h3 className="font-general font-semibold text-white text-[18px] sm:text-[20px] leading-[1.3] mb-2">
                   {step.title}
                 </h3>
 
                 {/* DESC */}
-                <p className="text-sm text-white leading-relaxed max-w-[180px] mb-5">
+                <p className="font-inter font-normal text-[13px] sm:text-[14px] leading-[1.5] text-white/70 max-w-[180px] mb-5">
                   {step.desc}
                 </p>
               </div>
@@ -592,67 +604,76 @@ infrastructure</h4>
 
 
 {/* ================= WHY ================= */}
-<section className="py-4 sm:py-10 px-4 md:px-20 lg:px-20 xl:px-40 bg-white">
+<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
 
-  {/* Heading */}
-  <h2 className="text-[32px] sm:text-4xl font-bold text-center text-[#334155] mb-[14px]">
-    Why enterprises choose InfraSight?
-  </h2>
+  <div className="text-center mb-8">
+    {/* Heading */}
+    <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
+      Why enterprises choose InfraSight?
+    </h2>
 
-  {/* Subheading */}
-  <h4 className="text-[22px] sm:text-lg md:text-xl text-[#64748B] text-center mb-4 sm:mb-10 max-w-3xl mx-auto">
-    Built for organizations that require complete infrastructure <br /> control and observability
-  </h4>
+    {/* Subheading */}
+    <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl mx-auto mt-2">
+      Built for organizations that require complete infrastructure <br /> control and observability
+    </p>
+  </div>
 
   {/* Content */}
-  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-10 text-[#334155]">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-10">
 
     {/* LEFT COLUMN */}
-    <div className="space-y-4 sm:space-y-6 text-[16px] sm:text-xl leading-relaxed">
+    <div className="font-inter font-normal space-y-4 sm:space-y-6 text-[15px] sm:text-[16px] leading-[1.6] text-blackk/70">
       <p>
-        <span className="font-bold">1. Multi-Protocol Flexibility :</span> Monitor any device using SNMP, IPMI, JMX, SSH, HTTP, ICMP, Prometheus, MQTT, or custom scripts — no vendor lock-in.
+        <span className="font-general font-semibold text-blackk">1. Multi-Protocol Flexibility :</span> Monitor any device using SNMP, IPMI, JMX, SSH, HTTP, ICMP, Prometheus, MQTT, or custom scripts — no vendor lock-in.
       </p>
 
       <p>
-        <span className="font-bold">2. Auto-Discovery at Scale :</span> Automatically detect and onboard new infrastructure. Apply templates instantly to eliminate manual setup overhead.
+        <span className="font-general font-semibold text-blackk">2. Auto-Discovery at Scale :</span> Automatically detect and onboard new infrastructure. Apply templates instantly to eliminate manual setup overhead.
       </p>
 
       <p>
-        <span className="font-bold">3. Proactive Anomaly Detection :</span> Go beyond static thresholds with AI-based baselining and trend prediction that flags problems before they become outages.
+        <span className="font-general font-semibold text-blackk">3. Proactive Anomaly Detection :</span> Go beyond static thresholds with AI-based baselining and trend prediction that flags problems before they become outages.
       </p>
     </div>
 
     {/* RIGHT COLUMN */}
-    <div className="space-y-4 sm:space-y-6 text-[16px] sm:text-xl leading-relaxed">
+    <div className="font-inter font-normal space-y-4 sm:space-y-6 text-[15px] sm:text-[16px] leading-[1.6] text-blackk/70">
       <p>
-        <span className="font-bold">4. Lightweight, Agentless Deployment :</span> No agent installation required on any monitored endpoint. Deploy in minutes with zero maintenance footprint.
+        <span className="font-general font-semibold text-blackk">4. Lightweight, Agentless Deployment :</span> No agent installation required on any monitored endpoint. Deploy in minutes with zero maintenance footprint.
       </p>
 
       <p>
-        <span className="font-bold">5. Enterprise-Grade Security :</span> TLS encryption, LDAP/SAML/SSO/MFA authentication, granular RBAC, secret vaulting, and full configuration audit trail.
+        <span className="font-general font-semibold text-blackk">5. Enterprise-Grade Security :</span> TLS encryption, LDAP/SAML/SSO/MFA authentication, granular RBAC, secret vaulting, and full configuration audit trail.
       </p>
 
       <p>
-        <span className="font-bold">6. Unified Observability :</span> Single pane of glass for servers, networks, cloud, containers, applications, logs, and business services — including SLA tracking and scheduled PDF reports.
+        <span className="font-general font-semibold text-blackk">6. Unified Observability :</span> Single pane of glass for servers, networks, cloud, containers, applications, logs, and business services — including SLA tracking and scheduled PDF reports.
       </p>
     </div>
 
   </div>
 </section>
 
+      <ProductVideo
+        eyebrow="Infrastructure Observability"
+        heading="See InfraSight in Action"
+        subtext="Explore how real-time infrastructure visibility, intelligent monitoring, and anomaly detection help teams identify issues before they impact operations."
+        videoId="jpXgqTEj18Q"
+      />
+
       {/* ================= CTA ================= */}
-<section className="bg-gray-50 relative py-10 px-5 md:px-12 lg:px-24 xl:px-40 overflow-hidden">
+<section className="bg-gray-50 relative overflow-hidden">
 
   {/* CONTENT */}
-  <div className="relative z-10 max-w-6xl mx-auto text-center">
+  <div className="relative z-10 py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto text-center">
 
     {/* HEADING */}
-    <h2 className="text-4xl md:text-4xl font-bold text-[#334155] mb-[14px] leading-tight">
+    <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
       Ready to Transfer Your Infrastructure Observability?
     </h2>
 
     {/* SUBTEXT */}
-    <p className="text-[#64748B] text-lg md:text-xl leading-relaxed mb-10">
+    <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] mt-2 mb-10">
       Deploy InfraSight across your enterprise in minutes — agentless, scalable, and production-ready from day one.
     </p>
 
@@ -661,7 +682,7 @@ infrastructure</h4>
       {["Agentless deployment", "Multi-protocol support", "AI anomaly detection", "Enterprise RBAC"].map((item, i) => (
         <span
           key={i}
-          className="px-4 py-2 text-sm text-[#012060] border border-[#334155] rounded-full bg-white/5 backdrop-blur-sm"
+          className="font-general font-semibold px-4 py-2 text-sm text-[#012060] border border-[#334155] rounded-full bg-white/5 backdrop-blur-sm"
         >
           {item}
         </span>

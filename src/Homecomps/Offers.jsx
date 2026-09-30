@@ -66,7 +66,7 @@ function Offers() {
               height="220"
             />
             <div className="pt-[19px] px-[25px] pb-[25px]">
-              <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[22px] leading-[1.3] mb-[7px]">
+              <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
                 {cap.title}
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6] mb-[18px]">

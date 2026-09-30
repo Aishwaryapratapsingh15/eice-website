@@ -3,6 +3,7 @@ import React from "react";
 import { useNavigate } from "@/nextNavigation";
 import ProductCarousel from "./ProductCarousel";
 import productSlides from "./carouselData";
+import ProductVideo from "./ProductVideo";
 import ProductFooter from "./ProductFooter";
 const arrowIcon = "https://d3r43jacxrwsrp.cloudfront.net/arrow.svg";
 const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/screens.png";
@@ -196,8 +197,8 @@ export default function EiceOps() {
     <div className="bg-white text-[#111]">
 
       {/* HERO SECTION */}
-      <section className="relative overflow-hidden px-5 pb-4 md:pb-20 lg:pb-20 md:px-5 md:px-20 lg:px-5 lg:px-32">
-        
+      <section className="relative overflow-hidden py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
+
            <div className="mt-5 flex justify-center">
                             <img
                                      src={heroImg}
@@ -205,17 +206,17 @@ export default function EiceOps() {
                                      className="mx-auto mb-6 md:w-full lg:w-[480px]"
                                     width="3299" height="1187" />
                          </div>
-        <div className="max-w-6xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center">
 
-          <h1 className="mt-6 text-[40px] leading-[48px] md:text-[48px] font-bold text-[#111]">
-            Your <span className="text-[#01B0F1]">Help Desk</span>, Working <span className="text-[#01B0F1]">Smarter.</span>
+          <h1 className="font-general font-semibold mt-[10px] text-[32px] sm:text-[44px] leading-[1.1] text-blackk py-1">
+            Your <span className="text-bloo">Help Desk</span>, Working <span className="text-bloo">Smarter.</span>
           </h1>
 
           {/* <p className="mt-3 text-xl text-[#111] font-semibold">
             Every ticket. Every SLA. Every time.
           </p> */}
 
-          <p className="mt-6 max-w-4xl mx-auto text-gray-600 text-lg leading-relaxed">
+          <p className="font-inter font-normal mt-2 max-w-3xl mx-auto text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">
             EICE Ops is EICE Technology's ITIL 4-aligned help desk management platform, designed to bring complete
 accountability to every ticket lifecycle. Built for IT service teams that take SLAs seriously, EICEOps eliminates
 missed escalations, ensures structured communication, and gives managers full visibility into team performance
@@ -223,7 +224,7 @@ missed escalations, ensures structured communication, and gives managers full vi
           </p>
 
           {/* CTA */}
-          <div className="mt-10">
+          <div className="mt-8">
             <button
               onClick={() => navigate("/products/eicerise/form?product=EiceOps")}
               className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 sm:mx-auto text-[18px] hover:bg-blue-800 transition"
@@ -236,52 +237,54 @@ missed escalations, ensures structured communication, and gives managers full vi
       </section>
 
       {/* STATS */}
-      <section className="px-5 py-4 md:px-20 lg:px-32 lg:-mt-10 md:-mt-10 sm:-mt-10 relative z-10">
-        <div className="max-w-7xl mx-auto grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-5">
+      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl lg:max-w-none mx-auto relative z-10">
+        <div className="grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-5">
           {stats.map((item, index) => (
             <div
               key={index}
               className="text-white py-2 pr-2 text-left lg:text-white lg:py-8 lg:px-5 lg:text-center md:text-white md:py-8 md:px-5 md:text-center"
             >
-              <h3 className="text-[#01B0F1] text-[22px] font-bold mb-4 text-left md:text-center lg:text-center lg:text-4xl lg:mb-5 md:text-4xl md:mb-5">{item.number}</h3>
-              <p className="font-semi-bold text-[16px] leading-relaxed text-[#334155] lg:font-bold lg:text-lg lg:leading-relaxed text-[#334155] md:font-bold md:text-lg sm:font-bold sm:text-lg">{item.title}</p>
+              <h3 className="font-general font-semibold text-[#01B0F1] text-[22px] mb-4 text-left md:text-center lg:text-center lg:text-4xl lg:mb-5 md:text-4xl md:mb-5">{item.number}</h3>
+              <p className="font-inter font-semibold text-[16px] leading-relaxed text-[#334155] lg:text-lg lg:leading-relaxed text-[#334155] md:text-lg sm:text-lg">{item.title}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* FOUR PILLARS */}
-     <section className="py-4 px-5 md:px-10 lg:px-20 xl:px-40 bg-white">
+     <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
 
-  <h1 className="text-[32px] leading-[48px] md:text-4xl text-[#334155] font-bold text-center leading-relaxed pb-4">
-    Complete Ticket Lifecycle Management
-  </h1>
+  <div className="text-center mb-8">
+    <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] mx-auto max-w-4xl py-1">
+      Complete Ticket Lifecycle Management
+    </h2>
 
-  <h4 className="text-[22px] pb-4 md:text-xl text-[#64748B] text-center max-w-2xl mx-auto">
-    Everything you need for accountable, SLA-driven IT support
-  </h4>
+    <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl mx-auto mt-2">
+      Everything you need for accountable, SLA-driven IT support
+    </p>
+  </div>
 
   {/* 4 CARDS ROW */}
-  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
 
     {pillars.map((item, i) => (
       <div
         key={i}
-        className="bg-white rounded-xl  border-2 border-gray-200 shadow-sm hover:shadow-md transition p-4 flex flex-col items-start text-start gap-4"
+        className="bg-white rounded-[18px] border border-[#E6EAF1] p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col items-start text-start"
       >
 
         {/* SVG */}
-        <div className="rounded-lg flex items-start justify-center">
-          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain"  width="56" height="56" />
+        <div className="rounded-lg flex items-start justify-center mb-[19px]">
+          <img src={item.icon} alt="icon" className="w-11 h-11 object-contain"  width="44" height="44" />
         </div>
 
         {/* TITLE */}
-        <h3 className="font-bold lg:text-2xl md:text-2xl text-[24px]">
+        <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px] whitespace-pre-line">
           {item.title}
         </h3>
 
         {/* SMALL TEXT */}
-        <p className="text-gray-500 lg:text-lg md:text-lg leading-relaxed text-[16px]">
+        <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
           {item.description}
         </p>
 
@@ -292,11 +295,13 @@ missed escalations, ensures structured communication, and gives managers full vi
 </section>
 
       {/* FEATURE HIGHLIGHTS */}
-<section className="py-4 px-5 md:px-20 lg:px-20 xl:px-40 bg-white">
+<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
 
-  <h1 className="text-[32px] leading-[48px] lg:text-4xl md:text-4xl text-[#334155] font-bold text-center leading-relaxed lg:mb-10 md:mb-10 pb-4">
-    Help Desk Agent Highlights
-  </h1>
+  <div className="text-center mb-8">
+    <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] mx-auto max-w-4xl py-1">
+      Help Desk Agent Highlights
+    </h2>
+  </div>
 
   {/* <h4 className="text-lg md:text-xl text-[#64748B] text-center mb-10 max-w-2xl mx-auto">
     Traditional monitoring tools fall short of modern enterprise observability needs
@@ -308,21 +313,21 @@ missed escalations, ensures structured communication, and gives managers full vi
     {agentFeatures.map((item, i) => (
       <div
         key={i}
-        className="bg-white rounded-xl  border-2 border-gray-200 shadow-sm hover:shadow-md transition p-4 flex flex-col items-start text-start gap-4"
+        className="bg-white rounded-[18px] border border-[#E6EAF1] p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col items-start text-start"
       >
 
         {/* SVG */}
-        <div className="rounded-lg flex items-start justify-center">
-          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain"  width="56" height="56" />
+        <div className="rounded-lg flex items-start justify-center mb-[19px]">
+          <img src={item.icon} alt="icon" className="w-11 h-11 object-contain"  width="44" height="44" />
         </div>
 
         {/* TITLE */}
-        <h3 className="font-bold lg:text-2xl md:text-2xl text-[24px] text-[#334155] whitespace-pre-line">
+        <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px] whitespace-pre-line">
           {item.heading}
         </h3>
 
         {/* SMALL TEXT */}
-        <p className="text-[#64748B] md:text-[16px] leading-relaxed text-[16px]">
+        <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
           {item.paragraph}
         </p>
 
@@ -332,11 +337,13 @@ missed escalations, ensures structured communication, and gives managers full vi
   </div>
 </section>
 
-<section className="py-4 px-5 md:px-20 lg:px-20 xl:px-40 bg-white">
+<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
 
-  <h1 className="text-[32px] leading-[48px] lg:text-4xl md:text-4xl text-[#334155] font-bold text-center leading-relaxed lg:mb-10 md:mb-10 sm:mb-10 pb-4">
-    Admin Agent Highlights
-  </h1>
+  <div className="text-center mb-8">
+    <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] mx-auto max-w-4xl py-1">
+      Admin Agent Highlights
+    </h2>
+  </div>
 
   {/* <h4 className="text-lg md:text-xl text-[#64748B] text-center mb-10 max-w-2xl mx-auto">
     Traditional monitoring tools fall short of modern enterprise observability needs
@@ -348,21 +355,21 @@ missed escalations, ensures structured communication, and gives managers full vi
     {adminFeatures.map((item, i) => (
       <div
         key={i}
-        className="bg-white rounded-xl  border-2 border-gray-200 shadow-sm hover:shadow-md transition p-4 flex flex-col items-start text-start gap-4"
+        className="bg-white rounded-[18px] border border-[#E6EAF1] p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col items-start text-start"
       >
 
         {/* SVG */}
-        <div className="rounded-lg flex items-start justify-center">
-          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain"  width="56" height="56" />
+        <div className="rounded-lg flex items-start justify-center mb-[19px]">
+          <img src={item.icon} alt="icon" className="w-11 h-11 object-contain"  width="44" height="44" />
         </div>
 
         {/* TITLE */}
-        <h3 className="font-bold md:text-[24px] text-[#334155] text-[24px] whitespace-pre-line">
+        <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px] whitespace-pre-line">
           {item.heading}
         </h3>
 
         {/* SMALL TEXT */}
-        <p className="text-[#64748B] md:text-[16px] text-[16px] leading-relaxed">
+        <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
           {item.paragraph}
         </p>
 
@@ -374,70 +381,82 @@ missed escalations, ensures structured communication, and gives managers full vi
 
 
       {/* WHY CHOOSE */}
-  <section className="py-4 px-5 md:px-20 lg:px-20 xl:px-40 bg-white">
-  
-  {/* Heading */}
-  <h2 className="text-[32px] leading-[48px] lg:text-4xl md:text-4xl font-bold text-center text-[#334155] lg:mb-[14px] md:mb-[14px] sm:mb-[14px] pb-4">
-    Why enterprises choose EICEOps?
-  </h2>
+  <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
 
-  {/* Subheading */}
-  <h4 className="lg:text-lg md:text-xl text-[#64748B] text-[22px] text-center lg:mb-10 md:mb-10 sm:mb-10 pb-4 max-w-3xl mx-auto">
-    Built for organizations that require complete infrastructure <br /> control and observability
-  </h4>
+  <div className="text-center mb-8">
+    {/* Heading */}
+    <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] mx-auto max-w-4xl py-1">
+      Why enterprises choose EICEOps?
+    </h2>
+
+    {/* Subheading */}
+    <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl mx-auto mt-2">
+      Built for organizations that require complete infrastructure <br /> control and observability
+    </p>
+  </div>
 
   {/* Content */}
   <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:gap-10 md:gap-10 sm:gap-10 gap-4 text-[#334155]">
 
     {/* LEFT COLUMN */}
-    <div className="lg:space-y-6 md:space-y-6 space-y-4 lg:text-xl md:text-xl text-[18px] leading-relaxed">
+    <div className="lg:space-y-6 md:space-y-6 space-y-4 font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6]">
       <p>
-        <span className="font-bold">1. ITIL 4 Aligned :</span> Built on internationally recognised best practices for modern, scalable, efficient IT service management operations.
+        <span className="font-general font-semibold">1. ITIL 4 Aligned :</span> Built on internationally recognised best practices for modern, scalable, efficient IT service management operations.
       </p>
 
       <p>
-        <span className="font-bold">2. Complete Audit Trail :</span> Every communication, decision and state change is logged - nothing falls through the cracks.
+        <span className="font-general font-semibold">2. Complete Audit Trail :</span> Every communication, decision and state change is logged - nothing falls through the cracks.
       </p>
 
       <p>
-        <span className="font-bold">3. Agent Effectiveness Reports :</span> Measure first-reply SLA %, fix rate, avg  resolution time and reporter updates per  agent
+        <span className="font-general font-semibold">3. Agent Effectiveness Reports :</span> Measure first-reply SLA %, fix rate, avg  resolution time and reporter updates per agent.
       </p>
     </div>
 
     {/* RIGHT COLUMN */}
-    <div className="lg:space-y-6 md:space-y-6 space-y-4 lg:text-xl md:text-xl text-[18px] leading-relaxed">
+    <div className="lg:space-y-6 md:space-y-6 space-y-4 font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6]">
       <p>
-        <span className="font-bold">4. Escalation You Can Trust :</span> Time-based escalation rules ensure the right  people are alerted before SLAs are breached
+        <span className="font-general font-semibold">4. Escalation You Can Trust :</span> Time-based escalation rules ensure the right people are alerted before SLAs are breached.
 </p>
       <p>
-        <span className="font-bold">5. Fully Configurable :</span> Categories, priorities, SLA models, support  tiers and escalation paths all tailored to  your business
+        <span className="font-general font-semibold">5. Fully Configurable :</span> Categories, priorities, SLA models, support tiers and escalation paths tailored to your business.
       </p>
 
       <p>
-        <span className="font-bold">6.  uilt for Accountability Control  :</span> Customers always know the status; agents  always know what action is needed next.
+        <span className="font-general font-semibold">6.  uilt for Accountability Control  :</span> Customers always know the status; agents  always know what action is needed next.
 
       </p>
     </div>
 
   </div>
 </section>
+
+      <ProductVideo
+        eyebrow="IT Service Management"
+        heading="See EICEOps in Action"
+        subtext="See how EICEOps brings tickets, SLAs, escalations, workflows, and service performance together for accountable IT support."
+        videoId="evqqm0anfOk"
+      />
+
           {/* ================= FINAL CTA ================= */}
-          <section className="bg-gray-50 relative py-4 px-6 md:px-12 lg:px-24 xl:px-40 overflow-hidden">
-            <h2 className="text-4xl md:text-4xl font-bold text-[#334155] mb-[14px] leading-tight text-center">
-              Ready to Take Control of Every Ticket?
-            </h2>
-    
-            <p className="text-[#64748B] text-lg md:text-xl leading-relaxed mb-10 text-center">
-          See how EICE Ops brings live SLA clocks, structured escalation,<br/> and a full audit trail to your help desk — talk to our team.
-        </p>
-    
-            <button
-              onClick={() => navigate("/products/eicerise/form?product=EiceOps")}
-              className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto text-[18px] hover:bg-blue-800"
-            >
-              Request a Demo
-              <img src={arrowIcon} alt="arrow"  width="24" height="24" />
-            </button>
+          <section className="bg-gray-50 relative overflow-hidden">
+            <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto text-center">
+              <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] mx-auto max-w-4xl py-1">
+                Ready to Take Control of Every Ticket?
+              </h2>
+
+              <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] mt-2 mb-8">
+                See how EICE Ops brings live SLA clocks, structured escalation,<br/> and a full audit trail to your help desk — talk to our team.
+              </p>
+
+              <button
+                onClick={() => navigate("/products/eicerise/form?product=EiceOps")}
+                className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto text-[18px] hover:bg-blue-800"
+              >
+                Request a Demo
+                <img src={arrowIcon} alt="arrow"  width="24" height="24" />
+              </button>
+            </div>
           </section>
 
       <ProductCarousel slides={productSlides} />

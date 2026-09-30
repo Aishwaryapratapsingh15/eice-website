@@ -4,6 +4,7 @@ import { useNavigate } from "@/nextNavigation";
 import ProductFooter from "./ProductFooter";
 import ProductCarousel from "./ProductCarousel";
 import productSlides from "./carouselData";
+import ProductVideo from "./ProductVideo";
 const arrowIcon = "https://d3r43jacxrwsrp.cloudfront.net/arrow.svg";
 const kbtIcon = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/KBT.svg";
 const challengeIcon = "https://d3r43jacxrwsrp.cloudfront.net/smartfit/OIP.webp";
@@ -74,7 +75,7 @@ export default function SmartFit() {
   return (
     <div className="w-full text-black">
       {/* HERO SECTION */}
-      <section className="py-4 sm:py-10 px-4 sm:px-8 md:px-20 lg:px-20 xl:px-40 bg-white text-left sm:text-center">
+      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white text-left sm:text-center">
         <div className="flex justify-center sm:mb-10 pb-4">
           <img
             src={heroImg}
@@ -82,30 +83,30 @@ export default function SmartFit() {
             className="w-full max-w-[650px] object-contain"
            width="1355" height="535" />
         </div>
-           <span className="flex w-fit mx-auto items-center gap-2 bg-blue-50 text-[#012060] px-3 py-2 rounded-full text-sm font-medium border border-blue-200 sm:mb-4">
-          
-          <img 
+           <span className="font-general font-semibold flex w-fit mx-auto items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[12px] sm:text-[14px] tracking-wide sm:mb-4">
+
+          <img
             src={eiceSmartfitIcon}
-            alt="icon" 
+            alt="icon"
             className="w-5 h-5 object-contain"
            width="20" height="20" />
-        
+
           Container loading optimization software
         </span>
 
-       <h1 className="text-[40px] text-[#334155] md:text-[48px] sm:mt-6 pt-4 font-bold max-w-4xl mx-auto leading-tight pb-4">
-         <span className="text-[#01B0F1]">Optimize </span> Every Load. <span className="text-[#01B0F1]">Maximize</span> Every Container.
-         <span className="text-[#01B0F1]"> Minimize</span> Every Cost.
+       <h1 className="font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] text-blackk mt-[10px] max-w-4xl mx-auto py-1">
+         <span className="text-bloo">Optimize </span> Every Load. <span className="text-bloo">Maximize</span> Every Container.
+         <span className="text-bloo"> Minimize</span> Every Cost.
         </h1>
 
         {/* <h3 className = "font-semibold text-xl mb-10 text-[#012060] italic mb-5">Pack Smart. Ship Smart</h3> */}
 
-       
-          
-           <p className="pb-4 sm:mt-6 text-[#64748B] max-w-2xl mx-auto text-[22px] sm:text-[19px] font-semi-bold">
+
+
+           <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">
           Stop paying for wasted container space. Eice SmartFit uses intelligent 3D optimization to generate perfect load plans — maximizing capacity, balancing weight distribution, and ensuring correct cargo placement. Upload your cargo list, select a container, and get step-by-step loading instructions with real-time weight analysis. No installation required.
         </p>
-         <div className="sm:mt-8 flex flex-wrap justify-start sm:justify-center gap-4">
+         <div className="mt-8 flex flex-wrap justify-start sm:justify-center gap-4">
         
               {/* Primary */}
               <button onClick={() => navigate("/products/eicerise/form?product=Eice%20SmartFit")}  
@@ -124,51 +125,51 @@ export default function SmartFit() {
       </section>
 
       {/* CHALLENGE & SOLUTION */}
-      <section className="px-4 sm:px-8 md:px-12 lg:px-20 py-4 sm:py-10 flex flex-col lg:flex-row gap-4 lg:gap-8 text-black">
+      <section className="px-4 md:px-10 lg:px-20 xl:px-40 py-4 sm:py-10 max-w-7xl mx-auto text-black">
 
-          <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-4 sm:gap-8">
+          <div className="grid md:grid-cols-2 gap-4 sm:gap-8">
         {/* CHALLENGES */}
-        <div className="flex-1 bg-white border border-[#E2E8F0] rounded-xl pt-4 pb-8 px-8">
-          <h2 className="text-[32px] sm:text-3xl font-bold text-[#334155] mb-4 sm:mb-8 text-center">
+        <div className="flex-1 rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]">
+          <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mb-8 text-center">
             Challenges
           </h2>
 
-          <ul className="space-y-4 sm:space-y-5">
-            <li className="flex items-start gap-4 text-[#64748B] leading-relaxed font-semibold">
+          <ul className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] space-y-4 sm:space-y-5">
+            <li className="flex items-start gap-4">
               <div className="min-w-6 h-6">
-                <img src={challengeIcon} className="w-6 h-6" width="24" height="24" />
+                <img src={challengeIcon} className="w-7 h-7" width="28" height="28" />
               </div>
 
               Wasted container space increases freight costs
             </li>
 
-            <li className="flex items-start gap-4 text-[#64748B] leading-relaxed font-semibold">
+            <li className="flex items-start gap-4">
               <div className="min-w-6 h-6">
-                <img src={challengeIcon} className="w-6 h-6" width="24" height="24" />
+                <img src={challengeIcon} className="w-7 h-7" width="28" height="28" />
               </div>
 
               Manual planning is slow and error-prone
             </li>
 
-            <li className="flex items-start gap-4 text-[#64748B] leading-relaxed font-semibold">
+            <li className="flex items-start gap-4">
               <div className="min-w-6 h-6">
-                 <img src={challengeIcon} className="w-6 h-6" width="24" height="24" />
+                 <img src={challengeIcon} className="w-7 h-7" width="28" height="28" />
               </div>
 
               Improper weight balance causes safety risks
             </li>
 
-            <li className="flex items-start gap-4 text-[#64748B] leading-relaxed font-semibold">
+            <li className="flex items-start gap-4">
               <div className="min-w-6 h-6">
-                 <img src={challengeIcon} className="w-6 h-6" width="24" height="24" />
+                 <img src={challengeIcon} className="w-7 h-7" width="28" height="28" />
               </div>
 
               Difficult unloading due to poor sequencing
             </li>
 
-            <li className="flex items-start gap-4 text-[#64748B] leading-relaxed font-semibold">
+            <li className="flex items-start gap-4">
               <div className="min-w-6 h-6">
-                 <img src={challengeIcon} className="w-6 h-6" width="24" height="24" />
+                 <img src={challengeIcon} className="w-7 h-7" width="28" height="28" />
               </div>
 
               No visibility into remaining container capacity
@@ -177,47 +178,47 @@ export default function SmartFit() {
         </div>
 
         {/* SOLUTIONS */}
-        <div className="flex-1 bg-white border border-[#E2E8F0] rounded-xl pt-4 pb-8 px-8">
-          <h2 className="text-[32px] sm:text-3xl font-bold text-[#334155] mb-4 sm:mb-8 text-center">
+        <div className="flex-1 rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]">
+          <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mb-8 text-center">
             Solutions
           </h2>
 
-          <ul className="space-y-4 sm:space-y-5">
-            <li className="flex items-start gap-4 text-[#64748B] leading-relaxed font-semibold">
-              <div className="min-w-6 h-6">
-                <img src={kbtIcon} width="32" height="32" />
+          <ul className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] space-y-4 sm:space-y-5">
+            <li className="flex items-start gap-4">
+              <div className="min-w-7 h-7">
+                <img src={kbtIcon} width="28" height="28" />
               </div>
 
               Automated 3D optimized load plans
             </li>
 
-            <li className="flex items-start gap-4 text-[#64748B] leading-relaxed font-semibold">
-              <div className="min-w-6 h-6">
-                <img src={kbtIcon} width="32" height="32" />
+            <li className="flex items-start gap-4">
+              <div className="min-w-7 h-7">
+                <img src={kbtIcon} width="28" height="28" />
               </div>
 
               Generate plans in seconds
             </li>
 
-            <li className="flex items-start gap-4 text-[#64748B] leading-relaxed font-semibold">
-              <div className="min-w-6 h-6">
-                 <img src={kbtIcon} width="32" height="32" />
+            <li className="flex items-start gap-4">
+              <div className="min-w-7 h-7">
+                 <img src={kbtIcon} width="28" height="28" />
               </div>
 
               Smart weight balance analysis
             </li>
 
-            <li className="flex items-start gap-4 text-[#64748B] leading-relaxed font-semibold">
-              <div className="min-w-6 h-6">
-                <img src={kbtIcon} width="32" height="32" />
+            <li className="flex items-start gap-4">
+              <div className="min-w-7 h-7">
+                <img src={kbtIcon} width="28" height="28" />
               </div>
 
               Priority-based unloading system
             </li>
 
-            <li className="flex items-start gap-4 text-[#64748B] leading-relaxed font-semibold">
-              <div className="min-w-6 h-6">
-               <img src={kbtIcon} width="32" height="32" />
+            <li className="flex items-start gap-4">
+              <div className="min-w-7 h-7">
+               <img src={kbtIcon} width="28" height="28" />
               </div>
 
               One-click capacity estimation
@@ -228,49 +229,58 @@ export default function SmartFit() {
       </section>
 
       {/* FEATURES */}
-      <section className="py-4 sm:py-10 px-5 md:px-20 lg:px-20 xl:px-40 bg-white mx-auto">
-        <div className="text-center mb-4 sm:mb-10">
-          <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155] mb-5">
+      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+        <div className="text-center mb-8">
+          <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
             What You Can Do
           </h2>
 
-          <p className="text-[#64748B] text-[22px] sm:text-lg md:text-xl max-w-2xl mx-auto">
+          <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">
             Smart tools designed to optimize every shipment efficiently.
           </p>
         </div>
 
-        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="p-4 sm:p-5 bg-white border border-[#E2E8F0] rounded-xl hover:-translate-y-2 transition-all duration-300"
+              className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]"
             >
               {/* SVG */}
-        <div className="rounded-lg flex items-start mb-5">
-          <img src={feature.icon} alt="icon" className="w-14 h-14 object-contain"  width="56" height="56" />
+        <div className="rounded-lg flex items-start mb-[19px]">
+          <img src={feature.icon} alt="icon" className="w-11 h-11 object-contain"  width="44" height="44" />
         </div>
 
-              <h3 className="font-bold text-[24px] sm:text-2xl text-[#334155] whitespace-pre-line mb-2">
+              <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
                 {feature.title}
               </h3>
 
-              <p className="text-[#64748B] text-[16px] sm:text-lg leading-relaxed">
+              <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
                 {feature.text}
               </p>
             </div>
           ))}
         </div>
       </section>
-            <section className="bg-gray-50 relative py-10 px-5 md:px-12 lg:px-24 xl:px-40 overflow-hidden">
-              <h2 className="text-4xl md:text-4xl font-bold text-[#334155] mb-[14px] leading-tight text-center">
+
+      <ProductVideo
+        eyebrow="Smart Cargo Optimization"
+        heading="See SmartFit in Action"
+        subtext="See how intelligent 3D optimization creates efficient load plans, maximizes available space, and maintains balanced cargo distribution."
+        videoId="T5DCCbJBq6M"
+      />
+
+            <section className="bg-gray-50 relative overflow-hidden">
+             <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
+              <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk text-center mx-auto max-w-4xl py-1">
                 Ready to Transform Your Container Optimization?
               </h2>
-      
-              <p className="text-[#64748B] text-lg md:text-xl leading-relaxed mb-10 text-center">
-            EICE SmartFit runs in your browser — no installation required. Upload your cargo, pick a container, and <br />get an optimized load plan in 
-seconds. 
+
+              <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-blackk/70 mt-2 mb-8 text-center">
+            EICE SmartFit runs in your browser — no installation required. Upload your cargo, pick a container, and <br />get an optimized load plan in
+seconds.
           </p>
-      
+
               <button
                 onClick={() => navigate("/products/eicerise/form?product=Eice%20SmartFit")}
                 className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto text-[18px] hover:bg-blue-800"
@@ -278,6 +288,7 @@ seconds.
                 Request a Demo
                 <img src={arrowIcon} alt="arrow"  width="24" height="24" />
               </button>
+             </div>
             </section>
 <ProductCarousel slides={productSlides} />
 

@@ -1,6 +1,6 @@
-﻿"use client";
+"use client";
 import React, { useState, useEffect } from 'react';
-const imgn = "https://d3r43jacxrwsrp.cloudfront.net/photo/logo2n.webp";
+const imgn = "https://d3r43jacxrwsrp.cloudfront.net/photo/logo2n.png";
 
 // Images for phone
 const set1 = "https://d3r43jacxrwsrp.cloudfront.net/clients_phone/img1w.webp";
@@ -33,11 +33,12 @@ export default function Clients() {
   return (
     <>
       <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
-        <h2 className="text-bloo text-left sm:text-center text-xs font-extrabold uppercase tracking-[0.12em] py-2">
+        <h2 className="font-general font-semibold text-bloo text-left sm:text-center text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">
           Our Clients
         </h2>
-        <p className="text-left sm:text-center text-[26px] sm:text-3xl sm:mx-auto md:text-3xl lg:text-[32px] max-w-4xl py-1 fontweight_1 mb-8">
-          Partnering with visionary clients to drive success and innovation
+        <p className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] mx-auto max-w-4xl py-1 mb-8">
+          Partnering with visionary clients to drive
+          <br /> success and innovation
         </p>
 
         <div style={{ display: "flex", justifyContent: "center" }}>

@@ -133,15 +133,15 @@ const faqs = [
 export default function EiceAim() {
   const navigate = useNavigate();
   return (
-    <div className="bg-white text-gray-800 font-poppins">
+    <div className="bg-white text-gray-800">
 
       {/* HERO */}
-      <section className="text-left sm:text-center py-4 px-5 bg-white">
+      <section className="text-left sm:text-center py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
         <div className="flex flex-col items-center">
           <img
             src={heroImg}
             alt="product"
-            className="mx-auto w-[180px] h-[70px] md:w-96 lg:w-[180px]"
+            className="mx-auto w-[180px] h-[80px] md:w-96 lg:w-[180px]"
             width="873" height="404" />
           <img
             src={Frame1Icon}
@@ -150,7 +150,7 @@ export default function EiceAim() {
             width="873" height="404" />
         </div>
 
-        <span className="flex w-fit mx-auto items-center gap-2 bg-blue-50 text-[#012060] px-3 py-2 rounded-full text-sm font-medium border border-blue-200">
+        <span className="font-general font-semibold flex w-fit mx-auto items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[12px] sm:text-[14px] tracking-wide">
           <img
             src={actionIcon}
             alt="icon"
@@ -159,11 +159,11 @@ export default function EiceAim() {
           The Action Agent · EICE Agent Suite
         </span>
 
-        <h1 className="text-[40px] text-[#334155] md:text-[48px] mt-6 font-bold max-w-4xl mx-auto leading-tight">
-          The AI sales partner that <span className="text-[#01B0F1]">never stops selling.</span>
+        <h1 className="font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] text-blackk mt-[10px] max-w-4xl mx-auto py-1">
+          The AI sales partner that <span className="text-bloo">never stops selling.</span>
         </h1>
 
-        <p className="mt-6 text-[#64748B] max-w-2xl mx-auto">
+        <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">
           EICEAIM replaces traditional telecalling with a scalable, 24×7 AI-powered communication system — automating outreach, lead qualification, and follow-up with precision and personalization.
         </p>
 
@@ -177,16 +177,16 @@ export default function EiceAim() {
       </section>
 
       {/* FEATURES */}
-      <section className="sm:pt-4 sm:pb-10 px-4 max-w-7xl mx-auto md:px-10 lg:px-20 xl:px-40 bg-white grid md:grid-cols-3 text-center">
+      <section className="py-4 sm:py-10 px-4 max-w-7xl mx-auto md:px-10 lg:px-20 xl:px-40 bg-white grid md:grid-cols-3 text-center">
         {features.map((item, i) => (
           <div key={i} className="flex flex-col items-center gap-1 pb-2">
             <div className=" px-6 rounded-xl">
               <img src={item.icon} alt="icon" width={item.__w} height={item.__h} />
             </div>
-            <h3 className="font-bold text-[24px] sm:text-xl leading-relaxed text-[#334155]">
+            <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">
               {item.title}
             </h3>
-            <p className="text-[#64748B] font-semibold text-[16px] sm:text-md leading-relaxed max-w-xs">
+            <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] max-w-xs">
               {item.desc}
             </p>
           </div>
@@ -194,29 +194,29 @@ export default function EiceAim() {
       </section>
 
       {/* WHAT IS */}
-      <section className="bg-[#F4F9FF] py-4 sm:py-8 px-4 md:px-10 lg:px-20 xl:px-40 bg-[#F4F9FF]">
-        <div className="grid md:grid-cols-[1fr_2fr] gap-4 md:gap-10 max-w-6xl mx-auto items-center">
+      <section className="bg-[#F4F9FF]">
+       <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto grid md:grid-cols-[1fr_2fr] gap-4 md:gap-10 items-center">
           <div>
-            <h2 className="text-[32px] sm:text-2xl md:text-3xl font-bold mb-4 text-[#334155]">
+            <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk">
               What is EICEAIM?
             </h2>
           </div>
-          <div className="text-[#64748B] font-semibold mb-6 leading-8 space-y-4 sm:space-y-6">
+          <div className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] space-y-4 sm:space-y-3">
             <p>EICEAIM is the Action Agent inside the EICE Agent Suite — an AI-driven ecosystem built to automate, optimize, and scale enterprise intelligence.</p>
             <p>It acts as your intelligent sales partner, automating outreach, lead qualification, and follow-ups with precision and personalization — replacing traditional telecalling with a scalable, always-on communication system.</p>
           </div>
-        </div>
+       </div>
       </section>
 
       {/* CHALLENGES — styled like Verilock's "Verilock vs Google Authenticator" comparison table */}
-      <section className="py-4 sm:py-10 px-5 md:px-12 lg:px-20 xl:px-40">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="text-[32px] sm:text-4xl font-bold text-[#1E293B] mb-4">
+      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
+        <div>
+          <div className="text-center mb-8">
+            <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk py-1">
               From cold calling to consistent conversion
             </h2>
-            <p className="text-[#64748B] text-[16px] sm:text-lg">
-              Traditional telecalling doesn&apos;t scale, and it doesn&apos;t stay consistent. EICEAIM gives every < br />prospect the same disciplined follow-through — day or night.
+            <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">
+              Traditional telecalling doesn&apos;t scale, and it doesn&apos;t stay consistent. EICEAIM gives every <br />prospect the same disciplined follow-through — day or night.
             </p>
           </div>
 
@@ -243,45 +243,47 @@ export default function EiceAim() {
       </section>
 
       {/* ARCHITECTURE */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
-        <h2 className="text-[32px] sm:text-4xl text-[#334155] font-bold text-center leading-relaxed mb-4">
-          Outreach, qualification, and follow-up fully automated
-        </h2>
-        <p className="text-[#64748B] text-center text-[16px] sm:text-lg max-w-3xl mx-auto sm:mb-10 mb-4">
-          EICEAIM acts as your intelligent sales partner, automating outreach, lead qualification, and follow-ups with precision and personalization.
-        </p>
-        <div className="relative max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+        <div className="text-center mb-8">
+          <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk py-1">
+            Outreach, qualification, and follow-up fully automated
+          </h2>
+          <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">
+            EICEAIM acts as your intelligent sales partner, automating outreach, lead qualification, and follow-ups with precision and personalization.
+          </p>
+        </div>
+        <div className="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
           {architecture.map((item, i) => (
-            <div key={i} className="bg-white rounded-xl  border-1 border border-[#E2E8F0] shadow-sm hover:shadow-md transition p-4 sm:p-6 flex flex-col items-start text-start gap-4">
-              <div className="rounded-lg flex items-start">
-                <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" width="56" height="56" />
+            <div key={i} className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col items-start text-start">
+              <div className="rounded-lg flex items-start mb-[19px]">
+                <img src={item.icon} alt="icon" className="w-11 h-11 object-contain" width="44" height="44" />
               </div>
-              <h3 className="font-bold text-2xl text-[#334155] whitespace-pre-line">{item.title}</h3>
-              <p className="text-[#64748B] text-[16px] sm:text-lg leading-relaxed">{item.desc}</p>
+              <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">{item.title}</h3>
+              <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">{item.desc}</p>
             </div>
           ))}
         </div>
       </section>
 
             {/* IMPLEMENTATION */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
-        <div className="max-w-6xl mx-auto text-center mb-4 sm:mb-12">
-          <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155] font-poppins">
+      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+        <div className="text-center mb-8">
+          <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk py-1">
             A proven, continuous journey
           </h2>
-          <p className="text-[#64748B] mt-3 text-[16px] sm:text-lg">
+          <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 mt-2">
             From planning your first campaign to continuously improving conversion.
           </p>
         </div>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
           {steps.map((item, i) => (
-            <div key={i} className="relative bg-white border border-gray-200 rounded-xl p-4 sm:p-6 flex flex-col gap-4 min-h-[220px]">
+            <div key={i} className="relative rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col min-h-[220px]">
               <span className="absolute top-5 right-5 text-4xl font-bold text-[#CBD5E1]">{item.step}</span>
-              <div className="w-12 h-12 flex items-center justify-center bg-blue-900 text-white rounded-lg text-xl">
-                <img src={item.icon} alt="icon" width="48" height="48" />
+              <div className="w-11 h-11 flex items-center justify-center bg-blue-900 text-white rounded-lg text-xl mb-[19px]">
+                <img src={item.icon} alt="icon" width="44" height="44" />
               </div>
-              <h3 className="text-2xl text-[#334155] font-bold">{item.title}</h3>
-              <p className="text-[#64748B] text-[16px] sm:text-lg leading-relaxed">{item.desc}</p>
+              <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">{item.title}</h3>
+              <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -289,21 +291,23 @@ export default function EiceAim() {
 
 
       {/* UNIFIED PLATFORM */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
-        <h2 className="text-[32px] sm:text-3xl font-bold text-center text-[#334155] mb-3">
-          Core capabilities
-        </h2>
-        <h4 className="text-[16px] sm:text-lg text-[#64748B] text-center mb-4 sm:mb-10 max-w-3xl mx-auto">
-          Built to run outreach at enterprise scale
-        </h4>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+        <div className="text-center mb-8">
+          <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk py-1">
+            Core capabilities
+          </h2>
+          <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">
+            Built to run outreach at enterprise scale
+          </p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
           {platformFeatures.map((item, i) => (
-            <div key={i} className="bg-white rounded-xl  border-1 border border-[#E2E8F0] shadow-sm hover:shadow-md transition p-4 sm:p-6 flex flex-col items-start text-start w-auto h-auto sm:h-[300px] gap-4">
-              <div className="rounded-lg flex items-start">
-                <img src={item.icon} alt="icon" className="w-14 h-14 object-contain" width="56" height="56" />
+            <div key={i} className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col items-start text-start w-auto h-auto sm:h-auto">
+              <div className="rounded-lg flex items-start mb-[19px]">
+                <img src={item.icon} alt="icon" className="w-11 h-11 object-contain" width="44" height="44" />
               </div>
-              <h3 className="font-bold text-[24px] sm:text-2xl">{item.title}</h3>
-              <p className="text-gray-500 text-[16px] sm:text-lg leading-relaxed">{item.desc}</p>
+              <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">{item.title}</h3>
+              <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -311,39 +315,39 @@ export default function EiceAim() {
 
 
       {/* MEASURABLE IMPACT */}
-      <section className="relative py-4 sm:py-10 overflow-hidden px-4 md:px-10 lg:px-20 xl:px-40" style={{ backgroundImage: `url(${bgImage2})` }}>
-        <div className="max-w-[1200px] mx-auto relative z-10">
-          <div className="max-w-5xl mx-auto text-center mb-4 sm:mb-14">
-            <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155]">Real results from AI-powered outreach</h2>
+      <section className="relative overflow-hidden bg-cover bg-center" style={{ backgroundImage: `url(${bgImage2})` }}>
+       <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto relative z-10">
+          <div className="text-center mb-8">
+            <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk">Real results from AI-powered outreach</h2>
           </div>
           <div className="max-w-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             {impactStats.map((item, i) => (
-              <div key={i} className="bg-white border border-gray-200 rounded-xl p-6 sm:p-10 shadow-sm text-center">
+              <div key={i} className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] text-center">
                 <div className="flex items-center justify-center mb-3 gap-4">
-                  <img src={item.icon} alt="icon" className="w-10 h-10 object-contain" width="24" height="24" />
-                
-                <h3 className={`text-[40px] font-bold ${item.color}`}>{item.value}</h3></div>
-                <p className="text-[#64748B] font-semibold text-[16px] sm:text-lg mt-2">{item.label}</p>
+                  <img src={item.icon} alt="icon" className="w-16 h-16 object-contain" width="64" height="64" />
+
+                <h3 className={`font-general font-semibold text-[40px] leading-[1.1] ${item.color}`}>{item.value}</h3></div>
+                <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] mt-2">{item.label}</p>
               </div>
             ))}
           </div>
-        </div>
+       </div>
       </section>
 
       {/* CAMPAIGN CONTROLS */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
-        <div className="max-w-5xl mx-auto text-center mb-4 sm:mb-14">
-          <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155]">What that impact actually looks like</h2>
-          <p className="mt-3 text-[#64748B] text-[16px] sm:text-lg">The numbers above come from three concrete operating changes.</p>
+      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+        <div className="text-center mb-8">
+          <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk py-1">What that impact actually looks like</h2>
+          <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 mt-2">The numbers above come from three concrete operating changes.</p>
         </div>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
           {campaignControls.map((item, i) => (
-            <div key={i} className="bg-white border border-[#E2E8F0] rounded-xl p-4 sm:p-6">
-              <div className="rounded-lg flex items-start mb-3">
-                <img src={item.icon} alt="icon" className="w-10 h-10 object-contain" width="40" height="40" />
+            <div key={i} className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]">
+              <div className="rounded-lg flex items-start mb-[19px]">
+                <img src={item.icon} alt="icon" className="w-11 h-11 object-contain" width="44" height="44" />
               </div>
-              <h3 className="text-xl font-bold text-[#334155]">{item.title}</h3>
-              <p className="text-[#64748B] mt-2">{item.desc}</p>
+              <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">{item.title}</h3>
+              <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -352,21 +356,21 @@ export default function EiceAim() {
 
     
       {/* SECURITY, COMPLIANCE & TRUST */}
-        <section className="bg-white py-4 sm:py-10 px-4 sm:px-6 md:px-10 lg:px-20 xl:px-40">
-      <div className="max-w-[1200px] mx-auto px-0 text-center">
+        <section className="bg-white py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
+      <div className="text-center">
 
         {/* Top Tag */}
-        <div className="inline-flex border-2 border-[#228441] items-center gap-2 bg-[#F0FDF4] text-[#2e7d32] px-4 py-2 rounded-full text-sm font-medium mb-2">
+        <div className="inline-flex border-2 border-[#228441] items-center gap-2 bg-[#F0FDF4] text-[#2e7d32] px-4 py-2 rounded-full font-general font-semibold text-[12px] sm:text-[14px] uppercase tracking-[0.12em]">
           <img src={shieldIcon} alt="icon" className="w-4 h-4 object-contain"  width="16" height="16" /> Enterprise-Grade Security
         </div>
 
         {/* Heading */}
-        <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155] mb-4">
+        <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mt-3">
           Security, Compliance & Trust
         </h2>
 
         {/* Subtitle */}
-        <p className="text-[#64748B] font-semibold text-[16px] sm:text-lg mb-4 sm:mb-10 max-w-2xl mx-auto">
+        <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2 mb-8">
           Your data security is our foundation. Built with enterprise compliance at every layer.
         </p>
 
@@ -376,16 +380,16 @@ export default function EiceAim() {
           {badges.map((item, i) => (
             <div
               key={i}
-              className="bg-white border border-[#e2e8f0] rounded-xl py-8 px-6 shadow-sm"
+              className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]"
             >
 
               {/* Title */}
-              <h3 className="text-[24px] sm:text-[20px] font-bold text-[#334155] mb-3">
+              <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">
                 {item.title}
               </h3>
 
               {/* Description */}
-              <p className="text-[#64748B] font-semibold text-[15px] whitespace-pre-line leading-relaxed mb-6">
+              <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] whitespace-pre-line mb-[18px]">
                 {item.desc}
               </p>
 
@@ -407,31 +411,44 @@ export default function EiceAim() {
     </section>
 
       {/* FAQ */}
-      <section className="bg-[#F4F9FF] py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40">
+      <section className="bg-[#F4F9FF]">
+       <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155] text-center mb-4 sm:mb-10">Frequently asked questions</h2>
+          <div className="text-center mb-8">
+            <h2 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">
+              FAQs
+            </h2>
+            <h1 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] mx-auto max-w-4xl py-1">
+              Frequently Asked Questions
+            </h1>
+          </div>
           <div className="space-y-3">
             {faqs.map((item, i) => (
-              <details key={i} className="bg-white border border-[#E2E8F0] rounded-xl p-4 sm:p-5">
-                <summary className="cursor-pointer list-none flex items-center justify-between gap-4 font-bold text-[#334155] text-[16px] sm:text-lg">
-                  {item.q}
-                  <span className="text-[#012060] text-xl leading-none">+</span>
+              <details key={i} className="group bg-white rounded-[18px] border border-[#E6EAF1] p-[25px]">
+                <summary className="group/q cursor-pointer list-none flex items-center justify-between gap-4 font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3]">
+                  <span>{item.q}</span>
+                  <span className="text-black group-hover/q:text-[#01B0F1] text-xl leading-none flex-shrink-0 transition">
+                    <span className="group-open:hidden">+</span>
+                    <span className="hidden group-open:inline">−</span>
+                  </span>
                 </summary>
-                <p className="text-[#64748B] mt-3 text-[16px] sm:text-lg leading-relaxed">{item.a}</p>
+                <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] mt-3">{item.a}</p>
               </details>
             ))}
           </div>
         </div>
+       </div>
       </section>
 
       {/* FINAL CTA */}
-      <section className="py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-gray-50 text-center">
+      <section className="bg-gray-50 text-center">
+       <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-semibold text-gray-800">
+          <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk py-1">
             Ready to put your outreach on autopilot?
           </h2>
-          <p className="mt-5 text-lg text-gray-500 max-w-2xl mx-auto leading-relaxed">
-            Join forward-thinking enterprises that trust EICEAIM for scalable, always-on lead generation.
+          <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-blackk/70 max-w-2xl mx-auto mt-2">
+            Join forward-thinking enterprises that trust EICEAIM for scalable,<br className="hidden sm:inline" /> always-on lead generation.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <button onClick={() => navigate("/products/eicerise/form?product=EiceAim")}
@@ -443,19 +460,20 @@ export default function EiceAim() {
         </div>
 
         <div className="mt-16 max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
-          <div className="border border-gray-200 bg-gray-100 rounded-xl py-6 px-4">
-            <h3 className="text-xl font-bold text-gray-600">4–8 weeks</h3>
-            <p className="mt-2 text-gray-700 text-lg">to get started</p>
+          <div className="border border-[#E6EAF1] bg-gray-100 rounded-[18px] py-6 px-4">
+            <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737]">4–8 weeks</h3>
+            <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] mt-2">to get started</p>
           </div>
-          <div className="border border-gray-200 bg-gray-100 rounded-xl py-6 px-4">
-            <h3 className="text-xl font-bold text-gray-600">24/7</h3>
-            <p className="mt-2 text-gray-700 text-lg">expert support</p>
+          <div className="border border-[#E6EAF1] bg-gray-100 rounded-[18px] py-6 px-4">
+            <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737]">24/7</h3>
+            <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] mt-2">expert support</p>
           </div>
-          <div className="border border-gray-200 bg-gray-100 rounded-xl py-6 px-4">
-            <h3 className="text-xl font-bold text-gray-600">ISO-certified</h3>
-            <p className="mt-2 text-gray-700 text-lg">infrastructure</p>
+          <div className="border border-[#E6EAF1] bg-gray-100 rounded-[18px] py-6 px-4">
+            <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737]">ISO-certified</h3>
+            <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] mt-2">infrastructure</p>
           </div>
         </div>
+       </div>
       </section>
 
       <ProductCarousel slides={productSlides} />

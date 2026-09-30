@@ -5,6 +5,7 @@ import OurProducts from "../src/Homecomps/OurProducts";
 import HowItWorks from "../src/Homecomps/HowItWorks";
 import AiCapability from "../src/Homecomps/AiCapability";
 import Solutions from "../src/Homecomps/Solutions";
+import Reveal from "../src/Homecomps/Reveal";
 
 // Below-the-fold sections: still server-rendered (content stays in the
 // initial HTML for SEO/no-JS), but their hydration JS is split into
@@ -16,7 +17,7 @@ const Clients = dynamic(() => import("../src/Homecomps/Clients"));
 const LatestVideos = dynamic(() => import("../src/Homecomps/LatestVideos"));
 const Faq = dynamic(() => import("../src/Homecomps/Faq"));
 const Casestudies = dynamic(() => import("../src/Homecomps/Casestudies"));
-const Certificate = dynamic(() => import("../src/Homecomps/Certificate"));
+const SecurityCompliance = dynamic(() => import("../src/Homecomps/SecurityCompliance"));
 const ProductFooter = dynamic(() => import("../src/Product/ProductFooter"));
 
 // export const metadata = {
@@ -94,30 +95,27 @@ export default function Page() {
         <Big />
       </div>
 
-      <div>
-        <div className="flex flex-col gap-0.5 items-start sm:items-center justify-start sm:justify-center pt-4 sm:pt-10 px-4 md:px-10 lg:px-20 xl:px-40 mb-6 sm:mb-10 max-w-7xl mx-auto">
-          <h2 className="font-general font-medium text-bloo text-[15px] sm:text-[16px] uppercase tracking-[0.12em] py-2">Core capabilities</h2>
+      <Reveal>
+        <div className="flex flex-col gap-0.5 items-start sm:items-center justify-start sm:justify-center pt-4 sm:pt-10 px-4 md:px-10 lg:px-20 xl:px-40 mb-8 max-w-7xl mx-auto">
+          <h2 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">Core capabilities</h2>
           <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] max-w-4xl py-1">
             Enterprise-grade intelligence, <br className="sm:hidden" />
             built to scale
           </h2>
         </div>
         <Offers />
-      </div>
+      </Reveal>
 
-      <OurProducts />
-      <HowItWorks />
-      <AiCapability />
-
-      <div>
-        <Solutions />
-        <Casestudies />
-        <Clients />
-        <LatestVideos />
-        <Faq />
-        <Clientele />
-        <Certificate />
-      </div>
+      <Reveal><OurProducts /></Reveal>
+      <Reveal><HowItWorks /></Reveal>
+      <Reveal><AiCapability /></Reveal>
+      <Reveal><Solutions /></Reveal>
+      <Reveal><Casestudies /></Reveal>
+      <Reveal><Clients /></Reveal>
+      <Reveal><LatestVideos /></Reveal>
+      <Reveal><Clientele /></Reveal>
+      <Reveal><SecurityCompliance /></Reveal>
+      <Reveal><Faq /></Reveal>
 
       <ProductFooter />
     </>

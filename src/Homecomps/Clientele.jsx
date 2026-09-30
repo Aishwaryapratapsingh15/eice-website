@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import Clients from "./Clients";
 
 function Clientele() {
@@ -9,7 +9,7 @@ function Clientele() {
       </div>
 
       <div className="relative max-w-7xl mx-auto">
-        <h2 className="font-general font-medium text-bloo text-left sm:text-center text-[15px] sm:text-[16px] uppercase tracking-[0.12em] mb-2 sm:mb-3">
+        <h2 className="font-general font-semibold text-bloo text-left sm:text-center text-[12px] sm:text-[14px] uppercase tracking-[0.12em] mb-2 sm:mb-3">
           Journey so far
         </h2>
         <h1 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] mb-8">
@@ -36,7 +36,7 @@ function Clientele() {
 function Milestone({ number, text, smallText }) {
   return (
     <div className="text-center">
-      <div className="text-bloo fontweight_1 text-4xl sm:text-5xl lg:text-6xl xl:text-7xl mb-2">
+      <div className="text-bloo font-semibold text-4xl sm:text-5xl lg:text-6xl xl:text-7xl mb-2">
         {number}
       </div>
       <div className="font-semibold text-base sm:text-lg lg:text-xl mb-1">

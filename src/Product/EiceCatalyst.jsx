@@ -134,9 +134,9 @@ export default function EiceCatalystPage() {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-white text-gray-800 font-poppins">
+    <div className="bg-white text-gray-800">
       {/* HERO */}
-      <section className="text-left sm:text-center py-4 px-5 bg-white">
+      <section className="text-left sm:text-center py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
         <div className="mt-5 flex justify-center">
           <img
             src={catalystHeroImg}
@@ -147,15 +147,15 @@ export default function EiceCatalystPage() {
           />
         </div>
 
-        <span className="flex w-fit mx-auto items-center gap-2 bg-blue-50 text-[#012060] px-3 py-2 rounded-full text-sm font-medium border border-blue-200">
+        <span className="font-general font-semibold flex w-fit mx-auto items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[12px] sm:text-[14px] tracking-wide">
           Integrated AI Platform
         </span>
 
-        <h1 className="text-[40px] text-[#334155] md:text-[48px] mt-6 font-bold max-w-4xl mx-auto leading-tight">
-          From AI Adoption to <span className="text-[#01B0F1]">AI-Driven Engineering</span>
+        <h1 className="font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] text-blackk mt-[10px] max-w-4xl mx-auto py-1">
+          From AI Adoption to <span className="text-bloo">AI-Driven Engineering</span>
         </h1>
 
-        <p className="mt-6 text-[#64748B] max-w-2xl mx-auto">
+        <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">
           EICE Catalyst is an integrated AI platform that helps organizations build faster,
           modernize smarter, automate intelligently, and prove the value of every AI
           investment — one connected platform, not six disconnected services.
@@ -173,18 +173,18 @@ export default function EiceCatalystPage() {
       </section>
 
       {/* OVERVIEW */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
-        <div className="mx-auto max-w-3xl text-left sm:text-center">
-          <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155] mb-4">
+      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+        <div className="mx-auto max-w-4xl text-left sm:text-center">
+          <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk py-1">
             One connected path from trying AI to embedding it.
           </h2>
-          <p className="text-[#64748B] text-[16px] sm:text-lg leading-relaxed">
+          <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] mt-2">
             Most enterprise AI initiatives fail the same way: a pilot proves a point, then
             the value quietly evaporates because there was never a connected path from
             &ldquo;we tried AI&rdquo; to &ldquo;AI is embedded in how we actually build and
             run software.&rdquo;
           </p>
-          <p className="mt-4 text-[#64748B] text-[16px] sm:text-lg leading-relaxed">
+          <p className="mt-3 font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
             EICE Catalyst exists to close that gap — one platform spanning the full arc from
             engineering acceleration through legacy modernization, agentic automation,
             enterprise AI, governance, and measurable value.
@@ -206,13 +206,13 @@ export default function EiceCatalystPage() {
       </section>
 
       {/* THE SIX CAPABILITIES */}
-      <section id="capabilities" className="bg-[#F4F9FF] py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40">
-        <div className="max-w-6xl mx-auto">
-          <div className="mx-auto mb-8 max-w-3xl text-left sm:text-center">
-            <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155] mb-4">
-              Designed as a platform, not a<br/> collection of services.
+      <section id="capabilities" className="bg-[#F4F9FF]">
+       <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
+          <div className="mx-auto mb-8 max-w-4xl text-left sm:text-center">
+            <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk py-1">
+              Designed as a platform, not a collection of services.
             </h2>
-            <p className="text-[#64748B] text-[16px] sm:text-lg leading-relaxed">
+            <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 mt-2">
               Accelerate everyday engineering work, safely modernize legacy systems, deploy
               trustworthy enterprise AI, and prove return on investment — under real safety,
               compliance, and uptime pressure.
@@ -223,34 +223,34 @@ export default function EiceCatalystPage() {
             {capabilities.map((cap) => (
               <article
                 key={cap.title}
-                className="bg-white border border-[#E2E8F0] rounded-2xl p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+                className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]"
               >
                 <div className="text-xs font-extrabold uppercase tracking-[0.1em] text-[#01B0F1]">
                   {cap.num}
                 </div>
-                <h3 className="mt-2 text-[22px] font-bold text-[#334155]">{cap.title}</h3>
-                <p className="mt-1 font-bold text-[#33445E]">{cap.tagline}</p>
-                <p className="mt-3 text-[#64748B] leading-relaxed">{cap.desc}</p>
-                <div className="mt-4 border-t border-[#E2E8F0] pt-4 text-sm text-[#012060]">
+                <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mt-2 mb-[7px]">{cap.title}</h3>
+                <p className="font-general font-semibold text-[#33445E]">{cap.tagline}</p>
+                <p className="mt-3 font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">{cap.desc}</p>
+                <div className="mt-4 border-t border-[#E2E8F0] pt-4 font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#012060]">
                   <strong className="text-[#01B0F1]">Customer value:</strong> {cap.value}
                 </div>
               </article>
             ))}
           </div>
-        </div>
+       </div>
       </section>
 
       {/* WHY THIS MATTERS */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-[0.75fr_1.25fr] gap-8 lg:gap-14 items-center">
+      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+        <div className="grid lg:grid-cols-[0.75fr_1.25fr] gap-8 lg:gap-14 items-center">
           <div className="rounded-[30px] bg-gradient-to-br from-[#012060] to-[#063b91] text-white p-8 sm:p-10 min-h-[280px] flex flex-col justify-center">
-            <div className="text-xs font-extrabold uppercase tracking-[0.12em] text-[#6EDBFF]">
+            <div className="font-general font-semibold text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-[#6EDBFF]">
               Why This Matters
             </div>
-            <h3 className="mt-3 text-[28px] sm:text-[34px] font-bold leading-tight">
+            <h3 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] mt-3">
               AI cannot stay a layer on top of an estate it does not understand.
             </h3>
-            <p className="mt-3 text-[#D6E7F6]">
+            <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#D6E7F6] mt-3">
               Catalyst connects engineering acceleration, modernization, enterprise AI,
               governance, and value measurement around the reality of complex technology
               estates.
@@ -258,7 +258,7 @@ export default function EiceCatalystPage() {
           </div>
 
           <div>
-            <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155] mb-6">
+            <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mb-8">
               Modern platforms. Decades-old systems. One accountable path.
             </h2>
 
@@ -269,8 +269,8 @@ export default function EiceCatalystPage() {
                     ✓
                   </span>
                   <div>
-                    <b className="text-[#012060]">{b.title}</b>
-                    <p className="mt-0.5 text-[#64748B]">{b.desc}</p>
+                    <b className="font-general font-semibold text-[#012060]">{b.title}</b>
+                    <p className="mt-0.5 font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">{b.desc}</p>
                   </div>
                 </div>
               ))}
@@ -280,45 +280,45 @@ export default function EiceCatalystPage() {
       </section>
 
       {/* HOW WE WORK */}
-      <section id="process" className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
-        <div className="max-w-6xl mx-auto text-center mb-4 sm:mb-12">
-          <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155] font-poppins">
+      <section id="process" className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+        <div className="text-center mb-8">
+          <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
             Start focused. Build against reality. Scale with proof.
           </h2>
-          <p className="text-[#64748B] mt-3 text-[16px] sm:text-lg">
+          <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 mt-2">
             Most organizations begin with one or two capabilities, then expand as the
             platform proves value.
           </p>
         </div>
 
-        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6">
           {steps.map((s) => (
-            <div key={s.step} className="relative bg-white border border-gray-200 rounded-xl p-4 sm:p-6 flex flex-col gap-4 min-h-[220px]">
+            <div key={s.step} className="relative rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col min-h-[220px]">
               <span className="absolute top-5 right-5 text-4xl font-bold text-[#CBD5E1]">{s.step}</span>
-              <div className="w-12 h-12 flex items-center justify-center bg-blue-900 text-white rounded-lg text-xl">
-                <img src={s.icon} alt="icon" width="48" height="48" />
+              <div className="w-11 h-11 flex items-center justify-center bg-blue-900 text-white rounded-lg text-xl mb-[19px]">
+                <img src={s.icon} alt="icon" width="44" height="44" />
               </div>
-              <h3 className="text-2xl text-[#334155] font-bold">{s.title}</h3>
-              <p className="text-[#64748B] text-[16px] sm:text-lg leading-relaxed">{s.desc}</p>
+              <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">{s.title}</h3>
+              <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">{s.desc}</p>
             </div>
             ))}
           </div>
       </section>
 
       {/* WHY EICE */}
-      <section id="why-eice" className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="mx-auto mb-8 max-w-3xl text-left sm:text-center">
-            <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155]">
+      <section id="why-eice" className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+        <div>
+          <div className="mx-auto mb-8 max-w-4xl text-left sm:text-center">
+            <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk">
               Engineering discipline behind the AI platform.
             </h2>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             {whyEice.map((item) => (
-              <div key={item.title} className="border border-[#E2E8F0] rounded-2xl bg-white p-6">
-                <h3 className="text-[18px] font-bold text-[#334155] mb-2">{item.title}</h3>
-                <p className="text-sm text-[#64748B] leading-relaxed">{item.desc}</p>
+              <div key={item.title} className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]">
+                <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">{item.title}</h3>
+                <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -326,40 +326,50 @@ export default function EiceCatalystPage() {
       </section>
 
       {/* FAQ */}
-      <section id="faq" className="bg-[#F4F9FF] py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40">
+      <section id="faq" className="bg-[#F4F9FF]">
+       <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155] text-center mb-4 sm:mb-10">
-            Questions enterprises ask first.
-          </h2>
+          <div className="text-center mb-8">
+            <h2 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">
+              FAQs
+            </h2>
+            <h1 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] mx-auto max-w-4xl py-1">
+              Questions enterprises ask first.
+            </h1>
+          </div>
 
           <div className="space-y-3">
             {faqs.map((item) => (
               <details
                 key={item.q}
-                className="bg-white border border-[#E2E8F0] rounded-xl p-4 sm:p-5"
+                className="group bg-white rounded-[18px] border border-[#E6EAF1] p-[25px]"
               >
-                <summary className="cursor-pointer list-none flex items-center justify-between gap-4 font-bold text-[#334155] text-[16px] sm:text-lg">
-                  {item.q}
-                  <span className="text-[#012060] text-xl leading-none">+</span>
+                <summary className="group/q cursor-pointer list-none flex items-center justify-between gap-4 font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3]">
+                  <span>Q. {item.q}</span>
+                  <span className="text-black group-hover/q:text-[#01B0F1] text-xl leading-none flex-shrink-0 transition">
+                    <span className="group-open:hidden">+</span>
+                    <span className="hidden group-open:inline">−</span>
+                  </span>
                 </summary>
-                <p className="text-[#64748B] mt-3 text-[16px] sm:text-lg leading-relaxed">
-                  {item.a}
+                <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] mt-3">
+                  A. {item.a}
                 </p>
               </details>
             ))}
           </div>
         </div>
+       </div>
       </section>
 
       {/* CTA */}
       <section id ="contact" className="bg-gray-50">
-        <div className="max-w-7xl mx-auto overflow-hidden">
-          <div className="flex flex-col items-center gap-6 px-6 py-10 text-left sm:px-16 sm:py-14 sm:text-center">
+        <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto overflow-hidden">
+          <div className="flex flex-col items-center gap-6 text-left sm:text-center">
             <div>
-              <h2 className="text-[32px] sm:text-4xl font-bold leading-tight text-gray-800">
+              <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
                 Ready to Move From AI Adoption to <br />AI-Driven Engineering?
               </h2>
-              <p className="mt-3 max-w-2xl mx-auto text-gray-500">
+              <p className="mt-2 max-w-2xl mx-auto font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-blackk/70">
                 Talk to our team about which capabilities fit your <br/>current technology estate
                 and AI maturity.
               </p>

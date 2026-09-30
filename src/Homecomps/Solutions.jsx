@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 // import styles from "./Styles/solutions.module.css"
 
@@ -387,17 +387,19 @@ function Solutions() {
     <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
 
       {/* Mobile heading */}
-      <h2 className="sm:hidden font-general font-semibold text-blackk text-left text-[24px] leading-[1.2] max-w-4xl py-2 mb-2">
+      <h2 className="sm:hidden font-general font-semibold text-blackk text-left text-[24px] leading-[1.2] max-w-4xl py-2 mb-8">
         Solutions for Industries
       </h2>
 
       {/* Desktop headings */}
-      <h2 className="hidden sm:block font-general font-medium text-bloo text-[16px] uppercase tracking-[0.12em] text-center py-2">
-        Industries We Serve
-      </h2>
-      <h1 className="hidden sm:block font-general font-semibold text-blackk text-center text-[32px] leading-[1.2] mx-auto max-w-4xl py-1">
-        Industry-Focused Solutions With Enterprise Depth
-      </h1>
+      <div className="hidden sm:block mb-8">
+        <h2 className="font-general font-semibold text-bloo text-[14px] uppercase tracking-[0.12em] text-center py-2">
+          Industries We Serve
+        </h2>
+        <h1 className="font-general font-semibold text-blackk text-center text-[32px] leading-[1.2] mx-auto max-w-4xl py-1">
+          Industry-Focused Solutions With Enterprise Depth
+        </h1>
+      </div>
 
       {/* Mobile: infinite auto-scroll */}
       <div
@@ -411,7 +413,7 @@ function Solutions() {
       </div>
 
       {/* Desktop: grid — unchanged */}
-      <div className="hidden sm:grid sm:grid-cols-3 sm:gap-6 sm:mt-8 sm:mb-8">
+      <div className="hidden sm:grid sm:grid-cols-3 sm:gap-6 sm:mb-8">
         {industries.map((industry, index) => (
           <IndustryCard key={index} {...industry} />
         ))}
@@ -423,7 +425,7 @@ function Solutions() {
           to="/industries"
           className="flex justify-center items-center w-full border border-blue-900 bg-blue-900 text-white rounded-full py-3 font-semibold text-sm"
         >
-          View all industries →
+          View all industries ?
         </Link>
       </div>
 
@@ -453,7 +455,7 @@ function IndustryCard({ name, description, image, link }) {
         }
       />
       <div className="pt-[19px] px-[25px] pb-[25px]">
-        <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[22px] leading-[1.3] mb-[7px]">
+        <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
           {name}
         </h3>
         <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6] mb-[18px]">

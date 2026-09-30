@@ -2,6 +2,7 @@
 import React from "react";
 import ProductCarousel from "./ProductCarousel";
 import productSlides from "./carouselData";
+import ProductVideo from "./ProductVideo";
 import ProductFooter from "./ProductFooter";
 // const fileSharingIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/File_Sharing.svg";
 // const roleBaseAccessIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/Role-Based_Access.svg";
@@ -39,12 +40,16 @@ const rsIcon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/Registration_Setu
 const saIcon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/Security_Architecture.svg";
 const lmIcon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/Login_Methods.svg";
 const gfIcon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/Geo-Fencing_Controls.svg";
+const step1Icon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/01.svg";
+const step2Icon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/02.svg";
+const step3Icon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/03.svg";
+const step4Icon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/04.svg";
 
 
 const features = [
-  { icon: codeRefreshIcon, title: "Code Refresh", desc: "Lightning-fast code regeneration for enterprise speed" , __w: 52, __h: 52},
-  { icon: multilayerIcon, title: "Multi-Layer Auth ", desc: "TOTP-based, push approval, and token-based authentication" , __w: 52, __h: 52},
-  { icon: appIntegrationIcon, title: "App Integrations", desc: "Seamless integration with unlimited third-party applications" , __w: 52, __h: 52},
+  { icon: codeRefreshIcon, title: "Code Refresh", desc: "Lightning-fast code regeneration for enterprise speed" , __w: 44, __h: 44},
+  { icon: multilayerIcon, title: "Multi-Layer Auth ", desc: "TOTP-based, push approval, and token-based authentication" , __w: 44, __h: 44},
+  { icon: appIntegrationIcon, title: "App Integrations", desc: "Seamless integration with unlimited third-party applications" , __w: 44, __h: 44},
 ];
 
 // const challenges = [
@@ -80,24 +85,24 @@ const challenges = [
 
 const architecture = [
   {
-
-    title: "Register app\n& generate\nsecret key",
-
-  },  
+    icon: step1Icon,
+    step: "01",
+    title: "Register app and\ngenerate secret key",
+  },
   {
-
+    icon: step2Icon,
+    step: "02",
     title: "Scan QR or enter\nAuth Key in app",
-
   },
   {
-
+    icon: step3Icon,
+    step: "03",
     title: "Login with Tap\nor Auth Token",
-
   },
   {
-
-    title: "Server verifies\n& grants access",
-
+    icon: step4Icon,
+    step: "04",
+    title: "Server verifies and\ngrants access",
   },
 ];
 
@@ -176,10 +181,10 @@ const architecture = [
 export default function ISyncDrivePage() {
   const navigate = useNavigate();
   return (
-    <div className="bg-white text-gray-800 font-poppins">
+    <div className="bg-white text-gray-800">
 
       {/* HERO */}
-      <section className="text-left sm:text-center py-4 sm:py-16 px-5 bg-white">
+      <section className="text-left sm:text-center py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
          <div className="mt-5 flex justify-center">
            <img
                     src={verilockIcon}
@@ -191,22 +196,22 @@ export default function ISyncDrivePage() {
         {/* <span className="bg-blue-100 text-blue-900 px-4 py-1 rounded-full text-sm font-small border border-blue-300">
           Enterprise-Grade File Management
         </span> */}
-        <span className="flex w-fit mx-auto items-center gap-2 bg-blue-50 text-[#012060] px-3 py-2 rounded-full text-sm font-medium border border-blue-200 mb-4">
-  
-  <img 
-    src={shieldIcon} 
-    alt="icon" 
+        <span className="font-general font-semibold flex w-fit mx-auto items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[12px] sm:text-[14px] tracking-wide mb-4">
+
+  <img
+    src={shieldIcon}
+    alt="icon"
     className="w-5 h-5 object-contain"
    width="20" height="20" />
 
   Enterprise MFA platform
 </span>
 
-        <h1 className="text-[40px] text-[#334155] md:text-[48px] sm:text-[32px] mt-6 font-bold max-w-4xl mx-auto leading-tight">
-          Enterprise <span className="text-[#01B0F1]">Multi-Factor<br /> Authentication,</span> Simplified
+        <h1 className="font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] text-blackk mt-[10px] max-w-4xl mx-auto py-1">
+          Enterprise <span className="text-bloo">Multi-Factor<br /> Authentication,</span> Simplified
         </h1>
 
-        <p className="mt-6 text-[#64748B] max-w-2xl mx-auto text-[16px] sm:text-[20px] font-semi-bold">
+        <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">
         Verilock secures your applications with TOTP-based 2FA, push approval, and geo-fencing — all from one mobile-first platform.
         </p>
 
@@ -239,22 +244,22 @@ export default function ISyncDrivePage() {
       </section>
 
       {/* FEATURES */}
-<section className="pb-4 sm:pb-10 px-4 max-w-7xl mx-auto md:px-10 lg:px-20 xl:px-40 bg-white grid md:grid-cols-3 text-center gap-4 sm:gap-8">
+<section className="py-4 sm:py-10 px-4 max-w-7xl mx-auto md:px-10 lg:px-20 xl:px-40 bg-white grid md:grid-cols-3 text-center gap-4 sm:gap-8">
   {features.map((item, i) => (
-    <div key={i} className="flex flex-col mx-auto items-center gap-1">
+    <div key={i} className="flex flex-col mx-auto items-center">
 
       {/* ICON (Rounded Rectangle) */}
-      <div className=" px-6 rounded-xl">
+      <div className="px-6 rounded-xl mb-[19px]">
        <img src={item.icon} alt="icon" width={item.__w} height={item.__h} />
       </div>
 
       {/* TITLE */}
-      <h3 className="font-bold text-[24px] sm:text-xl leading-relaxed text-[#334155]">
+      <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">
         {item.title}
       </h3>
 
       {/* DESCRIPTION */}
-      <p className="text-[#64748B] font-semibold text-[16px] sm:text-md leading-relaxed max-w-xs">
+      <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] max-w-xs">
         {item.desc}
       </p>
 
@@ -281,16 +286,16 @@ export default function ISyncDrivePage() {
           </div>
         </div>
       </section> */}
-      <section className="bg-[#F4F9FF] py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40">
-  <div className="max-w-6xl mx-auto grid md:grid-cols-[1.1fr_1fr] gap-4 sm:gap-16 items-start">
+      <section className="bg-[#F4F9FF]">
+       <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto grid md:grid-cols-[1.1fr_1fr] gap-4 sm:gap-16 items-start">
 
     {/* LEFT CONTENT */}
     <div>
-      <h2 className="text-[32px] sm:text-4xl font-bold text-[#1E293B] mb-6">
+      <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mb-8">
         What is Verilock?
       </h2>
 
-      <div className="text-[#64748B] font-semibold mb-6 leading-8 space-y-4 sm:space-y-6">
+      <div className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] mb-6 space-y-4 sm:space-y-3">
         <p>
           Verilock is EICE Technology's enterprise multi-factor
 authentication platform designed to provide secure, mobile-first
@@ -301,7 +306,7 @@ platform. <br />
 authentication, enabling secure access across devices and
 locations with full admin control.
         </p>
-        
+
 
       </div>
     </div>
@@ -310,84 +315,86 @@ locations with full admin control.
     <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 bg-[#F4F9FF]">
 
       {/* CARD 1 */}
-      <div className="bg-white border border-[#E2E8F0] rounded-2xl p-4 sm:p-6 shadow-sm">
+      <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]">
         {/* <div className="w-2 h-2 bg-[#01B0F1] rounded-full mb-4"></div> */}
-        <h3 className="text-[22px] sm:text-lg font-semibold text-[#1E293B] mb-1">
+        <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">
           TOTP Standard
         </h3>
-        <p className="text-sm text-[#64748B]">
+        <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
           RFC 6238 · HMAC-SHA1 algorithm
         </p>
       </div>
 
       {/* CARD 2 */}
-      <div className="bg-white border border-[#E2E8F0] rounded-2xl p-4 sm:p-6 shadow-sm">
+      <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]">
         {/* <div className="w-2 h-2 bg-[#01B0F1] rounded-full mb-4"></div> */}
-        <h3 className="text-[22px] sm:text-lg font-semibold text-[#1E293B] mb-1">
+        <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">
           Mobile-First
         </h3>
-        <p className="text-sm text-[#64748B]">
+        <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
           iOS & Android native app
         </p>
       </div>
 
       {/* CARD 3 */}
-      <div className="bg-white border border-[#E2E8F0] rounded-2xl p-4 sm:p-6 shadow-sm">
+      <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]">
         {/* <div className="w-2 h-2 bg-[#01B0F1] rounded-full mb-4"></div> */}
-        <h3 className="text-[22px] sm:text-lg font-semibold text-[#1E293B] mb-1">
+        <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">
           Zero Setup Friction
         </h3>
-        <p className="text-sm text-[#64748B]">
+        <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
           QR scan — live in minutes
         </p>
       </div>
 
       {/* CARD 4 */}
-      <div className="bg-white border border-[#E2E8F0] rounded-2xl p-4 sm:p-6 shadow-sm">
+      <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]">
         {/* <div className="w-2 h-2 bg-[#01B0F1] rounded-full mb-4"></div> */}
-        <h3 className="text-[22px] sm:text-lg font-semibold text-[#1E293B] mb-1">
+        <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">
           Universal Compat.
         </h3>
-        <p className="text-sm text-[#64748B]">
+        <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
           Gmail, GitHub, MS Account & more
         </p>
       </div>
 
     </div>
-  </div>
+       </div>
 </section>
 
-<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
+<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
 
-  <h1 className="text-[32px] sm:text-4xl text-[#334155] font-bold text-center leading-relaxed mb-5">
-    Enterprise Authentication Challenges
-  </h1>
+  <div className="text-center mb-8">
+    <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
+      Enterprise Authentication Challenges
+    </h2>
 
-  <h4 className="text-[22px] sm:text-lg md:text-xl text-[#64748B] text-center mb-4 sm:mb-12 max-w-2xl mx-auto">
-    Traditional MFA solutions lack enterprise control and flexibility
-  </h4>
+    <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">
+      Traditional MFA solutions lack enterprise control and flexibility
+    </p>
+  </div>
 
   {/* 4 CARDS ROW */}
-  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
 
     {challenges.map((item, i) => (
       <div
         key={i}
-        className="bg-white rounded-xl  border-2 border-gray-200 shadow-sm hover:shadow-md transition p-4 sm:p-6 flex flex-col items-start text-start gap-4"
+        className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col items-start text-start"
       >
 
         {/* SVG */}
-        <div className="rounded-lg flex items-start">
-          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain"  width="56" height="56" />
+        <div className="rounded-lg flex items-start mb-[19px]">
+          <img src={item.icon} alt="icon" className="w-11 h-11 object-contain"  width="44" height="44" />
         </div>
 
         {/* TITLE */}
-        <h3 className="font-bold text-2xl">
+        <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">
           {item.title}
         </h3>
 
         {/* SMALL TEXT */}
-        <p className="text-gray-500 text-[16px] sm:text-lg leading-relaxed">
+        <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
           {item.desc}
         </p>
 
@@ -398,38 +405,36 @@ locations with full admin control.
 </section>
 
       {/* ARCHITECTURE */}
-<section className="py-4 sm:pb-20 sm:pt-2 px-4 sm:px-8 md:px-10 lg:px-20 xl:px-40 bg-white">
+<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
 
   {/* KEEP YOUR HEADING */}
-  <h2 className="text-[32px] sm:text-4xl text-[#334155] font-bold text-center leading-relaxed mb-4 sm:mb-14">
+  <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk text-center mx-auto max-w-4xl mb-8">
     How It works
   </h2>
 
-  <div className="relative max-w-6xl sm:mx-auto grid grid-cols-2 sm:flex sm:flex-col sm:items-center sm:justify-between md:flex-row gap-4 md:gap-6">
+  <div className="relative sm:mx-auto grid grid-cols-2 sm:flex sm:flex-col sm:justify-between md:flex-row gap-4 md:gap-6">
 
     {architecture.map((item, i) => (
-      <div key={i} className="flex items-center">
+      <div key={i} className="flex items-stretch flex-1">
 
         {/* CARD */}
-        <div className="w-[200px] h-[230px] rounded-2xl bg-[#01B0F1] flex flex-col items-center justify-center text-center px-6 shadow-lg">
+        <div className="w-full rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] text-left">
 
-          {/* NUMBER */}
-          <div className="w-14 h-14 rounded-full bg-white flex items-center justify-center text-xl font-semibold text-[#334155] mb-6 shadow">
-            {i + 1}
+          {/* ICON + STEP NUMBER */}
+          <div className="flex items-start justify-between mb-6">
+            <div className="w-12 h-12 rounded-xl bg-[#012060] flex items-center justify-center">
+              <img src={item.icon} alt="" className="w-6 h-6 object-contain" width="24" height="24" />
+            </div>
+            <span className="font-general font-semibold text-[#E2E8F0] text-[40px] leading-none">
+              {item.step}
+            </span>
           </div>
 
           {/* TEXT */}
-          <p className="text-white text-lg font-semibold leading-relaxed whitespace-pre-line">
+          <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#1E293B] whitespace-pre-line">
             {item.title}
-          </p>
+          </h3>
         </div>
-
-        {/* ARROW (except last) */}
-        {i !== 3 && (
-          <div className="hidden md:flex mx-4 text-[#0B3A63] text-4xl">
-            →
-          </div>
-        )}
 
       </div>
     ))}
@@ -439,9 +444,9 @@ locations with full admin control.
 </section>
 
       {/* IMAGE + TEXT SECTION */}
-<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
+<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
 
-  <div className="max-w-6xl mx-auto text-center">
+  <div className="text-center">
 
     {/* IMAGE */}
     <img
@@ -451,7 +456,7 @@ locations with full admin control.
      width="1571" height="371" />
 
     {/* TEXT */}
-    <p className="mt-4 text-gray-400 text-xl max-w-3xl mx-auto">
+    <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">
      Secure access with seamless authentication and advanced protection <br />across devices and applications
     </p>
 
@@ -459,16 +464,16 @@ locations with full admin control.
 
 </section>
 
-<section className="bg-[#F4F9FF] py-4 sm:py-20 px-5 md:px-12 lg:px-24 xl:px-40">
-  <div className="max-w-6xl mx-auto">
+<section className="bg-[#F4F9FF]">
+ <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
 
     {/* HEADER */}
-    <div className="text-center mb-4 sm:mb-16">
-      <h2 className="text-[32px] sm:text-4xl font-bold text-[#1E293B] mb-4">
+    <div className="text-center mb-8">
+      <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
         Comprehensive platform capabilities
       </h2>
 
-      <p className="text-[#64748B] text-[16px] sm:text-lg">
+      <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 mt-2">
         Everything you need for enterprise-grade authentication
       </p>
     </div>
@@ -477,17 +482,17 @@ locations with full admin control.
     <div className="grid md:grid-cols-2 gap-4 sm:gap-8">
 
       {/* CARD 1 */}
-      <div className="bg-white border border-[#E2E8F0] rounded-2xl p-4 sm:p-8 shadow-sm">
-        <div className="flex items-center gap-4 mb-6">
-          <div className="w-14 h-14 rounded-xl flex items-center justify-center text-xl">
-            <img src={rsIcon} alt="icon" className="w-14 h-14 object-contain" width="56" height="56" />
+      <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]">
+        <div className="flex items-center gap-4 mb-[19px]">
+          <div className="w-11 h-11 rounded-xl flex items-center justify-center text-xl">
+            <img src={rsIcon} alt="icon" className="w-11 h-11 object-contain" width="44" height="44" />
           </div>
-          <h3 className="text-[24px] sm:text-xl font-semibold text-[#1E293B]">
+          <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737]">
             Registration & setup
           </h3>
         </div>
 
-        <ul className="space-y-4 text-[#64748B] text-[16px]">
+        <ul className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] space-y-4">
           <li className="flex items-start gap-3 border-b pb-3">
             <span className="text-blue-500">✦</span>
             Register any web application in minutes
@@ -512,17 +517,17 @@ locations with full admin control.
       </div>
 
       {/* CARD 2 */}
-      <div className="bg-white border border-[#E2E8F0] rounded-2xl p-4 sm:p-8 shadow-sm">
-        <div className="flex items-center gap-4 mb-6">
-          <div className="w-14 h-14 rounded-xl flex items-center justify-center text-xl">
-            <img src={lmIcon} alt="icon" className="w-14 h-14 object-contain" width="56" height="56" />
+      <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]">
+        <div className="flex items-center gap-4 mb-[19px]">
+          <div className="w-11 h-11 rounded-xl flex items-center justify-center text-xl">
+            <img src={lmIcon} alt="icon" className="w-11 h-11 object-contain" width="44" height="44" />
           </div>
-          <h3 className="text-[24px] sm:text-xl font-semibold text-[#1E293B]">
+          <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737]">
             Login methods
           </h3>
         </div>
 
-        <ul className="space-y-4 text-[#64748B] text-[16px]">
+        <ul className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] space-y-4">
           <li className="flex items-start gap-3 border-b pb-3">
             <span className="text-green-500">✦</span>
             Tap (Push) Auth — approve or deny  login from a real-time push notification</li>
@@ -542,17 +547,17 @@ locations with full admin control.
       </div>
 
       {/* CARD 3 */}
-      <div className="bg-white border border-[#E2E8F0] rounded-2xl p-4 sm:p-8 shadow-sm">
-        <div className="flex items-center gap-4 mb-6">
-          <div className="w-14 h-14 rounded-xl flex items-center justify-center text-xl">
-            <img src={gfIcon} alt="icon" className="w-14 h-14 object-contain" width="56" height="56" />
+      <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]">
+        <div className="flex items-center gap-4 mb-[19px]">
+          <div className="w-11 h-11 rounded-xl flex items-center justify-center text-xl">
+            <img src={gfIcon} alt="icon" className="w-11 h-11 object-contain" width="44" height="44" />
           </div>
-          <h3 className="text-[24px] sm:text-xl font-semibold text-[#1E293B]">
+          <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737]">
             Geo-fencing controls
           </h3>
         </div>
 
-        <ul className="space-y-4 text-[#64748B] text-[16px]">
+        <ul className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] space-y-4">
           <li className="flex items-start gap-3 border-b pb-3">
             <span className="text-orange-500">✦</span>
             Restrict logins by country — block access from unauthorized regions
@@ -573,17 +578,17 @@ locations with full admin control.
       </div>
 
       {/* CARD 4 */}
-      <div className="bg-white border border-[#E2E8F0] rounded-2xl p-4 sm:p-8 shadow-sm">
-        <div className="flex items-center gap-4 mb-6">
-          <div className="w-14 h-14 rounded-xl flex items-center justify-center text-xl">
-            <img src={saIcon} alt="icon" className="w-14 h-14 object-contain" width="56" height="56" />
+      <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]">
+        <div className="flex items-center gap-4 mb-[19px]">
+          <div className="w-11 h-11 rounded-xl flex items-center justify-center text-xl">
+            <img src={saIcon} alt="icon" className="w-11 h-11 object-contain" width="44" height="44" />
           </div>
-          <h3 className="text-[24px] sm:text-xl font-semibold text-[#1E293B]">
+          <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737]">
             Security architecture
           </h3>
         </div>
 
-        <ul className="space-y-4 text-[#64748B] text-[16px]">
+        <ul className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] space-y-4">
           <li className="flex items-start gap-3 border-b pb-3">
             <span className="text-purple-500">✦</span>
             Industry-standard SHA1 based algorithm
@@ -604,96 +609,96 @@ locations with full admin control.
       </div>
 
     </div>
-  </div>
+ </div>
 </section>
 
 
 {/* WHY CHOOSE */}
-<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
+<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
 
   {/* Heading */}
-  <div className="max-w-5xl mx-auto text-center mb-4 sm:mb-14">
-    <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155]">
+  <div className="text-center mb-8">
+    <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
       Why Enterprises choose Verilock?
     </h2>
-    <p className="mt-4 text-[#64748B] text-[16px] sm:text-lg max-w-2xl mx-auto">
+    <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">
       Built for organizations that require control, governance, and flexible deployment.
     </p>
   </div>
 
   {/* Cards */}
-  <div className="max-w-6xl mx-auto items-start grid md:grid-cols-4 gap-4 sm:gap-8 w-auto">
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
 
     {/* LEFT CARD */}
-    <div className="bg-white border border-[#E2E8F0] rounded-xl p-4 w-auto h-auto sm:h-[370px]">
+    <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]">
 
       {/* Header */}
-      <div className="flex-column items-start gap-4 mb-5">
-        <div className="py-4 sm:py-5 rounded-lg">
-          <img src={ztsIcon} alt="icon" width="42" height="42" />
+      <div className="flex flex-col items-start gap-4 mb-[19px]">
+        <div className="w-11 h-11 rounded-xl flex items-center justify-center">
+          <img src={ztsIcon} alt="icon" width="44" height="44" />
         </div>
-        <h3 className="text-2xl font-bold text-[#334155]">
+        <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737]">
           Zero trust architecture
         </h3>
       </div>
 
       {/* Description */}
-      <p className="text-[#64748B] leading-relaxed mb-6">
+      <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
         TOTP regenerates every 30 seconds, ensuring codes are always fresh and never reusable. TOTP = HMAC_SHA1(K,T) — where K is the shared secret and T is the time-based counter.
       </p>
     </div>
 
     {/* RIGHT CARD */}
-    <div className="bg-white border border-[#E2E8F0] rounded-xl p-4 w-auto h-auto sm:h-[370px]">
+    <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]">
 
       {/* Header */}
-      <div className="flex-column items-start gap-4 mb-5">
-        <div className="py-4 sm:py-5 rounded-lg">
-          <img src={ztkIcon} alt="icon" width="42" height="42" />
+      <div className="flex flex-col items-start gap-4 mb-[19px]">
+        <div className="w-11 h-11 rounded-xl flex items-center justify-center">
+          <img src={ztkIcon} alt="icon" width="44" height="44" />
         </div>
-        <h3 className="text-2xl font-bold text-[#334155]">
+        <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737]">
           Zero transmission key
         </h3>
       </div>
 
       {/* Description */}
-      <p className="text-[#64748B] leading-relaxed mb-6">
+      <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
        The secret key is stored once during setup nd never transmitted again, eliminating interception risk entirely.
       </p>
     </div>
 
-        <div className="bg-white border border-[#E2E8F0] rounded-xl p-4 w-auto h-auto sm:h-[370px]">
+        <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]">
 
       {/* Header */}
-      <div className="flex-column items-start gap-4 mb-5">
-        <div className="py-4 sm:py-5 rounded-lg">
-          <img src={laaIcon} alt="icon" width="42" height="42" />
+      <div className="flex flex-col items-start gap-4 mb-[19px]">
+        <div className="w-11 h-11 rounded-xl flex items-center justify-center">
+          <img src={laaIcon} alt="icon" width="44" height="44" />
         </div>
-        <h3 className="text-2xl font-bold text-[#334155]">
+        <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737]">
           Location aware authentication
         </h3>
       </div>
 
       {/* Description */}
-      <p className="text-[#64748B] leading-relaxed mb-6">
+      <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
         Geo-fencing enforces country-level policies. Login attempts are blocked at the authentication layer before reaching your application.
       </p>
     </div>
 
-        <div className="bg-white border border-[#E2E8F0] rounded-xl p-4 w-auto h-auto sm:h-[370px]">
+        <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]">
 
       {/* Header */}
-      <div className="flex-column items-start gap-4 mb-5">
-        <div className="py-4 sm:py-5 rounded-lg">
-          <img src={sprIcon} alt="icon" width="42" height="42" />
+      <div className="flex flex-col items-start gap-4 mb-[19px]">
+        <div className="w-11 h-11 rounded-xl flex items-center justify-center">
+          <img src={sprIcon} alt="icon" width="44" height="44" />
         </div>
-        <h3 className="text-2xl font-bold text-[#334155]">
+        <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737]">
           Signed push responses
         </h3>
       </div>
 
       {/* Description */}
-      <p className="text-[#64748B] leading-relaxed mb-6">
+      <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
        Cryptographically signed responses via FCM/APNs — not just simple callbacks. Every tap approval is verifiable and tamper-proof.      </p>
     </div>
 
@@ -702,17 +707,17 @@ locations with full admin control.
 </section>
 
 
-<section className="bg-[#F4F9FF] py-4 sm:py-20 px-5 md:px-12 lg:px-24 xl:px-40 mb-10">
-  <div className="max-w-6xl mx-auto">
+<section className="bg-[#F4F9FF]">
+ <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
 
     {/* HEADER */}
-    <div className="text-center mb-4 sm:mb-14">
+    <div className="text-center mb-8">
 
-      <h2 className="text-[32px] sm:text-4xl font-bold text-[#1E293B] mb-4">
+      <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
         Verilock vs Google Authenticator
       </h2>
 
-      <p className="text-[#64748B] text-[16px] sm:text-lg">
+      <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 mt-2">
         See how Verilock stands out
       </p>
     </div>
@@ -830,8 +835,15 @@ locations with full admin control.
   </div>
 </section>
 
+      <ProductVideo
+        eyebrow="Enterprise Access Security"
+        heading="See VeriLock in Action"
+        subtext="Discover how multi-factor authentication, secure approvals, and location-aware access controls help protect enterprise applications."
+        videoId="W0tEGxt5Khk"
+      />
 
-<section className="bg-gray-50 relative py-10 px-5 md:px-12 lg:px-24 xl:px-40 overflow-hidden">
+<section className="bg-gray-50 relative overflow-hidden">
+ <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
 
   {/* CONTENT */}
   <div className="relative z-10 max-w-4xl mx-auto text-center">
@@ -842,12 +854,12 @@ locations with full admin control.
     </p> */}
 
     {/* HEADING */}
-    <h2 className="text-4xl md:text-4xl font-bold text-[#334155] mb-6 leading-tight">
+    <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk py-1">
       Ready to Secure Your Applications?
     </h2>
 
     {/* SUBTEXT */}
-    <p className="text-[#64748B] text-lg leading-relaxed mb-10">
+    <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-blackk/70 mt-2 mb-8">
       Deploy Verilock MFA across your enterprise in <br /> minutes —
       not days.
     </p>
@@ -876,6 +888,7 @@ locations with full admin control.
       </button>
     </div>
   </div>
+ </div>
 </section>
 <ProductCarousel slides={productSlides} />
 

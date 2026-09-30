@@ -222,16 +222,16 @@ export default function ProductsPage() {
           />
         </div>
 
-        <span className="mx-auto flex w-fit items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-3 py-2 text-sm font-medium text-[#012060]">
+        <span className="font-general font-semibold mx-auto flex w-fit items-center gap-2 rounded-full bg-bloo/10 px-4 py-1.5 text-[12px] sm:text-[14px] tracking-wide text-[#012060]">
           EICE Product Ecosystem
         </span>
 
-        <h1 className="mx-auto mt-6 max-w-4xl text-[40px] font-bold leading-tight text-[#334155] md:text-[48px]">
+        <h1 className="font-general font-semibold mx-auto mt-[10px] max-w-4xl text-[32px] sm:text-[44px] leading-[1.1] text-blackk">
           Software built to{" "}
-          <span className="text-[#01B0F1]">solve the job.</span>
+          <span className="text-bloo">solve the job.</span>
         </h1>
 
-        <p className="mx-auto mt-6 max-w-2xl text-[#64748B]">
+        <p className="font-inter font-normal mx-auto mt-2 max-w-3xl text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70">
           From AI agents and hospitality operations to logistics, security,
           and infrastructure — explore purpose-built products designed
           around real business workflows.
@@ -251,16 +251,16 @@ export default function ProductsPage() {
       {/* Products */}
       <section id="products" className="py-4 sm:py-10">
         <div className="mx-auto max-w-7xl px-4 md:px-10 lg:px-20 xl:px-40">
-          <div className="mx-auto mb-10 max-w-[760px] text-left sm:text-center">
-            <div className="mb-2 text-xs font-extrabold uppercase tracking-[0.12em] text-[#01B0F1]">
+          <div className="text-left sm:text-center mb-8">
+            <h2 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">
               Explore the portfolio
-            </div>
-
-            <h2 className="mb-3 text-[32px] font-bold leading-tight text-[#012060] sm:text-4xl">
-              One ecosystem. Distinct products.
             </h2>
 
-            <p className="text-base text-[#667085] sm:text-lg">
+            <h1 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] mx-auto max-w-4xl py-1">
+              One ecosystem. Distinct products.
+            </h1>
+
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl mx-auto mt-2">
               Each product is designed around a specific operational need,
               while fitting into a broader EICE technology ecosystem.
             </p>
@@ -289,7 +289,7 @@ export default function ProductsPage() {
               const CardContent = (
                 <>
                   <div
-                    className={`relative z-[1] mb-[19px] flex h-[46px] w-[46px] items-center justify-center rounded-[13px] ${
+                    className={`relative z-[1] mb-[19px] flex h-[44px] w-[44px] items-center justify-center rounded-[13px] ${
                       product.comingSoon
                         ? "bg-[#E8EDF7]"
                         : "bg-[#EDF5FF]"
@@ -298,13 +298,13 @@ export default function ProductsPage() {
                     <img
                       src={product.icon}
                       alt=""
-                      className="h-6 w-6 object-contain"
-                      width="24"
-                      height="24"
+                      className="h-7 w-7 object-contain"
+                      width="28"
+                      height="28"
                     />
                   </div>
 
-                  <h3 className="mb-[7px] text-[24px] font-bold sm:text-xl text-[#012060]">
+                  <h3 className="font-general font-semibold mb-[7px] text-[18px] sm:text-[20px] leading-[1.3] text-[#373737]">
                     {product.name}
 
                     {product.comingSoon && (
@@ -314,16 +314,16 @@ export default function ProductsPage() {
                     )}
                   </h3>
 
-                  <p className="flex-1 text-[16px] leading-relaxed text-[#667085]">
+                  <p className="font-inter font-normal flex-1 text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
                     {product.description}
                   </p>
 
-                  <span className="mt-3 inline-block text-xs font-extrabold uppercase tracking-[0.08em] text-[#98A2B3]">
+                  <span className="mt-3 inline-block text-xs font-bold uppercase tracking-[0.08em] text-[#98A2B3]">
                     {product.type}
                   </span>
 
                   {!product.comingSoon && (
-                    <span className="mt-[18px] inline-flex items-center gap-1.5 text-sm font-extrabold text-[#01B0F1]">
+                    <span className="mt-[18px] inline-flex items-center gap-1.5 text-sm font-extrabold text-[#01B0F1] group-hover:text-blue-900 transition">
                       View Product →
                     </span>
                   )}
@@ -360,13 +360,13 @@ export default function ProductsPage() {
           {activeFilter !== "all" && useCases[activeFilter] && (
             <div className="mt-16">
               <div className="mx-auto mb-8 max-w-[760px] text-left sm:text-center">
-                <div className="mb-2 text-xs font-extrabold uppercase tracking-[0.12em] text-[#01B0F1]">
+                <h2 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">
                   {useCases[activeFilter].overline}
-                </div>
-                <h3 className="mb-2.5 text-2xl font-bold leading-tight text-[#012060]">
+                </h2>
+                <h3 className="font-general font-semibold text-blackk text-[18px] sm:text-[22px] leading-[1.3] mb-1">
                   {useCases[activeFilter].heading}
                 </h3>
-                <p className="text-sm leading-relaxed text-[#667085]">
+                <p className="font-inter font-normal text-blackk/70 text-[15px] sm:text-[16px] leading-[1.6] mt-2">
                   {useCases[activeFilter].intro}
                 </p>
               </div>
@@ -397,15 +397,15 @@ export default function ProductsPage() {
       <section className="bg-[#F6F9FD] py-4 sm:py-10">
         <div className="mx-auto max-w-7xl px-4 md:px-10 lg:px-20 xl:px-40">
           <div className="mx-auto mb-8 max-w-[760px] text-left sm:text-center">
-            <div className="mb-2 text-xs font-extrabold uppercase tracking-[0.12em] text-[#01B0F1]">
+            <h2 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">
               Product philosophy
-            </div>
-
-            <h2 className="mb-3 text-[32px] font-bold leading-tight text-[#012060] sm:text-4xl">
-              Purpose-built by design.
             </h2>
 
-            <p className="text-base leading-[1.75] text-[#667085] sm:text-lg">
+            <h1 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] py-1">
+              Purpose-built by design.
+            </h1>
+
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] mt-2">
               EICE products are built around defined business jobs rather
               than forcing every workflow into one oversized platform. That
               keeps the value proposition clear: a focused product can stand
@@ -450,11 +450,11 @@ export default function ProductsPage() {
         <section className="overflow-hidden bg-gray-50">
           <div className="flex flex-col items-center gap-7 px-6 py-10 text-left sm:px-[70px] sm:py-[62px] sm:text-center">
             <div>
-              <h2 className="mb-2 text-[32px] font-bold leading-tight text-gray-800 sm:text-4xl">
+              <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] py-1">
                 Have a business problem to solve?
               </h2>
 
-              <p className="mx-auto max-w-[620px] text-sm text-gray-500">
+              <p className="font-inter font-normal mx-auto max-w-[620px] text-[15px] sm:text-[16px] leading-[1.6] text-blackk/70 mt-2">
                 Tell us what your team is trying to improve. We can help
                 identify the relevant EICE product or <br />scope a solution around
                 your workflow.

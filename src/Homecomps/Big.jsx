@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "@/nextNavigation";
 import { BsChevronLeft, BsChevronRight, BsStars } from "react-icons/bs";
@@ -15,13 +15,13 @@ function Big() {
         <div className=" mx-auto px-5 sm:px-12 lg:px-0 xl:px-12 2xl:px-8 sm:mt-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="flex flex-col">
-              <span className="font-general font-medium inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-bloo/10 text-[#012060] text-[15px] sm:text-[16px] tracking-wide w-fit">
+              <span className="font-general font-semibold inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-bloo/10 text-[#012060] text-[12px] sm:text-[14px] tracking-wide w-fit">
                 <BsStars size={14} />
                 AI-POWERED ENTERPRISE SOLUTIONS
               </span>
-              <h1 className="mt-[10px] text-blackk font-general font-bold text-[32px] sm:text-[56px] leading-[1.1] max-w-4xl">
+              <h1 className="mt-[10px] text-blackk font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] max-w-4xl">
                 Transforming Enterprise Operations. Smarter Decisions.
-                Powered by <span className="text-bloo">AI</span>.
+                <span className="text-bloo"> Powered by AI</span>.
               </h1>
               <p className="mt-4 font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl">
                 Build smarter workflows, uncover predictive insights, and
@@ -66,11 +66,11 @@ function Big() {
         <div className=" mx-auto px-5 sm:px-12 lg:px-0 xl:px-12 2xl:px-16 sm:mt-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="flex flex-col">
-              <span className="font-general font-medium inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-bloo/10 text-[#012060] text-[15px] sm:text-[16px] tracking-wide w-fit">
+              <span className="font-general font-semibold inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-bloo/10 text-[#012060] text-[12px] sm:text-[14px] tracking-wide w-fit">
                 <BsStars size={14} />
                 ENTERPRISE ENGINEERING, DONE RIGHT
               </span>
-              <h1 className="mt-[10px] text-blackk font-general font-bold text-[32px] sm:text-[56px] leading-[1.1] max-w-4xl">
+              <h1 className="mt-[10px] text-blackk font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] max-w-4xl">
                 Software <span className="text-bloo">Built to Last</span>.
                 Engineered to Scale. Never Just to Ship.
               </h1>
@@ -117,11 +117,11 @@ function Big() {
         <div className=" mx-auto px-5 sm:px-12 lg:px-0 xl:px-12 2xl:px-16 sm:mt-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="flex flex-col">
-              <span className="font-general font-medium inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-bloo/10 text-[#012060] text-[15px] sm:text-[16px] tracking-wide w-fit">
+              <span className="font-general font-semibold inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-bloo/10 text-[#012060] text-[12px] sm:text-[14px] tracking-wide w-fit">
                 <BsStars size={14} />
                 REAL RESULTS, NOT PROMISES
               </span>
-              <h1 className="mt-[10px] text-blackk font-general font-bold text-[32px] sm:text-[56px] leading-[1.1] max-w-4xl">
+              <h1 className="mt-[10px] text-blackk font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] max-w-4xl">
                 <span className="text-bloo">82 Applications.</span> One
                 Governance Standard. Zero Guesswork.
               </h1>

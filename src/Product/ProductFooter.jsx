@@ -9,6 +9,7 @@ const FbIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/FB.svg";
 const linkedinIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/linkedin.svg";
 const XIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/X.svg";
 const InstaIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Insta.svg";
+const YoutubeIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Youtube-icon.svg";
 const socialLinks = [
   {
     name: "X",
@@ -29,6 +30,11 @@ const socialLinks = [
     name: "Instagram",
     icon: InstaIcon,
     url: "https://www.instagram.com/eicetechnology24/?next=%2F",
+  },
+  {
+    name: "YouTube",
+    icon: YoutubeIcon,
+    url: "https://www.youtube.com/@EICETechnology",
   },
 ];
 

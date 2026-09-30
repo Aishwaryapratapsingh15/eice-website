@@ -2,6 +2,7 @@
 import React from "react";
 import ProductCarousel from "./ProductCarousel";
 import productSlides from "./carouselData";
+import ProductVideo from "./ProductVideo";
 import ProductFooter from "./ProductFooter";
 const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/screen.png";
 const dataOwnershipIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/Data_Ownnership_Risks.svg";
@@ -45,9 +46,9 @@ import { useNavigate } from "@/nextNavigation";
 
 
 const features = [
-  { icon: enterpriseGovernanceIcon, title: "Enterprise Governance", desc: "Role based access and approvals" , __w: 42, __h: 42},
-  { icon: flexibleDeploymentIcon, title: "Flexible Deployment", desc: "Cloud, On prem or hybrid" , __w: 42, __h: 42},
-  { icon: cRoleSeparationIcon, title: "Clear Role Separation", desc: "User, Admin, Super Admin" , __w: 42, __h: 42},
+  { icon: enterpriseGovernanceIcon, title: "Enterprise Governance", desc: "Role based access and approvals" , __w: 44, __h: 44},
+  { icon: flexibleDeploymentIcon, title: "Flexible Deployment", desc: "Cloud, On prem or hybrid" , __w: 44, __h: 44},
+  { icon: cRoleSeparationIcon, title: "Clear Role Separation", desc: "User, Admin, Super Admin" , __w: 44, __h: 44},
 ];
 
 // const challenges = [
@@ -179,10 +180,10 @@ const steps = [
 export default function ISyncDrivePage() {
   const navigate = useNavigate();
   return (
-    <div className="bg-white text-gray-800 font-poppins">
+    <div className="bg-white text-gray-800">
 
       {/* HERO */}
-      <section className="text-left sm:text-center py-4 px-5 bg-white">
+      <section className="text-left sm:text-center py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
          <div className="mt-5 flex justify-center">
            <img
                     src={heroImg}
@@ -194,22 +195,22 @@ export default function ISyncDrivePage() {
         {/* <span className="bg-blue-100 text-blue-900 px-4 py-1 rounded-full text-sm font-small border border-blue-300">
           Enterprise-Grade File Management
         </span> */}
-        <span className="flex w-fit mx-auto items-center gap-2 bg-blue-50 text-[#012060] px-3 py-2 rounded-full text-sm font-medium border border-blue-200">
-  
-  <img 
-    src={shieldIcon} 
-    alt="icon" 
+        <span className="font-general font-semibold flex w-fit mx-auto items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[12px] sm:text-[14px] tracking-wide">
+
+  <img
+    src={shieldIcon}
+    alt="icon"
     className="w-5 h-5 object-contain"
    width="20" height="20" />
 
   Enterprise-Grade File Management
 </span>
 
-        <h1 className="text-[40px] text-[#334155] md:text-[48px] mt-6 font-bold max-w-4xl mx-auto leading-tight">
-          <span className="text-[#01B0F1]">Secure</span> File Access, Storage & <span className="text-[#01B0F1]">Team<br /> Collaboration</span> with Full Enterprise Control
+        <h1 className="font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] text-blackk mt-[10px] max-w-4xl mx-auto py-1">
+          <span className="text-bloo">Secure</span> File Access, Storage & <span className="text-bloo">Team<br /> Collaboration</span> with Full Enterprise Control
         </h1>
 
-        <p className="mt-6 text-[#64748B] max-w-2xl mx-auto">
+        <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 mt-2 max-w-3xl mx-auto">
          Enterprise-grade file storage, centralized access, and collaboration built for governance, ownership, and scale. Securely
 access, sync, and share files across devices from a single platform with full control for users, admins, and tenants.
         </p>
@@ -243,23 +244,23 @@ access, sync, and share files across devices from a single platform with full co
       </section>
 
       {/* FEATURES */}
-<section className="pb-4 sm:pb-10 px-4 max-w-7xl mx-auto md:px-10 lg:px-20 xl:px-40 bg-white grid md:grid-cols-3 text-center">
+<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white grid md:grid-cols-3 text-center">
 
   {features.map((item, i) => (
-    <div key={i} className="flex flex-col items-center gap-1 pb-2">
+    <div key={i} className="flex flex-col items-center pb-2">
 
       {/* ICON (Rounded Rectangle) */}
-      <div className=" px-6 rounded-xl">
+      <div className="px-6 rounded-xl mb-[19px]">
        <img src={item.icon} alt="icon" width={item.__w} height={item.__h} />
       </div>
 
       {/* TITLE */}
-      <h3 className="font-bold text-[24px] sm:text-xl leading-relaxed text-[#334155]">
+      <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">
         {item.title}
       </h3>
 
       {/* DESCRIPTION */}
-      <p className="text-[#64748B] font-semibold text-[16px] sm:text-md leading-relaxed max-w-xs">
+      <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] max-w-xs">
         {item.desc}
       </p>
 
@@ -269,15 +270,15 @@ access, sync, and share files across devices from a single platform with full co
 </section>
 
       {/* WHAT IS */}
-      <section className="bg-[#F4F9FF] py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-[#F4F9FF]">
-        <div className="grid md:grid-cols-[1fr_2fr] gap-4 md:gap-10 max-w-6xl mx-auto items-center">
+      <section className="bg-[#F4F9FF]">
+        <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto grid md:grid-cols-[1fr_2fr] gap-4 md:gap-10 items-center">
           <div>
-            <h2 className="text-[32px] sm:text-2xl md:text-3xl font-bold mb-4 text-[#334155]">
+            <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk">
               What is iSyncDrive?
             </h2>
           </div>
 
-          <div className="text-[#64748B] font-semibold mb-6 leading-8 space-y-4 sm:space-y-6">
+          <div className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] space-y-4 sm:space-y-6">
             <p>
               iSyncDrive is a next-generation hybrid cloud storage and synchronization platform that combines the flexibility of the cloud with the control of on-premises infrastructure.
               It enables organizations to securely store, sync, and manage data across teams and regions while maintaining full ownership and compliance control.
@@ -303,37 +304,39 @@ access, sync, and share files across devices from a single platform with full co
           ))}
         </div>
       </section> */}
-<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
+<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
 
-  <h1 className="text-[32px] sm:text-4xl text-[#334155] font-bold text-center leading-relaxed mb-5">
-    Enterprise Challenges
-  </h1>
+  <div className="text-center mb-8">
+    <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
+      Enterprise Challenges
+    </h2>
 
-  <h4 className="text-[22px] sm:text-lg md:text-xl text-[#64748B] text-center mb-4 sm:mb-12 max-w-2xl mx-auto">
-    Traditional file storage solutions fall short of enterprise needs.
-  </h4>
+    <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">
+      Traditional file storage solutions fall short of enterprise needs.
+    </p>
+  </div>
 
   {/* 4 CARDS ROW */}
-  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
 
     {challenges.map((item, i) => (
       <div
         key={i}
-        className="bg-white rounded-xl  border-2 border-gray-200 shadow-sm hover:shadow-md transition p-4 sm:p-6 flex flex-col items-start text-start gap-4"
+        className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col items-start text-start"
       >
 
         {/* SVG */}
-        <div className="rounded-lg flex items-start">
-          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain"  width="56" height="56" />
+        <div className="rounded-lg flex items-start mb-[19px]">
+          <img src={item.icon} alt="icon" className="w-11 h-11 object-contain"  width="44" height="44" />
         </div>
 
         {/* TITLE */}
-        <h3 className="font-bold text-2xl">
+        <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">
           {item.title}
         </h3>
 
         {/* SMALL TEXT */}
-        <p className="text-gray-500 text-[16px] sm:text-lg leading-relaxed">
+        <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
           {item.desc}
         </p>
 
@@ -344,31 +347,31 @@ access, sync, and share files across devices from a single platform with full co
 </section>
 
       {/* ARCHITECTURE */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
-        <h2 className="text-[32px] sm:text-4xl text-[#334155] font-bold text-center leading-relaxed mb-4 sm:mb-10">
+      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+        <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk text-center mx-auto max-w-4xl mb-8">
           Architecture Overview
         </h2>
-        <div className="relative max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
-         
+        <div className="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+
           {architecture.map((item, i) => (
-            
+
             <div
         key={i}
-        className="bg-white rounded-xl  border-1 border border-[#E2E8F0] shadow-sm hover:shadow-md transition p-4 sm:p-6 flex flex-col items-start text-start gap-4"
+        className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col items-start text-start"
       >
 
         {/* SVG */}
-        <div className="rounded-lg flex items-start">
-          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain"  width="56" height="56" />
+        <div className="rounded-lg flex items-start mb-[19px]">
+          <img src={item.icon} alt="icon" className="w-11 h-11 object-contain"  width="44" height="44" />
         </div>
 
         {/* TITLE */}
-        <h3 className="font-bold text-2xl text-[#334155] whitespace-pre-line">
+        <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
           {item.title}
         </h3>
 
         {/* SMALL TEXT */}
-        <p className="text-[#64748B] text-[16px] sm:text-lg leading-relaxed">
+        <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
           {item.desc}
         </p>
 
@@ -381,9 +384,9 @@ access, sync, and share files across devices from a single platform with full co
       </section>
 
       {/* IMAGE + TEXT SECTION */}
-<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
+<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
 
-  <div className="max-w-6xl mx-auto text-center">
+  <div className="text-center">
 
     {/* IMAGE */}
     <img
@@ -393,7 +396,7 @@ access, sync, and share files across devices from a single platform with full co
      width="1625" height="371" />
 
     {/* TEXT */}
-    <p className="mt-4 text-gray-400 text-xl max-w-3xl mx-auto">
+    <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">
       Access, share, and manage enterprise files from a single interface across devices
     </p>
 
@@ -402,31 +405,34 @@ access, sync, and share files across devices from a single platform with full co
 </section>
 
       {/* UNIFIED PLATFORM */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
-        <h2 className="text-[32px] sm:text-3xl font-bold text-center text-[#334155] mb-5">
-          A Unified Platform for Total Data Control
-        </h2>
-        <h4 className="text-[22px] sm:text-xl text-[#64748B] font-semibold text-center mb-4 sm:mb-10 max-w-3xl mx-auto">
-          Along with secure storage, iSyncDrive enables controlled file and folder sharing to support collaborations across teams and locations        </h4>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+        <div className="text-center mb-8">
+          <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
+            A Unified Platform for Total Data Control
+          </h2>
+          <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">
+            Along with secure storage, iSyncDrive enables controlled file and folder sharing to support collaborations across teams and locations
+          </p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
           {platformFeatures.map((item, i) => (
              <div
         key={i}
-        className="bg-white rounded-xl  border-1 border border-[#E2E8F0] shadow-sm hover:shadow-md transition p-4 sm:p-6 flex flex-col items-start text-start w-auto h-auto sm:h-[300px] gap-4"
+        className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col items-start text-start w-auto h-auto sm:h-[300px]"
       >
 
         {/* SVG */}
-        <div className="rounded-lg flex items-start">
-          <img src={item.icon} alt="icon" className="w-14 h-14 object-contain"  width="56" height="56" />
+        <div className="rounded-lg flex items-start mb-[19px]">
+          <img src={item.icon} alt="icon" className="w-11 h-11 object-contain"  width="44" height="44" />
         </div>
 
         {/* TITLE */}
-        <h3 className="font-bold text-[24px] sm:text-2xl">
+        <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">
           {item.title}
         </h3>
 
         {/* SMALL TEXT */}
-        <p className="text-gray-500 text-[16px] sm:text-lg leading-relaxed">
+        <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
           {item.desc}
         </p>
 
@@ -436,25 +442,25 @@ access, sync, and share files across devices from a single platform with full co
       </section>
 
 {/* IMPLEMENTATION */}
-<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
+<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
 
   {/* Heading */}
-  <div className="max-w-6xl mx-auto text-center mb-4 sm:mb-12">
-    <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155] font-poppins">
+  <div className="text-center mb-8">
+    <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
       Implementation Journey
     </h2>
-    <p className="text-[#64748B] mt-3 text-[16px] sm:text-lg">
+    <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 mt-2">
       A proven continuous journey from planning to optimization
     </p>
   </div>
 
   {/* Cards */}
-  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
 
     {steps.map((item, i) => (
       <div
         key={i}
-        className="relative bg-white border border-gray-200 rounded-xl p-4 sm:p-6 flex flex-col gap-4 min-h-[220px]"
+        className="relative rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col gap-4 min-h-[220px]"
       >
 
         {/* STEP NUMBER (top right) */}
@@ -463,17 +469,17 @@ access, sync, and share files across devices from a single platform with full co
         </span>
 
         {/* ICON */}
-        <div className="w-12 h-12 flex items-center justify-center bg-blue-900 text-white rounded-lg text-xl">
-          <img src={item.icon} alt="icon" width="48" height="48" />
+        <div className="w-11 h-11 flex items-center justify-center bg-blue-900 text-white rounded-lg text-xl mb-[19px]">
+          <img src={item.icon} alt="icon" width="44" height="44" />
         </div>
 
         {/* TITLE */}
-        <h3 className="text-2xl text-[#334155] font-bold">
+        <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">
           {item.title}
         </h3>
 
         {/* DESCRIPTION */}
-        <p className="text-[#64748B] text-[16px] sm:text-lg leading-relaxed">
+        <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
           {item.desc}
         </p>
 
@@ -485,41 +491,41 @@ access, sync, and share files across devices from a single platform with full co
 </section>
 
 {/* WHY CHOOSE */}
-<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
+<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
 
   {/* Heading */}
-  <div className="max-w-5xl mx-auto text-center mb-4 sm:mb-14">
-    <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155]">
+  <div className="text-center mb-8">
+    <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
       Why enterprises choose iSyncDrive?
     </h2>
-    <p className="mt-4 text-[#64748B] text-[16px] sm:text-lg font-semibold max-w-2xl mx-auto">
+    <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">
       Built for organizations that require control, governance, and flexible deployment.
     </p>
   </div>
 
   {/* Cards */}
-  <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-4 sm:gap-8">
+  <div className="grid md:grid-cols-2 gap-4 sm:gap-8">
 
     {/* LEFT CARD */}
-    <div className="bg-white border border-[#E2E8F0] rounded-xl p-4 sm:p-8">
+    <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
 
       {/* Header */}
-      <div className="flex items-center gap-4 mb-5">
-        <div className="p-3 rounded-lg">
-          <img src={unifiedEcosystemIcon} alt="icon" width="42" height="42" />
+      <div className="flex items-center gap-4 mb-[19px]">
+        <div className="w-11 h-11 rounded-xl flex items-center justify-center">
+          <img src={unifiedEcosystemIcon} alt="icon" width="44" height="44" />
         </div>
-        <h3 className="text-2xl font-bold text-[#334155]">
+        <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737]">
           Unified Ecosystem
         </h3>
       </div>
 
       {/* Description */}
-      <p className="text-[#64748B] leading-relaxed mb-6">
+      <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] mb-[18px]">
         Not just tools—an integrated platform where knowledge and action agents work in harmony to amplify enterprise intelligence.
       </p>
 
       {/* Points */}
-      <ul className="space-y-3 text-[#64748B]">
+      <ul className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] space-y-3">
         <li className="flex items-start gap-2">
           <span className="mt-2 w-1.5 h-1.5 bg-gray-400 rounded-full"></span>
           Cloud + On-Prem integration for seamless synchronization
@@ -533,25 +539,25 @@ access, sync, and share files across devices from a single platform with full co
     </div>
 
     {/* RIGHT CARD */}
-    <div className="bg-white border border-[#E2E8F0] rounded-xl p-4 sm:p-8">
+    <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
 
       {/* Header */}
-      <div className="flex items-center gap-4 mb-5">
-        <div className="p-3 rounded-lg">
-          <img src={adaptiveIntelligenceIcon} alt="icon" width="42" height="42" />
+      <div className="flex items-center gap-4 mb-[19px]">
+        <div className="w-11 h-11 rounded-xl flex items-center justify-center">
+          <img src={adaptiveIntelligenceIcon} alt="icon" width="44" height="44" />
         </div>
-        <h3 className="text-2xl font-bold text-[#334155]">
+        <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737]">
           Adaptive Intelligence
         </h3>
       </div>
 
       {/* Description */}
-      <p className="text-[#64748B] leading-relaxed mb-6">
+      <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] mb-[18px]">
         AI that learns from your data, adapts to your workflows, and continuously improves with every interaction.
       </p>
 
       {/* Points */}
-      <ul className="space-y-3 text-[#64748B]">
+      <ul className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] space-y-3">
         <li className="flex items-start gap-2">
           <span className="mt-2 w-1.5 h-1.5 bg-gray-400 rounded-full"></span>
           Auto-syncs, tracks versions, and optimizes performance
@@ -570,35 +576,36 @@ access, sync, and share files across devices from a single platform with full co
 
 
 {/* ACCESS CONTROL */}
-<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-gradient-to-r from-[#eef4fb] to-[#e6f0fa] bg-cover bg-center font-poppins" style={{ backgroundImage: `url(${bgImage2})` }}>
+<section className="bg-gradient-to-r from-[#eef4fb] to-[#e6f0fa] bg-cover bg-center" style={{ backgroundImage: `url(${bgImage2})` }}>
+ <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
 
   {/* Heading */}
-  <div className="max-w-4xl mx-auto text-center mb-4 sm:mb-14">
-    <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155]">
+  <div className="text-center mb-8">
+    <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
       Access Control & Governance Logic
     </h2>
-    <p className="mt-4 text-[#64748B] text-[16px] sm:text-lg">
+    <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 mt-2">
       Advanced security and policy enforcement at every level
     </p>
   </div>
 
   {/* Cards */}
-  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
 
     {/* CARD 1 */}
-    <div className="bg-white border border-[#E2E8F0] rounded-xl p-4 sm:p-6 flex items-start gap-3">
+    <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex items-start gap-3">
 
       {/* ICON */}
       <div className="py-1 rounded-lg">
-        <img src={rbacIcon} alt="rbac" className="w-14 h-14" width="56" height="56" />
+        <img src={rbacIcon} alt="rbac" className="w-11 h-11" width="44" height="44" />
       </div>
 
       {/* CONTENT */}
       <div>
-        <h3 className="text-[24px] sm:text-xl font-semibold text-[#334155]">
+        <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">
           Role-Based Access Control (RBAC)
         </h3>
-        <p className="text-[#64748B] mt-2">
+        <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
           User, Admin, Super Admin roles
         </p>
       </div>
@@ -606,17 +613,17 @@ access, sync, and share files across devices from a single platform with full co
     </div>
 
     {/* CARD 2 */}
-    <div className="bg-white border border-[#E2E8F0] rounded-xl p-4 sm:p-6 flex items-start gap-3">
+    <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex items-start gap-3">
 
       <div className=" py-1 rounded-lg">
-        <img src={approvalIcon} alt="approval" className="w-14 h-14" width="56" height="56" />
+        <img src={approvalIcon} alt="approval" className="w-11 h-11" width="44" height="44" />
       </div>
 
       <div>
-        <h3 className="text-[24px] sm:text-xl font-semibold text-[#334155]">
+        <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">
           Approval Workflows
         </h3>
-        <p className="text-[#64748B] mt-2">
+        <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
           Access and sharing approvals
         </p>
       </div>
@@ -624,17 +631,17 @@ access, sync, and share files across devices from a single platform with full co
     </div>
 
     {/* CARD 3 */}
-    <div className="bg-white border border-[#E2E8F0] rounded-xl p-4 sm:p-6 flex items-start gap-3">
+    <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex items-start gap-3">
 
       <div className="py-1 rounded-lg">
-        <img src={tenantIcon} alt="tenant" className="w-14 h-14" width="56" height="56" />
+        <img src={tenantIcon} alt="tenant" className="w-11 h-11" width="44" height="44" />
       </div>
 
       <div>
-        <h3 className="text-[24px] sm:text-xl font-semibold text-[#334155]">
+        <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">
           Tenant Governance
         </h3>
-        <p className="text-[#64748B] mt-2">
+        <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
           Organization isolation and admin scope control
         </p>
       </div>
@@ -643,42 +650,43 @@ access, sync, and share files across devices from a single platform with full co
 
   </div>
 
+ </div>
 </section>
 
 
 {/* DEPLOYMENT */}
-<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
+<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
 
   {/* Heading */}
-  <div className="max-w-5xl mx-auto text-center mb-4 sm:mb-10">
-    <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155]">
+  <div className="text-center mb-8">
+    <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
       Deployment & Infrastructure
     </h2>
-    <p className="mt-4 text-[#64748B] text-[16px] sm:text-lg">
+    <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 mt-2">
       Choose the deployment model that fits your organization's needs
     </p>
   </div>
 
   {/* Cards */}
-  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
 
     {/* CLOUD */}
-    <div className="bg-[#EFFAFF] border border-[#E2E8F0] rounded-xl p-4 sm:p-8 text-left sm:text-center">
+    <div className="bg-[#EFFAFF] rounded-[18px] border border-[#E6EAF1] p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] text-left sm:text-center">
 
       {/* ICON */}
-      <div className="w-14 h-14 mx-0 sm:mx-auto flex items-center justify-center rounded-lg mb-6">
-        <img src={cloudIcon} alt="cloud" width="56" height="56" />
+      <div className="w-16 h-16 mx-0 sm:mx-auto flex items-center justify-center rounded-lg mb-6">
+        <img src={cloudIcon} alt="cloud" width="64" height="64" />
       </div>
 
-      <h3 className="text-[24px] sm:text-xl font-bold text-[#334155]">
+      <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">
         Cloud Deployment
       </h3>
 
-      <p className="text-[#64748B] mt-2 mb-6">
+      <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] mb-[18px]">
         Managed, scalable infrastructure
       </p>
 
-      <ul className="text-left space-y-3 text-gray-600">
+      <ul className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] text-left space-y-3">
         <li className="flex items-start gap-2">
           <img
     src={checkIcon}
@@ -708,21 +716,21 @@ access, sync, and share files across devices from a single platform with full co
     </div>
 
     {/* ON-PREM */}
-    <div className="bg-[#EFFAFF] border border-[#E2E8F0] rounded-xl p-4 sm:p-8 text-left sm:text-center">
+    <div className="bg-[#EFFAFF] rounded-[18px] border border-[#E6EAF1] p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] text-left sm:text-center">
 
-      <div className="w-14 h-14 mx-0 sm:mx-auto flex items-center justify-center rounded-lg mb-6">
-        <img src={onPremIcon} alt="onprem" width="56" height="56" />
+      <div className="w-16 h-16 mx-0 sm:mx-auto flex items-center justify-center rounded-lg mb-6">
+        <img src={onPremIcon} alt="onprem" width="64" height="64" />
       </div>
 
-      <h3 className="text-[24px] sm:text-xl font-semibold text-gray-800">
+      <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">
         On-Prem Deployment
       </h3>
 
-      <p className="text-gray-500 mt-2 mb-6">
+      <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] mb-[18px]">
         Full data ownership
       </p>
 
-      <ul className="text-left space-y-3 text-gray-600">
+      <ul className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] text-left space-y-3">
         <li className="flex items-start gap-2">
           <img
     src={checkIcon}
@@ -752,21 +760,21 @@ access, sync, and share files across devices from a single platform with full co
     </div>
 
     {/* HYBRID */}
-    <div className="bg-[#EFFAFF] border border-[#E2E8F0] rounded-xl p-4 sm:p-8 text-left sm:text-center">
+    <div className="bg-[#EFFAFF] rounded-[18px] border border-[#E6EAF1] p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] text-left sm:text-center">
 
-      <div className="w-14 h-14 mx-0 sm:mx-auto flex items-center justify-center rounded-lg mb-6">
-        <img src={hybridIcon} alt="hybrid" width="56" height="56" />
+      <div className="w-16 h-16 mx-0 sm:mx-auto flex items-center justify-center rounded-lg mb-6">
+        <img src={hybridIcon} alt="hybrid" width="64" height="64" />
       </div>
 
-      <h3 className="text-[24px] sm:text-xl font-semibold text-gray-800">
+      <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">
         Hybrid Deployment
       </h3>
 
-      <p className="text-gray-500 mt-2 mb-6">
+      <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] mb-[18px]">
         Cloud flexibility with on-prem control
       </p>
 
-      <ul className="text-left space-y-3 text-gray-600">
+      <ul className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] text-left space-y-3">
         <li className="flex items-start gap-2">
           <img
     src={checkIcon}
@@ -791,16 +799,24 @@ access, sync, and share files across devices from a single platform with full co
 
 </section>
 
+      <ProductVideo
+        eyebrow="Enterprise File Management"
+        heading="See iSyncDrive in Action"
+        subtext="Explore how teams can securely store, sync, share, and manage business files while maintaining centralized control and visibility."
+        videoId="3anJ2Nt-jZ0"
+      />
+
   {/* FINAL CTA */}
-<section className="py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-gray-50 text-center">
+<section className="bg-gray-50 text-center">
+ <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
 
   {/* Heading */}
   <div className="max-w-4xl mx-auto">
-    <h2 className="text-4xl font-semibold text-gray-800">
+    <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk py-1">
       Ready to Transform Your File Management?
     </h2>
 
-    <p className="mt-5 text-lg text-gray-500 max-w-2xl mx-auto leading-relaxed">
+    <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-blackk/70 max-w-2xl mx-auto mt-2">
       Join forward-thinking enterprises that trust iSyncDrive for secure, scalable, and governed file storage
     </p>
 
@@ -808,7 +824,7 @@ access, sync, and share files across devices from a single platform with full co
     <div className="mt-8 flex flex-wrap justify-center gap-4">
 
       {/* Primary */}
-          <button onClick={() => navigate("/products/eicerise/form?product=iSyncDrive")} 
+          <button onClick={() => navigate("/products/eicerise/form?product=iSyncDrive")}
           className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto hover:bg-blue-800 transition text-[18px]">
         Request a Demo
           <img src={arrowIcon} alt="arrow" width="24" height="24" />
@@ -826,35 +842,36 @@ access, sync, and share files across devices from a single platform with full co
   {/* Bottom Cards */}
   <div className="mt-16 max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
 
-    <div className="border border-gray-200 bg-gray-100 rounded-xl py-6 px-4">
-      <h3 className="text-xl font-bold text-gray-600">
+    <div className="border border-[#E6EAF1] bg-gray-100 rounded-[18px] py-6 px-4">
+      <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737]">
         Enterprise-Grade
       </h3>
-      <p className="mt-2 text-gray-700 text-lg">
+      <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] mt-2">
         Governance
       </p>
     </div>
 
-    <div className="border border-gray-200 bg-gray-100 rounded-xl py-6 px-4">
-      <h3 className="text-xl font-bold text-gray-600">
+    <div className="border border-[#E6EAF1] bg-gray-100 rounded-[18px] py-6 px-4">
+      <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737]">
         Flexible
       </h3>
-      <p className="mt-2 text-gray-700 text-lg">
+      <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] mt-2">
         Development
       </p>
     </div>
 
-    <div className="border border-gray-200 bg-gray-100 rounded-xl py-6 px-4">
-      <h3 className="text-xl font-bold text-gray-600">
+    <div className="border border-[#E6EAF1] bg-gray-100 rounded-[18px] py-6 px-4">
+      <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737]">
         Clear
       </h3>
-      <p className="mt-2 text-gray-700 text-lg">
+      <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] mt-2">
         Role Separation
       </p>
     </div>
 
   </div>
 
+ </div>
 </section>
 <ProductCarousel slides={productSlides} />
 
