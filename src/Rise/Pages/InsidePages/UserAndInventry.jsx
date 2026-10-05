@@ -36,15 +36,12 @@ const s = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/inventry/benef
 
 const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Rise/section3Laptop/store.webp";
 
-import Accordion from "../../Components/Accordian/Accordian.jsx"
-
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
 import FooterLower from "../../Components/Footer/FooterLower.jsx"
 
 import { useEffect, useState } from "react"
 
 import { FaArrowRightLong } from "react-icons/fa6";
-import Certificate from "../../Components/Certificate/Certificate.jsx"
 
 
 export default function UserAndInventry() {
@@ -78,42 +75,42 @@ export default function UserAndInventry() {
             heading: "Centralized User Management",
             desc: "Streamline user access store-wise with customizable roles and permissions.",
             img: cum,
-            width: "64px"
+            width: "44px"
         , __w: 300, __h: 300},
         {
             key: 2,
             heading: "Efficient Store Management",
             desc: "Manage multiple stores from one dashboard, tracking performance, inventory, and sales trends for optimized success.",
             img: esm,
-            width: "65px"
+            width: "44px"
         , __w: 300, __h: 300},
         {
             key: 3,
             heading: "Real-Time Inventory Control",
             desc: "Get live updates on inventory levels with automated synchronization and low stock alerts to ensure smooth operations.",
             img: rtic,
-            width: "54px"
+            width: "44px"
         , __w: 300, __h: 300},
         {
             key: 4,
             heading: "Advanced Reporting and Analytics",
             desc: "Leverage real-time, customizable reports to gain valuable insights into sales, stock turnover, and user activities.",
             img: ara,
-            width: "65px"
+            width: "44px"
         , __w: 300, __h: 300},
         {
             key: 5,
             heading: "Multi-Location Support",
             desc: "Manage multiple stores from a central platform, transfer stock between locations, and monitor regional inventory needs.",
             img: mls,
-            width: "65px"
+            width: "44px"
         , __w: 300, __h: 300},
         {
             key: 6,
             heading: "Seamless ERP Integration",
             desc: "Sync data across your systems automatically, reducing manual data entry and enhancing operational efficiency.",
             img: serpi,
-            width: "63px"
+            width: "44px"
         , __w: 300, __h: 300}
     ];
 
@@ -221,7 +218,7 @@ export default function UserAndInventry() {
 
                         <div className={`${style.headingBoxPhone} font4 `}>
                             <div className={`${style.mainHeadingPhone}`}>
-                                <span style={{ color: "#012060" }} >USER STORE</span><span style={{ color: "#01B0F1" }} > & INVENTORY</span>
+                                <span style={{ color: "#333333" }} >USER STORE</span><span style={{ color: "#01B0F1" }} > & INVENTORY</span>
                             </div>
                             <div className={`${style.mainParaPhone}`}>
                                 Manage inventory effortlessly with real-time tracking, stock updates, and streamlined procurement processes
@@ -242,7 +239,7 @@ export default function UserAndInventry() {
 
                             <div className={`${style.headingBox} font4 `}>
                                 <div className={`${style.mainHeading}`}>
-                                    <span style={{ color: "#012060" }} >USER STORE</span><span style={{ color: "#01B0F1" }} > & INVENTORY</span>
+                                    <span style={{ color: "#333333" }} >USER STORE</span><span style={{ color: "#01B0F1" }} > & INVENTORY</span>
                                 </div>
                                 <div className={`${style.mainPara}`}>
                                     Manage inventory effortlessly with real-time tracking, stock updates, and streamlined procurement processes
@@ -383,8 +380,8 @@ export default function UserAndInventry() {
 
                                 <div className={`${style.headingAndIconFeatures}`}>
 
-                                    <div style={{ width: item.width }}>
-                                        <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
+                                    <div style={{ width: item.width, height: item.width }}>
+                                        <img style={{ width: "100%", height: "100%", objectFit: "contain" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
                                     </div>
 
                                     <div className={`${style.featureHeading}`}>
@@ -405,22 +402,21 @@ export default function UserAndInventry() {
 
                     </div>
 
-                </div>
-            </section>
+                    <div className={`${style.requestDemoBtn}`}>
 
-            <section className={`${style.requestDemoBtn}`}>
+                        <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form?product=EiceRise(User Store and Inventory)"}>
+                            <div className={`${style.demoBtnWrapper} globalSectionSize`}>
+                                <div className={`${style.demoButton} font1`}>
+                                    <div > Request a Demo </div>
+                                    <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
+                                </div>
 
-                <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form?product=EiceRise(User Store and Inventory)"}>
-                    <div className={`${style.demoBtnWrapper} globalSectionSize`}>
-                        <div className={`${style.demoButton} font1`}>
-                            <div > Request a Demo </div>
-                            <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
-                        </div>
+                            </div>
+                        </Link>
 
                     </div>
-                </Link>
 
-
+                </div>
             </section>
 
 
@@ -513,12 +509,24 @@ export default function UserAndInventry() {
 
             <section >
                 <div className={`${style.FAQsection} globalSectionSize font4`}>
-                    <div className={`${style.FAQHeading}`}>Frequently Asked Questions</div>
+                    <div className={style.FAQHeadingBlock}>
+                        <div className={style.FAQEyebrow}>FAQs</div>
+                        <div className={style.FAQHeading}>Frequently Asked Questions</div>
+                    </div>
 
 
                     <div className={style.FAQContainer}>
                         {query.map((item, index) => (
-                            <Accordion key={item.key ?? index} question={item.question} answer={item.answer} />
+                            <details key={item.key ?? index} className={style.faqItem}>
+                                <summary className={style.faqSummary}>
+                                    <span>{item.question}</span>
+                                    <span className={style.faqToggle}>
+                                        <span className={style.faqPlus}>+</span>
+                                        <span className={style.faqMinus}>−</span>
+                                    </span>
+                                </summary>
+                                <p className={style.faqAnswer}>{item.answer}</p>
+                            </details>
                         ))}
                     </div>
 
@@ -527,7 +535,6 @@ export default function UserAndInventry() {
 
 
             <div >
-                <Certificate/>
                 <FooterUpperPart product="Userstore Inventory" text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={laptop} />
                 {!isEmbed &&<FooterLower />}
 

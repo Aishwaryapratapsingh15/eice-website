@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import dynamic from "next/dynamic";
 
-const logo = "https://d3r43jacxrwsrp.cloudfront.net/logo.svg";
+const logo = "https://d3r43jacxrwsrp.cloudfront.net/new-logo.svg";
 import { NavLink, Link, useNavigate } from "@/nextNavigation";
 import { Breadcrumbs } from "./Othercomps/Breadcrumbs";
 
@@ -247,9 +247,9 @@ const Aboutus = ({ handleSetSelected = () => {} }) => (
     <div><StatsCard /></div>
     <div className="col-span-2">
       <div className="flex flex-col gap-6 text-wrap">
-        <div><h1>Who We Are</h1><p className="font-semibold text-blackk/70 text-sm">We are a global IT services and consulting firm with over 200 professional technologists, specializing in innovative strategies that bridge technology and business solutions.</p></div>
-        <div><h1>What We Do</h1><p className="font-semibold text-blackk/70 text-sm">We partner with global leaders and startups to turn ideas into reality through custom software and integrated models, delivering cutting-edge IT solutions.</p></div>
-        <div>Mission and Vision<p className="font-semibold text-blackk/70 text-sm">Our mission is to ensure client satisfaction through innovative technology solutions that drive growth. Our vision is to be a global leader in IT services and software development.</p></div>
+        <div><h1 className="text-sm">Who We Are</h1><p className="font-semibold text-blackk/70 text-sm">We are a global IT services and consulting firm with over 200 professional technologists, specializing in innovative strategies that bridge technology and business solutions.</p></div>
+        <div><h1 className="text-sm">What We Do</h1><p className="font-semibold text-blackk/70 text-sm">We partner with global leaders and startups to turn ideas into reality through custom software and integrated models, delivering cutting-edge IT solutions.</p></div>
+        <div><h1 className="text-sm">Mission and Vision</h1><p className="font-semibold text-blackk/70 text-sm">Our mission is to ensure client satisfaction through innovative technology solutions that drive growth. Our vision is to be a global leader in IT services and software development.</p></div>
       </div>
       <Link href="/our-team" onClick={() => handleSetSelected(null)}>
         <button className="bg-blue-900 rounded-md p-2 mt-4 flex items-center gap-1 hover:bg-blue-900/90 text-white text-base"><span>Our Team</span><FiArrowRight /></button>
@@ -364,7 +364,7 @@ const OurResources = ({ handleSetSelected = () => {} }) => (
       <Link to="/case-studies" onClick={() => handleSetSelected(null)} className="group cursor-pointer grid grid-rows-3 rounded-md">
         <div className="row-span-2 w-full h-full rounded-md bg-casestudy bg-cover bg-center bg-no-repeat"></div>
         <div>
-          <h1 className="text-center">Case Studies</h1>
+          <h1 className="text-center text-sm">Case Studies</h1>
           <h1 className="w-0 group-hover:w-1/2 transition duration-500 mx-auto group-hover:bg-bloo h-0.5 bg-white"></h1>
           <h1 className="text-sm pt-2 text-blackk/50">Explore our detailed case studies and learn how we transform businesses.</h1>
         </div>
@@ -372,7 +372,7 @@ const OurResources = ({ handleSetSelected = () => {} }) => (
       <Link to="/blog" onClick={() => handleSetSelected(null)} className="group cursor-pointer grid grid-rows-3 rounded-md">
         <div className="row-span-2 w-full h-full rounded-md bg-[url('https://d3r43jacxrwsrp.cloudfront.net/home_case_study/blog_menu.png')] bg-cover bg-center bg-no-repeat"></div>
         <div>
-          <h1 className="text-center">Blog</h1>
+          <h1 className="text-center text-sm">Blog</h1>
           <h1 className="w-0 group-hover:w-1/2 transition duration-500 mx-auto group-hover:bg-bloo h-0.5 bg-white"></h1>
           <h1 className="text-sm pt-2 text-blackk/50">Read our latest insights, product updates, and industry knowledge.</h1>
         </div>
@@ -400,9 +400,9 @@ const OurIndustries = ({ handleSetSelected = () => {} }) => (
           <div key={to} className="group flex flex-col gap-1">
             <Link to={to} onClick={() => handleSetSelected(null)} className="flex flex-row gap-4 items-center">
               <div className="icon-wrapper bg-[#E6F4FD] h-10 w-10 rounded-lg flex items-center justify-center">
-                <Icon size={28} className="group-hover:text-bloo transition duration-300 text-[#012060]" />
+                <Icon size={24} className="group-hover:text-bloo transition duration-300 text-[#012060]" />
               </div>
-              <span className="group-hover:text-bloo transition duration-300">{label}</span>
+              <span className="text-sm group-hover:text-bloo transition duration-300">{label}</span>
             </Link>
             <div className="h-0.5 rounded-full group-hover:w-4/5 w-0 group-hover:bg-bloo bg-white transition-width duration-500"></div>
           </div>
@@ -428,7 +428,7 @@ const OurProducts = ({ handleSetSelected = () => {} }) => (
             ].map(({ href, icon, name, desc }) => (
               <Link key={href} href={href} onClick={() => handleSetSelected(null)} className="flex items-start gap-3 group">
                 <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} alt="" className="!w-6 !h-6 !max-w-none object-contain"  width="24" height="24" /></div>
-                <div><p className="font-semibold group-hover:text-bloo">{name}</p><p className="text-xs text-gray-500">{desc}</p></div>
+                <div><p className="font-semibold text-sm group-hover:text-bloo">{name}</p><p className="text-xs text-gray-500">{desc}</p></div>
               </Link>
             ))}
           </div>
@@ -445,7 +445,7 @@ const OurProducts = ({ handleSetSelected = () => {} }) => (
             ].map(({ href, icon, name, desc }) => (
               <Link key={href} href={href} onClick={() => handleSetSelected(null)} className="flex items-start gap-3 group">
                 <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} alt="" className="!w-6 !h-6 !max-w-none object-contain"  width="24" height="24" /></div>
-                <div><p className="font-semibold group-hover:text-bloo">{name}</p><p className="text-xs text-gray-500">{desc}</p></div>
+                <div><p className="font-semibold text-sm group-hover:text-bloo">{name}</p><p className="text-xs text-gray-500">{desc}</p></div>
               </Link>
             ))}
           </div>
@@ -460,7 +460,7 @@ const OurProducts = ({ handleSetSelected = () => {} }) => (
             ].map(({ href, icon, name, desc }) => (
               <Link key={href} href={href} onClick={() => handleSetSelected(null)} className="flex items-start gap-3 group">
                 <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} alt="" className="!w-6 !h-6 !max-w-none object-contain"  width="24" height="24" /></div>
-                <div><p className="font-semibold group-hover:text-bloo">{name}</p><p className="text-xs text-gray-500">{desc}</p></div>
+                <div><p className="font-semibold text-sm group-hover:text-bloo">{name}</p><p className="text-xs text-gray-500">{desc}</p></div>
               </Link>
             ))}
           </div>
@@ -475,7 +475,7 @@ const OurProducts = ({ handleSetSelected = () => {} }) => (
             ].map(({ href, icon, name, desc }) => (
               <Link key={href} href={href} onClick={() => handleSetSelected(null)} className="flex items-start gap-3 group">
                 <div className="w-10 h-10 bg-[#E6F4FD] rounded-lg p-2"><img src={icon} alt="" className="!w-6 !h-6 !max-w-none object-contain"  width="24" height="24" /></div>
-                <div><p className="font-semibold group-hover:text-bloo">{name}</p><p className="text-xs text-gray-500">{desc}</p></div>
+                <div><p className="font-semibold text-sm group-hover:text-bloo">{name}</p><p className="text-xs text-gray-500">{desc}</p></div>
               </Link>
             ))}
           </div>

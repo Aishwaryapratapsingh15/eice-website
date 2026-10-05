@@ -463,15 +463,15 @@ function Legal() {
 
 
 
-    <div className="font-manrope px-4 md:px-10 lg:px-20 xl:px-40">
+    <div className="overflow-x-hidden">
 
 
 
-      <div className="sm:max-w-7xl mx-auto pb-8">
+      <div className="px-4 md:px-10 lg:px-20 xl:px-40">
 
 
 
-        <div className="sm:max-w-7xl pt-4 pb-8 mx-auto grid">
+        <div className="sm:max-w-7xl pt-4 pb-8 w-full mx-auto grid ">
 
 
 
@@ -504,11 +504,11 @@ function Legal() {
 
 
 
-        <div className="max-w-7xl mx-auto text-center flex flex-col gap-4 pb-8">
+        <div className="max-w-7xl mx-auto text-center flex flex-col gap-8 pb-10">
 
 
 
-          <h1 className="text-blackk fontweight_1 text-center text-[32px] sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl pb-4">
+          <h1 className="text-blackk font-genral font-semibold text-center text-[32px] sm:text-[44px] leading-[1.1] max-w-4xl">
 
 
 
@@ -516,7 +516,7 @@ function Legal() {
 
 
 
-            Innovative Technology
+            <br className="hidden sm:block" />Innovative Technology
 
 
 
@@ -524,7 +524,7 @@ function Legal() {
 
 
 
-          <p className="font-medium text-blackk/70 text-[16px] sm:text-xl ">
+          <p className="mt-3 font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]  sm:text-center">
 
 
 
@@ -588,11 +588,11 @@ function Legal() {
 
 
 
-        <div className="sm:max-w-3xl mx-auto text-center pb-4">
+        <div className="sm:max-w-7xl mx-auto text-center py-8">
 
 
 
-          <h1 className="text-bloo text-xs font-extrabold uppercase tracking-[0.12em] text-center pb-4">
+          <h1 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">
             Key Services
 
 
@@ -601,7 +601,7 @@ function Legal() {
 
 
 
-          <h1 className="text-blackk  fontweight_1 text-center text-[32px] sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl pb-4">
+          <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] py-1">
 
 
 
@@ -609,7 +609,7 @@ function Legal() {
 
 
 
-          </h1>
+          </h2>
 
 
 
@@ -617,7 +617,7 @@ function Legal() {
 
 
 
-        <div className="sm:max-w-7xl w-full mx-auto pb-8">
+        <div className="sm:max-w-7xl w-full mx-auto pb-10">
 
 
 
@@ -797,15 +797,15 @@ function Legal() {
 
 
 
-        <div className="pb-4">
+        <div className="pt-10 sm:max-w-7xl mx-auto text-center">
 
 
 
-          <h1 className="text-blackk  fontweight_1 text-center text-[32px] sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl pb-4">
+          <h1 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] max-w-4xl">
 
 
 
-            Driving Enterprise Excellence with Intelligent Software Solutions
+            Driving Enterprise Excellence with Intelligent<br className = "hidden sm:block" /> Software Solutions
 
 
 
@@ -817,19 +817,19 @@ function Legal() {
 
 
 
-        <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 pb-8">
+        <div className="grid md:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto py-8">
 
 
 
-          <div className="group  p-4 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
+          <div className="rounded-[18px] border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] p-[25px]">
 
 
 
-            <div className=" rounded-full flex items-start justify-start w-full px-4">
+            <div className="rounded-lg flex items-start mb-[19px]">
 
 
 
-              <FaDatabase size={48} className="text-bloo" />
+              <FaDatabase size={44} className="text-bloo" />
 
 
 
@@ -837,11 +837,11 @@ function Legal() {
 
 
 
-            <div className="pt-6 h-full text-left">
+            <div className="h-full items-start">
 
 
 
-              <h1 className="text-blackk fontweight_1 text-[24px] pt-4 pb-4 sm:text-2xl px-4">
+              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
 
 
@@ -853,7 +853,7 @@ function Legal() {
 
 
 
-              <p className="font-medium text-blackk/70 text-[16px] sm:text-xl px-4">
+              <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
 
 
 
@@ -885,15 +885,15 @@ function Legal() {
 
 
 
-          <div className="group  p-4 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
+          <div className="rounded-[18px] border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] p-[25px]">
 
 
 
-            <div className=" rounded-full  flex items-start justify-start w-full px-4">
+            <div className="rounded-lg flex items-start mb-[19px]">
 
 
 
-              <TiTime size={48} className="text-bloo" />
+              <TiTime size={44} className="text-bloo" />
 
 
 
@@ -901,11 +901,11 @@ function Legal() {
 
 
 
-            <div className="pt-6 h-full text-left">
+            <div className="h-full items-start">
 
 
 
-              <h1 className="text-blackk fontweight_1 text-[24px] pt-4 pb-4 sm:text-2xl px-4">
+              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
 
 
@@ -917,7 +917,7 @@ function Legal() {
 
 
 
-              <p className="font-medium text-blackk/70 text-[16px] sm:text-xl px-4">
+              <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
 
 
 
@@ -949,15 +949,15 @@ function Legal() {
 
 
 
-          <div className="group  p-4 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
+          <div className="rounded-[18px] border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] p-[25px]">
 
 
 
-            <div className=" rounded-full  flex items-start justify-start w-full px-4">
+            <div className="rounded-lg flex items-start mb-[19px]">
 
 
 
-              <FaMagnifyingGlass size={48} className="text-bloo" />
+              <FaMagnifyingGlass size={44} className="text-bloo" />
 
 
 
@@ -965,11 +965,11 @@ function Legal() {
 
 
 
-            <div className="pt-6 h-full text-left">
+            <div className="h-full items-start">
 
 
 
-              <h1 className="text-blackk fontweight_1 text-[24px] pt-4 pb-4 sm:text-2xl px-4">
+              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
 
 
@@ -981,7 +981,7 @@ function Legal() {
 
 
 
-              <p className="font-medium text-blackk/70 text-[16px] sm:text-xl px-4">
+              <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
 
 
 
@@ -1013,27 +1013,25 @@ function Legal() {
 
 
 
-          <div className="group  p-4 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
+          <div className="rounded-[18px] border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] p-[25px]">
 
 
 
-            <div className=" rounded-full  flex items-start justify-start w-full px-4">
+            <div className="rounded-lg flex items-start mb-[19px]">
 
 
 
-              <GoWorkflow size={48} className="text-bloo" />
-
-
+              <GoWorkflow size={44} className="text-bloo" />
 
             </div>
 
 
 
-            <div className="pt-6 h-full text-left">
+            <div className="h-full items-start">
 
 
 
-              <h1 className="text-blackk fontweight_1 text-[24px] pt-4 pb-4 sm:text-2xl px-4">
+              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
 
 
@@ -1045,7 +1043,7 @@ function Legal() {
 
 
 
-              <p className="font-medium text-blackk/70 text-[16px] sm:text-xl px-4">
+              <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
 
 
 
@@ -1081,15 +1079,15 @@ function Legal() {
 
 
 
-          <div className="group  p-4 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
+          <div className="rounded-[18px] border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] p-[25px]">
 
 
 
-            <div className=" rounded-full  flex items-start justify-start w-full px-4">
+            <div className="rounded-lg flex items-start mb-[19px]">
 
 
 
-              <PiDrone size={48} className="text-bloo" />
+              <PiDrone size={44} className="text-bloo" />
 
 
 
@@ -1097,11 +1095,11 @@ function Legal() {
 
 
 
-            <div className="pt-6 h-full text-left">
+            <div className="h-full items-start">
 
 
 
-              <h1 className="text-blackk fontweight_1 text-[24px] pt-4 pb-4 sm:text-2xl px-4">
+              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
 
 
@@ -1113,7 +1111,7 @@ function Legal() {
 
 
 
-              <p className="font-medium text-blackk/70 text-[16px] sm:text-xl px-4">
+              <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
 
 
 

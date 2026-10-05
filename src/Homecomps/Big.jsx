@@ -31,7 +31,7 @@ function Big() {
               </p>
               <div className="mt-8 flex flex-row sm:flex-row gap-4 ">
                 <Link href="/products/eicerise/form?product=Home">
-                  <button aria-label="Request A Demo" className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 border-2 border-blue-900 bg-blue-900 text-white hover:bg-blue-800 text-sm sm:text-base">
+                  <button aria-label="Request A Demo" className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 bg-[#012060] text-white hover:bg-[#1E40AF] text-sm sm:text-base">
                     Request A Demo
                   </button>
                 </Link>
@@ -51,8 +51,8 @@ function Big() {
               />
               <img
                 className="relative w-full max-w-md rounded-lg"
-                src={hero1image}
-                alt="Home Hero Image 1"
+                src={hero2image}
+                alt="Home Hero Image 2"
                 width="500"
                 height="400"
               />
@@ -82,7 +82,7 @@ function Big() {
               </p>
               <div className="mt-8 flex flex-row sm:flex-row gap-4">
                 <Link href="/products/eicerise/form?product=Home">
-                  <button className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 border-2 border-blue-900 bg-blue-900 text-white hover:bg-blue-800 text-sm sm:text-base">
+                  <button className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 bg-[#012060] text-white hover:bg-[#1E40AF] text-sm sm:text-base">
                     Request A Demo
                   </button>
                 </Link>
@@ -102,7 +102,7 @@ function Big() {
               />
               <img
                 className="relative w-full max-w-md rounded-lg"
-                src={hero2image}
+                src={hero1image}
                 alt="Enterprise engineering and modernization"
                 width="500"
                 height="400"
@@ -133,7 +133,7 @@ function Big() {
               </p>
               <div className="mt-8 flex flex-row sm:flex-row gap-4">
                 <Link href="/products/eicerise/form?product=Home">
-                  <button className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 border-2 border-blue-900 bg-blue-900 text-white hover:bg-blue-800 text-sm sm:text-base">
+                  <button className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 bg-[#012060] text-white hover:bg-[#1E40AF] text-sm sm:text-base">
                     Request A Demo
                   </button>
                 </Link>

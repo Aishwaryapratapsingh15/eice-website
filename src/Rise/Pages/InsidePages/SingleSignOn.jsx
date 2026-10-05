@@ -2,10 +2,8 @@
 import style from "./Styles/SingleSignOn.module.css";
 import { useState, useEffect } from "react";
 import { Link } from '@/nextNavigation';
-import Certificate from "../../Components/Certificate/Certificate.jsx";
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx";
 import FooterLower from "../../Components/Footer/FooterLower.jsx";
-import Accordion from "../../Components/Accordian/Accordian.jsx";
 const malIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/singleSignOn/MAL.png";
 const mpcIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/singleSignOn/MPC.png";
 const nacIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/singleSignOn/NAC.png";
@@ -247,8 +245,8 @@ const footerUpperText = {
 
           {/* ICON + HEADING */}
           <div className={style.headingAndIconFeatures}>
-            <div style={{ width: "44px" }}>
-              <img src={f.icon?.src || f.icon} style={{ width: "100%" }}  width={f.__w} height={f.__h} />
+            <div style={{ width: "44px", height: "44px" }}>
+              <img src={f.icon?.src || f.icon} style={{ width: "100%", height: "100%", objectFit: "contain" }}  width={f.__w} height={f.__h} />
             </div>
 
             <div className={style.featureHeading}>
@@ -265,19 +263,18 @@ const footerUpperText = {
       ))}
     </div>
 
-  </div>
-</section>
-
-      {/* CTA */}
+    <div className={style.requestDemoBtn}>
       <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form?product=EiceRise(Single Sign On)"}>
-      <section className={style.requestDemoBtn}>
         <div className={`${style.demoBtnWrapper} globalSectionSize`}>
           <div className={style.demoButton}>
             Request a Demo →
           </div>
         </div>
-      </section>
       </Link>
+    </div>
+
+  </div>
+</section>
 
       {/* BENEFITS */}
       <section style={{ background: "#f5f5f5" }} className={style.section5Wrapper}>
@@ -315,11 +312,23 @@ const footerUpperText = {
       {/* FAQ */}
       <section>
         <div className={`${style.FAQsection} globalSectionSize`}>
-          <div className={style.FAQHeading}>Frequently Asked Questions</div>
+          <div className={style.FAQHeadingBlock}>
+            <div className={style.FAQEyebrow}>FAQs</div>
+            <div className={style.FAQHeading}>Frequently Asked Questions</div>
+          </div>
 
           <div className={style.FAQContainer}>
             {query.map((item, i) => (
-              <Accordion key={i} question={item.question} answer={item.answer} />
+              <details key={i} className={style.faqItem}>
+                <summary className={style.faqSummary}>
+                  <span>{item.question}</span>
+                  <span className={style.faqToggle}>
+                    <span className={style.faqPlus}>+</span>
+                    <span className={style.faqMinus}>−</span>
+                  </span>
+                </summary>
+                <p className={style.faqAnswer}>{item.answer}</p>
+              </details>
             ))}
           </div>
 
@@ -327,7 +336,6 @@ const footerUpperText = {
       </section>
 
       {/* ================= FOOTER ================= */}
-            <Certificate />
             <FooterUpperPart product="Single Sign-On" text1={footerUpperText.text1} text2= {<> {footerUpperText.text2} <br />  </>} text3={footerUpperText.text3} img={middleImg} />
             {!isEmbed && <FooterLower />}
 

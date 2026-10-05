@@ -32,7 +32,7 @@ export default async function LatestVideos() {
           href={YOUTUBE_CHANNEL_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center py-3 px-8 border border-blue-900 bg-blue-900 text-white font-semibold rounded-md transition duration-200 hover:bg-blue-900/90 hover:shadow-md hover:shadow-bloo/30"
+          className="inline-flex items-center justify-center py-4 px-7 bg-[#012060] text-white font-semibold rounded-md text-lg transition duration-200 hover:bg-[#1E40AF]"
         >
           Watch All Videos <img src={arrow} alt="" className="ml-2 w-5 h-5" width="20" height="20" />
         </a>

@@ -69,7 +69,7 @@ function Offers() {
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
                 {cap.title}
               </h3>
-              <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6] mb-[18px]">
+              <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6] mb-[18px] line-clamp-4">
                 {cap.desc}
               </p>
               <Link
@@ -86,7 +86,7 @@ function Offers() {
       <div className="flex justify-center mt-8 sm:mt-10">
         <Link
           href="/services"
-          className="inline-flex items-center justify-center py-4 px-7 border border-blue-900 bg-blue-900 text-white font-semibold rounded-md text-lg transition duration-200 hover:bg-blue-900/90 hover:shadow-md hover:shadow-bloo/30"
+          className="inline-flex items-center justify-center py-4 px-7 bg-[#012060] text-white font-semibold rounded-md text-lg transition duration-200 hover:bg-[#1E40AF]"
         >
           Explore our services →
         </Link>

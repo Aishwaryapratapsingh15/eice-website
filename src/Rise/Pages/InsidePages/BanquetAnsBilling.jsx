@@ -36,16 +36,12 @@ const ro = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/banquet/banqu
 
 const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Rise/section3Laptop/banquet.webp";
 
-import Accordion from "../../Components/Accordian/Accordian.jsx"
-
-
 import { FaArrowRightLong } from "react-icons/fa6";
 
 
 
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
 import FooterLower from "../../Components/Footer/FooterLower.jsx"
-import Certificate from "../../Components/Certificate/Certificate.jsx"
 
 
 export default function BanquetAnsBilling() {
@@ -80,7 +76,7 @@ export default function BanquetAnsBilling() {
       heading: "Customized Packages and Pricing",
       desc: "Create tailored event packages, allowing clients to choose from various services, amenities, and F&B options to suit their preferences.",
       img: cpp,
-      width: "69px",
+      width: "44px",
     __w: 300, __h: 300},
 
     {
@@ -88,7 +84,7 @@ export default function BanquetAnsBilling() {
       heading: "Digital Contracts and Invoicing",
       desc: "Generate digital contracts and detailed invoices for events, with transparent breakdowns of services, charges, and taxes.",
       img: dci,
-      width: "58px",
+      width: "44px",
     __w: 300, __h: 300},
 
     {
@@ -96,7 +92,7 @@ export default function BanquetAnsBilling() {
       heading: "Integrated Resource Management",
       desc: "Allocate staff, catering, equipment, etc., based on event requirements, optimizing resources and reducing overbooking risks.",
       img: irm,
-      width: "72px",
+      width: "44px",
     __w: 300, __h: 300},
 
     {
@@ -104,7 +100,7 @@ export default function BanquetAnsBilling() {
       heading: "Automated Billing System",
       desc: "Streamline the billing process with automatic calculations for banquet charges, F&B services, and additional event-related costs.",
       img: abs,
-      width: "65px",
+      width: "44px",
     __w: 300, __h: 300},
 
     {
@@ -112,7 +108,7 @@ export default function BanquetAnsBilling() {
       heading: "Comprehensive Reports",
       desc: "Access real-time reports on event bookings, revenue, and client preferences, enabling better forecasting and decision-making.",
       img: cr,
-      width: "58px",
+      width: "44px",
     __w: 300, __h: 300},
 
     {
@@ -120,7 +116,7 @@ export default function BanquetAnsBilling() {
       heading: "Client Portal Access",
       desc: "Provide clients with a portal to review booking details, confirm event schedules, and make payments easily.",
       img: cpa,
-      width: "54px",
+      width: "44px",
     __w: 300, __h: 300}
   ];
 
@@ -216,7 +212,7 @@ export default function BanquetAnsBilling() {
 
     <div className={`${style.headingBoxPhone} font4 `}>
         <div className={`${style.mainHeadingPhone}`}>
-        <span style={{ color: "#012060" }} >BANQUET</span><span style={{ color: "#01B0F1" }} > & BILLING</span>
+        <span style={{ color: "#333333" }} >BANQUET</span><span style={{ color: "#01B0F1" }} > & BILLING</span>
         </div>
         <div className={`${style.mainParaPhone}`}>
         Manage events with ease using the Banquet & Billing Module, providing precise event tracking and smooth financial management for any occasion.
@@ -237,7 +233,7 @@ export default function BanquetAnsBilling() {
 
           <div className={`${style.headingBox} font4 `}>
             <div className={`${style.mainHeading}`}>
-              <span style={{ color: "#012060" }} >BANQUET</span><span style={{ color: "#01B0F1" }} > & BILLING</span>
+              <span style={{ color: "#333333" }} >BANQUET</span><span style={{ color: "#01B0F1" }} > & BILLING</span>
             </div>
             <div className={`${style.mainPara}`}>
             Manage events with ease using the Banquet & Billing Module, providing precise event tracking and smooth financial management for any occasion.
@@ -375,8 +371,8 @@ export default function BanquetAnsBilling() {
 
                 <div className={`${style.headingAndIconFeatures}`}>
 
-                  <div style={{ width: item.width }}>
-                    <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
+                  <div style={{ width: item.width, height: item.width }}>
+                    <img style={{ width: "100%", height: "100%", objectFit: "contain" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
                   </div>
 
                   <div className={`${style.featureHeading}`}>
@@ -400,21 +396,21 @@ export default function BanquetAnsBilling() {
 
           </div>
 
-        </div>
-      </section>
+          <div className={`${style.requestDemoBtn}`}>
 
-      <section className={`${style.requestDemoBtn}`}>
-
-      <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form?product=EiceRise(Banquet and Billing)"}>
-                <div className={`${style.demoBtnWrapper} globalSectionSize`}>
-                  <div className={`${style.demoButton} font1`}>
-                    <div > Request a Demo </div>
-                    <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
-                  </div>
-
+            <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form?product=EiceRise(Banquet and Billing)"}>
+              <div className={`${style.demoBtnWrapper} globalSectionSize`}>
+                <div className={`${style.demoButton} font1`}>
+                  <div > Request a Demo </div>
+                  <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
                 </div>
-              </Link>
 
+              </div>
+            </Link>
+
+          </div>
+
+        </div>
       </section>
 
       
@@ -509,12 +505,24 @@ export default function BanquetAnsBilling() {
 
       <section >
         <div className={`${style.FAQsection} globalSectionSize font4`}>
-          <div className={`${style.FAQHeading}`}>Frequently Asked Questions</div>
+          <div className={style.FAQHeadingBlock}>
+            <div className={style.FAQEyebrow}>FAQs</div>
+            <div className={style.FAQHeading}>Frequently Asked Questions</div>
+          </div>
 
 
           <div className={style.FAQContainer}>
             {query.map((item, index) => (
-              <Accordion key={item.key ?? index} question={item.question} answer={item.answer} />
+              <details key={item.key ?? index} className={style.faqItem}>
+                <summary className={style.faqSummary}>
+                  <span>{item.question}</span>
+                  <span className={style.faqToggle}>
+                    <span className={style.faqPlus}>+</span>
+                    <span className={style.faqMinus}>−</span>
+                  </span>
+                </summary>
+                <p className={style.faqAnswer}>{item.answer}</p>
+              </details>
             ))}
           </div>
 
@@ -528,7 +536,6 @@ export default function BanquetAnsBilling() {
       </div> */}
 
       <div >
-        <Certificate/>
        <FooterUpperPart product="Banquet Billing" text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={laptop} />
         {!isEmbed && <FooterLower />}
 

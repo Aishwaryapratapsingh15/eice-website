@@ -10,7 +10,6 @@ const b4 = "https://d3r43jacxrwsrp.cloudfront.net/easylogy/Hospitality/benefit/w
 
 import FooterLower from "../../Components/Footer/FooterLower"
 import { FaArrowRightLong } from "react-icons/fa6";
-import Certificate from "../../Components/Certificate/Certificate"
 
 
 export default function HospitalityPage() {
@@ -159,11 +158,6 @@ useEffect(() => {
 
 
                 </div>
-
-
-                <Certificate/>
-
-
 
 
 

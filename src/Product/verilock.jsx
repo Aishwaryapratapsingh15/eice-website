@@ -228,7 +228,7 @@ export default function ISyncDrivePage() {
 
       {/* Primary */}
       <button onClick={() => navigate("/products/eicerise/form?product=Verilock")}
-      className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-[18px]">
+      className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-[#1E40AF] transition text-[18px]">
         Request a Demo
           <img src={arrowIcon} alt="arrow" width="24" height="24" />
 
@@ -881,7 +881,7 @@ locations with full admin control.
 
       {/* PRIMARY */}
       <button onClick={() => navigate("/products/eicerise/form?product=Verilock")} 
-      className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto hover:bg-blue-800 transition text-[18px]">
+      className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto hover:bg-[#1E40AF] transition text-[18px]">
         Request a Demo
           <img src={arrowIcon} alt="arrow" width="24" height="24" />
 

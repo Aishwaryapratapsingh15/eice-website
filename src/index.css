@@ -173,39 +173,6 @@ button, [role="button"], a, input[type="submit"], input[type="button"], input[ty
     transform: rotateY(0deg);
 }
 
-/* Dark blue button backgrounds → #012060 */
-button.bg-blue-900,
-a.bg-blue-900 {
-    background-color: #012060;
-}
-
-button.bg-blue-900.border-blue-900,
-a.bg-blue-900.border-blue-900 {
-    border-color: #012060;
-}
-
-button.bg-\[\#012060\],
-a.bg-\[\#012060\] {
-    background-color: #012060;
-}
-
-button.hover\:bg-blue-900:hover,
-a.hover\:bg-blue-900:hover {
-    background-color: #012060;
-}
-
-button.hover\:bg-blue-900\/90:hover,
-a.hover\:bg-blue-900\/90:hover,
-button.hover\:bg-blue-900\/95:hover,
-a.hover\:bg-blue-900\/95:hover {
-    background-color: rgb(1 32 64 / 0.9);
-}
-
-button.hover\:bg-blue-800:hover,
-a.hover\:bg-blue-800:hover {
-    background-color: #011530;
-}
-
 /* Mobile: left-align all content, 20px horizontal padding */
 @media (max-width: 639px) {
     #main-content .text-center {

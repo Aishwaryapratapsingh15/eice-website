@@ -86,25 +86,14 @@
 
 
 .text1 {
-    font-size: 52px;
+    font-family: 'General Sans', sans-serif;
+    font-size: 44px;
     font-weight: 600;
-}
-
-
-@media (max-width : 1400px) {
-    .text1 {
-        font-size: 48px;
-    }
-}
-
-@media (max-width : 1260px) {
-    .text1 {
-        font-size: 44px;
-    }
 }
 
 .text2 {
 
+    font-family: 'Inter', sans-serif;
     padding: 10px 60px;
     margin-top: 15px;
     font-size: 18px;
@@ -173,9 +162,11 @@
 
 
 .section2Heading {
+    font-family: 'General Sans', sans-serif;
     text-align: center;
     font-size: 32px;
     font-weight: 600;
+    color: #333333;
     margin-bottom: 20px;
 }
 
@@ -208,15 +199,19 @@
     padding: 8px;
     background-color: white;
     height: 220px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
+    border: 1px solid #E6EAF1;
+    border-radius: 18px;
+    box-sizing: border-box;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 
 
 
 }
 
 .iconAndTextBox:hover {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: translateY(-4px);
+    border-color: rgba(1, 176, 241, 0.6);
+    box-shadow: 0 18px 55px rgba(1, 32, 96, 0.10);
 }
 
 
@@ -238,10 +233,12 @@
 
 
 .serviceName {
+    font-family: 'General Sans', sans-serif;
     padding: 10px 8px;
     text-align: center;
     font-size: 17px;
     font-weight: 600;
+    color: #373737;
 }
 
 .serviceName div {
@@ -314,8 +311,10 @@
 
 .section4Heading {
 
+    font-family: 'General Sans', sans-serif;
     font-size: 32px;
     font-weight: 600;
+    color: #333333;
     text-align: center;
 }
 
@@ -411,9 +410,11 @@
 
 
 .section6Heading {
+    font-family: 'General Sans', sans-serif;
     margin-bottom: 20px;
     font-size: 32px;
     font-weight: 600;
+    color: #333333;
     text-align: center;
     padding-top:10px
 }
@@ -429,10 +430,25 @@
 
 .storyBox {
     width: 370px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: #ffffff;
+    border: 1px solid #E6EAF1;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 18px;
+    box-sizing: border-box;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
     user-select: none;
+}
+
+.storyBox:hover {
+    transform: translateY(-4px);
+    border-color: rgba(1, 176, 241, 0.6);
+    box-shadow: 0 18px 55px rgba(1, 32, 96, 0.10);
+}
+
+.storyBox p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #64748B;
 }
 
 .storyImgHeight {
@@ -459,8 +475,9 @@
 
 
 .cardBoxStoryInnerHeading {
+    font-family: 'General Sans', sans-serif;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 600;
     margin: 10px 0px;
 
 
@@ -495,7 +512,7 @@
     }
 
     .text1 {
-        font-size: 36px;
+        font-size: 32px;
     }
 
 }
@@ -526,15 +543,6 @@
 
     .textBox {
         padding: 0px 60px;
-    }
-
-    .text1 {
-        /* font-size: 58px; */
-        font-size: 53px;
-    }
-
-    .text2 {
-        font-size: 20px;
     }
 
 }
@@ -636,7 +644,7 @@
 
     .section2Heading {
 
-        font-size: 20px;
+        font-size: 24px;
         text-align: left;
 
     }
@@ -727,7 +735,7 @@
 
     .section4Heading {
 
-        font-size: 20px;
+        font-size: 24px;
         text-align: left;
     }
 
@@ -815,7 +823,7 @@
 
     .section6Heading {
 
-        font-size: 20px;
+        font-size: 24px;
         text-align: left;
     }
 

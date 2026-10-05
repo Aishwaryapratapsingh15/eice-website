@@ -429,11 +429,11 @@ function Solutions() {
         </Link>
       </div>
 
-      {/* Desktop: View More button — unchanged */}
+      {/* Desktop: View More button */}
       <div className="hidden sm:flex justify-center">
         <Link
           to="/industries"
-          className="inline-flex items-center justify-center py-4 px-7 border border-blue-900 bg-blue-900 text-white font-semibold rounded-md text-lg transition duration-200 hover:bg-blue-900/90 hover:shadow-md hover:shadow-bloo/30"
+          className="inline-flex items-center justify-center py-4 px-7 bg-[#012060] text-white font-semibold rounded-md text-lg transition duration-200 hover:bg-[#1E40AF]"
         >
           View More <img src={arrow} alt="" className="ml-2 w-5 h-5"  width="20" height="20" />
         </Link>
@@ -458,7 +458,7 @@ function IndustryCard({ name, description, image, link }) {
         <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
           {name}
         </h3>
-        <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6] mb-[18px]">
+        <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6] mb-[18px] line-clamp-4">
           {description}
         </p>
         <Link

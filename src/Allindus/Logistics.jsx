@@ -503,71 +503,71 @@ const projects = {
 
 
 
-const CaseStudy = ({ title, description, image, __w, __h }) => (
+// const CaseStudy = ({ title, description, image, __w, __h }) => (
 
 
 
-  <div className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 md:p-4">
+//   <div className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 md:p-4">
 
 
 
-    <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
+//     <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
 
 
 
-      <img
+//       <img
 
 
 
-        src={image?.src || image}
+//         src={image?.src || image}
 
 
 
-        alt={title}
+//         alt={title}
 
 
 
-        className="w-full h-32 sm:h-40 md:h-48 object-cover transition duration-300 filter grayscale hover:grayscale-0"
+//         className="w-full h-32 sm:h-40 md:h-48 object-cover transition duration-300 filter grayscale hover:grayscale-0"
 
 
 
-      />
+//       />
 
 
 
-      <div className="p-3 md:p-4">
+//       <div className="p-3 md:p-4">
 
 
 
-        <h3 className="fontweight_1 text-[24px] sm:text-base md:text-lg mb-1 sm:mb-2">
+//         <h3 className="fontweight_1 text-[24px] sm:text-base md:text-lg mb-1 sm:mb-2">
 
 
 
-          {title}
+//           {title}
 
 
 
-        </h3>
+//         </h3>
 
 
 
-        <p className="text-gray-600 text-[16px] sm:text-sm">{description}</p>
+//         <p className="text-gray-600 text-[16px] sm:text-sm">{description}</p>
 
 
 
-      </div>
+//       </div>
 
 
 
-    </div>
+//     </div>
 
 
 
-  </div>
+//   </div>
 
 
 
-);
+// );
 
 
 
@@ -575,11 +575,11 @@ const CaseStudy = ({ title, description, image, __w, __h }) => (
 
 
 
-function Cstdmain() {
+// function Cstdmain() {
 
 
 
-  const [activeIndustry, setActiveIndustry] = useState(industries[0].id);
+//   const [activeIndustry, setActiveIndustry] = useState(industries[0].id);
 
 
 
@@ -587,108 +587,108 @@ function Cstdmain() {
 
 
 
-  return (
+//   return (
 
 
 
-    <div className="font-manrope px-4 md:px-10 lg:px-20 xl:px-40">
+//     <div className="font-manrope px-4 md:px-10 lg:px-20 xl:px-40">
 
 
 
-      <h2 className="text-bloo text-xs font-extrabold uppercase tracking-[0.12em] text-center py-2">
-        Case Studies
+//       <h2 className="text-bloo text-xs font-extrabold uppercase tracking-[0.12em] text-center py-2">
+//         Case Studies
 
 
 
-      </h2>
+//       </h2>
 
 
 
-      <h1 className="text-blackk  fontweight_1 text-center text-[32px] sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1 pb-8">
+//       <h1 className="text-blackk  fontweight_1 text-center text-[32px] sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1 pb-8">
 
 
 
-        Explore how we digitally transformed other businesses
+//         Explore how we digitally transformed other businesses
 
 
 
-      </h1>
+//       </h1>
 
 
 
-      <main className=" mx-auto max-w-7xl">
+//       <main className=" mx-auto max-w-7xl">
 
 
 
-        <nav className="mb-8 sm:mb-12">
+//         <nav className="mb-8 sm:mb-12">
 
 
 
-          <ul className="flex flex-wrap justify-center gap-2 sm:gap-4">
+//           <ul className="flex flex-wrap justify-center gap-2 sm:gap-4">
 
 
 
-            {industries.map((industry) => (
+//             {industries.map((industry) => (
 
 
 
-              <li key={industry.id}>
+//               <li key={industry.id}>
 
 
 
-                <button
+//                 <button
 
 
 
-                  onClick={() => setActiveIndustry(industry.id)}
+//                   onClick={() => setActiveIndustry(industry.id)}
 
 
 
-                  className={`px-3 py-1 sm:px-4 sm:py-2 text-sm sm:text-base rounded-full transition ${
+//                   className={`px-3 py-1 sm:px-4 sm:py-2 text-sm sm:text-base rounded-full transition ${
 
 
 
-                    activeIndustry === industry.id
+//                     activeIndustry === industry.id
 
 
 
-                      ? "bg-blue-900 text-white"
+//                       ? "bg-blue-900 text-white"
 
 
 
-                      : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+//                       : "bg-gray-200 text-gray-700 hover:bg-gray-300"
 
 
 
-                  } `}
+//                   } `}
 
 
 
-                >
+//                 >
 
 
 
-                  {industry.name}
+//                   {industry.name}
 
 
 
-                </button>
+//                 </button>
 
 
 
-              </li>
+//               </li>
 
 
 
-            ))}
+//             ))}
 
 
 
-          </ul>
+//           </ul>
 
 
 
-        </nav>
+//         </nav>
 
 
 
@@ -696,107 +696,107 @@ function Cstdmain() {
 
 
 
-        {industries.map((industry) => (
+//         {industries.map((industry) => (
 
 
 
-          <section
+//           <section
 
 
 
-            key={industry.id}
+//             key={industry.id}
 
 
 
-            className={`mb-12 px-2p ${
+//             className={`mb-12 px-2p ${
 
 
 
-              activeIndustry === industry.id ? "block" : "hidden"
+//               activeIndustry === industry.id ? "block" : "hidden"
 
 
 
-            }`}
+//             }`}
 
 
 
-          >
+//           >
 
 
 
-            <h2 className="text-[24px] px-2 sm:text-2xl fontweight_1 mb-4 sm:mb-6">
+//             <h2 className="text-[24px] px-2 sm:text-2xl fontweight_1 mb-4 sm:mb-6">
 
 
 
-              {industry.name}
+//               {industry.name}
 
 
 
-            </h2>
+//             </h2>
 
 
 
-            <div className="flex flex-wrap -mx-2">
+//             <div className="flex flex-wrap -mx-2">
 
 
 
-              {projects[industry.id].map((project, index) => (
+//               {projects[industry.id].map((project, index) => (
 
 
 
-                <CaseStudy
+//                 <CaseStudy
 
 
 
-                  key={index}
+//                   key={index}
 
 
 
-                  title={project.title}
+//                   title={project.title}
 
 
 
-                  description={project.description}
+//                   description={project.description}
 
 
 
-                  image={project.img}
+//                   image={project.img}
 
 
 
-                 __w={project.__w} __h={project.__h}/>
+//                  __w={project.__w} __h={project.__h}/>
 
 
 
-              ))}
+//               ))}
 
 
 
-            </div>
+//             </div>
 
 
 
-          </section>
+//           </section>
 
 
 
-        ))}
+//         ))}
 
 
 
-      </main>
+//       </main>
 
 
 
-    </div>
+//     </div>
 
 
 
-  );
+//   );
 
 
 
-}
+// }
 
 
 
@@ -992,15 +992,15 @@ function Logistics() {
 
 
 
-    <div className="">
+    <div className="overflow-x-hidden">
 
 
 
-      <div className="px-4 md:px-10 lg:px-20 xl:px-40 pb-8">
+      <div className="px-4 md:px-10 lg:px-20 xl:px-40">
 
 
 
-        <div className="sm:max-w-7xl pt-4 pb-8 mx-auto grid">
+        <div className="sm:max-w-7xl pt-4 pb-8 w-full mx-auto grid ">
 
 
 
@@ -1037,11 +1037,11 @@ function Logistics() {
 
 
 
-        <div className="max-w-7xl mx-auto text-center flex flex-col gap-4 pb-8">
+        <div className="max-w-7xl mx-auto text-center flex flex-col gap-8 pb-10">
 
 
 
-          <h1 className="text-blackk  fontweight_1 text-center text-[32px] sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl pb-4">
+          <h1 className="text-blackk font-genral font-semibold text-center text-[32px] sm:text-[44px] leading-[1.1] max-w-4xl">
 
 
 
@@ -1057,7 +1057,7 @@ function Logistics() {
 
 
 
-          <p className="font-medium text-blackk/70 text-[16px] sm:text-xl ">
+          <p className="mt-3 font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]  sm:text-center">
 
 
 
@@ -1121,11 +1121,11 @@ function Logistics() {
 
 
 
-        <div className="sm:max-w-3xl mx-auto text-center pb-4">
+        <div className="sm:max-w-7xl mx-auto text-center py-8">
 
 
 
-          <h1 className="text-bloo text-xs font-extrabold uppercase tracking-[0.12em] text-center pb-4">
+          <h1 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">
             Key Services
 
 
@@ -1134,7 +1134,7 @@ function Logistics() {
 
 
 
-          <h1 className="text-blackk  fontweight_1 text-center text-[32px] sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl pb-4">
+          <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] py-1">
 
 
 
@@ -1142,7 +1142,7 @@ function Logistics() {
 
 
 
-          </h1>
+          </h2>
 
 
 
@@ -1150,7 +1150,7 @@ function Logistics() {
 
 
 
-        <div className="sm:max-w-7xl w-full mx-auto pb-8">
+        <div className="sm:max-w-7xl w-full mx-auto pb-10">
 
 
 
@@ -1330,15 +1330,15 @@ function Logistics() {
 
 
 
-        <div className="pb-4">
+        <div className="pt-10 sm:max-w-7xl mx-auto text-center">
 
 
 
-          <h1 className="text-blackk  fontweight_1 text-center text-[32px] sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl pb-4">
+          <h1 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] max-w-4xl">
 
 
 
-            Driving Logistics Excellence with Intelligent Software Solutions
+            Driving Logistics Excellence with< br className="hidden sm:block" />Intelligent Software Solutions
 
 
 
@@ -1350,19 +1350,19 @@ function Logistics() {
 
 
 
-        <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 pb-8">
+        <div className="grid md:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto py-8">
 
 
 
-          <div className="group  p-4 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
+          <div className="rounded-[18px] border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] p-[25px]">
 
 
 
-            <div className=" rounded-full flex items-start justify-start w-full px-4">
+            <div className="rounded-lg flex items-start mb-[19px]">
 
 
 
-              <FaWarehouse size={48} className="text-bloo" />
+              <FaWarehouse size={44} className="text-bloo" />
 
 
 
@@ -1370,11 +1370,11 @@ function Logistics() {
 
 
 
-            <div className="pt-6 h-full text-left">
+            <div className="h-full items-start">
 
 
 
-              <h1 className="text-blackk fontweight_1 text-[24px] pt-4 pb-4 sm:text-2xl px-4">
+              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
 
 
@@ -1386,7 +1386,7 @@ function Logistics() {
 
 
 
-              <p className="font-medium text-blackk/70 text-[16px] sm:text-xl px-4">
+              <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
 
 
 
@@ -1422,15 +1422,15 @@ function Logistics() {
 
 
 
-          <div className="group  p-4 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
+          <div className="rounded-[18px] border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] p-[25px]">
 
 
 
-            <div className=" rounded-full  flex items-start justify-start w-full px-4">
+            <div className="rounded-lg flex items-start mb-[19px]">
 
 
 
-              <BsTruckFlatbed size={48} className="text-bloo" />
+              <BsTruckFlatbed size={44} className="text-bloo" />
 
 
 
@@ -1438,11 +1438,11 @@ function Logistics() {
 
 
 
-            <div className="pt-6 h-full text-left">
+            <div className="h-full items-start">
 
 
 
-              <h1 className="text-blackk fontweight_1 text-[24px] pt-4 pb-4 sm:text-2xl px-4">
+              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
 
 
@@ -1454,7 +1454,7 @@ function Logistics() {
 
 
 
-              <p className="font-medium text-blackk/70 text-[16px] sm:text-xl px-4">
+              <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
 
 
 
@@ -1490,27 +1490,26 @@ function Logistics() {
 
 
 
-          <div className="group  p-4 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
+          <div className="rounded-[18px] border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] p-[25px]">
 
 
 
-            <div className=" rounded-full  flex items-start justify-start w-full px-4">
+            <div className="rounded-lg flex items-start mb-[19px]">
 
 
 
-              <MdConveyorBelt size={48} className="text-bloo" />
-
+              <MdConveyorBelt size={44} className="text-bloo" />
 
 
             </div>
 
 
 
-            <div className="pt-6 h-full text-left">
+            <div className="h-full items-start">
 
 
 
-              <h1 className="text-blackk fontweight_1 text-[24px] pt-4 pb-4 sm:text-2xl px-4">
+              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
 
 
@@ -1522,7 +1521,7 @@ function Logistics() {
 
 
 
-              <p className="font-medium text-blackk/70 text-[16px] sm:text-xl px-4">
+              <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
 
 
 
@@ -1558,15 +1557,15 @@ function Logistics() {
 
 
 
-          <div className="group  p-4 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
+          <div className="rounded-[18px] border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] p-[25px]">
 
 
 
-            <div className=" rounded-full  flex items-start justify-start w-full px-4">
+            <div className="rounded-lg flex items-start mb-[19px]">
 
 
 
-              <SiAutomattic size={48} className="text-bloo" />
+              <SiAutomattic size={44} className="text-bloo" />
 
 
 
@@ -1574,11 +1573,11 @@ function Logistics() {
 
 
 
-            <div className="pt-6 h-full text-left">
+            <div className="h-full items-start">
 
 
 
-              <h1 className="text-blackk fontweight_1 text-[24px] pt-4 pb-4 sm:text-2xl px-4">
+              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
 
 
@@ -1590,7 +1589,7 @@ function Logistics() {
 
 
 
-              <p className="font-medium text-blackk/70 text-[16px] sm:text-xl px-4">
+              <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
 
 
 
@@ -1626,27 +1625,26 @@ function Logistics() {
 
 
 
-          <div className="group  p-4 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
+          <div className="rounded-[18px] border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] p-[25px]">
 
 
 
-            <div className=" rounded-full  flex items-start justify-start w-full px-4">
+            <div className="rounded-lg flex items-start mb-[19px]">
 
 
 
-              <PiDrone size={48} className="text-bloo" />
-
+              <PiDrone size={44} className="text-bloo" />
 
 
             </div>
 
 
 
-            <div className="pt-6 h-full text-left">
+            <div className="h-full items-start">
 
 
 
-              <h1 className="text-blackk fontweight_1 text-[24px] pt-4 pb-4 sm:text-2xl px-4">
+              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
 
 
@@ -1658,7 +1656,7 @@ function Logistics() {
 
 
 
-              <p className="font-medium text-blackk/70 text-[16px] sm:text-xl px-4">
+              <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
 
 
 
@@ -1738,7 +1736,7 @@ function Logistics() {
 
 
 
-      <Cstdmain />
+      {/* <Cstdmain /> */}
 
 
 

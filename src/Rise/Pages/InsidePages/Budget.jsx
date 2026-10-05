@@ -2,10 +2,8 @@
 import { useState, useEffect } from "react";
 import style from "./Styles/budget.module.css";
 import { Link } from '@/nextNavigation'
-import Certificate from "../../Components/Certificate/Certificate.jsx";
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx";
 import FooterLower from "../../Components/Footer/FooterLower.jsx";
-import Accordion from "../../Components/Accordian/Accordian.jsx"
 const abpIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/budget/ABP.png";
 const brrIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/budget/BRR.png";
 const cepIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/budget/CEP.png";
@@ -263,17 +261,17 @@ export default function Budget() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* CTA */}
-       <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form?product=EiceRise(Budget)"}>
-      <section className={style.requestDemoBtn}>
-        <div className={`${style.demoBtnWrapper} globalSectionSize`}>
-          <div className={style.demoButton}>Request a Demo →</div>
+          <div className={style.requestDemoBtn}>
+            <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form?product=EiceRise(Budget)"}>
+              <div className={`${style.demoBtnWrapper} globalSectionSize`}>
+                <div className={style.demoButton}>Request a Demo →</div>
+              </div>
+            </Link>
+          </div>
+
         </div>
       </section>
-      </Link>
 
       {/* BENEFITS */}
       <section style={{ background: "#f5f5f5" }} className={style.section5Wrapper}>
@@ -305,18 +303,29 @@ export default function Budget() {
       {/* FAQ */}
       <section>
         <div className={`${style.FAQsection} globalSectionSize`}>
-          <div className={style.FAQHeading}>Frequently Asked Questions</div>
+          <div className={style.FAQHeadingBlock}>
+            <div className={style.FAQEyebrow}>FAQs</div>
+            <div className={style.FAQHeading}>Frequently Asked Questions</div>
+          </div>
 
           <div className={style.FAQContainer}>
             {faqs.map((item, i) => (
-              <Accordion key={i} question={item.q} answer={item.a} />
+              <details key={i} className={style.faqItem}>
+                <summary className={style.faqSummary}>
+                  <span>{item.q}</span>
+                  <span className={style.faqToggle}>
+                    <span className={style.faqPlus}>+</span>
+                    <span className={style.faqMinus}>−</span>
+                  </span>
+                </summary>
+                <p className={style.faqAnswer}>{item.a}</p>
+              </details>
             ))}
           </div>
         </div>
       </section>
 
      {/* ================= FOOTER ================= */}
-                 <Certificate />
                  <FooterUpperPart product="Budget" text1={footerUpperText.text1} text2= {<> {footerUpperText.text2} <br />  </>} text3={footerUpperText.text3} img={overviewIcon} />
                  {!isEmbed && <FooterLower />}
      

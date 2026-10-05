@@ -39,16 +39,11 @@ const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/Rise/allHero/accounth.web
 
 const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Rise/section3Laptop/account.webp";
 
-import Accordion from "../../Components/Accordian/Accordian.jsx"
-
-
-
 import { FaArrowRightLong } from "react-icons/fa6";
 
 
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
 import FooterLower from "../../Components/Footer/FooterLower.jsx"
-import Certificate from "../../Components/Certificate/Certificate.jsx"
 
 
 export default function AccountAndFinance() {
@@ -79,63 +74,63 @@ export default function AccountAndFinance() {
       heading: "Comprehensive Financial Management",
       desc: "Manage all core financial functions, including accounts receivable, accounts payable, debit & credit notes, taxation, balance sheets, and general ledger. Streamline processes and ensure timely payments and collections.",
       img: cfm,
-      width: "65px",
+      width: "44px",
     __w: 300, __h: 300},
     {
       key: 2,
       heading: "Real-Time Financial Data",
       desc: "Access up-to-date financial data at any time, empowering managers to make data-driven decisions that enhance profitability and financial health.",
       img: rtfd,
-      width: "65px",
+      width: "44px",
     __w: 300, __h: 300},
     {
       key: 3,
       heading: "Integrated Invoicing and Billing",
       desc: "Automatically generate invoices and billing statements for room bookings, event bookings, dining, and more. Customizable invoice templates ensure branding consistency and accuracy.",
       img: iib,
-      width: "65px",
+      width: "44px",
     __w: 300, __h: 300},
     {
       key: 4,
       heading: "Tax Management and Compliance",
       desc: "Stay compliant with regional and international tax regulations. Automate tax calculations based on local laws and apply them seamlessly to invoices and payments.",
       img: tmc,
-      width: "65px",
+      width: "44px",
     __w: 300, __h: 300},
     {
       key: 5,
       heading: "Advanced Reporting and Analytics",
       desc: "Create custom financial reports that provide deeper insights into revenue, expenditures, profit margins, etc. Analyze trends and generate forecasts to support future planning.",
       img: ara,
-      width: "65px",
+      width: "44px",
     __w: 300, __h: 300},
     {
       key: 6,
       heading: "Payment Gateway Integration",
       desc: "Integrated with secure payment gateways, businesses can process payments efficiently and track financial transactions in real-time.",
       img: pgi,
-      width: "58px",
+      width: "44px",
     __w: 300, __h: 300},
     {
       key: 7,
       heading: "Budgeting and Forecasting",
       desc: "Plan and monitor your budget effectively with integrated forecasting tools. Track expenses, and revenues, and allocate resources for better financial planning.",
       img: bf,
-      width: "58px",
+      width: "44px",
     __w: 300, __h: 300},
     {
       key: 8,
       heading: "Cash Flow Management",
       desc: "Monitor cash flow with real-time reporting to ensure liquidity, helping businesses manage operational costs and optimize cash reserves.",
       img: cfm,
-      width: "60px",
+      width: "44px",
     __w: 300, __h: 300},
     {
       key: 9,
       heading: "Vendor and Supplier Payments",
       desc: "Easily manage payments to vendors and suppliers, track due invoices, and ensure timely settlements with the automated payment tracking system.",
       img: vsp,
-      width: "60px",
+      width: "44px",
     __w: 300, __h: 300},
 
   ];
@@ -264,7 +259,7 @@ export default function AccountAndFinance() {
 
             <div className={`${style.headingBox} font4 `}>
               <div className={`${style.mainHeading}`}>
-                <span style={{ color: "#012060" }} >ACCOUNTS</span><span style={{ color: "#01B0F1" }} > & FINANCE</span>
+                <span style={{ color: "#333333" }} >ACCOUNTS</span><span style={{ color: "#01B0F1" }} > & FINANCE</span>
               </div>
               <div className={`${style.mainPara}`}>
                 Gain full financial control with real-time accounting and financial insights, tailored for accuracy and business growth.
@@ -295,7 +290,7 @@ export default function AccountAndFinance() {
 
           <div className={`${style.headingBoxPhone} font4 `}>
             <div className={`${style.mainHeadingPhone}`}>
-              <span style={{ color: "#012060" }} >ACCOUNTS</span><span style={{ color: "#01B0F1" }} > & FINANCE</span>
+              <span style={{ color: "#333333" }} >ACCOUNTS</span><span style={{ color: "#01B0F1" }} > & FINANCE</span>
             </div>
             <div className={`${style.mainParaPhone}`}>
               Gain full financial control with real-time accounting and financial insights, tailored for accuracy and business growth.
@@ -425,8 +420,8 @@ export default function AccountAndFinance() {
 
                 <div className={`${style.headingAndIconFeatures}`}>
 
-                  <div style={{ width: item.width }}>
-                    <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
+                  <div style={{ width: item.width, height: item.width }}>
+                    <img style={{ width: "100%", height: "100%", objectFit: "contain" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
                   </div>
 
                   <div className={`${style.featureHeading}`}>
@@ -450,24 +445,21 @@ export default function AccountAndFinance() {
 
           </div>
 
-        </div>
-      </section>
+          <div className={`${style.requestDemoBtn}`}>
 
-      <section className={`${style.requestDemoBtn}`}>
+            <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form?product=EiceRise(Account and Finance)"}>
+              <div className={`${style.demoBtnWrapper} globalSectionSize`}>
+                <div className={`${style.demoButton} font1`}>
+                  <div > Request a Demo </div>
+                  <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
+                </div>
 
-
-        <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form?product=EiceRise(Account and Finance)"}>
-          <div className={`${style.demoBtnWrapper} globalSectionSize`}>
-            <div className={`${style.demoButton} font1`}>
-              <div > Request a Demo </div>
-              <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
-            </div>
+              </div>
+            </Link>
 
           </div>
-        </Link>
 
-
-
+        </div>
       </section>
 
 
@@ -518,12 +510,24 @@ export default function AccountAndFinance() {
 
       <section >
         <div className={`${style.FAQsection} globalSectionSize font4`}>
-          <div className={`${style.FAQHeading}`}>Frequently Asked Questions</div>
+          <div className={style.FAQHeadingBlock}>
+            <div className={style.FAQEyebrow}>FAQs</div>
+            <div className={style.FAQHeading}>Frequently Asked Questions</div>
+          </div>
 
 
           <div className={style.FAQContainer}>
             {query.map((item, index) => (
-              <Accordion key={item.key ?? index} question={item.question} answer={item.answer} />
+              <details key={item.key ?? index} className={style.faqItem}>
+                <summary className={style.faqSummary}>
+                  <span>{item.question}</span>
+                  <span className={style.faqToggle}>
+                    <span className={style.faqPlus}>+</span>
+                    <span className={style.faqMinus}>−</span>
+                  </span>
+                </summary>
+                <p className={style.faqAnswer}>{item.answer}</p>
+              </details>
             ))}
           </div>
 
@@ -532,7 +536,6 @@ export default function AccountAndFinance() {
 
 
       <div >
-        <Certificate/>
        <FooterUpperPart product="Account & Finance" text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={laptop} />
        {!isEmbed &&<FooterLower />}
 

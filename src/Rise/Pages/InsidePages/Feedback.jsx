@@ -5,8 +5,6 @@ import { Link } from '@/nextNavigation';
 import { useEffect, useState } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-import Accordion from "../../Components/Accordian/Accordian.jsx";
-import Certificate from "../../Components/Certificate/Certificate.jsx";
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx";
 import FooterLower from "../../Components/Footer/FooterLower.jsx";
 const caIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/feedback/CA.png";
@@ -187,7 +185,7 @@ export default function Feedback() {
             </div>
 
             <div className={style.headingBoxPhone}>
-              <div className={style.mainHeadingPhone}>FEEDBACK <span style={{color:"01b0F1"}}>SYSTEM</span></div>
+              <div className={style.mainHeadingPhone}>FEEDBACK <span style={{color:"#01B0F1"}}>SYSTEM</span></div>
               <div className={style.mainParaPhone}>
                 Capture, analyze, and act on guest feedback in real time, transforming opinions into operational improvements and enhanced guest satisfaction.
               </div>
@@ -270,18 +268,18 @@ export default function Feedback() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* ================= CTA ================= */}
-      <section className={style.requestDemoBtn}>
-        <Link to="/products/eicerise/form?product=EiceRise(Feedback)" style={{ color: "white",  textDecoration: "none" }}>
-          <div className={`${style.demoBtnWrapper} globalSectionSize`}>
-            <div className={style.demoButton}>
-              Request a Demo <FaArrowRightLong />
-            </div>
+          <div className={style.requestDemoBtn}>
+            <Link to="/products/eicerise/form?product=EiceRise(Feedback)" style={{ color: "white",  textDecoration: "none" }}>
+              <div className={`${style.demoBtnWrapper} globalSectionSize`}>
+                <div className={style.demoButton}>
+                  Request a Demo <FaArrowRightLong />
+                </div>
+              </div>
+            </Link>
           </div>
-        </Link>
+
+        </div>
       </section>
 
       {/* ================= BENEFITS ================= */}
@@ -318,19 +316,30 @@ export default function Feedback() {
       {/* ================= FAQ ================= */}
       <section>
         <div className={`${style.FAQsection} globalSectionSize`}>
-          <div className={style.FAQHeading}>Frequently Asked Questions</div>
+          <div className={style.FAQHeadingBlock}>
+            <div className={style.FAQEyebrow}>FAQs</div>
+            <div className={style.FAQHeading}>Frequently Asked Questions</div>
+          </div>
 
           <div className={style.FAQContainer}>
             {query.map((item, i) => (
-              <Accordion key={i} question={item.question} answer={item.answer} />
+              <details key={i} className={style.faqItem}>
+                <summary className={style.faqSummary}>
+                  <span>{item.question}</span>
+                  <span className={style.faqToggle}>
+                    <span className={style.faqPlus}>+</span>
+                    <span className={style.faqMinus}>−</span>
+                  </span>
+                </summary>
+                <p className={style.faqAnswer}>{item.answer}</p>
+              </details>
             ))}
           </div>
         </div>
       </section>
 
-     
+
            {/* ================= FOOTER ================= */}
-                           <Certificate />
                            <FooterUpperPart product="Feedback" text1={footerUpperText.text1} text2= {<> {footerUpperText.text2} <br />  </>} text3={footerUpperText.text3} img={overviewIcon} />
                            {!isEmbed && <FooterLower />}
                

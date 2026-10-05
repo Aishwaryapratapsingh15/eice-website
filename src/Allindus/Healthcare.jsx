@@ -495,11 +495,11 @@ const CaseStudy = ({ title, description, image, __w, __h }) => (
 
 
 
-  <div className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 md:p-4">
+  
 
 
 
-    <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
+    <div className="bg-white rounded-[18px] overflow-hidden border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
 
 
 
@@ -523,11 +523,11 @@ const CaseStudy = ({ title, description, image, __w, __h }) => (
 
 
 
-      <div className="p-3 md:p-4">
+      <div className="pt-[19px] px-[25px] pb-[25px]">
 
 
 
-        <h3 className="fontweight_1 text-[24px] sm:text-base md:text-lg mb-1 sm:mb-2">
+        <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
 
 
 
@@ -539,7 +539,7 @@ const CaseStudy = ({ title, description, image, __w, __h }) => (
 
 
 
-        <p className="text-gray-600 text-[16px] sm:text-sm">{description}</p>
+        <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6] mb-[18px]">{description}</p>
 
 
 
@@ -551,7 +551,7 @@ const CaseStudy = ({ title, description, image, __w, __h }) => (
 
 
 
-  </div>
+  
 
 
 
@@ -579,24 +579,12 @@ function Cstdmain() {
 
 
 
-    <div className="font-manrope px-4 md:px-10 lg:px-20 xl:px-40">
+    <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 sm:max-w-7xl mx-auto text-center py-8">
 
 
 
-      <h2 className="text-bloo text-xs font-extrabold uppercase tracking-[0.12em] text-center py-2">
+      <h1 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">
         Case Studies
-
-
-
-      </h2>
-
-
-
-      <h1 className="text-blackk  fontweight_1 text-center text-[32px] sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1 pb-8">
-
-
-
-        Explore how we digitally transformed other businesses
 
 
 
@@ -604,11 +592,23 @@ function Cstdmain() {
 
 
 
-      <main className=" mx-auto max-w-7xl">
+      <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] py-1 mb-8">
 
 
 
-        <nav className="mb-8 sm:mb-12">
+        Explore how we digitally transformed other businesses
+
+
+
+      </h2>
+
+
+
+      <main className="mx-auto max-w-7xl">
+
+
+
+        <nav className="mb-3">
 
 
 
@@ -712,7 +712,7 @@ function Cstdmain() {
 
 
 
-            <h2 className="text-[24px] px-2 sm:text-2xl fontweight_1 mb-4 sm:mb-6">
+            <h2 className="text-[18px] px-2 sm:text-[20px] font-semibold mt-4 mb-4">
 
 
 
@@ -724,7 +724,7 @@ function Cstdmain() {
 
 
 
-            <div className="flex flex-wrap -mx-2">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
 
 
 
@@ -992,19 +992,19 @@ function Healthcare() {
 
 
 
-        <div className="max-w-7xl mx-auto text-center flex flex-col gap-4 pb-8">
+        <div className="max-w-7xl mx-auto text-center flex flex-col gap-8 pb-10">
 
 
 
-          <h1 className="text-blackk  fontweight_1 text-center text-[32px] sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl pb-4">
+          <h1 className="text-blackk font-genral font-semibold text-center text-[32px] sm:text-[44px] leading-[1.1] max-w-4xl">
 
 
 
-            Transforming <span className="text-bloo">Healthcare</span> with
+            Transforming <span className="text-bloo">Healthcare</span> with <span className="hidden sm:block">
 
 
 
-            Innovative Technology
+            Innovative Technology</span>
 
 
 
@@ -1012,7 +1012,7 @@ function Healthcare() {
 
 
 
-          <p className="font-medium text-blackk/70 text-[16px] sm:text-xl max-w-7xl ">
+          <p className="mt-3 font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]  sm:text-center">
 
 
 
@@ -1064,11 +1064,11 @@ function Healthcare() {
 
 
 
-        <div className="sm:max-w-3xl mx-auto text-center pb-4">
+        <div className="sm:max-w-7xl mx-auto text-center py-8">
 
 
 
-          <h1 className="text-bloo text-xs font-extrabold uppercase tracking-[0.12em] text-center pb-4">
+          <h1 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">
             Key Services
 
 
@@ -1077,7 +1077,7 @@ function Healthcare() {
 
 
 
-          <h1 className="text-blackk  fontweight_1 text-center text-[32px] sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl pb-4">
+          <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] py-1">
 
 
 
@@ -1085,7 +1085,7 @@ function Healthcare() {
 
 
 
-          </h1>
+          </h2>
 
 
 
@@ -1093,7 +1093,7 @@ function Healthcare() {
 
 
 
-        <div className="sm:max-w-7xl w-full mx-auto pb-8">
+        <div className="sm:max-w-7xl w-full mx-auto pb-10">
 
 
 
@@ -1273,11 +1273,11 @@ function Healthcare() {
 
 
 
-        <div className="pb-4">
+        <div className="pt-10 sm:max-w-7xl mx-auto text-center">
 
 
 
-          <h1 className="text-blackk  fontweight_1 text-center text-[32px] sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl pb-4">
+          <h1 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] max-w-4xl">
 
 
 
@@ -1293,19 +1293,19 @@ function Healthcare() {
 
 
 
-        <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 pb-8">
+        <div className="grid md:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto py-8">
 
 
 
-          <div className="group  p-4 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
+          <div className="rounded-[18px] border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] p-[25px]">
 
 
 
-            <div className=" rounded-full  flex items-start justify-start w-full px-4">
+            <div className="rounded-lg flex items-start mb-[19px]">
 
 
 
-              <BiCode size={48} className="text-bloo" />
+              <BiCode size={44} className="text-bloo" />
 
 
 
@@ -1313,11 +1313,11 @@ function Healthcare() {
 
 
 
-            <div className="pt-6 h-full text-left">
+            <div className="h-full items-start">
 
 
 
-              <h1 className="text-blackk fontweight_1 text-[24px] pt-4 pb-4 sm:text-2xl px-4">
+              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
 
 
@@ -1329,7 +1329,7 @@ function Healthcare() {
 
 
 
-              <p className="font-medium text-blackk/70 text-[16px] sm:text-xl px-4">
+              <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
 
 
 
@@ -1357,15 +1357,15 @@ function Healthcare() {
 
 
 
-          <div className="group  p-4 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
+          <div className="rounded-[18px] border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] p-[25px]">
 
 
 
-            <div className=" rounded-full flex items-start justify-start w-full px-4">
+            <div className="rounded-lg flex items-start mb-[19px]">
 
 
 
-              <IoAnalytics size={48} className="text-bloo" />
+              <IoAnalytics size={44} className="text-bloo" />
 
 
 
@@ -1373,11 +1373,11 @@ function Healthcare() {
 
 
 
-            <div className="pt-6 h-full text-left">
+            <div className="h-full items-start">
 
 
 
-              <h1 className="text-blackk fontweight_1 text-[24px] pt-4 pb-4 sm:text-2xl px-4">
+              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
 
 
@@ -1389,7 +1389,7 @@ function Healthcare() {
 
 
 
-              <p className="font-medium text-blackk/70 text-[16px] sm:text-xl px-4">
+              <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
 
 
 
@@ -1421,15 +1421,15 @@ function Healthcare() {
 
 
 
-          <div className="group  p-4 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
+          <div className="rounded-[18px] border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] p-[25px]">
 
 
 
-            <div className=" rounded-full  flex items-start justify-start w-full px-4">
+            <div className="rounded-lg flex items-start mb-[19px]">
 
 
 
-              <MdArchitecture size={48} className="text-bloo" />
+              <MdArchitecture size={44} className="text-bloo" />
 
 
 
@@ -1437,11 +1437,11 @@ function Healthcare() {
 
 
 
-            <div className="pt-6 h-full text-left">
+            <div className="h-full items-start">
 
 
 
-              <h1 className="text-blackk fontweight_1 text-[24px] pt-4 pb-4 sm:text-2xl px-4">
+              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
 
 
@@ -1453,7 +1453,7 @@ function Healthcare() {
 
 
 
-              <p className="font-medium text-blackk/70 text-[16px] sm:text-xl px-4">
+              <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
 
 
 
@@ -1481,15 +1481,15 @@ function Healthcare() {
 
 
 
-          <div className="group  p-4 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
+          <div className="rounded-[18px] border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] p-[25px]">
 
 
 
-            <div className=" rounded-full  flex items-start justify-start w-full px-4">
+            <div className="rounded-lg flex items-start mb-[19px]">
 
 
 
-              <MdLocalPharmacy size={48} className="text-bloo" />
+              <MdLocalPharmacy size={44} className="text-bloo" />
 
 
 
@@ -1497,11 +1497,11 @@ function Healthcare() {
 
 
 
-            <div className="pt-6 h-full text-left">
+            <div className="h-full items-start">
 
 
 
-              <h1 className="text-blackk fontweight_1 text-[24px] pt-4 pb-4 sm:text-2xl px-4">
+              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
 
 
@@ -1513,7 +1513,7 @@ function Healthcare() {
 
 
 
-              <p className="font-medium text-blackk/70 text-[16px] sm:text-xl px-4">
+              <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
 
 
 
@@ -1541,15 +1541,15 @@ function Healthcare() {
 
 
 
-          <div className="group  p-4 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
+          <div className="rounded-[18px] border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] p-[25px]">
 
 
 
-            <div className=" rounded-full  flex items-start justify-start w-full px-4">
+            <div className="rounded-lg flex items-start mb-[19px]">
 
 
 
-              <BiSupport size={48} className="text-bloo" />
+              <BiSupport size={44} className="text-bloo" />
 
 
 
@@ -1557,11 +1557,11 @@ function Healthcare() {
 
 
 
-            <div className="pt-6 h-full text-left">
+            <div className="h-full items-start">
 
 
 
-              <h1 className="text-blackk fontweight_1 text-[24px] pt-4 pb-4 sm:text-2xl px-4">
+              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
 
 
@@ -1573,7 +1573,7 @@ function Healthcare() {
 
 
 
-              <p className="font-medium text-blackk/70 text-[16px] sm:text-xl px-4">
+              <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
 
 
 

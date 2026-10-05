@@ -42,8 +42,6 @@ const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Rise/section3Laptop/room.w
 
 
 
-import Accordion from "../../Components/Accordian/Accordian.jsx"
-
 import { FaArrowRightLong } from "react-icons/fa6";
 
 
@@ -58,7 +56,6 @@ import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
 
 
 import { useEffect , useState } from "react"
-import Certificate from "../../Components/Certificate/Certificate.jsx"
 
 
 
@@ -107,17 +104,17 @@ export default function RoomBooking() {
             heading2: "Room Availability",
             desc: "Easily check room availability in real-time, providing guests with up-to-date information to make informed booking decisions.",
             img: rt,
-            width: "73px",
+            width: "44px",
 
 
-        __w: 200, __h: 200},
+        __w: 100, __h: 100},
         {
             key: 2,
             heading: "Flexible Room ",
             heading2: "Selection",
             desc: "Choose from a variety of room types, including standard, deluxe, and suite categories. Each room type includes detailed descriptions, photos, and amenities.",
             img: frs,
-            width: "62px"
+            width: "44px"
         , __w: 200, __h: 200},
         {
             key: 3,
@@ -125,7 +122,7 @@ export default function RoomBooking() {
             heading2: "Wi-Fi Access",
             desc: "Automatically grants guests secure Wi-Fi access as part of their booking package, enhancing their stay experience from the moment they check in.",
             img: wifi,
-            width: "60px"
+            width: "44px"
         , __w: 200, __h: 200},
         {
             key: 4,
@@ -133,7 +130,7 @@ export default function RoomBooking() {
             heading2: "Booking Options",
             desc: "Enable guests to select add-ons such as breakfast packages, airport transfers, or room upgrades directly during the booking process.",
             img: cbo,
-            width: "56px"
+            width: "44px"
         , __w: 200, __h: 200},
         {
             key: 5,
@@ -141,7 +138,7 @@ export default function RoomBooking() {
             heading2: "& Promotions",
             desc: "Dynamic pricing based on demand, seasonality, and special events, with options for promotional codes and loyalty discounts to attract repeat customers.",
             img: app,
-            width: "70px"
+            width: "44px"
         , __w: 200, __h: 200},
         {
             key: 6,
@@ -149,7 +146,7 @@ export default function RoomBooking() {
             heading2: "Booking Dashboard",
             desc: "Manage all room bookings from a single dashboard. Track check-ins, check-outs, and cancellations effortlessly, optimizing room occupancy rates.",
             img: cbd,
-            width: "60px"
+            width: "44px"
         , __w: 200, __h: 200},
         {
             key: 7,
@@ -157,7 +154,7 @@ export default function RoomBooking() {
             heading2: "Payment Gateway",
             desc: "Secure online payment processing with multiple options (credit/debit cards, UPI, mobile wallets) for a smooth, hassle-free booking experience.",
             img: ipg,
-            width: "60px"
+            width: "44px"
         , __w: 200, __h: 200},
         {
             key: 8,
@@ -165,7 +162,7 @@ export default function RoomBooking() {
             heading2: "Interface",
             desc: "Guests can book rooms on the go using mobile devices, ensuring a responsive and seamless experience across all platforms.",
             img: mfi,
-            width: "60px"
+            width: "44px"
         , __w: 200, __h: 200},
         {
             key: 9,
@@ -173,7 +170,7 @@ export default function RoomBooking() {
             heading2: "",
             desc: "Automated email and SMS confirmations are sent to guests upon successful booking, including details like check-in time, room type, and any additional services selected.",
             img: ibc,
-            width: "56px"
+            width: "44px"
         , __w: 200, __h: 200},
 
     ];
@@ -255,7 +252,7 @@ export default function RoomBooking() {
 
     <div className={`${style.headingBoxPhone} font4 `}>
         <div className={`${style.mainHeadingPhone}`}>
-            <span style={{ color: "#012060" }} >ROOM</span><span style={{ color: "#01B0F1" }} > BOOKING</span>
+            <span style={{ color: "#333333" }} >ROOM</span><span style={{ color: "#01B0F1" }} > BOOKING</span>
         </div>
         <div className={`${style.mainParaPhone}`}>
             Streamline guest reservations with a seamless and intuitive Room Booking Module, ensuring effortless check-ins and an exceptional customer experience.
@@ -276,7 +273,7 @@ export default function RoomBooking() {
 
         <div className={`${style.headingBox} font4 `}>
             <div className={`${style.mainHeading}`}>
-                <span style={{ color: "#012060" }} >ROOM</span><span style={{ color: "#01B0F1" }} > BOOKING</span>
+                <span style={{ color: "#333333" }} >ROOM</span><span style={{ color: "#01B0F1" }} > BOOKING</span>
             </div>
             <div className={`${style.mainPara}`}>
                 Streamline guest reservations with a seamless and intuitive Room Booking Module, ensuring effortless check-ins and an exceptional customer experience.
@@ -397,8 +394,8 @@ export default function RoomBooking() {
 
                                 <div className={`${style.headingAndIconFeatures}`}>
 
-                                    <div style={{ width: item.width }}>
-                                        <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
+                                    <div style={{ width: item.width, height: item.width }}>
+                                        <img style={{ width: "100%", height: "100%", objectFit: "contain" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
                                     </div>
 
                                     <div className={`${style.featureHeading}`}>
@@ -424,23 +421,21 @@ export default function RoomBooking() {
 
                     </div>
 
-                </div>
-            </section>
+                    <div className={`${style.requestDemoBtn}`}>
 
+                        <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form?product=EiceRise(Room Booking)"}>
+                            <div className={`${style.demoBtnWrapper} globalSectionSize`}>
+                                <div className={`${style.demoButton} font1`}>
+                                    <div > Request a Demo </div>
+                                    <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
+                                </div>
 
-            <section className={`${style.requestDemoBtn}`}>
-
-                <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form?product=EiceRise(Room Booking)"}>
-                    <div className={`${style.demoBtnWrapper} globalSectionSize`}>
-                        <div className={`${style.demoButton} font1`}>
-                            <div > Request a Demo </div>
-                            <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
-                        </div>
+                            </div>
+                        </Link>
 
                     </div>
-                </Link>
 
-
+                </div>
             </section>
 
 
@@ -493,18 +488,30 @@ export default function RoomBooking() {
 
             <section >
                 <div className={`${style.FAQsection} globalSectionSize font4`}>
-                    <div className={`${style.FAQHeading}`}>Frequently Asked Questions</div>
+                    <div className={style.FAQHeadingBlock}>
+                        <div className={style.FAQEyebrow}>FAQs</div>
+                        <div className={style.FAQHeading}>Frequently Asked Questions</div>
+                    </div>
 
 
                     <div className={style.FAQContainer}>
                         {query.map((item, index) => (
-                            <Accordion key={item.key ?? index} question={item.question} answer={item.answer} />
+                            <details key={item.key ?? index} className={style.faqItem}>
+                                <summary className={style.faqSummary}>
+                                    <span>{item.question}</span>
+                                    <span className={style.faqToggle}>
+                                        <span className={style.faqPlus}>+</span>
+                                        <span className={style.faqMinus}>−</span>
+                                    </span>
+                                </summary>
+                                <p className={style.faqAnswer}>{item.answer}</p>
+                            </details>
                         ))}
                     </div>
 
                 </div>
             </section>
-            {/* 
+            {/*
             <div >
                 <Footer2 />
 
@@ -512,7 +519,6 @@ export default function RoomBooking() {
 
 
             <div >
-                <Certificate/>
                <FooterUpperPart product="Room Booking" text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={laptop} />
                {!isEmbed && <FooterLower /> }
 

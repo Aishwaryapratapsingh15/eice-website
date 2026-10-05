@@ -36,17 +36,12 @@ const oe = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/member/member
 
 const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Rise/section3Laptop/member.webp";
 
-import Accordion from "../../Components/Accordian/Accordian.jsx"
-
-
-
 import { FaArrowRightLong } from "react-icons/fa6";
 
 import { useState, useEffect } from "react"
 
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
 import FooterLower from "../../Components/Footer/FooterLower.jsx"
-import Certificate from "../../Components/Certificate/Certificate.jsx"
 
 
 
@@ -82,42 +77,42 @@ export default function MemberSuite() {
       heading: "Membership Registration and Management",
       desc: "Seamlessly register and manage different membership tiers, and convert membership with customizable features, including individual, family, corporate, and lifetime memberships.",
       img: mrm,
-      width: "86px"
+      width: "44px"
     , __w: 300, __h: 300},
     {
       key: 2,
       heading: "Self-Service Portal",
       desc: "Empower members with a self-service portal to update their profiles, renew subscriptions, and outstanding bills, view membership benefits, and access exclusive offers.",
       img: ssp,
-      width: "60px"
+      width: "44px"
     , __w: 300, __h: 300},
     {
       key: 3,
       heading: "Subscription Management",
       desc: "Automate subscription renewals, payments, and reminders, ensuring members stay informed and engaged without any manual effort.",
       img: sm,
-      width: "60px"
+      width: "44px"
     , __w: 300, __h: 300},
     {
       key: 4,
       heading: "Exclusive Member Benefits",
       desc: "Offer tailored benefits such as priority bookings, special discounts, and access to exclusive events, enhancing the overall member experience.",
       img: emb,
-      width: "65px"
+      width: "44px"
     , __w: 300, __h: 300},
     {
       key: 5,
       heading: "Integrated Communication Tools",
       desc: "Enable real-time communication with members via email, push notifications, and in-app messages, keeping them informed about events, announcements, and offers.",
       img: ict,
-      width: "65px"
+      width: "44px"
     , __w: 300, __h: 300},
     {
       key: 6,
       heading: "Analytics Dashboard",
       desc: "Gain insights into member activity, preferences, and engagement levels with detailed analytics, helping you tailor services to meet their needs.",
       img: ad,
-      width: "60px"
+      width: "44px"
     , __w: 300, __h: 300}
   ];
 
@@ -220,7 +215,7 @@ export default function MemberSuite() {
 
             <div className={`${style.headingBoxPhone} font4 `}>
               <div className={`${style.mainHeadingPhone}`}>
-                <span style={{ color: "#012060" }} >MEMBER</span><span style={{ color: "#01B0F1" }} > SUITE</span>
+                <span style={{ color: "#333333" }} >MEMBER</span><span style={{ color: "#01B0F1" }} > SUITE</span>
               </div>
               <div className={`${style.mainParaPhone}`}>
                 Build a thriving member community with our Membership Portal, offering streamlined membership management and engagement tools.
@@ -242,7 +237,7 @@ export default function MemberSuite() {
 
             <div className={`${style.headingBox} font4 `}>
               <div className={`${style.mainHeading}`}>
-                <span style={{ color: "#012060" }} >MEMBER</span><span style={{ color: "#01B0F1" }} > SUITE</span>
+                <span style={{ color: "#333333" }} >MEMBER</span><span style={{ color: "#01B0F1" }} > SUITE</span>
               </div>
               <div className={`${style.mainPara}`}>
                 Build a thriving member community with our Membership Portal, offering streamlined membership management and engagement tools.
@@ -383,8 +378,8 @@ export default function MemberSuite() {
 
                 <div className={`${style.headingAndIconFeatures}`}>
 
-                  <div style={{ width: item.width }}>
-                    <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
+                  <div style={{ width: item.width, height: item.width }}>
+                    <img style={{ width: "100%", height: "100%", objectFit: "contain" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
                   </div>
 
                   <div className={`${style.featureHeading}`}>
@@ -408,24 +403,21 @@ export default function MemberSuite() {
 
           </div>
 
-        </div>
-      </section>
+          <div className={`${style.requestDemoBtn}`}>
 
+            <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form?product=EiceRise(Member Suite)"}>
+              <div className={`${style.demoBtnWrapper} globalSectionSize`}>
+                <div className={`${style.demoButton} font1`}>
+                  <div > Request a Demo </div>
+                  <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
+                </div>
 
-
-      <section className={`${style.requestDemoBtn}`}>
-
-        <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form?product=EiceRise(Member Suite)"}>
-          <div className={`${style.demoBtnWrapper} globalSectionSize`}>
-            <div className={`${style.demoButton} font1`}>
-              <div > Request a Demo </div>
-              <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
-            </div>
+              </div>
+            </Link>
 
           </div>
-        </Link>
 
-
+        </div>
       </section>
 
 
@@ -478,12 +470,24 @@ export default function MemberSuite() {
 
       <section >
         <div className={`${style.FAQsection} globalSectionSize font4`}>
-          <div className={`${style.FAQHeading}`}>Frequently Asked Questions</div>
+          <div className={style.FAQHeadingBlock}>
+            <div className={style.FAQEyebrow}>FAQs</div>
+            <div className={style.FAQHeading}>Frequently Asked Questions</div>
+          </div>
 
 
           <div className={style.FAQContainer}>
             {query.map((item, index) => (
-              <Accordion key={item.key ?? index} question={item.question} answer={item.answer} />
+              <details key={item.key ?? index} className={style.faqItem}>
+                <summary className={style.faqSummary}>
+                  <span>{item.question}</span>
+                  <span className={style.faqToggle}>
+                    <span className={style.faqPlus}>+</span>
+                    <span className={style.faqMinus}>−</span>
+                  </span>
+                </summary>
+                <p className={style.faqAnswer}>{item.answer}</p>
+              </details>
             ))}
           </div>
 
@@ -492,7 +496,6 @@ export default function MemberSuite() {
 
 
       <div >
-        <Certificate/>
         <FooterUpperPart product="Member Suite" text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={laptop} />
        {!isEmbed &&<FooterLower />}
 

@@ -34,13 +34,10 @@ const te = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pay/payrollBe
 
 const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Rise/section3Laptop/pay.webp";
 
-import Accordion from "../../Components/Accordian/Accordian.jsx"
-
 import { useEffect , useState } from "react"
 import { FaArrowRightLong } from "react-icons/fa6";
 import FooterLower from "../../Components/Footer/FooterLower.jsx"
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
-import Certificate from "../../Components/Certificate/Certificate.jsx"
 
 
 
@@ -76,42 +73,42 @@ export default function Payroll() {
       heading: "Automated Payroll Processing",
       desc: "Automates salary calculations, deductions, bonuses, and taxes, ensuring timely and accurate payroll processing every time.",
       img: app,
-      width: "58px",
+      width: "44px",
     __w: 300, __h: 300},
     {
       key: 2,
       heading: "Employee Data Management",
       desc: "Centralized storage of employee records, including salary details, benefits, tax information, and working hours, ensuring easy access and data accuracy.",
       img: edm,
-      width: "59px",
+      width: "44px",
     __w: 300, __h: 300},
     {
       key: 3,
       heading: "Customizable Pay Structures",
       desc: "Define multiple earnings & deduction pay types, to accommodate various employee compensation models.",
       img: cps,
-      width: "54px",
+      width: "44px",
     __w: 300, __h: 300},
     {
       key: 4,
       heading: "Tax Compliance and Reporting",
       desc: "Automatically calculates taxes based on current laws, generates tax reports, and ensures compliance regulations.",
       img: tcr,
-      width: "62px",
+      width: "44px",
     __w: 300, __h: 300},
     {
       key: 5,
       heading: "Leave and Attendance Management",
       desc: "Integrates with time tracking systems to manage employee leave, absences, and overtime, ensuring accurate payroll calculations.",
       img: lam,
-      width: "71px",
+      width: "44px",
     __w: 300, __h: 300},
     {
       key: 6,
       heading: "Direct Deposit and Payment Processing",
       desc: "Enables direct deposit to employees' bank accounts, reducing manual payment efforts and improving payment accuracy.",
       img: ddpp,
-      width: "63px",
+      width: "44px",
     __w: 300, __h: 300},
 
   ];
@@ -236,7 +233,7 @@ export default function Payroll() {
 
                 <div className={`${style.headingBoxPhone} font4 `}>
                     <div className={`${style.mainHeadingPhone}`}>
-                    <span style={{ color: "#012060" }} >PAYROLL</span><span style={{ color: "#01B0F1" }} > MANAGEMENT</span>
+                    <span style={{ color: "#333333" }} >PAYROLL</span><span style={{ color: "#01B0F1" }} > MANAGEMENT</span>
                     </div>
                     <div className={`${style.mainParaPhone}`}>
                     Simplify payroll processing with automated solutions for timely payouts, tax compliance, and employee satisfaction.
@@ -257,7 +254,7 @@ export default function Payroll() {
 
           <div className={`${style.headingBox} font4 `}>
             <div className={`${style.mainHeading}`}>
-              <span style={{ color: "#012060" }} >PAYROLL</span><span style={{ color: "#01B0F1" }} > MANAGEMENT</span>
+              <span style={{ color: "#333333" }} >PAYROLL</span><span style={{ color: "#01B0F1" }} > MANAGEMENT</span>
             </div>
             <div className={`${style.mainPara}`}>
             Simplify payroll processing with automated solutions for timely payouts, tax compliance, and employee satisfaction.
@@ -397,8 +394,8 @@ export default function Payroll() {
 
                 <div className={`${style.headingAndIconFeatures}`}>
 
-                  <div style={{ width: item.width }}>
-                    <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
+                  <div style={{ width: item.width, height: item.width }}>
+                    <img style={{ width: "100%", height: "100%", objectFit: "contain" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
                   </div>
 
                   <div className={`${style.featureHeading}`}>
@@ -422,10 +419,7 @@ export default function Payroll() {
 
           </div>
 
-        </div>
-      </section>
-
-      {/* <section className={`${style.requestDemoBtn}`}>
+          {/* <section className={`${style.requestDemoBtn}`}>
 
         <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
           <div className={`${style.demoButton} font1`}>
@@ -436,20 +430,22 @@ export default function Payroll() {
         </div>
 
       </section> */}
-       <section className={`${style.requestDemoBtn}`}>
-      
-              <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form?product=EiceRise(Payroll Management)"}>
-                <div className={`${style.demoBtnWrapper} globalSectionSize`}>
-                  <div className={`${style.demoButton} font1`}>
-                    <div > Request a Demo </div>
-                    <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
-                  </div>
+          <div className={`${style.requestDemoBtn}`}>
 
+            <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form?product=EiceRise(Payroll Management)"}>
+              <div className={`${style.demoBtnWrapper} globalSectionSize`}>
+                <div className={`${style.demoButton} font1`}>
+                  <div > Request a Demo </div>
+                  <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
                 </div>
-              </Link>
-      
-      
-            </section>
+
+              </div>
+            </Link>
+
+          </div>
+
+        </div>
+      </section>
 
 
 
@@ -541,12 +537,24 @@ export default function Payroll() {
 
       <section >
         <div className={`${style.FAQsection} globalSectionSize font4`}>
-          <div className={`${style.FAQHeading}`}>Frequently Asked Questions</div>
+          <div className={style.FAQHeadingBlock}>
+            <div className={style.FAQEyebrow}>FAQs</div>
+            <div className={style.FAQHeading}>Frequently Asked Questions</div>
+          </div>
 
 
           <div className={style.FAQContainer}>
             {query.map((item, index) => (
-              <Accordion key={item.key ?? index} question={item.question} answer={item.answer} />
+              <details key={item.key ?? index} className={style.faqItem}>
+                <summary className={style.faqSummary}>
+                  <span>{item.question}</span>
+                  <span className={style.faqToggle}>
+                    <span className={style.faqPlus}>+</span>
+                    <span className={style.faqMinus}>−</span>
+                  </span>
+                </summary>
+                <p className={style.faqAnswer}>{item.answer}</p>
+              </details>
             ))}
           </div>
 
@@ -555,7 +563,6 @@ export default function Payroll() {
 
 
       <div >
-        <Certificate/>
         <FooterUpperPart product="Payroll" text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={laptop} />        {!isEmbed &&<FooterLower />}
 
       </div>

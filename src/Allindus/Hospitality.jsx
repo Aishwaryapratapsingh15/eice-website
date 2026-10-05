@@ -4,6 +4,8 @@ import { Link } from "@/nextNavigation";
 import TalkToUs from "../Othercomps/Talktous";
 import ProductFooter from "@/Product/ProductFooter";
 import { FaQuoteLeft } from "react-icons/fa";
+import { HiBars2 } from "react-icons/hi2";
+import { RiH1 } from "react-icons/ri";
 
 const heroImg1 = "https://d3r43jacxrwsrp.cloudfront.net/industries_hospitality/hero_1.png";
 const heroImg2 = "https://d3r43jacxrwsrp.cloudfront.net/industries_hospitality/hero_2.png";
@@ -177,32 +179,32 @@ const cs_projects = [
 ];
 
 const CaseStudy = ({ title, description, image }) => (
-  <div className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 md:p-4">
-    <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
+  
+    <div className="bg-white rounded-[18px] overflow-hidden border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
       <img
         src={image?.src || image}
         alt={title}
         className="w-full h-32 sm:h-40 md:h-48 object-cover transition duration-300 filter grayscale hover:grayscale-0"
       />
-      <div className="p-3 md:p-4">
-        <h3 className="fontweight_1 text-[24px] sm:text-base md:text-lg mb-1 sm:mb-2">{title}</h3>
-        <p className="text-gray-600 text-[16px] sm:text-sm">{description}</p>
+      <div className="pt-[19px] px-[25px] pb-[25px]">
+        <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">{title}</h3>
+        <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6] mb-[18px]">{description}</p>
       </div>
     </div>
-  </div>
+  
 );
 
 function Cstdmain() {
   return (
-    <div className="font-manrope px-4 md:px-10 lg:px-20 xl:px-40">
-      <h2 className="text-bloo text-xs font-extrabold uppercase tracking-[0.12em] text-center py-2">
+    <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 sm:max-w-7xl mx-auto text-center py-8">
+      <h1 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">
         Case Studies
-      </h2>
-      <h1 className="text-blackk fontweight_1 text-center text-[32px] sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1 pb-8">
-        Explore how we digitally transformed other businesses
       </h1>
-      <main className="mx-auto max-w-7xl">
-        <div className="flex flex-wrap -mx-2">
+      <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] py-1">
+        Explore how we digitally transformed other businesses
+      </h2>
+      <main className="mx-auto max-w-7xl mt-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
           {cs_projects.map((project, index) => (
             <CaseStudy
               key={index}
@@ -290,11 +292,11 @@ export default function Hospitality() {
   };
 
   return (
-    <div className="font-manrope">
+    <div className="overflow-x-hidden">
 
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
-      <section className="px-4 md:px-10 lg:px-20 xl:px-40 pt-4 pb-8 sm:pb-12">
-        <div className="max-w-7xl mx-auto">
+      <section className="px-4 md:px-10 lg:px-20 xl:px-40">
+        <div className="sm:max-w-7xl pt-4 pb-8 w-full mx-auto grid">
         {/* Desktop: 3 images */}
         <div className="hidden sm:grid grid-cols-3 gap-4 mb-10">
           <img src={heroImg1} alt="Hospitality technology solutions" className="w-full h-64 object-cover rounded-xl"  width="1496" height="918" />
@@ -306,12 +308,12 @@ export default function Hospitality() {
           <img src={heroImg1} alt="Hospitality technology solutions" className="w-full h-48 object-cover rounded-xl"  width="1496" height="918" />
         </div>
 
-        <div className="max-w-4xl mx-auto text-center flex flex-col gap-4">
-          <h1 className="text-blackk fontweight_1 text-center text-[32px] sm:text-2xl md:text-3xl lg:text-[32px] max-w-3xl mx-auto pb-4">
+        <div className="max-w-7xl mx-auto text-center flex flex-col gap-8 pb-10">
+          <h1 className="text-blackk font-genral font-semibold text-center text-[32px] sm:text-[44px] leading-[1.1] max-w-4xl">
             <span className="text-bloo">Powering Hospitality</span> Excellence with
             Integrated Technology Solutions
           </h1>
-          <p className="font-medium text-blackk/70 text-[16px] sm:text-xl leading-relaxed max-w-4xl mx-auto">
+          <p className="mt-3 font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]  sm:text-center">
             The hospitality industry demands seamless coordination across every touchpoint — from the
             front desk to the kitchen, the boardroom to the banquet hall. At EICE Technology, we
             understand these complexities. Through{" "}
@@ -331,20 +333,19 @@ export default function Hospitality() {
       </section>
 
       {/* ── KEY SERVICES ─────────────────────────────────────────────────── */}
-      <section className="pb-8 sm:py-16">
-        <div className="px-4 md:px-10 lg:px-20 xl:px-40">
-        <div className="max-w-7xl mx-auto">
+      <section className="w-full">
+       <div className="sm:max-w-7xl mx-auto text-center py-10">
 
           {/* Section Heading */}
-          <div className="text-center mb-4 sm:mb-14">
-            <h2 className="text-bloo text-xs font-extrabold uppercase tracking-[0.12em] text-center py-2">Key Services</h2>
-            <h3 className="text-blackk fontweight_1 text-center text-[32px] sm:text-2xl md:text-3xl lg:text-[32px] max-w-3xl mx-auto">
-              Everything your property needs to run seamlessly — from front desk to
+          <div className="text-center mb-4 sm:mb-14 max-w-4xl mx-auto">
+            <h1 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">Key Services</h1>
+            <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] py-1">
+              Everything your property needs to run seamlessly from front desk to
               back office, all in one platform.
-            </h3>
+            </h2>
           </div>
 
-          <div className="flex flex-col gap-4 sm:gap-16">
+          <div className="max-w-4xl mx-auto flex flex-col gap-4 sm:gap-16">
             {services.map((svc, index) => (
               <div key={svc.id}>
 
@@ -358,14 +359,14 @@ export default function Hospitality() {
                   {/* Right — Title + Challenge + Solution */}
                   <div className="flex flex-col gap-4 justify-center">
                     {/* Service Title */}
-                    <h3 className="text-blackk fontweight_1 text-[32px] sm:text-2xl md:text-3xl lg:text-[32px]">{svc.title}</h3>
+                    <h2 className="text-[#373737] font-general font-bold text-[18px] sm:text-[20px] leading-[1.3]">{svc.title}</h2>
                     <div>
-                      <h4 className="fontweight_1 text-blackk text-[16px] sm:text-xl mb-2">The Challenge</h4>
-                      <p className="font-medium text-blackk/70 text-[16px] sm:text-xl leading-relaxed">"{svc.challenge}"</p>
+                      <h3 className="font-medium font-inter text-blackk text-[16px] sm:text-[18px] leading-[1.6]">The Challenge</h3>
+                      <p className="text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">"{svc.challenge}"</p>
                     </div>
                     <div>
-                      <h4 className="fontweight_1 text-blackk text-[16px] sm:text-xl mb-2">The Solution</h4>
-                      <p className="font-medium text-blackk/70 text-[16px] sm:text-xl leading-relaxed">{svc.solution}</p>
+                      <h3 className="font-medium font-inter text-blackk text-[16px] sm:text-[18px] leading-[1.6]">The Solution</h3>
+                      <p className="text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">{svc.solution}</p>
                     </div>
                   </div>
                 </div>
@@ -388,35 +389,34 @@ export default function Hospitality() {
             ))}
           </div>
         </div>
-        </div>
       </section>
 
       {/* ── IMPLEMENTATION APPROACH ──────────────────────────────────────── */}
-      <section className="pb-8 sm:py-16 px-4 md:px-10 lg:px-20 xl:px-40">
-        <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-4 sm:mb-12">
-          <h2 className="text-blackk fontweight_1 text-center text-[32px] sm:text-2xl md:text-3xl lg:text-[32px] max-w-3xl mx-auto pb-4">EICE Rise Implementation Approach</h2>
-          <p className="font-medium text-blackk/70 text-[16px] sm:text-xl max-w-3xl mx-auto mt-3">
-            Empowering Hospitality Businesses with a Turnkey ERP Implementation — Operational from Day One
+      <section className="w-full">
+        <div className="sm:max-w-7xl mx-auto py-10">
+        <div className="text-center mb-4">
+          <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] py-1">EICE Rise Implementation Approach</h2>
+          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl mx-auto mt-2">
+            Empowering Hospitality Businesses with a Turnkey ERP Implementation,<br className="hidden sm:block" />Operational from Day One
           </p>
         </div>
 
         {/* Steps Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mt-4 sm:mt-10 items-stretch">
+        <div className="pb-4 sm:pb-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-4 mt-4 sm:mt-8 items-stretch">
           {steps.map((step, index) => (
             <div key={step.number} className="relative h-full p-5 bg-white rounded-xl border border-gray-200 flex flex-col gap-3">
-              <div className="w-12 h-12 bg-blue-900 rounded-xl flex items-center justify-center flex-shrink-0">
+              <div className="w-11 h-11 bg-blue-900 rounded-xl flex items-center justify-center flex-shrink-0">
                 <img src={step.icon} alt={step.title} className="w-7 h-7 object-contain"  width="28" height="28" />
               </div>
-              <h4 className="fontweight_1 text-blackk text-[24px] sm:text-base">{step.title}</h4>
-              <p className="text-blackk/60 font-medium text-[16px] sm:text-xs leading-relaxed">{step.desc}</p>
-              {index < steps.length - 1 && (
+              <h4 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">{step.title}</h4>
+              <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6] mb-[18px]">{step.desc}</p>
+              {/* {index < steps.length - 1 && (
                 <div className="hidden lg:flex absolute top-1/2 -translate-y-1/2 z-10" style={{ right: "-30px" }}>
                   <div className="w-11 h-11 rounded-lg border-2 border-blue-900 flex items-center justify-center bg-white">
                     <img src={iconArrow} alt="→" className="w-5 h-5 object-contain" style={{ filter: "brightness(0) saturate(100%) invert(11%) sepia(60%) saturate(800%) hue-rotate(200deg)" }}  width="20" height="20" />
                   </div>
                 </div>
-              )}
+              )} */}
             </div>
           ))}
         </div>
@@ -424,83 +424,9 @@ export default function Hospitality() {
       </section>
 
       {/* ── CASE STUDIES ─────────────────────────────────────────────────── */}
-      <section className="bg-zinc-50 pb-8 sm:py-16">
+      <section className="bg-zinc-50">
         <Cstdmain />
       </section>
-
-      {/* ── TESTIMONIALS ─────────────────────────────────────────────────── */}
-      <section className="pb-8 sm:py-16 px-4 md:px-10 lg:px-20 xl:px-40">
-        <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-4 sm:mb-12">
-          <h2 className="text-bloo text-xs font-extrabold uppercase tracking-[0.12em] py-2">Testimonials</h2>
-          <h3 className="text-blackk fontweight_1 text-center text-[32px] sm:text-2xl md:text-3xl lg:text-[32px] max-w-3xl mx-auto">
-            Trusted by Over 60+ Companies in the Past Decade. Join Our Success Story!
-          </h3>
-        </div>
-
-        {/* Mobile: auto-scroll carousel */}
-        <div
-          ref={scrollRef}
-          className="sm:hidden flex overflow-hidden gap-4 pb-4"
-          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-          onTouchStart={handleTouchStart}
-          onTouchMove={handleTouchMove}
-          onTouchEnd={handleTouchEnd}
-        >
-          {[...testimonials, ...testimonials].map((t, i) => (
-            <div
-              key={i}
-              className="flex-shrink-0 w-[82vw] bg-white rounded-xl p-6 shadow-sm border border-gray-100 flex flex-col gap-4"
-            >
-              <FaQuoteLeft size={28} className="text-bloo/30" />
-              <h4 className="fontweight_1 text-blackk text-[24px] sm:text-lg leading-snug">{t.title}</h4>
-              <p className="text-blackk/70 font-medium text-[16px] leading-relaxed flex-1">
-                &ldquo;{t.quote}&rdquo;
-              </p>
-              <div className="border-t border-gray-100 pt-4">
-                <p className="fontweight_1 text-blackk text-[14px] sm:text-sm">{t.name}</p>
-                <p className="text-blackk/60 text-[14px] sm:text-xs mt-1">{t.role}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Mobile dots */}
-        <div className="sm:hidden flex justify-center pt-4 space-x-2">
-          {testimonials.map((_, index) => (
-            <div
-              key={index}
-              className={`${
-                mobileIndex === index
-                  ? "px-3 py-1 rounded-xl bg-blue-900"
-                  : "px-3 py-1 rounded-xl bg-bloo/30"
-              }`}
-            />
-          ))}
-        </div>
-
-        {/* Desktop: 3-card grid */}
-        <div className="hidden sm:grid grid-cols-1 lg:grid-cols-3 gap-6">
-          {testimonials.map((t, i) => (
-            <div
-              key={i}
-              className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 flex flex-col gap-4 hover:shadow-md transition"
-            >
-              <FaQuoteLeft size={28} className="text-bloo/30" />
-              <h4 className="fontweight_1 text-blackk text-[24px] sm:text-lg leading-snug">{t.title}</h4>
-              <p className="text-blackk/70 font-medium text-[16px] leading-relaxed flex-1">
-                &ldquo;{t.quote}&rdquo;
-              </p>
-              <div className="border-t border-gray-100 pt-4">
-                <p className="fontweight_1 text-blackk text-[14px] sm:text-sm">{t.name}</p>
-                <p className="text-blackk/60 text-[14px] sm:text-xs mt-1">{t.role}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-        </div>
-      </section>
-
 
       {/* ── CTA BANNER ────────────────────────────────────────────────────── */}
       <section

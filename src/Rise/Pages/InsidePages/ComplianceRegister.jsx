@@ -5,8 +5,6 @@ import { Link } from '@/nextNavigation';
 import { useEffect, useState } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-import Accordion from "../../Components/Accordian/Accordian.jsx";
-import Certificate from "../../Components/Certificate/Certificate.jsx";
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx";
 import FooterLower from "../../Components/Footer/FooterLower.jsx";
 const dwabIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/compliance/DWAB.png";
@@ -68,7 +66,7 @@ export default function ComplianceRegister() {
       heading2: "Activity Boards",
       desc: "Organize activities by department — housekeeping, maintenance, F&B, front office — with customizable boards, filters, and views.",
       img: dwabIcon,
-      width: "60px"
+      width: "44px"
     , __w: 50, __h: 50},
     {
       key: 4,
@@ -76,7 +74,7 @@ export default function ComplianceRegister() {
       heading2: "Automation",
       desc: "Set up recurring tasks for monthly operations like room inspections, equipment servicing, and compliance checks with auto-assignment.",
       img: rtaIcon,
-      width: "60px"
+      width: "44px"
     , __w: 50, __h: 50},
     {
       key: 5,
@@ -92,7 +90,7 @@ export default function ComplianceRegister() {
       heading2: "Attachments",
       desc: "Allow staff to attach before/after photos, inspection reports, and documents to tasks as proof of completion for audit trails.",
       img: pdaIcon,
-      width: "4opx"
+      width: "44px"
     , __w: 50, __h: 50},
     {
       key: 7,
@@ -100,7 +98,7 @@ export default function ComplianceRegister() {
       heading2: "Reports",
       desc: "Generate individual and team performance reports — completion rates, average resolution time, SLA compliance — for workforce optimization.",
       img: pprIcon,
-      width: "60px"
+      width: "44px"
     , __w: 50, __h: 50}
   ];
 
@@ -260,8 +258,8 @@ export default function ComplianceRegister() {
             {features.map((item, index) => (
               <div key={item.key ?? index} className={style.featureInnerBox}>
                 <div className={style.headingAndIconFeatures}>
-                  <div style={{ width: item.width }}>
-                    <img src={item.img?.src || item.img} style={{ width: "100%" }}  width={item.__w} height={item.__h} />
+                  <div style={{ width: item.width, height: item.width }}>
+                    <img src={item.img?.src || item.img} style={{ width: "100%", height: "100%", objectFit: "contain" }}  width={item.__w} height={item.__h} />
                   </div>
                   <div className={style.featureHeading}>
                     <div>{item.heading}</div>
@@ -272,18 +270,18 @@ export default function ComplianceRegister() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* CTA */}
-      <section className={style.requestDemoBtn}>
-        <Link to="/products/eicerise/form?product=EiceRise(Compliance Register)" style={{ color: "white",  textDecoration: "none" }}>
-          <div className={`${style.demoBtnWrapper} globalSectionSize`}>
-            <div className={style.demoButton}>
-              Request a Demo <FaArrowRightLong />
-            </div>
+          <div className={style.requestDemoBtn}>
+            <Link to="/products/eicerise/form?product=EiceRise(Compliance Register)" style={{ color: "white",  textDecoration: "none" }}>
+              <div className={`${style.demoBtnWrapper} globalSectionSize`}>
+                <div className={style.demoButton}>
+                  Request a Demo <FaArrowRightLong />
+                </div>
+              </div>
+            </Link>
           </div>
-        </Link>
+
+        </div>
       </section>
 
       {/* BENEFITS */}
@@ -320,17 +318,28 @@ export default function ComplianceRegister() {
       {/* FAQ */}
       <section>
         <div className={`${style.FAQsection} globalSectionSize`}>
-          <div className={style.FAQHeading}>Frequently Asked Questions</div>
+          <div className={style.FAQHeadingBlock}>
+            <div className={style.FAQEyebrow}>FAQs</div>
+            <div className={style.FAQHeading}>Frequently Asked Questions</div>
+          </div>
           <div className={style.FAQContainer}>
             {query.map((item, i) => (
-              <Accordion key={i} question={item.question} answer={item.answer} />
+              <details key={i} className={style.faqItem}>
+                <summary className={style.faqSummary}>
+                  <span>{item.question}</span>
+                  <span className={style.faqToggle}>
+                    <span className={style.faqPlus}>+</span>
+                    <span className={style.faqMinus}>−</span>
+                  </span>
+                </summary>
+                <p className={style.faqAnswer}>{item.answer}</p>
+              </details>
             ))}
           </div>
         </div>
       </section>
 
       {/* ================= FOOTER ================= */}
-                           <Certificate />
                            <FooterUpperPart product="Compliance Register" text1={footerUpperText.text1} text2= {<> {footerUpperText.text2} <br />  </>} text3={footerUpperText.text3} img={overviewIcon} />
                            {!isEmbed && <FooterLower />}
     </>

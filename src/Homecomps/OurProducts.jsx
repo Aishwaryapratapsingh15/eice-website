@@ -72,7 +72,7 @@ export default function OurProducts() {
             </div>
             <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">{product.name}</h3>
             <p className="text-bloo font-semibold text-sm mb-3">{product.tagline}</p>
-            <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6] mb-[18px]">{product.description}</p>
+            <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6] mb-[18px] line-clamp-4">{product.description}</p>
             <Link
               href={product.href}
               className="inline-flex items-center gap-2 text-[14px] font-bold text-[#01B0F1] hover:text-blue-900 transition"
@@ -86,7 +86,7 @@ export default function OurProducts() {
       <div className="flex justify-center mt-8 sm:mt-10">
         <Link
           href="/products"
-          className="inline-flex items-center justify-center py-4 px-7 border border-blue-900 bg-blue-900 text-white font-semibold rounded-md text-lg transition duration-200 hover:bg-blue-900/90 hover:shadow-md hover:shadow-bloo/30"
+          className="inline-flex items-center justify-center py-4 px-7 bg-[#012060] text-white font-semibold rounded-md text-lg transition duration-200 hover:bg-[#1E40AF]"
         >
           Explore our Products <img src={arrowIcon} alt="" className="ml-2 w-5 h-5" width="20" height="20" />
         </Link>

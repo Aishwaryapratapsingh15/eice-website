@@ -83,9 +83,6 @@ const footerlaptop = "https://d3r43jacxrwsrp.cloudfront.net/Rise/section3Laptop/
 
 
 
-import Certificate from "../../Components/Certificate/Certificate"
-
-
 export default function HospitalityPage() {
   const [isEmbed, setIsEmbed] = useState(false);
   useEffect(() => {
@@ -497,7 +494,7 @@ export default function HospitalityPage() {
 
                 <div className={styles.textBox}>
                     <div className={`${styles.text1}  `}>
-                        <span className="font2" >Flexible, Modular Solutions</span> <span style={{ fontWeight: "600" }} className="font1">tailored to your business{" "}needs</span>
+                        <span className="font2" >Flexible, Modular Solutions tailored to your business{" "}needs</span>
                     </div>
 
                     <p className={`${styles.text2} font1`}>
@@ -875,7 +872,6 @@ export default function HospitalityPage() {
             </section>
 
 
-<Certificate/>
             <FooterUpperPart text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={footerUpperText.img} />
             {!isEmbed && <FooterLower />}
 

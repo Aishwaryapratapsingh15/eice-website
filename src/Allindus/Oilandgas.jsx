@@ -259,9 +259,9 @@ const projects = {
 
 const CaseStudy = ({ title, description, image, __w, __h }) => (
 
-  <div className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 md:p-4">
+ 
 
-    <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
+    <div className="bg-white rounded-[18px] overflow-hidden border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
 
       <img
 
@@ -273,21 +273,21 @@ const CaseStudy = ({ title, description, image, __w, __h }) => (
 
       />
 
-      <div className="p-3 md:p-4">
+      <div className="pt-[19px] px-[25px] pb-[25px]">
 
-        <h3 className="fontweight_1 text-[24px] sm:text-base md:text-lg mb-1 sm:mb-2">
+        <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
 
           {title}
 
         </h3>
 
-        <p className="text-gray-600 text-[16px] sm:text-sm">{description}</p>
+        <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6] mb-[18px]">{description}</p>
 
       </div>
 
     </div>
 
-  </div>
+  
 
 );
 
@@ -301,23 +301,23 @@ function Cstdmain() {
 
   return (
 
-    <div className="font-manrope px-4 md:px-10 lg:px-20 xl:px-40">
+    <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 sm:max-w-7xl mx-auto text-center py-8">
 
-      <h2 className="text-bloo text-xs font-extrabold uppercase tracking-[0.12em] text-center py-2">
+      <h1 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">
 
         Case Studies
 
-      </h2>
+      </h1>
 
-      <h1 className="text-blackk  fontweight_1 text-center text-[32px] sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1 pb-8">
+      <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] py-1 mb-8">
 
         Explore how we digitally transformed other businesses
 
-      </h1>
+      </h2>
 
-      <main className=" mx-auto max-w-7xl">
+      <main className="mx-auto max-w-7xl">
 
-        <nav className="mb-8 sm:mb-12">
+        <nav className="mb-3">
 
           <ul className="flex flex-wrap justify-center gap-2 sm:gap-4">
 
@@ -369,13 +369,13 @@ function Cstdmain() {
 
           >
 
-            <h2 className="text-[24px] px-2 sm:text-2xl fontweight_1 mb-4 sm:mb-6">
+            <h2 className="text-[18px] px-2 sm:text-[20px] font-semibold mt-4 mb-4">
 
               {industry.name}
 
             </h2>
 
-            <div className="flex flex-wrap -mx-2">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
 
               {projects[industry.id].map((project, index) => (
 
@@ -543,9 +543,9 @@ function Oilandgas() {
 
         </div>
 
-        <div className="max-w-7xl mx-auto text-center flex flex-col gap-4 pb-8">
+        <div className="max-w-7xl mx-auto text-center flex flex-col gap-8 pb-10">
 
-          <h1 className="text-blackk  fontweight_1 text-center text-[32px] sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl">
+          <h1 className="text-blackk font-genral font-semibold text-center text-[32px] sm:text-[44px] leading-[1.1] max-w-4xl">
 
             Pioneering <span className="text-bloo">the Future</span> of Oil and
 
@@ -553,7 +553,7 @@ function Oilandgas() {
 
           </h1>
 
-          <p className="font-medium text-blackk/70 text-[16px] sm:text-xl">
+          <p className="mt-3 font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]  sm:text-center">
 
             EICE Technology offers specialized software solutions for the oil
 
@@ -579,23 +579,23 @@ function Oilandgas() {
 
 
 
-        <div className="sm:max-w-3xl mx-auto text-center pb-4">
+        <div className="sm:max-w-7xl mx-auto text-center py-8">
 
-          <h1 className="text-bloo text-xs font-extrabold uppercase tracking-[0.12em] text-center pb-4">
+          <h1 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">
 
             Key Services
 
           </h1>
 
-          <h1 className="text-blackk  fontweight_1 text-center text-[32px] sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl pb-4">
+          <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] py-1">
 
             Explore What We Offer
 
-          </h1>
+          </h2>
 
         </div>
 
-        <div className="sm:max-w-7xl w-full mx-auto pb-8">
+        <div className="sm:max-w-7xl w-full mx-auto pb-10">
 
           <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-12 gap-4 items-center justify-center">
 
@@ -685,9 +685,9 @@ function Oilandgas() {
 
         </div>
 
-        <div className="pb-4">
+        <div className="pt-10 sm:max-w-7xl mx-auto text-center">
 
-          <h1 className="text-blackk  fontweight_1 text-center text-[32px] sm:text-2xl mx-auto md:text-3xl lg:mb-4 lg:text-[32px] max-w-3xl ">
+          <h1 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] max-w-4xl">
 
             Empowering Oil & Gas Operations with Innovative Software Solutions
 
@@ -697,25 +697,25 @@ function Oilandgas() {
 
         </div>
 
-        <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 pb-8">
+        <div className="grid md:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto py-8">
 
-          <div className="group  p-4 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
+          <div className="rounded-[18px] border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] p-[25px]">
 
-            <div className=" rounded-full flex items-start justify-start w-full px-4">
+            <div className="rounded-lg flex items-start mb-[19px]">
 
-              <MdCheckBox size={48} className="text-bloo" />
+              <MdCheckBox size={44} className="text-bloo" />
 
             </div>
 
-            <div className=" h-full text-left">
+            <div className="h-full items-start">
 
-              <h1 className="text-blackk fontweight_1 text-[24px] pt-4 pb-4 sm:text-2xl px-4">
+              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
                 Needs Assessment and Planning
 
               </h1>
 
-              <p className="font-medium text-blackk/70 text-[16px] sm:text-xl px-4">
+              <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
 
                 We start by identifying your unique challenges and requirements
 
@@ -731,23 +731,23 @@ function Oilandgas() {
 
 
 
-          <div className="group  p-4 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
+          <div className="rounded-[18px] border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] p-[25px]">
 
-            <div className=" rounded-full  flex items-start justify-start w-full px-4">
+            <div className="rounded-lg flex items-start mb-[19px]">
 
-              <BiCode size={48} className="text-bloo" />
+              <BiCode size={44} className="text-bloo" />
 
             </div>
 
-            <div className=" h-full text-left">
+            <div className="h-full items-start">
 
-              <h1 className="text-blackk fontweight_1 text-[24px] pt-4 pb-4 sm:text-2xl px-4">
+              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
                 Solution Design and Development
 
               </h1>
 
-              <p className="font-medium text-blackk/70 text-[16px] sm:text-xl px-4">
+              <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
 
                 Our experts design and develop cutting-edge software solutions
 
@@ -763,23 +763,23 @@ function Oilandgas() {
 
 
 
-          <div className="group p-4 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
+          <div className="rounded-[18px] border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] p-[25px]">
 
-            <div className=" rounded-full  flex items-start justify-start w-full px-4">
+            <div className="rounded-lg flex items-start mb-[19px]">
 
-              <GrIntegration size={48} className="text-bloo" />
+              <GrIntegration size={44} className="text-bloo" />
 
             </div>
 
-            <div className=" h-full text-left">
+            <div className="h-full items-start">
 
-              <h1 className="text-blackk fontweight_1 text-[24px] pt-4 pb-4 sm:text-2xl px-4">
+              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
                 Implementation and Integration
 
               </h1>
 
-              <p className="font-medium text-blackk/70 text-[16px] sm:text-xl px-4">
+              <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
 
                 We handle the deployment and integration of the software into
 
@@ -795,23 +795,23 @@ function Oilandgas() {
 
 
 
-          <div className="group p-4 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
+          <div className="rounded-[18px] border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] p-[25px]">
 
-            <div className=" rounded-full  flex items-start justify-start w-full px-4">
+            <div className="rounded-lg flex items-start mb-[19px]">
 
-              <GrCheckboxSelected size={48} className="text-bloo" />
+              <GrCheckboxSelected size={44} className="text-bloo" />
 
             </div>
 
-            <div className=" h-full text-left">
+            <div className="h-full items-start">
 
-              <h1 className="text-blackk fontweight_1 text-[24px] pt-4 pb-4 sm:text-2xl px-4">
+              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
                 Testing and Quality Assurance
 
               </h1>
 
-              <p className="font-medium text-blackk/70 text-[16px] sm:text-xl px-4">
+              <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
 
                 We conduct extensive testing to ensure our software solutions
 
@@ -827,23 +827,23 @@ function Oilandgas() {
 
 
 
-          <div className="group p-4 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
+          <div className="rounded-[18px] border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] p-[25px]">
 
-            <div className=" rounded-full  flex items-start justify-start w-full px-4">
+            <div className="rounded-lg flex items-start mb-[19px]">
 
-              <BiSupport size={48} className="text-bloo" />
+              <BiSupport size={44} className="text-bloo" />
 
             </div>
 
-            <div className=" h-full text-left">
+            <div className="h-full items-start">
 
-              <h1 className="text-blackk fontweight_1 text-[24px] pt-4 pb-4 sm:text-2xl px-4">
+              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
                 Training and Support
 
               </h1>
 
-              <p className="font-medium text-blackk/70 text-[16px] sm:text-xl px-4">
+              <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
 
                 We provide detailed training for your team and offer continuous
 
@@ -859,17 +859,17 @@ function Oilandgas() {
 
 
 
-          <div className="group p-4 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
+          <div className="rounded-[18px] border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] p-[25px]">
 
-            <div className=" rounded-full  flex items-start justify-start w-full px-4">
+            <div className="rounded-lg flex items-start mb-[19px]">
 
-              <LuMonitorDot size={48} className="text-bloo" />
+              <LuMonitorDot size={44} className="text-bloo" />
 
             </div>
 
-            <div className=" h-full text-left">
+            <div className="h-full items-start">
 
-              <h1 className="text-blackk fontweight_1 text-[24px] pt-4 pb-4 sm:text-2xl px-4">
+              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
                 {" "}
 
@@ -877,7 +877,7 @@ function Oilandgas() {
 
               </h1>
 
-              <p className="font-medium text-blackk/70 text-[16px] sm:text-xl px-4">
+              <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
 
                 We continuously monitor the softwares performance, gather
 

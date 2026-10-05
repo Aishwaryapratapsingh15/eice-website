@@ -240,7 +240,7 @@ export default function ProductsPage() {
         <div className="mt-8 flex flex-wrap justify-start gap-4 sm:justify-center">
           <button
             onClick={() => navigate("/products/eicerise/form?product=Products")}
-            className="flex items-center gap-2 rounded-md bg-[#012060] px-10 py-3 text-[18px] text-white transition hover:bg-blue-800"
+            className="flex items-center gap-2 rounded-md bg-[#012060] px-10 py-3 text-[18px] text-white transition hover:bg-[#1E40AF]"
           >
             Talk to Our Team
             <img src={arrowIcon} alt="" width="24" height="24" />
@@ -463,7 +463,7 @@ export default function ProductsPage() {
 
             <a
               href="mailto:info@eicetechnology.com"
-              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-md bg-[#012060] px-10 py-3 text-[18px] text-white transition hover:bg-blue-800"
+              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-md bg-[#012060] px-10 py-3 text-[18px] text-white transition hover:bg-[#1E40AF]"
             >
               Talk to Our Team →
             </a>

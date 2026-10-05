@@ -227,7 +227,7 @@ missed escalations, ensures structured communication, and gives managers full vi
           <div className="mt-8">
             <button
               onClick={() => navigate("/products/eicerise/form?product=EiceOps")}
-              className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 sm:mx-auto text-[18px] hover:bg-blue-800 transition"
+              className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 sm:mx-auto text-[18px] hover:bg-[#1E40AF] transition"
             >
               Request a Demo
               <img src={arrowIcon} alt="arrow"  width="24" height="24" />
@@ -451,7 +451,7 @@ missed escalations, ensures structured communication, and gives managers full vi
 
               <button
                 onClick={() => navigate("/products/eicerise/form?product=EiceOps")}
-                className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto text-[18px] hover:bg-blue-800"
+                className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto text-[18px] hover:bg-[#1E40AF]"
               >
                 Request a Demo
                 <img src={arrowIcon} alt="arrow"  width="24" height="24" />

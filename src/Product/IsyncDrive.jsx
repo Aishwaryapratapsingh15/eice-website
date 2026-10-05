@@ -228,7 +228,7 @@ access, sync, and share files across devices from a single platform with full co
 
       {/* Primary */}
       <button onClick={() => navigate("/products/eicerise/form?product=iSyncDrive")}
-      className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-[18px]">
+      className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-[#1E40AF] transition text-[18px]">
         Request a Demo
           <img src={arrowIcon} alt="arrow" width="24" height="24" />
 
@@ -825,7 +825,7 @@ access, sync, and share files across devices from a single platform with full co
 
       {/* Primary */}
           <button onClick={() => navigate("/products/eicerise/form?product=iSyncDrive")}
-          className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto hover:bg-blue-800 transition text-[18px]">
+          className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto hover:bg-[#1E40AF] transition text-[18px]">
         Request a Demo
           <img src={arrowIcon} alt="arrow" width="24" height="24" />
 

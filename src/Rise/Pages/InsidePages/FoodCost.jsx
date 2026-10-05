@@ -40,17 +40,12 @@ const po = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/food/benefits
 
 const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Rise/section3Laptop/food.webp";
 
-import Accordion from "../../Components/Accordian/Accordian.jsx"
-
-
-
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
 import FooterLower from "../../Components/Footer/FooterLower.jsx"
 
 import { FaArrowRightLong } from "react-icons/fa6";
 
 import { useState, useEffect } from "react"
-import Certificate from "../../Components/Certificate/Certificate.jsx"
 
 export default function FoodCost() {
   const [isEmbed, setIsEmbed] = useState(false);
@@ -83,63 +78,63 @@ export default function FoodCost() {
       heading: "Real-Time Cost Tracking",
       desc: "Monitor the cost of ingredients, resources, and overhead in real time, ensuring that all food and beverage transactions, from procurement to sale, are tracked and analyzed for accurate cost control.",
       img: rtct,
-      width: "64px",
+      width: "44px",
     __w: 300, __h: 300},
     {
       key: 2,
       heading: "Recipe Costing",
       desc: "Track detailed recipes, including ingredient quantities, preparation methods, and associated costs. The system automatically calculates the cost per dish or drink, helping businesses make accurate pricing decisions.",
       img: rc,
-      width: "65px",
+      width: "44px",
     __w: 300, __h: 300},
     {
       key: 3,
       heading: "Menu Engineering",
       desc: "Analyze the profitability of menu items by evaluating cost versus price. This helps identify high-cost or low-margin items and suggests ways to adjust pricing, optimize menu offerings, and implement portion control to boost profitability.",
       img: me,
-      width: "54px",
+      width: "44px",
     __w: 300, __h: 300},
     {
       key: 4,
       heading: "Supplier Management & Purchase Orders",
       desc: "Monitor supplier prices and purchase orders to ensure the best deals on ingredients. The system helps compare supplier prices, manage inventory efficiently, and negotiate better prices to reduce the cost of goods sold (COGS).",
       img: smpo,
-      width: "65px",
+      width: "44px",
     __w: 300, __h: 300},
     {
       key: 5,
       heading: "COGS Calculation",
       desc: "Track and calculate the cost of goods sold on a daily, weekly, or monthly basis. This feature provides insights into the total cost of ingredients used and evaluates the profitability of each food and beverage sale.",
       img: COGSc,
-      width: "65px",
+      width: "44px",
     __w: 300, __h: 300},
     {
       key: 6,
       heading: "Waste and Loss Management",
       desc: "Identify and reduce food and beverage wastage, whether caused by over-portioning, spoilage, or incorrect inventory practices. This feature helps minimize loss and optimize resource utilization.",
       img: wlm,
-      width: "63px",
+      width: "44px",
     __w: 300, __h: 300},
     {
       key: 7,
       heading: "Dynamic Pricing and Cost Adjustments",
       desc: "Adjust pricing strategies based on demand fluctuations, seasonality, or special events. The system enables businesses to set flexible pricing options for peak periods, offering promotions or discounts while maintaining profitability.",
       img: dpca,
-      width: "70px",
+      width: "44px",
     __w: 300, __h: 300},
     {
       key: 8,
       heading: "Inventory Management",
       desc: "Efficiently manage inventory levels to avoid overstocking or stockouts. This system integrates inventory and purchasing to ensure stock availability, reduce waste, and maintain optimal ingredient levels.",
       img: im,
-      width: "65px",
+      width: "44px",
     __w: 300, __h: 300},
     {
       key: 9,
       heading: "Sales Performance Insights",
       desc: "Analyze the sales performance of menu items and identify top-performing dishes and beverages. Use these insights to adjust menu offerings and match customer preferences.",
       img: spi,
-      width: "60px",
+      width: "44px",
     __w: 300, __h: 300},
 
   ];
@@ -241,7 +236,7 @@ export default function FoodCost() {
 
           <div className={`${style.headingBoxPhone} font4 `}>
             <div className={`${style.mainHeadingPhone}`}>
-              <span style={{ color: "#012060" }} >FOOD & BEVERAGE</span><span style={{ color: "#01B0F1" }} > COST ANALYSIS</span>
+              <span style={{ color: "#333333" }} >FOOD & BEVERAGE</span><span style={{ color: "#01B0F1" }} > COST ANALYSIS</span>
             </div>
             <div className={`${style.mainParaPhone}`}>
               Maximize profitability with accurate food and beverage cost tracking, helping you make informed business decisions.
@@ -262,7 +257,7 @@ export default function FoodCost() {
 
             <div className={`${style.headingBox} font4 `}>
               <div className={`${style.mainHeading}`}>
-                <span style={{ color: "#012060" }} >FOOD & BEVERAGE</span><span style={{ color: "#01B0F1" }} > COST ANALYSIS</span>
+                <span style={{ color: "#333333" }} >FOOD & BEVERAGE</span><span style={{ color: "#01B0F1" }} > COST ANALYSIS</span>
               </div>
               <div className={`${style.mainPara}`}>
                 Maximize profitability with accurate food and beverage cost tracking, helping you make informed business decisions.
@@ -404,8 +399,8 @@ export default function FoodCost() {
 
                 <div className={`${style.headingAndIconFeatures}`}>
 
-                  <div style={{ width: item.width }}>
-                    <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
+                  <div style={{ width: item.width, height: item.width }}>
+                    <img style={{ width: "100%", height: "100%", objectFit: "contain" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
                   </div>
 
                   <div className={`${style.featureHeading}`}>
@@ -428,22 +423,21 @@ export default function FoodCost() {
 
           </div>
 
-        </div>
-      </section>
+          <div className={`${style.requestDemoBtn}`}>
 
-      <section className={`${style.requestDemoBtn}`}>
+            <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form?product=EiceRise(Food Cost)"}>
+              <div className={`${style.demoBtnWrapper} globalSectionSize`}>
+                <div className={`${style.demoButton} font1`}>
+                  <div > Request a Demo </div>
+                  <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
+                </div>
 
-        <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form?product=EiceRise(Food Cost)"}>
-          <div className={`${style.demoBtnWrapper} globalSectionSize`}>
-            <div className={`${style.demoButton} font1`}>
-              <div > Request a Demo </div>
-              <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
-            </div>
+              </div>
+            </Link>
 
           </div>
-        </Link>
 
-
+        </div>
       </section>
 
 
@@ -536,12 +530,24 @@ export default function FoodCost() {
 
       <section >
         <div className={`${style.FAQsection} globalSectionSize font4`}>
-          <div className={`${style.FAQHeading}`}>Frequently Asked Questions</div>
+          <div className={style.FAQHeadingBlock}>
+            <div className={style.FAQEyebrow}>FAQs</div>
+            <div className={style.FAQHeading}>Frequently Asked Questions</div>
+          </div>
 
 
           <div className={style.FAQContainer}>
             {query.map((item, index) => (
-              <Accordion key={item.key ?? index} question={item.question} answer={item.answer} />
+              <details key={item.key ?? index} className={style.faqItem}>
+                <summary className={style.faqSummary}>
+                  <span>{item.question}</span>
+                  <span className={style.faqToggle}>
+                    <span className={style.faqPlus}>+</span>
+                    <span className={style.faqMinus}>−</span>
+                  </span>
+                </summary>
+                <p className={style.faqAnswer}>{item.answer}</p>
+              </details>
             ))}
           </div>
 
@@ -550,7 +556,6 @@ export default function FoodCost() {
 
 
       <div >
-        <Certificate/>
         <FooterUpperPart product="Food Cost" text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={laptop} />
         {!isEmbed &&<FooterLower />}
 

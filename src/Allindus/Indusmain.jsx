@@ -2,6 +2,7 @@
 import Talktous from "../Othercomps/Talktous";
 import Clients from "../Homecomps/Clients";
 import Clientele from "../Homecomps/Clientele";
+import { FiArrowRight } from "react-icons/fi";
 
 const indus_oilandgas = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/indus-oilandgas.png";
 const indus_education = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/indus-education.png";
@@ -14,25 +15,25 @@ const indus_enterprise = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/indus
 
 import { Link } from "@/nextNavigation";
 
-const IndustryCard = ({ to, color, Icon, title, description }) => (
-  <Link
-    to={to}
-    className={`group cursor-pointer p-4 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200`}
-  >
-    <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 group-hover:scale-[.98] transition duration-300">
-      <div className="flex items-center ">
-        <div className={` rounded-full bg-${color}-400/20`}>
+const IndustryCard = ({ to, color, Icon, title, description, cta }) => (
+
+    <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
+      <div className="mb-[19px] flex h-16 w-16 items-center justify-center rounded-lg">
           <img src={Icon} className="text-blackk" />
-        </div>
       </div>
       <div>
-        <h3 className="font-semibold text-[24px] sm:text-2xl ">{title}</h3>
-        <p className="font-medium text-blackk/70 sm:text-xl text-[16px]">
+        <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">{title}</h3>
+        <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6] mb-[18px] line-clamp-4">
           {description}
         </p>
+        <Link
+                     to={to}
+                      className="inline-flex items-center gap-2 text-[14px] font-bold text-[#01B0F1] hover:text-blue-900 transition"
+                    >
+                      {cta || `Explore ${title} Solutions`} <FiArrowRight className="w-4 h-4" />
+                    </Link>
       </div>
     </div>
-  </Link>
 );
 
 function Indusmain() {
@@ -44,6 +45,7 @@ function Indusmain() {
       to: "/industries/oil-and-gas",
       description:
         "Pioneering the Future of Oil and Gas with State-of-the-Art Solutions.",
+      cta: "Explore Oil and Gas Solutions",  
     },
     {
       color: "purple",
@@ -52,6 +54,7 @@ function Indusmain() {
       to: "/industries/education",
       description:
         "Empowering Education Through Innovative Technology Solutions.",
+      cta: "Explore Education Solutions",  
     },
     {
       color: "emerald",
@@ -60,6 +63,7 @@ function Indusmain() {
       to: "/industries/legal",
       description:
         "Innovative Legal Software Solutions for a Modern Legal Practice.",
+      cta: "Explore Legal Solutions",  
     },
     {
       color: "amber",
@@ -68,6 +72,7 @@ function Indusmain() {
       to: "/industries/healthcare",
       description:
         "Elevate Your Digital Health Solutions with Our Expert Software Development Services.",
+      cta: "Explore Healthcare Solutions",  
     },
     {
       color: "pink",
@@ -76,6 +81,7 @@ function Indusmain() {
       to: "/industries/digital-media",
       description:
         "Transforming the Media Landscape with Innovative Technology Solutions.",
+      cta: "Explore Digital Media Solutions",  
     },
     {
       color: "rose",
@@ -107,40 +113,39 @@ function Indusmain() {
       title: "Hospitality",
       to: "/industries/hospitality",
       description:
-        "Powering Hospitality Excellence with Integrated ERP and AI Technology Solutions.",
+        "Powering Hospitality Excellence with ERP and AI Solutions.",
     },
   ];
 
   return (
     <div id="indusmain-root">
       <div className="font-manrope px-4 md:px-10 lg:px-20 xl:px-40 pt-32 sm:pt-32 2xl:pt-8">
-      <div className="max-w-7xl mx-auto">
         <section className="text-left sm:text-center">
-          <h1 className="text-blackk fontweight_1 text-left sm:text-center text-[32px] sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-7xl py-2">
-            Driving <span className="text-bloo">Digital Transformation</span>{" "}
-            Across Industries
+          <h1 className="mt-[10px] text-blackk font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1]">
+            Driving <span className="text-bloo">Digital Transformation </span>
+            <br className ="hidden sm:block"/> Across Industries
           </h1>
-          <p className="text-blackk/70 font-semibold max-w-5xl mx-auto  py-2 fontweight_1 text-[18px] sm:text-[25px] sm:leading-tight leading-snug text-left sm:text-center">
+          <p className="mt-3 font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]  sm:text-center">
             EICE empowers businesses to thrive in the digital age by leveraging
             cutting-edge technologies and innovative strategies, revolutionizing
             operations and enhancing competitiveness.
           </p>
         </section>
 
-        <div className="w-full my-6 max-w-screen-2xl mx-auto hidden sm:block">
+        <div className="w-full my-6 max-w-screen-2xl mx-auto hidden sm:block sm:pb-10">
           <div className="bg-indusbanner w-full h-0 pb-[40%] sm:pb-[30%] lg:pb-[25%] bg-cover bg-center bg-no-repeat rounded-full"></div>
         </div>
 
         <section className="text-left sm:text-center py-4">
-          <h2 className="text-bloo text-xs font-extrabold uppercase tracking-[0.12em] text-left sm:text-center py-2">
+          <h1 className="text-bloo text-[12px]sm:text-[14px] font-bold uppercase tracking-[0.12em] text-left sm:text-center py-2">
             Industry Solutions
-          </h2>
-          <h3 className="text-blackk  fontweight_1 text-left sm:text-center text-[32px] sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-7xl pt-2 pb-2">
+          </h1>
+          <h2 className="font-general font-semibold text-blackk text-center text-[32px] leading-[1.2] mx-auto max-w-4xl py-1">
             Transforming Sectors Through Digital Innovation
-          </h3>
+          </h2>
         </section>
 
-        <div className="grid sm:grid-cols-2 gap-4 ">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-8 pb-10">
           {industries.map((industry, index) => (
             <IndustryCard
               key={index}
@@ -149,15 +154,16 @@ function Indusmain() {
               Icon={industry.Icon}
               title={industry.title}
               description={industry.description}
+              cta={industry.cta}
             />
           ))}
         </div>
 
-        <div className="py-4 grid lg:grid-cols-2 grid-cols-1 gap-4">
-          <h1 className="text-bloo flex items-center justify-start sm:justify-center h-full  text-left sm:text-center responsiveFont1   py-2">
+        <div className="py-10 grid lg:grid-cols-2 grid-cols-1 gap-4">
+          <h1 className="text-bloo flex items-center justify-start sm:justify-center h-full text-left sm:text-center lg:text-[32px] font-semibold font-general py-2">
             Why Choose EICE
           </h1>
-          <h1 className="text-blackk  responsiveFont2  mb-4">
+          <h1 className="text-blackk/70 font-inter text-[16px] leading-[1.6] sm:text-[18px] font-medium mb-4">
             <span className="">Partner with EICE</span> to accelerate your
             digital transformation journey. Our expertise in emerging
             technologies and industry-specific solutions will help you
@@ -165,7 +171,7 @@ function Indusmain() {
             the digital era.
           </h1>
         </div>
-      </div>
+      
       </div>
       <Talktous />
     </div>

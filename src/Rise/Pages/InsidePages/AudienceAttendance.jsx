@@ -5,8 +5,6 @@ import { Link } from '@/nextNavigation';
 import { useEffect, useState } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-import Accordion from "../../Components/Accordian/Accordian.jsx";
-import Certificate from "../../Components/Certificate/Certificate.jsx";
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx";
 import FooterLower from "../../Components/Footer/FooterLower.jsx";
 const bcmIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/audience/BCM.jpg";
@@ -277,20 +275,17 @@ export default function AudienceAttendance() {
               ))}
             </div>
 
-
+            <div className={style.requestDemoBtn}>
+              <Link to="/products/eicerise/form?product=EiceRise(Audience Attendance)" style={{ color: "white",  textDecoration: "none" }}>
+                <div className={`${style.demoBtnWrapper} globalSectionSize`}>
+                  <div className={style.demoButton}>
+                    Request a Demo <FaArrowRightLong />
+                  </div>
+                </div>
+              </Link>
+            </div>
 
         </div>
-      </section>
-
-      {/* ================= CTA ================= */}
-      <section className={style.requestDemoBtn}>
-        <Link to="/products/eicerise/form?product=EiceRise(Audience Attendance)" style={{ color: "white",  textDecoration: "none" }}>
-          <div className={`${style.demoBtnWrapper} globalSectionSize`}>
-            <div className={style.demoButton}>
-              Request a Demo <FaArrowRightLong />
-            </div>
-          </div>
-        </Link>
       </section>
 
       {/* ================= BENEFITS ================= */}
@@ -331,18 +326,29 @@ export default function AudienceAttendance() {
       {/* ================= FAQ ================= */}
       <section>
         <div className={`${style.FAQsection} globalSectionSize`}>
-          <div className={style.FAQHeading}>Frequently Asked Questions</div>
+          <div className={style.FAQHeadingBlock}>
+            <div className={style.FAQEyebrow}>FAQs</div>
+            <div className={style.FAQHeading}>Frequently Asked Questions</div>
+          </div>
 
           <div className={style.FAQContainer}>
             {query.map((item, i) => (
-              <Accordion key={i} question={item.question} answer={item.answer} />
+              <details key={i} className={style.faqItem}>
+                <summary className={style.faqSummary}>
+                  <span>{item.question}</span>
+                  <span className={style.faqToggle}>
+                    <span className={style.faqPlus}>+</span>
+                    <span className={style.faqMinus}>−</span>
+                  </span>
+                </summary>
+                <p className={style.faqAnswer}>{item.answer}</p>
+              </details>
             ))}
           </div>
         </div>
       </section>
 
       {/* ================= FOOTER ================= */}
-      <Certificate />
       <FooterUpperPart product="Audience Attendance" text1={footerUpperText.text1} text2={<> {footerUpperText.text2} <br />  </>} text3={footerUpperText.text3} img={overviewIcon} />
       {!isEmbed && <FooterLower />}
 

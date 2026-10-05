@@ -30,16 +30,12 @@ const b5 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/pos/posPage/b
 
 
 const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Rise/section3Laptop/pos2.webp";
-import Accordion from "../../Components/Accordian/Accordian.jsx"
-
-
 import FooterLower from "../../Components/Footer/FooterLower.jsx"
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx"
 
 import { useState, useEffect } from "react"
 
 import { FaArrowRightLong } from "react-icons/fa6";
-import Certificate from "../../Components/Certificate/Certificate.jsx"
 
 
 
@@ -235,7 +231,7 @@ export default function Pos() {
 
                         <div className={`${style.headingBoxPhone} font4 `}>
                             <div className={`${style.mainHeadingPhone}`}>
-                                <span style={{ color: "#012060" }} >DINING</span><span style={{ color: "#01B0F1" }} > (POS)</span>
+                                <span style={{ color: "#333333" }} >DINING</span><span style={{ color: "#01B0F1" }} > (POS)</span>
                             </div>
                             <div className={`${style.mainParaPhone}`}>
                                 Simplify your dining operations with a robust POS system designed for quick billing, smooth transactions, and enhanced customer satisfaction.
@@ -256,7 +252,7 @@ export default function Pos() {
 
                             <div className={`${style.headingBox} font4 `}>
                                 <div className={`${style.mainHeading}`}>
-                                    <span style={{ color: "#012060" }} >DINING</span><span style={{ color: "#01B0F1" }} > (POS)</span>
+                                    <span style={{ color: "#333333" }} >DINING</span><span style={{ color: "#01B0F1" }} > (POS)</span>
                                 </div>
                                 <div className={`${style.mainPara}`}>
                                     Simplify your dining operations with a robust POS system designed for quick billing, smooth transactions, and enhanced customer satisfaction.
@@ -387,8 +383,8 @@ export default function Pos() {
 
                                 <div className={`${style.headingAndIconFeatures}`}>
 
-                                    <div style={{ width: "44px" }}>
-                                        <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
+                                    <div style={{ width: "44px", height: "44px" }}>
+                                        <img style={{ width: "100%", height: "100%", objectFit: "contain" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
                                     </div>
 
                                     <div className={`${style.featureHeading}`}>
@@ -412,22 +408,21 @@ export default function Pos() {
 
                     </div>
 
-                </div>
-            </section>
+                    <div className={`${style.requestDemoBtn}`}>
 
-            <section className={`${style.requestDemoBtn}`}>
+                        <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form?product=EiceRise(Dining Pos)"}>
+                            <div className={`${style.demoBtnWrapper} globalSectionSize`}>
+                                <div className={`${style.demoButton} font1`}>
+                                    <div > Request a Demo </div>
+                                    <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
+                                </div>
 
-                <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form?product=EiceRise(Dining Pos)"}>
-                    <div className={`${style.demoBtnWrapper} globalSectionSize`}>
-                        <div className={`${style.demoButton} font1`}>
-                            <div > Request a Demo </div>
-                            <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
-                        </div>
+                            </div>
+                        </Link>
 
                     </div>
-                </Link>
 
-
+                </div>
             </section>
 
 
@@ -478,26 +473,37 @@ export default function Pos() {
 
             <section >
                 <div className={`${style.FAQsection} globalSectionSize font4`}>
-                    <div className={`${style.FAQHeading}`}>Frequently Asked Questions</div>
+                    <div className={style.FAQHeadingBlock}>
+                        <div className={style.FAQEyebrow}>FAQs</div>
+                        <div className={style.FAQHeading}>Frequently Asked Questions</div>
+                    </div>
 
 
                     <div className={style.FAQContainer}>
                         {query.map((item, index) => (
-                            <Accordion key={item.key ?? index} question={item.question} answer={item.answer} />
+                            <details key={item.key ?? index} className={style.faqItem}>
+                                <summary className={style.faqSummary}>
+                                    <span>{item.question}</span>
+                                    <span className={style.faqToggle}>
+                                        <span className={style.faqPlus}>+</span>
+                                        <span className={style.faqMinus}>−</span>
+                                    </span>
+                                </summary>
+                                <p className={style.faqAnswer}>{item.answer}</p>
+                            </details>
                         ))}
                     </div>
 
                 </div>
             </section>
 
-            {/* 
+            {/*
             <div >
                 <Footer3 />
 
             </div> */}
 
             <div >
-                <Certificate/>
                 <FooterUpperPart product="POS Dining" text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={footerUpperText.img} />
                 {!isEmbed && <FooterLower />}
 

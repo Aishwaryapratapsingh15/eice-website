@@ -5,8 +5,6 @@ import { Link } from '@/nextNavigation';
 import { useEffect, useState } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-import Accordion from "../../Components/Accordian/Accordian.jsx";
-import Certificate from "../../Components/Certificate/Certificate.jsx";
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx";
 import FooterLower from "../../Components/Footer/FooterLower.jsx";
 const bpvmIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/vendor/BPVM.png";
@@ -283,8 +281,8 @@ export default function VendorManagement() {
             {features.map((item, index) => (
               <div key={item.key ?? index} className={style.featureInnerBox}>
                 <div className={style.headingAndIconFeatures}>
-                  <div style={{ width: item.width }}>
-                    <img src={item.img?.src || item.img} style={{ width: "100%" }}  width={item.__w} height={item.__h} />
+                  <div style={{ width: item.width, height: item.width }}>
+                    <img src={item.img?.src || item.img} style={{ width: "100%", height: "100%", objectFit: "contain" }}  width={item.__w} height={item.__h} />
                   </div>
                   <div className={style.featureHeading}>
                     <div>{item.heading}</div>
@@ -295,18 +293,18 @@ export default function VendorManagement() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* CTA */}
-      <section className={style.requestDemoBtn}>
-        <Link to="/products/eicerise/form?product=EiceRise(Vendor Management)" style={{ color: "white", textDecoration: "none" }}>
-          <div className={`${style.demoBtnWrapper} globalSectionSize`}>
-            <div className={style.demoButton}>
-              Request a Demo <FaArrowRightLong />
-            </div>
+          <div className={style.requestDemoBtn}>
+            <Link to="/products/eicerise/form?product=EiceRise(Vendor Management)" style={{ color: "white", textDecoration: "none" }}>
+              <div className={`${style.demoBtnWrapper} globalSectionSize`}>
+                <div className={style.demoButton}>
+                  Request a Demo <FaArrowRightLong />
+                </div>
+              </div>
+            </Link>
           </div>
-        </Link>
+
+        </div>
       </section>
 
       {/* BENEFITS */}
@@ -343,17 +341,28 @@ export default function VendorManagement() {
       {/* FAQ */}
       <section>
         <div className={`${style.FAQsection} globalSectionSize`}>
-          <div className={style.FAQHeading}>Frequently Asked Questions</div>
+          <div className={style.FAQHeadingBlock}>
+            <div className={style.FAQEyebrow}>FAQs</div>
+            <div className={style.FAQHeading}>Frequently Asked Questions</div>
+          </div>
 
           <div className={style.FAQContainer}>
             {query.map((item, i) => (
-              <Accordion key={i} question={item.question} answer={item.answer} />
+              <details key={i} className={style.faqItem}>
+                <summary className={style.faqSummary}>
+                  <span>{item.question}</span>
+                  <span className={style.faqToggle}>
+                    <span className={style.faqPlus}>+</span>
+                    <span className={style.faqMinus}>−</span>
+                  </span>
+                </summary>
+                <p className={style.faqAnswer}>{item.answer}</p>
+              </details>
             ))}
           </div>
         </div>
       </section>
   {/* ================= FOOTER ================= */}
-                           <Certificate />
                            <FooterUpperPart product="Vendor Management" text1={footerUpperText.text1} text2= {<> {footerUpperText.text2} <br />  </>} text3={footerUpperText.text3} img={overviewIcon} />
                            {!isEmbed && <FooterLower />}
     </>
