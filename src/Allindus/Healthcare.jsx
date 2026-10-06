@@ -223,11 +223,11 @@ const KeyService = ({ title, description, image }) => (
 
 
 
-        <h3 className="fontweight_1 text-lg mb-2">{title}</h3>
+        <h3 className="font-general font-semibold text-[#373737] text-[20px] mb-2">{title}</h3>
 
 
 
-        <p className="text-gray-600 text-sm">{description}</p>
+        <p className="font-inter text-[#64748B] text-[16px]">{description}</p>
 
 
 
@@ -1221,7 +1221,7 @@ function Healthcare() {
 
 
 
-                        <h2 className="text-[24px] sm:text-2xl fontweight_1 mb-2">
+                        <h2 className="font-general font-semibold text-[20px] mb-2">
 
 
 
@@ -1233,7 +1233,7 @@ function Healthcare() {
 
 
 
-                        <p className="font-medium text-white text-[16px] sm:text-xl">
+                        <p className="font-inter font-normal text-white text-[16px]">
 
 
 

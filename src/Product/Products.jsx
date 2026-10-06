@@ -324,7 +324,8 @@ export default function ProductsPage() {
 
                   {!product.comingSoon && (
                     <span className="mt-[18px] inline-flex items-center gap-1.5 text-sm font-extrabold text-[#01B0F1] group-hover:text-blue-900 transition">
-                      View Product →
+                      View Product
+                      <img src="https://d3r43jacxrwsrp.cloudfront.net/arrow.svg" alt="" aria-hidden="true" className="w-[16px] h-[16px] object-contain" width="16" height="16" style={{ filter: "brightness(0) saturate(100%) invert(54%) sepia(98%) saturate(1655%) hue-rotate(166deg) brightness(97%) contrast(101%)" }} />
                     </span>
                   )}
                 </>
@@ -465,7 +466,8 @@ export default function ProductsPage() {
               href="mailto:info@eicetechnology.com"
               className="inline-flex shrink-0 items-center justify-center gap-2 rounded-md bg-[#012060] px-10 py-3 text-[18px] text-white transition hover:bg-[#1E40AF]"
             >
-              Talk to Our Team →
+              Talk to Our Team
+              <img src="https://d3r43jacxrwsrp.cloudfront.net/arrow.svg" alt="" aria-hidden="true" className="w-[24px] h-[24px] object-contain" width="24" height="24" />
             </a>
           </div>
         </section>

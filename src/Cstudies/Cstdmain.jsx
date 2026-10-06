@@ -236,89 +236,118 @@ const projects = {
   ],
 };
 
-const CaseStudy = ({ link, title, description, image, __w, __h }) => (
-  <Link href={link} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 md:p-4">
-    <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
+const CaseStudy = ({ link, title, description, image, __w, __h }) => {
+  const content = (
+    <>
       <img
         src={image?.src || image}
         alt={title}
-        className="w-full h-32 sm:h-40 md:h-48 object-cover transition duration-300 filter grayscale hover:grayscale-0"
-       width={__w} height={__h}/>
-      <div className="p-3 md:p-4">
-        <h3 className="fontweight_1 text-sm sm:text-base md:text-lg mb-1 sm:mb-2">
+        className={`w-full h-48 object-cover transition duration-300 filter grayscale ${link ? "group-hover:grayscale-0" : ""}`}
+        width={__w}
+        height={__h}
+      />
+      <div className="pt-[19px] px-[25px] pb-[25px] flex flex-col flex-1">
+        <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
           {title}
         </h3>
-        <p className="text-gray-600 text-xs sm:text-sm">{description}</p>
+        <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
+          {description}
+        </p>
+        {link && (
+          <span className="mt-auto pt-[18px] inline-flex items-center gap-2 text-[14px] font-bold text-[#01B0F1] group-hover:text-blue-900 transition">
+            Explore More
+            <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4" aria-hidden="true">
+              <path d="M16.175 13H4V11H16.175L10.575 5.4L12 4L20 12L12 20L10.575 18.6L16.175 13Z" />
+            </svg>
+          </span>
+        )}
       </div>
-    </div> 
-  </Link>
-);
+    </>
+  );
 
-function Cstdmain() {
-  
-  const [activeIndustry, setActiveIndustry] = useState("gis");
-
-  
+  if (!link) {
+    return (
+      <div className="h-full overflow-hidden rounded-[18px] border border-[#E6EAF1] bg-white flex flex-col">
+        {content}
+      </div>
+    );
+  }
 
   return (
-    <div className="font-manrope">
-      <header className="bg-gradient-to-r from-cyan-100/10 to-bloo/10 text-white pt-20 pb-8 text-center px-4 md:px-10 lg:px-20 xl:px-40">
-        <h1 className="text-blackk fontsize_6 fontweight_1 mb-4">
-          CASE STUDIES
-        </h1>
-        <p className="text-blackk text-xl fontweight_1  md:text-2xl max-w-3xl py-2 mx-auto sm:px-4">
-          Explore{" "}
-          <span className="text-bloo fontweight_2">Real-World Examples</span> of
-          how EICE has transformed businesses across industries through
-          innovative software solutions and unparalleled expertise.
-        </p>
-      </header>
-      <main className="px-4 md:px-10 lg:px-20 xl:px-40 pt-8">
-      <div className="max-w-7xl mx-auto">
-        <nav className="mb-8 sm:mb-12">
-          <ul className="flex flex-wrap justify-center gap-2 sm:gap-4">
-            {industries.map((industry) => (
-              <li key={industry.id}>
-                <button
-                  onClick={() => setActiveIndustry(industry.id)}
-                  
-                  className={`px-3 py-1 sm:px-4 sm:py-2 text-sm sm:text-base rounded-full transition ${
-                    activeIndustry === industry.id
-                      ? "bg-blue-900 text-white"
-                      : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-                  }`}
-                >
-                  {industry.name}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </nav>
+    <Link
+      href={link}
+      className="group h-full overflow-hidden rounded-[18px] border border-[#E6EAF1] bg-white transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col"
+    >
+      {content}
+    </Link>
+  );
+};
 
-        {industries.map((industry) => (
-          <section
-            key={industry.id}
-            className={`mb-12 px-2 ${
-              activeIndustry === industry.id ? "block" : "hidden"
-            }`}
-          >
-            <h2 className="text-xl px-2 sm:text-2xl fontweight_1 mb-4 sm:mb-6">
-              {industry.name}
-            </h2>
-            <div className="flex flex-wrap -mx-2">
-              {projects[industry.id].map((project, index) => (
-                <CaseStudy
-                  key={index}
-                  title={project.title}
-                  description={project.description}
-                  image={project.img}
-                  link={project.link}
-                 __w={project.__w} __h={project.__h}/>
+function Cstdmain() {
+  const [activeIndustry, setActiveIndustry] = useState("gis");
+
+  return (
+    <div>
+      <header className="bg-gradient-to-r from-cyan-100/10 to-bloo/10 pt-4 px-4 md:px-10 lg:px-20 xl:px-40">
+        <div className="max-w-7xl mx-auto flex flex-col items-start sm:items-center gap-4 py-10 text-left sm:text-center">
+          <h1 className="font-general font-semibold text-blackk text-[32px] sm:text-[44px] leading-[1.1]">
+            CASE STUDIES
+          </h1>
+          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl">
+            Explore{" "}
+            <span className="text-bloo font-semibold">Real-World Examples</span>{" "}
+            of how EICE has transformed businesses across industries through
+            innovative software solutions and unparalleled expertise.
+          </p>
+        </div>
+      </header>
+      <main className="px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10">
+        <div className="max-w-7xl mx-auto">
+          <nav>
+            <ul className="flex flex-wrap justify-start sm:justify-center gap-4">
+              {industries.map((industry) => (
+                <li key={industry.id}>
+                  <button
+                    onClick={() => setActiveIndustry(industry.id)}
+                    className={`font-general font-semibold flex w-fit items-center gap-2 px-4 py-1.5 rounded-full text-[12px] sm:text-[14px] tracking-wide transition ${
+                      activeIndustry === industry.id
+                        ? "bg-[#012060] text-white border border-[#012060]"
+                        : "bg-white text-blackk border border-[#E6EAF1] hover:border-[#01B0F1]/60"
+                    }`}
+                  >
+                    {industry.name}
+                  </button>
+                </li>
               ))}
-            </div>
-          </section>
-        ))}
-      </div>
+            </ul>
+          </nav>
+
+          {industries.map((industry) => (
+            <section
+              key={industry.id}
+              className={`pt-8 ${
+                activeIndustry === industry.id ? "block" : "hidden"
+              }`}
+            >
+              <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left">
+                {industry.name}
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-8">
+                {projects[industry.id].map((project, index) => (
+                  <CaseStudy
+                    key={index}
+                    title={project.title}
+                    description={project.description}
+                    image={project.img}
+                    link={project.link}
+                    __w={project.__w}
+                    __h={project.__h}
+                  />
+                ))}
+              </div>
+            </section>
+          ))}
+        </div>
       </main>
     </div>
   );

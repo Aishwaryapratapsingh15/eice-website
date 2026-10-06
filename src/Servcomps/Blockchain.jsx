@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useRef } from "react";
+import React from "react";
 const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/Laptop.png";
 import {
   MdChevronLeft,
@@ -16,6 +16,9 @@ import { FiCheckCircle } from "react-icons/fi";
 const dtdigital = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/dtdigital.svg";
 const dtdesign = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/dtdesign.svg";
 const dtconsulting = "https://d3r43jacxrwsrp.cloudfront.net/Compressed/dtconsulting.svg";
+const blockHero = "https://d3r43jacxrwsrp.cloudfront.net/Service_and_technology/blockchain-hero.png";
+
+
 
 import Footer from "../Othercomps/Footer.jsx";
 import ProductFooter from "@/Product/ProductFooter";
@@ -28,322 +31,169 @@ import { GiContract, GiSecurityGate } from "react-icons/gi";
 import { RiNftFill } from "react-icons/ri";
 import { BsCash } from "react-icons/bs";
 
-// cs images
-
-const opo = "https://d3r43jacxrwsrp.cloudfront.net/Cs/opo.jpg";
-const etp = "https://d3r43jacxrwsrp.cloudfront.net/Cs/etp.jpg";
-
-const adai = "https://d3r43jacxrwsrp.cloudfront.net/Automobile/adai.jpeg";
-const ccp = "https://d3r43jacxrwsrp.cloudfront.net/Automobile/ccp.jpg";
-const mpo = "https://d3r43jacxrwsrp.cloudfront.net/Automobile/mpo.jpg";
-
-const aipdt = "https://d3r43jacxrwsrp.cloudfront.net/medical/aipdt.jpeg";
-const tmp = "https://d3r43jacxrwsrp.cloudfront.net/medical/tmp.jpeg";
-
 const blockchain = "https://d3r43jacxrwsrp.cloudfront.net/Service_and_technology/blockchain.jpg";
-
-
-
-const industries = [
-  { name: "OIL AND GAS INDUSTRY", id: "oil" },
-  { name: "AUTOMOBILE INDUSTRY", id: "auto" },
-  { name: "HEALTHCARE INDUSTRY", id: "health" },
-];
-
-const projects = {
-  oil: [
-    {
-      title: "Offshore Platform Optimization",
-      description:
-        "Improved production efficiency by 25% through advanced AI-driven monitoring systems.",
-      img: opo
-
-    , __w: 6000, __h: 4000},
-    {
-      title: "Energy Trading Platform",
-      description:
-        "Built a blockchain-based trading platform, improving transaction security and reducing costs by 20%.",
-      img: etp
-    , __w: 1468, __h: 1000},
-  ],
-  auto: [
-
-    {
-      title: "Autonomous Driving AI",
-      description:
-        "Created a machine learning model improving object detection accuracy by 30% in diverse weather conditions.",
-      img: adai
-    , __w: 1200, __h: 800},
-    {
-      title: "Connected Car Platform",
-      description:
-        "Designed a cloud-based system enabling OTA updates and predictive maintenance for 100,000+ vehicles.",
-      img: ccp
-    , __w: 1200, __h: 675},
-    {
-      title: "Manufacturing Process Optimization",
-      description:
-        "Implemented an AI-driven system reducing production line downtime by 40% and improving quality control.",
-      img: mpo
-    , __w: 2075, __h: 916},
-  ],
-  health: [
-    {
-      title: "AI-Powered Diagnostic Tool",
-      description:
-        "Developed an AI algorithm for early cancer detection, improving accuracy by 15% over traditional methods.",
-      img: adai
-    , __w: 1200, __h: 800},
-    {
-      title: "Telemedicine Platform",
-      description:
-        "Created a secure, HIPAA-compliant telehealth solution, facilitating over 1 million virtual consultations.",
-      img: tmp
-    , __w: 1032, __h: 581},
-  ],
-};
-
-const CaseStudy = ({ title, description, image, __w, __h }) => (
-  <div className="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 md:p-4">
-    <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
-      <img
-        src={image}
-        alt={title}
-        className="w-full h-32 sm:h-40 md:h-48 object-cover transition duration-300 filter grayscale hover:grayscale-0"
-       width={__w} height={__h}/>
-      <div className="p-3 md:p-4">
-        <h3 className="fontweight_1 text-sm sm:text-base md:text-lg mb-1 sm:mb-2">
-          {title}
-        </h3>
-        <p className="text-gray-600 text-xs sm:text-sm">{description}</p>
-      </div>
-    </div>
-  </div>
-);
-
-function Cstdmain() {
-  const [activeIndustry, setActiveIndustry] = useState(industries[0].id);
-
-  return (
-    <div className="font-manrope px-4 md:px-10 lg:px-20 xl:px-40 ">
-      <h2 className="text-bloo text-xs font-extrabold uppercase tracking-[0.12em] text-center mb-2 sm:mb-4 py-1">
-        Case Studies
-      </h2>
-      <h1 className="text-blackk  fontweight_1 text-center text-2xl sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-7xl py-1 pb-8">
-        Explore how we digitally transformed other businesses
-      </h1>
-      <main className=" mx-auto max-w-7xl">
-        <nav className="mb-8 sm:mb-12">
-          <ul className="flex flex-wrap justify-center gap-2 sm:gap-4">
-            {industries.map((industry) => (
-              <li key={industry.id}>
-                <button
-                  onClick={() => setActiveIndustry(industry.id)}
-                  className={`px-3 py-1 sm:px-4 sm:py-2 text-sm sm:text-base rounded-full transition ${activeIndustry === industry.id
-                      ? "bg-blue-900 text-white"
-                      : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-                    }`}
-                >
-                  {industry.name}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </nav>
-
-        {industries.map((industry) => (
-          <section
-            key={industry.id}
-            className={`mb-12 px-2 ${activeIndustry === industry.id ? "block" : "hidden"
-              }`}
-          >
-            <h2 className="text-xl px-2 sm:text-2xl fontweight_1 mb-4 sm:mb-6">
-              {industry.name}
-            </h2>
-            <div className="flex flex-wrap -mx-2">
-              {projects[industry.id].map((project, index) => (
-                <CaseStudy
-                  key={index}
-                  title={project.title}
-                  description={project.description}
-                  image={project.img}
-                 __w={project.__w} __h={project.__h}/>
-              ))}
-            </div>
-          </section>
-        ))}
-      </main>
-    </div>
-  );
-}
 
 function Blockchain() {
   return (
     <div>
       <div className="bg-gradient-to-r from-transparent via-bloo/5 to-bloo/10 pt-4">
-        <div className="font-manrope px-4 md:px-10 lg:px-20 xl:px-40">
-        <div className="relative max-w-7xl mx-auto ">
-          <div className="absolute -z-20 inset-0 right-[75%]">
-            <img src={servicebannerpattern} alt=""  width="427" height="426" />
-          </div>
-          <div className="flex lg:flex-row flex-col py-12 sm:py-20 items-center">
-            <div className="w-full">
-              <h1 className="text-blackk  fontweight_1 text-[40px] sm:text-[35px] ">
-                Blockchain Development
-              </h1>
-              <h2 className="text-blackk/70 font-semibold max-w-5xl mx-auto sm:text-2xl py-4 text-[16px] sm:leading-tight leading-snug text-left">
-
-                Leading Blockchain Development Services Pioneering the Future of Digital Solutions
-
-              </h2>
+        <div className="relative px-4 md:px-10 lg:px-20 xl:px-40">
+          <div className="max-w-7xl mx-auto">
+            <div className="absolute -z-20 inset-0 right-[75%]">
+              <img src={servicebannerpattern} alt="" width="427" height="426" />
             </div>
-            <div style={{ width: "800px" }} className="lg:flex w-90 hidden items-center justify-end ">
-              <div className=" w-3/4 ">
-                {/* <img src={blockchain} alt="Blockchain development and decentralized solutions" className="rounded-full"  width="28" height="28" /> */}
+            <div className="flex lg:flex-row flex-col py-10 gap-4 items-center">
+              <div className="w-full flex flex-col gap-4">
+                <h1 className="font-general font-semibold text-blackk text-[32px] sm:text-[44px] leading-[1.1]">
+                  Blockchain Development
+                </h1>
+                <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-5xl text-left">
+                  Leading Blockchain Development Services Pioneering the Future of Digital Solutions
+                </p>
+                </div>
+                   <div className="lg:flex hidden items-center justify-end">
+                
+                  <img src={blockHero} alt="Blockchain development services" className="rounded-full" width="415" height="300" />
+                
               </div>
+              
             </div>
           </div>
-        </div>
         </div>
       </div>
 
-      <div className="py-8 md:py-20 lg:py-16">
-        <div className="relative font-manrope px-4 md:px-10 lg:px-20 xl:px-40">
+      <div className="relative px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-            <div>
-              <h1 className="text-blackk  text-[22px] sm:text-[25px] fontweight_1">
-                Cutting-Edge{" "}
-                <span className="text-bloo">Web App Development Services</span>{" "}
-                Transforming Ideas into High Impact Digital Solutions
-              </h1>
-            </div>
-            <div>
-              <div className="font-medium text-blackk/70 sm:text-xl text-[16px] ">
-                Blockchain technology has evolved beyond its initial application
-                in cryptocurrency to become a transformative force across
-                various industries. Its decentralized, transparent, and secure
-                nature offers innovative solutions for businesses seeking to
-                enhance their operations and build trust with users.
-                <div className="py-2" /> At EICE Technology we offer
-                cutting-edge blockchain development services designed to unlock
-                the full potential of this groundbreaking technology. Our expert
-                team is committed to delivering innovative, high-quality
-                blockchain solutions that meet your specific business needs.
-              </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start">
+            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2]">
+              Cutting-Edge{" "}
+              <span className="text-bloo">Blockchain Development Services</span>{" "}
+              Transforming Businesses with Secure Digital Solutions
+            </h2>
+            <div className="flex flex-col gap-4">
+              <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">
+                Blockchain technology has evolved beyond its
+                initial application in cryptocurrency to become
+                a transformative force across various
+                industries. Its decentralized, transparent, and
+                secure nature offers innovative solutions for
+                businesses seeking to enhance their operations
+                and build trust with users.
+              </p>
+              <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">
+                At EICE Technology we offer cutting-edge
+                blockchain development services designed to
+                unlock the full potential of this groundbreaking
+                technology. Our expert team is committed to
+                delivering innovative, high-quality blockchain
+                solutions that meet your specific business
+                needs.
+              </p>
             </div>
           </div>
         </div>
-        </div>
       </div>
-      <div className="relative font-manrope px-4 md:px-10 lg:px-20 xl:px-40 py-4 lg:pt-24 pt-12 pb-20  ">
+
+      <div className="relative px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10">
         <div className="max-w-7xl mx-auto">
-        <h1 className="text-bloo text-xs font-extrabold uppercase tracking-[0.12em] text-center  py-2">
-          Our Blockchain Development Services
-        </h1>
-        <h2 className="text-blackk  fontweight_1 text-center text-[32px] sm:text-3xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
-          Our Digital Transformation Expertise
-        </h2>
-        <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-6 gap-4 sm:pt-8 pt-4">
-          <div className="group p-4 sm:p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
-            <div className="rounded-full flex items-start w-full">
-              <SiHiveBlockchain size={48} className="text-bloo" />
-            </div>
-            <div className="pt-2 h-full text-left">
-              <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl ">
+          <div className="flex flex-col gap-4">
+            <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Our Blockchain Development Services</p>
+            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center mx-auto max-w-3xl">Our Digital Transformation Expertise</h2>
+          </div>
+          <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 pt-8">
+            <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col items-start text-start">
+              <div className="mb-[19px] text-bloo flex items-center">
+                <SiHiveBlockchain size={44} />
+              </div>
+              <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
                 CUSTOM BLOCKCHAIN DEVELOPMENT
-              </h1>
-              <p className="font-medium text-blackk/70 sm:text-xl text-[16px] ">
-                We create custom blockchain solutions tailored to your needs,
-                including new platforms, Apps, and blockchain networks, with
-                strategic planning, consensus selection, and architecture
+              </h3>
+              <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
+                We create custom blockchain solutions tailored
+                to your needs, including new platforms, Apps,
+                and blockchain networks, with strategic
+                planning, consensus selection, and architecture
                 development for diverse use cases.
               </p>
             </div>
-          </div>
-          <div className="group p-4 sm:p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
-            <div className=" rounded-full  flex items-start w-full">
-              <GiContract size={48} className="text-bloo" />
-            </div>
-            <div className="pt-2 h-full text-left">
-              <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
+            <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col items-start text-start">
+              <div className="mb-[19px] text-bloo flex items-center">
+                <GiContract size={44} />
+              </div>
+              <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
                 SMART CONTRACT DEVELOPMENT
-              </h1>
-              <p className="font-medium text-blackk/70 sm:text-xl text-[16px] ">
-                We develop and deploy smart contracts that automate processes,
-                reduce intermediaries, and enhance transparency. Our services
-                cover design, coding, testing, and deployment for secure,
+              </h3>
+              <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
+                We develop and deploy smart contracts that
+                automate processes, reduce intermediaries, and
+                enhance transparency. Our services cover design,
+                coding, testing, and deployment for secure,
                 efficient contracts.
               </p>
             </div>
-          </div>
-          <div className="group p-4 sm:p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
-            <div className=" rounded-full  flex items-start w-full">
-              <RiNftFill size={48} className="text-bloo" />
-            </div>
-            <div className="pt-2 h-full text-left">
-              <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
+            <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col items-start text-start">
+              <div className="mb-[19px] text-bloo flex items-center">
+                <RiNftFill size={44} />
+              </div>
+              <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
                 NFT DEVELOPMENT
-              </h1>
-              <p className="font-medium text-blackk/70 sm:text-xl text-[16px] ">
-                We offer comprehensive NFT development services, including token
-                creation, marketplaces, and platforms for trading digital assets
-                like art, collectibles, and games, tapping into the NFT market.
+              </h3>
+              <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
+                We offer comprehensive NFT development services,
+                including token creation, marketplaces, and
+                platforms for trading digital assets like art,
+                collectibles, and games, tapping into the NFT
+                market.
               </p>
             </div>
-          </div>
-          <div className="group p-4 sm:p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
-            <div className=" rounded-full  flex items-start w-full">
-              <MdSecurity size={48} className="text-bloo" />
-            </div>
-            <div className="pt-2 h-full text-left">
-              <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
+            <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col items-start text-start">
+              <div className="mb-[19px] text-bloo flex items-center">
+                <MdSecurity size={44} />
+              </div>
+              <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
                 BLOCKCHAIN SECURITY AUDITS
-              </h1>
-              <p className="font-medium text-blackk/70 sm:text-xl text-[16px] ">
-                We provide blockchain security audits with vulnerability
-                assessments, penetration testing, and code reviews to identify
-                risks, ensure security, and comply with industry standards for
+              </h3>
+              <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
+                We provide blockchain security audits with
+                vulnerability assessments, penetration testing,
+                and code reviews to identify risks, ensure
+                security, and comply with industry standards for
                 your applications.
               </p>
             </div>
-          </div>
-          <div className="group p-4 sm:p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
-            <div className=" rounded-full  flex items-start w-full">
-              <BsCash size={48} className="text-bloo" />
-            </div>
-            <div className="pt-2 h-full text-left">
-              <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
+            <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col items-start text-start">
+              <div className="mb-[19px] text-bloo flex items-center">
+                <BsCash size={44} />
+              </div>
+              <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
                 DECENTRALIZED FINANCE (DeFi) SOLUTIONS
-              </h1>
-              <p className="font-medium text-blackk/70 sm:text-xl text-[16px] ">
-                We develop DeFi solutions, including decentralized exchanges,
-                lending platforms, and stablecoins, offering innovative, secure,
-                and efficient alternatives to traditional financial services
-                using blockchain technology.
+              </h3>
+              <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
+                We develop DeFi solutions, including
+                decentralized exchanges, lending platforms, and
+                stablecoins, offering innovative, secure, and
+                efficient alternatives to traditional financial
+                services using blockchain technology.
               </p>
             </div>
-          </div>
-          <div className="group p-4 sm:p-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200 ">
-            <div className=" rounded-full  flex items-start w-full">
-              <MdConveyorBelt size={48} className="text-bloo" />
-            </div>
-            <div className="pt-2 h-full text-left">
-              <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
+            <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col items-start text-start">
+              <div className="mb-[19px] text-bloo flex items-center">
+                <MdConveyorBelt size={44} />
+              </div>
+              <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
                 BLOCKCHAIN BASED SUPPLY CHAIN SOLUTIONS
-              </h1>
-              <p className="font-medium text-blackk/70 sm:text-xl text-[16px] ">
-                We offer blockchain-based supply chain solutions for end-to-end
-                visibility, traceability, and efficiency, including tracking
-                systems, smart contracts, and fraud reduction for improved
+              </h3>
+              <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
+                We offer blockchain-based supply chain solutions
+                for end-to-end visibility, traceability, and
+                efficiency, including tracking systems, smart
+                contracts, and fraud reduction for improved
                 operations and authenticity.
               </p>
             </div>
           </div>
         </div>
-        </div>
       </div>
-      <Cstdmain />
       <TalkToUs product="Blockchain" />
       {/* <Footer /> */}
       <ProductFooter />
@@ -352,4 +202,3 @@ function Blockchain() {
 }
 
 export default Blockchain;
-

@@ -24,7 +24,7 @@ function HeroImage({ blog, className }) {
 export function BlogHero({ blog }) {
   const displayDate = getDisplayDate(blog, formatDate);
   return (
-    <section className="flex items-stretch overflow-hidden bg-[#012060] pt-10 sm:pt-16 pb-8 mt-10">
+    <section className="flex items-stretch overflow-hidden bg-[#012060] pt-10 sm:pt-16 pb-8">
       
       <div className="mx-auto h-full w-full max-w-7xl grid gap-6 px-5 lg:grid-cols-2 lg:items-center lg:gap-10">
         <div className="flex flex-col justify-center">

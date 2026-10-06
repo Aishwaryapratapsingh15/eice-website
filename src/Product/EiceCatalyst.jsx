@@ -197,7 +197,7 @@ export default function EiceCatalystPage() {
                   {stage}
                 </span>
                 {i < flow.length - 1 && (
-                  <span className="text-[#01B0F1]" aria-hidden="true">→</span>
+                  <img src="https://d3r43jacxrwsrp.cloudfront.net/arrow.svg" alt="" aria-hidden="true" className="w-[20px] h-[20px] object-contain" width="20" height="20" style={{ filter: "brightness(0) saturate(100%) invert(54%) sepia(98%) saturate(1655%) hue-rotate(166deg) brightness(97%) contrast(101%)" }} />
                 )}
               </React.Fragment>
             ))}

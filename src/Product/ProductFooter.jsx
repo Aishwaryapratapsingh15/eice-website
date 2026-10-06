@@ -147,7 +147,7 @@ export default function Footer() {
               <li className={linkClass}><Link href="/services/devops">DevOps</Link></li>
               <li className={linkClass}><Link href="/services/iot">IoT Solutions</Link></li>
               <li className="text-[#01B0F1] text-md font-bold mt-2 hover:text-[#92ddf9] cursor-pointer">
-                 <Link href="/services">ALL SERVICES →</Link>
+                 <Link href="/services" className="inline-flex items-center gap-2">ALL SERVICES <img src="https://d3r43jacxrwsrp.cloudfront.net/arrow.svg" alt="" aria-hidden="true" className="w-[16px] h-[16px] object-contain" width="16" height="16" style={{ filter: "brightness(0) saturate(100%) invert(54%) sepia(98%) saturate(1655%) hue-rotate(166deg) brightness(97%) contrast(101%)" }} /></Link>
               </li>
             </ul>
           </div>
@@ -161,7 +161,7 @@ export default function Footer() {
               <li className={linkClass}><Link href="/industries/legal">Legal</Link></li>
               <li className={linkClass}><Link href="/industries/education">Education</Link></li>
               <li className="text-[#01B0F1] text-md font-bold mt-2 hover:text-[#92ddf9] cursor-pointer">
-                <Link href="/industries">ALL INDUSTRIES →</Link>
+                <Link href="/industries" className="inline-flex items-center gap-2">ALL INDUSTRIES <img src="https://d3r43jacxrwsrp.cloudfront.net/arrow.svg" alt="" aria-hidden="true" className="w-[16px] h-[16px] object-contain" width="16" height="16" style={{ filter: "brightness(0) saturate(100%) invert(54%) sepia(98%) saturate(1655%) hue-rotate(166deg) brightness(97%) contrast(101%)" }} /></Link>
               </li>
             </ul>
           </div>

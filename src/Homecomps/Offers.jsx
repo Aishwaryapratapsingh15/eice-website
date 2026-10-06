@@ -86,9 +86,10 @@ function Offers() {
       <div className="flex justify-center mt-8 sm:mt-10">
         <Link
           href="/services"
-          className="inline-flex items-center justify-center py-4 px-7 bg-[#012060] text-white font-semibold rounded-md text-lg transition duration-200 hover:bg-[#1E40AF]"
+          className="inline-flex items-center justify-center gap-2 py-4 px-7 bg-[#012060] text-white font-semibold rounded-md text-lg transition duration-200 hover:bg-[#1E40AF]"
         >
-          Explore our services →
+          Explore our services
+          <img src="https://d3r43jacxrwsrp.cloudfront.net/arrow.svg" alt="" aria-hidden="true" className="w-[24px] h-[24px] object-contain" width="24" height="24" />
         </Link>
       </div>
     </div>

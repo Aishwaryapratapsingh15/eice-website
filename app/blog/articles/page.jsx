@@ -59,7 +59,6 @@ export default async function Page({ searchParams }) {
           All Articles
         </h1>
       </div>
-
       <section className="mx-auto max-w-7xl px-5 pt-8 pb-8">
         {result.items.length === 0 ? (
           <p className="mt-16 text-center text-[18px] text-blackk/50">
@@ -72,7 +71,6 @@ export default async function Page({ searchParams }) {
             ))}
           </div>
         )}
-
         {result.meta.totalPages > 1 && (
           <div className="mx-auto flex max-w-6xl items-center justify-center gap-4 pt-8 pb-8 text-[14px]">
             {result.meta.page > 1 && (
@@ -91,7 +89,6 @@ export default async function Page({ searchParams }) {
           </div>
         )}
       </section>
-
       <ProductFooter />
     </main>
   );

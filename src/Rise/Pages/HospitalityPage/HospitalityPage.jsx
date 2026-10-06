@@ -827,7 +827,7 @@ export default function HospitalityPage() {
                                         {item.heading}
                                     </div>
                                     <div className="font1" style={{ color: "rgba(255,255,255,0.85)", fontSize: "12px", marginTop: "5px" }}>
-                                        View More →
+                                        View More <img src="https://d3r43jacxrwsrp.cloudfront.net/arrow.svg" alt="" aria-hidden="true" width="14" height="14" style={{ display: "inline-block", verticalAlign: "middle", marginLeft: "4px" }} />
                                     </div>
                                 </div>
                             </div>

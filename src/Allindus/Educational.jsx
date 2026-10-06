@@ -235,11 +235,11 @@ const KeyService = ({ title, description, image }) => (
 
 
 
-        <h3 className="fontweight_1 text-lg mb-2">{title}</h3>
+        <h3 className="font-general font-semibold text-[#373737] text-[20px] mb-2">{title}</h3>
 
 
 
-        <p className="text-gray-600 text-sm">{description}</p>
+        <p className="font-inter text-[#64748B] text-[16px]">{description}</p>
 
 
 
@@ -723,7 +723,7 @@ function Logistics() {
 
 
 
-                        <h2 className="text-[24px] sm:text-2xl fontweight_1 mb-2">
+                        <h2 className="font-general font-semibold text-[20px] mb-2">
 
 
 
@@ -735,7 +735,7 @@ function Logistics() {
 
 
 
-                        <p className="font-medium text-white text-[16px] sm:text-xl">
+                        <p className="font-inter font-normal text-white text-[16px]">
 
 
 
@@ -1131,40 +1131,6 @@ function Logistics() {
 
 
 
-
-          {/* <div className="group  p-4 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-white border-transparent hover:border-gray-200">
-
-
-
-            <div className=" rounded-full  flex items-start justify-start w-full px-4">
-
-
-
-              <FaMagnifyingGlass size={60} className="text-bloo" />
-
-
-
-            </div>
-
-
-
-            <div className="pt-2 h-full text-left">
-
-
-
-              <h1 className="text-blackk fontweight_1 text-[24px] pt-4 pb-4 sm:text-2xl px-4">Supply Chain Visibility and Analytics</h1>
-
-
-
-              <p className="font-medium text-blackk/70 text-[16px] sm:text-xl px-4">Offer comprehensive supply chain visibility solutions, integrating advanced analytics for predictive insights, demand forecasting, and improved decision-making across the logistics network.</p>
-
-
-
-            </div>
-
-
-
-          </div> */}
 
 
 

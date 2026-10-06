@@ -137,11 +137,11 @@ export default function AppDevelopment() {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-white text-gray-800 font-poppins">
+    <div className="bg-white text-gray-800">
 
       {/* HERO */}
-      <section className="text-left sm:text-center pt-4 pb-4 sm:pb-16 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
-        <div className="mt-5 flex justify-center mb-6">
+      <section className="pt-14 pb-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
+        <div className="flex flex-col items-start sm:items-center gap-4 text-left sm:text-center">
           {heroImg ? (
             <img src={heroImg} alt="Application Development" className="mx-auto w-full max-w-[480px] object-contain"  width="590" height="333" />
           ) : (
@@ -149,26 +149,24 @@ export default function AppDevelopment() {
               Hero Image
             </div>
           )}
-        </div>
 
-        <span className="flex w-fit mx-auto items-center gap-2 bg-blue-50 text-[#012060] px-3 py-2 rounded-full text-sm font-medium border border-blue-200 mb-4">
-          {badgeIcon && <img src={badgeIcon} alt="" className="w-5 h-5 object-contain"  width="20" height="20" />}
-          Application Development
-        </span>
+          <div className="font-general font-semibold flex w-fit items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[12px] sm:text-[14px] tracking-wide sm:mx-auto">
+            {badgeIcon && <img src={badgeIcon} alt="" className="w-5 h-5 rounded-full object-contain" width="20" height="20" />}
+            <span>Application Development</span>
+          </div>
 
-        <h1 className="text-[40px] sm:text-[48px] md:text-[56px] font-bold text-[#334155] max-w-4xl mx-auto leading-tight mt-4">
-          Build apps that{" "}
-          <span className="text-[#01B0F1]">scale<br/> with your business</span>
-        </h1>
+          <h1 className="font-general font-semibold text-blackk text-[32px] sm:text-[44px] leading-[1.1] max-w-4xl">
+            Build apps that{" "}
+            <span className="text-bloo">scale<br/> with your business</span>
+          </h1>
 
-        <p className="mt-6 text-[#64748B] max-w-2xl mx-auto text-[16px] sm:text-[20px] leading-relaxed">
-          From SaaS platforms to intelligent chatbots and enterprise web apps — EICE delivers production-grade software built for real-world complexity. 15+ years, 180+ projects, 60+ clients across 10+ countries.
-        </p>
+          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl">
+            From SaaS platforms to intelligent chatbots and enterprise web apps — EICE delivers production-grade software built for real-world complexity. 15+ years, 180+ projects, 60+ clients across 10+ countries.
+          </p>
 
-        <div className="mt-8 flex flex-wrap justify-start sm:justify-center gap-4">
           <button
             onClick={() => navigate("/products/eicerise/form?product=App%20Development")}
-            className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-[18px]"
+            className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-[#1E40AF] transition text-[18px]"
           >
             Get in Touch
             <img src={arrowIcon} alt="arrow"  width="24" height="24" />
@@ -177,19 +175,19 @@ export default function AppDevelopment() {
       </section>
 
       {/* OVERVIEW */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-[#F4F9FF]">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-6 sm:gap-12 items-start">
+      <section className="px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10 bg-[#F4F9FF]">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-4 items-start">
 
             {/* Left: heading + 3 feature rows */}
-            <div>
-              <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155] mb-4 leading-tight">
+            <div className="flex flex-col gap-4">
+              <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2]">
                 End-to-end app development from idea to launch
               </h2>
-              <p className="text-[#64748B] text-[16px] sm:text-lg leading-relaxed mb-6">
+              <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">
                 EICE doesn&apos;t just write code. We architect solutions that grow with your business — designing for scale, reliability, and real user needs from day one.
               </p>
-              <div className="flex flex-col gap-5">
+              <div className="flex flex-col gap-4 pt-4">
                 {overviewFeatures.map((feat, i) => (
                   <div key={i} className="flex items-start gap-4">
                     {feat.icon ? (
@@ -198,8 +196,8 @@ export default function AppDevelopment() {
                       <div className="w-8 h-8 bg-[#01B0F1] rounded-full flex-shrink-0 mt-0.5" />
                     )}
                     <div>
-                      <h3 className="text-[16px] font-bold text-[#334155] mb-1">{feat.title}</h3>
-                      <p className="text-[#64748B] text-[14px] leading-relaxed">{feat.desc}</p>
+                      <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">{feat.title}</h3>
+                      <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">{feat.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -207,14 +205,14 @@ export default function AppDevelopment() {
             </div>
 
             {/* Right: tech + industry tags card with completion rate */}
-            <div className="bg-white border border-[#E2E8F0] rounded-2xl p-6 shadow-sm flex flex-col gap-5">
+            <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col gap-5">
               <div>
-                <p className="text-[#01B0F1] text-[13px] font-semibold uppercase tracking-wider mb-3">
+                <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] pb-3">
                   Technologies We Work With
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {technologies.map((tech, i) => (
-                    <span key={i} className="px-3 py-1 text-[14px] text-[#334155] bg-[#F1F5F9] rounded-full border border-[#E2E8F0]">
+                    <span key={i} className="font-general font-semibold flex w-fit items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[12px] sm:text-[14px] tracking-wide">
                       {tech}
                     </span>
                   ))}
@@ -222,12 +220,12 @@ export default function AppDevelopment() {
               </div>
               <hr className="border-[#E2E8F0]" />
               <div>
-                <p className="text-[#01B0F1] text-[13px] font-semibold uppercase tracking-wider mb-3">
+                <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] pb-3">
                   Industries Served
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {industries.map((ind, i) => (
-                    <span key={i} className="px-3 py-1 text-[14px] text-[#334155] bg-[#F1F5F9] rounded-full border border-[#E2E8F0]">
+                    <span key={i} className="font-general font-semibold flex w-fit items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[12px] sm:text-[14px] tracking-wide">
                       {ind}
                     </span>
                   ))}
@@ -235,10 +233,10 @@ export default function AppDevelopment() {
               </div>
               <hr className="border-[#E2E8F0]" />
               <div className="flex items-start gap-3">
-                <span className="text-[#01B0F1] text-xl font-bold flex-shrink-0 leading-none mt-0.5">✓</span>
+                <span className="text-bloo text-xl font-bold flex-shrink-0 leading-none mt-0.5">✓</span>
                 <div>
-                  <p className="text-[#334155] font-bold text-[16px]">100% project completion rate</p>
-                  <p className="text-[#64748B] text-[14px] mt-0.5">Every project delivered on scope and timeline</p>
+                  <p className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">100% project completion rate</p>
+                  <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">Every project delivered on scope and timeline</p>
                 </div>
               </div>
             </div>
@@ -248,36 +246,35 @@ export default function AppDevelopment() {
       </section>
 
       {/* OUR APP DEVELOPMENT SERVICES */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <p className="text-[#01B0F1] text-[22px] font-semibold mb-2 text-center">
-            OUR APP DEVELOPMENT SERVICES
-          </p>
-          <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155] text-center mb-3 leading-tight">
-            Three ways we build for you
-          </h2>
-          <p className="text-[#64748B] text-[16px] sm:text-lg text-center max-w-2xl mx-auto mb-4 sm:mb-12">
-            Whether you&apos;re launching a SaaS product, building a web platform, or adding AI-powered conversations to your product — we have the team for it.
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
+      <section className="px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col gap-4">
+            <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Our App Development Services</p>
+            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">Three ways we build for you</h2>
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-5xl mx-auto text-left sm:text-center">
+              Whether you&apos;re launching a SaaS product, building a web platform, or adding AI-powered conversations to your product — we have the team for it.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-8">
             {services.map((service, i) => (
-              <div key={i} className="bg-white border border-[#E2E8F0] rounded-xl p-4 sm:p-6 flex flex-col">
+              <div key={i} className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col items-start">
                 {service.icon ? (
-                  <img src={service.icon} alt="" className="w-12 h-12 object-contain mb-4"  width="48" height="48" />
+                  <img src={service.icon} alt="" className="w-11 h-11 object-contain mb-[19px]"  width="44" height="44" />
                 ) : (
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg mb-4" />
+                  <div className="w-11 h-11 bg-blue-100 rounded-lg mb-[19px]" />
                 )}
-                <h3 className="text-[24px] font-bold text-[#334155] mb-3">{service.title}</h3>
-                <p className="text-[#64748B] text-[16px] leading-relaxed mb-4 flex-grow">{service.desc}</p>
-                <div className="flex flex-wrap gap-2 mb-5">
+                <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">{service.title}</h3>
+                <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6] flex-grow pb-4">{service.desc}</p>
+                <div className="flex flex-wrap gap-2 pb-5">
                   {service.tags.map((tag, j) => (
-                    <span key={j} className="px-3 py-1 text-[14px] text-[#334155] bg-[#F1F5F9] rounded-full border border-[#E2E8F0]">
+                    <span key={j} className="font-general font-semibold flex w-fit items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[12px] sm:text-[14px] tracking-wide">
                       {tag}
                     </span>
                   ))}
                 </div>
-                <Link to={service.link} className="text-[#01B0F1] text-[16px] font-semibold flex items-center gap-1 hover:underline">
-                  Learn More →
+                <Link to={service.link} className="inline-flex items-center gap-2 text-[14px] font-bold text-[#01B0F1] hover:text-blue-900 transition">
+                  Explore More
+                  <img src="https://d3r43jacxrwsrp.cloudfront.net/arrow.svg" alt="" aria-hidden="true" className="w-[16px] h-[16px] object-contain" width="16" height="16" style={{ filter: "brightness(0) saturate(100%) invert(54%) sepia(98%) saturate(1655%) hue-rotate(166deg) brightness(97%) contrast(101%)" }} />
                 </Link>
               </div>
             ))}
@@ -287,32 +284,30 @@ export default function AppDevelopment() {
 
       {/* HOW WE WORK — PROCESS */}
       {/* Blue step numbers (prominent, per PDF) — not faded gray like Consultancy/Flagship */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <p className="text-[#01B0F1] text-[22px] font-semibold mb-2 text-center">
-            HOW WE WORK
-          </p>
-          <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155] text-center mb-2 leading-tight">
-            Our development process
-          </h2>
-          <p className="text-[#64748B] text-[16px] sm:text-lg text-center max-w-2xl mx-auto mb-4 sm:mb-12">
-            A structured approach that keeps you informed at every stage — no surprises, no scope creep, no missed deadlines.
-          </p>
+      <section className="px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col gap-4">
+            <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">How We Work</p>
+            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">Our development process</h2>
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-5xl mx-auto text-left sm:text-center">
+              A structured approach that keeps you informed at every stage — no surprises, no scope creep, no missed deadlines.
+            </p>
+          </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 pt-8">
             {steps.map((step, i) => (
               <div key={i} className="relative flex items-stretch">
-                <div className="bg-white border border-[#E2E8F0] rounded-2xl p-4 sm:p-6 w-full shadow-sm">
-                  <span className="text-5xl font-bold text-[#01B0F1] leading-none block mb-4">
+                <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] w-full">
+                  <span className="text-5xl font-bold text-bloo leading-none block pb-4">
                     {step.step}
                   </span>
-                  <h3 className="text-[24px] font-bold text-[#334155] leading-snug mb-2 whitespace-pre-line">
+                  <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px] whitespace-pre-line">
                     {step.title}
                   </h3>
-                  <p className="text-[#64748B] text-[16px] leading-relaxed">{step.desc}</p>
+                  <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">{step.desc}</p>
                 </div>
                 {i < steps.length - 1 && (
-                  <div className="hidden md:flex absolute -right-4 top-1/2 -translate-y-1/2 z-10 w-8 h-8 bg-white border border-[#E2E8F0] rounded-full items-center justify-center shadow-sm text-[#01B0F1] font-bold text-base">
+                  <div className="hidden md:flex absolute -right-4 top-1/2 -translate-y-1/2 z-10 w-8 h-8 bg-white border border-[#E2E8F0] rounded-full items-center justify-center shadow-sm text-bloo font-bold text-base">
                     ›
                   </div>
                 )}
@@ -323,27 +318,25 @@ export default function AppDevelopment() {
       </section>
 
       {/* TECH STACK */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <p className="text-[#01B0F1] text-[22px] font-semibold mb-2 text-center">
-            TECHNOLOGY
-          </p>
-          <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155] text-center mb-2 leading-tight">
-            Our tech stack
-          </h2>
-          <p className="text-[#64748B] text-[16px] sm:text-lg text-center max-w-2xl mx-auto mb-4 sm:mb-12">
-            We work with the tools best suited to your project — not the ones we&apos;re most comfortable with.
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
+      <section className="px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col gap-4">
+            <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Technology</p>
+            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">Our tech stack</h2>
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-5xl mx-auto text-left sm:text-center">
+              We work with the tools best suited to your project — not the ones we&apos;re most comfortable with.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-8">
             {techStack.map((stack, i) => (
-              <div key={i} className="bg-white border border-[#E2E8F0] rounded-xl p-4 sm:p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-1 h-6 bg-[#01B0F1] rounded-full flex-shrink-0" />
-                  <h3 className="text-[16px] font-bold text-[#334155] uppercase tracking-wide">{stack.category}</h3>
+              <div key={i} className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
+                <div className="flex items-center gap-3 pb-4">
+                  <div className="w-1 h-6 bg-bloo rounded-full flex-shrink-0" />
+                  <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] uppercase tracking-wide">{stack.category}</h3>
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {stack.techs.map((tech, j) => (
-                    <span key={j} className="px-3 py-1 text-[14px] text-[#334155] bg-[#F1F5F9] rounded-full border border-[#E2E8F0]">
+                    <span key={j} className="font-general font-semibold flex w-fit items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[12px] sm:text-[14px] tracking-wide">
                       {tech}
                     </span>
                   ))}
@@ -355,24 +348,22 @@ export default function AppDevelopment() {
       </section>
 
       {/* WHY EICE */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-[#012060]">
-        <div className="max-w-6xl mx-auto">
-          <p className="text-[#01B0F1] text-[22px] font-semibold mb-2 text-center">
-            WHY EICE
-          </p>
-          <h2 className="text-[32px] sm:text-4xl font-bold text-white text-center mb-4 sm:mb-12 leading-tight">
-            What makes us different
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+      <section className="px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10 bg-[#F4F9FF]">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col gap-4">
+            <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Why EICE</p>
+            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center !text-white">What makes us different</h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 pt-8">
             {whyEice.map((item, i) => (
-              <div key={i} className="bg-white/10 border border-white/20 rounded-xl p-4 sm:p-6 flex flex-col items-start">
+              <div key={i} className="rounded-[18px] border border-white/20 bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 flex flex-col items-start">
                 {item.icon ? (
-                  <img src={item.icon} alt="" className="w-12 h-12 object-contain mb-4"  width="48" height="48" />
+                  <img src={item.icon} alt="" className="w-11 h-11 object-contain mb-[19px]"  width="44" height="44" />
                 ) : (
-                  <div className="w-12 h-12 bg-white/20 rounded-lg mb-4" />
+                  <div className="w-11 h-11 bg-white/20 rounded-lg mb-[19px]" />
                 )}
-                <h3 className="text-[24px] font-bold text-white mb-2">{item.title}</h3>
-                <p className="text-blue-200 text-[16px] leading-relaxed">{item.desc}</p>
+                <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">{item.title}</h3>
+                <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -380,20 +371,18 @@ export default function AppDevelopment() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#012060] py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-[#01B0F1] text-[22px] font-semibold mb-2">
-            GET STARTED
-          </p>
-          <h2 className="text-[32px] sm:text-4xl font-bold text-white mb-4 leading-tight">
+      <section className="px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10 bg-[#012060]">
+        <div className="max-w-4xl mx-auto flex flex-col items-start sm:items-center gap-4 text-left sm:text-center">
+          <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Get Started</p>
+          <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center !text-white">
             Ready to build something that scales?
           </h2>
-          <p className="text-blue-200 text-[16px] sm:text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
+          <p className="font-inter font-normal text-blue-200 text-[16px] sm:text-[18px] leading-[1.6] max-w-2xl">
             From your first prototype to enterprise scale — tell us what you&apos;re building and we&apos;ll tell you how we&apos;d approach it
           </p>
           <button
             onClick={() => navigate("/products/eicerise/form?product=App%20Development")}
-            className="bg-[#01B0F1] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto font-semibold text-[18px] hover:text-[#012060] transition"
+            className="bg-[#01B0F1] text-white px-10 py-3 rounded-md flex items-center gap-2 font-semibold text-[18px] hover:text-[#012060] transition"
           >
             Get in Touch
             <img src={arrowIcon} alt="arrow"  width="24" height="24" />

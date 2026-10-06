@@ -5,27 +5,30 @@ import { IoIosArrowDown } from "react-icons/io";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import { defaultServices, moreServices } from "./servicesData";
 
+const INITIAL_COUNT = 6;
+
 function ServiceCard({ svg, title, link, desc }) {
   return (
-    <Link href={link} className="w-full block pb-2">
-      <div className="px-0 lg:px-0 w-full">
-        <div className="p-2 sm:p-5 min-h-[200px] lg:min-h-[300px] flex flex-col sm:flex-row items-start gap-1 sm:gap-8 bg-white rounded-md overflow-hidden shadow-sm shadow-white transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-gray-200">
-          <div className="w-14 h-14 sm:w-20 sm:h-20 flex-shrink-0">
-            <div className="rounded-full bg-bloo/5 w-full h-full flex items-center justify-center">
-              <img
-                src={`data:image/svg+xml;utf8,${encodeURIComponent(svg)}`}
-                alt=""
-                className="object-contain w-3/4 h-3/4 scale-[.85]"
-                width="12"
-                height="12"
-              />
-            </div>
-          </div>
-          <div className="col-span-4 sm:ml-4">
-            <h3 className="text-blackk fontweight_1 text-[24px] sm:text-2xl pt-1 pb-1">{title}</h3>
-            <p className="font-medium text-blackk/70 text-[16px] sm:text-xl">{desc}</p>
-          </div>
-        </div>
+    <Link
+      href={link}
+      className="group h-full rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col items-start text-start"
+    >
+      <div className="mb-[19px] w-[44px] h-[44px] flex-shrink-0 rounded-full bg-bloo/5 flex items-center justify-center">
+        <img
+          src={`data:image/svg+xml;utf8,${encodeURIComponent(svg)}`}
+          alt=""
+          className="object-contain w-[28px] h-[28px]"
+          width="28"
+          height="28"
+        />
+      </div>
+      <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">{title}</h3>
+      <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">{desc}</p>
+      <div className="mt-auto pt-[18px]">
+        <span className="inline-flex items-center gap-2 text-[14px] font-bold text-[#01B0F1] group-hover:text-blue-900 transition">
+          Explore More
+          <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4" aria-hidden="true"><path d="M16.175 13H4V11H16.175L10.575 5.4L12 4L20 12L12 20L10.575 18.6L16.175 13Z" /></svg>
+        </span>
       </div>
     </Link>
   );
@@ -34,53 +37,45 @@ function ServiceCard({ svg, title, link, desc }) {
 export default function ServicesGrid() {
   const [showAll, setShowAll] = useState(false);
   const gridRef = useRef(null);
+  const allServices = [...defaultServices, ...moreServices];
+  const services = showAll ? allServices : allServices.slice(0, INITIAL_COUNT);
 
   return (
-    <div className="pb-4 sm:pb-10">
-      <div className="text-manrope px-4 md:px-10 lg:px-20 xl:px-40 py-2 sm:py-2 max-w-7xl mx-auto">
-        <div ref={gridRef} className="grid grid-cols-1 lg:grid-cols-2 gap-4 justify-items-center">
-          {defaultServices.map((s) => (
+    <div className="text-manrope px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10">
+      <div className="max-w-7xl mx-auto">
+        <div ref={gridRef} className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          {services.map((s) => (
             <ServiceCard key={s.id} svg={s.svg} title={s.title} link={s.link} desc={s.desc} />
           ))}
         </div>
-      </div>
 
-      {showAll && (
-        <div className="text-manrope px-4 md:px-10 lg:px-20 xl:px-40 py-2 sm:py-2 max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 justify-items-center">
-            {moreServices.map((s) => (
-              <ServiceCard key={s.id} svg={s.svg} title={s.title} link={s.link} desc={s.desc} />
-            ))}
+        {!showAll && (
+          <div className="flex justify-center pt-8">
+            <button
+              aria-label="view more"
+              onClick={() => setShowAll(true)}
+              className="inline-flex items-center gap-2 border-2 border-blue-900 text-[#012060] px-8 py-3 rounded-md hover:bg-blue-50 transition text-[18px] font-semibold"
+            >
+              View More <IoIosArrowDown />
+            </button>
           </div>
-        </div>
-      )}
+        )}
 
-      {!showAll && (
-        <div className="flex justify-center pt-6">
-          <button
-            aria-label="view more"
-            onClick={() => setShowAll(true)}
-            className="inline-flex items-center gap-2 py-3 px-6 border-2 border-blue-900 text-blue-900 font-semibold rounded-md hover:bg-blue-900 hover:text-white transition duration-200"
-          >
-            View More <IoIosArrowDown />
-          </button>
-        </div>
-      )}
-
-      {showAll && (
-        <div className="flex justify-center pt-6">
-          <button
-            aria-label="view less"
-            onClick={() => {
-              setShowAll(false);
-              gridRef.current?.scrollIntoView({ behavior: "smooth" });
-            }}
-            className="inline-flex items-center gap-2 py-3 px-6 border-2 border-blue-900 text-blue-900 font-semibold rounded-md hover:bg-blue-900 hover:text-white transition duration-200"
-          >
-            View less <MdKeyboardArrowUp />
-          </button>
-        </div>
-      )}
+        {showAll && (
+          <div className="flex justify-center pt-8">
+            <button
+              aria-label="view less"
+              onClick={() => {
+                setShowAll(false);
+                gridRef.current?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="inline-flex items-center gap-2 border-2 border-blue-900 text-[#012060] px-8 py-3 rounded-md hover:bg-blue-50 transition text-[18px] font-semibold"
+            >
+              View less <MdKeyboardArrowUp />
+            </button>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import React from "react";
 import { useNavigate } from "@/nextNavigation";
 import ProductFooter from "@/Product/ProductFooter";
@@ -11,143 +11,144 @@ import Link from "next/link";
 function VoiceCallAI() {
   const navigate = useNavigate();
   return (
-    <div className="">
-      <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40 pt-4">
-        <div className="w-full">
-          <h2 className="text-blackk fontweight_1 text-center text-[32px] py-2">Voice Call Assistant</h2>
-          <h2 className="text-gray-400 fontweight_1 text-center text-[18px] mx-auto max-w-3xl py-1">
-            Advanced AI Voice Call Assistant Revolutionizing Customer Interaction
-          </h2>
-          <p className="fontweight_1 max-w-4xl mx-auto text-blackk/70 fontsize_3 pt-4 px-4">
+    <div>
+      <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40 pt-14">
+        <div className="w-full flex flex-col gap-4 pb-10">
+          <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Voice Call Assistant</p>
+          <h1 className="font-general font-semibold text-blackk text-[32px] sm:text-[44px] leading-[1.1] text-left sm:text-center">Advanced AI Voice Call Assistant Revolutionizing Customer Interaction</h1>
+          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-4xl mx-auto text-left sm:text-center w-full">
             An AI-powered voice call assistant that automates customer interactions, delivers real-time conversation
             insights, and reduces handle time, enabling businesses to scale support operations without compromising
             service quality.
           </p>
-          <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
+          <div className="w-full max-w-7xl mx-auto items-center justify-center grid grid-cols-2 gap-4">
             <img src={voicecall1} alt="Voice Call AI Platform" className="w-full h-full object-fit rounded-lg"  width="1" height="1" />
             <img src={voicecall2} alt="Voice Call AI Dashboard" className="w-full h-full object-fit rounded-lg"  width="300" height="300" />
           </div>
         </div>
-        <div className="w-full pb-6">
-          <h2 className="text-blackk max-w-3xl pb-2 fontweight_1 text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] pt-12">Key Challenges</h2>
-          <div className="max-w-3xl mx-auto flex flex-col py-4 gap-4">
-            <div className="flex gap-4">
-              <h2 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">01</h2>
-              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">Achieving high speech recognition accuracy across diverse accents, languages, and noisy call environments</p>
+        <div className="w-full pt-10 pb-10">
+          <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center max-w-3xl mx-auto w-full">Key Challenges</h2>
+          <div className="max-w-3xl mx-auto flex flex-col gap-4 pt-8">
+            <div className="flex items-start gap-4">
+              <span className="font-general font-semibold text-bloo text-[20px] leading-[1.3] shrink-0">01</span>
+              <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">Achieving high speech recognition accuracy across diverse accents, languages, and noisy call environments</p>
             </div>
-            <div className="flex gap-4">
-              <h2 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">02</h2>
-              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">Handling complex, multi-turn conversations and context switching without losing conversational coherence</p>
+            <div className="flex items-start gap-4">
+              <span className="font-general font-semibold text-bloo text-[20px] leading-[1.3] shrink-0">02</span>
+              <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">Handling complex, multi-turn conversations and context switching without losing conversational coherence</p>
             </div>
-            <div className="flex gap-4">
-              <h2 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">03</h2>
-              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">Integrating seamlessly with existing CRM and telephony infrastructure with minimal disruption</p>
+            <div className="flex items-start gap-4">
+              <span className="font-general font-semibold text-bloo text-[20px] leading-[1.3] shrink-0">03</span>
+              <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">Integrating seamlessly with existing CRM and telephony infrastructure with minimal disruption</p>
             </div>
-            <div className="flex gap-4">
-              <h2 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">04</h2>
-              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">Ensuring low latency responses to maintain a natural, real-time conversational experience for callers</p>
+            <div className="flex items-start gap-4">
+              <span className="font-general font-semibold text-bloo text-[20px] leading-[1.3] shrink-0">04</span>
+              <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">Ensuring low latency responses to maintain a natural, real-time conversational experience for callers</p>
             </div>
-            <div className="flex gap-4">
-              <h2 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">05</h2>
-              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">Providing actionable analytics and call summaries to supervisors without manual review of recordings</p>
+            <div className="flex items-start gap-4">
+              <span className="font-general font-semibold text-bloo text-[20px] leading-[1.3] shrink-0">05</span>
+              <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">Providing actionable analytics and call summaries to supervisors without manual review of recordings</p>
             </div>
           </div>
         </div>
       </div>
-      <div className="bg-zinc-50 py-12 mt-12">
-        <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
-          <h2 className="text-bloo flex items-center justify-center h-full text-xs font-extrabold uppercase tracking-[0.12em] py-2">About the Project</h2>
-          <h2 className="text-blackk fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">AI-Powered Customer Call Automation</h2>
-          <p className="fontweight_1 text-blackk/70 fontsize_3 pt-4">
+      <div className="bg-zinc-50 pt-10 pb-10">
+        <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40 flex flex-col gap-4">
+          <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">About the Project</p>
+          <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center max-w-3xl mx-auto w-full">AI-Powered Customer Call Automation</h2>
+          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-5xl mx-auto text-left sm:text-center w-full">
             The client operates a large-scale customer support function handling thousands of inbound calls daily. Rising volumes, inconsistent
             service quality, and high agent turnover prompted the need for an AI-driven voice assistant capable of handling routine queries
             autonomously while providing live agents with real-time guidance and post-call analytics for continuous improvement.
           </p>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
-        <div className="pt-20 pb-6">
-          <h2 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">Unlocking Success</h2>
+      <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10">
+<div>
+          <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">Unlocking Success</h2>
         </div>
-        <div className="grid lg:grid-cols-3 grid-cols-1 gap-6 pb-20">
-          <div className="group cursor-pointer p-4 bg-zinc-50 rounded-md overflow-hidden shadow-sm transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-transparent hover:border-gray-200">
-            <div className="group-hover:scale-[.98] transition duration-200 grid grid-cols-1 gap-3">
-              <div className="w-full h-full items-center justify-start px-2 pb-2"><GiVirtualMarker size={50} className="text-bloo" /></div>
-              <div className="flex flex-col p-2 text-start justify-end">
-                <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">IDEATION:</h1>
-                <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">We designed a conversational AI layer that sits between the telephony system and the CRM, handling routine queries autonomously, escalating complex cases to human agents with full context, and capturing structured call data for analytics in real time.</p>
+        <div className="grid lg:grid-cols-3 grid-cols-1 gap-4 pt-8">
+          <div className="group rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col items-start text-start">
+            <div className="flex flex-col items-start">
+              <div className="mb-[19px] text-bloo flex items-center"><GiVirtualMarker size={44} className="text-bloo" /></div>
+              <div className="flex flex-col text-start">
+                <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">IDEATION:</h3>
+                <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">We designed a conversational AI layer that sits between the telephony system and the CRM, handling routine queries autonomously, escalating complex cases to human agents with full context, and capturing structured call data for analytics in real time.</p>
               </div>
             </div>
           </div>
-          <div className="group cursor-pointer p-4 bg-zinc-50 rounded-md overflow-hidden shadow-sm transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-transparent hover:border-gray-200">
-            <div className="group-hover:scale-[.98] transition duration-200 grid grid-cols-1 gap-3">
-              <div className="flex w-full h-full items-center justify-start px-2 pb-2"><GiVirtualMarker size={50} className="text-bloo" /></div>
-              <div className="flex flex-col p-2 text-start justify-end">
-                <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">OUR APPROACH</h1>
-                <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">We integrated a speech-to-text engine, a domain-specific NLU model, and a dialogue management system into a low-latency pipeline. The assistant was trained on historical call transcripts and integrated with the client's CRM via REST APIs, enabling personalised responses and automatic call summarisation.</p>
+          <div className="group rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col items-start text-start">
+            <div className="flex flex-col items-start">
+              <div className="mb-[19px] text-bloo flex items-center"><GiVirtualMarker size={44} className="text-bloo" /></div>
+              <div className="flex flex-col text-start">
+                <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">OUR APPROACH</h3>
+                <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">We integrated a speech-to-text engine, a domain-specific NLU model, and a dialogue management system into a low-latency pipeline. The assistant was trained on historical call transcripts and integrated with the client's CRM via REST APIs, enabling personalised responses and automatic call summarisation.</p>
               </div>
             </div>
           </div>
-          <div className="group cursor-pointer p-4 bg-zinc-50 rounded-md overflow-hidden shadow-sm transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-transparent hover:border-gray-200">
-            <div className="group-hover:scale-[.98] transition duration-200 grid grid-cols-1 gap-3">
-              <div className="flex w-full h-full items-center justify-start px-2 pb-2"><GiVirtualMarker size={50} className="text-bloo" /></div>
-              <div className="flex flex-col p-2 text-start">
-                <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">OUTCOMES</h1>
-                <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">The AI assistant automated resolution of routine queries, reduced average handle time, and improved first-call resolution rates. Supervisors gained access to automated call summaries and sentiment trends, enabling targeted agent coaching.</p>
+          <div className="group rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col items-start text-start">
+            <div className="flex flex-col items-start">
+              <div className="mb-[19px] text-bloo flex items-center"><GiVirtualMarker size={44} className="text-bloo" /></div>
+              <div className="flex flex-col text-start">
+                <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">OUTCOMES</h3>
+                <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">The AI assistant automated resolution of routine queries, reduced average handle time, and improved first-call resolution rates. Supervisors gained access to automated call summaries and sentiment trends, enabling targeted agent coaching.</p>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div className="w-full pb-20 px-4 md:px-10 lg:px-20 xl:px-40">
-        <h2 className="text-blackk max-w-3xl pb-2 fontweight_1 text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] pt-12">Project Outcomes</h2>
-        <div className="max-w-3xl mx-auto flex flex-col py-4 gap-4">
-          <div className="flex gap-4 rounded-xl border-2 border-blue-900/60 p-4 shadow-md shadow-blue-900/20">
-            <h2 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">01</h2>
-            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">Automated resolution of high-volume routine queries, significantly reducing agent workload</p>
-          </div>
-          <div className="flex gap-4 rounded-xl border-2 border-blue-900/60 p-4 shadow-md shadow-blue-900/20">
-            <h2 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">02</h2>
-            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">Reduced average handle time and improved first-call resolution rates through intelligent routing and context handover</p>
-          </div>
-          <div className="flex gap-4 rounded-xl border-2 border-blue-900/60 p-4 shadow-md shadow-blue-900/20">
-            <h2 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">03</h2>
-            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">Automated call summarisation eliminated manual note-taking and improved CRM data quality</p>
-          </div>
-          <div className="flex gap-4 rounded-xl border-2 border-blue-900/60 p-4 shadow-md shadow-blue-900/20">
-            <h2 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2 py-2">04</h2>
-            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">Real-time sentiment analytics empowered supervisors with actionable insights for agent coaching</p>
           </div>
         </div>
       </div>
-      <div className="w-full pb-20 px-4 md:px-10 lg:px-20 xl:px-40">
-        <div className="max-w-7xl mx-auto" style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-evenly" }}>
-          <div className="other_case_study_box p-2 rounded-xl hover:scale-[.99] transition duration-300">
-            <Link href="/case-studies/sentimental-ai" className="p-2 md:p-4">
-              <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
-                <div className="p-3 md:p-4">
-                  <h3 className="fontweight_1 text-sm sm:text-base md:text-lg mb-1 sm:mb-2">Product Review Sentiment Analysis</h3>
-                  <p className="text-blackk/70 fontsize_3 fontweight_1 text-left">Enhancing Product Insights with AI-Powered Sentiment Analysis</p>
+      <div className="w-full pt-10 pb-10 px-4 md:px-10 lg:px-20 xl:px-40">
+        <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center max-w-3xl mx-auto w-full">Project Outcomes</h2>
+        <div className="max-w-3xl mx-auto flex flex-col gap-4 pt-8">
+          <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex items-start gap-4">
+            <span className="font-general font-semibold text-bloo text-[20px] leading-[1.3] shrink-0">01</span>
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">Automated resolution of high-volume routine queries, significantly reducing agent workload</p>
+          </div>
+          <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex items-start gap-4">
+            <span className="font-general font-semibold text-bloo text-[20px] leading-[1.3] shrink-0">02</span>
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">Reduced average handle time and improved first-call resolution rates through intelligent routing and context handover</p>
+          </div>
+          <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex items-start gap-4">
+            <span className="font-general font-semibold text-bloo text-[20px] leading-[1.3] shrink-0">03</span>
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">Automated call summarisation eliminated manual note-taking and improved CRM data quality</p>
+          </div>
+          <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex items-start gap-4">
+            <span className="font-general font-semibold text-bloo text-[20px] leading-[1.3] shrink-0">04</span>
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">Real-time sentiment analytics empowered supervisors with actionable insights for agent coaching</p>
+          </div>
+        </div>
+      </div>
+      <div className="w-full pt-10 pb-10 px-4 md:px-10 lg:px-20 xl:px-40">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="h-full">
+            <Link href="/case-studies/sentimental-ai" className="group h-full rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col">
+              <div className="h-full">
+                <div className="flex flex-col">
+                  <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">Product Review Sentiment Analysis</h3>
+                  <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">Enhancing Product Insights with AI-Powered Sentiment Analysis</p>
+<span className="mt-auto pt-[18px] inline-flex items-center gap-2 text-[14px] font-bold text-[#01B0F1] group-hover:text-blue-900 transition">Explore More <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4" aria-hidden="true"><path d="M16.175 13H4V11H16.175L10.575 5.4L12 4L20 12L12 20L10.575 18.6L16.175 13Z" /></svg></span>
                 </div>
               </div>
             </Link>
           </div>
-          <div className="other_case_study_box p-2 rounded-xl hover:scale-[.99] transition duration-300">
-            <Link href="/case-studies/logistics-ai" className="p-2 md:p-4">
-              <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
-                <div className="p-3 md:p-4">
-                  <h3 className="fontweight_1 text-sm sm:text-base md:text-lg mb-1 sm:mb-2">Logistics Using AI</h3>
-                  <p className="text-blackk/70 fontsize_3 fontweight_1 text-left">Transforming Logistics Operations with AI</p>
+          <div className="h-full">
+            <Link href="/case-studies/logistics-ai" className="group h-full rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col">
+              <div className="h-full">
+                <div className="flex flex-col">
+                  <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">Logistics Using AI</h3>
+                  <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">Transforming Logistics Operations with AI</p>
+<span className="mt-auto pt-[18px] inline-flex items-center gap-2 text-[14px] font-bold text-[#01B0F1] group-hover:text-blue-900 transition">Explore More <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4" aria-hidden="true"><path d="M16.175 13H4V11H16.175L10.575 5.4L12 4L20 12L12 20L10.575 18.6L16.175 13Z" /></svg></span>
                 </div>
               </div>
             </Link>
           </div>
-          <div className="other_case_study_box p-2 rounded-xl hover:scale-[.99] transition duration-300">
-            <Link href="/case-studies/inventory-ai" className="p-2 md:p-4">
-              <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
-                <div className="p-3 md:p-4">
-                  <h3 className="fontweight_1 text-sm sm:text-base md:text-lg mb-1 sm:mb-2">Inventory Management Using AI</h3>
-                  <p className="text-blackk/70 fontsize_3 fontweight_1 text-left">Revolutionizing Inventory Management with AI</p>
+          <div className="h-full">
+            <Link href="/case-studies/inventory-ai" className="group h-full rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col">
+              <div className="h-full">
+                <div className="flex flex-col">
+                  <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">Inventory Management Using AI</h3>
+                  <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">Revolutionizing Inventory Management with AI</p>
+<span className="mt-auto pt-[18px] inline-flex items-center gap-2 text-[14px] font-bold text-[#01B0F1] group-hover:text-blue-900 transition">Explore More <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4" aria-hidden="true"><path d="M16.175 13H4V11H16.175L10.575 5.4L12 4L20 12L12 20L10.575 18.6L16.175 13Z" /></svg></span>
                 </div>
               </div>
             </Link>
@@ -155,11 +156,11 @@ function VoiceCallAI() {
         </div>
       </div>
       {/* CTA */}
-      <section className="bg-[#012060] py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-[32px] sm:text-4xl font-bold text-white mb-4 leading-tight">Ready to Automate Your Customer Call Handling?</h2>
-          <p className="text-blue-200 text-[16px] sm:text-lg leading-relaxed mb-8 max-w-2xl mx-auto">Talk to our team about AI voice assistants for customer interaction.</p>
-          <button onClick={() => navigate("/products/eicerise/form?product=AI%2FML")} className="bg-[#01B0F1] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto font-semibold text-[18px] hover:text-[#012060] transition">
+      <section className="bg-[#012060] pt-10 pb-10 px-4 md:px-10 lg:px-20 xl:px-40">
+        <div className="max-w-4xl mx-auto flex flex-col items-start sm:items-center gap-4 text-left sm:text-center">
+          <h2 className="font-general font-semibold text-white text-[24px] sm:text-[32px] leading-[1.2]">Ready to Automate Your Customer Call Handling?</h2>
+          <p className="font-inter font-normal text-blue-200 text-[16px] sm:text-[18px] leading-[1.6] max-w-2xl">Talk to our team about AI voice assistants for customer interaction.</p>
+          <button onClick={() => navigate("/products/eicerise/form?product=AI%2FML")} className="bg-[#01B0F1] text-white px-10 py-3 rounded-md flex items-center gap-2 font-semibold text-[18px] hover:text-[#012060] transition">
             Talk to Our AI/ML Team
             <img src={arrowIcon} alt="arrow" width="24" height="24" />
           </button>

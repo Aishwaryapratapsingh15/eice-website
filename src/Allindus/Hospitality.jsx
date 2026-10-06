@@ -373,7 +373,7 @@ export default function Hospitality() {
 
                 {/* Modules — full width below */}
                 <div>
-                  <h4 className="fontweight_1 text-blackk text-[16px] sm:text-xl mb-3">Modules:</h4>
+                  <h4 className="font-general font-semibold text-blackk text-[16px] sm:text-[18px] mb-3">Modules:</h4>
                   <div className="flex flex-wrap gap-2">
                     {svc.modules.map((mod) => (
                       <span key={mod} className="px-3 py-1.5 text-[14px] sm:text-sm font-medium rounded-full border border-[#a0e1fa] bg-[#dcf5ff] text-blackk">
@@ -437,7 +437,7 @@ export default function Hospitality() {
         <div className="relative px-4 md:px-10 lg:px-20 xl:px-40 py-8">
           <div className="max-w-7xl mx-auto">
           <div className="max-w-lg flex flex-col gap-4 sm:gap-6">
-            <h2 className="text-white fontweight_1 text-[32px] sm:text-3xl leading-snug">
+            <h2 className="font-general font-semibold text-white text-[24px] sm:text-[32px] leading-snug">
               Our strength lies in delivering innovative, Industry-Specific Solutions. Partner with EICE to transform your hospitality business and achieve Exceptional Results.
             </h2>
             <div>

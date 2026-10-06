@@ -265,7 +265,7 @@ export default function Budget() {
           <div className={style.requestDemoBtn}>
             <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form?product=EiceRise(Budget)"}>
               <div className={`${style.demoBtnWrapper} globalSectionSize`}>
-                <div className={style.demoButton}>Request a Demo →</div>
+                <div className={style.demoButton}>Request a Demo <img src="https://d3r43jacxrwsrp.cloudfront.net/arrow.svg" alt="" aria-hidden="true" width="20" height="20" style={{ display: "inline-block", verticalAlign: "middle", marginLeft: "8px" }} /></div>
               </div>
             </Link>
           </div>

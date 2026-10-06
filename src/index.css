@@ -222,3 +222,22 @@ button, [role="button"], a, input[type="submit"], input[type="button"], input[ty
     animation: hero-slide-in 600ms ease-out;
 }
 
+
+/* Scroll-reveal for every page except the home page (which wraps its own
+   sections in <Reveal>). Applied from src/Othercomps/ScrollReveal.jsx to
+   below-the-fold page sections only, so nothing visible at load ever flashes. */
+.sr-hidden {
+    opacity: 0;
+    transform: translateY(24px);
+}
+.sr-visible {
+    opacity: 1;
+    transform: none;
+    transition: opacity 700ms ease-out, transform 700ms ease-out;
+}
+@media (prefers-reduced-motion: reduce) {
+    .sr-hidden {
+        opacity: 1;
+        transform: none;
+    }
+}

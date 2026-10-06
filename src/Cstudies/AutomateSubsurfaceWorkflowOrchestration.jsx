@@ -65,11 +65,11 @@ const techStack = [
 ];
 
 const Bullets = ({ items }) => (
-  <ul className="max-w-3xl mx-auto flex flex-col gap-3 pt-2">
+  <ul className="max-w-3xl mx-auto flex flex-col gap-4 pt-8">
     {items.map((item) => (
-      <li key={item} className="flex gap-3 items-start">
+      <li key={item} className="flex gap-4 items-start">
         <span className="mt-2 h-2 w-2 rounded-full bg-bloo shrink-0" />
-        <span className="fontweight_1 text-blackk/70 fontsize_3">{item}</span>
+        <span className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">{item}</span>
       </li>
     ))}
   </ul>
@@ -78,16 +78,17 @@ const Bullets = ({ items }) => (
 function AutomateSubsurfaceWorkflowOrchestration() {
   const navigate = useNavigate();
   return (
-    <div className="">
-      <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40 pt-4">
-        <div className="w-full">
-          <h1 className="text-blackk fontweight_1 text-left sm:text-center text-[32px] py-2">
-            How EICE Technology, an Indian IT Company, Helped a Leading Production<br className="hidden sm:block" /> Optimisation Provider Automate Subsurface Workflow Orchestration
+    <div>
+      <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40 pt-14">
+        <div className="w-full flex flex-col gap-4 pb-10">
+          <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Subsurface Workflow Orchestration</p>
+          <h1 className="font-general font-semibold text-blackk text-[32px] sm:text-[44px] leading-[1.1] text-left sm:text-center">
+            How EICE Technology, an Indian IT Company, Helped a Leading Production Optimisation Provider Automate Subsurface Workflow Orchestration
           </h1>
-          <h2 className="text-gray-400 fontweight_1 text-left sm:text-center text-[18px] mx-auto max-w-7xl py-1">
+          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] text-left sm:text-center max-w-3xl mx-auto w-full">
             Integrating Reservoir Simulation and Surface Network Modelling in One Integrated Asset Modelling Environment
-          </h2>
-          <div className="w-full max-w-5xl mx-auto items-center justify-center pt-8 pb-4">
+          </p>
+          <div className="w-full max-w-5xl mx-auto items-center justify-center">
             <img
               src={heroImg}
               alt="Subsurface Workflow Orchestration — reservoir simulation and surface network modelling integration"
@@ -98,104 +99,104 @@ function AutomateSubsurfaceWorkflowOrchestration() {
           </div>
         </div>
 
-        <div className="w-full pb-6">
-          <h2 className="text-blackk max-w-3xl pb-2 fontweight_1 text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] pt-12 text-left sm:text-center">
+        <div className="w-full pt-10 pb-10">
+          <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center max-w-3xl mx-auto w-full">
             Overview
           </h2>
-          <div className="max-w-3xl mx-auto flex flex-col gap-4 pt-2">
-            <p className="fontweight_1 text-blackk/70 fontsize_3">A modern oilfield production depends on understanding the complete asset, as one connected system, from reservoir to surface facilities. When engineering tools work separately, it becomes slower, such as decision-making; multiple errors can increase and these make it hard to produce at scale.</p>
-            <p className="fontweight_1 text-blackk/70 fontsize_3">A leading provider of integrated asset modelling (IAM) and workflow orchestration solutions for oilfield production operations partnered with EICE Technology, an Indian IT company specialising in oil and gas software development, petroleum engineering software and reservoir simulation software integration. Together, we create a subsurface workflow orchestration solution that dynamically connects reservoir simulation models with surface network models inside the IAM environment.</p>
-            <p className="fontweight_1 text-blackk/70 fontsize_3">EICE created a reusable framework for subsurface-to-surface integration by combining petroleum engineering knowledge with enterprise software architecture. Later, the capability became a big differentiator in the client's production optimisation offering.</p>
+          <div className="max-w-3xl mx-auto flex flex-col gap-4 pt-8">
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">A modern oilfield production depends on understanding the complete asset, as one connected system, from reservoir to surface facilities. When engineering tools work separately, it becomes slower, such as decision-making; multiple errors can increase and these make it hard to produce at scale.</p>
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">A leading provider of integrated asset modelling (IAM) and workflow orchestration solutions for oilfield production operations partnered with EICE Technology, an Indian IT company specialising in oil and gas software development, petroleum engineering software and reservoir simulation software integration. Together, we create a subsurface workflow orchestration solution that dynamically connects reservoir simulation models with surface network models inside the IAM environment.</p>
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">EICE created a reusable framework for subsurface-to-surface integration by combining petroleum engineering knowledge with enterprise software architecture. Later, the capability became a big differentiator in the client's production optimisation offering.</p>
           </div>
         </div>
       </div>
 
-      <div className="bg-zinc-50 py-12">
+      <div className="bg-zinc-50 pt-10 pb-10">
         <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
-          <h2 className="text-blackk max-w-3xl pb-2 fontweight_1 text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] text-left sm:text-center">
+          <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center max-w-3xl mx-auto w-full">
             Who Is Our Client?
           </h2>
-          <div className="max-w-3xl mx-auto flex flex-col gap-4 pt-4">
-            <p className="fontweight_1 text-blackk/70 fontsize_3">Our client provides an integrated asset modelling and workflow orchestration platform used by oil and gas operators to handle production operations in the whole asset lifecycle.</p>
-            <p className="fontweight_1 text-blackk/70 fontsize_3">As operators increasingly bring subsurface and surface engineering together with one digital oilfield strategy, it's important to extend the IAM platform to dynamically integrate reservoir simulation models and surface network models instead of isolated workflows.</p>
+          <div className="max-w-3xl mx-auto flex flex-col gap-4 pt-8">
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">Our client provides an integrated asset modelling and workflow orchestration platform used by oil and gas operators to handle production operations in the whole asset lifecycle.</p>
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">As operators increasingly bring subsurface and surface engineering together with one digital oilfield strategy, it's important to extend the IAM platform to dynamically integrate reservoir simulation models and surface network models instead of isolated workflows.</p>
           </div>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
-        <div className="w-full pb-6">
-          <h2 className="text-blackk max-w-3xl pb-2 fontweight_1 text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] pt-12 text-left sm:text-center">
+        <div className="w-full pt-10 pb-10">
+          <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center max-w-3xl mx-auto w-full">
             The Challenge
           </h2>
-          <div className="max-w-3xl mx-auto flex flex-col gap-4 pt-2">
-            <p className="fontweight_1 text-blackk/70 fontsize_3">The client's IAM environment already supported detailed reservoir simulation models and proxy tools, but traditionally reservoir engineering and surface network engineering were handled separately with their own tools, data format and update cycles.</p>
-            <p className="fontweight_1 text-blackk/70 fontsize_3">The client needs an experienced partner for oil and gas development who is capable of delivering a subsurface workflow orchestration solution that can:</p>
+          <div className="max-w-3xl mx-auto flex flex-col gap-4 pt-8">
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">The client's IAM environment already supported detailed reservoir simulation models and proxy tools, but traditionally reservoir engineering and surface network engineering were handled separately with their own tools, data format and update cycles.</p>
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">The client needs an experienced partner for oil and gas development who is capable of delivering a subsurface workflow orchestration solution that can:</p>
           </div>
           <Bullets items={challengeBullets} />
-          <p className="fontweight_1 text-blackk/70 fontsize_3 max-w-3xl mx-auto pt-4">The goal was not a one-time integrated script; it is a reliable orchestration layer that can support different reservoirs and surface modelling tools within the IAM Platform.</p>
+          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl mx-auto text-left sm:text-center w-full">The goal was not a one-time integrated script; it is a reliable orchestration layer that can support different reservoirs and surface modelling tools within the IAM Platform.</p>
         </div>
 
-        <div className="w-full pb-6">
-          <h2 className="text-blackk max-w-3xl pb-2 fontweight_1 text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] pt-12 text-left sm:text-center">
+        <div className="w-full pt-10 pb-10">
+          <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center max-w-3xl mx-auto w-full">
             EICE's Role
           </h2>
-          <div className="max-w-3xl mx-auto flex flex-col gap-4 pt-2">
-            <p className="fontweight_1 text-blackk/70 fontsize_3">As an Indian IT company with expertise in petroleum engineering software and enterprise integration architecture, our consultants designed and implemented an end-to-end solution that connects both rigorous simulation models and faster proxy models within the client's IAM environment.</p>
-            <p className="fontweight_1 text-blackk/70 fontsize_3">Our engineers:</p>
+          <div className="max-w-3xl mx-auto flex flex-col gap-4 pt-8">
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">As an Indian IT company with expertise in petroleum engineering software and enterprise integration architecture, our consultants designed and implemented an end-to-end solution that connects both rigorous simulation models and faster proxy models within the client's IAM environment.</p>
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">Our engineers:</p>
           </div>
           <Bullets items={roleBullets} />
         </div>
       </div>
 
-      <div className="bg-zinc-50 py-12">
+      <div className="bg-zinc-50 pt-10 pb-10">
         <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
-          <h2 className="text-blackk max-w-3xl pb-2 fontweight_1 text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] text-left sm:text-center">
+          <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center max-w-3xl mx-auto w-full">
             Our Approach
           </h2>
-          <div className="max-w-3xl mx-auto flex flex-col gap-4 pt-4">
-            <p className="fontweight_1 text-blackk/70 fontsize_3">EICE focused on a generalised Subsurface Workflow Orchestration solution that can support generic workflows between teams of surface and subsurface engineers instead of creating a single-purpose integration.</p>
+          <div className="max-w-3xl mx-auto flex flex-col gap-4 pt-8">
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">EICE focused on a generalised Subsurface Workflow Orchestration solution that can support generic workflows between teams of surface and subsurface engineers instead of creating a single-purpose integration.</p>
           </div>
-          <div className="max-w-3xl mx-auto grid sm:grid-cols-2 gap-4 pt-4">
+          <div className="max-w-3xl mx-auto grid sm:grid-cols-2 gap-4 pt-8">
             {approachSteps.map((step) => (
-              <div key={step.title} className="bg-white rounded-lg p-4 shadow-sm">
-                <h3 className="text-blackk fontweight_1 fontsize_3 pb-2">{step.title}</h3>
-                <p className="fontweight_1 text-blackk/70 fontsize_3">{step.description}</p>
+              <div key={step.title} className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
+                <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">{step.title}</h3>
+                <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">{step.description}</p>
               </div>
             ))}
           </div>
-          <p className="fontweight_1 text-blackk/70 fontsize_3 max-w-3xl mx-auto pt-4">The uniqueness of this solution is how these three workflows work together instead of working as separate engineering processes.</p>
+          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl mx-auto text-left sm:text-center w-full">The uniqueness of this solution is how these three workflows work together instead of working as separate engineering processes.</p>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
-        <div className="w-full pb-6">
-          <h2 className="text-blackk max-w-3xl pb-2 fontweight_1 text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] pt-12 text-left sm:text-center">
+        <div className="w-full pt-10 pb-10">
+          <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center max-w-3xl mx-auto w-full">
             What We Delivered
           </h2>
-          <div className="max-w-3xl mx-auto flex flex-col gap-4 pt-2">
-            <p className="fontweight_1 text-blackk/70 fontsize_3">This solution provides a generalised integrated asset modelling capability that connects both reservoir simulation and surface network modelling in one orchestrated workflow. It includes key capabilities:</p>
+          <div className="max-w-3xl mx-auto flex flex-col gap-4 pt-8">
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">This solution provides a generalised integrated asset modelling capability that connects both reservoir simulation and surface network modelling in one orchestrated workflow. It includes key capabilities:</p>
           </div>
           <Bullets items={deliveredBullets} />
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40 pb-20">
-        <h2 className="text-blackk max-w-3xl pb-2 fontweight_1 text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] pt-4 text-left sm:text-center">
+      <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40 pb-10">
+        <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center max-w-3xl mx-auto w-full">
           Technology Stack
         </h2>
-        <div className="max-w-3xl mx-auto overflow-x-auto pt-6">
+        <div className="max-w-3xl mx-auto overflow-x-auto pt-8">
           <table className="w-full text-left border-collapse">
             <thead>
               <tr className="border-b-2 border-blue-900/60">
-                <th className="fontweight_1 text-blackk fontsize_3 py-3 pr-4">Category</th>
-                <th className="fontweight_1 text-blackk fontsize_3 py-3">Technology</th>
+                <th className="font-general font-semibold text-blackk text-[16px] leading-[1.6] py-3 pr-4">Category</th>
+                <th className="font-general font-semibold text-blackk text-[16px] leading-[1.6] py-3">Technology</th>
               </tr>
             </thead>
             <tbody>
               {techStack.map((row) => (
                 <tr key={row.category} className="border-b border-gray-200">
-                  <td className="fontweight_1 text-blackk/70 fontsize_3 py-3 pr-4">{row.category}</td>
-                  <td className="fontweight_1 text-blackk/70 fontsize_3 py-3">{row.technology}</td>
+                  <td className="font-inter font-normal text-blackk/70 text-[16px] leading-[1.6] py-3 pr-4">{row.category}</td>
+                  <td className="font-inter font-normal text-blackk/70 text-[16px] leading-[1.6] py-3">{row.technology}</td>
                 </tr>
               ))}
             </tbody>
@@ -203,57 +204,57 @@ function AutomateSubsurfaceWorkflowOrchestration() {
         </div>
       </div>
 
-      <div className="bg-zinc-50 py-12">
+      <div className="bg-zinc-50 pt-10 pb-10">
         <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
-          <h2 className="text-blackk max-w-3xl pb-2 fontweight_1 text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] text-left sm:text-center">
+          <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center max-w-3xl mx-auto w-full">
             Business Benefits
           </h2>
-          <div className="max-w-3xl mx-auto flex flex-col gap-4 pt-4">
-            <p className="fontweight_1 text-blackk/70 fontsize_3">Client gets a comprehensive, repeatable approach to subsurface and surface integration from this solution. It became a main difference in its Integrated Asset Modelling and production optimisation offering.<br></br> Expected benefits include:</p>
+          <div className="max-w-3xl mx-auto flex flex-col gap-4 pt-8">
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">Client gets a comprehensive, repeatable approach to subsurface and surface integration from this solution. It became a main difference in its Integrated Asset Modelling and production optimisation offering.<br></br> Expected benefits include:</p>
           </div>
           <Bullets items={benefitBullets} />
-          <p className="fontweight_1 text-blackk/70 fontsize_3 max-w-3xl mx-auto pt-4">EICE continues to work with the client team to extend this approach for an integrated operations solution on a major shale asset in North America.</p>
+          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl mx-auto text-left sm:text-center w-full">EICE continues to work with the client team to extend this approach for an integrated operations solution on a major shale asset in North America.</p>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
-        <div className="w-full pb-6">
-          <h2 className="text-blackk max-w-3xl pb-2 fontweight_1 text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] pt-12 text-left sm:text-center">
+        <div className="w-full pt-10 pb-10">
+          <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center max-w-3xl mx-auto w-full">
             Why Choose EICE Technology?
           </h2>
-          <div className="max-w-3xl mx-auto flex flex-col gap-4 pt-2">
-            <p className="fontweight_1 text-blackk/70 fontsize_3">As an IT company specialised in oil and gas software development and petroleum engineering software, we combine reservoir and surface engineering knowledge with enterprise software architecture to solve complex integration challenges.</p>
-            <p className="fontweight_1 text-blackk/70 fontsize_3">By building reusable orchestration frameworks rather than one-time integration, we help clients create integrated Asset Modelling and Production Optimisation Software platforms that can scale within tools, teams and assets.</p>
+          <div className="max-w-3xl mx-auto flex flex-col gap-4 pt-8">
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">As an IT company specialised in oil and gas software development and petroleum engineering software, we combine reservoir and surface engineering knowledge with enterprise software architecture to solve complex integration challenges.</p>
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">By building reusable orchestration frameworks rather than one-time integration, we help clients create integrated Asset Modelling and Production Optimisation Software platforms that can scale within tools, teams and assets.</p>
           </div>
         </div>
 
-        <div className="w-full pb-20">
-          <h2 className="text-blackk max-w-3xl pb-2 fontweight_1 text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] pt-12 text-left sm:text-center">
+        <div className="w-full pt-10 pb-10">
+          <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center max-w-3xl mx-auto w-full">
             Project Highlights
           </h2>
-          <div className="max-w-3xl mx-auto flex flex-wrap gap-3 pt-4">
+          <div className="max-w-3xl mx-auto flex flex-wrap gap-4 pt-8">
             {projectHighlights.map((tag) => (
-              <span key={tag} className="fontweight_1 text-blackk/70 fontsize_3 bg-zinc-100 rounded-full px-4 py-2">{tag}</span>
+              <span key={tag} className="font-general font-semibold flex w-fit items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[12px] sm:text-[14px] tracking-wide">{tag}</span>
             ))}
           </div>
         </div>
       </div>
 
-      <div className="bg-zinc-50 py-16">
+      <div className="bg-zinc-50 pt-10 pb-10">
         <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
-          <h2 className="text-blackk max-w-3xl pb-2 fontweight_1 text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] text-left sm:text-center">
+          <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center max-w-3xl mx-auto w-full">
             Let's Build the Future of Industrial Engineering
           </h2>
-          <p className="fontweight_1 text-blackk/70 fontsize_3 max-w-3xl mx-auto text-left sm:text-center pt-4">Whether you need to connect reservoir simulation with surface network modelling, build an Integrated Asset Modelling platform, or support Oil and Gas digital transformation initiatives, we provide scalable enterprise software solutions backed by petroleum engineering expertise.</p>
+          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl mx-auto text-left sm:text-center w-full">Whether you need to connect reservoir simulation with surface network modelling, build an Integrated Asset Modelling platform, or support Oil and Gas digital transformation initiatives, we provide scalable enterprise software solutions backed by petroleum engineering expertise.</p>
         </div>
       </div>
 
       {/* CTA */}
-      <section className="bg-[#012060] py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-[32px] sm:text-4xl font-bold text-white mb-4 leading-tight">Need Your Reservoir and Surface Models Talking to Each Other?</h2>
-          <p className="text-blue-200 text-[16px] sm:text-lg leading-relaxed mb-8 max-w-2xl mx-auto">Talk to our team about integrating reservoir simulation with surface network models.</p>
-          <button onClick={() => navigate("/products/eicerise/form?product=Oil%20%26%20Gas")} className="bg-[#01B0F1] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto font-semibold text-[18px] hover:text-[#012060] transition">
+      <section className="bg-[#012060] pt-10 pb-10 px-4 md:px-10 lg:px-20 xl:px-40">
+        <div className="max-w-4xl mx-auto flex flex-col items-start sm:items-center gap-4 text-left sm:text-center">
+          <h2 className="font-general font-semibold text-white text-[24px] sm:text-[32px] leading-[1.2]">Need Your Reservoir and Surface Models Talking to Each Other?</h2>
+          <p className="font-inter font-normal text-blue-200 text-[16px] sm:text-[18px] leading-[1.6] max-w-2xl">Talk to our team about integrating reservoir simulation with surface network models.</p>
+          <button onClick={() => navigate("/products/eicerise/form?product=Oil%20%26%20Gas")} className="bg-[#01B0F1] text-white px-10 py-3 rounded-md flex items-center gap-2 font-semibold text-[18px] hover:text-[#012060] transition">
             Talk to Our Oil &amp; Gas Team
             <img src={arrowIcon} alt="arrow" width="24" height="24" />
           </button>

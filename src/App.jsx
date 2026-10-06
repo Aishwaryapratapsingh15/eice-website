@@ -8,6 +8,7 @@ import dynamic from "next/dynamic";
 const logo = "https://d3r43jacxrwsrp.cloudfront.net/new-logo.svg";
 import { NavLink, Link, useNavigate } from "@/nextNavigation";
 import { Breadcrumbs } from "./Othercomps/Breadcrumbs";
+import ScrollReveal from "./Othercomps/ScrollReveal";
 
 // The mobile nav dropdown (MUI Menu + framer-motion panels) is closed by
 // default and not needed for first paint, so it's split into its own chunk
@@ -90,7 +91,7 @@ const NavLayout = ({ children }) => {
             </div>
             <div className="px-4 flex-1 flex justify-end">
               <NavLink to="/contact">
-                <button className="flex items-center justify-center transition duration-200 w-28 h-[34px] min-h-[34px] hover:bg-blue-900/90 hover:shadow-md hover:shadow-blue-900/30 bg-blue-900 text-white text-sm font-semibold px-3 rounded">
+                <button className="flex items-center justify-center transition duration-200 w-28 h-[34px] min-h-[34px] hover:bg-blue-900/90 hover:shadow-md hover:shadow-blue-900/30 bg-[#012060] text-white text-sm font-semibold px-3 rounded">
                   Contact Us
                 </button>
               </NavLink>
@@ -113,8 +114,9 @@ const NavLayout = ({ children }) => {
           </div>
         </nav>
 
-        <main id="main-content" className="2xl:mt-28 2xl:w-full 2xl:scale-100 w-screen scale-100">
+        <main id="main-content" className="2xl:mt-14 2xl:w-full 2xl:scale-100 w-screen scale-100">
           <Breadcrumbs />
+          <ScrollReveal />
           {children}
         </main>
       </div>

@@ -244,7 +244,15 @@ missed escalations, ensures structured communication, and gives managers full vi
               key={index}
               className="text-white py-2 pr-2 text-left lg:text-white lg:py-8 lg:px-5 lg:text-center md:text-white md:py-8 md:px-5 md:text-center"
             >
-              <h3 className="font-general font-semibold text-[#01B0F1] text-[22px] mb-4 text-left md:text-center lg:text-center lg:text-4xl lg:mb-5 md:text-4xl md:mb-5">{item.number}</h3>
+              <h3 className="font-general font-semibold text-[#01B0F1] text-[22px] mb-4 text-left md:text-center lg:text-center lg:text-4xl lg:mb-5 md:text-4xl md:mb-5">{String(item.number).includes(" → ") ? (
+                  <>
+                    {String(item.number).split(" → ")[0]}
+                    <img src="https://d3r43jacxrwsrp.cloudfront.net/arrow.svg" alt="to" className="mx-2 inline-block w-[1em] h-[1em] align-middle" width="24" height="24" style={{ filter: "brightness(0) saturate(100%) invert(54%) sepia(98%) saturate(1655%) hue-rotate(166deg) brightness(97%) contrast(101%)" }} />
+                    {String(item.number).split(" → ")[1]}
+                  </>
+                ) : (
+                  item.number
+                )}</h3>
               <p className="font-inter font-semibold text-[16px] leading-relaxed text-[#334155] lg:text-lg lg:leading-relaxed text-[#334155] md:text-lg sm:text-lg">{item.title}</p>
             </div>
           ))}

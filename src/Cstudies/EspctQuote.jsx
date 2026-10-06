@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 import React from "react";
 import { useNavigate } from "@/nextNavigation";
 import Footer from "../Othercomps/Footer";
@@ -15,21 +15,17 @@ import { GiVirtualMarker } from "react-icons/gi";
 function EspctQuote() {
   const navigate = useNavigate();
   return (
-    <div className="">
-      <div className="max-w-7xl  mx-auto px-4 md:px-10 lg:px-20 xl:px-40 pt-4">
-        <div className="w-full">
-          <h1 className="text-blackk fontweight_1 text-center text-[32px] py-2">
-            ESPCT Quote
-          </h1>
-          <h2 className="text-gray-400 fontweight_1 text-center text-[18px] mx-auto max-w-3xl py-1">
-            A Sales and Quotation Tool
-          </h2>
-          <p className="fontweight_1 max-w-4xl mx-auto  text-blackk/70 fontsize_3 pt-4 px-4">
+    <div>
+      <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40 pt-14">
+        <div className="w-full flex flex-col gap-4 pb-10">
+          <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">ESPCT Quote</p>
+          <h1 className="font-general font-semibold text-blackk text-[32px] sm:text-[44px] leading-[1.1] text-left sm:text-center">A Sales and Quotation Tool</h1>
+          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-4xl mx-auto text-left sm:text-center w-full">
             A web-based sales automation and quotation tool for engineering
             products, offering customizable configurations, admin-assisted
             optimization, and interactive user support.
           </p>
-          <div className="w-full max-w-7xl mx-auto items-center justify-center pt-8 pb-4 grid grid-cols-2 gap-4">
+          <div className="w-full max-w-7xl mx-auto items-center justify-center grid grid-cols-2 gap-4">
             <img
               src={espctquote1}
               alt="ESPCT Quote sales quotation tool — product configuration screen"
@@ -42,51 +38,41 @@ function EspctQuote() {
              width="405" height="330" />
           </div>
         </div>
-        <div className="w-full pb-6">
-          <h2 className="text-blackk max-w-3xl pb-2 fontweight_1 text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] pt-12">
+        <div className="w-full pt-10 pb-10">
+          <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center max-w-3xl mx-auto w-full">
             Key Challenges
           </h2>
-          <div className="max-w-3xl  mx-auto flex flex-col py-4 gap-4">
-            <div className="flex gap-4 ">
-              <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
-                01
-              </h1>
-              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
+          <div className="max-w-3xl mx-auto flex flex-col gap-4 pt-8">
+            <div className="flex items-start gap-4">
+              <span className="font-general font-semibold text-bloo text-[20px] leading-[1.3] shrink-0">01</span>
+              <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">
                 Developing a user-friendly web interface for complex engineering
                 product configurations
               </p>
             </div>
-            <div className="flex gap-4">
-              <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
-                02
-              </h1>
-              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
+            <div className="flex items-start gap-4">
+              <span className="font-general font-semibold text-bloo text-[20px] leading-[1.3] shrink-0">02</span>
+              <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">
                 Integrating admin support for optimal assembly suggestions and
                 quotations
               </p>
             </div>
-            <div className="flex gap-4">
-              <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
-                03
-              </h1>
-              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
+            <div className="flex items-start gap-4">
+              <span className="font-general font-semibold text-bloo text-[20px] leading-[1.3] shrink-0">03</span>
+              <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">
                 Implementing a system for real-time user-admin communication
               </p>
             </div>
-            <div className="flex gap-4">
-              <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
-                04
-              </h1>
-              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
+            <div className="flex items-start gap-4">
+              <span className="font-general font-semibold text-bloo text-[20px] leading-[1.3] shrink-0">04</span>
+              <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">
                 Ensuring accurate and up-to-date product information across
                 various systems and components
               </p>
             </div>
-            <div className="flex gap-4">
-              <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
-                05
-              </h1>
-              <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
+            <div className="flex items-start gap-4">
+              <span className="font-general font-semibold text-bloo text-[20px] leading-[1.3] shrink-0">05</span>
+              <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">
                 Balancing user customization options with admin-guided
                 recommendations
               </p>
@@ -94,15 +80,15 @@ function EspctQuote() {
           </div>
         </div>
       </div>
-      <div className="bg-zinc-50 py-12 mt-12">
-        <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
-          <h1 className="text-bloo flex items-center justify-center h-full text-xs font-extrabold uppercase tracking-[0.12em] py-2">
+      <div className="bg-zinc-50 pt-10 pb-10">
+        <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40 flex flex-col gap-4">
+          <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">
             About Our Client
-          </h1>
-          <h2 className="text-blackk  fontweight_1 text-center text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] max-w-3xl py-1">
+          </p>
+          <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center max-w-3xl mx-auto w-full">
             ESPCT : ESP Completion Technologies
           </h2>
-          <p className="fontweight_1 text-blackk/70 fontsize_3 pt-4">
+          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-5xl mx-auto text-left sm:text-center w-full">
             ESPCT designs, manufactures and installs proprietary completion
             equipment for electric submersible pump (ESP) systems to meet the
             needs of ESP OEMs and E&P operators. ESPCT is headquartered in
@@ -114,24 +100,24 @@ function EspctQuote() {
           </p>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
-        <div className="pt-20 pb-6">
-          <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
+      <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10">
+<div>
+          <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">
             Unlocking Success
-          </h1>
+          </h2>
         </div>
-        <div className="grid lg:grid-cols-3 grid-cols-1 gap-6 pb-20">
-          <div className="group cursor-pointer p-4 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200 ">
-            <div className="group-hover:scale-[.98] transition duration-200 grid grid-cols-1 gap-3">
-              <div className="w-full h-full items-center justify-start px-2 pb-2">
-                <GiVirtualMarker size={50} className="text-bloo" />
+        <div className="grid lg:grid-cols-3 grid-cols-1 gap-4 pt-8">
+          <div className="group h-full rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col items-start text-start">
+            <div className="flex flex-col items-start">
+              <div className="mb-[19px] text-bloo flex items-center">
+                <GiVirtualMarker size={44} className="text-bloo" />
               </div>
               <div>
-                <div className="flex flex-col p-2 text-start justify-end">
-                  <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
+                <div className="flex flex-col text-start">
+                  <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
                     IDEATION:
-                  </h1>
-                  <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">
+                  </h3>
+                  <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                     We envisioned a comprehensive web-based tool that would
                     simplify the complex process of configuring and quoting
                     engineering products. Our focus was on creating a platform
@@ -142,17 +128,17 @@ function EspctQuote() {
               </div>
             </div>
           </div>
-          <div className="group cursor-pointer p-4 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200 ">
-            <div className="group-hover:scale-[.98] transition duration-200 grid grid-cols-1 gap-3">
-              <div className="flex w-full h-full items-center justify-start px-2 pb-2">
-                <GiVirtualMarker size={50} className="text-bloo" />
+          <div className="group h-full rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col items-start text-start">
+            <div className="flex flex-col items-start">
+              <div className="mb-[19px] text-bloo flex items-center">
+                <GiVirtualMarker size={44} className="text-bloo" />
               </div>
               <div>
-                <div className="flex flex-col p-2 text-start justify-end ">
-                  <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
+                <div className="flex flex-col text-start">
+                  <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
                     OUR APPROACH
-                  </h1>
-                  <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">
+                  </h3>
+                  <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                     We prioritized user experience by developing an intuitive
                     interface that allows for easy product configuration. By
                     integrating admin support, we aimed to provide expert
@@ -165,19 +151,19 @@ function EspctQuote() {
               </div>
             </div>
           </div>
-          <div className="group cursor-pointer p-4 bg-zinc-50 rounded-md overflow-hidden shadow-sm shadow-zinc-50 transition-shadow duration-300 hover:shadow-lg hover:shadow-blackk/10 border border-zinc-50 border-transparent hover:border-gray-200 ">
-            <div className="group-hover:scale-[.98] transition duration-200 grid grid-cols-1 gap-3">
-              <div className="flex w-full h-full items-center justify-start px-2 pb-2">
-                <div className="grid grid-cols-2 gap-0">
-                  <GiVirtualMarker size={50} className="text-bloo" />
+          <div className="group h-full rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col items-start text-start">
+            <div className="flex flex-col items-start">
+              <div className="mb-[19px] text-bloo flex items-center">
+                <div className="grid grid-cols-2 gap-4">
+                  <GiVirtualMarker size={44} className="text-bloo" />
                 </div>
               </div>
               <div>
-                <div className="flex flex-col p-2 text-start">
-                  <h1 className="text-blackk fontweight_1 text-xl pt-1 pb-3 sm:text-2xl">
+                <div className="flex flex-col text-start">
+                  <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
                     OUTCOMES
-                  </h1>
-                  <p className="z-20 fontweight_1 text-blackk/70 fontsize_3">
+                  </h3>
+                  <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                     The ESPCT Quote tool has revolutionized the sales process
                     for engineering products by providing a user-friendly
                     platform for configuration and quotation. Its ability to
@@ -193,61 +179,51 @@ function EspctQuote() {
           </div>
         </div>
       </div>
-      <div className="w-full pb-20 px-4 md:px-10 lg:px-20 xl:px-40">
-        <h2 className="text-blackk max-w-3xl pb-2 fontweight_1 text-2xl sm:text-2xl mx-auto md:text-3xl lg:text-[32px] pt-12">
+      <div className="w-full pt-10 pb-10 px-4 md:px-10 lg:px-20 xl:px-40">
+        <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center max-w-3xl mx-auto w-full">
           Project Outcomes
         </h2>
-        <div className="max-w-3xl mx-auto flex flex-col py-4 gap-4">
-          <div className="flex gap-4 rounded-xl border-2 border-blue-900/60 p-4 shadow-md shadow-blue-900/20">
-            <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
-              01
-            </h1>
-            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
+        <div className="max-w-3xl mx-auto flex flex-col gap-4 pt-8">
+          <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex items-start gap-4">
+            <span className="font-general font-semibold text-bloo text-[20px] leading-[1.3] shrink-0">01</span>
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">
               Successfully developed a web-based sales and quote tool for
               engineering products
             </p>
           </div>
-          <div className="flex gap-4 rounded-xl border-2 border-blue-900/60 p-4 shadow-md shadow-blue-900/20">
-            <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
-              02
-            </h1>
-            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
+          <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex items-start gap-4">
+            <span className="font-general font-semibold text-bloo text-[20px] leading-[1.3] shrink-0">02</span>
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">
               Implemented user-configurable options for tools and assemblies
             </p>
           </div>
-          <div className="flex gap-4 rounded-xl border-2 border-blue-900/60 p-4 shadow-md shadow-blue-900/20">
-            <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
-              03
-            </h1>
-            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
+          <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex items-start gap-4">
+            <span className="font-general font-semibold text-bloo text-[20px] leading-[1.3] shrink-0">03</span>
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">
               Integrated admin support for suggesting optimal assemblies and
               providing best quotes
             </p>
           </div>
-          <div className="flex gap-4 rounded-xl border-2 border-blue-900/60 p-4 shadow-md shadow-blue-900/20">
-            <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
-              04
-            </h1>
-            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
+          <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex items-start gap-4">
+            <span className="font-general font-semibold text-bloo text-[20px] leading-[1.3] shrink-0">04</span>
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">
               Created a review and Q&A system for users to interact with admins
             </p>
           </div>
-          <div className="flex gap-4 rounded-xl border-2 border-blue-900/60 p-4 shadow-md shadow-blue-900/20">
-            <h1 className="text-bloo flex items-center justify-center h-full fontweight_1 text-center fontsize_2  py-2">
-              05
-            </h1>
-            <p className="fontweight_1 text-blackk/70 fontsize_3 py-2">
+          <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex items-start gap-4">
+            <span className="font-general font-semibold text-bloo text-[20px] leading-[1.3] shrink-0">05</span>
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">
               Streamlined the quotation process for complex engineering systems
             </p>
           </div>
         </div>
       </div>
       {/* CTA */}
-      <section className="bg-[#012060] py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-[32px] sm:text-4xl font-bold text-white mb-4 leading-tight">Looking to Modernize Your Sales &amp; Quotation Process?</h2>
-          <p className="text-blue-200 text-[16px] sm:text-lg leading-relaxed mb-8 max-w-2xl mx-auto">Talk to our team about building a web-based quotation platform for your equipment or services.</p>
-          <button onClick={() => navigate("/products/eicerise/form?product=Oil%20%26%20Gas")} className="bg-[#01B0F1] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto font-semibold text-[18px] hover:text-[#012060] transition">
+      <section className="bg-[#012060] pt-10 pb-10 px-4 md:px-10 lg:px-20 xl:px-40">
+        <div className="max-w-4xl mx-auto flex flex-col items-start sm:items-center gap-4 text-left sm:text-center">
+          <h2 className="font-general font-semibold text-white text-[24px] sm:text-[32px] leading-[1.2]">Looking to Modernize Your Sales &amp; Quotation Process?</h2>
+          <p className="font-inter font-normal text-blue-200 text-[16px] sm:text-[18px] leading-[1.6] max-w-2xl">Talk to our team about building a web-based quotation platform for your equipment or services.</p>
+          <button onClick={() => navigate("/products/eicerise/form?product=Oil%20%26%20Gas")} className="bg-[#01B0F1] text-white px-10 py-3 rounded-md flex items-center gap-2 font-semibold text-[18px] hover:text-[#012060] transition">
             Talk to Our Oil &amp; Gas Team
             <img src={arrowIcon} alt="arrow" width="24" height="24" />
           </button>

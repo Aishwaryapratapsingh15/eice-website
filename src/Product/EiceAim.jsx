@@ -202,8 +202,7 @@ export default function EiceAim() {
             </h2>
           </div>
           <div className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] space-y-4 sm:space-y-3">
-            <p>EICEAIM is the Action Agent inside the EICE Agent Suite — an AI-driven ecosystem built to automate, optimize, and scale enterprise intelligence.</p>
-            <p>It acts as your intelligent sales partner, automating outreach, lead qualification, and follow-ups with precision and personalization — replacing traditional telecalling with a scalable, always-on communication system.</p>
+            <p>EICEAIM is an AI-powered lead generation and sales engagement platform designed to automate outreach, lead qualification, and follow-ups at scale. It helps businesses engage prospects continuously through configurable AI personas, intelligent qualification logic, and personalized follow-up workflows.</p>
           </div>
        </div>
       </section>

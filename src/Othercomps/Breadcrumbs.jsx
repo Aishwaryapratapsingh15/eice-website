@@ -89,6 +89,12 @@ const NO_INDEX_PAGE = new Set([]);
 // other multi-level trail on the site (e.g. Home / {blog category} / post).
 const SKIP_SEGMENTS = new Set(["category"]);
 
+// Top-level URLs that live under the Resources hub in the site's navigation
+// (Home / Resources / Case Studies, Home / Resources / Blog) even though the
+// URL path has no /resources prefix. They get a "Resources" crumb inserted
+// after Home, and show the trail even at a single segment.
+const RESOURCES_CHILD_SEGMENTS = new Set(["case-studies", "blog"]);
+
 // Exact pages that never show a breadcrumb, regardless of depth.
 const HIDDEN_PATHS = new Set(["/products/eicerise", "/products/easylogy"]);
 
@@ -116,7 +122,8 @@ export function Breadcrumbs() {
   // Only surface the trail once the visitor is more than two pages deep
   // (home + one top-level section doesn't need it; a specific item within
   // a section does).
-  if (segments.length < 2) return null;
+  const isResourcesChild = RESOURCES_CHILD_SEGMENTS.has(segments[0]);
+  if (segments.length < 2 && !isResourcesChild) return null;
 
   // Blog post URLs are /blog/{category}/{slug} — the middle segment is a
   // category slug, but its real page lives at /blog/category/{slug}, not
@@ -144,6 +151,9 @@ export function Breadcrumbs() {
 
   const crumbs = [
     { label: "Home", href: "/", linkable: true },
+    ...(isResourcesChild
+      ? [{ segment: "resources", label: "Resources", href: "/resources", linkable: true }]
+      : []),
     ...rawCrumbs.filter((crumb) => !SKIP_SEGMENTS.has(crumb.segment)),
   ];
 
@@ -182,7 +192,7 @@ function BreadcrumbTrail({ crumbs }) {
   return (
     <nav
       aria-label="Breadcrumb"
-      className="mx-auto mt-20 w-full max-w-7xl px-4 pt-3 text-[16px] sm:px-6 2xl:mt-0"
+      className="mx-auto mt-20 w-full max-w-7xl px-4 pt-3 text-[16px] sm:px-6 2xl:mt-6"
     >
       <ol className="flex flex-wrap items-center gap-1.5 text-blackk/50">
         {crumbs.map((crumb, index) => {

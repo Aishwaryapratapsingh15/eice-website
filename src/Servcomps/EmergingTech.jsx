@@ -134,11 +134,11 @@ export default function EmergingTech() {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-white text-gray-800 font-poppins">
+    <div className="bg-white text-gray-800">
 
       {/* HERO */}
-      <section className="text-left sm:text-center pt-4 pb-4 sm:pb-16 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
-        <div className="mt-5 flex justify-center mb-6">
+      <section className="pt-14 pb-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
+        <div className="flex flex-col items-start sm:items-center gap-4 text-left sm:text-center">
           {/* Replace with actual hero image once available */}
           {heroImg ? (
             <img src={heroImg} alt="Emerging Tech" className="mx-auto w-full max-w-[480px] object-contain"  width="427" height="240" />
@@ -147,26 +147,24 @@ export default function EmergingTech() {
               Hero Image
             </div>
           )}
-        </div>
 
-        <span className="flex w-fit mx-auto items-center gap-2 bg-blue-50 text-[#012060] px-3 py-2 rounded-full text-sm font-medium border border-blue-200 mb-4">
-          {badgeIcon && <img src={badgeIcon} alt="" className="w-5 h-5 object-contain"  width="20" height="20" />}
-          Emerging Tech
-        </span>
+          <div className="font-general font-semibold flex w-fit items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[12px] sm:text-[14px] tracking-wide sm:mx-auto">
+            {badgeIcon && <img src={badgeIcon} alt="" className="w-5 h-5 rounded-full object-contain" width="20" height="20" />}
+            <span>Emerging Tech</span>
+          </div>
 
-        <h1 className="text-[40px] sm:text-[48px] md:text-[56px] font-bold text-[#334155] max-w-4xl mx-auto leading-tight mt-4">
-          Stay ahead with technology{" "}
-          <span className="text-[#01B0F1]">that&apos;s shaping tomorrow</span>
-        </h1>
+          <h1 className="font-general font-semibold text-blackk text-[32px] sm:text-[44px] leading-[1.1] max-w-4xl">
+            Stay ahead with technology{" "}
+            <span className="text-bloo">that&apos;s shaping tomorrow</span>
+          </h1>
 
-        <p className="mt-6 text-[#64748B] max-w-2xl mx-auto text-[16px] sm:text-[20px] leading-relaxed">
-          EICE helps businesses leverage cutting-edge innovations — from AI to blockchain — to create new opportunities and drive unprecedented growth
-        </p>
+          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl">
+            EICE helps businesses leverage cutting-edge innovations — from AI to blockchain — to create new opportunities and drive unprecedented growth
+          </p>
 
-        <div className="mt-8 flex flex-wrap justify-start sm:justify-center gap-4">
           <button
             onClick={() => navigate("/products/eicerise/form?product=Emerging%20Tech")}
-            className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-blue-800 transition text-[18px]"
+            className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-[#1E40AF] transition text-[18px]"
           >
             Get in Touch
             <img src={arrowIcon} alt="arrow"  width="24" height="24" />
@@ -175,19 +173,17 @@ export default function EmergingTech() {
       </section>
 
       {/* OVERVIEW — WHAT WE DO */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-[#F4F9FF]">
-        <div className="max-w-6xl mx-auto">
-          <p className="text-[#01B0F1] text-[22px] font-semibold mb-4 sm:mb-8 sm:text-center">
-            OVERVIEW — WHAT WE DO
-          </p>
-          <div className="grid md:grid-cols-2 gap-4 sm:gap-12 items-start">
+      <section className="px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10 bg-[#F4F9FF]">
+        <div className="max-w-7xl mx-auto">
+          <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Overview — What We Do</p>
+          <div className="grid md:grid-cols-2 gap-4 items-start pt-8">
 
             {/* Left */}
-            <div>
-              <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155] mb-4 leading-tight">
+            <div className="flex flex-col gap-4">
+              <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2]">
                 Pioneering tech, backed by real-world experience
               </h2>
-              <p className="text-[#64748B] text-[16px] sm:text-lg leading-relaxed">
+              <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">
                 We don&apos;t experiment with emerging tech on your dime. Our teams have delivered production-grade AI, IoT, and blockchain solutions for 60+ clients across 10+ countries.
               </p>
             </div>
@@ -195,52 +191,50 @@ export default function EmergingTech() {
             {/* Right: feature cards */}
             <div className="flex flex-col gap-4">
               {overviewCards.map((card, i) => (
-                <div key={i} className="bg-white border border-[#E2E8F0] rounded-xl p-4 flex items-start gap-4 shadow-sm">
+                <div key={i} className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex items-start gap-4">
                   {card.icon ? (
-                    <img src={card.icon} alt="" className="w-10 h-10 object-contain flex-shrink-0"  width="40" height="40" />
+                    <img src={card.icon} alt="" className="w-11 h-11 object-contain flex-shrink-0"  width="44" height="44" />
                   ) : (
-                    <div className="w-10 h-10 bg-blue-100 rounded-lg flex-shrink-0" />
+                    <div className="w-11 h-11 bg-blue-100 rounded-lg flex-shrink-0" />
                   )}
                   <div>
-                    <h3 className="text-[24px] font-bold text-[#334155] mb-1">{card.title}</h3>
-                    <p className="text-[#64748B] text-[16px]">{card.desc}</p>
+                    <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">{card.title}</h3>
+                    <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">{card.desc}</p>
                   </div>
                 </div>
               ))}
             </div>
-
           </div>
         </div>
       </section>
 
       {/* OUR EMERGING TECH SERVICES */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <p className="text-[#01B0F1] text-[22px] font-semibold mb-2 text-center">
-            OUR EMERGING TECH SERVICES
-          </p>
-          <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155] text-center mb-4 sm:mb-12 leading-tight">
-            Three ways we innovate for you
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
+      <section className="px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col gap-4">
+            <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Our Emerging Tech Services</p>
+            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">Three ways we innovate for you</h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-8">
             {services.map((service, i) => (
-              <div key={i} className="bg-white border border-[#E2E8F0] rounded-xl p-4 sm:p-6 flex flex-col">
+              <div key={i} className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col items-start">
                 {service.icon ? (
-                  <img src={service.icon} alt="" className="w-12 h-12 object-contain mb-4"  width="48" height="48" />
+                  <img src={service.icon} alt="" className="w-11 h-11 object-contain mb-[19px]"  width="44" height="44" />
                 ) : (
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg mb-4" />
+                  <div className="w-11 h-11 bg-blue-100 rounded-lg mb-[19px]" />
                 )}
-                <h3 className="text-[24px] font-bold text-[#334155] mb-3">{service.title}</h3>
-                <p className="text-[#64748B] text-[16px] leading-relaxed mb-4 flex-grow">{service.desc}</p>
-                <div className="flex flex-wrap gap-2 mb-4">
+                <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">{service.title}</h3>
+                <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6] flex-grow pb-4">{service.desc}</p>
+                <div className="flex flex-wrap gap-2 pb-4">
                   {service.tags.map((tag, j) => (
-                    <span key={j} className="px-3 py-1 text-[14px] text-[#334155] bg-[#F1F5F9] rounded-full border border-[#E2E8F0]">
+                    <span key={j} className="font-general font-semibold flex w-fit items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[12px] sm:text-[14px] tracking-wide">
                       {tag}
                     </span>
                   ))}
                 </div>
-                <Link to={service.link} className="text-[#01B0F1] text-[16px] font-semibold flex items-center gap-1 hover:underline">
-                  Learn More →
+                <Link to={service.link} className="inline-flex items-center gap-2 text-[14px] font-bold text-[#01B0F1] hover:text-blue-900 transition">
+                  Explore More
+                  <img src="https://d3r43jacxrwsrp.cloudfront.net/arrow.svg" alt="" aria-hidden="true" className="w-[16px] h-[16px] object-contain" width="16" height="16" style={{ filter: "brightness(0) saturate(100%) invert(54%) sepia(98%) saturate(1655%) hue-rotate(166deg) brightness(97%) contrast(101%)" }} />
                 </Link>
               </div>
             ))}
@@ -249,41 +243,40 @@ export default function EmergingTech() {
       </section>
 
       {/* HOW WE WORK — PROCESS */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-[#012060]">
-        <div className="max-w-6xl mx-auto">
-          <p className="text-[#01B0F1] text-[22px] font-semibold mb-2 text-center">
-            HOW WE WORK
-          </p>
-          <h2 className="text-[32px] sm:text-4xl font-bold text-white text-center mb-2 leading-tight">
-            Our Emerging technology process
-          </h2>
-          <p className="text-blue-200 text-[16px] sm:text-lg text-center max-w-2xl mx-auto mb-4 sm:mb-12">
-            A structured approach that de-risks innovation and ensures every technology decision maps directly to business value
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+      <section className="px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10 bg-[#012060]">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col gap-4">
+            <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">How We Work</p>
+            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center !text-white">Our Emerging technology process</h2>
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] !text-blue-200 max-w-5xl mx-auto text-left sm:text-center">
+              A structured approach that de-risks innovation and ensures every technology decision maps directly to business value
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 pt-8">
             {steps.map((step, i) => (
               <div key={i} className="relative flex items-stretch">
-                <div className="bg-[#0B3A63] rounded-2xl p-4 sm:p-6 w-full">
-                  <div className="flex items-center justify-between gap-3 mb-3">
+                <div className="rounded-[18px] border border-white/20 bg-white/10 p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 w-full">
+                  <div className="flex items-center justify-between gap-3 pb-4">
                     {step.icon ? (
-                      <img src={step.icon} alt="" className="w-10 h-10 object-contain"  width="40" height="40" />
+                      <img src={step.icon} alt="" className="w-11 h-11 object-contain"  width="44" height="44" />
                     ) : (
-                      <div className="w-10 h-10 bg-[#01B0F1]/20 rounded-lg flex items-center justify-center">
-                        <span className="text-[#01B0F1] font-bold text-sm">
+                      <div className="w-11 h-11 bg-bloo/20 rounded-lg flex items-center justify-center">
+                        <span className="text-bloo font-bold text-sm">
                           {step.step}
                         </span>
                       </div>
                     )}
                     <span className="text-white/30 text-4xl font-bold leading-none">{step.step}</span>
                   </div>
-                  <h3 className="text-white text-[24px] font-bold leading-snug mb-2 whitespace-pre-line">
+                  <h3 className="font-general font-semibold text-white text-[18px] sm:text-[20px] leading-[1.3] mb-[7px] whitespace-pre-line">
                     {step.title}
                   </h3>
-                  <p className="text-blue-200 text-[16px] leading-relaxed">{step.desc}</p>
+                  <p className="font-inter font-normal text-blue-200 text-[15px] sm:text-[16px] leading-[1.6]">{step.desc}</p>
                 </div>
                 {i < steps.length - 1 && (
-                  <div className="hidden md:flex absolute -right-4 top-1/2 -translate-y-1/2 z-10 text-[#01B0F1] text-2xl">
-                    →
+                  <div className="hidden md:flex absolute -right-4 top-1/2 -translate-y-1/2 z-10">
+                    <img src="https://d3r43jacxrwsrp.cloudfront.net/arrow.svg" alt="" aria-hidden="true" className="w-[24px] h-[24px] object-contain" width="24" height="24" style={{ filter: "brightness(0) saturate(100%) invert(54%) sepia(98%) saturate(1655%) hue-rotate(166deg) brightness(97%) contrast(101%)" }} />
                   </div>
                 )}
               </div>
@@ -293,27 +286,25 @@ export default function EmergingTech() {
       </section>
 
       {/* TECH STACK */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <p className="text-[#01B0F1] text-[22px] font-semibold mb-2 text-center">
-            TECHNOLOGY
-          </p>
-          <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155] text-center mb-2 leading-tight">
-            Our Emerging Tech Stack
-          </h2>
-          <p className="text-[#64748B] text-[16px] sm:text-lg text-center max-w-2xl mx-auto mb-4 sm:mb-12">
-            We work with the best tools and frameworks to build scalable, future-ready solutions
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
+      <section className="px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col gap-4">
+            <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Technology</p>
+            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">Our Emerging Tech Stack</h2>
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-5xl mx-auto text-left sm:text-center">
+              We work with the best tools and frameworks to build scalable, future-ready solutions
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-8">
             {techStack.map((stack, i) => (
-              <div key={i} className="bg-white border border-[#E2E8F0] rounded-xl p-4 sm:p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-1 h-6 bg-[#01B0F1] rounded-full flex-shrink-0" />
-                  <h3 className="text-[24px] font-bold text-[#334155]">{stack.category}</h3>
+              <div key={i} className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
+                <div className="flex items-center gap-3 pb-4">
+                  <div className="w-1 h-6 bg-bloo rounded-full flex-shrink-0" />
+                  <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3]">{stack.category}</h3>
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {stack.techs.map((tech, j) => (
-                    <span key={j} className="px-3 py-1 text-[14px] text-[#334155] bg-[#F1F5F9] rounded-full border border-[#E2E8F0]">
+                    <span key={j} className="font-general font-semibold flex w-fit items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[12px] sm:text-[14px] tracking-wide">
                       {tech}
                     </span>
                   ))}
@@ -325,24 +316,22 @@ export default function EmergingTech() {
       </section>
 
       {/* WHY EICE */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-[#F4F9FF]">
-        <div className="max-w-6xl mx-auto">
-          <p className="text-[#01B0F1] text-[22px] font-semibold mb-2 text-center">
-            WHY EICE
-          </p>
-          <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155] text-center mb-4 sm:mb-12 leading-tight">
-            What makes us different
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+      <section className="px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10 bg-[#F4F9FF]">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col gap-4">
+            <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Why EICE</p>
+            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">What makes us different</h2>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 pt-8">
             {whyEice.map((item, i) => (
-              <div key={i} className="bg-white border border-[#E2E8F0] rounded-xl p-4 sm:p-6 flex flex-col items-start">
+              <div key={i} className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col items-start">
                 {item.icon ? (
-                  <img src={item.icon} alt="" className="w-12 h-12 object-contain mb-4"  width="48" height="48" />
+                  <img src={item.icon} alt="" className="w-11 h-11 object-contain mb-[19px]"  width="44" height="44" />
                 ) : (
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg mb-4" />
+                  <div className="w-11 h-11 bg-blue-100 rounded-lg mb-[19px]" />
                 )}
-                <h3 className="text-[24px] font-bold text-[#334155] mb-2">{item.title}</h3>
-                <p className="text-[#64748B] text-[16px] leading-relaxed">{item.desc}</p>
+                <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">{item.title}</h3>
+                <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -350,20 +339,18 @@ export default function EmergingTech() {
       </section>
 
       {/* CTA — GET STARTED */}
-      <section className="bg-[#012060] py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40">
-        <div className="max-w-4xl mx-auto text-center">
-          <p className="text-[#01B0F1] text-[22px] font-semibold mb-2">
-            GET STARTED
-          </p>
-          <h2 className="text-[32px] sm:text-4xl font-bold text-white mb-4 leading-tight">
+      <section className="px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10 bg-[#012060]">
+        <div className="max-w-4xl mx-auto flex flex-col items-start sm:items-center gap-4 text-left sm:text-center">
+          <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Get Started</p>
+          <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center !text-white">
             Ready to future-proof your business?
           </h2>
-          <p className="text-blue-200 text-[16px] sm:text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
+          <p className="font-inter font-normal text-blue-200 text-[16px] sm:text-[18px] leading-[1.6] max-w-2xl">
             Tell us about your challenge. We&apos;ll identify the right emerging technology to solve it.
           </p>
           <button
             onClick={() => navigate("/products/eicerise/form?product=Emerging%20Tech")}
-            className="bg-[#01B0F1] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto font-semibold text-[18px] hover:text-[#012060] transition"
+            className="bg-[#01B0F1] text-white px-10 py-3 rounded-md flex items-center gap-2 font-semibold text-[18px] hover:text-[#012060] transition"
           >
             Get in Touch
             <img src={arrowIcon} alt="arrow"  width="24" height="24" />
