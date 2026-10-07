@@ -182,20 +182,6 @@ const useCases = {
       { title: "Shipment preparation", desc: "Move cargo planning toward a faster browser-based workflow." },
     ],
   },
-  enterprise: {
-    overline: "Where enterprise IT fits",
-    heading: "Address the infrastructure behind the business.",
-    intro:
-      "Enterprise technology needs span information, identity, infrastructure and service operations. Start with the layer that needs attention.",
-    items: [
-      { title: "File governance", desc: "Bring greater control and visibility to enterprise file environments." },
-      { title: "Backup & recovery", desc: "Support automated backup, versioning and recovery workflows." },
-      { title: "Identity & access", desc: "Strengthen authentication and control access to enterprise resources." },
-      { title: "Infrastructure monitoring", desc: "Gain visibility through agentless monitoring and automated discovery." },
-      { title: "Anomaly detection", desc: "Identify unusual infrastructure behavior and operational issues." },
-      { title: "IT service management", desc: "Track SLAs, manage escalations and maintain service audit trails." },
-    ],
-  },
 };
 
 export default function ProductsPage() {
@@ -210,7 +196,7 @@ export default function ProductsPage() {
   return (
     <main className="min-h-screen bg-white text-[#101828]">
       {/* Hero */}
-      <section className="bg-white px-5 py-4 text-left sm:text-center sm:mt-10">
+      <section className="bg-white px-3 xl:px-4 pt-4 pb-10 max-w-7xl mx-auto text-left sm:text-center sm:mt-10">
         {/* Hero image — placeholder until the real product image is ready */}
         <div className="mt-10 flex justify-center">
           <img
@@ -250,7 +236,7 @@ export default function ProductsPage() {
 
       {/* Products */}
       <section id="products" className="py-4 sm:py-10">
-        <div className="mx-auto max-w-7xl px-4 md:px-10 lg:px-20 xl:px-40">
+        <div className="mx-auto px-3 xl:px-4 max-w-7xl">
           <div className="text-left sm:text-center mb-8">
             <h2 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">
               Explore the portfolio
@@ -396,7 +382,7 @@ export default function ProductsPage() {
 
       {/* Philosophy */}
       <section className="bg-[#F6F9FD] py-4 sm:py-10">
-        <div className="mx-auto max-w-7xl px-4 md:px-10 lg:px-20 xl:px-40">
+        <div className="mx-auto px-3 xl:px-4 max-w-7xl">
           <div className="mx-auto mb-8 max-w-[760px] text-left sm:text-center">
             <h2 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">
               Product philosophy

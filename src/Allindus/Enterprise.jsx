@@ -471,7 +471,7 @@ function Legal() {
 
 
 
-        <div className="sm:max-w-7xl pt-4 pb-8 w-full mx-auto grid ">
+        <div className="sm:max-w-7xl pt-14 pb-4 w-full mx-auto grid">
 
 
 
@@ -504,11 +504,11 @@ function Legal() {
 
 
 
-        <div className="max-w-7xl mx-auto text-center flex flex-col gap-8 pb-10">
+        <div className="max-w-7xl mx-auto flex flex-col gap-4 pb-10">
 
 
 
-          <h1 className="text-blackk font-genral font-semibold text-center text-[32px] sm:text-[44px] leading-[1.1] max-w-4xl">
+          <h1 className="font-general font-semibold text-blackk text-[32px] sm:text-[44px] leading-[1.1] text-left sm:text-center sm:max-w-4xl sm:mx-auto">
 
 
 
@@ -524,7 +524,7 @@ function Legal() {
 
 
 
-          <p className="mt-3 font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]  sm:text-center">
+          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] text-left sm:text-center">
 
 
 
@@ -588,20 +588,20 @@ function Legal() {
 
 
 
-        <div className="sm:max-w-7xl mx-auto text-center py-8">
+        <div className="sm:max-w-7xl mx-auto flex flex-col gap-4 pt-10">
 
 
 
-          <h1 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">
+          <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">
             Key Services
 
 
 
-          </h1>
+          </p>
 
 
 
-          <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] py-1">
+          <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2]">
 
 
 
@@ -617,7 +617,7 @@ function Legal() {
 
 
 
-        <div className="sm:max-w-7xl w-full mx-auto pb-10">
+        <div className="sm:max-w-7xl w-full mx-auto pt-8 pb-10">
 
 
 
@@ -645,23 +645,11 @@ function Legal() {
 
 
 
-                  className={`${index === services.length - 1 ? "col-span-2 lg:col-span-1" : ""} block w-full text-left px-4 py-4 border border-gray-600/60 rounded-lg ${
-
-
-
+                  className={`${index === services.length - 1 ? "col-span-2 lg:col-span-1" : ""} block w-full text-left px-4 py-4 border rounded-[18px] font-general font-semibold text-[14px] sm:text-[16px] transition ${
                     activeService === service.id
-
-
-
-                      ? "bg-blue-900 text-white"
-
-
-
-                      : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-
-
-
-                  } fontPhone_1`}
+                      ? "bg-[#012060] text-white border-[#012060]"
+                      : "bg-white text-blackk border-[#E6EAF1] hover:border-[#01B0F1]/60"
+                  }`}
 
 
 
@@ -745,7 +733,7 @@ function Legal() {
 
 
 
-                        <h2 className="font-general font-semibold text-[20px] mb-2">
+                        <h2 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
 
 
 
@@ -757,7 +745,7 @@ function Legal() {
 
 
 
-                        <p className="font-inter font-normal text-white text-[16px]">
+                        <p className="font-inter font-normal text-white text-[15px] sm:text-[16px] leading-[1.6]">
 
 
 
@@ -801,7 +789,7 @@ function Legal() {
 
 
 
-          <h1 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] max-w-4xl">
+          <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] sm:max-w-4xl sm:mx-auto">
 
 
 
@@ -809,7 +797,7 @@ function Legal() {
 
 
 
-          </h1>
+          </h2>
 
 
 
@@ -817,7 +805,7 @@ function Legal() {
 
 
 
-        <div className="grid md:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto py-8">
+        <div className="grid md:grid-cols-3 gap-4 max-w-7xl mx-auto pt-8 pb-10">
 
 
 
@@ -841,7 +829,7 @@ function Legal() {
 
 
 
-              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
+              <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
 
 
@@ -849,7 +837,7 @@ function Legal() {
 
 
 
-              </h1>
+              </h3>
 
 
 
@@ -905,7 +893,7 @@ function Legal() {
 
 
 
-              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
+              <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
 
 
@@ -913,7 +901,7 @@ function Legal() {
 
 
 
-              </h1>
+              </h3>
 
 
 
@@ -969,7 +957,7 @@ function Legal() {
 
 
 
-              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
+              <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
 
 
@@ -977,7 +965,7 @@ function Legal() {
 
 
 
-              </h1>
+              </h3>
 
 
 
@@ -1031,7 +1019,7 @@ function Legal() {
 
 
 
-              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
+              <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
 
 
@@ -1039,7 +1027,7 @@ function Legal() {
 
 
 
-              </h1>
+              </h3>
 
 
 
@@ -1099,7 +1087,7 @@ function Legal() {
 
 
 
-              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
+              <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
 
 
@@ -1107,7 +1095,7 @@ function Legal() {
 
 
 
-              </h1>
+              </h3>
 
 
 

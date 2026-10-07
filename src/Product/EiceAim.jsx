@@ -136,7 +136,7 @@ export default function EiceAim() {
     <div className="bg-white text-gray-800">
 
       {/* HERO */}
-      <section className="text-left sm:text-center py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+      <section className="text-left sm:text-center py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="flex flex-col items-center">
           <img
             src={heroImg}
@@ -160,11 +160,11 @@ export default function EiceAim() {
         </span>
 
         <h1 className="font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] text-blackk mt-[10px] max-w-4xl mx-auto py-1">
-          The AI sales partner that <span className="text-bloo">never stops selling.</span>
+          The AI sales partner that <span className="text-bloo">never <br className="hidden sm:block"/> stops selling.</span>
         </h1>
 
         <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">
-          EICEAIM replaces traditional telecalling with a scalable, 24×7 AI-powered communication system — automating outreach, lead qualification, and follow-up with precision and personalization.
+          EICEAIM replaces traditional telecalling with a scalable, 24×7 AI-powered communication system — automating outreach, lead qualification, and follow-up with <br className="hidden sm:block"/> precision and personalization.
         </p>
 
         <div className="mt-8 flex flex-wrap justify-start sm:justify-center gap-4">
@@ -177,9 +177,9 @@ export default function EiceAim() {
       </section>
 
       {/* FEATURES */}
-      <section className="py-4 sm:py-10 px-4 max-w-7xl mx-auto md:px-10 lg:px-20 xl:px-40 bg-white grid md:grid-cols-3 text-center">
+      <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white grid md:grid-cols-3 text-center">
         {features.map((item, i) => (
-          <div key={i} className="flex flex-col items-center gap-1 pb-2">
+          <div key={i} className="flex flex-col items-center gap-1">
             <div className=" px-6 rounded-xl">
               <img src={item.icon} alt="icon" width={item.__w} height={item.__h} />
             </div>
@@ -195,7 +195,7 @@ export default function EiceAim() {
 
       {/* WHAT IS */}
       <section className="bg-[#F4F9FF]">
-       <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto grid md:grid-cols-[1fr_2fr] gap-4 md:gap-10 items-center">
+       <div className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 grid md:grid-cols-[1fr_2fr] gap-4 md:gap-10 items-center">
           <div>
             <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk">
               What is EICEAIM?
@@ -208,7 +208,7 @@ export default function EiceAim() {
       </section>
 
       {/* CHALLENGES — styled like Verilock's "Verilock vs Google Authenticator" comparison table */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
+      <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4">
         <div>
           <div className="text-center mb-8">
             <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk py-1">
@@ -242,7 +242,7 @@ export default function EiceAim() {
       </section>
 
       {/* ARCHITECTURE */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+      <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="text-center mb-8">
           <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk py-1">
             Outreach, qualification, and follow-up fully automated
@@ -265,7 +265,7 @@ export default function EiceAim() {
       </section>
 
             {/* IMPLEMENTATION */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+      <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="text-center mb-8">
           <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk py-1">
             A proven, continuous journey
@@ -290,7 +290,7 @@ export default function EiceAim() {
 
 
       {/* UNIFIED PLATFORM */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+      <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="text-center mb-8">
           <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk py-1">
             Core capabilities
@@ -315,13 +315,13 @@ export default function EiceAim() {
 
       {/* MEASURABLE IMPACT */}
       <section className="relative overflow-hidden bg-cover bg-center" style={{ backgroundImage: `url(${bgImage2})` }}>
-       <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto relative z-10">
+       <div className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 relative z-10">
           <div className="text-center mb-8">
             <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk">Real results from AI-powered outreach</h2>
           </div>
           <div className="max-w-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             {impactStats.map((item, i) => (
-              <div key={i} className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] text-center">
+              <div key={i} className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] text-center transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
                 <div className="flex items-center justify-center mb-3 gap-4">
                   <img src={item.icon} alt="icon" className="w-16 h-16 object-contain" width="64" height="64" />
 
@@ -334,14 +334,14 @@ export default function EiceAim() {
       </section>
 
       {/* CAMPAIGN CONTROLS */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+      <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="text-center mb-8">
           <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk py-1">What that impact actually looks like</h2>
           <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 mt-2">The numbers above come from three concrete operating changes.</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
           {campaignControls.map((item, i) => (
-            <div key={i} className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]">
+            <div key={i} className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
               <div className="rounded-lg flex items-start mb-[19px]">
                 <img src={item.icon} alt="icon" className="w-11 h-11 object-contain" width="44" height="44" />
               </div>
@@ -355,7 +355,7 @@ export default function EiceAim() {
 
     
       {/* SECURITY, COMPLIANCE & TRUST */}
-        <section className="bg-white py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
+        <section className="bg-white py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4">
       <div className="text-center">
 
         {/* Top Tag */}
@@ -379,7 +379,7 @@ export default function EiceAim() {
           {badges.map((item, i) => (
             <div
               key={i}
-              className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]"
+              className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]"
             >
 
               {/* Title */}
@@ -410,10 +410,9 @@ export default function EiceAim() {
     </section>
 
       {/* FAQ */}
-      <section className="bg-[#F4F9FF]">
-       <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-8">
+      <section className="py-4 sm:py-10">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4">
+          <div className="text-left sm:text-center mb-8">
             <h2 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">
               FAQs
             </h2>
@@ -431,17 +430,18 @@ export default function EiceAim() {
                     <span className="hidden group-open:inline">−</span>
                   </span>
                 </summary>
-                <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] mt-3">{item.a}</p>
+                <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6] mt-3">
+                  {item.a}
+                </p>
               </details>
             ))}
           </div>
         </div>
-       </div>
       </section>
 
       {/* FINAL CTA */}
       <section className="bg-gray-50 text-center">
-       <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
+       <div className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk py-1">
             Ready to put your outreach on autopilot?

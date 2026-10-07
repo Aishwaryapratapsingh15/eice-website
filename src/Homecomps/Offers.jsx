@@ -54,7 +54,8 @@ const capabilities = [
 
 function Offers() {
   return (
-    <div className="pb-4 sm:pb-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
+    <div className="pb-4 sm:pb-10">
+      <div className="max-w-7xl mx-auto px-3 xl:px-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {capabilities.map((cap) => (
           <div key={cap.title} className="bg-white rounded-[18px] overflow-hidden border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
@@ -92,6 +93,7 @@ function Offers() {
           <img src="https://d3r43jacxrwsrp.cloudfront.net/arrow.svg" alt="" aria-hidden="true" className="w-[24px] h-[24px] object-contain" width="24" height="24" />
         </Link>
       </div>
+    </div>
     </div>
   );
 }

@@ -162,7 +162,7 @@ export default function EiceAgent() {
 
       {/* HERO */}
       {/* <section className="mt-20 py-10 px-60">
-        <div className="mt-5 max-w-[1200px] mx-auto px-6 text-center">
+        <div className="mt-5 max-w-7xl mx-auto px-3 xl:px-4 text-center">
 
           <h1 className="text-4xl md:text-4xl font-bold">
             An AI-driven ecosystem to <span className = "italic text-[#01B0F1] font-semibold"> automate, optimize, and scale </span>enterprise intelligence
@@ -176,8 +176,8 @@ export default function EiceAgent() {
 
         </div>
       </section> */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40">
-  <div className="mt-5 max-w-[1200px] mx-auto px-4 sm:px-6 text-left sm:text-center">
+      <section className="py-4 sm:py-10">
+  <div className="mt-5 max-w-7xl mx-auto px-3 xl:px-4 text-left sm:text-center">
 
     <h1 className="text-[40px] sm:text-3xl md:text-[48px] font-bold">
       An AI-driven ecosystem to 
@@ -195,9 +195,9 @@ export default function EiceAgent() {
 </section>
 
 
-    <section className="bg-white mb-4 sm:mb-10">
+    <section className="bg-white py-4 sm:py-10">
       {/* <div className="max-w-[1100px] mx-auto grid md:grid-cols-2 gap-8 px-60"> */}
-      <div className="max-w-[1100px] mx-auto grid md:grid-cols-2 gap-4 md:gap-8 px-4 sm:px-6 md:px-10 lg:px-20 xl:px-40">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-4 md:gap-8 px-3 xl:px-4">
 
         {/* LEFT CARD */}
         <div className="bg-white border border-[#E2E8F0] rounded-xl py-4 px-4 text-center shadow-sm">
@@ -265,7 +265,7 @@ export default function EiceAgent() {
       </div>
     </section>  
 
-<section className = "flex justify-start sm:justify-center mb-10 px-5">
+<section className="flex justify-start sm:justify-center py-4 sm:py-10 px-3 xl:px-4">
     {/* <button className="bg-[#012060] text-white px-14 py-5 rounded-md flex items-center gap-2 hover:bg-[#1E40AF] transition text-lg"> */}
     <button onClick={() => navigate("/products/eicerise/form?product=EICE%20Agent")}
     className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-[#1E40AF] transition text-[18px]">
@@ -277,7 +277,7 @@ export default function EiceAgent() {
 
 
      <section className="bg-gray-50 border-1 border border-[#E2E8F0] py-2 mb-10">
-      <div className="max-w-[1200px] mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-3 xl:px-4">
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-16">
 
@@ -312,8 +312,8 @@ export default function EiceAgent() {
 
       {/* WHAT IS */}
       {/* <section className="bg-[#F4F9FF] py-10 px-40"> */}
-      <section className="bg-[#F4F9FF] py-4 sm:py-10 px-4 sm:px-6 md:px-10 lg:px-20 xl:px-40">
-        <div className="grid md:grid-cols-[1fr_2fr] gap-4 md:gap-10 max-w-6xl mx-auto items-center">
+      <section className="bg-[#F4F9FF] py-4 sm:py-10">
+        <div className="grid md:grid-cols-[1fr_2fr] gap-4 md:gap-10 max-w-7xl mx-auto px-3 xl:px-4 items-center">
           <div>
             {/* <h2 className="text-3xl font-bold leading-relaxed text-[#334155]"> */}
             <h2 className="text-[32px] sm:text-2xl md:text-3xl font-bold mb-4 text-[#334155]">
@@ -337,8 +337,8 @@ data-driven workflows.
       {/* EICE Inteliigent right side image */}
 
        {/* <section className="bg-white py-10 px-40"> */}
-       <section className="bg-white py-4 sm:py-10 px-5 sm:px-6 md:px-10 lg:px-20 xl:px-40">
-      <div className="max-w-6xl mx-auto">
+       <section className="bg-white py-4 sm:py-10">
+      <div className="max-w-7xl mx-auto px-3 xl:px-4">
 
         {/* Heading */}
         <h2 className="text-center text-[32px] sm:text-[34px] font-bold text-[#334155] mb-4 sm:mb-16">
@@ -495,8 +495,8 @@ data-driven workflows.
 
     {/* Eice Intelligent left side image */}
     {/* <section className="bg-white py-10 px-40"> */}
-    <section className="bg-white py-4 sm:py-10 px-5 sm:px-6 md:px-10 lg:px-20 xl:px-40">
-      <div className="max-w-[1200px] mx-auto grid md:grid-cols-2 gap-4 sm:gap-12 items-center">
+    <section className="bg-white py-4 sm:py-10">
+      <div className="max-w-7xl mx-auto px-3 xl:px-4 grid md:grid-cols-2 gap-4 sm:gap-12 items-center">
 
         {/* LEFT SIDE */}
         <div className="flex flex-col items-center md:items-start gap-4 sm:gap-6">
@@ -621,10 +621,10 @@ data-driven workflows.
     {/* how it works */}   
 
       {/* <section className="py-10 px-20 bg-white"> */}
-      <section className="py-4 sm:py-10 px-4 sm:px-6 md:px-10 lg:px-20 bg-white">
+      <section className="py-4 sm:py-10 bg-white">
 
   {/* Heading */}
-  <div className="max-w-6xl mx-auto text-center mb-4 sm:mb-7">
+  <div className="max-w-7xl mx-auto px-3 xl:px-4 text-center mb-4 sm:mb-7">
     {/* <h2 className="text-4xl font-bold"> */}
     <h2 className="text-[32px] sm:text-3xl md:text-4xl font-bold">
       How it Works
@@ -635,7 +635,7 @@ data-driven workflows.
   </div>
 
   {/* Cards */}
-  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+  <div className="max-w-7xl mx-auto px-3 xl:px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
 
     {steps.map((item, i) => (
       <div
@@ -673,14 +673,15 @@ data-driven workflows.
 {/* Core Capabilities */ }
 
      {/* <section className="py-10 px-20 bg-white"> */}
-     <section className="py-4 sm:py-10 px-4 sm:px-6 md:px-10 lg:px-20 bg-white">
+     <section className="py-4 sm:py-10 bg-white">
+      <div className="max-w-7xl mx-auto px-3 xl:px-4">
         {/* <h2 className="text-4xl text-[#334155] font-bold text-center mb-5"> */}
         <h2 className="text-[32px] sm:text-3xl md:text-4xl text-[#334155] font-bold text-center mb-5">
           Core Capabilities
         </h2>
         <h4 className="text-[22px] sm:text-xl text-[#64748B] font-semibold text-center mb-4 sm:mb-10 max-w-3xl mx-auto">
           Along with secure storage, iSyncDrive enables controlled file and folder sharing to support collaborations across teams and locations        </h4>
-        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
           {platformFeatures.map((item, i) => (
              <div
         key={i}
@@ -705,14 +706,15 @@ data-driven workflows.
       </div>
           ))}
         </div>
+      </div>
       </section>
 
 {/* Why Eice Agent Suite */}
 {/* <section className="py-10 px-20 bg-white"> */}
-<section className="py-4 sm:py-10 px-4 sm:px-6 md:px-10 lg:px-20 bg-white">
+<section className="py-4 sm:py-10 bg-white">
 
   {/* Heading */}
-  <div className="max-w-5xl mx-auto text-center mb-4 sm:mb-14">
+  <div className="max-w-7xl mx-auto px-3 xl:px-4 text-center mb-4 sm:mb-14">
     <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155] mb-5">
       Why EICE Agent Suite
     </h2>
@@ -722,8 +724,8 @@ data-driven workflows.
   </div>
 
   {/* Cards */}
-  {/* <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-8"> */}
-<div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
+  {/* <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-8"> */}
+<div className="max-w-7xl mx-auto px-3 xl:px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
 
     {/* CARD 1 */}
     <div className="bg-white border border-gray-200 rounded-xl py-4 px-8">
@@ -824,9 +826,9 @@ is our foundation.
 {/* Measurable Business Impact */ }
 
  {/* <section className="relative py-10 overflow-hidden px-20" style={{ backgroundImage: `url(${bgImage2})` }}> */}
- <section className="relative py-4 sm:py-10 overflow-hidden px-5 sm:px-6 md:px-10 lg:px-20" style={{ backgroundImage: `url(${bgImage2})` }}>
+ <section className="relative py-4 sm:py-10 overflow-hidden" style={{ backgroundImage: `url(${bgImage2})` }}>
 
-      <div className="max-w-[1200px] mx-auto px-0 sm:px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-3 xl:px-4 relative z-10">
 
         {/* Heading */}
         <h2 className="text-center text-[32px] sm:text-4xl font-bold text-[#334155] mb-4">
@@ -874,8 +876,8 @@ is our foundation.
     {/* Security and Compliance */ }
 
     {/* <section className="bg-white py-10 px-20"> */}
-    <section className="bg-white py-4 sm:py-10 px-5 sm:px-6 md:px-10 lg:px-20">
-      <div className="max-w-[1200px] mx-auto px-0 sm:px-6 text-center">
+    <section className="bg-white py-4 sm:py-10">
+      <div className="max-w-7xl mx-auto px-3 xl:px-4 text-center">
 
         {/* Top Tag */}
         <div className="inline-flex border-2 border-[#228441] items-center gap-2 bg-[#F0FDF4] text-[#2e7d32] px-4 py-2 rounded-full text-sm font-medium mb-2">
@@ -930,10 +932,10 @@ is our foundation.
 
 {/* Final CTA */}
   {/* <section className="py-10 px-20 bg-gray-100 text-center mb-10"> */}
-  <section className="py-10 px-4 sm:px-6 md:px-10 lg:px-20 bg-gray-50 text-center mb-10">
+  <section className="py-10 bg-gray-50 text-center mb-10">
   
     {/* Heading */}
-    <div className="max-w-6xl mx-auto">
+    <div className="max-w-7xl mx-auto px-3 xl:px-4">
       {/* <h2 className="text-4xl font-bold text-[#334155] mb-4"> */}
       <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#334155] mb-4">
         Ready to Put AI to Work Across Your Enterprise?

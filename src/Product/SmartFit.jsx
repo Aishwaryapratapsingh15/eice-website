@@ -75,7 +75,7 @@ export default function SmartFit() {
   return (
     <div className="w-full text-black">
       {/* HERO SECTION */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white text-left sm:text-center">
+      <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white text-left sm:text-center">
         <div className="flex justify-center sm:mb-10 pb-4">
           <img
             src={heroImg}
@@ -125,11 +125,11 @@ export default function SmartFit() {
       </section>
 
       {/* CHALLENGE & SOLUTION */}
-      <section className="px-4 md:px-10 lg:px-20 xl:px-40 py-4 sm:py-10 max-w-7xl mx-auto text-black">
+      <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 text-black">
 
           <div className="grid md:grid-cols-2 gap-4 sm:gap-8">
         {/* CHALLENGES */}
-        <div className="flex-1 rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]">
+        <div className="flex-1 rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
           <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mb-8 text-center">
             Challenges
           </h2>
@@ -178,7 +178,7 @@ export default function SmartFit() {
         </div>
 
         {/* SOLUTIONS */}
-        <div className="flex-1 rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]">
+        <div className="flex-1 rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
           <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mb-8 text-center">
             Solutions
           </h2>
@@ -229,7 +229,7 @@ export default function SmartFit() {
       </section>
 
       {/* FEATURES */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+      <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="text-center mb-8">
           <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
             What You Can Do
@@ -271,7 +271,7 @@ export default function SmartFit() {
       />
 
             <section className="bg-gray-50 relative overflow-hidden">
-             <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
+             <div className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4">
               <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk text-center mx-auto max-w-4xl py-1">
                 Ready to Transform Your Container Optimization?
               </h2>

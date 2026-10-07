@@ -11,7 +11,8 @@ export default async function LatestVideos() {
   if (videos.length === 0) return null;
 
   return (
-    <div className={`${styles.latestVideos} py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto`}>
+    <div className="py-4 sm:py-10">
+      <div className={`${styles.latestVideos} max-w-7xl mx-auto px-3 xl:px-4`}>
       <div className={`${styles.heading} text-[24px] sm:text-[32px]`}>
         Latest Videos
       </div>
@@ -37,6 +38,7 @@ export default async function LatestVideos() {
           Watch All Videos <img src={arrow} alt="" className="ml-2 w-5 h-5" width="20" height="20" />
         </a>
       </div>
+    </div>
     </div>
   );
 }

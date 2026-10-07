@@ -184,7 +184,7 @@ export default function ISyncDrivePage() {
     <div className="bg-white text-gray-800">
 
       {/* HERO */}
-      <section className="text-left sm:text-center py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+      <section className="text-left sm:text-center py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
          <div className="mt-5 flex justify-center">
            <img
                     src={verilockIcon}
@@ -212,7 +212,7 @@ export default function ISyncDrivePage() {
         </h1>
 
         <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">
-        Verilock secures your applications with TOTP-based 2FA, push approval, and geo-fencing — all from one mobile-first platform.
+        Verilock secures your applications with TOTP-based 2FA, push approval, and geo-fencing all from one mobile-first platform.
         </p>
 
         {/* <div className="mt-8 flex flex-wrap justify-center gap-4">
@@ -244,7 +244,7 @@ export default function ISyncDrivePage() {
       </section>
 
       {/* FEATURES */}
-<section className="py-4 sm:py-10 px-4 max-w-7xl mx-auto md:px-10 lg:px-20 xl:px-40 bg-white grid md:grid-cols-3 text-center gap-4 sm:gap-8">
+<section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white grid md:grid-cols-3 text-center gap-4 sm:gap-8">
   {features.map((item, i) => (
     <div key={i} className="flex flex-col mx-auto items-center">
 
@@ -269,8 +269,8 @@ export default function ISyncDrivePage() {
 </section>
 
       {/* WHAT IS
-      <section className="bg-[#F4F9FF] py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-[#F4F9FF]">
-        <div className="grid md:grid-cols-[1fr_2fr] gap-10 max-w-6xl mx-auto items-center">
+      <section className="bg-[#F4F9FF] py-10 bg-[#F4F9FF]">
+        <div className="grid md:grid-cols-[1fr_2fr] gap-10 max-w-7xl mx-auto px-3 xl:px-4 items-center">
           <div>
             <h2 className="text-4xl font-bold text-[#334155]">
               What is iSyncDrive?
@@ -287,7 +287,7 @@ export default function ISyncDrivePage() {
         </div>
       </section> */}
       <section className="bg-[#F4F9FF]">
-       <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto grid md:grid-cols-[1.1fr_1fr] gap-4 sm:gap-16 items-start">
+       <div className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 grid md:grid-cols-[1.1fr_1fr] gap-4 sm:gap-16 items-start">
 
     {/* LEFT CONTENT */}
     <div>
@@ -315,7 +315,7 @@ locations with full admin control.
     <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 bg-[#F4F9FF]">
 
       {/* CARD 1 */}
-      <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]">
+      <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
         {/* <div className="w-2 h-2 bg-[#01B0F1] rounded-full mb-4"></div> */}
         <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">
           TOTP Standard
@@ -326,7 +326,7 @@ locations with full admin control.
       </div>
 
       {/* CARD 2 */}
-      <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]">
+      <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
         {/* <div className="w-2 h-2 bg-[#01B0F1] rounded-full mb-4"></div> */}
         <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">
           Mobile-First
@@ -337,7 +337,7 @@ locations with full admin control.
       </div>
 
       {/* CARD 3 */}
-      <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]">
+      <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
         {/* <div className="w-2 h-2 bg-[#01B0F1] rounded-full mb-4"></div> */}
         <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">
           Zero Setup Friction
@@ -348,7 +348,7 @@ locations with full admin control.
       </div>
 
       {/* CARD 4 */}
-      <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]">
+      <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
         {/* <div className="w-2 h-2 bg-[#01B0F1] rounded-full mb-4"></div> */}
         <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">
           Universal Compat.
@@ -362,7 +362,16 @@ locations with full admin control.
        </div>
 </section>
 
-<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+      {/* ================= VIDEO ================= */}
+      <ProductVideo
+        eyebrow="Enterprise Access Security"
+        heading="See VeriLock in Action"
+        subtext="Discover how multi-factor authentication, secure approvals, and location-aware access controls help protect enterprise applications."
+        videoId="W0tEGxt5Khk"
+      />
+
+
+<section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
 
   <div className="text-center mb-8">
     <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
@@ -405,7 +414,7 @@ locations with full admin control.
 </section>
 
       {/* ARCHITECTURE */}
-<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+<section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
 
   {/* KEEP YOUR HEADING */}
   <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk text-center mx-auto max-w-4xl mb-8">
@@ -418,7 +427,7 @@ locations with full admin control.
       <div key={i} className="flex items-stretch flex-1">
 
         {/* CARD */}
-        <div className="w-full rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] text-left">
+        <div className="w-full rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] text-left transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
 
           {/* ICON + STEP NUMBER */}
           <div className="flex items-start justify-between mb-6">
@@ -444,7 +453,7 @@ locations with full admin control.
 </section>
 
       {/* IMAGE + TEXT SECTION */}
-<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+<section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
 
   <div className="text-center">
 
@@ -465,7 +474,7 @@ locations with full admin control.
 </section>
 
 <section className="bg-[#F4F9FF]">
- <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
+ <div className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4">
 
     {/* HEADER */}
     <div className="text-center mb-8">
@@ -482,7 +491,7 @@ locations with full admin control.
     <div className="grid md:grid-cols-2 gap-4 sm:gap-8">
 
       {/* CARD 1 */}
-      <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]">
+      <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
         <div className="flex items-center gap-4 mb-[19px]">
           <div className="w-11 h-11 rounded-xl flex items-center justify-center text-xl">
             <img src={rsIcon} alt="icon" className="w-11 h-11 object-contain" width="44" height="44" />
@@ -517,7 +526,7 @@ locations with full admin control.
       </div>
 
       {/* CARD 2 */}
-      <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]">
+      <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
         <div className="flex items-center gap-4 mb-[19px]">
           <div className="w-11 h-11 rounded-xl flex items-center justify-center text-xl">
             <img src={lmIcon} alt="icon" className="w-11 h-11 object-contain" width="44" height="44" />
@@ -547,7 +556,7 @@ locations with full admin control.
       </div>
 
       {/* CARD 3 */}
-      <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]">
+      <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
         <div className="flex items-center gap-4 mb-[19px]">
           <div className="w-11 h-11 rounded-xl flex items-center justify-center text-xl">
             <img src={gfIcon} alt="icon" className="w-11 h-11 object-contain" width="44" height="44" />
@@ -578,7 +587,7 @@ locations with full admin control.
       </div>
 
       {/* CARD 4 */}
-      <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]">
+      <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
         <div className="flex items-center gap-4 mb-[19px]">
           <div className="w-11 h-11 rounded-xl flex items-center justify-center text-xl">
             <img src={saIcon} alt="icon" className="w-11 h-11 object-contain" width="44" height="44" />
@@ -614,7 +623,7 @@ locations with full admin control.
 
 
 {/* WHY CHOOSE */}
-<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+<section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
 
   {/* Heading */}
   <div className="text-center mb-8">
@@ -630,7 +639,7 @@ locations with full admin control.
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
 
     {/* LEFT CARD */}
-    <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]">
+    <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
 
       {/* Header */}
       <div className="flex flex-col items-start gap-4 mb-[19px]">
@@ -649,7 +658,7 @@ locations with full admin control.
     </div>
 
     {/* RIGHT CARD */}
-    <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]">
+    <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
 
       {/* Header */}
       <div className="flex flex-col items-start gap-4 mb-[19px]">
@@ -667,7 +676,7 @@ locations with full admin control.
       </p>
     </div>
 
-        <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]">
+        <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
 
       {/* Header */}
       <div className="flex flex-col items-start gap-4 mb-[19px]">
@@ -685,7 +694,7 @@ locations with full admin control.
       </p>
     </div>
 
-        <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]">
+        <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
 
       {/* Header */}
       <div className="flex flex-col items-start gap-4 mb-[19px]">
@@ -708,7 +717,7 @@ locations with full admin control.
 
 
 <section className="bg-[#F4F9FF]">
- <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
+ <div className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4">
 
     {/* HEADER */}
     <div className="text-center mb-8">
@@ -835,15 +844,9 @@ locations with full admin control.
   </div>
 </section>
 
-      <ProductVideo
-        eyebrow="Enterprise Access Security"
-        heading="See VeriLock in Action"
-        subtext="Discover how multi-factor authentication, secure approvals, and location-aware access controls help protect enterprise applications."
-        videoId="W0tEGxt5Khk"
-      />
 
 <section className="bg-gray-50 relative overflow-hidden">
- <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
+ <div className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4">
 
   {/* CONTENT */}
   <div className="relative z-10 max-w-4xl mx-auto text-center">

@@ -301,15 +301,15 @@ function Cstdmain() {
 
   return (
 
-    <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 sm:max-w-7xl mx-auto text-center py-8">
+    <div className="px-4 md:px-10 lg:px-20 xl:px-40 sm:max-w-7xl mx-auto pt-10 pb-10 flex flex-col gap-4">
 
-      <h1 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">
+      <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">
 
         Case Studies
 
-      </h1>
+      </p>
 
-      <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] py-1 mb-8">
+      <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2]">
 
         Explore how we digitally transformed other businesses
 
@@ -317,9 +317,9 @@ function Cstdmain() {
 
       <main className="mx-auto max-w-7xl">
 
-        <nav className="mb-3">
+        <nav>
 
-          <ul className="flex flex-wrap justify-center gap-2 sm:gap-4">
+          <ul className="flex flex-wrap justify-start sm:justify-center gap-4">
 
             {industries.map((industry) => (
 
@@ -329,14 +329,10 @@ function Cstdmain() {
 
                   onClick={() => setActiveIndustry(industry.id)}
 
-                  className={`px-3 py-1 sm:px-4 sm:py-2 text-sm sm:text-base rounded-full transition ${
-
+                  className={`px-4 py-1.5 rounded-full border font-general font-semibold text-[12px] sm:text-[14px] tracking-wide transition ${
                     activeIndustry === industry.id
-
-                      ? "bg-blue-900 text-white"
-
-                      : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-
+                      ? "bg-[#012060] text-white border-[#012060]"
+                      : "bg-white text-blackk border-[#E6EAF1] hover:border-[#01B0F1]/60"
                   }`}
 
                 >
@@ -361,7 +357,7 @@ function Cstdmain() {
 
             key={industry.id}
 
-            className={`mb-12 px-2p ${
+            className={`pt-8 ${
 
               activeIndustry === industry.id ? "block" : "hidden"
 
@@ -369,13 +365,13 @@ function Cstdmain() {
 
           >
 
-            <h2 className="text-[18px] px-2 sm:text-[20px] font-semibold mt-4 mb-4">
+            <h2 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3]">
 
               {industry.name}
 
             </h2>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4">
 
               {projects[industry.id].map((project, index) => (
 
@@ -507,7 +503,7 @@ function Oilandgas() {
 
       <div className="px-4 md:px-10 lg:px-20 xl:px-40">
 
-        <div className="sm:max-w-7xl pt-4 pb-8 w-full mx-auto grid ">
+        <div className="sm:max-w-7xl pt-14 pb-4 w-full mx-auto grid">
 
           {/* Desktop: full image */}
 
@@ -543,9 +539,9 @@ function Oilandgas() {
 
         </div>
 
-        <div className="max-w-7xl mx-auto text-center flex flex-col gap-8 pb-10">
+        <div className="max-w-7xl mx-auto flex flex-col gap-4 pb-10">
 
-          <h1 className="text-blackk font-genral font-semibold text-center text-[32px] sm:text-[44px] leading-[1.1] max-w-4xl">
+          <h1 className="font-general font-semibold text-blackk text-[32px] sm:text-[44px] leading-[1.1] text-left sm:text-center sm:max-w-4xl sm:mx-auto">
 
             Pioneering <span className="text-bloo">the Future</span> of Oil and
 
@@ -553,7 +549,7 @@ function Oilandgas() {
 
           </h1>
 
-          <p className="mt-3 font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]  sm:text-center">
+          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] text-left sm:text-center">
 
             EICE Technology offers specialized software solutions for the oil
 
@@ -579,15 +575,15 @@ function Oilandgas() {
 
 
 
-        <div className="sm:max-w-7xl mx-auto text-center py-8">
+        <div className="sm:max-w-7xl mx-auto flex flex-col gap-4 pt-10">
 
-          <h1 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">
+          <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">
 
             Key Services
 
-          </h1>
+          </p>
 
-          <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] py-1">
+          <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2]">
 
             Explore What We Offer
 
@@ -595,7 +591,7 @@ function Oilandgas() {
 
         </div>
 
-        <div className="sm:max-w-7xl w-full mx-auto pb-10">
+        <div className="sm:max-w-7xl w-full mx-auto pt-8 pb-10">
 
           <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-12 gap-4 items-center justify-center">
 
@@ -609,15 +605,11 @@ function Oilandgas() {
 
                   onClick={() => setActiveService(service.id)}
 
-                  className={`${index === services.length - 1 ? "col-span-2 lg:col-span-1" : ""} block w-full text-left px-4 py-4 border border-gray-600/60 rounded-lg ${
-
+                  className={`${index === services.length - 1 ? "col-span-2 lg:col-span-1" : ""} block w-full text-left px-4 py-4 border rounded-[18px] font-general font-semibold text-[14px] sm:text-[16px] transition ${
                     activeService === service.id
-
-                      ? "bg-blue-900 text-white"
-
-                      : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-
-                  } fontPhone_1  `}
+                      ? "bg-[#012060] text-white border-[#012060]"
+                      : "bg-white text-blackk border-[#E6EAF1] hover:border-[#01B0F1]/60"
+                  }  `}
 
                 >
 
@@ -659,13 +651,13 @@ function Oilandgas() {
 
                       <div className="flex flex-col items-center justify-center h-full z-20 px-8 text-white">
 
-                        <h2 className="font-general font-semibold text-[20px] mb-2">
+                        <h2 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
 
                           {service.name}
 
                         </h2>
 
-                        <p className="font-inter font-normal text-white text-[16px]">
+                        <p className="font-inter font-normal text-white text-[15px] sm:text-[16px] leading-[1.6]">
 
                           {service.description}
 
@@ -687,17 +679,17 @@ function Oilandgas() {
 
         <div className="pt-10 sm:max-w-7xl mx-auto text-center">
 
-          <h1 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] max-w-4xl">
+          <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] sm:max-w-4xl sm:mx-auto">
 
             Empowering Oil & Gas Operations with Innovative Software Solutions
 
             for a Sustainable Future
 
-          </h1>
+          </h2>
 
         </div>
 
-        <div className="grid md:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto py-8">
+        <div className="grid md:grid-cols-3 gap-4 max-w-7xl mx-auto pt-8 pb-10">
 
           <div className="rounded-[18px] border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] p-[25px]">
 
@@ -709,11 +701,11 @@ function Oilandgas() {
 
             <div className="h-full items-start">
 
-              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
+              <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
                 Needs Assessment and Planning
 
-              </h1>
+              </h3>
 
               <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
 
@@ -741,11 +733,11 @@ function Oilandgas() {
 
             <div className="h-full items-start">
 
-              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
+              <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
                 Solution Design and Development
 
-              </h1>
+              </h3>
 
               <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
 
@@ -773,11 +765,11 @@ function Oilandgas() {
 
             <div className="h-full items-start">
 
-              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
+              <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
                 Implementation and Integration
 
-              </h1>
+              </h3>
 
               <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
 
@@ -805,11 +797,11 @@ function Oilandgas() {
 
             <div className="h-full items-start">
 
-              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
+              <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
                 Testing and Quality Assurance
 
-              </h1>
+              </h3>
 
               <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
 
@@ -837,11 +829,11 @@ function Oilandgas() {
 
             <div className="h-full items-start">
 
-              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
+              <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
                 Training and Support
 
-              </h1>
+              </h3>
 
               <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
 
@@ -869,13 +861,13 @@ function Oilandgas() {
 
             <div className="h-full items-start">
 
-              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
+              <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
                 {" "}
 
                 Monitoring and Optimization
 
-              </h1>
+              </h3>
 
               <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">
 

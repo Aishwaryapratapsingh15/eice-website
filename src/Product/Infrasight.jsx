@@ -226,7 +226,7 @@ export default function InfraSight() {
 
       {/* ================= HERO / OVERVIEW ================= */}
 
-       <section className="bg-white py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
+       <section className="bg-white py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4">
          <div className="sm:mt-5 mt-10 flex justify-center">
                     <img
                              src={infraSightHero}
@@ -269,7 +269,7 @@ export default function InfraSight() {
     </section>
 
           {/* FEATURES */}
-<section className="py-4 sm:py-10 px-4 max-w-7xl mx-auto md:px-10 lg:px-20 xl:px-40 bg-white grid md:grid-cols-3 text-center gap-4 sm:gap-8">
+<section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white grid md:grid-cols-3 text-center gap-4 sm:gap-8">
 
   {features.map((item, i) => (
     <div key={i} className="flex flex-col items-center">
@@ -297,7 +297,7 @@ export default function InfraSight() {
 
 
 <section className="bg-[#F4F9FF]">
-  <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto grid md:grid-cols-[1.1fr_1fr] gap-4 sm:gap-16 items-center">
+  <div className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 grid md:grid-cols-[1.1fr_1fr] gap-4 sm:gap-16 items-center">
 
     {/* LEFT CONTENT */}
     <div>
@@ -334,9 +334,18 @@ systems.
   </div>
 </section>
 
+      {/* ================= VIDEO ================= */}
+      <ProductVideo
+        eyebrow="Infrastructure Observability"
+        heading="See InfraSight in Action"
+        subtext="Explore how real-time infrastructure visibility, intelligent monitoring, and anomaly detection help teams identify issues before they impact operations."
+        videoId="jpXgqTEj18Q"
+      />
+
+
 
       {/* ================= PROBLEM ================= */}
-<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+<section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
 
   <div className="text-center mb-8">
     <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
@@ -378,7 +387,7 @@ systems.
   </div>
 </section>
 
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+      <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="text-center mb-8">
           <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
             Real-time observability <br />for modern IT infrastructure
@@ -432,7 +441,7 @@ infrastructure </p>
         </div>
       </section> */}
 
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+      <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
 
         <div className="text-center">
 
@@ -452,7 +461,7 @@ infrastructure </p>
       </section>
 
       {/* ================= CORE CAPABILITIES ================= */}
-      <section className="py-4 sm:py-10 max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
+      <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4">
         <div className="text-center mb-8">
           <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
             Core Observability Capabilities
@@ -486,7 +495,7 @@ infrastructure </p>
         </div>
       </section>
 
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+      <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
 
         <div className="text-center">
 
@@ -512,7 +521,7 @@ infrastructure</p>
 
 
       {/* ================= MODULES ================= */}
-   <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+   <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="text-center mb-8">
           <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
             Product Modules
@@ -550,7 +559,7 @@ infrastructure</p>
 
             {/* ================= WORKFLOW ================= */}
 <section className="bg-[#012060]">
-      <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto text-center">
+      <div className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 text-center">
 
         <div className="mb-8">
           <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-white mx-auto max-w-4xl py-1">
@@ -604,7 +613,7 @@ infrastructure</p>
 
 
 {/* ================= WHY ================= */}
-<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+<section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
 
   <div className="text-center mb-8">
     {/* Heading */}
@@ -654,18 +663,12 @@ infrastructure</p>
   </div>
 </section>
 
-      <ProductVideo
-        eyebrow="Infrastructure Observability"
-        heading="See InfraSight in Action"
-        subtext="Explore how real-time infrastructure visibility, intelligent monitoring, and anomaly detection help teams identify issues before they impact operations."
-        videoId="jpXgqTEj18Q"
-      />
 
       {/* ================= CTA ================= */}
 <section className="bg-gray-50 relative overflow-hidden">
 
   {/* CONTENT */}
-  <div className="relative z-10 py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto text-center">
+  <div className="relative z-10 py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 text-center">
 
     {/* HEADING */}
     <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">

@@ -183,7 +183,7 @@ export default function ISyncDrivePage() {
     <div className="bg-white text-gray-800">
 
       {/* HERO */}
-      <section className="text-left sm:text-center py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+      <section className="text-left sm:text-center py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
          <div className="mt-5 flex justify-center">
            <img
                     src={heroImg}
@@ -244,10 +244,10 @@ access, sync, and share files across devices from a single platform with full co
       </section>
 
       {/* FEATURES */}
-<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white grid md:grid-cols-3 text-center">
+<section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white grid md:grid-cols-3 text-center">
 
   {features.map((item, i) => (
-    <div key={i} className="flex flex-col items-center pb-2">
+    <div key={i} className="flex flex-col items-center">
 
       {/* ICON (Rounded Rectangle) */}
       <div className="px-6 rounded-xl mb-[19px]">
@@ -271,7 +271,7 @@ access, sync, and share files across devices from a single platform with full co
 
       {/* WHAT IS */}
       <section className="bg-[#F4F9FF]">
-        <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto grid md:grid-cols-[1fr_2fr] gap-4 md:gap-10 items-center">
+        <div className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 grid md:grid-cols-[1fr_2fr] gap-4 md:gap-10 items-center">
           <div>
             <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk">
               What is iSyncDrive?
@@ -287,6 +287,15 @@ access, sync, and share files across devices from a single platform with full co
           </div>
         </div>
       </section>
+
+      {/* ================= VIDEO ================= */}
+      <ProductVideo
+        eyebrow="Enterprise File Management"
+        heading="See iSyncDrive in Action"
+        subtext="Explore how teams can securely store, sync, share, and manage business files while maintaining centralized control and visibility."
+        videoId="3anJ2Nt-jZ0"
+      />
+
 
       {/* CHALLENGES */}
       {/* <section className="py-16 px-6">
@@ -304,7 +313,7 @@ access, sync, and share files across devices from a single platform with full co
           ))}
         </div>
       </section> */}
-<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+<section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
 
   <div className="text-center mb-8">
     <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
@@ -347,7 +356,7 @@ access, sync, and share files across devices from a single platform with full co
 </section>
 
       {/* ARCHITECTURE */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+      <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk text-center mx-auto max-w-4xl mb-8">
           Architecture Overview
         </h2>
@@ -384,7 +393,7 @@ access, sync, and share files across devices from a single platform with full co
       </section>
 
       {/* IMAGE + TEXT SECTION */}
-<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+<section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
 
   <div className="text-center">
 
@@ -405,7 +414,7 @@ access, sync, and share files across devices from a single platform with full co
 </section>
 
       {/* UNIFIED PLATFORM */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+      <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="text-center mb-8">
           <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
             A Unified Platform for Total Data Control
@@ -418,7 +427,7 @@ access, sync, and share files across devices from a single platform with full co
           {platformFeatures.map((item, i) => (
              <div
         key={i}
-        className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col items-start text-start w-auto h-auto sm:h-[300px]"
+        className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col items-start text-start"
       >
 
         {/* SVG */}
@@ -442,7 +451,7 @@ access, sync, and share files across devices from a single platform with full co
       </section>
 
 {/* IMPLEMENTATION */}
-<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+<section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
 
   {/* Heading */}
   <div className="text-center mb-8">
@@ -491,7 +500,7 @@ access, sync, and share files across devices from a single platform with full co
 </section>
 
 {/* WHY CHOOSE */}
-<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+<section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
 
   {/* Heading */}
   <div className="text-center mb-8">
@@ -577,7 +586,7 @@ access, sync, and share files across devices from a single platform with full co
 
 {/* ACCESS CONTROL */}
 <section className="bg-gradient-to-r from-[#eef4fb] to-[#e6f0fa] bg-cover bg-center" style={{ backgroundImage: `url(${bgImage2})` }}>
- <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
+ <div className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4">
 
   {/* Heading */}
   <div className="text-center mb-8">
@@ -655,7 +664,7 @@ access, sync, and share files across devices from a single platform with full co
 
 
 {/* DEPLOYMENT */}
-<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+<section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
 
   {/* Heading */}
   <div className="text-center mb-8">
@@ -799,16 +808,10 @@ access, sync, and share files across devices from a single platform with full co
 
 </section>
 
-      <ProductVideo
-        eyebrow="Enterprise File Management"
-        heading="See iSyncDrive in Action"
-        subtext="Explore how teams can securely store, sync, share, and manage business files while maintaining centralized control and visibility."
-        videoId="3anJ2Nt-jZ0"
-      />
 
   {/* FINAL CTA */}
 <section className="bg-gray-50 text-center">
- <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
+ <div className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4">
 
   {/* Heading */}
   <div className="max-w-4xl mx-auto">

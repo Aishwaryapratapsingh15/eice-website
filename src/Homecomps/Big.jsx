@@ -12,7 +12,7 @@ function Big() {
   const slides = [
     {
       content: (
-        <div className=" mx-auto px-5 sm:px-12 lg:px-0 xl:px-12 2xl:px-8 sm:mt-10">
+        <div className=" mx-auto sm:mt-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="flex flex-col">
               <span className="font-general font-semibold inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-bloo/10 text-[#012060] text-[12px] sm:text-[14px] tracking-wide w-fit">
@@ -63,7 +63,7 @@ function Big() {
     },
     {
       content: (
-        <div className=" mx-auto px-5 sm:px-12 lg:px-0 xl:px-12 2xl:px-16 sm:mt-10">
+        <div className=" mx-auto sm:mt-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="flex flex-col">
               <span className="font-general font-semibold inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-bloo/10 text-[#012060] text-[12px] sm:text-[14px] tracking-wide w-fit">
@@ -114,7 +114,7 @@ function Big() {
     },
     {
       content: (
-        <div className=" mx-auto px-5 sm:px-12 lg:px-0 xl:px-12 2xl:px-16 sm:mt-10">
+        <div className=" mx-auto sm:mt-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="flex flex-col">
               <span className="font-general font-semibold inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-bloo/10 text-[#012060] text-[12px] sm:text-[14px] tracking-wide w-fit">
@@ -203,9 +203,9 @@ function Big() {
     >
       <div  className="  absolute inset-0 bg-bannerbg bg-cover bg-center bg-blend-overlay"></div>
       <div className="relative z-10 ">
-        <div className=" mx-auto px-0 sm:px-2 xl:px-8">
-          <div className="sm:min-h-[380px] max-w-7xl mx-auto">
-            <div key={currentIndex} className="px-0 xl:px-12 animate-hero-slide-in">
+        <div className="">
+          <div className="sm:min-h-[380px] max-w-7xl mx-auto px-3 xl:px-4">
+            <div key={currentIndex} className="animate-hero-slide-in">
               {slides[currentIndex].content}
             </div>
           </div>

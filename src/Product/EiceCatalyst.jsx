@@ -136,7 +136,7 @@ export default function EiceCatalystPage() {
   return (
     <div className="bg-white text-gray-800">
       {/* HERO */}
-      <section className="text-left sm:text-center py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+      <section className="text-left sm:text-center py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="mt-5 flex justify-center">
           <img
             src={catalystHeroImg}
@@ -173,7 +173,7 @@ export default function EiceCatalystPage() {
       </section>
 
       {/* OVERVIEW */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+      <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="mx-auto max-w-4xl text-left sm:text-center">
           <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk py-1">
             One connected path from trying AI to embedding it.
@@ -207,7 +207,7 @@ export default function EiceCatalystPage() {
 
       {/* THE SIX CAPABILITIES */}
       <section id="capabilities" className="bg-[#F4F9FF]">
-       <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
+       <div className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4">
           <div className="mx-auto mb-8 max-w-4xl text-left sm:text-center">
             <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk py-1">
               Designed as a platform, not a collection of services.
@@ -241,7 +241,7 @@ export default function EiceCatalystPage() {
       </section>
 
       {/* WHY THIS MATTERS */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+      <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="grid lg:grid-cols-[0.75fr_1.25fr] gap-8 lg:gap-14 items-center">
           <div className="rounded-[30px] bg-gradient-to-br from-[#012060] to-[#063b91] text-white p-8 sm:p-10 min-h-[280px] flex flex-col justify-center">
             <div className="font-general font-semibold text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-[#6EDBFF]">
@@ -280,7 +280,7 @@ export default function EiceCatalystPage() {
       </section>
 
       {/* HOW WE WORK */}
-      <section id="process" className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+      <section id="process" className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="text-center mb-8">
           <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
             Start focused. Build against reality. Scale with proof.
@@ -306,7 +306,7 @@ export default function EiceCatalystPage() {
       </section>
 
       {/* WHY EICE */}
-      <section id="why-eice" className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+      <section id="why-eice" className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div>
           <div className="mx-auto mb-8 max-w-4xl text-left sm:text-center">
             <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk">
@@ -316,7 +316,7 @@ export default function EiceCatalystPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             {whyEice.map((item) => (
-              <div key={item.title} className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]">
+              <div key={item.title} className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
                 <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">{item.title}</h3>
                 <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">{item.desc}</p>
               </div>
@@ -326,10 +326,10 @@ export default function EiceCatalystPage() {
       </section>
 
       {/* FAQ */}
-      <section id="faq" className="bg-[#F4F9FF]">
-       <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-8">
+      <section id="faq" className="py-4 sm:py-10">
+       <div className="max-w-7xl mx-auto px-3 xl:px-4">
+        <div className="w-full">
+          <div className="text-left sm:text-center mb-8">
             <h2 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">
               FAQs
             </h2>
@@ -363,7 +363,7 @@ export default function EiceCatalystPage() {
 
       {/* CTA */}
       <section id ="contact" className="bg-gray-50">
-        <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto overflow-hidden">
+        <div className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 overflow-hidden">
           <div className="flex flex-col items-center gap-6 text-left sm:text-center">
             <div>
               <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">

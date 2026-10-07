@@ -384,7 +384,8 @@ function Solutions() {
   }, []);
 
   return (
-    <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
+    <div className="py-4 sm:py-10">
+      <div className="max-w-7xl mx-auto px-3 xl:px-4">
 
       {/* Mobile heading */}
       <h2 className="sm:hidden font-general font-semibold text-blackk text-left text-[24px] leading-[1.2] max-w-4xl py-2 mb-8">
@@ -439,6 +440,7 @@ function Solutions() {
         </Link>
       </div>
 
+    </div>
     </div>
   );
 }

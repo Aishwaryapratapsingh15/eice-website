@@ -47,7 +47,8 @@ const products = [
 
 export default function OurProducts() {
   return (
-    <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
+    <div className="py-4 sm:py-10">
+      <div className="max-w-7xl mx-auto px-3 xl:px-4">
       <div className="text-left sm:text-center mb-8">
         <h2 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">
           Our Products
@@ -91,6 +92,7 @@ export default function OurProducts() {
           Explore our Products <img src={arrowIcon} alt="" className="ml-2 w-5 h-5" width="20" height="20" />
         </Link>
       </div>
+    </div>
     </div>
   );
 }

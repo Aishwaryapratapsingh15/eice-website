@@ -3,12 +3,12 @@ import Clients from "./Clients";
 
 function Clientele() {
   return (
-    <div className="relative text-blackk py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 overflow-hidden">
+    <div className="relative text-blackk py-4 sm:py-10 overflow-hidden">
       <div className="absolute inset-0 w-full h-full -z-10">
         <div className="bg-map bg-no-repeat bg-cover bg-center h-full w-full opacity-70"></div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto">
+      <div className="relative max-w-7xl mx-auto px-3 xl:px-4">
         <h2 className="font-general font-semibold text-bloo text-left sm:text-center text-[12px] sm:text-[14px] uppercase tracking-[0.12em] mb-2 sm:mb-3">
           Journey so far
         </h2>

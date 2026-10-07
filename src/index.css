@@ -173,7 +173,7 @@ button, [role="button"], a, input[type="submit"], input[type="button"], input[ty
     transform: rotateY(0deg);
 }
 
-/* Mobile: left-align all content, 20px horizontal padding */
+/* Mobile: left-align all content (horizontal gutters now come from each section's own px-3 xl:px-4, matching the navbar) */
 @media (max-width: 639px) {
     #main-content .text-center {
         text-align: left !important;
@@ -183,11 +183,6 @@ button, [role="button"], a, input[type="submit"], input[type="button"], input[ty
     #main-content .sm\:max-w-7xl,
     #main-content .lg\:max-w-7xl {
         box-sizing: border-box;
-    }
-
-    #main-content footer .max-w-7xl {
-        padding-left: 8px !important;
-        padding-right: 16px !important;
     }
 }
 

@@ -32,7 +32,8 @@ export default function Clients() {
 
   return (
     <>
-      <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
+      <div className="py-4 sm:py-10">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4">
         <h2 className="font-general font-semibold text-bloo text-left sm:text-center text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">
           Our Clients
         </h2>
@@ -76,6 +77,7 @@ export default function Clients() {
             </div>
           )}
         </div>
+      </div>
       </div>
     </>
   );

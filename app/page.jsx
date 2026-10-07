@@ -96,12 +96,14 @@ export default function Page() {
       </div>
 
       <Reveal>
-        <div className="flex flex-col gap-0.5 items-start sm:items-center justify-start sm:justify-center pt-4 sm:pt-10 px-4 md:px-10 lg:px-20 xl:px-40 mb-8 max-w-7xl mx-auto">
+        <div className="pt-4 sm:pt-10 mb-8">
+          <div className="max-w-7xl mx-auto px-3 xl:px-4 flex flex-col gap-0.5 items-start sm:items-center justify-start sm:justify-center">
           <h2 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">Core capabilities</h2>
           <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] max-w-4xl py-1">
             Enterprise-grade intelligence, <br className="sm:hidden" />
             built to scale
           </h2>
+        </div>
         </div>
         <Offers />
       </Reveal>

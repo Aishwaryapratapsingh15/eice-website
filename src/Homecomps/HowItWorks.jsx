@@ -41,8 +41,8 @@ function StepCircle({ color, icon, title }) {
 
 export default function HowItWorks() {
   return (
-    <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
-      <div className="max-w-7xl mx-auto">
+    <div className="py-4 sm:py-10 bg-white">
+      <div className="max-w-7xl mx-auto px-3 xl:px-4">
         <div className="text-left sm:text-center mb-8">
           <h2 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">
             How it works

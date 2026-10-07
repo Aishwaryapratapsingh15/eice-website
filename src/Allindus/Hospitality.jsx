@@ -196,15 +196,15 @@ const CaseStudy = ({ title, description, image }) => (
 
 function Cstdmain() {
   return (
-    <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 sm:max-w-7xl mx-auto text-center py-8">
-      <h1 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">
+    <div className="px-4 md:px-10 lg:px-20 xl:px-40 sm:max-w-7xl mx-auto pt-10 pb-10 flex flex-col gap-4">
+      <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">
         Case Studies
-      </h1>
-      <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] py-1">
+      </p>
+      <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2]">
         Explore how we digitally transformed other businesses
       </h2>
-      <main className="mx-auto max-w-7xl mt-8">
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+      <main className="mx-auto max-w-7xl w-full">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4">
           {cs_projects.map((project, index) => (
             <CaseStudy
               key={index}
@@ -296,24 +296,24 @@ export default function Hospitality() {
 
       {/* ── HERO ─────────────────────────────────────────────────────────── */}
       <section className="px-4 md:px-10 lg:px-20 xl:px-40">
-        <div className="sm:max-w-7xl pt-4 pb-8 w-full mx-auto grid">
+        <div className="sm:max-w-7xl pt-14 pb-4 w-full mx-auto grid gap-4">
         {/* Desktop: 3 images */}
-        <div className="hidden sm:grid grid-cols-3 gap-4 mb-10">
+        <div className="hidden sm:grid grid-cols-3 gap-4">
           <img src={heroImg1} alt="Hospitality technology solutions" className="w-full h-64 object-cover rounded-xl"  width="1496" height="918" />
           <img src={heroImg2} alt="Hotel management software" className="w-full h-64 object-cover rounded-xl"  width="1496" height="918" />
           <img src={heroImg3} alt="EICE Rise ERP for hospitality" className="w-full h-64 object-cover rounded-xl"  width="1496" height="918" />
         </div>
         {/* Mobile: only first image full-width */}
-        <div className="sm:hidden mb-4">
+        <div className="sm:hidden">
           <img src={heroImg1} alt="Hospitality technology solutions" className="w-full h-48 object-cover rounded-xl"  width="1496" height="918" />
         </div>
 
-        <div className="max-w-7xl mx-auto text-center flex flex-col gap-8 pb-10">
-          <h1 className="text-blackk font-genral font-semibold text-center text-[32px] sm:text-[44px] leading-[1.1] max-w-4xl">
+        <div className="max-w-7xl mx-auto flex flex-col gap-4 pb-10">
+          <h1 className="font-general font-semibold text-blackk text-[32px] sm:text-[44px] leading-[1.1] text-left sm:text-center sm:max-w-4xl sm:mx-auto">
             <span className="text-bloo">Powering Hospitality</span> Excellence with
             Integrated Technology Solutions
           </h1>
-          <p className="mt-3 font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]  sm:text-center">
+          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] text-left sm:text-center">
             The hospitality industry demands seamless coordination across every touchpoint — from the
             front desk to the kitchen, the boardroom to the banquet hall. At EICE Technology, we
             understand these complexities. Through{" "}
@@ -334,12 +334,12 @@ export default function Hospitality() {
 
       {/* ── KEY SERVICES ─────────────────────────────────────────────────── */}
       <section className="w-full">
-       <div className="sm:max-w-7xl mx-auto text-center py-10">
+       <div className="sm:max-w-7xl mx-auto pt-10 pb-10 px-4 md:px-10 lg:px-20 xl:px-40">
 
           {/* Section Heading */}
-          <div className="text-center mb-4 sm:mb-14 max-w-4xl mx-auto">
-            <h1 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">Key Services</h1>
-            <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] py-1">
+          <div className="flex flex-col gap-4 text-left sm:text-center sm:max-w-4xl sm:mx-auto pb-8">
+            <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Key Services</p>
+            <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2]">
               Everything your property needs to run seamlessly from front desk to
               back office, all in one platform.
             </h2>
@@ -350,7 +350,7 @@ export default function Hospitality() {
               <div key={svc.id}>
 
                 {/* Image + Content — 50/50 split, alternating sides */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-8 mb-4 sm:mb-6">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 pb-4">
                   {/* Image — moves to right on odd rows */}
                   <div className={`w-full${index % 2 !== 0 ? " lg:order-last" : ""}`}>
                     <img src={svc.image} alt={svc.title} className="w-full h-full object-cover rounded-xl"  width={svc.__w} height={svc.__h} />
@@ -359,24 +359,24 @@ export default function Hospitality() {
                   {/* Right — Title + Challenge + Solution */}
                   <div className="flex flex-col gap-4 justify-center">
                     {/* Service Title */}
-                    <h2 className="text-[#373737] font-general font-bold text-[18px] sm:text-[20px] leading-[1.3]">{svc.title}</h2>
+                    <h2 className="text-[#373737] font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3]">{svc.title}</h2>
                     <div>
-                      <h3 className="font-medium font-inter text-blackk text-[16px] sm:text-[18px] leading-[1.6]">The Challenge</h3>
-                      <p className="text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">"{svc.challenge}"</p>
+                      <h3 className="font-inter font-semibold text-blackk text-[16px] sm:text-[18px] leading-[1.6]">The Challenge</h3>
+                      <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">"{svc.challenge}"</p>
                     </div>
                     <div>
-                      <h3 className="font-medium font-inter text-blackk text-[16px] sm:text-[18px] leading-[1.6]">The Solution</h3>
-                      <p className="text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">{svc.solution}</p>
+                      <h3 className="font-inter font-semibold text-blackk text-[16px] sm:text-[18px] leading-[1.6]">The Solution</h3>
+                      <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">{svc.solution}</p>
                     </div>
                   </div>
                 </div>
 
                 {/* Modules — full width below */}
                 <div>
-                  <h4 className="font-general font-semibold text-blackk text-[16px] sm:text-[18px] mb-3">Modules:</h4>
-                  <div className="flex flex-wrap gap-2">
+                  <h4 className="font-general font-semibold text-blackk text-[16px] sm:text-[18px] leading-[1.6] pb-4">Modules:</h4>
+                  <div className="flex flex-wrap gap-4">
                     {svc.modules.map((mod) => (
-                      <span key={mod} className="px-3 py-1.5 text-[14px] sm:text-sm font-medium rounded-full border border-[#a0e1fa] bg-[#dcf5ff] text-blackk">
+                      <span key={mod} className="font-general font-semibold flex w-fit items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[12px] sm:text-[14px] tracking-wide">
                         {mod}
                       </span>
                     ))}
@@ -384,7 +384,7 @@ export default function Hospitality() {
                 </div>
 
                 {/* Divider */}
-                <div className="border-b border-gray-200 mt-4 sm:mt-12" />
+                <div className="border-b border-[#E6EAF1] mt-10" />
               </div>
             ))}
           </div>
@@ -393,23 +393,23 @@ export default function Hospitality() {
 
       {/* ── IMPLEMENTATION APPROACH ──────────────────────────────────────── */}
       <section className="w-full">
-        <div className="sm:max-w-7xl mx-auto py-10">
-        <div className="text-center mb-4">
-          <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] py-1">EICE Rise Implementation Approach</h2>
-          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl mx-auto mt-2">
+        <div className="sm:max-w-7xl mx-auto pt-10 pb-10">
+        <div className="flex flex-col gap-4 text-left sm:text-center px-4 md:px-10 lg:px-20 xl:px-40">
+          <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2]">EICE Rise Implementation Approach</h2>
+          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-3xl sm:mx-auto">
             Empowering Hospitality Businesses with a Turnkey ERP Implementation,<br className="hidden sm:block" />Operational from Day One
           </p>
         </div>
 
         {/* Steps Grid */}
-        <div className="pb-4 sm:pb-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-4 mt-4 sm:mt-8 items-stretch">
+        <div className="pt-8 pb-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 gap-4 items-stretch">
           {steps.map((step, index) => (
-            <div key={step.number} className="relative h-full p-5 bg-white rounded-xl border border-gray-200 flex flex-col gap-3">
-              <div className="w-11 h-11 bg-blue-900 rounded-xl flex items-center justify-center flex-shrink-0">
+            <div key={step.number} className="relative h-full rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] flex flex-col">
+              <div className="w-11 h-11 bg-blue-900 rounded-xl flex items-center justify-center flex-shrink-0 mb-[19px]">
                 <img src={step.icon} alt={step.title} className="w-7 h-7 object-contain"  width="28" height="28" />
               </div>
-              <h4 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">{step.title}</h4>
-              <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6] mb-[18px]">{step.desc}</p>
+              <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">{step.title}</h3>
+              <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">{step.desc}</p>
               {/* {index < steps.length - 1 && (
                 <div className="hidden lg:flex absolute top-1/2 -translate-y-1/2 z-10" style={{ right: "-30px" }}>
                   <div className="w-11 h-11 rounded-lg border-2 border-blue-900 flex items-center justify-center bg-white">
@@ -430,19 +430,19 @@ export default function Hospitality() {
 
       {/* ── CTA BANNER ────────────────────────────────────────────────────── */}
       <section
-        className="pb-8 sm:py-16 bg-no-repeat bg-cover bg-center relative"
+        className="pt-10 pb-10 bg-no-repeat bg-cover bg-center relative"
         style={{ backgroundImage: `url(${BASE}/cta_img.png)` }}
       >
         <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(0,0,0,0.75) 40%, transparent 80%)" }} />
-        <div className="relative px-4 md:px-10 lg:px-20 xl:px-40 py-8">
+        <div className="relative px-4 md:px-10 lg:px-20 xl:px-40">
           <div className="max-w-7xl mx-auto">
           <div className="max-w-lg flex flex-col gap-4 sm:gap-6">
-            <h2 className="font-general font-semibold text-white text-[24px] sm:text-[32px] leading-snug">
+            <h2 className="font-general font-semibold text-white text-[24px] sm:text-[32px] leading-[1.2]">
               Our strength lies in delivering innovative, Industry-Specific Solutions. Partner with EICE to transform your hospitality business and achieve Exceptional Results.
             </h2>
             <div>
               <Link href="/contact">
-                <button className="text-nowrap px-6 py-3 rounded-md font-semibold transition duration-200 bg-blue-900 text-white hover:bg-blue-900/90 text-base sm:text-lg">
+                <button className="text-nowrap px-10 py-3 rounded-md font-semibold transition duration-200 bg-[#012060] text-white hover:bg-[#1E40AF] text-[18px]">
                   Let's Connect
                 </button>
               </Link>

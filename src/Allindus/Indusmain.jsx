@@ -119,28 +119,28 @@ function Indusmain() {
 
   return (
     <div id="indusmain-root">
-      <div className="font-manrope px-4 md:px-10 lg:px-20 xl:px-40 pt-32 sm:pt-32 2xl:pt-8">
-        <section className="text-left sm:text-center">
-          <h1 className="mt-[10px] text-blackk font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1]">
+      <div className="px-4 md:px-10 lg:px-20 xl:px-40 pt-32 sm:pt-32 2xl:pt-8">
+        <section className="flex flex-col gap-4 text-left sm:text-center pb-10 sm:pb-4">
+          <h1 className="text-blackk font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1]">
             Driving <span className="text-bloo">Digital Transformation </span>
             <br className ="hidden sm:block"/> Across Industries
           </h1>
-          <p className="mt-3 font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]  sm:text-center">
+          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:text-center">
             EICE empowers businesses to thrive in the digital age by leveraging
             cutting-edge technologies and innovative strategies, revolutionizing
             operations and enhancing competitiveness.
           </p>
         </section>
 
-        <div className="w-full my-6 max-w-screen-2xl mx-auto hidden sm:block sm:pb-10">
+        <div className="w-full max-w-screen-2xl mx-auto hidden sm:block pb-10">
           <div className="bg-indusbanner w-full h-0 pb-[40%] sm:pb-[30%] lg:pb-[25%] bg-cover bg-center bg-no-repeat rounded-full"></div>
         </div>
 
-        <section className="text-left sm:text-center py-4">
-          <h1 className="text-bloo text-[12px]sm:text-[14px] font-bold uppercase tracking-[0.12em] text-left sm:text-center py-2">
+        <section className="flex flex-col gap-4 text-left sm:text-center pt-10">
+          <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">
             Industry Solutions
-          </h1>
-          <h2 className="font-general font-semibold text-blackk text-center text-[32px] leading-[1.2] mx-auto max-w-4xl py-1">
+          </p>
+          <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] sm:max-w-4xl sm:mx-auto">
             Transforming Sectors Through Digital Innovation
           </h2>
         </section>
@@ -159,17 +159,17 @@ function Indusmain() {
           ))}
         </div>
 
-        <div className="py-10 grid lg:grid-cols-2 grid-cols-1 gap-4">
-          <h1 className="text-bloo flex items-center justify-start sm:justify-center h-full text-left sm:text-center lg:text-[32px] font-semibold font-general py-2">
+        <div className="pt-10 pb-10 grid lg:grid-cols-2 grid-cols-1 gap-4">
+          <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] flex items-center justify-start sm:justify-center">
             Why Choose EICE
-          </h1>
-          <h1 className="text-blackk/70 font-inter text-[16px] leading-[1.6] sm:text-[18px] font-medium mb-4">
+          </h2>
+          <p className="text-blackk/70 font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6]">
             <span className="">Partner with EICE</span> to accelerate your
             digital transformation journey. Our expertise in emerging
             technologies and industry-specific solutions will help you
             <span className="text-bloo"> innovate, optimize, and lead</span> in
             the digital era.
-          </h1>
+          </p>
         </div>
       
       </div>

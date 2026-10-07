@@ -47,7 +47,7 @@ const headingClass =
 export default function Footer() {
   return (
     <footer className="bg-[#010A14] text-white">
-      <div className="px-5 py-4 sm:max-w-7xl sm:mx-auto sm:px-4 sm:pt-16 sm:pb-10">
+      <div className="px-3 xl:px-4 py-4 max-w-7xl mx-auto sm:pt-16 sm:pb-10">
 
         {/* ================= TOP ================= */}
         <div className="flex flex-col md:flex-row justify-between gap-10">

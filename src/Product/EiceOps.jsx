@@ -197,7 +197,7 @@ export default function EiceOps() {
     <div className="bg-white text-[#111]">
 
       {/* HERO SECTION */}
-      <section className="relative overflow-hidden py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
+      <section className="relative overflow-hidden py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4">
 
            <div className="mt-5 flex justify-center">
                             <img
@@ -220,7 +220,7 @@ export default function EiceOps() {
             EICE Ops is EICE Technology's ITIL 4-aligned help desk management platform, designed to bring complete
 accountability to every ticket lifecycle. Built for IT service teams that take SLAs seriously, EICEOps eliminates
 missed escalations, ensures structured communication, and gives managers full visibility into team performance
-— all in a single, configurable platform.
+<br className="hidden sm:block"/> all in a single, configurable platform.
           </p>
 
           {/* CTA */}
@@ -237,12 +237,12 @@ missed escalations, ensures structured communication, and gives managers full vi
       </section>
 
       {/* STATS */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl lg:max-w-none mx-auto relative z-10">
+      <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 relative z-10">
         <div className="grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-5">
           {stats.map((item, index) => (
             <div
               key={index}
-              className="text-white py-2 pr-2 text-left lg:text-white lg:py-8 lg:px-5 lg:text-center md:text-white md:py-8 md:px-5 md:text-center"
+              className="text-white pr-2 text-left lg:text-white lg:px-5 lg:text-center md:text-white md:px-5 md:text-center"
             >
               <h3 className="font-general font-semibold text-[#01B0F1] text-[22px] mb-4 text-left md:text-center lg:text-center lg:text-4xl lg:mb-5 md:text-4xl md:mb-5">{String(item.number).includes(" → ") ? (
                   <>
@@ -260,7 +260,7 @@ missed escalations, ensures structured communication, and gives managers full vi
       </section>
 
       {/* FOUR PILLARS */}
-     <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+     <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
 
   <div className="text-center mb-8">
     <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] mx-auto max-w-4xl py-1">
@@ -273,7 +273,7 @@ missed escalations, ensures structured communication, and gives managers full vi
   </div>
 
   {/* 4 CARDS ROW */}
-  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+  <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
 
     {pillars.map((item, i) => (
       <div
@@ -303,7 +303,7 @@ missed escalations, ensures structured communication, and gives managers full vi
 </section>
 
       {/* FEATURE HIGHLIGHTS */}
-<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+<section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
 
   <div className="text-center mb-8">
     <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] mx-auto max-w-4xl py-1">
@@ -316,7 +316,7 @@ missed escalations, ensures structured communication, and gives managers full vi
   </h4> */}
 
   {/* 4 CARDS ROW */}
-  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:gap-6 md:gap-6 sm:gap-6 gap-4">
+  <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:gap-6 md:gap-6 sm:gap-6 gap-4">
 
     {agentFeatures.map((item, i) => (
       <div
@@ -345,7 +345,7 @@ missed escalations, ensures structured communication, and gives managers full vi
   </div>
 </section>
 
-<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+<section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
 
   <div className="text-center mb-8">
     <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] mx-auto max-w-4xl py-1">
@@ -358,7 +358,7 @@ missed escalations, ensures structured communication, and gives managers full vi
   </h4> */}
 
   {/* 4 CARDS ROW */}
-  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:gap-6 md:gap-6 sm:gap-6 gap-4">
+  <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:gap-6 md:gap-6 sm:gap-6 gap-4">
 
     {adminFeatures.map((item, i) => (
       <div
@@ -389,7 +389,7 @@ missed escalations, ensures structured communication, and gives managers full vi
 
 
       {/* WHY CHOOSE */}
-  <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+  <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
 
   <div className="text-center mb-8">
     {/* Heading */}
@@ -404,7 +404,7 @@ missed escalations, ensures structured communication, and gives managers full vi
   </div>
 
   {/* Content */}
-  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:gap-10 md:gap-10 sm:gap-10 gap-4 text-[#334155]">
+  <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:gap-10 md:gap-10 sm:gap-10 gap-4 text-[#334155]">
 
     {/* LEFT COLUMN */}
     <div className="lg:space-y-6 md:space-y-6 space-y-4 font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6]">
@@ -448,7 +448,7 @@ missed escalations, ensures structured communication, and gives managers full vi
 
           {/* ================= FINAL CTA ================= */}
           <section className="bg-gray-50 relative overflow-hidden">
-            <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto text-center">
+            <div className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 text-center">
               <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] mx-auto max-w-4xl py-1">
                 Ready to Take Control of Every Ticket?
               </h2>

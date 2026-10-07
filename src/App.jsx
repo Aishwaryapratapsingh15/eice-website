@@ -105,7 +105,7 @@ const NavLayout = ({ children }) => {
             portals to document.body at z-50. */}
         <nav className="2xl:hidden xl:hidden flex fixed w-full top-0 left-0 z-[60] shadow-md shadow-blackk/20 font-manrope bg-white font-semibold items-center overflow-hidden">
           <div className="cursor-pointer pl-3">
-            <Link href="/"><img src={logo} alt="EICE Technology" className="scale-[1.15]" width="80" height="28" /></Link>
+            <Link href="/"><img src={logo} alt="EICE Technology" className="scale-[1.15] origin-left" width="80" height="28" /></Link>
           </div>
           <div className="w-full">
             <div className="flex flex-row items-center justify-end">
@@ -114,7 +114,7 @@ const NavLayout = ({ children }) => {
           </div>
         </nav>
 
-        <main id="main-content" className="2xl:mt-14 2xl:w-full 2xl:scale-100 w-screen scale-100">
+        <main id="main-content" className="2xl:mt-14 w-full scale-100">
           <Breadcrumbs />
           <ScrollReveal />
           {children}

@@ -9,10 +9,10 @@ const casestudiesbgImage = "https://d3r43jacxrwsrp.cloudfront.net/landing-page/c
 function Casestudies() {
   return (
     <div
-      className="bg-cover bg-center"
+      className="bg-cover bg-center py-4 sm:py-10"
       style={{ backgroundImage: `url(${casestudiesbgImage})` }}
     >
-      <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-3 xl:px-4 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
         <div>
           <h2 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">
             Case Studies

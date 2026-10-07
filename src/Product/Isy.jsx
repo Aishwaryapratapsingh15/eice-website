@@ -131,7 +131,7 @@ export default function IsyncLitePage() {
     <div>
 
       {/* ================= HERO ================= */}
-      <section className="text-center py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
+      <section className="text-center py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4">
         <div className="max-w-4xl mx-auto">
 
           {/* IMAGE */}
@@ -183,7 +183,7 @@ export default function IsyncLitePage() {
       </section>
 
       {/* ================= WHAT IS ================= */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
+      <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4">
         <div className="grid md:grid-cols-[1.1fr_1fr] sm:gap-16 items-center gap-4">
 
           {/* LEFT */}
@@ -225,8 +225,17 @@ export default function IsyncLitePage() {
         </div>
       </section>
 
+      {/* ================= VIDEO ================= */}
+      <ProductVideo
+        eyebrow="Data Backup & Recovery"
+        heading="See iSyncLite in Action"
+        subtext="See how automated backups, versioning, and rapid recovery help protect critical business data and keep operations running."
+        videoId="vnT0g4IR9N8"
+      />
+
+
       {/* ================= CHALLENGES ================= */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+      <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="text-center">
 
           <div className="mb-8">
@@ -259,7 +268,7 @@ iSyncLite addresses these head-on.
       </section>
 
       {/* ================= CAPABILITIES ================= */}
-     <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+     <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="text-center mb-8">
           <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
             Core Capabilities
@@ -295,7 +304,7 @@ iSyncLite addresses these head-on.
         </div>
       </section>
 
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+      <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
 
         <div className="text-center">
 
@@ -311,7 +320,7 @@ iSyncLite addresses these head-on.
       </section>
 
       {/* ================= HOW IT WORKS ================= */}
-<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+<section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
 
   {/* Heading */}
   <div className="text-center mb-8">
@@ -354,8 +363,8 @@ iSyncLite addresses these head-on.
 </section>
 
       {/* ================= BENEFITS ================= */}
-<section className="bg-white py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
-  <div className="max-w-6xl mx-auto">
+<section className="bg-white py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4">
+  <div className="max-w-7xl mx-auto">
 
     {/* Heading */}
     <div className="text-center mb-8">
@@ -452,7 +461,7 @@ iSyncLite addresses these head-on.
 </section>
 
       {/* ================= DEPLOYMENT ================= */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+      <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="text-center">
 
           <div className="mb-8">
@@ -482,16 +491,10 @@ iSyncLite addresses these head-on.
         </div>
       </section>
 
-      <ProductVideo
-        eyebrow="Data Backup & Recovery"
-        heading="See iSyncLite in Action"
-        subtext="See how automated backups, versioning, and rapid recovery help protect critical business data and keep operations running."
-        videoId="vnT0g4IR9N8"
-      />
 
         {/* FINAL CTA */}
       <section className="bg-gray-50 text-center">
-       <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
+       <div className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4">
 
         {/* Heading */}
         <div className="max-w-4xl mx-auto">

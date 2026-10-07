@@ -2,7 +2,8 @@
 
 function Company() {
   return (
-    <div className="mx-auto px-4 md:px-10 lg:px-20 xl:px-40 sm:max-w-7xl w-screen 2xl:pt-12 sm:pt-28 pt-36 pb-4 sm:pb-10">
+    <div className="w-full 2xl:pt-12 sm:pt-28 pt-36 pb-4 sm:pb-10">
+      <div className="max-w-7xl mx-auto px-3 xl:px-4">
       {/* <div className="w-full h-full bg-bloo/5 -rotate-45 absolute left-[75%] blur-[400px]"></div> */}
 
       <div className="text-center mb-8">
@@ -43,6 +44,7 @@ function Company() {
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 }

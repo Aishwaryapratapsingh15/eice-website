@@ -140,7 +140,7 @@ export default function EiceVoice() {
     <div className="bg-white text-[#334155]">
 
       {/* ================= HERO ================= */}
-      <section className="bg-white py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto text-left sm:text-center">
+      <section className="bg-white py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 text-left sm:text-center">
         <div className="max-w-4xl mx-auto">
 
           {/* ICON */}
@@ -185,8 +185,8 @@ export default function EiceVoice() {
       </section>
 
       {/* ================= WHAT IS ================= */}
-  <section className="bg-white py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
-  <div className="grid md:grid-cols-2 gap-4 sm:gap-10 items-center max-w-6xl mx-auto">
+  <section className="bg-white py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4">
+  <div className="grid md:grid-cols-2 gap-4 sm:gap-10 items-center max-w-7xl mx-auto">
 
     {/* LEFT */}
     <div>
@@ -259,8 +259,16 @@ export default function EiceVoice() {
   </div>
 </section>
 
+      {/* ================= VIDEO ================= */}
+      <ProductVideo
+        eyebrow="Voice-Powered AI"
+        heading="See EICE Voice in Action"
+        subtext="Experience how voice-powered AI simplifies ordering, connects with your existing systems, and helps hospitality teams serve guests faster."
+        videoId="vsYw6GvlpSc"
+      />
+
       {/* ================= CHALLENGES ================= */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+      <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="text-center mb-8">
           <h1 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
             Hospitality Order Management Challenges
@@ -271,7 +279,7 @@ export default function EiceVoice() {
           </h4>
         </div>
 
-        <div className="grid md:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-4 gap-4 sm:gap-6 max-w-7xl mx-auto">
           {challenges.map((item, i) => (
             <div key={i} className="bg-white rounded-[18px] border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] p-[25px] flex flex-col items-start text-start">
                   {/* SVG */}
@@ -286,7 +294,7 @@ export default function EiceVoice() {
       </section>
 
       {/* ================= CAPABILITIES ================= */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+      <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="text-center mb-8">
           <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
             Core Capabilities of EICE Voice
@@ -297,7 +305,7 @@ export default function EiceVoice() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-4 sm:gap-6 max-w-7xl mx-auto">
           {capabilities.map((item, i) => (
             <div key={i} className="rounded-[18px] border border-[#E6EAF1] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] p-[25px]">
                <div className="rounded-lg flex items-start mb-[19px]">
@@ -312,8 +320,8 @@ export default function EiceVoice() {
 
       {/* ================= BANNER ================= */}
    <section  style={{ backgroundImage: `url(${bannerbg})` }} className="bg-cover bg-center">
-  <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
-  <div className="max-w-6xl mx-auto grid md:grid-cols-[2fr_1fr] gap-4 sm:gap-20 items-center">
+  <div className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4">
+  <div className="max-w-7xl mx-auto grid md:grid-cols-[2fr_1fr] gap-4 sm:gap-20 items-center">
 
     {/* LEFT SIDE - CONTENT */}
     <div className="text-white">
@@ -359,7 +367,7 @@ export default function EiceVoice() {
 </section>
 
       {/* ================= WORKFLOW ================= */}
-<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto text-center">
+<section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 text-center">
   <div className="mb-8">
     <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">How EICE Voice Works</h2>
 
@@ -416,7 +424,7 @@ export default function EiceVoice() {
 
       {/* ================= BENEFITS ================= */}
  <section className="bg-[#F8FAFC]">
-  <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto text-center">
+  <div className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 text-center">
 
   {/* HEADING */}
   <div className="mb-8">
@@ -431,7 +439,7 @@ export default function EiceVoice() {
   </div>
 
   {/* CARDS */}
-  <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 sm:gap-6">
+  <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 sm:gap-6">
     {benefits.map((item, i) => (
       <div
         key={i}
@@ -459,7 +467,7 @@ export default function EiceVoice() {
 </section>
 
       {/* ================= DEPLOYMENT ================= */}
-<section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto text-center">
+<section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 text-center">
 
   <div className="mb-8">
   <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
@@ -471,7 +479,7 @@ export default function EiceVoice() {
   </p>
   </div>
 
-  <div className="grid md:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto">
+  <div className="grid md:grid-cols-3 gap-4 sm:gap-6 max-w-7xl mx-auto">
     {deployment.map((item, i) => (
       <div
         key={i}
@@ -504,17 +512,9 @@ export default function EiceVoice() {
 
 </section>
 
-      {/* ================= VIDEO ================= */}
-      <ProductVideo
-        eyebrow="Voice-Powered AI"
-        heading="See EICE Voice in Action"
-        subtext="Experience how voice-powered AI simplifies ordering, connects with your existing systems, and helps hospitality teams serve guests faster."
-        videoId="vsYw6GvlpSc"
-      />
-
       {/* ================= FINAL CTA ================= */}
       <section className="bg-gray-50 relative overflow-hidden">
-        <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
+        <div className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4">
         <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk text-center py-1">
           Ready to Transform Your Order Management?
         </h2>

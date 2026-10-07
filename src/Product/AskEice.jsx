@@ -188,7 +188,7 @@ export default function AskEice() {
     <div className="bg-white text-gray-800">
 
       {/* HERO */}
-      <section className="text-left sm:text-center py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+      <section className="text-left sm:text-center py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="flex flex-col items-center">
          <img
             src={heroImg}
@@ -229,9 +229,9 @@ export default function AskEice() {
       </section>
 
       {/* FEATURES */}
-      <section className="py-4 sm:py-10 px-4 max-w-7xl mx-auto md:px-10 lg:px-20 xl:px-40 bg-white grid md:grid-cols-3 text-center">
+      <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white grid md:grid-cols-3 text-center">
         {features.map((item, i) => (
-          <div key={i} className="flex flex-col items-center gap-1 pb-2">
+          <div key={i} className="flex flex-col items-center gap-1">
             <div className=" px-6 rounded-xl">
               <img src={item.icon} alt="icon" width={item.__w} height={item.__h} />
             </div>
@@ -247,7 +247,7 @@ export default function AskEice() {
 
       {/* WHAT IS */}
       <section className="bg-[#F4F9FF]">
-       <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto grid md:grid-cols-[1fr_2fr] gap-4 md:gap-10 items-center">
+       <div className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 grid md:grid-cols-[1fr_2fr] gap-4 md:gap-10 items-center">
           <div>
             <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk">
               What is AskEICE?
@@ -261,7 +261,7 @@ export default function AskEice() {
       </section>
 
       {/* CHALLENGES */}
-          <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
+          <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4">
         <div>
           <div className="text-center mb-8">
             <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk">
@@ -296,7 +296,7 @@ export default function AskEice() {
 
 
       {/* ARCHITECTURE — Secure Document Ingestion formats */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+      <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="text-center mb-8">
           <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk">
             Point it at your documents. It takes care of the rest.
@@ -319,7 +319,7 @@ export default function AskEice() {
       </section>
 
       {/* INGESTION CALLOUTS */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+      <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
           {ingestionCallouts.map((item, i) => (
             <div key={i} className="border-t-2 border-[#01B0F1] pt-5">
@@ -339,7 +339,7 @@ export default function AskEice() {
       </section>
 
       {/* CONTEXT, NOT JUST KEYWORDS */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+      <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="grid md:grid-cols-2 gap-8 md:gap-14 items-center">
           <div>
             <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">RAG-based semantic search</p>
@@ -357,12 +357,12 @@ export default function AskEice() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-4 sm:gap-6 mt-10 sm:mt-14">
-          <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]">
+          <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
             <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">Full traceability</h3>
             <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">Every answer links back to its exact source document and page.</p>
           </div>
 
-          <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]">
+          <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
             <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] mb-[7px]">Context, not just keywords</h3>
             <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B]">Understands intent and meaning across your full document set.</p>
           </div>
@@ -370,7 +370,7 @@ export default function AskEice() {
       </section>
 
       {/* UNIFIED PLATFORM — Enterprise knowledge on WhatsApp */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+      <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="text-center mb-8">
           <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk">
             Meet employees where they already are
@@ -394,7 +394,7 @@ export default function AskEice() {
 
       {/* BRING YOUR OWN MODEL */}
       <section className="bg-[#F4F9FF]">
-       <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto grid md:grid-cols-2 gap-4 md:gap-10 items-center">
+       <div className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 grid md:grid-cols-2 gap-4 md:gap-10 items-center">
             <div>
             <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mb-2">
               Model-agnostic by design
@@ -423,7 +423,7 @@ export default function AskEice() {
 
             {/* GOVERNANCE — Enterprise grade, multi-org isolation */}
       <section className="bg-gradient-to-r from-[#eef4fb] to-[#e6f0fa] bg-cover bg-center" style={{ backgroundImage: `url(${bgImage2})` }}>
-       <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
+       <div className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4">
         <div className="text-center mb-8">
           <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk">
             Multi-organization isolation, under one platform
@@ -434,7 +434,7 @@ export default function AskEice() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
           {governanceCards.map((item, i) => (
-            <div key={i} className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] flex flex-col items-start">
+            <div key={i} className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] flex flex-col items-start transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
               <div className="rounded-lg flex items-start mb-[19px]">
                 <img src={item.icon} alt="icon" className="w-11 h-11 object-contain" width="44" height="44" />
               </div>
@@ -450,14 +450,14 @@ export default function AskEice() {
 
 
     {/* MEASURABLE IMPACT */}
-      <section className="relative py-4 sm:py-10 overflow-hidden px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
+      <section className="relative py-4 sm:py-10 overflow-hidden max-w-7xl mx-auto px-3 xl:px-4">
         <div className="relative z-10">
           <div className="text-center mb-8">
             <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk">Real results from AI-powered knowledge discovery</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {impactStats.map((item, i) => (
-              <div key={i} className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] text-center">
+              <div key={i} className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] text-center transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
                 <div className="flex sm:justify-center mb-3">
                   <img src={item.icon} alt="icon" className="w-16 h-16 object-contain" width="24" height="24" />
                 </div>
@@ -470,7 +470,7 @@ export default function AskEice() {
       </section>
 
       {/* IMPLEMENTATION */}
-      <section className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto bg-white">
+      <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="text-center mb-8">
           <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk">
             A proven, continuous journey
@@ -495,8 +495,8 @@ export default function AskEice() {
 
 
       {/* WHY EICE TECHNOLOGY */}
-      {/* <section className="bg-white py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40">
-        <div className="max-w-6xl mx-auto text-center">
+      {/* <section className="bg-white py-4 sm:py-10">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4 text-center">
           <h2 className="text-[32px] sm:text-4xl font-bold text-[#334155] mb-4 sm:mb-10">A proven enterprise software partner — trusted since 2010</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {trustBadges.map((item, i) => (
@@ -516,7 +516,7 @@ export default function AskEice() {
 
     
       {/* SECURITY, COMPLIANCE & TRUST */}
-        <section className="bg-white py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
+        <section className="bg-white py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4">
       <div className="text-center">
 
         {/* Top Tag */}
@@ -540,7 +540,7 @@ export default function AskEice() {
           {badges.map((item, i) => (
             <div
               key={i}
-              className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px]"
+              className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]"
             >
 
               {/* Title */}
@@ -572,10 +572,9 @@ export default function AskEice() {
 
 
       {/* FAQ */}
-      <section className="bg-[#F4F9FF]">
-       <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-8">
+      <section className="py-4 sm:py-10">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4">
+          <div className="text-left sm:text-center mb-8">
             <h2 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">
               FAQs
             </h2>
@@ -593,17 +592,18 @@ export default function AskEice() {
                     <span className="hidden group-open:inline">−</span>
                   </span>
                 </summary>
-                <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] mt-3">A. {item.a}</p>
+                <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6] mt-3">
+                  A. {item.a}
+                </p>
               </details>
             ))}
           </div>
         </div>
-       </div>
       </section>
 
       {/* FINAL CTA */}
       <section className="bg-gray-50 text-center">
-       <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 max-w-7xl mx-auto">
+       <div className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk">
             Ready to turn your documents into instant answers?

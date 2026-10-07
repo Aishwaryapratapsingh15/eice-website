@@ -579,20 +579,20 @@ function Cstdmain() {
 
 
 
-    <div className="py-4 sm:py-10 px-4 md:px-10 lg:px-20 xl:px-40 sm:max-w-7xl mx-auto text-center py-8">
+    <div className="px-4 md:px-10 lg:px-20 xl:px-40 sm:max-w-7xl mx-auto pt-10 pb-10 flex flex-col gap-4">
 
 
 
-      <h1 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">
+      <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">
         Case Studies
 
 
 
-      </h1>
+      </p>
 
 
 
-      <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] py-1 mb-8">
+      <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2]">
 
 
 
@@ -608,11 +608,11 @@ function Cstdmain() {
 
 
 
-        <nav className="mb-3">
+        <nav>
 
 
 
-          <ul className="flex flex-wrap justify-center gap-2 sm:gap-4">
+          <ul className="flex flex-wrap justify-start sm:justify-center gap-4">
 
 
 
@@ -632,22 +632,10 @@ function Cstdmain() {
 
 
 
-                  className={`px-3 py-1 sm:px-4 sm:py-2 text-sm sm:text-base rounded-full transition ${
-
-
-
+                  className={`px-4 py-1.5 rounded-full border font-general font-semibold text-[12px] sm:text-[14px] tracking-wide transition ${
                     activeIndustry === industry.id
-
-
-
-                      ? "bg-blue-900 text-white"
-
-
-
-                      : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-
-
-
+                      ? "bg-[#012060] text-white border-[#012060]"
+                      : "bg-white text-blackk border-[#E6EAF1] hover:border-[#01B0F1]/60"
                   }`}
 
 
@@ -696,7 +684,7 @@ function Cstdmain() {
 
 
 
-            className={`mb-12 px-2p ${
+            className={`pt-8 ${
 
 
 
@@ -712,7 +700,7 @@ function Cstdmain() {
 
 
 
-            <h2 className="text-[18px] px-2 sm:text-[20px] font-semibold mt-4 mb-4">
+            <h2 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3]">
 
 
 
@@ -724,7 +712,7 @@ function Cstdmain() {
 
 
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4">
 
 
 
@@ -968,11 +956,11 @@ function Healthcare() {
 
 
 
-      <div className="px-4 md:px-10 lg:px-20 xl:px-40 pb-8">
+      <div className="px-4 md:px-10 lg:px-20 xl:px-40">
 
 
 
-        <div className="sm:max-w-7xl pt-4 pb-8 mx-auto grid grid-cols-1 sm:grid-cols-3">
+        <div className="sm:max-w-7xl pt-14 pb-4 mx-auto grid grid-cols-1 sm:grid-cols-3">
 
 
 
@@ -992,11 +980,11 @@ function Healthcare() {
 
 
 
-        <div className="max-w-7xl mx-auto text-center flex flex-col gap-8 pb-10">
+        <div className="max-w-7xl mx-auto flex flex-col gap-4 pb-10">
 
 
 
-          <h1 className="text-blackk font-genral font-semibold text-center text-[32px] sm:text-[44px] leading-[1.1] max-w-4xl">
+          <h1 className="font-general font-semibold text-blackk text-[32px] sm:text-[44px] leading-[1.1] text-left sm:text-center sm:max-w-4xl sm:mx-auto">
 
 
 
@@ -1012,7 +1000,7 @@ function Healthcare() {
 
 
 
-          <p className="mt-3 font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]  sm:text-center">
+          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] text-left sm:text-center">
 
 
 
@@ -1064,20 +1052,20 @@ function Healthcare() {
 
 
 
-        <div className="sm:max-w-7xl mx-auto text-center py-8">
+        <div className="sm:max-w-7xl mx-auto flex flex-col gap-4 pt-10">
 
 
 
-          <h1 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">
+          <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">
             Key Services
 
 
 
-          </h1>
+          </p>
 
 
 
-          <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] py-1">
+          <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2]">
 
 
 
@@ -1093,7 +1081,7 @@ function Healthcare() {
 
 
 
-        <div className="sm:max-w-7xl w-full mx-auto pb-10">
+        <div className="sm:max-w-7xl w-full mx-auto pt-8 pb-10">
 
 
 
@@ -1121,23 +1109,11 @@ function Healthcare() {
 
 
 
-                  className={`${index === services.length - 1 ? "col-span-2 lg:col-span-1" : ""} block w-full text-left px-4 py-4 border border-gray-600/60 rounded-lg ${
-
-
-
+                  className={`${index === services.length - 1 ? "col-span-2 lg:col-span-1" : ""} block w-full text-left px-4 py-4 border rounded-[18px] font-general font-semibold text-[14px] sm:text-[16px] transition ${
                     activeService === service.id
-
-
-
-                      ? "bg-blue-900 text-white"
-
-
-
-                      : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-
-
-
-                  } fontPhone_1 `}
+                      ? "bg-[#012060] text-white border-[#012060]"
+                      : "bg-white text-blackk border-[#E6EAF1] hover:border-[#01B0F1]/60"
+                  } `}
 
 
 
@@ -1221,7 +1197,7 @@ function Healthcare() {
 
 
 
-                        <h2 className="font-general font-semibold text-[20px] mb-2">
+                        <h2 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
 
 
 
@@ -1233,7 +1209,7 @@ function Healthcare() {
 
 
 
-                        <p className="font-inter font-normal text-white text-[16px]">
+                        <p className="font-inter font-normal text-white text-[15px] sm:text-[16px] leading-[1.6]">
 
 
 
@@ -1277,7 +1253,7 @@ function Healthcare() {
 
 
 
-          <h1 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] max-w-4xl">
+          <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] sm:max-w-4xl sm:mx-auto">
 
 
 
@@ -1285,7 +1261,7 @@ function Healthcare() {
 
 
 
-          </h1>
+          </h2>
 
 
 
@@ -1293,7 +1269,7 @@ function Healthcare() {
 
 
 
-        <div className="grid md:grid-cols-3 gap-4 sm:gap-6 max-w-6xl mx-auto py-8">
+        <div className="grid md:grid-cols-3 gap-4 max-w-7xl mx-auto pt-8 pb-10">
 
 
 
@@ -1317,7 +1293,7 @@ function Healthcare() {
 
 
 
-              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
+              <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
 
 
@@ -1325,7 +1301,7 @@ function Healthcare() {
 
 
 
-              </h1>
+              </h3>
 
 
 
@@ -1377,7 +1353,7 @@ function Healthcare() {
 
 
 
-              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
+              <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
 
 
@@ -1385,7 +1361,7 @@ function Healthcare() {
 
 
 
-              </h1>
+              </h3>
 
 
 
@@ -1441,7 +1417,7 @@ function Healthcare() {
 
 
 
-              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
+              <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
 
 
@@ -1449,7 +1425,7 @@ function Healthcare() {
 
 
 
-              </h1>
+              </h3>
 
 
 
@@ -1501,7 +1477,7 @@ function Healthcare() {
 
 
 
-              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
+              <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
 
 
@@ -1509,7 +1485,7 @@ function Healthcare() {
 
 
 
-              </h1>
+              </h3>
 
 
 
@@ -1561,7 +1537,7 @@ function Healthcare() {
 
 
 
-              <h1 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
+              <h3 className="font-general font-semibold text-[18px] sm:text-[20px] leading-[1.3] text-[#373737] whitespace-pre-line mb-[7px]">
 
 
 
@@ -1569,7 +1545,7 @@ function Healthcare() {
 
 
 
-              </h1>
+              </h3>
 
 
 
