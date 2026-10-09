@@ -321,7 +321,7 @@ export default function ProductsPage() {
                 return (
                   <div
                     key={product.name}
-                    className="relative flex min-h-[255px] flex-col overflow-hidden rounded-[18px] border border-dashed border-[#E6EAF1] bg-gradient-to-br from-[#F7F9FC] to-[#EEF4FA] p-[25px]"
+                    className="relative flex flex-col overflow-hidden rounded-[18px] border border-dashed border-[#E6EAF1] bg-gradient-to-br from-[#F7F9FC] to-[#EEF4FA] p-[25px]"
                   >
                     {CardContent}
                   </div>
@@ -332,7 +332,7 @@ export default function ProductsPage() {
                 <a
                   key={product.name}
                   href={product.href}
-                  className="group relative flex min-h-[255px] flex-col overflow-hidden rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]"
+                  className="group relative flex flex-col overflow-hidden rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]"
                 >
                   {/* Decorative circle */}
                   <span className="absolute -right-[30px] -top-[30px] h-[90px] w-[90px] rounded-full bg-[#01B0F1]/[0.07]" />

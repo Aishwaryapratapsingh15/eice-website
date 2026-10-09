@@ -1,10 +1,7 @@
 ﻿"use client";
-import style from "./Styles/vendor.module.css";
 
 import { Link } from '@/nextNavigation';
 import { useEffect, useState } from "react";
-import { FaArrowRightLong } from "react-icons/fa6";
-
 import FooterUpperPart from "../../Components/Footer/FooterUpperPart.jsx";
 import FooterLower from "../../Components/Footer/FooterLower.jsx";
 const bpvmIcon = "https://d3r43jacxrwsrp.cloudfront.net/Rise/vendor/BPVM.png";
@@ -37,15 +34,6 @@ export default function VendorManagement() {
   const [isEmbed, setIsEmbed] = useState(false);
   useEffect(() => {
     setIsEmbed(new URLSearchParams(window.location.search).get("embed") === "true");
-  }, []);
-
-  const [isPhone, setIsPhone] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => setIsPhone(window.innerWidth <= 980);
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   // ================= FEATURES =================
@@ -206,162 +194,108 @@ export default function VendorManagement() {
   return (
     <>
       {/* HERO */}
-      {isPhone ? (
-        <section className={style.heroSectionConatinerPhone}>
-          <div className={style.contentConatinerPhone}>
-            <div className={style.herosectionImgBoxPhone}>
-              <img src={hero} style={{ width: "100%" }}  width="1389" height="915" />
-            </div>
-
-            <div className={style.headingBoxPhone}>
-              <div className={style.mainHeadingPhone}>VENDOR <span style={{color:"#01B0F1"}}>MANAGEMENT</span></div>
-              <div className={style.mainParaPhone}>
-                Build and manage a trusted vendor ecosystem with comprehensive supplier profiles, performance tracking, contract management, and compliance monitoring.
-              </div>
-            </div>
+      <section className="pt-10 pb-10 bg-gradient-to-r from-[#eeeeee] to-white">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4 flex flex-col lg:flex-row items-center gap-4 lg:gap-8">
+          <div className="lg:w-1/2">
+            <h1 className="font-general font-semibold text-blackk text-[32px] sm:text-[44px] leading-[1.1]">VENDOR <span className="text-[#01B0F1]">MANAGEMENT</span></h1>
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] mt-3">
+              Build and manage a trusted vendor ecosystem with comprehensive supplier profiles, performance tracking, contract management, and compliance monitoring.
+            </p>
           </div>
-        </section>
-      ) : (
-        <section className={style.heroSectionConatiner}>
-          <div className={style.fadeBackgroundConatiner}>
-            <div className={style.contentConatiner}>
-              
-              <div className={style.headingBox}>
-                <div className={style.mainHeading}>VENDOR <span style={{color:"#01B0F1"}}>MANAGEMENT</span></div>
-                <div className={style.mainPara}>
-                  Build and manage a trusted vendor ecosystem with comprehensive supplier profiles, performance tracking, contract management, and compliance monitoring.
-                </div>
-              </div>
-
-              <div className={`${style.herosectionImgBox}`}>
-              </div>
-
-            </div>
+          <div className="order-first lg:order-last w-full lg:w-1/2">
+            <img className="w-full" src={hero} alt="vendor management" width="1389" height="915" />
           </div>
-        </section>
-      )}
+        </div>
+      </section>
 
       {/* TAGWORDS */}
-      <section style={{ backgroundColor: "#f5f5f5" }} className={style.section2Wrapper}>
-        <div className={`${style.section2} globalSectionSize`}>
+      <section className="pt-10 pb-10 bg-[#f5f5f5]">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4 flex justify-between sm:justify-evenly items-center">
           {tag.map((t, i) => (
-            <div key={i} className={style.section2IconAndName}>
-              <img src={t.icon?.src || t.icon} className={style.section2Icon}  width={t.__w} height={t.__h} />
-              <div className={style.iconName}>{t.title}</div>
+            <div key={i} className="flex flex-col items-center">
+              <img className="w-[40px] sm:w-[66px]" src={t.icon?.src || t.icon} alt="" width={t.__w} height={t.__h} />
+              <div className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mt-2 text-center">{t.title}</div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* SECTION 3 */}
-      <section>
-        <div className={style.section3}>
-          <div className={style.blueBoxSetion3}>
-             <div className={`${style.laptopImgSection3}`}>
-                                                 <div className={`${style.laptopImgBox}`} >
-                                                     <img style={{ width: "100%" }} src={overviewIcon} alt=""  width="995" height="540" />
-                                                 </div>
-                                             </div>
-
-            <div className={style.section3Para}>
-              <div className={style.paragraph}>
-                Our Vendor Management module is a comprehensive solution designed for the hospitality industry, integrating with EICE Rise ERP to streamline vendor lifecycle management for Hotels, Resorts, Clubs and Institutions. From vendor registration to performance evaluation, this feature provides a centralized, transparent platform for procurement teams, finance departments, and administrators, ensuring a reliable, cost-effective, and compliant supplier network.
-              </div>
-            </div>
-          </div>
+      {/* MOCKUP */}
+      <section className="pt-10 pb-10 bg-[url('https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/room/roomPage/overview.webp')] bg-cover bg-center">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4">
+          <img className="w-[16rem] sm:w-[28rem] mx-auto mb-5" src={overviewIcon} alt="" width="995" height="540" />
+          <p className="font-inter font-normal text-white text-[16px] sm:text-[18px] leading-[1.6] text-left sm:text-center">
+            Our Vendor Management module is a comprehensive solution designed for the hospitality industry, integrating with EICE Rise ERP to streamline vendor lifecycle management for Hotels, Resorts, Clubs and Institutions. From vendor registration to performance evaluation, this feature provides a centralized, transparent platform for procurement teams, finance departments, and administrators, ensuring a reliable, cost-effective, and compliant supplier network.
+          </p>
         </div>
       </section>
 
       {/* FEATURES */}
-      <section>
-        <div className={`${style.section4} globalSectionSize`}>
-          <div className={style.keyFeatureHeading}>Key Features</div>
+      <section className="pt-10 pb-10">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4">
+          <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center mb-8">Key Features</h2>
 
-          <div className={style.featureContainer}>
-            {features.map((item, index) => (
-              <div key={item.key ?? index} className={style.featureInnerBox}>
-                <div className={style.headingAndIconFeatures}>
-                  <div style={{ width: item.width, height: item.width }}>
-                    <img src={item.img?.src || item.img} style={{ width: "100%", height: "100%", objectFit: "contain" }}  width={item.__w} height={item.__h} />
-                  </div>
-                  <div className={style.featureHeading}>
-                    <div>{item.heading}</div>
-                    <div>{item.heading2}</div>
-                  </div>
-                </div>
-                <div className={style.featureDesc}>{item.desc}</div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {features.map((f, i) => (
+              <div key={i} className="bg-white rounded-[18px] border border-[#E6EAF1] p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
+                <img className="w-[44px] mb-[19px]" src={f.img?.src || f.img} alt="" width={f.__w} height={f.__h} />
+                <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">{f.heading} {f.heading2}</h3>
+                <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">{f.desc}</p>
               </div>
             ))}
           </div>
 
-          <div className={style.requestDemoBtn}>
-            <Link to="/products/eicerise/form?product=EiceRise(Vendor Management)" style={{ color: "white", textDecoration: "none" }}>
-              <div className={`${style.demoBtnWrapper} globalSectionSize`}>
-                <div className={style.demoButton}>
-                  Request a Demo <FaArrowRightLong />
-                </div>
-              </div>
+          <div className="flex justify-start sm:justify-center mt-8">
+            <Link className="linkClass inline-flex items-center gap-2 bg-[#012060] text-white px-10 py-3 rounded-md hover:bg-[#1E40AF] text-[18px]" style={{ color: "white" }} to={"/products/eicerise/form?product=EiceRise(Vendor Management)"}>
+              Request a Demo <img src="https://d3r43jacxrwsrp.cloudfront.net/arrow.svg" alt="" aria-hidden="true" width="20" height="20" />
             </Link>
           </div>
-
         </div>
       </section>
 
       {/* BENEFITS */}
-      <section style={{ background: "#f5f5f5" }} className={style.section5Wrapper}>
-        <div className={`${style.section5} globalSectionSize`}>
-          <div className={style.benefitSectionHeading}>Benefits</div>
+      <section className="pt-10 pb-10 bg-[#f5f5f5]">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4">
+          <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center mb-8">Benefits</h2>
 
-          {benefits.map((item, index) =>
-            index % 2 === 0 ? (
-              <div key={index} className="GlobalBenefitBox1">
-                <div className="GlobalBenefitImgBox">
-                  <img src={item.img?.src || item.img} style={{ width: "100%" }}  width={item.__w} height={item.__h} />
-                </div>
-                <div className="GlobalBenefitTextBox">
-                  <div className={style.innerHeadingBenifit}>{item.heading}</div>
-                  <div className={style.innerDescBenifit}>{item.desc}</div>
+          <div className="flex flex-col gap-4">
+            {benefits.map((b, i) => (
+              <div key={i} className={`flex flex-col items-start sm:items-center gap-4 sm:gap-12 sm:justify-center ${i % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"}`}>
+                <img className="w-40 sm:w-[350px] shrink-0 mx-auto sm:mx-0" src={b.img?.src || b.img} alt="" width={b.__w} height={b.__h} />
+                <div className="sm:w-1/2">
+                  <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px] text-left">{b.heading}</h3>
+                  <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6] text-left">{b.desc}</p>
                 </div>
               </div>
-            ) : (
-              <div key={index} className="GlobalBenefitBox2">
-                <div className="GlobalBenefitImgBox">
-                  <img src={item.img?.src || item.img} style={{ width: "100%" }}  width={item.__w} height={item.__h} />
-                </div>
-                <div className="GlobalBenefitTextBox">
-                  <div className={style.innerHeadingBenifit}>{item.heading}</div>
-                  <div className={style.innerDescBenifit}>{item.desc}</div>
-                </div>
-              </div>
-            )
-          )}
+            ))}
+          </div>
         </div>
       </section>
 
       {/* FAQ */}
-      <section>
-        <div className={`${style.FAQsection} globalSectionSize`}>
-          <div className={style.FAQHeadingBlock}>
-            <div className={style.FAQEyebrow}>FAQs</div>
-            <div className={style.FAQHeading}>Frequently Asked Questions</div>
+      <section className="pt-10 pb-10">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4">
+          <div className="text-left sm:text-center mb-8">
+            <div className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">FAQs</div>
+            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] mx-auto max-w-4xl py-1">Frequently Asked Questions</h2>
           </div>
-
-          <div className={style.FAQContainer}>
+          <div className="space-y-3">
             {query.map((item, i) => (
-              <details key={i} className={style.faqItem}>
-                <summary className={style.faqSummary}>
+              <details key={i} className="group bg-white rounded-[18px] border border-[#E6EAF1] p-[25px]">
+                <summary className="group/q cursor-pointer list-none flex items-center justify-between gap-4 font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3]">
                   <span>{item.question}</span>
-                  <span className={style.faqToggle}>
-                    <span className={style.faqPlus}>+</span>
-                    <span className={style.faqMinus}>−</span>
+                  <span className="text-black group-hover/q:text-[#01B0F1] text-xl leading-none flex-shrink-0 transition">
+                    <span className="group-open:hidden">+</span>
+                    <span className="hidden group-open:inline">−</span>
                   </span>
                 </summary>
-                <p className={style.faqAnswer}>{item.answer}</p>
+                <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6] mt-3">{item.answer}</p>
               </details>
             ))}
           </div>
         </div>
       </section>
+
   {/* ================= FOOTER ================= */}
                            <FooterUpperPart product="Vendor Management" text1={footerUpperText.text1} text2= {<> {footerUpperText.text2} <br />  </>} text3={footerUpperText.text3} img={overviewIcon} />
                            {!isEmbed && <FooterLower />}

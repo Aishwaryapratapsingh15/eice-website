@@ -122,7 +122,7 @@ export default function Footer() {
     <Link href="/products/isync-lite" className={linkClass}>iSyncLite</Link>
   </li>
   <li>
-     <a href="https://rise.eicetechnology.com/" target="" rel="noopener noreferrer" className={linkClass}>EICE Rise</a>
+     <Link href="/products/eicerise" className={linkClass}>EICE Rise</Link>
   </li>
   <li>
     <Link href="/products/verilock" className={linkClass}>Verilock</Link>
@@ -131,7 +131,7 @@ export default function Footer() {
     <Link href="/products/infrasight" className={linkClass}>InfraSight</Link>
   </li>
   <li>
-    <a href="https://easylogy.eicetechnology.com/" target="" rel= "noopener noreferrer" className={linkClass}> Easylogy</a>
+    <Link href="/products/easylogy" className={linkClass}>Easylogy</Link>
   </li>
 
 </ul>

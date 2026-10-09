@@ -66,11 +66,11 @@ useEffect(() => {
             <section className={styles.section1}>
 
                 <div className={styles.textBox}>
-                    <div className={`${styles.text1}  `}>
-                        <span className="font2" >Revolutionizing Transportation Tracking with Easylogy Solutions</span> <span style={{ fontWeight: "600" }} className="font1"></span>
-                    </div>
+                    <h1 className={`${styles.text1} font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1]`}>
+                        Revolutionizing Transportation Tracking with Easylogy Solutions
+                    </h1>
 
-                    <p className={`${styles.text2} font1`}>
+                    <p className={`${styles.text2} font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6]`}>
                         Easylogy revolutionizes transportation tracking with real-time fleet visibility, automated driver updates, and smart logistics management. Featuring a web dashboard for admins and a mobile app for drivers, it enables live tracking, instant alerts, trip history, and API integrations, helping businesses optimize routes, improve efficiency, and reduce operational costs effortlessly.
                     </p>
                     <div className={`${styles.requestDemoButtonContainer} font1`}>
@@ -90,80 +90,43 @@ useEffect(() => {
             </section>
 
 
-            <div className={`${styles.mainSection}`}>
-
-
-                <div className={`${styles.overViewSection}`}>
-
-                    <div className={`${styles.overViewHeading}`}>Overview</div>
-                    <div className={`${styles.overViewParaDesc} font4`}>
+            <section className="pt-10 pb-10 bg-[aliceblue]">
+                <div className="max-w-7xl mx-auto px-3 xl:px-4">
+                    <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center mb-4">Overview</h2>
+                    <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] text-left sm:text-center sm:max-w-4xl sm:mx-auto">
                         Easylogy is a smart transportation tracking solution designed to streamline logistics operations with real-time fleet visibility, automated driver updates, and advanced analytics. Our web-based platform enables administrators to monitor vehicle movements, track deliveries, and generate insightful reports, while the driver mobile app allows seamless status updates, location sharing, image uploads, and trip logging. With features like live tracking, instant alerts, trip history, and seamless API integrations, Easylogy enhances route optimization, reduces delays, and improves operational efficiency. Whether managing a small fleet or a large-scale transportation network, Easylogy empowers businesses with the tools needed to make smarter, data-driven decisions and ensure seamless logistics management.
-                    </div>
-
-
-
+                    </p>
                 </div>
+            </section>
 
+            <section className="pt-10 pb-10">
+                <div className="max-w-7xl mx-auto px-3 xl:px-4">
+                    <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center mb-8">Benefits</h2>
 
-                <div className={`${styles.benefitSection}`}>
-
-                <div className={`${styles.aboutHeading}`}>Benefits</div>
-                    {
-                        feature.map((item) => (
-                            item.id % 2 == 0 ? (<div key={item.id} style={{ display: "flex", justifyContent: "center" }} >
-                                <div className={`${styles.benefitContainer}`}>
-                                    <div style={{ width: item.width }} className={`${styles.benefitImgBox}`}>
-                                        <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
-                                    </div>
-                                    <div className={`${styles.headingAndDescBox}`}>
-                                        <div className={`${styles.benefitHeading}`}>{item.heading}</div>
-                                        <div className={`${styles.benefitDesc}`} >{item.desc}</div>
-                                    </div>
+                    <div className="flex flex-col gap-4">
+                        {feature.map((item, index) => (
+                            <div key={item.id} className={`flex flex-col items-start sm:items-center gap-4 sm:gap-12 ${index % 2 === 0 ? "sm:flex-row-reverse" : "sm:flex-row"}`}>
+                                <img className="w-full sm:w-[40%] shrink-0" src={item.img?.src || item.img} alt={item.heading || ""} width={item.__w} height={item.__h} />
+                                <div>
+                                    <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">{item.heading}</h3>
+                                    <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">{item.desc}</p>
                                 </div>
                             </div>
-                            ) : (
-
-                                <div key={item.id} style={{  background: "#f5f5f5", display: "flex", justifyContent: "center" }} >
-                                    <div className={`${styles.benefitContainer}`}>
-
-                                        <div className={`${styles.headingAndDescBox}`}>
-                                            <div className={`${styles.benefitHeading}`}>{item.heading}</div>
-                                            <div className={`${styles.benefitDesc}`} >{item.desc}</div>
-                                        </div>
-                                        <div style={{ width: item.width }} className={`${styles.benefitImgBox}`}>
-                                            <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
-                                        </div>
-                                    </div>
-                                </div>
-
-                            )
-                        )
-
-                        )}
-
-
-                </div>
-
-
-
-
-
-                <div className={`${styles.aboutUsSection}`}>
-
-                    <div className={`${styles.aboutHeading}`}>About us</div>
-                    <div className={`${styles.aboutUsPara} font4`}>
-                        Easylogy is revolutionizing transportation tracking with a powerful and intelligent solution designed to enhance logistics efficiency. Our platform provides real-time fleet visibility, automated driver updates, and smart logistics management, ensuring seamless operations and reduced costs. With a web-based dashboard for administrators to monitor vehicle movements, manage deliveries, and analyze data, and a mobile app for drivers to upload live locations, trip details, and images, Easylogy simplifies fleet management. Key features like live tracking, instant alerts, trip history, and seamless API integrations empower businesses to make data-driven decisions, improve delivery accuracy, and optimize routes. Whether you manage a small fleet or a large-scale transportation network, Easylogy is your go-to solution for smarter, more efficient logistics management.
+                        ))}
                     </div>
-
-
-
                 </div>
+            </section>
 
+            <section className="pt-10 pb-10 bg-[#f5f5f5]">
+                <div className="max-w-7xl mx-auto px-3 xl:px-4">
+                    <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center mb-4">About us</h2>
+                    <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] text-left sm:text-center sm:max-w-4xl sm:mx-auto">
+                        Easylogy is revolutionizing transportation tracking with a powerful and intelligent solution designed to enhance logistics efficiency. Our platform provides real-time fleet visibility, automated driver updates, and smart logistics management, ensuring seamless operations and reduced costs. With a web-based dashboard for administrators to monitor vehicle movements, manage deliveries, and analyze data, and a mobile app for drivers to upload live locations, trip details, and images, Easylogy simplifies fleet management. Key features like live tracking, instant alerts, trip history, and seamless API integrations empower businesses to make data-driven decisions, improve delivery accuracy, and optimize routes. Whether you manage a small fleet or a large-scale transportation network, Easylogy is your go-to solution for smarter, more efficient logistics management.
+                    </p>
+                </div>
+            </section>
 
-
-
-               {!isEmbed &&<FooterLower />}
-            </div>
+            {!isEmbed && <FooterLower />}
 
 
 

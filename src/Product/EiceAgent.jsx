@@ -640,7 +640,7 @@ data-driven workflows.
     {steps.map((item, i) => (
       <div
         key={i}
-        className="relative bg-white border border-gray-200 rounded-xl p-4 sm:p-6 flex flex-col gap-4 min-h-[220px]"
+        className="relative bg-white border border-gray-200 rounded-xl p-4 sm:p-6 flex flex-col gap-4"
       >
 
         {/* STEP NUMBER (top right) */}

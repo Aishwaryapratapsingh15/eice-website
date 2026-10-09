@@ -1,7 +1,6 @@
 ﻿"use client";
 
 
-import style from "./Styles/employeeSuite.module.css"
 
 
 
@@ -43,7 +42,6 @@ const tt = "https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/emp/empBenefi
 
 import { useEffect , useState } from "react"
 
-import { FaArrowRightLong } from "react-icons/fa6";
 
 
 const laptop = "https://d3r43jacxrwsrp.cloudfront.net/Rise/section3Laptop/emp.webp";
@@ -58,20 +56,6 @@ export default function EmployeeSuite() {
   const [isEmbed, setIsEmbed] = useState(false);
   useEffect(() => {
     setIsEmbed(new URLSearchParams(window.location.search).get("embed") === "true");
-  }, []);
-
- const [isPhone, setIsPhone] = useState(false);
-
-
-  useEffect(() => {
-      const handleResize = () => {
-          setIsPhone(window.innerWidth <= 980);
-      };
-      handleResize();
-      window.addEventListener('resize', handleResize);
-      return () => {
-          window.removeEventListener('resize', handleResize);
-      };
   }, []);
 
 
@@ -240,336 +224,123 @@ export default function EmployeeSuite() {
 
   return (
     <>
-
-
-
-{isPhone ? ( <section className={`${style.heroSectionConatinerPhone}  `}>
-
-<div className={`${style.contentConatinerPhone}`}>
-
-    <div className={`${style.herosectionImgBoxPhone}`}>
-        <img style={{ width: "100%" }} src={heroImg} alt={"room booking"}  width="957" height="461" />
-    </div>
-
-    <div className={`${style.headingBoxPhone} font4 `}>
-        <div className={`${style.mainHeadingPhone}`}>
-            <span style={{ color: "#333333" }} >EMPLOYEE </span><span style={{ color: "#01B0F1" }} >SUITE</span>
-        </div>
-        <div className={`${style.mainParaPhone}`}>
-        Empower your team with centralized access to essential resources, payroll, and performance management tools..
-        </div>
-
-
-    </div>
-
-
-</div>
-
-</section>):(<section className={`${style.heroSectionConatiner}  `}>
-      
-      
-      <div className={`${style.fadeBackgroundConatiner}`}>
-
-        <div className={`${style.contentConatiner}`}>
-
-          <div className={`${style.headingBox} font4 `}>
-            <div className={`${style.mainHeading}`}>
-              <span style={{ color: "#333333" }} >EMPLOYEE</span><span style={{ color: "#01B0F1" }} > SUITE</span>
-            </div>
-            <div className={`${style.mainPara}`}>
-            Empower your team with centralized access to essential resources, payroll, and performance management tools..
-            </div>
-
-
+      {/* HERO */}
+      <section className="pt-10 pb-10 bg-gradient-to-r from-[#eeeeee] to-white">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4 flex flex-col lg:flex-row items-center gap-4 lg:gap-8">
+          <div className="lg:w-1/2">
+            <h1 className="font-general font-semibold text-blackk text-[32px] sm:text-[44px] leading-[1.1]"><>EMPLOYEE <span className="text-bloo">SUITE</span></></h1>
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] mt-3">
+              Empower your team with centralized access to essential resources, payroll, and performance management tools..
+            </p>
           </div>
-
-          <div className={`${style.herosectionImgBox}`}>
-            {/* <img style={{ width: "100%" }} src={main} alt="" /> */}
+          <div className="order-first lg:order-last w-full lg:w-1/2">
+            <img className="w-full" src={heroImg} alt="room booking" width="957" height="461" />
           </div>
-
         </div>
+      </section>
 
-      </div>
-
-    </section>)}
-
-
-        
-
-
- 
-
-      <section style={{ backgroundColor: "#f5f5f5" }} className={style.section2Wrapper}>
-        <div className={`${style.section2} font4 globalSectionSize`}>
-
-          <div className={style.section2IconAndName}>
-            <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={as} alt=""  width="300" height="300" />
-            </div>
-
-            <div className={`${style.iconName} `}>
-
-              <div> Automated</div>
-              <div> Shifts</div>
+      {/* TAGWORDS */}
+      <section className="pt-10 pb-10 bg-[#f5f5f5]">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4 flex justify-between sm:justify-evenly items-center">
+          <div className="flex flex-col items-center">
+            <img className="w-[40px] sm:w-[66px]" src={as} alt="" width="300" height="300" />
+            <div className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mt-2 text-center">
+              <div>Automated</div>
+              <div>Shifts</div>
             </div>
           </div>
-
-
-
-          <div className={style.section2IconAndName}>
-
-            <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={cd} alt=""  width="300" height="300" />
-            </div>
-
-            <div className={`${style.iconName} `}>
-
-
-
+          <div className="flex flex-col items-center">
+            <img className="w-[40px] sm:w-[66px]" src={cd} alt="" width="300" height="300" />
+            <div className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mt-2 text-center">
               <div>Centralised</div>
               <div>Data</div>
-
             </div>
           </div>
-
-
-
-          <div className={style.section2IconAndName}>
-
-            <div className={`${style.section2Icon}`}>
-              <img style={{ width: "100%" }} src={tc} alt=""  width="300" height="300" />
+          <div className="flex flex-col items-center">
+            <img className="w-[40px] sm:w-[66px]" src={tc} alt="" width="300" height="300" />
+            <div className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mt-2 text-center">
+              <div>Team</div>
+              <div>Collaboration</div>
             </div>
-
-            <div className={`${style.iconName}`}>
-
-
-              <div>
-                Team
-              </div>
-
-              <div>
-                Collaboration
-              </div>
-            </div>
-
           </div>
-
-
-
         </div>
       </section>
 
-
-
-      <section>
-
-        <div className={`${style.section3}`}>
-
-
-
-          <div className={`${style.blueBoxSetion3}`}>
-
-            <div className={`${style.laptopImgSection3}`}>
-              <div className={`${style.laptopImgBox}`} >
-                <img style={{ width: "100%" }} src={laptop} alt=""  width="1440" height="916" />
-              </div>
-            </div>
-
-
-            <div className={`${style.section3Para} font4`}>
-              <div className={`${style.paragraph}`}>
-
-                The <strong className="font2"> Employee Portal</strong> provides centralized access to work-related information, resources, and services. It <strong className="font2">streamlines HR processes, boosts engagement, and promotes transparency, enhancing overall productivity and the employee experience</strong> .
-
-              </div>
-
-            </div>
-
-            {/* <div style={{overflow : "hidden"}} >
-            <div className={`${style.section3Spiral}`}  >
-                <img style={{width : "100%" }} src={spiral} alt="" />
-            </div>
-        </div> */}
-
-          </div>
-
+      {/* MOCKUP */}
+      <section className="pt-10 pb-10 bg-[url('https://d3r43jacxrwsrp.cloudfront.net/Rise/insidePages/room/roomPage/overview.webp')] bg-cover bg-center">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4">
+          <img className="w-[16rem] sm:w-[28rem] mx-auto mb-5" src={laptop} alt="" width="1440" height="916" />
+          <p className="font-inter font-normal text-white text-[16px] sm:text-[18px] leading-[1.6] text-left sm:text-center">
+            The <strong className="font-semibold">Employee Portal</strong> provides centralized access to work-related information, resources, and services. It <strong className="font-semibold">streamlines HR processes, boosts engagement, and promotes transparency, enhancing overall productivity and the employee experience</strong> .
+          </p>
         </div>
       </section>
 
+      {/* FEATURES */}
+      <section className="pt-10 pb-10">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4">
+          <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center mb-8">Key Features</h2>
 
-
-
-
-      <section >
-        <div className={`${style.section4} globalSectionSize`}>
-
-          <div className={`${style.keyFeatureHeading} font4`}>Key Features</div>
-
-          <div className={`${style.featureContainer}`}>
-
-            {features.map((item, index) =>
-            (
-              <div key={item.key ?? index} className={`${style.featureInnerBox} font4`}>
-
-                <div className={`${style.headingAndIconFeatures}`}>
-
-                  <div style={{ width: item.width, height: item.width }}>
-                    <img style={{ width: "100%", height: "100%", objectFit: "contain" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
-                  </div>
-
-                  <div className={`${style.featureHeading}`}>
-                    <div>
-                      {item.heading}
-                    </div>
-
-                    
-
-                  </div>
-
-                </div>
-
-                <div className={`${style.featureDesc}`}>
-                  {item.desc}
-                </div>
-
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {features.map((item, index) => (
+              <div key={item.key ?? index} className="bg-white rounded-[18px] border border-[#E6EAF1] p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
+                <img className="w-[44px] mb-[19px]" src={item.img?.src || item.img} alt="" width={item.__w} height={item.__h} />
+                <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">{item.heading}</h3>
+                <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">{item.desc}</p>
               </div>
-
             ))}
-
           </div>
 
-          <div className={`${style.requestDemoBtn}`}>
-
-            <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form?product=EiceRise(Employee Suite)"}>
-              <div className={`${style.demoBtnWrapper} globalSectionSize`}>
-                <div className={`${style.demoButton} font1`}>
-                  <div > Request a Demo </div>
-                  <div className={`${style.demoArrowButton}`}> <FaArrowRightLong /></div>
-                </div>
-
-              </div>
+          <div className="flex justify-start sm:justify-center mt-8">
+            <Link className="linkClass inline-flex items-center gap-2 bg-[#012060] text-white px-10 py-3 rounded-md hover:bg-[#1E40AF] text-[18px]" style={{ color: "white" }} to={"/products/eicerise/form?product=EiceRise(Employee Suite)"}>
+              Request a Demo <img src="https://d3r43jacxrwsrp.cloudfront.net/arrow.svg" alt="" aria-hidden="true" width="20" height="20" />
             </Link>
-
           </div>
-
         </div>
       </section>
 
-       
+      {/* BENEFITS */}
+      <section className="pt-10 pb-10 bg-[#f5f5f5]">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4">
+          <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center mb-8">Benefits</h2>
 
-
-      {/* <section style={{ background: "#f5f5f5" }} >
-        <div className={`${style.section5} font4 globalSectionSize`}>
-
-
-          <div className={`${style.section5heading} font4`}>Benefits</div>
-          {benefits.map((item, index) =>
-          (
-
-            index % 2 === 0 ? (<div key={index} className='GlobalBenefitBox1'>
-
-
-              <div style={{ width: "25%" }}>
-                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
+          <div className="flex flex-col gap-4">
+            {benefits.map((item, index) => (
+              <div key={index} className={`flex flex-col items-start sm:items-center gap-4 sm:gap-12 sm:justify-center ${index % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"}`}>
+                <img className="w-40 sm:w-[350px] shrink-0 mx-auto sm:mx-0" src={item.img?.src || item.img} alt="" width={item.__w} height={item.__h} />
+                <div className="sm:w-1/2">
+                  <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px] text-left">{item.heading}</h3>
+                  <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6] text-left">{item.desc}</p>
+                </div>
               </div>
-
-              <div className='GlobalBenefitTextBox' >
-                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
-                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
-              </div>
-
-
-            </div>) : (<div key={index} className='GlobalBenefitBox2'>
-
-
-              <div style={{ width: "25%" }}>
-                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
-              </div>
-
-              <div className='GlobalBenefitTextBox' >
-                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
-                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
-              </div>
-
-
-            </div>)
-
-
-          ))}
-
-        </div>
-      </section> */}
-
-      <section style={{ background: "#f5f5f5" }} className={style.section5Wrapper}>
-        <div className={`${style.section5} font4 globalSectionSize`}>
-
-
-          <div className={`${style.benefitSectionHeading} font4`}>Benefits</div>
-          {benefits.map((item, index) =>
-          (
-
-            index % 2 === 0 ? (<div key={index} className='GlobalBenefitBox1'>
-
-
-              <div className="GlobalBenefitImgBox" >
-                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
-              </div>
-
-              <div className='GlobalBenefitTextBox' >
-                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
-                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
-              </div>
-
-
-            </div>) : (<div key={index} className='GlobalBenefitBox2'>
-
-
-              <div className="GlobalBenefitImgBox">
-                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt={item.heading || ""}  width={item.__w} height={item.__h} />
-              </div>
-
-              <div className='GlobalBenefitTextBox' >
-                <div className={`${style.innerHeadingBenifit}`}>{item.heading}</div>
-                <div className={`${style.innerDescBenifit}`}>{item.desc}</div>
-              </div>
-
-
-            </div>)
-
-
-          ))}
-
+            ))}
+          </div>
         </div>
       </section>
 
-
-
-      <section >
-        <div className={`${style.FAQsection} globalSectionSize font4`}>
-          <div className={style.FAQHeadingBlock}>
-            <div className={style.FAQEyebrow}>FAQs</div>
-            <div className={style.FAQHeading}>Frequently Asked Questions</div>
+      {/* FAQ */}
+      <section className="pt-10 pb-10">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4">
+          <div className="text-left sm:text-center mb-8">
+            <div className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">FAQs</div>
+            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] mx-auto max-w-4xl py-1">Frequently Asked Questions</h2>
           </div>
-
-
-          <div className={style.FAQContainer}>
-            {query.map((item, index) => (
-              <details key={item.key ?? index} className={style.faqItem}>
-                <summary className={style.faqSummary}>
+          <div className="space-y-3">
+            {query.map((item, i) => (
+              <details key={item.key ?? i} className="group bg-white rounded-[18px] border border-[#E6EAF1] p-[25px]">
+                <summary className="group/q cursor-pointer list-none flex items-center justify-between gap-4 font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3]">
                   <span>{item.question}</span>
-                  <span className={style.faqToggle}>
-                    <span className={style.faqPlus}>+</span>
-                    <span className={style.faqMinus}>−</span>
+                  <span className="text-black group-hover/q:text-[#01B0F1] text-xl leading-none flex-shrink-0 transition">
+                    <span className="group-open:hidden">+</span>
+                    <span className="hidden group-open:inline">−</span>
                   </span>
                 </summary>
-                <p className={style.faqAnswer}>{item.answer}</p>
+                <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6] mt-3">{item.answer}</p>
               </details>
             ))}
           </div>
-
         </div>
       </section>
-
 
       <div >
         <FooterUpperPart product="Employee Suite" text1={footerUpperText.text1} text2={footerUpperText.text2} text3={footerUpperText.text3} img={laptop} />

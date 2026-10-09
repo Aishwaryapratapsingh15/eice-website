@@ -338,7 +338,7 @@ iSyncLite addresses these head-on.
     {steps.map((item, i) => (
       <div
         key={i}
-        className="relative rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col sm:items-center items-start sm:text-center text-start min-h-[220px]"
+        className="relative rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col sm:items-center items-start sm:text-center text-start"
       >
         {/* ICON */}
         <div className="w-11 h-11 flex items-center justify-center text-white rounded-lg text-xl mb-[19px]">

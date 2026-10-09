@@ -247,8 +247,7 @@ function Footer() {
                 Software Testing
               </Link>
               <Link style={{ color: "white", fontSize: "15px" }}
-                target="_blank"
-                to="https://rise.eicetechnology.com/"
+                to="/products/eicerise"
                 className="text-blackk/70     hover:text-blackk  hover:underline py-1 px-3"
               >
                 EICE Rise
@@ -261,11 +260,10 @@ function Footer() {
                 iSync Drive
               </Link>
               <Link style={{ color: "white", fontSize: "15px" }}
-                target="_blank"
-                to="https://easylogy.eicetechnology.com/"
+                to="/products/easylogy"
                 className="text-blackk/70     hover:text-blackk  hover:underline py-1 px-3"
               >
-                WTMS
+                Easylogy
               </Link>
               <Link style={{ color: "white", fontSize: "15px" }}
                 target="_blank"

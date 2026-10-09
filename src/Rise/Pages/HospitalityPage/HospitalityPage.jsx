@@ -493,11 +493,11 @@ export default function HospitalityPage() {
 
 
                 <div className={styles.textBox}>
-                    <div className={`${styles.text1}  `}>
-                        <span className="font2" >Flexible, Modular Solutions tailored to your business{" "}needs</span>
-                    </div>
+                    <h1 className={`${styles.text1} font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1]`}>
+                        Flexible, Modular Solutions tailored to your business{" "}needs
+                    </h1>
 
-                    <p className={`${styles.text2} font1`}>
+                    <p className={`${styles.text2} font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6]`}>
                         EICE Rise ERP simplifies hospitality operations by uniting front desk, housekeeping, dining, and finance into a single, efficient platform for streamlined management and enhanced guest experiences.
                     </p>
 
@@ -519,42 +519,27 @@ export default function HospitalityPage() {
 
             {/* section2 */}
 
-            <section className={`${styles.section2} `}>
+            <section className="pt-10 pb-10 bg-[#F0FBFF]">
+                <div className="max-w-7xl mx-auto px-3 xl:px-4">
+                    <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center mb-8">Our <span className="text-bloo">End to End</span> Technology Solution</h2>
 
-
-                <div className={`${styles.section2Heading} font3 globalSectionSize`}>Our <span className={` blueTextGlobalClass font2`} > End to End </span>  Technology Solution</div>
-
-
-
-                <div style={{ backgroundColor: "#F0FBFF" }} >
-                    <div className={`${styles.servicesBox} globalSectionSize`}>
+                    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
                         {services.map((item, index) =>
                         (
-                            <Link className="linkClass" key={item.key ?? index} to={item.path}>
-
-                                <div className={`${styles.iconAndTextBox} `}>
-
-                                    <div className={styles.imgBox} >
-                                        <img src={item.icon?.src || item.icon} alt={item.serviceName}  width={item.__w} height={item.__h} />
+                            <Link className="linkClass block" key={item.key ?? index} to={item.path}>
+                                <div className="h-full bg-white rounded-[18px] border border-[#E6EAF1] p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
+                                    <div className="bg-[#F0F0F0] p-[10px] flex items-center justify-center mb-[19px]">
+                                        <img className="w-[70%]" src={item.icon?.src || item.icon} alt={item.serviceName} width={item.__w} height={item.__h} />
                                     </div>
-
-                                    <div className={`${styles.serviceName} font1`}>
-                                        <div>  {item.serviceName}</div>
-                                        <div>  {item.serviceName2}</div>
-
+                                    <div className={`font-general font-semibold text-[#373737] text-[18px] ${item.serviceName === "FOOD & BEVERAGE" ? "sm:text-[19px]" : "sm:text-[20px]"} leading-[1.3] text-center`}>
+                                        <div>{item.serviceName}</div>
+                                        <div>{item.serviceName2}</div>
                                     </div>
-
-
                                 </div>
-
                             </Link>
-
                         ))}
                     </div>
-
                 </div>
-
-
             </section>
 
 
@@ -606,29 +591,23 @@ export default function HospitalityPage() {
 
 
 
-            <section className={`${styles.section4} globalSectionSize`}>
-
-                <div className={`${styles.section4Heading}`}>
-                    <span className={` blueTextGlobalClass font2`}>Trusted</span><span className="font3"> by Brands around the World</span>
+            <section className="pt-10">
+                <div className="max-w-7xl mx-auto px-3 xl:px-4">
+                    <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center mb-8">
+                        <span className="text-bloo">Trusted</span> by Brands around the World
+                    </h2>
                 </div>
             </section>
 
-
-            <div className={styles.clientSection} >
-                <div className={`${styles.clientLogoBox} globalSectionSize`} >
+            <div className="bg-[#80B4FB] py-10">
+                <div className="max-w-7xl mx-auto px-3 xl:px-4 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
                     {displayedLogos.map((item, index) => (
-                        <div key={index} className={`${styles.clinetLogoSize}`} >
-                            <img style={{ width: "100%" }} src={item.logo?.src || item.logo} alt="EICE Technology"  width={item.__w} height={item.__h} />
+                        <div key={index}>
+                            <img className="w-full" src={item.logo?.src || item.logo} alt="EICE Technology" width={item.__w} height={item.__h} />
                         </div>
                     ))}
                 </div>
             </div>
-
-
-
-
-
-
 
 
 
@@ -787,16 +766,13 @@ export default function HospitalityPage() {
 
 
             {/* section6 mobile — hidden on sm+ via CSS */}
-            <section className={`${styles.section6ForPhone} globalSectionSize sm:hidden`}>
-                <div className={`${styles.section6Heading} font1`}>
-                    <div style={{ display: "flex", justifyContent: "flex-start", alignItems: "center", gap: "0px 20px" }}>
-                        <div style={{ width: "50px", paddingTop: "12px" }}>
-                            <img style={{ width: "100%" }} src={h2} alt=""  width="151" height="150" />
-                        </div>
-                        <div className="font3">
-                            Real  <span className={` blueTextGlobalClass font2`}>Stories</span> , Real <span className={` blueTextGlobalClass font2`}>Impact</span>
-                        </div>
-                    </div>
+            <section className="pt-10 pb-10 sm:hidden">
+              <div className="max-w-7xl mx-auto px-3 xl:px-4">
+                <div className="flex items-center gap-4 mb-8">
+                    <img className="w-[50px]" src={h2} alt="" width="151" height="150" />
+                    <h2 className="font-general font-semibold text-blackk text-[24px] leading-[1.2]">
+                        Real <span className="text-bloo">Stories</span>, Real <span className="text-bloo">Impact</span>
+                    </h2>
                 </div>
 
                 <div
@@ -827,47 +803,43 @@ export default function HospitalityPage() {
                                         {item.heading}
                                     </div>
                                     <div className="font1" style={{ color: "rgba(255,255,255,0.85)", fontSize: "12px", marginTop: "5px" }}>
-                                        View More <img src="https://d3r43jacxrwsrp.cloudfront.net/arrow.svg" alt="" aria-hidden="true" width="14" height="14" style={{ display: "inline-block", verticalAlign: "middle", marginLeft: "4px" }} />
+                                        Explore More <img src="https://d3r43jacxrwsrp.cloudfront.net/arrow.svg" alt="" aria-hidden="true" width="14" height="14" style={{ display: "inline-block", verticalAlign: "middle", marginLeft: "4px" }} />
                                     </div>
                                 </div>
                             </div>
                         </Link>
                     ))}
                 </div>
+              </div>
             </section>
 
             {/* section6 desktop — hidden on mobile via CSS */}
-            <section className={`${styles.section6} globalSectionSize hidden sm:block`}>
-                <div className={`${styles.section6Heading} font1`}>
-                    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "0px 20px" }}>
-                        <div style={{ width: "50px", paddingTop: "12px" }}>
-                            <img style={{ width: "100%" }} src={h2} alt=""  width="151" height="150" />
-                        </div>
-                        <div className="font3">
-                            Real  <span className={` blueTextGlobalClass font2`}>Stories</span> , Real <span className={` blueTextGlobalClass font2`}>Impact</span>
-                        </div>
+            <section className="pt-10 pb-10 hidden sm:block">
+                <div className="max-w-7xl mx-auto px-3 xl:px-4">
+                    <div className="flex items-center justify-center gap-4 mb-8">
+                        <img className="w-[50px]" src={h2} alt="" width="151" height="150" />
+                        <h2 className="font-general font-semibold text-blackk text-[32px] leading-[1.2]">
+                            Real <span className="text-bloo">Stories</span>, Real <span className="text-bloo">Impact</span>
+                        </h2>
                     </div>
-                </div>
 
-                <div className={`${styles.storySection} font1`}>
-                    {stories.map((item, index) => (
-                        <div key={item.key ?? index} className={`${styles.storyBox}`}>
-                            {item.key === 1 ? (<div className={`${styles.storyImgHeight}`}>
-                                <img style={{ width: "113%" }} src={item.img?.src || item.img} alt="storyimg"  width={item.__w} height={item.__h} />
-                            </div>) : (<div className={`${styles.storyImgHeight}`}>
-                                <img style={{ width: "100%" }} src={item.img?.src || item.img} alt="storyimg"  width={item.__w} height={item.__h} />
-                            </div>)}
-                            <div className={`${styles.cardBoxStoryInnerHeading} blueTextGlobalClass font1`}>
-                                {item.heading}
-                            </div>
-                            <p style={{ lineHeight: "1.8rem", marginBottom: item.margin }} >{item.para}</p>
-                            <Link to={item.link} className="linkClass">
-                                <div className={`${styles.viewMoreBtn} font1`} style={{ textAlign: "center" }}>
-                                    View More
+                    <div className="grid grid-cols-3 gap-4">
+                        {stories.map((item, index) => (
+                            <div key={item.key ?? index} className="flex flex-col bg-white rounded-[18px] border border-[#E6EAF1] p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
+                                <div className="h-[240px] overflow-hidden mb-[19px]">
+                                    <img className="w-full h-full object-contain" src={item.img?.src || item.img} alt="storyimg" width={item.__w} height={item.__h} />
                                 </div>
-                            </Link>
-                        </div>
-                    ))}
+                                <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
+                                    {item.heading}
+                                </h3>
+                                <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6] mb-[18px]">{item.para}</p>
+                                <Link to={item.link} className="mt-auto inline-flex items-center gap-2 text-[14px] font-bold text-[#01B0F1] hover:text-blue-900 transition">
+                                    Explore More
+                                    <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.175 13H4V11H16.175L10.575 5.4L12 4L20 12L12 20L10.575 18.6L16.175 13Z" /></svg>
+                                </Link>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </section>
 

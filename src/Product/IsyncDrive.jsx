@@ -469,7 +469,7 @@ access, sync, and share files across devices from a single platform with full co
     {steps.map((item, i) => (
       <div
         key={i}
-        className="relative rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col gap-4 min-h-[220px]"
+        className="relative rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col gap-4"
       >
 
         {/* STEP NUMBER (top right) */}
