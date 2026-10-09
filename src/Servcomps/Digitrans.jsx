@@ -137,11 +137,11 @@ function Digitrans() {
             <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">
               Why Choose EICE
             </p>
-            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center pt-4">
+            <h2 className="sm:max-w-4xl mx-auto font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center pt-4">
               Key Advantages of Partnering with EICE for Your AI/ML and Generative
               AI Journey
             </h2>
-            <div className="grid grid-cols-1 gap-10 pt-8">
+            <div className="grid grid-cols-1 gap-10 pt-8 sm:max-w-5xl mx-auto">
               {[
                 {
                   title: "Holistic Approach",

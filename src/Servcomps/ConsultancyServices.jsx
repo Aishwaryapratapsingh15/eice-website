@@ -131,7 +131,7 @@ export default function ConsultancyServices() {
 
           <h1 className="font-general font-semibold text-blackk text-[32px] sm:text-[44px] leading-[1.1] max-w-4xl">
             Strategic guidance from people{" "}
-            <span className="text-bloo">who&apos;ve built it</span>
+            <span className="text-bloo"><br className="hidden sm:block" />who&apos;ve built it</span>
           </h1>
 
           <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl">

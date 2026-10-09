@@ -155,7 +155,7 @@ export default function EmergingTech() {
 
           <h1 className="font-general font-semibold text-blackk text-[32px] sm:text-[44px] leading-[1.1] max-w-4xl">
             Stay ahead with technology{" "}
-            <span className="text-bloo">that&apos;s shaping tomorrow</span>
+            <span className="text-bloo">that&apos;s <br className="hidden sm:block" /> shaping tomorrow</span>
           </h1>
 
           <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl">
@@ -249,7 +249,7 @@ export default function EmergingTech() {
             <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">How We Work</p>
             <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center !text-white">Our Emerging technology process</h2>
             <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] !text-blue-200 sm:max-w-4xl mx-auto text-left sm:text-center">
-              A structured approach that de-risks innovation and ensures every technology decision maps directly to business value
+              A structured approach that de-risks innovation and ensures every technology decision<br className ="hidden sm:block" /> maps directly to business value
             </p>
           </div>
 

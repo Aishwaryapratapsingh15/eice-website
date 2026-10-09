@@ -35,10 +35,9 @@ function TechnologyConsulting() {
                 </p>
               </div>
               <div className="lg:flex hidden items-center justify-end">
-                <div className="w-2/5">
-                  <img src={consult} alt="Technology consulting and IT strategy services" className="rounded-full" width="0" height="0" />
-                </div>
+                <img src={consult} alt="Technology consulting and IT strategy services" className="rounded-full" width="415" height="200" />
               </div>
+              
             </div>
           </div>
         </div>

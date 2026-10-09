@@ -352,11 +352,11 @@ export default function AppDevelopment() {
         <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <div className="flex flex-col gap-4">
             <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Why EICE</p>
-            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center !text-white">What makes us different</h2>
+            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">What makes us different</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 pt-8">
             {whyEice.map((item, i) => (
-              <div key={i} className="rounded-[18px] border border-white/20 bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 flex flex-col items-start">
+              <div key={i} className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 flex flex-col items-start">
                 {item.icon ? (
                   <img src={item.icon} alt="" className="w-11 h-11 object-contain mb-[19px]"  width="44" height="44" />
                 ) : (

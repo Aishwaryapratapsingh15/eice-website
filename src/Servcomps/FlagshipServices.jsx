@@ -154,7 +154,7 @@ export default function FlagshipServices() {
 
           <h1 className="font-general font-semibold text-blackk text-[32px] sm:text-[44px] leading-[1.1] max-w-4xl">
             Core services that drive{" "}
-            <span className="text-bloo">transformation at scale</span>
+            <span className="text-bloo"><br className="hidden sm:block" />transformation at scale</span>
           </h1>
 
           <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl">
@@ -248,7 +248,7 @@ export default function FlagshipServices() {
             <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">How We Work</p>
             <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">Our flagship delivery process</h2>
             <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-4xl mx-auto text-left sm:text-center">
-              A structured, transparent approach that de-risks transformation and ensures every stage delivers measurable value
+              A structured, transparent approach that de-risks transformation and ensures every stage <br className="hidden sm:block" /> delivers measurable value
             </p>
           </div>
 
@@ -292,7 +292,7 @@ export default function FlagshipServices() {
             <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Technology</p>
             <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">Our Flagship Tech Stack</h2>
             <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-4xl mx-auto text-left sm:text-center">
-              A structured, transparent approach that de-risks transformation and ensures every stage delivers measurable value
+              Leveraging powerful technologies and proven frameworks to build scalable, secure, and<br className="hidden sm:block" /> future-ready digital solutions.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-8">
