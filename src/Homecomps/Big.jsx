@@ -30,7 +30,7 @@ function Big() {
                 business outcomes, backed by real engineering discipline.
               </p>
               <div className="mt-8 flex flex-row sm:flex-row gap-4 ">
-                <Link href="/products/eicerise/form?product=Home">
+                <Link href="/demo-form?product=Home">
                   <button aria-label="Request A Demo" className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 bg-[#012060] text-white hover:bg-[#1E40AF] text-sm sm:text-base">
                     Request A Demo
                   </button>
@@ -81,7 +81,7 @@ function Big() {
                 so reliability isn't an afterthought — it's the standard.
               </p>
               <div className="mt-8 flex flex-row sm:flex-row gap-4">
-                <Link href="/products/eicerise/form?product=Home">
+                <Link href="/demo-form?product=Home">
                   <button className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 bg-[#012060] text-white hover:bg-[#1E40AF] text-sm sm:text-base">
                     Request A Demo
                   </button>
@@ -132,7 +132,7 @@ function Big() {
                 for a real, currently-operating enterprise client.
               </p>
               <div className="mt-8 flex flex-row sm:flex-row gap-4">
-                <Link href="/products/eicerise/form?product=Home">
+                <Link href="/demo-form?product=Home">
                   <button className="w-full sm:w-auto py-3 px-6 font-semibold rounded transition duration-200 bg-[#012060] text-white hover:bg-[#1E40AF] text-sm sm:text-base">
                     Request A Demo
                   </button>

@@ -162,7 +162,7 @@ export default function FlagshipServices() {
           </p>
 
           <button
-            onClick={() => navigate("/products/eicerise/form?product=Flagship%20Services")}
+            onClick={() => navigate("/demo-form?product=Flagship%20Services")}
             className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-[#1E40AF] transition text-[18px]"
           >
             Get in Touch
@@ -349,7 +349,7 @@ export default function FlagshipServices() {
             Our flagship services have delivered measurable results for 60+ clients. Let&apos;s talk about what they can do for yours
           </p>
           <button
-            onClick={() => navigate("/products/eicerise/form?product=Flagship%20Services")}
+            onClick={() => navigate("/demo-form?product=Flagship%20Services")}
             className="bg-[#01B0F1] text-white px-10 py-3 rounded-md flex items-center gap-2 font-semibold text-[18px] hover:bg-white hover:text-[#012060] transition"
           >
             Get in Touch

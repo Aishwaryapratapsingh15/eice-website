@@ -114,9 +114,9 @@ function Servmain() {
               </Link>
             </div>
             <div className="flex justify-center pt-8">
-              <Link to="/services/flagship-services" className="inline-flex items-center gap-2 border-2 border-blue-900 text-[#012060] px-8 py-3 rounded-md hover:bg-blue-50 transition text-[18px] font-semibold">
+              <Link to="/services/flagship-services" className="inline-flex items-center justify-center py-4 px-7 bg-[#012060] text-white font-semibold rounded-md text-lg transition duration-200 hover:bg-[#1E40AF]">
                 View More
-                <img src="https://d3r43jacxrwsrp.cloudfront.net/arrow.svg" alt="" aria-hidden="true" className="w-[24px] h-[24px] object-contain" width="24" height="24" style={{ filter: "brightness(0) saturate(100%) invert(11%) sepia(60%) saturate(800%) hue-rotate(200deg)" }} />
+                <img src="https://d3r43jacxrwsrp.cloudfront.net/arrow.svg" alt="" aria-hidden="true" className="w-[24px] h-[24px] object-contain" width="24" height="24" />
               </Link>
             </div>
           </div>
@@ -257,9 +257,9 @@ function Servmain() {
               </Link>
             </div>
             <div className="flex justify-center pt-8">
-              <Link to="/services/app-development" className="inline-flex items-center gap-2 border-2 border-blue-900 text-[#012060] px-8 py-3 rounded-md hover:bg-blue-50 transition text-[18px] font-semibold">
+              <Link to="/services/app-development" className="inline-flex items-center justify-center py-4 px-7 bg-[#012060] text-white font-semibold rounded-md text-lg transition duration-200 hover:bg-[#1E40AF]">
                 View More
-                <img src="https://d3r43jacxrwsrp.cloudfront.net/arrow.svg" alt="" aria-hidden="true" className="w-[24px] h-[24px] object-contain" width="24" height="24" style={{ filter: "brightness(0) saturate(100%) invert(11%) sepia(60%) saturate(800%) hue-rotate(200deg)" }} />
+                <img src="https://d3r43jacxrwsrp.cloudfront.net/arrow.svg" alt="" aria-hidden="true" className="w-[24px] h-[24px] object-contain" width="24" height="24"/>
               </Link>
             </div>
           </div>

@@ -503,7 +503,7 @@ export default function HospitalityPage() {
 
                     {!forSmallestScreen && (<div className={`${styles.requestDemoButtonContainer} font1`}>
 
-                        <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form?product=EiceRise%20Hospitality"}>
+                        <Link style={{ color: "white" }} className="linkClass" to={"/demo-form?product=EiceRise%20Hospitality"}>
                             <div className={`${styles.demoButton}`}>
                                  Request a Demo
                                 <div className={`${styles.demoArrowButton}`}> <FaArrowRightLong /></div>
@@ -547,7 +547,7 @@ export default function HospitalityPage() {
 
             {/* <div className={` ${styles.requestDemoButtonContainer2} font1`}>
 
-                <Link style={{ color: "white" }} className="linkClass" to={"/products/eicerise/form?product=EiceRise%20Hospitality"}>
+                <Link style={{ color: "white" }} className="linkClass" to={"/demo-form?product=EiceRise%20Hospitality"}>
                     <div className={`${styles.demoButton}`}>
                         <div> Request a Demo </div>
                         <div className={`${styles.demoArrowButton}`}> <FaArrowRightLong /></div>

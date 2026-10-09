@@ -225,7 +225,7 @@ export default function ProductsPage() {
 
         <div className="mt-8 flex flex-wrap justify-start gap-4 sm:justify-center">
           <button
-            onClick={() => navigate("/products/eicerise/form?product=Products")}
+            onClick={() => navigate("/demo-form?product=Products")}
             className="flex items-center gap-2 rounded-md bg-[#012060] px-10 py-3 text-[18px] text-white transition hover:bg-[#1E40AF]"
           >
             Talk to Our Team

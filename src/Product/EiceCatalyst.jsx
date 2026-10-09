@@ -163,7 +163,7 @@ export default function EiceCatalystPage() {
 
         <div className="mt-8 flex flex-wrap justify-start sm:justify-center gap-4">
           <button
-            onClick={() => navigate("/products/eicerise/form?product=EICE%20Catalyst")}
+            onClick={() => navigate("/demo-form?product=EICE%20Catalyst")}
             className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-[#1E40AF] transition text-[18px]"
           >
             Request a Demo
@@ -376,7 +376,7 @@ export default function EiceCatalystPage() {
             </div>
 
             <button
-              onClick={() => navigate("/products/eicerise/form?product=EICE%20Catalyst")}
+              onClick={() => navigate("/demo-form?product=EICE%20Catalyst")}
               className="inline-flex items-center gap-2 rounded-md bg-[#012060] px-10 py-3 text-[18px] text-white transition hover:bg-[#1E40AF]"
             >
               Request a Demo

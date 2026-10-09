@@ -230,7 +230,7 @@ export default function Enterprise() {
 
             <section className={`${styles.requestDemoBtn}`}>
 
-                <Link to={"/products/eicerise/form?product=EiceRise(Enterprise Suite)"} className="linkClass">
+                <Link to={"/demo-form?product=EiceRise(Enterprise Suite)"} className="linkClass">
                     <div style={{ display: "flex", justifyContent: "center" }} className="globalSectionSize">
                         <div className={`${styles.demoButton} font1`}>
                             <div > Request for Pricing </div>

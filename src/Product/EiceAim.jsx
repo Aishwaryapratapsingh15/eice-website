@@ -168,7 +168,7 @@ export default function EiceAim() {
         </p>
 
         <div className="mt-8 flex flex-wrap justify-start sm:justify-center gap-4">
-          <button onClick={() => navigate("/products/eicerise/form?product=EiceAim")}
+          <button onClick={() => navigate("/demo-form?product=EiceAim")}
             className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-[#1E40AF] transition text-[18px]">
             Request a Demo
             <img src={arrowIcon} alt="arrow" width="24" height="24" />
@@ -450,7 +450,7 @@ export default function EiceAim() {
             Join forward-thinking enterprises that trust EICEAIM for scalable,<br className="hidden sm:inline" /> always-on lead generation.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <button onClick={() => navigate("/products/eicerise/form?product=EiceAim")}
+            <button onClick={() => navigate("/demo-form?product=EiceAim")}
               className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto hover:bg-[#1E40AF] transition text-[18px]">
               Request a Demo
               <img src={arrowIcon} alt="arrow" width="24" height="24" />

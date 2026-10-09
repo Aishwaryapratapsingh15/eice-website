@@ -267,7 +267,7 @@ export default function EiceAgent() {
 
 <section className="flex justify-start sm:justify-center py-4 sm:py-10 px-3 xl:px-4">
     {/* <button className="bg-[#012060] text-white px-14 py-5 rounded-md flex items-center gap-2 hover:bg-[#1E40AF] transition text-lg"> */}
-    <button onClick={() => navigate("/products/eicerise/form?product=EICE%20Agent")}
+    <button onClick={() => navigate("/demo-form?product=EICE%20Agent")}
     className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-[#1E40AF] transition text-[18px]">
             Request a Demo
               <img src={arrowIcon} alt="arrow" width="24" height="24" />
@@ -950,7 +950,7 @@ is our foundation.
       <div className="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
   
         {/* Primary */}
-           <button onClick={() => navigate("/products/eicerise/form?product=EICE%20Agent")} 
+           <button onClick={() => navigate("/demo-form?product=EICE%20Agent")} 
            className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto hover:bg-[#1E40AF] transition text-[18px]">
                Request a Demo
                  <img src={arrowIcon} alt="arrow" width="24" height="24" />

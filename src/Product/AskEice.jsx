@@ -220,7 +220,7 @@ export default function AskEice() {
         </p>
 
         <div className="mt-8 flex flex-wrap justify-start sm:justify-center gap-4">
-          <button onClick={() => navigate("/products/eicerise/form?product=AskEICE")}
+          <button onClick={() => navigate("/demo-form?product=AskEICE")}
             className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-[#1E40AF] transition text-[18px]">
             Request a Demo
             <img src={arrowIcon} alt="arrow" width="24" height="24" />
@@ -612,7 +612,7 @@ export default function AskEice() {
             Join forward-thinking enterprises that trust AskEICE for secure, verified, and instant knowledge discovery.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <button onClick={() => navigate("/products/eicerise/form?product=AskEICE")}
+            <button onClick={() => navigate("/demo-form?product=AskEICE")}
               className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto hover:bg-[#1E40AF] transition text-[18px]">
               Request a Demo
               <img src={arrowIcon} alt="arrow" width="24" height="24" />

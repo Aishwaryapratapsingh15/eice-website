@@ -11,7 +11,7 @@ import { Link } from "@/nextNavigation";
 // src/Easylogy/**. Genuine EiceRise pages (the "EiceRise"/"EiceRise(...)"
 // values) aren't listed — the path-derived "EiceRise" crumb is already
 // correct for those, so they fall through to the default.
-const DEMO_FORM_PATH = "/products/eicerise/form";
+const DEMO_FORM_PATH = "/demo-form";
 const PRODUCT_CRUMB_OVERRIDES = {
   "Eice SmartFit": { label: "Smartfit", href: "/products/smartfit" },
   Verilock: { label: "Verilock", href: "/products/verilock" },
@@ -31,9 +31,7 @@ const PRODUCT_CRUMB_OVERRIDES = {
 
 // Exact-path label overrides — for routes where the URL segment reads
 // awkwardly (e.g. the shared demo form's last segment is literally "form").
-const PATH_LABEL_OVERRIDES = {
-  [DEMO_FORM_PATH]: "Request a Demo",
-};
+const PATH_LABEL_OVERRIDES = {};
 
 // Slugs that don't read well from naive title-casing (brand names,
 // ampersands, acronym pairs).
@@ -117,6 +115,20 @@ export function Breadcrumbs() {
   const pathname = usePathname() || "/";
   if (HIDDEN_PATHS.has(pathname)) return null;
 
+  // /demo-form is a single segment, so it needs its own trail (the generic
+  // "more than two pages deep" rule below would hide it).
+  if (pathname === DEMO_FORM_PATH) {
+    const demoCrumbs = [
+      { label: "Home", href: "/", linkable: true },
+      { label: "Request a Demo", href: DEMO_FORM_PATH, linkable: true },
+    ];
+    return (
+      <Suspense fallback={<BreadcrumbTrail crumbs={demoCrumbs} />}>
+        <DemoFormBreadcrumb defaultCrumbs={demoCrumbs} />
+      </Suspense>
+    );
+  }
+
   const segments = pathname.split("/").filter(Boolean);
 
   // Only surface the trail once the visitor is more than two pages deep
@@ -161,14 +173,6 @@ export function Breadcrumbs() {
   // BreadcrumbList JSON-LD (with the real page/post title, not an
   // auto-generated slug label) — this component only adds the visible trail,
   // which never existed before, and deliberately doesn't duplicate schema.
-  if (pathname === DEMO_FORM_PATH) {
-    return (
-      <Suspense fallback={<BreadcrumbTrail crumbs={crumbs} />}>
-        <DemoFormBreadcrumb defaultCrumbs={crumbs} />
-      </Suspense>
-    );
-  }
-
   return <BreadcrumbTrail crumbs={crumbs} />;
 }
 
@@ -180,11 +184,23 @@ function DemoFormBreadcrumb({ defaultCrumbs }) {
   const searchParams = useSearchParams();
   const override = PRODUCT_CRUMB_OVERRIDES[searchParams.get("product")];
 
-  if (!override) return <BreadcrumbTrail crumbs={defaultCrumbs} />;
+  const product = searchParams.get("product") || "";
+  const parent = override
+    ? override.href.startsWith("/services")
+      ? { label: "Services", href: "/services", linkable: true }
+      : { label: "Products", href: "/products", linkable: true }
+    : product.startsWith("EiceRise")
+      ? { label: "Products", href: "/products", linkable: true }
+      : null;
+  const current = override
+    ? { label: override.label, href: override.href, linkable: true }
+    : product.startsWith("EiceRise")
+      ? { label: "EiceRise", href: "/products/eicerise", linkable: true }
+      : null;
 
-  const crumbs = defaultCrumbs.map((crumb) =>
-    crumb.segment === "eicerise" ? { ...crumb, ...override } : crumb,
-  );
+  if (!parent) return <BreadcrumbTrail crumbs={defaultCrumbs} />;
+
+  const crumbs = [defaultCrumbs[0], parent, current, defaultCrumbs[1]];
   return <BreadcrumbTrail crumbs={crumbs} />;
 }
 

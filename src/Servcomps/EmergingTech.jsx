@@ -163,7 +163,7 @@ export default function EmergingTech() {
           </p>
 
           <button
-            onClick={() => navigate("/products/eicerise/form?product=Emerging%20Tech")}
+            onClick={() => navigate("/demo-form?product=Emerging%20Tech")}
             className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-[#1E40AF] transition text-[18px]"
           >
             Get in Touch
@@ -349,7 +349,7 @@ export default function EmergingTech() {
             Tell us about your challenge. We&apos;ll identify the right emerging technology to solve it.
           </p>
           <button
-            onClick={() => navigate("/products/eicerise/form?product=Emerging%20Tech")}
+            onClick={() => navigate("/demo-form?product=Emerging%20Tech")}
             className="bg-[#01B0F1] text-white px-10 py-3 rounded-md flex items-center gap-2 font-semibold text-[18px] hover:text-[#012060] transition"
           >
             Get in Touch

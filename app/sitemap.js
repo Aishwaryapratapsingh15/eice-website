@@ -63,7 +63,7 @@ export default async function sitemap() {
 
   const routes = [
     // Core pages
-    { url: "/",           priority: 1.0, changeFrequency: "weekly",  lastModified: DATES.core      },
+    { url: "/",             lastModified: DATES.core      },
     { url: "/about",      priority: 0.8, changeFrequency: "monthly", lastModified: DATES.core      },
     { url: "/contact",    priority: 0.8, changeFrequency: "monthly", lastModified: DATES.core      },
     { url: "/our-team",   priority: 0.6, changeFrequency: "monthly", lastModified: DATES.core      },

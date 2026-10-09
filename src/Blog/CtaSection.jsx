@@ -5,7 +5,7 @@ export const defaultCtaContent = {
   heading: "Transform Your Business with\nEnterprise Technology Solutions",
   description:
     "EICE Technology helps organizations accelerate digital transformation through intelligent software solutions, enterprise applications, AI-powered platforms, cloud infrastructure, cybersecurity, and business automation.",
-  primaryCta: { text: "Request a Demo", href: "/products/eicerise/form?product=Blog" },
+  primaryCta: { text: "Request a Demo", href: "/demo-form?product=Blog" },
   secondaryCta: { text: "Contact Our Team", href: "/contact" },
   trustIndicators: [
     "Enterprise-ready solutions",

@@ -48,7 +48,7 @@ export function BlogSidebar({ latestPosts, categories }) {
         </p>
         <div className="mt-5 flex flex-col gap-3">
           <Link
-            to="/products/eicerise/form?product=Blog"
+            to="/demo-form?product=Blog"
             className="inline-flex h-11 w-full items-center justify-center gap-2 rounded-full bg-bloo text-[14px] font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-[#012060]"
           >
             Request a Demo

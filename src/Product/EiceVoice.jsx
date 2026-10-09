@@ -174,7 +174,7 @@ export default function EiceVoice() {
           {/* CTA */}
           <div className="mt-8 sm:flex sm:justify-center">
             <button
-              onClick={() => navigate("/products/eicerise/form?product=Eice%20Voice")}
+              onClick={() => navigate("/demo-form?product=Eice%20Voice")}
               className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 text-[18px] hover:bg-[#1E40AF] transition"
             >
               Request a Demo
@@ -524,7 +524,7 @@ export default function EiceVoice() {
     </p>
 
         <button
-          onClick={() => navigate("/products/eicerise/form?product=Eice%20Voice")}
+          onClick={() => navigate("/demo-form?product=Eice%20Voice")}
           className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto text-[18px]  mx-auto hover:bg-[#1E40AF]"
         >
           Request a Demo

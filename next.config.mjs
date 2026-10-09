@@ -37,6 +37,9 @@ const nextConfig = {
       //   destination: "https://www.eicetechnology.com/:path*",
       //   permanent: true,
       // },
+      // Request-a-demo form moved to /demo-form (?product=... is preserved)
+      { source: "/products/eicerise/form",  destination: "/demo-form", permanent: true },
+
       // Old contact URLs
       { source: "/contact-us",  destination: "/contact", permanent: true },
       { source: "/contact-us/", destination: "/contact", permanent: true },
@@ -76,8 +79,8 @@ const nextConfig = {
       { source: "/about-us/",               destination: "/about", permanent: true },
 
       // Old product form -> EICE Rise request form
-      { source: "/products/form",  destination: "/products/eicerise/form", permanent: true },
-      { source: "/products/form/", destination: "/products/eicerise/form", permanent: true },
+      { source: "/products/form",  destination: "/demo-form", permanent: true },
+      { source: "/products/form/", destination: "/demo-form", permanent: true },
 
       // Old hyphenated product URLs -> new clean URLs
       { source: "/products/eice-rise",           destination: "/products/eicerise",  permanent: true },
