@@ -288,8 +288,8 @@ function Cstdmain() {
 
   return (
     <div>
-      <header className="bg-gradient-to-r from-cyan-100/10 to-bloo/10 pt-4 px-4 md:px-10 lg:px-20 xl:px-40">
-        <div className="max-w-7xl mx-auto flex flex-col items-start sm:items-center gap-4 py-10 text-left sm:text-center">
+      <header className="bg-gradient-to-r from-cyan-100/10 to-bloo/10 pt-4">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4 flex flex-col items-start sm:items-center gap-4 py-10 text-left sm:text-center">
           <h1 className="font-general font-semibold text-blackk text-[32px] sm:text-[44px] leading-[1.1]">
             CASE STUDIES
           </h1>
@@ -301,7 +301,7 @@ function Cstdmain() {
           </p>
         </div>
       </header>
-      <main className="px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10">
+      <main className="max-w-7xl mx-auto px-3 xl:px-4 pt-10 pb-10">
         <div className="max-w-7xl mx-auto">
           <nav>
             <ul className="flex flex-wrap justify-start sm:justify-center gap-4">

@@ -11,11 +11,11 @@ function SentimentalAi() {
   const navigate = useNavigate();
   return (
     <div>
-      <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40 pt-14">
+      <div className="max-w-7xl mx-auto px-3 xl:px-4 pt-14">
         <div className="w-full flex flex-col gap-4 pb-10">
           <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Product Review Sentiment Analysis</p>
           <h1 className="font-general font-semibold text-blackk text-[32px] sm:text-[44px] leading-[1.1] text-left sm:text-center">Enhancing Product Insights with AI: Advanced Sentiment Analysis of Product Reviews</h1>
-          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-4xl mx-auto text-left sm:text-center w-full">
+          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-4xl mx-auto text-left sm:text-center w-full">
             An AI-driven sentiment analysis platform that processes large volumes of product reviews to surface actionable
             insights about customer satisfaction, recurring issues, and feature preferences, enabling product and
             marketing teams to make faster, evidence-based decisions.
@@ -51,17 +51,17 @@ function SentimentalAi() {
         </div>
       </div>
       <div className="bg-zinc-50 pt-10 pb-10">
-        <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40 flex flex-col gap-4">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4 flex flex-col gap-4">
           <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">About the Project</p>
           <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center max-w-3xl mx-auto w-full">AI-Powered Review Intelligence Platform</h2>
-          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-5xl mx-auto text-left sm:text-center w-full">
+          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-4xl mx-auto text-left sm:text-center w-full">
             The client manages a product catalogue generating thousands of customer reviews monthly across e-commerce platforms and app stores.
             Manual review analysis was slow, inconsistent, and unable to keep pace with review volume. They needed an automated platform to
             continuously mine sentiment signals and surface actionable product intelligence to cross-functional teams.
           </p>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10">
+      <div className="max-w-7xl mx-auto px-3 xl:px-4 pt-10 pb-10">
 <div>
           <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">Unlocking Success</h2>
         </div>
@@ -95,7 +95,7 @@ function SentimentalAi() {
           </div>
         </div>
       </div>
-      <div className="w-full pt-10 pb-10 px-4 md:px-10 lg:px-20 xl:px-40">
+      <div className="max-w-7xl mx-auto px-3 xl:px-4 w-full pt-10 pb-10">
         <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center max-w-3xl mx-auto w-full">Project Outcomes</h2>
         <div className="max-w-3xl mx-auto flex flex-col gap-4 pt-8">
           <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex items-start gap-4">
@@ -116,7 +116,7 @@ function SentimentalAi() {
           </div>
         </div>
       </div>
-      <div className="w-full pt-10 pb-10 px-4 md:px-10 lg:px-20 xl:px-40">
+      <div className="max-w-7xl mx-auto px-3 xl:px-4 w-full pt-10 pb-10">
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4">
           <div className="h-full">
             <Link href="/case-studies/voice-call-ai" className="group h-full rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col">
@@ -154,8 +154,8 @@ function SentimentalAi() {
         </div>
       </div>
       {/* CTA */}
-      <section className="bg-[#012060] pt-10 pb-10 px-4 md:px-10 lg:px-20 xl:px-40">
-        <div className="max-w-4xl mx-auto flex flex-col items-start sm:items-center gap-4 text-left sm:text-center">
+      <section className="bg-[#012060] pt-10 pb-10">
+        <div className="max-w-4xl px-3 xl:px-4 flex flex-col items-start sm:items-center gap-4 text-left sm:text-center">
           <h2 className="font-general font-semibold text-white text-[24px] sm:text-[32px] leading-[1.2]">Want to Know What Customers Really Think?</h2>
           <p className="font-inter font-normal text-blue-200 text-[16px] sm:text-[18px] leading-[1.6] max-w-2xl">Talk to our team about AI-driven sentiment analysis for product reviews.</p>
           <button onClick={() => navigate("/products/eicerise/form?product=AI%2FML")} className="bg-[#01B0F1] text-white px-10 py-3 rounded-md flex items-center gap-2 font-semibold text-[18px] hover:text-[#012060] transition">

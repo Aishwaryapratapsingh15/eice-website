@@ -140,8 +140,8 @@ export default function AppDevelopment() {
     <div className="bg-white text-gray-800">
 
       {/* HERO */}
-      <section className="pt-14 pb-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
-        <div className="flex flex-col items-start sm:items-center gap-4 text-left sm:text-center">
+      <section className="pt-14 pb-10 bg-white">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4 flex flex-col items-start sm:items-center gap-4 text-left sm:text-center">
           {heroImg ? (
             <img src={heroImg} alt="Application Development" className="mx-auto w-full max-w-[480px] object-contain"  width="590" height="333" />
           ) : (
@@ -175,8 +175,8 @@ export default function AppDevelopment() {
       </section>
 
       {/* OVERVIEW */}
-      <section className="px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10 bg-[#F4F9FF]">
-        <div className="max-w-7xl mx-auto">
+      <section className="pt-10 pb-10 bg-[#F4F9FF]">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <div className="grid md:grid-cols-2 gap-4 items-start">
 
             {/* Left: heading + 3 feature rows */}
@@ -246,12 +246,12 @@ export default function AppDevelopment() {
       </section>
 
       {/* OUR APP DEVELOPMENT SERVICES */}
-      <section className="px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10 bg-white">
-        <div className="max-w-7xl mx-auto">
+      <section className="pt-10 pb-10 bg-white">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <div className="flex flex-col gap-4">
             <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Our App Development Services</p>
             <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">Three ways we build for you</h2>
-            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-5xl mx-auto text-left sm:text-center">
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-4xl mx-auto text-left sm:text-center">
               Whether you&apos;re launching a SaaS product, building a web platform, or adding AI-powered conversations to your product — we have the team for it.
             </p>
           </div>
@@ -284,12 +284,12 @@ export default function AppDevelopment() {
 
       {/* HOW WE WORK — PROCESS */}
       {/* Blue step numbers (prominent, per PDF) — not faded gray like Consultancy/Flagship */}
-      <section className="px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
+      <section className="pt-10 pb-10 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <div className="flex flex-col gap-4">
             <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">How We Work</p>
             <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">Our development process</h2>
-            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-5xl mx-auto text-left sm:text-center">
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-4xl mx-auto text-left sm:text-center">
               A structured approach that keeps you informed at every stage — no surprises, no scope creep, no missed deadlines.
             </p>
           </div>
@@ -318,12 +318,12 @@ export default function AppDevelopment() {
       </section>
 
       {/* TECH STACK */}
-      <section className="px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10 bg-white">
-        <div className="max-w-7xl mx-auto">
+      <section className="pt-10 pb-10 bg-white">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <div className="flex flex-col gap-4">
             <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Technology</p>
             <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">Our tech stack</h2>
-            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-5xl mx-auto text-left sm:text-center">
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-4xl mx-auto text-left sm:text-center">
               We work with the tools best suited to your project — not the ones we&apos;re most comfortable with.
             </p>
           </div>
@@ -348,8 +348,8 @@ export default function AppDevelopment() {
       </section>
 
       {/* WHY EICE */}
-      <section className="px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10 bg-[#F4F9FF]">
-        <div className="max-w-7xl mx-auto">
+      <section className="pt-10 pb-10 bg-[#F4F9FF]">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <div className="flex flex-col gap-4">
             <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Why EICE</p>
             <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center !text-white">What makes us different</h2>
@@ -371,8 +371,8 @@ export default function AppDevelopment() {
       </section>
 
       {/* CTA */}
-      <section className="px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10 bg-[#012060]">
-        <div className="max-w-4xl mx-auto flex flex-col items-start sm:items-center gap-4 text-left sm:text-center">
+      <section className="pt-10 pb-10 bg-[#012060]">
+        <div className="max-w-4xl mx-auto px-3 xl:px-4 flex flex-col items-start sm:items-center gap-4 text-left sm:text-center">
           <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Get Started</p>
           <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center !text-white">
             Ready to build something that scales?

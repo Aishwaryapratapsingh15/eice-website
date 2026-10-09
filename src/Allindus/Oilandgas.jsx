@@ -301,7 +301,7 @@ function Cstdmain() {
 
   return (
 
-    <div className="px-4 md:px-10 lg:px-20 xl:px-40 sm:max-w-7xl mx-auto pt-10 pb-10 flex flex-col gap-4">
+    <div className="max-w-7xl mx-auto px-3 xl:px-4 pt-10 pb-10 flex flex-col gap-4">
 
       <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">
 
@@ -501,7 +501,7 @@ function Oilandgas() {
 
     <div className="overflow-x-hidden">
 
-      <div className="px-4 md:px-10 lg:px-20 xl:px-40">
+      <div className="max-w-7xl mx-auto px-3 xl:px-4">
 
         <div className="sm:max-w-7xl pt-14 pb-4 w-full mx-auto grid">
 
@@ -549,7 +549,7 @@ function Oilandgas() {
 
           </h1>
 
-          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] text-left sm:text-center">
+          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] text-left sm:text-center sm:max-w-4xl sm:mx-auto">
 
             EICE Technology offers specialized software solutions for the oil
 

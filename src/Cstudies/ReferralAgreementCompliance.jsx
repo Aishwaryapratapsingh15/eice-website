@@ -86,7 +86,7 @@ function ReferralAgreementCompliance() {
   const navigate = useNavigate();
   return (
     <div>
-      <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40 pt-14">
+      <div className="max-w-7xl mx-auto px-3 xl:px-4 pt-14">
         <div className="w-full flex flex-col gap-4 pb-10">
           <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Referral Agreement Compliance</p>
           <h1 className="font-general font-semibold text-blackk text-[32px] sm:text-[44px] leading-[1.1] text-left sm:text-center">
@@ -119,7 +119,7 @@ function ReferralAgreementCompliance() {
       </div>
 
       <div className="bg-zinc-50 pt-10 pb-10">
-        <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center max-w-3xl mx-auto w-full">
             Who Is Our Client?
           </h2>
@@ -130,7 +130,7 @@ function ReferralAgreementCompliance() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
+      <div className="max-w-7xl mx-auto px-3 xl:px-4">
         <div className="w-full pt-10 pb-10">
           <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center max-w-3xl mx-auto w-full">
             The Challenge
@@ -153,7 +153,7 @@ function ReferralAgreementCompliance() {
       </div>
 
       <div className="bg-zinc-50 pt-10 pb-10">
-        <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center max-w-3xl mx-auto w-full">
             Our Approach
           </h2>
@@ -171,7 +171,7 @@ function ReferralAgreementCompliance() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
+      <div className="max-w-7xl mx-auto px-3 xl:px-4">
         <div className="w-full pt-10 pb-10">
           <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center max-w-3xl mx-auto w-full">
             What We Delivered
@@ -184,7 +184,7 @@ function ReferralAgreementCompliance() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40 pb-10">
+      <div className="max-w-7xl mx-auto px-3 xl:px-4 pb-10">
         <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center max-w-3xl mx-auto w-full">
           Technology Stack
         </h2>
@@ -209,7 +209,7 @@ function ReferralAgreementCompliance() {
       </div>
 
       <div className="bg-zinc-50 pt-10 pb-10">
-        <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center max-w-3xl mx-auto w-full">
             Business Benefits
           </h2>
@@ -221,7 +221,7 @@ function ReferralAgreementCompliance() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
+      <div className="max-w-7xl mx-auto px-3 xl:px-4">
         <div className="w-full pt-10 pb-10">
           <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center max-w-3xl mx-auto w-full">
             Why Choose EICE Technology?
@@ -245,7 +245,7 @@ function ReferralAgreementCompliance() {
       </div>
 
       <div className="bg-zinc-50 pt-10 pb-10">
-        <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center max-w-3xl mx-auto w-full">
             Let&apos;s Build the Future of Legal Operations Technology
           </h2>
@@ -254,8 +254,8 @@ function ReferralAgreementCompliance() {
       </div>
 
       {/* CTA */}
-      <section className="bg-[#012060] pt-10 pb-10 px-4 md:px-10 lg:px-20 xl:px-40">
-        <div className="max-w-4xl mx-auto flex flex-col items-start sm:items-center gap-4 text-left sm:text-center">
+      <section className="bg-[#012060] pt-10 pb-10">
+        <div className="max-w-4xl px-3 xl:px-4 flex flex-col items-start sm:items-center gap-4 text-left sm:text-center">
           <h2 className="font-general font-semibold text-white text-[24px] sm:text-[32px] leading-[1.2]">Ready to Automate Your Referral Agreement Compliance and Digital Signatures?</h2>
           <p className="font-inter font-normal text-blue-200 text-[16px] sm:text-[18px] leading-[1.6] max-w-2xl">Talk to our team about eliminating manual document handling and building a fully auditable digital signature process on Microsoft Power Platform.</p>
           <button onClick={() => navigate("/products/eicerise/form?product=Legal")} className="bg-[#01B0F1] text-white px-10 py-3 rounded-md flex items-center gap-2 font-semibold text-[18px] hover:text-[#012060] transition">

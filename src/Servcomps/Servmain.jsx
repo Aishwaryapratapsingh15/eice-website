@@ -23,8 +23,8 @@ function Servmain() {
   }, []);
   return (
     <div>
-      <div className="relative px-4 md:px-10 lg:px-20 xl:px-40 pt-32 sm:pt-32 2xl:pt-8 pb-10">
-        <div className="max-w-7xl mx-auto flex flex-col gap-4">
+      <div className="relative pt-32 sm:pt-32 2xl:pt-8 pb-10">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4 flex flex-col gap-4">
           <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Our Services</p>
           <h1 className="font-general font-semibold text-blackk text-left sm:text-center text-[32px] sm:text-[44px] leading-[1.1] mx-auto max-w-3xl">
             Explore What We Offer
@@ -32,7 +32,7 @@ function Servmain() {
           <div className="w-full rounded-xl max-w-screen-2xl mx-auto block">
             <div className="bg-indusbanner w-full h-0 pb-[40%] sm:pb-[30%] lg:pb-[25%] bg-cover bg-center bg-no-repeat rounded-2xl sm:rounded-full"></div>
           </div>
-          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-5xl mx-auto text-left sm:text-center">
+          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-4xl mx-auto text-left sm:text-center">
             At EICE, we offer a comprehensive suite of tech services designed to
             propel your business into the digital future. From cutting-edge app
             development to strategic consultancy, we're here to transform your
@@ -44,11 +44,11 @@ function Servmain() {
 
       <div id="flagshipServices"></div>
       <div className="bg-zinc-50 pt-10 pb-10">
-        <div className="relative px-4 md:px-10 lg:px-20 xl:px-40">
-          <div className="max-w-7xl mx-auto">
+        <div className="relative">
+          <div className="max-w-7xl mx-auto px-3 xl:px-4">
             <div className="flex flex-col gap-4">
               <h2 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Our Flagship Services</h2>
-              <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-5xl mx-auto text-left sm:text-center">
+              <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-4xl mx-auto text-left sm:text-center">
                 Discover EICE's core offerings that drive innovation and efficiency across industries. Our flagship services are designed to give your business a competitive edge in the digital landscape.
               </p>
             </div>
@@ -124,11 +124,11 @@ function Servmain() {
       </div>
 
       <div id="emergingTechnologies"></div>
-      <div className="relative px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10">
-        <div className="max-w-7xl mx-auto">
+      <div className="relative pt-10 pb-10">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <div className="flex flex-col gap-4">
             <h2 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Emerging Technologies</h2>
-            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-5xl mx-auto text-left sm:text-center">
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-4xl mx-auto text-left sm:text-center">
               Stay ahead of the curve with EICE's expertise in cutting-edge technologies. We help businesses leverage the latest innovations to create new opportunities and drive unprecedented growth.
             </p>
           </div>
@@ -192,11 +192,11 @@ function Servmain() {
       </div>
 
       <div className="bg-zinc-50" id="appDevelopment">
-        <div className="relative px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10">
-          <div className="max-w-7xl mx-auto">
+        <div className="relative pt-10 pb-10">
+          <div className="max-w-7xl mx-auto px-3 xl:px-4">
             <div className="flex flex-col gap-4">
               <h2 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">App Development Services</h2>
-              <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-5xl mx-auto text-left sm:text-center">
+              <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-4xl mx-auto text-left sm:text-center">
                 From mobile apps to complex enterprise solutions, EICE delivers cutting-edge software tailored to your unique business needs. Our expert developers use the latest technologies to create powerful, user-friendly applications.
               </p>
             </div>
@@ -266,8 +266,8 @@ function Servmain() {
         </div>
       </div>
 
-      <div id="consultancy" className="relative px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10">
-        <div className="max-w-7xl mx-auto">
+      <div id="consultancy" className="relative pt-10 pb-10">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <h2 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Consultancy Service</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-8">
             <Link

@@ -36,8 +36,8 @@ function Webdevelopment() {
   return (
     <div>
       <div className="bg-gradient-to-r from-transparent via-bloo/5 to-bloo/10 pt-4">
-        <div className="relative px-4 md:px-10 lg:px-20 xl:px-40">
-          <div className="max-w-7xl mx-auto">
+        <div className="relative">
+          <div className="max-w-7xl mx-auto px-3 xl:px-4">
             <div className="absolute -z-20 inset-0 right-[75%]">
               <img src={servicebannerpattern} alt="" width="427" height="426" />
             </div>
@@ -46,7 +46,7 @@ function Webdevelopment() {
                 <h1 className="font-general font-semibold text-blackk text-[32px] sm:text-[44px] leading-[1.1]">
                   Web App Development
                 </h1>
-                <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-5xl text-left">
+                <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-4xl text-left">
                   Cutting-Edge Web App Development Services Transforming Ideas into High-Impact Digital Solutions
                 </p>
               </div>
@@ -60,8 +60,8 @@ function Webdevelopment() {
         </div>
       </div>
 
-      <div className="relative px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10">
-        <div className="max-w-7xl mx-auto">
+      <div className="relative pt-10 pb-10">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start">
             <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2]">
               Cutting-Edge{" "}
@@ -90,8 +90,8 @@ function Webdevelopment() {
         </div>
       </div>
 
-      <div className="relative px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10">
-        <div className="max-w-7xl mx-auto">
+      <div className="relative pt-10 pb-10">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <div className="flex flex-col gap-4">
             <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Our Web App Development Services</p>
             <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center mx-auto max-w-3xl">Our Digital Transformation Expertise</h2>

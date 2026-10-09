@@ -119,13 +119,13 @@ function Indusmain() {
 
   return (
     <div id="indusmain-root">
-      <div className="px-4 md:px-10 lg:px-20 xl:px-40 pt-32 sm:pt-32 2xl:pt-8">
+      <div className="max-w-7xl mx-auto px-3 xl:px-4 pt-32 sm:pt-32 2xl:pt-8">
         <section className="flex flex-col gap-4 text-left sm:text-center pb-10 sm:pb-4">
           <h1 className="text-blackk font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1]">
             Driving <span className="text-bloo">Digital Transformation </span>
             <br className ="hidden sm:block"/> Across Industries
           </h1>
-          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:text-center">
+          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:text-center sm:max-w-4xl sm:mx-auto">
             EICE empowers businesses to thrive in the digital age by leveraging
             cutting-edge technologies and innovative strategies, revolutionizing
             operations and enhancing competitiveness.

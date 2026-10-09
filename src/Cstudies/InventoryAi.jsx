@@ -32,11 +32,11 @@ function InventoryAi() {
     const navigate = useNavigate();
     return (
         <div>
-            <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40 pt-14">
+            <div className="max-w-7xl mx-auto px-3 xl:px-4 pt-14">
                 <div className="w-full flex flex-col gap-4 pb-10">
                     <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Development of AI-Based Inventory Management System</p>
                     <h1 className="font-general font-semibold text-blackk text-[32px] sm:text-[44px] leading-[1.1] text-left sm:text-center">Revolutionizing Inventory Management with AI: Enhancing Accuracy and Efficiency</h1>
-                    <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-4xl mx-auto text-left sm:text-center w-full">
+                    <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-4xl mx-auto text-left sm:text-center w-full">
                         For our client in the retail sector, we developed an AI-based inventory management system by integrating advanced machine learning algorithms, real-time data analytics, and predictive modeling. This solution ensured precise inventory tracking, optimal stock levels, and efficient supply chain operations.
                     </p>
                     <div className="w-full max-w-5xl mx-auto items-center justify-center">
@@ -89,12 +89,12 @@ function InventoryAi() {
                 </div>
             </div>
             <div className="bg-zinc-50 pt-10 pb-10">
-                <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40 flex flex-col gap-4">
+                <div className="max-w-7xl mx-auto px-3 xl:px-4 flex flex-col gap-4">
                     <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">
                         About Our Client
                     </p>
                     <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center max-w-3xl mx-auto w-full"></h2>
-                    <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-5xl mx-auto text-left sm:text-center w-full">
+                    <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-4xl mx-auto text-left sm:text-center w-full">
                         Our client is a leading IT consulting company operating
                         internationally, renowned for delivering innovative technology
                         solutions. They specialize in digital transformation, cloud
@@ -105,7 +105,7 @@ function InventoryAi() {
                     </p>
                 </div>
             </div>
-            <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10">
+            <div className="max-w-7xl mx-auto px-3 xl:px-4 pt-10 pb-10">
                 <div>
                     <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">
                         Unlocking Success
@@ -175,7 +175,7 @@ function InventoryAi() {
                     </div>
                 </div>
             </div>
-            <div className="w-full pt-10 pb-10 px-4 md:px-10 lg:px-20 xl:px-40">
+            <div className="max-w-7xl mx-auto px-3 xl:px-4 w-full pt-10 pb-10">
                 <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center max-w-3xl mx-auto w-full">
                     Project Outcomes
                 </h2>
@@ -212,8 +212,8 @@ function InventoryAi() {
                     </div>
                 </div>
             </div>
-            <div className="bg-zinc-50 pt-10 pb-10 px-4 md:px-10 lg:px-20 xl:px-40">
-                <div className="max-w-7xl mx-auto flex flex-col gap-4">
+            <div className="bg-zinc-50 pt-10 pb-10">
+                <div className="max-w-7xl mx-auto px-3 xl:px-4 flex flex-col gap-4">
                     <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">
                         More Like This
                     </p>
@@ -297,8 +297,8 @@ function InventoryAi() {
                 </div>
             </div>
             {/* CTA */}
-            <section className="bg-[#012060] pt-10 pb-10 px-4 md:px-10 lg:px-20 xl:px-40">
-                <div className="max-w-4xl mx-auto flex flex-col items-start sm:items-center gap-4 text-left sm:text-center">
+            <section className="bg-[#012060] pt-10 pb-10">
+                <div className="max-w-4xl px-3 xl:px-4 flex flex-col items-start sm:items-center gap-4 text-left sm:text-center">
                     <h2 className="font-general font-semibold text-white text-[24px] sm:text-[32px] leading-[1.2]">Tired of Stockouts and Overstock?</h2>
                     <p className="font-inter font-normal text-blue-200 text-[16px] sm:text-[18px] leading-[1.6] max-w-2xl">Talk to our team about AI-driven inventory forecasting and reconciliation.</p>
                     <button onClick={() => navigate("/products/eicerise/form?product=Logistics")} className="bg-[#01B0F1] text-white px-10 py-3 rounded-md flex items-center gap-2 font-semibold text-[18px] hover:text-[#012060] transition">

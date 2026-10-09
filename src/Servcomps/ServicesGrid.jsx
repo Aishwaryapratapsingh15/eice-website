@@ -41,8 +41,8 @@ export default function ServicesGrid() {
   const services = showAll ? allServices : allServices.slice(0, INITIAL_COUNT);
 
   return (
-    <div className="text-manrope px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10">
-      <div className="max-w-7xl mx-auto">
+    <div className="text-manrope pt-10 pb-10">
+      <div className="max-w-7xl mx-auto px-3 xl:px-4">
         <div ref={gridRef} className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           {services.map((s) => (
             <ServiceCard key={s.id} svg={s.svg} title={s.title} link={s.link} desc={s.desc} />

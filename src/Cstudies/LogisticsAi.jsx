@@ -11,11 +11,11 @@ function LogisticsAi() {
   const navigate = useNavigate();
   return (
     <div>
-      <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40 pt-14">
+      <div className="max-w-7xl mx-auto px-3 xl:px-4 pt-14">
         <div className="w-full flex flex-col gap-4 pb-10">
           <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Logistics Using AI</p>
           <h1 className="font-general font-semibold text-blackk text-[32px] sm:text-[44px] leading-[1.1] text-left sm:text-center">Transforming Logistics Operations with AI: Enhancing Efficiency and Accuracy</h1>
-          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-4xl mx-auto text-left sm:text-center w-full">
+          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-4xl mx-auto text-left sm:text-center w-full">
             An AI-powered logistics optimisation platform that automates route planning, demand forecasting, and shipment
             tracking, enabling logistics operators to reduce costs, improve delivery accuracy, and respond dynamically
             to supply chain disruptions.
@@ -51,10 +51,10 @@ function LogisticsAi() {
         </div>
       </div>
       <div className="bg-zinc-50 pt-10 pb-10">
-        <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40 flex flex-col gap-4">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4 flex flex-col gap-4">
           <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">About the Project</p>
           <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center max-w-3xl mx-auto w-full">AI-Driven Supply Chain Optimisation</h2>
-          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-5xl mx-auto text-left sm:text-center w-full">
+          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-4xl mx-auto text-left sm:text-center w-full">
             The client manages a complex logistics network spanning multiple regions with thousands of daily shipments. Manual planning
             processes were unable to keep pace with volume and variability, leading to inefficient routes, missed delivery windows, and
             high operational costs. They required an AI-driven platform to automate planning, improve delivery accuracy, and provide
@@ -62,7 +62,7 @@ function LogisticsAi() {
           </p>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10">
+      <div className="max-w-7xl mx-auto px-3 xl:px-4 pt-10 pb-10">
 <div>
           <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">Unlocking Success</h2>
         </div>
@@ -96,7 +96,7 @@ function LogisticsAi() {
           </div>
         </div>
       </div>
-      <div className="w-full pt-10 pb-10 px-4 md:px-10 lg:px-20 xl:px-40">
+      <div className="max-w-7xl mx-auto px-3 xl:px-4 w-full pt-10 pb-10">
         <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center max-w-3xl mx-auto w-full">Project Outcomes</h2>
         <div className="max-w-3xl mx-auto flex flex-col gap-4 pt-8">
           <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex items-start gap-4">
@@ -117,7 +117,7 @@ function LogisticsAi() {
           </div>
         </div>
       </div>
-      <div className="w-full pt-10 pb-10 px-4 md:px-10 lg:px-20 xl:px-40">
+      <div className="max-w-7xl mx-auto px-3 xl:px-4 w-full pt-10 pb-10">
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4">
           <div className="h-full">
             <Link href="/case-studies/voice-call-ai" className="group h-full rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col">
@@ -155,8 +155,8 @@ function LogisticsAi() {
         </div>
       </div>
       {/* CTA */}
-      <section className="bg-[#012060] pt-10 pb-10 px-4 md:px-10 lg:px-20 xl:px-40">
-        <div className="max-w-4xl mx-auto flex flex-col items-start sm:items-center gap-4 text-left sm:text-center">
+      <section className="bg-[#012060] pt-10 pb-10">
+        <div className="max-w-4xl px-3 xl:px-4 flex flex-col items-start sm:items-center gap-4 text-left sm:text-center">
           <h2 className="font-general font-semibold text-white text-[24px] sm:text-[32px] leading-[1.2]">Ready to Automate Your Dispatch Decisions?</h2>
           <p className="font-inter font-normal text-blue-200 text-[16px] sm:text-[18px] leading-[1.6] max-w-2xl">Talk to our team about AI-driven logistics and operations automation.</p>
           <button onClick={() => navigate("/products/eicerise/form?product=Logistics")} className="bg-[#01B0F1] text-white px-10 py-3 rounded-md flex items-center gap-2 font-semibold text-[18px] hover:text-[#012060] transition">

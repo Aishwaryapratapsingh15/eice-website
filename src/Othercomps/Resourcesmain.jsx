@@ -8,7 +8,7 @@ function Resourcesmain() {
   return (
     <div>
       <div className="bg-gradient-to-br from-cyan-100/10 to-bloo/10 w-full mt-10 pt-4">
-        <div className="px-4 md:px-10 lg:px-20 xl:px-40">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <div className="max-w-7xl mx-auto flex flex-col items-start sm:items-center gap-4 py-10 text-left sm:text-center">
             <h1 className="font-general font-semibold text-blackk text-[32px] sm:text-[44px] leading-[1.1]">
               EICE Resources
@@ -16,7 +16,7 @@ function Resourcesmain() {
             <h2 className="font-general font-semibold text-bloo text-[24px] sm:text-[32px] leading-[1.2] max-w-3xl">
               Case Studies, Blogs and more
             </h2>
-            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-5xl">
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-4xl">
               Explore a wealth of knowledge and insights designed to help you
               navigate the complexities of digital transformation and stay ahead
               in your industry. Our resources are curated by experts to provide
@@ -27,7 +27,7 @@ function Resourcesmain() {
         </div>
       </div>
 
-      <div className="px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10">
+      <div className="max-w-7xl mx-auto px-3 xl:px-4 pt-10 pb-10">
         <div className="max-w-7xl mx-auto">
           <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center max-w-3xl sm:mx-auto">
             Discover, Innovate and Excel with EICE
@@ -63,7 +63,7 @@ function Resourcesmain() {
         </div>
       </div>
 
-      <div className="px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10">
+      <div className="max-w-7xl mx-auto px-3 xl:px-4 pt-10 pb-10">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-3 grid-cols-1 gap-4 items-center">
             <div className="flex flex-col items-start gap-4 col-span-2">

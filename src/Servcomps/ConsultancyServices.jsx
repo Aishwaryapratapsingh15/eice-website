@@ -114,8 +114,8 @@ export default function ConsultancyServices() {
     <div className="bg-white text-gray-800">
 
       {/* HERO */}
-      <section className="pt-14 pb-10 px-4 md:px-10 lg:px-20 xl:px-40 bg-white">
-        <div className="flex flex-col items-start sm:items-center gap-4 text-left sm:text-center">
+      <section className="pt-14 pb-10 bg-white">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4 flex flex-col items-start sm:items-center gap-4 text-left sm:text-center">
           {heroImg ? (
             <img src={heroImg} alt="Consultancy Services" className="mx-auto w-full max-w-[480px] object-contain"  width="396" height="239" />
           ) : (
@@ -149,8 +149,8 @@ export default function ConsultancyServices() {
       </section>
 
       {/* OVERVIEW — WHAT WE DO */}
-      <section className="px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10 bg-[#F4F9FF]">
-        <div className="max-w-7xl mx-auto">
+      <section className="pt-10 pb-10 bg-[#F4F9FF]">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Overview — What We Do</p>
           <div className="grid md:grid-cols-2 gap-4 items-start pt-8">
 
@@ -185,8 +185,8 @@ export default function ConsultancyServices() {
       </section>
 
       {/* SERVICES */}
-      <section className="px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10 bg-white">
-        <div className="max-w-7xl mx-auto">
+      <section className="pt-10 pb-10 bg-white">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <div className="flex flex-col gap-4">
             <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Our Consulting Services</p>
             <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">Two ways we help you make better decisions</h2>
@@ -219,12 +219,12 @@ export default function ConsultancyServices() {
       </section>
 
       {/* HOW WE WORK — PROCESS */}
-      <section className="px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
+      <section className="pt-10 pb-10 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <div className="flex flex-col gap-4">
             <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">How We Work</p>
             <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">Our consulting process</h2>
-            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-5xl mx-auto text-left sm:text-center">
+            <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-4xl mx-auto text-left sm:text-center">
               A collaborative approach focused on clarity, execution, and measurable outcomes
             </p>
           </div>
@@ -263,8 +263,8 @@ export default function ConsultancyServices() {
       </section>
 
       {/* WHY EICE */}
-      <section className="px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10 bg-[#F4F9FF]">
-        <div className="max-w-7xl mx-auto">
+      <section className="pt-10 pb-10 bg-[#F4F9FF]">
+        <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <div className="flex flex-col gap-4">
             <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Why EICE</p>
             <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">What makes us different</h2>
@@ -286,8 +286,8 @@ export default function ConsultancyServices() {
       </section>
 
       {/* CTA — GET STARTED */}
-      <section className="px-4 md:px-10 lg:px-20 xl:px-40 pt-10 pb-10 bg-[#012060]">
-        <div className="max-w-4xl mx-auto flex flex-col items-start sm:items-center gap-4 text-left sm:text-center">
+      <section className="pt-10 pb-10 bg-[#012060]">
+        <div className="max-w-4xl mx-auto px-3 xl:px-4 flex flex-col items-start sm:items-center gap-4 text-left sm:text-center">
           <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Get Started</p>
           <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center !text-white">
             Let&apos;s work through your challenge together

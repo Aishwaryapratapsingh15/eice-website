@@ -461,7 +461,7 @@ function Logistics() {
 
 
 
-      <div className="px-4 md:px-10 lg:px-20 xl:px-40">
+      <div className="max-w-7xl mx-auto px-3 xl:px-4">
 
 
 
@@ -518,7 +518,7 @@ function Logistics() {
 
 
 
-          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] text-left sm:text-center">
+          <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] text-left sm:text-center sm:max-w-4xl sm:mx-auto">
 
 
 
