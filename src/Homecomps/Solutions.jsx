@@ -426,7 +426,7 @@ function Solutions() {
           to="/industries"
           className="flex justify-center items-center w-full border border-blue-900 bg-blue-900 text-white rounded-full py-3 font-semibold text-sm"
         >
-          View all industries ?
+          View more
         </Link>
       </div>
 
