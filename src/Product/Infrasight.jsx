@@ -248,16 +248,11 @@ export default function InfraSight() {
 
         {/* HEADING */}
         <h1 className="font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] text-blackk py-1">
-          Intelligent Infrastructure <br />
-          Observability Platform
-        </h1>
+Agentless IT Infrastructure Monitoring & Observability Platform.        </h1>
 
         {/* SUBTEXT */}
         <p className="font-inter font-normal text-blackk/70 max-w-3xl mx-auto text-[16px] sm:text-[18px] leading-[1.6] mt-2">
-          Real-time visibility into servers, networks, applications, cloud
-          services, and IoT devices — all from a unified dashboard. No agent
-          installation required.
-        </p>
+See servers, networks, applications, cloud services and IoT devices on one dashboard. InfraSight discovers your infrastructure automatically, flags anomalies before they become outages, and alerts your team by email, Slack or MS Teams, with nothing to install on the systems it monitors.        </p>
 
         {/* BUTTONS */}
         <div className="flex flex-wrap justify-start sm:justify-center gap-4 mt-10">

@@ -498,12 +498,11 @@ export default function HospitalityPage() {
                     </div>
 
                     <h1 className={`${styles.text1} font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1]`}>
-                        The All-in-One ERP Platform for Hotels,<br className="hidden sm:block" />Resorts, Institutions & Clubs
+                        The All-in-One ERP Platform for Hotels, Resorts, Clubs, Institutions & Banquets.
                     </h1>
 
                     <p className={`${styles.subtext} font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6]`}>
-                        EICE Rise ERP simplifies hospitality operations by uniting front desk, housekeeping, dining, and finance into a single, efficient platform for streamlined management and enhanced guest experiences.
-                    </p>
+EICE Rise runs rooms, dining, banquets, memberships, and the back office (finance, HR, procurement, inventory) on one platform, so every department works from the same data and nothing has to be reconciled by hand.                    </p>
 
                     {!forSmallestScreen && (<div className={`${styles.requestDemoButtonContainer} font1`}>
 

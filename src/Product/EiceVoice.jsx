@@ -162,15 +162,12 @@ export default function EiceVoice() {
 
           {/* HEADING */}
           <h1 className="font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] text-blackk py-1">
-           AI-Powered Voice Order Management
-
-            for Modern Hospitality
+           AI-Powered Voice Ordering for Restaurants & Hotels, Connected to Your POS.
           </h1>
 
           {/* SUBTEXT */}
           <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl mx-auto mt-2">
-            EICE Voice is an AI-Powered, voice-first order management platform that lets restaurant and hotel staff place, manage and track orders hand-free--with natural language understanding built for the hospitality industry.
-          </p>
+Staff speak orders in natural language. EICE Voice turns speech into text in real time, understands hospitality vocabulary, confirms each order, and sends it to your existing POS, so orders are placed, managed and tracked hands-free.          </p>
 
           {/* CTA */}
           <div className="mt-8 sm:flex sm:justify-center">

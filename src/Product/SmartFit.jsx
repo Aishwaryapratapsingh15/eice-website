@@ -95,16 +95,14 @@ export default function SmartFit() {
         </span>
 
        <h1 className="font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] text-blackk mt-[10px] max-w-4xl mx-auto py-1">
-         Optimize Every Load. Maximize Every Container.
-          Minimize Every Cost.
-        </h1>
+Container Load Planning Software: 3D Plans That Maximize Space and Balance Weight.        </h1>
 
         {/* <h3 className = "font-semibold text-xl mb-10 text-[#012060] italic mb-5">Pack Smart. Ship Smart</h3> */}
 
 
 
            <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">
-          Stop paying for wasted container space. Eice SmartFit uses intelligent 3D optimization to generate perfect load plans — maximizing capacity, balancing weight distribution, and ensuring correct cargo placement. Upload your cargo list, select a container, and get step-by-step loading instructions with real-time weight analysis. No installation required.
+          Upload your cargo list from Excel or CSV, pick a 20ft, 40ft or 40ft High Cube container, and get a 3D load plan in seconds, with step-by-step loading instructions and real-time weight balance. It runs in your browser, with nothing to install.
         </p>
          <div className="mt-8 flex flex-wrap justify-start sm:justify-center gap-4">
         

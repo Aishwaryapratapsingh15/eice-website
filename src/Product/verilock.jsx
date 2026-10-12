@@ -202,12 +202,10 @@ export default function ISyncDrivePage() {
 </span>
 
         <h1 className="font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] text-blackk mt-[10px] max-w-4xl mx-auto py-1">
-          Enterprise Multi-Factor<br /> Authentication, Simplified
-        </h1>
+Enterprise Multi-Factor Authentication with Push Approval & Geo-Fencing        </h1>
 
         <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">
-        Verilock secures your applications with TOTP-based 2FA, push approval, and geo-fencing all from one mobile-first platform.
-        </p>
+Add one-time codes, tap-to-approve logins, and country-level access restrictions to your applications, all managed from one mobile app. Register an app and scan a QR code to go live in minutes.        </p>
 
         {/* <div className="mt-8 flex flex-wrap justify-center gap-4">
           <button className="bg-blue-900 text-white px-6 py-3 rounded-md">

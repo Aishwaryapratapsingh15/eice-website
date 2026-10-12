@@ -163,13 +163,11 @@ export default function EiceCatalystPage() {
         </span></div>
 
         <h1 className="font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] text-blackk mt-[10px] max-w-4xl mx-auto py-1">
-          AI Engineering, Modernization & Governance — One Integrated Platform.
+          AI-Enabled Engineering, Modernization & Governance, in One Platform.
         </h1>
 
         <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">
-          EICE Catalyst is an integrated AI platform that helps organizations build faster,
-          modernize smarter, automate intelligently, and prove the value of every AI
-          investment — one connected platform, not six disconnected services.
+          EICE Catalyst helps enterprise engineering teams use AI across the software lifecycle: build faster, modernize legacy systems, deploy AI agents, govern AI responsibly, and measure the return on every AI investment.
         </p>
 
         <div className="mt-8 flex flex-wrap justify-start sm:justify-center gap-4">

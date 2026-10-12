@@ -209,12 +209,11 @@ export default function ISyncDrivePage() {
 </span>
 
         <h1 className="font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] text-blackk mt-[10px] max-w-4xl mx-auto py-1">
-          Secure File Access, Storage & Team<br /> Collaboration with Full Enterprise Control
+          Enterprise File Sync, Storage & Sharing: Cloud, On-Prem, or Hybrid
         </h1>
 
         <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 mt-2 max-w-3xl mx-auto">
-         Enterprise-grade file storage, centralized access, and collaboration built for governance, ownership, and scale. Securely
-access, sync, and share files across devices from a single platform with full control for users, admins, and tenants.
+         One place for teams to store, sync, and share files across devices, while IT keeps ownership of the data through role-based access, approval workflows,<br className="hidden sm:block"/> and audit-ready reporting.
         </p>
 
         {/* <div className="mt-8 flex flex-wrap justify-center gap-4">

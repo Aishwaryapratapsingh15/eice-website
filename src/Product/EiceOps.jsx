@@ -223,7 +223,7 @@ export default function EiceOps() {
           
 
           <h1 className="font-general font-semibold mt-[10px] text-[32px] sm:text-[44px] leading-[1.1] text-blackk py-1">
-            Your Help Desk, Working Smarter.
+           ITIL 4-Aligned Help Desk & SLA Management Platform.
           </h1>
 
           {/* <p className="mt-3 text-xl text-[#111] font-semibold">
@@ -231,10 +231,7 @@ export default function EiceOps() {
           </p> */}
 
           <p className="font-inter font-normal mt-2 max-w-3xl mx-auto text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">
-            EICE Ops is EICE Technology's ITIL 4-aligned help desk management platform, designed to bring complete
-accountability to every ticket lifecycle. Built for IT service teams that take SLAs seriously, EICEOps eliminates
-missed escalations, ensures structured communication, and gives managers full visibility into team performance
-<br className="hidden sm:block"/> all in a single, configurable platform.
+            Track every ticket from first call to closure with three live SLA clocks, automatic escalation alerts, and a full audit trail, so no deadline slips and managers<br className="hidden sm:block"/> see team performance at a glance.
           </p>
 
           {/* CTA */}

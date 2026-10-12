@@ -152,14 +152,12 @@ export default function IsyncLitePage() {
 
           {/* HEADING */}
           <h1 className="font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] text-blackk mt-[10px] max-w-4xl mx-auto py-1">
-            Secure Enterprise Backup & Recovery <br />
-            with Full Data Control
+            Automated, Encrypted Backup & Recovery for Enterprise Data
           </h1>
 
           {/* SUBTEXT */}
           <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">
-            A secure, intelligent backup platform designed to protect enterprise data with automated backups,
-            end-to-end encryption, and reliable recovery—without disrupting business operations.
+            Run policy-based backups on-premises, in the cloud, or both, keep versioned copies under retention rules for compliance, and restore quickly when data is lost.
           </p>
 
           {/* BUTTON */}

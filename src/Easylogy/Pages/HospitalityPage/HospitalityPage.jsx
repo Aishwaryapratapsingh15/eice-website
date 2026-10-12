@@ -77,12 +77,11 @@ useEffect(() => {
                         <span className="text-[20px] sm:text-[28px]">EasyLogy</span>
                     </div>
                     <h1 className={`${styles.text1} font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1]`}>
-                        Revolutionizing Transportation Tracking with Easylogy Solutions
+                       Fleet Tracking & Logistics<br className="hidden sm:block"/> Management Software
                     </h1>
 
                     <p className={`${styles.text2} font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6]`}>
-                        Easylogy revolutionizes transportation tracking with real-time fleet visibility, automated driver updates, and smart logistics management. Featuring a web dashboard for admins and a mobile app for drivers, it enables live tracking, instant alerts, trip history, and API integrations, helping businesses optimize routes, improve efficiency, and reduce operational costs effortlessly.
-                    </p>
+Watch every vehicle live from a web dashboard while drivers update trip status, location, and photos from a mobile app. Get route suggestions, instant alerts, and<br className="hidden sm:block"/> trip history in one platform.                    </p>
                     <div className={`${styles.requestDemoButtonContainer} font1`}>
 
                         <Link style={{ color: "white" }} className="linkClass" to={"/demo-form?product=Easylogy"}>
