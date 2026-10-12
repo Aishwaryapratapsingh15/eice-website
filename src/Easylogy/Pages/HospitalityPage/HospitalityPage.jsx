@@ -7,6 +7,8 @@ const b1 = "https://d3r43jacxrwsrp.cloudfront.net/easylogy/Hospitality/benefit/w
 const b2 = "https://d3r43jacxrwsrp.cloudfront.net/easylogy/Hospitality/benefit/w2.jpg";
 const b3 = "https://d3r43jacxrwsrp.cloudfront.net/easylogy/Hospitality/benefit/w3.jpg";
 const b4 = "https://d3r43jacxrwsrp.cloudfront.net/easylogy/Hospitality/benefit/w4.jpg";
+const easyLogyLogo = "https://d3r43jacxrwsrp.cloudfront.net/easylogy/eice-easylogy.png";
+
 
 import FooterLower from "../../Components/Footer/FooterLower"
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -66,6 +68,7 @@ useEffect(() => {
             <section className={styles.section1}>
 
                 <div className={styles.textBox}>
+                    <img src ={easyLogyLogo} alt="Easylogy Logo" className="mx-auto h-[50px] sm:h-[70px] mb-5" />
                     <h1 className={`${styles.text1} font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1]`}>
                         Revolutionizing Transportation Tracking with Easylogy Solutions
                     </h1>
