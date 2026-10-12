@@ -216,7 +216,7 @@ export default function AskEice() {
         </h1>
 
         <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">
-          AskEICE brings retrieval-augmented AI to your enterprise knowledge base — searchable from a web portal or straight from WhatsApp, entirely within your own secure infrastructure.
+          AskEICE brings retrieval-augmented AI to your enterprise knowledge base — searchable from a web portal or straight from WhatsApp, entirely within<br className="hidden sm:block" /> your own secure infrastructure.
         </p>
 
         <div className="mt-8 flex flex-wrap justify-start sm:justify-center gap-4">

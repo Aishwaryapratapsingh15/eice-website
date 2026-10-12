@@ -95,7 +95,7 @@ export default function SmartFit() {
         </span>
 
        <h1 className="font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] text-blackk mt-[10px] max-w-4xl mx-auto py-1">
-Container Load Planning Software: 3D Plans That Maximize Space and Balance Weight.        </h1>
+Container Load Planning Software: 3D Plans That Maximize Space<br className="hidden sm:block" /> and Balance Weight.        </h1>
 
         {/* <h3 className = "font-semibold text-xl mb-10 text-[#012060] italic mb-5">Pack Smart. Ship Smart</h3> */}
 

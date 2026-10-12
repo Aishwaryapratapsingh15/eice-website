@@ -162,7 +162,7 @@ export default function EiceVoice() {
 
           {/* HEADING */}
           <h1 className="font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] text-blackk py-1">
-           AI-Powered Voice Ordering for Restaurants & Hotels, Connected to Your POS.
+           AI-Powered Voice Ordering for Restaurants & Hotels,<br className="hidden sm:block" /> Connected to Your POS.
           </h1>
 
           {/* SUBTEXT */}
@@ -211,8 +211,8 @@ Staff speak orders in natural language. EICE Voice turns speech into text in rea
 
         <div className="flex items-center gap-3">
           {/* ICON PLACEHOLDER */}
-          <div className="w-6 h-6 rounded-full flex items-center justify-center text-white text-sm">
-            <img src={tickIcon} width="24" height="24" />
+          <div className="w-6 h-6 shrink-0 rounded-full flex items-center justify-center text-white text-sm">
+            <img src={tickIcon} className="w-6 h-6 shrink-0" width="24" height="24" alt="" />
           </div>
           <p className="font-inter font-normal text-blackk text-[15px] sm:text-[16px] leading-[1.6]">
             Voice-first, hands-free order placement
@@ -220,8 +220,8 @@ Staff speak orders in natural language. EICE Voice turns speech into text in rea
         </div>
 
         <div className="flex items-center gap-3">
-          <div className="w-6 h-6 rounded-full flex items-center justify-center text-white text-sm">
-            <img src={tickIcon} width="24" height="24" />
+          <div className="w-6 h-6 shrink-0 rounded-full flex items-center justify-center text-white text-sm">
+            <img src={tickIcon} className="w-6 h-6 shrink-0" width="24" height="24" alt="" />
           </div>
           <p className="font-inter font-normal text-blackk text-[15px] sm:text-[16px] leading-[1.6]">
             Integrates with existing POS systems
@@ -229,8 +229,8 @@ Staff speak orders in natural language. EICE Voice turns speech into text in rea
         </div>
 
         <div className="flex items-center gap-3">
-          <div className="w-6 h-6 rounded-full flex items-center justify-center text-white text-sm">
-            <img src={tickIcon} width="24" height="24" />
+          <div className="w-6 h-6 shrink-0 rounded-full flex items-center justify-center text-white text-sm">
+            <img src={tickIcon} className="w-6 h-6 shrink-0" width="24" height="24" alt="" />
           </div>
           <p className="font-inter font-normal text-blackk text-[15px] sm:text-[16px] leading-[1.6]">
             Custom AI-driven NLU trained for hospitality vocabulary
@@ -238,8 +238,8 @@ Staff speak orders in natural language. EICE Voice turns speech into text in rea
         </div>
 
         <div className="flex items-center gap-3">
-          <div className="w-6 h-6 rounded-full flex items-center justify-center text-white text-sm">
-            <img src={tickIcon} width="24" height="24" />
+          <div className="w-6 h-6 shrink-0 rounded-full flex items-center justify-center text-white text-sm">
+            <img src={tickIcon} className="w-6 h-6 shrink-0" width="24" height="24" alt="" />
           </div>
           <p className="font-inter font-normal text-blackk text-[15px] sm:text-[16px] leading-[1.6]">
             AI-driven real-time speech-to-text with order confirmation

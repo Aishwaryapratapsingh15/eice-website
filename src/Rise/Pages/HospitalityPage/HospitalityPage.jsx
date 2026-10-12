@@ -498,7 +498,7 @@ export default function HospitalityPage() {
                     </div>
 
                     <h1 className={`${styles.text1} font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1]`}>
-                        The All-in-One ERP Platform for Hotels, Resorts, Clubs, Institutions & Banquets.
+                        The All-in-One ERP Platform for Hotels, Resorts,<br className="hidden sm:block" /> Clubs, Institutions & Banquets.
                     </h1>
 
                     <p className={`${styles.subtext} font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6]`}>
