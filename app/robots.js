@@ -30,9 +30,6 @@ export default function robots() {
       { userAgent: "Bytespider", allow: "/" },
       { userAgent: "CCBot", allow: "/" },
     ],
-    sitemap: [
-      "https://www.eicetechnology.com/sitemap.xml",
-      "https://www.eicetechnology.com/news-sitemap.xml",
-    ],
+    sitemap: "https://www.eicetechnology.com/sitemap.xml",
   };
 }

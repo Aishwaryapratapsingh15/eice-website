@@ -19,7 +19,7 @@ const sbsIcon = "https://d3r43jacxrwsrp.cloudfront.net/smartfit/SBS.svg";
 const sriIcon = "https://d3r43jacxrwsrp.cloudfront.net/smartfit/SRI.svg";
 const heroImg = "https://d3r43jacxrwsrp.cloudfront.net/smartfit/SmartFit.png";
 const eiceSmartfitIcon = "https://d3r43jacxrwsrp.cloudfront.net/smartfit/SmartFit_Icon.svg";
-
+const eiceSmartfitLogo = "https://d3r43jacxrwsrp.cloudfront.net/smartfit/eice-smartfit-logo.png.png";
 
 
 const features = [
@@ -76,6 +76,7 @@ export default function SmartFit() {
     <div className="w-full text-black">
       {/* HERO SECTION */}
       <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white text-left sm:text-center">
+                    <img src ={eiceSmartfitLogo} alt="EICE SmartFit Logo" className="mx-auto h-[50px] sm:h-[60px]" />
         <div className="flex justify-center sm:mb-10 pb-4">
           <img
             src={heroImg}

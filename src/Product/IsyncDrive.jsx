@@ -43,6 +43,7 @@ const shieldIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/shield_02.svg";
 const checkIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Check_all.svg";
 const linkingIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/linking.svg";
 import { useNavigate } from "@/nextNavigation";
+const isyncDriveLogo = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/eice-isyncdrive-logo.png";
 
 
 const features = [
@@ -184,6 +185,8 @@ export default function ISyncDrivePage() {
 
       {/* HERO */}
       <section className="text-left sm:text-center py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
+                    <img src ={isyncDriveLogo} alt="iSyncDrive Logo" className="mx-auto h-[60px] sm:h-[70px]" />
+
          <div className="mt-5 flex justify-center">
            <img
                     src={heroImg}

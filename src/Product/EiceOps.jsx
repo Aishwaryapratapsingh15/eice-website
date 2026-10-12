@@ -25,6 +25,7 @@ const clIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/cl.svg";
 const ftlIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/ftl.svg";
 const slaaccountabilityIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/SLAaccountability.svg";
 const mvIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/mv.svg";
+const eiceOpsLogo = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/eice-ops-logo.png";
 
 const stats = [
   {
@@ -198,7 +199,7 @@ export default function EiceOps() {
 
       {/* HERO SECTION */}
       <section className="relative overflow-hidden py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4">
-
+            <img src ={eiceOpsLogo} alt="EICE Ops Logo" className="mx-auto h-[70px] sm:h-[80px]" />
            <div className="mt-5 flex justify-center">
                             <img
                                      src={heroImg}

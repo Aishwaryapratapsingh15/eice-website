@@ -29,7 +29,7 @@ const opbIcon = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/OPB.svg";
 const hdIcon = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/HD.svg";
 const bg_image = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/bg_image.png";
 import { useNavigate } from "@/nextNavigation";
-
+const isyncLiteLogo = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/eice-isynclite-logo.png";
 
 
 const deploy= [
@@ -132,6 +132,8 @@ export default function IsyncLitePage() {
 
       {/* ================= HERO ================= */}
       <section className="text-center py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4">
+                    <img src ={isyncLiteLogo} alt="iSyncLite Logo" className="mx-auto h-[50px] sm:h-[60px]" />
+
         <div className="max-w-4xl mx-auto">
 
           {/* IMAGE */}

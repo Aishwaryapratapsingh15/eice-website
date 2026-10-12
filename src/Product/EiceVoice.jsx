@@ -28,6 +28,7 @@ const mlIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceVoice/ML.webp";
 const omIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceVoice/OM.webp";
 const bannerbg = "https://d3r43jacxrwsrp.cloudfront.net/EiceVoice/Bannerbg.png";
 const heroImage = "https://d3r43jacxrwsrp.cloudfront.net/EiceVoice/Herosection.png";
+const eiceVoicelogo = "https://d3r43jacxrwsrp.cloudfront.net/EiceVoice/eice-voice-logo.png";
 
 export default function EiceVoice() {
   const navigate = useNavigate();
@@ -141,6 +142,7 @@ export default function EiceVoice() {
 
       {/* ================= HERO ================= */}
       <section className="bg-white py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 text-left sm:text-center">
+                    <img src ={eiceVoicelogo} alt="Eice Voice Logo" className="mx-auto h-[50px] sm:h-[60px] mb-5" />
         <div className="max-w-4xl mx-auto">
 
           {/* ICON */}

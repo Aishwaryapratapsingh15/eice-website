@@ -44,7 +44,7 @@ const step1Icon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/01.svg";
 const step2Icon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/02.svg";
 const step3Icon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/03.svg";
 const step4Icon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/04.svg";
-
+const verilockLogo = "https://d3r43jacxrwsrp.cloudfront.net/verilock/verilockLogo.svg";
 
 const features = [
   { icon: codeRefreshIcon, title: "Code Refresh", desc: "Lightning-fast code regeneration for enterprise speed" , __w: 44, __h: 44},
@@ -52,12 +52,7 @@ const features = [
   { icon: appIntegrationIcon, title: "App Integrations", desc: "Seamless integration with unlimited third-party applications" , __w: 44, __h: 44},
 ];
 
-// const challenges = [
-//   "Fragmented File Systems",
-//   "Lack of Governance",
-//   "Data Ownership Risks",
-//   "No Hybrid or On-Prem Support",
-// ];
+
 
 
 const challenges = [
@@ -106,7 +101,7 @@ const architecture = [
   },
 ];
 
-// const platformFeatures = [
+
 //       {
 //     icon: fileSharingIcon,
 //     title: "Multi Authentication Security",
@@ -185,6 +180,7 @@ export default function ISyncDrivePage() {
 
       {/* HERO */}
       <section className="text-left sm:text-center py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
+         <img src ={verilockLogo} alt="Verilock Logo" className="mx-auto h-[60px] sm:h-[70px]" />
          <div className="mt-5 flex justify-center">
            <img
                     src={verilockIcon}

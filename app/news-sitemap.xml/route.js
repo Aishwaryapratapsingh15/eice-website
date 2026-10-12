@@ -1,37 +1,30 @@
-import { blogApiFetch } from "../../src/Blog/blogApi";
+import {
+  BASE_URL,
+  escapeXml,
+  fetchAllPublishedBlogs,
+  isIndexableBlog,
+  isRecentBlog,
+  xmlResponse,
+} from "../../src/Sitemap/sitemapLib";
 import { toIstIsoString } from "../../src/Blog/formatDate";
 import { blogPostUrl } from "../../src/Blog/blogUrl";
 
-const BASE_URL = "https://www.eicetechnology.com";
-const FORTY_EIGHT_HOURS_MS = 48 * 60 * 60 * 1000;
-
-function escapeXml(value) {
-  return String(value)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&apos;");
-}
+// Google News: only articles published in the last 48 hours, at most 1000 URLs.
+// The blog API has no separate "news" type, so recent posts are the news items;
+// once a post is older than 48h it moves to /blog-sitemap.xml.
+const MAX_NEWS_URLS = 1000;
 
 async function fetchRecentlyPublishedBlogs() {
-  try {
-    // Google News only processes articles ≤48h old, so a single recent page
-    // (sorted newest-first) is always enough — no need to paginate further.
-    const result = await blogApiFetch(
-      "/blogs/public?page=1&limit=50&sortBy=publishedAt&sortOrder=desc",
-    );
-    const cutoff = Date.now() - FORTY_EIGHT_HOURS_MS;
-    return result.items.filter(
-      (blog) => blog.publishedAt && new Date(blog.publishedAt).getTime() >= cutoff,
-    );
-  } catch {
-    return [];
-  }
+  const now = Date.now();
+  const { posts, failed } = await fetchAllPublishedBlogs();
+  const blogs = posts
+    .filter((blog) => isIndexableBlog(blog) && isRecentBlog(blog, now))
+    .slice(0, MAX_NEWS_URLS);
+  return { blogs, failed };
 }
 
 export async function GET() {
-  const blogs = await fetchRecentlyPublishedBlogs();
+  const { blogs, failed } = await fetchRecentlyPublishedBlogs();
 
   const urlEntries = blogs
     .map((blog) => {
@@ -54,11 +47,10 @@ export async function GET() {
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 ${urlEntries}
-</urlset>`;
+</urlset>
+`;
 
-  return new Response(xml, {
-    headers: {
-      "Content-Type": "application/xml",
-    },
-  });
+  // Short cache: new posts should show up within minutes. Never cache a
+  // response built while the blog API was unreachable.
+  return xmlResponse(xml, failed ? "no-store" : "public, s-maxage=300, stale-while-revalidate=600");
 }

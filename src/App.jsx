@@ -420,7 +420,7 @@ const OurProducts = ({ handleSetSelected = () => {} }) => (
     <div className="col-span-2">
       <div className="bg-white rounded-2xl p-6 shadow-sm overflow-y-auto max-h-[70vh]">
         <div className="mb-8">
-          <p className="text-xs text-gray-400 tracking-wide mb-3">AI & Automation</p>
+          <p className="text-xs text-gray-400 tracking-wide mb-3">AI & AUTOMATION</p>
           <div className="grid grid-cols-2 gap-6">
             {[
               { href: "/products/eice-voice",    icon: eicevoiceIcon, name: "EICE Voice",    desc: "AI Voice-Powered Order Management" },

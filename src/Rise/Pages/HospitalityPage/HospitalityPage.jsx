@@ -68,7 +68,7 @@ const cl27 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c27
 const cl28 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c28.png";
 const cl29 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c29.png";
 const cl30 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c30.png";
-
+const eiceRiseLogo = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/eicerise-logo.png";
 
 
 
@@ -491,8 +491,9 @@ export default function HospitalityPage() {
                     <img className={`${styles.laptopImgDimension}`} src={allLaptop} alt=""  width="1594" height="581" />
                 </div>)}
 
-
                 <div className={styles.textBox}>
+                                      <img src ={eiceRiseLogo} alt="Eice Rise Logo" className="mx-auto h-[50px] sm:h-[60px] mb-5" />
+
                     <h1 className={`${styles.text1} font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1]`}>
                         Flexible, Modular Solutions tailored to your business{" "}needs
                     </h1>

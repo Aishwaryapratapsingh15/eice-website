@@ -26,7 +26,7 @@ const nscIcon = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/NSC.svg";
 const nescIcon = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/NESC.svg";
 import { useNavigate } from "@/nextNavigation";
 const infrabannerIcon = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/infraBanner.png";
-
+const infraSightlogo = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/infrasight-logo.png";
 
 
 
@@ -227,11 +227,12 @@ export default function InfraSight() {
       {/* ================= HERO / OVERVIEW ================= */}
 
        <section className="bg-white py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4">
-         <div className="sm:mt-5 mt-10 flex justify-center">
+            <img src ={infraSightlogo} alt="InfraSight Logo" className="mx-auto h-[70px] sm:h-[80px]" />
+         <div className="flex justify-center">
                     <img
                              src={infraSightHero}
                              alt="product"
-                             className="mx-auto sm:mb-6 md:w-full lg:w-[480px] pb-4 pt-14"
+                             className="mx-auto sm:mb-6 md:w-full lg:w-[480px]"
                             width="2326" height="900" />
                  </div>
       <div className="max-w-4xl mx-auto text-left sm:text-center">

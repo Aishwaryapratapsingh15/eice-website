@@ -12,6 +12,7 @@ const defineIcon = "https://d3r43jacxrwsrp.cloudfront.net/eice-catalyst/Define.s
 const designIcon = "https://d3r43jacxrwsrp.cloudfront.net/eice-catalyst/design.svg";
 const productDevelopmentIcon = "https://d3r43jacxrwsrp.cloudfront.net/eice-catalyst/product-development.svg";
 const deliverIcon = "https://d3r43jacxrwsrp.cloudfront.net/eice-catalyst/deliver.svg";
+const catalystlogo = "https://d3r43jacxrwsrp.cloudfront.net/eice-catalyst/eice-catalyst-logo.png";
 
 const flow = ["Discover", "Engineer", "Automate", "Modernize", "Govern", "Measure"];
 
@@ -137,6 +138,8 @@ export default function EiceCatalystPage() {
     <div className="bg-white text-gray-800">
       {/* HERO */}
       <section className="text-left sm:text-center py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
+                    <img src ={catalystlogo} alt="EICE Catalyst Logo" className="mx-auto h-[50px] sm:h-[60px]" />
+
         <div className="mt-5 flex justify-center">
           <img
             src={catalystHeroImg}
