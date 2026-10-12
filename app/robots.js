@@ -1,7 +1,7 @@
 // Bots that match one of their own named rules below ignore the "*" rule
 // entirely (robots.txt has no inheritance), so this list is repeated on each
 // rule that needs it rather than relying on the wildcard to cover them.
-const DISALLOW = ["/api/", "/_next/", "/products/form", "/admin/", "/login/", "/wp-admin/"];
+const DISALLOW = ["/api/", "/products/form", "/admin/", "/login/", "/wp-admin/"];
 
 export default function robots() {
   return {

@@ -76,7 +76,6 @@ export default function SmartFit() {
     <div className="w-full text-black">
       {/* HERO SECTION */}
       <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white text-left sm:text-center">
-                    <img src ={eiceSmartfitLogo} alt="EICE SmartFit Logo" className="mx-auto h-[50px] sm:h-[60px]" />
         <div className="flex justify-center sm:mb-10 pb-4">
           <img
             src={heroImg}
@@ -84,15 +83,15 @@ export default function SmartFit() {
             className="w-full max-w-[650px] object-contain"
            width="1355" height="535" />
         </div>
-           <span className="font-general font-semibold flex w-fit mx-auto items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[12px] sm:text-[14px] tracking-wide sm:mb-4">
+           <span className="font-general font-semibold flex w-fit mx-auto items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[20px] sm:text-[28px] tracking-wide sm:mb-4">
 
           <img
             src={eiceSmartfitIcon}
             alt="icon"
-            className="w-5 h-5 object-contain"
-           width="20" height="20" />
+            className="w-7 h-7 object-contain"
+           width="28" height="28" />
 
-          Container loading optimization software
+          EICE SmartFit
         </span>
 
        <h1 className="font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] text-blackk mt-[10px] max-w-4xl mx-auto py-1">

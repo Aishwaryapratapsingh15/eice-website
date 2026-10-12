@@ -7,7 +7,8 @@ const b1 = "https://d3r43jacxrwsrp.cloudfront.net/easylogy/Hospitality/benefit/w
 const b2 = "https://d3r43jacxrwsrp.cloudfront.net/easylogy/Hospitality/benefit/w2.jpg";
 const b3 = "https://d3r43jacxrwsrp.cloudfront.net/easylogy/Hospitality/benefit/w3.jpg";
 const b4 = "https://d3r43jacxrwsrp.cloudfront.net/easylogy/Hospitality/benefit/w4.jpg";
-const easyLogyLogo = "https://d3r43jacxrwsrp.cloudfront.net/easylogy/eice-easylogy.png";
+const easyLogyHero = "https://d3r43jacxrwsrp.cloudfront.net/easylogy/easylogy-hero.png";
+const easyLogyIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Easylogy.svg";
 
 
 import FooterLower from "../../Components/Footer/FooterLower"
@@ -68,7 +69,13 @@ useEffect(() => {
             <section className={styles.section1}>
 
                 <div className={styles.textBox}>
-                    <img src ={easyLogyLogo} alt="Easylogy Logo" className="mx-auto h-[50px] sm:h-[70px] mb-5" />
+                    <div className="mb-6 flex items-center justify-center">
+                        <img src={easyLogyHero} alt="product" className="mx-auto sm:mb-6 md:w-96 lg:w-[600px]" />
+                    </div>
+                    <div className="font-general font-semibold flex w-fit mx-auto items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[20px] sm:text-[28px] tracking-wide mb-4">
+                        <img src={easyLogyIcon} alt="icon" className="w-7 h-7 rounded-full object-contain" width="28" height="28" />
+                        <span className="text-[20px] sm:text-[28px]">Easylogy</span>
+                    </div>
                     <h1 className={`${styles.text1} font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1]`}>
                         Revolutionizing Transportation Tracking with Easylogy Solutions
                     </h1>

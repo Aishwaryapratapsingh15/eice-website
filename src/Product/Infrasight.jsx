@@ -26,7 +26,7 @@ const nscIcon = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/NSC.svg";
 const nescIcon = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/NESC.svg";
 import { useNavigate } from "@/nextNavigation";
 const infrabannerIcon = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/infraBanner.png";
-const infraSightlogo = "https://d3r43jacxrwsrp.cloudfront.net/infraSight/infrasight-logo.png";
+const infrasightIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/infrasight.svg";
 
 
 
@@ -227,7 +227,6 @@ export default function InfraSight() {
       {/* ================= HERO / OVERVIEW ================= */}
 
        <section className="bg-white py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4">
-            <img src ={infraSightlogo} alt="InfraSight Logo" className="mx-auto h-[70px] sm:h-[80px]" />
          <div className="flex justify-center">
                     <img
                              src={infraSightHero}
@@ -238,8 +237,13 @@ export default function InfraSight() {
       <div className="max-w-4xl mx-auto text-left sm:text-center">
 
         {/* TAG */}
-        <div className="font-general font-semibold flex w-fit mx-auto items-center gap-2 rounded-full bg-bloo/10 px-4 py-1.5 text-[12px] sm:text-[14px] tracking-wide text-[#012060] mb-6">
-          ENTERPRISE OBSERVABILITY PLATFORM
+        <div className="font-general font-semibold flex w-fit mx-auto items-center gap-2 rounded-full bg-bloo/10 px-4 py-1.5 text-[20px] sm:text-[28px] tracking-wide text-[#012060] mb-6">
+           <img
+            src={infrasightIcon}
+            alt="icon"
+            className="w-7 h-7 rounded-full object-contain"
+           width="28" height="28" />
+          InfraSight
         </div>
 
         {/* HEADING */}

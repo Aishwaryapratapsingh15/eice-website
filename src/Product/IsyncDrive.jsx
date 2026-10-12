@@ -44,6 +44,7 @@ const checkIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/Check_all.svg";
 const linkingIcon = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/linking.svg";
 import { useNavigate } from "@/nextNavigation";
 const isyncDriveLogo = "https://d3r43jacxrwsrp.cloudfront.net/isyncdrive/eice-isyncdrive-logo.png";
+const isyncdriveIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/isyncdrive.svg";
 
 
 const features = [
@@ -185,8 +186,6 @@ export default function ISyncDrivePage() {
 
       {/* HERO */}
       <section className="text-left sm:text-center py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
-                    <img src ={isyncDriveLogo} alt="iSyncDrive Logo" className="mx-auto h-[60px] sm:h-[70px]" />
-
          <div className="mt-5 flex justify-center">
            <img
                     src={heroImg}
@@ -198,15 +197,15 @@ export default function ISyncDrivePage() {
         {/* <span className="bg-blue-100 text-blue-900 px-4 py-1 rounded-full text-sm font-small border border-blue-300">
           Enterprise-Grade File Management
         </span> */}
-        <span className="font-general font-semibold flex w-fit mx-auto items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[12px] sm:text-[14px] tracking-wide">
+        <span className="font-general font-semibold flex w-fit mx-auto items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[20px] sm:text-[28px] tracking-wide">
 
   <img
-    src={shieldIcon}
+    src={isyncdriveIcon}
     alt="icon"
-    className="w-5 h-5 object-contain"
-   width="20" height="20" />
+    className="w-7 h-7 object-contain"
+   width="28" height="28" />
 
-  Enterprise-Grade File Management
+  iSyncDrive
 </span>
 
         <h1 className="font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] text-blackk mt-[10px] max-w-4xl mx-auto py-1">

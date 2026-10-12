@@ -30,6 +30,7 @@ const hdIcon = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/HD.svg";
 const bg_image = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/bg_image.png";
 import { useNavigate } from "@/nextNavigation";
 const isyncLiteLogo = "https://d3r43jacxrwsrp.cloudfront.net/isynclite/eice-isynclite-logo.png";
+const isyncliteIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/isynclite.svg";
 
 
 const deploy= [
@@ -132,23 +133,21 @@ export default function IsyncLitePage() {
 
       {/* ================= HERO ================= */}
       <section className="text-center py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4">
-                    <img src ={isyncLiteLogo} alt="iSyncLite Logo" className="mx-auto h-[50px] sm:h-[60px]" />
-
         <div className="max-w-4xl mx-auto">
 
           {/* IMAGE */}
           <img src={heroImg} alt="Hero" className="mx-auto pb-4 lg:mb-6 md:mb-6 md:w-96 lg:w-[480px]"  width="873" height="404" />
 
           {/* BADGE */}
-                  <span className="font-general font-semibold lg:inline-flex md:inline-flex flex w-fit mx-auto items-center md:items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[12px] sm:text-[14px] tracking-wide">
+                  <span className="font-general font-semibold lg:inline-flex md:inline-flex flex w-fit mx-auto items-center md:items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[20px] sm:text-[28px] tracking-wide">
 
             <img
-              src={shieldIcon}
+              src={isyncliteIcon}
               alt="icon"
-              className="w-5 h-5 object-contain"
-             width="20" height="20" />
+              className="w-7 h-7 object-contain"
+             width="28" height="28" />
 
-            Enterprise-Data Protection
+            iSyncLite
           </span>
 
           {/* HEADING */}

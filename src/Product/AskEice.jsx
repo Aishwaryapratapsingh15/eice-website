@@ -202,13 +202,13 @@ export default function AskEice() {
             width="873" height="404" />
         </div>
 
-        <span className="font-general font-semibold flex w-fit mx-auto items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[12px] sm:text-[14px] tracking-wide">
+        <span className="font-general font-semibold flex w-fit mx-auto items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[20px] sm:text-[28px] tracking-wide">
           <img
             src={knowledgeAgentIcon}
             alt="icon"
-            className="w-5 h-5 object-contain"
-            width="20" height="20" />
-          The Knowledge Agent
+            className="w-7 h-7 object-contain"
+            width="28" height="28" />
+          Ask EICE
         </span>
 
         <h1 className="font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] text-blackk mt-[10px] max-w-4xl mx-auto">

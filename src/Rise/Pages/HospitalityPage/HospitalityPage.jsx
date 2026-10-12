@@ -68,7 +68,8 @@ const cl27 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c27
 const cl28 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c28.png";
 const cl29 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c29.png";
 const cl30 = "https://d3r43jacxrwsrp.cloudfront.net/Rise/Hospitality/clients/c30.png";
-const eiceRiseLogo = "https://d3r43jacxrwsrp.cloudfront.net/Hospitality/eicerise-logo.png";
+const eiceRiseHero = "https://d3r43jacxrwsrp.cloudfront.net/Rise/eice-rise-hero.png";
+const eiceRiseIcon = "https://d3r43jacxrwsrp.cloudfront.net/common/EiceRise.svg";
 
 
 
@@ -488,10 +489,16 @@ export default function HospitalityPage() {
 
 
                 <div className={styles.textBox}>
-                                      <img src ={eiceRiseLogo} alt="Eice Rise Logo" className="mx-auto h-[50px] sm:h-[60px] mb-5" />
+                    <div className="mb-6 flex items-center justify-center">
+                        <img src={eiceRiseHero} alt="product" className="mx-auto sm:mb-6 h-[217px] w-auto object-contain" />
+                    </div>
+                    <div className="font-general font-semibold flex w-fit mx-auto items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[20px] sm:text-[28px] tracking-wide mb-4">
+                        <img src={eiceRiseIcon} alt="icon" className="w-7 h-7 rounded-full object-contain" width="28" height="28" />
+                        <span className="text-[20px] sm:text-[28px]">EICE Rise</span>
+                    </div>
 
                     <h1 className={`${styles.text1} font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1]`}>
-                        Flexible, Modular Solutions tailored <br className="hidden sm:block" />to your business{" "}needs
+                        The All-in-One ERP Platform for Hotels,<br className="hidden sm:block" />Resorts, Institutions & Clubs
                     </h1>
 
                     <p className={`${styles.subtext} font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6]`}>

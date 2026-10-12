@@ -28,7 +28,7 @@ const mlIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceVoice/ML.webp";
 const omIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceVoice/OM.webp";
 const bannerbg = "https://d3r43jacxrwsrp.cloudfront.net/EiceVoice/Bannerbg.png";
 const heroImage = "https://d3r43jacxrwsrp.cloudfront.net/EiceVoice/Herosection.png";
-const eiceVoicelogo = "https://d3r43jacxrwsrp.cloudfront.net/EiceVoice/eice-voice-logo.png";
+const eiceVoiceLogo = "https://d3r43jacxrwsrp.cloudfront.net/common/Eice-Voice.svg";
 
 export default function EiceVoice() {
   const navigate = useNavigate();
@@ -142,7 +142,6 @@ export default function EiceVoice() {
 
       {/* ================= HERO ================= */}
       <section className="bg-white py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 text-left sm:text-center">
-                    <img src ={eiceVoicelogo} alt="Eice Voice Logo" className="mx-auto h-[40px] sm:h-[50px] mb-5" />
         <div className="max-w-4xl mx-auto">
 
           {/* ICON */}
@@ -152,18 +151,18 @@ export default function EiceVoice() {
           </div>
 
                   {/* TAG */}
-        <div className="font-general font-semibold flex w-fit mx-auto items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[12px] sm:text-[14px] tracking-wide mb-4">
+        <div className="font-general font-semibold flex w-fit mx-auto items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[20px] sm:text-[28px] tracking-wide mb-4">
          <img
-            src={speakIcon}
+            src={eiceVoiceLogo}
             alt="icon"
-            className="w-5 h-5 rounded-full object-contain"
-           width="20" height="20" />
-          <span>Voice-First AI for Hospitality</span>
+            className="w-7 h-7 rounded-full object-contain"
+           width="28" height="28" />
+          <span className="text-[18px] sm:text-[28px]">EICE Voice</span>
         </div>
 
           {/* HEADING */}
           <h1 className="font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] text-blackk py-1">
-           <span className="text-bloo"> AI-Powered </span>Voice Order Management <br />
+           AI-Powered Voice Order Management
 
             for Modern Hospitality
           </h1>

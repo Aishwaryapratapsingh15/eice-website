@@ -13,6 +13,9 @@ const designIcon = "https://d3r43jacxrwsrp.cloudfront.net/eice-catalyst/design.s
 const productDevelopmentIcon = "https://d3r43jacxrwsrp.cloudfront.net/eice-catalyst/product-development.svg";
 const deliverIcon = "https://d3r43jacxrwsrp.cloudfront.net/eice-catalyst/deliver.svg";
 const catalystlogo = "https://d3r43jacxrwsrp.cloudfront.net/eice-catalyst/eice-catalyst-logo.png";
+const eiceCatalystIcon = "https://d3r43jacxrwsrp.cloudfront.net/eice-catalyst/eice-catalyst.svg";
+
+
 
 const flow = ["Discover", "Engineer", "Automate", "Modernize", "Govern", "Measure"];
 
@@ -138,8 +141,6 @@ export default function EiceCatalystPage() {
     <div className="bg-white text-gray-800">
       {/* HERO */}
       <section className="text-left sm:text-center py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
-                    <img src ={catalystlogo} alt="EICE Catalyst Logo" className="mx-auto h-[50px] sm:h-[60px]" />
-
         <div className="mt-5 flex justify-center">
           <img
             src={catalystHeroImg}
@@ -149,13 +150,20 @@ export default function EiceCatalystPage() {
             height="1191"
           />
         </div>
+        
+                <div className="font-general font-semibold flex w-fit mx-auto items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[20px] sm:text-[28px] tracking-wide mb-4">
 
-        <span className="font-general font-semibold flex w-fit mx-auto items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[12px] sm:text-[14px] tracking-wide">
-          Integrated AI Platform
-        </span>
+        <img
+            src={eiceCatalystIcon}
+            alt="icon"
+            className="w-7 h-7 rounded-full object-contain"
+           width="28" height="28" />
+        <span className="font-general font-semibold flex w-fit mx-auto items-center gap-2 text-[#012060] py-1.5 rounded-full text-[20px] sm:text-[28px] tracking-wide">
+          EICE Catalyst
+        </span></div>
 
         <h1 className="font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] text-blackk mt-[10px] max-w-4xl mx-auto py-1">
-          From AI Adoption to <span className="text-bloo">AI-Driven Engineering</span>
+          AI Engineering, Modernization & Governance — One Integrated Platform.
         </h1>
 
         <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">

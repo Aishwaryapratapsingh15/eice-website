@@ -44,7 +44,7 @@ const step1Icon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/01.svg";
 const step2Icon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/02.svg";
 const step3Icon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/03.svg";
 const step4Icon = "https://d3r43jacxrwsrp.cloudfront.net/verilock/04.svg";
-const verilockLogo = "https://d3r43jacxrwsrp.cloudfront.net/verilock/verilockLogo.svg";
+const verilockLogo = "https://d3r43jacxrwsrp.cloudfront.net/common/Verilock.svg";
 
 const features = [
   { icon: codeRefreshIcon, title: "Code Refresh", desc: "Lightning-fast code regeneration for enterprise speed" , __w: 44, __h: 44},
@@ -180,7 +180,6 @@ export default function ISyncDrivePage() {
 
       {/* HERO */}
       <section className="text-left sm:text-center py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
-         <img src ={verilockLogo} alt="Verilock Logo" className="mx-auto h-[60px] sm:h-[70px]" />
          <div className="mt-5 flex justify-center">
            <img
                     src={verilockIcon}
@@ -192,15 +191,14 @@ export default function ISyncDrivePage() {
         {/* <span className="bg-blue-100 text-blue-900 px-4 py-1 rounded-full text-sm font-small border border-blue-300">
           Enterprise-Grade File Management
         </span> */}
-        <span className="font-general font-semibold flex w-fit mx-auto items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[12px] sm:text-[14px] tracking-wide mb-4">
+        <span className="font-general font-semibold flex w-fit mx-auto items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[20px] sm:text-[28px] tracking-wide mb-4">
 
   <img
-    src={shieldIcon}
+    src={verilockLogo}
     alt="icon"
-    className="w-5 h-5 object-contain"
-   width="20" height="20" />
-
-  Enterprise MFA platform
+    className="w-7 h-7 object-contain"
+   width="28" height="28" />
+  Verilock
 </span>
 
         <h1 className="font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] text-blackk mt-[10px] max-w-4xl mx-auto py-1">

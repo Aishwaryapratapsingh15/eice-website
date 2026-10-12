@@ -26,6 +26,9 @@ const ftlIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/ftl.svg";
 const slaaccountabilityIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/SLAaccountability.svg";
 const mvIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/mv.svg";
 const eiceOpsLogo = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/eice-ops-logo.png";
+const eiceopsIcon = "https://d3r43jacxrwsrp.cloudfront.net/EiceOps/EICEOPS.svg";
+
+
 
 const stats = [
   {
@@ -199,7 +202,6 @@ export default function EiceOps() {
 
       {/* HERO SECTION */}
       <section className="relative overflow-hidden py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4">
-            <img src ={eiceOpsLogo} alt="EICE Ops Logo" className="mx-auto h-[70px] sm:h-[80px]" />
            <div className="mt-5 flex justify-center">
                             <img
                                      src={heroImg}
@@ -207,7 +209,18 @@ export default function EiceOps() {
                                      className="mx-auto mb-6 md:w-full lg:w-[480px]"
                                     width="3299" height="1187" />
                          </div>
+                         <span className="font-general font-semibold flex w-fit mx-auto items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[20px] sm:text-[28px] tracking-wide sm:mb-4">
+
+          <img
+            src={eiceopsIcon}
+            alt="icon"
+            className="w-7 h-7 object-contain"
+           width="28" height="28" />
+
+          EICE Ops
+        </span>
         <div className="max-w-4xl mx-auto text-center">
+          
 
           <h1 className="font-general font-semibold mt-[10px] text-[32px] sm:text-[44px] leading-[1.1] text-blackk py-1">
             Your <span className="text-bloo">Help Desk</span>, Working <span className="text-bloo">Smarter.</span>
