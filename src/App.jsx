@@ -425,7 +425,7 @@ const OurProducts = ({ handleSetSelected = () => {} }) => (
             {[
               { href: "/products/eice-voice",    icon: eicevoiceIcon, name: "EICE Voice",    desc: "AI Voice-Powered Order Management" },
               { href: "/products/ask-eice",       icon: askEiceIcon,   name: "Ask EICE",      desc: "AI-powered knowledge search" },
-              { href: "/products/eice-aim",       icon: eiceAimIcon,   name: "EICE Aim",      desc: "AI-powered lead generation" },
+              { href: "/products/eice-aim",       icon: eiceAimIcon,   name: "EICE AIM",      desc: "AI-powered lead generation" },
               { href: "/products/eice-catalyst",  icon: eiceCatalystIcon, name: "EICE Catalyst", desc: "Integrated AI engineering platform" },
             ].map(({ href, icon, name, desc }) => (
               <Link key={href} href={href} onClick={() => handleSetSelected(null)} className="flex items-start gap-3 group">

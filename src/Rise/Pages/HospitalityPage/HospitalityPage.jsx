@@ -492,7 +492,7 @@ export default function HospitalityPage() {
                     <div className="mb-6 flex items-center justify-center">
                         <img src={eiceRiseHero} alt="product" className="mx-auto sm:mb-6 h-[217px] w-auto object-contain" />
                     </div>
-                    <div className="font-general font-semibold flex w-fit mx-auto items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[20px] sm:text-[28px] tracking-wide mb-4">
+                    <div className="font-general font-semibold flex w-fit mx-auto items-center gap-2 border border-[#012060] bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[20px] sm:text-[28px] tracking-wide mb-4">
                         <img src={eiceRiseIcon} alt="icon" className="w-7 h-7 rounded-full object-contain" width="28" height="28" />
                         <span className="text-[20px] sm:text-[28px]">EICE Rise</span>
                     </div>

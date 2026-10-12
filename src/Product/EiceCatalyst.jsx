@@ -151,7 +151,7 @@ export default function EiceCatalystPage() {
           />
         </div>
         
-                <div className="font-general font-semibold flex w-fit mx-auto items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[20px] sm:text-[28px] tracking-wide mb-4">
+                <div className="font-general font-semibold flex w-fit mx-auto items-center gap-2 border border-[#012060] bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[20px] sm:text-[28px] tracking-wide mb-4">
 
         <img
             src={eiceCatalystIcon}

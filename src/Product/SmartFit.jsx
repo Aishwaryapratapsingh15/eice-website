@@ -83,7 +83,7 @@ export default function SmartFit() {
             className="w-full max-w-[650px] object-contain"
            width="1355" height="535" />
         </div>
-           <span className="font-general font-semibold flex w-fit mx-auto items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[20px] sm:text-[28px] tracking-wide sm:mb-4">
+           <span className="font-general font-semibold flex w-fit mx-auto items-center gap-2 border border-[#012060] bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[20px] sm:text-[28px] tracking-wide sm:mb-4">
 
           <img
             src={eiceSmartfitIcon}
@@ -95,8 +95,8 @@ export default function SmartFit() {
         </span>
 
        <h1 className="font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] text-blackk mt-[10px] max-w-4xl mx-auto py-1">
-         <span className="text-bloo">Optimize </span> Every Load. <span className="text-bloo">Maximize</span> Every Container.
-         <span className="text-bloo"> Minimize</span> Every Cost.
+         Optimize Every Load. Maximize Every Container.
+          Minimize Every Cost.
         </h1>
 
         {/* <h3 className = "font-semibold text-xl mb-10 text-[#012060] italic mb-5">Pack Smart. Ship Smart</h3> */}

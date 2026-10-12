@@ -138,11 +138,11 @@ export default function EiceAim() {
       {/* HERO */}
       <section className="text-left sm:text-center py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="flex flex-col items-center">
-          <img
+          {/* <img
             src={heroImg}
             alt="product"
             className="mx-auto w-[180px] h-[80px] md:w-96 lg:w-[180px]"
-            width="873" height="404" />
+            width="873" height="404" /> */}
           <img
             src={Frame1Icon}
             alt="product"
@@ -150,13 +150,13 @@ export default function EiceAim() {
             width="873" height="404" />
         </div>
 
-        <span className="font-general font-semibold flex w-fit mx-auto items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[20px] sm:text-[28px] tracking-wide">
+        <span className="font-general font-semibold flex w-fit mx-auto items-center gap-2 border border-[#012060] bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[20px] sm:text-[28px] tracking-wide">
           <img
             src={actionIcon}
             alt="icon"
             className="w-7 h-7 object-contain"
             width="28" height="28" />
-          EICE Aim
+          EICE AIM
         </span>
 
         <h1 className="font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] text-blackk mt-[10px] max-w-4xl mx-auto py-1">

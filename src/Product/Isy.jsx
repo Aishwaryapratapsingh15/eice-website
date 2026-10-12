@@ -139,7 +139,7 @@ export default function IsyncLitePage() {
           <img src={heroImg} alt="Hero" className="mx-auto pb-4 lg:mb-6 md:mb-6 md:w-96 lg:w-[480px]"  width="873" height="404" />
 
           {/* BADGE */}
-                  <span className="font-general font-semibold lg:inline-flex md:inline-flex flex w-fit mx-auto items-center md:items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[20px] sm:text-[28px] tracking-wide">
+                  <span className="font-general font-semibold lg:inline-flex md:inline-flex flex w-fit mx-auto items-center md:items-center gap-2 border border-[#012060] bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[20px] sm:text-[28px] tracking-wide">
 
             <img
               src={isyncliteIcon}
@@ -152,8 +152,8 @@ export default function IsyncLitePage() {
 
           {/* HEADING */}
           <h1 className="font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] text-blackk mt-[10px] max-w-4xl mx-auto py-1">
-            <span className="text-bloo">Secure</span> Enterprise Backup & Recovery <br />
-            with <span className="text-bloo">Full Data Control</span>
+            Secure Enterprise Backup & Recovery <br />
+            with Full Data Control
           </h1>
 
           {/* SUBTEXT */}

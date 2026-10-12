@@ -72,9 +72,9 @@ useEffect(() => {
                     <div className="mb-6 flex items-center justify-center">
                         <img src={easyLogyHero} alt="product" className="mx-auto sm:mb-6 md:w-96 lg:w-[600px]" />
                     </div>
-                    <div className="font-general font-semibold flex w-fit mx-auto items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[20px] sm:text-[28px] tracking-wide mb-4">
+                    <div className="font-general font-semibold flex w-fit mx-auto items-center gap-2 border border-[#012060] bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[20px] sm:text-[28px] tracking-wide mb-4">
                         <img src={easyLogyIcon} alt="icon" className="w-7 h-7 rounded-full object-contain" width="28" height="28" />
-                        <span className="text-[20px] sm:text-[28px]">Easylogy</span>
+                        <span className="text-[20px] sm:text-[28px]">EasyLogy</span>
                     </div>
                     <h1 className={`${styles.text1} font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1]`}>
                         Revolutionizing Transportation Tracking with Easylogy Solutions

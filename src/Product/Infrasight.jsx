@@ -237,7 +237,7 @@ export default function InfraSight() {
       <div className="max-w-4xl mx-auto text-left sm:text-center">
 
         {/* TAG */}
-        <div className="font-general font-semibold flex w-fit mx-auto items-center gap-2 rounded-full bg-bloo/10 px-4 py-1.5 text-[20px] sm:text-[28px] tracking-wide text-[#012060] mb-6">
+        <div className="font-general font-semibold flex w-fit mx-auto items-center gap-2 rounded-full border border-[#012060] bg-bloo/10 px-4 py-1.5 text-[20px] sm:text-[28px] tracking-wide text-[#012060] mb-6">
            <img
             src={infrasightIcon}
             alt="icon"
@@ -249,7 +249,7 @@ export default function InfraSight() {
         {/* HEADING */}
         <h1 className="font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] text-blackk py-1">
           Intelligent Infrastructure <br />
-          <span className="text-bloo">Observability</span> Platform
+          Observability Platform
         </h1>
 
         {/* SUBTEXT */}

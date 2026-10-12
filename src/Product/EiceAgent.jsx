@@ -180,10 +180,8 @@ export default function EiceAgent() {
   <div className="mt-5 max-w-7xl mx-auto px-3 xl:px-4 text-left sm:text-center">
 
     <h1 className="text-[40px] sm:text-3xl md:text-[48px] font-bold">
-      An AI-driven ecosystem to 
-      <span className="italic text-[#01B0F1] font-semibold">
-        {" "}automate,<br /> optimize, and scale{" "}
-      </span>
+      An AI-driven ecosystem to automate,<br /> optimize, and scale{" "}
+      
       enterprise intelligence
     </h1>
 

@@ -191,7 +191,7 @@ export default function ISyncDrivePage() {
         {/* <span className="bg-blue-100 text-blue-900 px-4 py-1 rounded-full text-sm font-small border border-blue-300">
           Enterprise-Grade File Management
         </span> */}
-        <span className="font-general font-semibold flex w-fit mx-auto items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[20px] sm:text-[28px] tracking-wide mb-4">
+        <span className="font-general font-semibold flex w-fit mx-auto items-center gap-2 border border-[#012060] bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[20px] sm:text-[28px] tracking-wide mb-4">
 
   <img
     src={verilockLogo}
@@ -202,7 +202,7 @@ export default function ISyncDrivePage() {
 </span>
 
         <h1 className="font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] text-blackk mt-[10px] max-w-4xl mx-auto py-1">
-          Enterprise <span className="text-bloo">Multi-Factor<br /> Authentication,</span> Simplified
+          Enterprise Multi-Factor<br /> Authentication, Simplified
         </h1>
 
         <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">

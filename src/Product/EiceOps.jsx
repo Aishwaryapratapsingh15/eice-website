@@ -209,7 +209,7 @@ export default function EiceOps() {
                                      className="mx-auto mb-6 md:w-full lg:w-[480px]"
                                     width="3299" height="1187" />
                          </div>
-                         <span className="font-general font-semibold flex w-fit mx-auto items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[20px] sm:text-[28px] tracking-wide sm:mb-4">
+                         <span className="font-general font-semibold flex w-fit mx-auto items-center gap-2 border border-[#012060] bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[20px] sm:text-[28px] tracking-wide sm:mb-4">
 
           <img
             src={eiceopsIcon}
@@ -223,7 +223,7 @@ export default function EiceOps() {
           
 
           <h1 className="font-general font-semibold mt-[10px] text-[32px] sm:text-[44px] leading-[1.1] text-blackk py-1">
-            Your <span className="text-bloo">Help Desk</span>, Working <span className="text-bloo">Smarter.</span>
+            Your Help Desk, Working Smarter.
           </h1>
 
           {/* <p className="mt-3 text-xl text-[#111] font-semibold">

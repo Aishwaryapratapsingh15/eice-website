@@ -544,7 +544,8 @@
     }
 
     .textBox {
-        padding: 0px 60px;
+        padding-left: 60px;
+        padding-right: 60px;
     }
 
 }

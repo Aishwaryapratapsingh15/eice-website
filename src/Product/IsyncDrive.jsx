@@ -197,7 +197,7 @@ export default function ISyncDrivePage() {
         {/* <span className="bg-blue-100 text-blue-900 px-4 py-1 rounded-full text-sm font-small border border-blue-300">
           Enterprise-Grade File Management
         </span> */}
-        <span className="font-general font-semibold flex w-fit mx-auto items-center gap-2 bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[20px] sm:text-[28px] tracking-wide">
+        <span className="font-general font-semibold flex w-fit mx-auto items-center gap-2 border border-[#012060] bg-bloo/10 text-[#012060] px-4 py-1.5 rounded-full text-[20px] sm:text-[28px] tracking-wide">
 
   <img
     src={isyncdriveIcon}
@@ -209,7 +209,7 @@ export default function ISyncDrivePage() {
 </span>
 
         <h1 className="font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] text-blackk mt-[10px] max-w-4xl mx-auto py-1">
-          <span className="text-bloo">Secure</span> File Access, Storage & <span className="text-bloo">Team<br /> Collaboration</span> with Full Enterprise Control
+          Secure File Access, Storage & Team<br /> Collaboration with Full Enterprise Control
         </h1>
 
         <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 mt-2 max-w-3xl mx-auto">
