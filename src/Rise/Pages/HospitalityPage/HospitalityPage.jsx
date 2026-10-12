@@ -487,18 +487,14 @@ export default function HospitalityPage() {
             <section className={`${styles.section1} ${isEmbed ? styles.embedMode : ""}`} >
 
 
-                {!forSmallestScreen && (<div className={styles.laptopImg}>
-                    <img className={`${styles.laptopImgDimension}`} src={allLaptop} alt=""  width="1594" height="581" />
-                </div>)}
-
                 <div className={styles.textBox}>
                                       <img src ={eiceRiseLogo} alt="Eice Rise Logo" className="mx-auto h-[50px] sm:h-[60px] mb-5" />
 
                     <h1 className={`${styles.text1} font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1]`}>
-                        Flexible, Modular Solutions tailored to your business{" "}needs
+                        Flexible, Modular Solutions tailored <br className="hidden sm:block" />to your business{" "}needs
                     </h1>
 
-                    <p className={`${styles.text2} font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6]`}>
+                    <p className={`${styles.subtext} font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6]`}>
                         EICE Rise ERP simplifies hospitality operations by uniting front desk, housekeeping, dining, and finance into a single, efficient platform for streamlined management and enhanced guest experiences.
                     </p>
 
