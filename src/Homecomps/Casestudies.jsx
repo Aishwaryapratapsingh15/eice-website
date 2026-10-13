@@ -24,7 +24,7 @@ function Casestudies() {
             href="/case-studies"
             className="inline-flex items-center gap-2 py-3 px-6 border-2 border-blue-900 text-blue-900 font-semibold rounded-md hover:bg-blue-900 hover:text-white transition duration-200"
           >
-            See Our CaseStudies
+            See Our Case Studies
             <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.175 13H4V11H16.175L10.575 5.4L12 4L20 12L12 20L10.575 18.6L16.175 13Z" /></svg>
           </Link>
         </div>
