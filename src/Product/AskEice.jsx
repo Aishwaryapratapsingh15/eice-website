@@ -212,7 +212,7 @@ export default function AskEice() {
         </span>
 
         <h1 className="font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] text-blackk mt-[10px] max-w-4xl mx-auto">
-          Turn your organization&apos;s documents into instant, verified answers.
+          Turn your organization&apos;s documents into instant, verified answers
         </h1>
 
         <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">

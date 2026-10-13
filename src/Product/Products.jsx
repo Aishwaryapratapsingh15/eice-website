@@ -311,7 +311,7 @@ export default function ProductsPage() {
                   {!product.comingSoon && (
                     <span className="mt-[18px] inline-flex items-center gap-1.5 text-sm font-extrabold text-[#01B0F1] group-hover:text-blue-900 transition">
                       View Product
-                      <img src="https://d3r43jacxrwsrp.cloudfront.net/arrow.svg" alt="" aria-hidden="true" className="w-[16px] h-[16px] object-contain" width="16" height="16" style={{ filter: "brightness(0) saturate(100%) invert(54%) sepia(98%) saturate(1655%) hue-rotate(166deg) brightness(97%) contrast(101%)" }} />
+                      <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.175 13H4V11H16.175L10.575 5.4L12 4L20 12L12 20L10.575 18.6L16.175 13Z" /></svg>
                     </span>
                   )}
                 </>
@@ -443,7 +443,7 @@ export default function ProductsPage() {
 
               <p className="font-inter font-normal mx-auto max-w-[620px] text-[15px] sm:text-[16px] leading-[1.6] text-blackk/70 mt-2">
                 Tell us what your team is trying to improve. We can help
-                identify the relevant EICE product or <br />scope a solution around
+                identify the relevant EICE product or scope a solution around
                 your workflow.
               </p>
             </div>

@@ -204,7 +204,12 @@ function DemoFormBreadcrumb({ defaultCrumbs }) {
   return <BreadcrumbTrail crumbs={crumbs} />;
 }
 
-function BreadcrumbTrail({ crumbs }) {
+function BreadcrumbTrail({ crumbs: allCrumbs }) {
+  // The trail only shows the parents; the page the visitor is already on is
+  // left out. A lone "Home" isn't worth showing, so that case renders nothing.
+  const crumbs = allCrumbs.slice(0, -1);
+  if (crumbs.length < 2) return null;
+
   return (
     <nav
       aria-label="Breadcrumb"
@@ -212,11 +217,10 @@ function BreadcrumbTrail({ crumbs }) {
     >
       <ol className="flex flex-wrap items-center gap-1.5 text-blackk/50">
         {crumbs.map((crumb, index) => {
-          const isLast = index === crumbs.length - 1;
           return (
             <li
               key={crumb.href}
-              className={`flex shrink-0 items-center gap-1.5 ${isLast ? "min-w-0" : ""}`}
+              className="flex shrink-0 items-center gap-1.5"
             >
               {index > 0 && (
                 <span
@@ -231,12 +235,7 @@ function BreadcrumbTrail({ crumbs }) {
               ) : (
                 <Link
                   to={crumb.href}
-                  aria-current={isLast ? "page" : undefined}
-                  className={
-                    isLast
-                      ? "tap-sm truncate font-medium text-blackk transition-colors hover:text-bloo"
-                      : "tap-sm shrink-0 transition-colors hover:text-bloo"
-                  }
+                  className="tap-sm shrink-0 transition-colors hover:text-bloo"
                 >
                   {crumb.label}
                 </Link>

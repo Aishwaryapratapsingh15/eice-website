@@ -162,7 +162,7 @@ export default function EiceVoice() {
 
           {/* HEADING */}
           <h1 className="font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] text-blackk py-1">
-           AI-Powered Voice Ordering for Restaurants & Hotels,<br className="hidden sm:block" /> Connected to Your POS.
+           AI-Powered Voice Ordering for Restaurants & Hotels
           </h1>
 
           {/* SUBTEXT */}

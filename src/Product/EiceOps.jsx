@@ -223,7 +223,7 @@ export default function EiceOps() {
           
 
           <h1 className="font-general font-semibold mt-[10px] text-[32px] sm:text-[44px] leading-[1.1] text-blackk py-1">
-           ITIL 4-Aligned Help Desk & SLA Management Platform.
+           ITIL 4-Aligned Help Desk & SLA Management Platform
           </h1>
 
           {/* <p className="mt-3 text-xl text-[#111] font-semibold">

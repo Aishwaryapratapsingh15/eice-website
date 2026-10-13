@@ -97,7 +97,7 @@ export default function ProductCarousel({ slides = [] }) {
 
         {/* Heading */}
         <h2 className="text-center text-2xl sm:text-3xl md:text-[34px] font-bold text-[#2f3b4a] mb-8 md:mb-14">
-          Our Products
+          Explore More Products
         </h2>
 
         {/* SLIDER */}

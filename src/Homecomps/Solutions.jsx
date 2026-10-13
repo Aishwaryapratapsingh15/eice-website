@@ -371,11 +371,15 @@ function Solutions() {
     const el = scrollRef.current;
     if (!el) return;
 
+    // iOS Safari truncates fractional scrollLeft values, so `scrollLeft += 0.6`
+    // never moves there. Track the position as a float and assign it whole.
+    let pos = el.scrollLeft;
     const step = () => {
-      el.scrollLeft += 0.6;
-      if (el.scrollLeft >= el.scrollWidth / 2) {
-        el.scrollLeft = 0;
+      pos += 0.6;
+      if (pos >= el.scrollWidth / 2) {
+        pos = 0;
       }
+      el.scrollLeft = Math.round(pos);
       animRef.current = requestAnimationFrame(step);
     };
 
@@ -424,9 +428,9 @@ function Solutions() {
       <div className="sm:hidden mb-4">
         <Link
           to="/industries"
-          className="flex justify-center items-center w-full border border-blue-900 bg-blue-900 text-white rounded-full py-3 font-semibold text-sm"
+          className="flex justify-center items-center gap-2 w-full border border-blue-900 bg-blue-900 text-white rounded-md py-3 font-bold text-[14px] leading-[1.6]"
         >
-          View more
+          View more <ArrowIcon className="w-4 h-4" />
         </Link>
       </div>
 
