@@ -155,7 +155,7 @@ export default function EmergingTech() {
 
           <h1 className="font-general font-semibold text-blackk text-[32px] sm:text-[44px] leading-[1.1] max-w-4xl">
             Stay ahead with technology{" "}
-            <span className="text-bloo">that&apos;s <br className="hidden sm:block" /> shaping tomorrow</span>
+            that&apos;s <br className="hidden sm:block" /> shaping tomorrow
           </h1>
 
           <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl">
@@ -181,7 +181,7 @@ export default function EmergingTech() {
             {/* Left */}
             <div className="flex flex-col gap-4">
               <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2]">
-                Pioneering tech, backed by real-world experience
+                Pioneering Tech, Backed by Real-World Experience
               </h2>
               <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">
                 We don&apos;t experiment with emerging tech on your dime. Our teams have delivered production-grade AI, IoT, and blockchain solutions for 60+ clients across 10+ countries.
@@ -213,7 +213,7 @@ export default function EmergingTech() {
         <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <div className="flex flex-col gap-4">
             <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Our Emerging Tech Services</p>
-            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">Three ways we innovate for you</h2>
+            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">Three Ways We Innovate for You</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-8">
             {services.map((service, i) => (
@@ -247,9 +247,9 @@ export default function EmergingTech() {
         <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <div className="flex flex-col gap-4">
             <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">How We Work</p>
-            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center !text-white">Our Emerging technology process</h2>
+            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center !text-white">Our Emerging Technology Process</h2>
             <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] !text-blue-200 sm:max-w-4xl mx-auto text-left sm:text-center">
-              A structured approach that de-risks innovation and ensures every technology decision<br className ="hidden sm:block" /> maps directly to business value
+              A structured approach that de-risks innovation and ensures every technology decision<br className ="hidden sm:block" /> maps directly to business value.
             </p>
           </div>
 
@@ -292,7 +292,7 @@ export default function EmergingTech() {
             <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Technology</p>
             <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">Our Emerging Tech Stack</h2>
             <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-4xl mx-auto text-left sm:text-center">
-              We work with the best tools and frameworks to build scalable, future-ready solutions
+              We work with the best tools and frameworks to build scalable, future-ready solutions.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-8">
@@ -320,7 +320,7 @@ export default function EmergingTech() {
         <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <div className="flex flex-col gap-4">
             <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Why EICE</p>
-            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">What makes us different</h2>
+            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">What Makes Us Different</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 pt-8">
             {whyEice.map((item, i) => (
@@ -343,7 +343,7 @@ export default function EmergingTech() {
         <div className="max-w-4xl mx-auto px-3 xl:px-4 flex flex-col items-start sm:items-center gap-4 text-left sm:text-center">
           <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Get Started</p>
           <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center !text-white">
-            Ready to future-proof your business?
+            Ready To Future-Proof Your Business?
           </h2>
           <p className="font-inter font-normal text-blue-200 text-[16px] sm:text-[18px] leading-[1.6] max-w-2xl">
             Tell us about your challenge. We&apos;ll identify the right emerging technology to solve it.

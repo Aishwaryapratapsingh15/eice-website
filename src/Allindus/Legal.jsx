@@ -1117,11 +1117,11 @@ function Legal() {
 
 
 
-            Innovative{" "}
+            Innovative
 
 
 
-            <span className="text-bloo">Legal Software Solutions?</span> for a
+            Legal Software Solutions for a
 
 
 
@@ -1382,7 +1382,7 @@ function Legal() {
 
 
 
-            Elevate Your Legal Practice with Our Expert Software Solutions
+            Elevate Your Legal Practice With Our<br className="hidden sm:block" /> Expert Software Solutions
 
 
 
@@ -1434,7 +1434,7 @@ function Legal() {
 
 
 
-                We conduct detailed analysis to understand your legal practices
+                We conduct detailed analysis to understand your legal practice's
 
 
 
@@ -1442,7 +1442,7 @@ function Legal() {
 
 
 
-                address specific challenges and improve operational efficiency
+                address specific challenges and improve operational efficiency.
 
 
 
@@ -1510,7 +1510,7 @@ function Legal() {
 
 
 
-                professionals..
+                professionals.
 
 
 
@@ -1573,7 +1573,7 @@ function Legal() {
 
 
 
-                existing systems for effective legal practice management.?
+                existing systems for effective legal practice management.
 
 
 
@@ -1770,7 +1770,7 @@ function Legal() {
 
 
 
-                needs.?{" "}
+                needs.
 
 
 

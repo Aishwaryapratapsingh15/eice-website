@@ -988,11 +988,11 @@ function Healthcare() {
 
 
 
-            Transforming <span className="text-bloo">Healthcare</span> with <span className="hidden sm:block">
+            Transforming Healthcare With<br className="hidden sm:block" />
 
 
 
-            Innovative Technology</span>
+            Innovative Technology
 
 
 

@@ -506,7 +506,7 @@ function Logistics() {
 
 
 
-            Empowering <span className="text-bloo">Education Through</span>{" "}
+            Empowering Education Through
 
 
 

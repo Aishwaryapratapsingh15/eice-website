@@ -156,8 +156,8 @@ export default function AppDevelopment() {
           </div>
 
           <h1 className="font-general font-semibold text-blackk text-[32px] sm:text-[44px] leading-[1.1] max-w-4xl">
-            Build apps that{" "}
-            <span className="text-bloo">scale<br/> with your business</span>
+            Build Apps That
+            Scale With Your Business
           </h1>
 
           <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl">
@@ -182,7 +182,7 @@ export default function AppDevelopment() {
             {/* Left: heading + 3 feature rows */}
             <div className="flex flex-col gap-4">
               <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2]">
-                End-to-end app development from idea to launch
+                End-to-End App Development from Idea to Launch
               </h2>
               <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">
                 EICE doesn&apos;t just write code. We architect solutions that grow with your business — designing for scale, reliability, and real user needs from day one.
@@ -250,7 +250,7 @@ export default function AppDevelopment() {
         <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <div className="flex flex-col gap-4">
             <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Our App Development Services</p>
-            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">Three ways we build for you</h2>
+            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">Three Ways We Build for You</h2>
             <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-4xl mx-auto text-left sm:text-center">
               Whether you&apos;re launching a SaaS product, building a web platform, or adding AI-powered conversations to your product — we have the team for it.
             </p>
@@ -288,9 +288,9 @@ export default function AppDevelopment() {
         <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <div className="flex flex-col gap-4">
             <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">How We Work</p>
-            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">Our development process</h2>
+            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">Our Development Process</h2>
             <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-4xl mx-auto text-left sm:text-center">
-              A structured approach that keeps you informed at every stage — no surprises, no scope creep, no missed deadlines.
+              A structured approach that keeps you informed at every stage — no surprises, <br className="hidden sm:block" /> no scope creep, no missed deadlines.
             </p>
           </div>
 
@@ -322,7 +322,7 @@ export default function AppDevelopment() {
         <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <div className="flex flex-col gap-4">
             <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Technology</p>
-            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">Our tech stack</h2>
+            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">Our Tech Stack</h2>
             <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-4xl mx-auto text-left sm:text-center">
               We work with the tools best suited to your project — not the ones we&apos;re most comfortable with.
             </p>
@@ -332,7 +332,7 @@ export default function AppDevelopment() {
               <div key={i} className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)]">
                 <div className="flex items-center gap-3 pb-4">
                   <div className="w-1 h-6 bg-bloo rounded-full flex-shrink-0" />
-                  <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] uppercase tracking-wide">{stack.category}</h3>
+                  <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3]">{stack.category}</h3>
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {stack.techs.map((tech, j) => (
@@ -352,7 +352,7 @@ export default function AppDevelopment() {
         <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <div className="flex flex-col gap-4">
             <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Why EICE</p>
-            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">What makes us different</h2>
+            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">What Makes Us Different</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 pt-8">
             {whyEice.map((item, i) => (
@@ -378,7 +378,7 @@ export default function AppDevelopment() {
             Ready to build something that scales?
           </h2>
           <p className="font-inter font-normal text-blue-200 text-[16px] sm:text-[18px] leading-[1.6] max-w-2xl">
-            From your first prototype to enterprise scale — tell us what you&apos;re building and we&apos;ll tell you how we&apos;d approach it
+            From your first prototype to enterprise scale — tell us what you&apos;re building and we&apos;ll tell you how we&apos;d approach it.
           </p>
           <button
             onClick={() => navigate("/demo-form?product=App%20Development")}

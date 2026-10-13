@@ -34,7 +34,7 @@ function DataAnalytics() {
                   Data Analytics Services
                 </h1>
                 <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-4xl text-left">
-                  Unlocking Business Insights through Advanced Data Analytics
+                  Unlocking Business Insights through Advanced Data Analytics.
                 </p>
               </div>
               <div className="lg:flex hidden items-center justify-end">
@@ -51,7 +51,7 @@ function DataAnalytics() {
         <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start">
             <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2]">
-              Comprehensive <span className="text-bloo">Data Analytics</span>{" "}
+              Comprehensive Data Analytics{" "}
               : Transforming Data into Actionable Insights
             </h2>
             <div className="flex flex-col gap-4">
@@ -87,7 +87,7 @@ function DataAnalytics() {
                 <FaChartBar size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                BUSINESS INTELLIGENCE AND VISUALIZATION
+                Business Intelligence and Visualization
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We develop custom dashboards and reports that
@@ -101,7 +101,7 @@ function DataAnalytics() {
                 <FaDatabase size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                BIG DATA ANALYTICS
+                Big Data Analytics
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We help you leverage big data technologies to
@@ -115,7 +115,7 @@ function DataAnalytics() {
                 <FaBrain size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                PREDICTIVE AND PRESCRIPTIVE ANALYTICS
+                Predictive and Prescriptive Analytics
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We develop advanced analytics models that
@@ -129,7 +129,7 @@ function DataAnalytics() {
                 <FaSearchDollar size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                CUSTOMER ANALYTICS
+                Customer Analytics
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We analyze customer data to provide insights
@@ -143,7 +143,7 @@ function DataAnalytics() {
                 <FaCloudUploadAlt size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                DATA WAREHOUSING AND INTEGRATION
+                Data Warehousing and Integration
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We design and implement robust data warehousing
@@ -157,7 +157,7 @@ function DataAnalytics() {
                 <FaUsersCog size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                DATA GOVERNANCE AND MANAGEMENT
+                Data Governance and Management
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We help you establish robust data governance

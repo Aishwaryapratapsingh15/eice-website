@@ -40,7 +40,7 @@ function Cloud() {
                   Cloud Services
                 </h1>
                 <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-4xl text-left">
-                  Comprehensive Cloud Services Enhancing Agility and Efficiency
+                  Comprehensive Cloud Services Enhancing Agility and Efficiency.
                 </p>
               </div>
               <div className="lg:flex hidden items-center justify-end">
@@ -57,7 +57,7 @@ function Cloud() {
         <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start">
             <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2]">
-              Comprehensive <span className="text-bloo">Cloud Services</span>{" "}
+              Comprehensive Cloud Services{" "}
               Ensuring Quality and Reliability
             </h2>
             <div className="flex flex-col gap-4">
@@ -92,7 +92,7 @@ function Cloud() {
                 <BsPeople size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                CLOUD STRATEGY AND CONSULTING
+                Cloud Strategy and Consulting
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We provide expert consulting services to help
@@ -108,7 +108,7 @@ function Cloud() {
                 <MdMoving size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                CLOUD MIGRATION STATUS
+                Cloud Migration Status
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We offer seamless cloud migration services to
@@ -123,7 +123,7 @@ function Cloud() {
                 <GiTalk size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                CLOUD SECURITY SERVICES
+                Cloud Security Services
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We offer robust cloud security services to
@@ -139,7 +139,7 @@ function Cloud() {
                 <VscAzureDevops size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                DEVOPS AND AUTOMATION
+                DevOps and Automation
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We provide DevOps and automation services to
@@ -155,7 +155,7 @@ function Cloud() {
                 <GiBackup size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                CLOUD BACKUP AND DISASTER RECOVERY
+                Cloud Backup and Disaster Recovery
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We provide cloud backup and disaster recovery
@@ -170,7 +170,7 @@ function Cloud() {
                 <BiCheckCircle size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                CLOUD MONITORING AND REPORTING
+                Cloud Monitoring and Reporting
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We offer comprehensive cloud monitoring and

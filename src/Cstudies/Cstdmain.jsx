@@ -295,7 +295,7 @@ function Cstdmain() {
           </h1>
           <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl">
             Explore{" "}
-            <span className="text-bloo font-semibold">Real-World Examples</span>{" "}
+            Real-World Examples{" "}
             of how EICE has transformed businesses across industries through
             innovative software solutions and unparalleled expertise.
           </p>

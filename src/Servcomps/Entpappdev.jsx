@@ -40,7 +40,7 @@ function Entpappdev() {
                   Enterprise App Development
                 </h1>
                 <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-4xl text-left">
-                  Comprehensive App Development Services: Unlocking Your Digital Potential
+                  Comprehensive App Development Services: Unlocking Your Digital Potential.
                 </p>
               </div>
               <div className="lg:flex hidden items-center justify-end">
@@ -58,7 +58,7 @@ function Entpappdev() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start">
             <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2]">
               Comprehensive App Development Services :{" "}
-              <span className="text-bloo">Unlocking Your Digital Potential</span>
+              Unlocking Your Digital Potential
             </h2>
             <div className="flex flex-col gap-4">
               <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">
@@ -96,7 +96,7 @@ function Entpappdev() {
                 <BiCode size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                CUSTOM APP DEVELOPMENT
+                Custom App Development
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 Specializing in custom mobile and desktop app
@@ -110,7 +110,7 @@ function Entpappdev() {
                 <MdArchitecture size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                UI/UX DESIGN
+                UI/UX Design
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We focus on creating intuitive, visually
@@ -125,7 +125,7 @@ function Entpappdev() {
                 <TiArrowSync size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                CROSS-PLATFORM DEVELOPMENT
+                Cross-Platform Development
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 Providing cross-platform development to ensure
@@ -140,7 +140,7 @@ function Entpappdev() {
                 <BsPerson size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                APP MAINTENANCE AND SUPPORT
+                App Maintenance and Support
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We offer comprehensive app maintenance and
@@ -155,7 +155,7 @@ function Entpappdev() {
                 <GrVirtualMachine size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                APP INTEGRATION AND TESTING
+                App Integration and Testing
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 Handling app integration with existing systems,
@@ -170,7 +170,7 @@ function Entpappdev() {
                 <BiCloud size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                STRATEGY, DEPLOYMENT AND ANALYTICS
+                Strategy, Deployment and Analytics
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 Our team develops deployment strategies and

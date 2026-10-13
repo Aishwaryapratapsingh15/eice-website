@@ -1045,11 +1045,11 @@ function Logistics() {
 
 
 
-            Transforming <span className="text-bloo">Logistics Industry</span>{" "}
+            Transforming Logistics Industry
 
 
 
-            with Innovative Technology
+            With Innovative Technology
 
 
 
@@ -1326,7 +1326,7 @@ function Logistics() {
 
 
 
-            Driving Logistics Excellence with< br className="hidden sm:block" />Intelligent Software Solutions
+            Driving Logistics Excellence With< br className="hidden sm:block" />Intelligent Software Solutions
 
 
 
@@ -1390,7 +1390,7 @@ function Logistics() {
 
 
 
-                tracking..
+                tracking.
 
 
 

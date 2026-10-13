@@ -43,7 +43,7 @@ function GIS() {
                   GIS Services
                 </h1>
                 <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-4xl text-left">
-                  Comprehensive GIS Solutions: Transforming Spatial Data into Actionable Insights
+                  Comprehensive GIS Solutions: Transforming Spatial Data into Actionable Insights.
                 </p>
               </div>
               <div className="lg:flex hidden items-center justify-end">
@@ -58,7 +58,7 @@ function GIS() {
         <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start">
             <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2]">
-              Comprehensive <span className="text-bloo">GIS Services</span> :
+              Comprehensive GIS Services :
               Leveraging Spatial Intelligence for Business Success
             </h2>
             <div className="flex flex-col gap-4">
@@ -95,7 +95,7 @@ function GIS() {
                 <FaMapMarkedAlt size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                SPATIAL ANALYSIS AND MAPPING
+                Spatial Analysis and Mapping
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We provide advanced spatial analysis and custom
@@ -109,7 +109,7 @@ function GIS() {
                 <FaDatabase size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                GIS DATABASE MANAGEMENT
+                GIS Database Management
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We offer comprehensive GIS database management
@@ -124,7 +124,7 @@ function GIS() {
                 <FaGlobe size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                WEB GIS DEVELOPMENT
+                Web GIS Development
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We develop custom web-based GIS applications
@@ -139,7 +139,7 @@ function GIS() {
                 <FaSatellite size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                REMOTE SENSING AND IMAGERY ANALYSIS
+                Remote Sensing and Imagery Analysis
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We provide expert remote sensing services,
@@ -154,7 +154,7 @@ function GIS() {
                 <FaChartLine size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                GEOSPATIAL BUSINESS INTELLIGENCE
+                Geospatial Business Intelligence
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We integrate GIS with business intelligence
@@ -169,7 +169,7 @@ function GIS() {
                 <FaRobot size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                AI AND MACHINE LEARNING IN GIS
+                AI and Machine Learning in GIS
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We leverage AI and machine learning technologies

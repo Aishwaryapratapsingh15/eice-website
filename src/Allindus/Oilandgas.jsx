@@ -481,7 +481,7 @@ const services = [
 
     description:
 
-      "Monitor asset performance and perform maintenance to extend the life and reliability of infrastructure.? ",
+      "Monitor asset performance and perform maintenance to extend the life and reliability of infrastructure.",
 
   __w: 1920, __h: 827},
 
@@ -543,7 +543,7 @@ function Oilandgas() {
 
           <h1 className="font-general font-semibold text-blackk text-[32px] sm:text-[44px] leading-[1.1] text-left sm:text-center sm:max-w-4xl sm:mx-auto">
 
-            Pioneering <span className="text-bloo">the Future</span> of Oil and
+            Pioneering the Future of Oil and
 
             Gas with State-of-the-Art Solutions
 
@@ -567,7 +567,7 @@ function Oilandgas() {
 
             infrastructure lifespan. Our tools enhance productivity, ensure
 
-            safety, and drive innovation in the sector.
+            safety, and<br className="hidden sm:block" /> drive innovation in the sector.
 
           </p>
 
@@ -777,7 +777,7 @@ function Oilandgas() {
 
                 your existing systems, ensuring a smooth transition and seamless
 
-                operations from day one. .
+                operations from day one.
 
               </p>
 
@@ -841,7 +841,7 @@ function Oilandgas() {
 
                 support to address any issues, ensuring that you maximize the
 
-                benefits of our software solutions
+                benefits of our software solutions.
 
               </p>
 

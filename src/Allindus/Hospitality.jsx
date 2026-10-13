@@ -310,7 +310,7 @@ export default function Hospitality() {
 
         <div className="max-w-7xl mx-auto flex flex-col gap-4 pb-10">
           <h1 className="font-general font-semibold text-blackk text-[32px] sm:text-[44px] leading-[1.1] text-left sm:text-center sm:max-w-4xl sm:mx-auto">
-            <span className="text-bloo">Powering Hospitality</span> Excellence with
+            Powering Hospitality Excellence With
             Integrated Technology Solutions
           </h1>
           <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] text-left sm:text-center sm:max-w-4xl sm:mx-auto">
@@ -341,7 +341,7 @@ export default function Hospitality() {
             <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Key Services</p>
             <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2]">
               Everything your property needs to run seamlessly from front desk to
-              back office, all in one platform.
+              back office, all in one platform
             </h2>
           </div>
 
@@ -397,7 +397,7 @@ export default function Hospitality() {
         <div className="max-w-7xl mx-auto px-3 xl:px-4 flex flex-col gap-4 text-left sm:text-center">
           <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2]">EICE Rise Implementation Approach</h2>
           <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-3xl sm:mx-auto">
-            Empowering Hospitality Businesses with a Turnkey ERP Implementation,<br className="hidden sm:block" />Operational from Day One
+            Empowering Hospitality Businesses With a Turnkey ERP Implementation,<br className="hidden sm:block" />Operational from Day One.
           </p>
         </div>
 

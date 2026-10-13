@@ -59,7 +59,7 @@ function Servmain() {
               >
                 <div className="mb-[19px] text-bloo flex items-center"><LuCloudCog size={44} /></div>
                 <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                  DIGITAL TRANSFORMATION
+                  Digital Transformation
                 </h3>
                 <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                   Revolutionize your business with EICE's digital transformation services. We help you leverage cutting-edge technologies to streamline operations, enhance customer experiences, and drive growth.
@@ -77,7 +77,7 @@ function Servmain() {
               >
                 <div className="mb-[19px] text-bloo flex items-center"><IoIosBuild size={44} /></div>
                 <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                  DEVOPS
+                  DevOps
                 </h3>
                 <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                   Accelerate your software delivery with EICE's DevOps solutions. We integrate development and operations to improve collaboration, increase efficiency, and deliver high-quality software faster.
@@ -100,7 +100,7 @@ function Servmain() {
                   </div>
                 </div>
                 <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                  GENERATIVE AI
+                  Generative AI
                 </h3>
                 <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                   Harness the power of AI with EICE's generative AI solutions. We develop custom AI models that can create content, generate ideas, and solve complex problems, giving your business a significant competitive advantage.
@@ -157,7 +157,7 @@ function Servmain() {
             >
               <div className="mb-[19px] text-bloo flex items-center"><GiCircuitry size={44} /></div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                INTERNET OF THINGS
+                Internet of Things
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 Connect your devices and gather valuable data with EICE's IoT solutions. We help you create smart, interconnected systems that drive efficiency and innovation.
@@ -175,7 +175,7 @@ function Servmain() {
             >
               <div className="mb-[19px] text-bloo flex items-center"><SiBlockchaindotcom size={44} /></div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                BLOCKCHAIN DEVELOPMENT
+                Blockchain Development
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 Enhance security and transparency with EICE's blockchain solutions. We develop decentralized applications and smart contracts tailored to your business needs.
@@ -207,7 +207,7 @@ function Servmain() {
               >
                 <div className="mb-[19px] text-bloo flex items-center"><GrCloudSoftware size={44} /></div>
                 <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                  SAAS DEVELOPMENT
+                  SaaS Development
                 </h3>
                 <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                   Transform your software into a scalable service with EICE's SAAS development. We build cloud-based applications that offer flexibility and accessibility to your customers.
@@ -225,7 +225,7 @@ function Servmain() {
               >
                 <div className="mb-[19px] text-bloo flex items-center"><FaLaptopCode size={44} /></div>
                 <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                  WEB APP DEVELOPMENT
+                  Web App Development
                 </h3>
                 <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                   Create powerful web applications with EICE. We develop responsive, feature-rich web apps that work seamlessly across all devices and platforms.
@@ -243,7 +243,7 @@ function Servmain() {
               >
                 <div className="mb-[19px] text-bloo flex items-center"><IoIosChatboxes size={44} /></div>
                 <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                  CHAT BOT DEVELOPMENT
+                  Chat Bot Development
                 </h3>
                 <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                   Enhance customer service with EICE's chatbot solutions. We create intelligent, conversational AI bots that can handle queries, automate tasks, and improve user engagement.

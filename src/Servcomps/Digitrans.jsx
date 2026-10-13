@@ -34,7 +34,7 @@ function Digitrans() {
                   Digital Transformation
                 </h1>
                 <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-4xl text-left">
-                  Revolutionize Your Business Harness the Power of Digital Transformation for Sustainable Growth
+                  Revolutionize Your Business Harness the Power of Digital Transformation for Sustainable Growth.
                 </p>
               </div>
               <div className="lg:flex hidden items-center justify-end">
@@ -52,7 +52,7 @@ function Digitrans() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start">
             <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2]">
               Embrace the Digital Future
-              <span className="text-bloo"> Transformation </span>
+              Transformation
               for Competitive Advantage
             </h2>
             <div className="flex flex-col gap-4">
@@ -92,7 +92,7 @@ function Digitrans() {
                 <img src={dtdigital} alt="" className="w-11 h-11 object-contain" width="44" height="44" />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                DIGITAL INNOVATION
+                Digital Innovation
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We identify and implement cutting-edge digital
@@ -105,7 +105,7 @@ function Digitrans() {
                 <img src={dtconsulting} alt="" className="w-11 h-11 object-contain" width="44" height="44" />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                DATA-DRIVEN INSIGHTS
+                Data-Driven Insights
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We leverage advanced analytics and AI to extract
@@ -118,7 +118,7 @@ function Digitrans() {
                 <img src={dtdesign} alt="" className="w-11 h-11 object-contain" width="44" height="44" />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                DIGITAL EXPERIENCE DESIGN
+                Digital Experience Design
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We create seamless, intuitive digital
@@ -138,7 +138,7 @@ function Digitrans() {
               Why Choose EICE
             </p>
             <h2 className="sm:max-w-4xl mx-auto font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center pt-4">
-              Key Advantages of Partnering with EICE for Your AI/ML and Generative
+              Key Advantages of Partnering With EICE for Your AI/ML and Generative
               AI Journey
             </h2>
             <div className="grid grid-cols-1 gap-10 pt-8 sm:max-w-5xl mx-auto">

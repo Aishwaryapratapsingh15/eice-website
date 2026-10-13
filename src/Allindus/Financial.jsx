@@ -516,11 +516,11 @@ function Legal() {
 
 
 
-            Revolutionizing{" "}
+            Revolutionizing
 
 
 
-            <span className="text-bloo">Financial Services?</span> Through
+            Financial Services Through
 
 
 
@@ -560,7 +560,7 @@ function Legal() {
 
 
 
-            with stringent regulatory frameworks
+            with stringent regulatory frameworks.
 
 
 
@@ -781,7 +781,7 @@ function Legal() {
 
 
 
-            Transform Your Financial Operations with Our Tailored Software
+            Transform Your Financial Operations With Our <br className="hidden sm:block" /> Tailored Software
 
 
 
@@ -917,7 +917,7 @@ function Legal() {
 
 
 
-                enhanced efficiency and compliance..
+                enhanced efficiency and compliance.
 
 
 

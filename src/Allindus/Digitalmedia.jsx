@@ -310,7 +310,7 @@ const services = [
 
 
 
-      "Developing robust systems for content creation, distribution, and management, empowering media companies to effectively manage their digital assets..",
+      "Developing robust systems for content creation, distribution, and management, empowering media companies to effectively manage their digital assets.",
 
 
 
@@ -534,7 +534,7 @@ function Digitalmedia() {
 
 
 
-            Transforming <span className="text-bloo">Media Landscape</span> with
+            Transforming Media Landscape With
 
 
 
@@ -799,7 +799,7 @@ function Digitalmedia() {
 
 
 
-            Empowering Digital Media Innovation with Advanced Software Solutions
+            Empowering Digital Media Innovation With Advanced Software Solutions
 
 
 
@@ -915,7 +915,7 @@ function Digitalmedia() {
 
 
 
-                conversion rates.Digital Marketing Automation
+                conversion rates.
 
 
 

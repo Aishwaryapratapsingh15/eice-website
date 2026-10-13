@@ -47,7 +47,7 @@ function Saas() {
                   SaaS Development
                 </h1>
                 <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-4xl text-left">
-                  Leading SaaS Development Services: Transforming Ideas into Scalable Software Solutions
+                  Leading SaaS Development Services: Transforming Ideas into Scalable Software Solutions.
                 </p>
               </div>
               <div className="lg:flex hidden items-center justify-end">
@@ -65,7 +65,7 @@ function Saas() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start">
             <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2]">
               Leading{" "}
-              <span className="text-bloo">SaaS Development Services</span> :
+              SaaS Development Services :
               Transforming Ideas into Scalable Software Solutions
             </h2>
             <div className="flex flex-col gap-4">
@@ -101,7 +101,7 @@ function Saas() {
                 <GrCloudSoftware size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                CUSTOM SaaS APPLICATION DEVELOPMENT
+                Custom SaaS Application Development
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We specialize in custom SaaS application
@@ -116,7 +116,7 @@ function Saas() {
                 <GiTalk size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                SaaS PRODUCT STRATEGY AND CONSULTING
+                SaaS Product Strategy and Consulting
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 Our SaaS product strategy services help define
@@ -131,7 +131,7 @@ function Saas() {
                 <MdArchitecture size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                SaaS PLATFORM DESIGN AND ARCHITECTURE
+                SaaS Platform Design and Architecture
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We design scalable, secure SaaS platform
@@ -146,7 +146,7 @@ function Saas() {
                 <BiRecycle size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                SaaS DEVELOPMENT LIFECYCLE MANAGEMENT
+                SaaS Development Lifecycle Management
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We manage the entire SaaS development lifecycle,
@@ -161,7 +161,7 @@ function Saas() {
                 <GrIntegration size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                SaaS INTEGRATION SERVICES
+                SaaS Integration Services
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We offer SaaS integration services to connect
@@ -176,7 +176,7 @@ function Saas() {
                 <MdIntegrationInstructions size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                SaaS MIGRATION SERVICES
+                SaaS Migration Services
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We offer SaaS migration services for

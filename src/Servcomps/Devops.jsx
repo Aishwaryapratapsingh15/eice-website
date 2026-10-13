@@ -33,7 +33,7 @@ function DevOps() {
                   DevOps Services
                 </h1>
                 <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-4xl text-left">
-                  Streamlining Development and Operations for Accelerated Business Growth
+                  Streamlining Development and Operations for Accelerated Business Growth.
                 </p>
               </div>
               <div className="lg:flex hidden items-center justify-end">
@@ -50,7 +50,7 @@ function DevOps() {
         <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start">
             <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2]">
-              Comprehensive <span className="text-bloo">DevOps</span>{" "}
+              Comprehensive DevOps{" "}
               Bridging the Gap Between Development and Operations
             </h2>
             <div className="flex flex-col gap-4">
@@ -88,7 +88,7 @@ function DevOps() {
                 <FaCloud size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                CLOUD INFRASTRUCTURE MANAGEMENT
+                Cloud Infrastructure Management
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We provide expert cloud infrastructure
@@ -103,7 +103,7 @@ function DevOps() {
                 <FaCode size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                CONTINUOUS INTEGRATION AND DELIVERY (CI/CD)
+                Continuous Integration and Delivery (CI/CD)
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We design and implement robust CI/CD pipelines
@@ -117,7 +117,7 @@ function DevOps() {
                 <FaCogs size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                CONFIGURATION MANAGEMENT
+                Configuration Management
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We implement efficient configuration management
@@ -131,7 +131,7 @@ function DevOps() {
                 <FaRocket size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                CONTAINERIZATION AND ORCHESTRATION
+                Containerization and Orchestration
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We leverage containerization technologies like
@@ -145,7 +145,7 @@ function DevOps() {
                 <FaChartLine size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                MONITORING AND PERFORMANCE OPTIMIZATION
+                Monitoring and Performance Optimization
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We implement comprehensive monitoring solutions
@@ -159,7 +159,7 @@ function DevOps() {
                 <FaShieldAlt size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                DEVSECOPS IMPLEMENTATION
+                DevSecOps Implementation
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We integrate security practices into your DevOps

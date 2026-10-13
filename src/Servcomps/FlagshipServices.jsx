@@ -153,12 +153,12 @@ export default function FlagshipServices() {
           </div>
 
           <h1 className="font-general font-semibold text-blackk text-[32px] sm:text-[44px] leading-[1.1] max-w-4xl">
-            Core services that drive{" "}
-            <span className="text-bloo"><br className="hidden sm:block" />transformation at scale</span>
+            Core Services That Drive{" "}
+           <br className="hidden sm:block" />Transformation at Scale
           </h1>
 
           <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl">
-            EICE&apos;s flagship offerings are built on 15+ years of delivery experience — proven technical services that give your business a competitive edge in the digital landscape
+            EICE&apos;s flagship offerings are built on 15+ years of delivery experience — proven technical services that give your business a competitive edge in the digital landscape.
           </p>
 
           <button
@@ -180,10 +180,10 @@ export default function FlagshipServices() {
             {/* Left */}
             <div className="flex flex-col gap-4">
               <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2]">
-                Operational excellence, delivered across 180+ projects
+                Operational Excellence, Delivered Across 180+ Projects
               </h2>
               <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">
-                These aren&apos;t experimental offerings. Digital Transformation, DevOps, and Generative AI are the services EICE has refined across 60+ clients in 10+ countries — with measurable outcomes every time
+                These aren&apos;t experimental offerings. Digital Transformation, DevOps, and Generative AI are the services EICE has refined across 60+ clients in 10+ countries — with measurable outcomes every time.
               </p>
             </div>
 
@@ -212,7 +212,7 @@ export default function FlagshipServices() {
         <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <div className="flex flex-col gap-4">
             <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Our Flagship Services</p>
-            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">Three services that define our delivery edge</h2>
+            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">Three Services That Define Our Delivery Edge</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-8">
             {services.map((service, i) => (
@@ -233,7 +233,7 @@ export default function FlagshipServices() {
                 </div>
                 <Link to={service.link} className="inline-flex items-center gap-2 text-[14px] font-bold text-[#01B0F1] hover:text-blue-900 transition">
                   Explore More
-                  <img src="https://d3r43jacxrwsrp.cloudfront.net/arrow.svg" alt="" aria-hidden="true" className="w-[16px] h-[16px] object-contain" width="16" height="16" style={{ filter: "brightness(0) saturate(100%) invert(54%) sepia(98%) saturate(1655%) hue-rotate(166deg) brightness(97%) contrast(101%)" }} />
+                  <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.175 13H4V11H16.175L10.575 5.4L12 4L20 12L12 20L10.575 18.6L16.175 13Z" /></svg>
                 </Link>
               </div>
             ))}
@@ -246,9 +246,9 @@ export default function FlagshipServices() {
         <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <div className="flex flex-col gap-4">
             <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">How We Work</p>
-            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">Our flagship delivery process</h2>
+            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">Our Flagship Delivery Process</h2>
             <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-4xl mx-auto text-left sm:text-center">
-              A structured, transparent approach that de-risks transformation and ensures every stage <br className="hidden sm:block" /> delivers measurable value
+              A structured, transparent approach that de-risks transformation and ensures every stage <br className="hidden sm:block" /> delivers measurable value.
             </p>
           </div>
 
@@ -320,7 +320,7 @@ export default function FlagshipServices() {
         <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <div className="flex flex-col gap-4">
             <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Why EICE</p>
-            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">What makes us different</h2>
+            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">What Makes Us Different</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 pt-8">
             {whyEice.map((item, i) => (
@@ -343,10 +343,10 @@ export default function FlagshipServices() {
         <div className="max-w-4xl mx-auto px-3 xl:px-4 flex flex-col items-start sm:items-center gap-4 text-left sm:text-center">
           <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Get Started</p>
           <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center !text-white">
-            Ready to transform how your business operates?
+            Ready To Transform How Your Business Operates?
           </h2>
           <p className="font-inter font-normal text-blue-200 text-[16px] sm:text-[18px] leading-[1.6] max-w-2xl">
-            Our flagship services have delivered measurable results for 60+ clients. Let&apos;s talk about what they can do for yours
+            Our flagship services have delivered measurable results for 60+ clients. Let&apos;s talk about what they can do for yours.
           </p>
           <button
             onClick={() => navigate("/demo-form?product=Flagship%20Services")}

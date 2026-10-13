@@ -85,7 +85,7 @@ function TechnologyConsulting() {
                 <FaLightbulb size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                TECHNOLOGY STRATEGY AND ROADMAP
+                Technology Strategy and Roadmap
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We help you develop a comprehensive technology
@@ -99,7 +99,7 @@ function TechnologyConsulting() {
                 <FaChartLine size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                DIGITAL TRANSFORMATION CONSULTING
+                Digital Transformation Consulting
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We guide you through the digital transformation
@@ -114,7 +114,7 @@ function TechnologyConsulting() {
                 <FaCloudUploadAlt size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                CLOUD STRATEGY AND MIGRATION
+                Cloud Strategy and Migration
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We provide expert guidance on cloud adoption
@@ -129,7 +129,7 @@ function TechnologyConsulting() {
                 <FaShieldAlt size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                CYBERSECURITY CONSULTING
+                Cybersecurity Consulting
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We assess your cybersecurity posture, identify
@@ -144,7 +144,7 @@ function TechnologyConsulting() {
                 <FaRobot size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                AI AND MACHINE LEARNING IMPLEMENTATION
+                AI and Machine Learning Implementation
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We help you harness the power of AI and machine
@@ -159,7 +159,7 @@ function TechnologyConsulting() {
                 <FaProjectDiagram size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                IT INFRASTRUCTURE OPTIMIZATION
+                IT Infrastructure Optimization
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We analyze your current IT infrastructure and

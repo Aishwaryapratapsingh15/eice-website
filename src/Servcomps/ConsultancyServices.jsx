@@ -26,17 +26,17 @@ const overviewCards = [
   {
     icon: overviewIcon1,
     title: "Business-first thinking",
-    desc: "We start with your outcomes, not with technology. Then we work backwards to the right solution",
+    desc: "We start with your outcomes, not with technology. Then we work backwards to the right solution.",
   },
   {
     icon: overviewIcon2,
     title: "Honest assessment",
-    desc: "We'll tell you what you don't need as readily as what you do. No inflated scope",
+    desc: "We'll tell you what you don't need as readily as what you do. No inflated scope.",
   },
   {
     icon: overviewIcon3,
     title: "Embedded partnership",
-    desc: "We work inside your team, not above it. Knowledge transfer is part of every engagement",
+    desc: "We work inside your team, not above it. Knowledge transfer is part of every engagement.",
   },
 ];
 
@@ -62,25 +62,25 @@ const steps = [
     step: "01",
     icon: stepIcon1,
     title: "Discovery\n& audit",
-    desc: "Deep dive into your current state, goals, challenges, and existing systems",
+    desc: "Deep dive into your current state, goals, challenges, and existing systems.",
   },
   {
     step: "02",
     icon: stepIcon2,
     title: "Strategy &\nroadmap",
-    desc: "Clear, prioritized recommendations with a delivery roadmap and resource plan",
+    desc: "Clear, prioritized recommendations with a delivery roadmap and resource plan.",
   },
   {
     step: "03",
     icon: stepIcon3,
     title: "Implementation\nguidance",
-    desc: "Hands-on support during execution — reviewing, advising, course correcting",
+    desc: "Hands-on support during execution — reviewing, advising, course correcting.",
   },
   {
     step: "04",
     icon: stepIcon4,
     title: "Review &\nhandover",
-    desc: "Final review, documentation, and knowledge transfer to your internal team",
+    desc: "Final review, documentation, and knowledge transfer to your internal team.",
   },
 ];
 
@@ -88,22 +88,22 @@ const whyEice = [
   {
     icon: whyIcon1,
     title: "Practitioners not theorists",
-    desc: "Our consultants have shipped real products, not just advised on them",
+    desc: "Our consultants have shipped real products, not just advised on them.",
   },
   {
     icon: whyIcon2,
     title: "No vendor lock-in",
-    desc: "We recommend what's right for you, regardless of what we sell",
+    desc: "We recommend what's right for you, regardless of what we sell.",
   },
   {
     icon: whyIcon3,
     title: "Transparent pricing",
-    desc: "Fixed scope engagements with no hidden costs or scope inflation",
+    desc: "Fixed scope engagements with no hidden costs or scope inflation.",
   },
   {
     icon: whyIcon4,
     title: "Long-term relationship",
-    desc: "Most clients retain us well beyond the initial engagement",
+    desc: "Most clients retain us well beyond the initial engagement.",
   },
 ];
 
@@ -131,11 +131,11 @@ export default function ConsultancyServices() {
 
           <h1 className="font-general font-semibold text-blackk text-[32px] sm:text-[44px] leading-[1.1] max-w-4xl">
             Strategic guidance from people{" "}
-            <span className="text-bloo"><br className="hidden sm:block" />who&apos;ve built it</span>
+            <br className="hidden sm:block" />who&apos;ve built it
           </h1>
 
           <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl">
-            15+ years of industry insight, 180+ projects delivered. EICE consultants don&apos;t just advise — they&apos;ve been in the trenches building the same systems they&apos;re guiding you on
+            15+ years of industry insight, 180+ projects delivered. EICE consultants don&apos;t just advise — they&apos;ve been in the trenches building the same systems they&apos;re guiding you on.
           </p>
 
           <button
@@ -157,10 +157,10 @@ export default function ConsultancyServices() {
             {/* Left */}
             <div className="flex flex-col gap-4">
               <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2]">
-                Consulting that&apos;s grounded in delivery experience
+                Consulting That&apos;s Grounded in Delivery Experience
               </h2>
               <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6]">
-                Most consultants give you a deck and leave. EICE stays through implementation — our consultants are also our engineers, which means advice that&apos;s practical, not theoretical
+                Most consultants give you a deck and leave. EICE stays through implementation — our consultants are also our engineers, which means advice that&apos;s practical, not theoretical.
               </p>
             </div>
 
@@ -189,7 +189,7 @@ export default function ConsultancyServices() {
         <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <div className="flex flex-col gap-4">
             <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Our Consulting Services</p>
-            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">Two ways we help you make better decisions</h2>
+            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">Two Ways We Help You Make Better Decisions</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-8">
             {services.map((service, i) => (
@@ -223,9 +223,9 @@ export default function ConsultancyServices() {
         <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <div className="flex flex-col gap-4">
             <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">How We Work</p>
-            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">Our consulting process</h2>
+            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">Our Consulting Process</h2>
             <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-4xl mx-auto text-left sm:text-center">
-              A collaborative approach focused on clarity, execution, and measurable outcomes
+              A collaborative approach focused on clarity, execution, and measurable outcomes.
             </p>
           </div>
 
@@ -267,7 +267,7 @@ export default function ConsultancyServices() {
         <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <div className="flex flex-col gap-4">
             <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Why EICE</p>
-            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">What makes us different</h2>
+            <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center">What Makes Us Different</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 pt-8">
             {whyEice.map((item, i) => (
@@ -290,10 +290,10 @@ export default function ConsultancyServices() {
         <div className="max-w-4xl mx-auto px-3 xl:px-4 flex flex-col items-start sm:items-center gap-4 text-left sm:text-center">
           <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] text-left sm:text-center">Get Started</p>
           <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center !text-white">
-            Let&apos;s work through your challenge together
+            Let&apos;s Work Through Your Challenge Together
           </h2>
           <p className="font-inter font-normal text-blue-200 text-[16px] sm:text-[18px] leading-[1.6] max-w-2xl">
-            Book a free 45-minute discovery call. No pitch, no pressure — just an honest conversation about what you&apos;re trying to solve
+            Book a free 45-minute discovery call. No pitch, no pressure — just an honest conversation about what you&apos;re trying to solve.
           </p>
           <button
             onClick={() => navigate("/demo-form?product=Consultancy%20Services")}

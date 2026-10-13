@@ -41,7 +41,7 @@ function Uiux() {
                   UI/UX Services
                 </h1>
                 <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-4xl text-left">
-                  Comprehensive UI/UX Consulting Services Enhancing User Experience and Engagement
+                  Comprehensive UI/UX Consulting Services Enhancing User Experience and Engagement.
                 </p>
               </div>
               <div className="lg:flex hidden items-center justify-end">
@@ -56,7 +56,7 @@ function Uiux() {
         <div className="max-w-7xl mx-auto px-3 xl:px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start">
             <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2]">
-              Comprehensive <span className="text-bloo">UI/UX</span>{" "}
+              Comprehensive UI/UX{" "}
               Enhancing User Experience and Engagement
             </h2>
             <div className="flex flex-col gap-4">
@@ -92,7 +92,7 @@ function Uiux() {
                 <FaPeopleArrows size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                UI/UX STRATEGY AND CONSULTING
+                UI/UX Strategy and Consulting
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We provide expert consulting services to help
@@ -108,7 +108,7 @@ function Uiux() {
                 <BiUser size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                USER RESEARCH AND ANALYSIS
+                User Research and Analysis
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We conduct extensive user research and analysis
@@ -124,7 +124,7 @@ function Uiux() {
                 <IoInformation size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                INFORMATION ARCHITECTURE
+                Information Architecture
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We design clear and intuitive information
@@ -139,7 +139,7 @@ function Uiux() {
                 <GiWireframeGlobe size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                WIREFRAMING AND PROTOTYPING
+                Wireframing and Prototyping
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We create detailed wireframes and interactive
@@ -155,7 +155,7 @@ function Uiux() {
                 <MdCheckBox size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                UI / UX AUDITS AND REVIEWS
+                UI / UX Audits and Reviews
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We conduct detailed UI/UX audits and reviews to
@@ -171,7 +171,7 @@ function Uiux() {
                 <FaHandshake size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                CONTINUOUS IMPROVEMENT AND SUPPORT
+                Continuous Improvement and Support
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We offer ongoing support and continuous

@@ -330,7 +330,7 @@ const services = [
 
 
 
-      "Creating solutions for managing customer relationships, optimizing sales processes, and ensuring efficient service delivery to enhance customer satisfaction..",
+      "Creating solutions for managing customer relationships, optimizing sales processes, and ensuring efficient service delivery to enhance customer satisfaction.",
 
 
 
@@ -426,7 +426,7 @@ const services = [
 
 
 
-      "Developing platforms for real-time tracking of business activities, coupled with comprehensive reporting capabilities for operational insights and performance evaluation..",
+      "Developing platforms for real-time tracking of business activities, coupled with comprehensive reporting capabilities for operational insights and performance evaluation.",
 
 
 
@@ -512,7 +512,7 @@ function Legal() {
 
 
 
-            Transforming <span className="text-bloo">Enterprise</span> with
+            Transforming Enterprise With
 
 
 
@@ -793,7 +793,7 @@ function Legal() {
 
 
 
-            Driving Enterprise Excellence with Intelligent<br className = "hidden sm:block" /> Software Solutions
+            Driving Enterprise Excellence With Intelligent<br className = "hidden sm:block" /> Software Solutions
 
 
 
@@ -853,7 +853,7 @@ function Legal() {
 
 
 
-                efficiency through automation and real-time tracking..
+                efficiency through automation and real-time tracking.
 
 
 
@@ -1115,7 +1115,7 @@ function Legal() {
 
 
 
-                enterprise..
+                enterprise.
 
 
 

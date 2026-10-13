@@ -58,7 +58,7 @@ function Chatbot() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start">
             <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2]">
               Leading{" "}
-              <span className="text-bloo">ChatBot Development Services</span>{" "}
+              ChatBot Development Services{" "}
               : Transforming Ideas into Bots using AI
             </h2>
             <div className="flex flex-col gap-4">
@@ -94,7 +94,7 @@ function Chatbot() {
                 <RiAppsLine size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                CUSTOM CHATBOT APPLICATION DEVELOPMENT
+                Custom Chatbot Application Development
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We create custom chatbots tailored to your
@@ -109,7 +109,7 @@ function Chatbot() {
                 <GiArtificialIntelligence size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                AI POWERED CHATBOT SOLUTIONS
+                AI Powered Chatbot Solutions
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We develop AI-powered chatbots using NLP for
@@ -124,7 +124,7 @@ function Chatbot() {
                 <GrIntegration size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                CHATBOT INTEGRATION SERVICES
+                Chatbot Integration Services
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We provide chatbot integration services for CRM
@@ -139,7 +139,7 @@ function Chatbot() {
                 <MdArchitecture size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                CHATBOT DESIGN AND DEVELOPMENT
+                Chatbot Design and Development
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We design intuitive, engaging chatbots with
@@ -153,7 +153,7 @@ function Chatbot() {
                 <GrVmMaintenance size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                CHATBOT MAINTENANCE AND SUPPORT
+                Chatbot Maintenance and Support
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We offer ongoing chatbot maintenance, including
@@ -168,7 +168,7 @@ function Chatbot() {
                 <GiTalk size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                CONVERSATIONAL AI DEVELOPMENT
+                Conversational AI Development
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We develop advanced conversational AI systems

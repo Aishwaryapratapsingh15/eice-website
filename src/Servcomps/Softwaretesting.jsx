@@ -38,7 +38,7 @@ function SoftwareTesting() {
                   Software Testing
                 </h1>
                 <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-4xl text-left">
-                  Comprehensive Software Testing Services Ensuring Quality and Reliability
+                  Comprehensive Software Testing Services Ensuring Quality and Reliability.
                 </p>
               </div>
               <div className="lg:flex hidden items-center justify-end">
@@ -54,7 +54,7 @@ function SoftwareTesting() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start">
             <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2]">
               Comprehensive{" "}
-              <span className="text-bloo">Software Testing</span> Services
+              Software Testing Services
               Ensuring Quality and Reliability
             </h2>
             <div className="flex flex-col gap-4">
@@ -90,7 +90,7 @@ function SoftwareTesting() {
                 <BiCode size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                FUNCTIONAL TESTING
+                Functional Testing
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We conduct thorough functional testing to verify
@@ -105,7 +105,7 @@ function SoftwareTesting() {
                 <BsSpeedometer size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                PERFORMANCE TESTING
+                Performance Testing
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We perform performance testing to evaluate the
@@ -121,7 +121,7 @@ function SoftwareTesting() {
                 <MdSecurity size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                SECURITY TESTING
+                Security Testing
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We provide robust security testing services to
@@ -137,7 +137,7 @@ function SoftwareTesting() {
                 <MdConveyorBelt size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                AUTOMATION TESTING
+                Automation Testing
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We utilize advanced automation testing tools to
@@ -152,7 +152,7 @@ function SoftwareTesting() {
                 <BsArrowLeftRight size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                COMPATIBILITY TESTING
+                Compatibility Testing
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We perform usability testing to evaluate the
@@ -167,7 +167,7 @@ function SoftwareTesting() {
                 <AiOutlineRollback size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                REGRESSION TESTING
+                Regression Testing
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We offer regression testing services to confirm
@@ -182,14 +182,14 @@ function SoftwareTesting() {
                 <BiMobile size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                MOBILE APPLICATION TESTING
+                Mobile Application Testing
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We specialize in mobile application testing,
                 ensuring that your apps perform flawlessly on
                 various mobile devices and platforms. Our
                 services include functional, performance, and
-                security testing for mobile applications
+                security testing for mobile applications.
               </p>
             </div>
             <div className="rounded-[18px] border border-[#E6EAF1] bg-white p-[25px] transition duration-200 hover:-translate-y-1 hover:border-[#01B0F1]/60 hover:shadow-[0_18px_55px_rgba(1,32,96,.10)] flex flex-col items-start text-start">
@@ -197,7 +197,7 @@ function SoftwareTesting() {
                 <MdApi size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                API TESTING
+                API Testing
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We provide API testing services to verify the
@@ -213,7 +213,7 @@ function SoftwareTesting() {
                 <BiWrench size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                ACCEPTANCE TESTING
+                Acceptance Testing
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We conduct acceptance testing to validate that

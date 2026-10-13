@@ -28,7 +28,7 @@ export const defaultServices = [
   },
   {
     id: 4,
-    title: "DEVOPS",
+    title: "DevOps",
     link: "/services/devops",
     desc: "We provide DevOps services for digital transformation and growth. Our expertise in CI/CD pipelines, AWS, Azure, and GCP helps you deploy, manage, and expand applications effectively. Drive innovation and efficiency for your business’s success with our solutions.",
     svg: `<svg width="61" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,7 +38,7 @@ export const defaultServices = [
   },
   {
     id: 7,
-    title: "IOT",
+    title: "IoT",
     link: "/services/iot",
     desc: "We specialize in creating scalable and secure IoT solutions to enhance efficiency, improve connectivity, and provide actionable data insights. Our expertise helps your business thrive in the digital age, driving innovation and growth for long-term success.",
     svg: `<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
@@ -59,7 +59,7 @@ export const defaultServices = [
 export const moreServices = [
   {
     id: 5,
-    title: "ENTERPRISE APP DEVELOPMENT",
+    title: "Enterprise App Development",
     link: "/services/enterprise-app-dev",
     desc: "Elevate your business with our mobile app development services. We specialize in native, hybrid, and decentralized apps to boost brand value and align with the mobile-first trend. Let us help you create innovative solutions for a competitive edge.",
     svg: `
@@ -73,7 +73,7 @@ export const moreServices = [
   },
   {
     id: 2,
-    title: "TECHNOLOGY CONSULTING",
+    title: "Technology Consulting",
     link: "/services/tech-consultancy",
     desc: "We offer comprehensive technology consulting services with strategic guidance and tailored solutions. Our expertise boosts efficiency, drives innovation, and achieves digital transformation for businesses of all sizes. Partner with us to elevate your technology strategy and achieve success.",
     svg: `<svg width="61" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -87,7 +87,7 @@ export const moreServices = [
   },
   {
     id: 1,
-    title: "CLOUD SERVICES",
+    title: "Cloud Services",
     link: "/services/cloud",
     desc: "Explore our advanced cloud services for scalable and efficient operations. We offer secure, reliable infrastructure and expert management tailored to your needs, supporting your business growth and success in the digital age. Discover the future of cloud solutions with us.",
     svg: `<svg width="61" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -97,7 +97,7 @@ export const moreServices = [
   },
   {
     id: 3,
-    title: "DIGITAL TRANSFORMATION",
+    title: "Digital Transformation",
     link: "/services/digital-transformation",
     desc: "Transform your business with our digital transformation services. We offer tailored strategies and cutting-edge solutions to modernize operations, enhance customer experiences, and drive sustainable growth. Partner with us to achieve your business goals effectively in the digital age.",
     svg: `<svg width="61" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -107,7 +107,7 @@ export const moreServices = [
   },
   {
     id: 9,
-    title: "GIS SERVICES",
+    title: "GIS Services",
     link: "/services/gis",
     desc: "We offer customized GIS solutions to maximize geographic insights for informed decision-making and effective resource management. Our services are designed to enhance your business strategy, optimize operations, and achieve your goals with precision in a competitive landscape.",
     svg: `<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
@@ -125,7 +125,7 @@ export const moreServices = [
   },
   {
     id: 8,
-    title: "DATA ANALYTICS",
+    title: "Data Analytics",
     link: "/services/data-analytics",
     desc: "We offer tailored Data Analytics services using advanced techniques to extract valuable insights, optimize operations, and drive informed decision-making. Our solutions are designed to help you achieve strategic objectives and gain a competitive edge in the marketplace.",
     svg: `<svg width="61" height="60" viewBox="0 0 61 60" fill="none" xmlns="http://www.w3.org/2000/svg">

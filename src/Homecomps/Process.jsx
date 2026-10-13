@@ -20,7 +20,7 @@ function Process() {
               Agile Software Development
             </p>
             <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center max-w-4xl mx-auto">
-              Proven processes, unparalleled expertise, <br className="hidden sm:block" />and top notch tools
+              Proven Processes, Unparalleled Expertise, <br className="hidden sm:block" />and Top Notch Tools
             </h2>
           </div>
 

@@ -45,7 +45,7 @@ function Iot() {
                   Internet of Things
                 </h1>
                 <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] sm:max-w-4xl text-left">
-                  Empowering Businesses with IoT Transformative Connectivity and Innovation
+                  Empowering Businesses with IoT Transformative Connectivity and Innovation.
                 </p>
               </div>
               <div className="lg:flex hidden items-center justify-end ">
@@ -63,7 +63,7 @@ function Iot() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start">
             <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2]">
               Empowering Businesses with{" "}
-              <span className="text-bloo">IoT</span> Transformative
+              IoT Transformative
               Connectivity and Innovation
             </h2>
             <div className="flex flex-col gap-4">
@@ -98,7 +98,7 @@ function Iot() {
                 <GiTalk size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                DISCOVERY AND REQUIREMENT GATHERING
+                Discovery and Requirement Gathering
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We identify and implement cutting-edge digital
@@ -111,7 +111,7 @@ function Iot() {
                 <MdArchitecture size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                DESIGN AND ARCHITECTURE PLANNING
+                Design and Architecture Planning
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We leverage advanced analytics and AI to extract
@@ -124,7 +124,7 @@ function Iot() {
                 <MdCheckBox size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                PROTOTYPING AND VALIDATION
+                Prototyping and Validation
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We create seamless, intuitive digital
@@ -138,7 +138,7 @@ function Iot() {
                 <BiCode size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                DEVELOPMENT AND INTEGRATION
+                Development and Integration
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We develop and integrate intelligent IoT
@@ -153,7 +153,7 @@ function Iot() {
                 <BiCloud size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                DEPLOYMENT AND IMPLEMENTATION
+                Deployment and Implementation
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We create seamless, intuitive digital
@@ -167,7 +167,7 @@ function Iot() {
                 <BsPerson size={44} />
               </div>
               <h3 className="font-general font-semibold text-[#373737] text-[18px] sm:text-[20px] leading-[1.3] mb-[7px]">
-                MAINTENANCE AND SUPPORT
+                Maintenance and Support
               </h3>
               <p className="font-inter font-normal text-[#64748B] text-[15px] sm:text-[16px] leading-[1.6]">
                 We provide reliable maintenance and ongoing
