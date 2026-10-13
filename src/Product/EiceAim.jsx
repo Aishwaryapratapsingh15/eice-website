@@ -198,11 +198,11 @@ export default function EiceAim() {
        <div className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 grid md:grid-cols-[1fr_2fr] gap-4 md:gap-10 items-center">
           <div>
             <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk">
-              What is EICEAIM?
+              What is EICE AIM?
             </h2>
           </div>
           <div className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] space-y-4 sm:space-y-3">
-            <p>EICEAIM is an AI-powered lead generation and sales engagement platform designed to automate outreach, lead qualification, and follow-ups at scale. It helps businesses engage prospects continuously through configurable AI personas, intelligent qualification logic, and personalized follow-up workflows.</p>
+            <p>EICE AIM is an AI-powered lead generation and sales engagement platform designed to automate outreach, lead qualification, and follow-ups at scale. It helps businesses engage prospects continuously through configurable AI personas, intelligent qualification logic, and personalized follow-up workflows.</p>
           </div>
        </div>
       </section>
@@ -215,14 +215,14 @@ export default function EiceAim() {
               From cold calling to consistent conversion
             </h2>
             <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">
-              Traditional telecalling doesn&apos;t scale, and it doesn&apos;t stay consistent. EICEAIM gives every <br />prospect the same disciplined follow-through — day or night.
+              Traditional telecalling doesn&apos;t scale, and it doesn&apos;t stay consistent. EICE AIM gives every <br />prospect the same disciplined follow-through — day or night.
             </p>
           </div>
 
           <div className="rounded-2xl overflow-hidden border border-[#E2E8F0] shadow-sm overflow-x-auto">
             <div className="grid grid-cols-2 bg-white text-sm font-semibold tracking-wide">
               <div className="p-5 text-left text-[#1E293B]">The Old Way</div>
-              <div className="p-5 text-left text-[#1E293B]">With EICEAIM</div>
+              <div className="p-5 text-left text-[#1E293B]">With EICE AIM</div>
             </div>
 
             {challenges.map((row, i) => (
@@ -248,7 +248,7 @@ export default function EiceAim() {
             Outreach, qualification, and follow-up fully automated
           </h2>
           <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">
-            EICEAIM acts as your intelligent sales partner, automating outreach, lead qualification, and follow-ups with precision and personalization.
+            EICE AIM acts as your intelligent sales partner, automating outreach, lead qualification, and follow-ups with precision and personalization.
           </p>
         </div>
         <div className="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">

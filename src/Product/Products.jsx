@@ -214,7 +214,7 @@ export default function ProductsPage() {
 
         <h1 className="font-general font-semibold mx-auto mt-[10px] max-w-4xl text-[32px] sm:text-[44px] leading-[1.1] text-blackk">
           Software built to{" "}
-          <span className="text-bloo">solve the job.</span>
+          solve the job
         </h1>
 
         <p className="font-inter font-normal mx-auto mt-2 max-w-3xl text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70">
@@ -389,7 +389,7 @@ export default function ProductsPage() {
             </h2>
 
             <h1 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] py-1">
-              Purpose-built by design.
+              Purpose-built by design
             </h1>
 
             <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] mt-2">

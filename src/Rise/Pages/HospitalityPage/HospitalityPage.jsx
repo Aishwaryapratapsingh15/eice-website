@@ -822,7 +822,7 @@ EICE Rise runs rooms, dining, banquets, memberships, and the back office (financ
                     <div className="flex items-center justify-center gap-4 mb-8">
                         <img className="w-[50px]" src={h2} alt="" width="151" height="150" />
                         <h2 className="font-general font-semibold text-blackk text-[32px] leading-[1.2]">
-                            Real <span className="text-bloo">Stories</span>, Real <span className="text-bloo">Impact</span>
+                            Real Stories, Real Impact
                         </h2>
                     </div>
 

@@ -476,7 +476,7 @@ export default function AskEice() {
             A proven, continuous journey
           </h2>
           <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 mt-2">
-           From document chaos to instant clarity — without your data ever leaving home..
+           From document chaos to instant clarity — without your data ever leaving home.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">

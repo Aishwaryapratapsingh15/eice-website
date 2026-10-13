@@ -97,7 +97,7 @@ const capabilities = [
       {
     icon: absIcon,
     title: "Automated Backup Scheduling",
-    desc: "Set it and forget it. Define schedules that run automatically without manual intervention",
+    desc: "Set it and forget it. Define schedules that run automatically without manual intervention.",
   },
      {
     icon: sdeIcon,
@@ -273,7 +273,7 @@ iSyncLite addresses these head-on.
             Core Capabilities
           </h2>
           <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">
-            Along with secure storage, iSyncDrive enables controlled file and folder sharing to support collaborations across teams and locations
+            Along with secure storage, iSyncDrive enables controlled file and folder sharing to support collaborations across teams and locations.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:gap-6 gap-4">
@@ -327,7 +327,7 @@ iSyncLite addresses these head-on.
       How it Works
     </h2>
     <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 mt-2">
-      A proven continuous journey from planning to optimization
+      A proven continuous journey from planning to optimization.
     </p>
   </div>
 
