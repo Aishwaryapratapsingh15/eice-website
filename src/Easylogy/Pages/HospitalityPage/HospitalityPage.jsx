@@ -126,14 +126,6 @@ Watch every vehicle live from a web dashboard while drivers update trip status, 
                 </div>
             </section>
 
-            <section className="pt-10 pb-10 bg-[#f5f5f5]">
-                <div className="max-w-7xl mx-auto px-3 xl:px-4">
-                    <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center mb-4">About us</h2>
-                    <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] text-left sm:text-center sm:max-w-4xl sm:mx-auto">
-                        Easylogy is revolutionizing transportation tracking with a powerful and intelligent solution designed to enhance logistics efficiency. Our platform provides real-time fleet visibility, automated driver updates, and smart logistics management, ensuring seamless operations and reduced costs. With a web-based dashboard for administrators to monitor vehicle movements, manage deliveries, and analyze data, and a mobile app for drivers to upload live locations, trip details, and images, Easylogy simplifies fleet management. Key features like live tracking, instant alerts, trip history, and seamless API integrations empower businesses to make data-driven decisions, improve delivery accuracy, and optimize routes. Whether you manage a small fleet or a large-scale transportation network, Easylogy is your go-to solution for smarter, more efficient logistics management.
-                    </p>
-                </div>
-            </section>
 
             {!isEmbed && <FooterLower />}
 

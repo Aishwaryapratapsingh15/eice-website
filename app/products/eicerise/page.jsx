@@ -1,5 +1,7 @@
 import HospitalityPage from "../../../src/Rise/Pages/HospitalityPage/HospitalityPage";
 import ProductFooter from "../../../src/Product/ProductFooter";
+import ProductCarousel from "../../../src/Product/ProductCarousel";
+import productSlides from "../../../src/Product/carouselData";
 
 // export const metadata = {
 //   title: "EICE Rise | Hotel & Hospitality ERP System | EICE Technology",
@@ -73,6 +75,7 @@ export default function Page() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <HospitalityPage />
+      <ProductCarousel slides={productSlides} />
       <ProductFooter />
     </>
   );

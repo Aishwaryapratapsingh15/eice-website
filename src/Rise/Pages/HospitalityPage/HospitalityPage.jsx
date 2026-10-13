@@ -524,7 +524,7 @@ EICE Rise runs rooms, dining, banquets, memberships, and the back office (financ
 
             <section className="pt-10 pb-10 bg-[#F0FBFF]">
                 <div className="max-w-7xl mx-auto px-3 xl:px-4">
-                    <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center mb-8">Our <span className="text-bloo">End to End</span> Technology Solution</h2>
+                    <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center mb-8">Our End to End Technology Solution</h2>
 
                     <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
                         {services.map((item, index) =>
@@ -597,7 +597,7 @@ EICE Rise runs rooms, dining, banquets, memberships, and the back office (financ
             <section className="pt-10">
                 <div className="max-w-7xl mx-auto px-3 xl:px-4">
                     <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] text-left sm:text-center mb-8">
-                        <span className="text-bloo">Trusted</span> by Brands around the World
+                        Trusted by Brands around the World
                     </h2>
                 </div>
             </section>
@@ -774,7 +774,7 @@ EICE Rise runs rooms, dining, banquets, memberships, and the back office (financ
                 <div className="flex items-center gap-4 mb-8">
                     <img className="w-[50px]" src={h2} alt="" width="151" height="150" />
                     <h2 className="font-general font-semibold text-blackk text-[24px] leading-[1.2]">
-                        Real <span className="text-bloo">Stories</span>, Real <span className="text-bloo">Impact</span>
+                        Real Stories, Real Impact
                     </h2>
                 </div>
 
