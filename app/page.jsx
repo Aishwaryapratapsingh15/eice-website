@@ -100,8 +100,8 @@ export default function Page() {
           <div className="max-w-7xl mx-auto px-3 xl:px-4 flex flex-col gap-0.5 items-start sm:items-center justify-start sm:justify-center">
           <h2 className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">Core capabilities</h2>
           <h2 className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] max-w-4xl py-1">
-            Enterprise-grade intelligence, <br className="sm:hidden" />
-            built to scale
+            Enterprise-Grade Intelligence, <br className="sm:hidden" />
+            Built to Scale
           </h2>
         </div>
         </div>
