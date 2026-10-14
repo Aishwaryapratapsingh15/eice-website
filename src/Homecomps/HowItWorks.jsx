@@ -48,7 +48,7 @@ export default function HowItWorks() {
             How it works
           </h2>
           <h1 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] mx-auto max-w-4xl py-1">
-            A proven journey from strategy to impact
+            A Proven Journey from Strategy to Impact
           </h1>
           <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl mx-auto mt-2">
             We follow a structured approach to design, deploy, and optimize enterprise solutions.

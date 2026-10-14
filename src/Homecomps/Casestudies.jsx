@@ -18,7 +18,7 @@ function Casestudies() {
             Case Studies
           </h2>
           <h1 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] max-w-4xl mb-6">
-            Proven impact across complex enterprise environments
+            Proven Impact across Complex Enterprise Environments
           </h1>
           <Link
             href="/case-studies"

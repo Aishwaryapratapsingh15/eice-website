@@ -38,8 +38,8 @@ export default function Clients() {
           Our Clients
         </h2>
         <p className="font-general font-semibold text-blackk text-left sm:text-center text-[24px] sm:text-[32px] leading-[1.2] mx-auto max-w-4xl py-1 mb-8">
-          Partnering with visionary clients to drive
-          <br /> success and innovation
+          Partnering With Visionary Clients to Drive
+          <br /> Success and Innovation
         </p>
 
         <div style={{ display: "flex", justifyContent: "center" }}>
