@@ -257,7 +257,7 @@ See servers, networks, applications, cloud services and IoT devices on one dashb
         {/* BUTTONS */}
         <div className="flex flex-wrap justify-start sm:justify-center gap-4 mt-10">
                           <button  onClick={() => navigate("/demo-form?product=Infrasight")} 
-                          className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-[#1E40AF] transition text-[18px]">
+                          className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-[#1E40AF] transition font-medium text-[18px]">
                             Request a Demo
                               <img src={arrowIcon} alt="arrow" width="24" height="24" />
                     
@@ -697,7 +697,7 @@ infrastructure</p>
 
       {/* PRIMARY */}
       <button onClick={() => navigate("/demo-form?product=Infrasight")} 
-      className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto hover:bg-[#1E40AF] transition text-[18px]">
+      className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto hover:bg-[#1E40AF] transition font-medium text-[18px]">
         Request a Demo
           <img src={arrowIcon} alt="arrow" width="24" height="24" />
 

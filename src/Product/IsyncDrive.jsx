@@ -229,7 +229,7 @@ export default function ISyncDrivePage() {
 
       {/* Primary */}
       <button onClick={() => navigate("/demo-form?product=iSyncDrive")}
-      className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-[#1E40AF] transition text-[18px]">
+      className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 hover:bg-[#1E40AF] transition font-medium text-[18px]">
         Request a Demo
           <img src={arrowIcon} alt="arrow" width="24" height="24" />
 
@@ -829,7 +829,7 @@ export default function ISyncDrivePage() {
 
       {/* Primary */}
           <button onClick={() => navigate("/demo-form?product=iSyncDrive")}
-          className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto hover:bg-[#1E40AF] transition text-[18px]">
+          className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto hover:bg-[#1E40AF] transition font-medium text-[18px]">
         Request a Demo
           <img src={arrowIcon} alt="arrow" width="24" height="24" />
 

@@ -238,7 +238,7 @@ export default function EiceOps() {
           <div className="mt-8">
             <button
               onClick={() => navigate("/demo-form?product=EiceOps")}
-              className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 sm:mx-auto text-[18px] hover:bg-[#1E40AF] transition"
+              className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 sm:mx-auto font-medium text-[18px] hover:bg-[#1E40AF] transition"
             >
               Request a Demo
               <img src={arrowIcon} alt="arrow"  width="24" height="24" />
@@ -470,7 +470,7 @@ export default function EiceOps() {
 
               <button
                 onClick={() => navigate("/demo-form?product=EiceOps")}
-                className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto text-[18px] hover:bg-[#1E40AF]"
+                className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto font-medium text-[18px] hover:bg-[#1E40AF]"
               >
                 Request a Demo
                 <img src={arrowIcon} alt="arrow"  width="24" height="24" />

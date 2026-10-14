@@ -173,7 +173,7 @@ Staff speak orders in natural language. EICE Voice turns speech into text in rea
           <div className="mt-8 sm:flex sm:justify-center">
             <button
               onClick={() => navigate("/demo-form?product=Eice%20Voice")}
-              className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 text-[18px] hover:bg-[#1E40AF] transition"
+              className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 font-medium text-[18px] hover:bg-[#1E40AF] transition"
             >
               Request a Demo
               <img src={arrowIcon} alt="arrow"  width="24" height="24" />
@@ -523,7 +523,7 @@ Staff speak orders in natural language. EICE Voice turns speech into text in rea
 
         <button
           onClick={() => navigate("/demo-form?product=Eice%20Voice")}
-          className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto text-[18px]  mx-auto hover:bg-[#1E40AF]"
+          className="bg-[#012060] text-white px-10 py-3 rounded-md flex items-center gap-2 mx-auto font-medium text-[18px]  mx-auto hover:bg-[#1E40AF]"
         >
           Request a Demo
           <img src={arrowIcon} alt="arrow"  width="24" height="24" />

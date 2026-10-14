@@ -36,7 +36,7 @@ const productSlides = [
   },
   {
     image: carousel10,
-    title: "EICEAIM",
+    title: "EICE AIM",
     tags: ["Engage", "Qualify", "Convert"],
     description:
       "EICEAIM is the action agent that automates outreach, lead qualification, and follow-ups with configurable AI personas. It replaces manual telecalling with a scalable, 24×7 communication system that never misses a follow-up. The result is consistent engagement and measurably better conversion rates.",
@@ -52,9 +52,9 @@ const productSlides = [
   },
   {
     image: carousel4,
-    title: "Infrasight",
+    title: "InfraSight",
     tags: ["Observe", "Detect", "Resolve"],
-    description: "Infrasight is an enterprise observability platform providing real-time visibility into servers, networks, applications, cloud services and IoT devices from a unified dashboard-with auto-discovery, anomaly detection, and multi-protocol agentless monitoring.",
+    description: "InfraSight is an enterprise observability platform providing real-time visibility into servers, networks, applications, cloud services and IoT devices from a unified dashboard-with auto-discovery, anomaly detection, and multi-protocol agentless monitoring.",
     path:"/products/infrasight"
   },
   {
@@ -66,21 +66,21 @@ const productSlides = [
   },
   {
     image: carousel6,
-    title: "Eice Voice",
+    title: "EICE Voice",
     tags: ["Speak", "Understand", "Dispatch"],
     description: "EICE Voice is an AI-Powered, voice-first order management platform that lets restaurant and hotel staff place, manage and track orders hand-free--with natural language understanding built for the hospitality industry.",
     path:"/products/eice-voice"
   },
    {
     image: carousel7,
-    title: "Eice SmartFit",
+    title: "EICE SmartFit",
     tags: ["Pack Smart", "Ship Smart", "Zero Waste"],
     description: "Stop losing money to wasted container space. EICE SmartFit uses intelligent 3D optimization to pack every shipment perfectly - maximizing capacity, balancing weight, and ensuring the right items are always accessible at the door. No guesswork, No overpaying. Just smart loading plans in seconds.",
     path:"/products/smartfit"
   },
   {
     image: carousel8,
-    title: "EiceOps",
+    title: "EICE Ops",
     tags: ["Every Ticket", "Every SLA", "Every Time"],
     description: "Stop letting SLA breaches slip through the cracks. EICE Ops is an ITIL 4-aligned help desk platform built for complete accountability — tracking every ticket from first call to closure with three live SLA clocks, automatic escalation alerts, and a full audit trail on every action. No missed deadlines. No guesswork. Just structured, visible IT service management.",
     path:"/products/eice-ops"
