@@ -212,7 +212,7 @@ export default function AskEice() {
         </span>
 
         <h1 className="font-general font-semibold text-[32px] sm:text-[44px] leading-[1.1] text-blackk mt-[10px] max-w-4xl mx-auto">
-          Turn your organization&apos;s documents into instant, verified answers
+          Turn your Organization&apos;s Documents into Instant, Verified Answers
         </h1>
 
         <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">
@@ -265,7 +265,7 @@ export default function AskEice() {
         <div>
           <div className="text-center mb-8">
             <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk">
-              From searching for answers to simply asking for them
+              From Searching for Answers to Simply Asking for Them
             </h2>
             <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">
              Enterprise knowledge is scattered, uncontrolled, and hard to trust. AskEICE empowers your teams to ask natural-language questions and receive contextual, verified answers instantly.
@@ -299,7 +299,7 @@ export default function AskEice() {
       <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="text-center mb-8">
           <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk">
-            Point it at your documents. It takes care of the rest.
+            Point it at Your Documents. It Takes Care of the Rest.
           </h2>
           <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">
             PDFs, scanned images, and OCR-processed files are ingested and indexed automatically entirely within your own environment.
@@ -343,7 +343,7 @@ export default function AskEice() {
         <div className="grid md:grid-cols-2 gap-8 md:gap-14 items-center">
           <div>
             <p className="font-general font-semibold text-bloo text-[12px] sm:text-[14px] uppercase tracking-[0.12em] py-2">RAG-based semantic search</p>
-            <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk">Context, not just keywords</h2>
+            <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk">Context, not Just Keywords</h2>
             <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 mt-2 mb-8">
               Powered by retrieval-augmented generation, AskEICE understands what you mean — not just what you typed. Every answer comes with full source traceability.
             </p>
@@ -373,7 +373,7 @@ export default function AskEice() {
       <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="text-center mb-8">
           <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk">
-            Meet employees where they already are
+            Meet Employees Where They Already Are
           </h2>
           <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">
             Enterprise knowledge on WhatsApp
@@ -397,7 +397,7 @@ export default function AskEice() {
        <div className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 grid md:grid-cols-2 gap-4 md:gap-10 items-center">
             <div>
             <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mb-2">
-              Model-agnostic by design
+              Model-agnostic by Design
             </h2>
             <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] mb-[18px]">
               Choose from industry-leading AI models, configured per organization or use case. Complete flexibility, zero vendor lock-in.
@@ -426,7 +426,7 @@ export default function AskEice() {
        <div className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4">
         <div className="text-center mb-8">
           <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk">
-            Multi-organization isolation, under one platform
+            Multi-organization Isolation, Under one Platform
           </h2>
           <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 mt-2">
             Granular access control and completely isolated environments for every organization you serve.
@@ -453,7 +453,7 @@ export default function AskEice() {
       <section className="relative py-4 sm:py-10 overflow-hidden max-w-7xl mx-auto px-3 xl:px-4">
         <div className="relative z-10">
           <div className="text-center mb-8">
-            <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk">Real results from AI-powered knowledge discovery</h2>
+            <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk">Real Results from AI-powered Knowledge Discovery</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             {impactStats.map((item, i) => (
@@ -473,7 +473,7 @@ export default function AskEice() {
       <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="text-center mb-8">
           <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk">
-            A proven, continuous journey
+            A proven, Continuous Journey
           </h2>
           <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 mt-2">
            From document chaos to instant clarity — without your data ever leaving home.

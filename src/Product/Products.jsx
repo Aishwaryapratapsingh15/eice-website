@@ -213,8 +213,8 @@ export default function ProductsPage() {
         </span>
 
         <h1 className="font-general font-semibold mx-auto mt-[10px] max-w-4xl text-[32px] sm:text-[44px] leading-[1.1] text-blackk">
-          Software built to{" "}
-          solve the job
+          Software Built to{" "}
+          Solve the Job
         </h1>
 
         <p className="font-inter font-normal mx-auto mt-2 max-w-3xl text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70">
@@ -243,7 +243,7 @@ export default function ProductsPage() {
             </h2>
 
             <h1 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] mx-auto max-w-4xl py-1">
-              One ecosystem. Distinct products.
+              One Ecosystem. Distinct Products.
             </h1>
 
             <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl mx-auto mt-2">
@@ -389,7 +389,7 @@ export default function ProductsPage() {
             </h2>
 
             <h1 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] py-1">
-              Purpose-built by design
+              Purpose-built by Design
             </h1>
 
             <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] mt-2">
@@ -438,7 +438,7 @@ export default function ProductsPage() {
           <div className="flex flex-col items-center gap-7 px-6 py-10 text-left sm:px-[70px] sm:py-[62px] sm:text-center">
             <div>
               <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] py-1">
-                Have a business problem to solve?
+                Have a Business Problem to Solve?
               </h2>
 
               <p className="font-inter font-normal mx-auto max-w-[620px] text-[15px] sm:text-[16px] leading-[1.6] text-blackk/70 mt-2">
