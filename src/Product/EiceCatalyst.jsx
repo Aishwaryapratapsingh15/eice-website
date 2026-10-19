@@ -185,7 +185,7 @@ export default function EiceCatalystPage() {
       <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="mx-auto max-w-4xl text-left sm:text-center">
           <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk py-1">
-            One connected path from trying AI to embedding it.
+            One Connected Path from Trying AI to Embedding It
           </h2>
           <p className="font-inter font-normal text-[15px] sm:text-[16px] leading-[1.6] text-[#64748B] mt-2">
             Most enterprise AI initiatives fail the same way: a pilot proves a point, then
@@ -219,7 +219,7 @@ export default function EiceCatalystPage() {
        <div className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4">
           <div className="mx-auto mb-8 max-w-4xl text-left sm:text-center">
             <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk py-1">
-              Designed as a platform, not a collection of services
+              Designed as a Platform, Not a Collection of Services
             </h2>
             <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 mt-2">
               Accelerate everyday engineering work, safely modernize legacy systems, deploy
@@ -268,7 +268,7 @@ export default function EiceCatalystPage() {
 
           <div>
             <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mb-8">
-              Modern platforms. Decades-old systems. One accountable path.
+              Modern Platforms. Decades-old Systems. One Accountable Path.
             </h2>
 
             <div className="grid gap-5">
@@ -292,7 +292,7 @@ export default function EiceCatalystPage() {
       <section id="process" className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="text-center mb-8">
           <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
-            Start focused, Build against reality, Scale with proof
+            Start Focused, Build Against Reality, Scale with Proof
           </h2>
           <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 mt-2">
             Most organizations begin with one or two capabilities, then expand as the
@@ -319,7 +319,7 @@ export default function EiceCatalystPage() {
         <div>
           <div className="mx-auto mb-8 max-w-4xl text-left sm:text-center">
             <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk">
-              Engineering discipline behind the AI platform
+              Engineering Discipline Behind the AI Platform
             </h2>
           </div>
 
@@ -343,7 +343,7 @@ export default function EiceCatalystPage() {
               FAQs
             </h2>
             <h1 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] mx-auto max-w-4xl py-1">
-              Questions enterprises ask first
+              Questions Enterprises Ask First
             </h1>
           </div>
 

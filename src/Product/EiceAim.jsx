@@ -212,7 +212,7 @@ export default function EiceAim() {
         <div>
           <div className="text-center mb-8">
             <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk py-1">
-              From cold calling to consistent conversion
+              From Cold Calling to Consistent Conversion
             </h2>
             <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">
               Traditional telecalling doesn&apos;t scale, and it doesn&apos;t stay consistent. EICE AIM gives every <br />prospect the same disciplined follow-through — day or night.
@@ -245,7 +245,7 @@ export default function EiceAim() {
       <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="text-center mb-8">
           <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk py-1">
-            Outreach, qualification, and follow-up fully automated
+            Outreach, Qualification, and Follow-up Fully Automated
           </h2>
           <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">
             EICE AIM acts as your intelligent sales partner, automating outreach, lead qualification, and follow-ups with precision and personalization.
@@ -268,7 +268,7 @@ export default function EiceAim() {
       <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="text-center mb-8">
           <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk py-1">
-            A proven, continuous journey
+            A proven, Continuous Journey
           </h2>
           <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 mt-2">
             From planning your first campaign to continuously improving conversion.
@@ -293,7 +293,7 @@ export default function EiceAim() {
       <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="text-center mb-8">
           <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk py-1">
-            Core capabilities
+            Core Capabilities
           </h2>
           <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">
             Built to run outreach at enterprise scale
@@ -317,7 +317,7 @@ export default function EiceAim() {
       <section className="relative overflow-hidden bg-cover bg-center" style={{ backgroundImage: `url(${bgImage2})` }}>
        <div className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 relative z-10">
           <div className="text-center mb-8">
-            <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk">Real results from AI-powered outreach</h2>
+            <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk">Real Results from AI-powered Outreach</h2>
           </div>
           <div className="max-w-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
             {impactStats.map((item, i) => (
@@ -336,7 +336,7 @@ export default function EiceAim() {
       {/* CAMPAIGN CONTROLS */}
       <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="text-center mb-8">
-          <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk py-1">What that impact actually looks like</h2>
+          <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk py-1">What That Impact Actually Looks Like</h2>
           <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 mt-2">The numbers above come from three concrete operating changes.</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
