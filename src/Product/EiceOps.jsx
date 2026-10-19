@@ -405,7 +405,7 @@ export default function EiceOps() {
   <div className="text-center mb-8">
     {/* Heading */}
     <h2 className="font-general font-semibold text-blackk text-[24px] sm:text-[32px] leading-[1.2] mx-auto max-w-4xl py-1">
-      Why enterprises choose EICEOps?
+      Why Enterprises Choose EICEOps?
     </h2>
 
     {/* Subheading */}

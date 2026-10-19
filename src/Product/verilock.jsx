@@ -471,7 +471,7 @@ locations with full admin control.
     {/* HEADER */}
     <div className="text-center mb-8">
       <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
-        Comprehensive platform capabilities
+        Comprehensive Platform Capabilities
       </h2>
 
       <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 mt-2">
@@ -620,7 +620,7 @@ locations with full admin control.
   {/* Heading */}
   <div className="text-center mb-8">
     <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
-      Why Enterprises choose Verilock?
+      Why Enterprises Choose Verilock?
     </h2>
     <p className="font-inter font-normal text-[16px] sm:text-[18px] leading-[1.6] text-blackk/70 max-w-3xl mx-auto mt-2">
       Built for organizations that require control, governance, and flexible deployment.

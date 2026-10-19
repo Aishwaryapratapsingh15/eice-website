@@ -349,7 +349,7 @@ systems.
 
   <div className="text-center mb-8">
     <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
-      Infrastructure monitoring challenges
+      Infrastructure Monitoring Challenges
     </h2>
 
     <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl mx-auto mt-2">
@@ -390,10 +390,10 @@ systems.
       <section className="py-4 sm:py-10 max-w-7xl mx-auto px-3 xl:px-4 bg-white">
         <div className="text-center mb-8">
           <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
-            Real-time observability <br />for modern IT infrastructure
+            Real-time Observability for <br className="hidden sm:block"/>Modern IT Infrastructure
           </h2>
           <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl mx-auto mt-2">
-            InfraSight continuously monitors and alerts <br />across every layer of your
+            InfraSight continuously monitors and alerts across<br className="hidden sm:block"/> every layer of your
 infrastructure </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
@@ -501,7 +501,7 @@ infrastructure </p>
 
            <div className="mb-8">
              <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
-               Centralised observability architecture
+               Centralised Observability Architecture
              </h2>
 
              <p className="font-inter font-normal text-blackk/70 text-[16px] sm:text-[18px] leading-[1.6] max-w-3xl mx-auto mt-2"> high-performance Monitoring Engine at the centre of your entire
@@ -618,7 +618,7 @@ infrastructure</p>
   <div className="text-center mb-8">
     {/* Heading */}
     <h2 className="font-general font-semibold text-[24px] sm:text-[32px] leading-[1.2] text-blackk mx-auto max-w-4xl py-1">
-      Why enterprises choose InfraSight?
+      Why Enterprises Choose InfraSight?
     </h2>
 
     {/* Subheading */}
