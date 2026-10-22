@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "@/nextNavigation";
-import { BsChevronLeft, BsChevronRight, BsStars } from "react-icons/bs";
+import { BsStars } from "react-icons/bs";
 const hero1image = "https://d3r43jacxrwsrp.cloudfront.net/landing-page/home-hero-image1.png";
 const hero2image = "https://d3r43jacxrwsrp.cloudfront.net/landing-page/home-hero-image2.png";
 const hero3image = "https://d3r43jacxrwsrp.cloudfront.net/landing-page/home-hero-image3.png";
@@ -223,22 +223,6 @@ function Big() {
                 />
               ))}
             </div>
-          </div>
-          <div className="absolute xl:block hidden top-1/2 left-2 sm:left-4 transform -translate-y-1/2">
-            <button aria-label="previous slide"
-              onClick={prevSlide}
-              className="text-blackk/50 hover:text-blackk"
-            >
-              <BsChevronLeft size={24} />
-            </button>
-          </div>
-          <div className="absolute xl:block hidden top-1/2 right-2 sm:right-4 transform -translate-y-1/2">
-            <button aria-label="next slide"
-              onClick={nextSlide}
-              className="text-blackk/50 hover:text-blackk"
-            >
-              <BsChevronRight size={24} />
-            </button>
           </div>
         </div>
       </div>
