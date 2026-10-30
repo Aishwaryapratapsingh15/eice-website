@@ -206,9 +206,13 @@ function DemoFormBreadcrumb({ defaultCrumbs }) {
 
 function BreadcrumbTrail({ crumbs: allCrumbs }) {
   // The trail only shows the parents; the page the visitor is already on is
-  // left out. A lone "Home" isn't worth showing, so that case renders nothing.
+  // left out. A lone "Home" isn't worth showing, so that case renders an empty
+  // spacer instead: the trail also pushes the page content below the fixed
+  // navbar (e.g. the /demo-form page has no top offset of its own).
   const crumbs = allCrumbs.slice(0, -1);
-  if (crumbs.length < 2) return null;
+  if (crumbs.length < 2) {
+    return <div aria-hidden className="mt-20 h-9 2xl:mt-6" />;
+  }
 
   return (
     <nav
