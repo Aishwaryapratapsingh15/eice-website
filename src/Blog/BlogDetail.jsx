@@ -4,6 +4,7 @@ import { Link } from "@/nextNavigation";
 import { getDisplayDate } from "./formatDate";
 import { BlogCard } from "./BlogCard";
 import { BlogSidebar } from "./BlogSidebar";
+import { blogDemoUrl } from "./blogUrl";
 
 function CategoryIcon({ className }) {
   return (
@@ -166,7 +167,7 @@ export function BlogDetail({ blog, relatedPosts, latestPosts, categories }) {
             </p>
             <div className="mt-5 flex flex-nowrap items-center gap-1.5 sm:gap-3">
               <Link
-                to={blog.ctaPrimaryUrl ?? "/demo-form?product=Blog"}
+                to={blog.ctaPrimaryUrl ?? blogDemoUrl(blog.title)}
                 className="inline-flex h-10 shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-bloo px-3 text-[12px] font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-[#012060] sm:h-11 sm:px-6 sm:text-[14px]"
               >
                 {blog.ctaPrimaryText ?? "Request a Demo"}
@@ -195,7 +196,7 @@ export function BlogDetail({ blog, relatedPosts, latestPosts, categories }) {
           )}
         </article>
 
-        <BlogSidebar latestPosts={latestPosts} categories={categories} />
+        <BlogSidebar latestPosts={latestPosts} categories={categories} demoUrl={blogDemoUrl(blog.title)} />
       </div>
     </main>
   );

@@ -33,7 +33,7 @@ function RssIcon() {
   );
 }
 
-export function BlogSidebar({ latestPosts, categories }) {
+export function BlogSidebar({ latestPosts, categories, demoUrl = "/demo-form?product=Blog" }) {
   return (
     <aside className="flex flex-col gap-8 lg:sticky lg:top-24 lg:self-start">
       <div className="rounded-2xl bg-[#012060] p-6">
@@ -48,7 +48,7 @@ export function BlogSidebar({ latestPosts, categories }) {
         </p>
         <div className="mt-5 flex flex-col gap-3">
           <Link
-            to="/demo-form?product=Blog"
+            to={demoUrl}
             className="inline-flex h-11 w-full items-center justify-center gap-2 rounded-full bg-bloo text-[14px] font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-[#012060]"
           >
             Request a Demo
