@@ -1798,7 +1798,7 @@ function Legal() {
 
 
 
-      <TalkToUs />
+      <TalkToUs product="Legal" />
 
 
 

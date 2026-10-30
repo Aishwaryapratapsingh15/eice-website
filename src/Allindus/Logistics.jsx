@@ -1728,7 +1728,7 @@ function Logistics() {
 
 
 
-      <TalkToUs />
+      <TalkToUs product="Logistics" />
 
 
 

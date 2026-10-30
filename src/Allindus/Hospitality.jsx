@@ -441,7 +441,7 @@ export default function Hospitality() {
               Our strength lies in delivering innovative, Industry-Specific Solutions. Partner with EICE to transform your hospitality business and achieve Exceptional Results.
             </h2>
             <div>
-              <Link href="/contact">
+              <Link href="/contact?product=Hospitality">
                 <button className="text-nowrap px-10 py-3 rounded-md font-semibold transition duration-200 bg-[#012060] text-white hover:bg-[#1E40AF] text-[18px]">
                   Let's Connect
                 </button>

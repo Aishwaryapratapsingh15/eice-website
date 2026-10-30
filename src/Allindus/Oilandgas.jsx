@@ -889,7 +889,7 @@ function Oilandgas() {
 
       <Cstdmain />
 
-      <TalkToUs />
+      <TalkToUs product="Oil and Gas" />
 
       {/* <Footer /> */}
 
